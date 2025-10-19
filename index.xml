@@ -4,9 +4,17 @@
         <link>http://maequeen.top/</link>
         <description>一夔的小窝</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (龙山)</managingEditor>
-            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Sun, 27 Oct 2024 22:02:10 &#43;0800</lastBuildDate>
+            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Sun, 19 Oct 2025 23:10:20 &#43;0800</lastBuildDate>
             <atom:link href="http://maequeen.top/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>3-0：逐光城的夜行者</title>
+    <link>http://maequeen.top/posts/3-0-%E9%80%90%E5%85%89%E5%9F%8E%E7%9A%84%E5%A4%9C%E8%A1%8C%E8%80%85/</link>
+    <pubDate>Sun, 19 Oct 2025 23:10:20 &#43;0800</pubDate>
+    <author>龙山</author>
+    <guid>http://maequeen.top/posts/3-0-%E9%80%90%E5%85%89%E5%9F%8E%E7%9A%84%E5%A4%9C%E8%A1%8C%E8%80%85/</guid>
+    <description><![CDATA[起航：月台上的一席之地 “反正世界都是个草台班子，那我菜一菜应该也没事。”这是夔在2023年写下的flag，也是小说里主角的开场白。逐光城的十]]></description>
+</item>
+<item>
     <title>2-6 发现到追回，小伙儿 1.5h 极速追回遗失耳机</title>
     <link>http://maequeen.top/posts/2-6%5C-young-man-reclaims-lost-headphones-in-1.5-hours/</link>
     <pubDate>Sun, 27 Oct 2024 22:02:10 &#43;0800</pubDate>
@@ -77,14 +85,6 @@
     <author>龙山</author>
     <guid>http://maequeen.top/posts/1-7hdlbits_record_1/</guid>
     <description><![CDATA[前几天想要通过HDLBits刷题来熟练使用verilog语音，这几天想清楚一件事情，很多事情浅尝辄止都是只能停留在表面的很多东西也都不能深入]]></description>
-</item>
-<item>
-    <title>1-6:我与whisper打架到半夜</title>
-    <link>http://maequeen.top/posts/1-6-fought-with-whisper-until-midnight/</link>
-    <pubDate>Thu, 20 Jul 2023 01:52:30 &#43;0800</pubDate>
-    <author>龙山</author>
-    <guid>http://maequeen.top/posts/1-6-fought-with-whisper-until-midnight/</guid>
-    <description><![CDATA[AI总结 # 起因 1. 最近我通过ChatGPT的iOS端语音输入功能,发现它的语音识别准确度非常高。 2. 我很想知道它为什么识别这么准确,经过了解,是]]></description>
 </item>
 </channel>
 </rss>
