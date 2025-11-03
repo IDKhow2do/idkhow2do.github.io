@@ -15,6 +15,7 @@
 }
 
 :root {
+  --global-font-family: "LXGW WenKai", "Noto Serif SC", "Songti SC", "Microsoft YaHei", serif;
   --header-title-font-family: "LXGW WenKai", "Noto Serif SC", "Songti SC", "Microsoft YaHei", serif;
 }
 
