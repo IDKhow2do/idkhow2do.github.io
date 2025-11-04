@@ -4,9 +4,17 @@
         <link>http://maequeen.top/</link>
         <description>一夔的小窝</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (龙山)</managingEditor>
-            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Sun, 19 Oct 2025 23:10:20 &#43;0800</lastBuildDate>
+            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Tue, 04 Nov 2025 00:30:00 &#43;0800</lastBuildDate>
             <atom:link href="http://maequeen.top/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>3-1：仍在路上的光</title>
+    <link>http://maequeen.top/posts/3-1-%E4%BB%8D%E5%9C%A8%E8%B7%AF%E4%B8%8A%E7%9A%84%E5%85%89/</link>
+    <pubDate>Tue, 04 Nov 2025 00:30:00 &#43;0800</pubDate>
+    <author>龙山</author>
+    <guid>http://maequeen.top/posts/3-1-%E4%BB%8D%E5%9C%A8%E8%B7%AF%E4%B8%8A%E7%9A%84%E5%85%89/</guid>
+    <description><![CDATA[<p>夜里十一点，成都的雨还没有停。顾行窝在公寓的书房里，屏幕上一片冷白的后台界面。他试图让博客左上角的“—一夔的小窝—”换上刚下载的霞鹜文楷，可无论怎样刷新，浏览器里仍旧顽固地跳回苹方。他盯着逐行滚过的报错，突然冒出一个荒诞的念头：是不是人生里那些遗漏的句号，也会像这几段顽固的 CSS 一样迟迟不肯生效。</p>]]></description>
+</item>
+<item>
     <title>3-0：寄回南城的风</title>
     <link>http://maequeen.top/posts/3-0-%E9%80%90%E5%85%89%E5%9F%8E%E7%9A%84%E5%A4%9C%E8%A1%8C%E8%80%85/</link>
     <pubDate>Sun, 19 Oct 2025 23:10:20 &#43;0800</pubDate>
@@ -77,14 +85,6 @@
     <author>龙山</author>
     <guid>http://maequeen.top/posts/1-8-the-world-needs-prometheus-looking-for-book/</guid>
     <description><![CDATA[AI 总结 找书办法失效 以前主要靠 zlibrary 与读秀拿教材，后来发现“大学生读书联盟”等渠道更便宜。 读秀的旧流程：搜 dxid/ssid → 找秒传链接 → 用百度云插件保存 → 解压转]]></description>
-</item>
-<item>
-    <title>1-7:HDLBits刷题记录(持续更新中)</title>
-    <link>http://maequeen.top/posts/1-7hdlbits_record_1/</link>
-    <pubDate>Thu, 20 Jul 2023 02:11:08 &#43;0800</pubDate>
-    <author>龙山</author>
-    <guid>http://maequeen.top/posts/1-7hdlbits_record_1/</guid>
-    <description><![CDATA[前几天想要通过HDLBits刷题来熟练使用verilog语音，这几天想清楚一件事情，很多事情浅尝辄止都是只能停留在表面的很多东西也都不能深入]]></description>
 </item>
 </channel>
 </rss>
