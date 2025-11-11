@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "dark.min.css",
-	"sourceRoot": "/Users/mayue/Documents/blog",
+	"sourceRoot": "/Users/mayue/blog",
 	"sources": [
 		"themes/LoveIt/assets/lib/aplayer/dark.scss"
 	],
