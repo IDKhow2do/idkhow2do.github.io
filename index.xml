@@ -4,9 +4,17 @@
         <link>http://maequeen.top/</link>
         <description>一夔的小窝</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (龙山)</managingEditor>
-            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Tue, 04 Nov 2025 00:30:00 &#43;0800</lastBuildDate>
+            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Tue, 27 Jan 2026 00:00:00 &#43;0800</lastBuildDate>
             <atom:link href="http://maequeen.top/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>2025 年终总结：找自己</title>
+    <link>http://maequeen.top/posts/4-0-2025-findyourself/</link>
+    <pubDate>Tue, 27 Jan 2026 00:00:00 &#43;0800</pubDate>
+    <author>龙山</author>
+    <guid>http://maequeen.top/posts/4-0-2025-findyourself/</guid>
+    <description><![CDATA[TL;DR 核心主题：找自己。 博主在2025年虽然断掉了写日记的习惯，但通过摄影、旅行和AI编程填满了生活。这一年经历了堂哥婚礼带来的“成人感”，利用]]></description>
+</item>
+<item>
     <title>2025-W46 周报 1 没有上进心</title>
     <link>http://maequeen.top/posts/3-1-unambitous/</link>
     <pubDate>Tue, 04 Nov 2025 00:30:00 &#43;0800</pubDate>
@@ -77,14 +85,6 @@
     <author>龙山</author>
     <guid>http://maequeen.top/posts/2-0-2023the-world-sucks-and-i-dont-care/</guid>
     <description><![CDATA[先起个整体的调调吧，去年就是很蠢的一年，都觉得没什么可以值得回顾的。之所以还是决定写这个年终总结，单纯是因为去年立下了今年要写年终总结的fl]]></description>
-</item>
-<item>
-    <title>1-8：世界需要普罗米修斯（找书）</title>
-    <link>http://maequeen.top/posts/1-8-the-world-needs-prometheus-looking-for-book/</link>
-    <pubDate>Sun, 03 Sep 2023 02:11:19 &#43;0800</pubDate>
-    <author>龙山</author>
-    <guid>http://maequeen.top/posts/1-8-the-world-needs-prometheus-looking-for-book/</guid>
-    <description><![CDATA[AI 总结 找书办法失效 以前主要靠 zlibrary 与读秀拿教材，后来发现“大学生读书联盟”等渠道更便宜。 读秀的旧流程：搜 dxid/ssid → 找秒传链接 → 用百度云插件保存 → 解压转]]></description>
 </item>
 </channel>
 </rss>
