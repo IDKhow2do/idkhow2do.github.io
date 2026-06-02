@@ -1,0 +1,124 @@
+.photowall-room {
+  --pw-bg: var(--blog-bg);
+  --pw-surface: var(--blog-surface-soft);
+  --pw-text: var(--blog-text);
+  --pw-border: var(--blog-border);
+  --pw-shadow-subtle: var(--blog-shadow-subtle);
+  --pw-shadow-strong: var(--blog-shadow-card);
+  --pw-radius: 14px;
+
+  position: relative;
+  isolation: isolate;
+  padding: clamp(20px, 4vw, 48px) clamp(10px, 5vw, 72px);
+  background: var(--pw-bg);
+  border: 1px solid var(--pw-border);
+  border-radius: var(--pw-radius);
+  overflow: hidden;
+}
+
+.photo-wall-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: clamp(11px, 2vw, 20px);
+  width: min(100%, 1160px);
+  margin: 0 auto;
+}
+
+.photo-item {
+  perspective: 1100px;
+}
+
+.photo-item .frame {
+  display: block;
+  padding: clamp(8px, 1.4vw, 12px);
+  background: var(--pw-surface);
+  border-radius: 14px;
+  border: 1px solid var(--pw-border);
+  box-shadow: var(--pw-shadow-subtle);
+  transform-style: preserve-3d;
+  text-decoration: none;
+  color: inherit;
+  transition:
+    transform 180ms ease-out,
+    box-shadow 180ms ease-out,
+    border-color 180ms ease-out;
+}
+
+.photo-item .frame:focus-visible {
+  outline: 2px solid var(--blog-link);
+  outline-offset: 2px;
+}
+
+.photo-item .frame:hover,
+.photo-item .frame:focus-visible {
+  border-color: color-mix(in srgb, var(--blog-link) 30%, var(--pw-border));
+  box-shadow: var(--pw-shadow-strong);
+  transform: translateY(-1px) translateZ(0);
+}
+
+.photo-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  transition: opacity 180ms ease-out;
+}
+
+.photo-item .frame:hover .photo-thumb,
+.photo-item .frame:focus-visible .photo-thumb {
+  opacity: 0.96;
+}
+
+.photo-description {
+  margin: 0.55rem 0 0;
+  text-align: center;
+  font-size: 0.95em;
+  color: var(--pw-text);
+  line-height: 1.45;
+  min-height: 1.8em;
+}
+
+.photo-wall-empty {
+  margin: 0;
+  text-align: center;
+  color: var(--pw-text);
+  opacity: 0.86;
+  background: var(--pw-surface);
+  border: 1px dashed var(--pw-border);
+  border-radius: var(--pw-radius);
+  max-width: min(620px, 100%);
+  margin-inline: auto;
+  padding: 0.9rem 1rem;
+}
+
+.photo-wall-empty-action {
+  margin: 0.45rem 0 0;
+  text-align: center;
+}
+
+.photo-wall-empty-action a {
+  font-size: 0.86rem;
+  color: var(--blog-link);
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .photowall-room {
+    padding: 14px 10px 28px;
+    border-radius: 10px;
+  }
+
+  .photo-wall-grid {
+    width: 100%;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .photo-item .frame {
+    padding: 8px;
+  }
+}

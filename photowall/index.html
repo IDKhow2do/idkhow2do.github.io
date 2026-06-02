@@ -36,7 +36,13 @@
                 "name": "龙山"
             },"description": ""
     }
-    </script></head>
+    </script><link rel="stylesheet" href="/css/blog-design-tokens.css">
+<link rel="stylesheet" href="/css/fonts.css">
+<link rel="stylesheet" href="/css/home-enhance.css">
+<link rel="stylesheet" href="/css/photowall-enhance.css">
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script defer src="/js/home-motion.js"></script>
+</head>
     <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
         <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
@@ -79,194 +85,42 @@
             </a></div>
     </div>
 </header><main class="main">
-                <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">照片墙</h1><div class="content" id="content"><div id="exhibition-room" aria-label="照片墙">
-  <div class="light-source left" aria-hidden="true"></div>
-  <div class="light-source right" aria-hidden="true"></div>
-  <div id="photo-wall" aria-live="polite">
-    
-    <div class="photo-item">
-      <a href="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202305230022661.JPG" target="_blank" class="frame">
-        <img src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202305230022661.JPG" alt="好看的帽子">
-        <div class="photo-description">好看的帽子</div>
+                <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">照片墙</h1><div class="content" id="content"><div id="exhibition-room" class="photowall-room" aria-label="照片墙"><div id="photo-wall" class="photo-wall-grid" aria-live="polite">
+    <article class="photo-item">
+      <a href="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202305230022661.JPG" target="_blank" rel="noopener noreferrer" class="frame" aria-label="查看原图：好看的帽子">
+        <img src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202305230022661.JPG" alt="好看的帽子" loading="lazy" decoding="async" class="photo-thumb" width="960" height="540">
+        <p class="photo-description">好看的帽子</p>
       </a>
-    </div>
-    
-    <div class="photo-item">
-      <a href="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202305230018050.JPG" target="_blank" class="frame">
-        <img src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202305230018050.JPG" alt="故宫">
-        <div class="photo-description">北京故宫</div>
+    </article>
+    <article class="photo-item">
+      <a href="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202305230018050.JPG" target="_blank" rel="noopener noreferrer" class="frame" aria-label="查看原图：北京故宫">
+        <img src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202305230018050.JPG" alt="故宫" loading="lazy" decoding="async" class="photo-thumb" width="960" height="540">
+        <p class="photo-description">北京故宫</p>
       </a>
-    </div>
-    
-    <div class="photo-item">
-      <a href="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202305230056374.JPG" target="_blank" class="frame">
-        <img src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202305230056374.JPG" alt="不认识但是新婚快乐">
-        <div class="photo-description">不认识但是新婚快乐</div>
+    </article>
+    <article class="photo-item">
+      <a href="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202305230056374.JPG" target="_blank" rel="noopener noreferrer" class="frame" aria-label="查看原图：不认识但是新婚快乐">
+        <img src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202305230056374.JPG" alt="不认识但是新婚快乐" loading="lazy" decoding="async" class="photo-thumb" width="960" height="540">
+        <p class="photo-description">不认识但是新婚快乐</p>
       </a>
-    </div>
-    
-    <div class="photo-item">
-      <a href="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202404070046157.jpg" target="_blank" class="frame">
-        <img src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202404070046157.jpg" alt="龙头香">
-        <div class="photo-description">龙头香</div>
+    </article>
+    <article class="photo-item">
+      <a href="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202404070046157.jpg" target="_blank" rel="noopener noreferrer" class="frame" aria-label="查看原图：龙头香">
+        <img src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202404070046157.jpg" alt="龙头香" loading="lazy" decoding="async" class="photo-thumb" width="960" height="540">
+        <p class="photo-description">龙头香</p>
       </a>
-    </div>
-    
-    <div class="photo-item">
-      <a href="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202401041635300.png" target="_blank" class="frame">
-        <img src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202401041635300.png" alt="装机一气呵成">
-        <div class="photo-description">装机一气呵成</div>
+    </article>
+    <article class="photo-item">
+      <a href="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202401041635300.png" target="_blank" rel="noopener noreferrer" class="frame" aria-label="查看原图：装机一气呵成">
+        <img src="https://mayue-1312060474.cos.ap-chengdu.myqcloud.com/picgo/202401041635300.png" alt="装机一气呵成" loading="lazy" decoding="async" class="photo-thumb" width="960" height="540">
+        <p class="photo-description">装机一气呵成</p>
       </a>
-    </div>
+    </article>
     
   </div>
+  
 </div>
-
-<style>
-  #exhibition-room {
-    --pw-bg: #f7f4ef;
-    --pw-card-bg: rgba(255, 255, 255, 0.96);
-    --pw-text: #2a2a2a;
-    --pw-shadow: rgba(0, 0, 0, 0.18);
-    --pw-glow: rgba(255, 255, 255, 0.55);
-    position: relative;
-    isolation: isolate;
-    padding: clamp(32px, 4vw, 72px) clamp(18px, 7vw, 96px);
-    background:
-      radial-gradient(circle at 15% 5%, var(--pw-glow) 0%, transparent 55%),
-      radial-gradient(circle at 85% 0%, var(--pw-glow) 0%, transparent 55%),
-      var(--pw-bg);
-    border-radius: 16px;
-    overflow: hidden;
-  }
-
-  body[theme='dark'] #exhibition-room {
-    --pw-bg: #0f1115;
-    --pw-card-bg: rgba(28, 30, 36, 0.94);
-    --pw-text: #f8f2e3;
-    --pw-shadow: rgba(0, 0, 0, 0.58);
-    --pw-glow: rgba(245, 201, 98, 0.32);
-  }
-
-  .light-source {
-    position: absolute;
-    width: 40vw;
-    max-width: 520px;
-    aspect-ratio: 1 / 1;
-    background: radial-gradient(circle, var(--pw-glow) 0%, transparent 70%);
-    opacity: 0.6;
-    pointer-events: none;
-    z-index: 0;
-    filter: blur(2px);
-  }
-
-  .light-source.left {
-    top: -18vw;
-    left: -8vw;
-  }
-
-  .light-source.right {
-    top: -10vw;
-    right: -6vw;
-  }
-
-  #photo-wall {
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-    gap: clamp(16px, 2vw, 28px);
-    width: min(100%, 1200px);
-    margin: 0 auto;
-  }
-
-  .photo-item {
-    perspective: 1400px;
-  }
-
-  .frame {
-    display: block;
-    padding: clamp(10px, 1.8vw, 16px);
-    background: linear-gradient(155deg, rgba(255, 214, 120, 0.16), transparent 55%), var(--pw-card-bg);
-    border-radius: 18px;
-    box-shadow: 0 18px 36px var(--pw-shadow);
-    transition: transform 0.35s ease, box-shadow 0.35s ease;
-    transform-style: preserve-3d;
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .frame img {
-    width: 100%;
-    height: clamp(200px, 28vh, 320px);
-    object-fit: cover;
-    border-radius: 12px;
-    display: block;
-  }
-
-  .photo-description {
-    margin-top: 14px;
-    text-align: center;
-    font-size: 0.95em;
-    color: var(--pw-text);
-    letter-spacing: 0.5px;
-  }
-
-  @media (max-width: 600px) {
-    #exhibition-room {
-      padding: 28px 16px 48px;
-      border-radius: 12px;
-    }
-
-    #photo-wall {
-      width: 100%;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    }
-
-    .frame img {
-      height: clamp(180px, 34vh, 260px);
-    }
-  }
-</style>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const photos = document.querySelectorAll('#photo-wall .photo-item');
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  if (reduceMotion) {
-    photos.forEach(photo => {
-      const frame = photo.querySelector('.frame');
-      frame.style.transition = 'none';
-    });
-    return;
-  }
-
-  photos.forEach(photo => {
-    const frame = photo.querySelector('.frame');
-
-    photo.addEventListener('mousemove', (event) => {
-      const { left, top, width, height } = photo.getBoundingClientRect();
-      const x = event.clientX - left;
-      const y = event.clientY - top;
-
-      const rotateY = (x / width - 0.5) * 20;
-      const rotateX = (y / height - 0.5) * -20;
-
-      frame.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.04)`;
-      frame.style.boxShadow = `
-        ${-rotateY * 0.6}px ${rotateX * 0.6}px 28px rgba(15, 18, 25, 0.3),
-        0 18px 32px var(--pw-shadow)
-      `;
-    });
-
-    photo.addEventListener('mouseleave', () => {
-      frame.style.transform = 'rotateX(0) rotateY(0) scale(1)';
-      frame.style.boxShadow = `0 18px 36px var(--pw-shadow)`;
-    });
-  });
-});
-</script>
+<script src="/js/photowall-enhance.js" defer></script>
 
 </div><div id="comments"><div id="gitalk" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.
@@ -274,13 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">龙山</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
-    </footer><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=419596181&auto=1&height=66"></iframe>
-
-<a href="https://info.flagcounter.com/qhiN"><img src="https://s01.flagcounter.com/mini/qhiN/bg_FCF7FF/txt_000000/border_278FCC/flags_0/" alt="Flag Counter" border="0"></a>
-
-
-
-</div>
+    </footer></div>
 
         <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
                 <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
