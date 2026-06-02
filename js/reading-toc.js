@@ -28,7 +28,6 @@
 
     button.type = 'button';
     button.className = 'reading-toc-toggle';
-    button.textContent = '目录';
     button.setAttribute('aria-controls', 'toc-static');
     button.setAttribute('aria-expanded', 'false');
     button.setAttribute('aria-label', '打开目录');
@@ -70,6 +69,10 @@
       if (isMobileToc()) setOpen(false);
     }
 
+    function shouldKeepOpen(event) {
+      return tocStatic.contains(event.target) || button.contains(event.target);
+    }
+
     button.addEventListener('click', function () {
       setOpen(!document.body.classList.contains('reading-toc-open'));
     });
@@ -78,6 +81,16 @@
 
     tocStatic.addEventListener('click', function (event) {
       if (event.target.closest('a')) closeIfMobile();
+    });
+
+    document.addEventListener('pointerdown', function (event) {
+      if (
+        document.body.classList.contains('reading-toc-open') &&
+        isMobileToc() &&
+        !shouldKeepOpen(event)
+      ) {
+        closeIfMobile();
+      }
     });
 
     document.addEventListener('keydown', function (event) {
@@ -93,19 +106,21 @@
       }
     }, { passive: true });
 
-    window.addEventListener('wheel', function () {
+    window.addEventListener('wheel', function (event) {
       if (
         document.body.classList.contains('reading-toc-open') &&
-        Date.now() - lastOpenedAt > 160
+        Date.now() - lastOpenedAt > 160 &&
+        !shouldKeepOpen(event)
       ) {
         closeIfMobile();
       }
     }, { passive: true });
 
-    window.addEventListener('touchmove', function () {
+    window.addEventListener('touchmove', function (event) {
       if (
         document.body.classList.contains('reading-toc-open') &&
-        Date.now() - lastOpenedAt > 160
+        Date.now() - lastOpenedAt > 160 &&
+        !shouldKeepOpen(event)
       ) {
         closeIfMobile();
       }

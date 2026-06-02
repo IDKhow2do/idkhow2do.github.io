@@ -39,26 +39,32 @@
 
 @media only screen and (max-width: 960px) {
   #toc-static {
-    background: var(--blog-surface);
-    border-right: 1px solid var(--blog-border);
-    bottom: 0;
-    box-shadow: var(--blog-shadow-strong);
+    -webkit-backdrop-filter: blur(14px) saturate(1.08);
+    backdrop-filter: blur(14px) saturate(1.08);
+    background: rgb(255 255 255 / 0.88);
+    border: 1px solid rgb(216 221 216 / 0.82);
+    border-left: 0;
+    border-radius: 0 20px 20px 0;
+    bottom: auto;
+    box-shadow: 0 4px 14px rgb(24 31 26 / 0.12);
     display: block !important;
     left: 0;
     margin: 0;
-    max-width: calc(100vw - 3rem);
+    max-height: min(62dvh, 34rem);
+    max-width: calc(100vw - 4.5rem);
     overflow: hidden;
-    padding-top: max(0.75rem, env(safe-area-inset-top));
     position: fixed;
-    top: 0;
-    transform: translateX(-105%);
+    top: max(5.25rem, calc(env(safe-area-inset-top) + 5rem));
+    transform: translateX(calc(-100% - 0.5rem));
     transition: transform 180ms ease-out;
-    width: 22rem;
+    width: min(62vw, 15rem);
     z-index: var(--blog-z-modal);
   }
 
-  body.reading-toc-open {
-    overflow: hidden;
+  body[theme='dark'] #toc-static {
+    background: rgb(29 33 30 / 0.88);
+    border-color: rgb(57 65 59 / 0.84);
+    box-shadow: 0 5px 16px rgb(0 0 0 / 0.28);
   }
 
   body.reading-toc-open #toc-static {
@@ -66,57 +72,69 @@
   }
 
   #toc-static .toc-title {
-    align-items: center;
-    background: var(--blog-surface);
-    border-bottom: 1px solid var(--blog-border);
-    color: var(--blog-text);
-    cursor: pointer;
-    display: flex;
-    font-size: 1rem;
-    justify-content: space-between;
-    line-height: 1.4;
-    padding: 0.85rem 1rem;
+    display: none;
   }
 
   #toc-static .toc-content {
-    background: var(--blog-surface);
-    max-height: calc(100dvh - 4rem);
+    max-height: min(62dvh, 34rem);
+    overscroll-behavior: contain;
     overflow: auto;
-    padding-bottom: max(1.25rem, env(safe-area-inset-bottom));
+    -webkit-overflow-scrolling: touch;
   }
 
   #toc-static .toc-content > nav > ul {
     margin: 0;
-    padding: 0.75rem 1rem 1.25rem 1.6rem;
+    padding: 0.8rem 0.9rem 0.9rem 1.15rem;
   }
 
   #toc-static .toc-content a {
     color: var(--blog-text);
-    line-height: 1.55;
+    display: block;
+    font-size: 0.92rem;
+    line-height: 1.45;
+    padding: 0.18rem 0;
   }
 
   .reading-toc-toggle {
     align-items: center;
-    background: var(--blog-surface);
-    border: 1px solid var(--blog-border);
-    border-radius: 999px;
-    box-shadow: var(--blog-shadow-card);
+    -webkit-backdrop-filter: blur(12px) saturate(1.08);
+    backdrop-filter: blur(12px) saturate(1.08);
+    background: rgb(255 255 255 / 0.72);
+    border: 1px solid rgb(216 221 216 / 0.78);
+    border-left: 0;
+    border-radius: 0 999px 999px 0;
+    box-shadow: 0 3px 10px rgb(24 31 26 / 0.1);
     color: var(--blog-text);
     display: inline-flex;
-    font: inherit;
-    gap: 0.35rem;
-    left: max(0.8rem, env(safe-area-inset-left));
+    font-size: 0;
+    height: 4.35rem;
+    justify-content: center;
+    left: 0;
     line-height: 1;
-    padding: 0.72rem 0.9rem;
+    padding: 0;
     position: fixed;
-    top: max(4.4rem, calc(env(safe-area-inset-top) + 0.85rem));
+    top: max(45dvh, calc(env(safe-area-inset-top) + 9rem));
+    transform: translateX(0);
+    transition: transform 180ms ease-out, opacity 180ms ease-out;
+    width: max(2.2rem, calc(env(safe-area-inset-left) + 2.2rem));
     z-index: var(--blog-z-tooltip);
   }
 
+  body[theme='dark'] .reading-toc-toggle {
+    background: rgb(29 33 30 / 0.72);
+    border-color: rgb(57 65 59 / 0.78);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.24);
+  }
+
   .reading-toc-toggle::before {
-    content: "☰";
-    font-size: 0.95rem;
+    background: currentColor;
+    border-radius: 999px;
+    box-shadow: 0 -0.45rem 0 currentColor, 0 0.45rem 0 currentColor;
+    content: "";
+    height: 2px;
     line-height: 1;
+    opacity: 0.72;
+    width: 0.9rem;
   }
 
   body.reading-toc-open .reading-toc-toggle {
@@ -125,22 +143,7 @@
   }
 
   .reading-toc-backdrop {
-    background: rgb(0 0 0 / 0.18);
-    bottom: 0;
-    display: block;
-    left: 0;
-    opacity: 0;
-    pointer-events: none;
-    position: fixed;
-    right: 0;
-    top: 0;
-    transition: opacity 180ms ease-out;
-    z-index: var(--blog-z-overlay);
-  }
-
-  body.reading-toc-open .reading-toc-backdrop {
-    opacity: 1;
-    pointer-events: auto;
+    display: none;
   }
 }
 
