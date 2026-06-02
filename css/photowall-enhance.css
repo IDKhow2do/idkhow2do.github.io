@@ -5,8 +5,7 @@
   --pw-border: var(--blog-border);
   --pw-surface: var(--blog-surface);
   --pw-accent: var(--blog-link);
-  --pw-overlay: rgb(246 247 245 / 0.92);
-  --pw-dialog-shadow: 0 24px 80px rgb(22 27 23 / 0.18);
+  --pw-overlay: var(--blog-bg);
 
   position: relative;
   left: 50%;
@@ -28,8 +27,7 @@
 }
 
 body[theme='dark'] .photowall-room {
-  --pw-overlay: rgb(21 23 21 / 0.92);
-  --pw-dialog-shadow: 0 24px 80px rgb(0 0 0 / 0.46);
+  --pw-overlay: var(--blog-bg);
 }
 
 .photowall-hero {
@@ -175,20 +173,28 @@ body[theme='dark'] .photowall-room {
 }
 
 .photo-viewer {
-  width: min(100vw - 32px, 1500px);
+  --pw-bg: var(--blog-bg);
+  --pw-text: var(--blog-text);
+  --pw-muted: var(--blog-text-weak);
+  --pw-border: var(--blog-border);
+  --pw-surface: var(--blog-surface);
+  --pw-accent: var(--blog-link);
+  --pw-overlay: var(--blog-bg);
+
+  width: 100vw;
   max-width: none;
-  height: min(100dvh - 32px, 920px);
+  height: 100dvh;
   max-height: none;
   box-sizing: border-box;
   margin: auto;
   padding: 0;
   border: 0;
-  background: transparent;
+  background: var(--pw-overlay);
   color: var(--pw-text);
 }
 
 .photo-viewer::backdrop {
-  background: color-mix(in srgb, var(--pw-bg) 80%, transparent);
+  background: var(--pw-overlay);
 }
 
 .photo-viewer[open] {
@@ -204,9 +210,8 @@ body[theme='dark'] .photowall-room {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  padding: clamp(18px, 3.2vw, 48px);
+  padding: clamp(28px, 4.5vw, 74px);
   background: var(--pw-overlay);
-  box-shadow: var(--pw-dialog-shadow);
 }
 
 .photo-viewer-figure {
