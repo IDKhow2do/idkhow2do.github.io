@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>周报 - Tag - 一夔的小窝</title>
-        <link>http://maequeen.top/tags/%E5%91%A8%E6%8A%A5/</link>
+        <link>https://blog.maequeen.top/tags/%E5%91%A8%E6%8A%A5/</link>
         <description>周报 - Tag - 一夔的小窝</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>my_ddup@163.com (龙山)</managingEditor>
-            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Tue, 04 Nov 2025 00:30:00 &#43;0800</lastBuildDate><atom:link href="http://maequeen.top/tags/%E5%91%A8%E6%8A%A5/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>my_ddup@163.com (龙山)</webMaster><lastBuildDate>Tue, 04 Nov 2025 00:30:00 &#43;0800</lastBuildDate><atom:link href="https://blog.maequeen.top/tags/%E5%91%A8%E6%8A%A5/" rel="self" type="application/rss+xml" /><item>
     <title>3-1：没有上进心</title>
-    <link>http://maequeen.top/posts/3-1-unambitious/</link>
+    <link>https://blog.maequeen.top/posts/3-1-unambitious/</link>
     <pubDate>Tue, 04 Nov 2025 00:30:00 &#43;0800</pubDate>
     <author>龙山</author>
-    <guid>http://maequeen.top/posts/3-1-unambitious/</guid>
+    <guid>https://blog.maequeen.top/posts/3-1-unambitious/</guid>
     <description><![CDATA[2025 年即将过去，现在是 11.11 夜，我决定重启我的周报，可能会比较简短，但我就是不想有什么压力，想随心所欲的，自由自在的，随便下去&hellip; 没上]]></description>
 </item>
 </channel>
