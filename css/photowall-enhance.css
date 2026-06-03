@@ -102,24 +102,12 @@ body[theme='dark'] .photowall-room {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  aspect-ratio: auto;
+  object-fit: contain;
   background: var(--pw-surface);
   transition:
     transform 180ms ease-out,
     opacity 180ms ease-out;
-}
-
-.frame.is-tall .photo-thumb {
-  aspect-ratio: 3 / 4;
-}
-
-.frame.is-square .photo-thumb {
-  aspect-ratio: 1 / 1;
-}
-
-.frame.is-wide .photo-thumb {
-  aspect-ratio: 16 / 10;
 }
 
 .photo-item .frame:hover .photo-thumb,
@@ -376,14 +364,6 @@ body.photo-viewer-open {
 
   .photo-item:nth-child(n) {
     margin-top: 0;
-  }
-
-  .photo-thumb,
-  .frame.is-tall .photo-thumb,
-  .frame.is-square .photo-thumb,
-  .frame.is-wide .photo-thumb {
-    aspect-ratio: auto;
-    max-height: 72dvh;
   }
 
   .photo-viewer-shell {
