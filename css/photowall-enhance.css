@@ -222,6 +222,12 @@ body[theme='dark'] .photowall-room {
   object-fit: contain;
 }
 
+.photo-viewer.is-portrait-photo .photo-viewer-image {
+  width: auto;
+  height: 100dvh;
+  max-height: 100dvh;
+}
+
 .photo-viewer-copy {
   align-self: center;
   max-width: 34rem;
