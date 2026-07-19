@@ -1,6 +1,28 @@
+/**
+ * [INPUT]: 依赖 static/fonts/LXGWWenKai-Regular.ttf 提供本地霞鹜文楷字形
+ * [OUTPUT]: 对外提供全站正文、标题与表单控件的字体族覆盖
+ * [POS]: static/css 的全局字体入口，由 Hugo 头部模板加载并覆盖 LoveIt 主题默认字体
+ * [PROTOCOL]: 变更时更新此头部，然后检查 CLAUDE.md
+ */
+@font-face {
+  font-family: "LXGW WenKai";
+  src: url("/fonts/LXGWWenKai-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LXGW WenKai";
+  src: url("/fonts/LXGWWenKai-Regular.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --global-font-family: "Hedvig Letters Serif", "Noto Serif SC", "Songti SC", "Microsoft YaHei", serif;
-  --header-title-font-family: "Hedvig Letters Serif", "Noto Serif SC", "Songti SC", "Microsoft YaHei", serif;
+  --global-font-family: "LXGW WenKai", "Noto Serif SC", "Songti SC", "Microsoft YaHei", serif;
+  --header-title-font-family: "LXGW WenKai", "Noto Serif SC", "Songti SC", "Microsoft YaHei", serif;
 }
 
 html,
@@ -9,7 +31,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Hedvig Letters Serif", "Noto Serif SC", "Songti SC", "Microsoft YaHei", serif;
+  font-family: "LXGW WenKai", "Noto Serif SC", "Songti SC", "Microsoft YaHei", serif;
 }
 
 h1,
@@ -18,6 +40,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Hedvig Letters Serif", "Noto Serif SC", "Songti SC", serif;
+  font-family: "LXGW WenKai", "Noto Serif SC", "Songti SC", serif;
   font-weight: 600;
 }
