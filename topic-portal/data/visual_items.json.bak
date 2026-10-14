@@ -1,0 +1,37 @@
+{
+  "exportStatus": "partial",
+  "siteTotalVerified": 113,
+  "exportedCount": 1,
+  "items": [
+    {
+      "title": "待核实 · @Philo2022 · 2109541760376656036",
+      "category": "video",
+      "source": "https://x.com/Philo2022/status/2109541760376656036",
+      "previewUrl": "",
+      "previewType": "image",
+      "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-12 UTC 公开读取原帖缓存未命中，未取得正文、预览或原始提示词。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、互动热度与许可均未核实；未复制媒体或原文。",
+      "attribution": "原帖链接账号：@Philo2022；真实作者及授权待核实",
+      "tags": [
+        "用户指定收纳",
+        "待核实",
+        "待分类",
+        "正文缺失",
+        "预览缺失",
+        "提示词缺失"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-12T16:22:38.783Z",
+      "updatedAt": "2026-10-12T16:22:45.396Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  ]
+}

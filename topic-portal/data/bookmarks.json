@@ -1,2259 +1,2428 @@
 [
- {
-  "id": "x-2108396358520717759",
-  "title": "@indie_maker_fox · 2108396358520717759",
-  "author_handle": "indie_maker_fox",
-  "post_id": "2108396358520717759",
-  "url": "https://x.com/indie_maker_fox/status/2108396358520717759?s=46",
-  "canonical_url": "https://x.com/indie_maker_fox/status/2108396358520717759",
-  "original_urls": [
-   "https://x.com/indie_maker_fox/status/2108396358520717759?s=46"
-  ],
-  "source_batches": [
-   "用户首批24条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/indie_maker_fox/status/2108396358520717759",
-  "site_title": "待核实 · @indie_maker_fox · 2108396358520717759",
-  "site_record": {
-   "title": "待核实 · @indie_maker_fox · 2108396358520717759",
-   "category": "video",
-   "source": "https://x.com/indie_maker_fox/status/2108396358520717759",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@indie_maker_fox；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:16:28.961Z",
-   "updatedAt": "2026-10-11T18:16:33.545Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
+  {
+    "id": "x-2108396358520717759",
+    "title": "如何让 AI 帮助我们理解 AI 的输出",
+    "author_handle": "indie_maker_fox",
+    "post_id": "2108396358520717759",
+    "url": "https://x.com/indie_maker_fox/status/2108396358520717759?s=46",
+    "canonical_url": "https://x.com/indie_maker_fox/status/2108396358520717759",
+    "original_urls": [
+      "https://x.com/indie_maker_fox/status/2108396358520717759?s=46"
+    ],
+    "source_batches": [
+      "用户首批24条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/profile_images/1905643474952880129/HiunneWW_400x400.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/indie_maker_fox/status/2108396358520717759",
+    "site_title": "如何让 AI 帮助我们理解 AI 的输出",
+    "site_record": {
+      "title": "如何让 AI 帮助我们理解 AI 的输出",
+      "category": "video",
+      "source": "https://x.com/indie_maker_fox/status/2108396358520717759",
+      "previewUrl": "https://pbs.twimg.com/profile_images/1905643474952880129/HiunneWW_400x400.jpg",
+      "previewType": "image",
+      "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108396358520717759。",
+      "attribution": "@indie_maker_fox",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "头像作封面"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:16:28.961Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2109163115627913394",
+    "title": "我愿称之为史上最强 skills",
+    "author_handle": "dingyi",
+    "post_id": "2109163115627913394",
+    "url": "https://x.com/dingyi/status/2109163115627913394?s=46",
+    "canonical_url": "https://x.com/dingyi/status/2109163115627913394",
+    "original_urls": [
+      "https://x.com/dingyi/status/2109163115627913394?s=46"
+    ],
+    "source_batches": [
+      "用户首批24条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/amplify_video_thumb/2109163086301233152/img/w9ZXXtbWrXm_r0Jc.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/dingyi/status/2109163115627913394",
+    "site_title": "我愿称之为史上最强 skills",
+    "site_record": {
+      "title": "我愿称之为史上最强 skills",
+      "category": "video",
+      "source": "https://x.com/dingyi/status/2109163115627913394",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2109163086301233152/img/w9ZXXtbWrXm_r0Jc.jpg",
+      "previewType": "image",
+      "description": "我愿称之为史上最强 skills",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2109163115627913394。",
+      "attribution": "@dingyi",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:17:22.200Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2109317576123904386",
+    "title": "我不允许认识我的任何一个人再被封号。Baga。",
+    "author_handle": "chunxiangai",
+    "post_id": "2109317576123904386",
+    "url": "https://x.com/chunxiangai/status/2109317576123904386?s=46",
+    "canonical_url": "https://x.com/chunxiangai/status/2109317576123904386",
+    "original_urls": [
+      "https://x.com/chunxiangai/status/2109317576123904386?s=46"
+    ],
+    "source_batches": [
+      "用户首批24条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/media/HUXNJbdWkAAmy-S.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/chunxiangai/status/2109317576123904386",
+    "site_title": "我不允许认识我的任何一个人再被封号。Baga。",
+    "site_record": {
+      "title": "我不允许认识我的任何一个人再被封号。Baga。",
+      "category": "video",
+      "source": "https://x.com/chunxiangai/status/2109317576123904386",
+      "previewUrl": "https://pbs.twimg.com/media/HUXNJbdWkAAmy-S.jpg",
+      "previewType": "image",
+      "description": "我不允许认识我的任何一个人再被封号。Baga。",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2109317576123904386。",
+      "attribution": "@chunxiangai",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:17:31.338Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2109183217060479174",
+    "title": "Anthropic 这次出手挺大方，22 门 Claude 课程直接全免，一分钱不要。 我把这些课挨个过了一遍，坦白说，有些内容比较凑数，有…",
+    "author_handle": "shenxiankk",
+    "post_id": "2109183217060479174",
+    "url": "https://x.com/shenxiankk/status/2109183217060479174?s=46",
+    "canonical_url": "https://x.com/shenxiankk/status/2109183217060479174",
+    "original_urls": [
+      "https://x.com/shenxiankk/status/2109183217060479174?s=46"
+    ],
+    "source_batches": [
+      "用户首批24条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/media/HUQXL8taIAAK_Dg.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/shenxiankk/status/2109183217060479174",
+    "site_title": "Anthropic 这次出手挺大方，22 门 Claude 课程直接全免，一分钱不要。 我把这些课挨个过了一遍，坦白说，有些内容比较凑数，有…",
+    "site_record": {
+      "title": "Anthropic 这次出手挺大方，22 门 Claude 课程直接全免，一分钱不要。 我把这些课挨个过了一遍，坦白说，有些内容比较凑数，有…",
+      "category": "video",
+      "source": "https://x.com/shenxiankk/status/2109183217060479174",
+      "previewUrl": "https://pbs.twimg.com/media/HUQXL8taIAAK_Dg.jpg",
+      "previewType": "image",
+      "description": "Anthropic 这次出手挺大方，22 门 Claude 课程直接全免，一分钱不要。 我把这些课挨个过了一遍，坦白说，有些内容比较凑数，有些确实值得花时间。怕你没头绪乱点，我按从零基础到进阶的顺序给你理好了，跟着走就行。 一、先打地基，别上来就挑难的 01 Claude 101 🔗 02 Claude 协作入门 🔗 二、搞代码的重点看这几门，Claude Code 现在真能顶事 03 Claude Code 101 🔗 04 Claude Code 实战 🔗 05 Agent 技能入门 🔗 06 Subagents 子代理入门 🔗 三、打算接 A…",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2109183217060479174。",
+      "attribution": "@shenxiankk",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:17:40.083Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2109131881698541846",
+    "title": "摊牌了，我抄袭了3位大佬的作品！！！ 事情是这样的，写完的内容多平台分发一直是一个痛点 @kaitoxhacker 的“Kaitox for…",
+    "author_handle": "369Serena",
+    "post_id": "2109131881698541846",
+    "url": "https://x.com/369serena/status/2109131881698541846?s=46",
+    "canonical_url": "https://x.com/369serena/status/2109131881698541846",
+    "original_urls": [
+      "https://x.com/369serena/status/2109131881698541846?s=46"
+    ],
+    "source_batches": [
+      "用户首批24条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/amplify_video_thumb/2108907207903334400/img/RCYqlAM4v4qfxQFl.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/369serena/status/2109131881698541846",
+    "site_title": "摊牌了，我抄袭了3位大佬的作品！！！ 事情是这样的，写完的内容多平台分发一直是一个痛点 @kaitoxhacker 的“Kaitox for…",
+    "site_record": {
+      "title": "摊牌了，我抄袭了3位大佬的作品！！！ 事情是这样的，写完的内容多平台分发一直是一个痛点 @kaitoxhacker 的“Kaitox for…",
+      "category": "video",
+      "source": "https://x.com/369serena/status/2109131881698541846",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2108907207903334400/img/RCYqlAM4v4qfxQFl.jpg",
+      "previewType": "image",
+      "description": "摊牌了，我抄袭了3位大佬的作品！！！ 事情是这样的，写完的内容多平台分发一直是一个痛点 @kaitoxhacker 的“Kaitox for Obsidian”的插件真的很丝滑可以把obsidian里的文章导入到X草稿箱，但是缺了一个推送到公众号草稿箱功能。 等不及他更新，我就使用 Claude 结合 @xilo2991 老师的\"WeChatPB\"公众号插件把功能合起来了。 现在这个 obsidian 插件叫“SerenaPost”可以对文章进行排版，一键推送到微信公众号和 X 草稿箱。 公众号排版美化方面参考了@AdrianPunk115 的“公…",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2109131881698541846。",
+      "attribution": "@369Serena",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:17:47.822Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2109253202604589074",
+    "title": "AI同质化如何选题：从入门到榨干",
+    "author_handle": "noahduck283",
+    "post_id": "2109253202604589074",
+    "url": "https://x.com/noahduck283/status/2109253202604589074?s=46",
+    "canonical_url": "https://x.com/noahduck283/status/2109253202604589074",
+    "original_urls": [
+      "https://x.com/noahduck283/status/2109253202604589074?s=46"
+    ],
+    "source_batches": [
+      "用户首批24条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/profile_images/2106403106812731392/s9iU0RxU_400x400.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/noahduck283/status/2109253202604589074",
+    "site_title": "AI同质化如何选题：从入门到榨干",
+    "site_record": {
+      "title": "AI同质化如何选题：从入门到榨干",
+      "category": "video",
+      "source": "https://x.com/noahduck283/status/2109253202604589074",
+      "previewUrl": "https://pbs.twimg.com/profile_images/2106403106812731392/s9iU0RxU_400x400.jpg",
+      "previewType": "image",
+      "description": "为什么同样的热点，别人发能爆，你跟着发却没人看？",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2109253202604589074。",
+      "attribution": "@noahduck283",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "头像作封面"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:18:50.092Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2108856288130306126",
+    "title": "兄弟们，我爆肝了半个月，把 AI 画图能用到的风格全部梳理了一遍！ 13 大领域，157 个谱系，1617 种风格！ 起因很简单：做图做久了…",
+    "author_handle": "MANISH1027512",
+    "post_id": "2108856288130306126",
+    "url": "https://x.com/manish1027512/status/2108856288130306126?s=46",
+    "canonical_url": "https://x.com/manish1027512/status/2108856288130306126",
+    "original_urls": [
+      "https://x.com/manish1027512/status/2108856288130306126?s=46"
+    ],
+    "source_batches": [
+      "用户首批24条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/amplify_video_thumb/2108854518624755713/img/lCJL_YB6rKmUs5eo.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/manish1027512/status/2108856288130306126",
+    "site_title": "兄弟们，我爆肝了半个月，把 AI 画图能用到的风格全部梳理了一遍！ 13 大领域，157 个谱系，1617 种风格！ 起因很简单：做图做久了…",
+    "site_record": {
+      "title": "兄弟们，我爆肝了半个月，把 AI 画图能用到的风格全部梳理了一遍！ 13 大领域，157 个谱系，1617 种风格！ 起因很简单：做图做久了…",
+      "category": "video",
+      "source": "https://x.com/manish1027512/status/2108856288130306126",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2108854518624755713/img/lCJL_YB6rKmUs5eo.jpg",
+      "previewType": "image",
+      "description": "兄弟们，我爆肝了半个月，把 AI 画图能用到的风格全部梳理了一遍！ 13 大领域，157 个谱系，1617 种风格！ 起因很简单：做图做久了你会发现，难的不是工具，而是你叫不出名字的风格，就写不进 Prompt。 刷到一张神图，憋半天只会写 cinematic, aesthetic, masterpiece，出来的图完全不是那个味儿。 现在工具越来越强，大家缺的其实是风格广度和审美判断，当你见过足够多的风格，你的创作上限也会更高。 所以我做了 VSC 风格图谱： 1. 一张地图逛完所有风格：从巴洛克到赛博朋克，从浮世绘到液态铬，按领域一层层往下逛 …",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108856288130306126。",
+      "attribution": "@MANISH1027512",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:19:02.868Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2108905080040923341",
+    "title": "Lee Robinson 在斯坦福 CS146S 讲 Grok Bot 的工作原理的视频，非常值得一看，把一些 Grok Bot 的内部工作…",
+    "author_handle": "vikingmute",
+    "post_id": "2108905080040923341",
+    "url": "https://x.com/vikingmute/status/2108905080040923341?s=46",
+    "canonical_url": "https://x.com/vikingmute/status/2108905080040923341",
+    "original_urls": [
+      "https://x.com/vikingmute/status/2108905080040923341?s=46"
+    ],
+    "source_batches": [
+      "用户首批24条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/amplify_video_thumb/2108648764923678720/img/a1DYsobNveErgeDc.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/vikingmute/status/2108905080040923341",
+    "site_title": "Lee Robinson 在斯坦福 CS146S 讲 Grok Bot 的工作原理的视频，非常值得一看，把一些 Grok Bot 的内部工作…",
+    "site_record": {
+      "title": "Lee Robinson 在斯坦福 CS146S 讲 Grok Bot 的工作原理的视频，非常值得一看，把一些 Grok Bot 的内部工作…",
+      "category": "video",
+      "source": "https://x.com/vikingmute/status/2108905080040923341",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2108648764923678720/img/a1DYsobNveErgeDc.jpg",
+      "previewType": "image",
+      "description": "Lee Robinson 在斯坦福 CS146S 讲 Grok Bot 的工作原理的视频，非常值得一看，把一些 Grok Bot 的内部工作流程用大白话说的很清楚，里面包含： Always-on Agent 和普通 agent 的区别和设计 Harness设计 Context 工程，如何保持主 agent 轻量 训练方式 我看了很受益，推荐大家也看看",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108905080040923341。",
+      "attribution": "@vikingmute",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:19:10.900Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2109191727177449581",
+    "title": "五个月4万粉，变现6位数：普通人从0开始的𝕏涨粉指北",
+    "author_handle": "AdrianPunk115",
+    "post_id": "2109191727177449581",
+    "url": "https://x.com/adrianpunk115/status/2109191727177449581?s=46",
+    "canonical_url": "https://x.com/adrianpunk115/status/2109191727177449581",
+    "original_urls": [
+      "https://x.com/adrianpunk115/status/2109191727177449581?s=46"
+    ],
+    "source_batches": [
+      "用户首批24条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/profile_images/2074416007964495872/6dxqrywF_400x400.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/adrianpunk115/status/2109191727177449581",
+    "site_title": "五个月4万粉，变现6位数：普通人从0开始的𝕏涨粉指北",
+    "site_record": {
+      "title": "五个月4万粉，变现6位数：普通人从0开始的𝕏涨粉指北",
+      "category": "video",
+      "source": "https://x.com/adrianpunk115/status/2109191727177449581",
+      "previewUrl": "https://pbs.twimg.com/profile_images/2074416007964495872/6dxqrywF_400x400.jpg",
+      "previewType": "image",
+      "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2109191727177449581。",
+      "attribution": "@AdrianPunk115",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "头像作封面"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:19:19.935Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2109198810413228092",
+    "title": "AI 时代，人在没有天花板的地方工作，毫无疑问是未来的生活方式。 而这种生活方式背后的基建之一，是Vibe42 这两天高频使用下来，体验太好…",
+    "author_handle": "yihui_indie",
+    "post_id": "2109198810413228092",
+    "url": "https://x.com/yihui_indie/status/2109198810413228092?s=46",
+    "canonical_url": "https://x.com/yihui_indie/status/2109198810413228092",
+    "original_urls": [
+      "https://x.com/yihui_indie/status/2109198810413228092?s=46"
+    ],
+    "source_batches": [
+      "用户首批24条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/media/HUVhIGbboAA-lXg.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/yihui_indie/status/2109198810413228092",
+    "site_title": "AI 时代，人在没有天花板的地方工作，毫无疑问是未来的生活方式。 而这种生活方式背后的基建之一，是Vibe42 这两天高频使用下来，体验太好…",
+    "site_record": {
+      "title": "AI 时代，人在没有天花板的地方工作，毫无疑问是未来的生活方式。 而这种生活方式背后的基建之一，是Vibe42 这两天高频使用下来，体验太好…",
+      "category": "video",
+      "source": "https://x.com/yihui_indie/status/2109198810413228092",
+      "previewUrl": "https://pbs.twimg.com/media/HUVhIGbboAA-lXg.jpg",
+      "previewType": "image",
+      "description": "AI 时代，人在没有天花板的地方工作，毫无疑问是未来的生活方式。 而这种生活方式背后的基建之一，是Vibe42 这两天高频使用下来，体验太好了，很多细节是真的远程高频使用 Vibe Coding 的人，才会想到的。UU 远程最大的竞争对手来了！",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2109198810413228092。",
+      "attribution": "@yihui_indie",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:19:28.043Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2108948624004526516",
+    "title": "Introducing Anatomy Describe a machine in one line. Claude brings it t…",
+    "author_handle": "wheresryan22",
+    "post_id": "2108948624004526516",
+    "url": "https://x.com/wheresryan22/status/2108948624004526516?s=46",
+    "canonical_url": "https://x.com/wheresryan22/status/2108948624004526516",
+    "original_urls": [
+      "https://x.com/wheresryan22/status/2108948624004526516?s=46"
+    ],
+    "source_batches": [
+      "用户首批24条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/amplify_video_thumb/2108946813889675264/img/_dWHpXtU83mCMxS7.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/wheresryan22/status/2108948624004526516",
+    "site_title": "Introducing Anatomy Describe a machine in one line. Claude brings it t…",
+    "site_record": {
+      "title": "Introducing Anatomy Describe a machine in one line. Claude brings it t…",
+      "category": "video",
+      "source": "https://x.com/wheresryan22/status/2108948624004526516",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2108946813889675264/img/_dWHpXtU83mCMxS7.jpg",
+      "previewType": "image",
+      "description": "Introducing Anatomy Describe a machine in one line. Claude brings it to life. - Interactive isometric wireframes you can rotate, inspect and explore - WebGL shaders for fire, water, plasma and more - Real 3D motion, with individual parts that rotate and move Install it as an a…",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108948624004526516。",
+      "attribution": "@wheresryan22",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:19:37.814Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2099641267726758095",
+    "title": "一篇速通入门：重新理解 AI Agent 的一切",
+    "author_handle": "leoshen0",
+    "post_id": "2099641267726758095",
+    "url": "https://x.com/leoshen0/status/2099641267726758095?s=46",
+    "canonical_url": "https://x.com/leoshen0/status/2099641267726758095",
+    "original_urls": [
+      "https://x.com/leoshen0/status/2099641267726758095?s=46"
+    ],
+    "source_batches": [
+      "用户首批24条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/profile_images/2098877559853461504/NnrVcUCS_400x400.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/leoshen0/status/2099641267726758095",
+    "site_title": "一篇速通入门：重新理解 AI Agent 的一切",
+    "site_record": {
+      "title": "一篇速通入门：重新理解 AI Agent 的一切",
+      "category": "video",
+      "source": "https://x.com/leoshen0/status/2099641267726758095",
+      "previewUrl": "https://pbs.twimg.com/profile_images/2098877559853461504/NnrVcUCS_400x400.jpg",
+      "previewType": "image",
+      "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2099641267726758095。",
+      "attribution": "@leoshen0",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "头像作封面"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:19:45.687Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2108037441005445598",
+    "title": "🔥 发现一个神仙级的「交互式教学工具库」！ 告别无聊单调的 PPT，不用安装任何软件，打开网页直接用。 超级适合课堂投屏演示，或者让学生自主…",
+    "author_handle": "jinglian",
+    "post_id": "2108037441005445598",
+    "url": "https://x.com/jinglian/status/2108037441005445598?s=46",
+    "canonical_url": "https://x.com/jinglian/status/2108037441005445598",
+    "original_urls": [
+      "https://x.com/jinglian/status/2108037441005445598?s=46"
+    ],
+    "source_batches": [
+      "用户首批24条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/amplify_video_thumb/2106739656406769665/img/7qGH6WFLcOt2BTkt.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/jinglian/status/2108037441005445598",
+    "site_title": "🔥 发现一个神仙级的「交互式教学工具库」！ 告别无聊单调的 PPT，不用安装任何软件，打开网页直接用。 超级适合课堂投屏演示，或者让学生自主…",
+    "site_record": {
+      "title": "🔥 发现一个神仙级的「交互式教学工具库」！ 告别无聊单调的 PPT，不用安装任何软件，打开网页直接用。 超级适合课堂投屏演示，或者让学生自主…",
+      "category": "video",
+      "source": "https://x.com/jinglian/status/2108037441005445598",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2106739656406769665/img/7qGH6WFLcOt2BTkt.jpg",
+      "previewType": "image",
+      "description": "🔥 发现一个神仙级的「交互式教学工具库」！ 告别无聊单调的 PPT，不用安装任何软件，打开网页直接用。 超级适合课堂投屏演示，或者让学生自主探究。 强烈推荐推友 WY @akokoi1 开发的这个宝藏网站！ 👇 目前网站的进度与亮点： ✅ 涵盖 4 大基础学科 ✅ 16 个高质量教学演示 ✅ 内容库还在持续更新增加中 ✅ 最良心的是：所有演示【完全免费】查看 🔗 老师们、演讲者们，建议立刻收藏并体验：",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108037441005445598。",
+      "attribution": "@jinglian",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:19:54.883Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2109125320758722921",
+    "title": "总结一下，推荐收藏 Claude Code目前最爽用法：主 Agent + 哑子 Agent 架构。 1. 子 Agent：只管生成，绝不试…",
+    "author_handle": "yanhua1010",
+    "post_id": "2109125320758722921",
+    "url": "https://x.com/yanhua1010/status/2109125320758722921?s=46",
+    "canonical_url": "https://x.com/yanhua1010/status/2109125320758722921",
+    "original_urls": [
+      "https://x.com/yanhua1010/status/2109125320758722921?s=46"
+    ],
+    "source_batches": [
+      "用户首批24条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/profile_images/1998302113592713216/jbKruapM_400x400.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/yanhua1010/status/2109125320758722921",
+    "site_title": "总结一下，推荐收藏 Claude Code目前最爽用法：主 Agent + 哑子 Agent 架构。 1. 子 Agent：只管生成，绝不试…",
+    "site_record": {
+      "title": "总结一下，推荐收藏 Claude Code目前最爽用法：主 Agent + 哑子 Agent 架构。 1. 子 Agent：只管生成，绝不试…",
+      "category": "video",
+      "source": "https://x.com/yanhua1010/status/2109125320758722921",
+      "previewUrl": "https://pbs.twimg.com/profile_images/1998302113592713216/jbKruapM_400x400.jpg",
+      "previewType": "image",
+      "description": "总结一下，推荐收藏 Claude Code目前最爽用法：主 Agent + 哑子 Agent 架构。 1. 子 Agent：只管生成，绝不试错 规则：不 Build、不 Test、不 Typecheck，早提交早返回。 本质：剥离验证环节，防止大模型陷入“越修越乱”的幻觉循环，把上下文消耗压到最低。 2. 任务拆解：正交隔离 调查优先，按文件/模块覆盖面拆分。 本质：用微服务思维降低隐式依赖，从源头把 Git 冲突率降为 0。 3. 主 Agent：集中验证 负责收尾、解冲突、统一 Build 和跑测试。 本质：分布式系统的“两阶段提交”，主 Ag…",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2109125320758722921。",
+      "attribution": "@yanhua1010",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "头像作封面"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:20:03.873Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2097311704547987756",
+    "title": "用Grok Bot搭建自媒体团队：保姆级教程",
+    "author_handle": "AdrianPunk115",
+    "post_id": "2097311704547987756",
+    "url": "https://x.com/adrianpunk115/status/2097311704547987756?s=46",
+    "canonical_url": "https://x.com/adrianpunk115/status/2097311704547987756",
+    "original_urls": [
+      "https://x.com/adrianpunk115/status/2097311704547987756?s=46"
+    ],
+    "source_batches": [
+      "用户首批24条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/profile_images/2074416007964495872/6dxqrywF_400x400.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/adrianpunk115/status/2097311704547987756",
+    "site_title": "用Grok Bot搭建自媒体团队：保姆级教程",
+    "site_record": {
+      "title": "用Grok Bot搭建自媒体团队：保姆级教程",
+      "category": "video",
+      "source": "https://x.com/adrianpunk115/status/2097311704547987756",
+      "previewUrl": "https://pbs.twimg.com/profile_images/2074416007964495872/6dxqrywF_400x400.jpg",
+      "previewType": "image",
+      "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2097311704547987756。",
+      "attribution": "@AdrianPunk115",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "头像作封面"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:20:12.573Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2105311836190978392",
+    "title": "Opus 5.5 Motion Lab: Make Claude Animate Like a Studio",
+    "author_handle": "flxrnc",
+    "post_id": "2105311836190978392",
+    "url": "https://x.com/flxrnc/status/2105311836190978392?s=46",
+    "canonical_url": "https://x.com/flxrnc/status/2105311836190978392",
+    "original_urls": [
+      "https://x.com/flxrnc/status/2105311836190978392?s=46"
+    ],
+    "source_batches": [
+      "用户首批24条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/profile_images/2100596838915092480/4Mv5e9Qa_400x400.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/flxrnc/status/2105311836190978392",
+    "site_title": "Opus 5.5 Motion Lab: Make Claude Animate Like a Studio",
+    "site_record": {
+      "title": "Opus 5.5 Motion Lab: Make Claude Animate Like a Studio",
+      "category": "video",
+      "source": "https://x.com/flxrnc/status/2105311836190978392",
+      "previewUrl": "https://pbs.twimg.com/profile_images/2100596838915092480/4Mv5e9Qa_400x400.jpg",
+      "previewType": "image",
+      "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2105311836190978392。",
+      "attribution": "@flxrnc",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "头像作封面"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:20:28.671Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2109182654503625117",
+    "title": "Three.js 的开发者Mr.doob配享太庙！！ AI 让更多人拥有了创造能力， 而 Three.js 这样的开源项目， 早在十多年前就…",
+    "author_handle": "yyyole",
+    "post_id": "2109182654503625117",
+    "url": "https://x.com/yyyole/status/2109182654503625117?s=46",
+    "canonical_url": "https://x.com/yyyole/status/2109182654503625117",
+    "original_urls": [
+      "https://x.com/yyyole/status/2109182654503625117?s=46"
+    ],
+    "source_batches": [
+      "用户首批24条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/amplify_video_thumb/2108844812518739968/img/g5JJG6C5h_QFEnq6.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/yyyole/status/2109182654503625117",
+    "site_title": "Three.js 的开发者Mr.doob配享太庙！！ AI 让更多人拥有了创造能力， 而 Three.js 这样的开源项目， 早在十多年前就…",
+    "site_record": {
+      "title": "Three.js 的开发者Mr.doob配享太庙！！ AI 让更多人拥有了创造能力， 而 Three.js 这样的开源项目， 早在十多年前就…",
+      "category": "video",
+      "source": "https://x.com/yyyole/status/2109182654503625117",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2108844812518739968/img/g5JJG6C5h_QFEnq6.jpg",
+      "previewType": "image",
+      "description": "Three.js 的开发者Mr.doob配享太庙！！ AI 让更多人拥有了创造能力， 而 Three.js 这样的开源项目， 早在十多年前就开始为这种创造力铺路！！ Three.js 最牛的地方，是把原本复杂、门槛极高的 WebGL 图形编程，封装成了普通前端开发者也能使用的 JavaScript 3D 引擎。 以前，想在网页里实现一个复杂的 3D 场景，需要掌握大量底层图形学知识。 现在，借助 Three.js，任何人都可以用AI相对轻松地实现 3D 模型、粒子特效、物理视觉效果、交互动画、游戏场景，甚至复杂的数字孪生应用。",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2109182654503625117。",
+      "attribution": "@yyyole",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:20:38.017Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2108756204587794666",
+    "title": "万字报告，个人 Agent 竞品分析，谁最适合当你的助理？",
+    "author_handle": "kongge_space",
+    "post_id": "2108756204587794666",
+    "url": "https://x.com/kongge_space/status/2108756204587794666?s=46",
+    "canonical_url": "https://x.com/kongge_space/status/2108756204587794666",
+    "original_urls": [
+      "https://x.com/kongge_space/status/2108756204587794666?s=46"
+    ],
+    "source_batches": [
+      "用户首批24条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/profile_images/2102217863922606080/0ac64XWw_400x400.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/kongge_space/status/2108756204587794666",
+    "site_title": "万字报告，个人 Agent 竞品分析，谁最适合当你的助理？",
+    "site_record": {
+      "title": "万字报告，个人 Agent 竞品分析，谁最适合当你的助理？",
+      "category": "video",
+      "source": "https://x.com/kongge_space/status/2108756204587794666",
+      "previewUrl": "https://pbs.twimg.com/profile_images/2102217863922606080/0ac64XWw_400x400.jpg",
+      "previewType": "image",
+      "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108756204587794666。",
+      "attribution": "@kongge_space",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "头像作封面"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:20:47.008Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2108650243365736855",
+    "title": "How do always-on, proactive agents like @Bot work? Watch my lecture at…",
+    "author_handle": "leerob",
+    "post_id": "2108650243365736855",
+    "url": "https://x.com/leerob/status/2108650243365736855?s=46",
+    "canonical_url": "https://x.com/leerob/status/2108650243365736855",
+    "original_urls": [
+      "https://x.com/leerob/status/2108650243365736855?s=46"
+    ],
+    "source_batches": [
+      "用户首批24条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/amplify_video_thumb/2108648764923678720/img/a1DYsobNveErgeDc.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/leerob/status/2108650243365736855",
+    "site_title": "How do always-on, proactive agents like @Bot work? Watch my lecture at…",
+    "site_record": {
+      "title": "How do always-on, proactive agents like @Bot work? Watch my lecture at…",
+      "category": "video",
+      "source": "https://x.com/leerob/status/2108650243365736855",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2108648764923678720/img/a1DYsobNveErgeDc.jpg",
+      "previewType": "image",
+      "description": "How do always-on, proactive agents like @Bot work? Watch my lecture at Stanford CS146S: 2:35 How we got here 6:13 What changed in the models 10:06 Inside an always-on agent 18:07 The harness 27:26 Context engineering 34:26 Where this is going",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108650243365736855。",
+      "attribution": "@leerob",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:20:55.189Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2109128585806328299",
+    "title": "这个挺好 打开codex直接说“帮我设置 local_thread_store_compression = true” 压缩codex聊天记…",
+    "author_handle": "jesselaunz",
+    "post_id": "2109128585806328299",
+    "url": "https://x.com/jesselaunz/status/2109128585806328299?s=46",
+    "canonical_url": "https://x.com/jesselaunz/status/2109128585806328299",
+    "original_urls": [
+      "https://x.com/jesselaunz/status/2109128585806328299?s=46"
+    ],
+    "source_batches": [
+      "用户首批24条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/media/HUUhJ-8aAAAIDeQ.png",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/jesselaunz/status/2109128585806328299",
+    "site_title": "这个挺好 打开codex直接说“帮我设置 local_thread_store_compression = true” 压缩codex聊天记…",
+    "site_record": {
+      "title": "这个挺好 打开codex直接说“帮我设置 local_thread_store_compression = true” 压缩codex聊天记…",
+      "category": "video",
+      "source": "https://x.com/jesselaunz/status/2109128585806328299",
+      "previewUrl": "https://pbs.twimg.com/media/HUUhJ-8aAAAIDeQ.png",
+      "previewType": "image",
+      "description": "这个挺好 打开codex直接说“帮我设置 local_thread_store_compression = true” 压缩codex聊天记录，节省4.76GB",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2109128585806328299。",
+      "attribution": "@jesselaunz",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:21:08.623Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2106001187774603346",
+    "title": "此视频全部由opus5.5制作 搜集了15种爆火的视频制作风格，以及对应的使用场景 分享给大家！！",
+    "author_handle": "yaohui12138",
+    "post_id": "2106001187774603346",
+    "url": "https://x.com/yaohui12138/status/2106001187774603346?s=46",
+    "canonical_url": "https://x.com/yaohui12138/status/2106001187774603346",
+    "original_urls": [
+      "https://x.com/yaohui12138/status/2106001187774603346?s=46"
+    ],
+    "source_batches": [
+      "用户首批24条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/amplify_video_thumb/2106000619425472513/img/zyDLpdqdzzSiJ1Y7.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/yaohui12138/status/2106001187774603346",
+    "site_title": "此视频全部由opus5.5制作 搜集了15种爆火的视频制作风格，以及对应的使用场景 分享给大家！！",
+    "site_record": {
+      "title": "此视频全部由opus5.5制作 搜集了15种爆火的视频制作风格，以及对应的使用场景 分享给大家！！",
+      "category": "video",
+      "source": "https://x.com/yaohui12138/status/2106001187774603346",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2106000619425472513/img/zyDLpdqdzzSiJ1Y7.jpg",
+      "previewType": "image",
+      "description": "此视频全部由opus5.5制作 搜集了15种爆火的视频制作风格，以及对应的使用场景 分享给大家！！",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2106001187774603346。",
+      "attribution": "@yaohui12138",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:21:17.085Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2109169421071864238",
+    "title": "自媒体内容创作工作流继续更新👇 1. 新增解说视频的叙事风格 2. 一键多平台发布：接入开源的 social-auto-upload，一条命…",
+    "author_handle": "yanhua1010",
+    "post_id": "2109169421071864238",
+    "url": "https://x.com/yanhua1010/status/2109169421071864238?s=46",
+    "canonical_url": "https://x.com/yanhua1010/status/2109169421071864238",
+    "original_urls": [
+      "https://x.com/yanhua1010/status/2109169421071864238?s=46"
+    ],
+    "source_batches": [
+      "用户首批24条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/amplify_video_thumb/2109168777065906176/img/gLHIkgR9wnaMvWkj.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/yanhua1010/status/2109169421071864238",
+    "site_title": "自媒体内容创作工作流继续更新👇 1. 新增解说视频的叙事风格 2. 一键多平台发布：接入开源的 social-auto-upload，一条命…",
+    "site_record": {
+      "title": "自媒体内容创作工作流继续更新👇 1. 新增解说视频的叙事风格 2. 一键多平台发布：接入开源的 social-auto-upload，一条命…",
+      "category": "video",
+      "source": "https://x.com/yanhua1010/status/2109169421071864238",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2109168777065906176/img/gLHIkgR9wnaMvWkj.jpg",
+      "previewType": "image",
+      "description": "自媒体内容创作工作流继续更新👇 1. 新增解说视频的叙事风格 2. 一键多平台发布：接入开源的 social-auto-upload，一条命令把发布包推到抖音/视频号/小红书/YouTube草稿箱。 欢迎大家star，持续更新中。",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2109169421071864238。",
+      "attribution": "@yanhua1010",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:21:25.916Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2108711338772213866",
+    "title": "未来 3 年,会做 AI 视频的人和会当导演的人,差在哪",
+    "author_handle": "ai_goge",
+    "post_id": "2108711338772213866",
+    "url": "https://x.com/ai_goge/status/2108711338772213866?s=46",
+    "canonical_url": "https://x.com/ai_goge/status/2108711338772213866",
+    "original_urls": [
+      "https://x.com/ai_goge/status/2108711338772213866?s=46"
+    ],
+    "source_batches": [
+      "用户首批24条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/profile_images/2108686504092663808/TGPGndFy_400x400.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/ai_goge/status/2108711338772213866",
+    "site_title": "未来 3 年,会做 AI 视频的人和会当导演的人,差在哪",
+    "site_record": {
+      "title": "未来 3 年,会做 AI 视频的人和会当导演的人,差在哪",
+      "category": "video",
+      "source": "https://x.com/ai_goge/status/2108711338772213866",
+      "previewUrl": "https://pbs.twimg.com/profile_images/2108686504092663808/TGPGndFy_400x400.jpg",
+      "previewType": "image",
+      "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108711338772213866。",
+      "attribution": "@ai_goge",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "头像作封面"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:21:42.145Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2108808842045956343",
+    "title": "如何用 Grok Bot 做内容？ bot 军团全部开源（一键安装）",
+    "author_handle": "Jackywxsz",
+    "post_id": "2108808842045956343",
+    "url": "https://x.com/jackywxsz/status/2108808842045956343?s=46",
+    "canonical_url": "https://x.com/jackywxsz/status/2108808842045956343",
+    "original_urls": [
+      "https://x.com/jackywxsz/status/2108808842045956343?s=46"
+    ],
+    "source_batches": [
+      "用户首批24条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/profile_images/1981695743892054016/HzKH39oc_400x400.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/jackywxsz/status/2108808842045956343",
+    "site_title": "如何用 Grok Bot 做内容？ bot 军团全部开源（一键安装）",
+    "site_record": {
+      "title": "如何用 Grok Bot 做内容？ bot 军团全部开源（一键安装）",
+      "category": "video",
+      "source": "https://x.com/jackywxsz/status/2108808842045956343",
+      "previewUrl": "https://pbs.twimg.com/profile_images/1981695743892054016/HzKH39oc_400x400.jpg",
+      "previewType": "image",
+      "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108808842045956343。",
+      "attribution": "@Jackywxsz",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "头像作封面"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:21:52.224Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2109121032451928546",
+    "title": "学弟给我分享了一套非常精致的动效组件库，33 个等距视角的线稿插画，跟着鼠标动，光标挪过去，线条就会做出各自的反应。 用起来很轻，全是 SV…",
+    "author_handle": "LgyLight",
+    "post_id": "2109121032451928546",
+    "url": "https://x.com/lgylight/status/2109121032451928546?s=46",
+    "canonical_url": "https://x.com/lgylight/status/2109121032451928546",
+    "original_urls": [
+      "https://x.com/lgylight/status/2109121032451928546?s=46"
+    ],
+    "source_batches": [
+      "用户第二批10条含1条重复"
+    ],
+    "occurrence_count": 2,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/amplify_video_thumb/2109120551411466240/img/d6HV1qkKaCzbcfvX.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/lgylight/status/2109121032451928546",
+    "site_title": "学弟给我分享了一套非常精致的动效组件库，33 个等距视角的线稿插画，跟着鼠标动，光标挪过去，线条就会做出各自的反应。 用起来很轻，全是 SV…",
+    "site_record": {
+      "title": "学弟给我分享了一套非常精致的动效组件库，33 个等距视角的线稿插画，跟着鼠标动，光标挪过去，线条就会做出各自的反应。 用起来很轻，全是 SV…",
+      "category": "video",
+      "source": "https://x.com/lgylight/status/2109121032451928546",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2109120551411466240/img/d6HV1qkKaCzbcfvX.jpg",
+      "previewType": "image",
+      "description": "学弟给我分享了一套非常精致的动效组件库，33 个等距视角的线稿插画，跟着鼠标动，光标挪过去，线条就会做出各自的反应。 用起来很轻，全是 SVG，不依赖别的库，npm i @lucasmarkes/hairline 直接装好，每个图都有几个选项：反应强度、深浅色主题，还能设成没人碰时自己循环演示。适合用来作为空状态",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2109121032451928546。",
+      "attribution": "@LgyLight",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:22:42.786Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2108929001309765735",
+    "title": "用自己的声音做配音，5款TTS实测后我会怎么选",
+    "author_handle": "fengdu2077",
+    "post_id": "2108929001309765735",
+    "url": "https://x.com/fengdu2077/status/2108929001309765735?s=46",
+    "canonical_url": "https://x.com/fengdu2077/status/2108929001309765735",
+    "original_urls": [
+      "https://x.com/fengdu2077/status/2108929001309765735?s=46"
+    ],
+    "source_batches": [
+      "用户第二批10条含1条重复"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/profile_images/2065992631629561856/lDv65QeL_400x400.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/fengdu2077/status/2108929001309765735",
+    "site_title": "用自己的声音做配音，5款TTS实测后我会怎么选",
+    "site_record": {
+      "title": "用自己的声音做配音，5款TTS实测后我会怎么选",
+      "category": "video",
+      "source": "https://x.com/fengdu2077/status/2108929001309765735",
+      "previewUrl": "https://pbs.twimg.com/profile_images/2065992631629561856/lDv65QeL_400x400.jpg",
+      "previewType": "image",
+      "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108929001309765735。",
+      "attribution": "@fengdu2077",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "头像作封面"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:22:53.537Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2109242856305238410",
+    "title": "还记得生物课本上孟德尔的豌豆杂交实验吗？ 刚用Claude Opus 5.5，one shot，30分钟就实现了这个可以操作的模拟实验。 O…",
+    "author_handle": "akokoi1",
+    "post_id": "2109242856305238410",
+    "url": "https://x.com/akokoi1/status/2109242856305238410?s=46",
+    "canonical_url": "https://x.com/akokoi1/status/2109242856305238410",
+    "original_urls": [
+      "https://x.com/akokoi1/status/2109242856305238410?s=46"
+    ],
+    "source_batches": [
+      "用户第二批10条含1条重复"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/amplify_video_thumb/2109242610426802176/img/AhkHDWKgiHHoU4PY.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/akokoi1/status/2109242856305238410",
+    "site_title": "还记得生物课本上孟德尔的豌豆杂交实验吗？ 刚用Claude Opus 5.5，one shot，30分钟就实现了这个可以操作的模拟实验。 O…",
+    "site_record": {
+      "title": "还记得生物课本上孟德尔的豌豆杂交实验吗？ 刚用Claude Opus 5.5，one shot，30分钟就实现了这个可以操作的模拟实验。 O…",
+      "category": "video",
+      "source": "https://x.com/akokoi1/status/2109242856305238410",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2109242610426802176/img/AhkHDWKgiHHoU4PY.jpg",
+      "previewType": "image",
+      "description": "还记得生物课本上孟德尔的豌豆杂交实验吗？ 刚用Claude Opus 5.5，one shot，30分钟就实现了这个可以操作的模拟实验。 Opus 5.5的理解能力和对threejs的运用太强了！",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2109242856305238410。",
+      "attribution": "@akokoi1",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:23:03.879Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2109182449179836579",
+    "title": "Such a good skill for visual explainers. All SVG and animated. Prompt…",
+    "author_handle": "MengTo",
+    "post_id": "2109182449179836579",
+    "url": "https://x.com/mengto/status/2109182449179836579?s=46",
+    "canonical_url": "https://x.com/mengto/status/2109182449179836579",
+    "original_urls": [
+      "https://x.com/mengto/status/2109182449179836579?s=46"
+    ],
+    "source_batches": [
+      "用户第二批10条含1条重复"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/amplify_video_thumb/2109182060871176192/img/KHUW4WbWAocaVffO.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/mengto/status/2109182449179836579",
+    "site_title": "Such a good skill for visual explainers. All SVG and animated. Prompt…",
+    "site_record": {
+      "title": "Such a good skill for visual explainers. All SVG and animated. Prompt…",
+      "category": "video",
+      "source": "https://x.com/mengto/status/2109182449179836579",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2109182060871176192/img/KHUW4WbWAocaVffO.jpg",
+      "previewType": "image",
+      "description": "Such a good skill for visual explainers. All SVG and animated. Prompt I used: install skill /anatomy Explain how Seedream 5.0 is able to split an image into layers and what cool things you can produce with it. Do that in a single HTML file. Change the camera/zoom in for scene …",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2109182449179836579。",
+      "attribution": "@MengTo",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:23:14.846Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2109305855036563586",
+    "title": "真是一个小众，但是被低估的skills 好看，但是貌似不实用 但是，真有趣呀。",
+    "author_handle": "xiaoxiaodong",
+    "post_id": "2109305855036563586",
+    "url": "https://x.com/xiaoxiaodong/status/2109305855036563586?s=46",
+    "canonical_url": "https://x.com/xiaoxiaodong/status/2109305855036563586",
+    "original_urls": [
+      "https://x.com/xiaoxiaodong/status/2109305855036563586?s=46"
+    ],
+    "source_batches": [
+      "用户第二批10条含1条重复"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/tweet_video_thumb/HUXCcRRaoAA97Cy.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/xiaoxiaodong/status/2109305855036563586",
+    "site_title": "真是一个小众，但是被低估的skills 好看，但是貌似不实用 但是，真有趣呀。",
+    "site_record": {
+      "title": "真是一个小众，但是被低估的skills 好看，但是貌似不实用 但是，真有趣呀。",
+      "category": "video",
+      "source": "https://x.com/xiaoxiaodong/status/2109305855036563586",
+      "previewUrl": "https://pbs.twimg.com/tweet_video_thumb/HUXCcRRaoAA97Cy.jpg",
+      "previewType": "image",
+      "description": "真是一个小众，但是被低估的skills 好看，但是貌似不实用 但是，真有趣呀。",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2109305855036563586。",
+      "attribution": "@xiaoxiaodong",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:23:26.982Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2109015574177075610",
+    "title": "The jelly world just got its own tiny ocean 🌊🍮 Claude Opus 5.5 vs GPT-…",
+    "author_handle": "vib3coded",
+    "post_id": "2109015574177075610",
+    "url": "https://x.com/vib3coded/status/2109015574177075610?s=46",
+    "canonical_url": "https://x.com/vib3coded/status/2109015574177075610",
+    "original_urls": [
+      "https://x.com/vib3coded/status/2109015574177075610?s=46"
+    ],
+    "source_batches": [
+      "用户第二批10条含1条重复"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/amplify_video_thumb/2109015456447180800/img/YP5NEgWDtz4eyy9C.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/vib3coded/status/2109015574177075610",
+    "site_title": "The jelly world just got its own tiny ocean 🌊🍮 Claude Opus 5.5 vs GPT-…",
+    "site_record": {
+      "title": "The jelly world just got its own tiny ocean 🌊🍮 Claude Opus 5.5 vs GPT-…",
+      "category": "video",
+      "source": "https://x.com/vib3coded/status/2109015574177075610",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2109015456447180800/img/YP5NEgWDtz4eyy9C.jpg",
+      "previewType": "image",
+      "description": "The jelly world just got its own tiny ocean 🌊🍮 Claude Opus 5.5 vs GPT-6 Astra - same prompt, two tiny seaside worlds Opus wins this one for me. I really liked its water physics and animal movement - the shimmering reflections and spreading ripples make the whole scene feel ali…",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2109015574177075610。",
+      "attribution": "@vib3coded",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:23:38.238Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2109340455909683403",
+    "title": "省流版：这是我深度使用 Opus 5.5 加 MiniMax H3 制作 AI 短剧的总结，一共 16 个技巧",
+    "author_handle": "zhu185178",
+    "post_id": "2109340455909683403",
+    "url": "https://x.com/zhu185178/status/2109340455909683403?s=46",
+    "canonical_url": "https://x.com/zhu185178/status/2109340455909683403",
+    "original_urls": [
+      "https://x.com/zhu185178/status/2109340455909683403?s=46"
+    ],
+    "source_batches": [
+      "用户第二批10条含1条重复"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/media/HUXh9XVaEAAw6RE.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/zhu185178/status/2109340455909683403",
+    "site_title": "省流版：这是我深度使用 Opus 5.5 加 MiniMax H3 制作 AI 短剧的总结，一共 16 个技巧",
+    "site_record": {
+      "title": "省流版：这是我深度使用 Opus 5.5 加 MiniMax H3 制作 AI 短剧的总结，一共 16 个技巧",
+      "category": "video",
+      "source": "https://x.com/zhu185178/status/2109340455909683403",
+      "previewUrl": "https://pbs.twimg.com/media/HUXh9XVaEAAw6RE.jpg",
+      "previewType": "image",
+      "description": "省流版：这是我深度使用 Opus 5.5 加 MiniMax H3 制作 AI 短剧的总结，一共 16 个技巧",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2109340455909683403。",
+      "attribution": "@zhu185178",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:23:49.570Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2108804208418038018",
+    "title": "我感觉这套 Opus 5.5 制作短剧漫剧的流程基本成型，已经跑得很通了。 下面这个 preview 视频就是 Opus 5.5 制作完成的…",
+    "author_handle": "zhu185178",
+    "post_id": "2108804208418038018",
+    "url": "https://x.com/zhu185178/status/2108804208418038018?s=46",
+    "canonical_url": "https://x.com/zhu185178/status/2108804208418038018",
+    "original_urls": [
+      "https://x.com/zhu185178/status/2108804208418038018?s=46"
+    ],
+    "source_batches": [
+      "用户第二批10条含1条重复"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/amplify_video_thumb/2108802494243770368/img/IXS71OPLPwijbDn4.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/zhu185178/status/2108804208418038018",
+    "site_title": "我感觉这套 Opus 5.5 制作短剧漫剧的流程基本成型，已经跑得很通了。 下面这个 preview 视频就是 Opus 5.5 制作完成的…",
+    "site_record": {
+      "title": "我感觉这套 Opus 5.5 制作短剧漫剧的流程基本成型，已经跑得很通了。 下面这个 preview 视频就是 Opus 5.5 制作完成的…",
+      "category": "video",
+      "source": "https://x.com/zhu185178/status/2108804208418038018",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2108802494243770368/img/IXS71OPLPwijbDn4.jpg",
+      "previewType": "image",
+      "description": "我感觉这套 Opus 5.5 制作短剧漫剧的流程基本成型，已经跑得很通了。 下面这个 preview 视频就是 Opus 5.5 制作完成的。 为了方便操作，我还专门新做了一个剪辑插件。这样我就不光靠嘴说，毕竟有时候光靠表达是表达不清楚的，而且靠截图也很麻烦。现在有了这个插件，我不但能查看素材库里生成了哪些素材以及目前的进度，更重要的是在修改时，觉得哪一段不好可以直接打标记、说问题，反馈直接记录下来，让 Claude 直接去读。千言万语不如直接上图，效率来得高很多，我还是非常满意的。 在这个过程当中，我也发现了 MiniMax H3 的一些问题。它…",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108804208418038018。",
+      "attribution": "@zhu185178",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:24:00.489Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2108245653843509415",
+    "title": "Reverse Engineer Anything 😂 Software is done.",
+    "author_handle": "MatthewBerman",
+    "post_id": "2108245653843509415",
+    "url": "https://x.com/matthewberman/status/2108245653843509415?s=46",
+    "canonical_url": "https://x.com/matthewberman/status/2108245653843509415",
+    "original_urls": [
+      "https://x.com/matthewberman/status/2108245653843509415?s=46"
+    ],
+    "source_batches": [
+      "用户第二批10条含1条重复"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/media/HUH93PGbwAAgsUn.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/matthewberman/status/2108245653843509415",
+    "site_title": "Reverse Engineer Anything 😂 Software is done.",
+    "site_record": {
+      "title": "Reverse Engineer Anything 😂 Software is done.",
+      "category": "video",
+      "source": "https://x.com/matthewberman/status/2108245653843509415",
+      "previewUrl": "https://pbs.twimg.com/media/HUH93PGbwAAgsUn.jpg",
+      "previewType": "image",
+      "description": "Reverse Engineer Anything 😂 Software is done.",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108245653843509415。",
+      "attribution": "@MatthewBerman",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-11T18:24:11.448Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2108371786585063891",
+    "title": "这家伙把打字机滑块直接做成了一盏能调角度的小射灯 再看看现在大家都在做千篇一律的白板编辑器，能把敲字仪式感做成这样，审美真的牛逼",
+    "author_handle": "ianneo_ai",
+    "post_id": "2108371786585063891",
+    "url": "https://x.com/ianneo_ai/status/2108371786585063891",
+    "canonical_url": "https://x.com/ianneo_ai/status/2108371786585063891",
+    "original_urls": [],
+    "source_batches": [
+      "此前收藏清单13条待核站内状态"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/amplify_video_thumb/2108072332229050368/img/UKKupuBgri4Rne2W.jpg",
+    "original_prompt": "",
+    "url_evidence": "conversation_summary",
+    "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
+    "site_status": "已在视觉库同步",
+    "site_title": "这家伙把打字机滑块直接做成了一盏能调角度的小射灯 再看看现在大家都在做千篇一律的白板编辑器，能把敲字仪式感做成这样，审美真的牛逼",
+    "site_record": {
+      "title": "这家伙把打字机滑块直接做成了一盏能调角度的小射灯 再看看现在大家都在做千篇一律的白板编辑器，能把敲字仪式感做成这样，审美真的牛逼",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2108072332229050368/img/UKKupuBgri4Rne2W.jpg",
+      "description": "用户分享链接，未在视觉库中检出（本次视觉库未检出，仅保留用户指定原链接）；正文未核实。仅导出，未写站。",
+      "tags": [
+        "用户收藏",
+        "未入库",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "attribution": "@ianneo_ai",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108371786585063891。",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "previewType": "image"
+    }
+  },
+  {
+    "id": "x-2108346962986909740",
+    "title": "X书签保存Skill x Teamily，实现书签打捞学习",
+    "author_handle": "Pluvio9yte",
+    "post_id": "2108346962986909740",
+    "url": "https://x.com/pluvio9yte/status/2108346962986909740",
+    "canonical_url": "https://x.com/pluvio9yte/status/2108346962986909740",
+    "original_urls": [],
+    "source_batches": [
+      "此前收藏清单13条待核站内状态"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/profile_images/1986098802680369152/s5DF1Q7Y_400x400.jpg",
+    "original_prompt": "",
+    "url_evidence": "conversation_summary",
+    "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
+    "site_status": "已在视觉库同步",
+    "site_title": "X书签保存Skill x Teamily，实现书签打捞学习",
+    "site_record": {
+      "title": "X书签保存Skill x Teamily，实现书签打捞学习",
+      "previewUrl": "https://pbs.twimg.com/profile_images/1986098802680369152/s5DF1Q7Y_400x400.jpg",
+      "description": "用户分享链接，未在视觉库中检出（本次视觉库未检出，仅保留用户指定原链接）；正文未核实。仅导出，未写站。",
+      "tags": [
+        "用户收藏",
+        "未入库",
+        "已补全正文",
+        "头像作封面"
+      ],
+      "attribution": "@Pluvio9yte",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108346962986909740。",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "previewType": "image"
+    }
+  },
+  {
+    "id": "x-2108529945064640775",
+    "title": "我的第一次企业 AI 交付：一单 3300 元的企业智能体，踩过的坑和接下来的打算",
+    "author_handle": "Kainative",
+    "post_id": "2108529945064640775",
+    "url": "https://x.com/kainative/status/2108529945064640775",
+    "canonical_url": "https://x.com/kainative/status/2108529945064640775",
+    "original_urls": [],
+    "source_batches": [
+      "此前收藏清单13条待核站内状态"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/profile_images/2054938330887077888/j5I08Ztr_400x400.jpg",
+    "original_prompt": "",
+    "url_evidence": "conversation_summary",
+    "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
+    "site_status": "已在视觉库同步",
+    "site_title": "我的第一次企业 AI 交付：一单 3300 元的企业智能体，踩过的坑和接下来的打算",
+    "site_record": {
+      "title": "我的第一次企业 AI 交付：一单 3300 元的企业智能体，踩过的坑和接下来的打算",
+      "previewUrl": "https://pbs.twimg.com/profile_images/2054938330887077888/j5I08Ztr_400x400.jpg",
+      "description": "用户分享链接，未在视觉库中检出（本次视觉库未检出，仅保留用户指定原链接）；正文未核实。仅导出，未写站。",
+      "tags": [
+        "用户收藏",
+        "未入库",
+        "已补全正文",
+        "头像作封面"
+      ],
+      "attribution": "@Kainative",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108529945064640775。",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "previewType": "image"
+    }
+  },
+  {
+    "id": "x-2108474440904495566",
+    "title": "用 AI 重塑你的学习范式，轻松且高效",
+    "author_handle": "Aoyi21",
+    "post_id": "2108474440904495566",
+    "url": "https://x.com/aoyi21/status/2108474440904495566",
+    "canonical_url": "https://x.com/aoyi21/status/2108474440904495566",
+    "original_urls": [],
+    "source_batches": [
+      "此前收藏清单13条待核站内状态"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/profile_images/1951873411405516800/s7J0541n_400x400.jpg",
+    "original_prompt": "",
+    "url_evidence": "conversation_summary",
+    "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
+    "site_status": "已在视觉库同步",
+    "site_title": "用 AI 重塑你的学习范式，轻松且高效",
+    "site_record": {
+      "title": "用 AI 重塑你的学习范式，轻松且高效",
+      "previewUrl": "https://pbs.twimg.com/profile_images/1951873411405516800/s7J0541n_400x400.jpg",
+      "description": "用户分享链接，未在视觉库中检出（本次视觉库未检出，仅保留用户指定原链接）；正文未核实。仅导出，未写站。",
+      "tags": [
+        "用户收藏",
+        "未入库",
+        "已补全正文",
+        "头像作封面"
+      ],
+      "attribution": "@Aoyi21",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108474440904495566。",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "previewType": "image"
+    }
+  },
+  {
+    "id": "x-2108577165306687938",
+    "title": "入职大厂两个月，我的 AI 开发心得",
+    "author_handle": "huangtongxueh",
+    "post_id": "2108577165306687938",
+    "url": "https://x.com/huangtongxueh/status/2108577165306687938",
+    "canonical_url": "https://x.com/huangtongxueh/status/2108577165306687938",
+    "original_urls": [],
+    "source_batches": [
+      "此前收藏清单13条待核站内状态"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/profile_images/2106287299973861376/hWehSTbZ_400x400.jpg",
+    "original_prompt": "",
+    "url_evidence": "conversation_summary",
+    "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
+    "site_status": "已在视觉库同步",
+    "site_title": "入职大厂两个月，我的 AI 开发心得",
+    "site_record": {
+      "title": "入职大厂两个月，我的 AI 开发心得",
+      "previewUrl": "https://pbs.twimg.com/profile_images/2106287299973861376/hWehSTbZ_400x400.jpg",
+      "description": "用户分享链接，未在视觉库中检出（本次视觉库未检出，仅保留用户指定原链接）；正文未核实。仅导出，未写站。",
+      "tags": [
+        "用户收藏",
+        "未入库",
+        "已补全正文",
+        "头像作封面"
+      ],
+      "attribution": "@huangtongxueh",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108577165306687938。",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "previewType": "image"
+    }
+  },
+  {
+    "id": "x-2108384516847100170",
+    "title": "我靠，这个是怎么做到的？ 这相当于我可以脱离电脑的 Codex 和 Claude Code 来自动操作手机。也就是说，它是不是直接 hack…",
+    "author_handle": "turingou",
+    "post_id": "2108384516847100170",
+    "url": "https://x.com/turingou/status/2108384516847100170",
+    "canonical_url": "https://x.com/turingou/status/2108384516847100170",
+    "original_urls": [],
+    "source_batches": [
+      "此前收藏清单13条待核站内状态"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/amplify_video_thumb/2108279497686478848/img/P2PBpWASc7NL7NdD.jpg",
+    "original_prompt": "",
+    "url_evidence": "conversation_summary",
+    "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
+    "site_status": "已在视觉库同步",
+    "site_title": "我靠，这个是怎么做到的？ 这相当于我可以脱离电脑的 Codex 和 Claude Code 来自动操作手机。也就是说，它是不是直接 hack…",
+    "site_record": {
+      "title": "我靠，这个是怎么做到的？ 这相当于我可以脱离电脑的 Codex 和 Claude Code 来自动操作手机。也就是说，它是不是直接 hack…",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2108279497686478848/img/P2PBpWASc7NL7NdD.jpg",
+      "description": "用户分享链接，未在视觉库中检出（本次视觉库未检出，仅保留用户指定原链接）；正文未核实。仅导出，未写站。",
+      "tags": [
+        "用户收藏",
+        "未入库",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "attribution": "@turingou",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108384516847100170。",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "previewType": "image"
+    }
+  },
+  {
+    "id": "x-2108279639538012265",
+    "title": "iPhone AGI has been achieved 🔥🔥 An agent running entirely on my iPhone…",
+    "author_handle": "finnvoorhees",
+    "post_id": "2108279639538012265",
+    "url": "https://x.com/finnvoorhees/status/2108279639538012265",
+    "canonical_url": "https://x.com/finnvoorhees/status/2108279639538012265",
+    "original_urls": [],
+    "source_batches": [
+      "此前收藏清单13条待核站内状态"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/amplify_video_thumb/2108279497686478848/img/P2PBpWASc7NL7NdD.jpg",
+    "original_prompt": "",
+    "url_evidence": "conversation_summary",
+    "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
+    "site_status": "已在视觉库同步",
+    "site_title": "iPhone AGI has been achieved 🔥🔥 An agent running entirely on my iPhone…",
+    "site_record": {
+      "title": "iPhone AGI has been achieved 🔥🔥 An agent running entirely on my iPhone…",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2108279497686478848/img/P2PBpWASc7NL7NdD.jpg",
+      "description": "用户分享链接，未在视觉库中检出（本次视觉库未检出，仅保留用户指定原链接）；正文未核实。仅导出，未写站。",
+      "tags": [
+        "用户收藏",
+        "未入库",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "attribution": "@finnvoorhees",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108279639538012265。",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "previewType": "image"
+    }
+  },
+  {
+    "id": "x-2108374105716400315",
+    "title": "几个提高审美的网站推荐： 高质量设计灵感推荐 最好的微动效网站 最好的落地页参考网站 设计参考大全 品牌设计参考站 专注于优秀的背景图网站",
+    "author_handle": "Jackywine",
+    "post_id": "2108374105716400315",
+    "url": "https://x.com/jackywine/status/2108374105716400315",
+    "canonical_url": "https://x.com/jackywine/status/2108374105716400315",
+    "original_urls": [],
+    "source_batches": [
+      "此前收藏清单13条待核站内状态"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/amplify_video_thumb/2108373619722391552/img/iQJA_ZcneOZKIld7.jpg",
+    "original_prompt": "",
+    "url_evidence": "conversation_summary",
+    "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
+    "site_status": "已在视觉库同步",
+    "site_title": "几个提高审美的网站推荐： 高质量设计灵感推荐 最好的微动效网站 最好的落地页参考网站 设计参考大全 品牌设计参考站 专注于优秀的背景图网站",
+    "site_record": {
+      "title": "几个提高审美的网站推荐： 高质量设计灵感推荐 最好的微动效网站 最好的落地页参考网站 设计参考大全 品牌设计参考站 专注于优秀的背景图网站",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2108373619722391552/img/iQJA_ZcneOZKIld7.jpg",
+      "description": "用户分享链接，未在视觉库中检出（本次视觉库未检出，仅保留用户指定原链接）；正文未核实。仅导出，未写站。",
+      "tags": [
+        "用户收藏",
+        "未入库",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "attribution": "@Jackywine",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108374105716400315。",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "previewType": "image"
+    }
+  },
+  {
+    "id": "x-2108511734919205112",
+    "title": "卧槽，这个神仙级的「交互式教学工具库」持续更新中 刚刚上新了！新增了地理学科“水循环”的演示， 这个效果调了3个小时才实现！ 🔗 老师们、演…",
+    "author_handle": "jinglian",
+    "post_id": "2108511734919205112",
+    "url": "https://x.com/jinglian/status/2108511734919205112",
+    "canonical_url": "https://x.com/jinglian/status/2108511734919205112",
+    "original_urls": [],
+    "source_batches": [
+      "此前收藏清单13条待核站内状态"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/amplify_video_thumb/2108501465715412992/img/K4kGXSLi6ATbfn-d.jpg",
+    "original_prompt": "",
+    "url_evidence": "conversation_summary",
+    "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
+    "site_status": "已在视觉库同步",
+    "site_title": "卧槽，这个神仙级的「交互式教学工具库」持续更新中 刚刚上新了！新增了地理学科“水循环”的演示， 这个效果调了3个小时才实现！ 🔗 老师们、演…",
+    "site_record": {
+      "title": "卧槽，这个神仙级的「交互式教学工具库」持续更新中 刚刚上新了！新增了地理学科“水循环”的演示， 这个效果调了3个小时才实现！ 🔗 老师们、演…",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2108501465715412992/img/K4kGXSLi6ATbfn-d.jpg",
+      "description": "用户分享链接，未在视觉库中检出（本次视觉库未检出，仅保留用户指定原链接）；正文未核实。仅导出，未写站。",
+      "tags": [
+        "用户收藏",
+        "未入库",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "attribution": "@jinglian",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108511734919205112。",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "previewType": "image"
+    }
+  },
+  {
+    "id": "x-2108302161343869305",
+    "title": "GPT-Image2 提示词库开源才两天，GitHub 星标就冲到 18000，你还没上车？ 工业级的提示词引擎、海量模板持续更新、拿来就能…",
+    "author_handle": "kfhshl",
+    "post_id": "2108302161343869305",
+    "url": "https://x.com/kfhshl/status/2108302161343869305",
+    "canonical_url": "https://x.com/kfhshl/status/2108302161343869305",
+    "original_urls": [],
+    "source_batches": [
+      "此前收藏清单13条待核站内状态"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/news_img/2109938087719845888/QYkyUkke?format=jpg&name=orig",
+    "original_prompt": "",
+    "url_evidence": "conversation_summary",
+    "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
+    "site_status": "已在视觉库同步",
+    "site_title": "GPT-Image2 提示词库开源才两天，GitHub 星标就冲到 18000，你还没上车？ 工业级的提示词引擎、海量模板持续更新、拿来就能…",
+    "site_record": {
+      "title": "GPT-Image2 提示词库开源才两天，GitHub 星标就冲到 18000，你还没上车？ 工业级的提示词引擎、海量模板持续更新、拿来就能…",
+      "previewUrl": "https://pbs.twimg.com/news_img/2109938087719845888/QYkyUkke?format=jpg&name=orig",
+      "description": "用户分享链接，未在视觉库中检出（本次视觉库未检出，仅保留用户指定原链接）；正文未核实。仅导出，未写站。",
+      "tags": [
+        "用户收藏",
+        "未入库",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "attribution": "@kfhshl",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108302161343869305。",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "previewType": "image"
+    }
+  },
+  {
+    "id": "x-2108504325609984233",
+    "title": "Grok Bot 额度超长续航保姆级新手指南（直接发给 Bot！）",
+    "author_handle": "cgnot996",
+    "post_id": "2108504325609984233",
+    "url": "https://x.com/cgnot996/status/2108504325609984233",
+    "canonical_url": "https://x.com/cgnot996/status/2108504325609984233",
+    "original_urls": [],
+    "source_batches": [
+      "此前收藏清单13条待核站内状态"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/profile_images/1997889886058348544/I3DNAJ91_400x400.jpg",
+    "original_prompt": "",
+    "url_evidence": "conversation_summary",
+    "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
+    "site_status": "已在视觉库同步",
+    "site_title": "Grok Bot 额度超长续航保姆级新手指南（直接发给 Bot！）",
+    "site_record": {
+      "title": "Grok Bot 额度超长续航保姆级新手指南（直接发给 Bot！）",
+      "previewUrl": "https://pbs.twimg.com/profile_images/1997889886058348544/I3DNAJ91_400x400.jpg",
+      "description": "用户分享链接，未在视觉库中检出（本次视觉库未检出，仅保留用户指定原链接）；正文未核实。仅导出，未写站。",
+      "tags": [
+        "用户收藏",
+        "未入库",
+        "已补全正文",
+        "头像作封面"
+      ],
+      "attribution": "@cgnot996",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108504325609984233。",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "previewType": "image"
+    }
+  },
+  {
+    "id": "x-2108019828753924289",
+    "title": "爆款密码：我把100年以来的百本心理学与传播学经典，蒸馏成 216 个传播机制——爆款技巧会过期，这些不会",
+    "author_handle": "dboy_yi2025",
+    "post_id": "2108019828753924289",
+    "url": "https://x.com/dboy_yi2025/status/2108019828753924289",
+    "canonical_url": "https://x.com/dboy_yi2025/status/2108019828753924289",
+    "original_urls": [],
+    "source_batches": [
+      "此前收藏清单13条待核站内状态"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/profile_images/1991364925701443584/RLm9-vTp_400x400.jpg",
+    "original_prompt": "",
+    "url_evidence": "conversation_summary",
+    "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
+    "site_status": "已在视觉库同步",
+    "site_title": "爆款密码：我把100年以来的百本心理学与传播学经典，蒸馏成 216 个传播机制——爆款技巧会过期，这些不会",
+    "site_record": {
+      "title": "爆款密码：我把100年以来的百本心理学与传播学经典，蒸馏成 216 个传播机制——爆款技巧会过期，这些不会",
+      "previewUrl": "https://pbs.twimg.com/profile_images/1991364925701443584/RLm9-vTp_400x400.jpg",
+      "description": "用户分享链接，未在视觉库中检出（本次视觉库未检出，仅保留用户指定原链接）；正文未核实。仅导出，未写站。",
+      "tags": [
+        "用户收藏",
+        "未入库",
+        "已补全正文",
+        "头像作封面"
+      ],
+      "attribution": "@dboy_yi2025",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108019828753924289。",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "previewType": "image"
+    }
+  },
+  {
+    "id": "x-2108390858764763472",
+    "title": "朋友问我，开发产品有哪些必备的 skill，我就结合我本地装的用的多的，做了个整理，涵盖原型设计、UI 设计、代码、测试、运营一整个流程的万…",
+    "author_handle": "kongge_space",
+    "post_id": "2108390858764763472",
+    "url": "https://x.com/kongge_space/status/2108390858764763472",
+    "canonical_url": "https://x.com/kongge_space/status/2108390858764763472",
+    "original_urls": [],
+    "source_batches": [
+      "此前收藏清单13条待核站内状态"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/profile_images/2102217863922606080/0ac64XWw_400x400.jpg",
+    "original_prompt": "",
+    "url_evidence": "conversation_summary",
+    "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
+    "site_status": "已在视觉库同步",
+    "site_title": "朋友问我，开发产品有哪些必备的 skill，我就结合我本地装的用的多的，做了个整理，涵盖原型设计、UI 设计、代码、测试、运营一整个流程的万…",
+    "site_record": {
+      "title": "朋友问我，开发产品有哪些必备的 skill，我就结合我本地装的用的多的，做了个整理，涵盖原型设计、UI 设计、代码、测试、运营一整个流程的万…",
+      "previewUrl": "https://pbs.twimg.com/profile_images/2102217863922606080/0ac64XWw_400x400.jpg",
+      "description": "用户分享链接，未在视觉库中检出（本次视觉库未检出，仅保留用户指定原链接）；正文未核实。仅导出，未写站。",
+      "tags": [
+        "用户收藏",
+        "未入库",
+        "已补全正文",
+        "头像作封面"
+      ],
+      "attribution": "@kongge_space",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108390858764763472。",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "previewType": "image"
+    }
+  },
+  {
+    "id": "x-2108368287591751969",
+    "title": "wok，做动效最大的痛点彻底打通，Claude Motion + Higgsfield Katana，一个人就能承包一整个工作室！！！ Cl…",
+    "author_handle": "gkxspace",
+    "post_id": "2108368287591751969",
+    "url": "https://x.com/gkxspace/status/2108368287591751969",
+    "canonical_url": "https://x.com/gkxspace/status/2108368287591751969",
+    "original_urls": [],
+    "source_batches": [
+      "此前收藏清单2条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/amplify_video_thumb/2108368130036903936/img/YYWfHWY_CVWKXuzx.jpg",
+    "original_prompt": "",
+    "url_evidence": "conversation_summary_post_id",
+    "original_url_status": "站内原始source补全；聊天当时URL参数仍未知",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/gkxspace/status/2108368287591751969",
+    "site_title": "wok，做动效最大的痛点彻底打通，Claude Motion + Higgsfield Katana，一个人就能承包一整个工作室！！！ Cl…",
+    "site_record": {
+      "title": "wok，做动效最大的痛点彻底打通，Claude Motion + Higgsfield Katana，一个人就能承包一整个工作室！！！ Cl…",
+      "category": "video",
+      "source": "https://x.com/gkxspace/status/2108368287591751969",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2108368130036903936/img/YYWfHWY_CVWKXuzx.jpg",
+      "previewType": "image",
+      "description": "wok，做动效最大的痛点彻底打通，Claude Motion + Higgsfield Katana，一个人就能承包一整个工作室！！！ Claude Motion 做动效本来就很牛逼，配上 Higgsfield Katana，从想法、做动画、来回修改到最终渲染，一条工作流解决。 而且整条视频都是代码写的，字体、时间点、运镜、情绪，每个细节都能改，你说哪里它就改哪里。 你只管当艺术总监，从想法到成片，全流程制作交给 Claude 和 Higgsfield。",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108368287591751969。",
+      "attribution": "@gkxspace",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-09T18:20:36.715Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2108109442101182633",
+    "title": "Platen 慢邮件：薄纸信封与空间翻转",
+    "author_handle": "raffiki_art",
+    "post_id": "2108109442101182633",
+    "url": "https://x.com/raffiki_art/status/2108109442101182633",
+    "canonical_url": "https://x.com/raffiki_art/status/2108109442101182633",
+    "original_urls": [],
+    "source_batches": [
+      "此前收藏清单2条"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/amplify_video_thumb/2108109276086517760/img/JLsQD6eN81OPDlt_.jpg",
+    "original_prompt": "",
+    "url_evidence": "conversation_summary_post_id",
+    "original_url_status": "站内原始source补全；聊天当时URL参数仍未知",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/raffiki_art/status/2108109442101182633",
+    "site_title": "Platen 慢邮件：薄纸信封与空间翻转",
+    "site_record": {
+      "title": "Platen 慢邮件：薄纸信封与空间翻转",
+      "category": "frontend",
+      "source": "https://x.com/raffiki_art/status/2108109442101182633",
+      "workUrl": "https://x.com/raffiki_art/status/2108109442101182633",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2108109276086517760/img/JLsQD6eN81OPDlt_.jpg",
+      "previewType": "image",
+      "description": "Jerry Nkongolo 为 Platen 设计过、最终未上线的慢邮件原型：寄给朋友的信在一天内送达。灰白色狭长空间中，立体信封纵向排列；纸张薄边、折痕与柔和投影呈现轻薄实物感，绿色与赭黄色邮票作少量点缀。部分媒体画面可见信封翻转至近侧立的细线姿态，以及上下信封的正背面关系。适合作为 Echo“今日回响”、AI 来信栏目和档案浏览交互的视觉参考。",
+      "tool": "未注明；作者原帖未披露实现工具、生成模型、源代码或原始 prompt，不推定 Claude、UIKit 或其他技术栈",
+      "prompt": "为【Echo 今日回响／AI 来信／私人档案】设计一个原创信封交互界面。用灰白狭长画布、充足留白和纵向排列的轻薄立体信封承载内容；通过纸张薄边、折痕、细腻柔影与少量绿色、赭黄色自绘邮票建立层次。点击或滑动时，让当前信封以明确的正面—近侧立细线—背面空间关系翻转，并保持相邻信封的位置可理解；将寄出、等待、送达、打开和归档映射为清晰状态。中文标题与正文使用更大字号和更高对比，关键信息不能只靠纹理或动效表达。使用自行绘制或获得授权的纸张、邮票和图形素材，不复制原作媒体；提供减少动态效果和静态阅读入口。实现技术按项目条件选择；此提示不代表原作者的工具、参数或已验证复现。",
+      "promptProvenance": "adapted",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108109442101182633。",
+      "sourceAuthor": "Jerry Nkongolo（@raffiki_art）",
+      "sourceTitle": "Platen 慢邮件原型（作者展示，最终未上线）",
+      "licenseName": "未发现明确的媒体再利用许可；仅收录来源链接与分析，借鉴机制时使用原创或获授权素材",
+      "attribution": "@raffiki_art",
+      "tags": [
+        "用户指定收录",
+        "拟物信封",
+        "薄纸质感",
+        "空间翻转",
+        "慢通信",
+        "档案交互",
+        "Echo参考",
+        "部分媒体已看",
+        "完整动态未验证",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "verification": {
+        "checked_at": "2026-10-09T11:00:24.099595Z",
+        "visually_checked": true,
+        "preview_note": "已核验原帖全文及部分媒体画面，未完整审看帖内三段视频或音频。没有取得经过验证的直接预览图URL，previewUrl留空；不声称静态缩略图或完整动效已验证。",
+        "source_text_checked": true,
+        "full_video_reviewed": false,
+        "audio_reviewed": false,
+        "preview_url_verified": false
+      },
+      "collectedAt": "2026-10-09T11:00:24.099Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2108870232697982994",
+    "title": "提示词： 我要做一个全屏网页交互场景：\"树脂块微缩岛屿\"。参考我上传的参考图，做出一张树脂方块里装着悬崖、沙滩和清澈青绿海水的实拍风格图，要…",
+    "author_handle": "Saccc_c",
+    "post_id": "2108870232697982994",
+    "url": "https://x.com/Saccc_c/status/2108870232697982994?s=20",
+    "canonical_url": "https://x.com/Saccc_c/status/2108870232697982994",
+    "original_urls": [
+      "https://x.com/Saccc_c/status/2108870232697982994?s=20"
+    ],
+    "source_batches": [
+      "用户后续单独收藏"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/media/HUQ2RxsawAAjug2.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/Saccc_c/status/2108870232697982994",
+    "site_title": "提示词： 我要做一个全屏网页交互场景：\"树脂块微缩岛屿\"。参考我上传的参考图，做出一张树脂方块里装着悬崖、沙滩和清澈青绿海水的实拍风格图，要…",
+    "site_record": {
+      "title": "提示词： 我要做一个全屏网页交互场景：\"树脂块微缩岛屿\"。参考我上传的参考图，做出一张树脂方块里装着悬崖、沙滩和清澈青绿海水的实拍风格图，要…",
+      "category": "video",
+      "source": "https://x.com/Saccc_c/status/2108870232697982994",
+      "previewUrl": "https://pbs.twimg.com/media/HUQ2RxsawAAjug2.jpg",
+      "previewType": "image",
+      "description": "提示词： 我要做一个全屏网页交互场景：\"树脂块微缩岛屿\"。参考我上传的参考图，做出一张树脂方块里装着悬崖、沙滩和清澈青绿海水的实拍风格图，要达到那种真实质感；整块像果冻一样跟着鼠标晃，水面随鼠标起浪，水要果冻质感 技术栈：Vite + React + TypeScript，three + @react-three/fiber v9 + @react-three/drei + @react-three/postprocessing，leva 做调参面板。所有 3D 内容全部用代码程序化生成，不加载任何模型文件；环境光用 drei 的 Environm…",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108870232697982994。",
+      "attribution": "@Saccc_c",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-12T16:07:10.557Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "x-2109567957890429431",
+    "title": "REA（Reverse Engineer Anything）逆向一切 三天从 3 万 Star 涨到 12 万+，一天新增 2.5 万以上。…",
+    "author_handle": "jinglian",
+    "post_id": "2109567957890429431",
+    "url": "https://x.com/jinglian/status/2109567957890429431?s=20",
+    "canonical_url": "https://x.com/jinglian/status/2109567957890429431",
+    "original_urls": [
+      "https://x.com/jinglian/status/2109567957890429431?s=20"
+    ],
+    "source_batches": [
+      "用户后续单独收藏"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/amplify_video_thumb/2109121454067662848/img/QKNVzf5CwVEG3hOj.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_title": "REA（Reverse Engineer Anything）逆向一切 三天从 3 万 Star 涨到 12 万+，一天新增 2.5 万以上。…",
+    "site_record": {
+      "title": "REA（Reverse Engineer Anything）逆向一切 三天从 3 万 Star 涨到 12 万+，一天新增 2.5 万以上。…",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2109121454067662848/img/QKNVzf5CwVEG3hOj.jpg",
+      "description": "用户分享链接，未在视觉库中检出（本次视觉库未检出，仅保留用户指定原链接）；正文未核实。仅导出，未写站。",
+      "tags": [
+        "用户收藏",
+        "未入库",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "attribution": "@jinglian",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2109567957890429431。",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "previewType": "image"
+    }
+  },
+  {
+    "id": "x-2109515395749310821",
+    "title": "Opus 5.5 + 即梦 CLI 试了一下，让 Opus 5.5 结合视频模型做故事片表达 没想到效果还不错，所有的编排、视频特效、提示词…",
+    "author_handle": "op7418",
+    "post_id": "2109515395749310821",
+    "url": "https://x.com/op7418/status/2109515395749310821?s=20",
+    "canonical_url": "https://x.com/op7418/status/2109515395749310821",
+    "original_urls": [
+      "https://x.com/op7418/status/2109515395749310821?s=20"
+    ],
+    "source_batches": [
+      "用户后续单独收藏"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/amplify_video_thumb/2109514681971007488/img/Vq5uToY_ZavWGLzt.jpg",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_title": "Opus 5.5 + 即梦 CLI 试了一下，让 Opus 5.5 结合视频模型做故事片表达 没想到效果还不错，所有的编排、视频特效、提示词…",
+    "site_record": {
+      "title": "Opus 5.5 + 即梦 CLI 试了一下，让 Opus 5.5 结合视频模型做故事片表达 没想到效果还不错，所有的编排、视频特效、提示词…",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2109514681971007488/img/Vq5uToY_ZavWGLzt.jpg",
+      "description": "用户分享链接，未在视觉库中检出（本次视觉库未检出，仅保留用户指定原链接）；正文未核实。仅导出，未写站。",
+      "tags": [
+        "用户收藏",
+        "未入库",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "attribution": "@op7418",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2109515395749310821。",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "previewType": "image"
+    }
+  },
+  {
+    "id": "x-2109541760376656036",
+    "title": "作为一名软件工程师，现在我的每一行代码都是 AI 写的。这篇文章和大家聊聊 Vibe Coding 开发速度真的不能和软件质量兼得吗？在 V…",
+    "author_handle": "Philo2022",
+    "post_id": "2109541760376656036",
+    "url": "https://x.com/Philo2022/status/2109541760376656036?s=20",
+    "canonical_url": "https://x.com/Philo2022/status/2109541760376656036",
+    "original_urls": [
+      "https://x.com/Philo2022/status/2109541760376656036?s=20"
+    ],
+    "source_batches": [
+      "用户后续单独收藏"
+    ],
+    "occurrence_count": 1,
+    "content_status": "正文已核实",
+    "preview_url": "https://pbs.twimg.com/news_img/2109541764491309057/BIvhMilo?format=jpg&name=orig",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "已在视觉库同步",
+    "site_source": "https://x.com/Philo2022/status/2109541760376656036",
+    "site_title": "作为一名软件工程师，现在我的每一行代码都是 AI 写的。这篇文章和大家聊聊 Vibe Coding 开发速度真的不能和软件质量兼得吗？在 V…",
+    "site_record": {
+      "title": "作为一名软件工程师，现在我的每一行代码都是 AI 写的。这篇文章和大家聊聊 Vibe Coding 开发速度真的不能和软件质量兼得吗？在 V…",
+      "category": "video",
+      "source": "https://x.com/Philo2022/status/2109541760376656036",
+      "previewUrl": "https://pbs.twimg.com/news_img/2109541764491309057/BIvhMilo?format=jpg&name=orig",
+      "previewType": "image",
+      "description": "作为一名软件工程师，现在我的每一行代码都是 AI 写的。这篇文章和大家聊聊 Vibe Coding 开发速度真的不能和软件质量兼得吗？在 Vibe Coding 初识到上手，到使用 AI 完成了多个大型的复杂项目的开发，我都经历了哪些体验",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2109541760376656036。",
+      "attribution": "@Philo2022",
+      "tags": [
+        "用户指定收纳",
+        "已补全正文",
+        "已补全预览"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-12T16:22:38.783Z",
+      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  },
+  {
+    "id": "douyin-TXGhWDmQS3Q",
+    "title": "农夫（转载）· 治愈系钓鱼游戏工作流",
+    "author_handle": "农夫",
+    "url": "https://v.douyin.com/TXGhWDmQS3Q/",
+    "canonical_url": "https://v.douyin.com/TXGhWDmQS3Q/",
+    "original_urls": [
+      "https://v.douyin.com/TXGhWDmQS3Q/"
+    ],
+    "source_batches": [
+      "用户分享 2026-10-14"
+    ],
+    "occurrence_count": 1,
+    "content_status": "已溯源",
+    "preview_url": "",
+    "original_prompt": "",
+    "url_evidence": "direct_message",
+    "original_url_status": "保留聊天原始URL",
+    "site_status": "仅本地收藏",
+    "platform": "douyin",
+    "saved_at": "2026-10-14T08:41:00+08:00",
+    "original_author": "rewind (@rewind02)",
+    "original_url": "https://x.com/rewind02/status/2109585491280453986",
+    "douyin_url": "https://www.douyin.com/video/7695979492489186598",
+    "note": "抖音号农夫标内容为转载；原文为 X @rewind02 2026-10-12 帖；未见 GitHub/完整 Tripo prompt；强调工具分工与 Blender 设枢轴",
+    "related_posts": [
+      "https://x.com/rewind02/status/2110001876330512855",
+      "https://x.com/rewind02/status/2108860261897584940"
+    ]
   }
- },
- {
-  "id": "x-2109163115627913394",
-  "title": "@dingyi · 2109163115627913394",
-  "author_handle": "dingyi",
-  "post_id": "2109163115627913394",
-  "url": "https://x.com/dingyi/status/2109163115627913394?s=46",
-  "canonical_url": "https://x.com/dingyi/status/2109163115627913394",
-  "original_urls": [
-   "https://x.com/dingyi/status/2109163115627913394?s=46"
-  ],
-  "source_batches": [
-   "用户首批24条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/dingyi/status/2109163115627913394",
-  "site_title": "待核实 · @dingyi · 2109163115627913394",
-  "site_record": {
-   "title": "待核实 · @dingyi · 2109163115627913394",
-   "category": "video",
-   "source": "https://x.com/dingyi/status/2109163115627913394",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@dingyi；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:17:22.200Z",
-   "updatedAt": "2026-10-11T18:17:26.029Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2109317576123904386",
-  "title": "@chunxiangai · 2109317576123904386",
-  "author_handle": "chunxiangai",
-  "post_id": "2109317576123904386",
-  "url": "https://x.com/chunxiangai/status/2109317576123904386?s=46",
-  "canonical_url": "https://x.com/chunxiangai/status/2109317576123904386",
-  "original_urls": [
-   "https://x.com/chunxiangai/status/2109317576123904386?s=46"
-  ],
-  "source_batches": [
-   "用户首批24条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/chunxiangai/status/2109317576123904386",
-  "site_title": "待核实 · @chunxiangai · 2109317576123904386",
-  "site_record": {
-   "title": "待核实 · @chunxiangai · 2109317576123904386",
-   "category": "video",
-   "source": "https://x.com/chunxiangai/status/2109317576123904386",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@chunxiangai；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:17:31.338Z",
-   "updatedAt": "2026-10-11T18:17:35.432Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2109183217060479174",
-  "title": "@shenxiankk · 2109183217060479174",
-  "author_handle": "shenxiankk",
-  "post_id": "2109183217060479174",
-  "url": "https://x.com/shenxiankk/status/2109183217060479174?s=46",
-  "canonical_url": "https://x.com/shenxiankk/status/2109183217060479174",
-  "original_urls": [
-   "https://x.com/shenxiankk/status/2109183217060479174?s=46"
-  ],
-  "source_batches": [
-   "用户首批24条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/shenxiankk/status/2109183217060479174",
-  "site_title": "待核实 · @shenxiankk · 2109183217060479174",
-  "site_record": {
-   "title": "待核实 · @shenxiankk · 2109183217060479174",
-   "category": "video",
-   "source": "https://x.com/shenxiankk/status/2109183217060479174",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@shenxiankk；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:17:40.083Z",
-   "updatedAt": "2026-10-11T18:17:43.699Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2109131881698541846",
-  "title": "@369serena · 2109131881698541846",
-  "author_handle": "369serena",
-  "post_id": "2109131881698541846",
-  "url": "https://x.com/369serena/status/2109131881698541846?s=46",
-  "canonical_url": "https://x.com/369serena/status/2109131881698541846",
-  "original_urls": [
-   "https://x.com/369serena/status/2109131881698541846?s=46"
-  ],
-  "source_batches": [
-   "用户首批24条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/369serena/status/2109131881698541846",
-  "site_title": "待核实 · @369serena · 2109131881698541846",
-  "site_record": {
-   "title": "待核实 · @369serena · 2109131881698541846",
-   "category": "video",
-   "source": "https://x.com/369serena/status/2109131881698541846",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@369serena；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:17:47.822Z",
-   "updatedAt": "2026-10-11T18:17:51.638Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2109253202604589074",
-  "title": "@noahduck283 · 2109253202604589074",
-  "author_handle": "noahduck283",
-  "post_id": "2109253202604589074",
-  "url": "https://x.com/noahduck283/status/2109253202604589074?s=46",
-  "canonical_url": "https://x.com/noahduck283/status/2109253202604589074",
-  "original_urls": [
-   "https://x.com/noahduck283/status/2109253202604589074?s=46"
-  ],
-  "source_batches": [
-   "用户首批24条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/noahduck283/status/2109253202604589074",
-  "site_title": "待核实 · @noahduck283 · 2109253202604589074",
-  "site_record": {
-   "title": "待核实 · @noahduck283 · 2109253202604589074",
-   "category": "video",
-   "source": "https://x.com/noahduck283/status/2109253202604589074",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@noahduck283；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:18:50.092Z",
-   "updatedAt": "2026-10-11T18:18:57.974Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2108856288130306126",
-  "title": "@manish1027512 · 2108856288130306126",
-  "author_handle": "manish1027512",
-  "post_id": "2108856288130306126",
-  "url": "https://x.com/manish1027512/status/2108856288130306126?s=46",
-  "canonical_url": "https://x.com/manish1027512/status/2108856288130306126",
-  "original_urls": [
-   "https://x.com/manish1027512/status/2108856288130306126?s=46"
-  ],
-  "source_batches": [
-   "用户首批24条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/manish1027512/status/2108856288130306126",
-  "site_title": "待核实 · @manish1027512 · 2108856288130306126",
-  "site_record": {
-   "title": "待核实 · @manish1027512 · 2108856288130306126",
-   "category": "video",
-   "source": "https://x.com/manish1027512/status/2108856288130306126",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@manish1027512；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:19:02.868Z",
-   "updatedAt": "2026-10-11T18:19:06.335Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2108905080040923341",
-  "title": "@vikingmute · 2108905080040923341",
-  "author_handle": "vikingmute",
-  "post_id": "2108905080040923341",
-  "url": "https://x.com/vikingmute/status/2108905080040923341?s=46",
-  "canonical_url": "https://x.com/vikingmute/status/2108905080040923341",
-  "original_urls": [
-   "https://x.com/vikingmute/status/2108905080040923341?s=46"
-  ],
-  "source_batches": [
-   "用户首批24条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/vikingmute/status/2108905080040923341",
-  "site_title": "待核实 · @vikingmute · 2108905080040923341",
-  "site_record": {
-   "title": "待核实 · @vikingmute · 2108905080040923341",
-   "category": "video",
-   "source": "https://x.com/vikingmute/status/2108905080040923341",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@vikingmute；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:19:10.900Z",
-   "updatedAt": "2026-10-11T18:19:14.840Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2109191727177449581",
-  "title": "@adrianpunk115 · 2109191727177449581",
-  "author_handle": "adrianpunk115",
-  "post_id": "2109191727177449581",
-  "url": "https://x.com/adrianpunk115/status/2109191727177449581?s=46",
-  "canonical_url": "https://x.com/adrianpunk115/status/2109191727177449581",
-  "original_urls": [
-   "https://x.com/adrianpunk115/status/2109191727177449581?s=46"
-  ],
-  "source_batches": [
-   "用户首批24条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/adrianpunk115/status/2109191727177449581",
-  "site_title": "待核实 · @adrianpunk115 · 2109191727177449581",
-  "site_record": {
-   "title": "待核实 · @adrianpunk115 · 2109191727177449581",
-   "category": "video",
-   "source": "https://x.com/adrianpunk115/status/2109191727177449581",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@adrianpunk115；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:19:19.935Z",
-   "updatedAt": "2026-10-11T18:19:23.308Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2109198810413228092",
-  "title": "@yihui_indie · 2109198810413228092",
-  "author_handle": "yihui_indie",
-  "post_id": "2109198810413228092",
-  "url": "https://x.com/yihui_indie/status/2109198810413228092?s=46",
-  "canonical_url": "https://x.com/yihui_indie/status/2109198810413228092",
-  "original_urls": [
-   "https://x.com/yihui_indie/status/2109198810413228092?s=46"
-  ],
-  "source_batches": [
-   "用户首批24条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/yihui_indie/status/2109198810413228092",
-  "site_title": "待核实 · @yihui_indie · 2109198810413228092",
-  "site_record": {
-   "title": "待核实 · @yihui_indie · 2109198810413228092",
-   "category": "video",
-   "source": "https://x.com/yihui_indie/status/2109198810413228092",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@yihui_indie；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:19:28.043Z",
-   "updatedAt": "2026-10-11T18:19:32.412Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2108948624004526516",
-  "title": "@wheresryan22 · 2108948624004526516",
-  "author_handle": "wheresryan22",
-  "post_id": "2108948624004526516",
-  "url": "https://x.com/wheresryan22/status/2108948624004526516?s=46",
-  "canonical_url": "https://x.com/wheresryan22/status/2108948624004526516",
-  "original_urls": [
-   "https://x.com/wheresryan22/status/2108948624004526516?s=46"
-  ],
-  "source_batches": [
-   "用户首批24条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/wheresryan22/status/2108948624004526516",
-  "site_title": "待核实 · @wheresryan22 · 2108948624004526516",
-  "site_record": {
-   "title": "待核实 · @wheresryan22 · 2108948624004526516",
-   "category": "video",
-   "source": "https://x.com/wheresryan22/status/2108948624004526516",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@wheresryan22；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:19:37.814Z",
-   "updatedAt": "2026-10-11T18:19:41.173Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2099641267726758095",
-  "title": "@leoshen0 · 2099641267726758095",
-  "author_handle": "leoshen0",
-  "post_id": "2099641267726758095",
-  "url": "https://x.com/leoshen0/status/2099641267726758095?s=46",
-  "canonical_url": "https://x.com/leoshen0/status/2099641267726758095",
-  "original_urls": [
-   "https://x.com/leoshen0/status/2099641267726758095?s=46"
-  ],
-  "source_batches": [
-   "用户首批24条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/leoshen0/status/2099641267726758095",
-  "site_title": "待核实 · @leoshen0 · 2099641267726758095",
-  "site_record": {
-   "title": "待核实 · @leoshen0 · 2099641267726758095",
-   "category": "video",
-   "source": "https://x.com/leoshen0/status/2099641267726758095",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@leoshen0；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:19:45.687Z",
-   "updatedAt": "2026-10-11T18:19:49.344Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2108037441005445598",
-  "title": "@jinglian · 2108037441005445598",
-  "author_handle": "jinglian",
-  "post_id": "2108037441005445598",
-  "url": "https://x.com/jinglian/status/2108037441005445598?s=46",
-  "canonical_url": "https://x.com/jinglian/status/2108037441005445598",
-  "original_urls": [
-   "https://x.com/jinglian/status/2108037441005445598?s=46"
-  ],
-  "source_batches": [
-   "用户首批24条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/jinglian/status/2108037441005445598",
-  "site_title": "待核实 · @jinglian · 2108037441005445598",
-  "site_record": {
-   "title": "待核实 · @jinglian · 2108037441005445598",
-   "category": "video",
-   "source": "https://x.com/jinglian/status/2108037441005445598",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@jinglian；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:19:54.883Z",
-   "updatedAt": "2026-10-11T18:19:59.328Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2109125320758722921",
-  "title": "@yanhua1010 · 2109125320758722921",
-  "author_handle": "yanhua1010",
-  "post_id": "2109125320758722921",
-  "url": "https://x.com/yanhua1010/status/2109125320758722921?s=46",
-  "canonical_url": "https://x.com/yanhua1010/status/2109125320758722921",
-  "original_urls": [
-   "https://x.com/yanhua1010/status/2109125320758722921?s=46"
-  ],
-  "source_batches": [
-   "用户首批24条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/yanhua1010/status/2109125320758722921",
-  "site_title": "待核实 · @yanhua1010 · 2109125320758722921",
-  "site_record": {
-   "title": "待核实 · @yanhua1010 · 2109125320758722921",
-   "category": "video",
-   "source": "https://x.com/yanhua1010/status/2109125320758722921",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@yanhua1010；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:20:03.873Z",
-   "updatedAt": "2026-10-11T18:20:08.049Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2097311704547987756",
-  "title": "@adrianpunk115 · 2097311704547987756",
-  "author_handle": "adrianpunk115",
-  "post_id": "2097311704547987756",
-  "url": "https://x.com/adrianpunk115/status/2097311704547987756?s=46",
-  "canonical_url": "https://x.com/adrianpunk115/status/2097311704547987756",
-  "original_urls": [
-   "https://x.com/adrianpunk115/status/2097311704547987756?s=46"
-  ],
-  "source_batches": [
-   "用户首批24条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/adrianpunk115/status/2097311704547987756",
-  "site_title": "待核实 · @adrianpunk115 · 2097311704547987756",
-  "site_record": {
-   "title": "待核实 · @adrianpunk115 · 2097311704547987756",
-   "category": "video",
-   "source": "https://x.com/adrianpunk115/status/2097311704547987756",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@adrianpunk115；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:20:12.573Z",
-   "updatedAt": "2026-10-11T18:20:16.484Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2105311836190978392",
-  "title": "@flxrnc · 2105311836190978392",
-  "author_handle": "flxrnc",
-  "post_id": "2105311836190978392",
-  "url": "https://x.com/flxrnc/status/2105311836190978392?s=46",
-  "canonical_url": "https://x.com/flxrnc/status/2105311836190978392",
-  "original_urls": [
-   "https://x.com/flxrnc/status/2105311836190978392?s=46"
-  ],
-  "source_batches": [
-   "用户首批24条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/flxrnc/status/2105311836190978392",
-  "site_title": "待核实 · @flxrnc · 2105311836190978392",
-  "site_record": {
-   "title": "待核实 · @flxrnc · 2105311836190978392",
-   "category": "video",
-   "source": "https://x.com/flxrnc/status/2105311836190978392",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@flxrnc；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:20:28.671Z",
-   "updatedAt": "2026-10-11T18:20:33.108Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2109182654503625117",
-  "title": "@yyyole · 2109182654503625117",
-  "author_handle": "yyyole",
-  "post_id": "2109182654503625117",
-  "url": "https://x.com/yyyole/status/2109182654503625117?s=46",
-  "canonical_url": "https://x.com/yyyole/status/2109182654503625117",
-  "original_urls": [
-   "https://x.com/yyyole/status/2109182654503625117?s=46"
-  ],
-  "source_batches": [
-   "用户首批24条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/yyyole/status/2109182654503625117",
-  "site_title": "待核实 · @yyyole · 2109182654503625117",
-  "site_record": {
-   "title": "待核实 · @yyyole · 2109182654503625117",
-   "category": "video",
-   "source": "https://x.com/yyyole/status/2109182654503625117",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@yyyole；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:20:38.017Z",
-   "updatedAt": "2026-10-11T18:20:41.709Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2108756204587794666",
-  "title": "@kongge_space · 2108756204587794666",
-  "author_handle": "kongge_space",
-  "post_id": "2108756204587794666",
-  "url": "https://x.com/kongge_space/status/2108756204587794666?s=46",
-  "canonical_url": "https://x.com/kongge_space/status/2108756204587794666",
-  "original_urls": [
-   "https://x.com/kongge_space/status/2108756204587794666?s=46"
-  ],
-  "source_batches": [
-   "用户首批24条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/kongge_space/status/2108756204587794666",
-  "site_title": "待核实 · @kongge_space · 2108756204587794666",
-  "site_record": {
-   "title": "待核实 · @kongge_space · 2108756204587794666",
-   "category": "video",
-   "source": "https://x.com/kongge_space/status/2108756204587794666",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@kongge_space；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:20:47.008Z",
-   "updatedAt": "2026-10-11T18:20:50.664Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2108650243365736855",
-  "title": "@leerob · 2108650243365736855",
-  "author_handle": "leerob",
-  "post_id": "2108650243365736855",
-  "url": "https://x.com/leerob/status/2108650243365736855?s=46",
-  "canonical_url": "https://x.com/leerob/status/2108650243365736855",
-  "original_urls": [
-   "https://x.com/leerob/status/2108650243365736855?s=46"
-  ],
-  "source_batches": [
-   "用户首批24条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/leerob/status/2108650243365736855",
-  "site_title": "待核实 · @leerob · 2108650243365736855",
-  "site_record": {
-   "title": "待核实 · @leerob · 2108650243365736855",
-   "category": "video",
-   "source": "https://x.com/leerob/status/2108650243365736855",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@leerob；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:20:55.189Z",
-   "updatedAt": "2026-10-11T18:21:01.515Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2109128585806328299",
-  "title": "@jesselaunz · 2109128585806328299",
-  "author_handle": "jesselaunz",
-  "post_id": "2109128585806328299",
-  "url": "https://x.com/jesselaunz/status/2109128585806328299?s=46",
-  "canonical_url": "https://x.com/jesselaunz/status/2109128585806328299",
-  "original_urls": [
-   "https://x.com/jesselaunz/status/2109128585806328299?s=46"
-  ],
-  "source_batches": [
-   "用户首批24条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/jesselaunz/status/2109128585806328299",
-  "site_title": "待核实 · @jesselaunz · 2109128585806328299",
-  "site_record": {
-   "title": "待核实 · @jesselaunz · 2109128585806328299",
-   "category": "video",
-   "source": "https://x.com/jesselaunz/status/2109128585806328299",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@jesselaunz；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:21:08.623Z",
-   "updatedAt": "2026-10-11T18:21:12.411Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2106001187774603346",
-  "title": "@yaohui12138 · 2106001187774603346",
-  "author_handle": "yaohui12138",
-  "post_id": "2106001187774603346",
-  "url": "https://x.com/yaohui12138/status/2106001187774603346?s=46",
-  "canonical_url": "https://x.com/yaohui12138/status/2106001187774603346",
-  "original_urls": [
-   "https://x.com/yaohui12138/status/2106001187774603346?s=46"
-  ],
-  "source_batches": [
-   "用户首批24条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/yaohui12138/status/2106001187774603346",
-  "site_title": "待核实 · @yaohui12138 · 2106001187774603346",
-  "site_record": {
-   "title": "待核实 · @yaohui12138 · 2106001187774603346",
-   "category": "video",
-   "source": "https://x.com/yaohui12138/status/2106001187774603346",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@yaohui12138；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:21:17.085Z",
-   "updatedAt": "2026-10-11T18:21:20.860Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2109169421071864238",
-  "title": "@yanhua1010 · 2109169421071864238",
-  "author_handle": "yanhua1010",
-  "post_id": "2109169421071864238",
-  "url": "https://x.com/yanhua1010/status/2109169421071864238?s=46",
-  "canonical_url": "https://x.com/yanhua1010/status/2109169421071864238",
-  "original_urls": [
-   "https://x.com/yanhua1010/status/2109169421071864238?s=46"
-  ],
-  "source_batches": [
-   "用户首批24条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/yanhua1010/status/2109169421071864238",
-  "site_title": "待核实 · @yanhua1010 · 2109169421071864238",
-  "site_record": {
-   "title": "待核实 · @yanhua1010 · 2109169421071864238",
-   "category": "video",
-   "source": "https://x.com/yanhua1010/status/2109169421071864238",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@yanhua1010；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:21:25.916Z",
-   "updatedAt": "2026-10-11T18:21:31.736Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2108711338772213866",
-  "title": "@ai_goge · 2108711338772213866",
-  "author_handle": "ai_goge",
-  "post_id": "2108711338772213866",
-  "url": "https://x.com/ai_goge/status/2108711338772213866?s=46",
-  "canonical_url": "https://x.com/ai_goge/status/2108711338772213866",
-  "original_urls": [
-   "https://x.com/ai_goge/status/2108711338772213866?s=46"
-  ],
-  "source_batches": [
-   "用户首批24条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/ai_goge/status/2108711338772213866",
-  "site_title": "待核实 · @ai_goge · 2108711338772213866",
-  "site_record": {
-   "title": "待核实 · @ai_goge · 2108711338772213866",
-   "category": "video",
-   "source": "https://x.com/ai_goge/status/2108711338772213866",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@ai_goge；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:21:42.145Z",
-   "updatedAt": "2026-10-11T18:21:47.245Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2108808842045956343",
-  "title": "@jackywxsz · 2108808842045956343",
-  "author_handle": "jackywxsz",
-  "post_id": "2108808842045956343",
-  "url": "https://x.com/jackywxsz/status/2108808842045956343?s=46",
-  "canonical_url": "https://x.com/jackywxsz/status/2108808842045956343",
-  "original_urls": [
-   "https://x.com/jackywxsz/status/2108808842045956343?s=46"
-  ],
-  "source_batches": [
-   "用户首批24条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/jackywxsz/status/2108808842045956343",
-  "site_title": "待核实 · @jackywxsz · 2108808842045956343",
-  "site_record": {
-   "title": "待核实 · @jackywxsz · 2108808842045956343",
-   "category": "video",
-   "source": "https://x.com/jackywxsz/status/2108808842045956343",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@jackywxsz；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:21:52.224Z",
-   "updatedAt": "2026-10-11T18:21:55.605Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2109121032451928546",
-  "title": "@lgylight · 2109121032451928546",
-  "author_handle": "lgylight",
-  "post_id": "2109121032451928546",
-  "url": "https://x.com/lgylight/status/2109121032451928546?s=46",
-  "canonical_url": "https://x.com/lgylight/status/2109121032451928546",
-  "original_urls": [
-   "https://x.com/lgylight/status/2109121032451928546?s=46"
-  ],
-  "source_batches": [
-   "用户第二批10条含1条重复"
-  ],
-  "occurrence_count": 2,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/lgylight/status/2109121032451928546",
-  "site_title": "待核实 · @lgylight · 2109121032451928546",
-  "site_record": {
-   "title": "待核实 · @lgylight · 2109121032451928546",
-   "category": "video",
-   "source": "https://x.com/lgylight/status/2109121032451928546",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@lgylight；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:22:42.786Z",
-   "updatedAt": "2026-10-11T18:22:48.088Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2108929001309765735",
-  "title": "@fengdu2077 · 2108929001309765735",
-  "author_handle": "fengdu2077",
-  "post_id": "2108929001309765735",
-  "url": "https://x.com/fengdu2077/status/2108929001309765735?s=46",
-  "canonical_url": "https://x.com/fengdu2077/status/2108929001309765735",
-  "original_urls": [
-   "https://x.com/fengdu2077/status/2108929001309765735?s=46"
-  ],
-  "source_batches": [
-   "用户第二批10条含1条重复"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/fengdu2077/status/2108929001309765735",
-  "site_title": "待核实 · @fengdu2077 · 2108929001309765735",
-  "site_record": {
-   "title": "待核实 · @fengdu2077 · 2108929001309765735",
-   "category": "video",
-   "source": "https://x.com/fengdu2077/status/2108929001309765735",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@fengdu2077；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:22:53.537Z",
-   "updatedAt": "2026-10-11T18:22:58.409Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2109242856305238410",
-  "title": "@akokoi1 · 2109242856305238410",
-  "author_handle": "akokoi1",
-  "post_id": "2109242856305238410",
-  "url": "https://x.com/akokoi1/status/2109242856305238410?s=46",
-  "canonical_url": "https://x.com/akokoi1/status/2109242856305238410",
-  "original_urls": [
-   "https://x.com/akokoi1/status/2109242856305238410?s=46"
-  ],
-  "source_batches": [
-   "用户第二批10条含1条重复"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/akokoi1/status/2109242856305238410",
-  "site_title": "待核实 · @akokoi1 · 2109242856305238410",
-  "site_record": {
-   "title": "待核实 · @akokoi1 · 2109242856305238410",
-   "category": "video",
-   "source": "https://x.com/akokoi1/status/2109242856305238410",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@akokoi1；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:23:03.879Z",
-   "updatedAt": "2026-10-11T18:23:08.782Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2109182449179836579",
-  "title": "@mengto · 2109182449179836579",
-  "author_handle": "mengto",
-  "post_id": "2109182449179836579",
-  "url": "https://x.com/mengto/status/2109182449179836579?s=46",
-  "canonical_url": "https://x.com/mengto/status/2109182449179836579",
-  "original_urls": [
-   "https://x.com/mengto/status/2109182449179836579?s=46"
-  ],
-  "source_batches": [
-   "用户第二批10条含1条重复"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/mengto/status/2109182449179836579",
-  "site_title": "待核实 · @mengto · 2109182449179836579",
-  "site_record": {
-   "title": "待核实 · @mengto · 2109182449179836579",
-   "category": "video",
-   "source": "https://x.com/mengto/status/2109182449179836579",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@mengto；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:23:14.846Z",
-   "updatedAt": "2026-10-11T18:23:20.347Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2109305855036563586",
-  "title": "@xiaoxiaodong · 2109305855036563586",
-  "author_handle": "xiaoxiaodong",
-  "post_id": "2109305855036563586",
-  "url": "https://x.com/xiaoxiaodong/status/2109305855036563586?s=46",
-  "canonical_url": "https://x.com/xiaoxiaodong/status/2109305855036563586",
-  "original_urls": [
-   "https://x.com/xiaoxiaodong/status/2109305855036563586?s=46"
-  ],
-  "source_batches": [
-   "用户第二批10条含1条重复"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/xiaoxiaodong/status/2109305855036563586",
-  "site_title": "待核实 · @xiaoxiaodong · 2109305855036563586",
-  "site_record": {
-   "title": "待核实 · @xiaoxiaodong · 2109305855036563586",
-   "category": "video",
-   "source": "https://x.com/xiaoxiaodong/status/2109305855036563586",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@xiaoxiaodong；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:23:26.982Z",
-   "updatedAt": "2026-10-11T18:23:31.359Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2109015574177075610",
-  "title": "@vib3coded · 2109015574177075610",
-  "author_handle": "vib3coded",
-  "post_id": "2109015574177075610",
-  "url": "https://x.com/vib3coded/status/2109015574177075610?s=46",
-  "canonical_url": "https://x.com/vib3coded/status/2109015574177075610",
-  "original_urls": [
-   "https://x.com/vib3coded/status/2109015574177075610?s=46"
-  ],
-  "source_batches": [
-   "用户第二批10条含1条重复"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/vib3coded/status/2109015574177075610",
-  "site_title": "待核实 · @vib3coded · 2109015574177075610",
-  "site_record": {
-   "title": "待核实 · @vib3coded · 2109015574177075610",
-   "category": "video",
-   "source": "https://x.com/vib3coded/status/2109015574177075610",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@vib3coded；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:23:38.238Z",
-   "updatedAt": "2026-10-11T18:23:43.102Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2109340455909683403",
-  "title": "@zhu185178 · 2109340455909683403",
-  "author_handle": "zhu185178",
-  "post_id": "2109340455909683403",
-  "url": "https://x.com/zhu185178/status/2109340455909683403?s=46",
-  "canonical_url": "https://x.com/zhu185178/status/2109340455909683403",
-  "original_urls": [
-   "https://x.com/zhu185178/status/2109340455909683403?s=46"
-  ],
-  "source_batches": [
-   "用户第二批10条含1条重复"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/zhu185178/status/2109340455909683403",
-  "site_title": "待核实 · @zhu185178 · 2109340455909683403",
-  "site_record": {
-   "title": "待核实 · @zhu185178 · 2109340455909683403",
-   "category": "video",
-   "source": "https://x.com/zhu185178/status/2109340455909683403",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@zhu185178；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:23:49.570Z",
-   "updatedAt": "2026-10-11T18:23:54.465Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2108804208418038018",
-  "title": "@zhu185178 · 2108804208418038018",
-  "author_handle": "zhu185178",
-  "post_id": "2108804208418038018",
-  "url": "https://x.com/zhu185178/status/2108804208418038018?s=46",
-  "canonical_url": "https://x.com/zhu185178/status/2108804208418038018",
-  "original_urls": [
-   "https://x.com/zhu185178/status/2108804208418038018?s=46"
-  ],
-  "source_batches": [
-   "用户第二批10条含1条重复"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/zhu185178/status/2108804208418038018",
-  "site_title": "待核实 · @zhu185178 · 2108804208418038018",
-  "site_record": {
-   "title": "待核实 · @zhu185178 · 2108804208418038018",
-   "category": "video",
-   "source": "https://x.com/zhu185178/status/2108804208418038018",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@zhu185178；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:24:00.489Z",
-   "updatedAt": "2026-10-11T18:24:05.257Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2108245653843509415",
-  "title": "@matthewberman · 2108245653843509415",
-  "author_handle": "matthewberman",
-  "post_id": "2108245653843509415",
-  "url": "https://x.com/matthewberman/status/2108245653843509415?s=46",
-  "canonical_url": "https://x.com/matthewberman/status/2108245653843509415",
-  "original_urls": [
-   "https://x.com/matthewberman/status/2108245653843509415?s=46"
-  ],
-  "source_batches": [
-   "用户第二批10条含1条重复"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/matthewberman/status/2108245653843509415",
-  "site_title": "待核实 · @matthewberman · 2108245653843509415",
-  "site_record": {
-   "title": "待核实 · @matthewberman · 2108245653843509415",
-   "category": "video",
-   "source": "https://x.com/matthewberman/status/2108245653843509415",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-11 UTC 公开读取原帖未取得正文或媒体（403 或缓存未命中）。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、原始提示词、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@matthewberman；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-11T18:24:11.448Z",
-   "updatedAt": "2026-10-11T18:24:16.155Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2108371786585063891",
-  "title": "@ianneo_ai · 2108371786585063891",
-  "author_handle": "ianneo_ai",
-  "post_id": "2108371786585063891",
-  "url": "https://x.com/ianneo_ai/status/2108371786585063891",
-  "canonical_url": "https://x.com/ianneo_ai/status/2108371786585063891",
-  "original_urls": [],
-  "source_batches": [
-   "此前收藏清单13条待核站内状态"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "conversation_summary",
-  "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
-  "site_status": "本次视觉库未检出，仅保留用户指定原链接"
- },
- {
-  "id": "x-2108346962986909740",
-  "title": "@pluvio9yte · 2108346962986909740",
-  "author_handle": "pluvio9yte",
-  "post_id": "2108346962986909740",
-  "url": "https://x.com/pluvio9yte/status/2108346962986909740",
-  "canonical_url": "https://x.com/pluvio9yte/status/2108346962986909740",
-  "original_urls": [],
-  "source_batches": [
-   "此前收藏清单13条待核站内状态"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "conversation_summary",
-  "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
-  "site_status": "本次视觉库未检出，仅保留用户指定原链接"
- },
- {
-  "id": "x-2108529945064640775",
-  "title": "@kainative · 2108529945064640775",
-  "author_handle": "kainative",
-  "post_id": "2108529945064640775",
-  "url": "https://x.com/kainative/status/2108529945064640775",
-  "canonical_url": "https://x.com/kainative/status/2108529945064640775",
-  "original_urls": [],
-  "source_batches": [
-   "此前收藏清单13条待核站内状态"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "conversation_summary",
-  "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
-  "site_status": "本次视觉库未检出，仅保留用户指定原链接"
- },
- {
-  "id": "x-2108474440904495566",
-  "title": "@aoyi21 · 2108474440904495566",
-  "author_handle": "aoyi21",
-  "post_id": "2108474440904495566",
-  "url": "https://x.com/aoyi21/status/2108474440904495566",
-  "canonical_url": "https://x.com/aoyi21/status/2108474440904495566",
-  "original_urls": [],
-  "source_batches": [
-   "此前收藏清单13条待核站内状态"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "conversation_summary",
-  "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
-  "site_status": "本次视觉库未检出，仅保留用户指定原链接"
- },
- {
-  "id": "x-2108577165306687938",
-  "title": "@huangtongxueh · 2108577165306687938",
-  "author_handle": "huangtongxueh",
-  "post_id": "2108577165306687938",
-  "url": "https://x.com/huangtongxueh/status/2108577165306687938",
-  "canonical_url": "https://x.com/huangtongxueh/status/2108577165306687938",
-  "original_urls": [],
-  "source_batches": [
-   "此前收藏清单13条待核站内状态"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "conversation_summary",
-  "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
-  "site_status": "本次视觉库未检出，仅保留用户指定原链接"
- },
- {
-  "id": "x-2108384516847100170",
-  "title": "@turingou · 2108384516847100170",
-  "author_handle": "turingou",
-  "post_id": "2108384516847100170",
-  "url": "https://x.com/turingou/status/2108384516847100170",
-  "canonical_url": "https://x.com/turingou/status/2108384516847100170",
-  "original_urls": [],
-  "source_batches": [
-   "此前收藏清单13条待核站内状态"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "conversation_summary",
-  "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
-  "site_status": "本次视觉库未检出，仅保留用户指定原链接"
- },
- {
-  "id": "x-2108279639538012265",
-  "title": "@finnvoorhees · 2108279639538012265",
-  "author_handle": "finnvoorhees",
-  "post_id": "2108279639538012265",
-  "url": "https://x.com/finnvoorhees/status/2108279639538012265",
-  "canonical_url": "https://x.com/finnvoorhees/status/2108279639538012265",
-  "original_urls": [],
-  "source_batches": [
-   "此前收藏清单13条待核站内状态"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "conversation_summary",
-  "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
-  "site_status": "本次视觉库未检出，仅保留用户指定原链接"
- },
- {
-  "id": "x-2108374105716400315",
-  "title": "@jackywine · 2108374105716400315",
-  "author_handle": "jackywine",
-  "post_id": "2108374105716400315",
-  "url": "https://x.com/jackywine/status/2108374105716400315",
-  "canonical_url": "https://x.com/jackywine/status/2108374105716400315",
-  "original_urls": [],
-  "source_batches": [
-   "此前收藏清单13条待核站内状态"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "conversation_summary",
-  "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
-  "site_status": "本次视觉库未检出，仅保留用户指定原链接"
- },
- {
-  "id": "x-2108511734919205112",
-  "title": "@jinglian · 2108511734919205112",
-  "author_handle": "jinglian",
-  "post_id": "2108511734919205112",
-  "url": "https://x.com/jinglian/status/2108511734919205112",
-  "canonical_url": "https://x.com/jinglian/status/2108511734919205112",
-  "original_urls": [],
-  "source_batches": [
-   "此前收藏清单13条待核站内状态"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "conversation_summary",
-  "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
-  "site_status": "本次视觉库未检出，仅保留用户指定原链接"
- },
- {
-  "id": "x-2108302161343869305",
-  "title": "@kfhshl · 2108302161343869305",
-  "author_handle": "kfhshl",
-  "post_id": "2108302161343869305",
-  "url": "https://x.com/kfhshl/status/2108302161343869305",
-  "canonical_url": "https://x.com/kfhshl/status/2108302161343869305",
-  "original_urls": [],
-  "source_batches": [
-   "此前收藏清单13条待核站内状态"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "conversation_summary",
-  "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
-  "site_status": "本次视觉库未检出，仅保留用户指定原链接"
- },
- {
-  "id": "x-2108504325609984233",
-  "title": "@cgnot996 · 2108504325609984233",
-  "author_handle": "cgnot996",
-  "post_id": "2108504325609984233",
-  "url": "https://x.com/cgnot996/status/2108504325609984233",
-  "canonical_url": "https://x.com/cgnot996/status/2108504325609984233",
-  "original_urls": [],
-  "source_batches": [
-   "此前收藏清单13条待核站内状态"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "conversation_summary",
-  "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
-  "site_status": "本次视觉库未检出，仅保留用户指定原链接"
- },
- {
-  "id": "x-2108019828753924289",
-  "title": "@dboy_yi2025 · 2108019828753924289",
-  "author_handle": "dboy_yi2025",
-  "post_id": "2108019828753924289",
-  "url": "https://x.com/dboy_yi2025/status/2108019828753924289",
-  "canonical_url": "https://x.com/dboy_yi2025/status/2108019828753924289",
-  "original_urls": [],
-  "source_batches": [
-   "此前收藏清单13条待核站内状态"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "conversation_summary",
-  "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
-  "site_status": "本次视觉库未检出，仅保留用户指定原链接"
- },
- {
-  "id": "x-2108390858764763472",
-  "title": "@kongge_space · 2108390858764763472",
-  "author_handle": "kongge_space",
-  "post_id": "2108390858764763472",
-  "url": "https://x.com/kongge_space/status/2108390858764763472",
-  "canonical_url": "https://x.com/kongge_space/status/2108390858764763472",
-  "original_urls": [],
-  "source_batches": [
-   "此前收藏清单13条待核站内状态"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "conversation_summary",
-  "original_url_status": "早期清单仅有规范URL，原始查询参数未知",
-  "site_status": "本次视觉库未检出，仅保留用户指定原链接"
- },
- {
-  "id": "x-2108368287591751969",
-  "title": "X 帖子 · 2108368287591751969",
-  "author_handle": "",
-  "post_id": "2108368287591751969",
-  "url": "https://x.com/gkxspace/status/2108368287591751969",
-  "canonical_url": "https://x.com/gkxspace/status/2108368287591751969",
-  "original_urls": [],
-  "source_batches": [
-   "此前收藏清单2条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "conversation_summary_post_id",
-  "original_url_status": "站内原始source补全；聊天当时URL参数仍未知",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/gkxspace/status/2108368287591751969",
-  "site_title": "待核实 · @gkxspace 的用户指定参考",
-  "site_record": {
-   "title": "待核实 · @gkxspace 的用户指定参考",
-   "category": "video",
-   "source": "https://x.com/gkxspace/status/2108368287591751969",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。正文与媒体暂未读到，先保留原始链接，待核实内容、用途与分类；视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-09 UTC 检查原帖未获取正文或媒体；未播放视频。此条按用户指定收纳例外留存，不属于已核实成品推荐。作者名称仅据链接账号，不代表已核实署名；未确认模型、工具、原始提示词、素材许可，未复制媒体或原文。",
-   "attribution": "原帖链接账号：@gkxspace；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "预览缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-09T18:20:36.715Z",
-   "updatedAt": "2026-10-09T18:20:36.715Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2108109442101182633",
-  "title": "X 帖子 · 2108109442101182633",
-  "author_handle": "",
-  "post_id": "2108109442101182633",
-  "url": "https://x.com/raffiki_art/status/2108109442101182633",
-  "canonical_url": "https://x.com/raffiki_art/status/2108109442101182633",
-  "original_urls": [],
-  "source_batches": [
-   "此前收藏清单2条"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "conversation_summary_post_id",
-  "original_url_status": "站内原始source补全；聊天当时URL参数仍未知",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/raffiki_art/status/2108109442101182633",
-  "site_title": "Platen 慢邮件：薄纸信封与空间翻转",
-  "site_record": {
-   "title": "Platen 慢邮件：薄纸信封与空间翻转",
-   "category": "frontend",
-   "source": "https://x.com/raffiki_art/status/2108109442101182633",
-   "workUrl": "https://x.com/raffiki_art/status/2108109442101182633",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "Jerry Nkongolo 为 Platen 设计过、最终未上线的慢邮件原型：寄给朋友的信在一天内送达。灰白色狭长空间中，立体信封纵向排列；纸张薄边、折痕与柔和投影呈现轻薄实物感，绿色与赭黄色邮票作少量点缀。部分媒体画面可见信封翻转至近侧立的细线姿态，以及上下信封的正背面关系。适合作为 Echo“今日回响”、AI 来信栏目和档案浏览交互的视觉参考。",
-   "tool": "未注明；作者原帖未披露实现工具、生成模型、源代码或原始 prompt，不推定 Claude、UIKit 或其他技术栈",
-   "prompt": "为【Echo 今日回响／AI 来信／私人档案】设计一个原创信封交互界面。用灰白狭长画布、充足留白和纵向排列的轻薄立体信封承载内容；通过纸张薄边、折痕、细腻柔影与少量绿色、赭黄色自绘邮票建立层次。点击或滑动时，让当前信封以明确的正面—近侧立细线—背面空间关系翻转，并保持相邻信封的位置可理解；将寄出、等待、送达、打开和归档映射为清晰状态。中文标题与正文使用更大字号和更高对比，关键信息不能只靠纹理或动效表达。使用自行绘制或获得授权的纸张、邮票和图形素材，不复制原作媒体；提供减少动态效果和静态阅读入口。实现技术按项目条件选择；此提示不代表原作者的工具、参数或已验证复现。",
-   "promptProvenance": "adapted",
-   "provenanceNote": "按用户明确指定收录。以上提示根据已核验原帖文字与部分媒体画面独立整理，是通用实现建议，不是作者原始 prompt，也未实测。作者称为朋友寄信、一天内送达；这不等于固定等待24小时，且原型最终未上线。已阅读原帖全文并查看部分媒体画面，未完整审看帖内三段视频或音频，不能据此确认完整交互、动画参数或音效。未取得可可靠复用的直接预览图地址，预览留空，以原帖为核验入口。用途适配 Echo 属于整理者建议；未自动归入 Claude 视频风格集合。",
-   "sourceAuthor": "Jerry Nkongolo（@raffiki_art）",
-   "sourceTitle": "Platen 慢邮件原型（作者展示，最终未上线）",
-   "licenseName": "未发现明确的媒体再利用许可；仅收录来源链接与分析，借鉴机制时使用原创或获授权素材",
-   "attribution": "Jerry Nkongolo（@raffiki_art）为 Platen 制作的慢邮件原型；原始展示与媒体见作者 X 原帖。本站文字为参考分析与原创适配建议。",
-   "tags": [
-    "用户指定收录",
-    "拟物信封",
-    "薄纸质感",
-    "空间翻转",
-    "慢通信",
-    "档案交互",
-    "Echo参考",
-    "部分媒体已看",
-    "完整动态未验证"
-   ],
-   "collectionIds": [],
-   "verification": {
-    "checked_at": "2026-10-09T11:00:24.099595Z",
-    "visually_checked": true,
-    "preview_note": "已核验原帖全文及部分媒体画面，未完整审看帖内三段视频或音频。没有取得经过验证的直接预览图URL，previewUrl留空；不声称静态缩略图或完整动效已验证。",
-    "source_text_checked": true,
-    "full_video_reviewed": false,
-    "audio_reviewed": false,
-    "preview_url_verified": false
-   },
-   "collectedAt": "2026-10-09T11:00:24.099Z",
-   "updatedAt": "2026-10-09T11:00:31.771Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2108870232697982994",
-  "title": "@Saccc_c · 2108870232697982994",
-  "author_handle": "Saccc_c",
-  "post_id": "2108870232697982994",
-  "url": "https://x.com/Saccc_c/status/2108870232697982994?s=20",
-  "canonical_url": "https://x.com/Saccc_c/status/2108870232697982994",
-  "original_urls": [
-   "https://x.com/Saccc_c/status/2108870232697982994?s=20"
-  ],
-  "source_batches": [
-   "用户后续单独收藏"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/Saccc_c/status/2108870232697982994",
-  "site_title": "待核实 · @Saccc_c · 2108870232697982994",
-  "site_record": {
-   "title": "待核实 · @Saccc_c · 2108870232697982994",
-   "category": "video",
-   "source": "https://x.com/Saccc_c/status/2108870232697982994",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-12 UTC 公开读取原帖返回 403，未取得正文、预览或原始提示词。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@Saccc_c；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失",
-    "提示词缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-12T16:07:10.557Z",
-   "updatedAt": "2026-10-12T16:07:19.111Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "x-2109567957890429431",
-  "title": "@jinglian · 2109567957890429431",
-  "author_handle": "jinglian",
-  "post_id": "2109567957890429431",
-  "url": "https://x.com/jinglian/status/2109567957890429431?s=20",
-  "canonical_url": "https://x.com/jinglian/status/2109567957890429431",
-  "original_urls": [
-   "https://x.com/jinglian/status/2109567957890429431?s=20"
-  ],
-  "source_batches": [
-   "用户后续单独收藏"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "本次视觉库未检出，仅保留用户指定原链接"
- },
- {
-  "id": "x-2109515395749310821",
-  "title": "@op7418 · 2109515395749310821",
-  "author_handle": "op7418",
-  "post_id": "2109515395749310821",
-  "url": "https://x.com/op7418/status/2109515395749310821?s=20",
-  "canonical_url": "https://x.com/op7418/status/2109515395749310821",
-  "original_urls": [
-   "https://x.com/op7418/status/2109515395749310821?s=20"
-  ],
-  "source_batches": [
-   "用户后续单独收藏"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "本次视觉库未检出，仅保留用户指定原链接"
- },
- {
-  "id": "x-2109541760376656036",
-  "title": "@Philo2022 · 2109541760376656036",
-  "author_handle": "Philo2022",
-  "post_id": "2109541760376656036",
-  "url": "https://x.com/Philo2022/status/2109541760376656036?s=20",
-  "canonical_url": "https://x.com/Philo2022/status/2109541760376656036",
-  "original_urls": [
-   "https://x.com/Philo2022/status/2109541760376656036?s=20"
-  ],
-  "source_batches": [
-   "用户后续单独收藏"
-  ],
-  "occurrence_count": 1,
-  "content_status": "正文未核实",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "已在视觉库，以本次全量快照核对",
-  "site_source": "https://x.com/Philo2022/status/2109541760376656036",
-  "site_title": "待核实 · @Philo2022 · 2109541760376656036",
-  "site_record": {
-   "title": "待核实 · @Philo2022 · 2109541760376656036",
-   "category": "video",
-   "source": "https://x.com/Philo2022/status/2109541760376656036",
-   "previewUrl": "",
-   "previewType": "image",
-   "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
-   "tool": "未注明",
-   "prompt": "",
-   "promptProvenance": "missing",
-   "provenanceNote": "2026-10-12 UTC 公开读取原帖缓存未命中，未取得正文、预览或原始提示词。按用户指定收纳例外保留，不作为已核实成品推荐。账号仅据原链接，作者署名、工具模型、互动热度与许可均未核实；未复制媒体或原文。",
-   "attribution": "原帖链接账号：@Philo2022；真实作者及授权待核实",
-   "tags": [
-    "用户指定收纳",
-    "待核实",
-    "待分类",
-    "正文缺失",
-    "预览缺失",
-    "提示词缺失"
-   ],
-   "collectionIds": [],
-   "collectedAt": "2026-10-12T16:22:38.783Z",
-   "updatedAt": "2026-10-12T16:22:45.396Z",
-   "userFeedback": {
-    "liked": false,
-    "favorite": false,
-    "notInterested": false,
-    "updatedAt": null
-   }
-  }
- },
- {
-  "id": "douyin-TXGhWDmQS3Q",
-  "title": "农夫（转载）· 治愈系钓鱼游戏工作流",
-  "author_handle": "农夫",
-  "url": "https://v.douyin.com/TXGhWDmQS3Q/",
-  "canonical_url": "https://v.douyin.com/TXGhWDmQS3Q/",
-  "original_urls": [
-   "https://v.douyin.com/TXGhWDmQS3Q/"
-  ],
-  "source_batches": [
-   "用户分享 2026-10-14"
-  ],
-  "occurrence_count": 1,
-  "content_status": "已溯源",
-  "preview_url": "",
-  "original_prompt": "",
-  "url_evidence": "direct_message",
-  "original_url_status": "保留聊天原始URL",
-  "site_status": "仅本地收藏",
-  "platform": "douyin",
-  "saved_at": "2026-10-14T08:41:00+08:00",
-  "original_author": "rewind (@rewind02)",
-  "original_url": "https://x.com/rewind02/status/2109585491280453986",
-  "douyin_url": "https://www.douyin.com/video/7695979492489186598",
-  "note": "抖音号农夫标内容为转载；原文为 X @rewind02 2026-10-12 帖；未见 GitHub/完整 Tripo prompt；强调工具分工与 Blender 设枢轴",
-  "related_posts": [
-   "https://x.com/rewind02/status/2110001876330512855",
-   "https://x.com/rewind02/status/2108860261897584940"
-  ]
- }
 ]

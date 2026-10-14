@@ -156,14 +156,19 @@
 
   function displayVisualTitle(item) {
     const raw = (item.title || "").trim();
-    // Strip long numeric IDs: "待核实 · @Philo2022 · 2109541760376656036" → "待核实 · @Philo2022"
-    const cleaned = raw.replace(/\s*[·•]\s*\d{8,}\s*$/u, "").trim();
+    // Strip trailing long numeric status IDs if any remain
+    let cleaned = raw.replace(/\s*[·•]\s*\d{8,}\s*$/u, "").trim();
+    // Drop legacy placeholder titles like「待核实 · @handle」
+    if (/^待核实/.test(cleaned)) cleaned = "";
     if (cleaned) return cleaned;
+    const desc = (item.description || "").trim().split(/\n/)[0];
+    if (desc && desc.length > 8 && !desc.includes("暂未取得") && !desc.includes("待核实")) {
+      return desc.length > 72 ? desc.slice(0, 70) + "…" : desc;
+    }
     const handle = (item.attribution || "").match(/@[\w]+/);
-    if (handle) return `待核实 · ${handle[0]}`;
-    return "待核实素材";
+    if (handle) return handle[0];
+    return "未命名素材";
   }
-
   function effectiveTopicFb(topic) {
     const o = state.topicOverrides[topic.url];
     if (!o) return { liked: topic.liked, saved: topic.saved };
