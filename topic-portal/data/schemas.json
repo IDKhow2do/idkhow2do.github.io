@@ -1,0 +1,68 @@
+{
+  "scope": "只读交接摘要；不提供写入方法或授权信息",
+  "visual": {
+    "contractVersion": 4,
+    "itemFields": {
+      "title": "string",
+      "category": "frontend | 3d | motion | image | video | industrial",
+      "source": "original HTTPS item page, unique",
+      "previewUrl": "optional: verified HTTPS actual image thumbnail/poster or video URL from that work; empty or omitted for knowledge/application records without visual previews; never fabricated",
+      "previewType": "image | video",
+      "description": "short Chinese purpose",
+      "tool": "known model/tool/dependency; use 未注明 when unknown",
+      "prompt": "full reusable prompt, or empty when missing",
+      "promptProvenance": "original_public | adapted | missing",
+      "provenanceNote": "license/source distinction; adapted must not claim original",
+      "collectedAt": "ISO timestamp; preserved on updates",
+      "tags": "string[]",
+      "collectionIds": "optional string[]; claude-video-styles only with evidence",
+      "modelClaim": "optional author-reported model/tool claim",
+      "modelEvidenceUrl": "optional verified HTTPS evidence link",
+      "modelVerification": "author_reported for Claude collection",
+      "videoUrl": "optional source-backed sample video HTTPS URL",
+      "licenseText": "full applicable license notice for permitted copied originals; preserved with copy",
+      "licenseName": "optional human-readable license name",
+      "licenseUrl": "verified license URL",
+      "attribution": "required source attribution when applicable"
+    },
+    "snapshotFile": "visual_items.json",
+    "collectionKey": "items",
+    "uniqueKey": "source"
+  },
+  "news": {
+    "contractVersion": 3,
+    "responseSchemaVersion": 1,
+    "snapshotFile": "news_topics.json",
+    "collectionKey": "topics",
+    "uniqueKey": "url",
+    "fields": {
+      "url": "str",
+      "title": "str",
+      "category": "str",
+      "source": "str",
+      "publishedAt": "str",
+      "eventAt": "NoneType",
+      "collectedAt": "str",
+      "updatedAt": "str",
+      "description": "str",
+      "caveat": "str",
+      "imageUrl": "NoneType",
+      "imageAlt": "NoneType",
+      "tags": "list",
+      "tagSource": "str"
+    }
+  },
+  "feedbackSemantics": {
+    "liked": "用户明确点赞",
+    "favorite_or_saved": "独立收藏，不等于点赞",
+    "notInterested": "用户明确不感兴趣",
+    "missing": "中性",
+    "collectionIds": "主题分组，不是用户投票"
+  },
+  "provenanceSemantics": {
+    "original_public": "原公开提示词，仍需确认许可",
+    "adapted": "改写提示词",
+    "missing": "没有提示词",
+    "author_reported": "作者自述，非独立验证"
+  }
+}

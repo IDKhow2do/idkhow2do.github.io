@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "hasUserFeedback": true,
+  "counts": {
+    "liked": 4,
+    "saved": 0,
+    "notInterested": 0,
+    "observations": 4
+  },
+  "categoryPreferences": {
+    "半导体": {
+      "liked": 2,
+      "saved": 0,
+      "notInterested": 0,
+      "evidenceCount": 2,
+      "adjustment": 0.0667
+    },
+    "AI": {
+      "liked": 1,
+      "saved": 0,
+      "notInterested": 0,
+      "evidenceCount": 1,
+      "adjustment": 0.04
+    },
+    "社会生活": {
+      "liked": 1,
+      "saved": 0,
+      "notInterested": 0,
+      "evidenceCount": 1,
+      "adjustment": 0.04
+    }
+  },
+  "tagPreferences": {
+    "光子计算": {
+      "liked": 1,
+      "saved": 0,
+      "notInterested": 0,
+      "evidenceCount": 1,
+      "adjustment": 0.024
+    },
+    "AI训练": {
+      "liked": 1,
+      "saved": 0,
+      "notInterested": 0,
+      "evidenceCount": 1,
+      "adjustment": 0.024
+    },
+    "芯片误差": {
+      "liked": 1,
+      "saved": 0,
+      "notInterested": 0,
+      "evidenceCount": 1,
+      "adjustment": 0.024
+    },
+    "芯片制造": {
+      "liked": 1,
+      "saved": 0,
+      "notInterested": 0,
+      "evidenceCount": 1,
+      "adjustment": 0.024
+    },
+    "失效分析": {
+      "liked": 1,
+      "saved": 0,
+      "notInterested": 0,
+      "evidenceCount": 1,
+      "adjustment": 0.024
+    },
+    "智能体": {
+      "liked": 1,
+      "saved": 0,
+      "notInterested": 0,
+      "evidenceCount": 1,
+      "adjustment": 0.024
+    },
+    "AI成本": {
+      "liked": 1,
+      "saved": 0,
+      "notInterested": 0,
+      "evidenceCount": 1,
+      "adjustment": 0.024
+    },
+    "数字生活": {
+      "liked": 1,
+      "saved": 0,
+      "notInterested": 0,
+      "evidenceCount": 1,
+      "adjustment": 0.024
+    }
+  },
+  "feedback": [
+    {
+      "url": "https://www.nature.com/articles/s43588-026-01057-y",
+      "title": "光子芯片会算还不够，为什么还要直接在芯片上“学习”？",
+      "category": "半导体",
+      "tags": [
+        "光子计算",
+        "AI训练",
+        "芯片误差"
+      ],
+      "liked": true,
+      "saved": false,
+      "notInterested": false,
+      "updatedAt": "2026-10-06T08:43:52.588Z"
+    },
+    {
+      "url": "https://www.businesswire.com/news/home/20260928207899/en/JEOL-Sales-launch-of-HAXIS-The-New-Low-angle-Ion-Milling-Scanning-Electron-Microscope",
+      "title": "芯片坏在哪里，为什么要一层层磨开才看得清？",
+      "category": "半导体",
+      "tags": [
+        "芯片制造",
+        "失效分析"
+      ],
+      "liked": true,
+      "saved": false,
+      "notInterested": false,
+      "updatedAt": "2026-10-06T08:43:46.025Z"
+    },
+    {
+      "url": "https://reflection.ai/blog/introducing-beam",
+      "title": "5010亿参数的模型，为什么每次只用230亿？",
+      "category": "AI",
+      "tags": [
+        "智能体",
+        "AI成本"
+      ],
+      "liked": true,
+      "saved": false,
+      "notInterested": false,
+      "updatedAt": "2026-10-06T08:44:04.781Z"
+    },
+    {
+      "url": "https://www.apple.com.cn/newsroom/2026/09/apple-releases-new-guide-to-help-families-build-healthy-digital-habits",
+      "title": "限制屏幕时间，为什么需要全家一起制定规则？",
+      "category": "社会生活",
+      "tags": [
+        "数字生活"
+      ],
+      "liked": true,
+      "saved": false,
+      "notInterested": false,
+      "updatedAt": "2026-10-06T08:44:21.755Z"
+    }
+  ],
+  "explorationShare": 0.25,
+  "method": "点赞增加相近方向权重；不感兴趣降低相近方向权重；收藏仅保存，不当作点赞。单条反馈不封锁整个分类。类别调整绝对值不超过0.20，标签不超过0.12；约四分之一新选题保留探索。"
+}

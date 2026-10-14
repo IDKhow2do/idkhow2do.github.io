@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>选题 · 视觉 · 合并入口</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <h1 class="hero-title">选题与视觉</h1>
+        <p class="hero-sub">你的选题与视觉参考 · 只读浏览</p>
+      </div>
+      <div class="meta-pill" id="snapshotMeta" aria-live="polite">加载中…</div>
+    </header>
+
+    <nav class="tabs" role="tablist" aria-label="主分类">
+      <button class="tab is-active" role="tab" aria-selected="true" data-tab="topics" id="tab-topics">
+        选题
+        <span class="tab-count" id="topicsCount"></span>
+      </button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="visuals" id="tab-visuals">
+        视觉素材
+        <span class="tab-count" id="visualsCount"></span>
+      </button>
+    </nav>
+
+    <!-- 选题 panel -->
+    <section class="panel is-active" id="panel-topics" role="tabpanel" aria-labelledby="tab-topics">
+      <div class="toolbar">
+        <div class="chips" id="categoryChips" role="group" aria-label="选题分类"></div>
+        <div class="toolbar-right">
+          <label class="search-wrap">
+            <span class="sr-only">搜索选题</span>
+            <input type="search" id="topicSearch" placeholder="搜索标题或描述…" autocomplete="off" />
+          </label>
+          <button type="button" class="chip chip-ghost" id="likedOnly" aria-pressed="false" title="仅显示快照中已赞">已赞</button>
+        </div>
+      </div>
+      <p class="filter-hint" id="topicsHint"></p>
+      <div class="card-grid" id="topicsGrid"></div>
+      <div class="empty-state hidden" id="topicsEmpty">
+        <div class="empty-icon" aria-hidden="true">◇</div>
+        <h2>这一类暂时没有匹配的选题</h2>
+        <p>换一个分类，或清空搜索；新一批短名单到了再刷新。</p>
+      </div>
+    </section>
+
+    <!-- 视觉 panel -->
+    <section class="panel" id="panel-visuals" role="tabpanel" aria-labelledby="tab-visuals" hidden>
+      <div class="gap-banner" id="visualGapBanner" hidden>
+        <div class="gap-banner-body">
+          <strong>视觉库导出不完整</strong>
+          <p>站内约 <span id="visualSiteTotal">113</span> 条，本快照仅导出 <span id="visualExported">1</span> 条待核；需重新导出视觉库后再刷新本页。</p>
+        </div>
+        <div class="gap-next">下一步：补齐视觉库导出后刷新本页</div>
+      </div>
+      <div class="card-grid" id="visualsGrid"></div>
+      <div class="empty-state hidden" id="visualsEmpty">
+        <div class="empty-icon" aria-hidden="true">◇</div>
+        <h2>本快照还没有可用的视觉条目</h2>
+        <p>站内约 113 条素材；补齐视觉库导出后刷新本页即可看到完整卡片。</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Detail drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-labelledby="drawerTitle">
+    <div class="drawer-head">
+      <button type="button" class="icon-btn" id="drawerClose" aria-label="关闭">✕</button>
+    </div>
+    <div class="drawer-media" id="drawerMedia"></div>
+    <div class="drawer-body">
+      <span class="badge" id="drawerCategory"></span>
+      <h2 id="drawerTitle"></h2>
+      <div class="drawer-status" id="drawerStatus"></div>
+      <div class="drawer-section">
+        <h3>为什么值得看</h3>
+        <p id="drawerDesc"></p>
+      </div>
+      <div class="drawer-section" id="drawerCaveatWrap">
+        <h3>证据与边界</h3>
+        <p id="drawerCaveat"></p>
+      </div>
+      <div class="drawer-section" id="drawerAttrWrap" hidden>
+        <h3>来源与许可</h3>
+        <p id="drawerAttr"></p>
+      </div>
+      <div class="drawer-actions">
+        <a class="btn-primary" id="drawerLink" href="#" target="_blank" rel="noopener noreferrer">打开原文</a>
+        <div class="feedback-readonly" id="drawerFeedback"></div>
+      </div>
+      <p class="readonly-note">赞 / 收藏为快照只读展示，切换不会写回线上站。</p>
+    </div>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>

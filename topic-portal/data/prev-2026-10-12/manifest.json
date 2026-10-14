@@ -1,0 +1,109 @@
+{
+  "packageVersion": 1,
+  "createdAtUTC": "2026-10-12T16:24:20.669605+00:00",
+  "mode": "read_only_snapshot",
+  "liveSync": false,
+  "sites": {
+    "news": {
+      "url": "https://topic-monitor-desk.neey.chatgpt.site",
+      "access": "owner_private",
+      "mcpReady": false,
+      "publishedSiteVersion": 13,
+      "contractVersion": 3,
+      "readStatus": "complete",
+      "snapshotReadWindowUTC": "2026-10-12T16:20:24Z/2026-10-12T16:22:21Z",
+      "count": 126,
+      "imageMetadataCount": 35,
+      "dataUpdatedAt": "2026-10-12T14:19:16.917Z",
+      "feedbackCounts": {
+        "liked": 4,
+        "saved": 0,
+        "notInterested": 0,
+        "observations": 4
+      }
+    },
+    "visual": {
+      "url": "https://visual-prompt-atlas.neey.chatgpt.site",
+      "access": "owner_private",
+      "mcpReady": false,
+      "publishedSiteVersion": 7,
+      "contractVersion": 4,
+      "readStatus": "partial",
+      "count": 113,
+      "exportedCount": 1,
+      "snapshotReadWindowUTC": "2026-10-12T16:22:59Z",
+      "feedbackCounts": {
+        "liked": 7,
+        "favorite": 3,
+        "notInterested": 0
+      },
+      "feedbackDetailStatus": "not_exported",
+      "note": "全库113条经保存任务回读核实；本包仅含该任务留下的Philo单条，其他112条与逐项反馈未导出。collection收纳不等于favorite。"
+    }
+  },
+  "pendingCount": 2,
+  "limits": [
+    "快照不是实时数据；原文和许可未在本次导出中逐条重新核验。",
+    "图片和视频仅保留链接或元数据，不包含资产副本。",
+    "跨端点读取不是数据库事务，记录了读取时间窗口。",
+    "待核验X链接不具有可推断的标题或内容。",
+    "视觉库总数113，本包只含1条已保存但正文待核的记录；缺112条及逐项preferences/feedback，不能代表完整视觉偏好。"
+  ],
+  "excluded": [
+    "credentials",
+    "cookies",
+    "owner account configuration",
+    "media binaries",
+    "site write operations"
+  ],
+  "files": {
+    "CLAUDE_START_HERE.md": {
+      "bytes": 2560,
+      "sha256": "87ff3741d98710778536a165289a4a058459af3721569a5f58d3d2b061621491"
+    },
+    "README.md": {
+      "bytes": 3001,
+      "sha256": "b704c86041864506a8ec85a25b5208a2f8315d3abb48d13a7565c2915c2efa91"
+    },
+    "data/news_feedback.json": {
+      "bytes": 929,
+      "sha256": "859bb6a037d9949ea4e19106d3210506467307445e03598be057dbd31b8389d6"
+    },
+    "data/news_preferences.json": {
+      "bytes": 3728,
+      "sha256": "c399781d6a73ef1cb1f4b53b1b523b47f31cccd2433cc7ffba42a874aa5e3505"
+    },
+    "data/news_topics.json": {
+      "bytes": 173028,
+      "sha256": "9d93824b37d856c6e97549336c8661f0b79467933f99aa87b137eaaaf0e72d5a"
+    },
+    "data/pending.json": {
+      "bytes": 549,
+      "sha256": "d52db24886f362d0be66bf056889aa23755087bfd1da261db6267d66bf8f5cbb"
+    },
+    "data/schemas.json": {
+      "bytes": 2709,
+      "sha256": "521a56d918802f417a5c35dfacf14969de1998a53394b9ead3eea45f65bde738"
+    },
+    "data/source_index.json": {
+      "bytes": 35215,
+      "sha256": "8194286408a1551718d8ab01e0b4ca699e2adebe3b0b6a3a244e11eb4b35065a"
+    },
+    "data/visual_items.json": {
+      "bytes": 1474,
+      "sha256": "490d07423564d8ec23c81828e32c0d3556a30e62c2f903dd2bff23893ff140c4"
+    },
+    "docs/交接模板.md": {
+      "bytes": 1202,
+      "sha256": "5c59b79f2398bf3fccb2e9a7c9f28ab348114dcf8ffbdae79fe848f1eb7a4744"
+    },
+    "docs/研究方法.md": {
+      "bytes": 2082,
+      "sha256": "99557f51ce7652dfc47bf159d825425505b3d6079798949c08fe63c2abda2475"
+    },
+    "tools/search.py": {
+      "bytes": 1077,
+      "sha256": "4699ef59c0be1494f4ad11f88688513ad7a71566c8de68a244b5c613863127e5"
+    }
+  }
+}
