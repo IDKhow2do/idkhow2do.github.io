@@ -1,0 +1,130 @@
+{
+  "exportStatus": "partial",
+  "siteTotalVerified": 4,
+  "exportedCount": 4,
+  "items": [
+    {
+      "title": "Philo：每一行代码都由 AI 编写（Vibe Coding 长文）",
+      "category": "待分类",
+      "source": "https://x.com/Philo2022/status/2109541760376656036",
+      "previewUrl": "",
+      "previewType": "none",
+      "description": "原帖为文字帖，分享作者博客文章，讲述作为软件工程师用 AI 完成全部编码的 Vibe Coding 体验。原帖无图片或视频媒体，不属于视觉成品；按用户指定收纳保留。",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "2026-10-13 公开接口读取到原帖正文（2026-10-12 07:08 UTC 发布），无媒体、无提示词。许可证待核。",
+      "attribution": "Philo（@Philo2022）",
+      "tags": [
+        "用户指定收纳",
+        "非视觉",
+        "文字帖",
+        "Vibe Coding",
+        "提示词缺失",
+        "许可证待核"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-12T16:22:38.783Z",
+      "updatedAt": "2026-10-13T03:58:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "Opus 5.5 + 即梦 CLI 故事片实验",
+      "category": "video",
+      "source": "https://x.com/op7418/status/2109515395749310821",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2109514681971007488/img/Vq5uToY_ZavWGLzt.jpg",
+      "previewType": "video",
+      "description": "作者让 Opus 5.5 负责编排、特效、提示词与剪辑决策，即梦 CLI 生成分镜图片和视频，再叠加代码动画效果，做成故事片表达（1920×1080 视频）。",
+      "tool": "Opus 5.5；即梦 CLI",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "许可证待核；预览仅为 X 公开缩略图链接，未下载媒体。2026-10-13 经公开 fxtwitter 接口读取原帖（无登录）。原帖未公开提示词。",
+      "attribution": "歸藏（@op7418）",
+      "tags": [
+        "AI视频",
+        "故事片",
+        "代码动画",
+        "即梦",
+        "提示词缺失",
+        "许可证待核"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-13T03:58:00.000Z",
+      "updatedAt": "2026-10-13T03:58:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "15 种科普视频风格（Opus 5.5 代码渲染）",
+      "category": "video",
+      "source": "https://x.com/agentchengfeng/status/2107473998212927525",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2107471862750236672/img/mMKIPIQdx22dwYLS.jpg",
+      "previewType": "video",
+      "description": "用 Opus 5.5 写代码渲染 15 种科普视频风格，如皮影讲典故、地图讲历史、3D 拆解、数学动画演示；音乐来自网络素材，风格参考 @VincentWei93。",
+      "tool": "Opus 5.5（代码渲染）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "许可证待核；预览仅为 X 公开缩略图链接，未下载媒体。2026-10-13 经公开 fxtwitter 接口读取原帖（无登录）。原帖称“每种都附了提示词”，但正文未含提示词，未收录；来源于账号资料包引用。",
+      "attribution": "成峰（@agentchengfeng）；风格参考 @VincentWei93",
+      "tags": [
+        "科普视频",
+        "风格合集",
+        "代码渲染",
+        "动画",
+        "提示词缺失",
+        "许可证待核"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-13T03:58:00.000Z",
+      "updatedAt": "2026-10-13T03:58:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "REA 逆向空调协议 · AR 眼镜控制演示（转引）",
+      "category": "video",
+      "source": "https://x.com/jinglian/status/2109567957890429431",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2109121454067662848/img/QKNVzf5CwVEG3hOj.jpg",
+      "previewType": "video",
+      "description": "前端哥Liam 介绍开源工具 REA（Reverse Engineer Anything）用于逆向设备通信协议，并转引演示视频：逆向空调后做成 Mac 状态栏应用并移植到 AR 眼镜控制。视觉价值偏技术演示。",
+      "tool": "REA；Claude Code / Codex",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "许可证待核；预览仅为 X 公开缩略图链接，未下载媒体。2026-10-13 经公开 fxtwitter 接口读取原帖（无登录）。视频原始出处为 https://x.com/icanberk/status/2109122304429236559 ，非转帖作者原创。",
+      "attribution": "视频原作者 @icanberk；转帖 前端哥Liam（@jinglian）",
+      "tags": [
+        "技术演示",
+        "逆向工程",
+        "AR",
+        "转引",
+        "提示词缺失",
+        "许可证待核"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-13T03:58:00.000Z",
+      "updatedAt": "2026-10-13T03:58:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    }
+  ],
+  "previousSiteTotal": 113,
+  "note": "本文件按原始链接重建，目前仅收集 4 条；完整图谱（此前记录 113 条）缺少原始链接清单，仍不完整。所有条目许可证待核。",
+  "updatedAt": "2026-10-13T03:58:00.000Z"
+}

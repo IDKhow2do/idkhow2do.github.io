@@ -1,0 +1,335 @@
+{
+  "version": 1,
+  "feedbackCount": 9,
+  "categories": {
+    "frontend": {
+      "likes": 5,
+      "favorites": 2,
+      "notInterested": 0,
+      "weight": 1.3
+    },
+    "motion": {
+      "likes": 2,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.2
+    },
+    "video": {
+      "likes": 0,
+      "favorites": 1,
+      "notInterested": 0,
+      "weight": 1.025
+    }
+  },
+  "tags": {
+    "用户指定收藏": {
+      "likes": 1,
+      "favorites": 1,
+      "notInterested": 0,
+      "weight": 1.188
+    },
+    "纸艺场景": {
+      "likes": 2,
+      "favorites": 1,
+      "notInterested": 0,
+      "weight": 1.337
+    },
+    "立体书": {
+      "likes": 1,
+      "favorites": 1,
+      "notInterested": 0,
+      "weight": 1.188
+    },
+    "网页赛车": {
+      "likes": 1,
+      "favorites": 1,
+      "notInterested": 0,
+      "weight": 1.188
+    },
+    "Three.js": {
+      "likes": 4,
+      "favorites": 1,
+      "notInterested": 0,
+      "weight": 1.45
+    },
+    "程序化生成": {
+      "likes": 1,
+      "favorites": 1,
+      "notInterested": 0,
+      "weight": 1.188
+    },
+    "原作高置信匹配": {
+      "likes": 1,
+      "favorites": 1,
+      "notInterested": 0,
+      "weight": 1.188
+    },
+    "作品集": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "揉皱纸张": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "交互卡片": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "静态预览已看": {
+      "likes": 3,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.45
+    },
+    "动态未验证": {
+      "likes": 3,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.45
+    },
+    "双场景合成": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "交互揭示": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "流体遮罩": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "结构可视化": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "用户收藏": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "微缩场景": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "日式街角": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "雨夜": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "3D交互": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "暖冷对比": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "物理动效": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "布料烘焙": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "充气材质": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "3D按钮": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "网页交互": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "3D材质": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "虹彩": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "玻璃": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "产品展示": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "官方示例": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "连续形变": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "弹簧": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "确定性时间轴": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "关键帧验收": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "前端UI": {
+      "likes": 1,
+      "favorites": 0,
+      "notInterested": 0,
+      "weight": 1.15
+    },
+    "音画联动": {
+      "likes": 0,
+      "favorites": 1,
+      "notInterested": 0,
+      "weight": 1.038
+    },
+    "运动驱动": {
+      "likes": 0,
+      "favorites": 1,
+      "notInterested": 0,
+      "weight": 1.038
+    },
+    "粒子化": {
+      "likes": 0,
+      "favorites": 1,
+      "notInterested": 0,
+      "weight": 1.038
+    },
+    "定格环绕": {
+      "likes": 0,
+      "favorites": 1,
+      "notInterested": 0,
+      "weight": 1.038
+    },
+    "Blender": {
+      "likes": 0,
+      "favorites": 1,
+      "notInterested": 0,
+      "weight": 1.038
+    },
+    "Python": {
+      "likes": 0,
+      "favorites": 1,
+      "notInterested": 0,
+      "weight": 1.038
+    },
+    "趣味交互": {
+      "likes": 0,
+      "favorites": 1,
+      "notInterested": 0,
+      "weight": 1.038
+    },
+    "拟物设计": {
+      "likes": 0,
+      "favorites": 1,
+      "notInterested": 0,
+      "weight": 1.038
+    },
+    "布料模拟": {
+      "likes": 0,
+      "favorites": 1,
+      "notInterested": 0,
+      "weight": 1.038
+    },
+    "桌面整理": {
+      "likes": 0,
+      "favorites": 1,
+      "notInterested": 0,
+      "weight": 1.038
+    },
+    "字面化幽默": {
+      "likes": 0,
+      "favorites": 1,
+      "notInterested": 0,
+      "weight": 1.038
+    }
+  },
+  "likedSources": [
+    "https://github.com/BurakErdemci/kagit-kart",
+    "https://tympanus.net/codrops/2026/09/19/crumbled-paper-houdini-vat-threejs/",
+    "https://tympanus.net/codrops/2026/03/23/building-a-dual-scene-fluid-x-ray-reveal-effect-in-three-js/",
+    "https://x.com/beefnoode/status/2107417865406324750",
+    "https://tympanus.net/codrops/2025/08/20/exporting-a-cloth-simulation-from-blender-to-an-interactive-three-js-scene/",
+    "https://threejs.org/examples/webgpu_loader_gltf_iridescence.html",
+    "https://x.com/twoclipping/status/2103273003555402193"
+  ],
+  "favoriteSources": [
+    "https://github.com/BurakErdemci/kagit-kart",
+    "https://x.com/aicreataro/status/2108091976574988390",
+    "https://x.com/ai_funss/status/2107825721880232067"
+  ],
+  "notInterestedSources": [],
+  "policy": {
+    "explorationShare": 0.25,
+    "preferenceShare": 0.75,
+    "hardExcludeCategories": false,
+    "description": "Use bounded category/tag weights as ranking hints, not bans. Keep roughly one quarter of new selections exploratory across unfamiliar styles, content uses, tools, sources and formats. A single negative must never exclude an entire category. Do not invent feedback or optimize exclusively for a narrow style."
+  }
+}

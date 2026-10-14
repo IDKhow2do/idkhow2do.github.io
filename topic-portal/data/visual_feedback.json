@@ -1,0 +1,67 @@
+{
+  "feedback": [
+    {
+      "source": "https://github.com/BurakErdemci/kagit-kart",
+      "liked": true,
+      "favorite": true,
+      "notInterested": false,
+      "updatedAt": "2026-10-08T05:14:38.626Z"
+    },
+    {
+      "source": "https://tympanus.net/codrops/2026/09/19/crumbled-paper-houdini-vat-threejs/",
+      "liked": true,
+      "favorite": false,
+      "notInterested": false,
+      "updatedAt": "2026-10-08T05:14:44.754Z"
+    },
+    {
+      "source": "https://tympanus.net/codrops/2026/03/23/building-a-dual-scene-fluid-x-ray-reveal-effect-in-three-js/",
+      "liked": true,
+      "favorite": false,
+      "notInterested": false,
+      "updatedAt": "2026-10-08T05:14:48.194Z"
+    },
+    {
+      "source": "https://x.com/beefnoode/status/2107417865406324750",
+      "liked": true,
+      "favorite": false,
+      "notInterested": false,
+      "updatedAt": "2026-10-08T05:14:50.104Z"
+    },
+    {
+      "source": "https://tympanus.net/codrops/2025/08/20/exporting-a-cloth-simulation-from-blender-to-an-interactive-three-js-scene/",
+      "liked": true,
+      "favorite": false,
+      "notInterested": false,
+      "updatedAt": "2026-10-08T05:14:53.523Z"
+    },
+    {
+      "source": "https://threejs.org/examples/webgpu_loader_gltf_iridescence.html",
+      "liked": true,
+      "favorite": false,
+      "notInterested": false,
+      "updatedAt": "2026-10-08T05:14:56.794Z"
+    },
+    {
+      "source": "https://x.com/twoclipping/status/2103273003555402193",
+      "liked": true,
+      "favorite": false,
+      "notInterested": false,
+      "updatedAt": "2026-10-08T05:14:58.372Z"
+    },
+    {
+      "source": "https://x.com/aicreataro/status/2108091976574988390",
+      "liked": false,
+      "favorite": true,
+      "notInterested": false,
+      "updatedAt": "2026-10-08T09:41:24.741Z"
+    },
+    {
+      "source": "https://x.com/ai_funss/status/2107825721880232067",
+      "liked": false,
+      "favorite": true,
+      "notInterested": false,
+      "updatedAt": "2026-10-08T09:53:19.059Z"
+    }
+  ]
+}

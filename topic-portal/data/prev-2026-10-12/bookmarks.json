@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "savedAt": "2026-10-13T13:02:00+08:00",
+      "kind": "x_bookmark",
+      "status": "snapshot_only",
+      "url": "https://x.com/yetone/status/2109855710444237018",
+      "author": {
+        "username": "yetone",
+        "name": "yetone",
+        "id": "147786784"
+      },
+      "createdAtUTC": "2026-10-13T03:56:15.000Z",
+      "text": "很多人想让我分享一下工作流，我一直没想好怎么分享，因为其实我没有任何的魔法，甚至还特别简陋，总觉得分享出来毫无意义。其实我就是用 Claude Code，然后用官方的 Opus 5.5 模型执行 loop 就可以了。\n\n我会并行执行图里的 3 个 loop，然后每晚抽一点时间铲铲屎（主要是 UI/UX 的问题），然后就没活儿了。",
+      "metrics": {
+        "likes": 573,
+        "reposts": 65,
+        "replies": 87,
+        "quotes": 26,
+        "bookmarks": 644,
+        "impressions": 23844
+      },
+      "mediaCount": 3,
+      "quoted": "https://twitter.com/wquguru/status/2109650264601117141",
+      "topicHint": "AI工作流 / Claude Code / 并行 agent loop / 晚间改 UI",
+      "note": "老板要求收藏进选题站；线上两站仍为 owner_private，先入库本地 inbox，等 Codex 导出后并入。"
+    }
+  ],
+  "updatedAt": "2026-10-13T13:02:00+08:00"
+}
