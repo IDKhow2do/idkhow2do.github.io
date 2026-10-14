@@ -1,8 +1,37 @@
 {
   "exportStatus": "complete",
-  "siteTotalVerified": 113,
-  "exportedCount": 113,
+  "siteTotalVerified": 114,
+  "exportedCount": 114,
   "items": [
+    {
+      "title": "《蓦然回首》剪纸拼贴混剪：我无法改变失去你的事实，但我决定继续创作下去",
+      "category": "video",
+      "source": "https://www.iesdouyin.com/share/video/7694535947064495375/",
+      "previewUrl": "covers/douyin-7694535947064495375.jpg",
+      "previewType": "image",
+      "description": "藤本树《蓦然回首》粉丝混剪，约55秒：俯拍裁切垫+剪刀铅笔开场、REC叠层、手写LOOK BACK、警示胶带与大字动态排版、仿弹幕文字，剪纸拼贴+动态字体+2D动画素材。原文案：我无法改变失去你的事实，但我决定继续创作下去。 #了不起的混剪团 #蓦然回首 #藤本树",
+      "tool": "未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "attribution": "Maajyann（抖音）",
+      "tags": [
+        "用户指定收纳",
+        "抖音",
+        "剪纸拼贴",
+        "动态字体",
+        "混剪"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-14T18:05:00.000Z",
+      "updatedAt": "2026-10-14T18:05:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "styleFamily": "other"
+    },
     {
       "title": "作为一名软件工程师，现在我的每一行代码都是 AI 写的。这篇文章和大家聊聊 Vibe Coding 开发速度真的不能和软件质量兼得吗？在 V…",
       "category": "video",
