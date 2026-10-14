@@ -23,6 +23,8 @@
     category: "全部",
     likedOnly: false,
     query: "",
+    visualFamily: "全部",
+    visualQuery: "",
     visualOverrides: {}, // ephemeral UI-only toggles
     topicOverrides: {},
   };
@@ -92,6 +94,16 @@
     industrial: "工业",
   };
 
+  /** styleFamily chip keys → Chinese labels (视觉素材 filters) */
+  const VISUAL_FAMILY_ORDER = ["全部", "code", "draw", "video_model", "model_3d", "other"];
+  const VISUAL_FAMILY_LABEL = {
+    code: "代码视频",
+    draw: "绘图",
+    video_model: "视频模型",
+    model_3d: "3D建模",
+    other: "其它",
+  };
+
   function categoryMark(category) {
     const c = category || "其他";
     return CAT_MARK[c] || (c.charAt(0) || "·");
@@ -100,6 +112,13 @@
   function visualCategoryLabel(category) {
     const c = category || "未分类";
     return VISUAL_CAT_LABEL[c] || c;
+  }
+
+  /** Prefer styleFamily Chinese label when set; fall back to raw category. */
+  function visualBadgeLabel(item) {
+    const fam = (item && item.styleFamily) || "";
+    if (fam && VISUAL_FAMILY_LABEL[fam]) return VISUAL_FAMILY_LABEL[fam];
+    return visualCategoryLabel(item && item.category);
   }
 
   /** List cards: no loud status chip. Drawer: chip only for exceptional absence of caveat. */
@@ -430,17 +449,55 @@
   }
 
   /* —— Visuals —— */
+  function renderVisualFamilyChips() {
+    const host = $("#visualCategoryChips");
+    if (!host) return;
+    const items = state.visuals?.items || [];
+    host.innerHTML = "";
+    VISUAL_FAMILY_ORDER.forEach((key) => {
+      const count =
+        key === "全部"
+          ? items.length
+          : items.filter((i) => (i.styleFamily || "other") === key).length;
+      const label = key === "全部" ? "全部" : VISUAL_FAMILY_LABEL[key] || key;
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "chip" + (state.visualFamily === key ? " is-active" : "");
+      btn.textContent = `${label} ${count}`;
+      btn.addEventListener("click", () => {
+        state.visualFamily = key;
+        renderVisualFamilyChips();
+        renderVisuals();
+      });
+      host.appendChild(btn);
+    });
+  }
+
+  function filteredVisuals() {
+    const items = state.visuals?.items || [];
+    const q = state.visualQuery.trim().toLowerCase();
+    return items.filter((item) => {
+      const fam = item.styleFamily || "other";
+      if (state.visualFamily !== "全部" && fam !== state.visualFamily) return false;
+      if (!q) return true;
+      const hay = `${item.title || ""} ${item.description || ""} ${item.tool || ""} ${(item.tags || []).join(" ")}`.toLowerCase();
+      return hay.includes(q);
+    });
+  }
+
   function renderVisuals() {
     const data = state.visuals;
     const grid = $("#visualsGrid");
     const empty = $("#visualsEmpty");
     const banner = $("#visualGapBanner");
+    const hint = $("#visualsHint");
 
     if (!data) {
       $("#visualsCount").textContent = "0";
       empty.classList.remove("hidden");
       banner.hidden = true;
       grid.innerHTML = "";
+      if (hint) hint.textContent = "";
       return;
     }
 
@@ -454,8 +511,16 @@
     banner.hidden = !incomplete;
     banner.style.display = incomplete ? "" : "none";
 
-    const items = data.items || [];
+    const allItems = data.items || [];
+    const items = filteredVisuals();
     grid.innerHTML = "";
+
+    if (hint) {
+      hint.textContent =
+        items.length === allItems.length
+          ? `共 ${items.length} 条视觉素材`
+          : `显示 ${items.length} / ${allItems.length} 条`;
+    }
 
     if (!items.length) {
       empty.classList.remove("hidden");
@@ -463,11 +528,15 @@
     }
     empty.classList.add("hidden");
 
-    // Always show structure: real cards + ghost placeholders for gap
+    // Always show structure: real cards + ghost placeholders for gap (only when unfiltered)
     const frag = document.createDocumentFragment();
     items.forEach((item) => frag.appendChild(buildVisualCard(item, false)));
 
-    if (incomplete) {
+    const showGhost =
+      incomplete &&
+      state.visualFamily === "全部" &&
+      !state.visualQuery.trim();
+    if (showGhost) {
       const ghost = document.createElement("div");
       ghost.className = "card is-ghost";
       const gPrev = document.createElement("div");
@@ -528,7 +597,7 @@
     left.style.flexWrap = "wrap";
     const cat = document.createElement("span");
     cat.className = "badge";
-    cat.textContent = visualCategoryLabel(item.category);
+    cat.textContent = visualBadgeLabel(item);
     left.appendChild(cat);
     meta.appendChild(left);
 
@@ -592,7 +661,7 @@
       media.appendChild(makeCategoryPlaceholder(item.category || "其他"));
     }
 
-    $("#drawerCategory").textContent = visualCategoryLabel(item.category);
+    $("#drawerCategory").textContent = visualBadgeLabel(item);
     $("#drawerTitle").textContent = displayVisualTitle(item);
     const status = $("#drawerStatus");
     status.innerHTML = "";
@@ -662,6 +731,13 @@
       $("#likedOnly").setAttribute("aria-pressed", state.likedOnly ? "true" : "false");
       renderTopics();
     });
+    const visualSearch = $("#visualSearch");
+    if (visualSearch) {
+      visualSearch.addEventListener("input", (e) => {
+        state.visualQuery = e.target.value;
+        renderVisuals();
+      });
+    }
   }
 
   function renderMeta() {
@@ -696,6 +772,7 @@
       renderMeta();
       renderCategoryChips();
       renderTopics();
+      renderVisualFamilyChips();
       renderVisuals();
       if (location.hash === "#visuals") $("#tab-visuals")?.click();
     } catch (err) {

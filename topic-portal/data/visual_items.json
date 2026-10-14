@@ -22,13 +22,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-12T16:22:38.783Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "other"
     },
     {
       "title": "提示词： 我要做一个全屏网页交互场景：\"树脂块微缩岛屿\"。参考我上传的参考图，做出一张树脂方块里装着悬崖、沙滩和清澈青绿海水的实拍风格图，要…",
@@ -49,13 +50,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-12T16:07:10.557Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "转臂牵动软布：把实时形变与碰撞做成可观察实验",
@@ -83,13 +85,14 @@
       "licenseName": "MIT（Three.js 代码）；Ammo.js 独立许可；预览媒体许可未单列",
       "licenseUrl": "https://github.com/mrdoob/three.js/blob/dev/LICENSE",
       "attribution": "Three.js authors；Ammo.js contributors。官方作品：https://threejs.org/examples/physics_ammo_cloth.html 。复用各自代码须遵守并保留对应许可通知；封面为官方原作预览链接。",
-      "updatedAt": "2026-10-11T23:43:29.362Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "Reverse Engineer Anything 😂 Software is done.",
@@ -110,13 +113,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:24:11.448Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "other"
     },
     {
       "title": "我感觉这套 Opus 5.5 制作短剧漫剧的流程基本成型，已经跑得很通了。 下面这个 preview 视频就是 Opus 5.5 制作完成的…",
@@ -137,13 +141,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:24:00.489Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "video_model"
     },
     {
       "title": "省流版：这是我深度使用 Opus 5.5 加 MiniMax H3 制作 AI 短剧的总结，一共 16 个技巧",
@@ -164,13 +169,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:23:49.570Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "video_model"
     },
     {
       "title": "The jelly world just got its own tiny ocean 🌊🍮 Claude Opus 5.5 vs GPT-…",
@@ -191,13 +197,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:23:38.238Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "真是一个小众，但是被低估的skills 好看，但是貌似不实用 但是，真有趣呀。",
@@ -218,13 +225,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:23:26.982Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "other"
     },
     {
       "title": "Such a good skill for visual explainers. All SVG and animated. Prompt…",
@@ -245,13 +253,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:23:14.846Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "还记得生物课本上孟德尔的豌豆杂交实验吗？ 刚用Claude Opus 5.5，one shot，30分钟就实现了这个可以操作的模拟实验。 O…",
@@ -272,13 +281,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:23:03.879Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "用自己的声音做配音，5款TTS实测后我会怎么选",
@@ -299,13 +309,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:22:53.537Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "other"
     },
     {
       "title": "学弟给我分享了一套非常精致的动效组件库，33 个等距视角的线稿插画，跟着鼠标动，光标挪过去，线条就会做出各自的反应。 用起来很轻，全是 SV…",
@@ -326,13 +337,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:22:42.786Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "如何用 Grok Bot 做内容？ bot 军团全部开源（一键安装）",
@@ -353,13 +365,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:21:52.224Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "other"
     },
     {
       "title": "未来 3 年,会做 AI 视频的人和会当导演的人,差在哪",
@@ -380,13 +393,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:21:42.145Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "video_model"
     },
     {
       "title": "自媒体内容创作工作流继续更新👇 1. 新增解说视频的叙事风格 2. 一键多平台发布：接入开源的 social-auto-upload，一条命…",
@@ -407,13 +421,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:21:25.916Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "other"
     },
     {
       "title": "此视频全部由opus5.5制作 搜集了15种爆火的视频制作风格，以及对应的使用场景 分享给大家！！",
@@ -434,13 +449,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:21:17.085Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:54:31.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "video_model"
     },
     {
       "title": "这个挺好 打开codex直接说“帮我设置 local_thread_store_compression = true” 压缩codex聊天记…",
@@ -461,13 +477,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:21:08.623Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "other"
     },
     {
       "title": "How do always-on, proactive agents like @Bot work? Watch my lecture at…",
@@ -488,13 +505,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:20:55.189Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "other"
     },
     {
       "title": "万字报告，个人 Agent 竞品分析，谁最适合当你的助理？",
@@ -515,13 +533,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:20:47.008Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "other"
     },
     {
       "title": "Three.js 的开发者Mr.doob配享太庙！！ AI 让更多人拥有了创造能力， 而 Three.js 这样的开源项目， 早在十多年前就…",
@@ -542,13 +561,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:20:38.017Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "Opus 5.5 Motion Lab: Make Claude Animate Like a Studio",
@@ -569,13 +589,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:20:28.671Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "用Grok Bot搭建自媒体团队：保姆级教程",
@@ -596,13 +617,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:20:12.573Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "other"
     },
     {
       "title": "总结一下，推荐收藏 Claude Code目前最爽用法：主 Agent + 哑子 Agent 架构。 1. 子 Agent：只管生成，绝不试…",
@@ -623,13 +645,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:20:03.873Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "other"
     },
     {
       "title": "🔥 发现一个神仙级的「交互式教学工具库」！ 告别无聊单调的 PPT，不用安装任何软件，打开网页直接用。 超级适合课堂投屏演示，或者让学生自主…",
@@ -650,13 +673,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:19:54.883Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "一篇速通入门：重新理解 AI Agent 的一切",
@@ -677,13 +701,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:19:45.687Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "other"
     },
     {
       "title": "Introducing Anatomy Describe a machine in one line. Claude brings it t…",
@@ -704,13 +729,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:19:37.814Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "AI 时代，人在没有天花板的地方工作，毫无疑问是未来的生活方式。 而这种生活方式背后的基建之一，是Vibe42 这两天高频使用下来，体验太好…",
@@ -731,13 +757,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:19:28.043Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "other"
     },
     {
       "title": "五个月4万粉，变现6位数：普通人从0开始的𝕏涨粉指北",
@@ -758,13 +785,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:19:19.935Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "other"
     },
     {
       "title": "Lee Robinson 在斯坦福 CS146S 讲 Grok Bot 的工作原理的视频，非常值得一看，把一些 Grok Bot 的内部工作…",
@@ -785,13 +813,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:19:10.900Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "other"
     },
     {
       "title": "兄弟们，我爆肝了半个月，把 AI 画图能用到的风格全部梳理了一遍！ 13 大领域，157 个谱系，1617 种风格！ 起因很简单：做图做久了…",
@@ -812,13 +841,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:19:02.868Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "draw"
     },
     {
       "title": "AI同质化如何选题：从入门到榨干",
@@ -839,13 +869,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:18:50.092Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "other"
     },
     {
       "title": "摊牌了，我抄袭了3位大佬的作品！！！ 事情是这样的，写完的内容多平台分发一直是一个痛点 @kaitoxhacker 的“Kaitox for…",
@@ -866,13 +897,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:17:47.822Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "other"
     },
     {
       "title": "Anthropic 这次出手挺大方，22 门 Claude 课程直接全免，一分钱不要。 我把这些课挨个过了一遍，坦白说，有些内容比较凑数，有…",
@@ -893,13 +925,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:17:40.083Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "other"
     },
     {
       "title": "我不允许认识我的任何一个人再被封号。Baga。",
@@ -920,13 +953,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:17:31.338Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "other"
     },
     {
       "title": "我愿称之为史上最强 skills",
@@ -947,13 +981,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:17:22.200Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "other"
     },
     {
       "title": "如何让 AI 帮助我们理解 AI 的输出",
@@ -974,13 +1009,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:16:28.961Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "other"
     },
     {
       "title": "积木说明书可回退：把装配顺序变成分步交互",
@@ -1024,13 +1060,14 @@
       },
       "ldrawPartsLicenseUrl": "https://www.ldraw.org/legal-info",
       "previewLicenseStatus": "未确认独立许可；仅引用官方预览，不授权再分发",
-      "updatedAt": "2026-10-11T06:17:43.923Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "没有领头鸟的队形：用局部规则看见群体秩序",
@@ -1058,13 +1095,14 @@
       "licenseName": "MIT（代码）；预览图独立许可未单列",
       "licenseUrl": "https://github.com/mrdoob/three.js/blob/dev/LICENSE",
       "attribution": "Three.js authors；官方 GPGPU birds 示例与封面。作品链接：https://threejs.org/examples/webgl_gpgpu_birds.html 。代码沿用须保留 MIT 版权及许可通知。",
-      "updatedAt": "2026-10-10T05:45:52.759Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "标本展台不停场：页面切换时保留同一件3D主体",
@@ -1115,13 +1153,14 @@
         "https://amber.isma.uy/credits.txt"
       ],
       "collectedAt": "2026-10-09T23:58:52.356Z",
-      "updatedAt": "2026-10-09T23:58:52.356Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "wok，做动效最大的痛点彻底打通，Claude Motion + Higgsfield Katana，一个人就能承包一整个工作室！！！ Cl…",
@@ -1142,13 +1181,14 @@
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-09T18:20:36.715Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "video_model"
     },
     {
       "title": "从像素效果到可拼图纸：火箭徽章的逐格配色工作台",
@@ -1197,13 +1237,14 @@
         "https://raw.githubusercontent.com/zwhy149/bead-grid-studio/main/NOTICE"
       ],
       "collectedAt": "2026-10-09T17:49:19.293Z",
-      "updatedAt": "2026-10-09T17:50:02.099Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "多层球壳剖视：把裁剪规则变成可见结构",
@@ -1253,13 +1294,14 @@
         "https://raw.githubusercontent.com/mrdoob/three.js/r186/LICENSE"
       ],
       "collectedAt": "2026-10-09T11:59:29.954Z",
-      "updatedAt": "2026-10-09T12:00:50.530Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "异形笔刷拖尾：让标题留下有方向的彩色印迹",
@@ -1321,13 +1363,14 @@
         "https://tympanus.net/codrops/licensing/"
       ],
       "collectedAt": "2026-10-09T11:59:29.954Z",
-      "updatedAt": "2026-10-09T12:02:49.369Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "旅行照片试光：保留构图，比较不同光感",
@@ -1379,13 +1422,14 @@
         "https://github.com/QwenLM/Qwen-Image/blob/main/LICENSE"
       ],
       "collectedAt": "2026-10-09T11:59:29.954Z",
-      "updatedAt": "2026-10-09T12:03:20.228Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "draw"
     },
     {
       "title": "Platen 慢邮件：薄纸信封与空间翻转",
@@ -1427,13 +1471,14 @@
         "preview_url_verified": false
       },
       "collectedAt": "2026-10-09T11:00:24.099Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "家具先试摆：用三张参考图比较客厅搭配",
@@ -1482,13 +1527,14 @@
           "https://help.runwayml.com/hc/article_attachments/41304214913939"
         ]
       },
-      "updatedAt": "2026-10-09T05:52:04.683Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "draw"
     },
     {
       "title": "会回应的科普角色：身体动作与表情分开控制",
@@ -1532,13 +1578,14 @@
         "visually_checked": true,
         "preview_note": "已目视官方截图：浅色网格地面上的黄色低多边形机器人。动作状态、一次性手势与面部控制由r186源码核对，未运行或连续播放。"
       },
-      "updatedAt": "2026-10-09T05:47:46.689Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "纸箱开合：把包装结构变成可回看的装配说明",
@@ -1580,13 +1627,14 @@
         "preview_note": "目视核实作者 GIF 第 0、40、80 帧：完整纸箱、打开盖片、改变尺寸后的纸箱。仅抽帧查看，未连续播放或测试滚动交互。"
       },
       "collectedAt": "2026-10-09T00:19:54.716Z",
-      "updatedAt": "2026-10-09T00:20:04.515Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "像素坠落成体素：让影像碎成可拾回的积木",
@@ -1628,13 +1676,14 @@
         "preview_note": "已目视核实仓库 cover.jpg：左侧涩谷夜景逐渐碎成右侧与下方的彩色立方体。未验证实时交互或播放视频。"
       },
       "collectedAt": "2026-10-08T17:51:15.417Z",
-      "updatedAt": "2026-10-08T17:51:15.417Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "海报拆层：把平面成稿变成可独立移动的物件",
@@ -1678,13 +1727,14 @@
         "preview_note": "已查看官方完整静态图：手机/红色背景、海报文字与人物、鹿和树木等拆层对照；未观看视频或运行模型。"
       },
       "collectedAt": "2026-10-08T12:12:49.501Z",
-      "updatedAt": "2026-10-08T12:12:49.501Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "draw"
     },
     {
       "title": "ISO-GLOW｜发光等距物件与城市交互 Skill",
@@ -1715,13 +1765,14 @@
       "attribution": "@Aprilzz423",
       "modelClaim": "作者称为 Claude skill；未提供具体模型版本",
       "modelEvidenceUrl": "https://x.com/Aprilzz423/status/2107794465457139988",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "桌面地毯：把乱文件扫到毯子下面",
@@ -1745,13 +1796,14 @@
         "已补全预览"
       ],
       "attribution": "@ai_funss",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": true,
         "notInterested": false,
         "updatedAt": "2026-10-08T09:53:19.059Z"
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "Last Train to the Sea｜云端列车 2.5D 童话世界",
@@ -1780,13 +1832,14 @@
       "modelClaim": "原作者称使用 GPT-6 Astra、Crayon 与 Three.js",
       "modelEvidenceUrl": "https://x.com/aniketjart/status/2100382480658518492",
       "attribution": "@SahilExec",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "model_3d"
     },
     {
       "title": "声音 × 运动双驱动视觉｜Blender 粒子与定格环绕",
@@ -1819,13 +1872,14 @@
       "licenseName": "原帖媒体版权归权利人；未发现转载或商用许可",
       "licenseUrl": "https://x.com/aicreataro/status/2108091976574988390",
       "collectedAt": "2026-10-08T09:40:48.107Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": true,
         "notInterested": false,
         "updatedAt": "2026-10-08T09:41:24.741Z"
-      }
+      },
+      "styleFamily": "model_3d"
     },
     {
       "title": "照片浮雕打光：让器物纹理随光显现",
@@ -1862,13 +1916,14 @@
         "dedup_check": "对全部58条来源、作品链接和技术标签核对；库内无深度图表面重打光案例，区别于双场景流体揭示、虹彩台灯与全息扫描。"
       },
       "collectedAt": "2026-10-08T05:44:38.182Z",
-      "updatedAt": "2026-10-08T05:44:38.182Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "model_3d"
     },
     {
       "title": "连续形变 UI｜播放器、开关与命令面板",
@@ -1901,13 +1956,14 @@
       "licenseName": "原帖权利未明；不转载完整原文",
       "licenseUrl": "https://x.com/twoclipping/status/2103273003555402193",
       "collectedAt": "2026-10-07T19:23:06.165Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": true,
         "favorite": false,
         "notInterested": false,
         "updatedAt": "2026-10-08T05:14:58.372Z"
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "揉皱纸片作品集：从纸团展开一张故事卡",
@@ -1936,13 +1992,14 @@
       "licenseName": "演示仓库 MIT；教程图片独立再分发权未核实",
       "licenseUrl": "https://github.com/item-develop/paper-crumple-demo/blob/main/LICENSE",
       "collectedAt": "2026-10-07T17:54:07.037Z",
-      "updatedAt": "2026-10-07T17:54:07.037Z",
+      "updatedAt": "2026-10-14T07:53:24.000Z",
       "userFeedback": {
         "liked": true,
         "favorite": false,
         "notInterested": false,
         "updatedAt": "2026-10-08T05:14:44.754Z"
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "纸艺赛车 / Kâğıt Kart｜立体书纸艺赛车",
@@ -1983,13 +2040,14 @@
         "architecture_url": "https://github.com/BurakErdemci/kagit-kart/blob/master/ARCHITECTURE.md",
         "dedup_check": "逐条比较原55条来源和作品；与已有纸片立体书视频风格教程是不同作品，本条为交互赛车项目。"
       },
-      "updatedAt": "2026-10-07T17:34:37.155Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": true,
         "favorite": true,
         "notInterested": false,
         "updatedAt": "2026-10-08T05:14:38.626Z"
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "流体透视：擦开表面，让内部结构显现",
@@ -2016,13 +2074,14 @@
       "licenseName": "演示代码：作者 README 声明 MIT；文章图片及模型独立再分发权未单独核实",
       "licenseUrl": "https://tympanus.net/codrops/licensing/",
       "collectedAt": "2026-10-07T12:15:31.746Z",
-      "updatedAt": "2026-10-07T12:15:31.746Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": true,
         "favorite": false,
         "notInterested": false,
         "updatedAt": "2026-10-08T05:14:48.194Z"
-      }
+      },
+      "styleFamily": "model_3d"
     },
     {
       "title": "虹彩玻璃台灯：用真实产品校准薄膜干涉材质",
@@ -2050,13 +2109,14 @@
       "attribution": "Three.js authors（示例与预览）；Iridescence Lamp：© 2022 Wayfair, LLC，Eric Chadwick；环境贴图 Venice Sunset 来源 HDRI Haven（源码署名）",
       "licenseName": "Three.js 源码 MIT；Iridescence Lamp 模型 CC BY 4.0；其他资产按各自许可",
       "licenseUrl": "https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/IridescenceLamp/LICENSE.md",
-      "updatedAt": "2026-10-07T05:56:45.038Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": true,
         "favorite": false,
         "notInterested": false,
         "updatedAt": "2026-10-08T05:14:56.794Z"
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "同一角色的日常表情包：Qwen 官方角色一致性案例",
@@ -2083,13 +2143,14 @@
       "attribution": "Qwen Team / Alibaba Cloud，Qwen-Image-Edit 官方 Showcase（2025-08-19）；水豚示例为官方作品",
       "licenseName": "博客示例图片单独复用许可未注明；仅来源外链",
       "licenseUrl": "https://qwenlm.github.io/blog/qwen-image-edit/",
-      "updatedAt": "2026-10-07T05:56:45.038Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "draw"
     },
     {
       "title": "充气按钮：把布料物理烘焙成可重播网页动效",
@@ -2124,13 +2185,14 @@
         "dedup_check": "与51条旧条目按来源、作品、核心技巧比较；不同于已有柔软着陆生成视频，本条是布料缓存导出GLB再播放的制作方法。"
       },
       "collectedAt": "2026-10-06T23:51:44.642Z",
-      "updatedAt": "2026-10-06T23:51:44.642Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": true,
         "favorite": false,
         "notInterested": false,
         "updatedAt": "2026-10-08T05:14:53.523Z"
-      }
+      },
+      "styleFamily": "model_3d"
     },
     {
       "title": "雨夜便利店 · 可交互微缩街角",
@@ -2166,13 +2228,14 @@
         "method_scope": "阅读原帖、展开作者公开提示词评论、查看真实视频封面；未播放完整视频、未测试场景交互、未安装或运行作者项目，未核实模型生成质量。"
       },
       "collectedAt": "2026-10-06T19:46:23.937Z",
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": true,
         "favorite": false,
         "notInterested": false,
         "updatedAt": "2026-10-08T05:14:50.104Z"
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "Efecto · 把头像做成少色点阵海报",
@@ -2203,13 +2266,14 @@
         "method_scope": "阅读原作者教程；未上传用户照片、未实际生成或测试导出"
       },
       "collectedAt": "2026-10-06T18:36:24.301Z",
-      "updatedAt": "2026-10-06T18:36:35.318Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "draw"
     },
     {
       "title": "Prompt Motion｜Claude 动效与 Prompt / Skill 画廊",
@@ -2250,13 +2314,14 @@
         "source_check": "X 直接公开读取 403；公开 FxTwitter 返回指定帖正文和官网链接，作者官网已交叉确认。",
         "license_check": "官网可见页面及作者 GitHub 公开仓库列表未发现此画廊源码/许可证；不宣称已开源。"
       },
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "地图跟随叙事：让路线与活动日程一起前进",
@@ -2296,13 +2361,14 @@
         "video_check": "同页原作者视频已加载，readyState=4，1662×1246，时长8秒；未完整播放。",
         "model_check": "未发现作者对生成模型的声明；不纳入 Claude 视频专栏。"
       },
-      "updatedAt": "2026-10-06T11:58:55.051Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "玻璃质感产品｜Aura — Hear the Light",
@@ -2347,13 +2413,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:33.072Z",
-      "updatedAt": "2026-10-06T09:04:33.072Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "移轴微缩｜Toy Town Rush Hour",
@@ -2398,13 +2465,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:32.164Z",
-      "updatedAt": "2026-10-06T09:04:32.164Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "暗色科技发布｜Room to Think",
@@ -2449,13 +2517,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:31.089Z",
-      "updatedAt": "2026-10-06T09:04:31.089Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "ASCII / CRT 终端｜Tranquility.log",
@@ -2500,13 +2569,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:30.197Z",
-      "updatedAt": "2026-10-06T09:04:30.197Z",
+      "updatedAt": "2026-10-14T07:53:24.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "蓝图 / 工程制图｜Patent Pending: The Cloud Catcher",
@@ -2551,13 +2621,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:28.882Z",
-      "updatedAt": "2026-10-06T09:04:28.882Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "装饰艺术｜Midnight at the Starlight Hotel",
@@ -2602,13 +2673,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:27.992Z",
-      "updatedAt": "2026-10-06T09:04:27.992Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "60s 间谍片头｜The Velvet Cipher",
@@ -2653,13 +2725,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:27.177Z",
-      "updatedAt": "2026-10-06T09:04:27.177Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "木刻版画｜The Bell Founder",
@@ -2704,13 +2777,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:25.848Z",
-      "updatedAt": "2026-10-06T09:04:25.848Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "Risograph 丝网印刷｜Sunday Ride",
@@ -2755,13 +2829,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:25.021Z",
-      "updatedAt": "2026-10-06T09:04:25.021Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "红色窗花剪纸｜Nian Comes to Town",
@@ -2806,13 +2881,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:24.217Z",
-      "updatedAt": "2026-10-06T09:04:24.217Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "浮世绘｜A Journey Toward the Mountain",
@@ -2857,13 +2933,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:23.022Z",
-      "updatedAt": "2026-10-06T09:04:23.022Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "皮影戏｜Hou Yi Shoots the Suns",
@@ -2908,13 +2985,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:22.095Z",
-      "updatedAt": "2026-10-06T09:04:22.095Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "油画厚涂｜The Colour of Rain",
@@ -2959,13 +3037,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:20.961Z",
-      "updatedAt": "2026-10-06T09:04:20.961Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "中国水墨｜The Swordsman and the River",
@@ -3010,13 +3089,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:20.060Z",
-      "updatedAt": "2026-10-06T09:04:20.060Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "蜡笔儿童绘本｜The Moon Can't Sleep",
@@ -3061,13 +3141,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:19.162Z",
-      "updatedAt": "2026-10-06T09:04:19.162Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "综艺花字｜喵呜日记 EP.07",
@@ -3112,13 +3193,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:18.291Z",
-      "updatedAt": "2026-10-06T09:04:18.291Z",
+      "updatedAt": "2026-10-14T07:53:24.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "液态流动｜drop.「万物始于一滴」",
@@ -3163,13 +3245,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:17.020Z",
-      "updatedAt": "2026-10-06T09:04:17.020Z",
+      "updatedAt": "2026-10-14T07:53:24.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "像素风｜PIXEL QUEST 像素冒险",
@@ -3214,13 +3297,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:16.035Z",
-      "updatedAt": "2026-10-06T09:04:16.035Z",
+      "updatedAt": "2026-10-14T07:53:24.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "复古 / Synthwave｜NEON DRIVE「霓虹夜驰 1986」",
@@ -3266,13 +3350,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:15.052Z",
-      "updatedAt": "2026-10-06T09:04:15.052Z",
+      "updatedAt": "2026-10-14T07:53:24.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "几何构成 / 包豪斯｜二十拍构成 KONSTRUKTION",
@@ -3318,13 +3403,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:14.099Z",
-      "updatedAt": "2026-10-06T09:04:14.099Z",
+      "updatedAt": "2026-10-14T07:53:24.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "弥散渐变 / 玻璃拟态｜Aurora「思考，自有光」",
@@ -3370,13 +3456,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:13.113Z",
-      "updatedAt": "2026-10-06T09:04:13.113Z",
+      "updatedAt": "2026-10-14T07:53:24.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "拼贴剪贴｜NOGGIN 脑洞季刊",
@@ -3421,13 +3508,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:12.170Z",
-      "updatedAt": "2026-10-06T09:04:12.170Z",
+      "updatedAt": "2026-10-14T07:53:24.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "赛博朋克 / HUD｜隼眼-9 · 目标锁定",
@@ -3473,13 +3561,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:11.272Z",
-      "updatedAt": "2026-10-06T09:04:11.272Z",
+      "updatedAt": "2026-10-14T07:53:24.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "贴纸风 / 科普｜一部手机里，藏着多少种元素？",
@@ -3525,13 +3614,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:10.304Z",
-      "updatedAt": "2026-10-06T09:04:10.304Z",
+      "updatedAt": "2026-10-14T07:53:24.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "形变动画｜morphe.「一形万象」",
@@ -3576,13 +3666,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:09.504Z",
-      "updatedAt": "2026-10-06T09:04:09.504Z",
+      "updatedAt": "2026-10-14T07:53:24.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "3D 渲染｜soft.「柔软着陆」",
@@ -3627,13 +3718,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:08.653Z",
-      "updatedAt": "2026-10-06T09:04:08.653Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "model_3d"
     },
     {
       "title": "线条动画｜ATELIER LINEA「一笔画」",
@@ -3678,13 +3770,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:07.766Z",
-      "updatedAt": "2026-10-06T09:04:07.766Z",
+      "updatedAt": "2026-10-14T07:53:24.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "扁平矢量｜popwise「One Dot」",
@@ -3729,13 +3822,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:06.895Z",
-      "updatedAt": "2026-10-06T09:04:06.895Z",
+      "updatedAt": "2026-10-14T07:53:24.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "等轴 2.5D｜ISOPOLIS「让城市自己生长」",
@@ -3780,13 +3874,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:06.172Z",
-      "updatedAt": "2026-10-06T09:04:06.172Z",
+      "updatedAt": "2026-10-14T07:53:24.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "逐帧手绘｜手作 HAND MADE",
@@ -3831,13 +3926,14 @@
       },
       "licenseName": "MIT",
       "collectedAt": "2026-10-06T09:04:05.223Z",
-      "updatedAt": "2026-10-06T09:04:05.223Z",
+      "updatedAt": "2026-10-14T07:53:24.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "山崖博物馆：让作品集成为一段空间探索",
@@ -3876,13 +3972,14 @@
         "video_check": "仅静态封面，不代表完整游览、交互性能或音频测试。",
         "source_documentation": "https://tympanus.net/codrops/2025/04/08/3d-world-in-the-browser-with-blender-and-three-js/"
       },
-      "updatedAt": "2026-10-06T06:25:45.086Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "model_3d"
     },
     {
       "title": "可玩的解释：把抽象连接变成可观察反馈",
@@ -3923,13 +4020,14 @@
         "codeUrl": "https://github.com/ncase/neurons",
         "dependencySource": "https://github.com/ncase/neurons/blob/gh-pages/interactive.html"
       },
-      "updatedAt": "2026-10-06T06:26:14.799Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "学习的形状：科学图册式 AI 历史科普",
@@ -3970,14 +4068,15 @@
           "https://x.com/KeWai386772/status/2104541061670683023"
         ]
       },
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:54:31.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
       },
-      "attribution": "@KeWai386772"
+      "attribution": "@KeWai386772",
+      "styleFamily": "code"
     },
     {
       "title": "照见 · ILLUMINE｜敦煌镜窟",
@@ -4004,14 +4103,15 @@
         "已补全正文",
         "已补全预览"
       ],
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
       },
-      "attribution": "@KeWai386772"
+      "attribution": "@KeWai386772",
+      "styleFamily": "code"
     },
     {
       "title": "记忆小屋：把相册展开成可触摸的空间",
@@ -4054,14 +4154,15 @@
         ],
         "prompt_check": "原帖与可见回复未见完整prompt；不能据此断言作者从未在别处公开。"
       },
-      "updatedAt": "2026-10-14T07:23:50.000Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
       },
-      "attribution": "@KeWai386772"
+      "attribution": "@KeWai386772",
+      "styleFamily": "code"
     },
     {
       "category": "motion",
@@ -4099,7 +4200,7 @@
         "preview_provenance": "官方作品页直接引用的 dataviz_0.jpg，已下载看图；STYLE.md 核实 Canvas 2D 引擎及 Python 配乐，未运行。",
         "video_check": "官方作品卡列有 0:50 视频和下载链接；未完整播放或复核底层数据。"
       },
-      "updatedAt": "2026-10-06T09:04:35.302Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "collectionIds": [
         "claude-video-styles"
       ],
@@ -4111,7 +4212,8 @@
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "category": "motion",
@@ -4149,7 +4251,7 @@
         "preview_provenance": "官方作品页直接引用的 iso-infographic_0.jpg，已下载看图；STYLE.md 明确为无外部依赖 Canvas 2D 绘图引擎，渲染/配音链另需相应工具。",
         "video_check": "官方作品卡列有 0:59 视频和下载链接；未完整播放或审计供应链数值。"
       },
-      "updatedAt": "2026-10-06T09:04:36.673Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "collectionIds": [
         "claude-video-styles"
       ],
@@ -4161,7 +4263,8 @@
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "深色产品页：先讲价值，再展示证据",
@@ -4199,13 +4302,14 @@
         "preview_provenance": "官方 README 直接嵌入的模板展示图，已核对真实网页项目与 live demo。"
       },
       "collectedAt": "2026-10-05T18:33:13.767Z",
-      "updatedAt": "2026-10-05T18:33:34.067Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "微缩场景：把产品变成一个小世界",
@@ -4242,13 +4346,14 @@
         "preview_provenance": "官方 README 案例 56 直接引用的同一图片文件，已看图确认；原帖链接由仓库提供。"
       },
       "collectedAt": "2026-10-05T18:33:13.767Z",
-      "updatedAt": "2026-10-05T18:33:13.767Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "draw"
     },
     {
       "title": "瑞士网格：让信息按节拍归位",
@@ -4282,7 +4387,7 @@
         "video_check": "视频链接在官方作品卡中列明；本次实测缩略图，未完整播放视频。"
       },
       "collectedAt": "2026-10-05T18:29:27.229Z",
-      "updatedAt": "2026-10-06T09:04:37.891Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "collectionIds": [
         "claude-video-styles"
       ],
@@ -4294,7 +4399,8 @@
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "全息扫描：把产品参数变成可见结构",
@@ -4328,7 +4434,7 @@
         "video_check": "视频链接在官方作品卡中列明；本次实测缩略图，未完整播放视频。"
       },
       "collectedAt": "2026-10-05T18:29:27.229Z",
-      "updatedAt": "2026-10-06T09:04:39.171Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "collectionIds": [
         "claude-video-styles"
       ],
@@ -4340,7 +4446,8 @@
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "像素向导：把软件操作演给人看",
@@ -4384,13 +4491,14 @@
       "licenseUrl": "https://github.com/lemomo-ai/lemo-opuscar/blob/b65efe6ea393fdc71212898ea4c57c754cfefa46/LICENSE",
       "licenseText": "MIT License\n\nCopyright (c) 2026 LemoLab\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\nThird-party assets in the demos (sample libraries, fonts, music, voices) keep their own\nlicences; see each demo's CREDITS. You are responsible for the materials you use in your\nown films.\n",
       "attribution": "Living Screencast / Clawd Moves In — Lemomo / LemoLab. Copyright (c) 2026 LemoLab. 中文通用提示为整理改写。",
-      "updatedAt": "2026-10-08T06:58:45.234Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "水彩长镜头：讲清自然变化",
@@ -4424,7 +4532,7 @@
         "video_check": "视频链接在官方作品卡中列明；本次实测缩略图，未完整播放视频。"
       },
       "collectedAt": "2026-10-05T18:29:27.229Z",
-      "updatedAt": "2026-10-06T09:04:42.048Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "collectionIds": [
         "claude-video-styles"
       ],
@@ -4436,7 +4544,8 @@
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "丝印旅行海报：让路线分层出现",
@@ -4470,7 +4579,7 @@
         "video_check": "视频链接在官方作品卡中列明；本次实测缩略图，未完整播放视频。"
       },
       "collectedAt": "2026-10-05T18:29:27.229Z",
-      "updatedAt": "2026-10-06T09:04:43.850Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "collectionIds": [
         "claude-video-styles"
       ],
@@ -4482,7 +4591,8 @@
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "铜版博物图：让细节成为证据",
@@ -4516,7 +4626,7 @@
         "video_check": "视频链接在官方作品卡中列明；本次实测缩略图，未完整播放视频。"
       },
       "collectedAt": "2026-10-05T18:29:27.229Z",
-      "updatedAt": "2026-10-06T09:04:45.120Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "collectionIds": [
         "claude-video-styles"
       ],
@@ -4528,7 +4638,8 @@
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "纸片立体书：用翻页展开故事",
@@ -4562,7 +4673,7 @@
         "video_check": "视频链接在官方作品卡中列明；本次实测缩略图，未完整播放视频。"
       },
       "collectedAt": "2026-10-05T18:29:27.229Z",
-      "updatedAt": "2026-10-06T09:04:46.330Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "collectionIds": [
         "claude-video-styles"
       ],
@@ -4574,7 +4685,8 @@
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "翻牌字与界面穿梭：连续镜头的节奏",
@@ -4608,13 +4720,14 @@
         "video_check": "GitHub LFS MP4 的 HEAD 返回 200；未完整播放。"
       },
       "collectedAt": "2026-10-05T18:29:27.229Z",
-      "updatedAt": "2026-10-05T18:29:27.229Z",
+      "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "styleFamily": "code"
     },
     {
       "title": "这家伙把打字机滑块直接做成了一盏能调角度的小射灯 再看看现在大家都在做千篇一律的白板编辑器，能把敲字仪式感做成这样，审美真的牛逼",
@@ -4638,7 +4751,8 @@
       "previewType": "image",
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108371786585063891。",
       "attribution": "@ianneo_ai",
-      "updatedAt": "2026-10-14T07:23:50.000Z"
+      "updatedAt": "2026-10-14T07:54:31.000Z",
+      "styleFamily": "code"
     },
     {
       "title": "X书签保存Skill x Teamily，实现书签打捞学习",
@@ -4662,7 +4776,8 @@
       "previewType": "image",
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108346962986909740。",
       "attribution": "@Pluvio9yte",
-      "updatedAt": "2026-10-14T07:23:50.000Z"
+      "updatedAt": "2026-10-14T07:52:46.000Z",
+      "styleFamily": "other"
     },
     {
       "title": "我的第一次企业 AI 交付：一单 3300 元的企业智能体，踩过的坑和接下来的打算",
@@ -4686,7 +4801,8 @@
       "previewType": "image",
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108529945064640775。",
       "attribution": "@Kainative",
-      "updatedAt": "2026-10-14T07:23:50.000Z"
+      "updatedAt": "2026-10-14T07:52:46.000Z",
+      "styleFamily": "other"
     },
     {
       "title": "用 AI 重塑你的学习范式，轻松且高效",
@@ -4710,7 +4826,8 @@
       "previewType": "image",
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108474440904495566。",
       "attribution": "@Aoyi21",
-      "updatedAt": "2026-10-14T07:23:50.000Z"
+      "updatedAt": "2026-10-14T07:52:46.000Z",
+      "styleFamily": "other"
     },
     {
       "title": "入职大厂两个月，我的 AI 开发心得",
@@ -4734,7 +4851,8 @@
       "previewType": "image",
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108577165306687938。",
       "attribution": "@huangtongxueh",
-      "updatedAt": "2026-10-14T07:23:50.000Z"
+      "updatedAt": "2026-10-14T07:52:46.000Z",
+      "styleFamily": "other"
     },
     {
       "title": "我靠，这个是怎么做到的？ 这相当于我可以脱离电脑的 Codex 和 Claude Code 来自动操作手机。也就是说，它是不是直接 hack…",
@@ -4758,7 +4876,8 @@
       "previewType": "image",
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108384516847100170。",
       "attribution": "@turingou",
-      "updatedAt": "2026-10-14T07:23:50.000Z"
+      "updatedAt": "2026-10-14T07:52:46.000Z",
+      "styleFamily": "other"
     },
     {
       "title": "iPhone AGI has been achieved 🔥🔥 An agent running entirely on my iPhone…",
@@ -4782,7 +4901,8 @@
       "previewType": "image",
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108279639538012265。",
       "attribution": "@finnvoorhees",
-      "updatedAt": "2026-10-14T07:23:50.000Z"
+      "updatedAt": "2026-10-14T07:52:46.000Z",
+      "styleFamily": "other"
     },
     {
       "title": "几个提高审美的网站推荐： 高质量设计灵感推荐 最好的微动效网站 最好的落地页参考网站 设计参考大全 品牌设计参考站 专注于优秀的背景图网站",
@@ -4806,7 +4926,8 @@
       "previewType": "image",
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108374105716400315。",
       "attribution": "@Jackywine",
-      "updatedAt": "2026-10-14T07:23:50.000Z"
+      "updatedAt": "2026-10-14T07:54:31.000Z",
+      "styleFamily": "draw"
     },
     {
       "title": "卧槽，这个神仙级的「交互式教学工具库」持续更新中 刚刚上新了！新增了地理学科“水循环”的演示， 这个效果调了3个小时才实现！ 🔗 老师们、演…",
@@ -4830,7 +4951,8 @@
       "previewType": "image",
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108511734919205112。",
       "attribution": "@jinglian",
-      "updatedAt": "2026-10-14T07:23:50.000Z"
+      "updatedAt": "2026-10-14T07:54:31.000Z",
+      "styleFamily": "code"
     },
     {
       "title": "GPT-Image2 提示词库开源才两天，GitHub 星标就冲到 18000，你还没上车？ 工业级的提示词引擎、海量模板持续更新、拿来就能…",
@@ -4854,7 +4976,8 @@
       "previewType": "image",
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108302161343869305。",
       "attribution": "@kfhshl",
-      "updatedAt": "2026-10-14T07:23:50.000Z"
+      "updatedAt": "2026-10-14T07:54:31.000Z",
+      "styleFamily": "draw"
     },
     {
       "title": "Grok Bot 额度超长续航保姆级新手指南（直接发给 Bot！）",
@@ -4878,7 +5001,8 @@
       "previewType": "image",
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108504325609984233。",
       "attribution": "@cgnot996",
-      "updatedAt": "2026-10-14T07:23:50.000Z"
+      "updatedAt": "2026-10-14T07:52:46.000Z",
+      "styleFamily": "other"
     },
     {
       "title": "爆款密码：我把100年以来的百本心理学与传播学经典，蒸馏成 216 个传播机制——爆款技巧会过期，这些不会",
@@ -4902,7 +5026,8 @@
       "previewType": "image",
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108019828753924289。",
       "attribution": "@dboy_yi2025",
-      "updatedAt": "2026-10-14T07:23:50.000Z"
+      "updatedAt": "2026-10-14T07:52:46.000Z",
+      "styleFamily": "other"
     },
     {
       "title": "朋友问我，开发产品有哪些必备的 skill，我就结合我本地装的用的多的，做了个整理，涵盖原型设计、UI 设计、代码、测试、运营一整个流程的万…",
@@ -4926,7 +5051,8 @@
       "previewType": "image",
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108390858764763472。",
       "attribution": "@kongge_space",
-      "updatedAt": "2026-10-14T07:23:50.000Z"
+      "updatedAt": "2026-10-14T07:52:46.000Z",
+      "styleFamily": "other"
     },
     {
       "title": "REA（Reverse Engineer Anything）逆向一切 三天从 3 万 Star 涨到 12 万+，一天新增 2.5 万以上。…",
@@ -4950,7 +5076,8 @@
       "previewType": "image",
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2109567957890429431。",
       "attribution": "@jinglian",
-      "updatedAt": "2026-10-14T07:23:50.000Z"
+      "updatedAt": "2026-10-14T07:52:46.000Z",
+      "styleFamily": "other"
     },
     {
       "title": "Opus 5.5 + 即梦 CLI 试了一下，让 Opus 5.5 结合视频模型做故事片表达 没想到效果还不错，所有的编排、视频特效、提示词…",
@@ -4974,10 +5101,11 @@
       "previewType": "image",
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2109515395749310821。",
       "attribution": "@op7418",
-      "updatedAt": "2026-10-14T07:23:50.000Z"
+      "updatedAt": "2026-10-14T07:52:46.000Z",
+      "styleFamily": "video_model"
     }
   ],
   "bookmarksNotInVisual": 15,
   "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面",
-  "updatedAt": "2026-10-14T07:23:50.000Z"
+  "updatedAt": "2026-10-14T07:54:31.000Z"
 }

@@ -57,11 +57,21 @@
         </div>
         <div class="gap-next">下一步：补齐视觉库导出后刷新本页</div>
       </div>
+      <div class="toolbar">
+        <div class="chips" id="visualCategoryChips" role="group" aria-label="视觉分类"></div>
+        <div class="toolbar-right">
+          <label class="search-wrap">
+            <span class="sr-only">搜索视觉素材</span>
+            <input type="search" id="visualSearch" placeholder="搜索标题或描述…" autocomplete="off" />
+          </label>
+        </div>
+      </div>
+      <p class="filter-hint" id="visualsHint"></p>
       <div class="card-grid" id="visualsGrid"></div>
       <div class="empty-state hidden" id="visualsEmpty">
         <div class="empty-icon" aria-hidden="true">◇</div>
-        <h2>本快照还没有可用的视觉条目</h2>
-        <p>站内约 113 条素材；补齐视觉库导出后刷新本页即可看到完整卡片。</p>
+        <h2>这一类暂时没有匹配的视觉素材</h2>
+        <p>换一个分类，或清空搜索；补齐视觉库导出后刷新本页即可看到更多卡片。</p>
       </div>
     </section>
   </div>
