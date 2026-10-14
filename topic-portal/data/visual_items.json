@@ -4,6 +4,101 @@
   "exportedCount": 114,
   "items": [
     {
+      "title": "Claude 手感为什么舒服：用 REA 逆向 Claude Desktop 的交互物理学",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/BystAnd3rs/status/2110404747605709153",
+      "previewUrl": "https://pbs.twimg.com/media/HUmppz1XwAEHTVB.jpg",
+      "previewType": "image",
+      "description": "作者用 REA（@morluto）逆向 Claude Desktop，整理成 3000 多行逆向手册（7 章）+30 个可复制 React 组件，开源于 github.com/Caho1/open-claude-ui。要点：滚动边缘七档非线性透明渐隐；语音波形切掉低于8%的底噪并做0.7次方压缩；按钮/卡片/勾选/吸附分别调弹簧参数（按钮0.22秒归位、卡片0.35秒停住、勾选跳两下、侧边栏零回弹）；AI吐字自动跟滚、上滑150ms内松手不拽回；以鼠标为中心缩放、4px内不算拖；拖分栏越过网页预览不卡、双击五五对半。",
+      "tool": "REA（逆向）+ React",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "参数均为作者逆向所得、自述，未回查仓库；许可未在帖中声明。封面为帖内第1张配图。",
+      "attribution": "@BystAnd3rs（飞翔的企鹅x，X）",
+      "sourceAuthor": "BystAnd3rs",
+      "tags": [
+        "用户指定收纳",
+        "Claude",
+        "交互动效",
+        "逆向",
+        "React"
+      ],
+      "publishedAt": "2026-10-14T16:17:55Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-14T18:55:00.000Z",
+      "updatedAt": "2026-10-14T18:55:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-14T18:55:00.000Z"
+      },
+      "sourceCodeUrl": "https://github.com/Caho1/open-claude-ui"
+    },
+    {
+      "title": "REA 挖出的 Claude 前端细节：4层底色分层、内侧亮线、0.5px分割线",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/BystAnd3rs/status/2110270963338084425",
+      "previewUrl": "https://pbs.twimg.com/media/HUkt2HmXcAAPVU2.jpg",
+      "previewType": "image",
+      "description": "同作者前一条帖：REA 挖出的 Claude 前端细节——AI吐字时屏幕自动跟着往下滚；界面几乎不用黑色边框，靠4层深浅相近的底色分层；黑夜模式按钮和卡片不用外圈白边，而是内侧贴一道很淡的亮线；Mac 高清屏上分割线自动变细到 0.5px。作者称分析报告整理中（后续即 open-claude-ui 那条）。",
+      "tool": "REA（逆向）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "细节为作者自述；封面为帖内第1张配图。",
+      "attribution": "@BystAnd3rs（飞翔的企鹅x，X）",
+      "sourceAuthor": "BystAnd3rs",
+      "tags": [
+        "用户指定收纳",
+        "Claude",
+        "UI细节",
+        "逆向"
+      ],
+      "publishedAt": "2026-10-14T07:26:19Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-14T18:55:00.000Z",
+      "updatedAt": "2026-10-14T18:55:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-14T18:55:00.000Z"
+      }
+    },
+    {
+      "title": "Anatomy 风格 3D 知识动画：Ask by Jig 免费生成",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/slashui/status/2110295151042261409",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110293191496974336/img/pfCuQI9PRYm-iKth.jpg",
+      "previewType": "image",
+      "description": "@slashui（洛克船长）推荐：博主 @numaausaumon 做 Anatomy 风格的 3D 动画，质量很高，并做了生成工具 Ask by Jig，可直接生成 Anatomy 风格 3D 内容，帖子称目前免费。工具使命：Humanity's knowledge in 3D（用 3D 呈现人类的知识）。帖内附4段演示视频。",
+      "tool": "Ask by Jig",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "“免费”为帖子所述；工具生成的是3D内容，故归 model_3d。封面为帖内第1段视频缩略图。许可未声明。",
+      "attribution": "@slashui 推荐；作品/工具 @numaausaumon",
+      "sourceAuthor": "slashui",
+      "tags": [
+        "用户指定收纳",
+        "Anatomy风格",
+        "3D",
+        "知识可视化"
+      ],
+      "publishedAt": "2026-10-14T09:02:26Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-14T18:55:00.000Z",
+      "updatedAt": "2026-10-14T18:55:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-14T18:55:00.000Z"
+      }
+    },
+    {
       "title": "《蓦然回首》剪纸拼贴混剪：我无法改变失去你的事实，但我决定继续创作下去",
       "category": "video",
       "source": "https://www.iesdouyin.com/share/video/7694535947064495375/",
@@ -5673,6 +5768,6 @@
   ],
   "bookmarksNotInVisual": 15,
   "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分）",
-  "updatedAt": "2026-10-14T13:11:45.000Z",
-  "totalItems": 137
+  "updatedAt": "2026-10-14T18:55:00.000Z",
+  "totalItems": 141
 }
