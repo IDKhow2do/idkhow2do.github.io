@@ -1,7 +1,7 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 114,
+  "exportedCount": 115,
   "items": [
     {
       "title": "Claude 手感为什么舒服：用 REA 逆向 Claude Desktop 的交互物理学",
@@ -5764,10 +5764,62 @@
         "threshold": 70,
         "run": "2026-10-14-2040-shanghai"
       }
+    },
+    {
+      "title": "Gemini 4 Argon 从第一性原理作画：傅里叶本轮画出骑自行车的鹈鹕",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/fofrAI/status/2110043023954284889",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110042439679356928/img/9r6fyHnZ6WisSOJZ.jpg",
+      "previewType": "image",
+      "description": "用傅里叶本轮（epicycles，一串旋转圆叠加）逐笔描出“鹈鹕骑自行车”的代码生成动画；作者称视频由Gemini 4 Argon制作，并由Argon为Lyria 3.5撰写提示词生成时间同步配乐，以展示模型“从第一性原理理解世界”的能力。引用帖为“Gemini 4 Argon is live.”发布公告。用户指定收纳：作为计划中的「AI能力宣传片 / 3D讲解万物」视频的示范素材（傅里叶级数可视化+AI自主出片+配乐）。已取X视频封面帧（HTTP 200）；未完整播放视频。",
+      "tool": "Gemini 4 Argon（作者自述，生成视频/代码）；Lyria 3.5（配乐，由Argon撰写提示词）",
+      "prompt": "",
+      "promptProvenance": "not_public",
+      "provenanceNote": "原帖未公开提示词；仅外链引用，许可未声明。引用帖 https://x.com/i/status/2110039904872771827 （Gemini 4 Argon is live.）。",
+      "attribution": "@fofrAI（fofr，X）",
+      "sourceAuthor": "fofrAI",
+      "modelClaim": "Gemini 4 Argon",
+      "modelEvidenceUrl": "https://x.com/fofrAI/status/2110043023954284889",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "AI能力宣传片素材",
+        "傅里叶本轮",
+        "程序化生成",
+        "Gemini 4 Argon"
+      ],
+      "publishedAt": "2026-10-13T16:20:34Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-14T19:29:36.000Z",
+      "updatedAt": "2026-10-14T19:29:36.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-14T19:29:36.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-14T19:29:36.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1920,
+          1080
+        ],
+        "preview_check": "封面URL来自X API视频preview_image_url，本轮下载HTTP 200。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-14"
+      }
     }
   ],
   "bookmarksNotInVisual": 15,
   "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分）",
-  "updatedAt": "2026-10-14T18:55:00.000Z",
-  "totalItems": 141
+  "updatedAt": "2026-10-14T19:29:36.000Z",
+  "totalItems": 142
 }
