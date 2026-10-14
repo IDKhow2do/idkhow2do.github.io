@@ -650,3 +650,6 @@ code {
   .toolbar-right { width: 100%; }
   .search-wrap input { width: 100%; }
 }
+
+.ind.is-on.nope { color: #fff; background: #6b7280; border-color: transparent; }
+#exportFeedback { margin-left: 8px; white-space: nowrap; }

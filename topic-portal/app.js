@@ -25,9 +25,51 @@
     query: "",
     visualFamily: "全部",
     visualQuery: "",
-    visualOverrides: {}, // ephemeral UI-only toggles
+    visualOverrides: {}, // persisted to localStorage
     topicOverrides: {},
   };
+
+  /* —— Feedback persistence (localStorage, schema v1; forward-compatible with /api/feedback) —— */
+  const FB_STORE = "topicPortal.feedback.v1";
+  function loadStoredFeedback() {
+    try {
+      const raw = JSON.parse(localStorage.getItem(FB_STORE) || "{}");
+      for (const [id, r] of Object.entries(raw.signals || {})) {
+        if (r.kind === "news") state.topicOverrides[r.key] = { liked: r.liked, saved: r.favorite, notInterested: r.notInterested, ts: r.ts };
+        else if (r.kind === "visual") state.visualOverrides[r.key] = { liked: r.liked, favorite: r.favorite, notInterested: r.notInterested, ts: r.ts };
+      }
+    } catch (e) { console.warn("feedback load failed", e); }
+  }
+  function collectSignals() {
+    const signals = [];
+    for (const [key, o] of Object.entries(state.topicOverrides))
+      signals.push({ key, kind: "news", liked: !!o.liked, favorite: !!o.saved, notInterested: !!o.notInterested, ts: o.ts || new Date().toISOString() });
+    for (const [key, o] of Object.entries(state.visualOverrides))
+      signals.push({ key, kind: "visual", liked: !!o.liked, favorite: !!o.favorite, notInterested: !!o.notInterested, ts: o.ts || new Date().toISOString() });
+    return signals;
+  }
+  function saveStoredFeedback() {
+    try {
+      const map = {};
+      for (const sg of collectSignals()) map[sg.kind + "|" + sg.key] = sg;
+      localStorage.setItem(FB_STORE, JSON.stringify({ version: 1, signals: map }));
+    } catch (e) { console.warn("feedback save failed", e); }
+    updateExportCount();
+  }
+  function updateExportCount() {
+    const b = document.getElementById("exportFeedback");
+    if (b) b.textContent = `导出反馈 JSON（${collectSignals().length}）`;
+  }
+  function exportFeedback() {
+    const payload = { version: 1, exportedAt: new Date().toISOString(), source: location.href, signals: collectSignals() };
+    const d = new Date(Date.now() + 8 * 3600e3).toISOString().slice(0, 10).replace(/-/g, "");
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = `feedback-${d}.json`;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  }
 
   const $ = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
@@ -190,10 +232,11 @@
   }
   function effectiveTopicFb(topic) {
     const o = state.topicOverrides[topic.url];
-    if (!o) return { liked: topic.liked, saved: topic.saved };
+    if (!o) return { liked: topic.liked, saved: topic.saved, notInterested: topic.notInterested };
     return {
       liked: o.liked ?? topic.liked,
       saved: o.saved ?? topic.saved,
+      notInterested: o.notInterested ?? topic.notInterested,
     };
   }
 
@@ -204,6 +247,7 @@
     return {
       liked: o.liked ?? !!base.liked,
       favorite: o.favorite ?? !!base.favorite,
+      notInterested: o.notInterested ?? !!base.notInterested,
     };
   }
 
@@ -344,6 +388,10 @@
       e.stopPropagation();
       toggleTopic(topic.url, "saved");
     }));
+    inds.appendChild(makeInd("✕", "nope", fb.notInterested, (e) => {
+      e.stopPropagation();
+      toggleTopic(topic.url, "notInterested");
+    }));
 
     btn.appendChild(preview);
     btn.appendChild(body);
@@ -356,7 +404,7 @@
     el.type = "button";
     el.className = `ind interactive ${kind}` + (on ? " is-on" : "");
     el.textContent = symbol;
-    el.title = kind === "like" ? "赞（只读演示）" : "收藏（只读演示）";
+    el.title = kind === "like" ? "赞（保存在本机浏览器）" : kind === "fav" ? "收藏（保存在本机浏览器）" : "不感兴趣（保存在本机浏览器）";
     el.addEventListener("click", onClick);
     return el;
   }
@@ -366,9 +414,11 @@
     const cur = state.topicOverrides[url] || {
       liked: base?.liked,
       saved: base?.saved,
+      notInterested: base?.notInterested,
     };
-    const next = { ...cur, [field]: !cur[field] };
+    const next = { ...cur, [field]: !cur[field], ts: new Date().toISOString() };
     state.topicOverrides[url] = next;
+    saveStoredFeedback();
     renderTopics();
     // refresh drawer if open for this topic
     const drawer = $("#drawer");
@@ -441,6 +491,10 @@
     fbHost.appendChild(makeInd("★", "fav", fb.saved, (e) => {
       e.stopPropagation();
       toggleTopic(topic.url, "saved");
+    }));
+    fbHost.appendChild(makeInd("✕", "nope", fb.notInterested, (e) => {
+      e.stopPropagation();
+      toggleTopic(topic.url, "notInterested");
     }));
 
     drawer.classList.add("is-open");
@@ -612,6 +666,10 @@
       e.stopPropagation();
       toggleVisual(key, "favorite");
     }));
+    inds.appendChild(makeInd("✕", "nope", fb.notInterested, (e) => {
+      e.stopPropagation();
+      toggleVisual(key, "notInterested");
+    }));
     meta.appendChild(inds);
     body.appendChild(meta);
 
@@ -629,7 +687,9 @@
     state.visualOverrides[key] = {
       ...base,
       [field]: !base[field],
+      ts: new Date().toISOString(),
     };
+    saveStoredFeedback();
     renderVisuals();
     const drawer = $("#drawer");
     if (drawer.classList.contains("is-open") && drawer.dataset.key === key) {
@@ -699,6 +759,10 @@
       e.stopPropagation();
       toggleVisual(key, "favorite");
     }));
+    fbHost.appendChild(makeInd("✕", "nope", fb.notInterested, (e) => {
+      e.stopPropagation();
+      toggleVisual(key, "notInterested");
+    }));
 
     drawer.classList.add("is-open");
     drawer.setAttribute("aria-hidden", "false");
@@ -752,6 +816,10 @@
   }
 
   async function init() {
+    loadStoredFeedback();
+    const exp = document.getElementById("exportFeedback");
+    if (exp) exp.addEventListener("click", exportFeedback);
+    updateExportCount();
     setupTabs();
     setupDrawer();
     setupFilters();
