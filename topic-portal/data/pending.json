@@ -1,0 +1,483 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "kind": "news",
+      "baseScore": 64,
+      "multiplier": 1.0,
+      "score": 64.0,
+      "reason": "主线外探索题（自然保护，约1/4探索配额）；一手为农业农村部第1070号公告，新华网转发；封面只有生态中国网同题稿件的420×260缩略图（摄影者未署名），画面偏弱。",
+      "run": "2026-10-14-2040-shanghai",
+      "record": {
+        "url": "https://www.news.cn/politics/20261013/85fe03fcc58e4147be70048c58adbc31/c.html",
+        "title": "给一群鲸划一片海，为什么一年要禁渔8.5个月？",
+        "category": "其他",
+        "source": "新华网转农业农村部网站《农业农村部公布中国首个布氏鲸重要栖息地》（2026-10-13）；农业农村部公告第1070号",
+        "publishedAt": "2026-10-13",
+        "eventAt": null,
+        "collectedAt": "2026-10-14T13:11:45.000Z",
+        "updatedAt": "2026-10-14T13:11:45.000Z",
+        "description": "农业农村部发布公告，将广西北海涠洲岛布氏鲸重要栖息地列入《国家重点保护水生野生动物重要栖息地名录（第三批）》：海域335.43平方公里，每年禁渔8.5个月——12月至次年4月专项禁渔，叠加5月1日至8月16日南海伏季休渔。机制：布氏鲸是洄游物种、国家一级保护野生动物，每年12月至次年4月来涠洲岛海域觅食栖息，所以保护要“按时间”而不只是“按地点”；2018年监测以来已识别超过70头个体。反方/限定：个体识别方法原文未写；不能说全国只有涠洲岛有布氏鲸。可拍角度：①日历上8.5个月被涂红=5+3.5的算术；②洄游物种为什么要“分季节”保护；③观鲸旅游要守的规矩。0秒开场：布氏鲸张口冲出海面、海鸥环绕的照片。",
+        "caveat": "农业农村部公告原文仅经转载页核到公告号与名录批次；封面取自生态中国网（eco.gov.cn）同题稿件缩略图，原稿来源央视新闻，摄影者未署名，商用需授权。",
+        "imageUrl": "https://www.eco.gov.cn/Uploads/imageMovie/20261014/64a3de19a382a14130e0d35e42271790-2.png",
+        "previewUrl": "https://www.eco.gov.cn/Uploads/imageMovie/20261014/64a3de19a382a14130e0d35e42271790-2.png",
+        "imageAlt": "布氏鲸在涠洲岛附近海面张口觅食、海鸥环绕（生态中国网同题稿件缩略图）",
+        "tags": [
+          "海洋生态",
+          "野生动物保护",
+          "探索"
+        ],
+        "tagSource": "provided",
+        "curation": {
+          "baseScore": 64,
+          "baseBreakdown": {
+            "主线": 5,
+            "钩子": 13,
+            "画面": 9,
+            "来源": 12,
+            "时效": 10,
+            "大陆": 10,
+            "新颖": 5
+          },
+          "multiplier": 1.0,
+          "finalScore": 64.0,
+          "threshold": 70,
+          "run": "2026-10-14-2040-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "news",
+      "baseScore": 62,
+      "multiplier": 1.0924,
+      "score": 67.7,
+      "reason": "imec官方新闻稿，但主体是代工合作公告，机制需外部补充（GaN为何适合数据中心电源）；钩子弱；封面为新闻稿配图，目视核验为合作方Logo（Polar Semiconductor / IC-link by imec），非实物画面，上墙前需换真实产品/晶圆图。新颖度扣分：库内已多条“设备/代工合作”类。",
+      "run": "2026-10-14-2040-shanghai",
+      "record": {
+        "url": "https://www.imec-int.com/en/press/polar-collaborates-ic-link-imec-manufacture-8-inch-gan-technology",
+        "title": "AI数据中心的电源，为什么开始换成氮化镓芯片？",
+        "category": "半导体",
+        "source": "imec新闻稿《Polar collaborates with IC-Link by imec to manufacture 8-inch GaN technology》（2026-10-12）",
+        "publishedAt": "2026-10-12",
+        "eventAt": null,
+        "collectedAt": "2026-10-14T13:11:45.000Z",
+        "updatedAt": "2026-10-14T13:11:45.000Z",
+        "description": "美国代工厂Polar Semiconductor与imec旗下IC-Link宣布合作，提供8英寸增强型（e-mode）氮化镓器件生产，面向AI数据中心、汽车、航空航天与国防、工业电网等市场。可拍角度需补：氮化镓相对硅在高压高频电源转换上的优势、为什么8英寸量产重要。",
+        "caveat": "仅核对新闻稿首段；电压范围等细节未逐字核对；合作公告不等于已量产。",
+        "imageUrl": "https://www.imec-int.com/sites/default/files/2026-10/Picture1.png",
+        "previewUrl": "https://www.imec-int.com/sites/default/files/2026-10/Picture1.png",
+        "imageAlt": "imec新闻稿配图",
+        "tags": [
+          "氮化镓",
+          "功率半导体",
+          "代工"
+        ],
+        "tagSource": "provided",
+        "curation": {
+          "baseScore": 62,
+          "baseBreakdown": {
+            "主线": 22,
+            "钩子": 6,
+            "画面": 6,
+            "来源": 15,
+            "时效": 10,
+            "大陆": 3,
+            "新颖": 0
+          },
+          "multiplier": 1.0924,
+          "finalScore": 67.7,
+          "threshold": 70,
+          "run": "2026-10-14-2040-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 65,
+      "multiplier": 1.0538,
+      "score": 68.5,
+      "reason": "纸书翻页有实体感，但素材来自Midjourney+MiniMax H3，提示词与代码均未公开，科普转化弱于本轮上墙项；临时阈值70下进待定。",
+      "run": "2026-10-14-2040-shanghai",
+      "record": {
+        "title": "动画变成能翻页的漫画：线稿→上色→翻书，全用Python",
+        "category": "video",
+        "styleFamily": "code",
+        "source": "https://x.com/aicreataro/status/2109192628818563353",
+        "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2109191524202532864/img/oyFZ6nrFWdzVyhuP.jpg",
+        "previewType": "image",
+        "description": "把一段AI动画拆成线与色重绘成漫画风，按“下描き→ペン→上色”顺序画出，打喷嚏一格做成跨页拟声字，最后镜头追格并真的翻书页；作者称不用AE和Blender，全部Python（由Opus 5.5编写）。已看X视频封面帧（上半为AI动画中的图书馆画面，下半为待绘制的空白页）。",
+        "tool": "Midjourney（角色设定）+ MiniMax H3（动画）+ Claude Opus 5.5写Python（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者未公开提示词与代码；X视频版权归作者，仅外链引用。",
+        "attribution": "@aicreataro（X）",
+        "sourceAuthor": "aicreataro",
+        "tags": [
+          "Python",
+          "翻页",
+          "漫画化",
+          "视频模型"
+        ],
+        "publishedAt": "2026-10-11T08:01:24Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-14T13:11:45.000Z",
+        "updatedAt": "2026-10-14T13:11:45.000Z",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "verification": {
+          "checked_at": "2026-10-14T13:11:45.000Z",
+          "visually_checked": true,
+          "preview_dimensions": [
+            1066,
+            1200
+          ],
+          "preview_check": "封面URL本轮重新下载（HTTP 200）并在拼图中目视核验为作品真实画面，非头像/占位图。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 65,
+          "baseBreakdown": {
+            "实体感": 16,
+            "科普镜头": 12,
+            "溯源": 12,
+            "可复现": 8,
+            "风格": 8,
+            "新颖": 9
+          },
+          "multiplier": 1.0538,
+          "finalScore": 68.5,
+          "threshold": 70,
+          "run": "2026-10-14-2040-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 64,
+      "multiplier": 1.0793,
+      "score": 69.1,
+      "reason": "一人16天用Tripo+Blender+Opus 5.5做的3D剧情网页游戏，可作Tripo商单的对照案例；但科普转化弱、作者尚未开源流程，题材为《小王子》改编（原著在多数地区已进公有领域，但需另核），临时阈值70下进待定。",
+      "run": "2026-10-14-2040-shanghai",
+      "record": {
+        "title": "一个人16天做出3D《小王子》：Tripo出资产、Blender排光、Opus写网页",
+        "category": "3d",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/Saccc_c/status/2109962425512734739",
+        "workUrl": "https://littleprince.dev/",
+        "previewUrl": "https://littleprince.dev/keyart.031aa305131370a0e08c9cb92d1b1aaa.jpg",
+        "previewType": "image",
+        "description": "可在浏览器里自由探索的3D剧情游戏《The Little Prince: Across the Stars》：小行星、火山、玻璃罩里的玫瑰、麦田与狐狸。作者称用Tripo批量生成3D场景资产、Blender处理材质与光影、Opus 5.5写剧情调度与网页渲染，耗时16天，计划后续开源游戏与制作流程。已看官网og主视觉（水彩风小行星与小王子）；未试玩。@jinglian有转述。",
+        "tool": "Tripo（3D资产）+ Blender + Claude Opus 5.5（网页与剧情代码）（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者尚未开源；封面为作品官网og:image主视觉。X帖12k+赞。许可未声明，仅外链引用。",
+        "attribution": "Sac（@Saccc_c，X）；转述 @jinglian https://x.com/jinglian/status/2110190082905010569",
+        "sourceAuthor": "Sac（@Saccc_c）",
+        "tags": [
+          "Tripo",
+          "Blender",
+          "微缩场景",
+          "3D交互",
+          "网页游戏"
+        ],
+        "collectionIds": [],
+        "collectedAt": "2026-10-14T13:11:45.000Z",
+        "updatedAt": "2026-10-14T13:11:45.000Z",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "verification": {
+          "checked_at": "2026-10-14T13:11:45.000Z",
+          "visually_checked": true,
+          "preview_dimensions": [
+            1672,
+            941
+          ],
+          "preview_check": "封面URL本轮重新下载（HTTP 200）并在拼图中目视核验为作品真实画面，非头像/占位图。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 64,
+          "baseBreakdown": {
+            "实体感": 16,
+            "科普镜头": 10,
+            "溯源": 12,
+            "可复现": 7,
+            "风格": 9,
+            "新颖": 10
+          },
+          "multiplier": 1.0793,
+          "finalScore": 69.1,
+          "threshold": 70,
+          "run": "2026-10-14-2040-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 63,
+      "multiplier": 1.0618,
+      "score": 66.9,
+      "reason": "宇宙起源→热寂的代码动画短片，科普题材贴合，但实体感弱、提示词很短、片长约4分钟超出账号节奏；进待定。",
+      "run": "2026-10-14-2040-shanghai",
+      "record": {
+        "title": "《天问》：JS绘图+数学艺术，从宇宙诞生讲到热寂",
+        "category": "video",
+        "styleFamily": "code",
+        "source": "https://x.com/KeWai386772/status/2108880029363155067",
+        "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2108879815352991744/img/lWiXt2MRraZIGSEs.jpg",
+        "previewType": "image",
+        "description": "约4分钟代码生成短片，作者称由Opus 5.5完成，主题从宇宙诞生到热寂、物质、生物、AI与起源终结；风格关键词“JavaScript Drawings + Math Coding艺术”。已看封面帧（深色粒子底上“天问 TIANWEN”）。",
+        "tool": "Claude Opus 5.5（作者自述，经agent.space云端调用）",
+        "prompt": "我要做一个 短片,奥斯卡奖级别的质量. 中英双语/纯英/纯中文,方便我全球媒体全平台传播. 口播不一定有.\n \nJavaScript Drawings 风格 + Math Coding 艺术风格 + 宇宙、人工智能、起源与终结 + 哲学的终极追问.",
+        "promptProvenance": "original_public",
+        "provenanceNote": "提示词为作者回帖公开原文（较短）；回帖含作者推广的云端服务链接，与本条无关。X视频版权归作者。",
+        "attribution": "@KeWai386772（MSB，X）",
+        "sourceAuthor": "MSB（@KeWai386772）",
+        "tags": [
+          "代码动画",
+          "宇宙",
+          "数学艺术",
+          "程序化生成"
+        ],
+        "publishedAt": "2026-10-10T11:19:14Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-14T13:11:45.000Z",
+        "updatedAt": "2026-10-14T13:11:45.000Z",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "verification": {
+          "checked_at": "2026-10-14T13:11:45.000Z",
+          "visually_checked": true,
+          "preview_dimensions": [
+            1200,
+            675
+          ],
+          "preview_check": "封面URL本轮重新下载（HTTP 200）并在拼图中目视核验为作品真实画面，非头像/占位图。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 63,
+          "baseBreakdown": {
+            "实体感": 8,
+            "科普镜头": 16,
+            "溯源": 12,
+            "可复现": 10,
+            "风格": 10,
+            "新颖": 7
+          },
+          "multiplier": 1.0618,
+          "finalScore": 66.9,
+          "threshold": 70,
+          "run": "2026-10-14-2040-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 60,
+      "multiplier": 1.025,
+      "score": 61.5,
+      "reason": "13分钟诺奖科普长视频的整片提示词，适合当“科普视频提示词”参考，但实体感几乎为零、远超3分钟、封面帧信息量低；进待定。",
+      "run": "2026-10-14-2040-shanghai",
+      "record": {
+        "title": "一段提示词做13分钟诺奖科普片：15种动态风格混搭",
+        "category": "video",
+        "styleFamily": "code",
+        "source": "https://x.com/KeWai386772/status/2108143447496679553",
+        "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2108143214666584066/img/W3VfF4NQiYp95agv.jpg",
+        "previewType": "image",
+        "description": "作者称用Claude Code+Opus 5.5做了13分钟的2026诺贝尔奖科普视频，并公开提示词：要求YouTube顶级科普水准、中英双语字幕，混搭拼贴、逐帧手绘、等轴2.5D、扁平矢量、线条动画、3D渲染、形变、贴纸风、赛博HUD、玻璃拟态、包豪斯、synthwave、像素、液态、综艺花字等风格。已看封面帧（黑底一个光点）。",
+        "tool": "Claude Code + Claude Opus 5.5（作者自述）",
+        "prompt": "做一个 今年 已颁发诺贝尔奖的 人物与成就的科普视频. 要达到世界顶级youtuber视频制作的水准. 顶级的电影导演、顶级的科普大师、数据可视化专家、配乐大师、动态图形设计大师、院士讲解级别的专业 + 脱口秀演员般的妙趣横生 + 电影人的叙事 + 高品位清晰清爽的设计风格 + 节奏画面吸引人的YouTube视频效果. 英文内容. 中英双语字幕.  \n\n结合 多个动态视频风格关键词 ：拼贴剪贴、逐帧手绘、等轴2.5D、扁平矢量、线条动画、3D渲染、形变动画、贴纸风科普、赛博朋克HUD、弥散渐变玻璃拟态、几何构成包豪斯、复古synthwave、像素风、液态流动、综艺花字",
+        "promptProvenance": "original_public",
+        "provenanceNote": "提示词为作者回帖公开原文；原帖含云端服务推广链接。X视频版权归作者。",
+        "attribution": "@KeWai386772（MSB，X）",
+        "sourceAuthor": "MSB（@KeWai386772）",
+        "tags": [
+          "科普视频",
+          "提示词",
+          "风格混搭"
+        ],
+        "publishedAt": "2026-10-08T10:32:19Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-14T13:11:45.000Z",
+        "updatedAt": "2026-10-14T13:11:45.000Z",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "verification": {
+          "checked_at": "2026-10-14T13:11:45.000Z",
+          "visually_checked": true,
+          "preview_dimensions": [
+            1200,
+            675
+          ],
+          "preview_check": "封面URL本轮重新下载（HTTP 200）并在拼图中目视核验为作品真实画面，非头像/占位图。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 60,
+          "baseBreakdown": {
+            "实体感": 5,
+            "科普镜头": 18,
+            "溯源": 12,
+            "可复现": 12,
+            "风格": 9,
+            "新颖": 4
+          },
+          "multiplier": 1.025,
+          "finalScore": 61.5,
+          "threshold": 70,
+          "run": "2026-10-14-2040-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 51,
+      "multiplier": 1.3491,
+      "score": 68.8,
+      "reason": "Codrops 10-13新教程，有源码与Demo，但主体是动态字体拖影，实体感/科普转化弱，仓库未声明许可；进待定。",
+      "run": "2026-10-14-2040-shanghai",
+      "record": {
+        "title": "会留下痕迹的字体：滚动时字母弯折、描边副本拖成一条路径",
+        "category": "frontend",
+        "styleFamily": "code",
+        "source": "https://tympanus.net/codrops/2026/10/13/scroll-driven-ghost-trails/",
+        "workUrl": "https://tympanus.net/Demos/ADrift/",
+        "previewUrl": "https://tympanus.net/codrops/wp-content/uploads/2026/10/robert_video_frame_featured.jpg",
+        "previewType": "image",
+        "description": "A Drift：实心字母与其描边副本分离，静止时开场词轻轻自动律动，滚动后描边副本拖成长轨迹、逐字连成路径；Canvas 2D画字，GSAP统管时钟，Three.js负责另一层图片揭示。",
+        "tool": "Canvas 2D + GSAP + Three.js（Codrops教程）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "源码 https://github.com/zen-aperios/a-drift 未声明许可（GitHub API license=null），只可外链引用。",
+        "attribution": "Robert Aperios，Codrops 2026-10-13",
+        "sourceAuthor": "Robert Aperios",
+        "tags": [
+          "Three.js",
+          "动态字体",
+          "滚动驱动",
+          "Codrops"
+        ],
+        "publishedAt": "2026-10-13",
+        "collectionIds": [],
+        "collectedAt": "2026-10-14T13:11:45.000Z",
+        "updatedAt": "2026-10-14T13:11:45.000Z",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "verification": {
+          "checked_at": "2026-10-14T13:11:45.000Z",
+          "visually_checked": true,
+          "preview_dimensions": [
+            1200,
+            900
+          ],
+          "preview_check": "封面URL本轮重新下载（HTTP 200）并在拼图中目视核验为作品真实画面，非头像/占位图。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 51,
+          "baseBreakdown": {
+            "实体感": 5,
+            "科普镜头": 6,
+            "溯源": 12,
+            "可复现": 13,
+            "风格": 8,
+            "新颖": 7
+          },
+          "multiplier": 1.3491,
+          "finalScore": 68.8,
+          "threshold": 70,
+          "run": "2026-10-14-2040-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 57,
+      "multiplier": 1.1979,
+      "score": 68.3,
+      "reason": "Codrops 10-12网页短片案例（Three.js+GLSL，屏幕碎裂转场），但无源码、主题是个人情绪叙事，科普转化弱；进待定。",
+      "run": "2026-10-14-2040-shanghai",
+      "record": {
+        "title": "能在浏览器里滚动播放的短片：奔跑的人、无尽城市、碎裂的屏幕",
+        "category": "video",
+        "styleFamily": "code",
+        "source": "https://tympanus.net/codrops/2026/10/12/chasing-the-moment/",
+        "workUrl": "https://chasing-the-moment.byholm.co/",
+        "previewUrl": "https://tympanus.net/codrops/wp-content/uploads/2026/10/chasing-the-moment-featured.jpg",
+        "previewType": "image",
+        "description": "Chasing the Moment：五段式webfilm，滚动切换机位，后处理转场带入下一场；时钟追赶、人头群转向、失衡漂浮、追逐双环中的钻石，结尾屏幕碎裂。作者拆解了创意与Three.js/GLSL/Blender技术。",
+        "tool": "Three.js + GLSL + Blender（Codrops案例）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "未见公开源码与许可，仅外链引用。",
+        "attribution": "Canberk Polat（byHOLM），Codrops 2026-10-12",
+        "sourceAuthor": "Canberk Polat",
+        "tags": [
+          "Three.js",
+          "GLSL",
+          "网页短片",
+          "碎裂转场"
+        ],
+        "publishedAt": "2026-10-12",
+        "collectionIds": [],
+        "collectedAt": "2026-10-14T13:11:45.000Z",
+        "updatedAt": "2026-10-14T13:11:45.000Z",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "verification": {
+          "checked_at": "2026-10-14T13:11:45.000Z",
+          "visually_checked": true,
+          "preview_dimensions": [
+            1200,
+            900
+          ],
+          "preview_check": "封面URL本轮重新下载（HTTP 200）并在拼图中目视核验为作品真实画面，非头像/占位图。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 57,
+          "baseBreakdown": {
+            "实体感": 12,
+            "科普镜头": 8,
+            "溯源": 12,
+            "可复现": 6,
+            "风格": 10,
+            "新颖": 9
+          },
+          "multiplier": 1.1979,
+          "finalScore": 68.3,
+          "threshold": 70,
+          "run": "2026-10-14-2040-shanghai"
+        }
+      }
+    }
+  ],
+  "updatedAt": "2026-10-14T13:11:45.000Z",
+  "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
+}

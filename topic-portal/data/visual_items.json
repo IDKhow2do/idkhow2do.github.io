@@ -5103,9 +5103,547 @@
       "attribution": "@op7418",
       "updatedAt": "2026-10-14T07:52:46.000Z",
       "styleFamily": "video_model"
+    },
+    {
+      "title": "可拆解机械腕表：同一提示词考三家模型的齿轮咬合",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/lemomo_ai/status/2110187446906613901",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110186737360347136/img/d7T0QroDE-884i74.jpg",
+      "previewType": "image",
+      "description": "深色背景里一只银色机械腕表的Three.js单文件网页：至少30个程序化部件、真实齿形与传动比（秒针60秒一圈、分针60分一圈、时针12小时一圈），支持爆炸视图滑块、剖切平面、时间倍速与点击部件弹出“名称/作用/齿数/转速”信息卡。作者用同一提示词分别给Gemini 4 Argon、GPT 6 Astra Xhigh（Codex，https://x.com/lemomo_ai/status/2110203130998882440 ）、Claude Opus 5.5 High（https://x.com/lemomo_ai/status/2110214034134126759 ）做横评：作者认为Codex版齿轮转动更符合物理，Opus版零件更细但动画物理一般。科普用法：机械结构拆解、传动比讲解、“爆炸图”开场；也可直接改成“芯片封装层层拆开”的同类提示词。已看X视频封面帧；未运行代码、未播放全片。",
+      "tool": "Gemini 4 Argon（作者自述）+ Three.js（importmap，单文件index.html）；横评：GPT 6 Astra Xhigh（Codex）、Claude Opus 5.5 High",
+      "prompt": "你是顶尖的创意技术专家，精通 Three.js、实时渲染和机械钟表结构。请做一个单文件网页 index.html：一只可交互、可拆解的自动上链机械腕表 3D 模型。\n\n【硬性约束】\n- 只输出一个完整的 index.html，双击就能在 Chrome 里运行，不需要构建工具或本地服务器。\n- 用 importmap 引入 Three.js\n- 不加载任何外部模型、贴图或字体，所有几何体和纹理都用代码程序化生成。\n- 输出完整代码，不要省略，不要写\"此处略\"。\n\n【模型】\n- 至少 30 个独立部件，包括：表壳、表耳、表冠、蓝宝石表镜、表盘（刻度和自拟品牌名用 Canvas 绘制）、时针、分针、秒针、发条盒、中心轮、三轮、四轮、擒纵轮、擒纵叉、摆轮与游丝、自动陀、夹板、螺丝、红宝石轴承。\n- 齿轮要有真实齿形，啮合位置正确。先算好各齿轮的齿数和传动比，保证秒针 60 秒一圈、分针 60 分钟一圈、时针 12 小时一圈。\n- 尺寸比例参照真实的 40mm 表径手表。\n\n【材质与灯光】\n- 使用 PBR 材质：拉丝和抛光不锈钢、镀金夹板、烤蓝螺丝、半透明红宝石，以及带透射和折射效果的蓝宝石玻璃（MeshPhysicalMaterial）。\n- 用 RoomEnvironment 生成环境反射，开启 ACES 色调映射、柔和阴影和轻微的 bloom。\n\n【动画】\n- 指针显示本地的真实当前时间。\n- 机芯要真实运转：摆轮往复摆动，擒纵叉和擒纵轮按节拍配合，各齿轮按自己的传动比转动。\n\n【交互】\n- 鼠标和触控都能旋转、缩放、平移，带阻尼。\n- 鼠标悬停在部件上时描边高亮，并显示部件名。\n- 点击部件时，相机平滑聚焦到它，同时弹出信息卡，写明名称、作用、齿数和转速。\n- 控制面板包含：\n  - 爆炸视图滑块（0–100%，沿轴向分层平滑拆开）\n  - 剖切平面滑块\n  - 时间倍速（1x–3600x）\n  - 表盘显示/隐藏\n  - 一键复位视角\n\n【界面与性能】\n- 中文界面，深色玻璃拟态风格，带加载动画，适配手机屏幕。\n- 桌面端稳定 60fps：重复的部件用 InstancedMesh，devicePixelRatio 上限设为 2。\n- 控制台不能有报错。\n\n【工作方式】\n1. 先写设计方案：部件清单、场景层级、齿轮齿数和传动比的计算过程。\n2. 再写完整代码。\n3. 最后对照上面每一条要求逐项自查，没做到的先改好，再输出最终版本。",
+      "promptProvenance": "original_public",
+      "provenanceNote": "提示词为作者@lemomo_ai在原帖公开发布的原文，逐字取自X API返回的完整帖文；许可未声明，仅作外链引用与学习，复用请先征得作者同意。模型与效果评价均为作者自述（author_reported），未独立复现；X视频版权归作者。",
+      "attribution": "@lemomo_ai（X）",
+      "sourceAuthor": "@lemomo_ai",
+      "modelClaim": "Gemini 4 Argon；对照 GPT 6 Astra Xhigh、Claude Opus 5.5 High",
+      "modelEvidenceUrl": "https://x.com/lemomo_ai/status/2110187446906613901",
+      "modelVerification": "author_reported",
+      "tags": [
+        "Three.js",
+        "结构可视化",
+        "爆炸视图",
+        "机械结构",
+        "剖切",
+        "模型横评",
+        "程序化生成"
+      ],
+      "publishedAt": "2026-10-14T01:54:27Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-14T13:11:45.000Z",
+      "updatedAt": "2026-10-14T13:11:45.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-14T13:11:45.000Z",
+        "visually_checked": true,
+        "preview_dimensions": [
+          1200,
+          700
+        ],
+        "preview_check": "封面URL本轮重新下载（HTTP 200）并在拼图中目视核验为作品真实画面，非头像/占位图。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 90,
+        "baseBreakdown": {
+          "实体感": 22,
+          "科普镜头": 19,
+          "溯源": 15,
+          "可复现": 15,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.249,
+        "finalScore": 112.4,
+        "threshold": 70,
+        "run": "2026-10-14-2040-shanghai"
+      }
+    },
+    {
+      "title": "手机网页里的真布料：衣架上的T恤会晃、会叠、会飞进购物袋",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://github.com/nvkudva/m-wardrobe",
+      "workUrl": "https://m-wardrobe.nvkudva.workers.dev",
+      "previewUrl": "https://raw.githubusercontent.com/nvkudva/m-wardrobe/main/docs/demo.gif",
+      "previewType": "image",
+      "description": "一排挂在衣架上的T恤，每件都是实时布料模拟：拖动衣杆会滞后摆动、松手慢慢稳定；点开后可拖着在3D里转，“加入购物袋”时衣服像店员叠衣一样袖子内折、下摆上翻，再划弧线飞进袋子。机制：自写XPBD布料求解器（纯JavaScript），Three.js r170/WebGL 2渲染，衣服花纹全部用Canvas 2D程序化绘制，无产品照片。科普用法：讲“布料为什么会垂、会皱”的约束求解、讲手机算力能跑多少物理；也可借“叠衣服”动作做结构折叠镜头。已看作者仓库demo.gif首帧（迷彩T恤挂在衣架上）；未运行项目。",
+      "tool": "Three.js r170 / WebGL 2 / 自研XPBD布料求解器（src/engine/cloth.js）/ Canvas 2D / Preact + TypeScript / Vite 6（作者README）；生成式模型未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "未发现作者公开的AI提示词，prompt留空。代码为MIT许可（作者仓库LICENSE）；README称花纹均为代码绘制、无产品照片，但UI内品牌名与价格为演示数据。仓库2026-10-09创建，星数很少，长期维护未知。仅外链引用。",
+      "attribution": "Vijay krishna kudva（@nvkudva），GitHub nvkudva/m-wardrobe；X发布帖 https://x.com/nvkudva/status/2108754759775863115",
+      "sourceAuthor": "Vijay krishna kudva（nvkudva）",
+      "licenseName": "MIT（作者仓库代码）",
+      "licenseUrl": "https://github.com/nvkudva/m-wardrobe/blob/main/LICENSE",
+      "tags": [
+        "Three.js",
+        "布料模拟",
+        "XPBD",
+        "物理动效",
+        "折叠动画",
+        "移动端"
+      ],
+      "publishedAt": "2026-10-10T03:01:28Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-14T13:11:45.000Z",
+      "updatedAt": "2026-10-14T13:11:45.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-14T13:11:45.000Z",
+        "visually_checked": true,
+        "preview_dimensions": [
+          300,
+          562
+        ],
+        "preview_check": "封面URL本轮重新下载（HTTP 200）并在拼图中目视核验为作品真实画面，非头像/占位图。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 92,
+        "baseBreakdown": {
+          "实体感": 24,
+          "科普镜头": 15,
+          "溯源": 19,
+          "可复现": 15,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.2382,
+        "finalScore": 113.9,
+        "threshold": 70,
+        "run": "2026-10-14-2040-shanghai"
+      }
+    },
+    {
+      "title": "会呼吸的程序化水母：伞体收缩+GPU上的触须粒子",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://github.com/holtsetio/aurelia",
+      "workUrl": "https://holtsetio.com/lab/aurelia/",
+      "previewUrl": "https://github.com/user-attachments/assets/21b278f3-f42b-4b43-aa06-1ed5d734c949",
+      "previewType": "image",
+      "description": "深蓝海水里一只半透明橙金色水母，伞体有节律地收缩，触须与口腕柔软飘荡。机制：伞体是按正弦收缩的半球；伞缘、口腕和触须用在GPU计算着色器上求解的Verlet粒子系统模拟；纹理与“假体积光”全部在着色器里程序化生成（Three.js WebGPURenderer）。科普用法：讲水母喷射推进与“简单规则→柔软整体”的物理模拟，可做海洋/涌现题的开场镜头。已看作者README封面静帧；未运行项目。本次由@Xian0063的网页实验合集帖发现。",
+      "tool": "Three.js WebGPURenderer / 计算着色器Verlet粒子 / 程序化纹理（作者README）；生成式模型未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "未发现AI提示词，prompt留空。代码MIT许可；项目2024-11创建、2025-06最后更新，不是本周新作，但库内未收。作者致谢Aki Rodic《Chrysaora》、Ash Weeks《Particulate Medusae》等前作。需WebGPU浏览器。仅外链引用。",
+      "attribution": "holtsetio（GitHub holtsetio/aurelia）；发现来源 @Xian0063 https://x.com/Xian0063/status/2110315122627620977",
+      "sourceAuthor": "holtsetio",
+      "licenseName": "MIT（作者仓库代码）",
+      "licenseUrl": "https://github.com/holtsetio/aurelia/blob/master/LICENSE",
+      "tags": [
+        "Three.js",
+        "WebGPU",
+        "Verlet粒子",
+        "软体模拟",
+        "程序化生成",
+        "海洋生物"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-14T13:11:45.000Z",
+      "updatedAt": "2026-10-14T13:11:45.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-14T13:11:45.000Z",
+        "visually_checked": true,
+        "preview_dimensions": [
+          640,
+          640
+        ],
+        "preview_check": "封面URL本轮重新下载（HTTP 200）并在拼图中目视核验为作品真实画面，非头像/占位图。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 92,
+        "baseBreakdown": {
+          "实体感": 23,
+          "科普镜头": 18,
+          "溯源": 19,
+          "可复现": 15,
+          "风格": 10,
+          "新颖": 7
+        },
+        "multiplier": 1.2748,
+        "finalScore": 117.3,
+        "threshold": 70,
+        "run": "2026-10-14-2040-shanghai"
+      }
+    },
+    {
+      "title": "冷压水彩纸上的颜料晕染：鼠标划过，灰画慢慢渗出颜色",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://github.com/franky-adl/watercolor-reveal-effect",
+      "workUrl": "https://projects.arkon.digital/threejs/watercolor-reveal-effect/",
+      "previewUrl": "https://raw.githubusercontent.com/franky-adl/watercolor-reveal-effect/main/preview.webp",
+      "previewType": "image",
+      "description": "一张有凹凸纹理的冷压水彩纸上，山林风景先是灰度铅笔画，鼠标经过处颜色像水彩一样漫开、渗边、再慢慢“干”住。机制：程序化纸张高度场+光照+颜料响应；光标驱动的显色遮罩按固定60步/秒模拟“淹没—渗开衰减—干燥”；画作之间溶解切换。科普用法：讲扩散、毛细渗透，或做“从黑白到彩色”的揭示转场。已看作者仓库preview.webp（彩色山林水彩画）与X视频首帧（灰度版）；未运行项目。",
+      "tool": "Three.js / GLSL / lil-gui / pnpm（作者README）；生成式模型未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "未发现AI提示词。代码MIT；作者注明效果灵感来自Yuri Artiukh（@akella）对14islands页脚的重制直播，纸张着色改编自msurguy/watercolor-playground。演示中的风景画作来源未单列授权，复用画作需另核。仅外链引用。",
+      "attribution": "@FrankyHungDev（GitHub franky-adl）；X发布帖 https://x.com/FrankyHungDev/status/2108916402250002441",
+      "sourceAuthor": "@FrankyHungDev / franky-adl",
+      "licenseName": "MIT（作者仓库代码）；示例画作未见独立授权",
+      "licenseUrl": "https://github.com/franky-adl/watercolor-reveal-effect/blob/main/LICENSE",
+      "tags": [
+        "Three.js",
+        "纸艺场景",
+        "水彩",
+        "交互揭示",
+        "扩散模拟"
+      ],
+      "publishedAt": "2026-10-10T13:43:46Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-14T13:11:45.000Z",
+      "updatedAt": "2026-10-14T13:11:45.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-14T13:11:45.000Z",
+        "visually_checked": true,
+        "preview_dimensions": [
+          2440,
+          1472
+        ],
+        "preview_check": "封面URL本轮重新下载（HTTP 200）并在拼图中目视核验为作品真实画面，非头像/占位图。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 86,
+        "baseBreakdown": {
+          "实体感": 20,
+          "科普镜头": 14,
+          "溯源": 18,
+          "可复现": 15,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.2895,
+        "finalScore": 110.9,
+        "threshold": 70,
+        "run": "2026-10-14-2040-shanghai"
+      }
+    },
+    {
+      "title": "图片被拆成26根丝线：卡片滑到边缘就抽丝、飘散、再织回来",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://github.com/clementgrellier/unwoven",
+      "workUrl": "https://unwoven.clementgrellier.fr",
+      "previewUrl": "https://github.com/user-attachments/assets/ccf826ac-9ed0-41f0-9da7-2267e3aefdae",
+      "previewType": "image",
+      "description": "一条无限横向滚动的人像卡片带：画面中间卡片是完整图片，滑向两侧时每张卡片拆成26根水平丝带，以各自速度滑出、分叉、飘动并褪色；从右侧进入的卡片再把自己“织”回去。机制：卡片不是一张平面贴图而是一叠独立丝带几何体，两侧“撕裂区”控制抽丝、飘动与溶解（Three.js + GSAP + Shader）。科普用法：讲“整体由许多根线组成”、织物结构、数据被拆分再重组的转场。已看作者README静帧；未运行项目。作者另有Codrops文章（README链接 https://tympanus.net/codrops/?p=120129 ）。",
+      "tool": "Three.js / GSAP / 自定义Shader（作者README与@Xian0063转述）；生成式模型未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "未发现AI提示词。代码MIT；演示中的人像照片来源与授权未说明，不应把代码MIT扩展到照片，复用请换自有素材。仓库2026-09-01创建。仅外链引用。",
+      "attribution": "Clément Grellier（GitHub clementgrellier/unwoven）；发现来源 @Xian0063 https://x.com/Xian0063/status/2110315122627620977",
+      "sourceAuthor": "Clément Grellier",
+      "licenseName": "MIT（作者仓库代码）；演示照片未见授权说明",
+      "licenseUrl": "https://github.com/clementgrellier/unwoven/blob/main/LICENSE",
+      "tags": [
+        "Three.js",
+        "织物",
+        "抽丝转场",
+        "Shader",
+        "无限滚动"
+      ],
+      "collectionIds": [],
+      "collectedAt": "2026-10-14T13:11:45.000Z",
+      "updatedAt": "2026-10-14T13:11:45.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-14T13:11:45.000Z",
+        "visually_checked": true,
+        "preview_dimensions": [
+          2985,
+          1405
+        ],
+        "preview_check": "封面URL本轮重新下载（HTTP 200）并在拼图中目视核验为作品真实画面，非头像/占位图。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "实体感": 20,
+          "科普镜头": 12,
+          "溯源": 16,
+          "可复现": 15,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.3491,
+        "finalScore": 110.6,
+        "threshold": 70,
+        "run": "2026-10-14-2040-shanghai"
+      }
+    },
+    {
+      "title": "浏览器里的漩涡：球体一压，水面自己卷出涡旋",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/Simone_dev_com/status/2108920496892916188",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2108881498099113985/img/5QNY2NJUUPGMOJ47.jpg",
+      "previewType": "image",
+      "description": "竖屏流体模拟：一个球体在水面下扰动，水面随之形成会自然反应的涡旋。作者称在自己的WebGPU+Three.js流体模拟中加入了“物理准确的漩涡”，涡旋随球体位移自然响应。科普用法：讲涡旋、角动量守恒、排水口为什么打转（注意南北半球科氏力误区）。已看X视频封面帧；无源码、无演示链接，未运行。",
+      "tool": "WebGPU + Three.js（作者自述）；生成式模型未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "仅有作者X帖与视频，未见源码、演示或许可说明；“物理准确”为作者自述，未核验求解方法。只能外链引用，不可下载复用视频。",
+      "attribution": "@Simone_dev_com（X）",
+      "sourceAuthor": "@Simone_dev_com",
+      "tags": [
+        "Three.js",
+        "WebGPU",
+        "流体模拟",
+        "涡旋",
+        "物理动效"
+      ],
+      "publishedAt": "2026-10-10T14:00:02Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-14T13:11:45.000Z",
+      "updatedAt": "2026-10-14T13:11:45.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-14T13:11:45.000Z",
+        "visually_checked": true,
+        "preview_dimensions": [
+          675,
+          1200
+        ],
+        "preview_check": "封面URL本轮重新下载（HTTP 200）并在拼图中目视核验为作品真实画面，非头像/占位图。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 69,
+        "baseBreakdown": {
+          "实体感": 22,
+          "科普镜头": 17,
+          "溯源": 8,
+          "可复现": 3,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.2748,
+        "finalScore": 88.0,
+        "threshold": 70,
+        "run": "2026-10-14-2040-shanghai"
+      }
+    },
+    {
+      "title": "PIXEL WORLD：160×90个立方体，崩开再拼成下一个世界",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/aicreataro/status/2109598040889942476",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2109596901016494080/img/sCTFhua5-6Ae1Ox_.jpg",
+      "previewType": "image",
+      "description": "约66秒短片：从一格红色像素开始，160×90格像素画每格变成一个立方体，构成3D世界——街道、动物园、港口、海、游乐园、夜景，从早到晚；每次换场，整个世界散成立方体再直接重组成下一个场景，镜头始终不停。作者称“零生成素材”，画面与音乐全部由代码完成（Opus 5.5写Python驱动Blender，After Effects收尾）。科普用法：“整体由小单元组成、拆开再重组”——非常适合做晶圆/像素/体素或涌现题的转场。已看X视频封面帧（PIXEL WORLD标题）；未看全片。",
+      "tool": "Claude Opus 5.5 + Blender + Python + After Effects（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者未公开提示词与代码，只列了工作流要点；“生成AI素材：无”为作者自述。X视频版权归作者，许可未声明，仅外链引用。作者为用户收藏过的@aicreataro。",
+      "attribution": "@aicreataro（X）",
+      "sourceAuthor": "aicreataro",
+      "modelClaim": "Claude Opus 5.5",
+      "modelEvidenceUrl": "https://x.com/aicreataro/status/2109598040889942476",
+      "modelVerification": "author_reported",
+      "tags": [
+        "Blender",
+        "Python",
+        "体素",
+        "崩解重组",
+        "程序化生成",
+        "连续镜头"
+      ],
+      "publishedAt": "2026-10-12T10:52:22Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-14T13:11:45.000Z",
+      "updatedAt": "2026-10-14T13:11:45.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-14T13:11:45.000Z",
+        "visually_checked": true,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面URL本轮重新下载（HTTP 200）并在拼图中目视核验为作品真实画面，非头像/占位图。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 70,
+        "baseBreakdown": {
+          "实体感": 17,
+          "科普镜头": 16,
+          "溯源": 12,
+          "可复现": 8,
+          "风格": 8,
+          "新颖": 9
+        },
+        "multiplier": 1.0608,
+        "finalScore": 74.3,
+        "threshold": 70,
+        "run": "2026-10-14-2040-shanghai"
+      }
+    },
+    {
+      "title": "同一段奔跑换7种材质：颜料、铬、粉末、墨、花、水、线，再从2D走进3D",
+      "category": "video",
+      "styleFamily": "other",
+      "source": "https://x.com/aicreataro/status/2110269414834852256",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110268375314395136/img/fyrC_olD0vN9an4s.jpg",
+      "previewType": "image",
+      "description": "分屏制作记录：左上是视频模型原始生成、右上是成片、下方是Blender界面。流程（作者自述）：Midjourney做主视觉→MiniMax H3生成10秒奔跑→保持动作只换材质成7条（颜料/铬/粉末/墨/花/水/线）→前半段2D用Python按姿势切换材质→在Blender里搭一个与2D视角一致的3D空间衔接→镜头钻进材质轨迹、拉远后碎片聚成巨大的跑者→光束与地面反射在Blender里补。科普用法：讲“同一运动、不同材料的物理质感”，或做“2D画面突然有了纵深”的转场。已看X视频封面帧；未看全片。",
+      "tool": "Midjourney + MiniMax H3（视频生成）+ Python + Blender（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "视频模型生成+代码+3D软件混合流程，难以归入单一风格家族，故styleFamily=other。作者未公开提示词；X视频版权归作者，仅外链引用。",
+      "attribution": "@aicreataro（X）",
+      "sourceAuthor": "aicreataro",
+      "tags": [
+        "Blender",
+        "Python",
+        "材质切换",
+        "2D转3D",
+        "视频模型"
+      ],
+      "publishedAt": "2026-10-14T07:20:10Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-14T13:11:45.000Z",
+      "updatedAt": "2026-10-14T13:11:45.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-14T13:11:45.000Z",
+        "visually_checked": true,
+        "preview_dimensions": [
+          1200,
+          1013
+        ],
+        "preview_check": "封面URL本轮重新下载（HTTP 200）并在拼图中目视核验为作品真实画面，非头像/占位图。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 68,
+        "baseBreakdown": {
+          "实体感": 18,
+          "科普镜头": 13,
+          "溯源": 12,
+          "可复现": 9,
+          "风格": 7,
+          "新颖": 9
+        },
+        "multiplier": 1.0538,
+        "finalScore": 71.7,
+        "threshold": 70,
+        "run": "2026-10-14-2040-shanghai"
+      }
+    },
+    {
+      "title": "热成像剪影+像素实物：一个HTML画布、按语音逐词卡点的20秒片",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/twoclipping/status/2107822293653041659",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2107822027188924416/img/xfOoZDmjCc7r4pUQ.jpg",
+      "previewType": "image",
+      "description": "20秒4:3短片：米白纸色、黑、一红一黄配色；16×16手绘像素实物（唱片、书、相机、猫……）以带挤出厚度的3D方块呈现；人头侧影和举起的手按“热成像”着色——热度来自轮廓内每点到边缘的距离（鼻尖、发梢、指尖更冷）+一个热点+缓慢噪声，经黑→红→橙→米白色带映射；全部场景按faster-whisper词级时间戳卡在语音上，镜头连续不硬切。作者称用Opus 5.5“纯代码”重做了一条他人作品，并公开完整提示词（含输入、方向、结构、构建、坑点）。科普用法：热成像原理（距离变换≈厚度≈温度）的可视化、口播逐词卡点模板——与本账号“0秒钩子+口播”最契合。已看X视频封面帧（黄底“how”）；未运行。",
+      "tool": "Claude Opus 5.5（作者自述）；单个HTML Canvas、faster-whisper词级时间戳、Playwright 60fps+8子帧运动模糊、ffmpeg合音（提示词内要求）",
+      "prompt": "<inputs>\nAsk me for: a voiceover or song with a spoken line (the audio file) and its transcript, 10-12 small objects that sum up my life, two silhouettes to light like a heat camera (a head in profile and a raised hand), and the 3 words I want to land hardest. If I skip any, use the defaults: vinyl, book, camera, cat, coin, game controller, cap, heart, money, plant, clapperboard, skateboard; free CC0 silhouettes from Openverse; action, intention, curiosity.\n</inputs>\n\n<direction>\nA 20 second 4:3 film, 1440x1080 at 60fps, cut to the voice. Off-white paper, black, one red, one yellow, Geist for every word. Film grain on everything, a soft vignette, and a camera that never rests: a slow handheld float under everything plus a slow push inside every scene.\nNo scene cuts to the next: each handoff starts on the exact last frame of the scene before. The only hard cuts are the beat flips on the last word.\nEvery object is pixel art you draw yourself: a 16x16 grid per object, every cell a hand-placed colour, rendered as a 3D block (a darker extrusion down-right, a thin bevel on every cell) with a soft contact shadow.\nThe silhouettes are lit like a heat camera: the heat comes from how thick the body is at each point, so the nose, the hair and the fingertips run cooler, plus one hotspot and a slow moving noise, mapped through a black > red > orange > cream ramp. The edge stays razor sharp, with a soft glow outside it.\nMotion rules: nothing pops in (eased glides of about 0.5s with a soft start), fast moves get real motion blur instead of ghost copies, and captions type with the voice behind a block cursor.\nBanned: stock footage, AI video, 3D camera moves, particles, glitch.\n</direction>\n\n<structure>\nHang every scene on the transcript's word timings (measure them with faster-whisper word timestamps, one short chunk at a time):\n1. The first word fills a yellow card. The card wipes off to the left and the question types underneath on two centred lines that glide to stay centred as they grow, the key word underlined in red as it's spoken.\n2. The objects streak past in lanes above and below the words, a cyan four-point flare sweeps in, then the page burns away: black closes in from the edges onto the head, behind a hot red edge.\n3. The head heats up on black while the answer types low on the left. A thin white orbit draws itself around the head, its far half passing behind it. On the last word, paper blooms out from inside the head with the objects in it, and the camera falls through: the head rushes past the lens until the paper is all we see.\n4. The objects sit on a tilted ring seen in perspective (the front ones bigger and lower, drawn last), slowly turning, each one bobbing; the coin flips and lands with sparks.\n5. On each of the 3 words, that object flies out of the ring to the left and grows, the page floods black from it, and the word types beside it (camera: a red shutter star; book: a red ribbon sweep; record: two white orbits and red notes). Then the flood drains back into the object as it flies home, and the camera dives closer into the ring. Put each hero object in the slot that is front-left when its word lands.\n6. The ring pulls in a touch, bursts outward, every object turns to ink, and ink blots grow and swallow the page.\n7. The hand rises into frame, hot, with the line split either side of it. The heart drops into its palm, then lifts to the centre at the size the next scene holds it.\n8. The last word, one letter per beat, the background flipping paper / black / red, the heart holding its place across the cut, the centre object morphing pixel by pixel into the next one.\n9. Thin brush strokes sweep through, the letters drift apart and float, then settle back into the word with the heart above it. The camera keeps pushing through the hold.\n</structure>\n\n<build>\n1. One HTML canvas. Every frame is a pure function of time inside seek(t).\n2. Bake each pixel sprite once to an offscreen canvas (the extrusion layers, then the face), then draw it scaled and rotated.\n3. The heat: precompute each silhouette's base heat once (a distance transform of the mask, held at the edge value outside it so nothing dark bleeds in when it is upscaled). Every frame, add the hotspot and two octaves of value noise at quarter resolution, map it through a 256-step lookup, upscale it, and cut it with the full-resolution mask.\n4. The fall through the head: draw the ring scene into an offscreen layer, mask it with the head scaled up about a point inside the skull, and grow that scale on a cubed curve until the head covers the frame. The ring inside zooms less than the head does, so it reads as depth.\n5. The pixel morph: pair every cell of object A with a cell of object B and glide each one's position and colour, with a small random delay per cell.\n6. Render with Playwright at 60fps with 8 motion-blur subframes, then lay the original audio back on with ffmpeg.\n</build>\n\n<gotchas>\nA mask PNG with no alpha channel fills the whole box with heat, so put the silhouette in the alpha. A limb cut by the photo's border shows as a straight edge, so extend the mask past the frame. A handoff only reads as smooth when the last frame of one scene is the first frame of the next: draw the outgoing scene under the transition, and give scenes that show the same ring one shared zoom function. A flood that's still retreating when the next scene starts reads as a hard cut, so let it finish first. A fast ease-out flood reads as a jump; use a soft start.\n</gotchas>\n\n<start>\nAsk me for the inputs, measure the word timings, then show me 8 stills before you render.\n</start>",
+      "promptProvenance": "original_public",
+      "provenanceNote": "提示词为作者@twoclipping原帖公开原文（X API完整帖文）；该片自称是对@jordanarchivess一条作品的“纯代码重做”（被引帖 https://x.com/jordanarchivess/status/2107536262894915762 ），创意出处在原作者，复用需注意。提示词默认剪影来自Openverse的CC0素材。许可未声明，仅外链引用。",
+      "attribution": "@twoclipping（zero，X）；原创意 @jordanarchivess",
+      "sourceAuthor": "twoclipping",
+      "modelClaim": "Claude Opus 5.5",
+      "modelEvidenceUrl": "https://x.com/twoclipping/status/2107822293653041659",
+      "modelVerification": "author_reported",
+      "tags": [
+        "Canvas",
+        "热成像",
+        "像素实物",
+        "逐词卡点",
+        "程序化生成"
+      ],
+      "publishedAt": "2026-10-07T13:16:10Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-14T13:11:45.000Z",
+      "updatedAt": "2026-10-14T13:11:45.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-14T13:11:45.000Z",
+        "visually_checked": true,
+        "preview_dimensions": [
+          1200,
+          900
+        ],
+        "preview_check": "封面URL本轮重新下载（HTTP 200）并在拼图中目视核验为作品真实画面，非头像/占位图。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 71,
+        "baseBreakdown": {
+          "实体感": 12,
+          "科普镜头": 12,
+          "溯源": 15,
+          "可复现": 14,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.0601,
+        "finalScore": 75.3,
+        "threshold": 70,
+        "run": "2026-10-14-2040-shanghai"
+      }
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面",
-  "updatedAt": "2026-10-14T07:54:31.000Z"
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分）",
+  "updatedAt": "2026-10-14T13:11:45.000Z",
+  "totalItems": 137
 }
