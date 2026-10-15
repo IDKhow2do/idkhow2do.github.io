@@ -1,7 +1,46 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T02:05:00.000Z",
+  "updatedAt": "2026-10-15T04:50:19.000Z",
   "topics": [
+    {
+      "url": "https://news.mit.edu/2026/how-artificial-neural-networks-build-their-own-learning-machinery-1013",
+      "title": "没人告诉它怎么学，为什么一堆随机连线的“神经元”自己学会了认图？",
+      "category": "AI",
+      "source": "MIT News（McGovern Institute，2026-10-13）；论文 PNAS 2026-10-09，doi:10.1073/pnas.2606245123（Liao、Ziyin、Gan、Hartnett、Poggio）",
+      "publishedAt": "2026-10-13",
+      "eventAt": "2026-10-09",
+      "collectedAt": "2026-10-15T04:50:19.000Z",
+      "updatedAt": "2026-10-15T04:50:19.000Z",
+      "description": "MIT 麦戈文脑研究所团队在 PNAS 发文：网络起初是多层随机互连的类神经元单元，每层所有单元服从同一套“连接何时、如何改变”的简单规则（如“一起放电的连在一起”），不靠设计者手把手搭学习机制，网络会自组织出“突触基序”（motifs）作为积木，再拼成能识别模式、分类图像的功能回路；这些基序的重组方式近似梯度下降，表现与反向传播网络相当。作者认为，衡量人工网络对理解大脑有多大价值，要看它能否自己组织出“调连接的机器”，因为大脑没有外部设计者。反方/限定：作者自己说自组织网络未必和大脑学习方式相同，只是生物合理性的起点；新闻稿未给具体任务和准确率数字。可拍角度：①随机连线→简单规则→自己长出结构，正好接“涌现”系列；②“大脑大概不用反向传播，那它用什么？”；③“一起放电的连在一起”用Canvas粒子连线演示。0秒开场：一团随机连线的点阵在规则下自己收拢成有序网络（可用Three.js自制）。",
+      "caveat": "新闻稿为机构自述，PNAS原文未逐页核读；封面为MIT新闻配图（图片来源 iStock，非论文图）。",
+      "imageUrl": "https://news.mit.edu/sites/default/files/images/202609/mit-mcgovern-self-supervisedlearning.jpg",
+      "previewUrl": "https://news.mit.edu/sites/default/files/images/202609/mit-mcgovern-self-supervisedlearning.jpg",
+      "imageAlt": "彩色方块与连线组成的大脑形状（MIT News 配图，iStock）",
+      "tags": [
+        "涌现",
+        "自组织",
+        "神经网络",
+        "反向传播",
+        "脑科学"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 87.7,
+        "threshold": 65,
+        "run": "2026-10-15-1240-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2610.15240",
       "title": "芯片还没流片，为什么AI代理已经能自己把模拟电路画到过签？",

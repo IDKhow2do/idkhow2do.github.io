@@ -4,6 +4,272 @@
   "exportedCount": 115,
   "items": [
     {
+      "title": "一串随机数抽出一座漫画小镇：城下町、坡道町、水都，还能导出3D模型",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/sharp_maker/status/2110558780513730851",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110554462867890176/img/APPAA1GWD6DRRmUj.jpg",
+      "previewType": "image",
+      "description": "日本作者 @sharp_maker 发布免费浏览器工具「ワールドガチャ」（World Gacha）：只用随机数和公式“抽卡”生成虚构的地方与町，再用漫画背景的线稿+网点画出来；城下町、坡道町、高楼街、瀑布上的水都等9种，可导出 PNG、SVG 和 GLB（3D模型）。作者说明使用无需署名。Three.js 官方账号已转发。演示视频画面：黑白网点风的俯瞰楼群+右侧地图与节点面板（「ノード（上から順に流れる）」）。可拍角度：①同一个 seed 换一次就是一座新城；②右侧节点从地形→道路→建筑一层层流下来，讲“程序化生成”；③简单规则长出复杂城市，可接涌现选题。",
+      "tool": "浏览器工具 ワールドガチャ（tools.oyasumi-gamedev.com/worldgacha）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者帖文称「クレジット表記不要で使えます。無料」（免署名、免费）；未见源码仓库与正式许可证文本。封面为X视频缩略图。",
+      "attribution": "@sharp_maker（X）；tools.oyasumi-gamedev.com",
+      "sourceAuthor": "sharp_maker",
+      "demoUrl": "https://tools.oyasumi-gamedev.com/worldgacha/",
+      "tags": [
+        "程序化生成",
+        "漫画线稿",
+        "GLB导出",
+        "Three.js官方转发",
+        "涌现"
+      ],
+      "publishedAt": "2026-10-15T02:30:00Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-15T04:50:19.000Z",
+      "updatedAt": "2026-10-15T04:50:19.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-15T04:50:19.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP 200并目视核验为作品真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 74,
+        "baseBreakdown": {
+          "实体": 14,
+          "科普": 17,
+          "溯源": 15,
+          "复现": 10,
+          "风格": 9,
+          "新颖": 9
+        },
+        "multiplier": 1.2748,
+        "finalScore": 94.3,
+        "threshold": 65,
+        "run": "2026-10-15-1240-shanghai"
+      }
+    },
+    {
+      "title": "10万块多米诺倒下去，拼出一座赤富士：一块能推倒比自己大1.5倍的",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/kooki_works/status/2110542381099700363",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110542228196384768/img/Yx6vDgygbC3JourK.jpg",
+      "previewType": "image",
+      "description": "@kooki_works 用 Claude Code（日语提示）做的10万块多米诺模拟：规则只有“倒一块、推倒旁边一块”，倒下的波速按物理论文公式计算，画面下方注明引用 J.M.J. van Leeuwen《The domino effect》(arXiv:physics/0401018)；作者称一块可推倒比自己大1.5倍的骨牌。倒完露出隐藏的赤富士图。可拍角度：①一条规则→整幅画，讲涌现/链式反应；②“小推大”的1.5倍放大，接多米诺能量放大经典实验；③波速公式上屏。",
+      "tool": "Claude Code（作者自述，日语提示）",
+      "prompt": "",
+      "promptProvenance": "not_public",
+      "provenanceNote": "物理依据在画面中引用 arXiv:physics/0401018；提示词与源码未公开，许可未声明，仅外链引用。",
+      "attribution": "@kooki_works（K | AI×芸術&化学，X）",
+      "sourceAuthor": "kooki_works",
+      "tags": [
+        "多米诺",
+        "物理模拟",
+        "Claude Code",
+        "涌现",
+        "代码出片"
+      ],
+      "publishedAt": "2026-10-15T01:24:50Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-15T04:50:19.000Z",
+      "updatedAt": "2026-10-15T04:50:19.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-15T04:50:19.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP 200并目视核验为作品真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 20,
+          "溯源": 15,
+          "复现": 8,
+          "风格": 9,
+          "新颖": 10
+        },
+        "multiplier": 1.0407,
+        "finalScore": 87.4,
+        "threshold": 65,
+        "run": "2026-10-15-1240-shanghai"
+      }
+    },
+    {
+      "title": "线香花火超微距：0.1毫米的火星自己炸开、再炸开，最多8次就是“松叶”",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/kooki_works/status/2110557445697527809",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110557412575092736/img/Bxigf8ysUMLELpId.jpg",
+      "previewType": "image",
+      "description": "@kooki_works 用 Claude Code 按物理公式逐粒计算线香花火：火球甩出约0.1mm的熔滴，熔滴自己破裂分裂、再分裂，最多8次，这就是线香花火“松叶”火花的来历（作者转述）。画面为黑底中心火球+层层分叉的金色火花。可拍角度：①超微距看一次分裂；②分裂代数1→8的树状结构；③“为什么线香花火的火花是分叉的”生活科普。",
+      "tool": "Claude Code（作者自述，日语提示）",
+      "prompt": "",
+      "promptProvenance": "not_public",
+      "provenanceNote": "物理公式出处未在帖中给出（“松叶”成因为作者转述）；提示词与源码未公开，许可未声明。",
+      "attribution": "@kooki_works（K | AI×芸術&化学，X）",
+      "sourceAuthor": "kooki_works",
+      "tags": [
+        "线香花火",
+        "粒子",
+        "物理模拟",
+        "Claude Code",
+        "代码出片"
+      ],
+      "publishedAt": "2026-10-15T02:24:41Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-15T04:50:19.000Z",
+      "updatedAt": "2026-10-15T04:50:19.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-15T04:50:19.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP 200并目视核验为作品真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "实体": 24,
+          "科普": 20,
+          "溯源": 12,
+          "复现": 8,
+          "风格": 9,
+          "新颖": 10
+        },
+        "multiplier": 1.0407,
+        "finalScore": 86.4,
+        "threshold": 65,
+        "run": "2026-10-15-1240-shanghai"
+      }
+    },
+    {
+      "title": "瓶中风暴：摇一摇瓶子，浪拍上玻璃，小船拼命保持直立",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/devparra/status/2110557309588185446",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110557241396838400/img/zrPnXGw5IK-0FvPK.jpg",
+      "previewType": "image",
+      "description": "@devparra 用 Claude Opus 5.5 + Three.js 做的浏览器小作品：横放的玻璃瓶里装着海水、灯塔和小船，摇晃瓶子时浪拍向玻璃壁，小船在浪里努力保持直立。画面干净（白底、透明玻璃、深色海水）。可拍角度：①晃瓶子看液面晃荡；②小船“不倒翁”式扶正，接浮心/重心科普；③玻璃折射材质特写。",
+      "tool": "Claude Opus 5.5 + Three.js（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "帖中未给源码、在线链接与许可；仅外链引用。封面为演示视频缩略图。",
+      "attribution": "@devparra（Mario，X）",
+      "sourceAuthor": "devparra",
+      "tags": [
+        "Three.js",
+        "流体",
+        "玻璃材质",
+        "浮力",
+        "前端交互"
+      ],
+      "publishedAt": "2026-10-15T02:24:09Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-15T04:50:19.000Z",
+      "updatedAt": "2026-10-15T04:50:19.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-15T04:50:19.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP 200并目视核验为作品真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 68,
+        "baseBreakdown": {
+          "实体": 23,
+          "科普": 12,
+          "溯源": 9,
+          "复现": 6,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.2748,
+        "finalScore": 86.7,
+        "threshold": 65,
+        "run": "2026-10-15-1240-shanghai"
+      }
+    },
+    {
+      "title": "没有模型、贴图和关键帧：1500行着色器算出一只纸箱机器人",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/gcduncombe/status/2110539227347951617",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110538704695730176/img/SvqafmFzt0Bw5Ncj.jpg",
+      "previewType": "image",
+      "description": "@gcduncombe 称这段短片每个像素和全部动画都是纯数学函数：无3D模型、网格、贴图、渲染农场、关键帧和绑定，约1500行着色器代码由 Opus 5.5 编写，作者用自然语言做美术指导；音乐和音效用 Adobe Firefly 生成。画面：桌上一只纸箱质感的小机器人，窗影斑驳。可拍角度：①“这不是3D模型”反直觉开场；②讲SDF/光线步进如何用公式画形状；③自然语言当导演。",
+      "tool": "Claude Opus 5.5（着色器）+ Adobe Firefly（音乐音效）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "着色器代码与提示词未公开，许可未声明；仅外链引用。",
+      "attribution": "@gcduncombe（Gabi C. Duncombe，X）",
+      "sourceAuthor": "gcduncombe",
+      "tags": [
+        "shader",
+        "SDF",
+        "纯数学出片",
+        "纸箱质感",
+        "代码出片"
+      ],
+      "publishedAt": "2026-10-15T01:12:18Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-15T04:50:19.000Z",
+      "updatedAt": "2026-10-15T04:50:19.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-15T04:50:19.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP 200并目视核验为作品真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 63,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 12,
+          "溯源": 10,
+          "复现": 5,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.0407,
+        "finalScore": 65.6,
+        "threshold": 65,
+        "run": "2026-10-15-1240-shanghai"
+      }
+    },
+    {
       "title": "浏览器里的路径追踪：460万三角的场景，半秒建完BVH还能降噪",
       "category": "frontend",
       "styleFamily": "code",
@@ -6240,6 +6506,6 @@
   ],
   "bookmarksNotInVisual": 15,
   "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条",
-  "updatedAt": "2026-10-15T02:06:00.000Z",
-  "totalItems": 150
+  "updatedAt": "2026-10-15T04:50:19.000Z",
+  "totalItems": 155
 }
