@@ -1,7 +1,83 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T04:50:19.000Z",
+  "updatedAt": "2026-10-15T08:50:00.000Z",
   "topics": [
+    {
+      "url": "https://pr.tsmc.com/english/news/3346",
+      "title": "2纳米最先进，为什么台积电一开始量产它，毛利率反而掉了？",
+      "category": "半导体",
+      "source": "台积电新闻稿《TSMC Reports Third Quarter EPS of NT$29.43》+ 3Q26 季度管理报告与法说会简报（2026-10-15）",
+      "publishedAt": "2026-10-15",
+      "eventAt": null,
+      "collectedAt": "2026-10-15T08:50:00.000Z",
+      "updatedAt": "2026-10-15T08:50:00.000Z",
+      "description": "台积电10月15日公布2026年第三季度：营收约1.494万亿新台币（约467.2亿美元），同比+50.9%、环比+17.6%；毛利率66.4%，比上季度低1.3个百分点。管理报告原话：毛利率下滑「主要由于N2技术初期量产带来的稀释」。按制程，2纳米已占晶圆营收8%（上季度3%），3纳米33%、5纳米28%、7纳米10%，7纳米及以下合计79%；按平台，HPC占68%、手机21%。四季度指引营收523–543亿美元，并称2纳米「陡峭爬坡」，毛利率指引65%–67%。机制：新节点刚量产时良率还在学习曲线上、新厂房和EUV设备折旧集中摊在少量晶圆上，单片成本高，所以越先进的节点一开始越「拖累」利润；等良率爬坡、产能摊薄后才变成利润主力——3纳米当年也走过这一段。反方/限定：毛利率受汇率、产能利用率等多因素影响，台积电只说「主要」原因是N2；单节点毛利不公开。可拍角度：①一张饼图：8%的2纳米 vs 33%的3纳米；②「良率学习曲线」动画——同一片晶圆上好芯片从少到多；③折旧怎么摊：一台EUV光刻机的成本分到每片晶圆；④为什么最赚钱的永远是「上一代」先进制程。0秒开场：法说会简报「3Q26 Revenue by Technology」饼图，红色2纳米那一小块放大。",
+      "caveat": "营收、毛利率、制程占比均出自台积电官方新闻稿与3Q26管理报告；「N2初期量产稀释毛利」为台积电自述的主要原因，良率/折旧机制为通用行业解释，非台积电本季披露的具体数字。注意营收单位：新台币1.494万亿 ≈ 467.2亿美元。封面为台积电3Q26法说会简报第5页截图（Revenue by Technology）。",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261015-tsmc-3q26-revenue-by-technology.png",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261015-tsmc-3q26-revenue-by-technology.png",
+      "imageAlt": "台积电3Q26法说会简报：按制程划分的晶圆营收饼图（2纳米8%、3纳米33%、5纳米28%）与7纳米及以下营收柱状图",
+      "tags": [
+        "芯片制造",
+        "良率",
+        "先进制程",
+        "台积电"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 89,
+        "baseBreakdown": {
+          "主线": 23,
+          "钩子": 18,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 4
+        },
+        "multiplier": 1.0743,
+        "finalScore": 95.6,
+        "threshold": 65,
+        "run": "2026-10-15-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://developers.googleblog.com/gemini-4-argon-for-robotics",
+      "title": "只看了一段人扔沙包的视频，为什么AI能教会人形机器人连投7个全进？",
+      "category": "AI",
+      "source": "Google Developers Blog《Gemini 4 Argon for Robotics》（Kanishka Rao，2026-10-13）+ Google 发布博客 + @GoogleDeepMind 演示视频",
+      "publishedAt": "2026-10-13",
+      "eventAt": null,
+      "collectedAt": "2026-10-15T08:50:00.000Z",
+      "updatedAt": "2026-10-15T08:50:00.000Z",
+      "description": "Google 10月13日发布 Gemini 4 Argon，官方称在内部测试里：Argon 看了一段人玩沙包投掷（cornhole）的原始视频，自己标定场地空间坐标、算出全身关节动作、自己写出仿真代码，迁移到 Apptronik 的 Apollo 人形机器人上，真实场地连续7投命中；官方把这条路线叫「Video-to-Sim-to-Real」，称把数周的手工仿真建模压缩到几小时。开发者博客还给了更多例子：只凭一张桌面照片，Argon 在 MuJoCo 里搭出校准过的仿真孪生、自定77个任务、生成4500多条随机化训练数据，让真实机器人任务成功率从56%提到75%、完成时间从35秒降到24秒；还能把手绘草图变成人形机器人投球击倒积木的物理仿真。具身推理基准 ERQA 得分87%。机制：以前机器人学新动作要靠人遥操作演示几个小时；现在让大模型先把视频「翻译」成物理仿真世界，在仿真里练成千上万次，再搬回真机（sim-to-real）。反方/限定：均为Google内部测试与官方演示，未见独立复现；「连进7个」是一次真实试验结果；仿真与现实的差距（摩擦、形变）仍是sim-to-real的老难题。可拍角度：①真人扔沙包 vs 机器人扔沙包分屏；②「视频→仿真→真机」三段式动画；③为什么机器人缺的不是算法而是数据；④一张照片造训练场：56%→75%。0秒开场：DeepMind 视频里 Apollo 出手、沙包入洞。",
+      "caveat": "全部能力数字来自 Google 官方博客/演示，为厂商自述、内部测试；Gemini 在大陆不可直接使用，讲法应聚焦「视频→仿真→真机」方法本身。封面为 @GoogleDeepMind 演示视频封面帧。",
+      "imageUrl": "https://pbs.twimg.com/media/HUiDGGjXkAEkJi6.jpg",
+      "previewUrl": "https://pbs.twimg.com/media/HUiDGGjXkAEkJi6.jpg",
+      "imageAlt": "Google DeepMind「Gemini 4 Argon × Robotics」演示视频封面：Apollo 人形机器人站在沙包投掷板旁",
+      "tags": [
+        "智能体",
+        "机器人",
+        "仿真",
+        "具身智能"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 15,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 93.0,
+        "threshold": 65,
+        "run": "2026-10-15-1640-shanghai"
+      }
+    },
     {
       "url": "https://news.mit.edu/2026/how-artificial-neural-networks-build-their-own-learning-machinery-1013",
       "title": "没人告诉它怎么学，为什么一堆随机连线的“神经元”自己学会了认图？",
