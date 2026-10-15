@@ -1,7 +1,85 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T08:50:00.000Z",
+  "updatedAt": "2026-10-15T12:52:00.000Z",
   "topics": [
+    {
+      "url": "https://newsroom.lamresearch.com/lam-imec-3d-integration-aether-dry-resist-ai-semiconductor-scaling",
+      "title": "光刻胶明明要显影，为什么先进制程反而改成「干」的了？",
+      "category": "半导体",
+      "source": "Lam Research 新闻室《Lam and imec Expand Collaboration… Aether Dry Resist》（Anand Murthy，2026-10-14）",
+      "publishedAt": "2026-10-14",
+      "eventAt": null,
+      "collectedAt": "2026-10-15T12:52:00.000Z",
+      "updatedAt": "2026-10-15T12:52:00.000Z",
+      "description": "Lam Research 与比利时研究中心 imec 在10月14日宣布扩大合作：一条线是把先进封装/3D 集成做到可量产（厚介质沉积、应力补偿、bevel 沉积、等离子体划片、高深宽比沟道刻蚀等）；另一条线把 Lam 的 Aether® 干法光刻胶推进到 High-NA EUV。官方对比图很直观：湿法显影时液体表面张力会把细线/立柱「拉倒」（pattern collapse），同一剂量下干法显影没有液体、结构不塌，SEM 上 P26 线宽和 P34 立柱从糊成一团变成整齐网格，文案写「This helps increase yield」。他们还展示了用 Aether 做单次曝光 High-NA、在约20nm pitch 的钌直接金属刻蚀互连上拿到叉状结构100%电学良率、曲折结构>90%。机制：节点越细，湿法显影里的毛细力相对结构强度越大，细线更容易倒；干法显影用气体/等离子体去掉未曝光胶，绕开了液体。反方/限定：这是厂商与研究机构的合作与演示良率，不是某条产线全面切换的量产宣告；High-NA + 干法胶仍在爬坡。可拍角度：①湿法「水桥」把立柱拉倒 vs 干法立柱直立的剖面动画；②同一张 SEM 左右对比；③为什么 High-NA 把「胶」也逼着换；④等离子体划片怎么切 3D 封装。0秒开场：Lam 官方「Wet Develop collapsed / Dry Develop same dose, no collapse」对比页。",
+      "caveat": "数字与 SEM 对比均出自 Lam 新闻稿附图与自述；20nm pitch 钌互连良率为联合研究演示结果，不等于量产节点规格。封面为 Lam 新闻稿配图 Lam_Image1_10-14-26.png（湿法塌陷 vs 干法不塌）。",
+      "imageUrl": "https://filecache.mediaroom.com/mr5mr_lamresearch/184796/Lam_Image1_10-14-26.png",
+      "previewUrl": "https://filecache.mediaroom.com/mr5mr_lamresearch/184796/Lam_Image1_10-14-26.png",
+      "imageAlt": "Lam Aether 干法显影对比页：湿法显影因液体表面张力导致线/柱塌陷的 SEM，对比干法同剂量不塌、线宽整齐",
+      "tags": [
+        "芯片制造",
+        "光刻",
+        "刻蚀",
+        "先进封装",
+        "良率"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 94,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 18,
+          "画面": 15,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 101.0,
+        "threshold": 65,
+        "run": "2026-10-15-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://news.siemens.com/en-us/siemens-calibre-nvidia-culitho/",
+      "title": "光罩图案还没上机台，为什么光是「算出来」就要算好几周？",
+      "category": "半导体",
+      "source": "Siemens 新闻稿《Siemens transforms computational lithography… with NVIDIA cuLitho》（2026-10-14）+ Calibre 技术博文",
+      "publishedAt": "2026-10-14",
+      "eventAt": null,
+      "collectedAt": "2026-10-15T12:52:00.000Z",
+      "updatedAt": "2026-10-15T12:52:00.000Z",
+      "description": "Siemens 与 NVIDIA 在 SEMICON West 期间（10月14日）宣布：把 NVIDIA cuLitho（GPU 加速计算光刻库）接到 Siemens Calibre，全芯片光学邻近校正（OPC）最高可加速约12倍，部分光刻仿真约10–17倍，让 High-NA EUV 所需的曲线光罩/逆光刻（ILT）从「算几周」压到「几天」量级。机制：设计图画的矩形到了硅片上会被衍射糊掉，OPC/ILT 要反复仿真光场、故意把光罩边缘改成复杂曲线才能印准；High-NA 场更小、三维掩模效应更重，算量爆炸，以前只能对热点补丁跑 ILT 或堆 CPU 农场。反方/限定：加速比来自厂商验证工程数据，不是独立第三方复测；光罩算得快也不等于 ASML 机台产能够——两条队列是分开的。可拍角度：①「设计图→故意改歪的光罩→硅片上反而准」三格漫画；②曲线 ILT 光罩长什么样；③GPU 造 GPU：算光罩的卡，正是下一代要造的卡。0秒开场：Siemens 新闻配图——洁净室地板上的彩色硅片特写，叠一句「这张片的光罩，可能算了好几周」。",
+      "caveat": "12×/10–17× 为 Siemens/NVIDIA 官方披露的工程验证数据；「周→天」为博文对最重任务的表述。封面为 Siemens 新闻 og:image（硅片特写）。",
+      "imageUrl": "https://assets.new.siemens.com/dam-asset/4393d5d3-7fca-4f12-8e07-0c8a04974ab0/IC-Chips-on-silicon-wafer-Adobe-335303132.jpg?auto=format%2Ccompress&w=1200&h=630&fit=crop",
+      "previewUrl": "https://assets.new.siemens.com/dam-asset/4393d5d3-7fca-4f12-8e07-0c8a04974ab0/IC-Chips-on-silicon-wafer-Adobe-335303132.jpg?auto=format%2Ccompress&w=1200&h=630&fit=crop",
+      "imageAlt": "Siemens 新闻配图：洁净室地板上密布管芯的彩色硅片特写",
+      "tags": [
+        "芯片制造",
+        "光刻",
+        "计算光刻",
+        "High-NA",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "主线": 23,
+          "钩子": 18,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 94.5,
+        "threshold": 65,
+        "run": "2026-10-15-2040-shanghai"
+      }
+    },
     {
       "url": "https://pr.tsmc.com/english/news/3346",
       "title": "2纳米最先进，为什么台积电一开始量产它，毛利率反而掉了？",
