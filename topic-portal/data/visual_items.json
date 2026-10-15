@@ -4,6 +4,216 @@
   "exportedCount": 115,
   "items": [
     {
+      "title": "浏览器里的赛车模拟：轮胎按胎体刚度和侧偏角实时变形",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/NathanielRedmon/status/2110576082961539329",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110574667371319296/img/vmfpjC8P8za3Tqzi.jpg",
+      "previewType": "image",
+      "description": "@NathanielRedmon 在浏览器里用 Three.js 做的实时赛车模拟新进展（Three.js 官方账号转发）：新增法拉利 296 GT3；轮胎会根据胎体（carcass）和侧偏角（slip angle）实时做3D形变；雨刮抖动、玻璃眩光、磨损贴图、新的后视屏，全部在浏览器里实时运行。帖内为2分多钟4K演示视频。可拍角度：①过弯时轮胎接地面被「拧」变形的特写——讲侧偏角为什么能产生转向力；②同一弯道不同车速的胎面形变对比；③「网页里跑的物理」本身就是科普素材。",
+      "tool": "Three.js（WebGL，浏览器实时）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者自述功能；未公开源码与许可；封面为帖内演示视频缩略图（Three.js 官方 @threejs 转发同一视频）。",
+      "attribution": "@NathanielRedmon（Nathaniel Redmon，X）",
+      "sourceAuthor": "NathanielRedmon",
+      "tags": [
+        "Three.js",
+        "车辆物理",
+        "轮胎形变",
+        "实时模拟"
+      ],
+      "publishedAt": "2026-10-15T03:38:45Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-15T08:50:00.000Z",
+      "updatedAt": "2026-10-15T08:50:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-15T08:50:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 76,
+        "baseBreakdown": {
+          "实体": 23,
+          "科普": 16,
+          "溯源": 12,
+          "复现": 6,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.3491,
+        "finalScore": 102.5,
+        "threshold": 65,
+        "run": "2026-10-15-1640-shanghai"
+      }
+    },
+    {
+      "title": "替身能用物理造出来吗？1000架手掌无人机拼成9米高的人形",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/kooki_works/status/2110613364582047881",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110613329425424384/img/sd5oSWr6jkLVfK_v.jpg",
+      "previewType": "image",
+      "description": "@kooki_works（K | AI×芸術&科学）用 Claude Code 做的「用物理计算动漫能力」系列短片（约32秒）：问《JOJO》的替身能不能在现实里做出来——用1000架手掌大小的无人机拼人形，互不相撞地排开后身高约9米，「欧拉欧拉」连打约每秒25拳，功率约8千瓦，电池只够约7分钟；结论是「像样的东西能做，但只有7分钟」。作者称只是用日语向 Claude Code 提需求。同系列还有「人类真能打出波动拳吗」（手掌推出约30克空气、手速需约5马赫）。可拍角度：①费米估算式科普的视觉模板——一句设问+三个数字+一句结论；②无人机编队=群体排布，可接「涌现/鸟群」选题。",
+      "tool": "Claude Code",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "数字均为作者视频/帖文给出的估算，未复核计算；未公开提示词与代码，许可未声明。封面为帖内视频缩略图。",
+      "attribution": "@kooki_works（K | AI×芸術&科学，X）",
+      "sourceAuthor": "kooki_works",
+      "tags": [
+        "Claude Code",
+        "费米估算",
+        "无人机编队",
+        "物理计算"
+      ],
+      "publishedAt": "2026-10-15T06:06:54Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-15T08:50:00.000Z",
+      "updatedAt": "2026-10-15T08:50:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-15T08:50:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 69,
+        "baseBreakdown": {
+          "实体": 15,
+          "科普": 19,
+          "溯源": 13,
+          "复现": 7,
+          "风格": 9,
+          "新颖": 6
+        },
+        "multiplier": 1.025,
+        "finalScore": 70.7,
+        "threshold": 65,
+        "run": "2026-10-15-1640-shanghai"
+      }
+    },
+    {
+      "title": "拿手机扫一圈房间，几分钟变成AI能量尺寸、能规划路线的3D场景",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://github.com/reality-opened/openreality",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261015-openreality-vggt-slam.jpg",
+      "previewType": "image",
+      "description": "开源项目 Open Reality（BSD-2-Clause）：上传一段手机视频，几分钟后得到可持久保存的3D场景；相机轨迹和三维点云边走边建（演示动图）。重建核心基于 MIT SPARK Lab 的 VGGT-SLAM（Dominic Maggio、Hyungtae Lim、Luca Carlone）。功能：任意两点量距离/角度（用一段真实距离校准后才算米）、在扫描出的空地里规划路径、导出成 LeRobot/GR00T 风格机器人训练数据或 Isaac Sim 场景；通过 MCP 暴露41个工具给 Claude Code / Codex / Cursor，可自建在自己的GPU或Modal上，还有离线模拟器免账号试用。可拍角度：①手机扫房间→点云+相机小方框一路长出来；②「没校准前只有相对尺寸」——讲单目视觉为什么不知道真实大小；③扫描场景直接变机器人训练场（接 sim-to-real 选题）。",
+      "tool": "VGGT-SLAM + MCP（openreality-mcp）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "BSD-2-Clause 开源仓库；线索来自 @aigeeknews 10-15 推文。封面为仓库 README 中 VGGT-SLAM 演示动图的截帧（含 MIT SPARK Lab 标识）。",
+      "attribution": "reality-opened/openreality（GitHub）；重建核心 VGGT-SLAM（MIT SPARK Lab）",
+      "sourceAuthor": "reality-opened",
+      "sourceCodeUrl": "https://github.com/reality-opened/openreality",
+      "tags": [
+        "3D重建",
+        "SLAM",
+        "MCP",
+        "开源",
+        "结构可视化"
+      ],
+      "publishedAt": "2026-10-15T08:05:07Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-15T08:50:00.000Z",
+      "updatedAt": "2026-10-15T08:50:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "licenseName": "BSD-2-Clause",
+      "verification": {
+        "checked_at": "2026-10-15T08:50:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 80,
+        "baseBreakdown": {
+          "实体": 17,
+          "科普": 16,
+          "溯源": 18,
+          "复现": 14,
+          "风格": 6,
+          "新颖": 9
+        },
+        "multiplier": 1.1,
+        "finalScore": 88.0,
+        "threshold": 65,
+        "run": "2026-10-15-1640-shanghai"
+      }
+    },
+    {
+      "title": "同一道题四个模型交卷：Three.js 里晃动的玛格丽特酒",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/codewithramesh/status/2110616970123186674",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110616696121950209/img/6BLs4RPogCYel0F6.jpg",
+      "previewType": "image",
+      "description": "@codewithramesh 让 Gemini 4 Argon、Meta Muse Wonder、Claude Opus 5.5、GPT-6 Astra 做同一个「玛格丽特酒杯液体晃动」挑战，均用 Three.js + WebGL，四宫格对比液体物理差异。",
+      "tool": "Three.js + WebGL（四个模型生成）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "对比帖，无提示词与代码；封面为四宫格视频缩略图。",
+      "attribution": "@codewithramesh（X）",
+      "sourceAuthor": "codewithramesh",
+      "tags": [
+        "Three.js",
+        "液体模拟",
+        "模型对比"
+      ],
+      "publishedAt": "2026-10-15T06:21:13Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-15T08:50:00.000Z",
+      "updatedAt": "2026-10-15T08:50:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-15T08:50:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 59,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 12,
+          "溯源": 8,
+          "复现": 4,
+          "风格": 10,
+          "新颖": 7
+        },
+        "multiplier": 1.3491,
+        "finalScore": 79.6,
+        "threshold": 65,
+        "run": "2026-10-15-1640-shanghai"
+      }
+    },
+    {
       "title": "一串随机数抽出一座漫画小镇：城下町、坡道町、水都，还能导出3D模型",
       "category": "frontend",
       "styleFamily": "code",
@@ -6505,7 +6715,7 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条",
-  "updatedAt": "2026-10-15T04:50:19.000Z",
-  "totalItems": 155
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条",
+  "updatedAt": "2026-10-15T08:50:00.000Z",
+  "totalItems": 159
 }
