@@ -4,6 +4,218 @@
   "exportedCount": 115,
   "items": [
     {
+      "title": "选一个影院座位，飞过去从那一排看大屏：房间被电影自己照亮",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://github.com/codrops/CinemaSeatPreview",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261015-codrops-cinema-seat.jpg",
+      "previewType": "image",
+      "description": "Codrops 用 Claude 把 2016 年经典「影院选座预览」重做成 Three.js + WebGPU/TSL：点座位，相机飞到那一排，从真实视角看 Blender Studio 短片《Charge》；银幕光线照亮整个影厅，还可开 4D 效果。演示 https://tympanus.net/Demos/CinemaSeatPreview/ ，源码 MIT 风格开源在 GitHub。可拍角度：①同一部片、前排 vs 后排视角差——讲透视与视场；②「银幕当灯」——电影画面如何变成房间 HDR 照明；③2016 CSS 3D → 2026 WebGPU 的升级本身就是前端史镜头。",
+      "tool": "Three.js + WebGPU/TSL（Codrops，Claude 辅助重制）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "开源仓库 codrops/CinemaSeatPreview；演示与 X @codrops 2026-10-15 帖同步。封面为本轮从演示视频截取的影厅选座画面（非头像）。",
+      "attribution": "Codrops（Manoela Ilic 原作脉络；2026 Three.js 重制）",
+      "sourceAuthor": "codrops",
+      "sourceCodeUrl": "https://github.com/codrops/CinemaSeatPreview",
+      "tags": [
+        "Three.js",
+        "WebGPU",
+        "交互",
+        "透视",
+        "开源"
+      ],
+      "publishedAt": "2026-10-15T08:58:46Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-15T12:52:00.000Z",
+      "updatedAt": "2026-10-15T12:52:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "licenseName": "MIT",
+      "verification": {
+        "checked_at": "2026-10-15T12:52:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 17,
+          "溯源": 20,
+          "复现": 15,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.3491,
+        "finalScore": 118.7,
+        "threshold": 65,
+        "run": "2026-10-15-2040-shanghai"
+      }
+    },
+    {
+      "title": "铅笔线+纸纹+剖面：把一座建筑画成可旋转的纸上施工图",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/jshguo/status/2110699640664600906",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110699620804546560/img/X2TwyaHIdqJpJrxC.jpg",
+      "previewType": "image",
+      "description": "Codrops 作者 Joshua Guo（@jshguo）用 Sonnet 5.5 Extra 把「生成式反建筑」重做成 Vite + Three.js 小演示：全部是着色器——铅笔笔触、纸张颗粒、楼层剖面（F1–F5 切开）。界面像一张施工图：CASA FUTURA、图例、比例尺、Redraw。引用原作 @mannay 的 Generative Antitecture。可拍角度：①剖面一切，楼层像书页翻开——讲「切开才能看见结构」；②纸纹+墨线如何用着色器伪造「手绘感」；③和用户偏好的纸艺/实体感同一条审美线。",
+      "tool": "Vite + Three.js 着色器（Sonnet 5.5 Extra）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者帖文自述技术栈；未附独立仓库链接。封面为帖内演示视频缩略图。",
+      "attribution": "@jshguo（Joshua Guo，X；Codrops 作者）",
+      "sourceAuthor": "jshguo",
+      "tags": [
+        "Three.js",
+        "纸艺场景",
+        "着色器",
+        "剖面",
+        "生成建筑"
+      ],
+      "publishedAt": "2026-10-15T11:49:43Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-15T12:52:00.000Z",
+      "updatedAt": "2026-10-15T12:52:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-15T12:52:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 75,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 14,
+          "溯源": 12,
+          "复现": 10,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.3338,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-15-2040-shanghai"
+      }
+    },
+    {
+      "title": "车漆为什么看起来「又一层玻璃」？浏览器路径追踪做出双层清漆",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/meby_central/status/2110705518016946429",
+      "previewUrl": "https://pbs.twimg.com/media/HUq7XGdb0AAXapi.jpg",
+      "previewType": "image",
+      "description": "@meby_central 用 Three.js TSL + WebGPU 做路径追踪，给扩展 PBR 材质加上二层 clearcoat：底材粗糙度之上再铺一层透明清漆高光（汽车喷漆那种「又亮又深」）。界面可见 Clearcoat Intensity/Roughness 滑条，代码称由 Gemini 生成。可拍角度：①关掉/打开 clearcoat 的球体对比——讲双层反射；②接「薄膜干涉/虹彩玻璃」类视觉；③路径追踪 spp 累积如何把噪点熬成干净高光。",
+      "tool": "Three.js TSL + WebGPU 路径追踪（Gemini 辅助）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者帖文与界面截图；未公开完整仓库。封面为帖内截图（双球+清漆工作室面板）。",
+      "attribution": "@meby_central（MEBY，X）",
+      "sourceAuthor": "meby_central",
+      "tags": [
+        "Three.js",
+        "PBR",
+        "路径追踪",
+        "材质",
+        "WebGPU"
+      ],
+      "publishedAt": "2026-10-15T12:13:05Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-15T12:52:00.000Z",
+      "updatedAt": "2026-10-15T12:52:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-15T12:52:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 70,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 16,
+          "溯源": 10,
+          "复现": 8,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.3491,
+        "finalScore": 94.4,
+        "threshold": 65,
+        "run": "2026-10-15-2040-shanghai"
+      }
+    },
+    {
+      "title": "富士山顶修一座跳台，人能飞出世界纪录的四倍远吗？",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/kooki_works/status/2110706327848960382",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110706290448318464/img/A5n9OX8XTQLdHoSR.jpg",
+      "previewType": "image",
+      "description": "@kooki_works 继续「用物理算动漫/狂想」系列：假设富士山顶修巨型跳台，助跑300m 到约169km/h，稀薄空气里滞空约32秒，飞距约1096m≈世界纪录254.5m 的四倍多，着地冲击约等于0.6m 落差。作者称只用日语跟 Claude Code 提需求。可拍角度：①海拔→空气密度→升力的因果链；②和同系列替身/多米诺同一「费米估算+画面」模板；③「数字从哪来」——让观众一起验算。",
+      "tool": "Claude Code",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "数字均为作者视频估算，未独立复核；未公开提示词。封面为帖内视频缩略图（富士山+跳台光轨）。",
+      "attribution": "@kooki_works（K | AI×芸術&科学，X）",
+      "sourceAuthor": "kooki_works",
+      "tags": [
+        "Claude Code",
+        "费米估算",
+        "物理计算"
+      ],
+      "publishedAt": "2026-10-15T12:16:18Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-15T12:52:00.000Z",
+      "updatedAt": "2026-10-15T12:52:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-15T12:52:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 66,
+        "baseBreakdown": {
+          "实体": 14,
+          "科普": 18,
+          "溯源": 12,
+          "复现": 7,
+          "风格": 9,
+          "新颖": 6
+        },
+        "multiplier": 1.025,
+        "finalScore": 67.6,
+        "threshold": 65,
+        "run": "2026-10-15-2040-shanghai"
+      }
+    },
+    {
       "title": "浏览器里的赛车模拟：轮胎按胎体刚度和侧偏角实时变形",
       "category": "frontend",
       "styleFamily": "code",
@@ -6715,7 +6927,7 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条",
-  "updatedAt": "2026-10-15T08:50:00.000Z",
-  "totalItems": 159
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条",
+  "updatedAt": "2026-10-15T12:52:00.000Z",
+  "totalItems": 163
 }
