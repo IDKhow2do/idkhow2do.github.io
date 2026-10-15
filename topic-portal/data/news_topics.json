@@ -1,7 +1,197 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-14T18:55:00.000Z",
+  "updatedAt": "2026-10-15T02:05:00.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2610.15240",
+      "title": "芯片还没流片，为什么AI代理已经能自己把模拟电路画到过签？",
+      "category": "半导体",
+      "source": "arXiv:2610.15240《The Era of Vibe Tapeout》（Kentaro Yoshioka，Keio，2026-10-14 提交窗口）",
+      "publishedAt": "2026-10-14",
+      "eventAt": null,
+      "collectedAt": "2026-10-15T00:51:11.000Z",
+      "updatedAt": "2026-10-15T00:51:11.000Z",
+      "description": "庆应义塾大学研究者用云端LLM代理在开源PDK SKY130上，从规格出发设计11位5.12 MS/s SAR ADC：代理自己写原理图/版图生成器，批跑仿真、DRC、LVS、寄生参数提取，读结果再改。三条对照——有脱敏参考设计的VibePorting、纯从零、从Verilog-A功能模型起步。结果：VibePorting约18.9小时无人干预过签，面积是无参考组的1/1.6～1/2.8；代理自己用单因素实验揪出后仿真掉分主因（CDAC布线耦合、比较器共模相关失调）。商业PDK侧用校内本地模型做六任务基准：Kimi K3过5项，调试任务全军覆没。反方/限定：数据是后仿真不含噪声与失配；代理会报假过签，必须独立复核。可拍角度：①「vibe coding」搬进模拟IC；②有参考 vs 从零的版图对比；③寄生几fF如何毁掉SNDR；④设计师要会写验收、不会画版也能盯错。0秒开场：论文三块版图同比例并排，标出面积与过签勾。",
+      "caveat": "arXiv预印本；性能数字为后PEX仿真（作者自述），不含噪声与器件失配；「无人干预过签」仅指参考设计条件下相对固定输入。勿写成已流片实测。封面为论文HTML版版图对比图。",
+      "imageUrl": "https://arxiv.org/html/2610.15240v1/sar_layout_money.png",
+      "previewUrl": "https://arxiv.org/html/2610.15240v1/sar_layout_money.png",
+      "imageAlt": "SKY130 SAR ADC三条实验条件的版图对比（arXiv:2610.15240 图）",
+      "tags": [
+        "芯片制造",
+        "智能体",
+        "模拟电路",
+        "EDA"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 94,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 20,
+          "画面": 15,
+          "来源": 13,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 101.0,
+        "threshold": 65,
+        "run": "2026-10-15-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://www.cas.cn/syky/202610/t20261014_5122179.shtml",
+      "title": "探针尖端不带磁，为什么还能在原子尺度「看见」电子怎么转？",
+      "category": "半导体",
+      "source": "中国科学院官网转中国科学技术大学《科学家利用拓扑探针首次实现交错磁体原子尺度自旋成像》（2026-10-14）；成果发表于《自然》",
+      "publishedAt": "2026-10-14",
+      "eventAt": null,
+      "collectedAt": "2026-10-15T00:51:11.000Z",
+      "updatedAt": "2026-10-15T00:51:11.000Z",
+      "description": "中国科学技术大学等团队用聚焦离子束，把α相溴化铋（量子自旋霍尔绝缘体）做成扫描隧道显微镜针尖：靠螺旋边界态的自旋–动量锁定，用隧穿电流方向选择不同自旋，不必依赖传统磁性针尖和外磁场。他们在交错磁体候选材料钾钒硒氧上，得到与棋盘式反铁磁排布一致的实空间图像，并观察到正交晶轴上准粒子干涉的相反自旋极化，为二维d波交错磁序提供直接证据。机制：拓扑边界态当「自旋滤光片」，把物态测量探针换成量子材料本身。反方/限定：科学院通稿未给完整器件参数；应用场景（二维磁体、莫尔材料）仍是展望。可拍角度：①普通磁针尖 vs 拓扑探针；②螺旋边界态一左一右自旋；③棋盘反铁磁「红蓝格子」；④FIB把晶体磨成原子级针尖。0秒开场：通稿示意图——探针扎进晶格、红蓝自旋分流。",
+      "caveat": "机制与结论依据中科院/中国科大通稿；《自然》全文本轮未打开，引用具体谱学数字前请回查原文。封面为中国科大新闻网同题稿件配图（螺旋边界态探针示意图+实验图），非头像。",
+      "imageUrl": "https://news.ustc.edu.cn/__local/0/84/B6/CE45D4915F78906E179ED9A743A_81E08F21_F1EAA.png",
+      "previewUrl": "https://news.ustc.edu.cn/__local/0/84/B6/CE45D4915F78906E179ED9A743A_81E08F21_F1EAA.png",
+      "imageAlt": "螺旋边界态探针工作原理与自旋分辨实验图（中国科大新闻网配图）",
+      "tags": [
+        "失效分析",
+        "二维半导体",
+        "表征",
+        "拓扑材料"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 96,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 17,
+          "画面": 14,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 10,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 103.1,
+        "threshold": 65,
+        "run": "2026-10-15-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://research.ibm.com/blog/open-agent-factories-and-distributed-inference-for-chip-design",
+      "title": "一群AI一起改芯片架构，为什么开源模型反而更省钱？",
+      "category": "半导体",
+      "source": "IBM Research 博客《Making AI-driven chip design affordable with open agent factories…》（2026-10-13）",
+      "publishedAt": "2026-10-13",
+      "eventAt": null,
+      "collectedAt": "2026-10-15T00:51:11.000Z",
+      "updatedAt": "2026-10-15T00:51:11.000Z",
+      "description": "IBM Research用「代理工厂」优化量子纠错解码器硬件：协调者代理派4个工人代理改实现、跑高层次综合，再按延迟和面积排序继续搜。同一100假设预算下，全开源前沿模型+本地llm-d推理约花26美元、高层次综合估计加速约52×；全闭源配置约299美元（贵11.5倍）但加速更高（约204×）。机制：硬件设计是反复试错，token成本决定你敢不敢多搜；开源权重+前缀缓存命中约98%让每次假设更便宜。反方/限定：数字来自单次搜索活动，不是普适排名；成本只计推理不计完整流片。可拍角度：①「工厂流水线」上的代理改RTL；②26美元 vs 299美元价签；③量子纠错为什么还要古典芯片帮忙；④便宜探索→更多假设。0秒开场：博客配图的绿色硬件抽象图叠「$26 vs $299」。",
+      "caveat": "加速倍数与美元成本均为IBM博客自述（author_reported）；「52×/204×」是高层次综合估计而非硅实测。封面为IBM Research博客配图。",
+      "imageUrl": "https://research-website-prod-cms-uploads.s3.us.cloud-object-storage.appdomain.cloud/hardware_green_d92a166da5.png",
+      "previewUrl": "https://research-website-prod-cms-uploads.s3.us.cloud-object-storage.appdomain.cloud/hardware_green_d92a166da5.png",
+      "imageAlt": "IBM Research AI驱动芯片设计配图（博客）",
+      "tags": [
+        "芯片制造",
+        "智能体",
+        "AI成本",
+        "量子计算"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 86,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 16,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 4
+        },
+        "multiplier": 1.0743,
+        "finalScore": 92.4,
+        "threshold": 65,
+        "run": "2026-10-15-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.18642",
+      "title": "KV缓存省内存，为什么「只压层」或「只保词」都不够？",
+      "category": "AI",
+      "source": "arXiv:2610.18642《MultiAlloc: Budget-Aware Precision Allocation for KV Cache Quantization》（南京大学等，代码 github.com/RL-MIND/MultiAlloc）",
+      "publishedAt": "2026-10-14",
+      "eventAt": null,
+      "collectedAt": "2026-10-15T00:51:11.000Z",
+      "updatedAt": "2026-10-15T00:51:11.000Z",
+      "description": "长上下文推理时KV缓存常把显存吃满。现有量化要么按层混精度，要么保住重要token，却很少在固定内存预算里同时分配这两种「精度配额」。MultiAlloc先离线刻画每层对量化的敏感度、以及哪些token更值得高精度，再在预算内联合分配层比特宽与每组高精token数，推理时只执行静态策略。同预算下在Llama/Mistral/DeepSeek-Qwen/QwQ等模型上，整体优于只做层、只做token或近期多粒度方法。反方/限定：预印本；刻画需要标定数据；收益随模型已接近FP16而变小。可拍角度：①显存水箱里KV越涨越高；②有的层怕压、有的词怕丢；③同一预算三张分配图对比；④「离线算好策略、线上不再搜索」。0秒开场：论文动机图——层精度需求与token保留需求交叉。",
+      "caveat": "arXiv预印本；表1数字为作者实验自述。HTML版未抽出插图，封面为论文动机图（已放入 topic-portal/covers/）。",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261015-multialloc-motivation.png",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261015-multialloc-motivation.png",
+      "imageAlt": "MultiAlloc 论文动机图：层压缩与 token 淘汰两条路径",
+      "tags": [
+        "KV缓存",
+        "AI推理",
+        "AI成本",
+        "量化"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 86,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 11,
+          "来源": 13,
+          "时效": 10,
+          "大陆": 9,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 90.9,
+        "threshold": 65,
+        "run": "2026-10-15-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+      "title": "手机里的AI智能体要「先想再答」，为什么只激活20亿参数就够？",
+      "category": "AI",
+      "source": "Hugging Face Blog / Liquid AI《Run fast, private agents on-device with LFM2.5-24B-A2B》（2026-10-13）",
+      "publishedAt": "2026-10-13",
+      "eventAt": null,
+      "collectedAt": "2026-10-15T00:51:11.000Z",
+      "updatedAt": "2026-10-15T00:51:11.000Z",
+      "description": "Liquid AI发布LFM2.5-24B-A2B：总参240亿、每次只激活约20亿的推理型MoE，面向端侧智能体——会先写思维链再答、会调工具、接OpenClaw/Hermes等harness。官方称Apple M5 Max约184 tok/s，LiveClaw 48.09高于参数更大的Qwen3.6-35B-A3B的38.19。机制：MoE把「会想」的成本摊到稀疏激活上，端侧才能持续跑代理。反方/限定：基准为厂商评测；知识类题仍弱于更大模型。可拍角度：①240亿参数的开关只亮20亿；②「先想再答」气泡；③同一台笔记本跑代理；④和云端大模型账单对比。0秒开场：HF博客主视觉叠「24B / A2B」。",
+      "caveat": "速度与基准分数为Liquid AI/HF博客自述；未独立复现。封面为HF博客og:image。",
+      "imageUrl": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/YxGx9U6yV6_mumklCyMsE.png",
+      "previewUrl": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/YxGx9U6yV6_mumklCyMsE.png",
+      "imageAlt": "LFM2.5-24B-A2B 博客主视觉（Hugging Face / Liquid AI）",
+      "tags": [
+        "端侧AI",
+        "智能体",
+        "MoE",
+        "AI推理"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 15,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 86.6,
+        "threshold": 65,
+        "run": "2026-10-15-0840-shanghai"
+      }
+    },
     {
       "url": "https://x.com/dngzsn37461/status/2110323272210637268",
       "title": "让 AI Agent 直接上手点真机：开源 mobile-mcp",
@@ -2988,6 +3178,29 @@
         "threshold": 70,
         "run": "2026-10-14-2040-shanghai"
       }
+    },
+    {
+      "url": "https://x.com/lifesinger/status/2110326307502633396",
+      "title": "乔布斯讲故事的八种手法",
+      "category": "其他",
+      "source": "X @lifesinger（Frank Wang 玉伯）X 长文（Article）",
+      "publishedAt": "2026-10-14T11:06:14Z",
+      "eventAt": null,
+      "collectedAt": "2026-10-15T02:05:00.000Z",
+      "updatedAt": "2026-10-15T02:05:00.000Z",
+      "description": "玉伯在 X 上发布的长文（Article），标题为《乔布斯讲故事的八种手法》，链接 https://x.com/i/article/2110324301786431488 。用户收藏，作为讲故事/表达技巧参考素材。",
+      "caveat": "X API 仅返回文章标题与链接，正文本轮未读取，未列出八种手法的具体内容；封面为该文章 og:image（X 文章头图，HTTP 200，800×342）。",
+      "imageUrl": "https://pbs.twimg.com/media/HUlgu_xbwAE3Tdm?format=jpg&name=large",
+      "previewUrl": "https://pbs.twimg.com/media/HUlgu_xbwAE3Tdm?format=jpg&name=large",
+      "imageAlt": "《乔布斯讲故事的八种手法》X 文章头图",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "乔布斯",
+        "讲故事",
+        "表达技巧"
+      ],
+      "tagSource": "provided"
     }
   ]
 }
