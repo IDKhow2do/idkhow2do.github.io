@@ -4,6 +4,374 @@
   "exportedCount": 115,
   "items": [
     {
+      "title": "浏览器里的路径追踪：460万三角的场景，半秒建完BVH还能降噪",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/pissang1/status/2110374982652219565",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110373255223853056/img/WR9w770urbT4V3c9.jpg",
+      "previewType": "image",
+      "description": "@pissang1 开源 WebGPU 路径追踪器 mutracer（MIT）：计算着色器路径追踪，WebGL2回退；基于TinyBVH的两级BVH用Web Worker并行构建，作者称M4 Max上460万三角约0.5秒；OIDN降噪、OpenPBR 1.1、物理相机景深、AgX+bloom，并可与Three.js场景同步。可拍角度：①同一场景「采样数很少→降噪后」；②BVH构建进度条；③景深拉虚背景；④和实时光栅并排。适合讲光线追踪/蒙特卡洛采样科普。",
+      "tool": "WebGPU + Three.js（mutracer）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "MIT 许可，源码 https://github.com/pissang/mutracer；封面为帖内演示视频缩略图。",
+      "attribution": "@pissang1（Yi Shen，X）；仓库 pissang/mutracer",
+      "sourceAuthor": "pissang1",
+      "sourceCodeUrl": "https://github.com/pissang/mutracer",
+      "tags": [
+        "Three.js",
+        "WebGPU",
+        "路径追踪",
+        "开源",
+        "结构可视化"
+      ],
+      "publishedAt": "2026-10-14T14:19:39Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-15T00:51:11.000Z",
+      "updatedAt": "2026-10-15T00:51:11.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "licenseName": "MIT",
+      "verification": {
+        "checked_at": "2026-10-15T00:51:11.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 94,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 18,
+          "溯源": 20,
+          "复现": 15,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.2748,
+        "finalScore": 119.8,
+        "threshold": 65,
+        "run": "2026-10-15-0840-shanghai"
+      }
+    },
+    {
+      "title": "鼠标拖出的粒子火花：桌面和网页同一套 Three.js 烟火",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/maksvanleeuwen/status/2110443686740086927",
+      "previewUrl": "https://www.sparklemou.se/og-image.jpg",
+      "previewType": "image",
+      "description": "Max van Leeuwen 开源 Sparkle Mouse：用 Three.js + Tauri 做可高度定制的粒子光标效果，同时提供网页与桌面版，npm 包名 sparkle-mouse，MIT。站点 sparklemou.se 可直接试。可拍角度：①光标划过拖出火花；②调参数面板；③同一套效果进桌面壳。实体感在「粒子跟随手势」，科普可接动量/发射器。",
+      "tool": "Three.js + Tauri + npm sparkle-mouse",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "MIT（Copyright 2026 Max van Leeuwen）；仓库 github.com/max-van-leeuwen/sparkle-mouse；封面为官网 og:image。",
+      "attribution": "@maksvanleeuwen（Max van Leeuwen）；sparklemou.se",
+      "sourceAuthor": "maksvanleeuwen",
+      "sourceCodeUrl": "https://github.com/max-van-leeuwen/sparkle-mouse",
+      "tags": [
+        "Three.js",
+        "粒子化",
+        "开源",
+        "前端交互"
+      ],
+      "publishedAt": "2026-10-14T18:52:39Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-15T00:51:11.000Z",
+      "updatedAt": "2026-10-15T00:51:11.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "licenseName": "MIT",
+      "verification": {
+        "checked_at": "2026-10-15T00:51:11.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 14,
+          "溯源": 20,
+          "复现": 15,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.2588,
+        "finalScore": 109.5,
+        "threshold": 65,
+        "run": "2026-10-15-0840-shanghai"
+      }
+    },
+    {
+      "title": "无限草地怎么只占固定内存：刀片回收 + 风场顶点着色器",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/ShaneBrumback/status/2110400847708315809",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110400628744753152/img/a-w65gh-vtSYZ_aW.jpg",
+      "previewType": "image",
+      "description": "Shane Brumback 用 Three.js InstancedMesh 铺数万草叶：自定义GLSL按世界坐标吹风、根部钉死尖端摇摆；阴影用同位移的customDepthMaterial；玩家（卡皮巴拉）走开后身后草叶卷到前方，形成「看起来无限、内存固定」的草地。教程页提供单文件源码（需Google登录解锁）。可拍角度：①风浪滚过草地；②走远后草被回收到前方；③InstancedMesh一次绘制。适合讲实例化与程序化自然。",
+      "tool": "Three.js + GLSL InstancedMesh",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者公开机制说明；完整源码在教程页需登录解锁。封面为帖内演示视频缩略图。",
+      "attribution": "@ShaneBrumback（X）",
+      "sourceAuthor": "ShaneBrumback",
+      "tags": [
+        "Three.js",
+        "着色器",
+        "实例化",
+        "程序化生成"
+      ],
+      "publishedAt": "2026-10-14T16:02:26Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-15T00:51:11.000Z",
+      "updatedAt": "2026-10-15T00:51:11.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-15T00:51:11.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 16,
+          "溯源": 14,
+          "复现": 12,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.2748,
+        "finalScore": 104.5,
+        "threshold": 65,
+        "run": "2026-10-15-0840-shanghai"
+      }
+    },
+    {
+      "title": "把官网扔给Claude：一段提示词拍出14.5秒WebGL飞越片",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/twoclipping/status/2110329502676951367",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110328827956068352/img/Yfz92C5G-vOXGdv4.jpg",
+      "previewType": "image",
+      "description": "@twoclipping 公开完整提示词：让Claude用Playwright截落地页分层，再在WebGL2里按时间函数seek做14.5秒连续机位飞越（禁止剪辑/缩放回拉），卡片浮起、景深、运动模糊，最终导出H.264。机制写得很细（速度曲线、焦距、层高阴影）。可拍角度：①同一落地页「平面→飞越」；②提示词里的时间轴；③代码出片 vs 手工剪辑。适合账号「纯代码出片」对照。",
+      "tool": "Claude + Playwright + WebGL2",
+      "prompt": "（见原帖 note_tweet 全文：inputs/direction/structure/build/gotchas/start）",
+      "promptProvenance": "original_public",
+      "provenanceNote": "提示词为作者在帖中全文公开（original_public）；许可未声明，仅外链引用。封面为演示视频缩略图。",
+      "attribution": "@twoclipping（zero，X）",
+      "sourceAuthor": "twoclipping",
+      "tags": [
+        "Claude",
+        "代码出片",
+        "WebGL",
+        "落地页"
+      ],
+      "publishedAt": "2026-10-14T11:18:56Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-15T00:51:11.000Z",
+      "updatedAt": "2026-10-15T00:51:11.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-15T00:51:11.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 78,
+        "baseBreakdown": {
+          "实体": 16,
+          "科普": 12,
+          "溯源": 18,
+          "复现": 15,
+          "风格": 9,
+          "新颖": 8
+        },
+        "multiplier": 1.0407,
+        "finalScore": 81.2,
+        "threshold": 65,
+        "run": "2026-10-15-0840-shanghai"
+      }
+    },
+    {
+      "title": "Excel也能定格动画：一格两千个形状，再凸成Blender地形",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/aicreataro/status/2109892378383540394",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2109891279203307520/img/2S3nAyEc4gnSnpMJ.jpg",
+      "previewType": "image",
+      "description": "@aicreataro 用 Opus 5.5 驱动：把下绘视频逐帧重画成Excel自由形状（每帧约2000–6000个图元），真开Excel窗口连拍约2400张；转场也在表里拼；立体段落把格子凹凸送进Blender飞镜头。素材底绘来自Midjourney→Kling。可拍角度：①Excel窗口一帧帧翻；②形状碎片重组；③表格「隆起」成3D。反直觉钩子强，复现成本极高（作者也说不推荐跟做）。",
+      "tool": "Opus 5.5 × Excel × Blender（底绘 Midjourney→Kling）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "流程为作者自述；提示词未公开。封面为帖内视频缩略图。",
+      "attribution": "@aicreataro（X）",
+      "sourceAuthor": "aicreataro",
+      "tags": [
+        "代码出片",
+        "定格",
+        "Excel",
+        "Blender"
+      ],
+      "publishedAt": "2026-10-13T06:21:57Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-15T00:51:11.000Z",
+      "updatedAt": "2026-10-15T00:51:11.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-15T00:51:11.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 75,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 15,
+          "溯源": 12,
+          "复现": 8,
+          "风格": 8,
+          "新颖": 10
+        },
+        "multiplier": 1.0538,
+        "finalScore": 79.0,
+        "threshold": 65,
+        "run": "2026-10-15-0840-shanghai"
+      }
+    },
+    {
+      "title": "WebGPU布料求解器续测：布面自己皱起来",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/sachasayan/status/2110387762352328830",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110387727598297089/img/gAwxAHx4S5RBYxwI.jpg",
+      "previewType": "image",
+      "description": "@sachasayan 晒WebGPU布料求解器测试视频，布面动态褶皱清楚，贴合用户爱的布料物理方向；但帖中未给源码/许可证/可复现步骤。",
+      "tool": "WebGPU cloth solver（未注明具体库）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "无源码链接与许可声明；仅外链引用演示。封面为视频缩略图。",
+      "attribution": "@sachasayan（X）",
+      "sourceAuthor": "sachasayan",
+      "tags": [
+        "WebGPU",
+        "布料模拟",
+        "Three.js"
+      ],
+      "publishedAt": "2026-10-14T15:10:26Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-15T00:51:11.000Z",
+      "updatedAt": "2026-10-15T00:51:11.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-15T00:51:11.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 67,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 15,
+          "溯源": 8,
+          "复现": 5,
+          "风格": 10,
+          "新颖": 7
+        },
+        "multiplier": 1.2588,
+        "finalScore": 84.3,
+        "threshold": 65,
+        "run": "2026-10-15-0840-shanghai"
+      }
+    },
+    {
+      "title": "程序化棒球帽：布料帽檐加上宝石切面",
+      "category": "3d",
+      "styleFamily": "code",
+      "source": "https://x.com/kakachiex/status/2110452960295629225",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110452719840325632/img/ULbkKa_zyhn-Ce5E.jpg",
+      "previewType": "image",
+      "description": "@kakachiex 展示程序化棒球帽生成器，加入珠宝/晶体细节，标签含threejs/cloth/SDF；演示好看但无开源仓库与许可。",
+      "tool": "Three.js / Blender / SDF（作者标签）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "无源码与许可；封面为演示视频缩略图。",
+      "attribution": "@kakachiex（X）",
+      "sourceAuthor": "kakachiex",
+      "tags": [
+        "Three.js",
+        "布料模拟",
+        "程序化生成",
+        "SDF"
+      ],
+      "publishedAt": "2026-10-14T19:29:30Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-15T00:51:11.000Z",
+      "updatedAt": "2026-10-15T00:51:11.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-15T00:51:11.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 59,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 12,
+          "溯源": 8,
+          "复现": 5,
+          "风格": 9,
+          "新颖": 7
+        },
+        "multiplier": 1.1793,
+        "finalScore": 69.6,
+        "threshold": 65,
+        "run": "2026-10-15-0840-shanghai"
+      }
+    },
+    {
       "title": "Claude 手感为什么舒服：用 REA 逆向 Claude Desktop 的交互物理学",
       "category": "frontend",
       "styleFamily": "code",
@@ -5816,10 +6184,62 @@
         "threshold": 70,
         "run": "user-specified-2026-10-14"
       }
+    },
+    {
+      "title": "Gemini 4 Argon 2D转3D：一张维多利亚马车图，零人工纯代码生成WebGL可交互3D资产",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/GeekCatX/status/2110313201477026265",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110241050128531456/img/rltHeW2JxIqnljU4.jpg",
+      "previewType": "image",
+      "description": "作者称 Gemini 4 Argon 在2D转3D方面“遥遥领先”：给模型一张2D维多利亚马车图，零人工参与，纯靠代码直接输出完整的 WebGL 交互级3D资产，无需在 Blender 里手工雕面调骨骼。帖子为对原推的转述，并称扒了原推的关键实测数据（API返回正文在此处截断，具体数据未获取）。用户指定收纳（收藏）。已取X视频封面帧（HTTP 200）；未播放视频。",
+      "tool": "Gemini 4 Argon（作者自述）",
+      "prompt": "",
+      "promptProvenance": "not_public",
+      "provenanceNote": "原帖未公开提示词；帖子转述他人原推，原推链接未在API返回中给出；许可未声明。",
+      "attribution": "@GeekCatX（知识猫AI实验室，X）",
+      "sourceAuthor": "GeekCatX",
+      "modelClaim": "Gemini 4 Argon",
+      "modelEvidenceUrl": "https://x.com/GeekCatX/status/2110313201477026265",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "2D转3D",
+        "WebGL",
+        "Gemini 4 Argon"
+      ],
+      "publishedAt": "2026-10-14T10:14:09Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-15T02:06:00.000Z",
+      "updatedAt": "2026-10-15T02:06:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-15T02:06:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-15T02:06:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          2828,
+          1844
+        ],
+        "preview_check": "封面URL来自X API视频preview_image_url，本轮下载HTTP 200。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-14"
+      }
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分）",
-  "updatedAt": "2026-10-14T19:29:36.000Z",
-  "totalItems": 142
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条",
+  "updatedAt": "2026-10-15T02:06:00.000Z",
+  "totalItems": 150
 }
