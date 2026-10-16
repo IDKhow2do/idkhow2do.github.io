@@ -1,7 +1,160 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T12:52:00.000Z",
+  "updatedAt": "2026-10-16T00:58:00.000Z",
   "topics": [
+    {
+      "url": "https://www.nature.com/articles/s41928-026-01729-7",
+      "title": "光刻胶本来是「用完就洗掉」的，为什么这次胶自己就能发光当屏幕？",
+      "category": "半导体",
+      "source": "Nature Electronics Research Highlight《Electroluminescent photoresists make LEDs easy to pattern》（Matthew Parker，2026-10-13）；原论文 Nature 658, 78–85 (2026)",
+      "publishedAt": "2026-10-13",
+      "eventAt": null,
+      "collectedAt": "2026-10-16T00:58:00.000Z",
+      "updatedAt": "2026-10-16T00:58:00.000Z",
+      "description": "Nature Electronics 10月13日的研究亮点介绍了 ETH Zürich、台湾科技大学、RMIT 和赫尔辛基大学团队的工作：把发光分子本身做成「光刻胶」。分子设计是星形结构——中心是一个荧光发光分子，外面伸出多条聚合物臂，臂端带可交联基团，于是这层材料能像光刻胶一样曝光、交联、显影成图案，而留下来的图案本身就是 OLED 发光层。以往的电致发光光刻胶效率远不如普通 OLED，原因是交联时产生的淬灭位点会「掐灭」激子；星形设计把发光核心包在中间、和淬灭位点隔开，做出的 OLED 外量子效率超过13%。团队还重复三轮光刻，做出单片多色 OLED 微像素阵列，说明各轮工艺互不干扰（正交）。机制：芯片厂里光刻胶只是临时模板，图案转移完就剥掉；这里反过来让「模板」本身成为器件，省掉对有机发光层做刻蚀/掩膜蒸镀的难题。反方/限定：这是期刊亮点对原论文的摘要，13%为论文报告的器件效率，离量产屏幕的寿命、良率还很远。可拍角度：①芯片光刻流程「涂胶→曝光→显影→刻蚀→去胶」vs 这里「涂胶→曝光→显影→直接点亮」对比动画；②为什么交联会让发光变暗（激子淬灭）——星形分子当「防护罩」；③三轮光刻叠出红绿蓝像素；④接 Micro-OLED/近眼显示。0秒开场：期刊配图——整齐排列的蓝绿发光像素点阵。",
+      "caveat": "内容来自 Nature Electronics 研究亮点（订阅预览可见正文段落）及其标注的原论文 Nature 658, 78–85 (2026)；未读原论文全文。13%外量子效率为亮点转述的论文数据。封面为该亮点文章配图（发光微像素阵列）。",
+      "imageUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41928-026-01729-7/MediaObjects/41928_2026_1729_Figa_HTML.png",
+      "previewUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41928-026-01729-7/MediaObjects/41928_2026_1729_Figa_HTML.png",
+      "imageAlt": "Nature Electronics 研究亮点配图：黑底上规则排列的蓝色与绿色发光微像素点阵",
+      "tags": [
+        "芯片制造",
+        "光刻",
+        "光刻胶",
+        "OLED",
+        "显示"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 90,
+        "baseBreakdown": {
+          "主线": 23,
+          "钩子": 18,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 7,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 96.7,
+        "threshold": 65,
+        "run": "2026-10-16-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://www.nature.com/articles/s41928-026-01730-0",
+      "title": "晶体管一般只铺一层，为什么氧化铟能在芯片上「盖楼」盖到四层？",
+      "category": "半导体",
+      "source": "Nature Electronics Research Highlight《Building indium oxide transistors in three dimensions》（Yan Huang，2026-10-14）",
+      "publishedAt": "2026-10-14",
+      "eventAt": null,
+      "collectedAt": "2026-10-16T00:58:00.000Z",
+      "updatedAt": "2026-10-16T00:58:00.000Z",
+      "description": "Nature Electronics 10月14日的研究亮点介绍了 Purdue 大学团队的单片三维集成：全部用原子层沉积（ALD）的氧化铟晶体管一层层往上「盖」——第1层是铁电晶体管 FeFET（铪锆氧介质），第2层是增强型晶体管，第3层是耗尽型晶体管。用第2层晶体管给 FeFET 当访问管，做出铁电非易失存储；把2、3层晶体管连起来做跨层反相器；把第3层栅极和第2层漏极相连，做出 2T0C（两管零电容）DRAM 单元，开关电流比超过8个数量级。团队还按实测特性做了一套氧化物半导体 PDK，并用它搭了一个四层的 3D 存内计算加速器（模拟/混合信号电路、逻辑、非易失与易失存储靠层间通孔连起来），跑大模型负载时提速，同时能量-延迟积与传统 2D 设计相当。机制：硅晶体管要上千度高温制备，上层一做下层就被烤坏；氧化铟可用低温 ALD 沉积，所以能在已经做好的电路上方再长一层器件——把「搬数据」的距离从毫米级缩到层间通孔。反方/限定：这是期刊亮点对研究的摘要；「提速」未给具体倍数，能量-延迟积只是与2D 持平而非大幅领先；氧化物管迁移率、可靠性与量产仍是难点。可拍角度：①「平房→楼房」：为什么硅只能盖一层（热预算）；②2T0C 没有电容也能存数据；③存算一体为什么省搬运；④对照中科院微电子所同类 IGZO/CFET 三维集成路线。0秒开场：期刊配图——四层芯片的版图/热分布彩色方阵。",
+      "caveat": "内容来自 Nature Electronics 研究亮点正文（订阅预览可见段落）；未取得原论文全文与具体加速倍数。封面为该亮点文章配图（芯片版图彩色图），具体图注未能读取。",
+      "imageUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41928-026-01730-0/MediaObjects/41928_2026_1730_Figa_HTML.png",
+      "previewUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41928-026-01730-0/MediaObjects/41928_2026_1730_Figa_HTML.png",
+      "imageAlt": "Nature Electronics 研究亮点配图：橙黄色调的芯片版图方阵，分为多个规则子区块",
+      "tags": [
+        "芯片制造",
+        "3D集成",
+        "氧化物半导体",
+        "存内计算",
+        "存储/内存"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 89,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 17,
+          "画面": 11,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 95.6,
+        "threshold": 65,
+        "run": "2026-10-16-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://huggingface.co/blog/allenai/hiro-acev2",
+      "title": "AI 把全球天气算到3公里一格、成本只要1/300，为什么还算不了「变暖以后」？",
+      "category": "AI",
+      "source": "Ai2 在 Hugging Face 的博客《HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost》（2026-10-14）",
+      "publishedAt": "2026-10-14",
+      "eventAt": null,
+      "collectedAt": "2026-10-16T00:58:00.000Z",
+      "updatedAt": "2026-10-16T00:58:00.000Z",
+      "description": "Ai2（艾伦人工智能研究所）10月14日发布 HiRO-ACEv2：由两部分组成——ACE 是在100公里粗网格上跑气候的 AI 模型，HiRO 把粗结果「锐化」成3公里细节。新版 HiROv2 能同时输出多种高分辨率场（不只是降雨），并重点提升极端事件：喂入粗化后的 X-SHiELD 数据时，高分辨率统计与目标模拟相差3%以内，连百万分之一概率的极端值也能复现；能估准热带气旋总能量（包括训练中没见过的风暴），生成有风眼和雨带的飓风，但风眼附近风压场比 X-SHiELD 更不对称。两者合起来生成一整年全球3公里数据，成本约为 X-SHiELD（显式模拟风暴的高分辨率物理模型）的1/300；只算一个区域时还能再省百倍以上。关键限制写得很直白：HiRO 是向 X-SHiELD 学的，只能配合调成 X-SHiELD 气候的 ACE 使用，还不能生成「更暖的未来」或 ERA5 历史再分析那样的其它气候。机制：AI 学的是模拟器的统计规律，便宜在「不再逐秒解流体方程」，代价是离开训练分布就没底。可拍角度：①100公里 vs 3公里同一台风的「马赛克→高清」对比；②1/300 成本从哪省出来；③为什么 AI 天气模型敢预测明天却不敢预测2050；④台风季的大陆观众相关性。0秒开场：Ai2 配图——一排地球从粗格到细格，箭头指向风暴/降雨图标。",
+      "caveat": "数字均来自 Ai2 博客自述（对标 X-SHiELD 的统计匹配与成本比）；未独立复核。封面为博客 og 配图（示意图，非真实台风模拟截图）。",
+      "imageUrl": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/Y8t8GnfI2lUa40iX4_sxA.png",
+      "previewUrl": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/Y8t8GnfI2lUa40iX4_sxA.png",
+      "imageAlt": "Ai2 HiRO-ACEv2 博客配图：一排由粗到细的地球图标，下方两个方框内是台风、降雨、风的图标",
+      "tags": [
+        "AI成本",
+        "气候模拟",
+        "极端天气",
+        "降尺度"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 79,
+        "baseBreakdown": {
+          "主线": 16,
+          "钩子": 17,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 83.5,
+        "threshold": 65,
+        "run": "2026-10-16-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "title": "AI公司为什么要把外部审查员请进办公室，还放弃对报告的否决权？",
+      "category": "AI",
+      "source": "Anthropic 官方公告《An update on independent evaluators》（2026-10-15）",
+      "publishedAt": "2026-10-15",
+      "eventAt": null,
+      "collectedAt": "2026-10-16T00:58:00.000Z",
+      "updatedAt": "2026-10-16T00:58:00.000Z",
+      "description": "Anthropic 10月15日公告：已让非营利评测机构 METR 的6名员工以「类员工权限」入驻——配公司电脑、办公位，内部工具和系统访问权限大致与自家风险评估团队相当；除客户数据、律师-客户特权信息、模型架构等少数明确类别外，员工被鼓励像对同事一样向他们分享信息。METR 会公开发布对其风险水平、事故或做法的分析，Anthropic 不能否决发布，只能要求删去预先约定的狭窄类别信息；METR 还可以公开评价这些删改是否合理。公告把这比作银行监管里的「驻场检查员」（resident examiner）：银行比外人更了解自己的风险，所以监管者派人常驻大银行内部。它还提出评估方三级权限：一级做窄范围调查、发布需公司批准；二级可不经批准发布；三级即 METR 这种类员工权限。另与 SecureBio（审阅其8月风险报告的化生武器章节）、Accenture 和 Faculty 合作，并在与 Hugging Face 等早期接洽。机制/钩子：前沿模型的训练与防护细节不能全公开（怕被滥用、涉商业机密），但全不公开又无法问责——解法是让少数独立的人「看全」，再由他们公开结论。反方/限定：这是公司自述的安排，独立性取决于协议执行；METR 尚未发布本轮结果。可拍角度：①「考生自己出题」vs「监考进考场」；②银行驻场检查员类比；③三级权限一张表；④对比「API 外测」为什么像盲人摸象。0秒开场：Anthropic 公告配图（蓝/黑同心圆纹样）叠一句「把监考请进考场」。",
+      "caveat": "内容全部来自 Anthropic 官方公告自述；「类员工权限」范围与 METR 的发布权以公告描述为准，METR 评估结果尚未公开。封面为公告 og 配图（抽象图案）。",
+      "imageUrl": "https://www-cdn.anthropic.com/images/4zrzovbb/website/d2e351e6311a0ada8ea4a0304ce6cda39243eaf4-1200x630.jpg",
+      "previewUrl": "https://www-cdn.anthropic.com/images/4zrzovbb/website/d2e351e6311a0ada8ea4a0304ce6cda39243eaf4-1200x630.jpg",
+      "imageAlt": "Anthropic 公告配图：米色方格纸背景上蓝色圆面与黑色同心圆弧纹样",
+      "tags": [
+        "AI安全",
+        "第三方评估",
+        "前沿模型"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 76,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 17,
+          "画面": 7,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 80.3,
+        "threshold": 65,
+        "run": "2026-10-16-0840-shanghai"
+      }
+    },
     {
       "url": "https://newsroom.lamresearch.com/lam-imec-3d-integration-aether-dry-resist-ai-semiconductor-scaling",
       "title": "光刻胶明明要显影，为什么先进制程反而改成「干」的了？",
