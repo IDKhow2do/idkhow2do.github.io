@@ -1,8 +1,168 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 226,
+  "exportedCount": 229,
   "items": [
+    {
+      "title": "英伟达开源 CAD 几何内核 SMLib（USD BRep）：NURBS、布尔、倒圆角，Apache 2.0 可商用",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "is3d": true,
+      "source": "https://x.com/gewuerleo/status/2110760207643288045",
+      "sourceCodeUrl": "https://github.com/NVIDIA-Omniverse/usd-brep",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-nvidia-usd-brep-smlib.png",
+      "previewType": "image",
+      "videoUrl": "",
+      "description": "@gewuerleo（3D打印雷哥说）2026-10-15 发帖：英伟达把包含 SMLib 几何建模内核的 USD BRep 项目在 GitHub 开源，首个公开版本 10 月 8 日发布。SMLib 是 CAD 软件底层处理三维几何的核心组件，支持 NURBS 曲面、布尔运算、倒圆角、中空化等；Apache 2.0 许可，允许商业集成，提供 C++ 和 Python 接口。作者提醒它是 CAD 开发库，不能直接替代 SolidWorks 或 Fusion。观点：几何内核曾是做工程 CAD 的高门槛，开放后 AI CAD 团队可把精力放在自然语言建模、参数化设计和制造流程上；AI 建模的突破在于调用成熟内核生成可继续编辑、可制造的工程模型。",
+      "tool": "NVIDIA USD BRep（含 SMLib 几何内核，Apache 2.0，C++/Python）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为 @gewuerleo 原帖（2026-10-15T15:50:24Z，经 X API 回读，非臆造）。原帖无图片/视频，封面取自帖中链接仓库的 GitHub OpenGraph 卡片。",
+      "attribution": "@gewuerleo（3D打印雷哥说 XU FANGLEI）",
+      "sourceAuthor": "gewuerleo",
+      "tags": [
+        "用户指定收纳",
+        "CAD",
+        "NVIDIA",
+        "几何内核",
+        "开源",
+        "3D建模"
+      ],
+      "publishedAt": "2026-10-15T15:50:24Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T14:30:00.000Z",
+      "updatedAt": "2026-10-16T14:30:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-16T14:30:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-16T14:30:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          600
+        ],
+        "preview_check": "无帖内媒体；封面为 GitHub 仓库 NVIDIA-Omniverse/usd-brep 的 OpenGraph 卡片图，HTTP 200。",
+        "video_check": "无视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-16"
+      }
+    },
+    {
+      "title": "UniForge3D 开源：几张随手拍、无需相机位姿，重建+生成出完整带贴图 GLB",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "is3d": true,
+      "source": "https://x.com/stefan_3d_ai/status/2110795276000854263",
+      "sourceCodeUrl": "https://github.com/xibushu/UniForge3D",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-uniforge3d-unposed-photos.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2110794975269335040/vid/avc1/1920x1080/s4wOChudo7f4TdI_.mp4",
+      "description": "@Stefan_3D_AI 2026-10-15 发帖介绍开源项目 UniForge3D：用几张随手拍的照片出 3D，不需要相机位姿，也不需要特殊拍摄。它保留照片真实拍到的部分，把缺失部分生成补全，合成一个完整的带贴图模型；重建与生成在同一空间完成，每个区域选用最佳照片，直接输出带贴图 GLB。代码、权重和 demo 已上线（github.com/xibushu/UniForge3D）。帖内约 61 秒演示视频。",
+      "tool": "UniForge3D（开源，代码+权重+demo）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为 @Stefan_3D_AI 原帖（2026-10-15T18:09:45Z，经 X API 回读，非臆造）。仓库链接取自帖文，未另行核实许可证。封面为帖内视频缩略图。",
+      "attribution": "@Stefan_3D_AI（Stefan 3D AI）",
+      "sourceAuthor": "Stefan_3D_AI",
+      "tags": [
+        "用户指定收纳",
+        "UniForge3D",
+        "照片转3D",
+        "GLB",
+        "开源",
+        "3D建模"
+      ],
+      "publishedAt": "2026-10-15T18:09:45Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T14:30:00.000Z",
+      "updatedAt": "2026-10-16T14:30:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-16T14:30:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-16T14:30:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为帖内视频缩略图，HTTP 200。",
+        "video_check": "未完整播放 61 秒视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-16"
+      }
+    },
+    {
+      "title": "10 张照片变可漫游 3D 公寓：Higgsfield 演示 Gemini 4 Argon 经 Blender + UE 重建空间",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "is3d": true,
+      "source": "https://x.com/minsi_ai/status/2110743546684940360",
+      "sourceCodeUrl": "",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-minsi-gemini-argon-3d-apartment.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2110416983435206656/vid/avc1/1920x1080/GOjs1b1gq6v0l6C1.mp4",
+      "description": "@Minsi_AI 2026-10-15 发帖：Higgsfield 展示一个 Gemini 4 Argon 实验，把 10 张公寓照片交给 Argon，它通过 Blender 和 Unreal Engine 重建整个空间，生成可自由漫游的 3D 场景。作者认为酒店、民宿、房地产展示可能从「照片+视频+360° 全景」走向让客户预订前先「走进去」；但它还不是精确数字孪生，照片没拍到的部分仍靠 AI 推断。视频来自 @higgsfield_ai，约 32 秒。",
+      "tool": "Gemini 4 Argon（Higgsfield 实验）+ Blender + Unreal Engine",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为 @Minsi_AI 原帖（2026-10-15T14:44:11Z，经 X API 回读，非臆造）。视频原始来源 https://x.com/higgsfield_ai/status/2110417078654279736。封面为该视频缩略图。",
+      "attribution": "@Minsi_AI（Minsi.AI）；视频来自 @higgsfield_ai",
+      "sourceAuthor": "Minsi_AI",
+      "tags": [
+        "用户指定收纳",
+        "Gemini",
+        "Argon",
+        "Blender",
+        "Unreal Engine",
+        "空间重建",
+        "3D建模"
+      ],
+      "publishedAt": "2026-10-15T14:44:11Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T14:30:00.000Z",
+      "updatedAt": "2026-10-16T14:30:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-16T14:30:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-16T14:30:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为帖内（引自 @higgsfield_ai）视频缩略图，HTTP 200。",
+        "video_check": "未完整播放 32 秒视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-16"
+      }
+    },
     {
       "title": "1984 年的徕卡 M6 被拆成 91 个零件：快门拨盘、过片扳手、50mm 镜头法兰距一次讲清",
       "category": "motion",
@@ -9952,8 +10112,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管）",
-  "updatedAt": "2026-10-16T12:52:00.000Z",
-  "totalItems": 226,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管）",
+  "updatedAt": "2026-10-16T14:30:00.000Z",
+  "totalItems": 229,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
