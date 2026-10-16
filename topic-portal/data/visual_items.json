@@ -295,6 +295,59 @@
       "is3d": false
     },
     {
+      "title": "开源一整支 Blender 3D 团队：概念设计到建模，Claude Code 通过 MCP 就能指挥",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "is3d": true,
+      "source": "https://x.com/emmanuel_2m/status/2110342352665473156",
+      "sourceCodeUrl": "https://github.com/scenario-labs/blender-plugin",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-scenario-blender-plugin.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2110341167745282048/vid/avc1/1920x1080/m0kAWre8eLhiSKiF.mp4",
+      "description": "Scenario 联合创始人 Emmanuel de Maistre（@emmanuel_2m）2026-10-14 发帖：刚把「一整支 3D 团队」开源进 Blender。Scenario 插件可以在 Blender 里直接用，也可以交给 Claude Code，通过 MCP 指挥。帖子按文件夹列出岗位：概念设计师（一句话出概念图、从当前视口取参考）、3D 艺术家（文字或照片生成网格，给选中的网格重贴图或重拓扑）、动画师（给选中角色绑骨、用文字出动作）、材质师（任意材质槽上 PBR、用照片出贴图）、布局师（一段描述出灰盒、360 世界和天空）、摄影师（一句话出相机路径：环绕、推拉、升降、飞越）、渲染师（视口出静帧、预览出成片）、声音设计（音乐、人声、音效落到序列器）。公开仓库 scenario-labs/blender-plugin（GPL-3.0-or-later，Blender 5.0+）写明：在视口里生成图像、视频、3D 和 PBR 材质，并在本机提供 MCP。帖内为约 79 秒演示。可拍角度：①一个插件拆成八个岗位的流水线；②同一句需求，Claude Code 经 MCP 改视口里的网格；③从灰盒到成片，适合 3D 建模向口播。",
+      "tool": "Scenario for Blender 插件（Blender 5.0+，GPL-3.0-or-later）+ 本地 MCP；Claude Code",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为 @emmanuel_2m 原帖（2026-10-14T12:09:59Z，经公开帖文接口回读，非臆造）。封面为该帖视频缩略图，已下载存于 topic-portal/covers/20261016-scenario-blender-plugin.jpg。sourceCodeUrl 经 GitHub API 核实为 https://github.com/scenario-labs/blender-plugin（描述：Scenario for Blender，视口内图像/视频/3D/PBR，含本地 MCP；许可证 GPL-3.0-or-later）。插件代码许可与帖内视频/缩略图版权分开：封面仅供本门户预览，不代表可再分发成片。未完整播放 79 秒视频。",
+      "attribution": "@emmanuel_2m（Emmanuel de Maistre，Scenario）",
+      "sourceAuthor": "emmanuel_2m",
+      "tags": [
+        "用户指定收纳",
+        "Blender",
+        "MCP",
+        "3D建模",
+        "Claude Code",
+        "开源"
+      ],
+      "publishedAt": "2026-10-14T12:09:59Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T09:20:00.000Z",
+      "updatedAt": "2026-10-16T09:20:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-16T09:20:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-16T09:20:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为帖内视频缩略图，本轮下载 HTTP 200，JPEG 1200×675。",
+        "video_check": "未完整播放 79 秒视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-16"
+      }
+    },
+    {
       "title": "猛禽二号发动机拆成11大总成再点火试车：Gemini 4 Argon 写代码、自己配中文旁白的工程图解片",
       "category": "video",
       "styleFamily": "code",
@@ -1868,59 +1921,6 @@
       },
       "sourceCodeUrl": "https://github.com/Leonxlnx/golden-temple",
       "is3d": true
-    },
-    {
-      "title": "开源一整支 Blender 3D 团队：概念设计到建模，Claude Code 通过 MCP 就能指挥",
-      "category": "3d",
-      "styleFamily": "model_3d",
-      "is3d": true,
-      "source": "https://x.com/emmanuel_2m/status/2110342352665473156",
-      "sourceCodeUrl": "https://github.com/scenario-labs/blender-plugin",
-      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-scenario-blender-plugin.jpg",
-      "previewType": "image",
-      "videoUrl": "https://video.twimg.com/amplify_video/2110341167745282048/vid/avc1/1920x1080/m0kAWre8eLhiSKiF.mp4",
-      "description": "Scenario 联合创始人 Emmanuel de Maistre（@emmanuel_2m）2026-10-14 发帖：刚把「一整支 3D 团队」开源进 Blender。Scenario 插件可以在 Blender 里直接用，也可以交给 Claude Code，通过 MCP 指挥。帖子按文件夹列出岗位：概念设计师（一句话出概念图、从当前视口取参考）、3D 艺术家（文字或照片生成网格，给选中的网格重贴图或重拓扑）、动画师（给选中角色绑骨、用文字出动作）、材质师（任意材质槽上 PBR、用照片出贴图）、布局师（一段描述出灰盒、360 世界和天空）、摄影师（一句话出相机路径：环绕、推拉、升降、飞越）、渲染师（视口出静帧、预览出成片）、声音设计（音乐、人声、音效落到序列器）。公开仓库 scenario-labs/blender-plugin（GPL-3.0-or-later，Blender 5.0+）写明：在视口里生成图像、视频、3D 和 PBR 材质，并在本机提供 MCP。帖内为约 79 秒演示。可拍角度：①一个插件拆成八个岗位的流水线；②同一句需求，Claude Code 经 MCP 改视口里的网格；③从灰盒到成片，适合 3D 建模向口播。",
-      "tool": "Scenario for Blender 插件（Blender 5.0+，GPL-3.0-or-later）+ 本地 MCP；Claude Code",
-      "prompt": "",
-      "promptProvenance": "missing",
-      "provenanceNote": "正文为 @emmanuel_2m 原帖（2026-10-14T12:09:59Z，经公开帖文接口回读，非臆造）。封面为该帖视频缩略图，已下载存于 topic-portal/covers/20261016-scenario-blender-plugin.jpg。sourceCodeUrl 经 GitHub API 核实为 https://github.com/scenario-labs/blender-plugin（描述：Scenario for Blender，视口内图像/视频/3D/PBR，含本地 MCP；许可证 GPL-3.0-or-later）。插件代码许可与帖内视频/缩略图版权分开：封面仅供本门户预览，不代表可再分发成片。未完整播放 79 秒视频。",
-      "attribution": "@emmanuel_2m（Emmanuel de Maistre，Scenario）",
-      "sourceAuthor": "emmanuel_2m",
-      "tags": [
-        "用户指定收纳",
-        "Blender",
-        "MCP",
-        "3D建模",
-        "Claude Code",
-        "开源"
-      ],
-      "publishedAt": "2026-10-14T12:09:59Z",
-      "collectionIds": [],
-      "collectedAt": "2026-10-16T09:20:00.000Z",
-      "updatedAt": "2026-10-16T09:20:00.000Z",
-      "userFeedback": {
-        "liked": false,
-        "favorite": true,
-        "notInterested": false,
-        "updatedAt": "2026-10-16T09:20:00.000Z"
-      },
-      "verification": {
-        "checked_at": "2026-10-16T09:20:00.000Z",
-        "visually_checked": false,
-        "preview_dimensions": [
-          1200,
-          675
-        ],
-        "preview_check": "封面为帖内视频缩略图，本轮下载 HTTP 200，JPEG 1200×675。",
-        "video_check": "未完整播放 79 秒视频。"
-      },
-      "curation": {
-        "baseScore": null,
-        "multiplier": null,
-        "finalScore": null,
-        "threshold": 70,
-        "run": "user-specified-2026-10-16"
-      }
     },
     {
       "title": "一卷卫生纸半夜出门看海：纸尾巴是实时绳索物理，沙沙声跟着滚速变",
@@ -4256,7 +4256,7 @@
       "title": "Opus 5.5 Motion Lab: Make Claude Animate Like a Studio",
       "category": "video",
       "source": "https://x.com/flxrnc/status/2105311836190978392",
-      "previewUrl": "https://pbs.twimg.com/profile_images/2100596838915092480/4Mv5e9Qa_400x400.jpg",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20260930-flxrnc-opus-motion-lab.png",
       "previewType": "image",
       "description": "用户明确指定收纳的 X 原帖。暂未取得正文与媒体，先保存原链接；内容、用途与实际分类待核实。视频分类仅为临时收纳位置，不代表已确认媒体类型。",
       "tool": "未注明",
@@ -4266,17 +4266,16 @@
       "attribution": "@flxrnc",
       "tags": [
         "用户指定收纳",
-        "已补全正文",
-        "头像作封面"
+        "已补全正文"
       ],
       "collectionIds": [],
       "collectedAt": "2026-10-11T18:20:28.671Z",
       "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:30:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -6110,6 +6109,7 @@
       "promptProvenance": "original_public",
       "provenanceNote": "作者公开的完整风格提示词STYLE.md（非样片逐字创作会话），固定版本 b65efe6ea393fdc71212898ea4c57c754cfefa46。使用时需自行提供故事；项目建议结合DIRECTOR.md与TECHNIQUE.md。MIT；样片第三方素材各自许可。",
       "tags": [
+        "用户指定收纳",
         "玻璃质感产品",
         "材质与 3D",
         "Claude视频",
@@ -6144,9 +6144,9 @@
       "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:45:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -6163,6 +6163,7 @@
       "promptProvenance": "original_public",
       "provenanceNote": "作者公开的完整风格提示词STYLE.md（非样片逐字创作会话），固定版本 b65efe6ea393fdc71212898ea4c57c754cfefa46。使用时需自行提供故事；项目建议结合DIRECTOR.md与TECHNIQUE.md。MIT；样片第三方素材各自许可。",
       "tags": [
+        "用户指定收纳",
         "移轴微缩",
         "材质与 3D",
         "Claude视频",
@@ -6197,9 +6198,9 @@
       "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:45:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -6216,6 +6217,7 @@
       "promptProvenance": "original_public",
       "provenanceNote": "作者公开的完整风格提示词STYLE.md（非样片逐字创作会话），固定版本 b65efe6ea393fdc71212898ea4c57c754cfefa46。使用时需自行提供故事；项目建议结合DIRECTOR.md与TECHNIQUE.md。MIT；样片第三方素材各自许可。",
       "tags": [
+        "用户指定收纳",
         "暗色科技发布",
         "信息与发布",
         "Claude视频",
@@ -6250,9 +6252,9 @@
       "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:45:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -6269,6 +6271,7 @@
       "promptProvenance": "original_public",
       "provenanceNote": "作者公开的完整风格提示词STYLE.md（非样片逐字创作会话），固定版本 b65efe6ea393fdc71212898ea4c57c754cfefa46。使用时需自行提供故事；项目建议结合DIRECTOR.md与TECHNIQUE.md。MIT；样片第三方素材各自许可。",
       "tags": [
+        "用户指定收纳",
         "ASCII / CRT 终端",
         "图形与排版",
         "Claude视频",
@@ -6303,9 +6306,9 @@
       "updatedAt": "2026-10-14T07:53:24.000Z",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:45:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -6322,6 +6325,7 @@
       "promptProvenance": "original_public",
       "provenanceNote": "作者公开的完整风格提示词STYLE.md（非样片逐字创作会话），固定版本 b65efe6ea393fdc71212898ea4c57c754cfefa46。使用时需自行提供故事；项目建议结合DIRECTOR.md与TECHNIQUE.md。MIT；样片第三方素材各自许可。",
       "tags": [
+        "用户指定收纳",
         "蓝图 / 工程制图",
         "图形与排版",
         "Claude视频",
@@ -6356,9 +6360,9 @@
       "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:45:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -6375,6 +6379,7 @@
       "promptProvenance": "original_public",
       "provenanceNote": "作者公开的完整风格提示词STYLE.md（非样片逐字创作会话），固定版本 b65efe6ea393fdc71212898ea4c57c754cfefa46。使用时需自行提供故事；项目建议结合DIRECTOR.md与TECHNIQUE.md。MIT；样片第三方素材各自许可。",
       "tags": [
+        "用户指定收纳",
         "装饰艺术",
         "图形与排版",
         "Claude视频",
@@ -6409,9 +6414,9 @@
       "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:45:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -6428,6 +6433,7 @@
       "promptProvenance": "original_public",
       "provenanceNote": "作者公开的完整风格提示词STYLE.md（非样片逐字创作会话），固定版本 b65efe6ea393fdc71212898ea4c57c754cfefa46。使用时需自行提供故事；项目建议结合DIRECTOR.md与TECHNIQUE.md。MIT；样片第三方素材各自许可。",
       "tags": [
+        "用户指定收纳",
         "60s 间谍片头",
         "图形与排版",
         "Claude视频",
@@ -6462,9 +6468,9 @@
       "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:45:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -6481,6 +6487,7 @@
       "promptProvenance": "original_public",
       "provenanceNote": "作者公开的完整风格提示词STYLE.md（非样片逐字创作会话），固定版本 b65efe6ea393fdc71212898ea4c57c754cfefa46。使用时需自行提供故事；项目建议结合DIRECTOR.md与TECHNIQUE.md。MIT；样片第三方素材各自许可。",
       "tags": [
+        "用户指定收纳",
         "木刻版画",
         "印刷与版画",
         "Claude视频",
@@ -6515,9 +6522,9 @@
       "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:45:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -6534,6 +6541,7 @@
       "promptProvenance": "original_public",
       "provenanceNote": "作者公开的完整风格提示词STYLE.md（非样片逐字创作会话），固定版本 b65efe6ea393fdc71212898ea4c57c754cfefa46。使用时需自行提供故事；项目建议结合DIRECTOR.md与TECHNIQUE.md。MIT；样片第三方素材各自许可。",
       "tags": [
+        "用户指定收纳",
         "Risograph 丝网印刷",
         "印刷与版画",
         "Claude视频",
@@ -6568,9 +6576,9 @@
       "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:45:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -6587,6 +6595,7 @@
       "promptProvenance": "original_public",
       "provenanceNote": "作者公开的完整风格提示词STYLE.md（非样片逐字创作会话），固定版本 b65efe6ea393fdc71212898ea4c57c754cfefa46。使用时需自行提供故事；项目建议结合DIRECTOR.md与TECHNIQUE.md。MIT；样片第三方素材各自许可。",
       "tags": [
+        "用户指定收纳",
         "红色窗花剪纸",
         "东方传统",
         "Claude视频",
@@ -6621,9 +6630,9 @@
       "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:45:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -6640,6 +6649,7 @@
       "promptProvenance": "original_public",
       "provenanceNote": "作者公开的完整风格提示词STYLE.md（非样片逐字创作会话），固定版本 b65efe6ea393fdc71212898ea4c57c754cfefa46。使用时需自行提供故事；项目建议结合DIRECTOR.md与TECHNIQUE.md。MIT；样片第三方素材各自许可。",
       "tags": [
+        "用户指定收纳",
         "浮世绘",
         "东方传统",
         "Claude视频",
@@ -6674,9 +6684,9 @@
       "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:45:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -6693,6 +6703,7 @@
       "promptProvenance": "original_public",
       "provenanceNote": "作者公开的完整风格提示词STYLE.md（非样片逐字创作会话），固定版本 b65efe6ea393fdc71212898ea4c57c754cfefa46。使用时需自行提供故事；项目建议结合DIRECTOR.md与TECHNIQUE.md。MIT；样片第三方素材各自许可。",
       "tags": [
+        "用户指定收纳",
         "皮影戏",
         "东方传统",
         "Claude视频",
@@ -6727,9 +6738,9 @@
       "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:45:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -6746,6 +6757,7 @@
       "promptProvenance": "original_public",
       "provenanceNote": "作者公开的完整风格提示词STYLE.md（非样片逐字创作会话），固定版本 b65efe6ea393fdc71212898ea4c57c754cfefa46。使用时需自行提供故事；项目建议结合DIRECTOR.md与TECHNIQUE.md。MIT；样片第三方素材各自许可。",
       "tags": [
+        "用户指定收纳",
         "油画厚涂",
         "手绘与绘画",
         "Claude视频",
@@ -6780,9 +6792,9 @@
       "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:45:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -6799,6 +6811,7 @@
       "promptProvenance": "original_public",
       "provenanceNote": "作者公开的完整风格提示词STYLE.md（非样片逐字创作会话），固定版本 b65efe6ea393fdc71212898ea4c57c754cfefa46。使用时需自行提供故事；项目建议结合DIRECTOR.md与TECHNIQUE.md。MIT；样片第三方素材各自许可。",
       "tags": [
+        "用户指定收纳",
         "中国水墨",
         "手绘与绘画",
         "Claude视频",
@@ -6833,9 +6846,9 @@
       "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:45:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -6852,6 +6865,7 @@
       "promptProvenance": "original_public",
       "provenanceNote": "作者公开的完整风格提示词STYLE.md（非样片逐字创作会话），固定版本 b65efe6ea393fdc71212898ea4c57c754cfefa46。使用时需自行提供故事；项目建议结合DIRECTOR.md与TECHNIQUE.md。MIT；样片第三方素材各自许可。",
       "tags": [
+        "用户指定收纳",
         "蜡笔儿童绘本",
         "手绘与绘画",
         "Claude视频",
@@ -6886,9 +6900,9 @@
       "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:45:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -7943,6 +7957,7 @@
       "description": "适合年度回顾、科研传播或长期指标解释：逐点绘制趋势，并把关键事件钉在对应时间。官方样片静帧用纸面曲线、色带和手写注释组织百年夏季温度；卡片仅参考表达方法，图中数值未独立核实。",
       "prompt": "把【已核验数据表】制作成 30 秒趋势解释短片。先列出指标、单位、来源、缺失值和比较基准，再选择折线或点图。使用清晰纸面与少量手写式注释，先展示全貌，再突出两个有事实依据的转折，最后回到完整时间范围。新增点按真实顺序出现，配色只表达同一数值含义；不为了戏剧性改变比例、补造数据或暗示未经证实的因果。允许关闭声音也能理解，关键标签保持可读。交付 Canvas 2D 工程、字幕、来源清单及 1080p 视频。",
       "tags": [
+        "用户指定收纳",
         "趋势解释",
         "年度回顾",
         "数据动画"
@@ -7972,9 +7987,9 @@
       "modelVerification": "author_reported",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:45:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -7995,6 +8010,7 @@
       "description": "适合解释供应链、物流、制造或服务交接：在同一等距场景里串联地点与工序，让路线、距离和耗时有位置可寻。官方静帧为咖啡从种植园到杯子的流程；实际项目应替换成已核验数据。",
       "prompt": "根据【流程资料】制作 40 秒等距流程动画，选择一件物品作为追踪对象。先画出 4–6 个真实阶段，再用固定等距视角构建同一场景；每个阶段只有一条主注释，颜色在全片保持同一含义。路线先出现，再让物品移动，交接时停留以展示已核实的耗时或数量。空间为示意时写明不按比例，不能把运输距离画成事实地图。结尾保留完整流程和来源。使用原创建筑与符号，交付 Canvas 2D 可编辑工程、横版视频和清晰终帧；不复用未经授权的声音与字体。",
       "tags": [
+        "用户指定收纳",
         "供应链",
         "流程说明",
         "等距信息图"
@@ -8024,9 +8040,9 @@
       "modelVerification": "author_reported",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:45:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -8134,6 +8150,7 @@
       "promptProvenance": "adapted",
       "provenanceNote": "依据公开风格指南与官方样片重新编写的中文任务提示；不是作者生成此样片时的逐字提示。 仓库代码和风格指南为 MIT；示例中的第三方素材各自保留许可，预览仅作来源参考。 模型：Claude Opus 5.5（源作者标注，未独立复现）。依赖：Node.js 20+、Python 3.11+ 或 uv、ffmpeg、字体、声音及其他素材需有使用权",
       "tags": [
+        "用户指定收纳",
         "品牌识别",
         "动态排版",
         "信息层级"
@@ -8163,9 +8180,9 @@
       "modelVerification": "author_reported",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:45:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -8182,6 +8199,7 @@
       "promptProvenance": "adapted",
       "provenanceNote": "依据公开风格指南与官方样片重新编写的中文任务提示；不是作者生成此样片时的逐字提示。 仓库代码和风格指南为 MIT；示例中的第三方素材各自保留许可，预览仅作来源参考。 模型：Claude Opus 5.5（源作者标注，未独立复现）。依赖：Node.js 20+、Python 3.11+ 或 uv、ffmpeg、字体、声音及其他素材需有使用权",
       "tags": [
+        "用户指定收纳",
         "产品参数",
         "科技感",
         "结构拆解"
@@ -8211,9 +8229,9 @@
       "modelVerification": "author_reported",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:45:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -8230,6 +8248,7 @@
       "promptProvenance": "adapted",
       "provenanceNote": "根据 LemoLab Living Screencast 的 STYLE.md 风格指南与 DEMO.md 示例整理改写的中文通用提示，非作者原始逐字提示；60 秒叙事、事实核验、分阶段验收等为通用适配要求。依据固定版本 b65efe6ea393fdc71212898ea4c57c754cfefa46（2026-10-05）。源码与风格文档按 MIT 许可，完整版权和许可通知保留于本条；第三方角色、品牌、音乐、字体等须分别取得使用权。Claude Opus 5.5 为源作者声明，未独立复现；不得直接复制示例 Clawd 或 Claude 品牌资产。",
       "tags": [
+        "用户指定收纳",
         "产品教程",
         "软件界面",
         "上手引导"
@@ -8263,9 +8282,9 @@
       "updatedAt": "2026-10-14T07:52:46.000Z",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:45:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -8282,6 +8301,7 @@
       "promptProvenance": "adapted",
       "provenanceNote": "依据公开风格指南与官方样片重新编写的中文任务提示；不是作者生成此样片时的逐字提示。 仓库代码和风格指南为 MIT；示例中的第三方素材各自保留许可，预览仅作来源参考。 模型：Claude Opus 5.5（源作者标注，未独立复现）。依赖：Node.js 20+、Python 3.11+ 或 uv、ffmpeg、字体、声音及其他素材需有使用权",
       "tags": [
+        "用户指定收纳",
         "自然科普",
         "路线叙事",
         "纸面质感"
@@ -8311,9 +8331,9 @@
       "modelVerification": "author_reported",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:45:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -8330,6 +8350,7 @@
       "promptProvenance": "adapted",
       "provenanceNote": "依据公开风格指南与官方样片重新编写的中文任务提示；不是作者生成此样片时的逐字提示。 仓库代码和风格指南为 MIT；示例中的第三方素材各自保留许可，预览仅作来源参考。 模型：Claude Opus 5.5（源作者标注，未独立复现）。依赖：Node.js 20+、Python 3.11+ 或 uv、ffmpeg、字体、声音及其他素材需有使用权",
       "tags": [
+        "用户指定收纳",
         "旅行指南",
         "套色印刷",
         "海报系列"
@@ -8359,9 +8380,9 @@
       "modelVerification": "author_reported",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:45:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -8378,6 +8399,7 @@
       "promptProvenance": "adapted",
       "provenanceNote": "依据公开风格指南与官方样片重新编写的中文任务提示；不是作者生成此样片时的逐字提示。 仓库代码和风格指南为 MIT；示例中的第三方素材各自保留许可，预览仅作来源参考。 模型：Claude Opus 5.5（源作者标注，未独立复现）。依赖：Node.js 20+、Python 3.11+ 或 uv、ffmpeg、字体、声音及其他素材需有使用权",
       "tags": [
+        "用户指定收纳",
         "博物学",
         "工艺细节",
         "图版"
@@ -8407,9 +8429,9 @@
       "modelVerification": "author_reported",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:45:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -8426,6 +8448,7 @@
       "promptProvenance": "adapted",
       "provenanceNote": "依据公开风格指南与官方样片重新编写的中文任务提示；不是作者生成此样片时的逐字提示。 仓库代码和风格指南为 MIT；示例中的第三方素材各自保留许可，预览仅作来源参考。 模型：Claude Opus 5.5（源作者标注，未独立复现）。依赖：Node.js 20+、Python 3.11+ 或 uv、ffmpeg、字体、声音及其他素材需有使用权",
       "tags": [
+        "用户指定收纳",
         "故事短片",
         "纸艺场景",
         "章节转场"
@@ -8455,9 +8478,9 @@
       "modelVerification": "author_reported",
       "userFeedback": {
         "liked": false,
-        "favorite": false,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": null
+        "updatedAt": "2026-10-16T08:45:00.000Z"
       },
       "styleFamily": "code",
       "is3d": false
@@ -9548,8 +9571,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 前置审美参考 9 条（@sunkeke_ai 清单）；并入 master 上本分支还没有的 36 条，避免覆盖丢源",
-  "updatedAt": "2026-10-16T09:30:00.000Z",
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab）",
+  "updatedAt": "2026-10-16T08:57:00.000Z",
   "totalItems": 219,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }

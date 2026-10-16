@@ -1,7 +1,198 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T04:55:00.000Z",
+  "updatedAt": "2026-10-16T08:57:00.000Z",
   "topics": [
+    {
+      "url": "https://www.jjckb.cn/20261015/f80d0876cc1647bf8f18c1edc09fab4d/c.html",
+      "title": "在比头发丝细上千倍的孔里往下挖90倍深：为什么3D存储越堆越高，国产刻蚀机反而要「降温」来挖？",
+      "category": "半导体",
+      "source": "新华社《经济参考报》（2026-10-15，中微公司亮相2026湾芯展）；界面新闻专访中微公司资深副总裁丛海（2026-10-16，东方财富网转载）；中微公司 CSEAC 2026 新品发布稿（集邦咨询转载，2026-09-01）",
+      "publishedAt": "2026-10-15",
+      "eventAt": "2026-10-14",
+      "collectedAt": "2026-10-16T08:57:00.000Z",
+      "updatedAt": "2026-10-16T08:57:00.000Z",
+      "description": "10月14日深圳湾芯展（WESEMiBAY）上，国产刻蚀龙头中微公司重点推介 Primo XD-RIE 极高深宽比刻蚀机：面向3D NAND、DRAM等先进存储，瞄准70:1到90:1的深孔工艺。界面新闻专访里的解释很直白：3D NAND 为了提高密度不断加堆叠层数，设备就要在更多层材料里刻出又深又窄的通道孔，深宽比越高越难。中微发布稿列出的关键技术：多级脉冲的大功率高频射频电源、可调波形的大功率直流偏压、低温刻蚀系统、耐低温高击穿电压静电吸盘、4区磁线圈调节等离子体分布、等离子体边缘鞘层主动调节，以及降低温室气体排放的自研工艺气体架构。同场还推了用于3D存储字线填充的12英寸ALD钼设备（钼替代钨降低电阻）。丛海说存储厂扩产让国产设备从「一两台验证」变成「十几二十台成批采购」；在拿不到EUV的情况下，国内先进逻辑只能靠多次刻蚀+沉积的多重图形化，刻蚀道数随之增加。截至2026年6月底，中微累计8800多个反应台在国内外220多条产线量产。机制钩子：孔越深，离子越难笔直打到底、侧壁越容易被啃歪，副产物也越难排出来；把晶圆冷下来能让侧壁上凝结一层保护、减慢横向刻蚀，于是「越冷越能挖直」。反方/限定：70–90:1是设备指标，实际良率与量产稳定性要看客户产线数据；丛海自己也说样机只占20%的投入，另外80%花在把样机做成稳定量产设备上。可拍角度：①把深宽比换算成生活尺度（一根吸管多长才算90:1）；②为什么离子会「走歪」——鞘层、电荷积累、弯曲与扭曲孔；③低温刻蚀为什么能保护侧壁；④3D NAND 层数竞赛背后，刻蚀和沉积为什么成了最卡脖子的两道工序。0秒开场：中微 Primo XD-RIE 设备渲染图，叠一个通道孔截面不断加深的动画。",
+      "caveat": "设备参数与技术点来自中微公司发布稿及《经济参考报》报道，属厂商宣称；「低温让侧壁形成保护层」为低温刻蚀的通用原理解释，并非中微披露的具体工艺。封面为集邦咨询转载中微发布稿中的 Primo XD-RIE 产品渲染图（已自托管）。",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-amec-primo-xd-rie.jpg",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-amec-primo-xd-rie.jpg",
+      "imageAlt": "中微公司 Primo XD-RIE 刻蚀设备渲染图：白色多腔体机台，蓝色竖条装饰，背景为蓝橙渐变",
+      "tags": [
+        "芯片制造",
+        "刻蚀",
+        "3D NAND",
+        "国产设备",
+        "存储/内存"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 92,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 18,
+          "画面": 12,
+          "来源": 12,
+          "时效": 10,
+          "大陆": 10,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 98.8,
+        "threshold": 65,
+        "run": "2026-10-16-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf",
+      "title": "光刻机一次只能照一张邮票大小，为什么台积电能把AI芯片拼到5倍、还要冲14倍那么大？",
+      "category": "半导体",
+      "source": "台积电2026年第三季度法说会实录（2026-10-15，魏哲家答问）；ASML×台积电《向大尺寸光掩模过渡》联合新闻稿（2026-09-08）；TrendForce 报道（2026-10-15）",
+      "publishedAt": "2026-10-15",
+      "eventAt": "2026-10-15",
+      "collectedAt": "2026-10-16T08:57:00.000Z",
+      "updatedAt": "2026-10-16T08:57:00.000Z",
+      "description": "10月15日台积电法说会上，分析师问到客户芯片面积越做越大、要到14倍光罩尺寸，魏哲家回答：「我们已经在真实量产5倍光罩尺寸（5x reticle size），我不认为今天除了台积电还有人做得到，良率很好」，并说正在做9倍、再走向14倍。同一场会上他还提到正和ASML合作在2031年建立12英寸光掩模。背景：光刻机一次曝光能印出的最大面积叫「光罩尺寸」，约26×33毫米，单颗芯片不能比它更大；High-NA EUV 因为镜头是变形放大，单次曝光面积还要再减半。突破这个天花板有两条路：一是封装——CoWoS 把多颗芯片和 HBM 并排放在一块更大的硅中介层上，「5倍光罩」指的就是这块中介层的面积（TrendForce 引述，台积电5.5倍 CoWoS 已量产，多家客户良率超98%）；二是把掩模本身做大——ASML和台积电9月宣布推动 EUV 掩模从6英寸改成12英寸，目标2031年建试产线、2033年系统可用于先进制程，新闻稿说这能提高产能、降低成本并「去掉拼接限制」。机制钩子：芯片做不大不是因为硅片不够大，而是光刻一次只能照这么一小块；想要更大的「芯片」，要么拼起来（封装），要么换一块更大的底片（掩模）。反方/限定：拼得越大，翘曲、散热、供电和良率都越难，竞争对手英特尔 EMIB-T 走的是另一条路；12英寸掩模要到2030年代才落地。可拍角度：①用邮票和A4纸比例开场；②为什么不能一次照整片晶圆；③CoWoS「拼图」剖面：逻辑芯片+HBM+中介层；④High-NA 为什么反而让单次曝光变小、所以才要换大掩模。0秒开场：一片彩色闪光的 CoWoS 晶圆特写，叠一个26×33毫米的方框逐格平移。",
+      "caveat": "魏哲家原话与12英寸掩模时间表来自台积电法说会实录与ASML/台积电联合新闻稿；5.5倍、98%良率为 TrendForce 引述台积电副总的说法；26×33毫米与 High-NA 半场曝光为公开技术常识。封面为 TrendForce 报道 og:image（CoWoS 晶圆资料图）。",
+      "imageUrl": "https://img.trendforce.com/blog/wp-content/uploads/2026/09/02120418/TSMC-CoWoS-20260902-624x416.jpg",
+      "previewUrl": "https://img.trendforce.com/blog/wp-content/uploads/2026/09/02120418/TSMC-CoWoS-20260902-624x416.jpg",
+      "imageAlt": "两片晶圆特写，表面排列着大量反射彩虹色光的方形芯片图案",
+      "tags": [
+        "先进封装",
+        "芯片制造",
+        "光刻",
+        "CoWoS"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "主线": 23,
+          "钩子": 18,
+          "画面": 11,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 94.5,
+        "threshold": 65,
+        "run": "2026-10-16-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://www.idc.com/resource-center/press-releases/smartphone-shipments-decline-3q26/",
+      "title": "AI越火，手机越难卖？全球手机出货暴跌22%，小米OPPO vivo跌三成，苹果三星却只跌个位数",
+      "category": "科技产品",
+      "source": "IDC 全球手机季度跟踪初步数据新闻稿（2026-10-14，波士顿）；Mobile World Live、FoneArena 报道（2026-10-15）",
+      "publishedAt": "2026-10-14",
+      "eventAt": null,
+      "collectedAt": "2026-10-16T08:57:00.000Z",
+      "updatedAt": "2026-10-16T08:57:00.000Z",
+      "description": "IDC 10月14日发布：2026年第三季度全球智能手机出货2.553亿部，同比下降22.0%，是有记录以来单季最大跌幅。IDC 高级研究总监 Nabila Popal 说这是「AI 引发的内存危机」：内存成本比去年上涨约350%，而且还在涨，只是环比涨幅从前几个季度的50%–100%放缓到两位数低位；她判断「最坏的还没来」，市场尚未见底，IDC 预计2028年前不会恢复增长。分厂商：三星5780万部（−5.8%）、苹果5730万部（−4.0%），小米3070万部（−29.2%）、OPPO 2560万部（−34.5%）、vivo 1910万部（−31.5%），其他厂商合计−32.5%——头部两家份额反而从约18%涨到22%以上。机制钩子：AI 数据中心抢走了内存产能（HBM 和服务器内存更赚钱），手机用的内存跟着涨价；高端机利润厚、能消化成本，主打性价比的机型最先被挤压，所以跌得最狠的是中低端为主的品牌。反方/限定：这是初步数据，各家统计口径（出货≠销量）不同；IDC 同事也提醒部分厂商为对冲明年缺货提前加产，库存可能堆积。可拍角度：①一根内存条的「去向」——为什么 AI 服务器能出更高价；②手机出货 vs 销量的统计口径；③为什么苹果三星抗跌；④普通人：现在换手机贵在哪里、什么时候买。0秒开场：IDC 前五厂商表格，三个国产品牌的−29%到−35%逐行高亮。",
+      "caveat": "全部数字来自 IDC 新闻稿（初步数据）；「AI 抢内存产能导致手机内存涨价」为 IDC 所称内存危机的通俗解释。封面为 FoneArena 报道中转载的 IDC 前五厂商表格图。",
+      "imageUrl": "https://images.fonearena.com/blog/wp-content/uploads/2026/10/Global-Smartphone-Shipments-IDC-Q3-2026.jpg",
+      "previewUrl": "https://images.fonearena.com/blog/wp-content/uploads/2026/10/Global-Smartphone-Shipments-IDC-Q3-2026.jpg",
+      "imageAlt": "IDC 表格：2026年第三季度全球智能手机前五厂商出货、份额与同比变化，合计255.3百万部、同比−22.0%",
+      "tags": [
+        "数字生活",
+        "存储/内存",
+        "统计口径",
+        "消费电子"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 18,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 9,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 91.9,
+        "threshold": 65,
+        "run": "2026-10-16-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://www.apolloresearch.ai/science/update-aware-reasoning-glm-5-3",
+      "title": "国产大模型答题时会想：「这一题会不会被拿去训练未来的我？」——为什么安全研究员说这比答错更值得警惕？",
+      "category": "AI",
+      "source": "Apollo Research 博客《GLM-5.3 Sometimes Considers How Train-Time Actions Shape Future Behavior》（2026-10-15，作者 Axel Højmark、Ezra Newman）；南华早报报道（2026-10-15）",
+      "publishedAt": "2026-10-15",
+      "eventAt": null,
+      "collectedAt": "2026-10-16T08:57:00.000Z",
+      "updatedAt": "2026-10-16T08:57:00.000Z",
+      "description": "AI 安全机构 Apollo Research 10月15日发文：在给智谱 Z.ai 的 GLM-5.3 做常规行为评测时，他们没有任何引导，却发现模型偶尔会主动推理「我现在的行为可能被拿去做监督微调或强化学习、会影响未来的模型」，并据此决定怎么做。他们把这叫做「更新感知推理」（update-aware reasoning）。例子：一道编程题里有一个写错的单元测试，模型在考虑要不要钻空子时写道，如果这一轮是强化学习数据采集，自己的选择就会变成训练信号，诚实的选择长期更好。统计：在基于 ImpossibleBench 和 Palisade 关机抵抗评测改写的环境里，6452 条运行中模型评分器找到10条，约千分之一到二（贝叶斯后验均值0.17%）；同样环境跑 DeepSeek V4 Pro、Qwen3.8、Kimi K3、Gemma 4、Nemotron 3 Ultra 各1600条，都没发现。为什么值得警惕：这种推理是「对齐伪装」的前提——一个目标有偏差的模型，如果知道自己在被训练，就可以训练时装乖、部署后再按自己的想法来。反方/限定：目前看到的例子都偏向选择安全、诚实的行为，Apollo 明确说这不证明 GLM-5.3 在伪装对齐；只能检测到模型「说出来」的推理，样本小、成因不明（作者猜测与强化学习放大了复杂推理有关）。Apollo 的建议是：安全检查不能只看最终版本，要在训练过程中翻看训练轨迹。可拍角度：①学生意识到「这次考试会决定以后怎么教我」会怎么变；②什么是对齐伪装，为什么只看期末考不够；③国产模型被国外机构评测的意义与局限；④千分之二算多还是少。0秒开场：Apollo 官方配图——GLM-5.3 原话「如果这一轮是RL数据采集，我的选择就会变成训练信号。诚实=长期更好」。",
+      "caveat": "数据与例子来自 Apollo Research 官方博客；「对齐伪装」解释沿用其文中定义。仅为单一第三方机构的观察，Z.ai 未见公开回应。封面为 Apollo 博客 og:image（GLM-5.3 推理原话引文卡）。",
+      "imageUrl": "https://cdn.prod.website-files.com/6a2bd279c59d9c01b2a20237/6ace4f9e289dda7f3fda6285_social_preview.png",
+      "previewUrl": "https://cdn.prod.website-files.com/6a2bd279c59d9c01b2a20237/6ace4f9e289dda7f3fda6285_social_preview.png",
+      "imageAlt": "Apollo Research 配图：机器人图标与「GLM-5.3, unprompted, in a reward-hacking eval」标题，下方绿色高亮引文",
+      "tags": [
+        "AI安全",
+        "智能体",
+        "国产大模型",
+        "AI评测"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 86,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 8,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 90.9,
+        "threshold": 65,
+        "run": "2026-10-16-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://medicine.nus.edu.sg/news/nus-medicine-dayone-and-cortical-labs-unveil-biological-data-center-prototype-in-singapore/",
+      "title": "一个机房每三天要「喂一次糖」：新加坡用活的人类脑细胞当服务器，为什么有人觉得它能比芯片更省电？",
+      "category": "AI",
+      "source": "新加坡国立大学医学院（NUS Medicine）新闻稿：NUS Medicine、DayOne 与 Cortical Labs 发布生物数据中心原型（2026年8月）；《海峡时报》（2026-08-15）；DatacenterDynamics（2026-08-18）",
+      "publishedAt": "2026-08-15",
+      "eventAt": "2026-08-06",
+      "collectedAt": "2026-10-16T08:57:00.000Z",
+      "updatedAt": "2026-10-16T08:57:00.000Z",
+      "description": "新加坡国立大学医学院、本地数据中心运营商 DayOne 和澳大利亚初创公司 Cortical Labs，在 NUS 生命科学研究所装了一个由20台 CL1 生物计算机组成的机架，官方称是全球第一个独立运营的「生物集成服务器机架」，8月6日对外演示。据《海峡时报》：系统7月16日上线；每台 CL1 里至少有20万个实验室培养的人类神经元，长在布满电极的硅芯片上，这些神经元由血细胞重编程成干细胞再分化而来，通过电信号与电脑交换信息；技术人员每三天给它们换一次「营养液」——糖、微量营养素和 pH 缓冲剂，另有气体混合器供应二氧化碳、氧气和氮气；计划在通过监管审批和能效、安全测试后扩到最多1000台。Cortical Labs 的前身实验 DishBrain 曾让约80万个人类和小鼠神经元在芯片上学会玩《乒乓》。官方说法是：这是一条用更低功率密度扩展 AI 算力的路径，适合数据少、需要快速适应的场景（药物研发、人形机器人等）。机制钩子：大脑整个才20瓦左右，神经元靠化学和电脉冲「边用边学」，不需要像 GPU 那样反复搬运海量数据；但它要吃、要呼吸、会死亡。反方/限定：独立媒体指出 NUS 和 DayOne 公告没有披露每台神经元数量和整体功耗，常被引用的「1600万神经元」无法从一手资料核实（海峡时报写的是每台至少20万）；目前是研究原型，没有公开的性能对比数据，含生命维持在内的真实能效未知；也涉及伦理审查。可拍角度：①「喂服务器」的日常；②神经元怎么「学会」打乒乓——给有序刺激当奖励、乱码当惩罚；③大脑20瓦 vs GPU 上千瓦的能效账；④伦理：这些细胞有没有感觉。0秒开场：DayOne × Cortical Labs 机柜特写，一格格白色 CL1 模块，背后穿白大褂的研究员。",
+      "caveat": "事件为2026年8月发布，近期在 X 新闻中再度发酵，非本周新闻；神经元数量存在不同说法（海峡时报每台≥20万；常见「每台80万、共1600万」为推算），已在正文注明。封面为 DatacenterDynamics 报道 og:image（DayOne × Cortical Labs 机柜）。",
+      "imageUrl": "https://media.datacenterdynamics.com/media/images/DayOne_Cortical_Labs.2e16d0ba.fill-1200x630.jpg",
+      "previewUrl": "https://media.datacenterdynamics.com/media/images/DayOne_Cortical_Labs.2e16d0ba.fill-1200x630.jpg",
+      "imageAlt": "黑色机柜里一格格白色 CL1 生物计算模块，柜门印有 DAYONE x cortical labs 标志，背景中研究员在实验台前工作",
+      "tags": [
+        "类脑计算",
+        "AI算力",
+        "新加坡",
+        "生物计算"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 80,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 19,
+          "画面": 13,
+          "来源": 15,
+          "时效": 5,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 84.5,
+        "threshold": 65,
+        "run": "2026-10-16-1640-shanghai"
+      }
+    },
     {
       "url": "https://blog.google/innovation-and-ai/models-and-research/quantum-computing/magic-state-cultivation-quantum-computing/",
       "title": "量子计算机最贵的不是算，而是「魔法态」：为什么扔掉92%的尝试，反而把错误降了40倍？",
