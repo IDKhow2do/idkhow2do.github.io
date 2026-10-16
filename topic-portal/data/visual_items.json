@@ -4,6 +4,101 @@
   "exportedCount": 115,
   "items": [
     {
+      "title": "家里任何设备都能逆向：一个 skill + 几句提示词，给灯、门、空调做 Mac App",
+      "category": "其他",
+      "styleFamily": "code",
+      "source": "https://x.com/MengTo/status/2110747334888083690",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-mengto-rea-reverse-engineer-home-devices-cover.jpg",
+      "previewType": "image",
+      "description": "Meng To（@MengTo）称：几乎可以逆向家里任何设备并围绕它做一个 Mac 应用，已用于灯、门、空调，甚至未来的机器人助手；用的是一个 skill 加几句提示词。附 70 秒演示视频。所用 skill 为 morluto/rea（REA: Reverse Engineer Anything）——“One MCP for reverse engineering across binaries, applications, and runtime behavior”，npx rea-agents 安装，MIT。引用帖为 @icanberk：逆向自家空调并 vibe code 了一个状态栏小应用，不用再找遥控器。",
+      "tool": "REA（morluto/rea，MCP / agent skill，npx rea-agents）+ AI coding agent",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖文本经 X API 与 fxtwitter 获取；t.co/X8T6md6FNI → https://github.com/morluto/rea；t.co/v18Sl5gaoD → 本帖视频；t.co/iakTlHVxNa → 引用帖 https://x.com/icanberk/status/2109031477484937571。帖内未给出具体提示词。封面为原帖视频官方缩略图。",
+      "attribution": "Meng To（@MengTo）；skill：morluto/rea（MIT）",
+      "sourceAuthor": "MengTo",
+      "sourceCodeUrl": "https://github.com/morluto/rea",
+      "tags": [
+        "用户指定收纳",
+        "REA",
+        "逆向工程",
+        "智能家居",
+        "Mac App",
+        "Agent Skill",
+        "MCP"
+      ],
+      "publishedAt": "2026-10-15T14:59:15Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T11:28:18.000Z",
+      "updatedAt": "2026-10-16T11:28:18.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-16T11:28:18.000Z"
+      },
+      "licenseName": "MIT（morluto/rea）",
+      "verification": {
+        "checked_at": "2026-10-16T11:28:18.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          900
+        ],
+        "preview_check": "封面为 X 原帖视频缩略图（pbs.twimg.com amplify_video_thumb，name=orig）。",
+        "video_check": "未逐帧观看 70s 视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-16-mengto-rea"
+      },
+      "is3d": false,
+      "originalPreviewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110745877698768897/img/EEAN2FNJHMCYNFyY.jpg",
+      "relatedSource": "https://x.com/icanberk/status/2109031477484937571",
+      "workUrl": "https://github.com/morluto/rea",
+      "videoUrl": "https://video.twimg.com/amplify_video/2110745877698768897/vid/avc1/1440x1080/uPqwc0pwSWj5TcF7.mp4"
+    },
+    {
+      "title": "Blender 里直接塞进一支 AI 3D 团队：Scenario 开源 Blender 插件，内置 MCP 可交给 Claude Code",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "is3d": true,
+      "source": "https://x.com/minsi_ai/status/2110911553029718023",
+      "sourceCodeUrl": "https://github.com/scenario-labs/blender-plugin",
+      "relatedSource": "https://x.com/emmanuel_2m/status/2110342352665473156",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-minsi-scenario-blender-plugin.jpg",
+      "previewType": "video",
+      "videoUrl": "https://video.twimg.com/amplify_video/2110697646490804225/vid/avc1/1920x1080/sbMrEIzvXfRaxHKi.mp4",
+      "description": "Scenario 开源 Blender 插件，可在 Blender 内做概念图、3D 网格、PBR 材质、角色绑定和动画、场景灰盒、相机与渲染、音乐/语音/音效；内置 MCP，可把 Blender 交给 Claude Code，让 Agent 读取场景、生成资产、修改模型，并在各角色（Concept Designer / 3D Modeler / Character Animator / Material Artist / Scene Layout Artist / Cinematographer / Rendering Artist / Audio Designer）间交接任务。帖附 Scenario 官方约 79 秒演示视频。",
+      "tool": "Scenario Blender 插件（开源）+ Claude Code（MCP）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原文经 fxtwitter 获取；t.co 链接解析为 @Scenario_gg 原帖视频，仓库地址取自 Scenario 原帖。封面为视频缩略图。许可待核。",
+      "attribution": "@Minsi_AI（Minsi.AI）；原发 @Scenario_gg",
+      "sourceAuthor": "Minsi_AI",
+      "tags": [
+        "用户指定收纳",
+        "Blender",
+        "Scenario",
+        "MCP",
+        "Claude Code",
+        "3D"
+      ],
+      "publishedAt": "2026-10-16T01:51:47Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T11:30:00.000Z",
+      "updatedAt": "2026-10-16T11:30:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-16T11:30:00.000Z"
+      }
+    },
+    {
       "title": "AI 时代的全新视频格式 .motion：下载模板丢给助手就能出片",
       "category": "video",
       "styleFamily": "code",
@@ -466,6 +561,7 @@
       "is3d": true,
       "source": "https://x.com/emmanuel_2m/status/2110342352665473156",
       "sourceCodeUrl": "https://github.com/scenario-labs/blender-plugin",
+      "relatedSource": "https://x.com/minsi_ai/status/2110911553029718023",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-scenario-blender-plugin.jpg",
       "previewType": "image",
       "videoUrl": "https://video.twimg.com/amplify_video/2110341167745282048/vid/avc1/1920x1080/m0kAWre8eLhiSKiF.mp4",
@@ -9680,8 +9776,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管）",
-  "updatedAt": "2026-10-16T11:22:00.000Z",
-  "totalItems": 221,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 @Minsi_AI Scenario Blender 插件 1 条（收藏置顶，封面托管，relatedSource 关联 @emmanuel_2m，sourceCodeUrl 同仓库） | 2026-10-16 用户指定收纳 @MengTo REA 逆向家居设备 1 条（收藏置顶，封面托管）",
+  "updatedAt": "2026-10-16T11:30:00.000Z",
+  "totalItems": 223,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
