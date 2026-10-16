@@ -4,6 +4,73 @@
   "exportedCount": 115,
   "items": [
     {
+      "title": "Lemo-Opuscar 又加 8 种风格：新开「实证影响」分支，专为有素材的解说科普片",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/lemomo_ai/status/2110983292027814316",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-lemomo-opuscar-update-video.jpg",
+      "previewType": "video",
+      "description": "作者 2026-10-16 更新开源视频风格库 Lemo-Opuscar：新增 8 个风格，并开了一个新的风格分支【实证影响】，主要用于有视频、图片等素材的解说和知识介绍场景；作者称有意避开了市面上常见的风格，提醒用户更新插件。帖附约 39 秒演示视频，并引用其 9 月 26 日的长文《开源了39种风格视频库后，我学会了如何用Opus5.5稳定出片》。",
+      "tool": "Claude Opus 5.5 + Lemo-Opuscar（Claude 插件 / 开源风格库）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "帖文原文经 X API 获取；8 个新风格的具体名称帖内未列出，未回查仓库。封面为帖内视频缩略图（托管至 topic-portal/covers/20261016-lemomo-opuscar-update-video.jpg）。",
+      "attribution": "@lemomo_ai（Lemo，X / GitHub lemomo-ai）",
+      "sourceAuthor": "lemomo_ai",
+      "tags": [
+        "用户指定收纳",
+        "Lemo-Opuscar",
+        "Claude",
+        "视频风格库",
+        "知识解说"
+      ],
+      "publishedAt": "2026-10-16T06:36:51Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T08:35:00.000Z",
+      "updatedAt": "2026-10-16T08:35:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-16T08:35:00.000Z"
+      },
+      "sourceCodeUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+      "videoUrl": "https://video.twimg.com/amplify_video/2110983231436881920/vid/avc1/1920x1080/CHWDSYXsjYwYpYA2.mp4"
+    },
+    {
+      "title": "39种风格、100多支片：纯代码视频怎么稳定出片，作者把导演方法写成了开源库",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/lemomo_ai/status/2103823847632060854",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20260926-lemomo-opuscar-article.jpg",
+      "previewType": "image",
+      "description": "@lemomo_ai 的 X 长文《开源了39种风格视频库后，我学会了如何用Opus5.5稳定出片》（2026-09-26）。作者用 Claude Opus 5.5 做了 100 多支视频，挑 39 支各代表一种风格（水墨、皮影、油画厚涂、80 年代赛璐璐、像素 RPG、60 年代间谍片头、纸片立体书……），不用视频生成模型和素材库：Canvas/WebGL 逐帧渲染，免费采样库写原创配乐，本地 TTS 配音，由 agent 自己混音、校对、出片。开源库 lemo-opuscar 有三份文档：DIRECTOR.md（故事、声音、节奏、镜头、表演、自检）、TECHNIQUE.md（逐帧渲染、配音、配乐、混音、审片）、styles/<风格>/STYLE.md。用法：clone 后在目录里运行 claude，直接说「用水彩风格做一支 45 秒的片子……」，agent 会在故事分镜和风格帧两处停下来找你确认。需求六要素：主题、故事、节奏（音乐网格先于动画，先写 cue map）、导演（≥4 种运镜、签名镜头、风格内转场、预备-动作-跟随、至少两处静音）、补充素材（注意 CC0/CC BY/OFL 版权）、审阅（ASR 回写核对配音、-14 LUFS、黑帧检查、缩略图总览）。附万能填空模板；一支片约 30–60 分钟，建议 High 档位；非 Opus 模型建议从样片改、先选代码原生风格、缩短减量、强模型当导演。",
+      "tool": "Claude Opus 5.5 / Claude Code + Canvas / WebGL + 本地 TTS + ffmpeg",
+      "prompt": "用【风格名，比如 watercolor】风格做一支【30–60】秒的片子。\n主题：【拍什么，给谁看】\n故事：【有就写：谁、想要什么、发生了什么、结局。没有就写“你来编，要有一个转折”】\n节奏：【快 / 慢 / 前慢后快】，【旁白：什么声线、什么语言；或者不要旁白】\n对标：【一两部你喜欢的片子、片头、广告，学它的节奏或镜头】\n素材：【我放在 assets/ 里的照片、logo、模型；必须出现的名字和数字】\n画幅：【横屏 16:9 / 竖屏 9:16】\n先给我看故事和分镜，再给我看画面，我确认后再做全片。",
+      "promptProvenance": "author-posted",
+      "provenanceNote": "正文经 X API article 字段获取；prompt 为文中「万能模板」原文。在线图鉴 https://lemomo-ai.github.io/lemo-opuscar/ 。封面为文章 cover 原图（托管至 topic-portal/covers/20260926-lemomo-opuscar-article.jpg）。portal 已有该库多条 STYLE.md 单风格条目。",
+      "attribution": "@lemomo_ai（Lemo，X / GitHub lemomo-ai）",
+      "sourceAuthor": "lemomo_ai",
+      "tags": [
+        "用户指定收纳",
+        "Lemo-Opuscar",
+        "Claude",
+        "代码视频",
+        "导演方法"
+      ],
+      "publishedAt": "2026-09-26T12:27:47Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T08:35:00.000Z",
+      "updatedAt": "2026-10-16T08:35:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-16T08:35:00.000Z"
+      },
+      "sourceCodeUrl": "https://github.com/lemomo-ai/lemo-opuscar"
+    },
+    {
       "title": "没有一个3D模型：Opus 5.5 用纯代码搭出黄金时刻的日本寺庙，70秒电影级运镜",
       "category": "frontend",
       "styleFamily": "code",
@@ -7523,7 +7590,7 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条",
-  "updatedAt": "2026-10-16T08:05:00.000Z",
-  "totalItems": 175
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条",
+  "updatedAt": "2026-10-16T08:35:00.000Z",
+  "totalItems": 177
 }
