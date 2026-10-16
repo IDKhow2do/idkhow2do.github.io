@@ -1,8 +1,114 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 229,
+  "exportedCount": 231,
   "items": [
+    {
+      "title": "做 3D 美术/游戏必收藏：Blender、Poly Haven、ambientCG、Mixamo、three.js、Godot 等 8 个资源",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "is3d": true,
+      "source": "https://x.com/jowettbrendan/status/2111061080328085698",
+      "sourceCodeUrl": "",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-jowett-3d-art-games-bookmarks.jpg",
+      "previewType": "image",
+      "videoUrl": "",
+      "description": "Brendan Jowett（@jowettbrendan）2026-10-16 发帖：做 3D 美术或游戏的人值得收藏这份清单——blender.org（用 3D 做任何东西）、polyhaven.com（免费 3D 模型、贴图和光照）、ambientcg.com（免费写实 3D 表面材质）、quaternius.com（免费 3D 角色和道具）、mixamo.com（一键给角色加动画）、threejs.org（把 3D 场景放进网页）、babylonjs.com（在浏览器里做 3D 游戏）、godotengine.org（免费游戏引擎，收入全归自己）。帖附 3 张图，结尾问「我漏了什么？」",
+      "tool": "Blender、Poly Haven、ambientCG、Quaternius、Mixamo、three.js、Babylon.js、Godot",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为 @jowettbrendan 原帖（2026-10-16T11:45:57Z，经 X API 回读，非臆造）。各站点说明按帖文直译，未另行核实各资源许可条款。封面为帖内第 1 张图。",
+      "attribution": "@jowettbrendan（Brendan Jowett）",
+      "sourceAuthor": "jowettbrendan",
+      "tags": [
+        "用户指定收纳",
+        "3D建模",
+        "Blender",
+        "three.js",
+        "Godot",
+        "游戏资产",
+        "资源清单"
+      ],
+      "publishedAt": "2026-10-16T11:45:57Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T15:55:00.000Z",
+      "updatedAt": "2026-10-16T15:55:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-16T15:55:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-16T15:55:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1095,
+          860
+        ],
+        "preview_check": "封面为帖内图片，HTTP 200。",
+        "video_check": "无视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-16"
+      }
+    },
+    {
+      "title": "OpenDesign Motion 开源：Claude Motion 平替，任意模型/Agent 做动效视频",
+      "category": "video",
+      "styleFamily": "code",
+      "is3d": false,
+      "source": "https://x.com/tuturetom/status/2111044476273910123",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-opendesign-motion.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2110996800614301696/vid/avc1/1920x1080/0kmoZ9QvN0vl4BnA.mp4",
+      "description": "Tom Huang（@tuturetom）2026-10-16 发帖：正式推出 OpenDesign Motion，定位 Claude Motion 的开源替代——做顶尖动效视频不该只能用 Opus 5.5，现在可以用自己喜欢的模型和 Agent 在 OpenDesign 里完成。这条约 37 秒的发布视频就是用 DeepSeek v4.1 Flash 在 OpenDesign 里做的。引用 @OpenDesignHQ 官方帖：Create beautiful motion videos with any agent, any model. No Opus 5.5 required.",
+      "tool": "OpenDesign Motion（开源）；发布视频用 DeepSeek v4.1 Flash",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为 @tuturetom 原帖（2026-10-16T10:39:59Z）及所引 @OpenDesignHQ 帖 2111023212129829086（2026-10-16T09:15:29Z），经 X API 回读，非臆造。封面为帖内视频缩略图。sourceCodeUrl 经 GitHub API 检索推定为 nexu-io/open-design（Apache-2.0，主页 open-design.ai，描述含 AI 设计 Agent 工作区可做视频）；帖文未直接给出仓库链接，归属为推定。",
+      "attribution": "@tuturetom（Tom Huang）；引用 @OpenDesignHQ",
+      "sourceAuthor": "tuturetom",
+      "tags": [
+        "用户指定收纳",
+        "OpenDesign",
+        "动效视频",
+        "开源",
+        "Agent",
+        "DeepSeek"
+      ],
+      "publishedAt": "2026-10-16T10:39:59Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T15:50:00.000Z",
+      "updatedAt": "2026-10-16T15:50:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-16T15:50:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-16T15:50:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为帖内视频缩略图，HTTP 200。",
+        "video_check": "未完整播放 37 秒视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-16"
+      }
+    },
     {
       "title": "英伟达开源 CAD 几何内核 SMLib（USD BRep）：NURBS、布尔、倒圆角，Apache 2.0 可商用",
       "category": "3d",
@@ -10112,8 +10218,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管）",
-  "updatedAt": "2026-10-16T14:30:00.000Z",
-  "totalItems": 229,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管）",
+  "updatedAt": "2026-10-16T15:55:00.000Z",
+  "totalItems": 231,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
