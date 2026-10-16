@@ -4,6 +4,63 @@
   "exportedCount": 115,
   "items": [
     {
+      "title": "AI 时代的全新视频格式 .motion：下载模板丢给助手就能出片",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://motiongit.com/",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-motiongit-motion-format-cover.jpg",
+      "previewType": "image",
+      "description": "MotionGit 推出开放格式 .motion：一个 ZIP 模板包，把代码级动画源码、布局时间轴、转场音效、可替换参数、素材说明、运行依赖和许可打进一个文件。下载后交给 Codex / Claude Code / Cursor 等有文件与命令能力的助手，再附上口播、文案或素材，即可预览并导出 MP4 与可编辑工程——它不是 mp4 那样的视频容器，也不是提示词。格式规范见 motiongit.com/spec.md（format: motiongit-template）。抖音「阿杜Next」口播《AI时代的全新视频格式 .motion 来了》指向同一件事；阿杜已把口播/知识讲解模板全系列迁到该格式，下载页 motiongit.com/@adunext，镜像仓库 github.com/adunext/adu-motion-video（MIT）。与 Anthropic 产品内的「Claude Motion」动画功能不是同一事物。",
+      "tool": "MotionGit .motion 开放模板 + AI coding agent（Codex / Claude Code / Cursor 等）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原生来源为 MotionGit 产品站与开放格式规范（https://motiongit.com/ 、https://motiongit.com/spec.md、https://motiongit.com/llms.txt），非抖音二创。阿杜（@adunext / 阿杜Next）GitHub README 原文确认「全系列模板已升级为面向 AI 创作的 MotionGit .motion 开放格式」，下载入口 https://motiongit.com/@adunext；仓库 https://github.com/adunext/adu-motion-video（API 核验：MIT，created 2026-09-28，stars≈348，homepage 指向上述主页）。X 检索 MotionGit / motiongit.com / from:adunext 未找到独立宣布帖，故不以 X 为首发。封面取自仓库官方 assets/cover.jpg。勿与 Anthropic Claude Motion（Artifacts 内代码动画导出 MP4）混淆。",
+      "attribution": "MotionGit（.motion 开放格式）；模板示例 阿杜 / adunext（adu-motion-video，MIT）",
+      "sourceAuthor": "MotionGit；adunext（阿杜）",
+      "sourceCodeUrl": "https://github.com/adunext/adu-motion-video",
+      "tags": [
+        "用户指定收纳",
+        "MotionGit",
+        ".motion",
+        "开放格式",
+        "Claude Code",
+        "模板",
+        "AI视频"
+      ],
+      "publishedAt": "2026-10-05T00:00:00Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T11:22:00.000Z",
+      "updatedAt": "2026-10-16T11:22:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-16T11:22:00.000Z"
+      },
+      "licenseName": "MIT（阿杜模板仓库）；.motion 规范为开放格式草案",
+      "verification": {
+        "checked_at": "2026-10-16T11:22:00.000Z",
+        "visually_checked": true,
+        "preview_dimensions": [
+          1600,
+          900
+        ],
+        "preview_check": "封面为 adunext/adu-motion-video 官方 assets/cover.jpg，本轮下载并转存 JPEG 1600×900。",
+        "video_check": "未播放抖音口播；未下载具体 .motion 包做渲染。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-16-motion-format"
+      },
+      "is3d": false,
+      "originalPreviewUrl": "https://raw.githubusercontent.com/adunext/adu-motion-video/main/assets/cover.jpg",
+      "relatedSource": "https://github.com/adunext/adu-motion-video",
+      "workUrl": "https://motiongit.com/spec.md"
+    },
+    {
       "title": "一句话描述一台机器，Claude 造出能剖开、能弄坏、数字全靠算的 3D 仿真",
       "category": "frontend",
       "styleFamily": "code",
@@ -9623,8 +9680,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管）",
-  "updatedAt": "2026-10-16T10:46:49.000Z",
-  "totalItems": 220,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管）",
+  "updatedAt": "2026-10-16T11:22:00.000Z",
+  "totalItems": 221,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
