@@ -4,6 +4,114 @@
   "exportedCount": 115,
   "items": [
     {
+      "title": "一句话描述一台机器，Claude 造出能剖开、能弄坏、数字全靠算的 3D 仿真",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://github.com/AirsupHQ/machine-skill",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-airsup-machine-skill-turbofan.jpg",
+      "previewType": "image",
+      "description": "AirsupHQ 开源的 Claude Code 技能 machine-skill（MIT）：输入一行「/machine 一台涡扇发动机」，Claude 先查真实机器的尺寸和物理，再在单个 HTML 里用 three.js 造出可交互的写实仿真，并能用仓库自带 scripts/record.mjs 录成短片。README 示例：涡扇按布雷顿循环算出起飞约340 kN 推力（83%来自外涵道）、3597个零件，可剖开看截面、可「甩出一片风扇叶」看机匣要承受的不平衡载荷；火箭发动机、炼油泵（会气蚀）、多级压缩机等。X 用户 @cywcycw（2026-10-15）用它做了「无凸轮轴 V8」：32个电液执行器替代凸轮轴、各气门独立开闭，帖文称3000rpm 工况泵气损失-44%。可拍角度：①把刻蚀腔/泵/真空系统喂给它，直接得到可剖开的科普镜头；②「数字是算出来的，不是查表」——让观众拖油门看推力变化；③弄坏它：故障瞬间最抓眼球。",
+      "tool": "Claude Code skill + three.js 0.170（单 HTML，无构建）",
+      "prompt": "/machine a turbofan jet engine, the kind that pushes a widebody off the runway",
+      "promptProvenance": "original_public",
+      "provenanceNote": "仓库 README / LICENSE（MIT © 2026 Air Supply Technologies Inc. / Airsup）与 GitHub API 核验：Describe any machine in one line… photoreal, physics based, interactive simulation… open source Claude Code skill；stars≈259；homepage https://airsup.ai/lab/skill。封面为仓库官方海报 examples/posters/turbofan.jpg（与 .github/assets/turbofan.jpg 同文件），已下载至 topic-portal/covers/20261016-airsup-machine-skill-turbofan.jpg（JPEG 1600×899）。V8 案例仍见 @cywcycw https://x.com/cywcycw/status/2110760668291031401。本轮未完整运行 examples HTML / 未录片。",
+      "attribution": "AirsupHQ（machine-skill，MIT）；V8 案例 @cywcycw（Uncle Tom AI）",
+      "sourceAuthor": "AirsupHQ",
+      "sourceCodeUrl": "https://github.com/AirsupHQ/machine-skill",
+      "tags": [
+        "用户指定收纳",
+        "Three.js",
+        "Claude Code",
+        "剖面",
+        "物理模拟",
+        "开源",
+        "Agent Skill"
+      ],
+      "publishedAt": "2026-10-15T15:52:14Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T10:46:49.000Z",
+      "updatedAt": "2026-10-16T10:46:49.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-16T10:46:49.000Z"
+      },
+      "licenseName": "MIT",
+      "verification": {
+        "checked_at": "2026-10-16T10:46:49.000Z",
+        "visually_checked": true,
+        "preview_dimensions": [
+          1600,
+          899
+        ],
+        "preview_check": "封面为官方 turbofan 海报，本轮下载 HTTP 200，JPEG 1600×899，目视为剖开涡扇+推力面板（与 README 图库一致）。",
+        "video_check": "未完整播放演示影片/未运行交互页。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-16-machine-skill"
+      },
+      "is3d": true,
+      "originalPreviewUrl": "https://raw.githubusercontent.com/AirsupHQ/machine-skill/main/examples/posters/turbofan.jpg"
+    },
+    {
+      "category": "frontend",
+      "styleFamily": "code",
+      "is3d": true,
+      "previewType": "image",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T10:44:06.000Z",
+      "updatedAt": "2026-10-16T10:44:06.000Z",
+      "title": "GPT-6 Astra 做出可散步的溪流：Blender 建模 + Three.js 浏览器实时跑",
+      "source": "https://x.com/chetanankola/status/2107996576228753545",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261008-chetanankola-cozy-creek.jpg",
+      "originalPreviewUrl": "https://pbs.twimg.com/amplify_video_thumb/2107995518244929536/img/zh4SjNGhMe8dPRvs.jpg",
+      "videoUrl": "https://video.twimg.com/amplify_video/2107995518244929536/vid/avc1/1238x1080/K-O2_YIvMEOG57BD.mp4",
+      "description": "Chetan Ankola（@chetanankola）2026-10-08 发帖展示「Cozy Creek」：用 GPT-6 Astra 搭出的 Three.js 溪流 3D 体验，资产在 Blender 里做，整段场景在浏览器里实时运行（帖内约 59 秒演示视频，水面反射、苔石与植被）。原帖全文：「Cozy creek - threejs 3D experience of a Creek made in GPT 6 Astra / This is running in a browser! can you believe it! / all thing made in blender..」。互动量约 5.2k 赞、441 转发、2.6k 收藏、35 万+ 浏览。作者后续称约花近 $100 额度做出，并另开发售/自用包。抖音「AI观察员」等二次传播多转自此帖，非 OpenAI 官方 demo。",
+      "tool": "GPT-6 Astra + Blender + Three.js（浏览器实时）",
+      "provenanceNote": "原文与媒体经 X API get_posts_by_id（id=2107996576228753545，2026-10-16 核验）回读；作者 @chetanankola（Chetan Ankola）。封面为帖内 amplify 视频缩略图，已下载至 topic-portal/covers/20261008-chetanankola-cozy-creek.jpg（JPEG 1200×1046）。未完整播放 59 秒视频；未公开完整提示词/源码。相关跟帖 https://x.com/chetanankola/status/2108719365243965513（自述花费与可购版本）。",
+      "attribution": "@chetanankola（Chetan Ankola，X）",
+      "sourceAuthor": "chetanankola",
+      "tags": [
+        "用户指定收纳",
+        "GPT-6 Astra",
+        "Three.js",
+        "Blender",
+        "3D交互",
+        "溪流"
+      ],
+      "publishedAt": "2026-10-08T00:48:43Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-16T10:44:06.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-16T10:44:06.000Z",
+        "visually_checked": true,
+        "preview_dimensions": [
+          1200,
+          1046
+        ],
+        "preview_check": "封面为原帖视频缩略图，本轮下载 HTTP 成功，JPEG 1200×1046，目视为溪流/苔石/水面场景帧。",
+        "video_check": "未完整播放约 59 秒演示视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-16-astra-creek"
+      }
+    },
+    {
       "category": "审美参考",
       "styleFamily": "other",
       "previewType": "image",
@@ -1973,62 +2081,6 @@
         "finalScore": 98.0,
         "threshold": 65,
         "run": "2026-10-16-1240-shanghai"
-      },
-      "is3d": true
-    },
-    {
-      "title": "一句话描述一台机器，Claude 造出能剖开、能弄坏、数字全靠算的 3D 仿真",
-      "category": "frontend",
-      "styleFamily": "code",
-      "source": "https://github.com/AirsupHQ/machine-skill",
-      "previewUrl": "https://raw.githubusercontent.com/AirsupHQ/machine-skill/main/.github/assets/turbofan.jpg",
-      "previewType": "image",
-      "description": "AirsupHQ 开源的 Claude Code 技能 machine-skill（MIT）：输入一行「/machine 一台涡扇发动机」，Claude 先查真实机器的尺寸和物理，再在单个 HTML 里用 three.js 造出可交互的写实仿真，并能用仓库自带 scripts/record.mjs 录成短片。README 示例：涡扇按布雷顿循环算出起飞约340 kN 推力（83%来自外涵道）、3597个零件，可剖开看截面、可「甩出一片风扇叶」看机匣要承受的不平衡载荷；火箭发动机、炼油泵（会气蚀）、多级压缩机等。X 用户 @cywcycw（2026-10-15）用它做了「无凸轮轴 V8」：32个电液执行器替代凸轮轴、各气门独立开闭，帖文称3000rpm 工况泵气损失-44%。可拍角度：①把刻蚀腔/泵/真空系统喂给它，直接得到可剖开的科普镜头；②「数字是算出来的，不是查表」——让观众拖油门看推力变化；③弄坏它：故障瞬间最抓眼球。",
-      "tool": "Claude Code skill + three.js 0.170（单 HTML，无构建）",
-      "prompt": "/machine a turbofan jet engine, the kind that pushes a widebody off the runway",
-      "promptProvenance": "original_public",
-      "provenanceNote": "仓库 README 公开示例提示词与图库（airsup.ai/lab/skill）；V8 案例来自 @cywcycw 帖文 https://x.com/cywcycw/status/2110760668291031401 。封面为仓库 .github/assets/turbofan.jpg（剖开的涡扇+推力面板）。",
-      "attribution": "AirsupHQ（machine-skill，MIT）；V8 案例 @cywcycw（Uncle Tom AI）",
-      "sourceAuthor": "AirsupHQ",
-      "sourceCodeUrl": "https://github.com/AirsupHQ/machine-skill",
-      "tags": [
-        "Three.js",
-        "Claude Code",
-        "剖面",
-        "物理模拟",
-        "开源"
-      ],
-      "publishedAt": "2026-10-15T15:52:14Z",
-      "collectionIds": [],
-      "collectedAt": "2026-10-16T00:58:00.000Z",
-      "updatedAt": "2026-10-16T00:58:00.000Z",
-      "userFeedback": {
-        "liked": false,
-        "favorite": false,
-        "notInterested": false,
-        "updatedAt": null
-      },
-      "licenseName": "MIT",
-      "verification": {
-        "checked_at": "2026-10-16T00:58:00.000Z",
-        "visually_checked": true,
-        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
-        "video_check": "未完整播放视频/未运行代码。"
-      },
-      "curation": {
-        "baseScore": 98,
-        "baseBreakdown": {
-          "实体": 24,
-          "科普": 20,
-          "溯源": 20,
-          "复现": 15,
-          "风格": 10,
-          "新颖": 9
-        },
-        "multiplier": 1.3491,
-        "finalScore": 132.2,
-        "threshold": 65,
-        "run": "2026-10-16-0840-shanghai"
       },
       "is3d": true
     },
@@ -9571,8 +9623,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab）",
-  "updatedAt": "2026-10-16T08:57:00.000Z",
-  "totalItems": 219,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管）",
+  "updatedAt": "2026-10-16T10:46:49.000Z",
+  "totalItems": 220,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
