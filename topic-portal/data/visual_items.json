@@ -4,6 +4,482 @@
   "exportedCount": 115,
   "items": [
     {
+      "title": "一句话描述一台机器，Claude 造出能剖开、能弄坏、数字全靠算的 3D 仿真",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://github.com/AirsupHQ/machine-skill",
+      "previewUrl": "https://raw.githubusercontent.com/AirsupHQ/machine-skill/main/.github/assets/turbofan.jpg",
+      "previewType": "image",
+      "description": "AirsupHQ 开源的 Claude Code 技能 machine-skill（MIT）：输入一行「/machine 一台涡扇发动机」，Claude 先查真实机器的尺寸和物理，再在单个 HTML 里用 three.js 造出可交互的写实仿真，并能用仓库自带 scripts/record.mjs 录成短片。README 示例：涡扇按布雷顿循环算出起飞约340 kN 推力（83%来自外涵道）、3597个零件，可剖开看截面、可「甩出一片风扇叶」看机匣要承受的不平衡载荷；火箭发动机、炼油泵（会气蚀）、多级压缩机等。X 用户 @cywcycw（2026-10-15）用它做了「无凸轮轴 V8」：32个电液执行器替代凸轮轴、各气门独立开闭，帖文称3000rpm 工况泵气损失-44%。可拍角度：①把刻蚀腔/泵/真空系统喂给它，直接得到可剖开的科普镜头；②「数字是算出来的，不是查表」——让观众拖油门看推力变化；③弄坏它：故障瞬间最抓眼球。",
+      "tool": "Claude Code skill + three.js 0.170（单 HTML，无构建）",
+      "prompt": "/machine a turbofan jet engine, the kind that pushes a widebody off the runway",
+      "promptProvenance": "original_public",
+      "provenanceNote": "仓库 README 公开示例提示词与图库（airsup.ai/lab/skill）；V8 案例来自 @cywcycw 帖文 https://x.com/cywcycw/status/2110760668291031401 。封面为仓库 .github/assets/turbofan.jpg（剖开的涡扇+推力面板）。",
+      "attribution": "AirsupHQ（machine-skill，MIT）；V8 案例 @cywcycw（Uncle Tom AI）",
+      "sourceAuthor": "AirsupHQ",
+      "sourceCodeUrl": "https://github.com/AirsupHQ/machine-skill",
+      "tags": [
+        "Three.js",
+        "Claude Code",
+        "剖面",
+        "物理模拟",
+        "开源"
+      ],
+      "publishedAt": "2026-10-15T15:52:14Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T00:58:00.000Z",
+      "updatedAt": "2026-10-16T00:58:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "licenseName": "MIT",
+      "verification": {
+        "checked_at": "2026-10-16T00:58:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 98,
+        "baseBreakdown": {
+          "实体": 24,
+          "科普": 20,
+          "溯源": 20,
+          "复现": 15,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.3491,
+        "finalScore": 132.2,
+        "threshold": 65,
+        "run": "2026-10-16-0840-shanghai"
+      }
+    },
+    {
+      "title": "一块能切开看地层的小岛：开源 Three.js 程序化地形出了「迷你剖面沙盘」",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/zy_fou/status/2110762632739479788",
+      "previewUrl": "https://pbs.twimg.com/media/HUrPpphWEAAr1wi.jpg",
+      "previewType": "image",
+      "description": "@zy_fou 的开源项目 Procedural Terrains（MIT，GitHub ZyFou/ProceduralTerrains）预告 v2.0.0：新增「Mini Terrains」——不生成大片地形，而是专注单块高分辨率地块，底座做成风格化剖面（cutaway），配更好的水面渲染、植被和大量可调参数；另有新道具、小场景水面改进、Unity 插件与 Blender 插件更新。基于 Three.js，在线版 procedural-terrains.com。可拍角度：①切开的沙盘侧面＝天然的「地层/晶圆剖面」镜头模板；②噪声函数如何长出山和河；③同一参数一键重生成，适合做「换个随机种子世界就变了」的涌现类开场。",
+      "tool": "Three.js（开源项目，含 Unity/Blender 插件）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者帖文+开源仓库 https://github.com/ZyFou/ProceduralTerrains （MIT）与在线版 https://procedural-terrains.com/ 。封面为帖内截图（编辑器中的剖面小岛）。",
+      "attribution": "@zy_fou（ZyFou，X/GitHub）",
+      "sourceAuthor": "zy_fou",
+      "sourceCodeUrl": "https://github.com/ZyFou/ProceduralTerrains",
+      "tags": [
+        "Three.js",
+        "程序化生成",
+        "剖面",
+        "地形",
+        "开源"
+      ],
+      "publishedAt": "2026-10-15T16:00:02Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T00:58:00.000Z",
+      "updatedAt": "2026-10-16T00:58:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "licenseName": "MIT",
+      "verification": {
+        "checked_at": "2026-10-16T00:58:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 16,
+          "溯源": 20,
+          "复现": 15,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.2748,
+        "finalScore": 110.9,
+        "threshold": 65,
+        "run": "2026-10-16-0840-shanghai"
+      }
+    },
+    {
+      "title": "16亿个三角形的宫殿，在浏览器里实时路径追踪：three.js meshlet 渲染器第4阶段",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/CastellanoWorks/status/2110784317475504505",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110783686564102144/img/LaQ9vGG6QH4sixrP.jpg",
+      "previewType": "image",
+      "description": "Jeffrey Castellano（@CastellanoWorks）发布自己 three.js meshlet 路径追踪器的第4个里程碑：挑战 NVIDIA 的 Zorah 测试场景（帖文称16亿三角形），为此加了蒙皮 meshlet、新的神经降噪/超分、雾、水面、反射、500多盏灯，全部浏览器内实时运行（WebGPU）。three.js 官方账号转发。可拍角度：①「16亿个三角形」怎么塞进网页——meshlet 分簇只画看得见的；②路径追踪噪点→降噪的前后对比；③接库内路径追踪/清漆条目做「光线怎么走」系列。",
+      "tool": "three.js + WebGPU 自研 meshlet 路径追踪器",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者帖文（90秒演示视频）；未附源码仓库。封面为帖内视频缩略图（Zorah 宫殿庭院+水面倒影）。",
+      "attribution": "@CastellanoWorks（Jeffrey Castellano，X）",
+      "sourceAuthor": "CastellanoWorks",
+      "tags": [
+        "Three.js",
+        "WebGPU",
+        "路径追踪",
+        "meshlet"
+      ],
+      "publishedAt": "2026-10-15T17:26:12Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T00:58:00.000Z",
+      "updatedAt": "2026-10-16T00:58:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-16T00:58:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 68,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 15,
+          "溯源": 12,
+          "复现": 6,
+          "风格": 10,
+          "新颖": 7
+        },
+        "multiplier": 1.3491,
+        "finalScore": 91.7,
+        "threshold": 65,
+        "run": "2026-10-16-0840-shanghai"
+      }
+    },
+    {
+      "title": "90年代工作台当作品集：软盘插进 Mac、卡带插进红白机，台灯真能开",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/c_na_dev/status/2110780275185566036",
+      "previewUrl": "https://pbs.twimg.com/news_img/2110780324888141824/KKD91LKx?format=jpg&name=orig",
+      "previewType": "image",
+      "description": "前端开发者 Sina Gholizadeh（@c_na_dev）把个人站做成一张可用的 90 年代末工作台（c-na.dev）：项目是软盘，从盒里拿一张飞进 Mac，System 7 浏览器打开案例；Mac 里有 Finder、窗口、框选、带虚拟文件系统的终端和文本编辑器；5 个可玩街机游戏，卡带插进 Famicom 就在 CRT 上实时运行（render target），固定60Hz 步进；闲置时 CRT 放 DVD 屏保；还有能翻页的速写本、真点光源台灯、名片 Rolodex。技术栈 Next.js + React 19、React Three Fiber、drei、three r182、Draco 压缩 GLB。作者说最花时间的是「让它感觉是实体的」：每个物件都有悬停态，相机在桌面→Mac→CRT→红白机之间移动。three.js 官方转发。可拍角度：①「屏幕里的屏幕」render target 原理；②固定步长为什么让游戏速度不随刷新率变；③拟物交互作为口播背景板。",
+      "tool": "React Three Fiber + three r182 + Next.js",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者帖文+three.js 论坛帖 https://discourse.threejs.org/t/my-portfolio-is-a-retro-workshop-desk-you-can-actually-use/95359 ；在线站 https://www.c-na.dev 。未开源。封面为论坛帖链接卡片截图（工作台全景）。",
+      "attribution": "@c_na_dev（Sina Gholizadeh，X）",
+      "sourceAuthor": "c_na_dev",
+      "tags": [
+        "Three.js",
+        "作品集",
+        "拟物设计",
+        "3D交互"
+      ],
+      "publishedAt": "2026-10-15T17:10:08Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T00:58:00.000Z",
+      "updatedAt": "2026-10-16T00:58:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-16T00:58:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 68,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 10,
+          "溯源": 14,
+          "复现": 6,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.2277,
+        "finalScore": 83.5,
+        "threshold": 65,
+        "run": "2026-10-16-0840-shanghai"
+      }
+    },
+    {
+      "title": "不会描述动效？一本给 AI 用的「动效名字词典」：每个词配会动的样片",
+      "category": "motion",
+      "styleFamily": "code",
+      "source": "https://showheyohtaki.github.io/motion-prompt/",
+      "previewUrl": "https://showheyohtaki.github.io/motion-prompt/assets/og.png",
+      "previewType": "image",
+      "description": "日本作者大滝昇平（@showheyohtaki）的开源库 Motion Prompt（MIT）：把动态图形、镜头运动、UI 部件、落地页/网站演出、照片表现五类常用「名字」整理成画廊，每个名字配一个会动的样片、一句话含义和「怎么跟 AI 说」的示例；可 `npx skills add showheyohtaki/motion-prompt` 装成技能，在 Claude Code/Codex 里说「打开 motion-prompt 库」挑选后一键交给 AI。所有样片用 Canvas 2D 写成「只由时间决定画面」的函数、无外部库，可逐帧绘制、直接导出视频。X @slashui（2026-10-15）介绍称约120个案例。可拍角度：①团队写分镜时用统一动效术语，减少「我想要那种…」的沟通；②确定性时间轴＝代码出片可逐帧复现；③给小马口播配转场时直接查词。",
+      "tool": "Canvas 2D 样片 + Agent Skill（Claude Code / Codex）",
+      "prompt": "https://github.com/showheyohtaki/motion-prompt を読んで、motion-prompt スキルをこの環境に入れてください。入れたら、使い方を3行で教えてください。",
+      "promptProvenance": "original_public",
+      "provenanceNote": "作者官网与 GitHub 仓库 https://github.com/showheyohtaki/motion-prompt （MIT）；中文介绍见 https://x.com/slashui/status/2110860240271048834 。封面为官网 og 图。",
+      "attribution": "大滝昇平 @showheyohtaki（Motion Prompt，MIT）",
+      "sourceAuthor": "showheyohtaki",
+      "sourceCodeUrl": "https://github.com/showheyohtaki/motion-prompt",
+      "tags": [
+        "动效术语",
+        "确定性时间轴",
+        "Agent Skill",
+        "开源"
+      ],
+      "publishedAt": "2026-10-15T22:27:53Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T00:58:00.000Z",
+      "updatedAt": "2026-10-16T00:58:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "licenseName": "MIT",
+      "verification": {
+        "checked_at": "2026-10-16T00:58:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 72,
+        "baseBreakdown": {
+          "实体": 6,
+          "科普": 14,
+          "溯源": 20,
+          "复现": 15,
+          "风格": 8,
+          "新颖": 9
+        },
+        "multiplier": 1.1,
+        "finalScore": 79.2,
+        "threshold": 65,
+        "run": "2026-10-16-0840-shanghai"
+      }
+    },
+    {
+      "title": "一根红绳自己编成中国结：开源接触求解器算出每一次穿插和摩擦",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/e166_cao/status/2110770101532414045",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-zozo-chinese-knot.jpg",
+      "previewType": "image",
+      "description": "@e166_cao 用 GPT Astra + Blender + ZOZO 开源的 Contact Solver 插件做了一段12秒「一线成结」动画：一根红绳先绕成平行回环，再穿插收紧成完整中国结并垂下流苏。ZOZO 的 ppf-contact-solver（GitHub st-tech，Apache-2.0）是面向物理仿真的接触求解器，处理壳（布料）、实体、杆（绳索）、刚体之间的碰撞、摩擦和柔性变形。可拍角度：①「绳子为什么不会穿模」——接触求解在每一步阻止相交；②编织过程本身就是拓扑科普（同一根线，不同穿法）；③大陆观众熟悉的中国结做开场极友好。",
+      "tool": "Blender + ZOZO ppf-contact-solver（GPT Astra 辅助）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者帖文；求解器开源 https://github.com/st-tech/ppf-contact-solver （Apache-2.0）。作者同时发了两条近乎相同的帖，取较新一条。封面为本轮从帖内视频第6秒截取的编织中画面（托管至 topic-portal/covers）。",
+      "attribution": "@e166_cao（X）；求解器 ZOZO Technologies（st-tech）",
+      "sourceAuthor": "e166_cao",
+      "sourceCodeUrl": "https://github.com/st-tech/ppf-contact-solver",
+      "tags": [
+        "Blender",
+        "绳索模拟",
+        "物理模拟",
+        "中国结"
+      ],
+      "publishedAt": "2026-10-15T16:29:43Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T00:58:00.000Z",
+      "updatedAt": "2026-10-16T00:58:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "licenseName": "Apache-2.0（求解器）",
+      "verification": {
+        "checked_at": "2026-10-16T00:58:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 78,
+        "baseBreakdown": {
+          "实体": 23,
+          "科普": 15,
+          "溯源": 14,
+          "复现": 10,
+          "风格": 7,
+          "新颖": 9
+        },
+        "multiplier": 1.038,
+        "finalScore": 81.0,
+        "threshold": 65,
+        "run": "2026-10-16-0840-shanghai"
+      }
+    },
+    {
+      "title": "一张土耳其双层茶壶照片，变成能剖开看沸水和茶叶的 3D 展品",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/bytwize/status/2110768830175731754",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110768597177929729/img/0CTGSjpAma-Drsrs.jpg",
+      "previewType": "image",
+      "description": "@bytwize 给 Gemini 4 Argon 一张伊斯坦布尔双层茶壶（çaydanlık）照片，要它做一个可交互 3D 展品：162,324个三角形全部由代码生成，没用 Blender、模型或贴图；有蒸汽、倒茶、带茶叶和沸水的剖面，以及铜→银→黄铜材质切换。作者称一个提示词、未修改。可拍角度：①剖面看「上壶泡茶、下壶烧水」的双层结构；②材质切换讲金属反射；③「展品页」版式可借来做器物科普。",
+      "tool": "Gemini 4 Argon（Three.js 类网页 3D，代码生成几何）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者帖文自述，未公开提示词与源码；版式受 @thebuggeddev 启发。封面为帖内视频缩略图（Turkish Tea Set 展品页）。",
+      "attribution": "@bytwize（X）",
+      "sourceAuthor": "bytwize",
+      "tags": [
+        "Three.js",
+        "剖面",
+        "3D材质",
+        "产品展示"
+      ],
+      "publishedAt": "2026-10-15T16:24:39Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T00:58:00.000Z",
+      "updatedAt": "2026-10-16T00:58:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-16T00:58:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 65,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 16,
+          "溯源": 7,
+          "复现": 4,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.249,
+        "finalScore": 81.2,
+        "threshold": 65,
+        "run": "2026-10-16-0840-shanghai"
+      }
+    },
+    {
+      "title": "浏览器里的鲁布·戈德堡机械：10个机关一条链，还带能量曲线",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/abyssallD/status/2110759165849182446",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110758957018943489/img/TuVhH7Ln6tXEh9Lt.jpg",
+      "previewType": "image",
+      "description": "@abyssallD 让 Opus 5.5 在 Three.js 里搭了一台连锁机关（Rube Goldberg machine）：之字坡放球→多米诺倒下→小车滚动→杠杆、投石器、滑轮、跷跷板，共10个事件一条链，最后升起旗帜；界面自带速度控制、遥测、能量曲线和机位预设，物理在浏览器里实时跑。可拍角度：①能量曲线：势能→动能→损耗，一条链讲清能量守恒与耗散；②「多米诺式连锁」类比芯片里的信号传播/良率连乘；③机位预设可直接录成开场。",
+      "tool": "Three.js 物理（Opus 5.5）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者帖文自述，未公开提示词与源码。封面为帖内视频缩略图（桌上的连锁机关与仪表面板）。",
+      "attribution": "@abyssallD（X）",
+      "sourceAuthor": "abyssallD",
+      "tags": [
+        "Three.js",
+        "物理模拟",
+        "能量守恒"
+      ],
+      "publishedAt": "2026-10-15T15:46:15Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T00:58:00.000Z",
+      "updatedAt": "2026-10-16T00:58:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-16T00:58:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 63,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 17,
+          "溯源": 6,
+          "复现": 4,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.3491,
+        "finalScore": 85.0,
+        "threshold": 65,
+        "run": "2026-10-16-0840-shanghai"
+      }
+    },
+    {
+      "title": "敲一下键，字杆真的抬起、滑架真的移位：Three.js 机械打字机",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/itsfazley/status/2110717334801534982",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110615025463513088/img/TDzv4g9JZBklRm8A.jpg",
+      "previewType": "image",
+      "description": "@itsfazley 用 Three.js + Vite 做的可交互机械打字机，几何和运动学由 GPT-6.1 Sol 生成：按键带动字杆、滑架移位，并实时把字打到纸上，带音效。可拍角度：①连杆运动学——一次按键背后的杠杆链；②「Flat UI 让网页变无聊」——拟物交互对比；③适合做口播时的打字开场。注：库内已有打字机类拟物交互，新颖度一般。",
+      "tool": "Three.js + Vite（GPT-6.1 Sol 生成几何/运动学）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者帖文自述，未公开源码与提示词。封面为帖内视频缩略图（墨绿色打字机特写）。",
+      "attribution": "@itsfazley（X）",
+      "sourceAuthor": "itsfazley",
+      "tags": [
+        "Three.js",
+        "拟物设计",
+        "运动学"
+      ],
+      "publishedAt": "2026-10-15T13:00:02Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T00:58:00.000Z",
+      "updatedAt": "2026-10-16T00:58:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-16T00:58:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 58,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 14,
+          "溯源": 7,
+          "复现": 3,
+          "风格": 10,
+          "新颖": 4
+        },
+        "multiplier": 1.2588,
+        "finalScore": 73.0,
+        "threshold": 65,
+        "run": "2026-10-16-0840-shanghai"
+      }
+    },
+    {
       "title": "选一个影院座位，飞过去从那一排看大屏：房间被电影自己照亮",
       "category": "frontend",
       "styleFamily": "code",
@@ -6927,7 +7403,7 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条",
-  "updatedAt": "2026-10-15T12:52:00.000Z",
-  "totalItems": 163
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条",
+  "updatedAt": "2026-10-16T00:58:00.000Z",
+  "totalItems": 172
 }
