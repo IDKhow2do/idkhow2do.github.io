@@ -24,6 +24,7 @@
     likedOnly: false,
     query: "",
     visualFamily: "全部",
+    visualCategory: "",
     visualQuery: "",
     modelFamily: "全部",
     modelQuery: "",
@@ -127,6 +128,7 @@
     frontend: "端",
     "3d": "3",
     industrial: "工",
+    审美参考: "审",
   };
 
   const VISUAL_CAT_LABEL = {
@@ -136,7 +138,11 @@
     frontend: "前端",
     "3d": "3D",
     industrial: "工业",
+    审美参考: "审美参考",
   };
+
+  /** Extra visual chips keyed by item.category (not styleFamily). */
+  const VISUAL_CATEGORY_CHIPS = ["审美参考"];
 
   /** styleFamily chip keys → Chinese labels (视觉素材 filters) */
   const VISUAL_FAMILY_ORDER = ["全部", "code", "draw", "video_model", "model_3d", "other"];
@@ -522,6 +528,21 @@
       btn.textContent = `${label} ${count}`;
       btn.addEventListener("click", () => {
         state.visualFamily = key;
+        state.visualCategory = "";
+        renderVisualFamilyChips();
+        renderVisuals();
+      });
+      host.appendChild(btn);
+    });
+    VISUAL_CATEGORY_CHIPS.forEach((cat) => {
+      const count = items.filter((i) => i.category === cat).length;
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "chip" + (state.visualCategory === cat ? " is-active" : "");
+      btn.textContent = `${visualCategoryLabel(cat)} ${count}`;
+      btn.addEventListener("click", () => {
+        state.visualCategory = cat;
+        state.visualFamily = "";
         renderVisualFamilyChips();
         renderVisuals();
       });
@@ -533,8 +554,12 @@
     const items = state.visuals?.items || [];
     const q = state.visualQuery.trim().toLowerCase();
     return items.filter((item) => {
-      const fam = item.styleFamily || "other";
-      if (state.visualFamily !== "全部" && fam !== state.visualFamily) return false;
+      if (state.visualCategory) {
+        if (item.category !== state.visualCategory) return false;
+      } else if (state.visualFamily && state.visualFamily !== "全部") {
+        const fam = item.styleFamily || "other";
+        if (fam !== state.visualFamily) return false;
+      }
       if (!q) return true;
       const hay = `${item.title || ""} ${item.description || ""} ${item.tool || ""} ${(item.tags || []).join(" ")}`.toLowerCase();
       return hay.includes(q);
@@ -666,7 +691,8 @@
 
     const showGhost =
       incomplete &&
-      state.visualFamily === "全部" &&
+      !state.visualCategory &&
+      (state.visualFamily === "全部" || state.visualFamily === "") &&
       !state.visualQuery.trim();
     if (showGhost) {
       const ghost = document.createElement("div");
@@ -731,6 +757,12 @@
     cat.className = "badge";
     cat.textContent = visualBadgeLabel(item);
     left.appendChild(cat);
+    if (item.category === "审美参考") {
+      const topic = document.createElement("span");
+      topic.className = "badge";
+      topic.textContent = visualCategoryLabel(item.category);
+      left.appendChild(topic);
+    }
     meta.appendChild(left);
 
     const inds = document.createElement("div");
@@ -800,10 +832,19 @@
       media.appendChild(makeCategoryPlaceholder(item.category || "其他"));
     }
 
-    $("#drawerCategory").textContent = visualBadgeLabel(item);
+    $("#drawerCategory").textContent =
+      item.category === "审美参考"
+        ? visualCategoryLabel(item.category)
+        : visualBadgeLabel(item);
     $("#drawerTitle").textContent = displayVisualTitle(item);
     const status = $("#drawerStatus");
     status.innerHTML = "";
+    if (item.category === "审美参考") {
+      const fam = document.createElement("span");
+      fam.className = "badge";
+      fam.textContent = visualBadgeLabel(item);
+      status.appendChild(fam);
+    }
     const lic = document.createElement("span");
     lic.className = "badge badge-warn";
     lic.textContent = "许可待核";
