@@ -476,8 +476,509 @@
           "run": "2026-10-14-2040-shanghai"
         }
       }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 59,
+      "multiplier": 1.0538,
+      "score": 62.2,
+      "reason": "纯代码出片流程有参考价值，但实体感/科普镜头弱于本轮上墙项；进待定观察。",
+      "run": "2026-10-15-0840-shanghai",
+      "record": {
+        "title": "Gemini Argon只写Python：Blender里渲完画面还顺手配乐",
+        "category": "video",
+        "styleFamily": "code",
+        "source": "https://x.com/aicreataro/status/2110148938636611865",
+        "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110148408921272321/img/OHiDhvsKdwQKeUjJ.jpg",
+        "previewType": "image",
+        "description": "@aicreataro 用 Gemini 4 Argon 生成Python，导入Blender完成渲染与配乐，生成素材为零。作者坦言需求不清时难传意、细修往返仍慢。可作「模型写三维脚本」案例，但实体机制展示弱于Excel定格与路径追踪。",
+        "tool": "Gemini 4 Argon × Blender × Python",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "流程自述；提示词未公开。封面为视频缩略图。",
+        "attribution": "@aicreataro（X）",
+        "sourceAuthor": "aicreataro",
+        "tags": [
+          "Blender",
+          "代码出片",
+          "Gemini"
+        ],
+        "publishedAt": "2026-10-13T23:21:26Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-15T00:51:11.000Z",
+        "updatedAt": "2026-10-15T00:51:11.000Z",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "verification": {
+          "checked_at": "2026-10-15T00:51:11.000Z",
+          "visually_checked": true,
+          "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 59,
+          "baseBreakdown": {
+            "实体": 12,
+            "科普": 10,
+            "溯源": 12,
+            "复现": 10,
+            "风格": 8,
+            "新颖": 7
+          },
+          "multiplier": 1.0538,
+          "finalScore": 62.2,
+          "threshold": 65,
+          "run": "2026-10-15-0840-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 53,
+      "multiplier": 1.1793,
+      "score": 62.5,
+      "reason": "粘土质感的SDF自研渲染器有实体感，但封面只是一块空白粘土板、无源码/许可/在线链接，科普镜头弱；进待定观察。",
+      "run": "2026-10-15-1240-shanghai",
+      "record": {
+        "title": "整个世界都是粘土：独立游戏Nook把Three.js换成自研SDF渲染器",
+        "category": "3d",
+        "styleFamily": "code",
+        "source": "https://x.com/DavidBSmit/status/2110412233297535386",
+        "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110411685261410304/img/4jEe4pUN98RDxgkd.jpg",
+        "previewType": "image",
+        "description": "@DavidBSmit 称拆掉了 Three.js 渲染器，改为自研高性能 SDF 渲染，让 Nook 的地形、物体、光照全部是“粘土”。Three.js 官方转发。早期开发版，界面有塑形地形/建造/角色/地面/物件/上色/光照工具栏。",
+        "tool": "自研 SDF 渲染器（原 Three.js）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "无源码与许可；封面为视频缩略图（空白粘土地块）。",
+        "attribution": "@DavidBSmit（David Smit，X）",
+        "sourceAuthor": "DavidBSmit",
+        "tags": [
+          "SDF",
+          "粘土质感",
+          "独立游戏"
+        ],
+        "publishedAt": "2026-10-14T16:47:40Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-15T04:50:19.000Z",
+        "updatedAt": "2026-10-15T04:50:19.000Z",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "verification": {
+          "checked_at": "2026-10-15T04:50:19.000Z",
+          "visually_checked": true,
+          "preview_check": "封面URL本轮HTTP 200并目视核验为作品真实画面，非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 53,
+          "baseBreakdown": {
+            "实体": 18,
+            "科普": 10,
+            "溯源": 6,
+            "复现": 3,
+            "风格": 8,
+            "新颖": 8
+          },
+          "multiplier": 1.1793,
+          "finalScore": 62.5,
+          "threshold": 65,
+          "run": "2026-10-15-1240-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "news",
+      "baseScore": 61,
+      "multiplier": 1.0566,
+      "score": 64.5,
+      "reason": "“只能推理的NPU也能从零预训练”钩子强、有与GPU对照（损失曲线相关0.99），但为HF社区文章、未点名NPU厂商型号，可核验性不足，画面只有曲线；进待定。",
+      "run": "2026-10-15-1240-shanghai",
+      "record": {
+        "url": "https://huggingface.co/blog/FINAL-Bench/backpropagation-on-an-inference-only-npu-pretraini",
+        "title": "只能跑推理的芯片，为什么也能从零训练一个模型？",
+        "category": "AI",
+        "source": "Hugging Face 社区文章（FINAL-Bench / VIDRAFT_LAB，2026-10-14）《Backpropagation on an Inference-Only NPU: Pretraining VKORE-46M-NPU From Scratch》",
+        "publishedAt": "2026-10-14",
+        "eventAt": null,
+        "collectedAt": "2026-10-15T04:50:19.000Z",
+        "updatedAt": "2026-10-15T04:50:19.000Z",
+        "description": "作者称在一套32芯片的第一代（2025年）推理专用NPU上，用真实反向传播从零预训练了4600万参数的字符级小模型 VKORE-46M-NPU（TinyStories 数据）；同初始化、同数据顺序、同调度下与GPU参照各训一次，损失曲线相关系数0.99，吞吐接近。作者强调“损失下降”本身不说明问题，要看与GPU参照是否一致。限定：社区文章非同行评审；未在摘取段落中点名NPU型号；模型很小。",
+        "caveat": "未点名硬件、部分内容未公开（文中有“What is shared, and what is not”一节）。",
+        "imageUrl": "https://cdn-uploads.huggingface.co/production/uploads/6905bc786cb49b1f11d32728/N_setu1QFx4V4oVxk5dXn.png",
+        "previewUrl": "https://cdn-uploads.huggingface.co/production/uploads/6905bc786cb49b1f11d32728/N_setu1QFx4V4oVxk5dXn.png",
+        "imageAlt": "文章 og:image",
+        "tags": [
+          "NPU",
+          "AI训练",
+          "芯片"
+        ],
+        "tagSource": "provided"
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 62,
+      "multiplier": 1.025,
+      "score": 63.5,
+      "reason": "代码出片完成度高、热度高，但无物理机制/科普镜头，提示词未取到原文。",
+      "run": "2026-10-15-1640-shanghai",
+      "record": {
+        "title": "Opus 5.5 Ultracode 连跑12小时：自写渲染器给 Claude 像素小怪做1分钟3D动画",
+        "category": "video",
+        "styleFamily": "code",
+        "source": "https://x.com/LexnLin/status/2110389810258968965",
+        "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110389703232917504/img/6m7l19ZJz0CnOC8A.jpg",
+        "previewType": "image",
+        "description": "@LexnLin（Leon Lin）用 Opus 5.5 Ultracode 做的 Clawd（Claude Code 橙色像素吉祥物）1分钟动画，帖称改进了音效。据 @DDJCXX 转述：连跑约12小时，3D画面由模型自写渲染器画出，音效用网上免费素材，全片无字，作者公开了提示词。",
+        "tool": "Claude Opus 5.5 Ultracode",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "「12小时」「自写渲染器」「提示词已公开」来自 @DDJCXX 转述，未找到提示词原文；封面为视频缩略图。",
+        "attribution": "@LexnLin（Leon Lin，X）",
+        "sourceAuthor": "LexnLin",
+        "tags": [
+          "Claude Code",
+          "代码动画",
+          "吉祥物"
+        ],
+        "publishedAt": "2026-10-14T15:18:34Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-15T08:50:00.000Z",
+        "updatedAt": "2026-10-15T08:50:00.000Z",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "verification": {
+          "checked_at": "2026-10-15T08:50:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 62,
+          "baseBreakdown": {
+            "实体": 12,
+            "科普": 8,
+            "溯源": 14,
+            "复现": 10,
+            "风格": 10,
+            "新颖": 8
+          },
+          "multiplier": 1.025,
+          "finalScore": 63.5,
+          "threshold": 65,
+          "run": "2026-10-15-1640-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 56,
+      "multiplier": 1.3491,
+      "score": 75.5,
+      "reason": "软体有实体感，但溯源弱、偏模型比价帖，最终分若过线仍建议待观察用户是否点赞。",
+      "run": "2026-10-15-2040-shanghai",
+      "record": {
+        "title": "浏览器里的软糖熊：拖一下就晃，软体物理能有多「Q」",
+        "category": "frontend",
+        "styleFamily": "code",
+        "source": "https://x.com/k2sbhai/status/2110678468799442955",
+        "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110677642785746944/img/1ONHnurSeQaNkCzl.jpg",
+        "previewType": "image",
+        "description": "@k2sbhai 用 DeepSeek v4.1 Flash 在 Three.js 里做了软糖熊软体物理演示（自称成本$0）：可切换口味颜色、调 wobble、拉伸计数。有实体感，但帖面是模型比价营销，未见源码与提示词。",
+        "tool": "Three.js 软体物理（DeepSeek v4.1 Flash）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "模型对比向帖文，无开源仓库；封面为演示视频缩略图。",
+        "attribution": "@k2sbhai（X）",
+        "sourceAuthor": "k2sbhai",
+        "tags": [
+          "Three.js",
+          "软体物理"
+        ],
+        "publishedAt": "2026-10-15T10:25:36Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-15T12:52:00.000Z",
+        "updatedAt": "2026-10-15T12:52:00.000Z",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "verification": {
+          "checked_at": "2026-10-15T12:52:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 56,
+          "baseBreakdown": {
+            "实体": 18,
+            "科普": 12,
+            "溯源": 6,
+            "复现": 3,
+            "风格": 10,
+            "新颖": 7
+          },
+          "multiplier": 1.3491,
+          "finalScore": 75.5,
+          "threshold": 65,
+          "run": "2026-10-15-2040-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 67,
+      "multiplier": 1.3491,
+      "score": 90.4,
+      "reason": "同轮已收 Castellano 路径追踪，库内亦有 pissang/meby 同类；新颖度低，留待定观察用户是否点赞路径追踪类。",
+      "run": "2026-10-16-0840-shanghai",
+      "record": {
+        "title": "WebGPU 实时全局光照：从13ms 压到6.5ms 一帧的四个招",
+        "category": "frontend",
+        "styleFamily": "code",
+        "source": "https://x.com/rgbjoy/status/2110824629153759303",
+        "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110824551529529346/img/KLc4_3RIOWY4O3VB.jpg",
+        "previewType": "image",
+        "description": "Tom Fletcher（@rgbjoy）的 WebGPU 计算着色器路径追踪+降噪实验（rgbjoy.com/experiments/global-illumination-webgpu）：反弹光线四分之一分辨率追踪、边缘感知上采样防漏光、à-trous 降噪、只对旋转物附近重追踪，帧时间从13ms 降到6.5ms。",
+        "tool": "WebGPU 计算着色器（Three.js）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者帖文与在线实验页；未见仓库。封面为帖内视频缩略图。",
+        "attribution": "@rgbjoy（Tom Fletcher，X）",
+        "sourceAuthor": "rgbjoy",
+        "tags": [
+          "Three.js",
+          "WebGPU",
+          "路径追踪",
+          "全局光照"
+        ],
+        "publishedAt": "2026-10-15T20:06:23Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-16T00:58:00.000Z",
+        "updatedAt": "2026-10-16T00:58:00.000Z",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "verification": {
+          "checked_at": "2026-10-16T00:58:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 67,
+          "baseBreakdown": {
+            "实体": 16,
+            "科普": 16,
+            "溯源": 14,
+            "复现": 8,
+            "风格": 10,
+            "新颖": 3
+          },
+          "multiplier": 1.3491,
+          "finalScore": 90.4,
+          "threshold": 65,
+          "run": "2026-10-16-0840-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 60,
+      "multiplier": 1.3491,
+      "score": 80.9,
+      "reason": "模型对比帖、溯源弱（沿用 k2sbhai 先例强制待定）；科普潜力高，若用户点赞同类可转正。",
+      "run": "2026-10-16-0840-shanghai",
+      "record": {
+        "title": "Three.js 黑洞：9万粒子吸积盘＋引力透镜，点一下发出引力波",
+        "category": "frontend",
+        "styleFamily": "code",
+        "source": "https://x.com/BreezeOg1/status/2110787770402963831",
+        "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110786290740310016/img/pEfI1gq3ztSJ8js1.jpg",
+        "previewType": "image",
+        "description": "@BreezeOg1 用 Claude Code 跑同一提示词做的交互黑洞：9万个 GPU 粒子吸积盘（内圈转得比外圈快）、把盘远侧弯到黑洞上方的引力透镜、代码生成的5000颗星与星云、相对论喷流，点击发出引力波涟漪；零图片文件。",
+        "tool": "Three.js（Claude Code）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "模型对比向帖文（引用 DeepSeek 版同题），未公开提示词与源码。封面为视频缩略图。",
+        "attribution": "@BreezeOg1（X）",
+        "sourceAuthor": "BreezeOg1",
+        "tags": [
+          "Three.js",
+          "粒子",
+          "天体物理"
+        ],
+        "publishedAt": "2026-10-15T17:39:55Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-16T00:58:00.000Z",
+        "updatedAt": "2026-10-16T00:58:00.000Z",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "verification": {
+          "checked_at": "2026-10-16T00:58:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 60,
+          "baseBreakdown": {
+            "实体": 12,
+            "科普": 18,
+            "溯源": 7,
+            "复现": 5,
+            "风格": 10,
+            "新颖": 8
+          },
+          "multiplier": 1.3491,
+          "finalScore": 80.9,
+          "threshold": 65,
+          "run": "2026-10-16-0840-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 57,
+      "multiplier": 1.1707,
+      "score": 66.7,
+      "reason": "纸艺+机械臂贴合品味，但属模型对比帖、溯源弱，强制待定。",
+      "run": "2026-10-16-0840-shanghai",
+      "record": {
+        "title": "三节机械臂折千纸鹤、旧打字机自己组装：同一提示词两个模型对比",
+        "category": "video",
+        "styleFamily": "code",
+        "source": "https://x.com/JingW59/status/2110731757494599988",
+        "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110731555010498560/img/rV3cVS0eXy9H2yDp.jpg",
+        "previewType": "image",
+        "description": "@JingW59 用同一提示词让 Gemini 4 Argon 和 Claude Opus 5.5 各写两个单文件动画：三节机械臂折千纸鹤（Argon 约8.5分钟、Opus 约11.9分钟），老式打字机自己组装再打一行字（约6.5 vs 10.5分钟）。",
+        "tool": "单文件 HTML 动画（Gemini 4 Argon / Opus 5.5）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "模型对比帖，互动极低，未公开提示词。封面为对比视频缩略图。",
+        "attribution": "@JingW59（X）",
+        "sourceAuthor": "JingW59",
+        "tags": [
+          "纸艺场景",
+          "机械臂",
+          "模型对比"
+        ],
+        "publishedAt": "2026-10-15T13:57:21Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-16T00:58:00.000Z",
+        "updatedAt": "2026-10-16T00:58:00.000Z",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "verification": {
+          "checked_at": "2026-10-16T00:58:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 57,
+          "baseBreakdown": {
+            "实体": 18,
+            "科普": 12,
+            "溯源": 6,
+            "复现": 4,
+            "风格": 10,
+            "新颖": 7
+          },
+          "multiplier": 1.1707,
+          "finalScore": 66.7,
+          "threshold": 65,
+          "run": "2026-10-16-0840-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 56,
+      "multiplier": 1.025,
+      "score": 57.4,
+      "reason": "官方工作流演示、和科普选题强相关，但无实体/物理机制、封面只是输入界面；分数不足上墙，进待定观察用户是否点赞此类「工作流」条目。",
+      "run": "2026-10-16-1240-shanghai",
+      "record": {
+        "title": "一篇密密麻麻的学术 PDF，在 Gemini 里变成能拖进度条看的彩色动画绘本",
+        "category": "video",
+        "styleFamily": "video_model",
+        "source": "https://x.com/Google/status/2110751391899644101",
+        "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110748671981580289/img/onK-lRqPT3sLjHVB.jpg",
+        "previewType": "image",
+        "description": "Google 官方账号 10月15日的演示视频：用 Nano Banana（生图）、Veo（生视频）和 Gemini 4 Argon，在 Gemini App 里把一篇学术 PDF 做成全彩、会动的故事书。据中文转述帖（@lovejing0306），官方演示上传的是 OpenStax《Biology 2e》讲灵长类演化的章节，在 Canvas 中生成可拖动进度条的动画绘本网页。",
+        "tool": "Gemini App（Gemini 4 Argon + Canvas）+ Nano Banana + Veo",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "Google 官方 X 帖（约 2800 赞、1200 收藏）；未公开具体提示词。封面为视频缩略图（Gemini 输入界面），非成片画面。",
+        "attribution": "Google（@Google，X）",
+        "sourceAuthor": "Google",
+        "tags": [
+          "Gemini",
+          "科普动画",
+          "工作流"
+        ],
+        "publishedAt": "2026-10-15T15:15:22Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-16T04:55:00.000Z",
+        "updatedAt": "2026-10-16T04:55:00.000Z",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "verification": {
+          "checked_at": "2026-10-16T04:55:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 56,
+          "baseBreakdown": {
+            "实体": 5,
+            "科普": 17,
+            "溯源": 14,
+            "复现": 8,
+            "风格": 5,
+            "新颖": 7
+          },
+          "multiplier": 1.025,
+          "finalScore": 57.4,
+          "threshold": 65,
+          "run": "2026-10-16-1240-shanghai"
+        }
+      }
     }
   ],
-  "updatedAt": "2026-10-14T13:11:45.000Z",
+  "updatedAt": "2026-10-16T12:52:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }

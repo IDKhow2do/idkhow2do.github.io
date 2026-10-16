@@ -1,7 +1,159 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T08:57:00.000Z",
+  "updatedAt": "2026-10-16T12:52:00.000Z",
   "topics": [
+    {
+      "url": "https://www.nature.com/articles/s41378-025-01105-z",
+      "title": "刻蚀侧壁上那些「扇贝纹」，工程师要盯几小时：为什么现在可以让AI从SEM图里自动量出来？",
+      "category": "半导体",
+      "source": "Nature 子刊 Microsystems & Nanoengineering 论文《AI-driven feature recognition of SEM profiles in deep reactive ion etching based on physics-constrained variational autoencoder》（开放获取，2026-03-09 发表）",
+      "publishedAt": "2026-03-09",
+      "eventAt": null,
+      "collectedAt": "2026-10-16T12:52:00.000Z",
+      "updatedAt": "2026-10-16T12:52:00.000Z",
+      "description": "深度反应离子刻蚀（DRIE）是 MEMS 和先进硅结构的核心工艺：Bosch 循环交替刻蚀与钝化，侧壁会留下一圈圈「扇贝纹」（scallop）。产线要靠扫描电镜（SEM）剖面图量沟槽深度、扇贝深度/宽度、侧壁角度等九个关键尺寸，一张图人工标注往往要 1–2 小时，误差还到 15–20%。这篇论文提出把物理约束写进变分自编码器的 VLSet-AE：把 SEM 图按深度切成一层层扇贝，用水平集函数像「充气泡」一样从层中心向外长，碰到侧壁就停；并用 Hamilton–Jacobi 方程约束界面运动，让轮廓符合刻蚀物理。结果：九个关键尺寸平均误差 3.65%、整体准确率 94.3%，训练约 20 秒、单张推理约 1.2 秒，优于 CNN/LSTM 等七种基线。机制钩子：扇贝不是噪点，是每一轮刻蚀-钝化留下的时间戳；AI 要读的是「一层一层长出来的墙」，不是整张静态图片。反方/限定：数据来自 16 组正交实验、约 1000 张 SEM；极端深宽比或氯基化学等未充分验证；发表于 2026 年 3 月，属常青机制题。可拍角度：①扇贝纹=刻蚀日历；②人工量 SEM vs AI 自动量；③水平集「充气」碰到墙就停；④为什么要把物理方程写进损失函数。0秒开场：论文 Fig.8 对比——CNN 断断续续的绿线 vs VLSet-AE 光滑蓝线贴着扇贝轮廓。",
+      "caveat": "数值与方法描述来自开放获取论文摘要与正文；封面为 Springer Nature 提供的论文 og:image（Fig.a），已自托管。时效按常青机制题计分。",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-vlset-sem-drie.png",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-vlset-sem-drie.png",
+      "imageAlt": "DRIE SEM 剖面轮廓识别对比示意图：一侧为传统 CNN 断续轮廓，一侧为 VLSet-AE 光滑贴合扇贝侧壁的重建轮廓",
+      "tags": [
+        "刻蚀",
+        "芯片制造",
+        "失效分析",
+        "SEM",
+        "AI工艺"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 90,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 18,
+          "画面": 13,
+          "来源": 15,
+          "时效": 6,
+          "大陆": 8,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 96.7,
+        "threshold": 65,
+        "run": "2026-10-16-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://www.nature.com/articles/s41378-026-01467-y",
+      "title": "做一根悬空的硅纳米线，为什么非要进上千度的炉子？有人把最高温度压到了180℃",
+      "category": "半导体",
+      "source": "Nature 子刊 Microsystems & Nanoengineering 论文《Scalable low-thermal-budget fabrication of suspended silicon nanowire devices》（开放获取，2026-10-12 发表）",
+      "publishedAt": "2026-10-12",
+      "eventAt": null,
+      "collectedAt": "2026-10-16T12:52:00.000Z",
+      "updatedAt": "2026-10-16T12:52:00.000Z",
+      "description": "悬空硅纳米线（Si NW）是气体传感、MEMS 压阻和结型场效应管的常用积木，但传统自上而下工艺常靠热氧化或 LPCVD 做侧墙保护，温度动辄 400℃以上，既引入残余应力，又不利于后 CMOS 集成。这篇工作把最高工艺温度压到 180℃（仅 PMMA 烘烤）：先用电子束光刻做出纳米级凸起，再用溅射铬做保形侧墙钝化，随后用 Bosch 型 DRIE 底切释放，最后室温去铬、蒸汽 HF 去氧化层。结果：线宽可到 50 nm、深宽比最高约 100、阵列间距 5 μm；在 SOI 上做成两端器件与侧栅结型 FET，并在名义 2 nm 钯修饰后实现亚 10 nW 功耗级氢气响应。机制钩子：纳米线怕的不是「刻得细」，而是释放时侧墙被啃掉——以前靠高温氧化物护墙，现在换成可牺牲的金属铬护墙，炉子可以不要。反方/限定：目前为芯片级演示，未做晶圆级良率统计；残余应力未定量测；铬工艺需湿法去除，污染控制要单独评估。可拍角度：①炉温温度计从 900℃拧到 180℃；②侧墙「铠甲」从氧化硅换成铬再剥掉；③悬空线不塌、不粘连的 SEM；④纳米线嗅氢气——电流几乎被掐断。0秒开场：论文 Fig.3 悬空 50 nm 硅纳米线阵列 SEM。",
+      "caveat": "工艺参数与电学数据来自开放获取论文；封面为 Springer Nature 论文 og:image，已自托管。",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-si-nanowire.png",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-si-nanowire.png",
+      "imageAlt": "悬空硅纳米线器件工艺与 SEM 结构图：低热预算流程示意与释放后的纳米线阵列",
+      "tags": [
+        "芯片制造",
+        "刻蚀",
+        "纳米线",
+        "MEMS",
+        "先进封装"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 91,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 17,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 97.8,
+        "threshold": 65,
+        "run": "2026-10-16-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://openai.com/index/third-moment-research/",
+      "title": "一万个AI同时加班36小时：为什么有人说「卡住的回测」才是智能体真正的敌人？",
+      "category": "AI",
+      "source": "OpenAI 客户案例博客《How Third Moment Research runs 10,000 agents for 36+ hours》（2026-10-14）",
+      "publishedAt": "2026-10-14",
+      "eventAt": null,
+      "collectedAt": "2026-10-16T12:52:00.000Z",
+      "updatedAt": "2026-10-16T12:52:00.000Z",
+      "description": "量化研究初创 Third Moment Research 在 OpenAI 官方案例里披露：他们用 GPT-6 Astra / Sol / 6.1 Sol 与 Codex 同时跑最多 1 万个智能体，单次自主研究会持续 36–48 小时；还用 Daybreak 做环境渗透测试。一个具体故事：Codex 分析大量仿真轨迹后发现，策略回测一整年逐单美股数据要好几小时，智能体在等待时反复轮询、浪费 token、污染上下文；优化缓存与内存打包后，回测从约 3 小时降到约 3–5 分钟（文中称约 97% 时间削减）。机制钩子：长时智能体不是只会「想得久」，更要让工具别拖后腿——环境慢一拍，上下文就被状态查询填满。反方/限定：这是厂商客户故事，场景偏量化交易研究，未公开可复现基准；「一万个智能体」是并发规模宣称。可拍角度：①日历上两天不停的实验流水线；②回测沙漏从 3 小时拧到 5 分钟；③外层 harness 决定重试/终止/人工升级；④安全：一万个代理为什么要先做越狱测试。0秒开场：OpenAI 案例页社交预览图（「10,000 Agents / 36–48 Hours」信息卡）。",
+      "caveat": "全部数字与引述来自 OpenAI 官方客户案例页；封面取自该页被 X 卡片抓取的社交预览图（pbs.twimg.com/news_img），已自托管，非第三方二创图。",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-third-moment.jpg",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-third-moment.jpg",
+      "imageAlt": "OpenAI 案例社交卡风格配图，主题为 Third Moment Research 大规模长时智能体运行",
+      "tags": [
+        "智能体",
+        "AI成本",
+        "AI推理"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 86.6,
+        "threshold": 65,
+        "run": "2026-10-16-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.22019",
+      "title": "预训练和微调中间，为什么还要再「练」几千亿 token？开源菜谱说：智能体靠这段才站得住",
+      "category": "AI",
+      "source": "arXiv:2610.22019 NVIDIA 论文《Priming Base Models for Agentic Post-Training: An Open Midtraining Recipe》（HTML 版可核）",
+      "publishedAt": "2026-10",
+      "eventAt": null,
+      "collectedAt": "2026-10-16T12:52:00.000Z",
+      "updatedAt": "2026-10-16T12:52:00.000Z",
+      "description": "前沿代码模型在预训练与后训练之间常插入 midtraining，但细节很少公开。NVIDIA 这篇给出面向智能体编码的开源菜谱：在 256K 上下文上练千亿级 token，主体是仓库打包、Issue–PR、提交历史、构建日志等自然软件工程数据，再加约 10–15% 智能体轨迹（工具返回值从损失中掩码）。在 Nemotron 3.5 Lightning 上 500B midtraining token，经相同完整 SFT 后，SWE-bench Verified / Multilingual / Pro 分别相对无 midtraining 基线提升约 3.8 / 7.0 / 3.5 分；更大的 Super 上 DeepSWE 从 11.7 提到 15.7。机制钩子：预训练上下文太短、几乎不见代理交互；SFT 又太「像聊天」、拉太长会伤后续强化学习——midtraining 专门补「整仓阅读 + 长轨迹」这一课。反方/限定：主要在 Nemotron 家族验证；基准噪声大；未与「同等 token 加长预训练/SFT」做严格对照。可拍角度：①三条流水线：预训练→midtraining→SFT；②整仓代码塞进 256K 窗口；③工具回包为什么要「遮住不学」；④换一套 agent 外壳分数掉多少。0秒开场：论文中按来源划分的文档长度直方图（各数据源 token 长度分布）。",
+      "caveat": "分数与配比来自 arXiv HTML 论文；封面为论文正文插图（各 midtraining 来源文档长度直方图），已自托管。发表月份据 arXiv 标识，具体日未在摘要页标出。",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-midtrain-hist.png",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-midtrain-hist.png",
+      "imageAlt": "论文插图：midtraining 各数据源文档长度（token）直方图，对数横轴",
+      "tags": [
+        "智能体",
+        "AI训练",
+        "开源模型"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 77,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 16,
+          "画面": 8,
+          "来源": 15,
+          "时效": 8,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 81.4,
+        "threshold": 65,
+        "run": "2026-10-16-2040-shanghai"
+      }
+    },
     {
       "url": "https://www.jjckb.cn/20261015/f80d0876cc1647bf8f18c1edc09fab4d/c.html",
       "title": "在比头发丝细上千倍的孔里往下挖90倍深：为什么3D存储越堆越高，国产刻蚀机反而要「降温」来挖？",
