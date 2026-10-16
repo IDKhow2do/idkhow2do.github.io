@@ -4,6 +4,217 @@
   "exportedCount": 115,
   "items": [
     {
+      "title": "猛禽二号发动机拆成11大总成再点火试车：Gemini 4 Argon 写代码、自己配中文旁白的工程图解片",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/Tao100086/status/2110966309622276293",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110965384522461184/img/OEmVGa4YANToVV1k.jpg",
+      "previewType": "image",
+      "description": "X 用户 Tao Wang（@Tao100086）10月16日发布：让 Gemini 4 Argon（medium）调用开源的 anatomy 技能，做了一支 SpaceX 猛禽二号（Raptor 2）全流量分级燃烧发动机的拆解讲解视频，旁白用 Gemini 3.8 Flash TTS。画面是米白底的等轴测工程图版：标题「猛禽二号发动机 十一大总成拆解与热试车」，左侧是8个章节和11个核心总成清单（万向节与测力环、液氧涡轮泵、富氧预燃室、主燃烧室与喷注器、再生冷却喷管等），底部有试车台实时遥测（主燃烧室压力、推力、涡轮泵转速）；右侧是装在垂直试车架上的发动机线框模型，角标注明267个实体构件、80条管路、1119个深度状态，喷焰用 WebGL 光线步进渲染；全片约1分54秒。作者称效果「还不错」。",
+      "tool": "Gemini 4 Argon（medium）+ anatomy 技能（开源 Claude/agent skill，skills.wheresryan.sh/anatomy）+ Gemini 3.8 Flash TTS",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖自述工具链；anatomy 技能作者 @wheresryan22 称完全开源。未公开本片提示词与代码，未声明许可。封面为帖内视频缩略图（片头工程图版）。",
+      "attribution": "Tao Wang（@Tao100086，X）",
+      "sourceAuthor": "Tao100086",
+      "tags": [
+        "结构可视化",
+        "剖面",
+        "工程图解",
+        "WebGL",
+        "AI配音"
+      ],
+      "publishedAt": "2026-10-16T05:29:22Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T08:57:00.000Z",
+      "updatedAt": "2026-10-16T08:57:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-16T08:57:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 20,
+          "溯源": 13,
+          "复现": 11,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.0618,
+        "finalScore": 89.2,
+        "threshold": 65,
+        "run": "2026-10-16-1640-shanghai"
+      }
+    },
+    {
+      "title": "按住拖动就起波纹的锦鲤池：浮叶、纸船、扔石子、落雨，都由同一张实时波场推着走",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/LearnWithSubhan/status/2110960020804481407",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110959926562721792/img/YHYkQgAfn_uYShnG.jpg",
+      "previewType": "image",
+      "description": "网页作品《Komorebi — Water, at play》（在线可玩：water-opus.vercel.app），页面署名 made by @buildwithsid；X 用户 @LearnWithSubhan 10月16日转发推荐，称用 Opus 5.5 + Three.js 制作（约56赞、43转发）。俯视一汪春日泉池：粉色樱花、苔石、蕨草围着清澈的浅水，锦鲤在水里游，影子投在池底。底部工具栏可切换互动：按住拖动造浪、点击喂锦鲤、放一片浮叶、放一只折纸船、扔一颗石子、来一阵小雨，还有风吹涟漪；页面代码里能看到「波场」（wave field）缓冲区、波速设置以及「锦鲤响应」「纸船响应」「浮叶漂移」等模块，说明鱼、船、叶都会被同一片水面波动推动。适合做波的叠加、干涉和水面折射的科普镜头。",
+      "tool": "Three.js（转发者称由 Claude Opus 5.5 编写）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作品页脚署名 @buildwithsid（x.com/buildwithsid），本条来源帖为 @LearnWithSubhan 转发推荐，未找到原作者首发帖；未公开源码与提示词，许可未声明。功能描述来自在线页面与打包脚本中的界面文案。封面为来源帖视频缩略图（池塘俯视全景）。",
+      "attribution": "@buildwithsid（作品署名）；@LearnWithSubhan（X 转发）",
+      "sourceAuthor": "buildwithsid",
+      "tags": [
+        "Three.js",
+        "流体模拟",
+        "物理动效",
+        "3D交互",
+        "微缩场景"
+      ],
+      "publishedAt": "2026-10-16T05:04:23Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T08:57:00.000Z",
+      "updatedAt": "2026-10-16T08:57:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-16T08:57:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 74,
+        "baseBreakdown": {
+          "实体": 23,
+          "科普": 13,
+          "溯源": 11,
+          "复现": 8,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.2359,
+        "finalScore": 91.5,
+        "threshold": 65,
+        "run": "2026-10-16-1640-shanghai"
+      }
+    },
+    {
+      "title": "一台会「拆开」的意式咖啡机：按真实毫米尺寸画的120个零件，拉杆升到9 bar，铜锅炉和振动泵依次露出来",
+      "category": "motion",
+      "styleFamily": "code",
+      "source": "https://x.com/weilicdrv/status/2110994826225476034",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110994565834686464/img/RJS6oxnZBM8kd0gn.jpg",
+      "previewType": "image",
+      "description": "X 用户 @weilicdrv 10月16日发布：用 Claude Opus 5.5 加 /anatomy 与 /anatomy-reveal 两个技能，做了一台会拆解的单头 E61 换热式意式咖啡机。作者说按真实毫米尺寸建模、共120个零件，拉杆升到9 bar、蒸汽阀、冲煮手柄都能动；拆开后能看到铜锅炉、水箱、振动泵和压力开关；并强调「不是3D软件，是一张一张矢量画出来的」。封面是米白底的等轴测技术插图：Fig 1「ANATOMY · ESPRESSO MACHINE」，机身顶部放着三只倒扣的杯子，右下角标注 single group · E61 · heat exchanger。可直接做「家电内部怎么工作」类科普镜头（换热器原理、9 bar 萃取压力）。",
+      "tool": "Claude Opus 5.5 + anatomy / anatomy-reveal 技能（矢量等轴测动画）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖自述，引用 @wheresryan22 的 anatomy 技能发布帖；未公开本片提示词与代码，许可未声明。与库内 @bytwize 土耳其茶壶剖面同属「AI 拆解图」路线，但对象与机制不同。封面为帖内视频缩略图。",
+      "attribution": "@weilicdrv（X）",
+      "sourceAuthor": "weilicdrv",
+      "tags": [
+        "结构可视化",
+        "剖面",
+        "交互揭示",
+        "矢量动画"
+      ],
+      "publishedAt": "2026-10-16T07:22:41Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T08:57:00.000Z",
+      "updatedAt": "2026-10-16T08:57:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-16T08:57:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 75,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 18,
+          "溯源": 12,
+          "复现": 10,
+          "风格": 10,
+          "新颖": 5
+        },
+        "multiplier": 1.1,
+        "finalScore": 82.5,
+        "threshold": 65,
+        "run": "2026-10-16-1640-shanghai"
+      }
+    },
+    {
+      "title": "6.5万根毛的毛绒蜘蛛，八条腿会找地面落脚：能摸、会躲、会跳，全是 Three.js 和着色器写的",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/thebuggeddev/status/2110983989041520870",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110983785147949056/img/PK1XMihdN256nQwB.jpg",
+      "previewType": "image",
+      "description": "X 用户 @thebuggeddev 10月16日发布：用 Gemini 4 Argon 生成一只程序化的毛绒蜘蛛玩偶，并给它绑定了骨骼——八条腿带物理感、会根据地面高度调整落脚点，身体运动自然；可以用鼠标摸它、看它反应、让它跳来跳去，全程没碰 Blender。作者说这一版有约6.5万根毛发和刺绣细节，全部用 Three.js 和 GLSL 着色器实现。封面是米色背景上一只深灰毛绒蜘蛛，底部有九种配色切换和「Silk Drop」（吐丝下坠）按钮。可借来讲多足动物步态与「逆向运动学」（先定脚落在哪，再反推关节怎么弯）。",
+      "tool": "Gemini 4 Argon + Three.js + GLSL 着色器",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖自述；未公开提示词、源码与在线地址，许可未声明。封面为帖内视频缩略图。",
+      "attribution": "@thebuggeddev（X）",
+      "sourceAuthor": "thebuggeddev",
+      "tags": [
+        "Three.js",
+        "物理动效",
+        "程序化生成",
+        "3D交互",
+        "毛发着色器"
+      ],
+      "publishedAt": "2026-10-16T06:39:37Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T08:57:00.000Z",
+      "updatedAt": "2026-10-16T08:57:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-16T08:57:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 66,
+        "baseBreakdown": {
+          "实体": 21,
+          "科普": 11,
+          "溯源": 10,
+          "复现": 6,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.2359,
+        "finalScore": 81.6,
+        "threshold": 65,
+        "run": "2026-10-16-1640-shanghai"
+      }
+    },
+    {
       "title": "51 种风格、每支都是 Claude 写代码拍的：Lemo-Opuscar 官方图鉴（含 OPUSCAR 98）",
       "category": "video",
       "styleFamily": "code",
@@ -8807,7 +9018,7 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条",
-  "updatedAt": "2026-10-16T08:45:00.000Z",
-  "totalItems": 205
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条",
+  "updatedAt": "2026-10-16T08:57:00.000Z",
+  "totalItems": 209
 }
