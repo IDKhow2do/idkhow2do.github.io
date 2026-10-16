@@ -4,6 +4,59 @@
   "exportedCount": 115,
   "items": [
     {
+      "title": "开源一整支 Blender 3D 团队：概念设计到建模，Claude Code 通过 MCP 就能指挥",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "is3d": true,
+      "source": "https://x.com/emmanuel_2m/status/2110342352665473156",
+      "sourceCodeUrl": "https://github.com/scenario-labs/blender-plugin",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-scenario-blender-plugin.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2110341167745282048/vid/avc1/1920x1080/m0kAWre8eLhiSKiF.mp4",
+      "description": "Scenario 联合创始人 Emmanuel de Maistre（@emmanuel_2m）2026-10-14 发帖：刚把「一整支 3D 团队」开源进 Blender。Scenario 插件可以在 Blender 里直接用，也可以交给 Claude Code，通过 MCP 指挥。帖子按文件夹列出岗位：概念设计师（一句话出概念图、从当前视口取参考）、3D 艺术家（文字或照片生成网格，给选中的网格重贴图或重拓扑）、动画师（给选中角色绑骨、用文字出动作）、材质师（任意材质槽上 PBR、用照片出贴图）、布局师（一段描述出灰盒、360 世界和天空）、摄影师（一句话出相机路径：环绕、推拉、升降、飞越）、渲染师（视口出静帧、预览出成片）、声音设计（音乐、人声、音效落到序列器）。公开仓库 scenario-labs/blender-plugin（GPL-3.0-or-later，Blender 5.0+）写明：在视口里生成图像、视频、3D 和 PBR 材质，并在本机提供 MCP。帖内为约 79 秒演示。可拍角度：①一个插件拆成八个岗位的流水线；②同一句需求，Claude Code 经 MCP 改视口里的网格；③从灰盒到成片，适合 3D 建模向口播。",
+      "tool": "Scenario for Blender 插件（Blender 5.0+，GPL-3.0-or-later）+ 本地 MCP；Claude Code",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为 @emmanuel_2m 原帖（2026-10-14T12:09:59Z，经公开帖文接口回读，非臆造）。封面为该帖视频缩略图，已下载存于 topic-portal/covers/20261016-scenario-blender-plugin.jpg。sourceCodeUrl 经 GitHub API 核实为 https://github.com/scenario-labs/blender-plugin（描述：Scenario for Blender，视口内图像/视频/3D/PBR，含本地 MCP；许可证 GPL-3.0-or-later）。插件代码许可与帖内视频/缩略图版权分开：封面仅供本门户预览，不代表可再分发成片。未完整播放 79 秒视频。",
+      "attribution": "@emmanuel_2m（Emmanuel de Maistre，Scenario）",
+      "sourceAuthor": "emmanuel_2m",
+      "tags": [
+        "用户指定收纳",
+        "Blender",
+        "MCP",
+        "3D建模",
+        "Claude Code",
+        "开源"
+      ],
+      "publishedAt": "2026-10-14T12:09:59Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T09:20:00.000Z",
+      "updatedAt": "2026-10-16T09:20:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-16T09:20:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-16T09:20:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为帖内视频缩略图，本轮下载 HTTP 200，JPEG 1200×675。",
+        "video_check": "未完整播放 79 秒视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-16"
+      }
+    },
+    {
       "title": "一卷卫生纸半夜出门看海：纸尾巴是实时绳索物理，沙沙声跟着滚速变",
       "category": "frontend",
       "styleFamily": "code",
@@ -54,7 +107,8 @@
         "finalScore": 98.0,
         "threshold": 65,
         "run": "2026-10-16-1240-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "一句话描述一台机器，Claude 造出能剖开、能弄坏、数字全靠算的 3D 仿真",
@@ -109,7 +163,8 @@
         "finalScore": 132.2,
         "threshold": 65,
         "run": "2026-10-16-0840-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "一块能切开看地层的小岛：开源 Three.js 程序化地形出了「迷你剖面沙盘」",
@@ -164,7 +219,8 @@
         "finalScore": 110.9,
         "threshold": 65,
         "run": "2026-10-16-0840-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "16亿个三角形的宫殿，在浏览器里实时路径追踪：three.js meshlet 渲染器第4阶段",
@@ -216,7 +272,8 @@
         "finalScore": 91.7,
         "threshold": 65,
         "run": "2026-10-16-0840-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "90年代工作台当作品集：软盘插进 Mac、卡带插进红白机，台灯真能开",
@@ -268,7 +325,8 @@
         "finalScore": 83.5,
         "threshold": 65,
         "run": "2026-10-16-0840-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "不会描述动效？一本给 AI 用的「动效名字词典」：每个词配会动的样片",
@@ -322,7 +380,8 @@
         "finalScore": 79.2,
         "threshold": 65,
         "run": "2026-10-16-0840-shanghai"
-      }
+      },
+      "is3d": false
     },
     {
       "title": "一根红绳自己编成中国结：开源接触求解器算出每一次穿插和摩擦",
@@ -376,7 +435,8 @@
         "finalScore": 81.0,
         "threshold": 65,
         "run": "2026-10-16-0840-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "一张土耳其双层茶壶照片，变成能剖开看沸水和茶叶的 3D 展品",
@@ -428,7 +488,8 @@
         "finalScore": 81.2,
         "threshold": 65,
         "run": "2026-10-16-0840-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "浏览器里的鲁布·戈德堡机械：10个机关一条链，还带能量曲线",
@@ -479,7 +540,8 @@
         "finalScore": 85.0,
         "threshold": 65,
         "run": "2026-10-16-0840-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "敲一下键，字杆真的抬起、滑架真的移位：Three.js 机械打字机",
@@ -530,7 +592,8 @@
         "finalScore": 73.0,
         "threshold": 65,
         "run": "2026-10-16-0840-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "选一个影院座位，飞过去从那一排看大屏：房间被电影自己照亮",
@@ -585,7 +648,8 @@
         "finalScore": 118.7,
         "threshold": 65,
         "run": "2026-10-15-2040-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "铅笔线+纸纹+剖面：把一座建筑画成可旋转的纸上施工图",
@@ -638,7 +702,8 @@
         "finalScore": 100.0,
         "threshold": 65,
         "run": "2026-10-15-2040-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "车漆为什么看起来「又一层玻璃」？浏览器路径追踪做出双层清漆",
@@ -691,7 +756,8 @@
         "finalScore": 94.4,
         "threshold": 65,
         "run": "2026-10-15-2040-shanghai"
-      }
+      },
+      "is3d": false
     },
     {
       "title": "富士山顶修一座跳台，人能飞出世界纪录的四倍远吗？",
@@ -742,7 +808,8 @@
         "finalScore": 67.6,
         "threshold": 65,
         "run": "2026-10-15-2040-shanghai"
-      }
+      },
+      "is3d": false
     },
     {
       "title": "浏览器里的赛车模拟：轮胎按胎体刚度和侧偏角实时变形",
@@ -794,7 +861,8 @@
         "finalScore": 102.5,
         "threshold": 65,
         "run": "2026-10-15-1640-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "替身能用物理造出来吗？1000架手掌无人机拼成9米高的人形",
@@ -846,7 +914,8 @@
         "finalScore": 70.7,
         "threshold": 65,
         "run": "2026-10-15-1640-shanghai"
-      }
+      },
+      "is3d": false
     },
     {
       "title": "拿手机扫一圈房间，几分钟变成AI能量尺寸、能规划路线的3D场景",
@@ -901,7 +970,8 @@
         "finalScore": 88.0,
         "threshold": 65,
         "run": "2026-10-15-1640-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "同一道题四个模型交卷：Three.js 里晃动的玛格丽特酒",
@@ -952,7 +1022,8 @@
         "finalScore": 79.6,
         "threshold": 65,
         "run": "2026-10-15-1640-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "一串随机数抽出一座漫画小镇：城下町、坡道町、水都，还能导出3D模型",
@@ -1006,7 +1077,8 @@
         "finalScore": 94.3,
         "threshold": 65,
         "run": "2026-10-15-1240-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "10万块多米诺倒下去，拼出一座赤富士：一块能推倒比自己大1.5倍的",
@@ -1059,7 +1131,8 @@
         "finalScore": 87.4,
         "threshold": 65,
         "run": "2026-10-15-1240-shanghai"
-      }
+      },
+      "is3d": false
     },
     {
       "title": "线香花火超微距：0.1毫米的火星自己炸开、再炸开，最多8次就是“松叶”",
@@ -1112,7 +1185,8 @@
         "finalScore": 86.4,
         "threshold": 65,
         "run": "2026-10-15-1240-shanghai"
-      }
+      },
+      "is3d": false
     },
     {
       "title": "瓶中风暴：摇一摇瓶子，浪拍上玻璃，小船拼命保持直立",
@@ -1165,7 +1239,8 @@
         "finalScore": 86.7,
         "threshold": 65,
         "run": "2026-10-15-1240-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "没有模型、贴图和关键帧：1500行着色器算出一只纸箱机器人",
@@ -1218,7 +1293,8 @@
         "finalScore": 65.6,
         "threshold": 65,
         "run": "2026-10-15-1240-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "浏览器里的路径追踪：460万三角的场景，半秒建完BVH还能降噪",
@@ -1273,7 +1349,8 @@
         "finalScore": 119.8,
         "threshold": 65,
         "run": "2026-10-15-0840-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "鼠标拖出的粒子火花：桌面和网页同一套 Three.js 烟火",
@@ -1327,7 +1404,8 @@
         "finalScore": 109.5,
         "threshold": 65,
         "run": "2026-10-15-0840-shanghai"
-      }
+      },
+      "is3d": false
     },
     {
       "title": "无限草地怎么只占固定内存：刀片回收 + 风场顶点着色器",
@@ -1379,7 +1457,8 @@
         "finalScore": 104.5,
         "threshold": 65,
         "run": "2026-10-15-0840-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "把官网扔给Claude：一段提示词拍出14.5秒WebGL飞越片",
@@ -1431,7 +1510,8 @@
         "finalScore": 81.2,
         "threshold": 65,
         "run": "2026-10-15-0840-shanghai"
-      }
+      },
+      "is3d": false
     },
     {
       "title": "Excel也能定格动画：一格两千个形状，再凸成Blender地形",
@@ -1483,7 +1563,8 @@
         "finalScore": 79.0,
         "threshold": 65,
         "run": "2026-10-15-0840-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "WebGPU布料求解器续测：布面自己皱起来",
@@ -1534,7 +1615,8 @@
         "finalScore": 84.3,
         "threshold": 65,
         "run": "2026-10-15-0840-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "程序化棒球帽：布料帽檐加上宝石切面",
@@ -1586,7 +1668,8 @@
         "finalScore": 69.6,
         "threshold": 65,
         "run": "2026-10-15-0840-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "Claude 手感为什么舒服：用 REA 逆向 Claude Desktop 的交互物理学",
@@ -1619,7 +1702,8 @@
         "notInterested": false,
         "updatedAt": "2026-10-14T18:55:00.000Z"
       },
-      "sourceCodeUrl": "https://github.com/Caho1/open-claude-ui"
+      "sourceCodeUrl": "https://github.com/Caho1/open-claude-ui",
+      "is3d": false
     },
     {
       "title": "REA 挖出的 Claude 前端细节：4层底色分层、内侧亮线、0.5px分割线",
@@ -1650,7 +1734,8 @@
         "favorite": true,
         "notInterested": false,
         "updatedAt": "2026-10-14T18:55:00.000Z"
-      }
+      },
+      "is3d": false
     },
     {
       "title": "Anatomy 风格 3D 知识动画：Ask by Jig 免费生成",
@@ -1681,7 +1766,8 @@
         "favorite": true,
         "notInterested": false,
         "updatedAt": "2026-10-14T18:55:00.000Z"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "《蓦然回首》剪纸拼贴混剪：我无法改变失去你的事实，但我决定继续创作下去",
@@ -1710,7 +1796,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "作为一名软件工程师，现在我的每一行代码都是 AI 写的。这篇文章和大家聊聊 Vibe Coding 开发速度真的不能和软件质量兼得吗？在 V…",
@@ -1738,7 +1825,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "提示词： 我要做一个全屏网页交互场景：\"树脂块微缩岛屿\"。参考我上传的参考图，做出一张树脂方块里装着悬崖、沙滩和清澈青绿海水的实拍风格图，要…",
@@ -1766,7 +1854,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": true
     },
     {
       "title": "转臂牵动软布：把实时形变与碰撞做成可观察实验",
@@ -1801,7 +1890,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": true
     },
     {
       "title": "Reverse Engineer Anything 😂 Software is done.",
@@ -1829,7 +1919,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "我感觉这套 Opus 5.5 制作短剧漫剧的流程基本成型，已经跑得很通了。 下面这个 preview 视频就是 Opus 5.5 制作完成的…",
@@ -1857,7 +1948,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "video_model"
+      "styleFamily": "video_model",
+      "is3d": false
     },
     {
       "title": "省流版：这是我深度使用 Opus 5.5 加 MiniMax H3 制作 AI 短剧的总结，一共 16 个技巧",
@@ -1885,7 +1977,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "video_model"
+      "styleFamily": "video_model",
+      "is3d": false
     },
     {
       "title": "The jelly world just got its own tiny ocean 🌊🍮 Claude Opus 5.5 vs GPT-…",
@@ -1913,7 +2006,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "真是一个小众，但是被低估的skills 好看，但是貌似不实用 但是，真有趣呀。",
@@ -1941,7 +2035,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "Such a good skill for visual explainers. All SVG and animated. Prompt…",
@@ -1969,7 +2064,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "还记得生物课本上孟德尔的豌豆杂交实验吗？ 刚用Claude Opus 5.5，one shot，30分钟就实现了这个可以操作的模拟实验。 O…",
@@ -1997,7 +2093,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "用自己的声音做配音，5款TTS实测后我会怎么选",
@@ -2025,7 +2122,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "学弟给我分享了一套非常精致的动效组件库，33 个等距视角的线稿插画，跟着鼠标动，光标挪过去，线条就会做出各自的反应。 用起来很轻，全是 SV…",
@@ -2053,7 +2151,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "如何用 Grok Bot 做内容？ bot 军团全部开源（一键安装）",
@@ -2081,7 +2180,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "未来 3 年,会做 AI 视频的人和会当导演的人,差在哪",
@@ -2109,7 +2209,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "video_model"
+      "styleFamily": "video_model",
+      "is3d": false
     },
     {
       "title": "自媒体内容创作工作流继续更新👇 1. 新增解说视频的叙事风格 2. 一键多平台发布：接入开源的 social-auto-upload，一条命…",
@@ -2137,7 +2238,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "此视频全部由opus5.5制作 搜集了15种爆火的视频制作风格，以及对应的使用场景 分享给大家！！",
@@ -2165,7 +2267,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "video_model"
+      "styleFamily": "video_model",
+      "is3d": false
     },
     {
       "title": "这个挺好 打开codex直接说“帮我设置 local_thread_store_compression = true” 压缩codex聊天记…",
@@ -2193,7 +2296,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "How do always-on, proactive agents like @Bot work? Watch my lecture at…",
@@ -2221,7 +2325,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "万字报告，个人 Agent 竞品分析，谁最适合当你的助理？",
@@ -2249,7 +2354,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "Three.js 的开发者Mr.doob配享太庙！！ AI 让更多人拥有了创造能力， 而 Three.js 这样的开源项目， 早在十多年前就…",
@@ -2277,7 +2383,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "Opus 5.5 Motion Lab: Make Claude Animate Like a Studio",
@@ -2305,7 +2412,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "用Grok Bot搭建自媒体团队：保姆级教程",
@@ -2333,7 +2441,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "总结一下，推荐收藏 Claude Code目前最爽用法：主 Agent + 哑子 Agent 架构。 1. 子 Agent：只管生成，绝不试…",
@@ -2361,7 +2470,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "🔥 发现一个神仙级的「交互式教学工具库」！ 告别无聊单调的 PPT，不用安装任何软件，打开网页直接用。 超级适合课堂投屏演示，或者让学生自主…",
@@ -2389,7 +2499,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "一篇速通入门：重新理解 AI Agent 的一切",
@@ -2417,7 +2528,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "Introducing Anatomy Describe a machine in one line. Claude brings it t…",
@@ -2445,7 +2557,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": true
     },
     {
       "title": "AI 时代，人在没有天花板的地方工作，毫无疑问是未来的生活方式。 而这种生活方式背后的基建之一，是Vibe42 这两天高频使用下来，体验太好…",
@@ -2473,7 +2586,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "五个月4万粉，变现6位数：普通人从0开始的𝕏涨粉指北",
@@ -2501,7 +2615,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "Lee Robinson 在斯坦福 CS146S 讲 Grok Bot 的工作原理的视频，非常值得一看，把一些 Grok Bot 的内部工作…",
@@ -2529,7 +2644,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "兄弟们，我爆肝了半个月，把 AI 画图能用到的风格全部梳理了一遍！ 13 大领域，157 个谱系，1617 种风格！ 起因很简单：做图做久了…",
@@ -2557,7 +2673,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "draw"
+      "styleFamily": "draw",
+      "is3d": false
     },
     {
       "title": "AI同质化如何选题：从入门到榨干",
@@ -2585,7 +2702,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "摊牌了，我抄袭了3位大佬的作品！！！ 事情是这样的，写完的内容多平台分发一直是一个痛点 @kaitoxhacker 的“Kaitox for…",
@@ -2613,7 +2731,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "Anthropic 这次出手挺大方，22 门 Claude 课程直接全免，一分钱不要。 我把这些课挨个过了一遍，坦白说，有些内容比较凑数，有…",
@@ -2641,7 +2760,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "我不允许认识我的任何一个人再被封号。Baga。",
@@ -2669,7 +2789,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "我愿称之为史上最强 skills",
@@ -2697,7 +2818,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "如何让 AI 帮助我们理解 AI 的输出",
@@ -2725,7 +2847,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "积木说明书可回退：把装配顺序变成分步交互",
@@ -2776,7 +2899,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": true
     },
     {
       "title": "没有领头鸟的队形：用局部规则看见群体秩序",
@@ -2811,7 +2935,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": true
     },
     {
       "title": "标本展台不停场：页面切换时保留同一件3D主体",
@@ -2869,7 +2994,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": true
     },
     {
       "title": "wok，做动效最大的痛点彻底打通，Claude Motion + Higgsfield Katana，一个人就能承包一整个工作室！！！ Cl…",
@@ -2897,7 +3023,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "video_model"
+      "styleFamily": "video_model",
+      "is3d": false
     },
     {
       "title": "从像素效果到可拼图纸：火箭徽章的逐格配色工作台",
@@ -2953,7 +3080,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "多层球壳剖视：把裁剪规则变成可见结构",
@@ -3010,7 +3138,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": true
     },
     {
       "title": "异形笔刷拖尾：让标题留下有方向的彩色印迹",
@@ -3079,7 +3208,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "旅行照片试光：保留构图，比较不同光感",
@@ -3138,7 +3268,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "draw"
+      "styleFamily": "draw",
+      "is3d": false
     },
     {
       "title": "Platen 慢邮件：薄纸信封与空间翻转",
@@ -3187,7 +3318,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "家具先试摆：用三张参考图比较客厅搭配",
@@ -3243,7 +3375,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "draw"
+      "styleFamily": "draw",
+      "is3d": false
     },
     {
       "title": "会回应的科普角色：身体动作与表情分开控制",
@@ -3294,7 +3427,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": true
     },
     {
       "title": "纸箱开合：把包装结构变成可回看的装配说明",
@@ -3343,7 +3477,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": true
     },
     {
       "title": "像素坠落成体素：让影像碎成可拾回的积木",
@@ -3392,7 +3527,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": true
     },
     {
       "title": "海报拆层：把平面成稿变成可独立移动的物件",
@@ -3443,7 +3579,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "draw"
+      "styleFamily": "draw",
+      "is3d": false
     },
     {
       "title": "ISO-GLOW｜发光等距物件与城市交互 Skill",
@@ -3481,7 +3618,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "桌面地毯：把乱文件扫到毯子下面",
@@ -3512,7 +3650,8 @@
         "notInterested": false,
         "updatedAt": "2026-10-08T09:53:19.059Z"
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "Last Train to the Sea｜云端列车 2.5D 童话世界",
@@ -3548,7 +3687,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "model_3d"
+      "styleFamily": "model_3d",
+      "is3d": true
     },
     {
       "title": "声音 × 运动双驱动视觉｜Blender 粒子与定格环绕",
@@ -3588,7 +3728,8 @@
         "notInterested": false,
         "updatedAt": "2026-10-08T09:41:24.741Z"
       },
-      "styleFamily": "model_3d"
+      "styleFamily": "model_3d",
+      "is3d": true
     },
     {
       "title": "照片浮雕打光：让器物纹理随光显现",
@@ -3632,7 +3773,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "model_3d"
+      "styleFamily": "model_3d",
+      "is3d": true
     },
     {
       "title": "连续形变 UI｜播放器、开关与命令面板",
@@ -3672,7 +3814,8 @@
         "notInterested": false,
         "updatedAt": "2026-10-08T05:14:58.372Z"
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "揉皱纸片作品集：从纸团展开一张故事卡",
@@ -3708,7 +3851,8 @@
         "notInterested": false,
         "updatedAt": "2026-10-08T05:14:44.754Z"
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": true
     },
     {
       "title": "纸艺赛车 / Kâğıt Kart｜立体书纸艺赛车",
@@ -3756,7 +3900,8 @@
         "notInterested": false,
         "updatedAt": "2026-10-08T05:14:38.626Z"
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": true
     },
     {
       "title": "流体透视：擦开表面，让内部结构显现",
@@ -3790,7 +3935,8 @@
         "notInterested": false,
         "updatedAt": "2026-10-08T05:14:48.194Z"
       },
-      "styleFamily": "model_3d"
+      "styleFamily": "model_3d",
+      "is3d": true
     },
     {
       "title": "虹彩玻璃台灯：用真实产品校准薄膜干涉材质",
@@ -3825,7 +3971,8 @@
         "notInterested": false,
         "updatedAt": "2026-10-08T05:14:56.794Z"
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": true
     },
     {
       "title": "同一角色的日常表情包：Qwen 官方角色一致性案例",
@@ -3859,7 +4006,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "draw"
+      "styleFamily": "draw",
+      "is3d": false
     },
     {
       "title": "充气按钮：把布料物理烘焙成可重播网页动效",
@@ -3901,7 +4049,8 @@
         "notInterested": false,
         "updatedAt": "2026-10-08T05:14:53.523Z"
       },
-      "styleFamily": "model_3d"
+      "styleFamily": "model_3d",
+      "is3d": true
     },
     {
       "title": "雨夜便利店 · 可交互微缩街角",
@@ -3944,7 +4093,8 @@
         "notInterested": false,
         "updatedAt": "2026-10-08T05:14:50.104Z"
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": true
     },
     {
       "title": "Efecto · 把头像做成少色点阵海报",
@@ -3982,7 +4132,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "draw"
+      "styleFamily": "draw",
+      "is3d": false
     },
     {
       "title": "Prompt Motion｜Claude 动效与 Prompt / Skill 画廊",
@@ -4030,7 +4181,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "地图跟随叙事：让路线与活动日程一起前进",
@@ -4077,7 +4229,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "玻璃质感产品｜Aura — Hear the Light",
@@ -4129,7 +4282,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "移轴微缩｜Toy Town Rush Hour",
@@ -4181,7 +4335,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "暗色科技发布｜Room to Think",
@@ -4233,7 +4388,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "ASCII / CRT 终端｜Tranquility.log",
@@ -4285,7 +4441,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "蓝图 / 工程制图｜Patent Pending: The Cloud Catcher",
@@ -4337,7 +4494,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "装饰艺术｜Midnight at the Starlight Hotel",
@@ -4389,7 +4547,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "60s 间谍片头｜The Velvet Cipher",
@@ -4441,7 +4600,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "木刻版画｜The Bell Founder",
@@ -4493,7 +4653,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "Risograph 丝网印刷｜Sunday Ride",
@@ -4545,7 +4706,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "红色窗花剪纸｜Nian Comes to Town",
@@ -4597,7 +4759,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "浮世绘｜A Journey Toward the Mountain",
@@ -4649,7 +4812,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "皮影戏｜Hou Yi Shoots the Suns",
@@ -4701,7 +4865,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "油画厚涂｜The Colour of Rain",
@@ -4753,7 +4918,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "中国水墨｜The Swordsman and the River",
@@ -4805,7 +4971,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "蜡笔儿童绘本｜The Moon Can't Sleep",
@@ -4857,7 +5024,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "综艺花字｜喵呜日记 EP.07",
@@ -4909,7 +5077,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "液态流动｜drop.「万物始于一滴」",
@@ -4961,7 +5130,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": true
     },
     {
       "title": "像素风｜PIXEL QUEST 像素冒险",
@@ -5013,7 +5183,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "复古 / Synthwave｜NEON DRIVE「霓虹夜驰 1986」",
@@ -5066,7 +5237,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": true
     },
     {
       "title": "几何构成 / 包豪斯｜二十拍构成 KONSTRUKTION",
@@ -5119,7 +5291,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "弥散渐变 / 玻璃拟态｜Aurora「思考，自有光」",
@@ -5172,7 +5345,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "拼贴剪贴｜NOGGIN 脑洞季刊",
@@ -5224,7 +5398,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "赛博朋克 / HUD｜隼眼-9 · 目标锁定",
@@ -5277,7 +5452,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": true
     },
     {
       "title": "贴纸风 / 科普｜一部手机里，藏着多少种元素？",
@@ -5330,7 +5506,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "形变动画｜morphe.「一形万象」",
@@ -5382,7 +5559,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "3D 渲染｜soft.「柔软着陆」",
@@ -5434,7 +5612,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "model_3d"
+      "styleFamily": "model_3d",
+      "is3d": true
     },
     {
       "title": "线条动画｜ATELIER LINEA「一笔画」",
@@ -5486,7 +5665,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "扁平矢量｜popwise「One Dot」",
@@ -5538,7 +5718,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "等轴 2.5D｜ISOPOLIS「让城市自己生长」",
@@ -5590,7 +5771,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": true
     },
     {
       "title": "逐帧手绘｜手作 HAND MADE",
@@ -5642,7 +5824,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "山崖博物馆：让作品集成为一段空间探索",
@@ -5688,7 +5871,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "model_3d"
+      "styleFamily": "model_3d",
+      "is3d": true
     },
     {
       "title": "可玩的解释：把抽象连接变成可观察反馈",
@@ -5736,7 +5920,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "学习的形状：科学图册式 AI 历史科普",
@@ -5785,7 +5970,8 @@
         "updatedAt": null
       },
       "attribution": "@KeWai386772",
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "照见 · ILLUMINE｜敦煌镜窟",
@@ -5820,7 +6006,8 @@
         "updatedAt": null
       },
       "attribution": "@KeWai386772",
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": true
     },
     {
       "title": "记忆小屋：把相册展开成可触摸的空间",
@@ -5871,7 +6058,8 @@
         "updatedAt": null
       },
       "attribution": "@KeWai386772",
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "category": "motion",
@@ -5922,7 +6110,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "category": "motion",
@@ -5973,7 +6162,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "深色产品页：先讲价值，再展示证据",
@@ -6018,7 +6208,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "微缩场景：把产品变成一个小世界",
@@ -6062,7 +6253,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "draw"
+      "styleFamily": "draw",
+      "is3d": false
     },
     {
       "title": "瑞士网格：让信息按节拍归位",
@@ -6109,7 +6301,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "全息扫描：把产品参数变成可见结构",
@@ -6156,7 +6349,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "像素向导：把软件操作演给人看",
@@ -6207,7 +6401,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "水彩长镜头：讲清自然变化",
@@ -6254,7 +6449,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "丝印旅行海报：让路线分层出现",
@@ -6301,7 +6497,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "铜版博物图：让细节成为证据",
@@ -6348,7 +6545,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "纸片立体书：用翻页展开故事",
@@ -6395,7 +6593,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "翻牌字与界面穿梭：连续镜头的节奏",
@@ -6436,7 +6635,8 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "这家伙把打字机滑块直接做成了一盏能调角度的小射灯 再看看现在大家都在做千篇一律的白板编辑器，能把敲字仪式感做成这样，审美真的牛逼",
@@ -6461,7 +6661,8 @@
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108371786585063891。",
       "attribution": "@ianneo_ai",
       "updatedAt": "2026-10-14T07:54:31.000Z",
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "X书签保存Skill x Teamily，实现书签打捞学习",
@@ -6486,7 +6687,8 @@
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108346962986909740。",
       "attribution": "@Pluvio9yte",
       "updatedAt": "2026-10-14T07:52:46.000Z",
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "我的第一次企业 AI 交付：一单 3300 元的企业智能体，踩过的坑和接下来的打算",
@@ -6511,7 +6713,8 @@
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108529945064640775。",
       "attribution": "@Kainative",
       "updatedAt": "2026-10-14T07:52:46.000Z",
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "用 AI 重塑你的学习范式，轻松且高效",
@@ -6536,7 +6739,8 @@
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108474440904495566。",
       "attribution": "@Aoyi21",
       "updatedAt": "2026-10-14T07:52:46.000Z",
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "入职大厂两个月，我的 AI 开发心得",
@@ -6561,7 +6765,8 @@
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108577165306687938。",
       "attribution": "@huangtongxueh",
       "updatedAt": "2026-10-14T07:52:46.000Z",
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "我靠，这个是怎么做到的？ 这相当于我可以脱离电脑的 Codex 和 Claude Code 来自动操作手机。也就是说，它是不是直接 hack…",
@@ -6586,7 +6791,8 @@
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108384516847100170。",
       "attribution": "@turingou",
       "updatedAt": "2026-10-14T07:52:46.000Z",
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "iPhone AGI has been achieved 🔥🔥 An agent running entirely on my iPhone…",
@@ -6611,7 +6817,8 @@
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108279639538012265。",
       "attribution": "@finnvoorhees",
       "updatedAt": "2026-10-14T07:52:46.000Z",
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "几个提高审美的网站推荐： 高质量设计灵感推荐 最好的微动效网站 最好的落地页参考网站 设计参考大全 品牌设计参考站 专注于优秀的背景图网站",
@@ -6636,7 +6843,8 @@
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108374105716400315。",
       "attribution": "@Jackywine",
       "updatedAt": "2026-10-14T07:54:31.000Z",
-      "styleFamily": "draw"
+      "styleFamily": "draw",
+      "is3d": false
     },
     {
       "title": "卧槽，这个神仙级的「交互式教学工具库」持续更新中 刚刚上新了！新增了地理学科“水循环”的演示， 这个效果调了3个小时才实现！ 🔗 老师们、演…",
@@ -6661,7 +6869,8 @@
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108511734919205112。",
       "attribution": "@jinglian",
       "updatedAt": "2026-10-14T07:54:31.000Z",
-      "styleFamily": "code"
+      "styleFamily": "code",
+      "is3d": false
     },
     {
       "title": "GPT-Image2 提示词库开源才两天，GitHub 星标就冲到 18000，你还没上车？ 工业级的提示词引擎、海量模板持续更新、拿来就能…",
@@ -6686,7 +6895,8 @@
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108302161343869305。",
       "attribution": "@kfhshl",
       "updatedAt": "2026-10-14T07:54:31.000Z",
-      "styleFamily": "draw"
+      "styleFamily": "draw",
+      "is3d": false
     },
     {
       "title": "Grok Bot 额度超长续航保姆级新手指南（直接发给 Bot！）",
@@ -6711,7 +6921,8 @@
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108504325609984233。",
       "attribution": "@cgnot996",
       "updatedAt": "2026-10-14T07:52:46.000Z",
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "爆款密码：我把100年以来的百本心理学与传播学经典，蒸馏成 216 个传播机制——爆款技巧会过期，这些不会",
@@ -6736,7 +6947,8 @@
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108019828753924289。",
       "attribution": "@dboy_yi2025",
       "updatedAt": "2026-10-14T07:52:46.000Z",
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "朋友问我，开发产品有哪些必备的 skill，我就结合我本地装的用的多的，做了个整理，涵盖原型设计、UI 设计、代码、测试、运营一整个流程的万…",
@@ -6761,7 +6973,8 @@
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108390858764763472。",
       "attribution": "@kongge_space",
       "updatedAt": "2026-10-14T07:52:46.000Z",
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "REA（Reverse Engineer Anything）逆向一切 三天从 3 万 Star 涨到 12 万+，一天新增 2.5 万以上。…",
@@ -6786,7 +6999,8 @@
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2109567957890429431。",
       "attribution": "@jinglian",
       "updatedAt": "2026-10-14T07:52:46.000Z",
-      "styleFamily": "other"
+      "styleFamily": "other",
+      "is3d": false
     },
     {
       "title": "Opus 5.5 + 即梦 CLI 试了一下，让 Opus 5.5 结合视频模型做故事片表达 没想到效果还不错，所有的编排、视频特效、提示词…",
@@ -6811,7 +7025,8 @@
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2109515395749310821。",
       "attribution": "@op7418",
       "updatedAt": "2026-10-14T07:52:46.000Z",
-      "styleFamily": "video_model"
+      "styleFamily": "video_model",
+      "is3d": false
     },
     {
       "title": "可拆解机械腕表：同一提示词考三家模型的齿轮咬合",
@@ -6873,7 +7088,8 @@
         "finalScore": 112.4,
         "threshold": 70,
         "run": "2026-10-14-2040-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "手机网页里的真布料：衣架上的T恤会晃、会叠、会飞进购物袋",
@@ -6934,7 +7150,8 @@
         "finalScore": 113.9,
         "threshold": 70,
         "run": "2026-10-14-2040-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "会呼吸的程序化水母：伞体收缩+GPU上的触须粒子",
@@ -6994,7 +7211,8 @@
         "finalScore": 117.3,
         "threshold": 70,
         "run": "2026-10-14-2040-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "冷压水彩纸上的颜料晕染：鼠标划过，灰画慢慢渗出颜色",
@@ -7054,7 +7272,8 @@
         "finalScore": 110.9,
         "threshold": 70,
         "run": "2026-10-14-2040-shanghai"
-      }
+      },
+      "is3d": false
     },
     {
       "title": "图片被拆成26根丝线：卡片滑到边缘就抽丝、飘散、再织回来",
@@ -7113,7 +7332,8 @@
         "finalScore": 110.6,
         "threshold": 70,
         "run": "2026-10-14-2040-shanghai"
-      }
+      },
+      "is3d": false
     },
     {
       "title": "浏览器里的漩涡：球体一压，水面自己卷出涡旋",
@@ -7170,7 +7390,8 @@
         "finalScore": 88.0,
         "threshold": 70,
         "run": "2026-10-14-2040-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "PIXEL WORLD：160×90个立方体，崩开再拼成下一个世界",
@@ -7231,7 +7452,8 @@
         "finalScore": 74.3,
         "threshold": 70,
         "run": "2026-10-14-2040-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "同一段奔跑换7种材质：颜料、铬、粉末、墨、花、水、线，再从2D走进3D",
@@ -7288,7 +7510,8 @@
         "finalScore": 71.7,
         "threshold": 70,
         "run": "2026-10-14-2040-shanghai"
-      }
+      },
+      "is3d": true
     },
     {
       "title": "热成像剪影+像素实物：一个HTML画布、按语音逐词卡点的20秒片",
@@ -7348,7 +7571,8 @@
         "finalScore": 75.3,
         "threshold": 70,
         "run": "2026-10-14-2040-shanghai"
-      }
+      },
+      "is3d": false
     },
     {
       "title": "Gemini 4 Argon 从第一性原理作画：傅里叶本轮画出骑自行车的鹈鹕",
@@ -7400,7 +7624,8 @@
         "finalScore": null,
         "threshold": 70,
         "run": "user-specified-2026-10-14"
-      }
+      },
+      "is3d": false
     },
     {
       "title": "Gemini 4 Argon 2D转3D：一张维多利亚马车图，零人工纯代码生成WebGL可交互3D资产",
@@ -7452,11 +7677,13 @@
         "finalScore": null,
         "threshold": 70,
         "run": "user-specified-2026-10-14"
-      }
+      },
+      "is3d": true
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条",
-  "updatedAt": "2026-10-16T04:55:00.000Z",
-  "totalItems": 173
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条，并为全库写入 is3d（3D建模 Tab）",
+  "updatedAt": "2026-10-16T09:20:00.000Z",
+  "totalItems": 174,
+  "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }

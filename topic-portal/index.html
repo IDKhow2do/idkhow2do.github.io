@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>选题 · 视觉 · 合并入口</title>
+  <title>选题 · 视觉 · 3D建模</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -25,6 +25,10 @@
       <button class="tab" role="tab" aria-selected="false" data-tab="visuals" id="tab-visuals">
         视觉素材
         <span class="tab-count" id="visualsCount"></span>
+      </button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="models" id="tab-models">
+        3D建模
+        <span class="tab-count" id="modelsCount"></span>
       </button>
     </nav>
 
@@ -73,6 +77,26 @@
         <div class="empty-icon" aria-hidden="true">◇</div>
         <h2>这一类暂时没有匹配的视觉素材</h2>
         <p>换一个分类，或清空搜索；补齐视觉库导出后刷新本页即可看到更多卡片。</p>
+      </div>
+    </section>
+
+    <!-- 3D建模 panel：视觉素材的子集，卡片与反馈同一套 -->
+    <section class="panel" id="panel-models" role="tabpanel" aria-labelledby="tab-models" hidden>
+      <div class="toolbar">
+        <div class="chips" id="modelCategoryChips" role="group" aria-label="3D建模风格"></div>
+        <div class="toolbar-right">
+          <label class="search-wrap">
+            <span class="sr-only">搜索3D建模</span>
+            <input type="search" id="modelSearch" placeholder="搜索标题或描述…" autocomplete="off" />
+          </label>
+        </div>
+      </div>
+      <p class="filter-hint" id="modelsHint"></p>
+      <div class="card-grid" id="modelsGrid"></div>
+      <div class="empty-state hidden" id="modelsEmpty">
+        <div class="empty-icon" aria-hidden="true">◇</div>
+        <h2>这一类暂时没有匹配的 3D 建模</h2>
+        <p>换一个风格，或清空搜索。这些卡片仍保留在「视觉素材」里。</p>
       </div>
     </section>
   </div>

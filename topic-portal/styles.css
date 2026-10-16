@@ -99,9 +99,11 @@ code {
 
 .tabs {
   display: flex;
+  flex-wrap: wrap;
   gap: 4px;
   padding: 4px;
   width: fit-content;
+  max-width: 100%;
   background: rgba(20, 18, 16, 0.05);
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -646,6 +648,8 @@ code {
 @media (max-width: 640px) {
   .app { padding: 28px 16px 72px; }
   .topbar { flex-direction: column; align-items: flex-start; }
+  .tabs { width: 100%; }
+  .tab { padding: 8px 12px; }
   .toolbar { flex-direction: column; align-items: stretch; }
   .toolbar-right { width: 100%; }
   .search-wrap input { width: 100%; }

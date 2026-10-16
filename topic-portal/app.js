@@ -25,6 +25,8 @@
     query: "",
     visualFamily: "全部",
     visualQuery: "",
+    modelFamily: "全部",
+    modelQuery: "",
     visualOverrides: {}, // persisted to localStorage
     topicOverrides: {},
   };
@@ -539,6 +541,82 @@
     });
   }
 
+  /**
+   * 「3D建模」只读数据里写死的 is3d。判定见 visual_items.json 的 is3dRule：
+   * styleFamily model_3d，或标题/标签/描述/工具明确是建模、Blender、Tripo、
+   * three.js 场景、GLB、mesh、SDF、体素、程序化 3D、Unity、游戏资产。
+   * 这些条目仍留在视觉素材里。
+   */
+  function is3dItem(item) {
+    return !!(item && item.is3d === true);
+  }
+
+  function modelPool() {
+    return (state.visuals?.items || []).filter(is3dItem);
+  }
+
+  function renderModelFamilyChips() {
+    const host = $("#modelCategoryChips");
+    if (!host) return;
+    const items = modelPool();
+    host.innerHTML = "";
+    VISUAL_FAMILY_ORDER.forEach((key) => {
+      const count =
+        key === "全部"
+          ? items.length
+          : items.filter((i) => (i.styleFamily || "other") === key).length;
+      const label = key === "全部" ? "全部" : VISUAL_FAMILY_LABEL[key] || key;
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "chip" + (state.modelFamily === key ? " is-active" : "");
+      btn.textContent = `${label} ${count}`;
+      btn.addEventListener("click", () => {
+        state.modelFamily = key;
+        renderModelFamilyChips();
+        renderModels();
+      });
+      host.appendChild(btn);
+    });
+  }
+
+  function filteredModels() {
+    const items = modelPool();
+    const q = state.modelQuery.trim().toLowerCase();
+    return items.filter((item) => {
+      const fam = item.styleFamily || "other";
+      if (state.modelFamily !== "全部" && fam !== state.modelFamily) return false;
+      if (!q) return true;
+      const hay = `${item.title || ""} ${item.description || ""} ${item.tool || ""} ${(item.tags || []).join(" ")}`.toLowerCase();
+      return hay.includes(q);
+    });
+  }
+
+  function renderModels() {
+    const grid = $("#modelsGrid");
+    const empty = $("#modelsEmpty");
+    const hint = $("#modelsHint");
+    const countEl = $("#modelsCount");
+    if (!grid) return;
+    const pool = modelPool();
+    if (countEl) countEl.textContent = String(pool.length);
+    const items = filteredModels();
+    grid.innerHTML = "";
+    if (hint) {
+      hint.textContent =
+        items.length === pool.length
+          ? `共 ${items.length} 条 3D 建模`
+          : `显示 ${items.length} / ${pool.length} 条`;
+    }
+    if (!items.length) {
+      if (empty) empty.classList.remove("hidden");
+      return;
+    }
+    if (empty) empty.classList.add("hidden");
+    const frag = document.createDocumentFragment();
+    items.forEach((item) => frag.appendChild(buildVisualCard(item, false)));
+    grid.appendChild(frag);
+  }
+
   function renderVisuals() {
     const data = state.visuals;
     const grid = $("#visualsGrid");
@@ -691,6 +769,7 @@
     };
     saveStoredFeedback();
     renderVisuals();
+    renderModels();
     const drawer = $("#drawer");
     if (drawer.classList.contains("is-open") && drawer.dataset.key === key) {
       openVisualDrawer(item);
@@ -802,6 +881,13 @@
         renderVisuals();
       });
     }
+    const modelSearch = $("#modelSearch");
+    if (modelSearch) {
+      modelSearch.addEventListener("input", (e) => {
+        state.modelQuery = e.target.value;
+        renderModels();
+      });
+    }
   }
 
   function renderMeta() {
@@ -842,7 +928,10 @@
       renderTopics();
       renderVisualFamilyChips();
       renderVisuals();
+      renderModelFamilyChips();
+      renderModels();
       if (location.hash === "#visuals") $("#tab-visuals")?.click();
+      else if (location.hash === "#3d" || location.hash === "#models") $("#tab-models")?.click();
     } catch (err) {
       console.error(err);
       $("#snapshotMeta").textContent = "数据加载失败";
