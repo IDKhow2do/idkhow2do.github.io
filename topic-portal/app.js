@@ -24,7 +24,10 @@
     likedOnly: false,
     query: "",
     visualFamily: "全部",
+    visualCategory: "",
     visualQuery: "",
+    modelFamily: "全部",
+    modelQuery: "",
     visualOverrides: {}, // persisted to localStorage
     topicOverrides: {},
   };
@@ -125,6 +128,7 @@
     frontend: "端",
     "3d": "3",
     industrial: "工",
+    审美参考: "审",
   };
 
   const VISUAL_CAT_LABEL = {
@@ -134,7 +138,11 @@
     frontend: "前端",
     "3d": "3D",
     industrial: "工业",
+    审美参考: "审美参考",
   };
+
+  /** Extra visual chips keyed by item.category (not styleFamily). */
+  const VISUAL_CATEGORY_CHIPS = ["审美参考"];
 
   /** styleFamily chip keys → Chinese labels (视觉素材 filters) */
   const VISUAL_FAMILY_ORDER = ["全部", "code", "draw", "video_model", "model_3d", "other"];
@@ -520,6 +528,21 @@
       btn.textContent = `${label} ${count}`;
       btn.addEventListener("click", () => {
         state.visualFamily = key;
+        state.visualCategory = "";
+        renderVisualFamilyChips();
+        renderVisuals();
+      });
+      host.appendChild(btn);
+    });
+    VISUAL_CATEGORY_CHIPS.forEach((cat) => {
+      const count = items.filter((i) => i.category === cat).length;
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "chip" + (state.visualCategory === cat ? " is-active" : "");
+      btn.textContent = `${visualCategoryLabel(cat)} ${count}`;
+      btn.addEventListener("click", () => {
+        state.visualCategory = cat;
+        state.visualFamily = "";
         renderVisualFamilyChips();
         renderVisuals();
       });
@@ -531,12 +554,92 @@
     const items = state.visuals?.items || [];
     const q = state.visualQuery.trim().toLowerCase();
     return items.filter((item) => {
-      const fam = item.styleFamily || "other";
-      if (state.visualFamily !== "全部" && fam !== state.visualFamily) return false;
+      if (state.visualCategory) {
+        if (item.category !== state.visualCategory) return false;
+      } else if (state.visualFamily && state.visualFamily !== "全部") {
+        const fam = item.styleFamily || "other";
+        if (fam !== state.visualFamily) return false;
+      }
       if (!q) return true;
       const hay = `${item.title || ""} ${item.description || ""} ${item.tool || ""} ${(item.tags || []).join(" ")}`.toLowerCase();
       return hay.includes(q);
     });
+  }
+
+  /**
+   * 「3D建模」只读数据里写死的 is3d。判定见 visual_items.json 的 is3dRule：
+   * styleFamily model_3d，或标题/标签/描述/工具明确是建模、Blender、Tripo、
+   * three.js 场景、GLB、mesh、SDF、体素、程序化 3D、Unity、游戏资产。
+   * 这些条目仍留在视觉素材里。
+   */
+  function is3dItem(item) {
+    return !!(item && item.is3d === true);
+  }
+
+  function modelPool() {
+    return (state.visuals?.items || []).filter(is3dItem);
+  }
+
+  function renderModelFamilyChips() {
+    const host = $("#modelCategoryChips");
+    if (!host) return;
+    const items = modelPool();
+    host.innerHTML = "";
+    VISUAL_FAMILY_ORDER.forEach((key) => {
+      const count =
+        key === "全部"
+          ? items.length
+          : items.filter((i) => (i.styleFamily || "other") === key).length;
+      const label = key === "全部" ? "全部" : VISUAL_FAMILY_LABEL[key] || key;
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "chip" + (state.modelFamily === key ? " is-active" : "");
+      btn.textContent = `${label} ${count}`;
+      btn.addEventListener("click", () => {
+        state.modelFamily = key;
+        renderModelFamilyChips();
+        renderModels();
+      });
+      host.appendChild(btn);
+    });
+  }
+
+  function filteredModels() {
+    const items = modelPool();
+    const q = state.modelQuery.trim().toLowerCase();
+    return items.filter((item) => {
+      const fam = item.styleFamily || "other";
+      if (state.modelFamily !== "全部" && fam !== state.modelFamily) return false;
+      if (!q) return true;
+      const hay = `${item.title || ""} ${item.description || ""} ${item.tool || ""} ${(item.tags || []).join(" ")}`.toLowerCase();
+      return hay.includes(q);
+    });
+  }
+
+  function renderModels() {
+    const grid = $("#modelsGrid");
+    const empty = $("#modelsEmpty");
+    const hint = $("#modelsHint");
+    const countEl = $("#modelsCount");
+    if (!grid) return;
+    const pool = modelPool();
+    if (countEl) countEl.textContent = String(pool.length);
+    const items = filteredModels();
+    grid.innerHTML = "";
+    if (hint) {
+      hint.textContent =
+        items.length === pool.length
+          ? `共 ${items.length} 条 3D 建模`
+          : `显示 ${items.length} / ${pool.length} 条`;
+    }
+    if (!items.length) {
+      if (empty) empty.classList.remove("hidden");
+      return;
+    }
+    if (empty) empty.classList.add("hidden");
+    const frag = document.createDocumentFragment();
+    items.forEach((item) => frag.appendChild(buildVisualCard(item, false)));
+    grid.appendChild(frag);
   }
 
   function renderVisuals() {
@@ -588,7 +691,8 @@
 
     const showGhost =
       incomplete &&
-      state.visualFamily === "全部" &&
+      !state.visualCategory &&
+      (state.visualFamily === "全部" || state.visualFamily === "") &&
       !state.visualQuery.trim();
     if (showGhost) {
       const ghost = document.createElement("div");
@@ -653,6 +757,12 @@
     cat.className = "badge";
     cat.textContent = visualBadgeLabel(item);
     left.appendChild(cat);
+    if (item.category === "审美参考") {
+      const topic = document.createElement("span");
+      topic.className = "badge";
+      topic.textContent = visualCategoryLabel(item.category);
+      left.appendChild(topic);
+    }
     meta.appendChild(left);
 
     const inds = document.createElement("div");
@@ -691,6 +801,7 @@
     };
     saveStoredFeedback();
     renderVisuals();
+    renderModels();
     const drawer = $("#drawer");
     if (drawer.classList.contains("is-open") && drawer.dataset.key === key) {
       openVisualDrawer(item);
@@ -721,10 +832,19 @@
       media.appendChild(makeCategoryPlaceholder(item.category || "其他"));
     }
 
-    $("#drawerCategory").textContent = visualBadgeLabel(item);
+    $("#drawerCategory").textContent =
+      item.category === "审美参考"
+        ? visualCategoryLabel(item.category)
+        : visualBadgeLabel(item);
     $("#drawerTitle").textContent = displayVisualTitle(item);
     const status = $("#drawerStatus");
     status.innerHTML = "";
+    if (item.category === "审美参考") {
+      const fam = document.createElement("span");
+      fam.className = "badge";
+      fam.textContent = visualBadgeLabel(item);
+      status.appendChild(fam);
+    }
     const lic = document.createElement("span");
     lic.className = "badge badge-warn";
     lic.textContent = "许可待核";
@@ -802,6 +922,13 @@
         renderVisuals();
       });
     }
+    const modelSearch = $("#modelSearch");
+    if (modelSearch) {
+      modelSearch.addEventListener("input", (e) => {
+        state.modelQuery = e.target.value;
+        renderModels();
+      });
+    }
   }
 
   function renderMeta() {
@@ -842,7 +969,10 @@
       renderTopics();
       renderVisualFamilyChips();
       renderVisuals();
+      renderModelFamilyChips();
+      renderModels();
       if (location.hash === "#visuals") $("#tab-visuals")?.click();
+      else if (location.hash === "#3d" || location.hash === "#models") $("#tab-models")?.click();
     } catch (err) {
       console.error(err);
       $("#snapshotMeta").textContent = "数据加载失败";
