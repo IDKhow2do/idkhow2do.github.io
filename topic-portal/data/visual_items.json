@@ -4,6 +4,73 @@
   "exportedCount": 115,
   "items": [
     {
+      "title": "没有一个3D模型：Opus 5.5 用纯代码搭出黄金时刻的日本寺庙，70秒电影级运镜",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/lexnlin/status/2110657641831956870",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261015-lexnlin-golden-temple-video.jpg",
+      "previewType": "video",
+      "description": "@LexnLin 让 Claude Opus 5.5 用 three.js 搭出一座黄金时刻（golden hour）的日本寺庙，并渲染成 70 秒短片。作者在回帖中说：画面里一切都是代码，没有用任何 3D 模型或贴图。仓库 README：约 3.1 万行 JavaScript 生成 2440 万个三角形；五重塔、拱桥、本堂、屋瓦、斗拱、金饰、佛像、树木、莲花、锦鲤、水面、地形、云和天空都在页面加载时生成，所有表面是注入 three.js PBR 材质的程序化 GLSL；无 HDRI、无图片资源；随机种子固定、场景可复现；10 个镜头各 7 秒，每个镜头从一个细节特写拉远揭示全景；用 headless Chrome 逐帧离线渲染，每帧平均 8 个子帧，得到抗锯齿、运动模糊、柔和阴影与无噪 AO。唯一非代码元素是配乐 Kevin MacLeod《Finding Movement》（CC BY 4.0）。",
+      "tool": "Three.js r186 + 自定义 GLSL（Claude Opus 5.5 编写）+ headless Chrome 离线逐帧渲染",
+      "prompt": "build a 3d environment in threejs and render a smooth, sharp 1 minute cinematic video of it. 10 good spots, 7 seconds each, and every shot starts close up and then pulls back to reveal the scene\n\ngolden hour please. make it look as real as possible and really focus on the light and shadows. match the reference images as close as you can, try to iterate until you reach 99.9%\n\neverything has to be code, no assets. the only exception is the background music: find a free cinematic track online that you didn't make yourself and use it\n\nput real effort into the details, 2x more than you think is enough. that includes the floor and the ground, it has to look good from above too. light and shadows have to be clean with zero flickering\n\nverify and then iterate. keep improving until it's really that close to the references and don't stop before, even if it takes days",
+      "promptProvenance": "author-posted",
+      "provenanceNote": "提示词见同串帖 https://x.com/lexnlin/status/2110657793376039323 （作者原文）；技术细节来自仓库 README https://github.com/Leonxlnx/golden-temple 。封面为帖内视频首帧缩略图（托管至 topic-portal/covers/20261015-lexnlin-golden-temple-video.jpg）。许可未在已读 README 片段中确认。",
+      "attribution": "@LexnLin（Leonxlnx，X / GitHub）",
+      "sourceAuthor": "lexnlin",
+      "tags": [
+        "用户指定收纳",
+        "Three.js",
+        "程序化生成",
+        "Claude Opus",
+        "日式寺庙"
+      ],
+      "publishedAt": "2026-10-15T09:02:50Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T08:05:00.000Z",
+      "updatedAt": "2026-10-16T08:05:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-16T08:05:00.000Z"
+      },
+      "sourceCodeUrl": "https://github.com/Leonxlnx/golden-temple",
+      "videoUrl": "https://video.twimg.com/amplify_video/2110642835955318784/vid/avc1/1920x1080/XsGdLLIlLSnu_wGO.mp4"
+    },
+    {
+      "title": "一句提示词让 Opus 死磕99.9%还原：日本寺庙 three.js 短片的完整做法公开",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/lexnlin/status/2110657793376039323",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261015-lexnlin-golden-temple-howto.png",
+      "previewType": "image",
+      "description": "上一条寺庙短片的「How I made this」：作者说灵感来自 Gemini 的 argon 作品，觉得 argon 做得不错但仍有很多错误，想看看 Opus 用更少时间能做到什么。做法：先生成约 10 张日本寺庙图片作为参考图交给 Opus，再给一段提示词——用 threejs 搭 3D 环境并渲染 1 分钟电影感视频；10 个机位、每个 7 秒、每个镜头从特写拉远；黄金时刻、尽量写实、重点打磨光影；尽量贴近参考图、迭代到 99.9%；一切都必须是代码、不用素材，唯一例外是背景音乐（去网上找一首非自己做的免费电影配乐）；细节投入要比你以为够的多 2 倍，包括地面，从上方看也要好看；光影干净、零闪烁；验证再迭代，不达到参考图水平不要停，哪怕要好几天。",
+      "tool": "Three.js r186 + 自定义 GLSL（Claude Opus 5.5 编写）+ headless Chrome 离线逐帧渲染",
+      "prompt": "build a 3d environment in threejs and render a smooth, sharp 1 minute cinematic video of it. 10 good spots, 7 seconds each, and every shot starts close up and then pulls back to reveal the scene\n\ngolden hour please. make it look as real as possible and really focus on the light and shadows. match the reference images as close as you can, try to iterate until you reach 99.9%\n\neverything has to be code, no assets. the only exception is the background music: find a free cinematic track online that you didn't make yourself and use it\n\nput real effort into the details, 2x more than you think is enough. that includes the floor and the ground, it has to look good from above too. light and shadows have to be clean with zero flickering\n\nverify and then iterate. keep improving until it's really that close to the references and don't stop before, even if it takes days",
+      "promptProvenance": "author-posted",
+      "provenanceNote": "提示词为作者帖内原文（note_tweet 全文，经 X API 获取）。封面为帖内配图（托管至 topic-portal/covers/20261015-lexnlin-golden-temple-howto.png）。参考图本身未公开。",
+      "attribution": "@LexnLin（Leonxlnx，X / GitHub）",
+      "sourceAuthor": "lexnlin",
+      "tags": [
+        "用户指定收纳",
+        "Three.js",
+        "程序化生成",
+        "Claude Opus",
+        "日式寺庙"
+      ],
+      "publishedAt": "2026-10-15T09:03:26Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T08:05:00.000Z",
+      "updatedAt": "2026-10-16T08:05:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-16T08:05:00.000Z"
+      },
+      "sourceCodeUrl": "https://github.com/Leonxlnx/golden-temple"
+    },
+    {
       "title": "一卷卫生纸半夜出门看海：纸尾巴是实时绳索物理，沙沙声跟着滚速变",
       "category": "frontend",
       "styleFamily": "code",
@@ -7456,7 +7523,7 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条",
-  "updatedAt": "2026-10-16T04:55:00.000Z",
-  "totalItems": 173
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条",
+  "updatedAt": "2026-10-16T08:05:00.000Z",
+  "totalItems": 175
 }
