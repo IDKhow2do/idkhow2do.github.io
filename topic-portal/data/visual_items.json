@@ -4,6 +4,59 @@
   "exportedCount": 115,
   "items": [
     {
+      "title": "一卷卫生纸半夜出门看海：纸尾巴是实时绳索物理，沙沙声跟着滚速变",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/nullinbetween/status/2110930662991781998",
+      "previewUrl": "https://img.itch.zone/aW1nLzMwNzczNTY2LnBuZw==/original/%2BL18nX.png",
+      "previewType": "image",
+      "description": "独立开发者 Apps by Meredith（X @nullinbetween）的浏览器小游戏《PAPER MOON》：一卷卫生纸从烛光大理石浴室出发，经过泳池露台，滚到月光海滩。作者在 itch.io 页面写明：用 Claude Opus 5.5 + Three.js r170 写成，单个约 630KB 的 HTML 文件，没有任何图片、音频、字体文件；拖在后面的松散纸尾巴是带空气阻力和海风的 Verlet 绳索模拟；海面是 Gerstner 波，浪会冲上沙滩并留下湿痕，水滴和水龙头水流有实时折射与立方体贴图反射；大理石、木头、沙子、绗缝纸纹理、纸卷螺旋端面和月亮都在加载时用代码生成；音效全部用 Web Audio 实时合成。10月16日这条帖子回应网友提问：纸卷的沙沙声跟着滚动走——滚得越快越响、音调越高，腾空时安静，落地是一声轻敲。",
+      "tool": "Three.js r170 + Web Audio API（Claude Opus 5.5 编写，单文件 HTML）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖 + itch.io 游戏页 https://appsbymeredith.itch.io/paper-moon（免费可玩，页面列出技术栈与物理实现）；未公开提示词与仓库，许可未声明。封面为 itch.io 页面 og:image（游戏宣传图：泳池边一卷拖着纸尾巴的卫生纸与 PAPER MOON 字样），本轮帖内视频首帧为昏暗浴室场景。",
+      "attribution": "Apps by Meredith（@nullinbetween，X / itch.io）",
+      "sourceAuthor": "nullinbetween",
+      "tags": [
+        "Three.js",
+        "纸艺场景",
+        "物理模拟",
+        "Web Audio",
+        "程序化生成"
+      ],
+      "publishedAt": "2026-10-16T03:07:43Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-16T04:55:00.000Z",
+      "updatedAt": "2026-10-16T04:55:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "verification": {
+        "checked_at": "2026-10-16T04:55:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 76,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 14,
+          "溯源": 13,
+          "复现": 9,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.2895,
+        "finalScore": 98.0,
+        "threshold": 65,
+        "run": "2026-10-16-1240-shanghai"
+      }
+    },
+    {
       "title": "一句话描述一台机器，Claude 造出能剖开、能弄坏、数字全靠算的 3D 仿真",
       "category": "frontend",
       "styleFamily": "code",
@@ -7403,7 +7456,7 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条",
-  "updatedAt": "2026-10-16T00:58:00.000Z",
-  "totalItems": 172
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条",
+  "updatedAt": "2026-10-16T04:55:00.000Z",
+  "totalItems": 173
 }
