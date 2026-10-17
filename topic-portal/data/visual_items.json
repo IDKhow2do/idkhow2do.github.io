@@ -1,8 +1,172 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 242,
+  "exportedCount": 245,
   "items": [
+    {
+      "title": "Motion2MixamoRig：一段视频或一张照片里的人体动作，搬到 Mixamo 骨骼角色上，可直接进 Blender/Unity",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "is3d": true,
+      "source": "https://x.com/github_daily/status/2111359035916312641",
+      "sourceCodeUrl": "https://github.com/MaxLiu22/Motion2MixamoRig",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-motion2mixamorig.jpg",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-motion2mixamorig.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2109989636202487808/vid/avc1/1920x1080/2n6y7oEOpFXegjAD.mp4",
+      "description": "@GitHub_Daily 2026-10-17 介绍开源项目 Motion2MixamoRig：把视频里人的动作（单张照片里的姿势也行）迁移到 Mixamo 绑好骨骼的 3D 角色上。给它一段只有一个人、全身入镜的视频，输出预览视频和带蒙皮的角色文件，可直接拖进 Blender 或 Unity。不用显卡也能跑，约 30 秒视频用 CPU 提取动作约 8–15 分钟；提取好的骨骼动作可存下复用，换角色几十秒出结果。预览是四宫格（原视频、两套骨骼、成品角色并排），哪里没对上一眼可见；另有 Blender 插件，在 Blender 里跑同一流程。仓库为 Apache-2.0。",
+      "tool": "Motion2MixamoRig（开源，Apache-2.0）+ Mixamo、Blender 插件、Unity",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为 @GitHub_Daily 原帖（2026-10-17T07:29:55Z，经 X API 回读，非臆造）。仓库链接取自帖文，经 GitHub API 核实存在（描述：Retarget human motion from video to an Adobe Mixamo-rigged 3D character；Apache-2.0）。帖内视频引自 @Stefan_3D_AI 帖 2109989762899570828，封面为该视频缩略图。",
+      "attribution": "@GitHub_Daily（GitHubDaily）；帖内视频来自 @Stefan_3D_AI",
+      "sourceAuthor": "GitHub_Daily",
+      "tags": [
+        "用户指定收纳",
+        "Mixamo",
+        "动作捕捉",
+        "Blender",
+        "Unity",
+        "骨骼绑定",
+        "3D建模"
+      ],
+      "publishedAt": "2026-10-17T07:29:55Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-17T08:45:00.000Z",
+      "updatedAt": "2026-10-17T08:45:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-17T08:45:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-17T08:45:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为帖内视频缩略图，HTTP 200。",
+        "video_check": "未播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-17"
+      }
+    },
+    {
+      "title": "Image-Blaster：一张图生成可探索 3D 世界（带物理的网格 + 高斯泼溅背景 + 环境音）",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "is3d": true,
+      "source": "https://x.com/he1s_sammy/status/2111097801790677061",
+      "sourceCodeUrl": "https://github.com/neilsonnn/image-blaster",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-image-blaster.jpg",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-image-blaster.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2111097522303139840/vid/avc1/1280x720/k604BDrSA6j1bdTN.mp4",
+      "description": "@He1s_Sammy 2026-10-16 发帖：有人上传了一个 GitHub 仓库，能把单张图片变成可探索的 3D 世界——生成带物理的 3D 网格、背景高斯泼溅（Gaussian splats）、环境音，以及整个可漫游的世界；上传一张图，几分钟得到 3D 环境，名为 Image-Blaster，作者认为可用于游戏开发、影视和 3D 内容创作。仓库 neilsonnn/image-blaster 自述为「给 Claude 用的图像转世界 skillset」（MIT），World Labs 官网 showcase 也有收录。用户收藏用途：想把房间照片里的物体建成 3D，再渲染出不同的室内装修风格——Image-Blaster 的「单图→带网格的 3D 场景」可作为这一想法的起点（是否能按物体拆分、替换风格需自行验证）。",
+      "tool": "Image-Blaster（Claude skillset，MIT）；高斯泼溅、3D 网格",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为 @He1s_Sammy 原帖（2026-10-16T14:11:52Z，经 X API 回读，非臆造）。原帖称「repo 留在下方」但正文未含链接；sourceCodeUrl 经核实为 https://github.com/neilsonnn/image-blaster（GitHub API：An image-to-world skillset for Claude，MIT），World Labs showcase https://www.worldlabs.ai/labs/showcase/image-blaster 亦有收录。室内装修风格用途为用户收藏意图，非帖文内容。封面为帖内视频缩略图。",
+      "attribution": "@He1s_Sammy（S 🫧）",
+      "sourceAuthor": "He1s_Sammy",
+      "tags": [
+        "用户指定收纳",
+        "Image-Blaster",
+        "高斯泼溅",
+        "单图转3D",
+        "世界生成",
+        "室内设计",
+        "3D建模"
+      ],
+      "publishedAt": "2026-10-16T14:11:52Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-17T08:45:00.000Z",
+      "updatedAt": "2026-10-17T08:45:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-17T08:45:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-17T08:45:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为帖内视频缩略图，HTTP 200。",
+        "video_check": "未播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-17"
+      }
+    },
+    {
+      "title": "Opus 5.5 做视频最佳实践合集：每条爆款视频附提示词和 Skill，可在线对照复刻",
+      "category": "video",
+      "styleFamily": "code",
+      "is3d": false,
+      "source": "https://x.com/leo_xiaolei/status/2111318182896218378",
+      "sourceCodeUrl": "https://github.com/yihui-dev/awesome-opus5-5-videos",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-awesome-opus5-5-videos.jpg",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-awesome-opus5-5-videos.jpg",
+      "previewType": "image",
+      "videoUrl": "",
+      "description": "@leo_xiaolei（水族店刘老板）2026-10-17 推荐一个网站：Opus 5.5 做视频的最佳实践集合，作者称是目前见过最全的，全部可直接查看，提示词和 Skill 都有提供。网站 https://skillry.dev/ai-videos/opus-5-5 ，GitHub 仓库 yihui-dev/awesome-opus5-5-videos（MIT）自述为用 Claude Opus 5.5 做出的爆款视频及其提示词合集，每条原片旁附 Skillry 上的在线复刻，持续更新。",
+      "tool": "Claude Opus 5.5；Skillry；awesome-opus5-5-videos",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为 @leo_xiaolei 原帖（2026-10-17T04:47:35Z，经 X API 回读，非臆造）。网站与仓库链接取自帖文（已去掉 utm 参数），仓库经 GitHub API 核实存在（MIT）。封面为帖内第 1 张图。",
+      "attribution": "@leo_xiaolei（水族店刘老板）",
+      "sourceAuthor": "leo_xiaolei",
+      "tags": [
+        "用户指定收纳",
+        "Opus 5.5",
+        "动效视频",
+        "提示词",
+        "Skills",
+        "合集"
+      ],
+      "publishedAt": "2026-10-17T04:47:35Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-17T08:45:00.000Z",
+      "updatedAt": "2026-10-17T08:45:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-17T08:45:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-17T08:45:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          1069
+        ],
+        "preview_check": "封面为帖内图片，HTTP 200。",
+        "video_check": "无视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-17"
+      }
+    },
     {
       "title": "一人做治愈系农场游戏：Claude Code 经 MCP 连 Unity 6 + Blender，模型全用 Tripo 生成",
       "category": "3d",
@@ -10812,8 +10976,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接）",
-  "updatedAt": "2026-10-17T05:45:00.000Z",
-  "totalItems": 242,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管）",
+  "updatedAt": "2026-10-17T08:45:00.000Z",
+  "totalItems": 245,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
