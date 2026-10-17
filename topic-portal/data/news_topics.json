@@ -1,7 +1,83 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-17T05:45:00.000Z",
+  "updatedAt": "2026-10-17T08:56:00.000Z",
   "topics": [
+    {
+      "url": "https://www.scmp.com/tech/big-tech/article/3370966/start-unveils-prototype-heart-euv-lithography-amid-china-chipmaking-push",
+      "title": "1000瓦激光打锡滴，只换回15瓦极紫外光：为什么这台国产EUV光源样机，还是被叫作光刻机「心脏」的一步？",
+      "category": "半导体",
+      "source": "南华早报《Start-up unveils prototype ‘heart’ of EUV lithography amid China chipmaking push》（2026-10-15，转引解放日报现场报道）+ 朗道燧岩官网 FlintNano LPP-OXXO 技术参数页（langdaotech.com/suiyan）",
+      "publishedAt": "2026-10-15",
+      "eventAt": "2026-10-15",
+      "collectedAt": "2026-10-17T08:56:00.000Z",
+      "updatedAt": "2026-10-17T08:56:00.000Z",
+      "description": "EUV（极紫外，13.5 nm）光刻机里最难的部件之一是光源：主流路线 LPP（激光等离子体）是用高功率脉冲激光轰击锡靶，把锡打成高温等离子体，让它辐射出 13.5 nm 的光。南华早报 10月15日报道：上海初创公司朗道燧岩（Langdao Silex）在第26届中国国际工业博览会上展出自研 EUV 光源系统样机；据解放日报引述现场人员，整机零部件国产化率 90%，核心部件大多自研，技术路线与国际领先厂商一致，可用于芯片曝光测试，但距离量产还要「三到五年」。公司官网给出的低功率产品 FlintNano LPP-OXXO 参数：驱动激光功率 1000 W、激光频率 1–20 kHz、转换效率 >2%、EUV 功率 >15 W、亮度 100 W/mm²sr、连续工作 >100 小时、等离子体尺寸 60 μm、等离子体稳定性 3% RMS、能量稳定性 5%；官网称高功率 Flint Micro-LPP 系列已完成原理论证，低功率 Flint Nano-LPP 系列已处于产品化阶段。公司「新星」实验室页面列出的在研课题包括「脉冲激光-锡靶相互作用全过程数值模拟」，以及如何把低功率 LPP-EUV 方案放大到光刻级别百瓦光源。反直觉钩子：1000 瓦的激光最后只剩十几瓦能用的光，这正是 EUV 光源难的地方——能量绝大部分在等离子体、碎屑和热里耗掉，而量产光刻机需要的是数百瓦级、长期稳定的光源。反方/限定：SBS 等报道指出，商用 EUV 光刻机需要数百瓦且在高强度长期运行下保持稳定的光源，样机与之有明显差距；90% 国产化与各项参数均为公司自述，未见第三方测试；光源只是整机的一部分，反射镜、光学系统、工件台等同样关键。可拍角度：①锡滴被激光「打爆」发光的 LPP 原理动画（可用 Three.js 粒子自制）；②1000 W 进、15 W 出：能量都去哪了；③15 W 与量产所需数百瓦的差距，为什么功率决定每小时能曝光多少片晶圆；④刻蚀一线视角：光刻之后的图形转移，为什么光源稳定性 3% 和 5% 这种数字对产线很要命。0秒开场：展会上的 EUV 光源腔体样机实拍（南华早报配图）。",
+      "caveat": "样机信息来自南华早报转引解放日报现场报道；技术参数来自朗道燧岩官网，均为公司自述，未经第三方验证。「量产需数百瓦」引自 SBS 等媒体报道的行业共识表述。封面为南华早报文章配图（展会样机实拍，含 SCMP 水印），已自托管，仅作选题参考。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261017-langdao-euv-source.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261017-langdao-euv-source.jpg",
+      "imageAlt": "南华早报配图：朗道燧岩在上海工博会展出的 EUV 光源系统样机（金属光源腔体与控制机柜）",
+      "tags": [
+        "光刻",
+        "EUV",
+        "芯片制造",
+        "国产设备"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 92,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 16,
+          "画面": 13,
+          "来源": 13,
+          "时效": 10,
+          "大陆": 10,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 98.8,
+        "threshold": 65,
+        "run": "2026-10-17-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://api-docs.deepseek.com/updates",
+      "title": "分数更高、每道题的花费反而更低：为什么 DeepSeek 这次升级，是让模型「话变少」了？",
+      "category": "AI",
+      "source": "DeepSeek API 文档更新日志（2026-10-17「DeepSeek-V4.1-Flash-1017 Update」「Opening up the in-house search API」）+ @deepseek_ai 官方 X 发布串（2026-10-17，4 帖）",
+      "publishedAt": "2026-10-17",
+      "eventAt": "2026-10-17",
+      "collectedAt": "2026-10-17T08:56:00.000Z",
+      "updatedAt": "2026-10-17T08:56:00.000Z",
+      "description": "DeepSeek 10月17日在官方更新日志中宣布：V4.1 Flash 升级为 DeepSeek-V4.1-Flash-1017，网页和 App 同步更新，API 调用方式与价格不变（仍用 deepseek-flash）。官方给出的新版成绩包括 DeepSWE v1.1 77.0、Terminal-Bench 4.0 42.3、ProgramBench 29.1、NL2Repo-Bench 68.2、Agents' Last Exam 35.4、HLE（不用工具，纯文本子集）42.6；对照 9月10日 V4.1 Flash 发布时公布的同名测试（DeepSWE v1.1 74.2、Terminal-Bench 4.0 31.2、ProgramBench 20.3、NL2Repo-Bench 65.4、Agents' Last Exam 31.8），全部上涨。关键是日志里这句：在提升性能的同时缩短了任务运行时间和输出长度，让用户以更低成本、更快速度完成任务，在多个 harness 上达到新的「性能-成本帕累托最优」。官方 X 帖称新版用「基于自反馈的强化学习」提升从零完成整个项目的能力，从做游戏到 3D 建模，并附 4 段演示动图（含赛车游戏界面、3D 测试关卡场景等）；同串宣布自研搜索引擎的 Search & Fetch API 对所有人开放，每个端点 0.75 美元/千次，经 DeepSeek Harness、Claude Code、Codex 的服务端工具调用暂时免费，2026-10-31 16:00 UTC 起计费；并称模型权重同步在 Hugging Face 与 ModelScope 开源。官方图表（DeepSWE v1.1 准确率 vs 单任务平均成本，对数坐标）显示 1017 版 max 档 77.0%，成本目测约 0.2 美元/题，旧版 V4.1 Flash max 档目测约 0.5 美元/题。反直觉钩子：大家默认「更聪明=想更久=更贵」，这次是分数涨了、输出反而变短——推理模型按 token 收费，少说话就是省钱。反方/限定：成绩均为官方自测，部分测试指定了 harness（Terminal-Bench 用 Claude Code 框架、DeepSWE 用 Mini-SWE-V2）；「输出缩短」幅度官方未给具体数字；「自反馈强化学习」细节未公开；图表成本为目测读数。可拍角度：①一张图讲清帕累托前沿：同样分数谁更便宜；②为什么推理模型「话少」能省钱：token 账；③从一句话到 3D 场景/小游戏的演示动图；④搜索 API 0.75 美元/千次，Agent 联网成本怎么算。0秒开场：官方 DeepSWE 准确率-成本散点图，1017 版那条线跳到左上角。",
+      "caveat": "成绩与「输出更短、更快」均为 DeepSeek 官方自述；与 9月10日版本的对比只列了两次公告里同名的测试项。图中成本为对数坐标目测值，非官方数字。网传「同步下调 API 价格」与官方日志「价格不变」不符，以官方为准。封面为 @deepseek_ai 发布帖中的官方图表，已自托管。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261017-deepseek-v41-flash-1017.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261017-deepseek-v41-flash-1017.jpg",
+      "imageAlt": "DeepSeek 官方图表：DeepSWE v1.1 Pass@1 与单任务平均成本（对数坐标），DeepSeek V4.1 Flash-1017 max 档 77.0% 位于左上角",
+      "tags": [
+        "AI成本",
+        "AI推理",
+        "智能体",
+        "国产大模型"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 15,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 10,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 93.0,
+        "threshold": 65,
+        "run": "2026-10-17-1640-shanghai"
+      }
+    },
     {
       "url": "https://x.com/xudong07452910/status/2111261159210815845",
       "title": "90% 代码由 Claude 写，谁来 Review？Anthropic 把代码审查改成一条持续验证链",
