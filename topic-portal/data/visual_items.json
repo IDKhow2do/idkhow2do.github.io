@@ -1,8 +1,283 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 245,
+  "exportedCount": 250,
   "items": [
+    {
+      "title": "整片日落大海只是一个 61 KB 的网页：WebGPU 从零手写 FFT 海浪、白浪和物理天空，Claude Code 约 30 分钟做出（MIT 开源）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://github.com/Noniv/web-ocean",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261017-noniv-web-ocean.jpg",
+      "previewType": "image",
+      "description": "GitHub 用户 Noniv 的开源项目（仓库 10月16日创建，MIT）；据 X 用户 @finebutwhy 转发时注明，原帖来自 Reddit r/ClaudeAI 用户 u/Any-Reputation8118，@jurlycat 转发称「据作者说用 Claude Code + Opus 5.5 约 30 分钟做出」。不用任何引擎或渲染库，直接在 WebGPU 上实时渲染日落海面：README 写明海浪是 Tessendorf FFT 模拟，6 级级联、每级 256×256，覆盖从约 1 公里到几毫米的波长；波谱为有限风区 JONSWAP 风浪 + Donelan-Banner 方向分布，再叠一层长峰涌浪；逆 FFT 用 compute shader 实现；海面网格是 17 级 CDLOD 四叉树，近处顶点间距 6.25 cm、远到 160 km。白浪从海面雅可比行列式「折叠」处生成并随风漂移、老化成条纹；天空按 Hillaire 大气散射方法，带两层云。未压缩的 ocean.html 102 KB，压缩版 61 KB，可直接 file:// 打开，WASD 自由飞行，H 键调风速、涌浪、太阳高度等参数。@jurlycat 转述作者说：Claude 用无头 Chrome 截图，再让子代理互相挑刺，作者主要只对云提了意见。科普镜头：海浪=很多正弦波叠加（傅里叶）、白浪出现在波面「折叠」处、为什么夕阳下海面会有一条闪光带。",
+      "tool": "Claude Code（Opus 5.5）+ WebGPU（WGSL compute shader）+ esbuild（README/转述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原作者 GitHub 仓库 Noniv/web-ocean（GitHub API：MIT，2026-10-16T23:49Z 创建），在线演示 https://ocean-noniv.vercel.app/ （本轮 HTTP 200，标题 Ocean — WebGPU）。Reddit 原帖因网络拦截未能直接打开，「30 分钟」「子代理挑刺」来自 @jurlycat 的转述（https://x.com/jurlycat/status/2111306207239557288 ）。未公开提示词。封面为仓库 docs/front.jpg（离水面 2.4 m 望向太阳），已自托管。",
+      "attribution": "Noniv（GitHub）",
+      "sourceAuthor": "Noniv",
+      "tags": [
+        "WebGPU",
+        "海洋模拟",
+        "FFT",
+        "物理渲染",
+        "开源"
+      ],
+      "publishedAt": "2026-10-16T23:49:53Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-17T08:56:00.000Z",
+      "updatedAt": "2026-10-17T08:56:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-17T08:56:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品真实画面（Blender Skills 为仓库横幅），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 95,
+        "baseBreakdown": {
+          "实体": 24,
+          "科普": 18,
+          "溯源": 19,
+          "复现": 15,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.3,
+        "finalScore": 123.5,
+        "threshold": 65,
+        "run": "2026-10-17-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/Noniv/web-ocean"
+    },
+    {
+      "title": "一座能走进去的英国水磨坊：Opus 5.5 用 Three.js + Blender 做出整条溪谷，还能「X 光」看清带动磨盘的齿轮（MIT）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/techartist_/status/2111187771440370028",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261017-ashcombe-mill.jpg",
+      "previewType": "image",
+      "description": "X 用户 @techartist_（泡澡球流体模拟作者）10月16日发布约 30 秒视频：目标是做一个美丽、可探索、有自然环境的 3D 世界，作者称 Claude Opus 5.5 完成得很好，声音也全部由 Claude 生成。自回复给出源码与在线演示 https://iamtechartist.github.io/ashcombe-mill/ ，并说明还需性能优化、低配设备会卡；回复评论时确认用的是 Three.js 和 Blender。仓库 README：「一座可以探索的英国水磨坊，一直看到带动磨盘的齿轮的 X 光透视」；页面描述为「一条英国白垩溪谷和一座运转中的水磨坊——让水来干活」。视频里有水车转动、阶梯堰泄水、石桥、林间小路、夜雨水面等镜头。科普镜头参考：水车如何把水流势能变成磨盘转动、齿轮换向与增速——可直接借用「外观→X 光看内部结构」的镜头语言。",
+      "tool": "Claude Opus 5.5 + Three.js + Blender（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 主帖与自回复 https://x.com/techartist_/status/2111187773722124685 给出仓库与演示；GitHub 仓库 iamtechartist/ashcombe-mill 为 MIT（API 回读，2026-10-16 创建），仓库内是构建产物（index.html + assets/models/textures 等），未见工程源文件与提示词。「X 光看齿轮」出自 README，本轮未运行演示亲自验证。封面为帖内视频第 7 秒截帧（水车与磨坊），已自托管。",
+      "attribution": "@techartist_（X）/ iamtechartist（GitHub）",
+      "sourceAuthor": "techartist_",
+      "tags": [
+        "Three.js",
+        "Blender",
+        "水车",
+        "机械透视",
+        "开源"
+      ],
+      "publishedAt": "2026-10-16T20:09:23Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-17T08:56:00.000Z",
+      "updatedAt": "2026-10-17T08:56:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-17T08:56:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品真实画面（Blender Skills 为仓库横幅），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "实体": 21,
+          "科普": 17,
+          "溯源": 17,
+          "复现": 11,
+          "风格": 10,
+          "新颖": 7
+        },
+        "multiplier": 1.2588,
+        "finalScore": 104.5,
+        "threshold": 65,
+        "run": "2026-10-17-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/iamtechartist/ashcombe-mill"
+    },
+    {
+      "title": "一段 1601 字中文提示词换来一片可玩的热带浅海：浪进浅水会变慢、贴着岸线转弯，Claude Code 先解程函方程再画水",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/Cryptoxorz/status/2111324112769745369",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261017-cryptoxorz-tropical-sea.jpg",
+      "previewType": "image",
+      "description": "X 用户 @Cryptoxorz 10月17日发布：把一段 1,601 字的中文提示词交给 Claude Code，得到一个 212 KB 的单文件网页——俯视的热带浅海（three.js r128，约 4,200 行）。可玩：点卡片把蝠鲼沿抛物线抛进海里溅起水花；拖着水母走会一路滴水；黑鳍礁鲨巡游时背鳍划出 V 形尾迹、碰一下会窜开；四个场景（热带浅滩、珊瑚潟湖、黄昏海湾、月夜荧光），夜里生物游过和浪打上沙滩处会亮起蓝绿荧光；还能下雨、开可拖动的漩涡。作者列出的做法：先算水深，再解程函方程（eikonal）得到浪到达每个点的时间，所以浪进浅水会变慢、贴着岸线转弯；海床预先烘焙成贴图并带接触阴影；阳光穿过水面形成焦散；水面是 GPU 上每秒推进 120 步的高度场，再叠长浪；最后合成折射、按水深吸收、泡沫与阳光碎闪。作者说第一版水是黑的、第二版一片白，是 Claude Code 自己开浏览器看效果、逐处修好的；宣传片画面也由网页逐帧渲染录制，配乐音效为代码合成。灵感来自 @vib3coded。科普镜头：浅水波速变慢导致的波浪折射（为什么海浪总是正对着海岸拍过来）。",
+      "tool": "Claude Code + three.js r128（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖（2026-10-17T05:11Z）；在线版为 Claude Artifact 链接 https://claude.ai/artifact/Up7dEDPxTbwo4SHdZkPw2Z （本轮 HTTP 200，未运行）。1601 字提示词未公开，无仓库与许可证声明——只能外链参考，不能直接复用代码。封面为帖内宣传片缩略图，已自托管。",
+      "attribution": "@Cryptoxorz（X）",
+      "sourceAuthor": "Cryptoxorz",
+      "tags": [
+        "Three.js",
+        "海洋模拟",
+        "波浪折射",
+        "单文件网页"
+      ],
+      "publishedAt": "2026-10-17T05:11:09Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-17T08:56:00.000Z",
+      "updatedAt": "2026-10-17T08:56:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-17T08:56:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品真实画面（Blender Skills 为仓库横幅），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 74,
+        "baseBreakdown": {
+          "实体": 21,
+          "科普": 17,
+          "溯源": 11,
+          "复现": 9,
+          "风格": 10,
+          "新颖": 6
+        },
+        "multiplier": 1.3491,
+        "finalScore": 99.8,
+        "threshold": 65,
+        "run": "2026-10-17-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "从一滴雨飞到可观测宇宙边缘：three.js 一个镜头走完每一个「10 的次方」，号称全用 NASA/ESA 真实数据",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/Madhusudan2989/status/2111353971705344382",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261017-lucid-drafts-powers-of-ten.jpg",
+      "previewType": "image",
+      "description": "X 用户 @Madhusudan2989 10月17日回复帖：用 Claude Code 里的 Opus 5.5 做了一个 three.js 单镜头，从一滴雨一路拉远到可观测宇宙边缘，歌曲每一小节对应一个 10 的次方；称使用真实 NASA/ESA 数据、没用视频模型。完整版在 YouTube《From a Raindrop to the Edge of the Universe in One Shot | Claude Opus 5.5 Music Video》（频道 Lucid Drafts）。帖内约 61 秒片段可见画面左下角标注「10¹⁶ m 光年」「10¹⁸ m 昴星团」「10²⁴ m 室女座星系团」「10²⁶ m 宇宙网」「10²⁷ m 可观测宇宙」等刻度。可借鉴为尺度类科普的开场模板（例如从晶圆一路放大到晶体管）。",
+      "tool": "Claude Code（Opus 5.5）+ three.js（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 回复帖（互动极低）；YouTube 链接经 oEmbed 回读标题与频道 Lucid Drafts，频道与发帖人是否同一人未独立核实。「真实 NASA/ESA 数据」为作者自述，未核对具体数据集；无源码与提示词。封面为帖内视频第 52 秒截帧（10²⁷ m 可观测宇宙），已自托管。",
+      "attribution": "@Madhusudan2989（X）/ Lucid Drafts（YouTube）",
+      "sourceAuthor": "Madhusudan2989",
+      "tags": [
+        "Three.js",
+        "尺度科普",
+        "宇宙",
+        "单镜头"
+      ],
+      "publishedAt": "2026-10-17T07:09:48Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-17T08:56:00.000Z",
+      "updatedAt": "2026-10-17T08:56:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-17T08:56:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品真实画面（Blender Skills 为仓库横幅），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 62,
+        "baseBreakdown": {
+          "实体": 9,
+          "科普": 19,
+          "溯源": 10,
+          "复现": 5,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.1979,
+        "finalScore": 74.3,
+        "threshold": 65,
+        "run": "2026-10-17-1640-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://youtu.be/HfpHYf_DE8g",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "Blender 22 道工序打包成 AI 技能：建模、UV、PBR、绑定、模拟到导出，Claude Code / Codex / Cursor 都能装（MIT）",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://github.com/EL4CTEO/blender-skills",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261017-blender-agent-skills.jpg",
+      "previewType": "image",
+      "description": "GitHub 仓库 EL4CTEO/blender-skills（MIT，10月14日创建）：把专业 Blender 流程打包成 22 个 Agent Skills，覆盖硬表面建模、雕刻、重拓扑与 UV、PBR 材质、贴图烘焙、几何节点、角色绑定（Rigify）、ARKit 52 表情、动画、游戏优化（LOD/Draw call）、导出（Roblox/Unity/Unreal/Godot/web/USD）、Cycles/EEVEE 渲染、灯光、刚体/布料/流体模拟、时间与天气氛围、QA 等，面向 Blender 5.2 LTS+，README 称每个脚本都在真实 Blender 里测过。可作为 Claude Code 插件安装，也可用安装脚本装进 ~/.claude/skills 与 ~/.agents/skills；装了 Blender MCP 可直接操作打开的 Blender，否则后台运行。对用户的「房间 3D 建模 + 换装修风格」项目，可直接用 scene-setup / pbr-materials / lighting-lookdev / time-of-day 这几项。",
+      "tool": "Blender 5.2 LTS+；Claude Code / Codex / OpenCode / Gemini CLI / Copilot / Cursor（README）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "GitHub 仓库 README 与 API 回读（MIT，2026-10-14 创建，本轮约 55 star）；首发线索来自 @jaipublish 日文介绍帖 https://x.com/jaipublish/status/2111298680091471886 。封面为仓库 assets/banner.png（Logo 横幅，非作品画面，已加白边自托管）。",
+      "attribution": "EL4CTEO（GitHub）",
+      "sourceAuthor": "EL4CTEO",
+      "tags": [
+        "Blender",
+        "Agent Skills",
+        "3D建模",
+        "工作流"
+      ],
+      "publishedAt": "2026-10-14T19:08:14Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-17T08:56:00.000Z",
+      "updatedAt": "2026-10-17T08:56:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-17T08:56:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品真实画面（Blender Skills 为仓库横幅），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 64,
+        "baseBreakdown": {
+          "实体": 8,
+          "科普": 6,
+          "溯源": 19,
+          "复现": 15,
+          "风格": 8,
+          "新颖": 8
+        },
+        "multiplier": 1.038,
+        "finalScore": 66.4,
+        "threshold": 65,
+        "run": "2026-10-17-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/EL4CTEO/blender-skills"
+    },
     {
       "title": "Motion2MixamoRig：一段视频或一张照片里的人体动作，搬到 Mixamo 骨骼角色上，可直接进 Blender/Unity",
       "category": "3d",
@@ -10976,8 +11251,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管）",
-  "updatedAt": "2026-10-17T08:45:00.000Z",
-  "totalItems": 245,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条",
+  "updatedAt": "2026-10-17T08:56:00.000Z",
+  "totalItems": 250,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
