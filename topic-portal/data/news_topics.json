@@ -1,7 +1,97 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-17T04:55:00.000Z",
+  "updatedAt": "2026-10-17T05:45:00.000Z",
   "topics": [
+    {
+      "url": "https://x.com/xudong07452910/status/2111261159210815845",
+      "title": "90% 代码由 Claude 写，谁来 Review？Anthropic 把代码审查改成一条持续验证链",
+      "category": "AI",
+      "source": "X @Xudong07452910；原文 claude.dev Blog《How the Claude Code team does code review》",
+      "publishedAt": "2026-10-17T01:01:00Z",
+      "eventAt": null,
+      "collectedAt": "2026-10-17T05:45:00.000Z",
+      "updatedAt": "2026-10-17T05:45:00.000Z",
+      "description": "@Xudong07452910 解读 Anthropic 文章：Claude Code 团队称约 90% 代码已由 Claude 写，于是把 Code Review 从 PR 末尾的人工关卡拆成持续验证链——提交前 Agent 自己跑测试，再开一个干净 Context 的 Subagent 看 diff；PR 创建后自动跑 Claude Review 和 Security Review；人主要盯风险、架构和改动意图；合并后还有 Feature Flag、灰度和快速回滚。帖子转述的内部数据：6 月到 9 月合并 PR 数翻倍多，回滚率下降超 40%；研究版 AI Review 上线后，有实质性 Review 意见的 PR 从 16% 升到 54%。作者观点：每次漏掉的 Bug 都可写回 CLAUDE.md、REVIEW.md 或新的自动检查；代码越写越快，要一起扩容的是验证系统。原文：https://claude.dev/blog/solving-code-review-at-anthropic/",
+      "caveat": "数据为帖子作者转述 Anthropic 文章，未逐项回查原文。封面为原文 OG 卡片图，已自托管。",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-claude-code-review-anthropic.png",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-claude-code-review-anthropic.png",
+      "imageAlt": "claude.dev Blog《How the Claude Code team does code review》卡片图",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "Code Review",
+        "Claude Code",
+        "AI 编程",
+        "验证"
+      ],
+      "tagSource": "provided",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-17T05:45:00.000Z"
+      }
+    },
+    {
+      "url": "https://x.com/smk7z/status/2111029004782227628",
+      "title": "个人分享：3 个 Claude 订阅号 + Sub2Api 反代稳定 3 周的配置经验",
+      "category": "AI",
+      "source": "X @smk7z",
+      "publishedAt": "2026-10-16T09:38:30Z",
+      "eventAt": null,
+      "collectedAt": "2026-10-17T05:45:00.000Z",
+      "updatedAt": "2026-10-17T05:45:00.000Z",
+      "description": "@smk7z 分享其 Claude 订阅与使用经验：2 个 Claude Pro + 1 个 Max 5x，经 Sub2Api 反代稳定运行 3 周，配图称累计约 100 亿 Token。要点：均为注册 5 年以上、美国地区的老 Google 账号，全程未触发 KYC；服务器为 2 台美国家宽原生 IP（IP 质量评分 93/98，建议 90 以上且独享，一台家宽不超过 2 个号）；Pro 用 Apple Pay、Max 用 Google Pay（招行 Visa）订阅；注意 DNS/WebRTC 泄露、全程 TUN 模式、时区设新加坡、只用 Claude Code 和 Claude Desktop、不要让模型觉得你在蒸馏。作者称说中文没事、每周额度用满、两人共用最高 10 并发。",
+      "caveat": "属个人经验帖，内容涉及规避 Anthropic 地区限制与账号共享/反代，可能违反服务条款并有封号风险，门户收录仅作资料存档、不代表推荐；所有数字为作者自述，未核实。封面为帖内第 1 张图（模型用量截图）。",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-smk7z-claude-subscription.jpg",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-smk7z-claude-subscription.jpg",
+      "imageAlt": "帖内截图：模型分布与 Token 用量表，标注「加起来 100 亿 Token！」",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "Claude",
+        "订阅",
+        "反代",
+        "经验帖"
+      ],
+      "tagSource": "provided",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-17T05:45:00.000Z"
+      }
+    },
+    {
+      "url": "https://x.com/lummox_eth/status/2111100800625787154",
+      "title": "提示词工程正在让位给「AI 循环」：目标、执行、验证、迭代，Karpathy 两天跑 700 次实验",
+      "category": "AI",
+      "source": "X @Lummox_eth 长文《How to Build AI Loops That Are Replacing Prompt Engineering》",
+      "publishedAt": "2026-10-16T14:23:47Z",
+      "eventAt": null,
+      "collectedAt": "2026-10-17T05:45:00.000Z",
+      "updatedAt": "2026-10-17T05:45:00.000Z",
+      "description": "@Lummox_eth 2026-10-16 发布 X 长文：拿到更好 AI 结果的关键正从写更好的提示词转向搭「循环」——给 AI 一个目标，让它干活、检查结果、继续直到达成。例子：Karpathy 的开源 autoresearch（train.py / prepare.py / program.md 三个文件，每次训练 5 分钟比较结果）据称两天约 700 次实验、找到约 20 处改进，把 time-to-GPT-2 从 2.02 小时降到 1.80 小时。真正的循环分五步：发现→计划→执行→验证→迭代，关键三件事是客观验证、记忆和停止条件；可用于 CI 失败自动修复的「自愈仓库」（人审后再合并）。入门用三个文件：AGENTS.md（或 CLAUDE.md）、loop.py 控制器、verify.sh 验证门。强调验证器比再加一个 Agent 更重要，警惕失控执行和「理解债」，衡量指标应是每个被接受结果的成本。",
+      "caveat": "数据（700 次实验、约 20 处改进、Shopify 19% 等）为长文转述，作者引 philschmid.de，未回查。仓库：https://github.com/karpathy/autoresearch（取自长文）。封面为长文封面图，已自托管。",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-lummox-ai-loops.jpg",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-lummox-ai-loops.jpg",
+      "imageAlt": "X 长文《How to Build AI Loops That Are Replacing Prompt Engineering》封面图",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI Agent",
+        "Agent 循环",
+        "autoresearch",
+        "验证"
+      ],
+      "tagSource": "provided",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-17T05:45:00.000Z"
+      }
+    },
     {
       "url": "https://newsletter.semianalysis.com/p/asml-is-building-a-hybrid-bonding",
       "title": "光刻机巨头为什么要去造「粘芯片」的机器？专利图里，每颗芯片要坐着小车绕一圈才落到晶圆上",
