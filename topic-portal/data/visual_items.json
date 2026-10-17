@@ -1,8 +1,228 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 231,
+  "exportedCount": 235,
   "items": [
+    {
+      "title": "不用放洗澡水也能玩泡澡球：浏览器里实时流体模拟，泡澡球入水后嘶嘶旋转、拉出彩带",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/techartist_/status/2111219143936790802",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-bath-bomb-builder.jpg",
+      "previewType": "image",
+      "description": "X 用户 @techartist_ 10月16日发布：一个浏览器里的 3D 泡澡球生成器，先设计泡澡球，再把它丢进阳光下的浴缸，看它嘶嘶冒泡、旋转、拉出一条条颜色丝带，直到整缸水变成流动的画（README 原话）。作者称用 Opus 5.5 配合 Three.js + Blender 制作，运行实时流体模拟。仓库 MIT 许可，附在线演示 https://iamtechartist.github.io/bath-bomb-builder/ 。适合做扩散、溶解、对流的科普镜头。封面取自帖内视频后段帧（浴缸里蓝紫色彩带扩散）。",
+      "tool": "Claude Opus 5.5 + Three.js + Blender（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖与自回复给出源码与演示链接；GitHub 仓库 iamtechartist/bath-bomb-builder 为 MIT 许可（API 回读，2026-10-16 创建）。未公开提示词。封面为帖内视频截帧，已自托管。",
+      "attribution": "@techartist_（X）/ iamtechartist（GitHub）",
+      "sourceAuthor": "techartist_",
+      "tags": [
+        "Three.js",
+        "流体模拟",
+        "Blender",
+        "3D建模",
+        "开源"
+      ],
+      "publishedAt": "2026-10-16T22:14:03Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-17T00:55:00.000Z",
+      "updatedAt": "2026-10-17T00:55:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-17T00:55:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "实体": 23,
+          "科普": 14,
+          "溯源": 18,
+          "复现": 14,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.2588,
+        "finalScore": 110.8,
+        "threshold": 65,
+        "run": "2026-10-17-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/iamtechartist/bath-bomb-builder"
+    },
+    {
+      "title": "木牛流马真是会自己走的木头牛马吗？一个开源 Skill 把中文机械科普全自动做成 Anatomy 风视频",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/GeekCatX/status/2111124749640413452",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-muniu-anatomy-explainer.jpg",
+      "previewType": "image",
+      "description": "X 用户 @GeekCatX（知识猫AI实验室）10月16日发布一条约 51 秒的三国「木牛流马」机械科普短片，称由他封装的 Skill 在 Google Antigravity 环境里全自动生成。开源仓库 gnipbao/anatomy-explainer（MIT）README 写明：基于 wheresryan22/anatomy 的等轴测矢量几何库（原样保留，版本锁定）；流程是先用 grill-me 分轮审题锁定受众与解释范围，再输出 Anatomy 等轴测机制画面 + 旁白 + 电影式字幕 + MP4；默认中文，浅色官方主题和黑色主题可切换，配音默认豆包 Seed TTS 2.0，也可导入其他音频。帖文另称用「短句 TTS 测长」反向驱动机构动画节奏，并用 Gemini 4 Argon 把二维等轴测图升维成 3D。和我们的账号路线（中文、≤3分钟、机制科普）高度贴合，可直接参考其审题与音画对齐做法。封面为视频中段帧：「省力，仍然需要人的操作」线框机构图。",
+      "tool": "anatomy-explainer Skill（grill-me 审题 + 豆包 TTS + Anatomy 矢量库）+ Gemini 4 Argon（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者主帖+一楼自回复给出仓库链接；gnipbao/anatomy-explainer 为 MIT 许可，README 声明非 Anatomy 官方产品。帖文语气偏营销（「起号神器」），机制描述以 README 为准。库内已有同作者「维多利亚马车 2D 转 3D」，本条主体是开源视频流水线，非重复。封面为帖内视频截帧，已自托管。",
+      "attribution": "@GeekCatX（知识猫AI实验室）/ gnipbao（GitHub）；上游 wheresryan22/anatomy",
+      "sourceAuthor": "GeekCatX",
+      "tags": [
+        "结构可视化",
+        "剖面",
+        "机械科普",
+        "TTS",
+        "开源"
+      ],
+      "publishedAt": "2026-10-16T15:58:57Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-17T00:55:00.000Z",
+      "updatedAt": "2026-10-17T00:55:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-17T00:55:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 20,
+          "溯源": 16,
+          "复现": 15,
+          "风格": 8,
+          "新颖": 6
+        },
+        "multiplier": 1.0618,
+        "finalScore": 88.1,
+        "threshold": 65,
+        "run": "2026-10-17-0840-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/gnipbao/anatomy-explainer"
+    },
+    {
+      "title": "128 个零件的 V8 发动机：Blender 路径追踪出片，再搬进浏览器实时 360° 拆着看",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/akashrchokshi/status/2111107060591108138",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-v8-teardown.jpg",
+      "previewType": "image",
+      "description": "X 用户 @akashrchokshi 10月16日发布：一台 128 个零件的 V8 发动机交互拆解，在 Blender 里路径追踪渲染，同时能在浏览器里实时 360° 旋转查看；作者称做它是为了探索「AI + 3D 仿真」怎样改变设计流程。技术栈 Claude · Blender · Three.js；模型来自 Sketchfab：DB11（Outlaw Games）与 V8（little.bucket，CC BY-NC）。竖版视频上半屏是发动机爆炸图与零件标注，下半屏是整车。适合做发动机结构、零件装配关系的科普镜头参考。",
+      "tool": "Claude + Blender + Three.js（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖自述；未附源码。V8 模型为 Sketchfab 第三方作品，CC BY-NC（禁止商用）——若用于商单视频需另找可商用模型。封面为帖内视频截帧，已自托管。",
+      "attribution": "@akashrchokshi（X）；模型 little.bucket、Outlaw Games（Sketchfab）",
+      "sourceAuthor": "akashrchokshi",
+      "tags": [
+        "结构可视化",
+        "剖面",
+        "Blender",
+        "3D建模",
+        "交互揭示"
+      ],
+      "publishedAt": "2026-10-16T14:48:40Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-17T00:55:00.000Z",
+      "updatedAt": "2026-10-17T00:55:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-17T00:55:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 72,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 17,
+          "溯源": 12,
+          "复现": 6,
+          "风格": 9,
+          "新颖": 6
+        },
+        "multiplier": 1.0793,
+        "finalScore": 77.7,
+        "threshold": 65,
+        "run": "2026-10-17-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "一座会自己把自己造出来的工厂：Three.js 里成百上千个零件同时搬运、拼装",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/wwwjim/status/2111144297055871063",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-wwwjim-self-building-factory.jpg",
+      "previewType": "image",
+      "description": "X 用户 @wwwjim（Jimmy Lee）10月16日发布：Three.js 场景「self building factory」，大量零件从供料处被搬运到最终位置，工厂框架一层层自己长出来；作者称这一阶段「需要很多零件所以慢下来」，回复中说仍在开发、会继续发。适合做「涌现/自组装」类镜头参考。",
+      "tool": "Three.js（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖；无源码、无许可说明。封面为帖内视频缩略图（线框工厂俯视），已自托管。",
+      "attribution": "@wwwjim（X）",
+      "sourceAuthor": "wwwjim",
+      "tags": [
+        "Three.js",
+        "程序化生成",
+        "涌现"
+      ],
+      "publishedAt": "2026-10-16T17:16:38Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-17T00:55:00.000Z",
+      "updatedAt": "2026-10-17T00:55:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-17T00:55:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 63,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 14,
+          "溯源": 8,
+          "复现": 5,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.2748,
+        "finalScore": 80.3,
+        "threshold": 65,
+        "run": "2026-10-17-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "做 3D 美术/游戏必收藏：Blender、Poly Haven、ambientCG、Mixamo、three.js、Godot 等 8 个资源",
       "category": "3d",
@@ -10218,8 +10438,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管）",
-  "updatedAt": "2026-10-16T15:55:00.000Z",
-  "totalItems": 231,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条",
+  "updatedAt": "2026-10-17T00:55:00.000Z",
+  "totalItems": 235,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }

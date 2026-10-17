@@ -1,7 +1,120 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T12:52:00.000Z",
+  "updatedAt": "2026-10-17T00:55:00.000Z",
   "topics": [
+    {
+      "url": "https://www.imec-int.com/en/articles/advancing-lithography-through-ai-and-accelerated-computing",
+      "title": "量芯片线宽的电镜图，为什么以前要拍64遍取平均？现在AI只拍1遍就够了",
+      "category": "半导体",
+      "source": "imec 官方文章《Advancing lithography through AI and accelerated computing》（与 NVIDIA 合作成果，2026-10-14 发布）",
+      "publishedAt": "2026-10-14",
+      "eventAt": null,
+      "collectedAt": "2026-10-17T00:55:00.000Z",
+      "updatedAt": "2026-10-17T00:55:00.000Z",
+      "description": "CD-SEM（关键尺寸扫描电镜）是产线量线宽（CD）和线边粗糙度（LWR）的标准工具。imec 解释了一个反直觉的矛盾：为了防止图形坍塌、也为了适应 High NA EUV 更浅的焦深，光刻胶必须越做越薄；可胶越薄，电子束打上去激发的二次电子越少，SEM 图的信噪比越低，量出来的尺寸误差就越大。传统办法是同一位置反复扫描、最多叠 64 帧取平均，代价是机台时间。imec 提供实测 CD-SEM 数据，NVIDIA 开发了基于生成对抗网络（GAN）的去噪方法：只用 1 帧「带噪」图像，信噪比平均提升 5.5 倍，并用功率谱密度（PSD）分析验证重建图像，适用于多种光刻胶/底层组合；相对多帧平均，量测吞吐最多可提高约 64 倍。文中第二个案例是 cuLitho 加速的工艺窗口 OPC，在 3nm 版图 M0/M2 金属线晶圆上测得工艺窗口提升 30%。机制钩子：尺寸越小越难量——不是电镜不够强，而是为了印得出，胶薄到「不发光」了。反方/限定：去噪方法源自 2023 年 SPIE 论文（M. Kim 等）；用 AI 重建的图来量纳米级尺寸，本身就要回答「会不会脑补细节」——文章给的证据是 PSD 对比与 64 帧原图对照，非产线量产数据。可拍角度：①一张满是雪花的 SEM 图 vs 64 帧平均图 vs AI 1 帧去噪图；②光刻胶为什么越薄越难拍；③量测速度×64 对产线意味着什么；④AI「脑补」风险怎么验证。0秒开场：imec 图 1 三联对比——原始单帧噪点图、AI 去噪图、64 帧平均图并排。",
+      "caveat": "全部数字来自 imec 官方文章（2026-10-14）；去噪图源自 M. Kim et al. 2023 SPIE 论文。OPC 部分与库内 10-15「光罩图案算好几周」选题有重叠，本条主打 SEM 量测。封面为 imec 文章图 1，已自托管。",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-imec-cdsem-denoise.jpg",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-imec-cdsem-denoise.jpg",
+      "imageAlt": "imec 图 1：CD-SEM 线条图案的原始单帧噪点图、AI 去噪图与 64 帧平均图对比及功率谱密度曲线",
+      "tags": [
+        "光刻",
+        "芯片制造",
+        "SEM",
+        "芯片误差",
+        "AI工艺"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 92,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 18,
+          "画面": 14,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 4
+        },
+        "multiplier": 1.0743,
+        "finalScore": 98.8,
+        "threshold": 65,
+        "run": "2026-10-17-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+      "title": "量子计算机还没造好，为什么AI先把它要跑的电路「省」掉了一个数量级？",
+      "category": "AI",
+      "source": "Anthropic 研究博客《Designing more efficient quantum circuits with Claude》（2026-10-16，附 arXiv 论文；Andi Gu 主导，与哈佛 Susanne Yelin、Mikhail Lukin 合作）",
+      "publishedAt": "2026-10-16",
+      "eventAt": null,
+      "collectedAt": "2026-10-17T00:55:00.000Z",
+      "updatedAt": "2026-10-17T00:55:00.000Z",
+      "description": "Anthropic 给 Claude Mythos 5 八个量子电路任务（化学、优化、量子模拟、数论等基础模块）的文字说明，再配一个自动评估程序：检查电路是否正确，并按「量子比特数×门数」打分，Claude 在闭环里自己提方案、拿分、再改，回合之间无人工输入。结果八项都找到了比已发表最佳设计更省量子比特、也更省门数的新电路。两个例子：①椭圆曲线点加法里最贵的一步是模逆运算，经典电脑常用 divsteps 迭代，但量子电路不能丢弃中间信息，必须存下每一步走了哪条分支，量子比特会爆。Claude 跑了 53 小时，发现分支信息可以从每轮的数字对里直接「解码」回来，不用存——并用大规模数值模拟和 Lean 形式化证明验证；其中一种设计比此前最小方案多用 12% 量子比特、门数却少 17 倍。②DQI 量子优化算法最贵的 Reed–Solomon 解码步骤，Claude 改用 Berlekamp–Massey 方法，并跑了 4.03 亿次模拟统计「例外值」实际出现频率，把按最坏情况预留的 665 个量子比特降到 19 个（约万分之一的失败率在允许误差内），门数比 Google 此前方案少 12 倍。机制钩子：量子电路不能写 if-else，也不能删草稿纸——省资源靠的是数学结构洞察，而不是硬件变好。反方/限定：Anthropic 自述早期 Claude 偏保守、偏好已知方法，需要人工提示「想得更宽」；电路设计只是容错量子计算的一环，纠错码、解码器、硬件控制仍是瓶颈。可拍角度：①FeMoco 估算从 2017 年约 50 万亿个 Toffoli 门降到约 3.4 亿（多组研究者花了 8 年）vs Claude 单次 53 小时；②「不能删草稿」的计算机；③AI 自己写 Lean 证明自查；④665→19 个量子比特：用统计代替最坏情况。0秒开场：博客图 2——八个任务里灰点（已发表最佳）vs 橙点（Claude 设计）的资源散点图。",
+      "caveat": "数字与引述来自 Anthropic 官方研究博客；未逐项复核 arXiv 论文中的表格。封面为博客图 2（八项任务资源对比散点图），已自托管。",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-claude-quantum-circuits.jpg",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-claude-quantum-circuits.jpg",
+      "imageAlt": "Anthropic 博客图 2：八个量子电路任务中已发表最佳设计（灰）与 Claude 设计（橙）的量子比特数与门数对比散点图",
+      "tags": [
+        "量子计算",
+        "智能体",
+        "AI科研"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 87.7,
+        "threshold": 65,
+        "run": "2026-10-17-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/",
+      "title": "让AI自己做湿实验，第一轮命中率0%：为什么它越追求「粘得牢」，结果反而越错？",
+      "category": "AI",
+      "source": "Google Research 博客《Grounding AI agents in biological reality: Building blocks for autonomous wet labs》（2026-10-16）",
+      "publishedAt": "2026-10-16",
+      "eventAt": null,
+      "collectedAt": "2026-10-17T00:55:00.000Z",
+      "updatedAt": "2026-10-17T00:55:00.000Z",
+      "description": "Google Research 把 AI 智能体接到移液机器人上做真实的分子设计闭环。第一块积木是 VERID：基于开源 PyLabRobot 的实验台「语义数字孪生」，实时追踪机械臂几何、每个孔的体积、试剂和枪头库存；所有指令先在仿真里几秒钟预跑，拦下「8 通道移液头伸不进窄槽」「从空孔里吸液」这类代码合法但物理上不可能的操作。第二块是用 DNA 适配体做 3 轮「设计-合成-筛选-测序」闭环（每轮 7–10 天）：α-凝血酶第 1 轮命中率 0%，原因是固定引物突出端让 48% 的序列折叠不对；智能体加上夹持侧翼茎后升到 26.0%，第 3 轮到 42.1%（特异性 98.5%）。肌红蛋白更有戏剧性：第 2 轮智能体追求结合强度，63% 的设计都富集了 G-四链体，结果大多是乱粘脱靶蛋白和磁珠的「粘性」假阳性，特异性从 75.0% 跌到 19.1%、真实命中率从 10.2% 跌到 3.7%；智能体读懂数据后第 3 轮自己改规则，特异性回到 72.4%、命中率升到 33.5%（约 9 倍）。第三块是面向肿瘤表面受体 FAP 的蛋白结合物设计：只截取结合口袋做结构预测，提速 8.6 倍，少数几轮实验就得到个位数纳摩尔亲和力的结合物。机制钩子：AI 在真实世界里也会「钻空子」——你奖励它粘得牢，它就学会到处乱粘。反方/限定：仍是研究原型，人类全程审批序列、协议和机器人运行；所有序列做生物安全筛查，选用无传染性体系；不是药物或诊断成果。可拍角度：①数字孪生拦下一条「物理上不可能」的移液指令；②命中率 0%→26%→42% 的三轮曲线；③「粘性」假阳性=现实版奖励投机；④人定战略、AI 执行，命中率近翻倍。0秒开场：博客流程图——分析/生成/设计/排序 → 合成候选 → 筛选结合物 → 测序 → ×N 轮。",
+      "caveat": "全部数字来自 Google Research 官方博客；涉及肿瘤靶点的部分仅为分子结合研究，不构成医疗信息。封面为博客适配体闭环流程图，已自托管。",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-google-wetlab-agents.jpg",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-google-wetlab-agents.jpg",
+      "imageAlt": "Google Research 博客图：智能体流水线（分析、生成、设计、排序）驱动合成候选、筛选功能结合物、测序并循环多轮",
+      "tags": [
+        "智能体",
+        "AI科研",
+        "AI安全"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 81,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 85.6,
+        "threshold": 65,
+        "run": "2026-10-17-0840-shanghai"
+      }
+    },
     {
       "url": "https://www.nature.com/articles/s41378-025-01105-z",
       "title": "刻蚀侧壁上那些「扇贝纹」，工程师要盯几小时：为什么现在可以让AI从SEM图里自动量出来？",
