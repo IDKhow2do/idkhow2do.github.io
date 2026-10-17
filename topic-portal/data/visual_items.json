@@ -1,8 +1,172 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 235,
+  "exportedCount": 238,
   "items": [
+    {
+      "title": "Opus 5.5 操控 Blender 搭出一间「有人住过」的书房：先给每件物体定物理规则，再决定哪些交给 Tripo 生成",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/shion_takk/status/2110896887096369573",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-shion-study-blender.jpg",
+      "previewType": "image",
+      "description": "X 用户 @shion_takk 10月16日发布：让 Claude Opus 5.5 通过 Blender MCP 操作 Blender，做一间虚构的书房（帖内两段视频+两张图）。作者总结：①需求定义最重要——定了公寓档次就能定房间骨架，定了结构类型就能定墙厚和窗框做法；②喂给 AI 一份「自己的经历」上下文文件，它会主动做出祖父做的能面、祖母烧的陶杯、网球拍等小物；③物体按三档生成：AI 用 bpy 直接建模 / Tripo HD / Tripo SM，按「需要怎么观察、之后要不要改形」来判定；④给所有物体套物理规则，逐件排查穿插和悬空；⑤反复强调「别自己发挥，先查专业资料」（例如窗框去看厂商目录）；⑥让显示器画面、小风扇等小东西动起来；⑦远景用生图代替。成本自述：98% 工作由 Opus 5.5（medium）完成，按 API 价折算约 455 美元（实际用 100 美元订阅），约 50 次提示、多为语音输入；Tripo 生成 41 次约 25 美元；回复中称历时 4 天，AI 工作约 18 小时，另渲染 13.5 小时。次日的制作复盘帖补充：给每件物体做干涉检查并按物理属性分类；搅拌机、网球拍先让 AI 调研构造再改；书脊文字方向也要修；做视频的话远景图应做成弧面。可作 Tripo + Blender 实际工作流参考。",
+      "tool": "Claude Opus 5.5（medium，部分 Sonnet 5.5 子代理）+ Blender MCP + Tripo（HD/SM）+ GPT Images 2.5（经 Codex CLI 调用）（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者本人 X 主帖（2026-10-16）及制作复盘帖 https://x.com/shion_takk/status/2111295421436063823 ；未公开提示词和工程文件；作者另有付费 note 文章《Vibe Modeling 大全》（前 3 章免费）。成本为作者按 API 价折算的估算值。封面为帖内视频缩略图，已自托管。",
+      "attribution": "@shion_takk（X）",
+      "sourceAuthor": "shion_takk",
+      "tags": [
+        "Blender",
+        "Tripo",
+        "3D建模",
+        "室内场景",
+        "Blender MCP"
+      ],
+      "publishedAt": "2026-10-16T00:53:31Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-17T04:55:00.000Z",
+      "updatedAt": "2026-10-17T04:55:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-17T04:55:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 15,
+          "溯源": 15,
+          "复现": 12,
+          "风格": 9,
+          "新颖": 9
+        },
+        "multiplier": 1.038,
+        "finalScore": 85.1,
+        "threshold": 65,
+        "run": "2026-10-17-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "中土世界做成一块漂浮的微缩沙盘：真实 GIS 地形 + Three.js WebGPU，逐帧录成 3 分 47 秒电影，代码全开源",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/Earthwalker17X/status/2111217832101032219",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-middle-earth-miniature.jpg",
+      "previewType": "image",
+      "description": "X 用户 @Earthwalker17X 10月16日发布：用 Claude Code 里的 Opus 5.5 从零做出一个微缩 3D 中土世界，再把它拍成 3 分 47 秒的电影。仓库 README（MIT，代码）写明：1600×960 公里的中土地图放在一块漂浮的石板上，海岸线、河流、湖泊和起伏来自社区 ME-DEM 高程模型与 ME-GIS 矢量图层；Python 烘焙脚本把河流贴到谷底、求解湖面高度、推导地表覆盖；高度像立体地形模型一样被夸张；24 个地标（霍比屯、孤山、末日火山等）全部用代码建模；天空、水、烟和光都是实时渲染，没有预渲染；three.js r186 WebGPU + TSL，TypeScript strict；电影以 1080p24、227.75 秒逐帧确定性捕获，并配原创管弦乐。作者说难点仍是「普通的工程问题」：架构、一致性、视觉 QA、资源限制和迭代，并开源了代码、渲染管线、QA 工具和复现步骤。可作科普镜头参考：立体地图为什么要把山「拉高」、河流如何贴合谷底。",
+      "tool": "Claude Code（Opus 5.5）+ three.js WebGPU/TSL + Python GIS 烘焙（作者自述/README）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者主帖与自回复给出仓库 earthwalker17/map-of-middle-earth（GitHub API：MIT，2026-09-28 创建）；README 标注为非商业同人项目（托尔金 IP），地形数据来自社区 ME-DEM/ME-GIS——画面只能作参考，不能直接用于商单。封面为仓库 docs/images/hero-golden-hour.jpg（黄金时刻全景），已自托管。",
+      "attribution": "@Earthwalker17X（X）/ earthwalker17（GitHub）",
+      "sourceAuthor": "Earthwalker17X",
+      "tags": [
+        "Three.js",
+        "微缩场景",
+        "程序化生成",
+        "3D建模",
+        "开源"
+      ],
+      "publishedAt": "2026-10-16T22:08:50Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-17T04:55:00.000Z",
+      "updatedAt": "2026-10-17T04:55:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-17T04:55:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 89,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 17,
+          "溯源": 19,
+          "复现": 15,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.249,
+        "finalScore": 111.2,
+        "threshold": 65,
+        "run": "2026-10-17-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/earthwalker17/map-of-middle-earth"
+    },
+    {
+      "title": "Tripo 生成的 HD 模型直接塞进 Three.js：不经 Blender 建模，一键得到可开的未来飞车",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/onofumi_AI/status/2111226920834826372",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-onofumi-tripo-threejs.jpg",
+      "previewType": "image",
+      "description": "X 用户 @onofumi_AI 10月16日发布约 14 秒视频：用 Opus 5.5 把 Tripo 生成的 HD 模型导入 Three.js，作者称不必经 Blender MCP 建模、一键就能做出来，引用帖里角色也同样简单。画面为街道场景中的未来感飞行车辆，界面显示速度与操作键位。",
+      "tool": "Claude Opus 5.5 + Tripo HD + Three.js（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖；无源码、无提示词。封面为帖内视频缩略图，已自托管。",
+      "attribution": "@onofumi_AI（X）",
+      "sourceAuthor": "onofumi_AI",
+      "tags": [
+        "Tripo",
+        "Three.js",
+        "3D建模"
+      ],
+      "publishedAt": "2026-10-16T22:44:57Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-17T04:55:00.000Z",
+      "updatedAt": "2026-10-17T04:55:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-17T04:55:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面URL本轮HTTP可访问并目视核验为作品/论文真实画面，非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 57,
+        "baseBreakdown": {
+          "实体": 16,
+          "科普": 8,
+          "溯源": 10,
+          "复现": 8,
+          "风格": 9,
+          "新颖": 6
+        },
+        "multiplier": 1.4,
+        "finalScore": 79.8,
+        "threshold": 65,
+        "run": "2026-10-17-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "不用放洗澡水也能玩泡澡球：浏览器里实时流体模拟，泡澡球入水后嘶嘶旋转、拉出彩带",
       "category": "frontend",
@@ -10438,8 +10602,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条",
-  "updatedAt": "2026-10-17T00:55:00.000Z",
-  "totalItems": 235,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条",
+  "updatedAt": "2026-10-17T04:55:00.000Z",
+  "totalItems": 238,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
