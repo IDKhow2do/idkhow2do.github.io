@@ -1,7 +1,158 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-17T00:55:00.000Z",
+  "updatedAt": "2026-10-17T04:55:00.000Z",
   "topics": [
+    {
+      "url": "https://newsletter.semianalysis.com/p/asml-is-building-a-hybrid-bonding",
+      "title": "光刻机巨头为什么要去造「粘芯片」的机器？专利图里，每颗芯片要坐着小车绕一圈才落到晶圆上",
+      "category": "半导体",
+      "source": "SemiAnalysis《ASML Is Building a Hybrid Bonding Tool, Sending More Chills to Besi》（2026-10-15，依据 ASML 27 个键合专利族及锚定专利 WO2025201788A1）；补充：南华早报 2026-10-16 报道",
+      "publishedAt": "2026-10-15",
+      "eventAt": null,
+      "collectedAt": "2026-10-17T04:55:00.000Z",
+      "updatedAt": "2026-10-17T04:55:00.000Z",
+      "description": "混合键合（hybrid bonding）不用焊球，而是把两颗芯片（或芯片与晶圆）表面的铜触点和介质层直接贴合，连接密度远高于凸点。SemiAnalysis 10月15日发文称：ASML 尚未官宣，但其在 2022年12月–2024年11月间提交了 27 个键合专利族（多数是芯片对晶圆 D2W），The Elec 3 月也报道过 ASML 与 Prodrive、VDL ETG 开始设计键合机架构。锚定专利 WO2025201788A1 画出的机器和传统 D2W 键合机完全不同：不是键合头逐颗拾取放置，而是每颗芯片面朝下坐在独立的载具上沿环形轨道走一圈——上料、检测、清洗、等离子活化、测量（形貌/调平）、粗-精对准，最后到键合站由晶圆台抬升与芯片接触；轨道只负责把芯片送到约 10 µm 附近，最后的纳米级靠载具短行程执行器和晶圆台完成。为什么是 ASML：键合良率主要由对准精度和颗粒控制决定，而这正是光刻机几十年在解的问题；另一份 2024 年 7 月专利描述键合机把每颗芯片的位置图交给光刻机，后者只需校几个标记就能曝光。行业现状（SemiAnalysis 口径）：D2W 量产只在逻辑芯片，AMD 自 2022 年起出货混合键合 V-Cache；台积电 SoIC 现在约 6 µm 间距、目标约 2029 年 4.5 µm；D2W 设备吞吐上限据其调查只有约每小时 1 片晶圆，单颗成本高；Besi 是唯一量产供应商。大陆相关（南华早报引述）：华为称麒麟 9050 系列的 LogicFolding 架构集成了超过 5000 万个混合键合点、晶体管密度提升 53.5%；长鑫存储新一代「4F²」DRAM 架构使用混合键合；拓荆科技混合键合设备 2025 年营收 1.36 亿元、同比增 41.9%。反方/限定：ASML 未发布任何产品，全部是专利和分析师推断；韩国仁荷大学的专利分析认为 ASML 可能先做晶圆对晶圆（W2W）；SemiAnalysis 还判断 HBM 在 2029 年前不会采用 D2W 混合键合。可拍角度：①小车绕轨道 vs 键合头拾放，一张图讲清两种机器；②为什么「粘」比「印」还难：从 10 µm 到纳米级的最后一步；③键合机把芯片位置图交给光刻机——前后道开始打通；④国产视角：麒麟 LogicFolding、长鑫 4F²、拓荆设备。0秒开场：SemiAnalysis 简化的专利轨道图——一圈小方块载具依次经过 8 个工位。",
+      "caveat": "ASML 未确认该产品；机制描述来自 SemiAnalysis 对公开专利的解读（专利原文未逐项复核）。华为/长鑫/拓荆数字转引自南华早报（其引述公司披露与年报），未逐一回查原始公告。封面为 SemiAnalysis 文中图 1（ASML 轨道式 D2W 键合机，SA 标注简化，来源 ASML 专利），已自托管。",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-asml-hybrid-bond-track.jpg",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-asml-hybrid-bond-track.jpg",
+      "imageAlt": "SemiAnalysis 图 1：ASML 专利中的轨道式芯片对晶圆键合机示意——载具绕环形轨道经过上料、检测、清洗、等离子活化、测量、对准、键合等工位",
+      "tags": [
+        "先进封装",
+        "混合键合",
+        "芯片制造",
+        "光刻"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 89,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 17,
+          "画面": 13,
+          "来源": 10,
+          "时效": 10,
+          "大陆": 9,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 95.6,
+        "threshold": 65,
+        "run": "2026-10-17-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://iopscience.iop.org/article/10.1149/2162-8777/aeb15f",
+      "title": "缝越窄，氢氟酸越「刻不动」：为什么往药水里加一种盐，窄缝里的刻蚀速度反而追回来了？",
+      "category": "半导体",
+      "source": "ECS Journal of Solid State Science and Technology 论文《Electrolyte-Induced Recovery of SiO2 Wet Etching in Nano-Confined Structures: Implications for Anionic Species Exclusion》（SCREEN Semiconductor Solutions，Dai Ueda、Akiko Harumoto、Hiroaki Takahashi；2026-10-07 接收，2026-10-16 发表）",
+      "publishedAt": "2026-10-16",
+      "eventAt": null,
+      "collectedAt": "2026-10-17T04:55:00.000Z",
+      "updatedAt": "2026-10-17T04:55:00.000Z",
+      "description": "先进芯片结构里常要在只有几纳米宽的缝隙中用稀氢氟酸（DHF）湿法刻蚀二氧化硅，但论文开篇指出：纳米受限结构里的刻蚀速率明显低于平整膜（blanket）。湿法设备大厂 SCREEN 的团队在名义缝宽 3、5、10 nm 的结构中，往 DHF 里加入四乙基氯化铵（TEACl，一种季铵盐电解质）做对比：加入后「窄缝/平整膜」的刻蚀速率之比上升，受限造成的减速被部分追回，其中 5 nm 和 10 nm 结构恢复最明显。机制：基于泊松-玻尔兹曼方程的分析预测，缝越窄，带负电的刻蚀物种 HF2− 越会被静电排斥在缝外；实验观察到的缝宽依赖和加电解质后的响应与这一预测定性一致，作者据此认为「负电刻蚀物种的静电排斥」是窄缝刻蚀变慢的原因之一，并提出用电解质工程缓解。反直觉钩子：同一瓶药水，平面上刻得飞快，钻进窄缝就像被门卫拦住；往里加盐不是为了腐蚀更强，而是让「门卫」失效。反方/限定：作者用词是「定性一致」「支持假说」，不是定量证明；3 nm 结构恢复不明显；量产工艺是否能用这种添加剂论文未讨论。可拍角度：①平面 vs 窄缝两条刻蚀曲线；②HF2− 被静电挡在缝口的动画（可用 Three.js/Canvas 粒子自制）；③加盐后带电粒子重新涌入；④刻蚀一线视角：为什么越先进的结构越怕「窄缝效应」。0秒开场：论文图形摘要三联——受限示意、无电解质、加电解质。",
+      "caveat": "内容依据论文摘要与图形摘要（IOP 页面），正文具体数值未逐项复核；「加盐让门卫失效」为通俗类比。封面为论文图形摘要（加白边适配卡片比例），已自托管。",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-screen-confined-hf-etch.jpg",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-screen-confined-hf-etch.jpg",
+      "imageAlt": "ECS JSS 论文图形摘要：纳米受限结构中 SiO2 湿法刻蚀，无电解质与加入电解质时 HF2− 进入窄缝情况对比",
+      "tags": [
+        "刻蚀",
+        "湿法刻蚀",
+        "芯片制造",
+        "表面化学"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 19,
+          "画面": 9,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 94.5,
+        "threshold": 65,
+        "run": "2026-10-17-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://research.nvidia.com/labs/gear/aspire/",
+      "title": "教机器人不再靠反复练：为什么让AI自己写代码、看回放、改bug，换个更强的大模型成功率就逼近99%？",
+      "category": "AI",
+      "source": "NVIDIA GEAR 实验室项目页《ASPIRE: Agentic /Skills Discovery for Robotics》+ Jim Fan X 帖（2026-10-16 开源 V1.0，GitHub NVlabs/ASPIRE，Apache-2.0；论文 arXiv:2607.00272）",
+      "publishedAt": "2026-10-16",
+      "eventAt": null,
+      "collectedAt": "2026-10-17T04:55:00.000Z",
+      "updatedAt": "2026-10-17T04:55:00.000Z",
+      "description": "ASPIRE（Agentic Skill Programming through Iterative Robot Exploration）走「代码即策略」路线：不训练一个机器人神经网络策略，而是让大模型直接写 Python 控制程序，调用分割（SAM3）、深度定位、抓取、运动规划等原语。三个组件：①闭环执行引擎，把每次感知、规划、抓取、控制调用的输入输出和可视证据（分割叠加图、抓取候选、轨迹、碰撞反馈）全部记录下来，智能体据此定位失败、改代码、重新执行验证；②不断扩充的技能库，把验证过的修复沉淀成可复用技能（项目页称 90+ 技能、150+ 任务）；③对程序做进化搜索，探索多种写法。项目页数据：在扰动下的操作任务比既有方法最高提升 77%，Robosuite 双臂交接提升 72%，长程家务任务最高提升 32%；没见过的长程任务零样本成功率 31%，对照方法 4%；换用 Claude Opus 5.5 后，80 个 LIBERO-Pro 任务平均成功率 99%，代表性 Robosuite 和 BEHAVIOR-1K 任务 100%。真机上用 GPT-6 Astra 在线学习拧魔方，随着技能积累，每转一面所需的 token 和时间逐轮下降。Jim Fan 在 X 上说：Astra 上线当天实验室换了后端模型，一夜之间各基准都接近 99%；Opus 5.5 在其仿真基准上略胜 Astra，Sonnet 5.5 约 12 美元/任务，是成本-能力的帕累托前沿。项目页还测了 Kimi K3、Qwen 3.8 Max 等开源权重模型。反直觉钩子：机器人「学会」一项技能，存下来的不是权重而是一段改过很多次的代码——所以模型一升级，机器人跟着变强。反方/限定（项目页自述）：还不是完全自主的真实世界学习者，需要可靠的成功检测、安全复位、安全监控与标定；受限于预定义的原语 API；搜索循环很费算力。可拍角度：①失败回放→AI 读日志→改一行代码→再抓一次；②技能库像程序员的代码片段收藏夹；③同一套环境只换模型，成功率曲线；④12 美元一个任务的账怎么算。0秒开场：真机双臂拧魔方视频，或项目页方法总图。",
+      "caveat": "数字均来自 NVIDIA 项目页与 Jim Fan 本人 X 帖；网传「换模型成功率从 15% 跳到 99%」出自二手媒体，未采用。封面为项目页 og:image 方法总图，已自托管。",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-nvidia-aspire.jpg",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-nvidia-aspire.jpg",
+      "imageAlt": "ASPIRE 项目页方法总图：机器人执行引擎、智能体编码（协调者/执行者、迭代调试、进化搜索）与技能库，以及仿真到真机的技能迁移",
+      "tags": [
+        "智能体",
+        "机器人",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 86,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 14,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 90.9,
+        "threshold": 65,
+        "run": "2026-10-17-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://www.alixlabs.com/2026/10/01/alixlabs-begins-aps-technology-evaluation-within-the-nanoic-pilot-line/",
+      "title": "一根线刻成两根：为什么有公司想用「原子层刻蚀」替掉多次曝光？",
+      "category": "半导体",
+      "source": "AlixLabs 官方新闻稿《AlixLabs begins APS™ technology evaluation within the NanoIC pilot line》（2026-10-01，imec 协调的 NanoIC 试验线）",
+      "publishedAt": "2026-10-01",
+      "eventAt": null,
+      "collectedAt": "2026-10-17T04:55:00.000Z",
+      "updatedAt": "2026-10-17T04:55:00.000Z",
+      "description": "当线条密度超过单次光刻的极限，产线通常靠多重图形化：LELE（光刻-刻蚀-光刻-刻蚀）、SADP（自对准双重图形）、SAQP（自对准四重图形），代价是步骤多、成本高。瑞典隆德大学衍生公司 AlixLabs 的 APS™（Atomic Layer Etch Pitch Splitting）换了个思路：在已经图形化的结构上，用原子层刻蚀（ALE，一种等离子体干法循环刻蚀）把一根结构选择性地「劈」成两根，节距密度翻倍，公司称所需步骤少于上述传统多重图形化。10月1日起，它在 imec 协调的欧盟 NanoIC 试验线开始为期 6 个月的评估：imec 先做出与当前最先进量产工艺尺寸相当的线-间距结构并表征，AlixLabs 先在小样片上开发工艺，再把选定条件转到整片晶圆，晶圆送回 imec 按其量测基线检验 CD 与 CD 均匀性、线边/线宽粗糙度、节距漂移（pitch walking）、剖面与凹陷、随机缺陷。公司称 APS 已在美国、台湾、欧洲获专利，这次第三方验证是多家潜在客户要求的。反直觉钩子：大家都在拼更贵的光刻机，有人想反过来靠「刻」把密度翻倍。反方/限定：新闻稿未给出任何性能数据，评估刚开始；能否满足量产对缺陷和节距漂移的要求未知。可拍角度：①一根线被「劈」成两根的示意动画（可用 Three.js 自制）；②LELE / SADP / SAQP / APS 步骤数对比；③什么是 pitch walking：两根「兄弟线」间距不等；④刻蚀工程师视角：ALE 为什么能做到原子级可控。0秒开场：自制「一劈为二」剖面动画。",
+      "caveat": "全部事实来自 AlixLabs 官方新闻稿（及 Bits&Chips 同日报道核对：尚无性能结果）。APS 具体工艺机理新闻稿未披露。封面为新闻稿配图：AlixLabs CTO Amin Karimi 在 SEMICON Taiwan 2026 讲解 APS，已自托管。",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-alixlabs-aps.jpg",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-alixlabs-aps.jpg",
+      "imageAlt": "AlixLabs CTO Amin Karimi 在 SEMICON Taiwan 2026 新创舞台讲解 APS 原子层刻蚀节距分裂技术",
+      "tags": [
+        "刻蚀",
+        "光刻",
+        "芯片制造",
+        "多重图形化"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 78,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 15,
+          "画面": 7,
+          "来源": 15,
+          "时效": 6,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 83.8,
+        "threshold": 65,
+        "run": "2026-10-17-1240-shanghai"
+      }
+    },
     {
       "url": "https://www.imec-int.com/en/articles/advancing-lithography-through-ai-and-accelerated-computing",
       "title": "量芯片线宽的电镜图，为什么以前要拍64遍取平均？现在AI只拍1遍就够了",
