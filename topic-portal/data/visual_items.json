@@ -1,8 +1,218 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 238,
+  "exportedCount": 242,
   "items": [
+    {
+      "title": "一人做治愈系农场游戏：Claude Code 经 MCP 连 Unity 6 + Blender，模型全用 Tripo 生成",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "is3d": true,
+      "source": "https://x.com/mnilax/status/2110773148081606775",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-mnilax-cozy-farm-unity-tripo.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2110763018568998912/vid/avc1/1080x1920/Ui1UlXj2_wdLVp3o.mp4",
+      "description": "@Mnilax 2026-10-15 发帖：用 Opus 5.5 和 Unity 6 独自做一款治愈系农场游戏，诀窍是像工作室一样「一个部门一条提示词」。六步：①Claude Code 通过 MCP 连上 Unity 6 和 Blender；②写一页设计文档：种植→浇水→收获→出售，四季；③在 Tripo 里生成所有模型（农夫、谷仓、风车、作物）；④Opus 在 Blender 里清理模型并在 Unity 搭出小岛；⑤每条提示词只做一个系统（种植、生长计时、市场、金币）；⑥Opus 用自动驾驶试玩并先列 bug 再修。分工：Tripo 出模型，Unity 6 管世界/物理/UI，Opus 5.5 写脚本、搭场景、试玩，人负责玩并指出哪里不对。规则：做完一个系统先玩，再做下一个。帖内为竖屏演示视频；引用其前帖「15 个把 Opus 5.5 变成游戏工作室的 GitHub 仓库」（如 Claude-Code-Game-Studios、Unity-MCP、godot-mcp、UnrealClaude 等）。",
+      "tool": "Claude Code（Opus 5.5）+ MCP、Unity 6、Blender、Tripo",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为 @Mnilax 原帖（2026-10-15T16:41:49Z，经 X API 回读，非臆造）。原帖未指明所用 MCP 实现，故不附仓库链接。封面为帖内视频缩略图。",
+      "attribution": "@Mnilax",
+      "sourceAuthor": "Mnilax",
+      "tags": [
+        "用户指定收纳",
+        "Unity",
+        "Blender",
+        "Tripo",
+        "MCP",
+        "游戏开发",
+        "3D建模"
+      ],
+      "publishedAt": "2026-10-15T16:41:49Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-17T05:45:00.000Z",
+      "updatedAt": "2026-10-17T05:45:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-17T05:45:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-17T05:45:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          675,
+          1200
+        ],
+        "preview_check": "封面为帖内视频缩略图，HTTP 200（竖屏）。",
+        "video_check": "未播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-17"
+      }
+    },
+    {
+      "title": "个人网站模板补充：motionsites.ai 与 v0 Templates",
+      "category": "frontend",
+      "styleFamily": "code",
+      "is3d": false,
+      "source": "https://x.com/yanliudreamer/status/2111010291014361319",
+      "sourceCodeUrl": "",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-yanliudreamer-ai-site-templates.jpg",
+      "previewType": "image",
+      "videoUrl": "",
+      "description": "@yanliudreamer（妍妍）2026-10-16 转引 @CrazyKaomei（疯狂的烤妹儿）的帖子，补充两个 AI 网站模板：motionsites.ai 和 v0.app/templates。被引帖观点：AI 时代个人网站是最大的「门面」，附在简历或用于社交自我介绍都能展现 taste。该链条最早源自妍妍的长文《审美提升👉硅谷设计师私藏的10个网站+灵感库！》（Mobbin、Godly/recent.design、Minimal Gallery、Refero、Dark design、Design spells、Lapa Ninja、Typewolf、Load more、Best Designs on X）。",
+      "tool": "motionsites.ai、v0 Templates",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为 @yanliudreamer 原帖（2026-10-16T08:24:08Z）及所引 @CrazyKaomei 帖 2110976029871235477，经 X API 回读。原帖无自带媒体，封面为被引帖配图。",
+      "attribution": "@yanliudreamer（妍妍）；引用 @CrazyKaomei",
+      "sourceAuthor": "yanliudreamer",
+      "tags": [
+        "用户指定收纳",
+        "网站模板",
+        "个人网站",
+        "v0",
+        "审美参考"
+      ],
+      "publishedAt": "2026-10-16T08:24:08Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-17T05:45:00.000Z",
+      "updatedAt": "2026-10-17T05:45:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-17T05:45:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-17T05:45:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          768
+        ],
+        "preview_check": "封面为被引帖 @CrazyKaomei 配图，HTTP 200。",
+        "video_check": "无视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-17"
+      }
+    },
+    {
+      "title": "把 Claude 搭成 AI 制作工作室：数据室、动效室、剪辑室 + 10 个开源动效 Skill",
+      "category": "video",
+      "styleFamily": "code",
+      "is3d": false,
+      "source": "https://x.com/francescoinweb3/status/2108882188624121896",
+      "sourceCodeUrl": "https://github.com/Mort1d/motion-graphics-skills",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-francesco-claude-production-studio.jpg",
+      "previewType": "image",
+      "videoUrl": "",
+      "description": "@francescoinweb3 2026-10-10 发布 X 长文《Build Your Own AI Production Studio With Claude》：把 Claude 看成由多个「房间」组成的工作室——数据室（Claude Dashboards，每张图带生成它的查询）、动效室（Claude Motion，动画写成代码、无视频模型、可导出 MP4，Team/Enterprise beta）、剪辑室（Docs/Slides/Design，全计划可用）。核心观点：动画即代码，所以每个值可改、修改精确、结果确定、可组合——「不是生成视频，而是编译视频」。列出 10 个开源仓库：Remotion、Remotion Agent Skills、HyperFrames、HyperFrames Student Kit、Motion、Lottie Web、GSAP、LottieFiles motion-design-skill、Barty-Bart motion-graphics、howseen-ai claude-motion-design，索引见 Mort1d/motion-graphics-skills。另含 6 步工作流、常见错误和第一周上手计划。",
+      "tool": "Claude（Dashboards / Motion / Docs·Slides·Design）+ Remotion、HyperFrames、GSAP、Lottie 等",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为 @francescoinweb3 原帖及其 X 长文（2026-10-10T11:27:49Z，经 X API 回读，非臆造）。仓库链接取自长文，未逐一核实。封面为长文封面图。",
+      "attribution": "@francescoinweb3（Francesco）",
+      "sourceAuthor": "francescoinweb3",
+      "tags": [
+        "用户指定收纳",
+        "Claude Motion",
+        "Remotion",
+        "Skills",
+        "动效视频",
+        "开源"
+      ],
+      "publishedAt": "2026-10-10T11:27:49Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-17T05:45:00.000Z",
+      "updatedAt": "2026-10-17T05:45:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-17T05:45:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-17T05:45:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          480
+        ],
+        "preview_check": "封面为长文封面图，HTTP 200。",
+        "video_check": "长文内含多段长视频，未播放。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-17"
+      }
+    },
+    {
+      "title": "用 Claude 做视频的 5 步：参考→数据→故事→Remotion 代码动效→文字导演，不用视频模型",
+      "category": "video",
+      "styleFamily": "code",
+      "is3d": false,
+      "source": "https://x.com/francescoinweb3/status/2111190424647782538",
+      "sourceCodeUrl": "https://github.com/remotion-dev/remotion",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-francesco-claude-video-5-steps.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2111189665290043392/vid/avc1/1080x1350/gtte6xNMDNKxLMhE.mp4",
+      "description": "@francescoinweb3 2026-10-16 发帖：大多数 AI 视频看起来一样，是因为直接说「给我做个视频」。他每条视频都走同样 5 步，每步交给下一步一个真实文件：参考 spec.md（让 Claude 拆解喜欢的视频的节奏、第一个动作落点、剪辑节拍）→ 数据 data.json（先有真实数字，每个数字有出处）→ 故事 story.md（一个观点、一个主数字、三个节拍）→ 动效 Scene.tsx（用 Remotion 和 motion-design skill 把每一帧写成代码）→ 导演 timing.ts（用大白话给意见，如「标题晚了一拍」只改一行）；最后渲染静帧对照参考和数据检查，批准后才出 final.mp4。好处：没有视频模型所以不用重抽，同输入同结果，出问题知道是哪一步。引用其长文（完整设置、提示词和 10 个开源 skill）。",
+      "tool": "Claude + Remotion + motion-design skill",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为 @francescoinweb3 原帖（2026-10-16T20:19:55Z，经 X API 回读，非臆造）。sourceCodeUrl 为帖中点名的 Remotion（仓库链接取自其引用长文）。封面为帖内视频缩略图。",
+      "attribution": "@francescoinweb3（Francesco）",
+      "sourceAuthor": "francescoinweb3",
+      "tags": [
+        "用户指定收纳",
+        "Remotion",
+        "Claude",
+        "动效视频",
+        "工作流"
+      ],
+      "publishedAt": "2026-10-16T20:19:55Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-17T05:45:00.000Z",
+      "updatedAt": "2026-10-17T05:45:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-17T05:45:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-17T05:45:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          960,
+          1200
+        ],
+        "preview_check": "封面为帖内视频缩略图，HTTP 200（4:5 竖版）。",
+        "video_check": "未播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-17"
+      }
+    },
     {
       "title": "Opus 5.5 操控 Blender 搭出一间「有人住过」的书房：先给每件物体定物理规则，再决定哪些交给 Tripo 生成",
       "category": "3d",
@@ -10602,8 +10812,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条",
-  "updatedAt": "2026-10-17T04:55:00.000Z",
-  "totalItems": 238,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接）",
+  "updatedAt": "2026-10-17T05:45:00.000Z",
+  "totalItems": 242,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
