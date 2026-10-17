@@ -1,8 +1,228 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 250,
+  "exportedCount": 254,
   "items": [
+    {
+      "title": "200 万段能直接运行的 3D 代码：让 AI 用 Blender Python / Three.js「写」出可修改的模型，同一个 Opus 5.5 换套流程，人评胜率从 21% 到 79%（Apache-2.0）",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://github.com/gaoypeng/3dcodeverse",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261017-3dcodeverse.jpg",
+      "previewType": "image",
+      "description": "南加州大学、耶鲁、罗切斯特、UCSD、哥大、南洋理工、UCSC、Google DeepMind 等作者的 3DCodeVerse（arXiv 2610.22341，2026-10-15 提交）：思路是「3D 世界就是代码」——所有资产都只用代码生成（Blender Python、Three.js、OpenGL 等），从单个物体、带关节的可动物体到整个场景和图形渲染。包含三部分：①3DCodeVerse-2M，约 200 万段可独立运行的 3D 程序，每段附源文件、素材、描述和验证记录（Hugging Face 数据集 ilabai/3dcodeverse）；②3DCodeVerse Harness，多智能体 DAG 流程：先规划 3D 项目，让各家编码代理写原始代码，再自动执行、测量空间尺寸、渲染并评判，根据反馈自动修改，生成过程中不需要人工反馈；③用该语料对 Qwen 做 LoRA/DPO 微调的开源基线。README 给出的 100 个文本生成 3D 物体测试：同一模型放进这套流程后都胜过自家原生工具——Claude Opus 5.5 从 Claude Code 换到 3DCodeVerse，人评偏好 21%→79%、评审分 77.2→88.5；对比 Claude Design（3D Object）为 10%→90%、37.4→87.7；Gemini 3.8 Flash 13%→87%；GPT-6 Astra（Codex）31%→69%。项目页 3dcodeverse.com 有布料、液体、破碎等物理场景和机械结构的展示视频。对用户的「房间 3D 建模 + 换装修风格」项目：代码生成的 3D 场景天然可参数化修改（换材质、换配色、改尺寸），比一次性生成的网格好改；科普角度可讲「为什么让 AI 写代码造 3D，比让它直接生成模型更容易验证和修改」。",
+      "tool": "Blender Python / Three.js / OpenGL；编码代理含 Claude Opus 5.5、Gemini 3.8 Flash、GPT-6 Astra/Luna（README）；Qwen LoRA/DPO 微调",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "官方仓库 gaoypeng/3dcodeverse（GitHub API：Apache-2.0，2026-08-23 创建，本轮 79 star，10-17 仍有推送）；论文 https://arxiv.org/abs/2610.22341 ；数据集 https://huggingface.co/datasets/ilabai/3dcodeverse （卡片许可 CC-BY-NC-SA-4.0，数据非商用）；项目页 https://3dcodeverse.com 。胜率与评分为作者自报（README/论文），本轮未运行代码。封面为仓库 assets/teaser.jpg（官方展示拼图），已自托管。",
+      "attribution": "Yipeng Gao 等 / 3DCodeVerse（GitHub gaoypeng）",
+      "sourceAuthor": "gaoypeng",
+      "tags": [
+        "3D建模",
+        "Blender",
+        "Three.js",
+        "数据集",
+        "开源"
+      ],
+      "publishedAt": "2026-10-15",
+      "collectionIds": [],
+      "collectedAt": "2026-10-17T12:51:00.000Z",
+      "updatedAt": "2026-10-17T12:51:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-17T12:51:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图/YouTube缩略图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 14,
+          "溯源": 20,
+          "复现": 15,
+          "风格": 9,
+          "新颖": 9
+        },
+        "multiplier": 1.219,
+        "finalScore": 103.6,
+        "threshold": 65,
+        "run": "2026-10-17-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/gaoypeng/3dcodeverse",
+      "licenseName": "Apache-2.0（代码）；数据集 CC-BY-NC-SA-4.0",
+      "licenseUrl": "https://github.com/gaoypeng/3dcodeverse/blob/main/LICENSE"
+    },
+    {
+      "title": "摇得越久喷得越猛：一段公开的中文提示词做出可摇、可开盖、可倒的橘子汽水，Opus 5.5 和 Gemini 4 Argon 同题对比（$30 vs $2）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/faustina5211314/status/2111389398369775695",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261017-faustina-orange-soda.jpg",
+      "previewType": "image",
+      "description": "X 用户 @faustina5211314（一只橘）10月17日「橘子实验室 #2」：同一段提示词分别交给 Claude Opus 5.5 和 Gemini 4 Argon，各做一个单 HTML 文件（Three.js 从 CDN 引入，其余素材代码生成）。交互：按住瓶子左右拖动摇晃，液面晃荡、拍打瓶壁，摇得越久气泡越多；点瓶盖弹飞，泡沫从瓶口涌出、顺瓶身流下；往下拖倒进玻璃杯，杯里起泡浮沫；夕阳从窗外斜射，玻璃和汽水在桌面投出橙色焦散光斑；按 D 自动演示 17 秒录屏。作者对比：Argon 约半小时做完，泡沫像一串白球、倒出来一颗一颗往下滴；Opus 磨了约 2 小时，泡沫顺瓶身流到桌上堆着、倒出来是整条水柱、杯上浮一层泡沫，还有汽水蒸发和桌面水渍，成本约贵 15 倍。作者在评论区分 6 条贴出完整提示词（已收录）。科普镜头：为什么摇过的汽水一开盖就喷——溶解的二氧化碳需要「成核点」才能变成气泡，摇晃制造了大量微小气泡；也可作「同一提示词、不同模型」的成本/质量对比素材。",
+      "tool": "Claude Opus 5.5 / Gemini 4 Argon + Three.js（单 HTML，作者自述）",
+      "prompt": "做一个「摇一摇再开盖的橘子汽水」，只用一个 HTML 文件完成（JS 和 CSS 写在里面，可以从 CDN 引入 Three.js，其他素材全部用代码生成），双击就能在浏览器里打开。\n\n画面（写实风格）：\n- 傍晚的木头桌面，桌上一瓶玻璃瓶装的橘子汽水，旁边半个切开的橘子和几颗水珠。\n- 瓶子是透明玻璃，瓶身挂着凝结的水珠，金属瓶盖；瓶里是半透明的橙色汽水，液面上方留一截空气。\n- 光线：窗外斜射进来的暖色夕阳是唯一的主光，玻璃和汽水把光折射到桌面上，形成橙色的焦散光斑。\n\n交互：\n1. 摇晃：按住瓶子左右拖动，瓶子跟着晃，液面真实地晃荡、拍打瓶壁，摇得越久气泡越多。\n2. 开盖：点击瓶盖，瓶盖弹飞。摇得越久喷得越猛：泡沫从瓶口涌出、顺着瓶身流下，细小的气泡从瓶底一串串往上冒。这是最重要的画面。\n3. 倒出来：按住瓶子往下拖，瓶子倾斜，汽水倒进旁边的玻璃杯，杯里起泡、浮起一层泡沫。\n4. 视角：右键拖动旋转，滚轮缩放；左键只用来操作瓶子。\n5. 「重来」按钮：换一瓶新的。\n\n录屏用：\n- 打开时的默认镜头要同时看到瓶子、瓶口上方的空间和桌面上的光斑。\n- 按 D 进入演示模式，自动演一遍：0–3 秒镜头绕瓶子转半圈；3–7 秒用力摇晃；7–11 秒开盖喷涌，镜头停住；11–15 秒倒进杯子；15–17 秒杯里的气泡慢慢平静。\n- 按 H 隐藏所有按钮和文字。\n\n质量：\n- 画面要像一张饮料广告照片，不要像早期 3D 游戏。\n- 在集成显卡的笔记本上也要流畅；按 Q 在高、中两档画质之间切换。\n- 做完后在浏览器里实际打开测一遍：控制台没有报错，开盖后能清楚看到泡沫喷出来，再交付。",
+      "promptProvenance": "original_public",
+      "provenanceNote": "作者 X 主帖（2026-10-17T09:30Z）及评论区 6 条自回复（09:31–09:32Z）公开完整提示词，本条按原文拼接收录；无仓库、无许可证声明、无在线演示链接——提示词可引用学习，生成代码不可直接复用。成本数字为作者自述。封面为帖内视频第 9.5 秒截帧（上：Opus 倒汽水，桌上堆着泡沫；下：Argon），已裁掉黑边自托管。",
+      "attribution": "@faustina5211314（X，一只橘）",
+      "sourceAuthor": "faustina5211314",
+      "tags": [
+        "Three.js",
+        "流体",
+        "焦散",
+        "单文件网页"
+      ],
+      "publishedAt": "2026-10-17T09:30:34Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-17T12:51:00.000Z",
+      "updatedAt": "2026-10-17T12:51:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-17T12:51:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图/YouTube缩略图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 81,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 14,
+          "溯源": 13,
+          "复现": 14,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.3491,
+        "finalScore": 109.3,
+        "threshold": 65,
+        "run": "2026-10-17-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "一滴水落进玻璃杯只用 127 毫秒：Three.js 把皇冠水花、瑞利-普拉托尖刺和沃辛顿射流按 1.7 万帧慢放给你看",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/josepcalull/status/2111428520014393459",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261017-josepcalull-water-drop.jpg",
+      "previewType": "image",
+      "description": "X 用户 @josepcalull 10月17日发布约 15 秒竖版短片：一滴水落进玻璃杯的超慢镜头，作者称用 Claude Code 一句提示词生成、单个 HTML + Three.js、没用 3D 软件也没剪辑，并在自回复中贴出提示词。画面像高速摄影机回放：左上角 REC 与帧率读数（如 17,140 FPS、6,600 FPS、2,110 FPS）、右上角毫秒计时和「H₂O · 21 °C」，西班牙语字幕逐段解说——先是水滴撞击后溅起的「皇冠」（字幕：瑞利-普拉托不稳定性），再是空腔塌陷把水向上弹出的「沃辛顿射流」，最后「这一切发生在 127 毫秒内」。科普镜头：为什么水花会长成一圈尖刺（表面张力让液膜边缘断成一颗颗小液滴）、为什么水滴落下后反而有一柱水往上冲、高速摄影的帧率和慢放倍数怎么换算；可直接借这套「高速摄影 HUD + 分段字幕」的镜头语言做半导体工艺慢放（如液滴、溅射）。",
+      "tool": "Claude Code + Three.js（单 HTML，作者自述）",
+      "prompt": "Create a super animation for a Twitter post where a drop falls into a glass with realistic physics. Something that makes people stop scrolling and say Woah! About 15 seconds. In HTML + Three.js.",
+      "promptProvenance": "original_public",
+      "provenanceNote": "作者 X 主帖（2026-10-17T12:06Z，互动极低）与自回复 https://x.com/josepcalull/status/2111428604189942124 公开提示词；「实时物理」为作者自述，本轮未见源码或在线演示，无法判断是真实流体解算还是脚本化动画；无许可证声明。封面为帖内视频第 8 秒截帧（沃辛顿射流），已自托管。",
+      "attribution": "@josepcalull（X，Josep Calull）",
+      "sourceAuthor": "josepcalull",
+      "tags": [
+        "Three.js",
+        "流体",
+        "慢动作",
+        "物理动效"
+      ],
+      "publishedAt": "2026-10-17T12:06:02Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-17T12:51:00.000Z",
+      "updatedAt": "2026-10-17T12:51:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-17T12:51:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图/YouTube缩略图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 79,
+        "baseBreakdown": {
+          "实体": 21,
+          "科普": 19,
+          "溯源": 10,
+          "复现": 10,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.1319,
+        "finalScore": 89.4,
+        "threshold": 65,
+        "run": "2026-10-17-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "把一座火山切成两半：岩浆房、火山通道一眼看穿，两个滑块决定它是流熔岩还是炸成火山灰，入海的熔岩还会长出新陆地",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/theparuchh/status/2111427655794913691",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261017-paruchh-volcano-cutaway.jpg",
+      "previewType": "image",
+      "description": "X 用户 @theparuchh 10月17日发布约 50 秒对比视频：让 Claude Opus 5.5 和 Sonnet 5.5 用同一提示词做「切开的火山」，单个 HTML 文件，Three.js 负责画面，物理全部从零手写。作者列出四段：BUILD——用高度场抬起一座岛，火山锥按真实玄武岩层一层层堆起；CUT——把整块地形剖开，岩浆房、火山通道和熔岩管清楚可见；ERUPT——黏度和气体两个滑块决定是流出熔岩河还是爆炸喷出火山灰；GROW——熔岩入海冷却成新陆地，海岸线随之移动。作者给出的耗时与成本：Opus 5.5 1 小时 57 分、27.42 美元；Sonnet 5.5 2 小时 19 分、约 8.56 美元。封面可见两个版本的剖面地块：分层岩层、发光的岩浆房与右侧参数滑块。科普镜头：为什么有的火山「流」、有的火山「炸」（岩浆黏度与含气量）；夏威夷式熔岩造陆；「剖面 + 滑块」的交互形式也可迁移到刻蚀/沉积工艺剖面演示。",
+      "tool": "Claude Opus 5.5 / Sonnet 5.5 + Three.js（单 HTML，作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖（2026-10-17T12:02Z，互动很低）。帖中称「完整提示词在回复里」，但本轮（约 12:45Z）回读该会话只有一条致谢回复，未见提示词；无源码、在线演示或许可证——只能外链参考。耗时与成本为作者自述。封面为帖内视频缩略图（Opus/Sonnet 两版剖面对比），已自托管。",
+      "attribution": "@theparuchh（X，Paruchh）",
+      "sourceAuthor": "theparuchh",
+      "tags": [
+        "Three.js",
+        "剖面",
+        "地质",
+        "结构可视化"
+      ],
+      "publishedAt": "2026-10-17T12:02:36Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-17T12:51:00.000Z",
+      "updatedAt": "2026-10-17T12:51:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-17T12:51:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图/YouTube缩略图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 72,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 20,
+          "溯源": 8,
+          "复现": 5,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.2748,
+        "finalScore": 91.8,
+        "threshold": 65,
+        "run": "2026-10-17-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "整片日落大海只是一个 61 KB 的网页：WebGPU 从零手写 FFT 海浪、白浪和物理天空，Claude Code 约 30 分钟做出（MIT 开源）",
       "category": "frontend",
@@ -11251,8 +11471,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条",
-  "updatedAt": "2026-10-17T08:56:00.000Z",
-  "totalItems": 250,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条",
+  "updatedAt": "2026-10-17T12:51:00.000Z",
+  "totalItems": 254,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }

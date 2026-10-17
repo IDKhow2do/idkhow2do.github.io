@@ -3,6 +3,132 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 61,
+      "multiplier": 1.025,
+      "score": 62.5,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-17-2040-shanghai",
+      "record": {
+        "title": "不装 Remotion 也能让 AI 剪片：OpenFilm 把每个镜头写成一个 frame(t) 网页，做完还能在本地编辑器里手动改（MIT）",
+        "category": "video",
+        "styleFamily": "code",
+        "source": "https://github.com/openfilm/openfilm",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261017-openfilm.jpg",
+        "previewType": "image",
+        "description": "开源项目 OpenFilm（GitHub openfilm/openfilm，MIT，10月4日创建，本轮约 742 star）自称「开源 AI 视频代理」：让 Codex、Claude Code 等编码代理直接做片——整部片是一个 film.html，按轨道剪辑动画网页、素材、图片和声音；每个镜头是一个网页，只需写 frame(t) 画出第 t 秒的画面，three.js、WebGL、canvas、SVG、CSS、GSAP 都能用，README 明确说不需要 Remotion 或 HyperFrames 这类框架。配套本地编辑器 Studio 可在浏览器里拖动、改字、裁剪时间轴，手动改动写回文件、代理会保留；可导出 MP4（含 4K/运动模糊/透明通道）、GIF、字幕、分轨音频，以及给 Premiere Pro / 达芬奇的时间线。安装：npx skills add openfilm/openfilm（需 Node 22.2+ 与 ffmpeg）。中文线索来自 @nicebabycat 的介绍帖。与用户「代码出视频」工作流直接相关，但本身不是视觉作品。",
+        "tool": "Node 22.2+、ffmpeg、无头 Chromium；Codex / Claude Code 等编码代理（README）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "官方仓库 README 与 GitHub API 回读（MIT）；官网 https://openfilm.dev ；线索帖 https://x.com/nicebabycat/status/2111369875226837329 。本轮未安装运行。封面为官网 og 图 media/hero.jpg（Studio 界面），已自托管。",
+        "attribution": "OpenFilm（GitHub openfilm）",
+        "sourceAuthor": "openfilm",
+        "tags": [
+          "视频工作流",
+          "Agent Skills",
+          "代码视频",
+          "开源"
+        ],
+        "publishedAt": "2026-10-04",
+        "collectionIds": [],
+        "collectedAt": "2026-10-17T12:51:00.000Z",
+        "updatedAt": "2026-10-17T12:51:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-17T12:51:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图/YouTube缩略图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 61,
+          "baseBreakdown": {
+            "实体": 4,
+            "科普": 8,
+            "溯源": 19,
+            "复现": 15,
+            "风格": 9,
+            "新颖": 6
+          },
+          "multiplier": 1.025,
+          "finalScore": 62.5,
+          "threshold": 65,
+          "run": "2026-10-17-2040-shanghai"
+        },
+        "is3d": false,
+        "videoUrl": "",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "sourceCodeUrl": "https://github.com/openfilm/openfilm",
+        "licenseName": "MIT",
+        "licenseUrl": "https://github.com/openfilm/openfilm/blob/main/LICENSE"
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 58,
+      "multiplier": 1.0315,
+      "score": 59.8,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-17-2040-shanghai",
+      "record": {
+        "title": "一颗弹珠从书桌滚到泳池走了 32 米：Blender 刚体物理 + Claude Code 搭出 25 台连锁机关（Printed Path 第一季）",
+        "category": "video",
+        "styleFamily": "model_3d",
+        "source": "https://www.youtube.com/watch?v=wEDAEHC_Jes",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261017-printed-path-marble-run.jpg",
+        "previewType": "image",
+        "description": "YouTube 频道 Printed Path 的弹珠轨道系列第一季合集《Desk → Pool? One Marble, 32 m (Season 1)》（约 3 分 34 秒）；缩略图写明 4 集（书桌、楼梯、院子、泳池）、25 台机关、3:33。X 用户 @cast_otter 10月17日发帖称为自己制作，列出工具：Blender 5.2.2（Eevee 渲染、Bullet 刚体物理）、PrusaSlicer 2.9.6 命令行、ffmpeg、Claude Code；并注明第 1 集中有 6 个镜头共 7.2 秒是 Google Flow（Veo 3.1）生成的 AI 镜头。科普镜头：能量守恒与摩擦损耗——一颗弹珠的势能能撑多远；连锁机关（鲁布·戈德堡机械）的时序设计。",
+        "tool": "Blender 5.2.2（Eevee、Bullet）、PrusaSlicer 2.9.6 CLI、ffmpeg、Claude Code；部分镜头 Google Flow（Veo 3.1）（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "YouTube oEmbed 回读标题与频道 Printed Path；作者帖 https://x.com/cast_otter/status/2111426233808589253 （互动极低）。频道与发帖人为同一人系发帖人自述；含部分 AI 视频镜头；无工程文件与许可证。PrusaSlicer 出现在工具列表中，是否真按可 3D 打印设计未核实。封面为 YouTube 缩略图，已自托管。",
+        "attribution": "Printed Path（YouTube）/ @cast_otter（X）",
+        "sourceAuthor": "PrintedPath",
+        "tags": [
+          "Blender",
+          "物理模拟",
+          "弹珠轨道"
+        ],
+        "publishedAt": "2026-10-17T11:56:57Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-17T12:51:00.000Z",
+        "updatedAt": "2026-10-17T12:51:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-17T12:51:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图/YouTube缩略图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 58,
+          "baseBreakdown": {
+            "实体": 18,
+            "科普": 10,
+            "溯源": 10,
+            "复现": 5,
+            "风格": 7,
+            "新颖": 8
+          },
+          "multiplier": 1.0315,
+          "finalScore": 59.8,
+          "threshold": 65,
+          "run": "2026-10-17-2040-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://www.youtube.com/watch?v=wEDAEHC_Jes",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 58,
       "multiplier": 1.038,
       "score": 60.2,
@@ -1040,6 +1166,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-17T08:56:00.000Z",
+  "updatedAt": "2026-10-17T12:51:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
