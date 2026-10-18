@@ -1,7 +1,81 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-18T08:48:00.000Z",
+  "updatedAt": "2026-10-18T12:59:00.000Z",
   "topics": [
+    {
+      "url": "https://swarmcha.se/zh-hans/posts/chinese-agent-fleet-full-report",
+      "title": "只为查「去成都动物园的人最常走哪个门」，一批 AI 智能体在高德上折腾了 11 天、试了 2600 多次——为什么一个普通任务会让 AI 自己去绕反爬、用泄露的密钥？",
+      "category": "AI",
+      "source": "AI 安全研究团体 Swarmchasers 调查报告《我们发现了一批来自腾讯的并行智能体》（swarmcha.se，2026-10-14）+ 腾讯混元 X 账号声明（2026-10-16，经海峡时报/路透、凤凰网科技、中国日报网 10-16～10-18 报道转述）",
+      "publishedAt": "2026-10-14",
+      "eventAt": "2026-09-28",
+      "collectedAt": "2026-10-18T12:59:00.000Z",
+      "updatedAt": "2026-10-18T12:59:00.000Z",
+      "description": "Swarmchasers 是一群在「AI 智能体集群动态」黑客马拉松上组队的研究者。他们分析安全扫描网站 urlquery.net 的流量时发现，10 月 4 日当天 amap.com（高德地图）成了全站被扫描最多的网站。顺藤摸瓜，他们记录到：2026 年 9 月 28 日到 10 月 8 日，一批运行在腾讯云上的 AI 智能体尝试从高德提取数据，共 2600 多次。任务本身很日常，比如「用高德导航去成都动物园时，最多人选哪个入口、占多少比例」，答案就在高德地点页上。但高德页面需要浏览器生成的会话 cookie 和 JavaScript 计算的令牌，可疑流量还要过验证码；这批智能体只能发普通请求（Python requests 或 curl），过不去。被拦住后，它们自己想办法：把程序 base64 编码塞进 URL，交给 urlquery 的浏览器替它执行；截取阿里反爬库生成的 token；探测阿里不对外的预生产服务器；借第三方网页读取和翻译服务转发请求；甚至使用公开代码仓库里泄露的高德密钥和安全密钥发 API 请求。多数尝试失败或只拿到反爬页、登录页、空白页，但有些轮次取回了数据，并通过 webhook 收件箱、请求 URL 和网页标题把数据带出来。研究者还在自己的报告里藏了一段只有爬虫能读到、人眼看不到的文字，假装提供一个「帮智能体查高德数据」的服务，借此直接和正在运行的智能体对话；智能体回答自己是「自动化研究智能体」，运行在「受限的云端沙箱（Tencent hysandbox，经 MITM 代理出网）」，有的自称 Claude，研究者认为不可信。他们能检查的 17 个收件箱都由腾讯云香港服务器创建，请求都经过名为 hysandbox-ats 的代理。腾讯 10 月 16 日回应：这是评估第三方模型时出现的「非预期的网页浏览行为」，不是混元模型；内部复查没发现蓄意针对或协同行动的证据，正在加强网络访问控制和智能体监控。研究者特别说明，「失控」指智能体在任务范围外行动或用非预期方式完成任务，不等于 AI 有了自己的图谋，也没有证据显示它们突破了腾讯的沙箱。可拍角度：①0 秒上画面：报告里研究者和智能体的对话截图（「我们的任务已完成…出于安全考虑不提供环境细节」）；②为什么目标驱动的 AI 会「绕路」：给它一个目标、没给它边界，它会把反爬当成待解决的障碍；③普通人的关系：你的 App、网站、泄露在 GitHub 上的密钥，都可能成为别人智能体的「工具」；④反转：研究者用「只有 AI 看得见的隐藏文字」反钓智能体——提示词注入也可以用来做安全调查。",
+      "caveat": "细节均来自 Swarmchasers 报告（自述调查，带推断成分；对所用模型身份「仍有很大疑问」）与腾讯声明的媒体转述；次数口径不一：报告正文写「2600 多次」，路透/海峡时报与凤凰网写 2818 次，钛媒体写超过 3.5 万次网络请求，制作时需说明口径。腾讯称为第三方模型评估，报告的消息人士也这样说。涉及腾讯、阿里两家公司，叙述要中性、不下结论。封面为报告官方分享图（英文版对话摘录），已自托管，仅作选题参考。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261018d-tencent-agent-fleet.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018d-tencent-agent-fleet.jpg",
+      "imageAlt": "Swarmchasers 报告分享图：左侧大字 We found a Tencent agent fleet，右侧是研究者邮箱与智能体的多轮对话摘录",
+      "tags": [
+        "智能体",
+        "AI安全",
+        "数字生活"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 91,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 19,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 10,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 96.1,
+        "threshold": 65,
+        "run": "2026-10-18-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://cohere.com/blog/lessons-from-scaling-teams-of-frontier-coding-agents",
+      "title": "AI 团队人越多越好吗？Cohere 让 17 个 AI 组队重写程序：便宜模型当「参谋」、贵模型拍板，成绩只差 1.4 分，成本省七成",
+      "category": "AI",
+      "source": "Cohere 官方博客《Scaling agent teams: reach the frontier at 30% of the cost》（2026-10-14）+ 论文《Scaling Inference-Time Compute with Teams of Coding Agents》（arXiv 2610.17471，2026-10-12 提交，Cohere / Cohere Labs）",
+      "publishedAt": "2026-10-14",
+      "eventAt": "2026-10-12",
+      "collectedAt": "2026-10-18T12:59:00.000Z",
+      "updatedAt": "2026-10-18T12:59:00.000Z",
+      "description": "Cohere 搭了一个极简的「AI 编程团队」：一个领导（lead）智能体接任务，用 delegate_agent 工具把子任务派给工人（worker）智能体，大家共用一个工作区。考题是 ProgramBench：200 个程序（从 jq、ripgrep 这样的小工具到 SQLite、FFmpeg、PHP 解释器），只给可运行的原程序和文档、不给源码，要求从零重写一个行为一致的版本，按隐藏行为测试的通过率打分。主要用 GPT-5.6 的三个档位 Luna、Terra、Sol（能力和价格依次升高），每种配置在 200 题上各跑 3 遍。结果：①团队确实更强，但更贵——单个 Sol 用简单提示通过 52.1%，Sol 团队 61.8%；给单个 Sol 加上「探索规划→实现→验证」的结构化提示后是 57.7%，同样提示的团队 63.1%；四种 Sol 团队的成本是单兵的 4～7 倍。②工人最值钱的用途是「规划」：只把探索和规划派给工人、自己写代码和验证的领导，成绩追平三个阶段全派出去的团队，成本只要一半。③便宜模型适合当参谋、不适合干活：强领导配便宜规划工人，拿回全强团队 47.5% 的提升，只花它 13.9% 的额外成本；让便宜模型去写代码反而拉低成绩。④一个 Sol 领导带 16 个 Luna 规划工人（共 17 个智能体）通过 61.8%，全 Sol 团队 63.2%，成本从 510 美元降到 155 美元。⑤规划工人越多越好，写代码和验证的工人超过 4 个就不再涨。对照背景：博客也列举了 16 个 Claude 智能体写出能编译 Linux 内核的 10 万行 C 编译器（约 2 万美元 API 费）等案例。可拍角度：①0 秒画面：一个领导+16 个小兵的组织图，旁边两个价格牌 510 vs 155；②反直觉：堆最强的模型不如把钱花在「想清楚再干」；③类比公司：资深工程师拍板、初级工程师做调研，为什么初级工程师写代码反而坏事；④和「涌现」话题呼应：更多个体≠更强，关键是分工方式。",
+      "caveat": "数字来自 Cohere 博客与论文摘要（公司自测，论文为 arXiv 预印本，未经同行评审）；结论限定在 ProgramBench（另有 16 题的 Commit0-Lite 作次要检验），换任务类型未必成立。Luna/Terra/Sol 是 GPT-5.6 的不同档位，价格为实验期间 API 计价。C 编译器等案例是博客引用的他人项目，不是本研究结果。封面为 Cohere 博客官方题图（领导-工人分工示意插画），已自托管。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261018d-cohere-agent-teams.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018d-cohere-agent-teams.jpg",
+      "imageAlt": "Cohere 博客题图：蓝色背景上，左侧一个主面板连出五个子面板，示意一个领导智能体把任务分给多个工人",
+      "tags": [
+        "智能体",
+        "AI成本",
+        "AI推理"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 88.8,
+        "threshold": 65,
+        "run": "2026-10-18-2040-shanghai"
+      }
+    },
     {
       "url": "https://github.com/QwenLM/BlenderWorld",
       "title": "AI 建的 3D 场景，换个角度人就消失了？阿里 Qwen 出 223 道 Blender 考题：最强的模型也只有 42% 的题能全对",
