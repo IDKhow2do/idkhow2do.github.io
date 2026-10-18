@@ -1,7 +1,121 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-18T06:20:00.000Z",
+  "updatedAt": "2026-10-18T08:48:00.000Z",
   "topics": [
+    {
+      "url": "https://github.com/QwenLM/BlenderWorld",
+      "title": "AI 建的 3D 场景，换个角度人就消失了？阿里 Qwen 出 223 道 Blender 考题：最强的模型也只有 42% 的题能全对",
+      "category": "AI",
+      "source": "阿里巴巴 Qwen 团队等开源基准 BlenderWorld（GitHub QwenLM/BlenderWorld，MIT 许可；技术报告《BlenderWorld: Benchmarking Visual Agents for 3D Creation from Real-World References》，2026-10-16；数据集同步放在 Hugging Face 与魔搭 ModelScope）",
+      "publishedAt": "2026-10-16",
+      "eventAt": "2026-10-16",
+      "collectedAt": "2026-10-18T08:48:00.000Z",
+      "updatedAt": "2026-10-18T08:48:00.000Z",
+      "description": "阿里巴巴（Alibaba Token Hub）联合浙江大学、香港中文大学、复旦大学、南洋理工大学发布并开源 BlenderWorld：专门考 AI 智能体能不能在 Blender 里按真实需求做出 3D 作品。共 223 道题、9 大类 22 个子类，覆盖产品、建筑与室内、自然景观、角色动物、动画、科学可视化等；其中 78 题只给文字，130 题给图片+文字，15 题给视频+文字，59 题还附带尺寸、材质、相机参数等规格文件。交卷不能只交一张好看的图，必须交可编辑的 .blend 工程。评分时评测程序自己从 8 个角度重新渲染（Cycles，1024×1024），对照共 2,651 条逐项判对错的细则打分，再加 8 个整体观感维度，两部分各占一半。技术报告测了 13 个前沿模型：GPT-6-Astra 综合 79.9 分第一，Opus-5 73.0，GPT-5.6-Sol 67.7，DeepSeek-V4.1-Flash 65.7，Qwen3.8-Max 60.6；但「所有细则全部满足」的比例，最强的 GPT-6-Astra 也只有 42.2%，Opus-5 为 25.6%，其余模型最多 15.7%。报告总结的四类典型失败很适合做镜头：①要求两个人在豆田里查看，提交的相机视角里人在，换到侧面看人整个消失；②幼狮眼睛过大、爪子像手指；③躺在草地上的人浮在草面上方；④要求小球汇聚、留下颜料轨迹和涟漪，结果画面一片空白。报告的结论是：模型常靠「从这个角度看起来对」的 2D 捷径蒙混过关，还造不出真正立体、符合物理的 3D 场景。另一个反直觉点：DeepSeek-V4.1-Flash 平均每题调用 168 次工具、看图次数更多，分数却不如只调用 44 次的 GPT-5.6-Sol——看得多不等于改得对。反直觉钩子：AI 的图越来越逼真，可它其实不知道背面长什么样。可拍角度：①正面完美、转到侧面人就没了的对比镜头；②为什么「交工程文件」比「交一张图」难得多；③8 个视角重新渲染的考法，像考官绕着作品走一圈；④和自己的「房间 3D 建模+换装修风格」项目对照：AI 换风格时最容易在哪些地方穿帮。0秒开场：一张看起来很完美的 AI 3D 场景，镜头一转，人凭空消失。",
+      "caveat": "分数、比例和失败案例均来自技术报告与仓库 README（评测用 GPT-5.6-terra 担任渲染与评分裁判，报告附有与人工评分的一致性分析）；报告为团队自评，尚未看到同行评审。「人消失」「幼狮爪子」等为报告图 7 的个例，不代表所有输出。封面为仓库 README 中的基准总览图（MIT 许可仓库），已自托管。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261018c-blenderworld-overview.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018c-blenderworld-overview.jpg",
+      "imageAlt": "BlenderWorld 基准总览图：中间是 9 大类任务环形图，四周是参考图与模型生成的 3D 场景示例",
+      "tags": [
+        "智能体",
+        "3D建模",
+        "Blender",
+        "评测基准"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 89,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 14,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 9,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 94.0,
+        "threshold": 65,
+        "run": "2026-10-18-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://www.nature.com/articles/d41586-026-03338-y",
+      "title": "85 年没人破开的 Enigma 密文，一个没学过密码学的人让 AI 跑一夜就解开了——为什么密码学家反而头疼？",
+      "category": "AI",
+      "source": "Nature 新闻《History’s long-secret codes are being cracked by amateurs using AI》（2026-10-16，Kaia Glickman）；涉及独立密码学者 Frode Weierud 运营的 Crypto Cellar Research、日本业余密码学者 Satoshi Tomokiyo 的 Cryptiana 网站",
+      "publishedAt": "2026-10-16",
+      "eventAt": "2026-09",
+      "collectedAt": "2026-10-18T08:48:00.000Z",
+      "updatedAt": "2026-10-18T08:48:00.000Z",
+      "description": "Nature 10月16日报道：越来越多没有密码学背景的人用大模型破解历史密文。案例一：彭博公司的产品开发教练 Carter Leffen 今年 9 月让 GPT-6 Astra 去 Crypto Cellar Research（挪威独立密码学者 Frode Weierud 维护的未解历史密文清单）挑一条二战德军 Enigma 密文来破。模型挑了一条 1941 年 7 月 10 日发出、只有 82 个字符的电报，可能因为它短，而且同一天另一条电报 2017 年已被破解，两条可能有相同的词（比如都写给某位 Obergruppenführer），可以当作「已知明文」（密码学叫 crib）。模型自己写代码模拟 Enigma，搜索既能复现已知那条、又能让这条读得通的设置，10 小时试了 40 多亿种组合；Leffen 睡了一觉，早上就看到答案，交给 Weierud 确认。原来这条电报和同日那条用的是不同设置——这很少见，也可能是它 85 年没被破解的原因。报道称 Enigma 的转子和插线可以把字母加密成多达约 10^23（103 sextillion）种方式。案例二：SentinelOne 工程师 Carter Church 把 1809 年一位意大利官员写给拿破仑麾下将军的未解密信照片交给 GPT-6 Astra，模型在法国密码学网站的记录里找到部分密钥，用「模拟退火」反复微调密钥，约 6 小时得到答案，内容是部队位置，交给 Cryptiana 作者确认；Church 本人也说这条不用 AI 也能破，但 AI 省掉了转写符号、找密钥的大量功夫。另一面：密码学者 Elonka Dunin 说，现在收件箱被大量「请帮我验证 AI 的答案」淹没，很多是错的。反直觉钩子：破解靠的不是 AI 更聪明，而是它不睡觉、能写模拟器、能同时翻资料；真正稀缺的变成了「判断答案对不对」的专家。可拍角度：①Enigma 转子每按一键就转一格的动画（可用 Three.js 自制）；②「已知明文」是什么：图灵当年破 Enigma 也靠它；③10 小时 40 亿组合 vs 当年布莱切利园的炸弹机；④模拟退火：像调收音机一样一点点拧密钥；⑤AI 时代的新瓶颈：验证比生成更贵。0秒开场：一台 Enigma 键盘按下一个字母，灯板亮起另一个字母，画面一句「这条电报，等了 85 年」。",
+      "caveat": "全部细节来自 Nature 新闻报道（文章后半段需登录，本轮只读到可见部分）；破解结果由 Weierud、Tomokiyo 确认为报道转述，本轮未在 Crypto Cellar / Cryptiana 原站核对具体明文。Enigma 组合数为报道说法。图灵与炸弹机为背景知识，不是报道内容，制作时需另找来源。封面为 Nature 报道配图（Ullstein Bild via Getty，Enigma 键盘特写），已自托管，仅作选题参考。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261018c-enigma-nature.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018c-enigma-nature.jpg",
+      "imageAlt": "Nature 报道配图：黑白照片，有人在 Enigma 密码机键盘上打字",
+      "tags": [
+        "智能体",
+        "密码学",
+        "AI推理",
+        "历史"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 19,
+          "画面": 13,
+          "来源": 12,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 88.8,
+        "threshold": 65,
+        "run": "2026-10-18-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://www.nature.com/articles/d41586-026-03253-2",
+      "title": "用 AI 写博士论文摘要的人，反而更少留在学术界？22.6 万份美国理工科博士论文里，三成摘要有 AI 写的痕迹",
+      "category": "AI",
+      "source": "NBER 工作论文 35859：Gross, Shvadron & Zhang《How Heavily Are PhD Students Offloading Their Scientific Writing to AI? Evidence from US STEM PhD Dissertations》（2026-10，未经同行评审）+ Nature 新闻（2026-10-16，Mohana Basu）",
+      "publishedAt": "2026-10-16",
+      "eventAt": "2026-10-05",
+      "collectedAt": "2026-10-18T08:48:00.000Z",
+      "updatedAt": "2026-10-18T08:48:00.000Z",
+      "description": "美国国家经济研究局（NBER）研究者 Daniel Gross 等分析了 2019 年 1 月到 2026 年 5 月美国高校 22.6 万多名理工科（STEM）博士的论文摘要，用 AI 文本检测服务 Pangram 判断是否含 AI 生成文字。结果：AI 文字在 2023 年首次出现，占 1.7%；2025 年升到 18.8%；2026 年前 5 个月提交的论文里 29.4% 的摘要含 AI 文字。数学和计算机科学最高，36%。在非英语国家受教育的毕业生里约 41% 的摘要含 AI 文字，英语国家为 23%。研究者还对照了 LinkedIn 上的就业去向：本科在美国读的博士中，摘要含 AI 文字的人留在学术界的可能性低 17%，进入企业的可能性高 16%；本科在美国以外读的人，这种关联更弱。Gross 的担心是：如果学生一半工作交给 AI，他们是否真的有足够深的理解。新南威尔士大学的 Ang Liu 说，AI 在已有大量知识的领域很有用，但科研恰恰要去答案还不知道的地方。反直觉钩子：大家以为用 AI 写作是「偷懒」，数据却显示这些人更容易去企业——是 AI 改变了人，还是本来想去企业的人更愿意用 AI？可拍角度：①2023→2026 的曲线从 1.7% 涨到 29.4%；②非英语国家 41% vs 英语国家 23%：对中国留学生意味着什么；③相关不等于因果：这项研究能说明什么、不能说明什么；④AI 检测器靠什么判断一段话是 AI 写的、会不会误判。0秒开场：一份博士论文封面，摘要段落一行行被标成高亮，画面一句「每 3 篇就有 1 篇」。",
+      "caveat": "工作论文未经同行评审；只分析了摘要，且没有区分全文还是部分由 AI 生成（作者称被标记的摘要 90% 被判为完全 AI 生成）；AI 检测器本身可能误判。就业去向来自 LinkedIn，属相关性，不能说明用 AI 导致不进学术界。本轮读到的是 Nature 报道与 NBER 页面标题与日期，论文全文未下载核对。封面为 Nature 报道配图（Ginaellen/Getty，毕业典礼背影），已自托管。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261018c-phd-ai-nature.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018c-phd-ai-nature.jpg",
+      "imageAlt": "Nature 报道配图：穿博士袍的毕业生背影",
+      "tags": [
+        "AI写作",
+        "统计口径",
+        "数字生活",
+        "教育"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 74,
+        "baseBreakdown": {
+          "主线": 17,
+          "钩子": 15,
+          "画面": 6,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 7,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 78.2,
+        "threshold": 65,
+        "run": "2026-10-18-1640-shanghai"
+      }
+    },
     {
       "url": "https://x.com/long_jingai/status/2111356255889723723",
       "title": "2 小时从零建立 AI 认知：大模型通识、提示词、智能体入门与实操（企业内训同款长文）",
