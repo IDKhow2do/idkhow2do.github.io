@@ -1,8 +1,170 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 263,
+  "exportedCount": 266,
   "items": [
+    {
+      "title": "把磁铁推近线圈，电压表就跳一下：Induction Bench 用 Three.js 把磁感线、法拉第定律和楞次定律做成能拖能调的桌面实验（Opus 5.5）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/thebuggeddev/status/2104402407358919124",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018c-induction-bench.jpg",
+      "previewType": "image",
+      "description": "X 用户 The Bugged Dev（@thebuggeddev，库内已收其毛绒蜘蛛作品）9 月 28 日发布约 71 秒录屏，称这是用 Claude Opus 5.5 做的电磁场可视化，原帖约 2,800 赞、1,600 收藏；10 月 18 日又被 @Jomolos 转介绍为「Induction Bench」。画面是一张网页实验台：中间黑底 3D 视图里一块磁铁和一个铜线圈，磁铁周围画满弯曲的磁感线；右上角是检流计表盘，指针随磁铁移动左右摆；下方两张小图分别是示波器式的电压曲线和「磁通量/电压随磁铁位置变化」曲线；左侧面板可以切换磁铁种类（N42、N52、钐钴 SmCo 等）、线圈导线材料（铜、银、铝、镍铬）、匝数和铁芯。录屏里磁铁从远处靠近、穿过线圈、再离开，电压先正后负；也演示了换成电磁铁、加铁芯后磁感线变密。按 @Jomolos 的说明：线圈里的磁通量随时间变化才会产生电压，磁铁不动就没有，反向移动电压反向（法拉第定律）；感应电流总是阻碍引起它的变化（楞次定律）；代码里为不同材料设了不同物理参数，铁芯等复杂部件用的是近似模型，不是实验室测量值。科普镜头：发电机、无线充电、电磁炉都是这一个原理，可直接截这张实验台当「为什么磁铁动起来才有电」的第一帧。",
+      "tool": "Claude Opus 5.5 + Three.js（作者自述 / 转介绍帖说明）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原作 X 主帖 2026-09-28T02:46Z；源码在 GitHub thebuggeddev/electromagnetism（2026-09-28 创建，描述为 An interactive Electromagnetic field exploration built using Claude Opus 5.5，仓库未声明许可证，README 未找到）。功能细节（磁铁/导线材料、近似模型）参考 @Jomolos 10-18 的介绍帖与录屏画面，本轮未运行代码。封面为录屏第 12 秒截帧，已自托管。",
+      "attribution": "The Bugged Dev（@thebuggeddev）",
+      "sourceAuthor": "thebuggeddev",
+      "tags": [
+        "Three.js",
+        "结构可视化",
+        "物理动效",
+        "电磁感应"
+      ],
+      "publishedAt": "2026-09-28T02:46:46Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-18T08:48:00.000Z",
+      "updatedAt": "2026-10-18T08:48:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-18T08:48:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图/YouTube缩略图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 86,
+        "baseBreakdown": {
+          "实体": 19,
+          "科普": 20,
+          "溯源": 15,
+          "复现": 14,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.249,
+        "finalScore": 107.4,
+        "threshold": 65,
+        "run": "2026-10-18-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/thebuggeddev/electromagnetism"
+    },
+    {
+      "title": "一句提示词让 DeepSeek 做出整台电脑主机：按真实装机顺序一步步装上主板、水冷、显卡、玻璃侧板，再一步步拆回空机箱",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/lemomo_ai/status/2111716318236049618",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018c-lemo-pc-assembly.jpg",
+      "previewType": "image",
+      "description": "LemoLab 作者 Lemomo（@lemomo_ai）10月18日发布约 57 秒横屏录屏，自称用 DeepSeek-V4.1-Flash 一次生成（one shot），是「穷玩车、富玩表、屌丝玩电脑」系列继机械表拆解之后的电脑篇。公开的提示词是：写一个单文件 HTML，做一台尽可能多组件、材质真实的台式电脑主机，按真实装机顺序动画演示组装和拆解过程，支持一键播放。画面是深蓝灰背景下的一台中塔机箱，左侧是步骤列表和说明文字，底部是播放进度条；本轮截帧看到的步骤包括「主板入箱」「安装一体水冷」「安装玻璃侧板」「理顺线材」，之后反向「拆除一体水冷」「拆除主板」，最后剩一个空机箱和标着 NOVA 的电源；装好后能看到三把带灯圈的风扇、显卡和冷排。作者随后又发了同一提示词下 DeepSeek 与 GPT-6 Astra 的对比，并说明单次生成不能证明哪个模型更好。科普镜头：「一台电脑由哪些零件组成、按什么顺序装」可直接拿来当爆炸图/装配动画；同一套「步骤列表 + 一键播放的装配时间轴」也能套到光刻机、晶圆盒、封装结构的拆解上。",
+      "tool": "DeepSeek-V4.1-Flash（作者自述，one shot）+ 单文件 HTML",
+      "prompt": "写一个单文件 HTML，做一台尽可能多组件、材质真实的台式电脑主机，按真实装机顺序动画演示组装和拆解过程，支持一键播放",
+      "promptProvenance": "original_public",
+      "provenanceNote": "作者 X 主帖（2026-10-18T07:09Z）原文公开了完整提示词；引用了自己 10-14 的机械表模型对比帖。未公开生成的 HTML 源码，无许可证。具体用了哪个渲染库帖子没写，本轮未运行代码。封面为录屏第 30 秒截帧，已自托管。",
+      "attribution": "Lemomo（@lemomo_ai，LemoLab）",
+      "sourceAuthor": "lemomo_ai",
+      "tags": [
+        "结构可视化",
+        "产品展示",
+        "单文件网页",
+        "装配动画"
+      ],
+      "publishedAt": "2026-10-18T07:09:38Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-18T08:48:00.000Z",
+      "updatedAt": "2026-10-18T08:48:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-18T08:48:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图/YouTube缩略图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 78,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 17,
+          "溯源": 13,
+          "复现": 12,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.0618,
+        "finalScore": 82.8,
+        "threshold": 65,
+        "run": "2026-10-18-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "一套程序化的微缩世界地块：雪山垭口、樱花瀑布、沙漠水塔，都在浏览器里用 WebGI 实时渲染、可以进去逛",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/repalash/status/2111699689250648184",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018c-webgi-worlds.jpg",
+      "previewType": "image",
+      "description": "Palash Bansal（@repalash）10月18日发布约 18 秒展示片《Miniature worlds, built in code》：一套「程序化地块套件」，在浏览器里用 WebGI（iJewel3D 出品、基于 three.js 的渲染库）实时渲染。片中依次出现夜里亮着岩浆的矿坑、霓虹小街、「Alpine pass」雪山松林盘山路、「Spring falls」樱花瀑布台地，以及一排九块不同主题的小地块，最后是沙漠里的木水塔和红色岩柱，并给出可在线漫游的地址 share.ijewel.info/webgi-worlds。作者说几小时内就做完，原因是 WebGI 一个技术栈同时提供真实感实时光照、程序化生成和浏览器内建模编辑工具，Opus 可以专心迭代效果，不用在 Blender、文件格式和渲染差异之间来回折腾。约 15 赞、8 收藏。",
+      "tool": "WebGI（iJewel3D）+ three.js；Opus 迭代（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 主帖（2026-10-18T06:03Z），给出在线漫游地址 https://share.ijewel.info/webgi-worlds/ ；未公开提示词与源码，WebGI 的许可条款本轮未核对。封面为展示片第 7 秒截帧（Alpine pass），已自托管。",
+      "attribution": "Palash Bansal（@repalash）",
+      "sourceAuthor": "repalash",
+      "tags": [
+        "Three.js",
+        "微缩场景",
+        "程序化生成"
+      ],
+      "publishedAt": "2026-10-18T06:03:34Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-18T08:48:00.000Z",
+      "updatedAt": "2026-10-18T08:48:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-18T08:48:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图/YouTube缩略图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 63,
+        "baseBreakdown": {
+          "实体": 16,
+          "科普": 10,
+          "溯源": 12,
+          "复现": 8,
+          "风格": 10,
+          "新颖": 7
+        },
+        "multiplier": 1.249,
+        "finalScore": 78.7,
+        "threshold": 65,
+        "run": "2026-10-18-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "Colorfigures：手绘等距线稿的日常物件，点一点就能看懂洗衣机、咖啡机怎么工作",
       "category": "frontend",
@@ -11963,8 +12125,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条",
-  "updatedAt": "2026-10-18T06:20:00.000Z",
-  "totalItems": 263,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条",
+  "updatedAt": "2026-10-18T08:48:00.000Z",
+  "totalItems": 266,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
