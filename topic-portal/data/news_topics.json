@@ -1,7 +1,70 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-18T04:51:00.000Z",
+  "updatedAt": "2026-10-18T06:20:00.000Z",
   "topics": [
+    {
+      "url": "https://x.com/long_jingai/status/2111356255889723723",
+      "title": "2 小时从零建立 AI 认知：大模型通识、提示词、智能体入门与实操（企业内训同款长文）",
+      "category": "AI",
+      "source": "X @long_jingai（龙井longjing）长文《2小时从零看懂 AI：一篇文章建立AI认知体系（8000元企业内训同款）》",
+      "publishedAt": "2026-10-17T07:18:53Z",
+      "eventAt": null,
+      "collectedAt": "2026-10-18T06:20:00.000Z",
+      "updatedAt": "2026-10-18T06:20:00.000Z",
+      "description": "龙井（@long_jingai）2026-10-17 发布 2 万余字 X 长文，称是给 3 家国内行业头部企业做过的 AI 内训内容、更新 5 遍，曾按 8000 元/小时交付。分四部分：①大模型通识——AIGC 为何火（会说人话）、能生成文/图/视频、大模型的「大」（数据、算力、参数）、用「图书管理员玩文字接龙」类比工作原理、优势（信息处理、知识广、创作）与局限（幻觉、时效、偏见、推理与上下文限制），以及「AI 软件 = 大模型（心）+ 产品界面（皮）」；②提示词方法；③智能体（Agent）概念与产品形态；④上手实操：以 WorkBuddy 为例设工作空间、权限、选模型（作者日常用 DeepSeek V4.1 flash，做网页用 Kimi K3），示范让它调研宠物猫烘焙粮赛道并输出 Excel。结语：AI 是工具不是魔法，提示词本质是把需求讲清楚，智能体当下并不智能但能解决实际问题——「AI 是学不会的，是用会的」。",
+      "caveat": "「8000 元/小时」「3 家头部企业」为作者自述，未核实；文中市场数据示例为演示，未回查。文内链接有豆包、火山引擎、CodeBuddy 及两份飞书 wiki。封面为长文封面图，已自托管。",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261018-longjing-ai-2h-primer.jpg",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261018-longjing-ai-2h-primer.jpg",
+      "imageAlt": "X 长文《2小时从零看懂 AI》封面图",
+      "tags": [
+        "AI 入门",
+        "大模型",
+        "提示词",
+        "智能体",
+        "企业内训"
+      ],
+      "tagSource": "provided",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": "2026-10-18T06:20:00.000Z"
+      }
+    },
+    {
+      "url": "https://x.com/lee04052822/status/2111618612158935467",
+      "title": "Claude 指挥 Codex 的人机协作开发循环：先想清楚需求，再让 Opus 拆任务、Codex 在 worktree 里改到通过",
+      "category": "AI",
+      "source": "X @lee04052822（木子不是木子狸）长文《好久没写东西了 分享下如何做开发的》",
+      "publishedAt": "2026-10-18T00:41:23Z",
+      "eventAt": null,
+      "collectedAt": "2026-10-18T06:20:00.000Z",
+      "updatedAt": "2026-10-18T06:20:00.000Z",
+      "description": "木子（@lee04052822）2026-10-18 发 X 长文分享自己的 AI 开发流程（提出问题→解决→验证），并开源整理成 mu-zi-lee/hitl-dev-loop（Claude Code + Codex CLI 的 Human-in-the-Loop 开发循环，MIT）。要点：仓库初始结构要清晰（UI、功能分目录），用 Claude 初始化并写一份持续更新的文档说明仓库用途、结构和如何改；写代码前先追问「到底解决什么问题」，能复用的成熟项目（yt-dlp、Whisper、FFmpeg）就不重造——以他的本地优先内容聚合与笔记工具 Tangentry 为例，从视频字幕笔记扩展到文章、PDF、博客和 RSS。分工：Opus 5.5 负责思考、拆解、分配和审查，让 Codex 执行；Sonnet 5.5 子 Agent 盯 GitHub 的 issue/PR（合并同类 issue、自动关联 PR），需要改代码再交给 Codex；在远程 Windows 虚拟机上常驻跑 Claude 和 Codex。日常边用边语音提需求，Codex 在新 worktree 测试通过后才更新应用，满意再合并 main；文末附可直接扔给 Claude 的提示词，并有 B 站演示视频。",
+      "caveat": "模型名称与分工为作者个人做法；仓库经 GitHub API 核实存在（hitl-dev-loop、Tangentry，均 MIT）。B 站视频未观看。封面为长文封面图，已自托管。",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261018-muzi-hitl-dev-loop.jpg",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261018-muzi-hitl-dev-loop.jpg",
+      "imageAlt": "X 长文《好久没写东西了 分享下如何做开发的》封面图",
+      "tags": [
+        "AI 编程",
+        "Claude Code",
+        "Codex",
+        "Human-in-the-Loop",
+        "工作流"
+      ],
+      "tagSource": "provided",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": "2026-10-18T06:20:00.000Z"
+      },
+      "relatedLinks": [
+        "https://github.com/mu-zi-lee/hitl-dev-loop",
+        "https://github.com/mu-zi-lee/tangentry",
+        "https://www.bilibili.com/video/BV13XJe6eEEo/"
+      ]
+    },
     {
       "url": "https://www.nature.com/articles/d41586-026-03329-z",
       "title": "地球转得更快了，为什么全世界的计时机构反而紧张？闰秒提前废除，就为躲开从没用过的「负闰秒」",
