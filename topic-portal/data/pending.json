@@ -3,6 +3,128 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 62,
+      "multiplier": 1.038,
+      "score": 64.4,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-18-0840-shanghai",
+      "record": {
+        "title": "给 AI 一张户型图 + 41 张室内照片，让它在 Blender 里一次性重建整套房：Opus 5.5 和 GPT-6 Astra 谁还原得更准",
+        "category": "3d",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/inqax/status/2111083126583857646",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018-inqax-room-rebuild.jpg",
+        "previewType": "image",
+        "description": "X 用户 @inqax 10月16日：把一张户型图和 41 张室内照片交给 Opus 5.5 和 GPT-6 Astra（均 xhigh），让它们在 Blender 里一次性（one-shot）完成整套房子的 3D 建模。对比图三列：参考照片 / Opus 5.5 / GPT-6 Astra，场景包括客厅、卧室、吧台、卫浴和走廊；作者另附了 41 张输入照片的缩略图总览。作者的感受是 Opus 5.5 整体上对房间结构和位置关系还原得更准确。与用户「房间 3D 建模 + 换装修风格」项目几乎是同一个流程的第一步（照片 → 可编辑 3D 房间），可作为选模型和准备输入素材的参考。",
+        "tool": "Claude Opus 5.5 xhigh / GPT-6 Astra xhigh + Blender（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者 X 主帖（2026-10-16T13:13Z）与自回复（标注第 1 张为 Opus、第 2 张为 Astra），无提示词、无工程文件、无许可证；互动极少。封面为帖内第 1 张对比图，已自托管。",
+        "attribution": "@inqax（X）",
+        "sourceAuthor": "inqax",
+        "tags": [
+          "Blender",
+          "室内场景",
+          "模型对比"
+        ],
+        "publishedAt": "2026-10-16T13:13:34Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-18T00:54:00.000Z",
+        "updatedAt": "2026-10-18T00:54:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-18T00:54:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图/YouTube缩略图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 62,
+          "baseBreakdown": {
+            "实体": 13,
+            "科普": 12,
+            "溯源": 11,
+            "复现": 7,
+            "风格": 9,
+            "新颖": 10
+          },
+          "multiplier": 1.038,
+          "finalScore": 64.4,
+          "threshold": 65,
+          "run": "2026-10-18-0840-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 58,
+      "multiplier": 1.038,
+      "score": 60.2,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-18-0840-shanghai",
+      "record": {
+        "title": "一句话让 AI 在 Blender 里盖一栋「典型中国 90 年代居民楼」：防盗窗、晾衣杆、空调外机和底商都有了（DeepSeek V4.1 Flash 1017）",
+        "category": "3d",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/leo114119/status/2111512106059407702",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018-leo114119-90s-building.jpg",
+        "previewType": "image",
+        "description": "X 用户 @leo114119 10月17日发布 DeepSeek V4.1 Flash 1017 的 Blender 建模测试（4 张渲染图），提示词只有一句：「用Blender构建一个细节拉满的一幢典型中国90年代居民楼的3D场景。」渲染图里是一栋六层红砖+灰色抹灰的老式居民楼，窗户装着防盗网，阳台挂晾衣杆、外墙挂空调外机，楼下有底商招牌和行道树，傍晚斜阳。帖子获约 200 赞、1.2 万浏览。对 3D 建模大类：国内观众一眼就有共鸣的建筑题材，可做「AI 一句话建模」的对比素材。",
+        "tool": "DeepSeek V4.1 Flash 1017 + Blender（作者自述）",
+        "prompt": "用Blender构建一个细节拉满的一幢典型中国90年代居民楼的3D场景。",
+        "promptProvenance": "original_public",
+        "provenanceNote": "作者 X 主帖（2026-10-17T17:38Z）公开一句话提示词；未说明调用方式（Harness/MCP）、迭代次数与后期，未公开 .blend 文件。封面为帖内第 1 张渲染图，已自托管。",
+        "attribution": "@leo114119（X，Leo · Building w/ AI）",
+        "sourceAuthor": "leo114119",
+        "tags": [
+          "Blender",
+          "建筑",
+          "国产模型"
+        ],
+        "publishedAt": "2026-10-17T17:38:10Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-18T00:54:00.000Z",
+        "updatedAt": "2026-10-18T00:54:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-18T00:54:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图/YouTube缩略图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 58,
+          "baseBreakdown": {
+            "实体": 15,
+            "科普": 8,
+            "溯源": 12,
+            "复现": 9,
+            "风格": 8,
+            "新颖": 6
+          },
+          "multiplier": 1.038,
+          "finalScore": 60.2,
+          "threshold": 65,
+          "run": "2026-10-18-0840-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 61,
       "multiplier": 1.025,
       "score": 62.5,
@@ -1166,6 +1288,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-17T12:51:00.000Z",
+  "updatedAt": "2026-10-18T00:54:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }

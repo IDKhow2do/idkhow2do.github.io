@@ -1,8 +1,282 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 254,
+  "exportedCount": 259,
   "items": [
+    {
+      "title": "整颗月球只是一个 72KB 的网页：站在 48 公里宽的陨石坑里，地平线只有 2.4 公里远，地球一动不动挂在天上（WebGPU，MIT）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/tarasshyn/status/2111476327056388310",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018-tarasshyn-moon.jpg",
+      "previewType": "image",
+      "description": "X 用户 @tarasshyn（Taras Shynkarenko）10月17日发布：用 Claude Code + Opus 5.5 做的实时月面渲染器，打包后是一个约 72KB 的单 HTML 文件，WebGPU 直接跑、不用游戏引擎，在线可玩（tarasshynkarenko.com/moon，需新版 Chrome），源码开源（GitHub TarasShyn/moon-surface，MIT）。作者注明它基于库内已收的 web-ocean（Maksymilian Dendura / GitHub Noniv）的架构，bloom 和 AgX 色调映射代码按 MIT 许可改编。画面：开局站在一个 48 公里的复杂陨石坑里，地球挂在坑沿上方；陨石坑小到厘米级，还有石块、柔和阴影、弯曲的地平线和缓慢转动的星空；按 G 进入月球重力行走（空格跳），Z 键 6° 望远看地球，H 键调太阳、地照、曝光、星空延时等。README 写明的物理细节正好是科普素材：①月球半径 1737.4 公里，地面按 d²/2R 下沉，从人眼高度看地平线只有约 2.4 公里远，30 公里外的坑壁会「沉」下去几百米；②月壤用 McEwen（1991）的月球-朗伯反射模型加「冲日效应」，所以没有临边昏暗、顺着太阳方向看去地面又平又亮；③阴影是「0.53° 的太阳圆盘露出多少」算出来的软阴影；④阴影里的补光来自被照亮地面的反射和地照，地照强度随地球的相位变化——把太阳降到地平线下、曝光加到约 14 EV，就能看到只被地球照亮的月面；⑤星空和银河以朔望月周期（29.5 天一圈）乘 4000 倍延时绕月极转动，地球自转、云层飘动，但地球在天上的位置不动，「就像从月球正面看到的那样」。地形由 6 层 1024×1024 的 GPU 程序化纹理叠成（周期从 131 公里到 3.3 米），陨石坑的深度、坑缘、平底、阶地和中央峰都按半径和年龄生成，年轻的坑带亮色溅射物和辐射纹。科普镜头：为什么月球上的地平线这么近；为什么满月看起来像一张平平的圆盘（没有临边昏暗）；为什么从月球上看，地球几乎不会升起落下（潮汐锁定）；什么是地照。",
+      "tool": "Claude Code（Opus 5.5）+ 原生 WebGPU/WGSL，无引擎（README/作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 主帖（2026-10-17T15:16Z）给出在线演示与源码链接；GitHub API：TarasShyn/moon-surface 创建于 2026-10-17，README 声明 MIT（LICENSE 同时保留 web-ocean 的版权声明，故 GitHub 识别为 Other）。物理参数均摘自 README。未公开提示词。封面为帖内视频第 1 秒截帧（裁掉顶部调试信息条），已自托管。",
+      "attribution": "Taras Shynkarenko（@tarasshyn / GitHub TarasShyn）；架构来自 web-ocean（Maksymilian Dendura / Noniv）",
+      "sourceAuthor": "tarasshyn",
+      "tags": [
+        "WebGPU",
+        "程序化生成",
+        "单文件网页",
+        "天文",
+        "开源"
+      ],
+      "publishedAt": "2026-10-17T15:16:00Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-18T00:54:00.000Z",
+      "updatedAt": "2026-10-18T00:54:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-18T00:54:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图/YouTube缩略图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 93,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 19,
+          "溯源": 19,
+          "复现": 15,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.1958,
+        "finalScore": 111.2,
+        "threshold": 65,
+        "run": "2026-10-18-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/TarasShyn/moon-surface",
+      "licenseName": "MIT（含 web-ocean MIT 版权声明）",
+      "licenseUrl": "https://github.com/TarasShyn/moon-surface/blob/main/LICENSE"
+    },
+    {
+      "title": "你发出的一条消息，30 毫秒里走了 6000 公里：从咖啡桌上的手机、基站、登陆站到 4000 米深的海底光缆，钻进 9 微米的玻璃纤芯（@techartist_）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/techartist_/status/2111556534027399438",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018-techartist-message-journey.jpg",
+      "previewType": "image",
+      "description": "X 用户 @techartist_（库内已收其水磨坊、泡澡球作品）10月17日发布约 29 秒的 3D 短片《一条消息从咖啡桌到海外数据中心的旅程》。画面是带时间轴和播放控件的网页式 3D 场景，每一站左上角都有标签显示累计距离、信号时间和深度（均标注「约」「已放慢」）：The Phone（约 0.1 km）——「你的消息以无线电波离开手机」；The Tower（约 1 km，0.006 ms）——「基站把它送进光纤，变成光」；The Coast（约 25 km）——「在登陆站进入跨洋海缆」；The Seabed（约 447 km，2.23 ms，水深约 4000 m）——「洲际互联网流量大多走海底」，画面里有 ROV 的探照灯和中继器；The Cable（约 2058 km，10.3 ms）——「里面是头发丝细的玻璃纤维」；Inside the Fibre（约 3350 km 处，16.8 ms）——标注纤芯约 9 µm、包层约 125 µm、1550 nm 红外光脉冲（假色可视化），字幕「光被全反射困在玻璃纤芯里」「多种颜色共用一根光纤，各自携带数据」；The Data Centre（约 6065 km，30.3 ms）——「几十毫秒就跨过了一片海」。作者同晚另发一条姊妹片（https://x.com/techartist_/status/2111615745234751794），用 3D 拟物演示「点发送之后」的 TLS 握手到解密：明文谁都能读、AES-GCM/ChaCha20 加密后「同一条消息换了伪装」、路由器逐跳转发时只看得到去向和大小、看不到内容。科普镜头：用片中自己的数字就能算出光在光纤里的速度（6065 km ÷ 30.3 ms ≈ 每秒 20 万公里，约为真空光速的 2/3，因为玻璃折射率约 1.5）；全反射如何把光困在纤芯里；波分复用「多种颜色共用一根光纤」；为什么跨洋延迟有物理下限。也可迁移成「芯片里的信号旅程」镜头语言。",
+      "tool": "作者未声明工具；画面为带时间轴/播放控件的网页式 3D 交互界面（推测为代码实现，未核实）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 主帖（2026-10-17T20:34Z）与姊妹帖（2026-10-18T00:30Z），无源码、无在线链接、无许可证声明，作者回复中只提到「做了几样东西在陆续分享」。片中数字均为片内标注的近似值（标注 approx./shown slowed）。封面为视频第 20 秒截帧（Inside the Fibre），已自托管。",
+      "attribution": "@techartist_（X，Techartist）",
+      "sourceAuthor": "techartist_",
+      "tags": [
+        "结构可视化",
+        "3D交互",
+        "光纤",
+        "网络通信"
+      ],
+      "publishedAt": "2026-10-17T20:34:43Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-18T00:54:00.000Z",
+      "updatedAt": "2026-10-18T00:54:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-18T00:54:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图/YouTube缩略图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 70,
+        "baseBreakdown": {
+          "实体": 16,
+          "科普": 20,
+          "溯源": 11,
+          "复现": 5,
+          "风格": 9,
+          "新颖": 9
+        },
+        "multiplier": 1.1958,
+        "finalScore": 83.7,
+        "threshold": 65,
+        "run": "2026-10-18-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "5000 只椋鸟和一只鹰：没人指挥，鸟群自己折叠、分裂又合拢（Three.js Boids，一句提示词）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/TokenGremlin/status/2111584413280792581",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018-tokengremlin-starlings.jpg",
+      "previewType": "image",
+      "description": "X 用户 @TokenGremlin 10月17日发布约 28 秒录屏：作者称用 DeepSeek V4.1 Flash-1017（开启 DeepThink）一句提示词生成的 Three.js 场景——夕阳下的湖面上空，5000 只椋鸟按 Boids 规则飞行，用空间哈希网格加速邻居查找；鸟群会自己折叠、分裂、再合拢，一只鹰俯冲进鸟群（也可以用鼠标操控鹰），湖面倒映整个鸟群。作者自评：太阳光晕过曝得厉害，但鸟群运动是真的像；在 2019 年的旧笔记本上跑得很卡。录屏里能看到鸟群从一团变成弧形「幕布」、再压扁成贴着水面的长带，鹰冲过的地方被撕开一个口子。科普镜头：这是「涌现」最直观的演示——每只鸟只遵守三条局部规则（别撞上邻居、和邻居同向、往群体中心靠），整体却出现谁也没设计过的形状；鹰的冲击让信息在群里一波波传开（真实椋鸟群也有这种躲避波）。可直接作为用户长期想做的「涌现」视频的开场备选，与库内 three.js GPGPU 鸟群选题互补（这条多了捕食者扰动）。",
+      "tool": "DeepSeek V4.1 Flash-1017（DeepThink）+ Three.js（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 主帖（2026-10-17T22:25Z），未公开提示词、源码或在线演示（检索作者同会话回复无补充）。「一句提示词」为作者自述。封面为录屏第 12.6 秒截帧，已自托管。",
+      "attribution": "@TokenGremlin（X，Token Gremlin）",
+      "sourceAuthor": "TokenGremlin",
+      "tags": [
+        "Three.js",
+        "涌现",
+        "群体行为",
+        "粒子"
+      ],
+      "publishedAt": "2026-10-17T22:25:30Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-18T00:54:00.000Z",
+      "updatedAt": "2026-10-18T00:54:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-18T00:54:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图/YouTube缩略图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 72,
+        "baseBreakdown": {
+          "实体": 19,
+          "科普": 19,
+          "溯源": 9,
+          "复现": 7,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.3491,
+        "finalScore": 97.1,
+        "threshold": 65,
+        "run": "2026-10-18-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "一间「有人住过」的杂乱书房，全靠 AI 建模再自动搬进 UE5：Opus 把 Blender 材质逐个转成虚幻引擎着色器（@Yokohara_h）",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/Yokohara_h/status/2111118974704591350",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018-yokohara-room-ue5.jpg",
+      "previewType": "image",
+      "description": "日本 3D 艺术家 Hirokazu Yokohara（@Yokohara_h，C4D/Maya/ZBrush/Blender/UE5）10月16日发布约 47 秒视频：「只用 AI 做的室内场景的实时版」——让 Opus 把场景从 Blender 自动移植到 UE5，作者说搬进游戏引擎本来非常麻烦，用 AI 方便得惊人，还打算用这个房间做个小恐怖游戏。画面是一间堆满书、纸箱、杂志和小物件的书房，午后阳光从百叶窗斜射进来，镜头缓慢游走。作者在回复中补充：场景结合了 AI 在 Blender 里直接建模和 AI 3D 生成工具，全部由 Opus 和 Astra 自动操控，「关键是把 AI 3D 生成整合进工作流」；全部是新做的资产；移植时让 Opus 把现成的 PBR 材质原样转换，对用 Blender 着色器节点做的材质只烘焙遮罩等必要元素、其余在 UE 里用虚幻着色器重建；画面质感来自 Lumen 和后处理；测试完会上传文件。帖子获约 1900 赞、15 万次浏览。对用户「房间 3D 建模 + 换装修风格」项目：这是「AI 建模 → 引擎实时渲染」的现成参考，尤其是材质迁移的做法——换风格本质上就是批量换材质和灯光。",
+      "tool": "Claude Opus / GPT Astra 自动操控 Blender + AI 3D 生成工具，移植到 Unreal Engine 5（Lumen）（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 主帖（2026-10-16T15:36Z）及其多条英文回复（工作流、材质转换、Lumen）；未公开提示词与工程文件（作者称测试完会上传），无许可证声明。封面为视频第 21 秒截帧，已自托管。",
+      "attribution": "Hirokazu Yokohara（@Yokohara_h）",
+      "sourceAuthor": "Yokohara_h",
+      "tags": [
+        "Blender",
+        "UE5",
+        "室内场景",
+        "AI 3D生成"
+      ],
+      "publishedAt": "2026-10-16T15:36:00Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-18T00:54:00.000Z",
+      "updatedAt": "2026-10-18T00:54:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-18T00:54:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图/YouTube缩略图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 64,
+        "baseBreakdown": {
+          "实体": 19,
+          "科普": 8,
+          "溯源": 12,
+          "复现": 6,
+          "风格": 9,
+          "新颖": 10
+        },
+        "multiplier": 1.038,
+        "finalScore": 66.4,
+        "threshold": 65,
+        "run": "2026-10-18-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "丢进一张户型图，就能按真实身高走进去：看家具放不放得下、12 月下午 5 点阳光照到哪（Opus 5.5 做的户型图转可走 3D）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/KeenanSylo/status/2111418638993433020",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018-keenansylo-floorplan-walk.jpg",
+      "previewType": "image",
+      "description": "X 用户 @KeenanSylo（keenan arsianto，自述在做动效和前端）10月17日发布约 10 秒演示：他在斯德哥尔摩租到一套公寓，但房源照片拍的是另一套，于是用 Opus 5.5 做了个工具——把任意户型图丢进去，自动识别墙、门和房间，生成可按真实身高走进去的 3D 公寓；可以摆家具、看 12 月下午 5 点阳光照到哪里、试沙发放不放得下。视频里是一套「1 room apartment」：厨房、床、沙发、茶几、阳台门，底部菜单有 Overview / Plan / Walk / Furnish / Light / Go to / Photo，左上角显示面积等参数；配图是「Your floor plans」页面，列着几张户型图和「Add a floor plan」。对用户「房间 3D 建模 + 换装修风格」项目：这是「户型图 → 3D → 摆家具/看光照」的最短路径参考，和照片重建是两条互补路线；科普镜头可讲「冬天下午 5 点太阳有多低」（高纬度城市的太阳高度角与日照方向）。",
+      "tool": "Claude Opus 5.5（作者自述）；具体技术栈未公开",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 主帖（2026-10-17T11:26Z），互动很少；无在线链接、源码或许可证，作者回复中无补充。功能描述均为作者自述，本轮未试用。封面为视频第 4.6 秒截帧（Walk 模式卧室视角），已自托管。",
+      "attribution": "@KeenanSylo（X，keenan arsianto）",
+      "sourceAuthor": "KeenanSylo",
+      "tags": [
+        "户型图",
+        "3D交互",
+        "室内场景",
+        "日照"
+      ],
+      "publishedAt": "2026-10-17T11:26:46Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-18T00:54:00.000Z",
+      "updatedAt": "2026-10-18T00:54:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-18T00:54:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图/YouTube缩略图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 61,
+        "baseBreakdown": {
+          "实体": 16,
+          "科普": 15,
+          "溯源": 8,
+          "复现": 3,
+          "风格": 9,
+          "新颖": 10
+        },
+        "multiplier": 1.1958,
+        "finalScore": 72.9,
+        "threshold": 65,
+        "run": "2026-10-18-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "200 万段能直接运行的 3D 代码：让 AI 用 Blender Python / Three.js「写」出可修改的模型，同一个 Opus 5.5 换套流程，人评胜率从 21% 到 79%（Apache-2.0）",
       "category": "3d",
@@ -11471,8 +11745,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条",
-  "updatedAt": "2026-10-17T12:51:00.000Z",
-  "totalItems": 254,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条",
+  "updatedAt": "2026-10-18T00:54:00.000Z",
+  "totalItems": 259,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
