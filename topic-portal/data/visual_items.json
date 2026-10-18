@@ -1,8 +1,170 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 259,
+  "exportedCount": 262,
   "items": [
+    {
+      "title": "站在车站能看见多远的山？一个把地球曲率和大气折射都算进去的 360° 山景网页（Gemini 4 + Three.js）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/sagami_ss_dev/status/2111652425325264904",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018b-yamanami360.jpg",
+      "previewType": "image",
+      "description": "日本 X 用户 @sagami_ss_dev（さがみあーと）10月18日发布用 Gemini 4 Argon 做的网页应用「山並み360°｜淵野辺」，并附约 50 秒录屏。以 JR 淵野辺站（北纬 35.568°、东经 139.395°，海拔 121 米 + 眼高 1.6 米）为观察点，调用日本国土地理院的数据，把丹沢、秩父山系的山峰按真实三维坐标放进 360° 全景里，点击山名会显示海拔、简介和山上的小屋。本轮查看了网页源码：用 Three.js（r160）渲染，地球半径取 6,371,000 米，大气折射系数 k=0.13，每座山因地球弯曲「沉下去」的高度按 距离²÷(2×地球半径)×(1−k) 计算；山点列表里有大山（1252 米）、塔ノ岳（1491 米）、雲取山（2017 米，东京最高峰）、武甲山等几十个点。录屏画面朴素：浅蓝天空、绿色地形、山名标签沿地平线排开，右侧是信息面板。科普镜头：按页面里的公式，50 公里外的山会被地球曲率「藏掉」约 196 米，算上大气折射后约 171 米——这就是为什么远处的山看起来比实际矮、更远的高山会整个落到地平线以下；大气折射让光线略微向下弯，所以能看得比几何直线更远一点。可迁移成「在上海/深圳的高楼上能看多远」「为什么看得见海上的船先露出桅杆」这类镜头。",
+      "tool": "Gemini 4 Argon（作者自述）+ Three.js r160 + 日本国土地理院数据（网页源码可见）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 主帖（2026-10-18T02:55Z）给出在线地址 https://yamanami360.unfactory.workers.dev/ ；本轮抓取页面源码核对了地球半径、折射系数和沉降公式，未看到许可证声明，未公开提示词。互动很少。封面为录屏第 14 秒截帧，已自托管。",
+      "attribution": "さがみあーと（@sagami_ss_dev）",
+      "sourceAuthor": "sagami_ss_dev",
+      "tags": [
+        "Three.js",
+        "地球曲率",
+        "地理可视化",
+        "单文件网页"
+      ],
+      "publishedAt": "2026-10-18T02:55:45Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-18T04:51:00.000Z",
+      "updatedAt": "2026-10-18T04:51:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-18T04:51:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图/YouTube缩略图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 69,
+        "baseBreakdown": {
+          "实体": 10,
+          "科普": 18,
+          "溯源": 13,
+          "复现": 10,
+          "风格": 9,
+          "新颖": 9
+        },
+        "multiplier": 1.3491,
+        "finalScore": 93.1,
+        "threshold": 65,
+        "run": "2026-10-18-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "能按、能捏、能扔的软萌玩具：同一句提示词，Opus 5.5 花 10 美元 51 分钟，GPT-6.1 花 1 美元 21 分钟（单文件 Three.js）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/realmilessun/status/2111651401160081786",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018b-squishy-toys.jpg",
+      "previewType": "image",
+      "description": "X 用户 Miles Sun（@realmilessun）10月18日发布约 43 秒竖屏对比视频：同一句提示词——做一个可以按压、拿起、捏扁、扔出去的「捏捏乐」软玩具，单个 HTML 文件、只用 three.js。上半屏是 Claude Opus 5.5（作者标注花费 10.04 美元、51 分钟），下半屏是 GPT-6.1-sol（1.03 美元、21 分钟）。两版都做成了标题为「Squishy.」的网页：吐司面包、牛油果、猫爪、蛋糕块、团子等软乎乎的小物件，鼠标按下去会凹陷回弹、可以拎起来扔，结尾两版都把一大堆玩具倒出来堆成小山；Opus 版的物件有柔和投影和更明显的回弹形变，右侧有计数面板。作者问「Opus 贵 10 倍，你会捏哪个？」，并写明「Made with Claude + ultramotion」。和库内已收藏的充气按钮、布料物理同属「可以上手捏的材质」。科普镜头：软体物理怎么让一块「面包」被按下去又弹回来（质点-弹簧/体积保持的直觉讲法）；同题不同模型的成本和耗时差 10 倍，可作为「AI 写代码到底花多少钱」的直观素材。",
+      "tool": "Claude Opus 5.5 / GPT-6.1-sol + three.js 单文件 HTML；作者另注 Made with Claude + ultramotion（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 主帖（2026-10-18T02:51Z），只给出提示词大意（a squishy toy you can press, pick up, squeeze, and toss；single HTML file, three.js only），未公开完整提示词、源码或在线演示，无许可证；花费与耗时为作者自述。互动很少。封面为视频第 37 秒截帧（上下两版玩具堆成小山），已自托管。",
+      "attribution": "Miles Sun（@realmilessun）",
+      "sourceAuthor": "realmilessun",
+      "tags": [
+        "Three.js",
+        "软体物理",
+        "模型对比",
+        "单文件网页"
+      ],
+      "publishedAt": "2026-10-18T02:51:41Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-18T04:51:00.000Z",
+      "updatedAt": "2026-10-18T04:51:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-18T04:51:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图/YouTube缩略图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 67,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 11,
+          "溯源": 9,
+          "复现": 7,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.3491,
+        "finalScore": 90.4,
+        "threshold": 65,
+        "run": "2026-10-18-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "没用一张生成图、一帧生成视频：Claude Code 用 Three.js 搭出会随年代变化的「动态历史地图」，从海底到武士之都的镰仓",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/kurumirekishi/status/2111619292487930100",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018b-kurumi-kamakura-map.jpg",
+      "previewType": "image",
+      "description": "日本历史×AI 创作者くるみ（@kurumirekishi）10月18日发布约 1 分 57 秒竖屏视频《鎌倉——海の底から 武士の都へ》（从海底到武士之都）。作者说明：画面全部是代码，没有用图片生成或视频生成，是 Claude Code 用 Three.js 搭出地形模型、按时代让它动起来，配乐用 Suno，由 Opus 5.5 每天制作；她在 Instagram 上同系列的京都篇播放约 68 万次。视频像一张米黄纸底的立体地图：开头是「縄文のころ」海水退去露出三角形平地，随后依次出现 1063 年海边建起八幡宫、1192 年源赖朝任征夷大将军、1241 年左右「劈山开路」（切通）、1512 年玉绳城，一直到 1964–1966 年「市民守护山林」；每一段都有大号年份、标题字、地图上的标注点和移动的路线，海岸线和森林随年代变化。科普镜头：这套「同一块地形 + 时间轴驱动标注」的做法，可以直接套到「上海外滩 / 深圳湾 / 一座晶圆厂园区几十年的变化」这类选题；纸质地图风格也和库内纸艺类素材相近。",
+      "tool": "Claude Code（Opus 5.5）+ Three.js；配乐 Suno（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 主帖（2026-10-18T00:44Z），引用了自己此前的帖子；未公开提示词、源码或在线版本，无许可证。「全部是代码、未用图像/视频生成」为作者自述，本轮未运行代码。封面为视频第 50 秒截帧（1192 年段），已自托管。",
+      "attribution": "くるみ（@kurumirekishi，Instagram @kurumi_rekishi）",
+      "sourceAuthor": "kurumirekishi",
+      "tags": [
+        "Three.js",
+        "代码动画",
+        "历史地图",
+        "时间轴"
+      ],
+      "publishedAt": "2026-10-18T00:44:05Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-18T04:51:00.000Z",
+      "updatedAt": "2026-10-18T04:51:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-18T04:51:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图/YouTube缩略图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 66,
+        "baseBreakdown": {
+          "实体": 13,
+          "科普": 18,
+          "溯源": 10,
+          "复现": 6,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.1979,
+        "finalScore": 79.1,
+        "threshold": 65,
+        "run": "2026-10-18-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "整颗月球只是一个 72KB 的网页：站在 48 公里宽的陨石坑里，地平线只有 2.4 公里远，地球一动不动挂在天上（WebGPU，MIT）",
       "category": "frontend",
@@ -11745,8 +11907,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条",
-  "updatedAt": "2026-10-18T00:54:00.000Z",
-  "totalItems": 259,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条",
+  "updatedAt": "2026-10-18T04:51:00.000Z",
+  "totalItems": 262,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
