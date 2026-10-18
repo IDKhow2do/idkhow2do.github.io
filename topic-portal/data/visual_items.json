@@ -1,8 +1,64 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 262,
+  "exportedCount": 263,
   "items": [
+    {
+      "title": "Colorfigures：手绘等距线稿的日常物件，点一点就能看懂洗衣机、咖啡机怎么工作",
+      "category": "frontend",
+      "styleFamily": "draw",
+      "is3d": false,
+      "source": "https://x.com/aprilzz423/status/2111474111541284890",
+      "sourceCodeUrl": "",
+      "demoUrl": "https://colorfigures.vercel.app",
+      "workUrl": "https://april-zhu.com/colorfigures",
+      "relatedSource": "https://x.com/wheresryan22/status/2111434454652600635",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261018-colorfigures-washing-machine.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2111473730794999808/vid/avc1/1440x1034/k3DYSeddNrXXP2mI.mp4",
+      "description": "April（@Aprilzz423）2026-10-17 发帖：她也在探索「边玩边学」，做了一个 Claude skill，用来生成手绘风格、可交互的日常物件，帖内约 49 秒视频演示她的小洗衣机。帖子引用 @wheresryan22 的儿童版原型「打气筒是怎么给轮胎充气的？」（他在试不同版本，想找到既简单又足够有细节、能让孩子互动学习的方式）。帖中链接的作品站 Colorfigures 自述「Hand-inked isometric figures you can play with」，目前收录 17 个物件：洗衣机、意式咖啡机、自动售货机、烤面包机、微波炉、削笔刀、发条玩具、红绿灯、烟雾报警器、冰箱、音乐盒、马桶冲水、扭蛋机、拍照亭、街机、餐车、厕所隔间，←→ 切换。可拍角度：①「东西是怎么工作的」做成可点的手绘图；②给孩子的交互科普；③一个 skill 批量出同风格物件。",
+      "tool": "Claude skill（作者自制，未公开仓库）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为 @Aprilzz423 原帖（2026-10-17T15:07:12Z）及所引 @wheresryan22 帖（2026-10-17T12:29:37Z），经 X API 回读，非臆造。帖内 t.co 解析为 https://colorfigures.vercel.app（HTTP 200，页面标题「Colorfigures · April Zhu」，链到 april-zhu.com）和被引帖；未找到 skill 本身的公开仓库或下载链接，故 sourceCodeUrl 留空。站点为 2D 等距手绘交互图，按 is3d 规则不算 3D。封面为帖内视频缩略图。",
+      "attribution": "@Aprilzz423（April Zhu）；引用 @wheresryan22",
+      "sourceAuthor": "Aprilzz423",
+      "tags": [
+        "Claude Skill",
+        "手绘",
+        "交互插画",
+        "等距",
+        "儿童科普",
+        "边玩边学"
+      ],
+      "publishedAt": "2026-10-17T15:07:12Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-18T06:20:00.000Z",
+      "updatedAt": "2026-10-18T06:20:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": "2026-10-18T06:20:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-18T06:20:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          862
+        ],
+        "preview_check": "封面为帖内视频缩略图，HTTP 200。",
+        "video_check": "未播放 49 秒视频；站点 HTML 已回读物件列表。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-batch-2026-10-18"
+      }
+    },
     {
       "title": "站在车站能看见多远的山？一个把地球曲率和大气折射都算进去的 360° 山景网页（Gemini 4 + Three.js）",
       "category": "frontend",
@@ -11908,7 +11964,7 @@
   ],
   "bookmarksNotInVisual": 15,
   "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条",
-  "updatedAt": "2026-10-18T04:51:00.000Z",
-  "totalItems": 262,
+  "updatedAt": "2026-10-18T06:20:00.000Z",
+  "totalItems": 263,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
