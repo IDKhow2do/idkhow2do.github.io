@@ -1,8 +1,169 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 266,
+  "exportedCount": 269,
   "items": [
+    {
+      "title": "车贴墙、倒挂、翻过公交车——纯提示词控制不住的反直觉动作，先用 Three.js 搭灰白模逐帧渲染，再交给可灵 Kling 4.0 重绘成实拍（上下分屏对照）",
+      "category": "video",
+      "styleFamily": "video_model",
+      "source": "https://x.com/geek_zard/status/2111799920504271134",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018d-whitebox-kling.jpg",
+      "previewType": "image",
+      "description": "X 用户 @geek_zard 10 月 18 日发布约 15 秒竖屏对照视频，上下分屏：一半是用 three.js 代码搭的低模白模画面，一半是可灵 Kling 4.0 视频编辑重绘后的写实画面。第一段是城市高架路，一辆车整个翻成底朝天，从公交车和货车上方飞越车流；第二段在隧道口，车先出现在隧道口上沿倒挂的位置，随后落到车流前方，周围是出租车和私家车。作者说这类「车贴墙、倒挂、翻转、飞越车流」的反直觉动作，纯提示词和首尾帧都控制不住，最后靠 3D 白模 + 可灵视频编辑跑通，并列出要点：白模用 three.js 写代码搭、逐帧渲染，相机对齐上一段的尾帧，衔接才无缝；车的侧倾角按隧道截面的弧度计算，四个轮子才能始终贴墙；白模车别用方盒子，要接近真车轮廓的流线型，否则倒挂时可灵只能靠猜、车会变形；白模车和场景用同色调的泥塑灰，把光线也做进白模，可灵才会重新上色而不是照搬 CG 质感；可灵设置的生成时长要和白模视频一致，多出来的部分没有白模约束，模型会自己编；和白模布局冲突的参考图一律去掉。科普/制作用途：①直接演示「视频模型只会补画面、不懂物理，要靠 3D 骨架约束」；②正好是「房间 3D 建模→换装修风格」项目可借的做法：同一个白模房间，换提示词重绘成不同风格，结构不会跑。",
+      "tool": "three.js（白模、逐帧渲染）+ 可灵 Kling 4.0 视频编辑（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 主帖（2026-10-18T12:41Z）原创，正文给出完整流程要点；未公开 three.js 代码与可灵提示词，无许可证。帖子很新，互动很少（本轮读取时 0 赞）。封面为视频第 3 秒截帧（上：白模，下：可灵重绘），已自托管。",
+      "attribution": "@geek_zard",
+      "sourceAuthor": "geek_zard",
+      "tags": [
+        "Three.js",
+        "视频模型",
+        "白模驱动",
+        "可灵"
+      ],
+      "publishedAt": "2026-10-18T12:41:51Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-18T12:59:00.000Z",
+      "updatedAt": "2026-10-18T12:59:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-18T12:59:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图/YouTube缩略图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 76,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 16,
+          "溯源": 13,
+          "复现": 12,
+          "风格": 8,
+          "新颖": 9
+        },
+        "multiplier": 1.1979,
+        "finalScore": 91.0,
+        "threshold": 65,
+        "run": "2026-10-18-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "不穿动捕服也能做 3D 动画：让 Opus 5.5 经 Blender MCP 逐帧读一段走路视频里的髋、膝、脚、手姿态，再一帧帧打到自己建好、绑好骨骼的派克大衣角色上",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/rewind02/status/2111759900317520294",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018d-mocap-blender.jpg",
+      "previewType": "image",
+      "description": "X 用户 @rewind02 10 月 18 日发布约 26 秒 Blender 界面录屏：灰色地面上，一个穿带毛边兜帽派克大衣、靴子和手套的角色从左走到右，随后视角切到正面、俯视和斜侧面，检查走路姿态。作者说每一步都是从一段真实视频里复制的，关键是让 Opus 逐帧读视频，并给出 7 步做法：①把 Opus 5.5 通过 Blender MCP 接进 Blender，effort 调到最高；②让 Opus 建角色（带毛边兜帽的派克大衣、靴子、手套）；③让 Opus 绑骨骼（脊柱、手臂、腿、脚）；④录或选一段简单动作视频，比如走路；⑤让 Opus 把视频拆成帧，读出每帧的姿态（髋、膝、脚、手臂）；⑥把每一帧姿态映射到骨骼上打关键帧；⑦从侧面、正面、顶部检查有没有脚底打滑、腿互相穿模。建议先用一段从侧面拍的干净简单动作，只在逐帧映射时开最高 effort，建模不需要。原帖约 43 赞、43 收藏。科普镜头：可用来讲「动作捕捉到底在捕捉什么」（关键点→骨骼→关键帧），以及 AI 读图和传统动捕的差别。",
+      "tool": "Claude Opus 5.5 + Blender MCP（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 主帖（2026-10-18T10:02Z），帖中只有步骤说明，没有完整提示词、工程文件或源码，无许可证；引用了自己此前的一条帖子（2110309991919853638，本轮未展开）。库内已有 Motion2MixamoRig（视频/照片动作迁移到 Mixamo 骨骼），本条是不同做法（大模型逐帧读姿态），已按新颖度扣分。封面为录屏第 4 秒截帧（Blender 视口侧视），已自托管。",
+      "attribution": "@rewind02",
+      "sourceAuthor": "rewind02",
+      "tags": [
+        "Blender",
+        "动作迁移",
+        "骨骼绑定",
+        "Blender MCP"
+      ],
+      "publishedAt": "2026-10-18T10:02:49Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-18T12:59:00.000Z",
+      "updatedAt": "2026-10-18T12:59:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-18T12:59:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图/YouTube缩略图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 66,
+        "baseBreakdown": {
+          "实体": 15,
+          "科普": 14,
+          "溯源": 11,
+          "复现": 12,
+          "风格": 9,
+          "新颖": 5
+        },
+        "multiplier": 1.038,
+        "finalScore": 68.5,
+        "threshold": 65,
+        "run": "2026-10-18-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "一段分镜式提示词，DeepSeek-V4.1-Flash 一次写出整套连续物理状态：跑车冲上 C 形弧道倒挂静止→冷气喷射翻滚回正→反推缓降→四轮落地避震回弹（Three.js + SVG，提示词公开）",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/my189/status/2111795634827354332",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018d-roadster-drop.jpg",
+      "previewType": "image",
+      "description": "X 用户 @my189 10 月 18 日发布约 13 秒 4K 横屏录屏，称 DeepSeek-V4.1-Flash-1017 一次写通「磁吸倒挂 + RCS 冷气翻滚 + 反推缓降 + 悬挂回弹」整套连续物理状态。画面是夜间测试场，探照灯和镜头眩光很强，四周是 HUD 式数据面板，左下角依次打出阶段名：APPROACH（接近）、C-LOOP ASCENT（爬上 C 形弧道）、INVERTED HOLD（倒挂静止）、POWERED DESCENT（动力下降）、SOFT TOUCHDOWN（软着陆）、TEST COMPLETE / TOUCHDOWN CONFIRMED。作者公开了完整提示词：描述一辆白色跑车冲上巨大的金属 C 形弧形坡道，在顶部 180 度倒置处靠车底吸附风扇倒挂静止，1 秒后脱离轨道，车底反推喷口持续喷白色冷气减速，车身四周再爆发几道冷气脉冲（无明火）完成 180° 横滚回正，接近地面时向下喷白雾缓冲，四轮柔和接地、避震压缩回弹，手持长焦跟拍，要求用 Three.js + SVG 构建。作者建议换载具或受力状态就能改成自己的交互主页。科普用途：可借这套「分阶段受力状态」写法做反推、喷气姿态控制、悬挂回弹的示意镜头。",
+      "tool": "DeepSeek-V4.1-Flash-1017 + Three.js + SVG（作者自述，一次生成）",
+      "prompt": "夜间户外实拍直播画面，得州 SpaceX 测试场，强烈的工业聚光灯照射。一辆流线型白色第二代 Tesla Roadster 高速冲上巨大的金属 C 形弧形坡道，驶至顶部 180 度完全倒置区域时，依靠车底强力吸附风扇稳稳倒挂静止在半空中。1 秒后，车辆脱离轨道顶端。车底反推喷口持续喷射白色高压冷气，缓慢降低下降速度；车身四周再爆发数道短促白色冷气脉冲（无明火），推动车身完成 180° 横滚回正。接近地面时车底向下喷出高压白雾缓冲，四轮柔和接地，避震压缩回弹。手持长焦跟拍，8K 写实物理引擎感，真实夜间光学眩光。用 Three.js + SVG 构建这段动画。",
+      "promptProvenance": "original_public",
+      "provenanceNote": "作者 X 主帖（2026-10-18T12:24Z）原文公开完整提示词；作者两分钟前另发过一条同内容帖（2111795144727113949），以本条为准。未公开生成代码，无许可证；画面里的物理是动画演出，不是物理引擎仿真，本轮未运行代码。提示词含特定品牌车型与场地名称，二次使用时建议替换。封面为录屏第 5 秒截帧（POWERED DESCENT 阶段），已自托管。",
+      "attribution": "@my189",
+      "sourceAuthor": "my189",
+      "tags": [
+        "Three.js",
+        "物理动效",
+        "单文件网页"
+      ],
+      "publishedAt": "2026-10-18T12:24:49Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-18T12:59:00.000Z",
+      "updatedAt": "2026-10-18T12:59:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-18T12:59:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图/YouTube缩略图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 58,
+        "baseBreakdown": {
+          "实体": 14,
+          "科普": 8,
+          "溯源": 10,
+          "复现": 12,
+          "风格": 10,
+          "新颖": 4
+        },
+        "multiplier": 1.1319,
+        "finalScore": 65.7,
+        "threshold": 65,
+        "run": "2026-10-18-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "把磁铁推近线圈，电压表就跳一下：Induction Bench 用 Three.js 把磁感线、法拉第定律和楞次定律做成能拖能调的桌面实验（Opus 5.5）",
       "category": "frontend",
@@ -12125,8 +12286,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条",
-  "updatedAt": "2026-10-18T08:48:00.000Z",
-  "totalItems": 266,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条",
+  "updatedAt": "2026-10-18T12:59:00.000Z",
+  "totalItems": 269,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }

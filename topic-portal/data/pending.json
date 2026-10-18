@@ -3,6 +3,128 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 57,
+      "multiplier": 1.038,
+      "score": 59.2,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-18-2040-shanghai",
+      "record": {
+        "title": "一句话描述自家户型（48㎡、一室、带阳台、窗朝南），Opus 5.5 写 Blender Python 按真实尺寸参数化生成整套公寓，还会核对面积对不对得上、把说不清的地方标出来",
+        "category": "3d",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/askoltx/status/2111791900948652464",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018d-apartment-sentence.jpg",
+        "previewType": "image",
+        "description": "X 用户 @askoltx 10 月 18 日发布约 22 秒竖屏演示片：深色界面顶部是输入的一句话「model my apartment: 48m2, one bedroom, balcony, south windows」，中间一个线框公寓从地面轮廓开始，依次长出墙体、家具和灯光，底部有顶点/面数计数、BLOCK-OUT→WALLS→FURNITURE→LIGHTING 阶段和进度条，结尾打出「48 m². one sentence. 3 minutes. zero software licences.」。作者说流程是：从一句话里解析房间数、面积、层高和窗户朝向；在 Blender 里按真实尺寸参数化生成墙、楼板和门窗洞；检查净空、门的开启范围、各房间面积加起来是不是 48㎡；改一句话（比如卧室墙挪 30 厘米）整层自动重算。还称它会指出「说的面积和房间对不上」「某扇窗朝向有歧义」并标记而不是瞎猜。帖末给出可粘进 Claude Code 的完整提示词（解析→生成→核对面积→把每个假设标成观察/推断/未知）。和用户「房间 3D 建模→换装修风格」项目直接相关。",
+        "tool": "Claude Opus 5.5 + Blender Python（作者自述）",
+        "prompt": "Install Blender's Python API access. Build a 3D model of this space from my description:\n[one sentence: area, rooms, ceiling height, balcony, which way the windows face].\n1. Parse my sentence into dimensions, counts and spatial relations.\n2. Generate it in Blender at real scale, parametric walls, slabs, openings.\n3. Check the rooms sum to the area I gave and flag anything that doesn't fit.\n4. Tag every assumption as observation, inference or unknown. Only build what I own.",
+        "promptProvenance": "original_public",
+        "provenanceNote": "作者 X 主帖（2026-10-18T12:09Z），公开了提示词；但视频是带「ANTHROPIC / OPUS 5.5」字样的风格化演示界面，不是 Blender 实机录屏，帖内功能描述无法从画面核实，未提供 .blend 或源码。帖子很新、互动很少。库内已有「户型图转可漫游」等同方向作品。封面为演示片第 16 秒截帧，已自托管。",
+        "attribution": "@askoltx",
+        "sourceAuthor": "askoltx",
+        "tags": [
+          "Blender",
+          "参数化建模",
+          "户型"
+        ],
+        "publishedAt": "2026-10-18T12:09:59Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-18T12:59:00.000Z",
+        "updatedAt": "2026-10-18T12:59:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-18T12:59:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图/YouTube缩略图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 57,
+          "baseBreakdown": {
+            "实体": 13,
+            "科普": 15,
+            "溯源": 5,
+            "复现": 10,
+            "风格": 8,
+            "新颖": 6
+          },
+          "multiplier": 1.038,
+          "finalScore": 59.2,
+          "threshold": 65,
+          "run": "2026-10-18-2040-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 60,
+      "multiplier": 1.025,
+      "score": 61.5,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-18-2040-shanghai",
+      "record": {
+        "title": "整片极光只有 11 KB：一个约 230 行的 WebGL2 着色器画出 46 层摆动的极光、雪山和倒映它们的湖面，还能用 WASD 飞进去（Claude Code + Opus 5.5 自己截图自己改）",
+        "category": "video",
+        "styleFamily": "code",
+        "source": "https://x.com/ottollm/status/2111786470935544214",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018d-aurora-11kb.jpg",
+        "previewType": "image",
+        "description": "X 用户 @ottollm 10 月 18 日发布约 30 秒 1080p 录屏：夜空中绿、青、紫色极光帘幕带着竖向光柱缓缓摆动，下面是一排积雪山峰，前景湖面带波纹，倒映着山和极光。作者称整个场景是一个 11,266 字节的单 HTML 文件，没有引擎和库，只有一个约 230 行的 WebGL2 着色器：极光含绿、青、紫、红色冠部和深红下缘、竖向射线和摆动的帘幕，另有星空和银河、11 座用光线步进（raymarching）画的雪山、有森林和冰沿的雪岸、反射极光和山的湖面。作者强调这不是一句提示词的奇迹：两天里分好几次会话，Claude Code 用 Opus 5.5 在无头 Chrome 里渲染截图、自己看图、自己修；大部分时间花在山上，作者反复发参考照片说「还是假」，直到不假为止。原帖约 6 赞。科普用途：极光颜色分层（绿/红/紫）和「为什么倒影里也有极光」可直接配这段画面。",
+        "tool": "Claude Code + Opus 5.5，单文件 WebGL2 着色器（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者 X 主帖（2026-10-18T11:48Z），未公开源码、提示词或在线地址，无许可证；文件大小、行数、层数均为作者自述，本轮未核实。库内已有同类「61KB 海洋」单文件作品。封面为录屏第 10 秒截帧，已自托管。",
+        "attribution": "@ottollm",
+        "sourceAuthor": "ottollm",
+        "tags": [
+          "shader",
+          "单文件网页",
+          "极光"
+        ],
+        "publishedAt": "2026-10-18T11:48:24Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-18T12:59:00.000Z",
+        "updatedAt": "2026-10-18T12:59:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-18T12:59:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图/YouTube缩略图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 60,
+          "baseBreakdown": {
+            "实体": 16,
+            "科普": 13,
+            "溯源": 9,
+            "复现": 6,
+            "风格": 10,
+            "新颖": 6
+          },
+          "multiplier": 1.025,
+          "finalScore": 61.5,
+          "threshold": 65,
+          "run": "2026-10-18-2040-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 56,
       "multiplier": 1.1091,
       "score": 62.1,
@@ -1472,6 +1594,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-18T08:48:00.000Z",
+  "updatedAt": "2026-10-18T12:59:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
