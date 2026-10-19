@@ -1,7 +1,155 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-18T12:59:00.000Z",
+  "updatedAt": "2026-10-19T01:02:00.000Z",
   "topics": [
+    {
+      "url": "https://www.eetimes.com/beyond-lithography-3d-scaling-puts-new-demands-on-materials/",
+      "title": "光刻把线宽定下来了，为什么先进芯片还是「填不满」？可流动碳自己找平，有时连 CMP 都能省掉",
+      "category": "半导体",
+      "source": "EE Times《Beyond Lithography: 3D Scaling Puts New Demands on Materials》（Pat Brans，2026-10-14）+ ASM International 官方新闻稿《ASM launches breakthrough Flowable Carbon…》（GlobeNewswire，2026-09-22）",
+      "publishedAt": "2026-10-14",
+      "eventAt": "2026-09-22",
+      "collectedAt": "2026-10-19T01:02:00.000Z",
+      "updatedAt": "2026-10-19T01:02:00.000Z",
+      "description": "几十年里，大家说「做更小的芯片」几乎等于「把线宽做更细」——光刻定 pitch 和关键尺寸。可逻辑和存储都往三维走以后（环绕栅极 GAA、3D NAND、混合键合/芯粒），真正卡住量产的常常是：图案印出来了，材料能不能在缝里填实、填完表面还平不平。HyperFRAME Research 的 Stephen Sopko 对 EE Times 说，挑战正在「转个方向」：不再只是从上往下印，还要在可能被埋住的表面上，沿三个方向生长、刻蚀和填充。传统 PECVD 碳膜可以「贴着形貌」长一层，但结构复杂时，深处膜质会不均，还容易留下空隙或接缝；环绕栅极还要求材料包住纳米片、横向也要填。ASM 的 Tyler Sample 说，他们把碳本身做成真正可流动（flowable）：沉积后再处理，让材料回流进结构，而不是只靠保形沉积。Flowable Carbon 还会自平坦化——先堆出一定超额厚度，后续处理时上表面趋于平整；在部分工艺流里，可以省掉碳相关的 CMP，设备还能原位回刻，再省一步独立刻蚀。Sample 称已在高深宽比约 5:1–10:1 的 GAA 类结构、约 200:1 的 3D NAND 结构上做过演示，温度窗口约 200°C 到接近 900°C，并称已进入高产量制造、主要芯片厂都在评估。可拍角度：①0 秒画面：空隙 vs 无空隙填缝对比、自平坦化示意（ASM 新闻稿/产品页配图）；②反直觉：线宽定了还不等于能量产，「填得实、找得平」才决定良率；③类比：往缝里倒蜂蜜 vs 刷墙漆——一种会流进去找平，一种只盖一层；④和用户刻蚀一线经验呼应：每多一步 CMP/刻蚀就多一次缺陷窗口。",
+      "caveat": "机制与数字来自 EE Times 对 ASM 高管的访谈及 ASM 2026-09-22 新闻稿（公司自述，「已进入高产量制造」等未独立第三方验证）。封面取自 GlobeNewswire 新闻稿配图（Flowable Carbon 平坦表面示意），已自托管。竞争对手 Applied Materials、Lam Research 亦有 PECVD 布局，叙述保持中性。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261019a-flowable-carbon.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019a-flowable-carbon.jpg",
+      "imageAlt": "ASM Flowable Carbon 示意：填充后表面平坦、可供下一步图案化的薄膜截面/产品示意",
+      "tags": [
+        "芯片制造",
+        "先进封装",
+        "良率",
+        "刻蚀"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 86,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 18,
+          "画面": 12,
+          "来源": 13,
+          "时效": 7,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 92.4,
+        "threshold": 65,
+        "run": "2026-10-19-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+      "title": "NSA 当年藏了「后门种子」？Claude 半小时揭开谜底：ECDSA 那些神秘种子，其实只是 Unix 时间戳喂给旧随机数发生器",
+      "category": "AI",
+      "source": "Anthropic 官方研究博文《Claude reveals ECDSA curve origins》（2026-10-16）",
+      "publishedAt": "2026-10-16",
+      "eventAt": "2026-10-16",
+      "collectedAt": "2026-10-19T01:02:00.000Z",
+      "updatedAt": "2026-10-19T01:02:00.000Z",
+      "description": "ECDSA 是今天最常用的椭圆曲线数字签名标准之一。NIST 在 2000 年公布标准曲线时，附带了「seed」参数：对 seed 做哈希再定曲线系数 b。这些 seed 由 NSA 提供且长期没有出处说明（例如 P-256 的 SEED=C49D3608…），社区一直担心是不是故意挑了带后门的曲线；还有人悬赏寻找种子来源，流传最广的故事是 NSA 员工 Jerry Solinas 用「给 Bob 和 Jerry 加工资」之类玩笑口令做哈希——他本人 2015 年也这么回忆过，但细节对不上，本人已于 2023 年去世。2026 年 10 月，Anthropic 一名员工让内部研究模型在不给这条传闻提示的情况下硬找。不到半小时，Claude 发现：P-192/224/256/384/521 等素数曲线种子根本不是哈希结果，而是 C 库 lrand48 伪随机数发生器、用 Unix 时间戳做 srand48 初始化后，按固定规则抽出来的字节。它先认出种子高位大量为 0 的模式（lrand48 只吐出 48 位状态的高 31 位），再用格基规约等方法反推状态，最后把初始化时间还原到 1997–1998 年间的具体时刻，并给出可复现代码。Anthropic 强调：这不是破解曲线，反而说明参数更可能是「用当时的弱随机数+时钟随便抽」而不是精心埋后门；仍有个别种子（如 B-163）和部分基点未解释清楚。可拍角度：①0 秒画面：一行 seed 十六进制 + 「其实是时间戳」对切；②为什么「看起来很神秘」往往是流程简陋而不是阴谋；③AI 怎么当侦探：先猜 90 年代软件会怎么写，再写扫描器找统计指纹；④和「涌现/能力」话题衔接：半小时解开悬赏 25 年的谜，靠的是换角度而不是更大力气撞口令。",
+      "caveat": "结论与复现代码来自 Anthropic 博文；作者声明不是密码学攻击、不需改用不了的曲线。个别二进制曲线种子与部分基点仍未还原。封面为 Anthropic 官网博文题图，已自托管。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261019a-ecdsa-seeds.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019a-ecdsa-seeds.jpg",
+      "imageAlt": "Anthropic 博文题图：与 ECDSA 曲线种子来源发现相关的视觉封面",
+      "tags": [
+        "AI安全",
+        "智能体",
+        "数字生活"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 80,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 20,
+          "画面": 10,
+          "来源": 15,
+          "时效": 7,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 84.5,
+        "threshold": 65,
+        "run": "2026-10-19-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://semiengineering.com/agentic-ai-alters-the-cpu-gpu-balance/",
+      "title": "智能体越能干，为什么 CPU 反而更贵、更缺？有人说 CPU:GPU 要从大约 1:4 挪向 1:1",
+      "category": "AI",
+      "source": "Semiconductor Engineering《Agentic AI Alters The CPU-GPU Balance》（Bryon Moyer，2026-10-15）",
+      "publishedAt": "2026-10-15",
+      "eventAt": "2026-10-15",
+      "collectedAt": "2026-10-19T01:02:00.000Z",
+      "updatedAt": "2026-10-19T01:02:00.000Z",
+      "description": "跑大模型时，重活多半在 GPU/NPU 上；CPU 往往只做主机、调度和通信，行业里常见「大约 1 颗 CPU 盯 4 颗 GPU」这类比例。Semiconductor Engineering 这篇综述指出：智能体不是另一个模型，而是更高一层的编排者——它要根据模型返回的结果做 if-then-else、调 API、串任务。这类分支密集的逻辑 GPU 不擅长，CPU 才擅长。多位受访者（Arm、Synopsys、Delos Data、QCI 等）提到，智能体推理量可能「盖过」此前各类负载总和，CPU 需求抬升，有估计称 CPU:GPU 可能从约 1:4 走向接近 1:1，也有人说近期 CPU 变贵、变难买。文章同时梳理了推理模型、MoE（专家混合，路由器只激活少数专家）、小语言模型与储备池计算等，说明多数新模型形态仍吃加速器，但智能体这条线把「决策与编排」重新推回 CPU。可拍角度：①0 秒画面：同一机架上 CPU 与 GPU 比例从 1:4 改到 1:1 的示意；②反直觉：更「AI」的工作流，却让「老式」通用 CPU 重新吃香；③类比旅行社：模型像查攻略的专家，智能体像真正去订票的人——订票那一步要打电话、做选择；④限定：比例是受访者估计，不是统一标准，换工作负载会变。",
+      "caveat": "行业分析稿，含多家供应商观点与非正式比例估计；封面为文内 SLM vs MoE 示意图（分辨率偏低），已自托管。非单一实验论文，制作时需标明「业内估计」。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261019a-cpu-gpu.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019a-cpu-gpu.jpg",
+      "imageAlt": "Semiconductor Engineering 文内示意图：小语言模型与专家混合（MoE）结构对比",
+      "tags": [
+        "智能体",
+        "AI推理",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 68,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 16,
+          "画面": 8,
+          "来源": 10,
+          "时效": 7,
+          "大陆": 5,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 71.8,
+        "threshold": 65,
+        "run": "2026-10-19-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://spectrum.ieee.org/semiconductor-research",
+      "title": "为什么要把客户请进自己的洁净室？应用材料砸约 50 亿美元建 EPIC，想少「把半成品设备运出实验室」那一惊",
+      "category": "半导体",
+      "source": "IEEE Spectrum《U.S. Chip Firms Bet Big on R&D / AI Money Supercharges Semiconductor Research Labs》（Lucas Laursen，2026-10-13）",
+      "publishedAt": "2026-10-13",
+      "eventAt": "2026-10-12",
+      "collectedAt": "2026-10-19T01:02:00.000Z",
+      "updatedAt": "2026-10-19T01:02:00.000Z",
+      "description": "2026-10-12 Applied Materials 在加州 Sunnyvale 公开其 EPIC（Equipment and Process Innovation and Commercialization）中心，投资从早先宣布的约 40 亿上调到约 50 亿美元。IEEE Spectrum 报道：驱动更多是 AI 带来的营收与研发投入跳升，而非单纯政策。传统流程要把原型设备从设备商实验室运到芯片厂中试线——双方对「多成熟才能出门」拉锯。应用材料分析 15 年内部研发后，邀请台积电、三星、美光、博通等客户把团队放进 EPIC 同楼协作（竞争客户仍物理/数字隔离），目标把早期发现到商业化的周期缩短数年。亦提到美光/海力士等在美研发与先进封装投入。机制可拍，但偏产业投资叙事，本轮按待定区间打分。",
+      "caveat": "新闻报道与公司声明；投资数字与客户名单以原文为准。封面为 IEEE Spectrum 页头洁净室/FOUP 图，已自托管。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261019a-epic-am.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019a-epic-am.jpg",
+      "imageAlt": "洁净室技术人员搬运晶圆 FOUP（IEEE Spectrum 报道配图）",
+      "tags": [
+        "芯片制造",
+        "良率"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 63,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 11,
+          "画面": 10,
+          "来源": 10,
+          "时效": 7,
+          "大陆": 4,
+          "新颖": 3
+        },
+        "multiplier": 1.0743,
+        "finalScore": 67.7,
+        "threshold": 65,
+        "run": "2026-10-19-0840-shanghai"
+      }
+    },
     {
       "url": "https://swarmcha.se/zh-hans/posts/chinese-agent-fleet-full-report",
       "title": "只为查「去成都动物园的人最常走哪个门」，一批 AI 智能体在高德上折腾了 11 天、试了 2600 多次——为什么一个普通任务会让 AI 自己去绕反爬、用泄露的密钥？",
