@@ -1,8 +1,173 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 278,
+  "exportedCount": 281,
   "items": [
+    {
+      "title": "把 56 个作品收成可翻阅的纸堆：38 张实例化纸页一次 draw call，速度驱动正弦「翻页风」——Trapnest Profile（WebGL）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://henrywithu.com/trapnest-profile-paper-shaders-and-56-living-worlds/",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019d-trapnest.jpg",
+      "previewType": "image",
+      "description": "Henry（Trapnest）把作品集做成「建筑图册纸样」：首页 19 个旗舰项目被复制成 38 张 InstancedMesh 纸页，顶点着色器用滚动位移做环形包裹，再用速度驱动的正弦让纸堆在快速翻阅时鼓风；GPU 两级拾取（64×64 悬停雷达 + 1×1 精确点击）解决弯曲+透明留白后 CPU 射线拾取会点偏的问题。另有棱镜品牌转子、分段线性缩略图条、纸声采样。直播站 profile.henrywithu.com。可作科普镜头：实例化、顶点位移、拾取与物理隐喻。",
+      "tool": "Three.js / WebGL / GLSL / React",
+      "prompt": "",
+      "promptProvenance": "original_public",
+      "provenanceNote": "作者长文公开技术细节与直播站；2026-10-19 发布。",
+      "attribution": "Henry / Trapnest（henrywithu.com）",
+      "sourceAuthor": "henrywithu",
+      "tags": [
+        "Three.js",
+        "纸艺场景",
+        "WebGL",
+        "shader"
+      ],
+      "publishedAt": "2026-10-19T07:03:58.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-19T13:00:00.000Z",
+      "updatedAt": "2026-10-19T13:00:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-19T13:00:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 91,
+        "baseBreakdown": {
+          "实体": 25,
+          "科普": 18,
+          "溯源": 16,
+          "复现": 12,
+          "风格": 10,
+          "新颖": 10
+        },
+        "multiplier": 1.3338,
+        "finalScore": 121.4,
+        "threshold": 65,
+        "run": "2026-10-19-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://profile.henrywithu.com"
+    },
+    {
+      "title": "字不是贴在画面上的字幕：Opus 把台词放进 Three.js 夜景里「演戏」，自贩机与电话亭是 Tripo——aicreataro「切れてないよ」",
+      "category": "motion",
+      "styleFamily": "code",
+      "source": "https://x.com/aicreataro/status/2110689292737749146",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019d-aicreataro-text.jpg",
+      "previewType": "image",
+      "description": "优先作者 @aicreataro（2026-10-15）：故事与文字动画由 Opus 5.5 写进 Three.js 三维场景，自贩机/店面/电话亭/人物用 Tripo，配音 Gemini TTS，明确未用视频生成模型。要点是「字本身成为可调度的 3D 演员」，相机推拉无需再抽卡。适合讲：文本渲染进场景图、相机语法、代码驱动叙事 vs 纯视频模型。封面为帖内视频截帧，已自托管。",
+      "tool": "Claude Opus 5.5 + Three.js + Tripo + Gemini TTS",
+      "prompt": "",
+      "promptProvenance": "original_public",
+      "provenanceNote": "作者 X 长文列出素材与流程；无开源仓库。",
+      "attribution": "@aicreataro",
+      "sourceAuthor": "aicreataro",
+      "tags": [
+        "Three.js",
+        "Claude Code",
+        "motion"
+      ],
+      "publishedAt": "2026-10-15T11:08:36.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-19T13:00:00.000Z",
+      "updatedAt": "2026-10-19T13:00:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-19T13:00:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 74,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 15,
+          "溯源": 16,
+          "复现": 8,
+          "风格": 9,
+          "新颖": 8
+        },
+        "multiplier": 1.1921,
+        "finalScore": 88.2,
+        "threshold": 65,
+        "run": "2026-10-19-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2110686912495398912/vid/avc1/1280x720/Zra2I3iFsMIHMhft.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "网页入口做成「撕开一张纸」：Three.js + Verlet 布料，撕破是真删三角形——开源 tearable-cloth（MIT）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://github.com/Jane-xiaoer/claude-skill-tearable-cloth",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019d-tearable.jpg",
+      "previewType": "image",
+      "description": "Jane-xiaoer 开源 Claude Skill / 参考实现：把页面入口做成可撕纸闸门，Three.js 网格 + Verlet 布料（无 Worker），约束断裂后从索引缓冲删三角形形成真实破洞；灵感来自 pushmatrix/tearable。MIT，演示 xiaoer-tools-wall.vercel.app，可直接当「布料/纸张物理」科普镜头与可玩素材。时效偏旧（约 2026-05），但机制与许可完整，贴合纸艺/布料口味。",
+      "tool": "Three.js + Verlet cloth / Next.js",
+      "prompt": "",
+      "promptProvenance": "original_public",
+      "provenanceNote": "GitHub MIT；README 与 reference/ 可复现；灵感注明 pushmatrix/tearable。",
+      "attribution": "Jane-xiaoer（inspired by pushmatrix/tearable）",
+      "sourceAuthor": "Jane-xiaoer",
+      "tags": [
+        "Three.js",
+        "纸艺场景",
+        "cloth",
+        "布料模拟"
+      ],
+      "publishedAt": "2026-05-09",
+      "collectionIds": [],
+      "collectedAt": "2026-10-19T13:00:00.000Z",
+      "updatedAt": "2026-10-19T13:00:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-19T13:00:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 91,
+        "baseBreakdown": {
+          "实体": 25,
+          "科普": 17,
+          "溯源": 18,
+          "复现": 15,
+          "风格": 10,
+          "新颖": 6
+        },
+        "multiplier": 1.279,
+        "finalScore": 116.4,
+        "threshold": 65,
+        "run": "2026-10-19-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/Jane-xiaoer/claude-skill-tearable-cloth",
+      "licenseName": "MIT",
+      "licenseUrl": "https://github.com/Jane-xiaoer/claude-skill-tearable-cloth/blob/main/LICENSE"
+    },
     {
       "title": "把泰坦尼克按 1:1 拆开：10 层甲板、100+ 房间，点击零件就能剖开——Opus 5.5 + Three.js，船体高度按 1912 调查报告",
       "category": "3d",
@@ -12778,8 +12943,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条",
-  "updatedAt": "2026-10-19T09:00:00.000Z",
-  "totalItems": 278,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条",
+  "updatedAt": "2026-10-19T13:00:00.000Z",
+  "totalItems": 281,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
