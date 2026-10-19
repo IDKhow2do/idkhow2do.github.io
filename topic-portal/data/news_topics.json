@@ -1,7 +1,119 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-19T09:00:00.000Z",
+  "updatedAt": "2026-10-19T13:00:00.000Z",
   "topics": [
+    {
+      "url": "https://www.nature.com/articles/s41467-026-78053-3",
+      "title": "二维材料表面太「干净」，高κ介质为什么长不上去？煤制碳点铺一层 0.4 纳米「种子」，EOT 可压到约 0.6 纳米还跑 0.5 V 逻辑",
+      "category": "半导体",
+      "source": "Nature Communications《Integration of high-κ oxide on 2D semiconductors with carbon-dot monolayer assembly as van der Waals interfacial layer》（Wong/An/Cao 等，伊利诺伊大学厄巴纳-香槟/NETL，开放获取，2026-10-07）",
+      "publishedAt": "2026-10-07",
+      "eventAt": "2026-10-07",
+      "collectedAt": "2026-10-19T13:00:00.000Z",
+      "updatedAt": "2026-10-19T13:00:00.000Z",
+      "description": "二维半导体表面没有悬挂键，载流子散射少——可同一属性让高κ氧化物难成核：直接 ALD 常长出岛状粗糙膜，转移介质又易残留与漏电。伊利诺伊团队把煤衍生、类石墨烯碳点在水面上压成 Langmuir 单层（厚约 0.4 nm、覆盖率>95%），再 Langmuir–Schaefer 转移到 MoS₂/石墨烯上，当 ALD HfO₂ 的成核种子。得到碳点/HfO₂ 杂化介质：EOT 可低至 0.6±0.1 nm，漏电密度低于 10⁻⁴ A·cm⁻²，击穿场约 28 MV·cm⁻¹，并可耐受约 400°C 热预算。顶栅 MoS₂ 晶体管 SS 可逼近 60 mV/dec、回滞<30 mV、近零增强型 V_T，并拼出在 0.5 V 驱动电压下工作的反相器与 NOR。可拍角度：①0 秒画面：论文 Fig.1 碳点单层+STEM 截面「三明治」；②反直觉：二维材料的「干净」同时是介质成核的敌人；③类比：光滑瓷砖上刷漆要先喷底漆——碳点就是原子级底漆；④限定：CVD 阵列良率与更薄 HfO₂ 的失效权衡仍在文中给出。",
+      "caveat": "开放获取论文数据；EOT/漏电/SS 为作者测量与器件统计。封面取自 Nature Communications Fig.1，已自托管。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261019d-carbon-dot.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019d-carbon-dot.jpg",
+      "imageAlt": "碳点单层作种子在 MoS₂ 上生长超薄 high-κ 介质的示意图与表征（Nature Communications Fig.1）",
+      "tags": [
+        "二维半导体",
+        "芯片制造",
+        "先进封装"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 92,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 18,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 98.8,
+        "threshold": 65,
+        "run": "2026-10-19-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://pr.tsmc.com/english/news/3338",
+      "title": "High-NA 光刻为什么还要换更大的掩模版？ASML×台积电推动约 12 英寸大掩模：半场拼接才是瓶颈，不是分辨率口号",
+      "category": "半导体",
+      "source": "台积电官方新闻稿《ASML and TSMC Announce Initiative to Pioneer Industry Transition to Large-Format Photomasks for High NA EUV》（2026-09-08）+ ASML 同步声明；机制补充见行业报道对 6×12 英寸/半场拼接的解释",
+      "publishedAt": "2026-09-08",
+      "eventAt": "2026-09-08",
+      "collectedAt": "2026-10-19T13:00:00.000Z",
+      "updatedAt": "2026-10-19T13:00:00.000Z",
+      "description": "High-NA EUV 用 4×/8× 变形缩影：同一块传统约 6×6 英寸掩模，曝光场只剩约 26×16.5 mm「半场」。大芯片要么拼接两刀，要么拆成小芯粒——产率与良率都会吃亏。台积电与 ASML 发起产业倡议，推动更大格式（常称 12 英寸/6×12 英寸）掩模，目标恢复完整约 26×33 mm 曝光场，去掉拼接约束并抬高扫描仪产能。路线图：High-NA 先用现有 6 英寸掩模在先进节点量产（台积电意向约 2030 起），12 英寸掩模中试线目标约 2031，整机就绪约 2033。可拍角度：①0 秒画面：半场 vs 全场矩形对比示意（本轮封面取自相关报道配图）；②反直觉：换更大「底板」是为了少拼刀，不是为了印出更细的线；③类比：投影仪镜头变了，胶片尺寸不跟着改就会裁掉半幅；④限定：掩模厂/检测/EDA/机台全链路要重建，与现有 6 英寸将长期并存。",
+      "caveat": "一手来源为台积电/ASML 新闻稿；半场几何与拼接动机取自公开技术解释。封面为报道配图（ASML 相关视觉），已自托管；非产线现场照片。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261019d-asml-mask.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019d-asml-mask.jpg",
+      "imageAlt": "High-NA EUV 大尺寸掩模倡议相关配图（报道转载视觉）",
+      "tags": [
+        "光刻",
+        "芯片制造",
+        "EUV"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 18,
+          "画面": 12,
+          "来源": 15,
+          "时效": 6,
+          "大陆": 7,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 94.5,
+        "threshold": 65,
+        "run": "2026-10-19-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.13121",
+      "title": "量子点自旋比特为什么终于敢用 EUV，而不是一直电镜「手雕」？imec 300 mm 线做出高保真 SiMOS，晶圆级漏电筛选 100% 通过",
+      "category": "半导体",
+      "source": "arXiv:2607.13121《SiMOS quantum-dot spin qubits enabled by extreme-ultraviolet lithography》（Van Caekenberghe/Steinacker 等，imec/Diraq/KU Leuven/UNSW，2026-07-14 提交；HTML 修订标注 2026-08-24）",
+      "publishedAt": "2026-07-14",
+      "eventAt": "2026-08-24",
+      "collectedAt": "2026-10-19T13:00:00.000Z",
+      "updatedAt": "2026-10-19T13:00:00.000Z",
+      "description": "过去最高保真硅自旋比特多靠电子束直写：分辨率够，但串行曝光难做全晶圆统计，叠对与拼接误差会直接变成比特间离散。imec 在 300 mm 中试线用单次曝光 0.33 NA EUV + 金属氧化物抗蚀剂定义 SiMOS 多层多晶硅栅，目标点间距可到 60–80 nm。对标称 80 nm 设计，89 个裸片室温栅-栅漏电筛选 100% 通过；CDSEM 显示柱塞间距晶圆标准差约 0.8 nm。两枚 60 nm 间距三量子点器件、四套双点系统上，GST 给出单比特门保真最高约 99.9%、两比特 CZ 约 98.2–99.1%，交换开启斜率约 10–13 dec/V 且跨器件可复现。可拍角度：①0 秒画面：论文 Fig.1 伪彩 SEM/TEM 栅叠剖面；②反直觉：量子比特「量产」瓶颈往往是均匀性，不是单比特实验室纪录；③类比：手雕印章 vs 整版印刷——EUV 一次印满曝光场；④限定：低温全套表征仍靠单台稀释制冷机，与晶圆制造吞吐不匹配是作者明确讨论的下一瓶颈。",
+      "caveat": "预印本/开放 HTML；保真度来自 GST，器件未宣称商业量产。封面裁自 ar5iv Fig.1 SEM，已自托管。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261019d-simos.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019d-simos.jpg",
+      "imageAlt": "EUV 定义的 SiMOS 三量子点器件伪彩 SEM（arXiv:2607.13121 Fig.1）",
+      "tags": [
+        "量子计算",
+        "芯片制造",
+        "光刻",
+        "EUV"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 17,
+          "画面": 13,
+          "来源": 15,
+          "时效": 6,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 91.3,
+        "threshold": 65,
+        "run": "2026-10-19-2040-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2609.23444",
       "title": "修芯片时序为什么不找最贵的大模型？浙江大学把 9B 本地模型训成「物理 ECO 工头」，INT8 分数反超 GPT-6 Astra，估算成本约 1/147",
