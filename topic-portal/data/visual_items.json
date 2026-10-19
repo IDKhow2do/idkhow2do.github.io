@@ -1,8 +1,222 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 272,
+  "exportedCount": 276,
   "items": [
+    {
+      "title": "把涂鸦变成可打印折纸糖果盒：每只怪是一棵铰接面板树，浏览器里看折叠动画，再导出带粘舌的 1:1 PDF（Three.js + jsPDF）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/riavijayb/status/2112016759020732648",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019b-origami.jpg",
+      "previewType": "image",
+      "description": "X 用户 @riavijayb 2026-10-19 发布：把 8 张涂鸦交给 Claude，生成可交互折纸模板；每只「怪」是铰接 3D 面板树，先在浏览器里播放折叠动画，再导出真比例 PDF（含粘舌、拼版、可选双面）。在线演示 Boo-tique：选角色→换表情/配色→给脸→打印折叠，例如蝙蝠托盘折后约 9×6×4 cm。技术栈自述 Three.js + jsPDF。贴合已赞「纸艺/可玩实体」口味，0 秒就是折纸盒成形，适合做「从平面图纸到立体结构」科普开场。原帖互动仍少，但演示页与 og 图齐全。",
+      "tool": "Claude + Three.js + jsPDF（作者自述）；演示 https://riavijay.github.io/boo-tique",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 主帖（2026-10-19T03:03Z）+ 公开演示站 Boo-tique；未开源完整工程，无许可证声明。封面取自演示站 og-image，已自托管。",
+      "attribution": "@riavijayb",
+      "sourceAuthor": "riavijayb",
+      "tags": [
+        "Three.js",
+        "纸艺场景",
+        "交互"
+      ],
+      "publishedAt": "2026-10-19T03:03:29Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-19T05:00:00.000Z",
+      "updatedAt": "2026-10-19T05:00:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-19T05:00:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 90,
+        "baseBreakdown": {
+          "实体": 23,
+          "科普": 18,
+          "溯源": 18,
+          "复现": 12,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.3338,
+        "finalScore": 120.0,
+        "threshold": 65,
+        "run": "2026-10-19-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://riavijay.github.io/boo-tique"
+    },
+    {
+      "title": "同一句提示词：蒸汽机车要「能动」还要「剖开看锅炉」——Opus 做出活塞连杆与透明剖面，Sol 好看却少了内部结构（Three.js）",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/olezhavich/status/2111808577706807578",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019b-loco-cutaway.jpg",
+      "previewType": "image",
+      "description": "@olezhavich 2026-10-18 用同一提示词各跑一轮：Claude Opus 5.5（约 28.6 分、~5.8M token、约 6.45 美元）与 GPT-6.1 Sol（约 25.4 分、~6.7M token、约 2.01 美元）在 Three.js 里做带透明剖面的蒸汽机车。作者挑 Opus：能看到活塞、连杆、蒸汽，甚至锅炉内部；Sol 外形干净但剖面细节弱。正中「cutaway/剖面」偏好——适合 0 秒讲「外壳好看≠结构讲清楚」。未公开源码与完整提示词全文，溯源分扣。封面为演示视频截帧（剖面机车），已自托管。",
+      "tool": "Claude Opus 5.5 / GPT-6.1 Sol + Three.js（作者自述）",
+      "prompt": "steam locomotive with working mechanics and a transparent cutaway in Three.js（作者摘要；完整提示词未全文公开）",
+      "promptProvenance": "adapted",
+      "provenanceNote": "作者 X 主帖（2026-10-18T13:16Z）视频对比；无仓库/许可证。封面为约第 12 秒截帧，已自托管。",
+      "attribution": "@olezhavich",
+      "sourceAuthor": "olezhavich",
+      "tags": [
+        "Three.js",
+        "剖面",
+        "机械结构"
+      ],
+      "publishedAt": "2026-10-18T13:16:15Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-19T05:00:00.000Z",
+      "updatedAt": "2026-10-19T05:00:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-19T05:00:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 75,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 20,
+          "溯源": 10,
+          "复现": 6,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.1979,
+        "finalScore": 89.8,
+        "threshold": 65,
+        "run": "2026-10-19-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "把讨厌的 2026 写在纸上再烧掉：纸按布料模拟，火、烟、火星是自定义着色器（Three.js，Burn Me / Dunno）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/De_ferus/status/2111924396122112204",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019b-burn-me.jpg",
+      "previewType": "image",
+      "description": "@De_ferus 2026-10-18 演示：在 Burn Me / Dunno 实验里把不满或新年决心写在纸上再点燃；纸用布料式物理，火焰、烟雾与火星为自定义着色器，Three.js 构建。实体感强，贴合纸艺/布料偏好；与本早 Codrops paperlab「真折+真火」同属纸+火，但机制是布料模拟+着色器燃烧而非弧长守恒折纸，新颖度略扣。帖内未给可点开的演示 URL 与源码，溯源/复现分低。封面为视频截帧，已自托管。",
+      "tool": "Three.js 自定义着色器 + 类布料纸张模拟（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 主帖（2026-10-18T20:56Z）；提及 Burn Me / Dunno，本轮未检索到稳定公开演示链接与许可证。封面为约第 2 秒截帧，已自托管。",
+      "attribution": "@De_ferus",
+      "sourceAuthor": "De_ferus",
+      "tags": [
+        "Three.js",
+        "纸艺场景",
+        "着色器",
+        "布料"
+      ],
+      "publishedAt": "2026-10-18T20:56:28Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-19T05:00:00.000Z",
+      "updatedAt": "2026-10-19T05:00:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-19T05:00:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 69,
+        "baseBreakdown": {
+          "实体": 24,
+          "科普": 16,
+          "溯源": 8,
+          "复现": 5,
+          "风格": 10,
+          "新颖": 6
+        },
+        "multiplier": 1.3338,
+        "finalScore": 92.0,
+        "threshold": 65,
+        "run": "2026-10-19-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "四个模型在浏览器里各修一座泻湖：鲨鱼、鲸、鳐与漩涡——Opus 水色最好，Sol 约五分之一价钱也够看（vib3coded）",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/vib3coded/status/2111888587360792982",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019b-marine-lagoon.jpg",
+      "previewType": "image",
+      "description": "优先作者 @vib3coded 2026-10-18 四模型同题：在浏览器里做海洋泻湖（鲨、鲸、鳐、水花、漩涡）。作者观感：Claude Opus 5.5（约 14.70 美元）水色/礁石/阴影最像浅海；GPT-6.1 Sol（约 2.80 美元）简洁但性价比高；Gemini 4 Argon 约 0.22 美元观感差；GPT-6 Astra 约 22.54 美元最贵却不占优。适合「同提示词比模型」镜头；与本早毛西瓜同作者，机制不同（水体/生物群）。未公开完整提示词与 HTML。封面为视频截帧，已自托管。",
+      "tool": "多模型 + 浏览器 3D（作者对比帖；具体引擎未逐条声明）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 主帖（2026-10-18T18:34Z）note_tweet 含费用表；无源码。封面约第 4 秒截帧，已自托管。",
+      "attribution": "@vib3coded",
+      "sourceAuthor": "vib3coded",
+      "tags": [
+        "Three.js",
+        "模型对比",
+        "流体"
+      ],
+      "publishedAt": "2026-10-18T18:34:10Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-19T05:00:00.000Z",
+      "updatedAt": "2026-10-19T05:00:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-19T05:00:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 62,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 12,
+          "溯源": 10,
+          "复现": 6,
+          "风格": 9,
+          "新颖": 7
+        },
+        "multiplier": 1.1979,
+        "finalScore": 74.3,
+        "threshold": 65,
+        "run": "2026-10-19-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "纸不会变长：用弧长守恒做卷、折、垂、揉，再用摄像头辨火焰、对着吹就能烧穿——开源 paperlab（React + Three.js）",
       "category": "frontend",
@@ -12450,8 +12664,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条",
-  "updatedAt": "2026-10-19T01:02:00.000Z",
-  "totalItems": 272,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条",
+  "updatedAt": "2026-10-19T05:00:00.000Z",
+  "totalItems": 276,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }

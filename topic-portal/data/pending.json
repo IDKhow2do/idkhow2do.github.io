@@ -3,6 +3,68 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 56,
+      "multiplier": 1.219,
+      "score": 56.0,
+      "reason": "本轮达待定区间（单维度乘数保护生效）",
+      "run": "2026-10-19-1240-shanghai",
+      "record": {
+        "title": "先在 Blender 里搭，再丢进 Three.js 实时拧：Opus 几分钟把修改器翻成简易 GUI，不用等离线渲染（neoneue）",
+        "category": "3d",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/neoneue/status/2112001584548753412",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019b-blender-threejs.jpg",
+        "previewType": "image",
+        "description": "@neoneue 2026-10-19：把 Blender 想法迁到 Three.js 做实时迭代；称 Claude Opus 5.5 几分钟重建场景并把修改器译成简易 GUI，从此不用干等离线渲染。流程对「建模→网页预览」有启发，但帖内无公开工程/提示词，实体科普镜头弱于折纸/剖面机车，本轮倾向待定。封面为视频截帧，已自托管。",
+        "tool": "Blender → Three.js + Claude Opus 5.5（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者 X 主帖（2026-10-19T02:03Z）；无仓库。封面约第 8 秒截帧，已自托管。",
+        "attribution": "@neoneue",
+        "sourceAuthor": "neoneue",
+        "tags": [
+          "Blender",
+          "Three.js",
+          "实时预览"
+        ],
+        "publishedAt": "2026-10-19T02:03:11Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-19T05:00:00.000Z",
+        "updatedAt": "2026-10-19T05:00:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-19T05:00:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 56,
+          "baseBreakdown": {
+            "实体": 14,
+            "科普": 12,
+            "溯源": 8,
+            "复现": 6,
+            "风格": 9,
+            "新颖": 7
+          },
+          "multiplier": 1.219,
+          "finalScore": 56.0,
+          "threshold": 65,
+          "run": "2026-10-19-1240-shanghai",
+          "multiplierGuard": "基础分<60且仅单一维度乘数>1，按规则不让乘数抬过阈值（按基础分判定）"
+        },
+        "is3d": true,
+        "videoUrl": "",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 59,
       "multiplier": 1.038,
       "score": 61.2,
@@ -1655,6 +1717,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-19T01:02:00.000Z",
+  "updatedAt": "2026-10-19T05:00:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
