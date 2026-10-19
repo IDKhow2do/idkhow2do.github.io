@@ -1,7 +1,157 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-19T05:00:00.000Z",
+  "updatedAt": "2026-10-19T09:00:00.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2609.23444",
+      "title": "修芯片时序为什么不找最贵的大模型？浙江大学把 9B 本地模型训成「物理 ECO 工头」，INT8 分数反超 GPT-6 Astra，估算成本约 1/147",
+      "category": "半导体",
+      "source": "arXiv:2609.23444 WaveletECO: A Closed-Loop Physical ECO Platform and a Specialized Local Language Model（Xu/Ji/Luo/Chen/Sun/Zhuo，浙江大学/ChipFlux）",
+      "publishedAt": "2026-09",
+      "eventAt": "2026-09",
+      "collectedAt": "2026-10-19T09:00:00.000Z",
+      "updatedAt": "2026-10-19T09:00:00.000Z",
+      "description": "芯片后期工程变更（ECO）要在面积约束下反复修时序和电气违例：每一轮分析结果→选动作→真跑 EDA→验收/回滚。通用智能体只会「调工具」，真正难的是多轮决策质量。浙大团队的 WaveletECO 把闭环执行平台和专用模型绑在一起：用执行轨迹做监督微调，再用 CPO-SimPO 偏好对齐，把 Qwen3.5-9B 训成本地 ECO 策略。在 22 个设计、594 次评测上，WaveletECO-Policy（BF16/INT8）综合分约 79.6，高于同协议下的 GPT-6 Astra（77.44）；INT8 估算推理成本约 0.002 美元/任务，相对 GPT-6 约 1/147，分数/美元约 151×。可拍角度：①0 秒画面：论文 Figure 1「分析→提案→执行→回滚」闭环；②反直觉：更小、更本地的专精模型可以在垂直任务上压过前沿大模型；③类比工厂工头：不靠最贵顾问每步拍板，而用会看测量结果的本地班长连修五轮；④接主线：智能体成本/芯片设计良率之外的「决策质量」维度。",
+      "caveat": "分数与成本来自作者自建基准与租卡估算（2026-09-19 参考价），非跨厂产线 KPI；推广到更大节点/更复杂设计仍需验证。封面为 arXiv HTML Figure 1，已自托管。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261019c-wavelet.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019c-wavelet.jpg",
+      "imageAlt": "WaveletECO 闭环：共享 ECO 工作流 + 本地修复模型训练示意（论文 Figure 1）",
+      "tags": [
+        "智能体",
+        "芯片制造",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 92,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 18,
+          "画面": 12,
+          "来源": 15,
+          "时效": 7,
+          "大陆": 10,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 98.8,
+        "threshold": 65,
+        "run": "2026-10-19-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://www.nature.com/articles/s41598-026-74550-z",
+      "title": "光刻胶和掩模版都不要了？一束飞秒 EUV 脉冲，在硅片上「一枪」打出可复现微米级凹坑",
+      "category": "半导体",
+      "source": "Scientific Reports《High-precision machining of silicon surface with intense femtosecond extreme ultraviolet pulses》（Lipp, Yamaguchi, Inoue, Ziaja 等，2026-10-12，开放获取）+ SACLA 自由电子激光实验",
+      "publishedAt": "2026-10-12",
+      "eventAt": "2026-10-12",
+      "collectedAt": "2026-10-19T09:00:00.000Z",
+      "updatedAt": "2026-10-19T09:00:00.000Z",
+      "description": "传统飞秒激光直写多用紫外/可见/红外，靠能量局域化少损伤；这篇把波长推到极紫外（EUV），在日本 SACLA 自由电子激光上用亚微米聚焦脉冲，对硅表面做无掩模的减法加工。固定脉冲参数下，单发即可打出几何相近、可复现的凹坑；配套模拟复现实验趋势并解释烧蚀机制。论文称这证明了微米到亚微米尺度可控加工的可行性，远期或通向无掩模高精度图案化。可拍角度：①0 秒画面：补充材料里单发凹坑显微图（本轮封面）；②反直觉：EUV 不只是光刻机里的「印线宽」，也能当「手术刀」直接剜材料；③对比：有掩模 EUV 光刻 vs 无掩模飞秒 EUV 直写——谁更快、谁更灵活、谁还停在实验；④限定：目前是概念验证，离产线还有激光稳定性与产率鸿沟。",
+      "caveat": "概念验证于自由电子激光设施；工业可制造性、吞吐与成本未宣称。封面取自开放获取补充 PDF 中的凹坑显微图，已自托管。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261019c-euv-fs.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019c-euv-fs.jpg",
+      "imageAlt": "飞秒 EUV 单发在硅表面形成的可复现凹坑显微图（Scientific Reports 补充材料）",
+      "tags": [
+        "芯片制造",
+        "刻蚀",
+        "光刻"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 89,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 17,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 95.6,
+        "threshold": 65,
+        "run": "2026-10-19-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://openai.com/index/jalapeno-first-results/",
+      "title": "为什么推理芯片还要自己造？OpenAI 首款 Jalapeño：吞吐和延迟一起涨，把 KV 缓存「钉」在本地",
+      "category": "AI",
+      "source": "OpenAI《Jalapeño’s first results show industry-leading speed and efficiency in AI inference》（2026-08-25）",
+      "publishedAt": "2026-08-25",
+      "eventAt": "2026-08-25",
+      "collectedAt": "2026-10-19T09:00:00.000Z",
+      "updatedAt": "2026-10-19T09:00:00.000Z",
+      "description": "智能体要连续多步，延迟会叠乘；传统加速器常在「高吞吐」和「低延迟」之间撕扯。OpenAI 公布首款自研推理芯片 Jalapeño 的 InferenceX 实测：在 GPT-OSS 120B、DeepSeek R1、Kimi K2.5 上，峰值每瓦有效工作约 1.5–1.9×，端到端延迟约 1.7–3.6× 更低，交互负载最高约 2.1–4.1×。架构要点：按 prefill（算力）与 decode（带宽）分相调度，把含 KV 缓存的模型状态显式放本地，用大域网络减少跨芯片搬运；并用 AI 辅助九个月 tapeout、用 Codex 给非原计划开源模型写内核。可拍角度：①0 秒：Pareto 曲线「又快又省」；②反直觉：自研芯片不是为了参数更大，而是让 KV 少搬家；③类比厨房：把常用调料钉在灶台旁，而不是每道菜跑仓库；④限定：对比系统与功率口径来自官方，第三方复现仍缺。",
+      "caveat": "官方博客与 InferenceX 数字；对比机型/功率为作者归一化口径。封面为 OpenAI SEO 卡片图，已自托管。计划年底内部部署，属路线图声明。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261019c-jalapeno.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019c-jalapeno.jpg",
+      "imageAlt": "OpenAI Jalapeño 推理效率宣传卡片（官方 og 图）",
+      "tags": [
+        "AI推理",
+        "KV缓存",
+        "AI成本",
+        "边缘AI"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 81,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 17,
+          "画面": 12,
+          "来源": 15,
+          "时效": 6,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 85.6,
+        "threshold": 65,
+        "run": "2026-10-19-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/vera-rubin-nvl72-efficiency-ai-agents/",
+      "title": "聊天只要几千 token，智能体为什么吃掉 15 倍？Vera Rubin 在真实编程轨迹上把每兆瓦吞吐拉到约 30 倍",
+      "category": "AI",
+      "source": "NVIDIA Blog《Up to 30x More Work Per Watt: NVIDIA Vera Rubin NVL72 Sets a New Efficiency Standard for AI Agents》（Koparkar，2026-08-24，9/15 更新）+ SemiAnalysis AgentX",
+      "publishedAt": "2026-08-24",
+      "eventAt": "2026-09-15",
+      "collectedAt": "2026-10-19T09:00:00.000Z",
+      "updatedAt": "2026-10-19T09:00:00.000Z",
+      "description": "OpenRouter 数据称智能体工作负载 token 消耗约为简单聊天的 15 倍：上下文跨步累积，可到数十万输入。SemiAnalysis AgentX 用真实编程会话（保留上下文增长、工具调用、子智能体）测 Vera Rubin NVL72：相对 GB300 NVL72，每兆瓦吞吐最高约 30×、百万 token 成本约低 45×。文中点名机制：分离 prefill/decode、专家并行、分布式 KV 与 KV 感知路由、MegaMoE 融合内核、NVFP4 等。可拍角度：①0 秒：AgentX 轨迹「一步比一步长」；②反直觉：评测单位从「单次请求」变成「整段智能体任务」；③接主线：AI 成本不只看模型价，还看工厂每瓦能跑多少 agent。",
+      "caveat": "NVIDIA 官方博客 + SemiAnalysis 预览数据；未含 Vera CPU 工具调用。封面为博文题图，已自托管。营销口径重，机制段可拍但需标明来源。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261019c-vera-rubin.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019c-vera-rubin.jpg",
+      "imageAlt": "NVIDIA 博文题图：Agentic 性能与 KV/规模示意",
+      "tags": [
+        "智能体",
+        "AI推理",
+        "AI成本",
+        "KV缓存"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 75,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 14,
+          "画面": 12,
+          "来源": 15,
+          "时效": 6,
+          "大陆": 4,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 79.2,
+        "threshold": 65,
+        "run": "2026-10-19-1640-shanghai"
+      }
+    },
     {
       "url": "https://spectrum.ieee.org/hybrid-bonding-2677022836",
       "title": "芯片叠芯片，为什么间距从微米再砍到 200 纳米？混合键合两破纪录：整片对整片 200nm，单颗贴整片 1μm",
