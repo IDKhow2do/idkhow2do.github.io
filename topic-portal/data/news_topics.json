@@ -1,7 +1,81 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-19T01:02:00.000Z",
+  "updatedAt": "2026-10-19T05:00:00.000Z",
   "topics": [
+    {
+      "url": "https://spectrum.ieee.org/hybrid-bonding-2677022836",
+      "title": "芯片叠芯片，为什么间距从微米再砍到 200 纳米？混合键合两破纪录：整片对整片 200nm，单颗贴整片 1μm",
+      "category": "半导体",
+      "source": "IEEE Spectrum《Records Fall for 3D Chip Tech / Researchers Set Hybrid Bonding Records》（Alex Music，2026-06-25）报道 Imec+EV Group 与 CEA-Leti 在 ECTC 上公布的纪录",
+      "publishedAt": "2026-06-25",
+      "eventAt": "2026-05",
+      "collectedAt": "2026-10-19T05:00:00.000Z",
+      "updatedAt": "2026-10-19T05:00:00.000Z",
+      "description": "晶体管快缩到原子极限，算力却还在涨——业界把答案押在「第三维」：把芯片叠在芯片上。连接它们的关键工艺叫混合键合（hybrid bonding）：两片芯片正面都铺铜垫和绝缘层，对齐压紧再加热，铜膨胀焊在一起。间距（bond pitch）越小，单位面积能塞的互连越多，通信就越省电、越快。IEEE Spectrum 报道，在 Orlando 的 ECTC 上两队同时破纪录：比利时 Imec 与设备厂 EV Group 把晶圆对晶圆（W2W）间距做到 200 纳米（去年公开纪录约 250nm），关键是把化学机械抛光（CMP）磨得更平，并改进对准与铜垫设计；法国 CEA-Leti 则把更灵活的「单颗贴整片」（D2W，像往披萨上撒意式辣香肠）做到 1 微米——比上一个公开纪录 2μm 再砍一半，约等于每平方毫米一百万个接点，但靠的是对准精度，1μm 档电气良率目前约 22%，更大间距约 90%。量产侧 Yole 分析师仍报 D2W 约 6–9μm、W2W 约 1–2μm，实验室数字和量产之间还隔着可重复与速度。文中也提华为在上海 ISCAS 自述 Kirin 下一代用到约 1.5μm 混合键合（方法未详）。可拍角度：①0 秒画面：两片芯片铜垫对铜垫「焊」在一起的剖面示意图（文内 CEA-Leti 配图）；②反直觉：线宽不再是唯一瓶颈，「叠上去怎么接线」决定能不能继续涨算力；③类比：W2W 像整盘披萨对贴，D2W 像一颗颗放配料——后者更灵活也更难对准；④和先进封装/HBM 话题衔接：实验室 200nm 意味着每平方毫米可有约 2500 万个互连。",
+      "caveat": "纪录来自 ECTC 会议报道与研究者访谈；量产 pitch 仍远大于实验室。华为 1.5μm 为公司自述、方法未披露。封面取自 IEEE Spectrum 文首图（CEA-Leti/Anthony Zaza 提供的键合连接示意），已自托管。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261019b-hybrid-bonding.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019b-hybrid-bonding.jpg",
+      "imageAlt": "混合键合示意：两层芯片之间浅灰色铜互连阵列的剖面/显微视觉",
+      "tags": [
+        "先进封装",
+        "芯片制造",
+        "良率"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 90,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 18,
+          "画面": 13,
+          "来源": 15,
+          "时效": 6,
+          "大陆": 8,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 96.7,
+        "threshold": 65,
+        "run": "2026-10-19-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/optimizing-agent-reliability-and-tool-calling-efficiency-for-chip-design-using-nvidia-nemo-gym/",
+      "title": "智能体把标准单元表征跑通了，为什么还是不能信？西门子用 NeMo Gym 盯「最终 Liberty 文件」，分数从约 55% 拉到 95%，轮次砍掉三分之二",
+      "category": "AI",
+      "source": "NVIDIA Developer Blog《Optimizing Agent Reliability and Tool Calling Efficiency for Chip Design Using NVIDIA NeMo Gym》（Joshua Mabry 等，2026-10-14）+ Siemens EDA Solido/Fuse 实践",
+      "publishedAt": "2026-10-14",
+      "eventAt": "2026-10-14",
+      "collectedAt": "2026-10-19T05:00:00.000Z",
+      "updatedAt": "2026-10-19T05:00:00.000Z",
+      "description": "芯片设计里，标准单元表征（standard-cell characterization）要为每个逻辑单元在各种电压温度下生成时序/功耗模型，输出是 Liberty（.lib）文件——晶圆厂一换 PDK，旧库往往要重跑。Siemens 的 Solido Characterization Suite 智能体能串起配置、SPICE、分布式计算和出库，但中间某一步「看起来像成功了」的错误，会悄悄污染最终库。NVIDIA 这篇博文介绍：他们用开源评估库 NeMo Gym，不为「某个工具调用是否成功」打分，而是建领域校验器，直接检查最终 Liberty：覆盖率、格式可用性、相对参考库是否引入新失败、数值容差、以及有没有偷懒复用/截断结果——任一门槛失败则奖励为 0。团队用 GF180MCU 开源 PDK、固定 Claude Opus 4.8 + Claude Code，约 25 次 rollout 后，根据失败轨迹改技能与 MCP 工具描述（简化重叠接口、给工具显式 JSON schema），综合验证分从约 55% 提到约 95%，智能体轮次从 155 降到 53（约 −66%），输出 token 从约 81K 降到 29K（约 −64%）。可拍角度：①0 秒画面：流程图「读入→配置→试跑→规模化→生成 Liberty→校验器打分」；②反直觉：工具全绿不等于库可用，要盯最终工件；③类比考试：不只看有没有交卷，还要对照标准答案逐格对分；④和「智能体可靠性」主线衔接：工程智能体该用领域校验器，而不是聊天观感。",
+      "caveat": "数字来自 NVIDIA/Siemens 联合博文中的开发基准（两单元×36 PVT 子集、约 25 次 rollout），非全库量产 KPI。封面为博文题图（agentic workflow 示意），已自托管。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261019b-nemo-gym.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019b-nemo-gym.jpg",
+      "imageAlt": "NVIDIA 博文题图：芯片设计智能体工作流示意（配置—仿真—生成 Liberty—校验）",
+      "tags": [
+        "智能体",
+        "芯片制造",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 18,
+          "画面": 12,
+          "来源": 15,
+          "时效": 7,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 88.8,
+        "threshold": 65,
+        "run": "2026-10-19-1240-shanghai"
+      }
+    },
     {
       "url": "https://www.eetimes.com/beyond-lithography-3d-scaling-puts-new-demands-on-materials/",
       "title": "光刻把线宽定下来了，为什么先进芯片还是「填不满」？可流动碳自己找平，有时连 CMP 都能省掉",
