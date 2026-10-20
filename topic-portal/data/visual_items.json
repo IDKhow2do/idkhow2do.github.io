@@ -1,8 +1,63 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 287,
+  "exportedCount": 288,
   "items": [
+    {
+      "title": "Claude 写代码做的视效 Demo 合集：每个附源码提示词和原帖，含 3D 场景分区",
+      "category": "video",
+      "styleFamily": "code",
+      "is3d": true,
+      "source": "https://x.com/crazykaomei/status/2112048345569247730",
+      "sourceCodeUrl": "https://github.com/yihui-dev/awesome-opus5-5-videos",
+      "galleryUrl": "https://skillry.dev/ai-videos/opus-5-5",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261020-crazykaomei-claude-demos-repo.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2112016276952653825/vid/avc1/842x576/v7CqOlWAVhgy_Wr2.mp4",
+      "description": "疯狂的烤妹儿（@CrazyKaomei）2026-10-19 发帖：有人把推特上 475 个用 Claude 跑出来的前端交互与视效 Demo 整理进一个 GitHub 仓库，每个案例附源码、原始提示词和原帖出处；以前在落地页、技术文章里做个 3D 动效前端要折腾好几天，现在挑一个效果、复制提示词丢给 Claude 换成自己的数据，几分钟出片，可当 SaaS 落地页、自媒体交互配图、独立开发的灵感库。仓库链接在作者首条回复：yihui-dev/awesome-opus5-5-videos。README（截至 2026-10-20 回读）：所有视频都是让 Claude Opus 5.5 把动画写成代码（HTML、Canvas、SVG、Three.js 等）；prompts/ 目录 703 个提示词，其中 418 个在 Skillry 有在线复刻；精选分区为 Motion graphics（58）、Explainers（16）、3D scenes（14）、Games & interactive（12）、Latest prompts（30），每条标注技术栈（如 Three.js · GLSL · Canvas、SVG · GSAP）；近期提示词含 Three.js 云上城堡、程序化 3D 大象、土星五号交互 3D 模型、天坛 3D 动画、中土世界 Three.js 场景等。",
+      "tool": "Claude Opus 5.5；HTML / Canvas / SVG / Three.js / GLSL / GSAP",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为 @CrazyKaomei 原帖（2026-10-19T05:09:00Z，经 X API 回读，非臆造）。仓库链接取自作者本人在该帖下的首条回复 2112048345917313422（t.co 解析为 https://github.com/yihui-dev/awesome-opus5-5-videos），经 GitHub API 核实（MIT，约 6.7k star，topics 含 threejs、motion-graphics、creative-coding）。注意：帖子说「475 个」，README 当前写 703 个提示词、418 个在线复刻，数字对不上（可能统计口径或时点不同）；README 的标题是 Opus 5.5 视频合集，并非泛「前端组件库」。与门户已有条目 @leo_xiaolei 2111318182896218378 指向同一仓库。封面为帖内视频缩略图。",
+      "attribution": "@CrazyKaomei（疯狂的烤妹儿）；仓库 yihui-dev",
+      "sourceAuthor": "CrazyKaomei",
+      "tags": [
+        "Claude",
+        "Opus 5.5",
+        "提示词",
+        "Three.js",
+        "动效视频",
+        "合集",
+        "3D建模"
+      ],
+      "publishedAt": "2026-10-19T05:09:00Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T03:45:00.000Z",
+      "updatedAt": "2026-10-20T03:45:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": "2026-10-20T03:45:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-20T03:45:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          842,
+          576
+        ],
+        "preview_check": "封面为帖内视频缩略图，HTTP 200。",
+        "video_check": "未播放 32 秒视频；README 经 raw.githubusercontent 回读。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-batch-2026-10-20"
+      }
+    },
     {
       "title": "裙摆为什么一转就张开？Three.js + XPBD 布料「旋回布」：把加速度矢量直接画出来，还能在惯性系 / 旋转系之间切视角",
       "category": "frontend",
@@ -2412,7 +2467,7 @@
       "title": "Opus 5.5 做视频最佳实践合集：每条爆款视频附提示词和 Skill，可在线对照复刻",
       "category": "video",
       "styleFamily": "code",
-      "is3d": false,
+      "is3d": true,
       "source": "https://x.com/leo_xiaolei/status/2111318182896218378",
       "sourceCodeUrl": "https://github.com/yihui-dev/awesome-opus5-5-videos",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-awesome-opus5-5-videos.jpg",
@@ -13271,8 +13326,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条",
-  "updatedAt": "2026-10-20T00:58:00.000Z",
-  "totalItems": 287,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d",
+  "updatedAt": "2026-10-20T03:45:00.000Z",
+  "totalItems": 288,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
