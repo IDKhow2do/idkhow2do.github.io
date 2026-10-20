@@ -1,8 +1,341 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 292,
+  "exportedCount": 298,
   "items": [
+    {
+      "title": "咖啡店官网还能做得多温暖？Opus 5.5 做的一个小咖啡馆网站概念",
+      "category": "frontend",
+      "styleFamily": "code",
+      "is3d": false,
+      "source": "https://x.com/dilumsanjaya/status/2111864428010582082",
+      "sourceCodeUrl": "",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261020-dilum-coffee-shop-site.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2111862534148075520/vid/avc1/3456x1990/n53lvY8tdzGfalTQ.mp4",
+      "description": "Dilum Sanjaya（@DilumSanjaya）2026-10-18 发帖：一个小咖啡店的温馨网站概念，目标是给顾客温暖、独特、愿意回访的体验，用 Opus 5.5 做的。帖内约 63 秒录屏演示（约 3.3k 赞）。帖文未给提示词或链接。",
+      "tool": "Claude Opus 5.5",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（经 X API 回读）。无提示词、无在线链接。封面为帖内视频缩略图。",
+      "attribution": "@DilumSanjaya（Dilum Sanjaya）",
+      "sourceAuthor": "DilumSanjaya",
+      "tags": [
+        "Opus 5.5",
+        "落地页",
+        "网站概念",
+        "咖啡店"
+      ],
+      "publishedAt": "2026-10-18T16:58:10Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T05:55:00.000Z",
+      "updatedAt": "2026-10-20T05:55:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": "2026-10-20T05:55:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-20T05:55:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          691
+        ],
+        "preview_check": "封面为帖内视频缩略图，HTTP 200。",
+        "video_check": "未播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-batch-2026-10-20"
+      }
+    },
+    {
+      "title": "不会用 Opus 5.5 做视频？这四个开源仓库从照着做到拆工程都够用",
+      "category": "video",
+      "styleFamily": "code",
+      "is3d": false,
+      "source": "https://x.com/czzzzzzj_/status/2112085934267346976",
+      "sourceCodeUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261020-czj-opus-video-4-repos.jpg",
+      "previewType": "image",
+      "videoUrl": "",
+      "description": "麦当（@czzzzzzJ_）2026-10-19 推荐四个用 Claude Opus 5.5 做视频的开源仓库：①lemo-opuscar——多风格提示词+纯代码样片，填故事让 AI 导演短片（GitHub：Claude Code skill，51 种影片风格，无视频模型，MIT，约 4k star）；②awesome-opus5-5-videos——Opus 5.5 成片合集附创作者 Prompt（HTML/Canvas/SVG/Three.js）；③PDoomVideo——完整 MV 工程（源码/分镜/渲染），适合研究复杂动画；④opus-video-prompts——约 54 个可复制案例，中文友好，建议新手先看。",
+      "tool": "Claude Opus 5.5；lemo-opuscar、awesome-opus5-5-videos、PDoomVideo、opus-video-prompts",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（经 X API 回读）。四个仓库链接取自帖文，均经 GitHub API 核实存在：lemomo-ai/lemo-opuscar（MIT，3953★）、yihui-dev/awesome-opus5-5-videos、JohnHeibel/PDoomVideo（2273★，无许可证声明）、joeseesun/opus-video-prompts（472★，无许可证声明）。封面为帖内第 1 张图。",
+      "attribution": "@czzzzzzJ_（麦当mdldm）",
+      "sourceAuthor": "czzzzzzJ_",
+      "tags": [
+        "Opus 5.5",
+        "动效视频",
+        "提示词",
+        "开源",
+        "合集"
+      ],
+      "publishedAt": "2026-10-19T07:38:22Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T05:55:00.000Z",
+      "updatedAt": "2026-10-20T05:55:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": "2026-10-20T05:55:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-20T05:55:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          674
+        ],
+        "preview_check": "封面为帖内图片，HTTP 200。",
+        "video_check": "无视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-batch-2026-10-20"
+      },
+      "relatedLinks": [
+        "https://github.com/lemomo-ai/lemo-opuscar",
+        "https://github.com/yihui-dev/awesome-opus5-5-videos",
+        "https://github.com/JohnHeibel/PDoomVideo",
+        "https://github.com/joeseesun/opus-video-prompts"
+      ]
+    },
+    {
+      "title": "一句话能生成 3D 交互教学网页吗？AetherViz Master 把「牛顿第二定律」变成能拖能转的页面",
+      "category": "frontend",
+      "styleFamily": "code",
+      "is3d": true,
+      "source": "https://x.com/wlzh/status/2112204039165534230",
+      "sourceCodeUrl": "https://github.com/andyhuo520/aetherviz-master",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261020-aetherviz-master.png",
+      "previewType": "image",
+      "videoUrl": "",
+      "description": "M.（@wlzh）2026-10-19 介绍 AetherViz Master：AI 驱动的教育可视化工具，输入「牛顿第二定律」「光合作用」等主题，自动识别学科、匹配配色与渲染方案，生成可拖动、旋转、调参数的 3D 交互页面——Three.js 做 3D，SVG 叠 2D 图表，KaTeX 渲染公式，带小测验和播放控制；本地起 http 服务打开，或在 Claude Code 里输入主题直接生成完整 HTML。覆盖物理、化学、生物、数学、天文、编程。作者最认同「每一个知识都值得被可视化」，建议老师和做课的人试试。",
+      "tool": "AetherViz Master（Claude Code / 本地 HTML；Three.js + SVG + KaTeX）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（经 X API 回读）。仓库取自帖文，经 GitHub API 核实：andyhuo520/aetherviz-master（MIT，1589★；描述：将任意教学主题转化为沉浸式 3D 交互网页）。原帖无媒体，封面为 GitHub 仓库 OpenGraph 卡片。",
+      "attribution": "@wlzh（M.）",
+      "sourceAuthor": "wlzh",
+      "tags": [
+        "Three.js",
+        "教育可视化",
+        "Claude Code",
+        "3D交互",
+        "3D建模"
+      ],
+      "publishedAt": "2026-10-19T15:27:40Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T05:55:00.000Z",
+      "updatedAt": "2026-10-20T05:55:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": "2026-10-20T05:55:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-20T05:55:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          600
+        ],
+        "preview_check": "封面为 GitHub OG 卡片，HTTP 200。",
+        "video_check": "无视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-batch-2026-10-20"
+      }
+    },
+    {
+      "title": "一句提示词就能画出「烤面包机内部」？Opus 5.5 + Jig 套用 /colorfigures 手绘风格",
+      "category": "frontend",
+      "styleFamily": "draw",
+      "is3d": false,
+      "source": "https://x.com/numaausaumon/status/2112219875565605023",
+      "sourceCodeUrl": "",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261020-numa-toaster-colorfigures.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2112219509474168836/vid/avc1/1710x1262/vfbzAYiukuBcMc-3.mp4",
+      "description": "Numa（@numaausaumon）2026-10-19 发帖：用 Opus 5.5 + Jig 制作，提示词只有一句「Inside a toaster. Use the /colorfigures style」，可在 Jig 上在线玩（https://ask.jig.com/j/dsvb0PRxoG7P ），也可以免费做自己的。帖内约 48 秒演示视频。/colorfigures 风格即 April Zhu 的手绘等距可交互物件（门户已收录其洗衣机条目）。",
+      "tool": "Claude Opus 5.5 + Jig；/colorfigures 风格",
+      "prompt": "Inside a toaster. Use the /colorfigures style",
+      "promptProvenance": "author_post",
+      "provenanceNote": "正文与提示词为原帖原文（经 X API 回读）。Jig 链接取自帖文，未打开验证。2D 等距手绘，按 is3d 规则不算 3D。封面为帖内视频缩略图。",
+      "attribution": "@numaausaumon（Numa）",
+      "sourceAuthor": "numaausaumon",
+      "tags": [
+        "Opus 5.5",
+        "Jig",
+        "手绘",
+        "交互插画",
+        "colorfigures"
+      ],
+      "publishedAt": "2026-10-19T16:30:36Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T05:55:00.000Z",
+      "updatedAt": "2026-10-20T05:55:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": "2026-10-20T05:55:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-20T05:55:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          886
+        ],
+        "preview_check": "封面为帖内视频缩略图，HTTP 200。",
+        "video_check": "未播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-batch-2026-10-20"
+      },
+      "demoUrl": "https://ask.jig.com/j/dsvb0PRxoG7P",
+      "relatedSource": "https://x.com/aprilzz423/status/2111474111541284890"
+    },
+    {
+      "title": "仓库经理能一眼看清整个黑五仓库吗？Opus 5.5 做的 93 人、320 台机器人实时 3D 仿真",
+      "category": "frontend",
+      "styleFamily": "code",
+      "is3d": true,
+      "source": "https://x.com/konstantinsaifo/status/2112103900962496531",
+      "sourceCodeUrl": "",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261020-airsup-warehouse-ops.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2112103706552344576/vid/avc1/1920x1080/vhpXh34S0HX6AT4j.mp4",
+      "description": "Konstantin Saifoulline（@konstantinsaifo，Airsup）2026-10-19 帖串：大多数仓库经理从没一次看到整个作业现场，于是让 Claude Opus 5.5 做了俯视视角——黑五当天 93 人、320 台机器人和所有卡车实时运行（主帖约 1000 赞）。本条回复给出在线版 https://www.airsup.ai/lab/warehouse-ops ：点任何人看他去哪；每个人走真实路线（通道、跨越处、休息室），所有机器人、叉车、卡车跑在同一个全天离散事件仿真里；一个发现：离休息室最远的拣货员约四分之一休息时间花在来回路上。视频画面可见：俯视 3D 仓库（入库区、收货台、QA 测试区、码头），右侧面板为吞吐量对计划、在途订单、机器人/叉车利用率、人员分布、QA、存储，底部为码头排班，告警栏显示「卡车 IN-129 迟到→门已重排」。网页加载 three.js 模块（GTAO、RoundedBoxGeometry 等）。作者公开过的通用做法（均有出处）：①开源 Claude Code skill「factory-skill」（https://github.com/AirsupHQ/factory-skill ，作者帖 https://x.com/konstantinsaifo/status/2109974620698775744 ：用 Claude Opus 5.5 做的开源 skill，一句话描述工厂即生成带离散事件仿真的 3D 工厂；README：npx skills add AirsupHQ/factory-skill -g -a claude-code，然后 /factory <一句话>，输出单个自包含 HTML、零依赖）；②开源 airsup-lab（https://github.com/AirsupHQ/airsup-lab ，MIT）README：纯 TypeScript + three.js、无框架、无模型文件，所有部件加载时由代码程序化生成；剖切、流线、物理先行、确定性 step(dt)；tools/record.mjs 用 Playwright 逐帧步进+ffmpeg 录 60fps 成片，每台机器有脚本化镜头巡游；③作者经验帖 https://x.com/konstantinsaifo/status/2110682133589062119 ：同时跑一小队 Claude agent 日夜搭仿真，要点是核对 agent 实际用的模型、笔记本最多同时跑 2 个重型构建、别给 agent 截止时间、一个 brief 只做一件事、人是质量关。 本作品的具体提示词未公开；作者在帖串称这是「the V3 Black Friday warehouse」，另有第二个仓库版本。",
+      "tool": "Claude Opus 5.5；three.js（网页资源可见）；离散事件仿真",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖及主帖 2112103898693427587（经 X API 回读）。在线页 HTTP 200，标题「Warehouse ops: Black Friday from above | airsup lab」，引用 three.module 等资源。方法部分仅引用作者公开的 factory-skill / airsup-lab README 与经验帖，未见作者说明本作品专用提示词；用 factory-skill 制作属推测。封面为主帖视频缩略图；已下载视频抽帧查看。",
+      "attribution": "@konstantinsaifo（Konstantin Saifoulline，Airsup）",
+      "sourceAuthor": "konstantinsaifo",
+      "tags": [
+        "Opus 5.5",
+        "Three.js",
+        "离散事件仿真",
+        "数字孪生",
+        "仓储",
+        "3D建模"
+      ],
+      "publishedAt": "2026-10-19T08:49:45Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T05:55:00.000Z",
+      "updatedAt": "2026-10-20T05:55:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": "2026-10-20T05:55:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-20T05:55:00.000Z",
+        "visually_checked": true,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为主帖视频缩略图，HTTP 200。",
+        "video_check": "已下载 38 秒视频并每 6 秒抽帧查看。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-batch-2026-10-20"
+      },
+      "demoUrl": "https://www.airsup.ai/lab/warehouse-ops",
+      "relatedSource": "https://x.com/konstantinsaifo/status/2112103898693427587",
+      "relatedLinks": [
+        "https://github.com/AirsupHQ/factory-skill",
+        "https://github.com/AirsupHQ/airsup-lab",
+        "https://x.com/konstantinsaifo/status/2110682133589062119"
+      ]
+    },
+    {
+      "title": "火箭发动机怎么工作？Opus 5.5 做了一台能在浏览器里拆开的 Raptor 3",
+      "category": "frontend",
+      "styleFamily": "code",
+      "is3d": true,
+      "source": "https://x.com/konstantinsaifo/status/2104094723887501736",
+      "sourceCodeUrl": "https://github.com/AirsupHQ/airsup-lab",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261020-airsup-raptor3.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2104094523999563776/vid/avc1/1920x1080/wnZVe49yC4Jqo1eX.mp4",
+      "description": "Konstantin Saifoulline（@konstantinsaifo）2026-09-27 发帖：让 Claude Opus 5.5 通过搭一台可在浏览器拆开的交互式 Raptor 3 来解释火箭发动机——剖开它，跟着氧和甲烷流过两个涡轮泵，再调节推力看激波钻石移动；在线 https://airsup.ai/rocket-engine （约 118 万浏览、8.4k 赞、5.1k 收藏）。作者在评论区回答：用时「约 2 小时，Pro 计划」；被问如何保证正确时答「real blueprints」（依据真实图纸）；被要求开源时答「It is open source」——对应 MIT 开源仓库 AirsupHQ/airsup-lab，其 README 列出 Raptor 3（跟随氧/甲烷流经涡轮泵、节流、爬升到真空）。作者公开过的通用做法（均有出处）：①开源 Claude Code skill「factory-skill」（https://github.com/AirsupHQ/factory-skill ，作者帖 https://x.com/konstantinsaifo/status/2109974620698775744 ：用 Claude Opus 5.5 做的开源 skill，一句话描述工厂即生成带离散事件仿真的 3D 工厂；README：npx skills add AirsupHQ/factory-skill -g -a claude-code，然后 /factory <一句话>，输出单个自包含 HTML、零依赖）；②开源 airsup-lab（https://github.com/AirsupHQ/airsup-lab ，MIT）README：纯 TypeScript + three.js、无框架、无模型文件，所有部件加载时由代码程序化生成；剖切、流线、物理先行、确定性 step(dt)；tools/record.mjs 用 Playwright 逐帧步进+ffmpeg 录 60fps 成片，每台机器有脚本化镜头巡游；③作者经验帖 https://x.com/konstantinsaifo/status/2110682133589062119 ：同时跑一小队 Claude agent 日夜搭仿真，要点是核对 agent 实际用的模型、笔记本最多同时跑 2 个重型构建、别给 agent 截止时间、一个 brief 只做一件事、人是质量关。",
+      "tool": "Claude Opus 5.5（Pro 计划，约 2 小时）；TypeScript + three.js（airsup-lab README）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（经 X API 回读）。「约 2h Pro 计划」「real blueprints」「It is open source」为作者在该帖下回复（2108182433598218460、2108182504700047653、2108182689123557480，均回读确认对应的提问）。airsup-lab 经 GitHub API 核实（MIT，45★），README 含 Raptor 3 与构建说明；该仓库即作者所说开源版本属合理对应，作者回复未直接贴链接。完整提示词未公开。封面为帖内视频缩略图。",
+      "attribution": "@konstantinsaifo（Konstantin Saifoulline，Airsup）",
+      "sourceAuthor": "konstantinsaifo",
+      "tags": [
+        "Opus 5.5",
+        "Three.js",
+        "火箭发动机",
+        "程序化3D",
+        "交互科普",
+        "3D建模"
+      ],
+      "publishedAt": "2026-09-27T06:24:09Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T05:55:00.000Z",
+      "updatedAt": "2026-10-20T05:55:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": "2026-10-20T05:55:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-20T05:55:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为帖内视频缩略图，HTTP 200。",
+        "video_check": "未播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-batch-2026-10-20"
+      },
+      "demoUrl": "https://airsup.ai/rocket-engine",
+      "relatedLinks": [
+        "https://github.com/AirsupHQ/factory-skill",
+        "https://x.com/konstantinsaifo/status/2110682133589062119"
+      ]
+    },
     {
       "title": "书柜为什么拧半圈就能锁紧？把宜家 BILLY 的真实说明书一页页搬进 3D：82 个五金件按图纸顺序逐个装上，还能切到说明书线稿视角（Three.js）",
       "category": "frontend",
