@@ -1,7 +1,81 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-20T09:10:00.000Z",
+  "updatedAt": "2026-10-20T13:10:00.000Z",
   "topics": [
+    {
+      "url": "https://github.com/deepseek-ai/DeepInfer",
+      "title": "AI 把读过的上下文算成「草稿」之后，为什么还要在硬盘上留 3 到 7 天？DeepSeek 开源推理框架 DeepInfer 并公开部署问答：约 100 PiB SSD 专门存 KV 缓存，折合每块 GPU 约 14.4 TB",
+      "category": "AI",
+      "source": "DeepSeek 官方 GitHub 仓库 deepseek-ai/DeepInfer（README + doc/inference_deployment_qa.md，2026-10-20 首次提交，Apache-2.0）+ @deepseek_ai 官方 X 公告（2026-10-20 09:30 UTC）",
+      "publishedAt": "2026-10-20",
+      "eventAt": "2026-10-20",
+      "collectedAt": "2026-10-20T13:10:00.000Z",
+      "updatedAt": "2026-10-20T13:10:00.000Z",
+      "description": "DeepSeek 10 月 20 日开源自家线上推理框架 DeepInfer（Apache-2.0），称它支撑 DeepSeek-V4.1-Flash 的大规模服务，同时开源 token 编解码组件 deepseek-recipe；支持 NVIDIA SM100 GPU 与华为昇腾 950 NPU。随仓库发布的《部署问答》给出一批少见的一手运营数字：单个集群目前每天服务 155 万亿 token，整体收入为每 GPU 小时 38 美元（按谷时价格）；设计目标之一是把 KV 缓存保留 72 小时以上，由 3FS 分布式文件系统提供约 100 PiB SSD 专门存放，TTL 为智能体流量 3 天、聊天流量 7 天——聊天流量的命中长尾更重，TTL 只给 3 天会让聊天流量的 KV 缓存命中率损失约 0.5%–1%；按逻辑容量算，每块在线 GPU 约配 14.4 TB 存储，推荐每台 KV 存储服务器 20 块 30.73 TB SSD、读 ≥40 GB/s、写 5 GB/s。其它细节：数据用 10+2 纠删码存，一次读同时发给组内 11 个节点、任意 10 个回来就能解码；计算节点的故障率比存储节点高一个数量级以上，所以缓存放在独立存储集群；P/D 跨数据中心部署技术上可行，但「数据中心之间的光纤容易被施工挖断」，实际部署在相邻的数据中心；另有可选的「批次不变推理」，让同一请求的结果不随同批次其它请求的组成而变化（需显式开启、仅 NVIDIA）。可拍角度：①0 秒画面：官方架构图里那条通往「External KVCache Storage (3FS)」的蓝色箭头；②反直觉：我们以为 AI 的成本全在 GPU，其实「省钱」靠的是一整排硬盘——缓存命中就不用重算前缀；③从芯片人视角：每块 GPU 背后约 14.4 TB SSD，AI 推理把需求从 HBM 一路传到 NAND 闪存；④冷知识：一根被挖断的光纤，决定了机房要挨着建。",
+      "caveat": "所有数字均为 DeepSeek 在 GitHub 部署问答中的自述（文档称会持续更新），未经独立核实；「155 万亿 token/天」是单集群口径，「38 美元/GPU·小时」按谷时价格计。KV 缓存管理与负载均衡组件与其内部基础设施耦合，本次并未完全开源（README 明确列为不包含）。「AI 推理拉动 SSD/存储芯片需求」是基于文档数字的推断，文档本身没有谈存储市场，视频里不能当结论讲。封面为仓库 doc/images 里的官方架构图（Apache-2.0）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261020d-deepinfer.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020d-deepinfer.jpg",
+      "imageAlt": "DeepSeek V4.1 Flash 推理系统架构图：DeepSeek Recipe、Entrypoint、Prefill/Decode/Vision Encoder 服务与负载均衡，底部为 External KVCache Storage (3FS)",
+      "tags": [
+        "AI成本",
+        "AI推理",
+        "KV缓存"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 90,
+        "baseBreakdown": {
+          "主线": 21,
+          "钩子": 18,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 10,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 95.1,
+        "threshold": 65,
+        "run": "2026-10-20-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://www.cas.cn/syky/202609/t20260929_5121183.shtml",
+      "title": "AI 把显微图放大，为什么可能「脑补」出样品上根本没有的纹理？中科院上海硅酸盐所 StableAFM：每一步都拿回原始测量格点对账，KPFM 采集提速到原来的 4 倍",
+      "category": "半导体",
+      "source": "中国科学院官网「科研进展」（2026-10-20，上海硅酸盐研究所）；论文发表于 Small Methods，doi:10.1002/smtd.71042",
+      "publishedAt": "2026-10-20",
+      "eventAt": "2026-10-20",
+      "collectedAt": "2026-10-20T13:10:00.000Z",
+      "updatedAt": "2026-10-20T13:10:00.000Z",
+      "description": "原子力显微镜（AFM）靠探针逐点扫描，速度和分辨率很难兼得；用 AI 超分辨「放大」稀疏扫描图本是捷径，但中科院上海硅酸盐所指出，通用图像重建模型和真实 AFM 采样过程不匹配，容易引入不符合实验观测的伪影。团队做了物理引导的生成式超分模型 StableAFM：先用 AFM-SwinIR 复原基础结构，再用适配 AFM 图像的潜空间扩散模型补界面和局部细节；关键是「潜空间扩散后验采样」——按 AFM 采样规则把当前重建结果映射回原始低分辨测量网格，看与实测数据差多少再修正。新闻稿称加入物理测量约束后均方误差下降约 31.3%。应用上，团队用快速采集的低分辨开尔文探针力显微镜（KPFM）表面电势图重建高分辨电势序列，结合等温表面电势衰减（ISPD）分析多层陶瓷电容器介质层的电荷陷阱：KPFM 采集速度提升到原来的 4 倍，并在电荷注入区附近识别出深能级电子陷阱的不连续「类环状耗尽」特征——多组重复实验在同一区域复现，形貌图上没有对应环状结构，据此排除随机重建或形貌串扰。模型还可复原表面划痕、晶粒边界和压电力显微（PFM）里的铁电畴边界。可拍角度：①0 秒画面：官方对比图同一块样品七种放大结果并排，通用模型 Real-ESRGAN 那一列的纹理与高分辨参考图明显不同（目视）；②反直觉：AI 放大越「清楚」不等于越真实，测量仪器要的是「不编」；③失效分析视角：做表征的人最怕的就是把伪影当缺陷；④方法论：生成模型 + 物理约束 = 每一步都和原始数据对账。",
+      "caveat": "一手来源为中科院官网新闻稿与 Small Methods 论文；「均方误差下降约 31.3%」「采集速度提升至 4 倍」均为团队自报。对比图中各模型纹理差异是目视观察，定量比较需看论文。研究对象是多层陶瓷电容器（MLCC）介质层与陶瓷/薄膜样品，并非晶圆刻蚀形貌；能否用于产线 CD、刻蚀深度或粗糙度量测属于延伸设想，未经验证。封面为中科院新闻稿配图（StableAFM 与不同超分模型在 AFM 多成像通道的重建对比，截取前三行），来源：中国科学院上海硅酸盐研究所。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261020d-stableafm.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020d-stableafm.jpg",
+      "imageAlt": "对比图：抛光陶瓷、薄膜、晶粒三类 AFM 图像分别经 LR、bicubic、SwinIR、Real-ESRGAN、AFM-SwinIR、StableAFM 重建，与 HR 参考图并排",
+      "tags": [
+        "失效分析",
+        "显微表征",
+        "AI图像"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 91,
+        "baseBreakdown": {
+          "主线": 21,
+          "钩子": 17,
+          "画面": 14,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 9,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 97.8,
+        "threshold": 65,
+        "run": "2026-10-20-2040-shanghai"
+      }
+    },
     {
       "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261019_1965617.html",
       "title": "芯片一个月多造了近两成，为什么手机反而少造了四分之一？统计局 9 月数据：集成电路产量 +18.4%，智能手机 −26.6%，微型计算机 −17.0%",
