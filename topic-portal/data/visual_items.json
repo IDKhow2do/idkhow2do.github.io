@@ -1,8 +1,224 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 303,
+  "exportedCount": 307,
   "items": [
+    {
+      "title": "看着像宇宙里的一片银色海，其实只有 2.8 毫米宽——这是在哪儿？有人让 Claude Code 只用代码（Three.js）钻进一支水银体温计的储液泡，再一镜到底退到 32 厘米外",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/claco_lab/status/2112509230305644633",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020d-mercury.jpg",
+      "previewType": "image",
+      "description": "@claco_lab（claco｜AIの実験室）10-20 发布 42 秒短片，开头问「看起来像宇宙，直径 2.8 毫米，是在什么东西里面？」：画面是镜面般起伏的银色液面、悬浮的液滴和星尘般的光点；镜头一路后退，才露出这是一支体温计的水银储液泡，读数停在 36.5°C「平熱」；接着把体温计放到正在渲染本片的笔记本旁（屏幕提示机身温度升高），读数升到 42.0°C，字幕「（我在做这支视频）」。片尾附一张「設計図」：全部代码 2,038 行（suigin.mjs 925、mercury.mjs 567、campath.mjs 96、blueprint.mjs 230、audio.py 220）；水银用 SDF 光线步进、8 次反射，液滴用 smooth-min 融合；1,400 个星尘点在顶点着色器里闪烁；镜头一镜到底，从 2.8 mm 拉到 32 cm（Hermite 插值）；1 盏聚光 + 屏幕光、3 条柔光带做出镀铬感；320 团噪声蒸汽；渲染流程为 Three.js + headless Chrome、每帧 16–24 个子帧、ffmpeg、numpy。作者称没用图像或视频生成 AI。科普可借：「尺度反转」开场（先让人以为是宇宙，再揭晓是 2.8 毫米）；体温计为什么能把一点点体积膨胀变成看得见的刻度（这一层是延伸，片中未讲）。",
+      "tool": "Claude Code（Opus 5.5）+ Three.js + headless Chrome + ffmpeg + Python（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖与 42 秒视频（2026-10-20 11:40 UTC，热度很低）；片尾设计图列出文件名、行数与渲染参数，但未公开源码、提示词或许可证。封面为视频第 12 秒截帧（水银液面与光点），已自托管。只能外链引用。",
+      "attribution": "@claco_lab（X）",
+      "sourceAuthor": "claco_lab",
+      "tags": [
+        "Three.js",
+        "液态金属",
+        "尺度反转",
+        "代码视频"
+      ],
+      "publishedAt": "2026-10-20T11:40:23.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T13:10:00.000Z",
+      "updatedAt": "2026-10-20T13:10:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-20T13:10:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 79,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 18,
+          "溯源": 11,
+          "复现": 9,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.1979,
+        "finalScore": 94.6,
+        "threshold": 65,
+        "run": "2026-10-20-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112508942509350912/vid/avc1/960x720/_pLdpZv6UFc7pMjW.mp4?tag=14",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "窗边阳光里，一张纸自己折成纸飞机飞了出去：没用视频生成 AI，Claude Code（Opus 5.5）全用代码渲出 24 秒，作者说诀窍是把光、镜头、动作写成「数字」而不是「要帅」",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/kosukecat12/status/2112524013948080207",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020d-paper-plane.jpg",
+      "previewType": "image",
+      "description": "@kosukecat12（Kosuke，自称用 AI 做东西的学生）10-20 发布 24 秒短片：木地板上铺着窗格投下的光斑，一支铅笔旁，一张白纸被一步步对折、压出机翼，变成纸飞机后起飞，穿过窗前，背景是虚化的绿色光斑。作者称没用视频生成 AI、全部是代码，前后修改 5 次；经验是给光照、镜头和运动下指令时，用具体数字而不是「要酷」这种形容词。可作科普镜头参考：「一张平面变成立体结构」的折叠过程，可套用到芯片封装、柔性屏、折叠结构的讲解；暖色侧光 + 景深的质感也适合做片头空镜。",
+      "tool": "Claude Code（Opus 5.5）（作者自述），具体渲染技术未说明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖与 24 秒视频（2026-10-20 12:39 UTC，刚发布、热度很低）；未公开提示词、代码或许可证；「改了 5 次」「用数字下指令」为作者自述。库内已有多条纸艺/纸张模拟作品，本条的不同点是完整的折纸成型过程与写实光影。封面为视频第 14 秒截帧（折好的纸飞机落在阳光里），已自托管。只能外链引用。",
+      "attribution": "@kosukecat12（X）",
+      "sourceAuthor": "kosukecat12",
+      "tags": [
+        "纸艺场景",
+        "折纸",
+        "代码视频",
+        "光影"
+      ],
+      "publishedAt": "2026-10-20T12:39:08.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T13:10:00.000Z",
+      "updatedAt": "2026-10-20T13:10:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-20T13:10:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 65,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 13,
+          "溯源": 9,
+          "复现": 6,
+          "风格": 9,
+          "新颖": 6
+        },
+        "multiplier": 1.1707,
+        "finalScore": 76.1,
+        "threshold": 65,
+        "run": "2026-10-20-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112522950410981376/vid/avc1/1280x720/9_4hNJTzyz-3xPJD.mp4?tag=14",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "对着网页吹一口气，就飞进墙上那幅画：穿过云海、巨鲸、极光，最后镜头拉远——地球只是一朵蒲公英上的一颗种子。Claude Opus 5.5 写全部代码的 three.js 小世界「一息万象」，画面和配乐没用一张贴图、一段采样",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/thinkszyg/status/2112496045045518557",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020d-one-breath.jpg",
+      "previewType": "image",
+      "description": "@thinkszyg（爆裂队长NEXT）10-20 发布一个可玩的网页小世界「一息万象 / One Breath, Ten Thousand Worlds」（海报副题「吹一口气，穿过六个世界」）：墙上挂着一幅画，对它吹气就飞进画里；穿过云海时巨鲸破云而起，对着峡谷哼唱峡谷会「唱回来」，屏住呼吸潜进大海世界会翻转，拍手让满天星星落进海里；最后镜头一路拉远，地球只是一朵蒲公英上的一颗种子（约 60 秒演示视频，截帧可见「云海」「星落」「种子」等章节字样）。作者称 Claude Opus 5.5 写了全部代码、three.js 实时渲染、浏览器打开即玩，云海、鲸、峡谷、水母、极光、星云和配乐全部由代码生成，没用一张贴图、一段采样；可以用麦克风玩：吹气是风、哼唱让峡谷发光、拍手让星星落下。可借的形式：用声音当输入的交互；结尾「镜头一路拉远、尺度突变」很适合做科普片的收尾（类似「十的次方」式的尺度跳跃）。",
+      "tool": "Claude Opus 5.5 + three.js（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖与约 60 秒演示视频（2026-10-20 10:48 UTC）；回复里附一张标题海报。未公开在线链接、源码、提示词或许可证；「没用一张贴图、一段采样」为作者自述，未核实。封面为视频第 48 秒截帧（「种子」章节，蒲公英中心的地球），已自托管。只能外链引用。",
+      "attribution": "@thinkszyg（X）",
+      "sourceAuthor": "thinkszyg",
+      "tags": [
+        "Three.js",
+        "程序化生成",
+        "声音交互",
+        "尺度变化"
+      ],
+      "publishedAt": "2026-10-20T10:48:00.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T13:10:00.000Z",
+      "updatedAt": "2026-10-20T13:10:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-20T13:10:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 63,
+        "baseBreakdown": {
+          "实体": 17,
+          "科普": 12,
+          "溯源": 10,
+          "复现": 6,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.2748,
+        "finalScore": 80.3,
+        "threshold": 65,
+        "run": "2026-10-20-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112495879454400512/vid/avc1/1920x1080/lxgY4Dpp_RnLxYVr.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "马赛克为什么越凑近越看不清？日本开发者的展览作品「LEFT TO THE IMAGINATIONS」：人一靠近，鱼群画面就碎成圆角色块，颜色压到 8 种，同色相邻的格子再合并成 2×2、4×4、8×8 的大块（WebGL / three.js）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/_unshift/status/2112469126941999402",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020d-grid-mosaic.jpg",
+      "previewType": "image",
+      "description": "@_unshift（长谷川巧，unshift Inc.，WebGL 前端开发者）作为客座艺术家参加 IE3 的展览「Make it first.」（已于 10-18 结束），作品叫「LEFT TO THE IMAGINATIONS」：远看屏幕上播放的是黑白影像和照片，观众被吸引走近后，特效反而越来越强、色相和饱和度也跟着变，最后看不出原图的颜色和轮廓——「原貌留给观众想象」。作者做了 20 种特效、素材是自己拍的照片和视频，正在 X 上逐条连载（#creativecoding #webgl #threejs）。这一条是第 2 种「Grid Mosaic」：越靠近格子越粗；每格是取平均色的圆角方块，强度上去后颜色减到 8 种，再把相邻同色格子合并成 2×2、4×4、8×8 的大块，并加了颗粒感和渐变（素材是水族馆的鱼）。可作科普镜头：「减色 + 合并相同区域」正是很多图像压缩思路的直观演示（这层类比是延伸，作者未提）；「越近越看不清」本身就是反直觉钩子。",
+      "tool": "WebGL / three.js（作者标签），是否用 AI 未说明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 连载帖（2026-10-20 09:01 UTC，第 2/20 条）与 15 秒视频；算法步骤为作者文字说明；未公开源码或许可证。作品背景见作者 10-19 的展览说明帖（x.com/_unshift/status/2112048628563075356）与连载首帖（…/2112100033822867586）。封面为视频第 9 秒截帧（彩色圆角色块马赛克），已自托管。只能外链引用。",
+      "attribution": "@_unshift（X）",
+      "sourceAuthor": "_unshift",
+      "tags": [
+        "Three.js",
+        "WebGL",
+        "减色",
+        "互动装置"
+      ],
+      "publishedAt": "2026-10-20T09:01:02.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T13:10:00.000Z",
+      "updatedAt": "2026-10-20T13:10:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-20T13:10:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 64,
+        "baseBreakdown": {
+          "实体": 12,
+          "科普": 13,
+          "溯源": 13,
+          "复现": 9,
+          "风格": 10,
+          "新颖": 7
+        },
+        "multiplier": 1.3491,
+        "finalScore": 86.3,
+        "threshold": 65,
+        "run": "2026-10-20-2040-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112468909760884736/vid/avc1/1920x1080/HS0i7XLYxGcx7ftP.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "一片六边形瓦片为什么能像海面一样起伏？Opus 5.5 在 three.js 里搭了一台「潮汐引擎」：螺旋错位的凸轮轴拉动上百根吊线，把旋转变成波浪",
       "category": "frontend",
@@ -14144,8 +14360,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条",
-  "updatedAt": "2026-10-20T09:10:00.000Z",
-  "totalItems": 303,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条",
+  "updatedAt": "2026-10-20T13:10:00.000Z",
+  "totalItems": 307,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }

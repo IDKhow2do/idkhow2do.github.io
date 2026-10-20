@@ -3,6 +3,67 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 54,
+      "multiplier": 1.0315,
+      "score": 55.7,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-20-2040-shanghai",
+      "record": {
+        "title": "一盘将棋的棋子自己排兵布阵、像多米诺一样成排倒下：没用视频生成 AI，Claude Code × Blender 做的 20 秒「駒たちの合戦」",
+        "category": "video",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/nekomusica_kazu/status/2112509844737704318",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020d-shogi.jpg",
+        "previewType": "image",
+        "description": "@nekomusica_kazu（かじゅ，自称「除社长外全员 AI」的游戏公司 TAKIYOSHI GAMES 社长）10-20 发布 20 秒短片：木纹将棋棋子特写（「歩」「王」），俯拍棋盘上两军列阵，棋子成排推倒，片尾标题「駒たちの合戦」。作者称受最近流行的同类作品启发、原创制作，没用视频生成 AI，只用 Claude Code × Blender。木材质与成排倒下的连锁动作可作「连锁反应」类科普镜头参考。",
+        "tool": "Claude Code + Blender（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者 X 帖与 20 秒视频（2026-10-20 11:42 UTC）；未公开提示词或工程文件。封面为视频第 12 秒截帧，已自托管。只能外链引用。",
+        "attribution": "@nekomusica_kazu（X）",
+        "sourceAuthor": "nekomusica_kazu",
+        "tags": [
+          "Blender",
+          "木质材质",
+          "连锁反应"
+        ],
+        "publishedAt": "2026-10-20T11:42:50.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-20T13:10:00.000Z",
+        "updatedAt": "2026-10-20T13:10:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-20T13:10:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 54,
+          "baseBreakdown": {
+            "实体": 18,
+            "科普": 9,
+            "溯源": 9,
+            "复现": 4,
+            "风格": 8,
+            "新颖": 6
+          },
+          "multiplier": 1.0315,
+          "finalScore": 55.7,
+          "threshold": 65,
+          "run": "2026-10-20-2040-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2112509685412888576/vid/avc1/1920x1080/eacs25287uBf_fGt.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 57,
       "multiplier": 1.0518,
       "score": 60.0,
@@ -1900,6 +1961,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-20T09:10:00.000Z",
+  "updatedAt": "2026-10-20T13:10:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
