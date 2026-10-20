@@ -1,8 +1,278 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 298,
+  "exportedCount": 303,
   "items": [
+    {
+      "title": "一片六边形瓦片为什么能像海面一样起伏？Opus 5.5 在 three.js 里搭了一台「潮汐引擎」：螺旋错位的凸轮轴拉动上百根吊线，把旋转变成波浪",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/hive_echo/status/2112081538531901758",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020c-tide-engine.jpg",
+      "previewType": "image",
+      "description": "@hive_echo（echo.hive）10-19 发布「Tide engine by Opus 5.5 in @threejs」：浏览器里的一台动态机械雕塑——一根由偏心圆盘螺旋错位排列成的凸轮轴随手轮转动，带动垂下的细绳上下，绳端吊着一整片六边形瓦片，于是瓦片面形成一道道行进的波浪（视频约 81 秒，镜头绕机构转一圈）。适合做科普镜头：凸轮把旋转运动变成往复运动、相位错开就成了「波」——可类比真实世界的动态机械波浪雕塑（作者未提及，属类比）。同作者随后又发「9 种机构」（10-20，含分形行星齿轮、Hopf 环、三叶结椎骨、嵌套多面体、凸轮柱等，片尾称「Built with Claude Code from AI concept art」）和「飞船状装置」两条续作，可一起看。",
+      "tool": "Claude Opus 5.5（作者自述）+ three.js",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "仅作者 X 帖与演示视频（2026-10-19 07:20 UTC）；未公开提示词、源码与许可证；视频地址栏显示为本地 HTML 文件。「9 种机构」视频片尾带作者咨询 / Patreon 推广卡。封面为视频第 6 秒截帧（已裁掉浏览器边框），已自托管。只能外链引用。",
+      "attribution": "@hive_echo（X）",
+      "sourceAuthor": "hive_echo",
+      "tags": [
+        "Three.js",
+        "机械结构",
+        "结构可视化",
+        "程序化生成"
+      ],
+      "publishedAt": "2026-10-19T07:20:54.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T09:10:00.000Z",
+      "updatedAt": "2026-10-20T09:10:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-20T09:10:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 78,
+        "baseBreakdown": {
+          "实体": 23,
+          "科普": 19,
+          "溯源": 11,
+          "复现": 6,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.249,
+        "finalScore": 97.4,
+        "threshold": 65,
+        "run": "2026-10-20-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112081048519778304/vid/avc1/3076x2160/vBdbEe9giDSTeS-d.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "一副耳机拆成一串零件又合回去，没用视频生成 AI 是怎么做的？日本创作者让 Claude Code 指挥 Blender 做出 15 秒架空耳机广告「otono air」，连 BGM 和音效都交给 Opus",
+      "category": "video",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/mimi_N20/status/2112348532653076627",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020c-otono-air.jpg",
+      "previewType": "image",
+      "description": "@mimi_N20（みーみー，AI 动画创作者）10-20 发布一支 15 秒架空耳机广告：作者称没用视频生成 AI，而是给 Claude Code 下指令、只用 Blender 3DCG 制作，整体节奏、动作、BGM 和音效都由 Opus 完成。画面：深蓝背景上一颗耳塞沿轴线「爆炸」成耳帽、外壳、黑色驱动单元、绿色电路板、电池、密封圈、盖板等零件再依次合拢，随后是充电盒与黑/白/薄荷绿三色，标语「すべてを、この一粒に。」「音だけが、近くなる。」。韩国账号 @Phavorism 转述称全片 3 个镜头、前 7 秒是一个拆解-合拢长镜头、产品名到结束前 2.3 秒才出现（转述者描述）。可作科普镜头模板：爆炸图讲清一个电子产品的内部结构（耳机、手机、芯片封装均可套用）。",
+      "tool": "Claude Code + Claude Opus + Blender（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖与 15 秒视频（2026-10-20 01:01 UTC，92 赞）；未公开提示词或 Blender 工程；「otono air」为架空产品。帖中引用作者此前一条帖子 2112062874680197182。封面为视频第 4 秒截帧（耳塞爆炸图），已自托管。只能外链引用。",
+      "attribution": "@mimi_N20（X）",
+      "sourceAuthor": "mimi_N20",
+      "tags": [
+        "Blender",
+        "爆炸图",
+        "产品广告",
+        "结构可视化"
+      ],
+      "publishedAt": "2026-10-20T01:01:50.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T09:10:00.000Z",
+      "updatedAt": "2026-10-20T09:10:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-20T09:10:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 71,
+        "baseBreakdown": {
+          "实体": 21,
+          "科普": 16,
+          "溯源": 12,
+          "复现": 6,
+          "风格": 8,
+          "新颖": 8
+        },
+        "multiplier": 1.0468,
+        "finalScore": 74.3,
+        "threshold": 65,
+        "run": "2026-10-20-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112348514558902272/vid/avc1/1280x720/khn58BwPG2CxBzis.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "按下键盘上的 A，到屏幕上出现 A，电脑里到底发生了什么？有人让 Claude Opus 用纯代码做了一支 34 秒科普短片：开关闭合→8 位 0x41→主板→CPU→内存→GPU，全程约 30 毫秒",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/reliponj/status/2112426746733609360",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020c-computer-a.jpg",
+      "previewType": "image",
+      "description": "@reliponj 10-20 发帖称让 Claude Opus 解释电脑如何工作，它没写答案而是做了一支短片，「每一帧都是代码，没用 After Effects、没用 Blender」。34 秒视频分镜：「You pressed A」磨砂玻璃质感键盘 → 开关闭合、电路接通 → 字母变成 8 位二进制 01000001（0x41）→「主板：铜线铺成的城市」→「CPU：每秒 50 亿次时钟」配实时跳动的计数器和方波 → 「内存是 CPU 的书桌，距离决定一切」（缓存/内存/硬盘层级）→ GPU「成千上万个小核心同时工作」→「这就是你的 A」，结尾「约 30 毫秒，从头到尾」。与创作者「从芯片讲到 AI 和生活」的定位高度一致，可直接参考其分镜节奏：每 3–4 秒一个层级、每个镜头一句话一个数字。",
+      "tool": "Claude Opus（作者自述），具体渲染技术未说明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "仅作者 X 帖与 34 秒视频（2026-10-20 06:12 UTC，热度很低）；未公开提示词或代码；片中「50 亿次」「约 30 毫秒」等为作品内表述，未核实（真实按键到显示延迟随设备差异很大）。未发现更早的同片来源。封面为视频第 2 秒截帧，已自托管。只能外链引用。",
+      "attribution": "@reliponj（X）",
+      "sourceAuthor": "reliponj",
+      "tags": [
+        "代码视频",
+        "科普动画",
+        "计算机原理",
+        "玻璃"
+      ],
+      "publishedAt": "2026-10-20T06:12:38.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T09:10:00.000Z",
+      "updatedAt": "2026-10-20T09:10:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-20T09:10:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 69,
+        "baseBreakdown": {
+          "实体": 15,
+          "科普": 20,
+          "溯源": 9,
+          "复现": 6,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.0618,
+        "finalScore": 73.3,
+        "threshold": 65,
+        "run": "2026-10-20-1640-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112426590483218432/vid/avc1/1920x1080/cNNn_s2ObDKLLBtY.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "坐着马车穿过 1880 年代的爱丁堡老城：Three.js 做的可交互黑白旁白之旅——点灯人、1861 年倒塌的公寓楼、1505 年的理发外科医生",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/chetanankola/status/2112446226872627578",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020c-edinburgh.jpg",
+      "previewType": "image",
+      "description": "@chetanankola 10-20 发布用 three.js 做的「1880 年代爱丁堡老城马车之旅」：刻意做成带噪点划痕的黑白老片质感，镜头跟着一辆马车走过湿漉漉的石板路，底部字幕旁白讲解沿途历史（截帧字幕：爱丁堡孩子把点灯人叫作 leeries，他们黄昏举着长杆来点灯，煤气灯自 1819 年照亮这些街道），作者称内容还包括 1861 年倒塌的公寓楼、1505 年的理发外科医生，整个场景可交互控制（界面有 Music / Daytime / Camera 等开关），人物刻意做得很简单。可参考的形式：「交互 3D + 旁白」的历史/城市科普。",
+      "tool": "three.js（作者自述），是否用 AI 生成未说明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖与视频（2026-10-20 07:30 UTC）；未公开在线链接、源码或许可；片中历史表述为作品内容，未核实。同作者库内已有作品。封面为视频第 24 秒截帧，已自托管。只能外链引用。",
+      "attribution": "@chetanankola（X）",
+      "sourceAuthor": "chetanankola",
+      "tags": [
+        "Three.js",
+        "互动叙事",
+        "历史场景",
+        "黑白胶片"
+      ],
+      "publishedAt": "2026-10-20T07:30:02.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T09:10:00.000Z",
+      "updatedAt": "2026-10-20T09:10:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-20T09:10:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 59,
+        "baseBreakdown": {
+          "实体": 14,
+          "科普": 15,
+          "溯源": 10,
+          "复现": 5,
+          "风格": 9,
+          "新颖": 6
+        },
+        "multiplier": 1.3491,
+        "finalScore": 79.6,
+        "threshold": 65,
+        "run": "2026-10-20-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112444811223642112/vid/avc1/2488x2160/srltWwkmg23fSN_V.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "不用云端大模型，两张旧显卡能写出「走进梵高画里」的 3D 场景吗？本地 Qwen3.8 Flash Next 用 1 条主提示词 + 1 条修正，写出单文件 Three.js 风车麦田（提示词全文公开）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/geldeki/status/2112437524605935671",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020c-vangogh-mill.jpg",
+      "previewType": "image",
+      "description": "@geldeki（Erman Eroglu）10-20 发布一个梵高风格的 3D 风车麦田场景「THE GOLDEN WIND」：作者称只用 1 条主提示词 + 1 条修正提示词，由本地运行的 Qwen3.8 Flash Next（IQ3_S 量化）+ Strata 生成，硬件为 2×RTX 3090（48 GB 显存）、Ryzen 9 9950X、64 GB 内存；产物是单个 HTML 文件、three.js 走 CDN，麦穗用 GPU 实例化、风由顶点着色器驱动，目标 120 FPS（作者自述目标，非实测）。作者在回复中公开了两条提示词全文：主提示词要求程序化生成全部资产、笔触感着色、电影感/探索两种相机模式，并要求用 Playwright 真浏览器截图自检；修正提示词专门修「风车叶片零件漂浮、取景装不下」等问题。对创作者的价值：本地小模型 + 详细提示词也能做出可用的 3D 视觉，提示词结构（技术约束→美术方向→相机→性能→验证）可直接借鉴。",
+      "tool": "Qwen3.8 Flash Next（IQ3_S，本地）+ Strata + three.js（作者自述）",
+      "prompt": "【主提示词】\nBuild a Cinematic Van Gogh-Inspired 3D Windmill Experience\n\nCreate a breathtaking, immersive, real-time 3D experience using Three.js, delivered as a single self-contained index.html file.\n\nTechnical Requirements\n\nUse Three.js via CDN (ES modules / import maps).\nEverything must run directly in the browser.\nNo React, Vue, Vite, npm, build tools, or backend.\nHTML, CSS, shaders, and JavaScript must live in one HTML file.\nTarget 120 FPS on high-end desktop GPUs with adaptive quality scaling.\nUse requestAnimationFrame, GPU instancing, efficient geometries, and custom GLSL shaders.\nNo external 3D models or texture downloads. Generate procedural assets and textures in code.\nUse physically coherent lighting, atmospheric perspective, and restrained cinematic post-processing.\n\nArtistic Direction: A Living Van Gogh Painting\n\nImagine stepping inside a living Vincent van Gogh oil painting.\n\nA beautiful, old Dutch windmill stands gracefully on a small grassy hill, surrounded by an enormous golden wheat field stretching toward the horizon.\n\nThe world is peaceful, poetic, and dreamlike.\n\nThe environment must feel like a hand-painted masterpiece brought to life, not a generic low-poly video game.\n\n1. Windmill — The Hero Object\n\nCreate an architecturally believable 19th-century Dutch windmill.\n\nBeautiful weathered wooden structure.\nFour large sails with detailed wooden latticework.\nSlowly rotating blades driven by a gentle breeze.\nRealistic central shaft and mechanical connections.\nSubtle weathering, warm wood tones, and painterly imperfections.\nNatural shadows cast across the surrounding wheat.\nPosition it prominently according to cinematic composition principles.\n\nThe windmill must be immediately recognizable and visually impressive.\n\n2. Infinite Golden Wheat Fields\n\nSurround the windmill with thousands upon thousands of individually animated wheat stalks.\n\nDense, lush wheat fields extending toward the horizon.\nGolden, amber, ochre, and pale yellow variations.\nEach stalk should have a recognizable stem and wheat head.\nImplement GPU-instanced geometry.\nAnimate wind using vertex shaders, not individual JavaScript updates.\nUse coherent spatial wind waves that travel across the fields.\nAdd subtle secondary motion and natural variation.\nWind must feel extremely gentle and believable.\nWheat movement should resemble golden ocean waves.\n\nCritical: Wheat must be visually rich, dense, and detailed without destroying frame rate.\n\n3. Van Gogh-Inspired Rendering\n\nCapture the visual characteristics of The Wheat Field and The Starry Night without simply applying a cartoon filter.\n\nVisible directional brushstroke textures.\nSwirling, expressive painterly clouds.\nRich impasto-inspired surface detailing.\nVibrant cobalt-blue and turquoise sky.\nWarm golden wheat and luminous sunlight.\nBeautiful complementary color relationships.\nOrganic, swirling patterns in the atmosphere.\nPainterly shading using custom GLSL noise and layered procedural textures.\n\nMake the brushstroke aesthetic part of the actual rendering, including terrain, wheat, sky, and windmill.\n\nAvoid flat colors, basic gradients, and cheap toon shading.\n\n4. Cinematic Golden-Hour Lighting\n\nSet the scene during a magical late afternoon.\n\nLow warm sun near the horizon.\nBeautiful long, soft shadows.\nAtmospheric haze and depth.\nGentle volumetric-looking sunlight.\nSoft ambient sky illumination.\nWarm highlights on wheat heads.\nSubtle filmic tone mapping.\nCarefully controlled bloom.\nSmooth color grading.\n\nThe overall feeling should be nostalgic, emotionally moving, and almost hypnotic.\n\n5. Sky and Clouds\n\nCreate an extraordinary procedural animated sky.\n\nDeep cobalt-blue upper atmosphere.\nWarm amber and peach near the horizon.\nElegant Van Gogh-like swirling clouds.\nSlowly drifting painterly cloud structures.\nProcedural brushstroke patterns.\nSubtle sunlight scattering.\nNo static skybox photographs.\n\nThe sky should feel like a living oil painting.\n\nCamera and Cinematography\n\nBegin with a carefully composed cinematic shot:\n\nCamera slightly above wheat height.\nWheat stalks framing the foreground.\nWindmill positioned near the right third of the frame.\nImmense landscape and expressive sky behind it.\nStrong depth separation between foreground, middle ground, and background.\n\nImplement two camera modes:\n\nCinematic Mode\nSlow, smooth camera dolly.\nGentle orbital movement around the windmill.\nSubtle parallax through wheat.\nCarefully eased motion.\nNo sudden movements or disorienting camera changes.\n\nExplore Mode\nMouse drag to orbit.\nScroll to zoom.\nSmooth damping and inertia.\nSensible camera constraints.\nTouchscreen support.\n\nInclude an unobtrusive toggle between both modes.\n\nAnimation\n\nEvery element should feel connected by the same natural breeze.\n\nWindmill blades rotate slowly and continuously.\nWheat sways in synchronized but spatially varying wind fields.\nClouds drift gradually.\nSmall airborne pollen particles float through sunlight.\nAtmospheric details evolve slowly.\nNo exaggerated movement.\n\nUse delta-time animation for frame-rate independence.\n\nPerformance: 120 FPS Target\n\nTreat performance as a core architectural requirement, not an afterthought.\n\nGPU instancing for wheat.\nShader-driven deformation.\nMinimal draw calls.\nLow geometry complexity where appropriate.\nDistance-based level of detail.\nFrustum culling.\nReduced overdraw and intelligent transparency use.\nPreallocated buffers and reusable objects.\nNo unnecessary allocations inside the render loop.\nAdaptive pixel ratio and quality presets.\nLimit expensive shadow and post-processing passes.\nAvoid CPU-based per-stalk animation.\nInclude a small optional FPS counter.\n\nAim for 120 FPS at 1080p on a powerful desktop GPU, without sacrificing the visual identity. Do not claim a guaranteed frame rate; measure actual performance.\n\nUI Design\n\nCreate a minimalist premium cinematic interface.\n\nTiny elegant title: THE GOLDEN WIND\nSubtitle: A Living Painting\nMinimal cinematic/explore mode toggle.\nOptional wind strength slider.\nOptional FPS indicator.\nAuto-hide interface during cinematic mode.\nNo large panels, intrusive controls, or unnecessary text.\n\nThe art must occupy nearly the entire screen.\n\nFinal Quality Standards\n\nThis must look like a polished interactive art installation, not a basic Three.js tutorial.\n\nPrioritize:\n\nJaw-dropping artistic quality.\nConvincing Van Gogh-inspired brushstroke rendering.\nBeautiful realistic windmill geometry.\nVast, dense, continuously moving wheat fields.\nExceptional golden-hour lighting.\nSmooth cinematic camera movement.\nHighly optimized GPU rendering.\n\nAvoid primitive-looking objects, sparse vegetation, flat terrain, generic procedural noise, unrealistic wind, and excessive bloom.\n\nImplementation and Verification\n\nProduce the complete working index.html.\n\nDo not provide pseudocode, incomplete snippets, or placeholder implementations.\n\nRun the application in a real browser using Playwright.\n\nVerify:\nNo JavaScript errors.\nAll shaders compile.\nWindmill renders correctly and sails rotate.\nWheat animation works.\nCinematic and explore modes function.\nResizing works.\nThe scene remains visually cohesive from multiple camera angles.\nFPS is measured during actual rendering.\n\nCapture screenshots, inspect the results, identify visual defects, and refine the implementation.\n\nUse iterative visual testing until the experience feels genuinely cinematic and artistically compelling.\n\nThe final result should feel like standing inside a living Van Gogh painting, watching gentle wind flow through endless golden wheat fields while an old Dutch windmill turns beneath an extraordinary swirling blue sky.\n\n【修正提示词】\nRebuild and improve the current single-file HTML + Three.js CDN scene. Keep the same cinematic, Van Gogh-inspired wheat field windmill concept, but fix the current major problems.\n\nMain fixes:\n1. The windmill must fully fit on screen on first load. Rework the default camera so the entire windmill, including all sails, base, platform, and cap, is visible with good cinematic framing and some breathing room.\n2. The windmill sails are currently broken, with disconnected pieces floating in space. Rebuild them as one proper mechanical assembly: one central hub, one axle, four fully connected sails, clear support beams, and proper lattice structure. No floating or detached parts.\n3. The front mechanical connection is sloppy. Make the axle, hub, bearing area, braces, and cap connection look clean, believable, and intentionally engineered. The sails must rotate as one coherent object around the axle.\n4. Improve the overall structure so it looks like a well-designed Dutch windmill, not a rough prototype. Clean up the body proportions, balcony/platform, railing, cap shape, sail supports, and material consistency. Avoid intersecting or random-looking geometry.\n\nPreserve:\n- Three.js via CDN\n- one single self-contained HTML file\n- no build tools\n- cinematic mood\n- light wind\n- wheat fields around the windmill\n- painterly Van Gogh-like look\n- smooth animation\n- good performance\n\nImplementation guidance:\n- Build the windmill with a clean hierarchy of grouped parts: tower, balcony, cap, axle, hub, sail assembly, and support details.\n- Ensure all sail parts are parented correctly so rotation works perfectly.\n- Avoid floating meshes, clipping, and z-fighting.\n- Use better framing, scale, and proportions.\n\nVerification:\nRun it in a real browser with Playwright and verify:\n- the whole windmill fits in frame at startup,\n- no sail fragments float separately,\n- all sails rotate together as one connected unit,\n- the mechanical connection looks neat and believable,\n- the scene still feels cinematic and polished.\n\nIf necessary, rebuild the windmill from scratch instead of patching the broken version.",
+      "promptProvenance": "original_public",
+      "provenanceNote": "作者 X 主帖（2026-10-20 06:55 UTC）及同时发布的两条回复（主提示词 2112437528347263484、修正提示词 2112437530725327185），已逐字取回。未公开最终 HTML 源码与许可；画面质量为单条视频所见。封面为视频第 12 秒截帧，已自托管。只能外链引用。",
+      "attribution": "@geldeki（X）",
+      "sourceAuthor": "geldeki",
+      "tags": [
+        "Three.js",
+        "本地模型",
+        "程序化生成",
+        "油画笔触"
+      ],
+      "publishedAt": "2026-10-20T06:55:27.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T09:10:00.000Z",
+      "updatedAt": "2026-10-20T09:10:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-20T09:10:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 66,
+        "baseBreakdown": {
+          "实体": 12,
+          "科普": 8,
+          "溯源": 18,
+          "复现": 13,
+          "风格": 9,
+          "新颖": 6
+        },
+        "multiplier": 1.2748,
+        "finalScore": 84.1,
+        "threshold": 65,
+        "run": "2026-10-20-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112436574289850368/vid/avc1/3442x1910/hZ4LSKBmFep2UI60.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "咖啡店官网还能做得多温暖？Opus 5.5 做的一个小咖啡馆网站概念",
       "category": "frontend",
@@ -13874,8 +14144,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条",
-  "updatedAt": "2026-10-20T05:05:00.000Z",
-  "totalItems": 292,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条",
+  "updatedAt": "2026-10-20T09:10:00.000Z",
+  "totalItems": 303,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
