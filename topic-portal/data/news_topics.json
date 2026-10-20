@@ -1,7 +1,155 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-19T13:00:00.000Z",
+  "updatedAt": "2026-10-20T00:58:00.000Z",
   "topics": [
+    {
+      "url": "https://www.science.org/doi/10.1126/science.aei2693",
+      "title": "晶体管要三种材料，为什么一块 WSe₂ 晶体就够了？逐层「换原子」把同一块晶体变出沟道、栅介质和电极，开关陡度做到 61.3 mV/dec",
+      "category": "半导体",
+      "source": "Science《Modular van der Waals MOSFETs through layer-by-layer chalcogen substitutions》（韩国基础科学研究院 IBS 范德华量子固体中心 JO Moon-Ho 团队，2026-10-15）+ IBS 官方新闻稿（Nanowerk 2026-10-16 转载）",
+      "publishedAt": "2026-10-15",
+      "eventAt": "2026-10-15",
+      "collectedAt": "2026-10-20T00:58:00.000Z",
+      "updatedAt": "2026-10-20T00:58:00.000Z",
+      "description": "常规晶体管要把半导体沟道、绝缘栅介质、金属电极三种材料分别做好再拼起来；到了二维材料，表面几乎没有可附着的位点，介质难均匀沉积，直接镀金属又会损伤原子层或形成高接触势垒，逐层剥离转移堆叠则难以大面积量产。IBS 团队反过来做：从多层 WSe₂ 出发，保留钨原子骨架，只逐层替换周围的硫族原子——上层先氧化成绝缘的 WOₓ，还可再经气相反应转成 n 型 WS₂ 或半金属 WTe₂，未转化区域保留 WSe₂ 沟道。层间范德华间隙让反应能停在指定层数，控制精度约 0.7 nm（一层 WSe₂）。直接用沟道上方转化出的 WOₓ 当栅介质，等效氧化层厚度 <1 nm；WSe₂ 晶体管亚阈值摆幅 61.3 mV/dec（室温理论极限约 60），开关比 >10⁷；WTe₂ 接触把注入势垒降到直接铂接触的约 1/3；同一 WOₓ 介质还做了 n 型 MoS₂ 管，并垂直堆叠 p/n 管拼出互补反相器。可拍角度：①0 秒画面：IBS 示意图「逐层生长→逐层转化→集成器件」三段；②反直觉：不是往晶体上加材料，而是把晶体自己改造成三种材料；③类比：在一整块板上雕出不同功能区，而不是拿三块料去拼；④限定：目前是实验室器件与反相器演示，大面积均匀性、良率与热预算仍待验证；与上一轮「碳点 high-κ 种子层」都瞄准二维材料「介质难长」这一痛点，可做对比篇。",
+      "caveat": "Science 原文需订阅，本条数据取自 IBS 官方新闻稿（Nanowerk 转载）与论文摘要；SS、EOT、开关比、势垒比例为作者测量。封面为 IBS 新闻稿示意图，已自托管。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261020a-one-crystal-fet.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020a-one-crystal-fet.jpg",
+      "imageAlt": "IBS 示意图：逐层生长 WSe₂ → 逐层转化出 WTe₂ 半金属与 WOₓ 绝缘层 → 模块化集成器件阵列",
+      "tags": [
+        "二维半导体",
+        "芯片制造"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 89,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 18,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 3
+        },
+        "multiplier": 1.0743,
+        "finalScore": 95.6,
+        "threshold": 65,
+        "run": "2026-10-20-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://www.nature.com/articles/s41586-026-11036-y",
+      "title": "看不见对手的棋子，AI 为什么反而赢了？训练不到 8000 美元的 Ataraxos 15 胜 1 负 4 和击败史上最强 Stratego（类军棋）选手，斗地主也打赢了此前最强 AI",
+      "category": "AI",
+      "source": "Nature《Scalable decision-making for games of imperfect information》（Sokota、Vinitsky、Hu、Fan、Kolter、Farina；CMU / NYU / 斯坦福 / MIT，开放获取，2026-09-30）+ MIT News（MIT EECS 2026-10-19 转发）",
+      "publishedAt": "2026-09-30",
+      "eventAt": "2026-09-30",
+      "collectedAt": "2026-10-20T00:58:00.000Z",
+      "updatedAt": "2026-10-20T00:58:00.000Z",
+      "description": "Stratego 和中国的军棋很像：双方 40 枚棋子暗中布阵，只有相撞时才翻开身份，可能的布阵超过 10³³ 种。围棋、国际象棋信息全公开，好棋就是好棋；暗棋里你虚张声势越多，对手越预期你在诈，每次诈的价值就越低——一步棋值多少取决于对手「以为你会怎么下」。扑克 AI 依赖的公共信息变换会随隐藏信息量暴涨而失效。CMU、MIT、NYU、斯坦福团队的 Ataraxos 用三件套：①自博弈强化学习练策略/价值网络，前期强正则+大步更新、后期弱正则+小步更新，压住暗棋里循环、发散的学习震荡；②信念网络从自博弈数据学会「猜」对手暗子身份；③落子前用信念网络采样若干可能棋盘，对每个候选着法推演，再只对当前这一步额外做一次更新。训练用 16 张 H100 一周 + 4 张 H100 四天，作者按 2025 年价格估算不到 8000 美元；而按作者估算，DeepMind 的 DeepNash 训练约合 300–450 万美元，且未超越顶尖人类。战绩：20 局对史上战绩最辉煌的 Pim Niemeijer 15 胜 1 负 4 和；2025 世锦赛现场 40 局 38 胜 2 负；同一方法在 Barrage Stratego 胜多名世界冠军，Hanabi 创新纪录，斗地主击败此前最强的 PerfectDou 与 DouZero。可拍角度：①0 秒画面：MIT 配图 / 论文 Fig.2 暗棋棋盘；②反直觉：信息越不全，AI 越不能「算尽」，靠的是「猜得像」+「只修正这一步」；③大陆钩子：军棋、斗地主人人会玩；④限定：DeepNash 成本为作者估算；对人类赛为特定赛制；代码已在 GitHub AtaraxosAI 公开。",
+      "caveat": "论文开放获取；DeepNash 成本为论文作者按 2025 年云价格估算。封面为 MIT 新闻配图（Jose-Luis Olivares, MIT; Getty Images），已自托管。研究部分经费来自美国海军研究办公室，拍摄宜避开军事应用叙事，聚焦「暗信息博弈」本身。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261020a-ataraxos.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020a-ataraxos.jpg",
+      "imageAlt": "MIT 新闻配图：网格棋盘上标着 AI 的蓝色暗棋棋子",
+      "tags": [
+        "AI训练",
+        "强化学习",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 86,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 19,
+          "画面": 13,
+          "来源": 15,
+          "时效": 6,
+          "大陆": 8,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 90.9,
+        "threshold": 65,
+        "run": "2026-10-20-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://www.nature.com/articles/s41928-026-01725-x",
+      "title": "傅里叶变换几十年都在数字芯片上算，为什么现在能让存储阵列「模拟」着算？52.4 万个电荷俘获存储单元同时开工，最大做到 65536 点",
+      "category": "半导体",
+      "source": "Nature Electronics《Analogue fast Fourier transforms for scalable and efficient signal processing》（T. Patrick Xiao、Christopher H. Bennett 等；桑迪亚国家实验室、英飞凌、亚利桑那州立大学，2026-10-19）",
+      "publishedAt": "2026-10-19",
+      "eventAt": "2026-10-19",
+      "collectedAt": "2026-10-20T00:58:00.000Z",
+      "updatedAt": "2026-10-20T00:58:00.000Z",
+      "description": "离散傅里叶变换（DFT）是把传感器信号变成频谱的基本操作。模拟存内计算让电流在存储阵列里直接完成矩阵乘，很省电，已被用在 AI 推理上——但直接算 N 点 DFT 需要 N×N 的矩阵，点数一大阵列就大得不现实；现代信号处理靠 FFT 降复杂度，FFT 却一直只跑在数字处理器上。桑迪亚国家实验室、英飞凌与亚利桑那州立大学团队证明 FFT 可以高效映射到模拟存内计算系统（Cooley–Tukey 拆分：小 DFT 矩阵 + 旋转因子逐元素相乘 + 重排），从而扩展到任意大的变换，而不需要过大或过多的非易失存储阵列。实验上，他们在一维音频和二维图像信号上演示模拟 FFT，同一阵列内同时动用最多约 52.4 万个电荷俘获存储器件，最大算到 65,536 点。论文 Fig.1d 显示：随点数增长，模拟 FFT 所需 ADC 转换次数比直接模拟矩阵乘少几个数量级；Fig.1e 设想同一芯片上 FFT 块与 DNN 层并存。可拍角度：①0 秒画面：Fig.1 直接 MVM vs 模拟 Cooley–Tukey FFT 对照；②反直觉：「存储器」本身成了计算器，算的还是最经典的信号处理算法；③类比：一首歌拆成各个音高的音量，过去 CPU 一步步算，现在让电流在存储格子里一次流过；④限定：正文需订阅，本条仅据摘要与 Fig.1；能效与精度具体数字未引用。",
+      "caveat": "Nature Electronics 付费论文，本条依据摘要、作者单位与 Fig.1 图注层面信息；未引用正文能效数字。封面为论文 Fig.1，已自托管。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261020a-analog-fft.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020a-analog-fft.jpg",
+      "imageAlt": "论文 Fig.1：直接模拟矩阵乘 DFT 与模拟 Cooley–Tukey FFT 的阵列映射、ADC 转换次数对比",
+      "tags": [
+        "存储/内存",
+        "模拟电路",
+        "边缘AI"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 16,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0924,
+        "finalScore": 92.9,
+        "threshold": 65,
+        "run": "2026-10-20-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-and-semiconductor-leaders-advance-ai-across-chip-design-and-manufacturing-for-ai-defined-labs",
+      "title": "刻蚀仿真为什么要借电影特效的「烟雾数据结构」？Lam 把 NanoVDB 塞进 SEMulator3D，部分刻蚀建模最高快 30 倍，等离子体预测从几天缩到毫秒级",
+      "category": "半导体",
+      "source": "NVIDIA 官方新闻稿《NVIDIA and Semiconductor Leaders Advance AI Across Chip Design and Manufacturing for AI-Defined Fabs》（2026-10-14，含 Lam Research、应用材料、KLA、新思科技等合作方表述）",
+      "publishedAt": "2026-10-14",
+      "eventAt": "2026-10-14",
+      "collectedAt": "2026-10-20T00:58:00.000Z",
+      "updatedAt": "2026-10-20T00:58:00.000Z",
+      "description": "芯片要走上千道工序，工程师想先在数字孪生里试工艺再上产线——可三维刻蚀形貌、等离子体本身的仿真就很慢。NVIDIA 10-14 发布：Lam Research 计划把开源 3D 数据库 NanoVDB 集成进其工艺建模平台 SEMulator3D（Semiverse 系列），预计让部分晶圆刻蚀建模提速最高约 30 倍，目标今年底前发布；Lam 还演示用 PhysicsNeMo 物理 AI 把等离子体预测仿真从几天缩到最快毫秒级。NanoVDB 是 OpenVDB 的 GPU 友好版本——OpenVDB 出自梦工厂动画，本来用来高效存储烟、火、云这类稀疏三维体数据：只在「有东西」的体素上花内存与算力。同一发布还有：新库 cuPotential（原子间相互作用模拟，早期测试在已 GPU 优化流程上再快 2–3 倍，新思科技采用）；KLA 新 NPP 内核比早期 CPU 版快 50 倍；应用材料腔体仿真最高快 35 倍；Teradyne 探针维护推理约快 85 倍。可拍角度：①0 秒画面：NVIDIA 发布配图「晶圆厂数字孪生」；②反直觉：好莱坞做烟雾的数据结构，被拿去算刻蚀形貌；③刻蚀工程师视角：机台一轮 DOE 动辄几天，仿真快 30 倍意味着什么、哪些仍得上机台验证；④限定：均为厂商自报「最高」倍数，NanoVDB 版 SEMulator3D 尚未发布，受益的具体刻蚀任务未披露。库内已有同一发布中的 imec 电镜去噪、西门子 cuLitho 两条，本条只讲刻蚀/等离子体角度。",
+      "caveat": "厂商新闻稿口径（「最高」「预计」）；OpenVDB 源自梦工厂动画为公开背景知识；「稀疏体素为何适合刻蚀形貌」为编者解释，发布未细说。封面为 NVIDIA 新闻稿配图（晶圆厂数字孪生示意），已自托管。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261020a-ai-fab-etch.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020a-ai-fab-etch.jpg",
+      "imageAlt": "NVIDIA 新闻稿配图：晶圆厂数字孪生示意（工艺设备、晶圆搬运、量测、检测分区）",
+      "tags": [
+        "刻蚀",
+        "芯片制造",
+        "仿真",
+        "AI工艺"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 16,
+          "画面": 8,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 3
+        },
+        "multiplier": 1.0743,
+        "finalScore": 88.1,
+        "threshold": 65,
+        "run": "2026-10-20-0840-shanghai"
+      }
+    },
     {
       "url": "https://www.nature.com/articles/s41467-026-78053-3",
       "title": "二维材料表面太「干净」，高κ介质为什么长不上去？煤制碳点铺一层 0.4 纳米「种子」，EOT 可压到约 0.6 纳米还跑 0.5 V 逻辑",

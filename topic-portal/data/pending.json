@@ -4,6 +4,68 @@
     {
       "kind": "visual",
       "baseScore": 58,
+      "multiplier": 1.038,
+      "score": 60.2,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-20-0840-shanghai",
+      "record": {
+        "title": "一句话里同时指挥三个软件做游戏？Opus 经 MCP 驱动 Meshy 出模、Blender 清理上材质、UE5 搭关卡——作者称约 4 小时、周额度约 19%",
+        "category": "3d",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/sorenxet/status/2112261524446466085",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020a-meshy-ue.jpg",
+        "previewType": "image",
+        "description": "作者自述流程：Claude Code + Unreal Engine 5 + Blender 5.1+；Blender 走其 MCP 插件、Meshy 走 Meshy MCP；先让 Opus 头脑风暴 5 个游戏点子选 1 个扩写设计，告知显卡让画面按机器上限推；Meshy 生成全部道具和角色，Opus 拉进 Blender 清理、摆放、上材质，再搬进 UE 做关卡、灯光、HUD、小地图；之后每个提示加一个功能（战斗→敌人→任务）。作者称首个版本约 4 小时、约占 Max 周额度 19%。与库内多条「Claude + Blender + UE/Unity」流程相近，新意有限。",
+        "tool": "Claude Code（Opus 5.5）+ Meshy MCP + Blender MCP + Unreal Engine 5（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者 X 帖与 47 秒演示视频（2026-10-19）；耗时与额度为作者自述；无工程源码。封面为帖内视频缩略图（UE 编辑器内第三人称场景），已自托管。",
+        "attribution": "@sorenxet（X）",
+        "sourceAuthor": "sorenxet",
+        "tags": [
+          "Blender",
+          "3D建模",
+          "Claude Code",
+          "游戏资产"
+        ],
+        "publishedAt": "2026-10-19T19:16:06.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-20T00:58:00.000Z",
+        "updatedAt": "2026-10-20T00:58:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-20T00:58:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 58,
+          "baseBreakdown": {
+            "实体": 14,
+            "科普": 8,
+            "溯源": 11,
+            "复现": 13,
+            "风格": 9,
+            "新颖": 3
+          },
+          "multiplier": 1.038,
+          "finalScore": 60.2,
+          "threshold": 65,
+          "run": "2026-10-20-0840-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2112232290990297088/vid/avc1/1920x1080/THBsSVc79unZ3ng8.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 58,
       "multiplier": 1.1,
       "score": 63.8,
       "reason": "本轮达待定区间",
@@ -1777,6 +1839,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-19T13:00:00.000Z",
+  "updatedAt": "2026-10-20T00:58:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
