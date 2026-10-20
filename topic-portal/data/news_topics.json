@@ -1,7 +1,194 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-20T05:55:00.000Z",
+  "updatedAt": "2026-10-20T09:10:00.000Z",
   "topics": [
+    {
+      "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261019_1965617.html",
+      "title": "芯片一个月多造了近两成，为什么手机反而少造了四分之一？统计局 9 月数据：集成电路产量 +18.4%，智能手机 −26.6%，微型计算机 −17.0%",
+      "category": "半导体",
+      "source": "国家统计局《2026年9月份规模以上工业增加值增长5.5%》（2026-10-19 10:00）+ 同日《2026年三季度全国规模以上工业产能利用率》",
+      "publishedAt": "2026-10-19",
+      "eventAt": "2026-10-19",
+      "collectedAt": "2026-10-20T09:10:00.000Z",
+      "updatedAt": "2026-10-20T09:10:00.000Z",
+      "description": "国家统计局 10 月 19 日发布 9 月规上工业数据，主要产品产量表里出现一组「剪刀差」：集成电路 9 月产量 543 亿块，同比 +18.4%，1–9 月累计 4428 亿块、+23.3%；同一张表里智能手机 9 月 9252 万台、同比 −26.6%（1–9 月 −9.0%），移动通信手持机 −26.9%，微型计算机设备 2581 万台、−17.0%（1–9 月 −15.0%）。同月工业机器人 96752 套 +18.9%，新能源汽车 187.0 万辆 +16.9%；计算机、通信和其他电子设备制造业增加值 +16.4%，高技术制造业 +15.3%。同日发布的产能利用率显示三季度计算机通信电子设备制造业 80.2%（同比 +1.2 个百分点），汽车制造业 66.2%（−7.1 个百分点）。可拍角度：①0 秒画面：两根一涨一跌的柱子——「芯片 +18.4%，手机 −26.6%」；②反直觉：芯片不等于手机芯片，「块」只数个数、不分 3 nm 还是 0.18 μm，也不分价值；③刻蚀一线视角：产能利用率 80% 的电子行业和 66% 的汽车行业，对一条产线意味着什么；④芯片流向哪里（机器人、汽车、服务器、出口）统计局未拆分，只能列为待查问题。",
+      "caveat": "所有数字摘自国家统计局两份 10-19 发布稿。统计局未解释手机减产与集成电路增产的原因；「存储涨价挤压整机」「芯片转向 AI/汽车/机器人」等只能作为待核实假设，不能当结论。「亿块」为数量口径，不反映价值或制程。封面为根据统计局数字自制的柱状图（已标注自制）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261020c-nbs-ic-phone.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020c-nbs-ic-phone.jpg",
+      "imageAlt": "自制柱状图：2026 年 9 月集成电路、工业机器人、新能源汽车产量同比增长，微型计算机设备、智能手机同比下降",
+      "tags": [
+        "芯片制造",
+        "统计口径",
+        "消费电子"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 90,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 18,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 10,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 96.7,
+        "threshold": 65,
+        "run": "2026-10-20-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.14298",
+      "title": "栅压越往负加，晶体管应该关得越死，为什么 GAA 晶体管反而漏得越多？Sandia 用量子输运仿真画出电流「改道」：从沟道转向栅极→漏极直接隧穿",
+      "category": "半导体",
+      "source": "arXiv:2610.14298《Revealing New Leakage Paths in GAAFETs…》（D. Mamaluy、J. P. Mendez、Cariker、Titze、A. Belianinov；Sandia 国家实验室 / 卢森堡科技研究院，2026-10-09，CC BY 4.0）",
+      "publishedAt": "2026-10-09",
+      "eventAt": "2026-10-09",
+      "collectedAt": "2026-10-20T09:10:00.000Z",
+      "updatedAt": "2026-10-20T09:10:00.000Z",
+      "description": "全环绕栅（GAA）是 3 nm 以下主流晶体管结构，栅极从四面包住沟道，本应关得更干净。但 Sandia 团队在论文里讨论一个反常现象：栅压往负方向加，漏极电流不降反升。过去常用 GIDL（栅致漏极泄漏）来解释，作者认为在这种器件里不太适用。他们用多端口量子输运仿真（NEGF/CBR 方法）画出器件内部的电流空间分布：Vg=0 V 时电流沿沟道从源走到漏；到 Vg=−0.5 V，源漏通路几乎熄灭，电流集中在栅极靠漏端的边角，从栅极穿过高 k 介质直接隧穿到漏极，并被漏致势垒降低效应（DIDBL）放大——几乎全部漏极电流都变成了栅-漏泄漏。仿真器件参数：栅长 12 nm、硅厚 5 nm、宽 30 nm、2 nm HfO₂（ε=20、势垒 1.6 eV）、Vd=0.7 V；仿真曲线与一组 2017 年 IEEE 文献的实测数据吻合，作者称机制另有实验独立佐证。缓解思路：在漏端一侧局部加厚高 k 介质，或在那里改用势垒更高的 SiO₂。可拍角度：①0 秒画面：论文 Fig.4 两张电流流线图——0 V 时横穿沟道、−0.5 V 时全部挤到栅角往下钻；②反直觉：越想关断，漏电越大；③工艺视角：作者提的「漏端非对称栅介质」若要落到产线，意味着沉积/刻蚀要做出左右不对称结构（作者未讨论具体工艺，属延伸，需标注）；④限定：仿真为主，参数是特定器件，不代表某家厂商量产 GAA 的实际漏电水平。",
+      "caveat": "一手为 arXiv 预印本（尚未见同行评审正式发表），数字均摘自论文正文。研究资助方为美国能源部 NNSA ASC 计划与 Sandia LDRD。论文未讨论刻蚀/沉积工艺实现，工艺延伸为本轮评述。封面截取论文 Fig.4 中 Vg=0 V 与 −0.5 V 两个面板并排（CC BY 4.0，已标来源），已自托管。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261020c-gaafet-leak.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020c-gaafet-leak.jpg",
+      "imageAlt": "论文 Fig.4：GAAFET 内部电流流线，0 V 时电流沿沟道横穿，−0.5 V 时电流集中在栅极漏端边角向下隧穿",
+      "tags": [
+        "芯片误差",
+        "失效分析",
+        "晶体管",
+        "GAA"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 17,
+          "画面": 11,
+          "来源": 15,
+          "时效": 7,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 90.2,
+        "threshold": 65,
+        "run": "2026-10-20-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-runs-record-simulation-of-fault-tolerant-quantum-computing-at-julich-supercomputing-centre",
+      "title": "104 个量子比特本该要存 2^104 个数，为什么 8192 块 GPU 只用「45 比特」的账本就装下了？NVIDIA 在欧洲 JUPITER 超算上做了一次魔术态培育的经典模拟",
+      "category": "科技产品",
+      "source": "NVIDIA 新闻稿（2026-10-19）+ CUDA-Q 技术博客《JUPITER magic-state simulation》（2026-10-19）",
+      "publishedAt": "2026-10-19",
+      "eventAt": "2026-10-19",
+      "collectedAt": "2026-10-20T09:10:00.000Z",
+      "updatedAt": "2026-10-20T09:10:00.000Z",
+      "description": "容错量子计算除了纠错，还需要「魔术态」——一种高质量的特殊量子态，用来完成纠错码上做不了的非 Clifford 门。传统做法「蒸馏」很耗量子比特，「培育」（cultivation）是新思路：从一个 3 距离的颜色码出发、配合旗标测量，逐步长成 7 距离的颜色码/表面码混合码。NVIDIA 与于利希超算中心在欧洲首台 E 级超算 JUPITER 上，用 8,192 块 GH200 GPU 对这套 104 个物理比特的协议做了全量子态经典模拟，并把相干相位误差和「泄漏」（比特跑到第三能级）都算了进去。为什么装得下：协议过程中有比特被测量、释放，模拟器重排操作顺序、复用存储，同一时刻只需跟踪一个较小的态；三能级系统 5 个一组共 243 个状态，正好塞进 8 bit（256）；最大的编码寄存器为 45 位，约 35.2 万亿个复数振幅，双精度 512 TiB，平摊到每块 GPU 64 GiB（2^45×16 B÷8192 可验算）。小规模案例中态矢量模拟与张量网络结果吻合到约 1e−13。可拍角度：①0 秒画面：「2^104 vs 2^45」的数量级对比；②反直觉：要验证量子计算机，先得用最大的经典计算机去「假装」它；③装箱技巧：3 进制塞进 2 进制；④限定：这是经典模拟，不是量子处理器实验；库内已有 Google 魔术态条目，可做姊妹篇。",
+      "caveat": "「比以往方法少用约 90% 量子比特」为 NVIDIA 对培育方案的表述，未独立核实；技术博客一处写成「8,912」GPU，与新闻稿 8,192 不一致，按 8,192 处理。封面为 NVIDIA 新闻稿配图（JUPITER 机房，图片署名 Forschungszentrum Jülich / Sascha Kreklau），已自托管。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261020c-jupiter-104q.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020c-jupiter-104q.jpg",
+      "imageAlt": "JUPITER 超级计算机机房走廊与机柜",
+      "tags": [
+        "量子计算",
+        "纠错",
+        "超算",
+        "GPU"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 79,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 18,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 3,
+          "新颖": 3
+        },
+        "multiplier": 1.0,
+        "finalScore": 79.0,
+        "threshold": 65,
+        "run": "2026-10-20-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://blog.cloudflare.com/clairic-extraction-model/",
+      "title": "让大模型从邮件里抄个单号都可能抄错，为什么 Cloudflare 的新模型干脆一个字都不「写」？Clairic：一次前向传播直接指出原文位置，没有就返回空",
+      "category": "AI",
+      "source": "Cloudflare 官方博客《Introducing Clairic, a new System One class of extraction models》（2026-10-19）+ Workers AI 更新日志",
+      "publishedAt": "2026-10-19",
+      "eventAt": "2026-10-19",
+      "collectedAt": "2026-10-20T09:10:00.000Z",
+      "updatedAt": "2026-10-20T09:10:00.000Z",
+      "description": "大模型做信息抽取（从邮件、发票里取金额、单号）时是一个字一个字生成答案，可能凭空编出一个看起来很像的单号。Cloudflare 新发布的 Clairic 走另一条路，自称「System One」类抽取模型：不生成输出 token，一次前向传播就给出每个字段在原文里的位置（span）、「该字段不存在」的概率 p_null 和置信度；需要计算的字段直接给数值，预测类问题给出 80% 区间。博客示例：一封订单邮件里 amount_paid 被算成 701.1（649+52.10），邮件里没有快递单号时 tracking_number 返回 null 而不是编一个。另有一个预测演示：对美国 TSA 安检人数做 21 天预测，平均误差 3.3%，21 天中 17 天落在 80% 区间内，偏差集中在哥伦布日假期前后。定价：每百万输入 token 0.10 美元、输出不收费（更新日志）；Cloudflare 称将「很快」开放权重。可拍角度：①0 秒画面：同一封邮件，普通大模型「编出」单号 vs Clairic 返回空；②概念：卡尼曼「系统 1 / 系统 2」借来形容「直觉式一步出结果」；③限定：所有效果数字均为厂商自报，尚无第三方评测。",
+      "caveat": "均为 Cloudflare 自报（示例、误差、区间命中率），未独立复现；开放权重为承诺，尚未发布。博客 UTC 时间为 10-19 17:48，即北京时间 10-20 凌晨。封面为博客 og 配图，已自托管。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261020c-clairic.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020c-clairic.jpg",
+      "imageAlt": "Cloudflare 博客封面：Introducing Clairic, a new System One class of extraction models",
+      "tags": [
+        "AI成本",
+        "信息抽取",
+        "AI幻觉"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 76,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 16,
+          "画面": 7,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 3,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 80.3,
+        "threshold": 65,
+        "run": "2026-10-20-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://huggingface.co/blog/projectsim/estimating-physics-from-images-what-real-measureme",
+      "title": "只看一张照片，AI 能猜出一个东西多重、多滑、弹多高吗？ProjectSim 拿电子秤、摩擦小车和硬度计实测对比：质量估计 51/61 落在两倍以内",
+      "category": "AI",
+      "source": "Hugging Face 博客《Estimating physics from images: what real measurements show》（ProjectSim / Luca Cilio，2026-10-16）",
+      "publishedAt": "2026-10-16",
+      "eventAt": "2026-10-16",
+      "collectedAt": "2026-10-20T09:10:00.000Z",
+      "updatedAt": "2026-10-20T09:10:00.000Z",
+      "description": "图生 3D 资产做得越来越像，但游戏和机器人仿真还需要物理属性：质量、摩擦、硬度、弹性。ProjectSim 的博客把自家「从图像估物理参数」的结果拿去和仪器实测对比，用 MnRE（1.0 表示估计值等于实测）打分：质量 0.761（60 个 YCB 标准物体、数字秤；对比 PhysQuantAgent 0.654、按密度估算基线 0.528），作者称 61 个质量预测中 51 个在实测值两倍以内；摩擦 0.833（6 种表面、摩擦小车；PhysGS 0.805，常数 0.5 基线 0.664），且把「物体+接触表面」一起考虑时从 0.794 升到 0.931；硬度 0.807（31 个点、邵氏硬度计；低于 PhysGS 的 0.839）；弹性恢复系数 0.880，只用一帧静止画面估计 77 段弹跳视频（用视频的 IDPP 方法为 0.959）。可拍角度：①0 秒画面：一张照片 → 猜重量，再放上电子秤揭晓；②反直觉：同一个物体在不同桌面上「摩擦力」不一样，单看物体本身猜不准；③联系 3D 建模选题：模型好看 ≠ 能进物理引擎；④限定：厂商自评，硬度一项输给已发表方法。",
+      "caveat": "全部为 ProjectSim 自评结果，未见同行评审或第三方复现；正文「51/61」与表中「60 个物体」样本数不一致，按原文分别引用。博客图表图例写的是「Kaedim」，二者关系原文未说明，未核实。封面为博客 Fig.1（各物理量 MnRE 柱状图），已自托管。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261020c-projectsim.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020c-projectsim.jpg",
+      "imageAlt": "博客图表：质量、摩擦、硬度、弹性四项物理量估计值与仪器实测对比的 MnRE 分数",
+      "tags": [
+        "3D建模",
+        "物理仿真",
+        "机器人"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 69,
+        "baseBreakdown": {
+          "主线": 17,
+          "钩子": 15,
+          "画面": 8,
+          "来源": 11,
+          "时效": 10,
+          "大陆": 3,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 72.9,
+        "threshold": 65,
+        "run": "2026-10-20-1640-shanghai"
+      }
+    },
     {
       "url": "https://x.com/alin_zone/status/2112391214326743091",
       "title": "国内用 Claude 客户端怕封号？claude-switcher 启动前查 14 项环境、断代理就强关",
