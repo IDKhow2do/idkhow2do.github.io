@@ -1,7 +1,155 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-20T00:58:00.000Z",
+  "updatedAt": "2026-10-20T05:05:00.000Z",
   "topics": [
+    {
+      "url": "https://doi.org/10.1116/6.0005592",
+      "title": "原子层刻蚀被学界追捧多年，为什么三星产线 2017 年到现在才用上 3 步？三星刻蚀工程师的答案：把「一整个 ALE 循环」塞进「一个等离子体脉冲」",
+      "category": "半导体",
+      "source": "JVST A 观点文章《Current status of atomic layer etching and its adoption to low-k fine patterning: An industrial perspective》（Sanghyun Lee、HyunWook Ra、Keun Hee Bai，三星电子，免费阅读，2026-08-25 在线）+ AIP Scilight 解读（2026-08-28）",
+      "publishedAt": "2026-08-25",
+      "eventAt": "2026-08-25",
+      "collectedAt": "2026-10-20T05:05:00.000Z",
+      "updatedAt": "2026-10-20T05:05:00.000Z",
+      "description": "原子层刻蚀（ALE）把刻蚀拆成「表面改性→去除」的自限制循环，一次大约剥掉一层原子，损伤小、选择比高、图形负载效应小，学界研究多年；但三星电子三位刻蚀工程师在 JVST A 观点文章里给出产线视角：论文 Fig.1 统计三星逻辑与 DRAM 产线的 ALE 应用步数——2017 年起用上两步，2021 年加到第三步，而一颗 DRAM 或逻辑器件通常要走约 100 道以上刻蚀步骤，ALE 普及速度明显慢于 ALD。卡点有四个：刻蚀速率低（产能）、自限制并不完美、颗粒、工艺复杂度；作者认为这些不是独立问题，根子都在 ALE 的多步循环本身。他们也报告了一个少被强调的好处：在低 k 介质刻蚀中，ALE 能在更低离子能量下刻出更垂直的侧壁，让铜互连体积最多增加约 67%（Scilight 里作者称可刻出 90° 直角、宽度均匀）；但常规 O₂ 活化会造成化学损伤、拖累电容，因此需要无 O₂ 化学。最后提出方向：从多步 ALE 循环转向「一个等离子体脉冲完成一个 ALE 循环」——同一脉冲内 S1 高源功率沉积、S2 低源功率+偏压活化/脱附、S3 吹扫，同时改善产能、颗粒和稳定性。可拍角度：①0 秒画面：论文的「一个脉冲 = 一个 ALE 循环」源功率/偏压时序图；②反直觉：越精细的方法越难进产线，瓶颈是产能和颗粒而不是原理；③刻蚀一线视角：RIE vs ALE，为什么低 k 怕氧；④限定：观点文章，67% 为作者在特定低 k 结构上的结果；可与上一轮未收的 BNL+牛津仪器「腔体闲置后 ALE 刻不动」论文做姊妹篇。",
+      "caveat": "论文 2026-08-25 在线，非本周新闻，按常青机制题计时效；本轮首次检出（经 2026-10-11 二手科普文追溯到一手）。ALE 步数统计为三星自家产线口径。封面为 AIP Scilight 引用的论文脉冲时序示意图，已自托管。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261020b-samsung-ale.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020b-samsung-ale.jpg",
+      "imageAlt": "论文示意图：一个 ALE 循环（沉积 S1 / 活化-脱附 S2 / 吹扫 S3）对应一个多态等离子体脉冲的源功率与偏压时序",
+      "tags": [
+        "刻蚀",
+        "芯片制造",
+        "原子层刻蚀"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 18,
+          "画面": 12,
+          "来源": 15,
+          "时效": 6,
+          "大陆": 5,
+          "新颖": 4
+        },
+        "multiplier": 1.0743,
+        "finalScore": 91.3,
+        "threshold": 65,
+        "run": "2026-10-20-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://www.optica.org/about/newsroom/news_releases/2026/hybrid_gap-on-diamond_platform_strengthens_quantum-light_interactions/",
+      "title": "金刚石量子芯片为什么「不刻金刚石」反而更好？华盛顿大学把 640 个磷化镓光子腔「盖章」转印到金刚石上，成功 637 个（99.5%）",
+      "category": "半导体",
+      "source": "Optica 官方新闻稿（2026-10-15）+ Optica Quantum 论文（Nicholas S. Yama、Chun-Chi Wu、Fariba Hatami、Kai-Mei C. Fu；华盛顿大学 / 西北太平洋国家实验室 / 柏林洪堡大学）+ arXiv:2601.04733",
+      "publishedAt": "2026-10-15",
+      "eventAt": "2026-10-15",
+      "collectedAt": "2026-10-20T05:05:00.000Z",
+      "updatedAt": "2026-10-20T05:05:00.000Z",
+      "description": "金刚石里的硅空位（SiV）色心是量子网络的候选「量子存储器」，要把它的信息变成能在光纤里跑的光子，就得让它和纳米光子腔强耦合。传统做法直接在金刚石上刻出悬空的光子腔——但论文指出，这类加工本身难做，还可能引入表面缺陷、损害色心的光学和自旋相干性，金刚石又缺少做光开关所需的非线性。华盛顿大学团队反过来：金刚石一刀不刻，改在 200 nm 磷化镓（GaP）薄膜上用电子束光刻 + ICP 刻蚀（Ar:Cl₂:N₂=6:1:1，3 mTorr，约 4.5 nm/s）做出 4000 多个光子晶体腔，HF 选择性掏空 AlGaP 牺牲层让它们悬空，挑出共振合适的 16 组，用 PDMS/聚碳酸酯印章干法「盖」到植入了 SiV 的 2 mm 金刚石上——640 个转移成功 637 个，良率 99.5%。难点在于 GaP 层和金刚石里约 20 nm 深的色心天然隔着一段距离，过去这类混合器件协同性只有约 0.1；团队在设计里把「场重叠」本身当优化目标（正向设计 + 逆向参数搜索），首次在平面混合平台上做到协同性 C>1，4 K 下自旋弛豫时间 T₁>0.4 ms，实现自旋态单次读出（保真度约 96%）。可拍角度：①0 秒画面：Optica 发布的显微照片——一排排 GaP 纳米腔整齐躺在金刚石上；②反直觉：最好的刻蚀，是不刻那块最娇贵的材料，把刻蚀挪到好加工的材料上再「贴」过去；③刻蚀工程师视角：同一个器件里「刻什么、不刻什么」怎么选；④限定：目前是单个器件的核心耦合验证，下一步才是同芯片多比特纠缠，量子网络实用化仍远。",
+      "caveat": "数字来自 Optica 新闻稿与 arXiv 论文正文（637/640、C>1、T₁、保真度、刻蚀条件）。研究由美国能源部量子中心资助，拍摄宜聚焦器件工艺本身。封面为 Optica 新闻稿配图（金刚石上的 GaP 纳米光子腔阵列显微图，Nicholas S. Yama / 华盛顿大学），已自托管。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261020b-gap-diamond.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020b-gap-diamond.jpg",
+      "imageAlt": "显微照片：金刚石衬底上成排的磷化镓纳米光子腔（10 μm 比例尺）",
+      "tags": [
+        "量子计算",
+        "芯片制造",
+        "刻蚀"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 86,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 17,
+          "画面": 14,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 3,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 92.4,
+        "threshold": 65,
+        "run": "2026-10-20-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://viggle.ai/jst2",
+      "title": "世界模型大多在像素里「猜」物理，为什么 Viggle 偏要把世界拆成 3D 空间里的「原子」？JST-2 约 1 秒生成一个可走进去的 3D 场景，单次推理成本不到 1 美分",
+      "category": "AI",
+      "source": "Viggle Research 官方发布《JST-2: Physics-Native World Foundation Model》（2026-10-19）+ 官方 llms-full 说明 + @ViggleAI X 发布帖",
+      "publishedAt": "2026-10-19",
+      "eventAt": "2026-10-19",
+      "collectedAt": "2026-10-20T05:05:00.000Z",
+      "updatedAt": "2026-10-20T05:05:00.000Z",
+      "description": "很多世界模型在像素/视频空间里学习，物理结构只能从「看起来怎样」间接学出来。Viggle 10-19 发布 JST-2（Joint Space-and-Time 第二代），整套架构直接建在 3D 里：把世界表示成 3D 空间中持续存在的「原子」——每个原子代表一块物质或物体的一部分，移动、形变时保持身份，带显式 xyz 坐标，加上学出来的「属性向量」和「动力学向量」，编码成 Physics-Native Token；编码器从真实图像推断这些 token，生成器从多模态提示生成，解码器输出图像或 3D 高斯泼溅，在浏览器本地渲染。官方数字：前馈生成、无需逐场景优化，一个场景约 1 秒（NVIDIA B200，仅模型推理，不含网络），推理成本低于 0.01 美元；对比 World Labs Marble 约 5–6 分钟（官方注明并非同等保真度对比）；最多 64 个输入视角作为「空间上下文窗口」，可一个视角一个视角往外扩；角色从一张图生成且自带运动动力学，省掉绑骨骼/蒙皮；还能从稀疏真实照片重建厨房、走廊等完整环境。官方也写明限制：JST-2 场景是静态的，碰撞与物体交互仍靠规则物理，学习碰撞和受力要等 JST-3；机器人、自动驾驶等只是方向而非已验证结果。可拍角度：①0 秒画面：官方演示——从一张图「长」出可环绕的 3D 房间；②反直觉：不是让 AI 画得更像，而是让它先知道东西在哪儿；③与创作者的「房间 3D 建模 + 换装修风格」想法直接相关，可实测真实房间重建；④限定：均为厂商自报，基准为其自建评测。",
+      "caveat": "所有速度、成本、对比数字均为 Viggle 官方自报；Marble 对比非同等保真度。PINOC 免费试用，大陆访问情况未核实。封面为官方发布页 og 图，已自托管。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261020b-jst2.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020b-jst2.jpg",
+      "imageAlt": "Viggle JST-2 官方发布图：JST-2 生成的空间站舱内场景，宇航员与圆形舷窗",
+      "tags": [
+        "世界模型",
+        "3D建模",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 15,
+          "来源": 13,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 89.8,
+        "threshold": 65,
+        "run": "2026-10-20-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://openai.com/index/low-resource-programming-languages",
+      "title": "ATM 背后跑着几十年前的 COBOL，为什么 AI 一直写不好？OpenAI 新评测：COBOL 迁移准确率从 5.4% 跳到 86.6%，最容易翻车的是一条「多出的小数直接扔掉」的规则",
+      "category": "AI",
+      "source": "OpenAI 官方博客《Advancing coding in low-resource programming languages》（2026-10-19），MultiLangBench 评测已在 GitHub 公开",
+      "publishedAt": "2026-10-19",
+      "eventAt": "2026-10-19",
+      "collectedAt": "2026-10-20T05:05:00.000Z",
+      "updatedAt": "2026-10-20T05:05:00.000Z",
+      "description": "Python、JavaScript 的代码和文档海量，COBOL、Fortran、Visual Basic 却是「低资源语言」，模型能学的样本少——可 OpenAI 引用的数据称 COBOL 支撑着 40% 以上的网上银行系统、80% 的线下刷卡交易和 95% 的 ATM 交易，Fortran 用在天气预报和核反应堆安全分析。OpenAI 做了两套评测：①MultiLangBench：让模型用 20 种语言从零写一个兼容 SQLite 的数据库引擎，用数据库文件当统一接口、拿官方 SQLite 测试集改造来判分；GPT-6 Astra 平均通过率 87.4%（GPT-5.6 Sol 为 26.8%），COBOL 从 10.9% 到 72.1%，仍是最难的一门；GPT-6 Luna 40.3%，估算 API 成本每样本 0.77 美元，比 GPT-5.6 Sol 的 3.48 美元低约 78%。②COBOL 迁移：把 COBOL 程序改写成 C++/Java/Kotlin/Python/Rust，隐藏测试要求可观测输出逐字节一致才算成功；GPT-6.1 Sol 低推理强度 86.6%（GPT-5.6 Sol 同设置 5.4%），成本只有其 61%，高推理强度 97.9%。机制钩子：COBOL 的定点运算默认把多出的小数位直接截掉、除非显式要求四舍五入——「好心」改成四舍五入的译文能跑通、不报错，金额却悄悄不一样。可拍角度：①0 秒画面：一笔 10.005 元的利息，截断 vs 四舍五入，两套系统账对不上（可自制）；②反直觉：AI 不是不会写代码，是没见过足够多的「老规矩」；③AI 成本：便宜模型分数也在涨；④限定：均为 OpenAI 自建评测和自报数字，官方也说生产迁移仍需专家审查和测试。",
+      "caveat": "评测、数字、COBOL 使用占比均出自 OpenAI 博客（占比为其引用的外部来源）；「10.005 元」演示为编者设计的示例，非原文数据。封面为 OpenAI 官方 og 卡片，画面偏弱，建议自制截断对比动画。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261020b-cobol.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020b-cobol.jpg",
+      "imageAlt": "OpenAI 官方卡片：Advancing coding in low-resource programming languages，周围标注 COBOL、OCaml、Fortran、Visual Basic",
+      "tags": [
+        "AI编程",
+        "AI成本",
+        "智能体"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 8,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 86.6,
+        "threshold": 65,
+        "run": "2026-10-20-1240-shanghai"
+      }
+    },
     {
       "url": "https://www.science.org/doi/10.1126/science.aei2693",
       "title": "晶体管要三种材料，为什么一块 WSe₂ 晶体就够了？逐层「换原子」把同一块晶体变出沟道、栅介质和电极，开关陡度做到 61.3 mV/dec",

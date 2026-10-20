@@ -1,8 +1,223 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 288,
+  "exportedCount": 292,
   "items": [
+    {
+      "title": "书柜为什么拧半圈就能锁紧？把宜家 BILLY 的真实说明书一页页搬进 3D：82 个五金件按图纸顺序逐个装上，还能切到说明书线稿视角（Three.js）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/RyanSael/status/2112178744937103607",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020b-flatpack.jpg",
+      "previewType": "image",
+      "description": "Ryan Sael 的网页作品「Flat Pack, Step by Step」：左边是宜家 BILLY 书柜原版装配说明书（AA-1823127-9，16 页，原样展示并链回原件），右边 3D 场景按说明书一步步装——14 步、11 块板、82 个五金件（16 个木销、12 个偏心螺钉、12 个偏心锁件、18 根钉子、16 个层板托、2 个墙固定件等），「已装入」计数实时跟着走，每步的视角大致对齐图纸角度；可切「房间 / 线稿」两种视图、爆炸图、点击零件读出名称编号，另有 LACK 边桌（4 根双头螺丝 + 4 条腿）。页面自带原理讲解：偏心锁件——偏心螺钉先拧进侧板，装上横板时螺钉头落进板面的圆形凸轮里，顺时针转半圈，螺钉头沿凸轮内的螺旋坡被拉紧；木销只负责对位，背板钉上后才防止柜体歪斜。作者也写明哪些是精确的（零件、数量、顺序、五金编号来自说明书），哪些是读图估计的（板厚、孔位、层板高度）。X 帖 10-19 发布，约 4100 赞。可作科普镜头：偏心锁件的螺旋坡原理、爆炸图到装配的结构叙事、「说明书为什么要两个人抬」；也可借鉴给创作者的「房间 3D 化」想法。",
+      "tool": "Three.js 0.183.2（页面脚本可见）；作者未说明是否使用 AI 编程",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖与 32 秒演示视频（2026-10-19）+ 在线作品 https://sael.net/flatpack/（页面说明宜家说明书版权归 Inter IKEA Systems B.V.、原样引用、非宜家官方）。未见源码与代码许可，只能外链引用。封面为作品页 og 图（BILLY 第 14 步完成态 + 说明书第 13 页），已自托管。",
+      "attribution": "Ryan Sael（@RyanSael，sael.net）",
+      "sourceAuthor": "RyanSael",
+      "tags": [
+        "Three.js",
+        "结构可视化",
+        "3D交互",
+        "网页交互"
+      ],
+      "publishedAt": "2026-10-19T13:47:09.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T05:05:00.000Z",
+      "updatedAt": "2026-10-20T05:05:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-20T05:05:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "实体": 23,
+          "科普": 19,
+          "溯源": 14,
+          "复现": 8,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.2359,
+        "finalScore": 102.6,
+        "threshold": 65,
+        "run": "2026-10-20-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112178339511476224/vid/avc1/1920x1080/lTfP2zcoer3EGp-i.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "给 AI 一张平面图，为什么它能「长」出一座能走进去的北京四合院？Claude 写 three.js：从图纸上逐层升起院墙屋顶，再走过广亮大门、影壁、垂花门",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/bangbuilds/status/2112395195253944737",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020b-siheyuan.jpg",
+      "previewType": "image",
+      "description": "作者称给 Claude 一张平面图，由 three.js 代码生成一座可以走进去的北京四合院：85 秒视频里先是一张平面图纸，房子从图上一层层长出来，镜头再从胡同俯瞰推进，走过广亮大门、影壁、垂花门、院中柿子树和鱼缸（作者称连正房匾额「厚积薄发」、门簪、门联、八仙桌都有），画面带中文分段字幕。可作科普镜头：二维平面图→三维空间的「拉伸」过程、四合院中轴对称与进院序列；与创作者想做的「房间 3D 建模 + 换装修风格」直接相关，可作同类工作流参考。帖中「装修公司效果图几千元」等为作者议论，未核实。",
+      "tool": "Claude（作者自述）+ three.js",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "仅作者 X 帖与 85 秒演示视频（2026-10-20）；未公开提示词、源码或平面图来源；耗时「十来分钟」为作者自述。封面为视频第 11 秒截帧（胡同中长出的四合院鸟瞰），已自托管。只能外链引用。",
+      "attribution": "@bangbuilds（X）",
+      "sourceAuthor": "bangbuilds",
+      "tags": [
+        "Three.js",
+        "程序化生成",
+        "结构可视化",
+        "3D建模"
+      ],
+      "publishedAt": "2026-10-20T04:07:15.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T05:05:00.000Z",
+      "updatedAt": "2026-10-20T05:05:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-20T05:05:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 64,
+        "baseBreakdown": {
+          "实体": 15,
+          "科普": 16,
+          "溯源": 9,
+          "复现": 5,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.1091,
+        "finalScore": 71.0,
+        "threshold": 65,
+        "run": "2026-10-20-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112393928192434176/vid/avc1/1920x1080/1DA1kKUtLxW69LRl.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "一张素材都没用，扑克牌为什么能「掰弯」着翻开？Claude + three.js 逐帧渲出 6 个镜头的德州扑克短片：细分网格模拟纸牌弯曲，绒布、皮革缝线、筹码面值全是代码",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/oab10don/status/2112375535775150117",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020b-poker.jpg",
+      "previewType": "image",
+      "description": "日本创作者 oab10don 让 Claude 做「问观众怎么打」的竖屏扑克短片（20 秒）：卡牌、筹码、牌桌、音效全部代码生成，不用任何素材。流程按作者自述：①设计牌局（K♦Q♦ 顶对，河牌对手全下，是红心诈唬还是 8-6 顺子）；②three.js 搭 3D 场景；③浏览器逐帧导出；④Python 生成音效；⑤合成英文字幕出 MP4。细节：卡牌用细分网格弯曲，还原翻牌时纸的弯折；为手机屏放大牌面数字；绒布起毛、皮革桌沿缝线、带面值的筹码；头顶单灯让光向桌外暗下去。镜头 6 段：手牌微距→公共牌→滑轨到对手→希区柯克变焦→对手扣牌→定格；加椭圆散景、只在运动瞬间的动态模糊和胶片颗粒。可作科普镜头：薄片弯曲的网格形变、单光源衰减、「电影感」的镜头语法清单。",
+      "tool": "Claude + three.js + 浏览器逐帧导出 + Python 音效 + 字幕合成（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "仅作者 X 帖与 20 秒竖屏视频（2026-10-20），帖内有详细步骤但无完整提示词或源码；牌局分析为作者自述（作者也说「意见会分」）。封面为帖内视频缩略图（K♦Q♦ 手牌微距），已自托管。只能外链引用。",
+      "attribution": "@oab10don（X）",
+      "sourceAuthor": "oab10don",
+      "tags": [
+        "Three.js",
+        "程序化生成",
+        "3D材质"
+      ],
+      "publishedAt": "2026-10-20T02:49:08.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T05:05:00.000Z",
+      "updatedAt": "2026-10-20T05:05:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-20T05:05:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 65,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 9,
+          "溯源": 11,
+          "复现": 10,
+          "风格": 10,
+          "新颖": 7
+        },
+        "multiplier": 1.1091,
+        "finalScore": 72.1,
+        "threshold": 65,
+        "run": "2026-10-20-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112374005714083840/vid/avc1/1080x1920/7bw0eocV0H5X5dRf.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "从卧室一步跨进另一个世界，为什么不用加载？WebGPU 实时在高斯泼溅世界之间「穿门」（Spark + World Labs 世界 + three.js）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/XRarchitect/status/2112207444101541962",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020b-splat-portal.jpg",
+      "previewType": "image",
+      "description": "XRarchitect 的 50 秒实时演示：镜头在一间暖光卧室里，一个发光的球形「传送门」浮在床边，穿过去就无缝进入另一个高斯泼溅场景；作者帖文：「用 WebGPU 在高斯泼溅世界之间实时穿门」，同帖串补充用的是 @sparkjsdev 的新功能 + World Labs 生成的世界 + three.js，回复称在 M4 Mac 上 60fps。帖子约 5600 赞。可作科普镜头：高斯泼溅（用大量半透明椭球「点」表示场景）为什么能实时渲染、两个场景如何在同一帧里拼接；与创作者的房间 3D 化想法相关。",
+      "tool": "Spark（three.js 高斯泼溅渲染库）+ World Labs 生成的世界 + three.js + WebGPU（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖与 50 秒演示视频（2026-10-19）及同帖串说明；未见在线演示、源码或许可。封面为帖内视频缩略图（卧室里的发光传送门），已自托管。只能外链引用。",
+      "attribution": "@XRarchitect（X）",
+      "sourceAuthor": "XRarchitect",
+      "tags": [
+        "Three.js",
+        "WebGPU",
+        "高斯泼溅",
+        "3D交互"
+      ],
+      "publishedAt": "2026-10-19T15:41:12.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T05:05:00.000Z",
+      "updatedAt": "2026-10-20T05:05:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-20T05:05:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 60,
+        "baseBreakdown": {
+          "实体": 13,
+          "科普": 14,
+          "溯源": 10,
+          "复现": 7,
+          "风格": 9,
+          "新颖": 7
+        },
+        "multiplier": 1.2748,
+        "finalScore": 76.5,
+        "threshold": 65,
+        "run": "2026-10-20-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112206510973681664/vid/avc1/1920x1080/by3gV1ixmhU01oZo.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "Claude 写代码做的视效 Demo 合集：每个附源码提示词和原帖，含 3D 场景分区",
       "category": "video",
@@ -13326,8 +13541,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d",
-  "updatedAt": "2026-10-20T03:45:00.000Z",
-  "totalItems": 288,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条",
+  "updatedAt": "2026-10-20T05:05:00.000Z",
+  "totalItems": 292,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
