@@ -1,8 +1,336 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 281,
+  "exportedCount": 287,
   "items": [
+    {
+      "title": "裙摆为什么一转就张开？Three.js + XPBD 布料「旋回布」：把加速度矢量直接画出来，还能在惯性系 / 旋转系之间切视角",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/meby_central/status/2112260493209747504",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020a-spin-cloth.jpg",
+      "previewType": "image",
+      "description": "日本创作者 MEBY 用 Three.js 做的布料离心模拟「旋回布」：中心转轴带着一圈布旋转，布在离心力与重力共同作用下张开、下垂、扭曲；XPBD（扩展位置动力学）求解布料约束，画面上显示加速度矢量，并可在惯性系与旋转参考系之间切换视角，面板可调布型与转速等参数（31 秒演示）。作者称代码由 Grok Build 3.7 生成。可作科普镜头：同一现象换参考系，「离心力」出现 / 消失；转速与张角的关系；洗衣机甩干、旋转裙摆为什么会张开。",
+      "tool": "Three.js + XPBD 布料求解（作者称代码由 Grok Build 3.7 生成）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "仅作者 X 帖与 31 秒演示视频（2026-10-19）；未见源码、在线演示或许可说明。封面为演示视频第 5 秒截帧（布裙张开 + 加速度箭头），已自托管。只能外链引用。",
+      "attribution": "@meby_central（MEBY，X）",
+      "sourceAuthor": "meby_central",
+      "tags": [
+        "Three.js",
+        "布料模拟",
+        "cloth",
+        "物理动效",
+        "XPBD"
+      ],
+      "publishedAt": "2026-10-19T19:12:00.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T00:58:00.000Z",
+      "updatedAt": "2026-10-20T00:58:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-20T00:58:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 81,
+        "baseBreakdown": {
+          "实体": 24,
+          "科普": 20,
+          "溯源": 11,
+          "复现": 7,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.2382,
+        "finalScore": 100.3,
+        "threshold": 65,
+        "run": "2026-10-20-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112260165424820224/vid/avc1/1280x720/v-PXJax8DCwblz63.mp4?tag=14",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "瓶子里的水晃得像真的，为什么一行流体模拟都没跑？《Barely Breathing》用速度驱动着色器「假晃动」+ 局部/世界双坐标水线",
+      "category": "3d",
+      "styleFamily": "code",
+      "source": "https://jettelly.com/blog/how-barely-breathing-makes-its-water-slosh-and-flow",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020a-slosh.jpg",
+      "previewType": "image",
+      "description": "Jettelly 采访独立游戏《Barely Breathing》开发者 Jaspreet Singh Matharoo：容器里的水不是流体模拟，而是着色器效果——一个高度参数决定水有多满，脚本读取容器速度、驱动着色器里的两个旋转让液面晃动（晃动脚本致谢 MinionsArt）。只用容器局部坐标，水面会跟着瓶子僵硬倾斜；只用世界坐标，液面保持水平，但瓶子上移时水线会掉在后面——他把两者混合：水线跟着容器走、液面仍能晃；再在第一道高度切线略下方加第二道切线，做出一圈随水线移动的泡沫带。水体外壳用 Blender Solidify 加薄层并翻转法线、单独材质；自定义深度渐隐按身后物体距离改透明度与颜色；顶点色分别标出「去掉泡沫的顶面」和「该起泡的边缘」，再用动画噪声打破轮廓；同一着色器换参数就能做茶、咖啡、阴沟水。可作科普镜头：惯性让液面滞后的直觉、局部 vs 世界坐标系、「看起来像物理」与「真算物理」的成本差。",
+      "tool": "Unity 着色器 + C# 速度脚本（晃动脚本源自 MinionsArt）+ Blender Solidify",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "Jettelly 博客 2026-10-18 文章（开发者自述制作细节）+ Jettelly X 帖演示视频（2026-10-19）。未公开完整工程与许可。封面为 X 帖演示视频缩略图（水瓶液面），已自托管。",
+      "attribution": "Jaspreet Singh Matharoo /《Barely Breathing》；文章 Vicente C.（Jettelly）",
+      "sourceAuthor": "Jettelly",
+      "tags": [
+        "shader",
+        "流体模拟",
+        "物理动效",
+        "游戏技术美术"
+      ],
+      "publishedAt": "2026-10-18",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T00:58:00.000Z",
+      "updatedAt": "2026-10-20T00:58:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-20T00:58:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 18,
+          "溯源": 16,
+          "复现": 12,
+          "风格": 6,
+          "新颖": 9
+        },
+        "multiplier": 1.1,
+        "finalScore": 91.3,
+        "threshold": 65,
+        "run": "2026-10-20-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2111923780108922880/vid/avc1/1080x1080/sSwmlYomW_iItJn1.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "气泡为什么会自己跑到浪尖聚成泡沫？浏览器里实时算浮力与阻力：WebGPU 计算着色器 + Three.js 曝气泡沫",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/Simone_dev_com/status/2112181989671575555",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020a-foam.jpg",
+      "previewType": "image",
+      "description": "Simone 的 WebGPU 实验：水下气泡逐个计算浮力与流体阻力上浮，到水面后聚成泡沫，再沿波浪散开；竖屏演示约 15 秒，画面字幕为「Added an accurate bubble and foam simulation」。可作科普镜头：浮力与阻力平衡出的终端速度、泡沫为什么在波峰和汇聚区堆积。与库内同作者 10-10「漩涡」为同一系列。",
+      "tool": "WebGPU 计算着色器 + Three.js（作者自述）；生成式模型未注明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "仅作者 X 帖与演示视频（2026-10-19）；未见源码、演示或许可说明；「accurate」为作者自述，未核验求解方法。封面为帖内视频缩略图，已自托管。只能外链引用。",
+      "attribution": "@Simone_dev_com（X）",
+      "sourceAuthor": "@Simone_dev_com",
+      "tags": [
+        "Three.js",
+        "WebGPU",
+        "流体模拟",
+        "物理动效"
+      ],
+      "publishedAt": "2026-10-19T14:00:03.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T00:58:00.000Z",
+      "updatedAt": "2026-10-20T00:58:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-20T00:58:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 73,
+        "baseBreakdown": {
+          "实体": 24,
+          "科普": 16,
+          "溯源": 10,
+          "复现": 6,
+          "风格": 10,
+          "新颖": 7
+        },
+        "multiplier": 1.2748,
+        "finalScore": 93.1,
+        "threshold": 65,
+        "run": "2026-10-20-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2111944408979439616/vid/avc1/720x1280/QwZ9wqQ6l2zztBoG.mp4?tag=14",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "纸纹着色器为什么只能当背景？鼠标划过，整页网页像纸一样起皱再慢慢抚平——Codrops「PaperDrops」把 Paper 着色器搬到 DOM 元素上（WebGPU / domgl）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://tympanus.net/codrops/2026/10/19/paper-shaders-off-background/",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020a-paperdrops.jpg",
+      "previewType": "image",
+      "description": "Jesper Landberg 在 Codrops 的过程文：先用设计工具 Paper 画一个虚构工作室站 PaperDrops，再把 Paper 着色器库里的 GLSL 着色器手工移植成 WGSL，跑在他自己的 WebGPU 库 domgl 上——domgl 把普通 DOM 元素镜像成同一张 GPU 画布上的平面，文字和图片仍留在页面里负责布局、无障碍与文本选中。纸纹不再是全屏背景，而是整帧渲染后的后处理：只在光标附近起皱、离开后慢慢抚平，文字和图片一起弯；项目卡片用跟随光标、带阻尼的透镜畸变；分区用 warp 着色器画撕纸边。打光时发现折痕部分输出的其实是位置而不是折叠——每格一道慢坡，静图看不出，一打光就露出大块明暗与硬对角线，滤掉慢坡只留细节才解决。还用 Paper 的 MCP 让 Claude Code 直接读写设计稿（含 55 个 token），先写移动端代码再回写成 Paper 画板。可作科普镜头：纸褶的法线与打光、为什么「静态看着对、一打光就穿帮」。",
+      "tool": "Paper（设计工具 + 着色器库 + MCP）、domgl（WebGPU / WGSL）、Claude Code、Tailwind v4",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "Codrops 原文（2026-10-19）+ 演示站 https://tympanus.net/Demos/PaperDrops/ + 仓库 twotwentytwo-studio/codrops-paper（GitHub API 未检出 LICENSE，许可未明）。封面为文章主演示视频第 1 秒截帧（纸面起皱的 PaperDrops 首屏），已自托管；未运行 demo。",
+      "attribution": "Jesper Landberg / Codrops，2026-10-19",
+      "sourceAuthor": "Jesper Landberg",
+      "tags": [
+        "纸艺场景",
+        "WebGPU",
+        "shader",
+        "网页交互"
+      ],
+      "publishedAt": "2026-10-19",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T00:58:00.000Z",
+      "updatedAt": "2026-10-20T00:58:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-20T00:58:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 77,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 11,
+          "溯源": 16,
+          "复现": 14,
+          "风格": 10,
+          "新颖": 6
+        },
+        "multiplier": 1.2586,
+        "finalScore": 96.9,
+        "threshold": 65,
+        "run": "2026-10-20-0840-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://tympanus.net/codrops/wp-content/uploads/2026/10/video-main-optimized.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/twotwentytwo-studio/codrops-paper",
+      "licenseName": "仓库未声明 LICENSE（许可未明，仅外链）"
+    },
+    {
+      "title": "镜子里的人为什么能把镜面「顶」出凸起？真实动画网格站在玻璃后，正交相机渲成高度图，镜膜按 mip 层级像布一样变软（Three.js WebGPU + TSL）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/artcreativecode/status/2112180303028519046",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020a-mirror-film.jpg",
+      "previewType": "image",
+      "description": "artcreativecode 的制作拆解：一个带动画的真实人物网格站在镜面玻璃之后（附侧视、背视），正交相机把它渲染成高度图（画面右侧绿色），镜面薄膜按高度图形变，并借 mip 层级逐级变软、像布一样起伏；人物不动时不重绘高度图以省算力。可作科普镜头：高度图 / 位移贴图原理、正交 vs 透视相机、「只在变化时重算」的优化思路。",
+      "tool": "Three.js WebGPU + TSL（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "仅作者 X 帖与 36 秒拆解视频（2026-10-19）；未见源码、演示或许可说明。封面为帖内视频缩略图（上为镜中效果，下为侧视 / 背视 / 高度图三联拆解），已自托管。",
+      "attribution": "@artcreativecode（X）",
+      "sourceAuthor": "artcreativecode",
+      "tags": [
+        "Three.js",
+        "WebGPU",
+        "TSL",
+        "shader",
+        "结构可视化"
+      ],
+      "publishedAt": "2026-10-19T13:53:21.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T00:58:00.000Z",
+      "updatedAt": "2026-10-20T00:58:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-20T00:58:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 71,
+        "baseBreakdown": {
+          "实体": 19,
+          "科普": 15,
+          "溯源": 10,
+          "复现": 8,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.2748,
+        "finalScore": 90.5,
+        "threshold": 65,
+        "run": "2026-10-20-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112179194880835584/vid/avc1/1080x1080/qdN72SLceHfeG3Y_.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "工程图为什么能自己「长」出整车？蓝晒纸墨线着色器 + 分阶段 GPU 组装 17 类车辆——Claude Code × Three.js「活蓝图」（EverOS 推广帖）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/jshguo/status/2112337689387434404",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020a-blueprint.jpg",
+      "previewType": "image",
+      "description": "Joshua Guo（Codrops 作者）发帖：Claude Code 在 Three.js 里做出「活蓝图」——蓝晒纸底上的墨线着色器、按阶段在 GPU 上组装、17 种车辆；帖文主旨是推广 EverOS Cloud 把 Claude Code 学到的东西沉淀成其他智能体也能调用的「自进化技能」。风格与库内同作者 10-15「铅笔线 + 纸纹 + 剖面」建筑相近。可作科普镜头：结构图逐级装配。",
+      "tool": "Claude Code + Three.js 着色器（作者自述）；EverOS Cloud（技能沉淀，推广方）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖与 24 秒演示视频（2026-10-20）；带 EverOS Cloud 推广性质；未见源码或许可。封面为帖内视频缩略图，已自托管。",
+      "attribution": "@jshguo（Joshua Guo，X；Codrops 作者）",
+      "sourceAuthor": "jshguo",
+      "tags": [
+        "Three.js",
+        "纸艺场景",
+        "着色器",
+        "结构可视化"
+      ],
+      "publishedAt": "2026-10-20T00:18:45.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-20T00:58:00.000Z",
+      "updatedAt": "2026-10-20T00:58:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-20T00:58:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 61,
+        "baseBreakdown": {
+          "实体": 17,
+          "科普": 14,
+          "溯源": 10,
+          "复现": 5,
+          "风格": 10,
+          "新颖": 5
+        },
+        "multiplier": 1.2895,
+        "finalScore": 78.7,
+        "threshold": 65,
+        "run": "2026-10-20-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112337667971284992/vid/avc1/1740x1080/odW7Kxb8vwRqtaCt.mp4?tag=16",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "把 56 个作品收成可翻阅的纸堆：38 张实例化纸页一次 draw call，速度驱动正弦「翻页风」——Trapnest Profile（WebGL）",
       "category": "frontend",
@@ -12943,8 +13271,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条",
-  "updatedAt": "2026-10-19T13:00:00.000Z",
-  "totalItems": 281,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条",
+  "updatedAt": "2026-10-20T00:58:00.000Z",
+  "totalItems": 287,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
