@@ -1,7 +1,64 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-20T05:05:00.000Z",
+  "updatedAt": "2026-10-20T05:55:00.000Z",
   "topics": [
+    {
+      "url": "https://x.com/alin_zone/status/2112391214326743091",
+      "title": "国内用 Claude 客户端怕封号？claude-switcher 启动前查 14 项环境、断代理就强关",
+      "category": "AI",
+      "source": "X @alin_zone（阿蔺A-Lin）",
+      "publishedAt": "2026-10-20T03:51:26Z",
+      "eventAt": null,
+      "collectedAt": "2026-10-20T05:55:00.000Z",
+      "updatedAt": "2026-10-20T05:55:00.000Z",
+      "description": "阿蔺（@alin_zone）2026-10-20 介绍开源项目 claude-switcher：在底层检查容易导致封号的情况，有问题就不让 Claude 打开或直接关掉。三件事：①启动前体检 14 项——代理是否开启、出口 IP 国家、时区和语言是否仍为中国、IPv6 和 DNS 是否绕过代理，任一不过就不启动；②后台每 10 秒检查，代理断了立即关闭 Claude，避免真实 IP 泄露；③多账号切换，每个账号单独保存登录状态和设备信息。作者称 Mac 版较稳定，Windows/Linux 在测试。帖子引用 @MinLiBuilds 长文《达里奥，你过来呀！Claude 终极防封一招解决》。",
+      "caveat": "内容涉及规避 Anthropic 地区限制与多账号，可能违反服务条款并有封号风险，收录仅作资料存档。帖文未附仓库链接；GitHub 上有同名仓库 YOURSJEYO/claude-switcher（271★，描述为 11 项环境指纹审计、Kill-Switch、多账号快照隔离），但项数（11 vs 14）对不上，未确认是同一项目，故不记录为来源。封面为帖内第 1 张图。",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261020-alin-claude-switcher.jpg",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261020-alin-claude-switcher.jpg",
+      "imageAlt": "帖内配图：claude-switcher 界面截图",
+      "tags": [
+        "Claude",
+        "防封",
+        "代理",
+        "多账号"
+      ],
+      "tagSource": "provided",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": "2026-10-20T05:55:00.000Z"
+      },
+      "relatedSource": "https://x.com/MinLiBuilds/status/2112122651473006787"
+    },
+    {
+      "url": "https://x.com/antiaivo/status/2112187842919268835",
+      "title": "学大模型从哪开始？一张「地铁图」：一条主干线从 Transformer 到推理模型，五条支线按兴趣换乘",
+      "category": "AI",
+      "source": "X @antiAIvo（纳米AI）长文《大模型学习地铁图：从 Transformer 到今天的主流大模型》",
+      "publishedAt": "2026-10-19T14:23:18Z",
+      "eventAt": null,
+      "collectedAt": "2026-10-20T05:55:00.000Z",
+      "updatedAt": "2026-10-20T05:55:00.000Z",
+      "description": "纳米AI（@antiAIvo）2026-10-19 发布 X 长文：很多人学大模型卡在缺一张地图，于是把知识体系画成地铁图。主干线（所有人都要坐完）：第 0 站前置基础（Python、PyTorch、线性代数、一点概率，边学边补）→第 1 站 Transformer（2017）→第 2 站 GPT-2（亲手写一个，作为后面所有「换零件」的参照）→第 3 站预训练（交叉熵、反向传播、梯度下降等）→第 4 站 ChatGPT 时刻（InstructGPT：从会续写到听指令）→第 5 站 LLaMA（开源分水岭）→第 6 站 MoE→第 7 站推理模型（o1、DeepSeek-R1）→终点：能自己读懂新论文。五条支线：推理线（KV Cache、FlashAttention、PagedAttention、量化、投机解码、vLLM/SGLang）、训练线（Scaling Law、数据与分词、混合精度、分布式并行、学习率调度）、对齐线（SFT、LoRA/QLoRA、RLHF、DPO、GRPO）、架构线（RMSNorm、SwiGLU、RoPE、GQA 等）等。",
+      "caveat": "学习路线为作者个人整理。封面为长文封面图（地铁图），已自托管。",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261020-antiaivo-llm-subway-map.jpg",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261020-antiaivo-llm-subway-map.jpg",
+      "imageAlt": "X 长文《大模型学习地铁图》封面图",
+      "tags": [
+        "大模型",
+        "学习路线",
+        "Transformer",
+        "入门"
+      ],
+      "tagSource": "provided",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": "2026-10-20T05:55:00.000Z"
+      }
+    },
     {
       "url": "https://doi.org/10.1116/6.0005592",
       "title": "原子层刻蚀被学界追捧多年，为什么三星产线 2017 年到现在才用上 3 步？三星刻蚀工程师的答案：把「一整个 ALE 循环」塞进「一个等离子体脉冲」",
