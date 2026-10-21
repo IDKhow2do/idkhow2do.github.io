@@ -1,7 +1,39 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-21T04:55:00.000Z",
+  "updatedAt": "2026-10-21T08:10:00.000Z",
   "topics": [
+    {
+      "url": "https://x.com/wlzh/status/2112200379219706061",
+      "title": "一个工具能爬小红书、抖音、B 站等 7 个平台？7 万 star 的 MediaCrawler 靠复用登录态绕开签名逆向",
+      "category": "科技产品",
+      "source": "X @wlzh（M.）",
+      "publishedAt": "2026-10-19T15:13:07Z",
+      "eventAt": null,
+      "collectedAt": "2026-10-21T08:10:00.000Z",
+      "updatedAt": "2026-10-21T08:10:00.000Z",
+      "description": "M.（@wlzh）2026-10-19 介绍开源爬虫 MediaCrawler（https://github.com/NanmiCoder/MediaCrawler）：支持小红书、抖音、快手、B 站、微博、贴吧、知乎，可按关键词搜帖子、指定帖子 ID、抓二级评论、创作者主页、生成评论词云、下载视频图片，并带 WebUI。技术路线：基于 Playwright，复用已登录浏览器上下文获取签名参数，不必逆向各平台加密算法。帖称 67k star、1.2 万 fork，2023 年项目持续维护。作者提醒 README 有免责声明：仅供学习，禁止商用和非法用途；他认为价值在于给做舆情和内容研究的人省去重复造轮子。",
+      "caveat": "star/fork 为帖子所述；仓库经 GitHub API 核实存在。爬取平台数据可能违反各平台条款与相关法律，收录仅作资料。原帖无媒体，封面为 GitHub 仓库 OpenGraph 卡片，已自托管。",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261021-mediacrawler.png",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261021-mediacrawler.png",
+      "imageAlt": "GitHub 仓库 NanmiCoder/MediaCrawler 卡片图",
+      "tags": [
+        "爬虫",
+        "开源",
+        "Playwright",
+        "舆情",
+        "内容研究"
+      ],
+      "tagSource": "provided",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": "2026-10-21T08:10:00.000Z"
+      },
+      "relatedLinks": [
+        "https://github.com/NanmiCoder/MediaCrawler"
+      ]
+    },
     {
       "url": "https://platform.openai.com/docs/guides/prompt-caching",
       "title": "让 AI 把你的提示词「记」12 小时：写入要付 2.5 倍、读一次只收 1 成——为什么多花钱存缓存反而更省？OpenAI 开放 12 小时提示词缓存，Codex 团队员工称登录用户的 Codex 缓存「永久保留」",
