@@ -1,7 +1,81 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-20T13:10:00.000Z",
+  "updatedAt": "2026-10-21T00:56:00.000Z",
   "topics": [
+    {
+      "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
+      "title": "AI 64 小时设计了 31.8 万个蛋白，实验室验下来真能「抓住」蝎毒的只有 17 个——为什么这已经算正常命中率？Anthropic 公开 Claude 设计蝎毒素结合蛋白的全部 211 个候选和实验数据",
+      "category": "AI",
+      "source": "Anthropic 官方 Science Blog「How Claude designed protein binders against scorpion neurotoxins」（2026-10-20）+ @AnthropicAI 官方 X 线程（2026-10-20 16:18 UTC）",
+      "publishedAt": "2026-10-20",
+      "eventAt": "2026-10-20",
+      "collectedAt": "2026-10-21T00:56:00.000Z",
+      "updatedAt": "2026-10-21T00:56:00.000Z",
+      "description": "Anthropic 10 月 20 日在 Science Blog 公布：让内部研究模型（在 Claude Science 环境里运行）为 5 种蝎子神经毒素设计「微型结合蛋白」（minibinder，能紧紧粘住目标的小蛋白），对准毒素去卡钠离子通道的那一面。提示词由 Anthropic 与 Citrini Research 一起改写，之后研究人员只追加了 4 次指令。Claude 自己从 PDB 和 AlphaFold 数据库挑毒素结构、为每个毒素选 5 个「热点」氨基酸、设定筛选阈值；先自主工作 24 小时，总共 64 小时，调用 12 种设计工具生成 318,484 个设计，把 553,052 组「设计–毒素」配对一起做结构预测筛选，约耗 1 万 GPU 小时，最后挑出 180 个，团队在 Claude 协助下又补了 31 个，共 211 个。Adaptyv Bio（无细胞表达）和 Twist Bioscience（人肾细胞表达、接抗体 Fc 段）两家实验外包公司分别用表面等离子共振（SPR）测结合：判定标准是两家都测到、每次重复都结合、解离常数 KD ≤ 1 µM，并且不粘无关的人蛋白 CLEC12A。结果 17 个合格，全部只对单一毒素：墨西哥蝎 Cn2 7 个、北非蝎 AaH II 4 个和 AaH I 4 个、中东蝎 LqhIII 2 个，巴西蝎 Ts1 0 个；针对多种毒素的「通用」设计没有一个同时结合两种以上。单毒素设计 60 个里有 11 个合格（18%），博客称这和常规蛋白设计项目的命中率一致。最强的 Cn2-B1、Cn2-B2 亲和力在个位数纳摩尔，竞争实验提示它们和已知能在小鼠身上中和 Cn2 的抗体 LR 结合在同一位置附近。背景：博客称全球每年被蝎子蜇伤 120 万人以上、死亡超过 3,250 人，多为医疗资源匮乏地区的儿童；传统抗毒血清要用上千只蝎子的毒液免疫马再提纯抗体。可拍角度：①0 秒画面：官方五种毒素结构图，下面一排「7 / 0 / 4 / 4 / 2」；②反直觉漏斗：31.8 万 → 180 → 17，为什么 18% 已经算「正常」——计算机里看着能粘，到试管里大多粘不上；③「能结合 ≠ 能中和 ≠ 能当药」，三道关 AI 只过了第一道；④想做一个通吃 5 种毒素的「万能钥匙」全部失败，AI 的边界在哪。",
+      "caveat": "全部数字来自 Anthropic 博客与技术报告的自述，未经同行评审。没有做细胞层面的中和实验，也没做动物实验，Anthropic 明确说「不声称做出了抗毒血清」，视频里不能说「AI 做出了解药」，也不能给任何蜇伤处理或用药建议。Citrini Research 是金融投资研究公司（博客自述），不是生物实验室。约 1 万 GPU 小时远超普通研究者的条件；博客称简化版提示词用单 GPU 跑 24 小时可得到相近的计算机内评分，同样是自述。封面为 @AnthropicAI 官方 X 帖配图（五种毒素与结合蛋白结构，及各自合格数）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261021a-scorpion-binders.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021a-scorpion-binders.jpg",
+      "imageAlt": "Anthropic 官方配图：五种蝎子神经毒素（Cn2、Ts1、AaH II、AaH I、LqhIII）与橙色结合蛋白的结构，下方标注合格数 7、0、4、4、2",
+      "tags": [
+        "智能体",
+        "AI for Science",
+        "蛋白设计"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 88.8,
+        "threshold": 65,
+        "run": "2026-10-21-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://huggingface.co/blog/badaoui/sort-your-prompts",
+      "title": "同一个模型、同一批问题，只是把提问按类型排好队，AI 出字就快了一成多——为什么？Hugging Face 博客实测：MoE 模型生成时，大半时间花在从 HBM 里搬「专家」权重",
+      "category": "AI",
+      "source": "Hugging Face 社区博客「Sort your prompts: a free speed-up for MoE batch inference」（作者 Abdennacer Badaoui）+ 复现仓库 github.com/Abdennacer-Badaoui/sort-your-prompts（2026-10-12 创建，未声明许可证）",
+      "publishedAt": "2026-10",
+      "eventAt": null,
+      "collectedAt": "2026-10-21T00:56:00.000Z",
+      "updatedAt": "2026-10-21T00:56:00.000Z",
+      "description": "文章的出发点：大模型逐字生成（解码）时，GPU 大部分时间在读权重而不是在算。稠密模型每一步把全部权重读一遍；MoE（混合专家）模型不一样——同一批里只要有一个 token 选了某个专家，这个专家的权重就要从 HBM 显存搬一次，没人选的不用搬。作者用 Qwen3-30B-A3B（48 层 × 128 个专家，每个 token 选 8 个）记录了 6 类共 768 个提示词（代码、数学、创意写作、法语、阿拉伯语、中文）的真实路由：32 个随机请求凑一批，每层要碰约 94/128 个专家；而每类内容的「最爱 32 个专家」吃掉了该类 68–80% 的路由（均匀分布应是 25%）。MoE 层耗时和本批碰到的专家数呈直线关系，每多一个专家约 2.9 µs（≈ 9.4 MB 权重 / 约 3.3 TB/s）。同类凑一批，每步少读 19–25% 的专家（Qwen）；专家少而粗的 gpt-oss-20b 只少 8–11%。在未改动的 vLLM 0.27、AMD MI300X 上端到端实测（作者自测）：两卡专家并行，batch 64 吞吐 +12.9%（3,440 → 3,885 tok/s），batch 128 +8.7%；只在 128 / 256 个请求的窗口内排序，batch 32 下分别 +11.7% / +14.8%，全量 768 个排序 +17.3%；开启自然结束长度时整批任务提前 16.6% 跑完（1,810 → 2,104 tok/s）。没有类别标签时，用 Qwen3-Embedding-0.6B 做向量聚类也能拿到接近的收益。作者也写清楚不适用的场景：稠密模型、长提示词预填充为主的任务、专家很少的 MoE、超大 batch、对延迟敏感的在线服务。可拍角度：①0 秒画面：题图左右两块热力图——乱序那批亮成一片彩色（4,086 次专家读取），排好序那批只亮一种绿（2,928 次）；②反直觉：AI 慢不是「算不过来」，而是「搬不过来」；③类比：图书馆把借同一类书的人排在一起，管理员就少跑几趟书架；④芯片人视角：这就是为什么 HBM 带宽是 AI 芯片的命门。",
+      "caveat": "全部数字为作者在特定硬件（AMD MI300X）、特定软件版本（vLLM 0.27）和特定数据集上的自测，未经同行评审；作者自己也说 Qwen 的实测收益只有理论预测（+20–27%）的一半左右，在线低延迟服务基本不适用。思路并非首创，文中列了 ELDR 等已有同类工作。发布日期存疑：博客列表显示约 1 天前，页面时间标签却写 2026-04-20，复现仓库 2026-10-12 创建，这里只标「2026-10」。题图「+17% throughput」对应正文里全量排序（batch 32）的 +17.3%。仓库未声明许可证，封面为博客官方题图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261021a-sort-prompts.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021a-sort-prompts.jpg",
+      "imageAlt": "博客题图：左侧乱序批次热力图色彩斑杂（4,086 experts read），右侧排序批次只亮绿色（2,928 experts read），中间写 Sort your prompts. +17% throughput",
+      "tags": [
+        "AI成本",
+        "AI推理",
+        "HBM"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 81,
+        "baseBreakdown": {
+          "主线": 21,
+          "钩子": 18,
+          "画面": 12,
+          "来源": 12,
+          "时效": 7,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 85.6,
+        "threshold": 65,
+        "run": "2026-10-21-0840-shanghai"
+      }
+    },
     {
       "url": "https://github.com/deepseek-ai/DeepInfer",
       "title": "AI 把读过的上下文算成「草稿」之后，为什么还要在硬盘上留 3 到 7 天？DeepSeek 开源推理框架 DeepInfer 并公开部署问答：约 100 PiB SSD 专门存 KV 缓存，折合每块 GPU 约 14.4 TB",
