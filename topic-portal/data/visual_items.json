@@ -1,8 +1,174 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 310,
+  "exportedCount": 313,
   "items": [
+    {
+      "title": "网站本身就是一本立体书：翻开封面，钟楼广场、丛林瀑布、夜晚游乐场一页页从纸面上「站起来」，还能拖动把手让纸电车滑过广场——@techartist_ 用 three.js 做的立体书出版社概念站（Three.js 官方转发）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/techartist_/status/2112641887836496089",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021b-popup-book.jpg",
+      "previewType": "image",
+      "description": "@techartist_（简介：用代码做交互 3D 世界、体验和游戏）10-20 20:27 UTC 发布 16 秒演示，配文：为一家立体书出版社做的概念网站，网站本身就是一本书。@threejs 官方账号 10-21 01:41 UTC 转发了视频并附上线上地址 iamtechartist.github.io/fold/。画面（目视）：木桌上放着一本蓝色精装书「Paper Worlds」，标语「Paper worlds that stand up.」；点开后书页摊平，纸做的钟楼、拱廊、彩旗、热气球随着翻页立起来，第一页「Clocktower Square」底部提示拖动黄色把手让电车滑动，界面上有「Add to bag」和 £28 标价（概念站的演示界面）；后面依次翻到「Jungle Falls」丛林瀑布和「Night Carnival」摩天轮与马戏帐篷，翻页时整片纸板沿折线竖起、合拢。科普可借：立体书为什么一翻开就能「站」起来——纸片粘在书页折线两侧，翻开时两页的夹角推着纸片绕自己的折线转起来（V 形折、平行折）；用这种「从平面折出立体」的镜头讲芯片一层层叠起来的结构，属于延伸，原作没讲。",
+      "tool": "three.js（本轮下载站点脚本，确认含 three.js 的 WebGLRenderer）；作者没说是否用了 AI 工具",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者原帖（2026-10-20 20:27 UTC，16 秒视频）+ @threejs 官方转发（2026-10-21 01:41 UTC，附线上 Demo 链接 https://iamtechartist.github.io/fold/ ）。页面署名「© 2026 Techartist」，这是概念站，不是真实出版社的商店。没有公开源码、提示词或许可证，只能外链引用。同作者已有 3 条入库（光纤、水磨坊、泡澡球）。封面为视频第 5 秒截帧（钟楼广场立体页），已自托管。",
+      "attribution": "@techartist_（X）",
+      "sourceAuthor": "techartist_",
+      "tags": [
+        "Three.js",
+        "纸艺场景",
+        "立体书",
+        "3D交互"
+      ],
+      "publishedAt": "2026-10-20T20:27:31.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-21T04:55:00.000Z",
+      "updatedAt": "2026-10-21T04:55:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-21T04:55:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 75,
+        "baseBreakdown": {
+          "实体": 23,
+          "科普": 15,
+          "溯源": 13,
+          "复现": 6,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.2667,
+        "finalScore": 95.0,
+        "threshold": 65,
+        "run": "2026-10-21-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112641183579312128/vid/avc1/1280x786/9h7GGipTuzDX7Adt.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "一个正四面体怎么变成世界杯用球？取一个三角面、把直边切成曲线、长出三个「浪头」，4 块一模一样的拼片包成一颗球：Opus 5.5 写代码做的 90 秒「三重浪」几何科普动画（作者自述 1 小时做完一单学校委托）",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/tesclays/status/2112735186358255648",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021b-trionda.jpg",
+      "previewType": "image",
+      "description": "@tesclays（morgen）10-21 02:38 UTC 发布 90 秒成片和 5 条线程。作者自述：接了一个学校的单，报价 3000（未写币种），1 小时做完，没开剪辑软件、没碰关键帧，3D 动画、配乐和 80 个音效都是 Opus 5.5 写代码生成的。线程说明（作者自述）：客户给了一张《科学美国人》的示意图（正四面体 → 取一个三角面 → 边切成曲线 → 三叶拼片 → 4 块拼成「三重浪」）；模型直接用 WebGL 写了可交互样片，每一帧由数学算出；把原图拼片轮廓描下来转成「距离场」驱动动画，切出的形状和原图几乎重合；从官方产品照推出 4 块拼片图案相同、转 180° 互相重合，再用颜色匹配把一个开源 3D 球模型和官方照片对齐；80 个音效和背景和弦用 Python 现场合成、逐帧对齐时间轴。画面（目视）：8 个章节——01 正四面体（4 个面、6 条棱、4 个顶点）、02 取出一个面、03 直边变曲线、04 继续向内切（凸出的「浪头」和容纳邻片的「凹槽」，像一架风车）、05 三个浪头三个东道主（TRIONDA = TRI 三 + ONDA 西语「浪」，红/绿/蓝对应加拿大枫叶、墨西哥雄鹰、美国星星）、06 弯曲拼合、07 三重浪诞生、08 拼片从 32 块到 4 块（片中柱状图：1970 Telstar 32、2006 Teamgeist 14、2010 Jabulani 8、2014 Brazuca 6、2018 Telstar 18 6、2022 Al Rihla 20、2026 Trionda 4），结尾「1 个四面体 → 4 块拼片 → 1 颗世界杯用球」。科普可借：这就是「等等，喂神马」现成的代码科普片模板——同样的「一个基本几何体 → 切 → 弯 → 拼」流程，可以讲晶圆为什么是圆的、芯片为什么切成方块（属于延伸）。",
+      "tool": "Claude Opus 5.5 写代码（WebGL 交互样片 + Python 合成音效）；用到一个开源 3D 球模型（作者未写来源）（均为作者自述）",
+      "prompt": "照这个流程做成科普动画。（作者自述丢给 Opus 5.5 的一句话，配合《科学美国人》示意图）",
+      "promptProvenance": "original_public",
+      "provenanceNote": "作者 X 线程（2026-10-21 02:38–02:41 UTC，主帖 + 1/–5/ 共 6 条）与 90 秒视频，抓取时热度很低（0 赞）。报价、用时、音效数量等都是作者自述，无法核实。片中出现 FIFA 世界杯和 adidas 标识、Trionda 名称，参考图来自《科学美国人》，属于第三方版权与商标，只能参考做法、不能搬运画面。没有公开源码或许可证，只能外链引用。片中历届用球拼片数是片中图表，本条没有另行核对。封面为视频第 40 秒截帧（04「继续向内切」三叶拼片示意，不含标识），已自托管。",
+      "attribution": "@tesclays（X）",
+      "sourceAuthor": "tesclays",
+      "tags": [
+        "几何拆解",
+        "科普动画",
+        "WebGL",
+        "代码视频"
+      ],
+      "publishedAt": "2026-10-21T02:38:15.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-21T04:55:00.000Z",
+      "updatedAt": "2026-10-21T04:55:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-21T04:55:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 73,
+        "baseBreakdown": {
+          "实体": 15,
+          "科普": 20,
+          "溯源": 10,
+          "复现": 8,
+          "风格": 10,
+          "新颖": 10
+        },
+        "multiplier": 1.025,
+        "finalScore": 74.8,
+        "threshold": 65,
+        "run": "2026-10-21-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112734965310083072/vid/avc1/1920x1080/ytj24o5umKzvV2oA.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "拍一段 360° 视频，就能把真实的公寓变成可以开门、开柜、开冰箱的 3D 场景——连拍摄时从没出现过的「开关组合」也能渲染：SwitchSplat 让每个高斯「选队」（SIGGRAPH Asia 2026，代码 Apache-2.0，浏览器 WebGPU 可玩）",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://switchsplat.github.io",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021b-switchsplat.jpg",
+      "previewType": "image",
+      "description": "西蒙弗雷泽大学（SFU）等团队的论文 SwitchSplat（arXiv 2610.24812，10-17 首发、10-20 更新 v2，标注 SIGGRAPH Asia 2026），一作 Yizheng Xie 10-21 00:24–00:46 UTC 在 X 发线程和演示。要解决的问题：3D 高斯泼溅（用几百万个半透明小「颗粒」重建场景）默认世界是静止的，可随手拍的时候人总会开门、开抽屉、开灯，场景状态一变就重建不好；按时间回放的 4DGS 也只能重放拍到过的过程。做法（项目页与论文）：把场景拆成一个不变的「底座」加若干「插槽」，每个插槽只管一个可动物体的开/关两种状态；训练时每个高斯自己决定加入哪一队——永远都在、门关着、还是门开着——分配过程可微分，不用人工标注；由视觉语言模型粗略猜每个物体什么时候动了，训练再把时间窗口收紧。结果：拍摄时 4 个部件只拍到 5 种组合，模型能渲染全部 16 种；10 个测试场景平均 PSNR 32.65 dB，比次优方法高约 2.1 dB（论文表 1，作者自报）。数据集是 12 个用双鱼眼相机随手拍的场景（阳台、汽车、厨房、公寓等），代码 Apache-2.0 开源、数据放在 Hugging Face，项目页每个场景都能在浏览器里实时开关。画面（目视）：真实公寓一镜走过厨房、走廊、卧室、衣帽间，微波炉门、橱柜、衣柜门依次打开；另一段视频把汽车拆成灰色底座 + 蓝色「车门关/车门开」两层再合回。科普可借：把房间「数字化」以后还能动——和你想做的「把房间 3D 建模再换装修风格」直接相关，可作为技术路线参考（属于延伸）；「每个颗粒选队」也是讲 3D 高斯泼溅最直观的一个镜头。",
+      "tool": "3D 高斯泼溅（3DGS）+ 视觉语言模型粗定位状态切换时刻；网页查看器用 WebGPU（项目页与 README）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "项目页 https://switchsplat.github.io（含在线查看器）+ 论文 https://arxiv.org/abs/2610.24812 + 代码 https://github.com/theialab/switchsplat（Apache-2.0，2026-10-20 创建）+ 数据 huggingface.co/datasets/xieyizheng/switchsplat；一作 X 线程 2026-10-21 00:24–00:46 UTC。PSNR 等数字为论文自报，未经本条复现。封面为仓库官方 teaser 图（汽车拍摄胶片条 + 后备箱/车门/引擎盖开关组合渲染），已自托管。",
+      "attribution": "Yizheng Xie, Yalda Foroutan 等（SFU / UBC / Wayve / 多伦多大学）",
+      "sourceAuthor": "yizheng_xie",
+      "tags": [
+        "高斯泼溅",
+        "3D重建",
+        "3D建模",
+        "WebGPU",
+        "开源"
+      ],
+      "publishedAt": "2026-10-21T00:24:00.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-21T04:55:00.000Z",
+      "updatedAt": "2026-10-21T04:55:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-21T04:55:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "实体": 21,
+          "科普": 17,
+          "溯源": 20,
+          "复现": 15,
+          "风格": 7,
+          "新颖": 8
+        },
+        "multiplier": 1.0,
+        "finalScore": 88.0,
+        "threshold": 65,
+        "run": "2026-10-21-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112702383101001728/vid/avc1/1280x720/dJUsO7JjlHkwlkkk.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/theialab/switchsplat",
+      "licenseName": "Apache-2.0",
+      "licenseUrl": "https://github.com/theialab/switchsplat/blob/main/LICENSE"
+    },
     {
       "title": "奶倒进冰咖啡，白色奶柱先往下沉、再翻卷成一朵朵「蘑菇云」：不用任何物理引擎和流体库，Gemini 4 Argon 只用 three.js + WebGL2 数学从零写出可交互的冰咖啡模拟器（原始提示词全文公开）",
       "category": "frontend",
@@ -14523,8 +14689,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条",
-  "updatedAt": "2026-10-21T00:56:00.000Z",
-  "totalItems": 310,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条",
+  "updatedAt": "2026-10-21T04:55:00.000Z",
+  "totalItems": 313,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }

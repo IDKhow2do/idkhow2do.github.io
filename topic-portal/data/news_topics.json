@@ -1,7 +1,44 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-21T00:56:00.000Z",
+  "updatedAt": "2026-10-21T04:55:00.000Z",
   "topics": [
+    {
+      "url": "https://platform.openai.com/docs/guides/prompt-caching",
+      "title": "让 AI 把你的提示词「记」12 小时：写入要付 2.5 倍、读一次只收 1 成——为什么多花钱存缓存反而更省？OpenAI 开放 12 小时提示词缓存，Codex 团队员工称登录用户的 Codex 缓存「永久保留」",
+      "category": "AI",
+      "source": "OpenAI 官方 API 文档「Prompt caching」（本轮 2026-10-21 抓取）+ @OpenAIDevs 官方 X 帖（2026-10-20 17:56 UTC）+ OpenAI Codex/ChatGPT 团队 Tibo（@thsottiaux）X 帖（2026-10-21 01:10 UTC）",
+      "publishedAt": "2026-10-20",
+      "eventAt": "2026-10-20",
+      "collectedAt": "2026-10-21T04:55:00.000Z",
+      "updatedAt": "2026-10-21T04:55:00.000Z",
+      "description": "@OpenAIDevs 10 月 20 日宣布 API 可以选 12 小时提示词缓存，理由是像常驻智能体这类应用会在一天里反复用同一段上下文，即使两次请求隔了几小时也能按较低的「缓存输入价」计费。官方文档讲清了机制和账本：①缓存存的不是文字，而是模型处理这段开头（前缀）时算出的中间状态，即 KV 张量；后来的请求只有前缀一字不差才能复用，省掉重算。②GPT-5.6 及之后的模型，默认最短保留 30 分钟，写入按普通输入价的 1.25 倍收；在 Responses API 里可以选 12 小时，写入 2.5 倍；读取都是 0.1 倍（GPT-6.1 Sol 为 0.05 倍），两种寿命读价一样。③文档自己算的账：30 分钟写入、写一次再完整复用一次，总花费是普通输入的 1.35 倍，不缓存要 2 倍；十次请求里写一次读九次是 2.15 倍，不缓存是 10 倍。④缓存住在单台机器上，请求必须被路由到持有这份缓存、且还没过期的那台机器才能命中；每分钟超过约 15 次请求可能被分流到别的机器；缓存不跨组织、不跨区域共享；文档说缓存可能以加密 KV 张量形式放在 GPU 本地存储里。⑤可缓存的前缀至少 1,024 个 token（GPT-5.6 及之后）。10 月 21 日，OpenAI Codex/ChatGPT 团队的 Tibo 在 X 上说：API 现在可缓存 12 小时，而登录用户在 Codex 和 Work 里「缓存永久保留」，回到旧对话或隔几小时继续都保证命中。可拍角度：①反直觉账本：写入贵一倍，为什么反而省——按文档费率推算，同一段前缀隔半小时以上要用 3 次及以上，选 12 小时就比每次重写 30 分钟缓存便宜（2.5+0.1+0.1=2.7 倍 vs 1.25×3=3.75 倍，属本条按文档费率的推算）；②芯片人视角：「记住」不是免费的，记忆就是显存/存储里的 KV 张量，保留越久占的硬件越久——可接 10-20 已收的 DeepInfer「SSD 存 KV 缓存 3 到 7 天」做对比；③「缓存住在某一台机器上」：像取快递必须去对的那个柜子，路由比存储更难。",
+      "caveat": "费率倍数、1,024 token 门槛、路由与存放方式均摘自 OpenAI 文档（2026-10-21 抓取，可能随时更新），不同模型价格不同。「3 次以上更划算」是本条按文档倍数自己推算的，未计入普通输入价本身和命中失败的情况；文档明确说 12 小时只是计费意义上的最短寿命，不保证每次都命中、也不是删除期限。「Codex 缓存永久保留、保证命中」只是员工 X 帖的说法，本轮在文档里没找到对应条款，视频里要说明是员工表述。与库内 10-20 DeepInfer（KV 缓存放 SSD）同属 KV 缓存题材，角度改为「定价账本 + 路由」以免重复。OpenAI API 在中国大陆不能直接使用，大陆相关性低。封面为文档官方 og:image（纯文字标题卡），首帧建议自制「写一次 vs 重写」费用对比图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261021b-prompt-cache.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021b-prompt-cache.jpg",
+      "imageAlt": "OpenAI Developers 文档官方题图：粉橙渐变背景，写着 API Docs / Prompt caching",
+      "tags": [
+        "AI成本",
+        "KV缓存",
+        "AI推理"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 71,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 15,
+          "画面": 6,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 3,
+          "新颖": 2
+        },
+        "multiplier": 1.0566,
+        "finalScore": 75.0,
+        "threshold": 65,
+        "run": "2026-10-21-1240-shanghai"
+      }
+    },
     {
       "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
       "title": "AI 64 小时设计了 31.8 万个蛋白，实验室验下来真能「抓住」蝎毒的只有 17 个——为什么这已经算正常命中率？Anthropic 公开 Claude 设计蝎毒素结合蛋白的全部 211 个候选和实验数据",
