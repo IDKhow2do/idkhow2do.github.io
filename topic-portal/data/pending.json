@@ -3,6 +3,68 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 61,
+      "multiplier": 1.025,
+      "score": 62.5,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-21-0840-shanghai",
+      "record": {
+        "title": "一首歌唱完全部化学元素：Google DeepMind 官方演示 Gemini 4 Argon 在 Antigravity 里做的 3D 元素周期表，电子绕核、原子数据和发射光谱跟着 Tom Lehrer《The Elements》逐个切换",
+        "category": "video",
+        "styleFamily": "code",
+        "source": "https://x.com/GoogleDeepMind/status/2112557925264752930",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021a-periodic-table.jpg",
+        "previewType": "image",
+        "description": "@GoogleDeepMind 10-20 发布 88 秒视频，配文：Gemini 4 Argon 做了一个与 Tom Lehrer 的歌《The Elements》同步的 3D 元素周期表，在 Antigravity 里完成，会动画展示绕核运动的电子、原子数据和光谱。画面（目视）：每唱到一个元素，中央发光原子模型和底部周期表高亮同步切换，右侧有一条彩色光谱条和元素数据栏。科普可借：「每种元素都有自己的光谱指纹」——等离子刻蚀机就是靠看腔体发光光谱判断刻蚀到哪一层（终点检测），属于延伸，原片没讲。",
+        "tool": "Gemini 4 Argon（Google Antigravity）（官方自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "Google DeepMind 官方 X 帖（2026-10-20 14:53 UTC）与 88 秒视频，属自家模型演示；未公开源码、提示词或许可证，只能外链引用。画面里电子为绕核轨道式示意，不是真实的量子轨道。封面为视频第 10 秒截帧，已自托管。",
+        "attribution": "@GoogleDeepMind（X）",
+        "sourceAuthor": "GoogleDeepMind",
+        "tags": [
+          "元素周期表",
+          "原子模型",
+          "光谱",
+          "代码视频"
+        ],
+        "publishedAt": "2026-10-20T14:53:53.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-21T00:56:00.000Z",
+        "updatedAt": "2026-10-21T00:56:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-21T00:56:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 61,
+          "baseBreakdown": {
+            "实体": 13,
+            "科普": 18,
+            "溯源": 11,
+            "复现": 4,
+            "风格": 7,
+            "新颖": 8
+          },
+          "multiplier": 1.025,
+          "finalScore": 62.5,
+          "threshold": 65,
+          "run": "2026-10-21-0840-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2112556446218862593/vid/avc1/1920x1080/pY7aXhWMcWehJljh.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 54,
       "multiplier": 1.0315,
       "score": 55.7,
@@ -1961,6 +2023,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-20T13:10:00.000Z",
+  "updatedAt": "2026-10-21T00:56:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }

@@ -1,8 +1,171 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 307,
+  "exportedCount": 310,
   "items": [
+    {
+      "title": "奶倒进冰咖啡，白色奶柱先往下沉、再翻卷成一朵朵「蘑菇云」：不用任何物理引擎和流体库，Gemini 4 Argon 只用 three.js + WebGL2 数学从零写出可交互的冰咖啡模拟器（原始提示词全文公开）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/genevieve__h/status/2112646847454147003",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021a-iced-coffee.jpg",
+      "previewType": "image",
+      "description": "@genevieve__h（简介写自己在 Google AI Studio / Gemini API 做开发者关系）10-20 发布 57 秒演示和 5 条线程：公园木桌上一只玻璃杯，可以选冰块形状、倒浓缩咖啡或奶油，奶柱扎进咖啡后翻卷上浮、绕着冰块分层，玻璃和冰都有折射（目视）。作者称没用物理引擎、流体库或预烘焙动画，只有 three.js、WebGL2 数学和自制 3D 模型，全部在 Chrome 里跑；Blender 可以用，但要由模型自己写脚本。过程（作者自述）：先在 Gemini 应用里和 Argon 讨论方案并让它写一份长提示词；在 Antigravity 里第一版约 1 小时（不开子代理、中等思考）；光照不真实，就给它一张 nano banana 渲染图当参照让它继续；之后一个对话负责审代码、写带验收项的改进计划，另一个对话按计划逐项实现（流体、冰块浮力、公园背景），共 10 轮对话；现在只有 15–20 FPS。公开的原始提示词要求：三维欧拉网格流体（64×96×64 或 96×128×96）、咖啡和奶两种可混溶流体、用 MacCormack/BFECC 平流保住细丝、斜压涡量与涡量约束让奶柱卷成蘑菇头（瑞利-泰勒 / 开尔文-亥姆霍兹不稳定）、体积光线步进里按比尔-朗伯定律算吸收（浓缩咖啡 σa = (1.6, 5.4, 13.5)，薄处透琥珀红、厚处发黑）、奶用 Henyey-Greenstein 相函数做散射、玻璃 ior 1.52、冰 ior 1.31。科普可借：为什么奶倒进咖啡会「开花」（重的冷奶压在轻的热咖啡上，界面失稳翻卷）；为什么一杯咖啡边缘发红、中间发黑（不同波长被吸收的程度不同）。把这套「吸收 + 散射」光学换个场景（比如薄膜、等离子体发光）属于延伸，帖子里没讲。",
+      "tool": "Gemini 4 Argon（Google Antigravity，10 轮对话）+ three.js + WebGL2；Blender 资产由模型写脚本生成（作者自述）",
+      "prompt": "# Role & Objective\nAct as a Principal Graphics Engineer and Creative Technologist specializing in Three.js, WebGL2/WebGPU, 3D Volumetric Fluid Dynamics, and GLSL Raymarching. \n\nBuild a browser-based, photorealistic, interactive 3D coffee & milk physics sandbox (\"Cozy Café Fluid Studio\") designed to look like a viral macro-lens video on X. The user can orbit the camera freely (from 90° top-down to a 0° macro side-profile view), swap custom 3D glass vessels and ice cube shapes (with procedural fallbacks and a `.glb`/`.gltf` loader for Blender assets), and pour either Espresso or Heavy Cream directly from their cursor in any order.\n\n---\n\n# 1. Core Visual & Physics Architecture (True 3D Volumetric Fluid)\nBecause the camera can view the glass from the side, top, or any oblique angle, implement a **3D Eulerian Grid Fluid Solver** (e.g., `64x96x64` or `96x128x96` tiled 2D texture atlas or WebGL2 `sampler3D` / WebGPU 3D Storage Textures) confined to the bounding volume of the active glass mesh:\n\n1. **Two-Fluid Miscible Density & Filling System:**\n   - Track two separate scalar volume fields inside the glass: $\\rho_{\\text{coffee}}$ (dark absorbing fluid) and $\\rho_{\\text{milk}}$ (bright scattering fluid), plus a dynamic **Liquid Fill Height ($h_{\\text{fill}}$)** that rises smoothly as the user pours either liquid into the glass.\n   - Allow pouring in **any order**:\n     - *Coffee first, then Milk:* Pouring espresso fills the glass with dark amber-black liquid and generates a thin golden crema foam layer on the top meniscus ($y \\approx h_{\\text{fill}}$). Pouring cold milk next shoots a dense white plume downward that billows back up via buoyancy.\n     - *Milk first, then Coffee (Dirty Latte / Macchiato style):* Pouring cold milk fills the glass with opaque ivory liquid. Pouring hot espresso on top creates dark mahogany plumes that sink through the dense milk and stratify into layered gradients around the ice.\n\n2. **Rayleigh-Taylor & Kelvin-Helmholtz Instabilities:**\n   - Implement **MacCormack (or BFECC) Advection** so thin caramel ribbons do not smear out due to numerical dissipation.\n   - Inject **Baroclinic Vorticity** ($\\nabla \\rho \\times \\nabla P$) and **Vorticity Confinement** ($\\epsilon (\\mathbf{N} \\times \\boldsymbol{\\omega})$) along the interface between milk and coffee so sinking/rising plumes roll up into hyper-detailed mushroom caps and curling tendrils.\n\n3. **3D Volumetric Raymarching Shader (Beer-Lambert + Multiple Scattering Approximation):**\n   - Render the fluid volume inside the glass by raymarching through the 3D density texture (`sampler3D`).\n   - **Optical Physics:** Do NOT use simple RGB `mix()`. Compute physically based **Beer-Lambert Law extinction** ($\\sigma_a(\\lambda) = \\text{vec3}(1.6, 5.4, 13.5)$ for espresso so thin edges glow ruby/caramel-amber while thick regions are pitch black) combined with **isotropic + forward Henyey-Greenstein phase function scattering** for the milk fat globules (high albedo ivory-white).\n   - Add a **Dual-Lobe Subsurface Scattering (SSS)** look by sampling a lower-MIP (blurred) level of the milk density volume for ambient internal light transport, creating a soft, milky amber glow where coffee and cream meet.\n\n---\n\n# 2. Custom Blender Assets (Glasses & Ice) + Procedural SDF Dual-Representation\nSupport loading custom Blender `.glb` meshes via `GLTFLoader` while providing built-in procedural geometries (and matching Signed Distance Fields) so the app runs out-of-the-box:\n\n1. **Glass Shapes (Vessel Selector):**\n   - **Fluted Café Glass:** Ribbed vertical ridges that distort and refract the swirling fluid inside.\n   - **Double-Walled Borosilicate Mug:** Suspended inner rounded chamber showing floating liquid in mid-air.\n   - **Stemless Wine / Tulip Glass:** Curved tapered bowl that forces sinking milk plumes inward toward the center.\n   - **Classic Rocks Tumbler:** Heavy thick crystal base with sharp vertical walls.\n   - *Rendering:* Use Three.js `MeshPhysicalMaterial` with `transmission: 0.98`, `ior: 1.52`, `thickness`, dispersion/chromatic aberration, and crisp studio softbox environment reflections.\n   - *Physics Boundary:* Enforce a strict no-slip/no-penetration boundary condition against the inner wall SDF of the selected glass so fluid hugs the exact contour of the vessel.\n\n2. **Ice Cube Shapes (Ice Selector):**\n   - **Large Craft Sphere:** A single giant crystal-clear sphere in the center that splits the pour stream into a ring vortex.\n   - **Beveled Bistro Cubes (x3):** Stacked at angles inside the glass, creating narrow channels for cream tendrils to snake through.\n   - **Hollow Cylinder / Bullet Ice:** Allows fluid to pour through the center hole and billow out the bottom.\n   - **Crushed / Pebble Ice:** A porous top cluster that diffuses the pour into dozens of tiny trickling caramel fingers.\n   - *Rendering & Physics:* Render ice with `ior: 1.31`, internal frost fracture planes, and real-time refraction of the raymarched fluid behind it. Stamp the ice SDFs into the 3D fluid solver's obstacle buffer so plumes physically collide with, wrap around, and slide underneath the ice cubes. Include buoyant bobbing when liquid height rises.\n\n---\n\n# 3. Interactive Pouring & Camera Controls\n1. **Cursor-Driven Pour Stream:**\n   - Raycast the mouse cursor onto a horizontal plane above the glass rim.\n   - **Left-Click & Hold:** Pour a visible, glossy 3D parabolic liquid stream (rendered as a dynamic tube mesh or raymarched metaball stream) from the cursor into the glass.\n   - **Mouse Speed & Scroll Wheel:** Moving the mouse whips the stream across the surface; scrolling adjusts **Pour Height / Velocity** (a high pour punches deep to the bottom of the glass with high turbulence; a low pour gently floats layers on the surface).\n2. **Seamless Orbit Camera (`OrbitControls`):**\n   - Right-click drag (or two-finger drag) smoothly orbits from **Macro Side View** (watching plumes dive down the glass wall) to **Top-Down Latte Art View** (watching crema swirl around the ice).\n   - Include quick camera preset buttons: `[Side Profile]`, `[45° Café Angle]`, and `[Top-Down Macro]`.\n\n---\n\n# 4. Minimalist Cozy UI & Atmosphere\n- **Environment:** A warm, sunlit wooden tabletop with soft morning window blinds casting subtle gobos/caustics, warm beige/linen background tones, and a shallow depth-of-field (`BokehPass`) on the background.\n- **Minimalist Floating Dock (Bottom Center, frosted glass `backdrop-filter: blur(12px)`, rounded pill buttons, warm serif/sans typography):**\n  - **Liquid Toggle:** `[ ☕ Pour Espresso ]` | `[ 🥛 Pour Heavy Cream ]`\n  - **Vessel Picker:** `[ Fluted ]` `[ Rocks ]` `[ Tulip ]` `[ Double-Wall ]` `[ + Load .GLB ]`\n  - **Ice Picker:** `[ Sphere ]` `[ Bistro Cubes ]` `[ Crushed ]` `[ None ]`\n  - **Simulation Controls:** `Pour Speed` slider, `Time Scale` slider (`0.1x Slow-Mo` to `1.0x`), `[ Stir with Glass Straw ]` tool, and `[ Empty Glass ]` reset button.\n\n---\n\n# Deliverable Instructions\nProvide a complete, runnable HTML/JS/GLSL implementation (or clean modular Vite + Three.js setup) with zero missing placeholders. Prioritize the 3D raymarched Beer-Lambert coffee/milk shader, the 3D fluid advection/vorticity compute passes, and the refractive glass/ice boundary coupling so it runs at 60fps.",
+      "promptProvenance": "original_public",
+      "provenanceNote": "作者 X 线程（2026-10-20 20:47 UTC，共 5 条）+ 57 秒视频；第 3 条公开了「原始提示词」全文（作者说最终版本过程中有改动，最终提示词可私信索取）。作者是 Google 员工、演示的是自家模型，按「官方/员工作品演示」处理，帖子里没有付费推广或福利链接。未公开源码或许可证，只能外链引用。封面为视频第 22 秒截帧（奶柱在咖啡里翻卷），已自托管。",
+      "attribution": "@genevieve__h（X）",
+      "sourceAuthor": "genevieve__h",
+      "tags": [
+        "Three.js",
+        "流体模拟",
+        "玻璃",
+        "物理动效",
+        "代码视频"
+      ],
+      "publishedAt": "2026-10-20T20:47:14.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-21T00:56:00.000Z",
+      "updatedAt": "2026-10-21T00:56:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-21T00:56:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "实体": 24,
+          "科普": 17,
+          "溯源": 15,
+          "复现": 13,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.249,
+        "finalScore": 109.9,
+        "threshold": 65,
+        "run": "2026-10-21-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112644885362696192/vid/avc1/1920x1080/obJD3ksOSrbNjNuY.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "从一台显微镜开始，镜头一路钻进细胞、钻到分子：屏幕上的「画面宽」从 69 厘米缩到约 61 纳米，缩了一千多万倍——Three.js 实时 3D 动画，作者称除显微镜模型外的素材都由 Claude Code 自动打磨",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/Swfdong/status/2112601205721727432",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021a-microscope-zoom.jpg",
+      "previewType": "image",
+      "description": "@Swfdong（烧炖）10-20 发布 24 秒方形视频，配文：「Opus 5.5 is incredible at 3D modeling and animation!!! This Three.js real-time 3D animation zooms from microscope to cells and molecules. All assets except the microscope model were auto-polished by Claude Code.」画面（目视逐帧）：白色台式显微镜 → 推进目镜 → 「光学显微镜下」的染色细胞视野 → 「电子显微镜下的结构（模型）」：细胞核、线粒体、内质网的剖面 → 继续钻到细胞膜上的蛋白复合体。底部字幕实时显示「画面宽」，依次读到 69 cm、24 cm、4 mm、237 µm、31 µm、4 µm、184 nm、约 61 nm（数字在连续变化，此处为截帧读数）。科普可借：一镜到底的「尺度连续缩放」，配一个实时比例尺，是讲「芯片里的晶体管到底多小」最直接的模板——把细胞换成晶圆 → 芯片 → 金属层 → 晶体管（属于延伸，原片讲的是生物）。",
+      "tool": "Claude Code（Opus 5.5）+ Three.js（作者自述）；显微镜模型来源未说明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖（2026-10-20 17:45 UTC，热度极低）与 24 秒视频；画面无水印。配文没明说「我做的」，作者账号近 10 天只有这一条帖子，暂按原创收录但溯源偏弱（溯源 8 分）。未公开源码、提示词或许可证，只能外链引用。封面为视频第 16 秒截帧（电子显微镜下的细胞结构模型，画面宽 17 µm），已自托管。",
+      "attribution": "@Swfdong（X）",
+      "sourceAuthor": "Swfdong",
+      "tags": [
+        "Three.js",
+        "尺度反转",
+        "结构可视化",
+        "代码视频"
+      ],
+      "publishedAt": "2026-10-20T17:45:52.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-21T00:56:00.000Z",
+      "updatedAt": "2026-10-21T00:56:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-21T00:56:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 73,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 20,
+          "溯源": 8,
+          "复现": 6,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.1319,
+        "finalScore": 82.6,
+        "threshold": 65,
+        "run": "2026-10-21-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112601167188631552/vid/avc1/720x720/7KOOyj7Wg5UuWAj2.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "印刷品凑近看为什么全是小点？日本开发者展览作品第 3 弹 Halftone：用 CMYK 四个色版的网点减色叠印重画一段视频，网点顺着画面轮廓排列，越平的地方点越粗（WebGL / three.js）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/_unshift/status/2112695739784769681",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021a-halftone.jpg",
+      "previewType": "image",
+      "description": "@_unshift 展览作品「LEFT TO THE IMAGINATIONS」效果连载第 3/20 条（10-21 00:01 UTC，15 秒视频）。作者原文要点：Halftone——用印刷网点重画画面，CMYK 四个色版做减色混合；网点的排列方向跟着画面轮廓走，越平坦的区域网点越粗；觉得只用圆点太单调，于是把圆、方、菱形、十字、三角、棋盘格 6 种网点随机混用；静态图配静态效果撑不住，所以网点一直在轻微抖动。素材是作者某年新年去豪德寺拍的招财猫。画面（目视）：一排招财猫从黑白网点渐变到彩色网点，凑近能看到四色小点叠出颜色。科普可借：报纸、包装盒为什么只用四种墨就能印出全彩（减色混合 + 网点大小控制深浅）；和屏幕的 RGB 加色混合正好相反。上一条第 2 弹「Grid Mosaic」已收录。",
+      "tool": "WebGL / three.js（作者标签），是否用 AI 未说明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 连载帖（2026-10-21 00:01 UTC，第 3/20 条，引用连载首帖 x.com/_unshift/status/2112100033822867586）与 15 秒视频；算法要点为作者文字说明；未公开源码或许可证，只能外链引用。封面为视频第 12.5 秒截帧（彩色网点招财猫），已自托管。",
+      "attribution": "@_unshift（X）",
+      "sourceAuthor": "_unshift",
+      "tags": [
+        "Three.js",
+        "WebGL",
+        "半色调",
+        "印刷网点"
+      ],
+      "publishedAt": "2026-10-21T00:01:31.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-21T00:56:00.000Z",
+      "updatedAt": "2026-10-21T00:56:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-21T00:56:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 63,
+        "baseBreakdown": {
+          "实体": 13,
+          "科普": 17,
+          "溯源": 11,
+          "复现": 8,
+          "风格": 9,
+          "新颖": 5
+        },
+        "multiplier": 1.3491,
+        "finalScore": 85.0,
+        "threshold": 65,
+        "run": "2026-10-21-0840-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112695403569414145/vid/avc1/1920x1080/DuGJ3eLA5AIs_Y2l.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "看着像宇宙里的一片银色海，其实只有 2.8 毫米宽——这是在哪儿？有人让 Claude Code 只用代码（Three.js）钻进一支水银体温计的储液泡，再一镜到底退到 32 厘米外",
       "category": "video",
@@ -14360,8 +14523,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条",
-  "updatedAt": "2026-10-20T13:10:00.000Z",
-  "totalItems": 307,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条",
+  "updatedAt": "2026-10-21T00:56:00.000Z",
+  "totalItems": 310,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
