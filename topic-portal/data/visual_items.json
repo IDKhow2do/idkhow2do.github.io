@@ -1,8 +1,228 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 321,
+  "exportedCount": 325,
   "items": [
+    {
+      "title": "每个像素只算 1 条光线，画面全是雪花噪点，一个只有 812 个参数的小网络把它「嘘」一声变干净：Hush——浏览器里 60 fps 实时路径追踪降噪器（WebGPU + three.js，MIT 开源）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://github.com/kanaworksai-hue/hush",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021d-hush.jpg",
+      "previewType": "image",
+      "description": "东京的 KanaWorks_AI（东京AI映像合同会社）10-21 09:41 UTC 在 X 发布「开源周第 4 天」作品 Hush，仓库 kanaworksai-hue/hush 采用 MIT 许可。README（原文）：Hush 把每像素 1 个采样（1 spp）的路径追踪噪点帧，实时变成干净、时间上稳定的画面；它是几道 WebGPU 计算着色器，输入噪点帧和 G-buffer（法线、深度、反照率、运动矢量），输出降噪后的纹理，可接 three.js 的 WebGPURenderer。原理（README）：在 SVGF 式的时间累积基础上，用一个极小的逐像素网络以半分辨率预测「滤波参数」（时间混合比例、边缘保持强度、细节与粗层权重），再做边缘感知的 à-trous 滤波和 TAA；网络从不直接输出像素，所以遇到没见过的内容也只会退化成普通的边缘感知滤波，不会「编造」细节。作者 X 帖自述：参数只有 812 个（1.6 KB），能整个塞进着色器；RTX 3060 半分辨率下浏览器路径追踪 60 fps；1080p 降噪一帧约 2.2 毫秒，整体 15–30 fps，时间大多花在光线追踪上；比 SVGF 快 2 倍以上，演示场景 PSNR 高 0.5–1.6 dB。仓库自带小型路径追踪器和 SVGF 基线，有在线 Demo（拖动分割线对比 1 spp / SVGF / Hush）。封面（目视）：同一间客厅，左半边是密密麻麻的噪点（1 spp），右半边是降噪后的暖色阳光、地板反光和窗影。科普可借：①为什么光线追踪的画面天生有噪点——蒙特卡洛采样，样本越少越「雪花」；②这和电镜拍芯片线宽要拍很多遍取平均是同一个道理（可接库里 10-17「量芯片线宽的电镜图，为什么以前要拍 64 遍取平均」，属延伸）。",
+      "tool": "WebGPU（WGSL 计算着色器）+ three.js WebGPURenderer（README）；作者未说明是否用 AI 编程工具",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原作仓库 https://github.com/kanaworksai-hue/hush（MIT，2026-10-19 创建，10-20 最近推送）+ 在线 Demo https://hush.tokyoaivisuals.club（需 WebGPU，本轮未运行）+ 作者 X 帖 https://x.com/KanaWorks_AI/status/2112841755683074291（63 秒演示视频，抓取时 38 赞、17 收藏）。812 参数、60 fps、2.2 ms、PSNR 等数字为作者自述；README 注明「研究原型」，内置权重只在 3 个示例场景上训练，换场景不一定比 SVGF 好，大面积低频噪点（平墙、只被天光照亮的地板）最弱。KanaWorks 名称、Logo 和 Kana 角色形象（含演示场景里的兔子画）版权归东京AI映像，不在 MIT 范围内。封面为仓库 README 官方 hero 图（左 1 spp / 右 Hush）。",
+      "attribution": "KanaWorks_AI（东京AI映像合同会社，GitHub kanaworksai-hue）",
+      "sourceAuthor": "KanaWorks_AI",
+      "tags": [
+        "Three.js",
+        "WebGPU",
+        "路径追踪",
+        "降噪",
+        "开源"
+      ],
+      "publishedAt": "2026-10-21T09:41:43.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-21T12:51:00.000Z",
+      "updatedAt": "2026-10-21T12:51:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-21T12:51:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 86,
+        "baseBreakdown": {
+          "实体": 16,
+          "科普": 18,
+          "溯源": 19,
+          "复现": 15,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.3491,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-21-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112840799566397440/vid/avc1/1920x1080/fmY6keO2zopJYt0X.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/kanaworksai-hue/hush",
+      "licenseName": "MIT",
+      "licenseUrl": "https://github.com/kanaworksai-hue/hush/blob/main/LICENSE"
+    },
+    {
+      "title": "在 Blender 里让 Claude Code 烧一只「曜变天目」：黑釉碗里浮着一圈圈蓝绿色光斑，镜头一推像坠进星空——作者说两天试下来，釉、漆、金属这类硬材质它很拿手，丝线、脸和动物就不行",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/kurumirekishi/status/2112839350144925842",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021d-yohen.jpg",
+      "previewType": "image",
+      "description": "@kurumirekishi（くるみ，历史×AI 创作者，简介写有学艺员资格）10-21 09:32 UTC 发布 16 秒竖屏视频，配文（作者自述）：用 Claude Code × Blender 做了曜变天目茶碗，有时候看起来挺像，碗内的花纹也有点意思；本来想做「被吸进碗里变成银河」，结果没变成银河，变的那一刻花纹边缘的闪光还消失了。她总结两天的体会：擅长漆、釉、金属、木、石这类硬东西，拉坯转出来的形状，重复的零件；不擅长丝线一类的纤维、脸和动物、和有名实物一模一样的表面。画面（目视）：黑底中一只黑釉碗放在红褐色漆托上，碗内壁布满大小不一的蓝绿色环状斑点，顶光在釉面上形成高光；镜头推近到碗心，斑点像星点一样扩散成一片蓝色星空，最后拉回整只碗。科普可借：真正的曜变天目那层蓝色光晕被认为和釉面上极薄膜层的光干涉有关（结构色，和肥皂泡、库里点赞过的虹彩玻璃同理；属延伸，作者没讲，做科普需查文献）；也可以借她的「擅长/不擅长清单」讲 AI 建模的边界。",
+      "tool": "Claude Code + Blender（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖（2026-10-21 09:32 UTC）与 16 秒竖屏视频，抓取时 12 赞；没有源码、提示词、.blend 文件或许可证，只能外链引用。同作者已有 1 条入库（10-18 动态历史地图）。作者自己说效果没达到预期，属于实验作品。曜变天目的光学成因本条未核实。封面为视频第 4.5 秒截帧（碗身与漆托）。",
+      "attribution": "@kurumirekishi（X）",
+      "sourceAuthor": "kurumirekishi",
+      "tags": [
+        "Blender",
+        "Claude Code",
+        "3D材质",
+        "釉面",
+        "结构色"
+      ],
+      "publishedAt": "2026-10-21T09:32:10.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-21T12:51:00.000Z",
+      "updatedAt": "2026-10-21T12:51:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-21T12:51:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 67,
+        "baseBreakdown": {
+          "实体": 21,
+          "科普": 14,
+          "溯源": 9,
+          "复现": 6,
+          "风格": 8,
+          "新颖": 9
+        },
+        "multiplier": 1.069,
+        "finalScore": 71.6,
+        "threshold": 65,
+        "run": "2026-10-21-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112837214766080000/vid/avc1/1080x1920/D7R7qqzAiC4QRL7C.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "一枪打出一大滩会流动、会堆起来、会挂在台阶边的「胶水」：前 Unity / 育碧首席工程师 Sebastian Aaltonen 把 Claybook 的流体解算器搬进新游戏 Petafab——2.4 万粒子，模拟只要 0.13 毫秒",
+      "category": "3d",
+      "styleFamily": "code",
+      "source": "https://x.com/SebAaltonen/status/2112853695448961416",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021d-seb-fluid.jpg",
+      "previewType": "image",
+      "description": "Sebastian Aaltonen（@SebAaltonen，简介：30 年 3D 渲染经验，前 Unity、育碧、HypeHype 首席工程师；Claybook 是他参与开发的黏土物理游戏）10-21 10:29 UTC 发布 36 秒 4K 视频，配文（作者自述）：把 Claybook 的流体解算器移植到 Petafab，2.4 万粒子测试——模拟 0.13 毫秒、表面生成 0.05 毫秒、绘制 0.3 毫秒；附 YouTube 视频《PETAFAB: Testing Claybook’s fluid simulator...》（频道 PETAFAB: Bot Invasion）。画面（目视）：第一人称射击游戏，夕阳下的工业风关卡，右上角显示 240 FPS；玩家用武器喷出蓝色、青色的黏稠流体，流体在地面摊开、顺着台阶边缘流下、在柱子上堆成一团，被能量球打中时溅起发光的水花。科普可借：①为什么游戏里的水大多是「贴图」而不是真的流——粒子模拟 + 表面重建要在每帧十几毫秒内算完，这里拆出的三段耗时就是现成的「预算表」；②粒子法流体（一堆小球）怎么变成连续的液面（表面生成），可接库里 Globes「粒子 + 网格」条目。",
+      "tool": "自研引擎（Petafab），流体解算器移植自 Claybook（作者自述）；作者未说明是否用 AI 编程工具",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖（2026-10-21 10:29 UTC）与 36 秒 4K 视频，抓取时 247 赞、26 收藏；YouTube 原片 https://www.youtube.com/watch?v=RpXEAMYssU4（标题经 oEmbed 核对）。没有源码、Demo 或许可证，只能外链引用；耗时数字为作者自述，硬件未说明。不是网页作品，风格分打了折扣。封面为视频第 21 秒截帧（青色流体铺满地面）。",
+      "attribution": "Sebastian Aaltonen（@SebAaltonen）",
+      "sourceAuthor": "SebAaltonen",
+      "tags": [
+        "流体模拟",
+        "游戏引擎",
+        "物理动效",
+        "粒子"
+      ],
+      "publishedAt": "2026-10-21T10:29:10.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-21T12:51:00.000Z",
+      "updatedAt": "2026-10-21T12:51:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-21T12:51:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 63,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 13,
+          "溯源": 10,
+          "复现": 4,
+          "风格": 6,
+          "新颖": 8
+        },
+        "multiplier": 1.1,
+        "finalScore": 69.3,
+        "threshold": 65,
+        "run": "2026-10-21-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112853011001233408/vid/avc1/3810x2160/No9TFPoMTqZd_oqv.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "四张能用鼠标拖着转的 CD，翻到背面是一圈彩虹：作者说让它「像真的」的关键就是背面的虹彩反射——Codex 画盘面、three.js 做网页，前后约 10 分钟",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/asei_ikarashi/status/2112861455737614609",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021d-cd.jpg",
+      "previewType": "image",
+      "description": "@asei_ikarashi（ASEI，AI × 创意）10-21 11:00 UTC 发布 22 秒录屏，配文（作者自述）：这几张 CD 是可以拖动旋转的网页；盘面图用 Codex 的 ImageGen 生成，网页用 Three.js 做，合计约 10 分钟；「像真的」的决定因素是背面的彩虹色反射。画面（目视）：深灰背景上并排四张印着动漫风插画的 CD（Petal Groove、Midnight Tide、Sunday Garden、Violet Orbit），拖动时单张 CD 翻转，背面是银色盘面上的彩虹色扇形光带。科普可借：CD 背面的彩虹不是颜料，而是光盘上间距约 1.6 微米的螺旋数据轨像衍射光栅一样把白光按波长分开（属延伸，作者没讲）——和芯片晶圆在灯下泛彩虹、光刻掩模图案的衍射是同一个物理，可接半导体主线。",
+      "tool": "Codex ImageGen（盘面图）+ Three.js（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖（2026-10-21 11:00 UTC），抓取时 1 赞；视频媒体 ID 显示素材可能在帖子之前一天就已上传过，本条以帖子时间为准。没有网页地址、源码或许可证，只能外链引用；盘面插画为 AI 生成。虹彩是否用了物理衍射模型还是贴图/环境反射，作者未说明。封面为视频第 13.5 秒截帧（第三张 CD 翻到背面的彩虹反射）。",
+      "attribution": "@asei_ikarashi（X）",
+      "sourceAuthor": "asei_ikarashi",
+      "tags": [
+        "Three.js",
+        "虹彩",
+        "3D交互"
+      ],
+      "publishedAt": "2026-10-21T11:00:00.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-21T12:51:00.000Z",
+      "updatedAt": "2026-10-21T12:51:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-21T12:51:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 59,
+        "baseBreakdown": {
+          "实体": 16,
+          "科普": 14,
+          "溯源": 7,
+          "复现": 5,
+          "风格": 10,
+          "新颖": 7
+        },
+        "multiplier": 1.249,
+        "finalScore": 73.7,
+        "threshold": 65,
+        "run": "2026-10-21-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112435392687542272/vid/avc1/1280x720/ESE3hC3pdJV8runp.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "一颗装着水和沙的玻璃球，晃一晃水会溅上球壁、挂成水珠再流下来：Globes 在浏览器里用 GPU 实时模拟约 400 万个流体粒子，还算出了焦散和折射（three.js + WebGPU，MIT 开源）",
       "category": "frontend",
@@ -15124,8 +15344,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条",
-  "updatedAt": "2026-10-21T08:56:00.000Z",
-  "totalItems": 321,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条",
+  "updatedAt": "2026-10-21T12:51:00.000Z",
+  "totalItems": 325,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }

@@ -3,6 +3,132 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 62,
+      "multiplier": 1.0468,
+      "score": 64.9,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-21-2040-shanghai",
+      "record": {
+        "title": "摩托车压弯压到 55 度还不摔，靠的是车上哪几样电子件？一位制造业数据科学家完全没碰过 Blender，让 Claude Code 做出 Ninja ZX-10R 电子控制解说片：IMU 测姿态、ABS 阀门开合、油门怎么平顺",
+        "category": "video",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/yerobuk/status/2112830769123270746",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021d-ninja-imu.jpg",
+        "previewType": "image",
+        "description": "@yerobuk（简介：制造业大企业里的数据科学家）10-21 08:58 UTC 发布 58 秒日文解说片，配文（作者自述）：第一次尝试用 Claude Code × Blender 做视频，给自己的 Ninja ZX-10R 做了「过弯时的电子控制」解说；Blender 只是装了、一下都没碰；觉得这能用在自学和制造业的公司内部培训上；配音用的是另一个服务，完整版链接放在回复里。画面（目视）：序章是绿色摩托车压弯，左上角仪表显示倾角「左 27°」、时速 94 km/h，字幕说时速约 90 公里、最大可倾斜 55 度；第 1 章是 IMU 模块爆炸图，坐标轴标出前后、左右、上下，面板列出三个方向加速度和横滚、俯仰角速度；第 2 章是 ABS 单元剖面，入口阀、出口阀、泵电机配卡钳油压曲线，对比普通 ABS 与 KIBS；第 3 章是节气门/油门开度的「要求 vs 实际」曲线；结尾三块总结：知道姿态（IMU+KCMF）、边转弯边刹车（KIBS+离合）、驾驭打滑（S-KTRC+电子油门）。科普可借：IMU 就是手机里也有的那颗陀螺仪 + 加速度计（MEMS 芯片，可接半导体主线，属延伸）；这种「爆炸图 + 实时数据面板 + 分章字幕」的版式可直接复用到芯片设备解说。",
+        "tool": "Claude Code + Blender（作者自述），配音另用其它服务",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者 X 帖（2026-10-21 08:58 UTC）与 58 秒视频，抓取时 2 赞；没有源码、提示词或许可证，只能外链引用。车型参数、55 度倾角、各系统名称（KCMF、KIBS、S-KTRC）都来自视频字幕，本条没有对照川崎官方资料核实。库里已有多条 Anatomy 式机械拆解，本条新颖度打了折扣，长处是「数据面板 + 分章」的解说版式。封面为视频第 20 秒截帧（IMU 爆炸图与传感数据面板）。",
+        "attribution": "@yerobuk（X）",
+        "sourceAuthor": "yerobuk",
+        "tags": [
+          "Blender",
+          "Claude Code",
+          "结构可视化",
+          "机械科普"
+        ],
+        "publishedAt": "2026-10-21T08:58:04.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-21T12:51:00.000Z",
+        "updatedAt": "2026-10-21T12:51:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-21T12:51:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 62,
+          "baseBreakdown": {
+            "实体": 15,
+            "科普": 20,
+            "溯源": 8,
+            "复现": 5,
+            "风格": 8,
+            "新颖": 6
+          },
+          "multiplier": 1.0468,
+          "finalScore": 64.9,
+          "threshold": 65,
+          "run": "2026-10-21-2040-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2112830130771161088/vid/avc1/1280x720/Jo6mCa-vmVBKLc1Z.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 57,
+      "multiplier": 1.3,
+      "score": 57.0,
+      "reason": "本轮达待定区间（单维度乘数保护生效）",
+      "run": "2026-10-21-2040-shanghai",
+      "record": {
+        "title": "网页一滚动，WebGL 文字和图片就和普通 DOM 跟着一起走、不抖不拖：Codrops 教程《Atelier UI》——把 WebGL 效果做成可复制的 React 组件，还带流体扭曲和像素转场",
+        "category": "frontend",
+        "styleFamily": "code",
+        "source": "https://tympanus.net/codrops/2026/10/21/atelier-ui-webgl-dom/",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021d-atelier.jpg",
+        "previewType": "image",
+        "description": "Codrops 10-21 发布 Jérémie Nallet 的教程（Codrops X 10:39 UTC 转发）。文章（原文）：作者做了一个把 WebGL 和 DOM 混在一起用的 React UI 库 Atelier UI，受 14islands 的 r3f-scroll-rig 启发但更模块化——每个效果（WebGL 文字、图片、场景）都是可以复制进项目的独立组件，通过 shadcn 注册表分发；用一个全屏固定的 React Three Fiber 画布承载所有效果，避免多个 WebGL 上下文；保留 R3F 默认相机，由各组件自己换算像素；用 Lenis 平滑滚动，并用 Motion 作为 Lenis 和画布共同的时钟，解决滚动与 WebGL 不同步造成的抖动。教程搭两个页面：滚动同步的 WebGL 文字和图片、流体扭曲效果、像素化页面转场。安装方式里还提供给编程代理用的提示词、skill 文件和 MCP 服务器。封面（目视）：Codrops 官方封面，大号手写体「CODROPS」下方是一张被扭曲的人眼照片。",
+        "tool": "Next.js 16.3 + React Three Fiber + Lenis + Motion + Tailwind CSS v4（原文）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "Codrops 原文 https://tympanus.net/codrops/2026/10/21/atelier-ui-webgl-dom/ ，教程代码 https://github.com/whatisjery/atelier-ui-codrops ；作者说库「大部分开源」，具体许可本轮没核对。偏前端工程/UI 库，实体感和科普镜头弱，按规则进待定。",
+        "attribution": "Jérémie Nallet（Codrops）",
+        "sourceAuthor": "whatisjery",
+        "tags": [
+          "WebGL",
+          "React Three Fiber",
+          "滚动同步",
+          "Codrops"
+        ],
+        "publishedAt": "2026-10-21T10:39:53.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-21T12:51:00.000Z",
+        "updatedAt": "2026-10-21T12:51:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-21T12:51:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 57,
+          "baseBreakdown": {
+            "实体": 8,
+            "科普": 4,
+            "溯源": 16,
+            "复现": 14,
+            "风格": 8,
+            "新颖": 7
+          },
+          "multiplier": 1.3,
+          "finalScore": 57.0,
+          "threshold": 65,
+          "run": "2026-10-21-2040-shanghai",
+          "multiplierGuard": "基础分<60且仅单一维度乘数>1，按规则不让乘数抬过阈值（按基础分判定）"
+        },
+        "is3d": false,
+        "videoUrl": "",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "sourceCodeUrl": "https://github.com/whatisjery/atelier-ui-codrops"
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 57,
       "multiplier": 1.1319,
       "score": 64.5,
@@ -2084,6 +2210,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-21T08:56:00.000Z",
+  "updatedAt": "2026-10-21T12:51:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
