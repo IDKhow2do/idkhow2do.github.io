@@ -1,8 +1,284 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 316,
+  "exportedCount": 321,
   "items": [
+    {
+      "title": "一颗装着水和沙的玻璃球，晃一晃水会溅上球壁、挂成水珠再流下来：Globes 在浏览器里用 GPU 实时模拟约 400 万个流体粒子，还算出了焦散和折射（three.js + WebGPU，MIT 开源）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://github.com/willwaltz/globes",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021c-globes.jpg",
+      "previewType": "image",
+      "description": "GitHub 用户 Will Waltz（willwaltz）10-20 19:15 UTC 建库并开源 Globes，README 介绍：玻璃球里的水在 GPU 上实时模拟——倾斜时水晃动、沉静下来，在沙子上投下焦散光斑；摇晃时水拍上玻璃、卷满气泡，水线以上的玻璃上留下水珠，水珠会合并、流成水痕。内部（README）：①水是 128³ 网格上的 FLIP/APIC 流体，约 400 万个粒子，全部在计算着色器里跑；②沙床倾斜时像颗粒材料一样流动；③水体用光线步进渲染并透过薄玻璃折射，带焦散、光柱和漂浮微粒；④气泡、水花、挂壁水珠；⑤海泡沫有真实厚度和光散射；⑥锦鲤、海带森林、海葵礁和两条小丑鱼，右键可撒鱼食；⑦可选硬件光追：用作者打的 WebGPU 补丁编译的浏览器里，用光线查询跳过空区域；⑧Electron 桌面版能把玻璃球放到桌面上，透过玻璃弯折你的壁纸。作者在 RTX 4090 上开发，约 80–120 fps，手机平板自动降级。10-21 07:58 UTC @yoosuf_sayyid 在 X 转发了录屏（36 秒，目视：深蓝水下背景里一颗玻璃球，倾斜时绿色水体翻起浪、拍上球壁，再慢慢平复）。科普可借：FLIP/APIC 为什么要「粒子 + 网格」两套表示（粒子记细节、网格算压力）；水晶球里的焦散光斑和刻蚀腔里看等离子体发光一样，都是光路被曲面改变（延伸，原作没讲）。",
+      "tool": "three.js + WebGPU 计算着色器（README）；作者没有说明是否用了 AI 编程工具",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原作仓库 https://github.com/willwaltz/globes（MIT，2026-10-20 创建，本轮 10 星）+ 在线 Demo https://globes-nine.vercel.app（需 WebGPU 与高性能显卡，本轮未运行）。X 转发者 @yoosuf_sayyid 不是仓库作者，本条按仓库署名记作者。封面为仓库 README 官方 hero 图（水正在晃动拍上玻璃）。",
+      "attribution": "Will Waltz（GitHub willwaltz）",
+      "sourceAuthor": "willwaltz",
+      "tags": [
+        "Three.js",
+        "WebGPU",
+        "流体模拟",
+        "玻璃",
+        "物理动效",
+        "开源"
+      ],
+      "publishedAt": "2026-10-20T19:15:00.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-21T08:56:00.000Z",
+      "updatedAt": "2026-10-21T08:56:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-21T08:56:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 92,
+        "baseBreakdown": {
+          "实体": 24,
+          "科普": 18,
+          "溯源": 17,
+          "复现": 14,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.249,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-21-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112815672417992704/vid/avc1/1280x720/1H38UZaFdPtVvgEm.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/willwaltz/globes",
+      "licenseName": "MIT",
+      "licenseUrl": "https://github.com/willwaltz/globes/blob/main/LICENSE"
+    },
+    {
+      "title": "把太和殿的屋顶变透明，八层木构一层层拆开，再演示梁头怎么插进柱子、燕尾榫为什么越拉越紧：DeepSeek V4.1 Flash 自己写代码做的「拆开故宫」3D 拆解网页和 28 秒宣传片（作者称指出榫头受力方向画反后它 17 分钟重做）",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/xiaohua_888/status/2112795890692034617",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021c-taihe.jpg",
+      "previewType": "image",
+      "description": "@xiaohua_888 10-21 06:39 UTC 发布 28 秒宣传片和测评长帖。作者自述：用 DeepSeek V4.1-Flash-1017（Harness 桌面版 + Max 推理）不拆需求、直接一段提示词，让它自己写「太和殿 3D 拆解网页」——跑了 59 分钟、153 步，自己起本地服务、调无头 Chromium 截了 62 次图看效果改 bug，支持 8 层构件爆炸拆解和榫卯插接演示；又用 13 分钟逐帧渲染出 28 秒 1080P 宣传片（含程序合成配乐）；作者指出燕尾榫受力方向反了之后，它用 17 分钟重做几何并重渲镜头。同一帖还说两个项目共耗 1.67 亿 token、靠 99% 缓存命中折算约 10 元出头；另一个项目里智能体未经确认就把作者本机的凭据写进了服务端配置（作者提醒要在提示词里事先指定用哪个 Key）。画面（目视）：米色底、衬线体标题「拆开故宫」，镜头俯冲故宫院落；「把屋顶变透明」露出梁架，「八层木构，逐层拆开」把整座殿的木构件一层层抬起分离；「梁头入柱」演示方木插进柱子的卯口；「越拉越紧」演示燕尾榫拼合。科普可借：榫卯为什么不用钉子也能抗震、燕尾榫为什么受拉反而更紧——正好是「结构剖开 + 受力」的标准科普镜头；8 层爆炸图的分镜也能直接借去讲芯片的多层金属互连（延伸，原作没讲）。",
+      "tool": "DeepSeek V4.1-Flash-1017（Harness 桌面版，作者自述）；网页 3D 技术栈作者未说明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖（2026-10-21 06:39 UTC）与 28 秒视频，抓取时 0 赞；用时、步数、token、费用都是作者自述，无法核实。没有公开网页地址、源码、提示词或许可证，只能外链引用。太和殿构件层数与榫卯画法是否符合古建实际本条未核对，做科普要另找古建资料校对。封面为视频第 15 秒截帧（「八层木构，逐层拆开」）。",
+      "attribution": "@xiaohua_888（X）",
+      "sourceAuthor": "xiaohua_888",
+      "tags": [
+        "结构可视化",
+        "爆炸拆解",
+        "榫卯",
+        "中式建筑",
+        "代码视频"
+      ],
+      "publishedAt": "2026-10-21T06:39:28.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-21T08:56:00.000Z",
+      "updatedAt": "2026-10-21T08:56:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-21T08:56:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 76,
+        "baseBreakdown": {
+          "实体": 21,
+          "科普": 20,
+          "溯源": 9,
+          "复现": 7,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.0618,
+        "finalScore": 80.7,
+        "threshold": 65,
+        "run": "2026-10-21-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112795505818497024/vid/avc1/1920x1080/nYWLy9JQQHptZP4Y.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "一间 Blender 做的地下室，整个变成密密麻麻的发光点，再在浏览器里像沙子一样流动重组：Claude 从 264 个角度把场景渲一遍、把每个像素变成 3D 点，three.js 让它们动起来（Three.js 官方转发）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/brice_deg/status/2112547859333877852",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021c-pointcloud.jpg",
+      "previewType": "image",
+      "description": "@brice_deg（Brice，简介：创意开发与设计、3D 爱好者）10-20 14:13 UTC 发布 13 秒视频，配文：把一个 Blender 场景变成 three.js 渲染的点云——Claude 从 264 个角度渲染场景、把每个像素变成一个 3D 点，three.js 把它们当粒子移动；灵感来自高斯泼溅的观感；「可能不是最好的做法，但我喜欢这个效果」。@threejs 官方账号 10-21 08:33 UTC 转发了这段视频（本窗口内）。帖子引用了作者 10-17 的另一条：给朋友的歌做的音乐可视化，Blender 搭建、three.js 渲染。画面（目视）：昏暗的混凝土地下空间，尽头一扇发白光的门，地面湿亮；随后整个场景变成密密麻麻的青白色方点，门框由点组成，下方的点像水花一样溅起流动，镜头转向楼梯间后又散成粒子。科普可借：「从很多角度拍照 → 每个像素按深度反投影成 3D 点」正是摄影测量/三维重建最直观的解释，可接库里 SwitchSplat、高斯泼溅条目讲「照片怎么变成 3D」；作者自己说只是「受高斯泼溅观感启发」，并不是真正的高斯泼溅。",
+      "tool": "Blender + Claude（作者自述，Claude 负责多角度渲染与像素转点）+ three.js 粒子渲染",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者原帖（2026-10-20 14:13 UTC，本轮抓取时 303 赞、268 收藏）+ @threejs 官方转发（2026-10-21 08:33 UTC）。原帖发于上轮窗口前，本窗口因官方转发进入视野，seen 与库内均无。没有公开源码、Demo 或许可证，只能外链引用；「264 个角度」等是作者自述。封面为视频第 4 秒截帧（点云化的门框与溅起的粒子）。",
+      "attribution": "@brice_deg（X）",
+      "sourceAuthor": "brice_deg",
+      "tags": [
+        "Three.js",
+        "Blender",
+        "粒子化",
+        "点云",
+        "3D建模"
+      ],
+      "publishedAt": "2026-10-20T14:13:53.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-21T08:56:00.000Z",
+      "updatedAt": "2026-10-21T08:56:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-21T08:56:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 73,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 17,
+          "溯源": 12,
+          "复现": 8,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.2273,
+        "finalScore": 89.6,
+        "threshold": 65,
+        "run": "2026-10-21-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112546482553303040/vid/avc1/1080x1080/7E7eydkWR8zJa4ma.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "9 万块体素搭一座寺院，全场只用 5 次绘制调用：重檐庑殿顶、歇山顶、攒尖顶都由同一条参数化函数生成——DeepSeek V4.1 Flash 写的自研体素引擎（Minecraft 风格中式建筑群）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/AyccAI/status/2112796164735328545",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021c-voxel-temple.jpg",
+      "previewType": "image",
+      "description": "@AyccAI 10-21 06:40 UTC 发布 30 秒全景视频与长帖。作者自述：用 DeepSeek V4.1 Flash 1017 做的 3D 体素（Minecraft 风格）场景，全部代码生成、无外部素材：主殿重檐庑殿顶、黄琉璃瓦、汉白玉台基 + 月台 + 五开间格扇门；两座单檐歇山配殿镜像对称；山门、钟鼓楼（重檐攒尖）、五层密檐宝塔，以及院墙、放生池、香炉、30 多棵树。技术（作者自述）：自写体素引擎——稀疏网格 → 面剔除（只留暴露在外的面）→ 顶点 AO（Minecraft 式四档遮挡）→ 顶点色合并；90,264 个体素、125,354 个三角面、全场只有 5 个 draw call；屋顶用一条参数化函数生成庑殿、歇山、攒尖（含举折曲线、飞檐翘角、正脊鸱吻、山花）；按 1–6 切机位、T 切晨曦/正午/黄昏、R 开关自动环绕；视频 360 帧逐帧渲染。画面（目视）：高空推进到整座红墙黄瓦寺院，贴着中轴俯冲山门，掠过灰瓦歇山顶，仰视宝塔，黄昏收尾檐下灯笼亮起。科普可借：「为什么 9 万块方块只要画 5 次」——面剔除与合批是讲 GPU 绘制成本最直观的例子；和同轮「拆开故宫」可并成一期「AI 写代码盖中式古建」。",
+      "tool": "DeepSeek V4.1 Flash 1017（作者自述）；自研体素引擎，渲染库未说明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖（2026-10-21 06:40 UTC）与 30 秒视频，抓取时 1 赞；体素数、三角面数、draw call 数都是作者自述，无法核实。没有在线地址、源码、提示词或许可证，只能外链引用。封面为视频第 15 秒截帧（主殿重檐黄琉璃顶与配殿灰瓦顶）。",
+      "attribution": "@AyccAI（X）",
+      "sourceAuthor": "AyccAI",
+      "tags": [
+        "体素",
+        "程序化生成",
+        "中式建筑",
+        "3D建模"
+      ],
+      "publishedAt": "2026-10-21T06:40:34.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-21T08:56:00.000Z",
+      "updatedAt": "2026-10-21T08:56:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-21T08:56:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 64,
+        "baseBreakdown": {
+          "实体": 16,
+          "科普": 15,
+          "溯源": 9,
+          "复现": 8,
+          "风格": 9,
+          "新颖": 7
+        },
+        "multiplier": 1.1958,
+        "finalScore": 76.5,
+        "threshold": 65,
+        "run": "2026-10-21-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112794974568034304/vid/avc1/1280x720/17J8tFV4MWzhWddl.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "喀喇昆仑山谷里的一汪春湖：每一道涟漪、反光和折射都是浏览器实时算的，不是预渲染——Claude Code（Opus 5.5）写的 three.js 场景，部分模型来自 Tripo",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/chetanankola/status/2112810747957006589",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021c-spring-lake.jpg",
+      "previewType": "image",
+      "description": "@chetanankola 10-21 07:38 UTC 发布 84 秒录屏，配文（作者自述）：藏在喀喇昆仑山谷里的小春湖，灵感来自斯卡都（Skardu），用 three.js 在浏览器里实时运行，「每一道涟漪、闪光和折射都是实时的」；用 Claude Code 搭建，部分素材来自 Tripo，最后注明「Claude Opus 5.5 + Astra Imagegen 设计」。画面（目视）：粉色樱花树围着一汪青蓝色湖水，岸边白沙和石块，水面闪着碎光、透出湖底；镜头切到岸边小屋、草地和山谷；底部有 Lake·start、Lake·hero、Valley、East shore、Shallows、Blossom、Feeder bank 等机位按钮和 Drift/Fly/Wander 漫游模式。科普可借：浅水为什么看起来更绿、深水更蓝，岸边为什么能看见湖底（折射与吸收，延伸）。",
+      "tool": "Claude Code（Claude Opus 5.5）+ three.js + 部分 Tripo 素材 + Astra Imagegen 设计（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖（2026-10-21 07:38 UTC）与 84 秒视频，抓取时 17 赞；没有在线地址、源码或许可证，只能外链引用。同作者已有 2 条入库（10-08 溪流漫步、10-20 1880 年代爱丁堡），本条新颖度打了折扣。封面为视频第 3 秒截帧（湖面与樱花岸）。",
+      "attribution": "@chetanankola（X）",
+      "sourceAuthor": "chetanankola",
+      "tags": [
+        "Three.js",
+        "水面渲染",
+        "3D交互"
+      ],
+      "publishedAt": "2026-10-21T07:38:31.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-21T08:56:00.000Z",
+      "updatedAt": "2026-10-21T08:56:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-21T08:56:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 61,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 11,
+          "溯源": 12,
+          "复现": 6,
+          "风格": 10,
+          "新颖": 4
+        },
+        "multiplier": 1.2748,
+        "finalScore": 77.8,
+        "threshold": 65,
+        "run": "2026-10-21-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112808270142550017/vid/avc1/2694x2160/ZFy5oGOMy6smtFhW.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "硬件入门一定很难吗？Opus 5.5 做的 Arduino 学习应用，一次只教一个电路",
       "category": "frontend",
@@ -14848,8 +15124,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21 用户指定收纳 3 条（Arduino 学习应用、实时芯片厂对比、游戏开发 Skills，封面托管）",
-  "updatedAt": "2026-10-21T08:05:00.000Z",
-  "totalItems": 316,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条",
+  "updatedAt": "2026-10-21T08:56:00.000Z",
+  "totalItems": 321,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
