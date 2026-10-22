@@ -4,6 +4,71 @@
   "exportedCount": 339,
   "items": [
     {
+      "title": "玩 AI 视频和 AI 3D 该收藏哪些仓库？8 个开源项目：图生 three.js、动作迁移、AI 驱动 Blender、代码出片",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "is3d": true,
+      "source": "https://x.com/zmdsb259414/status/2113140946699460933",
+      "sourceCodeUrl": "https://github.com/img2threejs/img2threejs",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261022-levi-ai-video-3d-8-repos.jpg",
+      "previewType": "image",
+      "videoUrl": "",
+      "description": "Levi 卧云（@zmdsb259414）2026-10-22 整理自己 star 过的 8 个 AI 视频 / AI 3D / Three.js 仓库（星数为帖子所写）：①img2threejs（约 18600★）把参考图里的物体用纯代码重建成 three.js 3D 对象，带质量门控、可直接做动画；②Motion2MixamoRig（约 1400★）把视频里的人体动作重定向到 Mixamo 绑定角色，动捕平替；③dsh-blender-plugin（约 1000★）让 AI 实时驱动 Blender 建模，内置 15 个模型工具和建模 skill；④dioramas（约 420★）用 AI 生成资产搭电影感交互 3D 网站的框架，基于 three.js / WebGL；⑤video-shotcraft（约 12800★）给 Claude Code / Codex 的视频 skill，用 Remotion 代码出电影感产品视频，带 152 张镜头配方卡；⑥lemo-opuscar（约 5000★）不用视频模型、51 种风格纯代码出片；⑦jianying-headless（约 3600★）剪映草稿无头编辑与导出的 Agent Skill；⑧mg-styles-15（约 1700★）15 种 MG 动效风格，附成片、提示词和源码。帖子约 870 赞、1400 收藏。",
+      "tool": "img2threejs、Motion2MixamoRig、dsh-blender-plugin、dioramas、video-shotcraft、lemo-opuscar、jianying-headless、mg-styles-15",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖 note_tweet 全文（经 X API 回读）。8 个仓库链接取自帖文，未逐一用 GitHub API 回查，星数为作者所述。原帖无图片视频，封面为帖内首个链接（img2threejs 仓库）的 X 链接卡片图。",
+      "attribution": "@zmdsb259414（Levi 卧云）",
+      "sourceAuthor": "zmdsb259414",
+      "tags": [
+        "three.js",
+        "Blender",
+        "Mixamo",
+        "Remotion",
+        "开源",
+        "合集",
+        "3D建模"
+      ],
+      "publishedAt": "2026-10-22T05:30:36Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-22T14:37:00.000Z",
+      "updatedAt": "2026-10-22T14:37:00.000Z",
+      "relatedLinks": [
+        "https://github.com/img2threejs/img2threejs",
+        "https://github.com/MaxLiu22/Motion2MixamoRig",
+        "https://github.com/sixtysevenlf/dsh-blender-plugin",
+        "https://github.com/blendi-remade/dioramas",
+        "https://github.com/Vincentwei1021/video-shotcraft",
+        "https://github.com/lemomo-ai/lemo-opuscar",
+        "https://github.com/mcncarl/jianying-headless",
+        "https://github.com/Vincentwei1021/mg-styles-15"
+      ],
+      "originalPreviewUrl": "https://pbs.twimg.com/news_img/2112110260525858816/-bsuk0nM?format=jpg&name=orig",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": "2026-10-22T14:37:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-22T14:37:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          600
+        ],
+        "preview_check": "封面为链接卡片图，HTTP 200。",
+        "video_check": "无视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-batch-2026-10-22"
+      }
+    },
+    {
       "title": "Opus 5.5 能当 3D 动画师吗？一条从产品 brief 到 Blender 可编辑场景、发布短片和网页 3D 的完整工具栈",
       "category": "3d",
       "styleFamily": "model_3d",
@@ -16169,7 +16234,7 @@
   ],
   "bookmarksNotInVisual": 15,
   "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条",
-  "updatedAt": "2026-10-22T13:05:00.000Z",
+  "updatedAt": "2026-10-22T14:37:00.000Z",
   "totalItems": 339,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
