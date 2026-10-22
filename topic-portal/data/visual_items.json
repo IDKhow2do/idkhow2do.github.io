@@ -1,8 +1,233 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 331,
+  "exportedCount": 335,
   "items": [
+    {
+      "title": "同一份「机制讲解」渲成三种画面：3D 图解、粒子光轨、剪纸拼贴——开源 Agent Skill「Video Illustrator」0.9，给 Claude Code 做科普短片用（three.js，MIT）",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/AxtonLiu/status/2113072877738262723",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022b-videoillus.jpg",
+      "previewType": "image",
+      "description": "《重构个体》作者 Axton（@AxtonLiu）10-22 01:00 UTC 发帖（原文）：「大家都在用 AI 做科普视频」，他把自己做片子的工具更新到 0.9 并开源免费用；早上那期 Roadster 就是它做的（查资料、事实表、官方实拍、3D 拆车、对齐旁白）；附的视频是同一份内容渲成的三种画面——3D 图解、粒子光轨、剪纸拼贴，每种渲染不到一分钟。回复里给了仓库（原文）：为 Claude Code + Opus 5.5 设计，需要 Node.js 20+ 和 FFmpeg，3D 走 three.js，全在本机渲染。仓库 README（原文）：一个 Agent Skill，用你自己的旁白和真实素材，按选定风格做 20–60 秒宣传片或概念讲解片，交付 MP4 和可编辑的场景源码；样片记录 SAMPLES.md 第 9 节写明 Roadster 这条是 15 秒无声「机制插入镜头」，同一份内容文件按 diagram-3d（默认）、particles、cut-paper 三种画面各渲一遍，画面上的每个数字都来自研究事实表并注明是特斯拉 2026 年 10 月发布会自述、未经独立测试；整车是按公开照片程序化放样的 three.js 模型，不用照片和品牌标志；约 21 分钟做完，作者只改过一次（拒掉了「AI 默认风」的彩色侧条卡片，这条已写进它的审美规则 AR-17）。视频（15 秒竖屏，目视）：三种画面上下叠放、同步播放，步骤依次为整车 → 四块轮胎接地面 → 拆开 → 吸地风扇和密封底板 → 两个气罐和冷气推进器 → 合回整车。封面（目视）：第 9 秒截帧，三种画面同时处在「爆炸图」状态。可借：①同一机制换三种画风，正适合给「等等，喂神马」做风格 A/B；②「每个数字来自事实表并标出处」的流程，与「先事实后标题」的账号规矩一致；③库里 10-15 已有 Roadster 选题，可直接拿来对照。",
+      "tool": "Claude Code + Opus 5.5 + three.js + Node.js 20 + FFmpeg（作者帖子与 README 原文）；剪纸版走 Canvas 2D",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖 https://x.com/AxtonLiu/status/2113072877738262723（抓取时 5 赞、10 收藏，附 15 秒竖屏视频）和回复 https://x.com/AxtonLiu/status/2113072889633313279 ；仓库 github.com/axtonliu/video-illustrator，GitHub API 显示 MIT 许可、2026-09-28 创建、10-21 最近推送、25 星。每条样片的原始指令、版本、耗时、成本写在 showcase/SAMPLES.md（本轮读了第 9 节）。Roadster 的数字（1.6 g、4,700 kg、600 升、80 kN）是特斯拉发布会自述，不是本站核实。本轮没有安装运行该 Skill。封面为视频第 9 秒截帧。",
+      "attribution": "Axton（@AxtonLiu）",
+      "sourceAuthor": "AxtonLiu",
+      "tags": [
+        "Three.js",
+        "结构可视化",
+        "爆炸图",
+        "剪纸拼贴",
+        "粒子化",
+        "Claude Code"
+      ],
+      "publishedAt": "2026-10-22T01:00:07.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-22T04:51:00.000Z",
+      "updatedAt": "2026-10-22T04:51:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-22T04:51:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "实体": 15,
+          "科普": 19,
+          "溯源": 19,
+          "复现": 14,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.0995,
+        "finalScore": 93.5,
+        "threshold": 65,
+        "run": "2026-10-22-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113072857651757056/vid/avc1/1080x1822/0-0O1c8iXCtNFXE4.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/axtonliu/video-illustrator",
+      "licenseName": "MIT",
+      "licenseUrl": "https://github.com/axtonliu/video-illustrator/blob/main/LICENSE"
+    },
+    {
+      "title": "一下没点 Blender，让 Claude Code 从零搭出天坛祈年殿：几万棵古柏程序化生成，斗拱对着照片一攒一攒数，殿身尺寸和资料对不上时它选了照片",
+      "category": "video",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/yaohui12138/status/2113093383967428692",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022b-tiantan.jpg",
+      "previewType": "image",
+      "description": "AI 产品经理「柿子」（@yaohui12138，2.5 万关注）10-22 02:21 UTC 发帖（原文要点）：让 Claude Code 在 Blender 里从零搭了一座天坛祈年殿，渲出 22 秒片子，自己没在 Blender 里点过一下；全部输入只有三样——一页任务书、7 个分镜草稿、16 张实拍照片；剩下是它写 bpy 脚本、从空场景一键生成模型，「渲一帧对着照片改一帧」，前后改了 25 版；场景里几万棵古柏是它写的程序化生成器、全部实例化；斗拱数量是对着照片一攒一攒数出来的；殿身尺寸它用两张照片的透视关系反推，发现和给的资料对不上，最后选了照片；片尾有几秒素模和拼装过程，用来证明这是真实的 3D 建模渲染、不是视频模型生成。视频（30.5 秒宽银幕，目视）：航拍三层圆形重檐蓝瓦大殿与汉白玉三层台基、殿门与彩画特写、「祈年殿」匾额近景，之后切到灰白素模（左下角字幕「集合 3/5 · 构件，33 个物体 · 4,836 个几何节点实例」）、bpy 代码编辑器画面（build/components.py），最后回到完整彩色成片。封面（目视）：第 22 秒截帧，夕照下的祈年殿与圜形台基、背后成片古柏。可借：①「素模 → 构件 → 上色」的拼装过程本身就是古建结构科普镜头；②「照片透视反推尺寸」可以讲摄影测量的基本道理（延伸）；③国内观众熟悉的地标，第一帧就认得。",
+      "tool": "Claude Code + Blender（bpy 脚本、几何节点实例化）（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖 https://x.com/yaohui12138/status/2113093383967428692（抓取时 69 赞、54 收藏、35 回复，附 30.5 秒视频）。没有公开脚本、任务书或许可证，只能外链引用。「25 版」「几万棵古柏」「斗拱逐个数」「照片反推尺寸并选择照片」都是作者自述；AI 判断「对了」也是作者说法，建筑尺寸是否准确本轮未核对。同作者 4 分钟后另发一条港式茶餐厅雨夜片（近六千行脚本、21 版），同一工作流，本轮不另收。作者账号偏 AI 变现分享，引用时注意语气。封面为视频第 22 秒截帧。",
+      "attribution": "柿子（@yaohui12138）",
+      "sourceAuthor": "yaohui12138",
+      "tags": [
+        "Blender",
+        "Claude Code",
+        "程序化生成",
+        "古建筑",
+        "结构可视化"
+      ],
+      "publishedAt": "2026-10-22T02:21:36.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-22T04:51:00.000Z",
+      "updatedAt": "2026-10-22T04:51:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-22T04:51:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 74,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 18,
+          "溯源": 12,
+          "复现": 7,
+          "风格": 9,
+          "新颖": 8
+        },
+        "multiplier": 1.0518,
+        "finalScore": 77.8,
+        "threshold": 65,
+        "run": "2026-10-22-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113093007000150016/vid/avc1/2560x1072/7wXF7wwxi-UgQQtN.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "手机上倒一杯拿铁：拉杆控制奶缸倾角、手指拖动注入点，奶泡在咖啡上画出图案，最后按细腻度、对称、清晰度打分（大森翔吾，3D 网页小游戏，Three.js 官方转发）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/shogo_oomori/status/2112854432941789641",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022b-latte.jpg",
+      "previewType": "image",
+      "description": "日本演员兼独立游戏作者大森翔吾（@shogo_oomori，CAEN 代表，简介称每天做能在手机上玩的小游戏）10-21 10:32 UTC 发帖：「做了一个往浓缩咖啡里倒牛奶的游戏」，配 10 秒竖屏视频；Three.js 官方账号 10-22 04:34 UTC 转发并附上游戏网址 caen.games/latteart-maker。游戏页说明（原文）：倾斜奶缸、在浓缩咖啡上画拉花的 3D 游戏，只靠注入位置和倾斜角度，心形、郁金香（rosetta）都能画，完成后打分并给出「像什么」的评语。视频（目视）：左侧竖向拉杆「注ぐ / 止める」控制倒奶，底部提示「左边拉杆往上推就倒，滑动画面移动位置」；奶流落进咖啡先冒出白点，再被拉成一个带尾巴的白色图形；结算页显示「73 点」「ドーナツ」「看板バリスタ」，分项为細かさ 63、対称 91、くっきり 100、量「少なめ」，图鉴 4/19。封面（目视）：第 5 秒截帧，奶缸倾斜倒奶、杯中白色图案正被拉出尾巴。科普可借（延伸，非作者原文）：①拉花为什么能「画」出来——打发的奶泡比咖啡油脂轻、会浮在表面，倒得高时奶流钻到下面、压低贴近液面时奶泡才浮上来成图；②「对称、清晰度」打分可以接图像评分/量化审美的话题。",
+      "tool": "3D 网页游戏（Next.js 站点）；作者未说明渲染库，Three.js 官方转发，是否用 three.js 及是否使用 AI 编程工具未确认",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖 https://x.com/shogo_oomori/status/2112854432941789641（抓取时 1,608 赞、812 收藏、295 转发）；Three.js 官方转发帖 https://x.com/threejs/status/2113126816433271199 （窗口内）。原帖发于 10-21 10:32 UTC，早于本轮窗口，因官方转发在窗口内、库里和 seen 均未收录而本轮补收。游戏在 caen.games 免费在线玩，作者简介称欢迎直播和投稿视频（含变现），但没有源码和开源许可，只能外链引用、截图注明出处。「奶泡浮在表面」等物理是延伸知识，视频里要另找一手来源。本轮没有亲自玩游戏。封面为原帖视频第 5 秒截帧。",
+      "attribution": "大森翔吾（@shogo_oomori，CAEN Games）",
+      "sourceAuthor": "shogo_oomori",
+      "tags": [
+        "物理动效",
+        "趣味交互",
+        "流体",
+        "网页游戏"
+      ],
+      "publishedAt": "2026-10-21T10:32:06.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-22T04:51:00.000Z",
+      "updatedAt": "2026-10-22T04:51:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-22T04:51:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 69,
+        "baseBreakdown": {
+          "实体": 23,
+          "科普": 15,
+          "溯源": 11,
+          "复现": 3,
+          "风格": 8,
+          "新颖": 9
+        },
+        "multiplier": 1.1789,
+        "finalScore": 81.3,
+        "threshold": 65,
+        "run": "2026-10-22-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112854383289638912/vid/avc1/1168x1914/pW-GTHrf55WrugTz.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "点睛之后墨龙腾空：浏览器里实时生成的「山水墨龙」，龙、峰林、云海全是代码现场算出，可调身长鹿角、换青绿/水墨/浅绛设色（three.js，MIT 开源）",
+      "category": "3d",
+      "styleFamily": "code",
+      "source": "https://x.com/leo_xiaolei/status/2113102997526094311",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022b-inkdragon.jpg",
+      "previewType": "image",
+      "description": "「水族店刘老板」（@leo_xiaolei，简介：AI 从业者、国内安全公司 FDE）10-22 02:59 UTC 发帖：前一天那条龙的视频其实是 3D 建模，水墨风建模很有意思，正在让 Opus 继续做，并给出在线地址 threerocks.github.io/ink-dragon。仓库 README（原文）：在浏览器里实时生成的水墨墨龙，龙、峰林、云海和天空都由代码现场算出，不加载外部模型或贴图；玩法有「画龙点睛」（点眼睛后墨爆、龙吟、腾空）、巡山/戏珠（手指引火珠让龙追）、晨昼暮夜与晴雨雪雷、调龙（身长、粗细、鹿角、鬃毛、飞速、风力、云雾）、青绿/水墨/浅绛三种设色，可存带题款印章的图或录 6 秒短片，网址记住全部设置可分享；风声、龙吟、雨雷、古琴全部用 WebAudio 现场合成；three.js（WebGL），几何算法移植自配套的 Blender 水墨视频工具；龙的建模思路学习自 KurTips 的 Blender 水墨教程，但全部代码重写、不含教程任何素材。视频（82 秒录屏，目视）：灰白峰林与云海里一条黑色墨龙沿路径游动，右侧「调墨」面板有跟拍/远观/自由视角、青绿/水墨/浅绛设色和身长、粗细、鹿角、鬃毛、飞速、风力、云雾滑块。封面（目视）：第 50 秒截帧，水墨设色下的墨龙与峰林、右侧调墨面板。可借：①「曲线放样 + 沿路径游动」是程序化建模的入门案例，适合 3D 建模分类；②国风视觉可做片头/转场素材。",
+      "tool": "three.js（WebGL）+ WebAudio，几何算法移植自作者的 Blender 水墨工具；作者称用 Opus 继续开发",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖 https://x.com/leo_xiaolei/status/2113102997526094311（抓取时 1 赞，附 82 秒录屏）；仓库 github.com/threerocks/ink-dragon，GitHub API 显示 MIT 许可、2026-10-22 02:37 UTC 创建；README 写明建模思路学自 KurTips《Blender 水墨风山水龙场景动画教程》、不含教程素材，教程版权归 KURTIPS。在线页 HTTP 200，但本轮没有在浏览器里实际运行。作者自称「目前还很简单」，模型偏粗糙；仓库账号 threerocks 与 X 作者的对应关系依据其帖内链接。封面为录屏第 50 秒截帧。",
+      "attribution": "@leo_xiaolei（X）/ threerocks（GitHub）",
+      "sourceAuthor": "leo_xiaolei",
+      "tags": [
+        "Three.js",
+        "程序化生成",
+        "水墨",
+        "网页交互"
+      ],
+      "publishedAt": "2026-10-22T02:59:48.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-22T04:51:00.000Z",
+      "updatedAt": "2026-10-22T04:51:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-22T04:51:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 63,
+        "baseBreakdown": {
+          "实体": 10,
+          "科普": 6,
+          "溯源": 16,
+          "复现": 14,
+          "风格": 10,
+          "新颖": 7
+        },
+        "multiplier": 1.2,
+        "finalScore": 75.6,
+        "threshold": 65,
+        "run": "2026-10-22-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113102020714577920/vid/avc1/3430x1900/kBFUtRiuhnwYd85R.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/threerocks/ink-dragon",
+      "licenseName": "MIT",
+      "licenseUrl": "https://github.com/threerocks/ink-dragon"
+    },
     {
       "title": "灯从上面、后面还是前面打过来，同一件雕塑完全变样：ERCO 把照明课做成 7 节可交互 3D 课（three.js + WebGPU，28 个场景）",
       "category": "frontend",
@@ -15669,8 +15894,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条",
-  "updatedAt": "2026-10-22T00:54:00.000Z",
-  "totalItems": 331,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条",
+  "updatedAt": "2026-10-22T04:51:00.000Z",
+  "totalItems": 335,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }

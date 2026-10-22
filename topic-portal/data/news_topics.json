@@ -1,7 +1,44 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-22T00:54:00.000Z",
+  "updatedAt": "2026-10-22T04:51:00.000Z",
   "topics": [
+    {
+      "url": "https://claude.com/blog/claude-duet",
+      "title": "一个能替你读邮件、发消息的 AI，为什么偏偏拒绝帮你发身份证号？Anthropic 推出「主动型」智能体 Claude Duet 研究预览",
+      "category": "AI",
+      "source": "Anthropic 官方博客《Introducing Claude Duet》（claude.com，2026-10-21）",
+      "publishedAt": "2026-10-21",
+      "eventAt": "2026-10-21",
+      "collectedAt": "2026-10-22T04:51:00.000Z",
+      "updatedAt": "2026-10-22T04:51:00.000Z",
+      "description": "Anthropic 10 月 21 日发布 Claude Duet 研究预览（官方原文）：一个让 Claude 以「主动型智能体」工作的新应用——它主动找你说哪些事需要你注意、完成你交代的任务、你走开后继续干活，并在替你行动前先征得同意；面向事情多到记不过来的专业人士和小企业主。形态与门槛（原文）：iOS、Android 独立应用和 claude.ai 网页版；研究预览先对美国 Pro 和 Max 订阅用户开放候补名单，和 Claude 其它功能共用额度；基于 Claude Opus 5.5。日常用法（原文）：每天早上发一份关联应用里最重要事项的简报，白天盯着这些应用、只在需要你时才发消息；也能接从安排会议到做仪表盘、财务/销售预测、做原型和网页应用这类任务。安全设计（原文）：沿用其「可信智能体框架」；凭据处理沿用 Managed Agents 的设计，智能体「从不直接看到你的密码或登录令牌」；动作由 auto mode 分类器审批；防提示注入来自浏览器智能体研究；做过红队和外部渗透测试并纳入漏洞赏金。最有意思的一条（原文）：新加一个专门的分类器和安全系统提示，逐条检查消息防敏感信息外泄——最高一档信息（如信用卡号、政府身份证件）的分享请求一律拒绝；健康、个人财务等其它敏感信息只有你明确指示才放行；官方称更多安全设计细节「将在未来几天」公布。可拍角度：①钩子：「能替你读邮件、发消息的 AI，为什么偏偏不肯帮你发身份证号？」——讲「信息分级 + 每条消息过一道分类器」的思路；②对比：被动问答型 AI vs 主动盯着你应用、先问再做的智能体，「先问再做」本身就是信任设计；③延伸：这和库里 10-15「AI 会不会想自己被拿去训练」、2 月「ChatGPT 自作主张写记忆」可以串成「AI 越主动，越要有刹车」系列。",
+      "caveat": "全部内容来自 Anthropic 官方博客自述，产品为研究预览、仅美国 Pro/Max 用户候补；Claude 在中国大陆不提供服务，视频需说明大陆用户用不了，避免引导翻墙或代充。敏感信息分类器的具体分级标准、准确率官方尚未公布（称将在未来几天分享），不能说成「绝不会泄露」。博客里的测试者故事（Anthropic 员工与小企业主）属于厂商挑选的案例。封面为官方 og 图（只是 Duet 应用图标），首帧画面需自制（如「信息分级」示意动画）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261022b-duet.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022b-duet.jpg",
+      "imageAlt": "Claude Duet 官方 og 预览图：淡紫背景上的 Duet 应用图标（橙色圆形上的黑色连笔线）",
+      "tags": [
+        "智能体",
+        "AI安全",
+        "隐私"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 62,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 8,
+          "画面": 3,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 2,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 65.5,
+        "threshold": 65,
+        "run": "2026-10-22-1240-shanghai"
+      }
+    },
     {
       "url": "https://newsroom.lamresearch.com/2026-10-21-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-September-27,-2026",
       "title": "刻蚀机卖出去以后，厂商还能接着赚？泛林一个季度 82 亿美元营收里，约 30% 来自服务、备件和升级；按地区算，中国占 35%",
