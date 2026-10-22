@@ -3,6 +3,67 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 64,
+      "multiplier": 1.0,
+      "score": 64.0,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-22-0840-shanghai",
+      "record": {
+        "title": "把一千年前遗址的激光雷达扫描和考古档案丢给 AI，搭出能逐间走进去看的 3D 查科峡谷（Google 官方演示：Gemini 4 Argon + Blender MCP）",
+        "category": "3d",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/Google/status/2113005543623450865",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022a-chaco.jpg",
+        "previewType": "image",
+        "description": "Google 官方账号 10-21 20:32 UTC 发帖（原文）：把查科峡谷（Chaco Canyon）的原始激光雷达扫描和档案丢进 Antigravity，用 Gemini 4 Argon 和 Blender MCP 搭成可探索的 3D 数字遗址。视频（65 秒，目视）：讲解人画中画；先是黑白老照片和平面图、档案文件，然后点云被转成干净的 3D 几何（字幕「using blender MCP」），最后是普韦布洛博尼托（Pueblo Bonito）大屋的 3D 俯瞰，可点开单个房间看历史说明卡片。封面（目视）：第 41 秒截帧，半圆形遗址里一圈圈圆形「基瓦」坑，黄色信息卡标注「Room 28 — Cylinder Jar Cache & Cacao Residue」。",
+        "tool": "Gemini 4 Argon + Google Antigravity + Blender MCP（官方帖原文）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "Google 官方 X 帖 https://x.com/Google/status/2113005543623450865（160 赞）。官方演示，没有公开可玩的网址、源码或数据来源细节；信息卡里的考古内容由模型整理，准确性本轮未核实。库内已有多条 Gemini 4 Argon 演示（pending 里有 DeepMind 元素周期表一条），新颖度一般。封面为视频第 41 秒截帧（裁掉讲解人画中画）。",
+        "attribution": "Google（官方演示）",
+        "sourceAuthor": "Google",
+        "tags": [
+          "Blender MCP",
+          "激光雷达",
+          "数字遗产"
+        ],
+        "publishedAt": "2026-10-21T20:32:34.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-22T00:54:00.000Z",
+        "updatedAt": "2026-10-22T00:54:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-22T00:54:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 64,
+          "baseBreakdown": {
+            "实体": 13,
+            "科普": 17,
+            "溯源": 16,
+            "复现": 5,
+            "风格": 7,
+            "新颖": 6
+          },
+          "multiplier": 1.0,
+          "finalScore": 64.0,
+          "threshold": 65,
+          "run": "2026-10-22-0840-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2113002989875048448/vid/avc1/720x720/I5dPqQ7r8PyYWe-R.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 62,
       "multiplier": 1.0468,
       "score": 64.9,
@@ -2210,6 +2271,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-21T12:51:00.000Z",
+  "updatedAt": "2026-10-22T00:54:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }

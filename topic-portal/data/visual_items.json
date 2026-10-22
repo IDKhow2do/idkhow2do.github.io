@@ -1,8 +1,333 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 325,
+  "exportedCount": 331,
   "items": [
+    {
+      "title": "灯从上面、后面还是前面打过来，同一件雕塑完全变样：ERCO 把照明课做成 7 节可交互 3D 课（three.js + WebGPU，28 个场景）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/dswhyy/status/2112891249791217734",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022a-erco.jpg",
+      "previewType": "image",
+      "description": "西班牙创意技术专家 Darío Sánchez（@dswhyy，andwhy studio）10-21 12:58 UTC 发帖：他在 three.js 大会上讲过的项目现已公开上线，用 three.js 和 WebGPU 开发，链接指向德国照明品牌 ERCO 的「Knowledge」页面（https://www.erco.com/en/knowledge/）。页面（原文）自我介绍是「理解光的知识与交互工具」，有《光的语言》《光的方向》《塑造感知》等基础课，每门 3–4 节、约 14–19 分钟，另有门厅、白盒展厅等场景课。演示视频（42 秒，目视）里的字幕：ERCO 3D、Precise / Performant、28 scenes、7 interactive lessons、Realistic wallwashing（洗墙照明）、On any device；画面里有一个控制面板「Switching luminaires on and off」，分别开关「From above / From behind / From the front」三盏灯，雕塑的明暗轮廓随之大变。封面（目视）：视频第 26 秒截帧，只开「从背后」那盏灯时雕塑只剩一道亮边（轮廓光）。科普可借：①光的方向决定我们怎么「读」形状——顶光、背光、正面光三种开关就是一个 3 分钟的小实验；②洗墙灯为什么要斜着打、离墙多远；③延伸（非原文）：显微镜和电镜里也有类似的「打光角度」问题，低角度照明能把表面起伏显出来。",
+      "tool": "three.js + WebGPU（作者帖子原文）；是否用 AI 编程工具未说明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖 https://x.com/dswhyy/status/2112891249791217734（抓取时 7 赞、6 收藏，附 42 秒演示视频）；作品在 ERCO 官网 https://www.erco.com/en/knowledge/ ，属于品牌商业网站，没有源码和开源许可，只能外链引用、截图需标注。「28 个场景」「7 节交互课」是视频字幕自述；官网课程列表与视频字幕的课数口径可能不同，本轮没有逐节点开。在线页面本轮只抓了 HTML，没有在浏览器里实际运行 3D 场景。封面为演示视频第 26 秒截帧。",
+      "attribution": "Darío Sánchez（@dswhyy，andwhy studio）为 ERCO 制作",
+      "sourceAuthor": "dswhyy",
+      "tags": [
+        "Three.js",
+        "WebGPU",
+        "光照",
+        "网页交互"
+      ],
+      "publishedAt": "2026-10-21T12:58:24.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-22T00:54:00.000Z",
+      "updatedAt": "2026-10-22T00:54:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-22T00:54:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 76,
+        "baseBreakdown": {
+          "实体": 21,
+          "科普": 18,
+          "溯源": 13,
+          "复现": 5,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.2748,
+        "finalScore": 96.9,
+        "threshold": 65,
+        "run": "2026-10-22-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112890584314650624/vid/avc1/1280x720/cKhXqWOR2Cv0yYg1.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "浏览器里的沙漏：14 万个颗粒按真实颗粒物理往下漏，落地还会扬起沙尘——全部在 GPU 上算（three.js，Bilal Khan 新作 WIP）",
+      "category": "3d",
+      "styleFamily": "code",
+      "source": "https://x.com/Bk23544/status/2112980000546926749",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022a-sand.jpg",
+      "previewType": "image",
+      "description": "3D 网页开发者 Bilal Khan（@Bk23544，自述 8 年以上经验，做过 Three.js Grassworks）10-21 18:51 UTC 发帖（原文）：开始做一个新的沙子模拟——14 万个粒子、真实的颗粒物理，全部在浏览器里用 GPU 跑；每个粒子代表「一小团沙」，表现得像很多沙粒；沙子落地时还会扬起沙尘；用 three.js 做（标签 #webgpu），更多内容稍后发。视频（24 秒，目视）：沙漠背景里一个木框玻璃沙漏，镜头围着转，上半部沙子从细颈流下、在下半部堆成沙锥，后半段沙漏翻转重新开始流。封面（目视）：第 3.5 秒截帧，沙漏近景，细颈处一股沙流落到下半部沙堆上。科普可借（延伸，非作者原文）：①沙漏为什么能计时——颗粒流不像水，流量几乎不随上面沙子高度变化（颗粒之间的摩擦和「拱」把压力分到了瓶壁上）；②一粒沙算不过来，就用「一个粒子代表一团沙」，这正是模拟里的粗粒化思路，可以接库里鸟群/涌现主题。",
+      "tool": "three.js（帖子 @threejs）+ WebGPU（标签），GPU 颗粒物理；未说明是否用 AI 编程工具",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖 https://x.com/Bk23544/status/2112980000546926749（抓取时 2 赞，附 24 秒视频）。是 WIP，没有在线 Demo、源码或许可证，只能外链引用。「14 万粒子」「真实颗粒物理」是作者自述，用的是哪种颗粒模型（如 MPM 等）没说。沙漏「流量与高度无关」的物理是延伸知识，视频里引用需另找一手来源。封面为视频第 3.5 秒截帧。",
+      "attribution": "Bilal Khan（@Bk23544）",
+      "sourceAuthor": "Bk23544",
+      "tags": [
+        "Three.js",
+        "WebGPU",
+        "颗粒物理",
+        "粒子"
+      ],
+      "publishedAt": "2026-10-21T18:51:04.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-22T00:54:00.000Z",
+      "updatedAt": "2026-10-22T00:54:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-22T00:54:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 73,
+        "baseBreakdown": {
+          "实体": 24,
+          "科普": 17,
+          "溯源": 10,
+          "复现": 4,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.4,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-22-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112974356632739840/vid/avc1/1364x720/aur_RrBLOkGjPj5r.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "一个转着的三角形就是一整台发动机：转子发动机 38 秒拆解动画，三个腔室「进气、压缩、点火、排气」轮流来——作者称每一帧都是 Claude Code 写的代码，没用 Blender",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/SteveAIStudio/status/2113035102787666106",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022a-wankel.jpg",
+      "previewType": "image",
+      "description": "首尔的一人 AI 视频工作室 @SteveAIStudio（简介：Claude Code 写脚本、建模、配音和渲染，专做 3D 机器拆解）10-21 22:30 UTC 发帖（原文）：这个旋转的三角形是一整台发动机；三个腔室、每转三次做功，没有上下运动的活塞；代价是转子顶端会磨损、还会烧机油；马自达仍在 1991 年靠它赢了勒芒；每一帧都是代码，用 Claude Code + Opus 5.5 做，没用 Blender。视频（38 秒竖屏，目视）：半透明外壳里的三角转子和齿轮在「8 字形」缸体里转，橙色大字标题依次是 A triangle engine / The rotary / Three chambers / In, squeeze, spark, out / 3 pulses per turn / The catch: wear，配逐词字幕；缸体上标着 INTAKE、SQUEEZE、SPARK、EXHAUST 四个位置。封面（目视）：第 14.5 秒截帧，「In, squeeze, spark, out」标题下转子在缸体里，四个工位标签清楚。可借：①竖屏、38 秒、一句话一个镜头的机械科普版式，正适合抖音；②「没有活塞的发动机」本身就是反直觉钩子；③版式可迁移到半导体设备（如刻蚀腔体剖面）——延伸。",
+      "tool": "Claude Code + Opus 5.5，全部代码渲染、未用 Blender（作者自述）；具体渲染库未说明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖 https://x.com/SteveAIStudio/status/2113035102787666106（抓取时 0 赞，新账号作品）。「每一帧都是代码」「没用 Blender」为作者自述，没有源码、提示词或许可证，只能外链引用。转子发动机的原理描述和「1991 年勒芒」来自作者帖子，视频里引用前应再核对（马自达 787B 1991 年勒芒夺冠是公开史实，但本轮未查一手来源）。封面为视频第 14.5 秒截帧。",
+      "attribution": "@SteveAIStudio（X）",
+      "sourceAuthor": "SteveAIStudio",
+      "tags": [
+        "机械拆解",
+        "结构可视化",
+        "Claude Code",
+        "代码视频"
+      ],
+      "publishedAt": "2026-10-21T22:30:01.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-22T00:54:00.000Z",
+      "updatedAt": "2026-10-22T00:54:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-22T00:54:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 71,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 20,
+          "溯源": 10,
+          "复现": 5,
+          "风格": 9,
+          "新颖": 9
+        },
+        "multiplier": 1.0618,
+        "finalScore": 75.4,
+        "threshold": 65,
+        "run": "2026-10-22-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113017223753482240/vid/avc1/720x1280/nRs0nCvGJxt6LP6K.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "Tripo 吐出一副「看得穿」的破耳机，Opus 5.5 写 Blender 脚本修：删支架、重建滑轨、补 0.7 mm 壁厚、塞进 6 个内部零件，再把穿帮处染成品红逐个清零，当天做成能一层层拆开的 three.js 产品页",
+      "category": "frontend",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/KobinFlow/status/2112914537389445162",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022a-headphone.jpg",
+      "previewType": "image",
+      "description": "@KobinFlow（简介：浙大计科、前独角兽 Web 架构）10-21 14:30 UTC 发帖（原文要点）：①Tripo 生成的粗模自带支架、光影烤死在贴图上、接缝发黑、金属滑轨被渲成玻璃，转个角度能看穿到背面；②交给 Opus 5.5，它不点鼠标，直接写 Blender 脚本：删支架、换材质、按截面重建滑轨和转轴、左右镜像对称、头梁补 0.7 mm 壁厚；③把 6 件内部零件按真实尺寸装进耳罩，网页里能一层层拆开；④它给自己挑刺：把看得穿的地方染成品红，8 个机位逐个数，69,114 → 8,848 → 3,543 → 475；⑤脚本跑两遍文件逐字节一致，直接放进 three.js 上线；时间线是 10 月 20 日上午拿到粗模，一个半小时修完模型，下午页面上线。视频（84 秒，目视）：深色产品页，标题「这副耳机，是 AI 生成的」「直接生成：看着像，用不了」「每个毛病，都拍出来」「挑出来，修掉，再量一遍」「不是手调一次，是一段脚本」，有 Tripo 原模 vs 精修后的左右对比、品红标出的穿帮区域和数字、终端脚本画面，以及头梁、耳罩分层展开的爆炸图。封面（目视）：开头标题页「AI 生成的耳机，被另一个 AI 挑刺修到上线」，左边带支架的 Tripo 原模（品红标出问题），右边修好的白色耳机。可借：①「生成 → 量化找错 → 脚本修 → 再量」的验收流程，和库里「渲染前先给网格点名」那条可以接上；②爆炸图式产品拆解，适合做芯片/设备结构镜头。",
+      "tool": "Tripo（粗模）+ Claude Opus 5.5 写 Blender Python 脚本 + three.js 网页（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖 https://x.com/KobinFlow/status/2112914537389445162（抓取时 3 赞、5 条回复，附 84 秒录屏）；帖子引用了作者 10-20 的前一条帖子。产品页网址、脚本源码、许可证都没给，只能外链引用。数字（0.7 mm、69,114 → 475、一个半小时）为作者自述；耳机为虚构的 AI 生成产品。用户有 Tripo 合作，这条涉及 Tripo 的缺点描述，引用时注意语境。封面为录屏第 1 秒截帧。",
+      "attribution": "@KobinFlow（X）",
+      "sourceAuthor": "KobinFlow",
+      "tags": [
+        "Three.js",
+        "Blender",
+        "Tripo",
+        "爆炸图",
+        "结构可视化"
+      ],
+      "publishedAt": "2026-10-21T14:30:56.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-22T00:54:00.000Z",
+      "updatedAt": "2026-10-22T00:54:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-22T00:54:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 72,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 16,
+          "溯源": 12,
+          "复现": 11,
+          "风格": 9,
+          "新颖": 6
+        },
+        "multiplier": 1.2382,
+        "finalScore": 89.2,
+        "threshold": 65,
+        "run": "2026-10-22-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112913894410981376/vid/avc1/1280x720/V5NbP7QEx0N_uGkp.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "雨中的纽博格林开进浏览器：Project Endurance 用 three.js + WebGPU + TSL 做湿地反光和 GPU 雨，Rapier 带轮胎和传动模型（Anderson Mancini）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://webgpu.com/showcase/project-endurance-webgpu-racing/",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022a-endurance.jpg",
+      "previewType": "image",
+      "description": "WebGL / WebGPU 社区站 10-21 收录 Anderson Mancini 的浏览器赛车游戏（展示页原文）：在雨中的纽博格林赛道上驾驶 GT3 赛车；用 three.js（WebGPU 后端）、TSL 着色语言渲染，Rapier 做车辆模拟并带自己的轮胎和传动模型；有 GPU 驱动的雨、昼夜变化、湿沥青、实时反射、压缩纹理、引擎音效和流式加载赛道几何；模式包括自由驾驶、挑战、限时救援、四人联机和「Photo Run」（赛后用转播机位回放）；桌面和手机都能玩；在线地址 endurance-racing.vercel.app。演示视频（51 秒，目视）：菜单界面、夜间赛道、雨中积水路面上的赛车倒影、回放机位。封面（目视）：视频第 39 秒截帧，Photo Run 回放里一辆赛车驶过积水弯道，水面倒映着树和车。",
+      "tool": "three.js（WebGPU）+ TSL + Rapier 物理（展示页原文）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "展示页 https://webgpu.com/showcase/project-endurance-webgpu-racing/（2026-10-21 发布）+ 社区账号 X 帖 https://x.com/WebGL_WebGPU/status/2112954642841862522（15 赞）；作者 @Andersonmancini。在线游戏 https://endurance-racing.vercel.app 本轮没运行；没有找到源码和许可证。偏游戏作品，科普镜头主要是「湿路面为什么反光像镜子」这类延伸。封面为演示视频第 39 秒截帧（裁去外框）。",
+      "attribution": "Anderson Mancini（@Andersonmancini）；WebGL / WebGPU 社区收录",
+      "sourceAuthor": "Andersonmancini",
+      "tags": [
+        "Three.js",
+        "WebGPU",
+        "TSL",
+        "网页赛车",
+        "雨夜"
+      ],
+      "publishedAt": "2026-10-21T17:10:18.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-22T00:54:00.000Z",
+      "updatedAt": "2026-10-22T00:54:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-22T00:54:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 64,
+        "baseBreakdown": {
+          "实体": 19,
+          "科普": 8,
+          "溯源": 14,
+          "复现": 6,
+          "风格": 10,
+          "新颖": 7
+        },
+        "multiplier": 1.249,
+        "finalScore": 79.9,
+        "threshold": 65,
+        "run": "2026-10-22-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112954501049245696/vid/avc1/720x720/IIolaLlJD4BtIyvz.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "在画面里放几个虚拟「螺旋桨」，流体模拟把图片搅成漩涡，倒放就是《奥特 Q》片头：Crazy Fluid 网页版（WebAssembly，可导出连番 PNG）",
+      "category": "motion",
+      "styleFamily": "code",
+      "source": "https://harayoki.github.io/crazy-fluid/",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022a-crazyfluid.jpg",
+      "previewType": "image",
+      "description": "日本创作者 harayoki 10-21 17:18 UTC 发帖（原文）：之前给 MV 做的「奥特」式演出是用 Python 流体模拟做的，觉得用一次就扔可惜，重新做成网页应用公开，除了螺旋桨（スクリュー）还加了很多效果器，可以输出连番图像。网页（原文）：Crazy Fluid v1.00 by FXPluginHarness，用流体模拟扭曲图片，放置虚拟螺旋桨等搅动输入图像，倒放就是特摄片里常见的演出；浏览器版用 WebAssembly 跑，本地 C++ 版更流畅；AE/Premiere/OpenFX 插件版「近日公开」，可以用视频当素材、给参数打关键帧。录屏（128 秒，目视）：「ウルトラ FX」字样被搅成漩涡、再换成同心圆、木纹等图案。封面（目视）：录屏第 33 秒，橙色「ウルトラ FX」大字在深色背景里开始被流体扭曲，右侧是参数面板。",
+      "tool": "Python 流体模拟原型 → C++/WebAssembly 网页版（作者自述/网页原文）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "在线工具 https://harayoki.github.io/crazy-fluid/ + 作者 X 帖 https://x.com/harayoki/status/2112956619814535218（2 赞）。网页没写开源许可，插件版看起来要商业发行；只能外链引用。偏特效工具，科普镜头弱。封面为录屏第 33 秒截帧。",
+      "attribution": "harayoki（FXPluginHarness）",
+      "sourceAuthor": "harayoki",
+      "tags": [
+        "流体模拟",
+        "WebAssembly",
+        "特摄"
+      ],
+      "publishedAt": "2026-10-21T17:18:09.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-22T00:54:00.000Z",
+      "updatedAt": "2026-10-22T00:54:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-22T00:54:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 61,
+        "baseBreakdown": {
+          "实体": 17,
+          "科普": 9,
+          "溯源": 11,
+          "复现": 9,
+          "风格": 6,
+          "新颖": 9
+        },
+        "multiplier": 1.1,
+        "finalScore": 67.1,
+        "threshold": 65,
+        "run": "2026-10-22-0840-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://video.twimg.com/amplify_video/2112950005111889920/vid/avc1/718x720/qYxA9cLRxqAG38Ze.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "每个像素只算 1 条光线，画面全是雪花噪点，一个只有 812 个参数的小网络把它「嘘」一声变干净：Hush——浏览器里 60 fps 实时路径追踪降噪器（WebGPU + three.js，MIT 开源）",
       "category": "frontend",
@@ -15344,8 +15669,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条",
-  "updatedAt": "2026-10-21T12:51:00.000Z",
-  "totalItems": 325,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条",
+  "updatedAt": "2026-10-22T00:54:00.000Z",
+  "totalItems": 331,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
