@@ -4,6 +4,60 @@
   "exportedCount": 339,
   "items": [
     {
+      "title": "Opus 5.5 能当 3D 动画师吗？一条从产品 brief 到 Blender 可编辑场景、发布短片和网页 3D 的完整工具栈",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "is3d": true,
+      "source": "https://x.com/beamnxw/status/2113014738611290139",
+      "sourceCodeUrl": "",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261022-beamnxw-opus-blender-stack.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2113014233600253952/vid/avc1/1200x1500/NQR0cAu0RpbEpAfb.mp4",
+      "description": "beamnxw（@beamnxw）2026-10-21 发帖：称 Opus 5.5 是目前最好的 3D 动画师，给出从建场景到最终渲染的完整栈：产品 brief → 可编辑场景 → 发布短片 + 网站 3D。01 连接 Claude 与 Blender：`claude mcp add blender uvx mcp-for-blender`，再 `uvx mcp-for-blender install-addon`；需要 Blender 和 uv，在 Blender 里启用插件并启动其服务。02 建模+动画：Blender + bpy + Geometry Nodes 做几何、材质、灯光、关键帧和镜头运动。03 真实素材：Poly Haven 的 CC0 HDRI、PBR 贴图和模型。04 渲染与成片：EEVEE 出预览、Cycles 做路径追踪；FFmpeg 编码帧序列，Remotion 加音频和标题。05 网站用模型：导出 GLB，glTF Transform 优化，gltfjsx 生成可复用 React 组件（`npx gltfjsx scene.glb --transform --types`）。06 交互：Three.js + React Three Fiber + drei 做控制、交互和网页动画。给 Opus 资产、参考和镜头表：揭示 → 特写 → 环绕 → 结束帧；渲染前先批预览，保持 master.blend 可编辑，检查 GLB 导出。帖内约 20 秒竖版视频。所引 X 长文《Motion Engineering with Opus 5.5: Build Launch Videos You Can Sell》（2026-10-09）讲的是另一条 2D 路线：用 Claude Code + Remotion 做 20 秒产品发布短片——先把参考视频用 FFmpeg 每秒抽 2 帧交给 Claude 拆解，写 BRIEF.md（文案、素材、时间轴，如 30fps 下点击在第 195 帧、收尾从第 420 帧），所有运动用 useCurrentFrame() + interpolate/spring 驱动、随机用固定种子；先渲开场、产品结果、收尾三张静帧审构图，再渲场景边界区间；修改按「位置/问题/改动/保持不变」四栏；音效对齐到按下与揭示的帧；最后整片渲染并用 FFprobe 验证 1080×1080、30fps、约 20 秒。文末建议把它包装成 150 美元的发布短片服务。",
+      "tool": "Claude Opus 5.5 + Claude Code（MCP：mcp-for-blender）、Blender（bpy、Geometry Nodes、EEVEE、Cycles）、Poly Haven、FFmpeg、Remotion、glTF Transform、gltfjsx、Three.js / React Three Fiber / drei",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为 @beamnxw 原帖（2026-10-21T21:09:06Z）与所引长文 2108616740846420354（经 X API 回读全文，非臆造）。看不到的部分：原帖 6 步各附的 t.co 链接未展开；长文里的代码块与可复制提示词（「Paste this into Claude Code…」之后、BRIEF.md 示例、时间轴表、渲染与 ffmpeg/ffprobe 命令、报价草稿）在 API 返回的纯文本中为空，未能读到；长文本身不涉及 Blender，Blender 栈只出自原帖。帖子未给出具体的 Opus 提示词。封面为帖内视频缩略图。",
+      "attribution": "@beamnxw",
+      "sourceAuthor": "beamnxw",
+      "tags": [
+        "Blender",
+        "Claude MCP",
+        "Opus 5.5",
+        "Remotion",
+        "Three.js",
+        "3D建模"
+      ],
+      "publishedAt": "2026-10-21T21:09:06Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-22T13:05:00.000Z",
+      "updatedAt": "2026-10-22T13:05:00.000Z",
+      "relatedSource": "https://x.com/beamnxw/status/2108616740846420354",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": "2026-10-22T13:05:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-22T13:05:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          960,
+          1200
+        ],
+        "preview_check": "封面为帖内视频缩略图，HTTP 200。",
+        "video_check": "未播放 20 秒视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-batch-2026-10-22"
+      }
+    },
+    {
       "title": "一张海报只挂两个角，为什么中间飘得最厉害？Codrops 拆解作品集里的「布料海报」：两个钉子的距离相乘，就是整张布的「松紧」",
       "category": "frontend",
       "styleFamily": "code",
@@ -16115,7 +16169,7 @@
   ],
   "bookmarksNotInVisual": 15,
   "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条",
-  "updatedAt": "2026-10-22T12:47:00.000Z",
+  "updatedAt": "2026-10-22T13:05:00.000Z",
   "totalItems": 339,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
