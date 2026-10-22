@@ -1,7 +1,120 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-22T04:51:00.000Z",
+  "updatedAt": "2026-10-22T08:56:00.000Z",
   "topics": [
+    {
+      "url": "https://www.amec-inc.com/news/716.html",
+      "title": "芯片越往「高」里盖，刻蚀机为什么越要学会「只挖一种料、旁边一点不碰」？中微公司全球首台气相高选择性刻蚀设备 Primo Domingo 付运",
+      "category": "半导体",
+      "source": "中微公司官网新闻《重要突破！中微公司全球首台高选择性刻蚀设备顺利付运》（amec-inc.com，2026-10-22）",
+      "publishedAt": "2026-10-22",
+      "eventAt": "2026-10-22",
+      "collectedAt": "2026-10-22T08:56:00.000Z",
+      "updatedAt": "2026-10-22T08:56:00.000Z",
+      "description": "中微公司（688012）10 月 22 日官网新闻（原文要点）：Primo Domingo® 气相高选择性刻蚀设备全球首台机已付运「国内重要集成电路研发制造客户」（未点名）。官方给的背景：芯片架构三维化是持续缩微的重要动能，高选择性刻蚀是三维器件制造最关键的工艺之一，面向 GAA、3D NAND、3D DRAM 等器件需求；官方称这填补了国内下一代 3D 器件关键刻蚀工艺的自主化空白。设备设计（原文）：全对称腔体 + 优化流场，在气体注入、温度控制、压力调控上做系统整合，保证晶圆表面刻蚀均匀性和重复性；集成气柜缩短气体注入距离，实现更快的脉冲气体精密控制；内部用高抗腐蚀管路和特殊涂层应对高活性刻蚀气体；双制冷/双加热晶圆基座，支持宽范围精准温控；搭载量产的 Primo C6V3 传输系统，可搭配主刻蚀腔和辅助退火腔。同稿里的公司口径（原文，官方自述）：刻蚀设备覆盖 65 纳米到 3 纳米及更先进工艺；介质刻蚀深宽比 60:1、90:1，硅刻蚀 140:1；双反应台 ICP 刻蚀「达到 0.2 纳米的单原子水平」；累计开发 54 种设备；截至 2026 年 6 月底累计超过 8800 个反应台在国内外 220 余条产线量产。可拍角度：①钩子：平面芯片时代刻蚀拼的是「往下挖得直」，3D 器件时代多了一道考题——「在一层叠一层的三明治里只把某一种材料掏空，旁边的一点不能碰」；②延伸（非官方原文，需另找一手资料）：GAA 纳米片要先把硅和锗硅交替叠起来，再把锗硅牺牲层横向掏掉、留下悬空的硅片，这一步正是「选择比」说了算；③和库里 10-15「中微低温刻蚀挖 90 倍深孔」串成「国产刻蚀机的两道题：挖得深 vs 挑得准」；④首帧：官方设备渲染图 + 自制三明治叠层被「只吃一种料」的动画。",
+      "caveat": "全部为中微公司官网自述；客户未点名，「填补空白」「国际一流」是公司说法；稿件没有给出选择比、刻蚀速率等具体工艺指标。X 上有转述称「刻锗硅比刻硅快 700 多倍」，官网原文里没有这个数字，本轮未核实，视频里不要用。「气相」具体是否用等离子、用什么气体，原文没说，不要自行补充。GAA 牺牲层释放属于延伸知识，需另找一手来源。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261022c-amec-domingo.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022c-amec-domingo.jpg",
+      "imageAlt": "中微公司官网新闻配图：Primo Domingo 刻蚀设备整机渲染图，左侧多个工艺腔与传输系统，右侧白色机柜上印 Primo Domingo 字样",
+      "tags": [
+        "芯片制造",
+        "刻蚀",
+        "国产设备",
+        "3D器件"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 90,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 16,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 10,
+          "新颖": 4
+        },
+        "multiplier": 1.0743,
+        "finalScore": 96.7,
+        "threshold": 65,
+        "run": "2026-10-22-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://simedw.com/2026/10/21/world-model-terminal/",
+      "title": "屏幕后面没有电脑：一个 3.6 亿参数的小模型「假装」自己是 Linux 终端，能开 vim、分 tmux、记住你写过的文件——删掉它的第 7 层，记忆从 64/64 掉到 0/64",
+      "category": "AI",
+      "source": "Simon Edwardsson 个人博客《WorldTUI: I trained a 360M model to pretend to be a terminal》（simedw.com，2026-10-21）",
+      "publishedAt": "2026-10-21",
+      "eventAt": "2026-10-21",
+      "collectedAt": "2026-10-22T08:56:00.000Z",
+      "updatedAt": "2026-10-22T08:56:00.000Z",
+      "description": "Simon Edwardsson 10 月 21 日博客（原文要点）：他把一个语言模型微调成「终端」——背后没有 shell 也没有文件系统，每次按键输入进去，模型预测屏幕怎么变；能建文件、跑 vim 和 tmux、玩贪吃蛇，通常还记得几条命令前写过的内容；故意打 `pythoon` 也能启动「Python」，说明它不是真 shell。动机（原文）：看到 Genie 3 后设想「应用不是写出来的，而是学出来的」，没有大集群，就把世界模型缩小到终端——字符网格比像素简单，还能在 Docker 里跑真实程序无限生成带标注的数据。做法（原文）：基座 Qwen2.5-Coder-0.5B；把屏幕当字符网格，模型只输出「改哪几行、光标去哪」，加了「整行复制」操作，词表只有 333 个 token；训练数据是 33.6 万段 Docker 终端录制（约 20 亿 token）；借鉴 DAgger 让模型学会修正自己的错误；在 RTX 4090 上总共约 75 GPU 小时；多行并行解码 + 同一模型自我投机验证，把大画面 p95 延迟从 6.7 秒降到 0.87 秒；砍掉用不到的词表嵌入后约 3.6 亿参数，int4 量化到 208 MB，用自写 WGSL 着色器在浏览器 WebGPU 里本地推理。成绩（作者自测）：ShellBench 106 题对 80（未微调的 Qwen2.5-Coder-0.5B 提示版 52、Qwen3-0.6B 60），文件回读 13 次对 9 次。最反直觉的一段（原文）：蒸馏时只删掉第 7 层，下一 token 准确率从 99.3% 仅降到 98.9%，但精确记忆回读从 64/64 变成 0/64——「一个学生模型看起来没事，可能已经悄悄丢了记忆」。可拍角度：①钩子「你看到的终端，其实是模型在猜下一帧」；②「看起来对」和「真记得」是两回事，准确率几乎不变、记忆全丢，可接账号的「涌现」系列；③和 Genie、GameNGen（AI 模拟 Doom）放一起讲「世界模型」。",
+      "caveat": "全部数字为作者个人博客自测，基准是他自己设计的（ShellBench、PresetBench、记忆测试），未经第三方复现；作者说权重「很快」发布，目前没有下载链接和许可证。在线 demo 需桌面浏览器 WebGPU、要下载 208 MB 模型，大陆网络能否顺利打开本轮未测。作者自己也说这是「很弱的世界模型」，「有用吗？其实没什么用」，视频里不要夸大成「AI 取代操作系统」。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261022c-worldtui.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022c-worldtui.jpg",
+      "imageAlt": "WorldTUI 博客 og 图：黑底终端窗口里执行 cowsay \"I'm running in a model\"，ASCII 奶牛下方写着 A 360M model predicts every frame, live in the browser",
+      "tags": [
+        "AI训练",
+        "世界模型",
+        "端侧AI",
+        "涌现"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 81,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 17,
+          "画面": 13,
+          "来源": 13,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 85.6,
+        "threshold": 65,
+        "run": "2026-10-22-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://news.emory.edu/features/2021/09/new-method-reveals-minimum-heat-levitating-drops",
+      "title": "水滴进热锅为什么不马上蒸发，反而满锅「滑冰」？实验测出：蒸汽垫约 240°C 才形成，一旦形成能一直撑到约 140°C 才「炸」掉——换什么金属都一样",
+      "category": "社会生活",
+      "source": "Emory 大学新闻 + Physical Review Letters 127, 104501（Harvey、Méndez Harper、Burton，《Minimum Leidenfrost Temperature on Smooth Surfaces》，2021-09-01）；本轮线索来自 @CShenmi 10-22「每日力学」帖",
+      "publishedAt": "2021-09-01",
+      "eventAt": "2021-09-01",
+      "collectedAt": "2026-10-22T08:56:00.000Z",
+      "updatedAt": "2026-10-22T08:56:00.000Z",
+      "description": "常青机制题（时效分按 6 计）。线索：力学博士生 @CShenmi 10-22 05:30 UTC 发「为什么冷水滴到热锅里会开始跳舞？」科普短片；本条按一手来源重写。论文摘要（PRL 原文）：莱顿弗罗斯特效应里，一层薄薄的绝热蒸汽把蒸发的液体和热固体隔开；作者用高速电学方法测光滑金属表面上水蒸汽层的厚度，发现蒸汽层可以在远低于「形成温度」的条件下维持，爆炸性失效点几乎与材料和液体性质无关，提示由纯流体动力学机制决定；对几毫米大小的水蒸汽层，最低稳定温度约 140°C，对应平均蒸汽层厚度 10–20 微米。正文（原文）：稳定蒸汽层平均在 240±30°C 形成，崩溃反复发生在 140±10°C，崩溃是「爆炸性且听得见的」。Emory 新闻（原文）：一作 Dana Harvey 在机械车间做了不到一英寸粗的钛、铜、黄铜「手指」，镀 10 微米金防腐，加热后浸入带电极的水浴，把蒸汽层当成电容来读厚度；Burton 说「这篇论文某种意义上讲的是失效的物理」；Harvey 说一旦低于 140°C，蒸汽层必然失效，究竟什么触发崩溃仍是开放问题。可拍角度：①首帧就在厨房：同一口锅，温度不够时水「嗞」一下摊开，够烫时水珠满锅乱跑；②反直觉：越烫的锅水反而越不容易蒸干（蒸汽垫隔热）；③「形成要 240°C、维持只要 140°C」的滞后，可类比生活里「启动难、维持易」；④延伸（非论文原文）：同一原理和热处理淬火时工件表面蒸汽膜有关，需另找来源。",
+      "caveat": "论文是 2021 年的，不是新发现，视频里不要说「最新研究」；240°C/140°C 是论文里特定装置（镀金金属柱浸入 75–95°C 水中、光滑表面）测得的值，换成粗糙锅底或单个水滴在锅上，具体温度会不同，不能直接说「你家锅到 140°C 就……」。「做饭看水珠判断锅热不热」是 @CShenmi 帖子的生活延伸，不是论文结论。封面为 Emory 新闻页 og 图（往热锅里倒水的画面），版权归 Emory，仅作门户预览。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261022c-leidenfrost.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022c-leidenfrost.jpg",
+      "imageAlt": "Emory 新闻 og 图：灶台上的黑色平底锅，一股水流倒入，锅面冒白汽、水在锅底摊开",
+      "tags": [
+        "生活物理",
+        "传热",
+        "流体"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 76,
+        "baseBreakdown": {
+          "主线": 15,
+          "钩子": 16,
+          "画面": 12,
+          "来源": 15,
+          "时效": 6,
+          "大陆": 7,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 80.3,
+        "threshold": 65,
+        "run": "2026-10-22-1640-shanghai"
+      }
+    },
     {
       "url": "https://claude.com/blog/claude-duet",
       "title": "一个能替你读邮件、发消息的 AI，为什么偏偏拒绝帮你发身份证号？Anthropic 推出「主动型」智能体 Claude Duet 研究预览",

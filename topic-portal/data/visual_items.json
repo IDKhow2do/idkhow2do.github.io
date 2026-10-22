@@ -1,8 +1,173 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 335,
+  "exportedCount": 338,
   "items": [
+    {
+      "title": "光在屋里弹几次，墙会被「染」成什么颜色？three.js 新提交的辐射度（Radiosity）光照烘焙：康奈尔盒里红墙把白箱子染红、绿墙把地面染绿，0.8 秒烘完（WebGPU，PR 未合并）",
+      "category": "3d",
+      "styleFamily": "code",
+      "source": "https://x.com/threejs/status/2113187602929234120",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022c-lightmap.jpg",
+      "previewType": "image",
+      "description": "Three.js 官方账号 10-22 08:36 UTC 发帖，附 58 秒录屏和在线示例 webgpu_lightmap_baking（zalo 的 three.js 分支）。对应 PR #35124《Lightmapper: Add Radiosity Algorithms》（GitHub 用户 zalo，10-20 提交，状态 open，约 +10149/−124 行、24 个文件）。PR 描述（原文要点）：在 Ben Houston 近期的光照烘焙 PR 基础上新增两种辐射度光照贴图算法——「Ray Radiosity」用 three-mesh-bvh（从 CDN 引入）逐纹素计算辐射度，作者认为是光照贴图质量的「金标准」；「Stochastic Radiosity」由 three.js 现有的渐进阴影贴图示例演化而来，不需要任何依赖和 BVH。小场景里 Ray 版「单位时间质量」略胜，大而复杂的场景 Ray 版要建巨大 BVH、跑昂贵的 WebGPU 着色器，会输得很惨；另有降噪、接缝缝合等功能；依赖 #34991 和 #34944。录屏（目视）：面板可切换场景（Cornell Box 等）和 GI 算法（Stochastic Radiosity / Ray Radiosity，示例说明里还列了 Light Probe、VXGI），分辨率 1024、可开降噪；康奈尔盒里白色长方体靠红墙一侧泛红、蓝球下地面泛绿；后段换成带拱廊和喷泉的庭院场景、再到多层柱廊建筑。封面（目视）：第 5 秒截帧，左上角写着「Stochastic Radiosity baked: 544 samples, 1.8% noise, in 0.8 s」。可借：①「光会反弹、会带着墙的颜色走」是全局光照最直观的科普镜头，红绿墙染色一眼就懂；②两种算法「小场景谁快、大场景谁慢」可讲算法取舍；③刻蚀腔体内壁、晶圆表面受光可以借这个思路做渲染（延伸）。",
+      "tool": "three.js WebGPU + three-mesh-bvh（Ray Radiosity 版）；PR 作者 zalo",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "Three.js 官方 X 帖 https://x.com/threejs/status/2113187602929234120（抓取时 7 赞，附 58 秒视频）；PR https://github.com/mrdoob/three.js/pull/35124 （GitHub API：open，2026-10-20 20:26 UTC 创建，10-22 08:16 UTC 更新）；在线示例 https://raw.githack.com/zalo/three.js/light-baking-radiosity/examples/webgpu_lightmap_baking.html 。three.js 仓库为 MIT 许可，但该 PR 未合并、代码目前在 zalo 的分支里，最终是否进入官方示例未定。「金标准」「质量更好」是 PR 作者自述。本轮没有在浏览器里运行示例。封面为官方帖视频第 5 秒截帧。",
+      "attribution": "zalo（GitHub，three.js PR #35124）/ Three.js 官方（@threejs）",
+      "sourceAuthor": "zalo",
+      "tags": [
+        "Three.js",
+        "全局光照",
+        "WebGPU",
+        "光照烘焙"
+      ],
+      "publishedAt": "2026-10-22T08:36:00.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-22T08:56:00.000Z",
+      "updatedAt": "2026-10-22T08:56:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-22T08:56:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 86,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 18,
+          "溯源": 18,
+          "复现": 14,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.4,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-22-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113187422964166656/vid/avc1/888x734/kOAlhGaFOZnrMaEX.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/mrdoob/three.js/pull/35124",
+      "licenseName": "MIT（three.js 仓库许可；该 PR 尚未合并）",
+      "licenseUrl": "https://github.com/mrdoob/three.js/blob/dev/LICENSE"
+    },
+    {
+      "title": "在万神殿里随手画个圈，空间被「烧」开一扇门，一步跨进两千年前的银塔广场：实拍重建的古罗马「时光门」网页（3DGS + Three.js，浏览器直接玩）",
+      "category": "3d",
+      "styleFamily": "code",
+      "source": "https://x.com/KobinFlow/status/2113189954134352369",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022c-portal.jpg",
+      "previewType": "image",
+      "description": "Kobin（@KobinFlow，简介：浙大计科、前独角兽 Web 架构）10-22 08:45 UTC 发帖（原文要点）：把古罗马装进浏览器，做了一扇「任意门」——在万神殿穹顶下随手画个圈，空间被笔迹烧开，跨过去就到了凯撒遇刺的银塔广场；纯 Web 端运行。技术（作者原文）：①空间与门用 3DGS + Three.js + Spark：画出的笔迹解算成 64 维轮廓，在当前世界的着色器里实时「挖洞」，另一端世界用一台同步视角的相机画进来，门前的柱子照样能遮挡门洞；门后环境音挂 HRTF 空间定位和低通滤波，随靠近从 400Hz 放开到 18kHz。②「数字考古」清理：1068 张实拍重构，实拍里全是游客走动的「鬼影」——拟合墙面点云找准真圆心，切掉半空和地下 80 万个噪点；用自相关算出古罗马地砖的重复周期，取全场唯一干净的一块砖随机旋转镜像铺满地面；补齐被人挡住的墙脚，避开 8 座雕像神龛。作者自评：把实景 3D 搬进浏览器不稀奇，把现实里的杂音收拾干净才见手艺。在线地址 portal-jumping.kobinlab.com（作者回复里给出，页面标题「时光门 · Portal Jumping」）。视频（28 秒，目视）：万神殿内彩虹光环门洞里透出广场上的松树和遗址；心形门；古罗马广场「最大的建筑」拱廊；最后仰拍万神殿穹顶和圆孔，片尾字幕「时光门 PORTAL JUMPING，浏览器打开就能玩」。封面（目视）：第 3 秒截帧，万神殿地面上一圈彩色光环门，门里是银塔广场遗址，下方字幕「在万神殿里，画一扇门」。可借：①「用自相关找地砖重复周期」本身就是信号处理科普小镜头；②门洞「挖洞 + 第二台相机」可以讲传送门渲染原理；③3D 建模分类的实景重建素材。",
+      "tool": "3DGS（3D 高斯泼溅）+ Three.js + Spark，WebAudio HRTF（作者自述）；是否借助 AI 编程工具帖内未说明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖 https://x.com/KobinFlow/status/2113189954134352369（抓取时 0 赞、2 回复，发帖不到 5 分钟，附 28 秒 1080p 视频）；作者回复 https://x.com/KobinFlow/status/2113190038393721141 给出在线地址 https://portal-jumping.kobinlab.com （HTTP 200，本轮没在浏览器里运行）。帖子说「技术灵感见评论区」，但抓取时评论区只有链接。1068 张实拍是谁拍的、照片和场景数据的版权与许可都没有说明，没有源码，只能外链引用。64 维轮廓、80 万噪点、400Hz–18kHz 等数字均为作者自述。同作者库里已有 1 条 Tripo 耳机修模条目，角度不同。封面为视频第 3 秒截帧。",
+      "attribution": "Kobin（@KobinFlow）",
+      "sourceAuthor": "KobinFlow",
+      "tags": [
+        "Three.js",
+        "高斯泼溅",
+        "网页交互",
+        "实景重建"
+      ],
+      "publishedAt": "2026-10-22T08:45:20.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-22T08:56:00.000Z",
+      "updatedAt": "2026-10-22T08:56:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-22T08:56:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 72,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 15,
+          "溯源": 12,
+          "复现": 8,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.25,
+        "finalScore": 90.0,
+        "threshold": 65,
+        "run": "2026-10-22-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113189414369456128/vid/avc1/1920x1080/7fpzJMNgagwnf8M3.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "一艘小渔船在风暴海面上颠簸、拖出白色尾迹：Three.js Water Pro 升级浪、光照、浮力、尾迹和泡沫（Dan Greenheck，FFT 海浪，商业库）",
+      "category": "3d",
+      "styleFamily": "code",
+      "source": "https://x.com/dangreenheck/status/2113157677463285843",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022c-waterpro.jpg",
+      "previewType": "image",
+      "description": "Three.js 教程作者 Dan Greenheck（@dangreenheck，1.26 万关注）10-22 06:37 UTC 发帖（原文）：一直在全面改进 Three.js Water Pro——更好的浪、光照、浮力、尾迹和泡沫，下一步做新环境；Three.js 官方账号 08:37 UTC 转发同一视频。产品文档 docs.threejswaterpro.com（原文要点）：面向 Three.js WebGPU 的实时物理海洋渲染；JONSWAP 海浪谱 + 三级 FFT 级联（涌浪、波浪、细纹）；用波面雅可比判断破浪生成泡沫；GPU 采样水面做多点船体浮力；Rayleigh 散射天空、水下折射与焦散；8 个环境预设；需要 three.js r181+ 和支持 WebGPU 的浏览器；文档提到商业软件许可协议。视频（29 秒，目视）：阴天风浪里一艘小渔船随浪起伏，船尾和船舷翻出白色泡沫尾迹，夕阳低照时海面有大片高光，俯拍时尾迹拖成长长的白带。封面（目视）：第 5 秒截帧，渔船侧倾破浪、船头卷起白沫。可借：①「海浪 = 很多不同长短的正弦波叠加（FFT）」是常见的科普切入；②船随浪起伏的浮力镜头可配阿基米德原理。",
+      "tool": "Three.js WebGPU + TSL，FFT 海浪（产品文档）；商业库",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖 https://x.com/dangreenheck/status/2113157677463285843（抓取时 196 赞、53 收藏，附 29 秒视频）；Three.js 官方转发 https://x.com/threejs/status/2113187926591127827 。Water Pro 是付费商业库（文档写商业软件许可协议），源码不公开，只能外链引用、截图注明出处。文档里的技术描述为产品自述。库里已有 10-16 的 Noniv/web-ocean（MIT，FFT 海浪），机制相近；本条胜在船体浮力和尾迹。封面为视频第 5 秒截帧。",
+      "attribution": "Dan Greenheck（@dangreenheck）",
+      "sourceAuthor": "dangreenheck",
+      "tags": [
+        "Three.js",
+        "流体",
+        "物理动效",
+        "WebGPU"
+      ],
+      "publishedAt": "2026-10-22T06:37:05.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-22T08:56:00.000Z",
+      "updatedAt": "2026-10-22T08:56:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-22T08:56:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 64,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 13,
+          "溯源": 11,
+          "复现": 4,
+          "风格": 10,
+          "新颖": 4
+        },
+        "multiplier": 1.25,
+        "finalScore": 80.0,
+        "threshold": 65,
+        "run": "2026-10-22-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113154986854977536/vid/avc1/1920x1080/RcW-wQggAqoX6ZCY.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "同一份「机制讲解」渲成三种画面：3D 图解、粒子光轨、剪纸拼贴——开源 Agent Skill「Video Illustrator」0.9，给 Claude Code 做科普短片用（three.js，MIT）",
       "category": "video",
@@ -15894,8 +16059,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条",
-  "updatedAt": "2026-10-22T04:51:00.000Z",
-  "totalItems": 335,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条",
+  "updatedAt": "2026-10-22T08:56:00.000Z",
+  "totalItems": 338,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
