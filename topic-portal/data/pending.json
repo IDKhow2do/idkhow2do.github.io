@@ -3,6 +3,67 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 58,
+      "multiplier": 1.1,
+      "score": 63.8,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-22-1240-shanghai",
+      "record": {
+        "title": "浏览器里种满整颗地球的树：从太空一路推到单片叶子，作者称约 3 万亿棵树在 GPU 上现场生长、每棵 0 字节存储（WebGPU，个人项目）",
+        "category": "3d",
+        "styleFamily": "code",
+        "source": "https://x.com/damicoa1/status/2113098239108919488",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022b-earth.jpg",
+        "previewType": "image",
+        "description": "@damicoa1（Anthony，简介 ai research）10-22 02:40 UTC 发帖（原文）：在一个浏览器标签页里做了整颗地球，约 3 万亿棵树每棵都不同、在 GPU 上现场生长，每棵树存储 0 字节；从轨道一路缩放到一片叶子，没有加载、没有突然弹出；笔记本上跑 WebGPU。视频（45 秒，目视）：字幕「Every tree on Earth. Grown live in your browser.」「One continuous zoom. No loading. No pop-in.」「Any date. The right season.」；贴近林冠时右侧面板显示「Trees counted around you 300,214 / Grown as unique geometry 40,438 / Stored per tree 0 bytes」；片尾「3,050,000,000,000 trees on one planet」与地月画面。封面（目视）：第 25 秒截帧，林冠高度 23 m 处的面板。可借：程序化生成「不存数据、按坐标现算」的思路，可以接库里涌现/鸟群主题（延伸）。",
+        "tool": "WebGPU（作者自述），程序化生成",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者 X 帖 https://x.com/damicoa1/status/2113098239108919488（抓取时 0 赞、17 关注者）；没有在线地址、源码或许可证，全部性能和数量说法为自述；「3 万亿棵树」是对已有全球树木估算的引用，本轮没核对其出处。封面为视频第 25 秒截帧。",
+        "attribution": "Anthony（@damicoa1）",
+        "sourceAuthor": "damicoa1",
+        "tags": [
+          "WebGPU",
+          "程序化生成",
+          "地球"
+        ],
+        "publishedAt": "2026-10-22T02:40:54.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-22T04:51:00.000Z",
+        "updatedAt": "2026-10-22T04:51:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-22T04:51:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 58,
+          "baseBreakdown": {
+            "实体": 15,
+            "科普": 17,
+            "溯源": 5,
+            "复现": 2,
+            "风格": 10,
+            "新颖": 9
+          },
+          "multiplier": 1.1,
+          "finalScore": 63.8,
+          "threshold": 65,
+          "run": "2026-10-22-1240-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2113098190396256256/vid/avc1/1280x720/liTJ4Gz_-_RBHerC.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 64,
       "multiplier": 1.0,
       "score": 64.0,
@@ -2271,6 +2332,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-22T00:54:00.000Z",
+  "updatedAt": "2026-10-22T04:51:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
