@@ -2,6 +2,114 @@
   "schemaVersion": 1,
   "items": [
     {
+      "kind": "news",
+      "baseScore": 61,
+      "multiplier": 1.0,
+      "score": 61.0,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-22-2040-shanghai",
+      "record": {
+        "url": "https://x.com/MarathonFusion/status/2113001073019662481",
+        "title": "把汞变成金子，炼金术真成了？聚变初创 Marathon Fusion 称用聚变中子把汞-198 变成了稳定的金-197（公司自述，暂无实验数据）",
+        "category": "其他",
+        "source": "Marathon Fusion 官方 X 帖（2026-10-21 20:14 UTC，附 104 秒视频）+ 公司 2025 年论文《Scalable Chrysopoeia via (n,2n) Reactions Driven by Deuterium-Tritium Fusion Neutrons》（marathonfusion.com/alchemy.pdf）",
+        "publishedAt": "2026-10-21",
+        "eventAt": "2026-10-21",
+        "collectedAt": "2026-10-22T12:47:00.000Z",
+        "updatedAt": "2026-10-22T12:47:00.000Z",
+        "description": "待定原因：公司自述、没有公开实验数据。官方帖（原文）：上个月演示了「高速率炼金」，把汞变成真正稳定的金，比 CERN 的纪录高 10 倍；上周在「世界上最强的等离子体离心机」里做了同位素富集，打破保持 40 年的苏联纪录；现在要在旧金山建一座聚变堆追求功率密度纪录。机制（公司 2025 年论文摘要与官网 Alchemy 页）：D-T 聚变放出 14 MeV 快中子，打在汞-198 上发生 (n,2n) 反应——吃进一个中子、吐出两个——变成放射性的汞-197，再衰变成稳定的金-197；多出来的中子还能去打锂-6 产氚，所以不影响氚增殖；论文用中子学模拟估算托卡马克每 GWth 每年约产 2 吨金。视频（目视）：动画示意「D+T 聚变 → 中子 → 汞-198 → 汞-197 → 金-197」与「中子 → 锂-6 → 氚 + 氦-4」两条反应链，配字幕「for co-production of electricity and gold」。可拍角度：①钩子「炼金术在 21 世纪变成了核工程问题」；②(n,2n)：一个中子进、两个出，金子是副产品；③为什么现在的金子还不能直接戴（放射性冷却，需另核）。",
+        "caveat": "「已经做出金子」「比 CERN 纪录高 10 倍」「打破苏联纪录」都是公司在 X 上的自述，帖子没有附实验数据；runtimewire 10-21 报道也指出没有数据、未经独立核实。2 吨/GWth/年是 2025 年论文的模拟估算，不是实测产量。phys.org 2025 年报道里「冷却约 17.7 年」等说法本轮没有回到论文原文核对，暂不要用。主线与半导体/AI 关联弱，等有数据或第三方核实再考虑上墙。封面为官方视频第 91 秒截帧（反应链示意动画）。",
+        "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261022d-marathon.jpg",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022d-marathon.jpg",
+        "imageAlt": "Marathon Fusion 官方视频截帧：黑底橙线示意图，D+T 聚变放出中子 n 打到 Mercury-198，分出 Lithium-6 支路，Mercury-197 指向 Gold-197，下方字幕 for co-production of electricity and gold",
+        "tags": [
+          "核聚变",
+          "同位素",
+          "科学传闻待核"
+        ],
+        "tagSource": "provided",
+        "curation": {
+          "baseScore": 61,
+          "baseBreakdown": {
+            "主线": 8,
+            "钩子": 19,
+            "画面": 12,
+            "来源": 3,
+            "时效": 10,
+            "大陆": 4,
+            "新颖": 5
+          },
+          "multiplier": 1.0,
+          "finalScore": 61.0,
+          "threshold": 65,
+          "run": "2026-10-22-2040-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 59,
+      "multiplier": 1.4,
+      "score": 59.0,
+      "reason": "本轮达待定区间（单维度乘数保护生效）",
+      "run": "2026-10-22-2040-shanghai",
+      "record": {
+        "title": "在浏览器里从巴黎上空跳伞，落在真实的屋顶上：Three.js + Google 真实感 3D 瓦片的跳伞小游戏「drop」（作者称全球任意地点都能跳）",
+        "category": "3d",
+        "styleFamily": "code",
+        "source": "https://x.com/llama3dstudio/status/2113212039124402497",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022d-skydrop.jpg",
+        "previewType": "image",
+        "description": "LLAMA 3D Studio（@llama3dstudio）10-22 10:13 UTC 发帖（原文）：做了一个能在浏览器里玩的小型跳伞游戏，这次从巴黎上空跳；Three.js on WebGPU，Google Photorealistic 3D Tiles 按 LOD 流式加载，用射线检测落在真实屋顶上，叠加 OSM 地名标注；「地球上任何地方都能用」；用 GPT Astra 和 Opus 5.5 做的。视频（69 秒，目视）：开场是地图选点页「A little closer to the clouds.」，随后高空俯瞰巴黎放射状街道，开伞后彩色伞翼下的人物在城市上空滑翔，左上角显示高度/速度读数，下方有「Landing zone 155 m」提示和右下角小地图，左下角有 Google Maps 与 Airbus、Vexcel、OpenStreetMap 等数据署名，最后落到街面。封面（目视）：第 35 秒截帧，伞翼下的跳伞者与巴黎城区。可借：①「LOD 流式加载」——离得远只加载粗模型、靠近才换细模型，可讲地图/游戏怎么省显存；②真实城市 3D 底图可做「从高空看芯片厂/园区」的开场镜头（需另确认地点数据与许可）。",
+        "tool": "Three.js WebGPU + Google Photorealistic 3D Tiles（LOD 流式）+ OSM 标注；GPT Astra、Opus 5.5 辅助（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者 X 帖 https://x.com/llama3dstudio/status/2113212039124402497（抓取时 1 赞、1 回复）。帖子和回复里都没有给在线地址或源码；唯一的回复在问「下降途中加载了更高精度瓦片时碰撞面会不会变」，作者未答。Google Photorealistic 3D Tiles 受 Google Maps Platform 条款约束（需 API key、须保留署名、不得随意缓存/再分发），视频右下角已带署名；若要自己复刻，需按条款使用。封面为视频第 35 秒截帧。",
+        "attribution": "LLAMA 3D Studio（@llama3dstudio）",
+        "sourceAuthor": "llama3dstudio",
+        "tags": [
+          "Three.js",
+          "WebGPU",
+          "3D地图",
+          "LOD"
+        ],
+        "publishedAt": "2026-10-22T10:13:06.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-22T12:47:00.000Z",
+        "updatedAt": "2026-10-22T12:47:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-22T12:47:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 59,
+          "baseBreakdown": {
+            "实体": 18,
+            "科普": 12,
+            "溯源": 6,
+            "复现": 5,
+            "风格": 10,
+            "新颖": 8
+          },
+          "multiplier": 1.4,
+          "finalScore": 59.0,
+          "threshold": 65,
+          "run": "2026-10-22-2040-shanghai",
+          "multiplierGuard": "基础分<60且仅单一维度乘数>1，按规则不让乘数抬过阈值（按基础分判定）"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2113211342559588352/vid/avc1/1376x720/CLM-VTHjW8KtLEsF.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
       "kind": "visual",
       "baseScore": 58,
       "multiplier": 1.1,
@@ -2332,6 +2440,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-22T08:56:00.000Z",
+  "updatedAt": "2026-10-22T12:47:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
