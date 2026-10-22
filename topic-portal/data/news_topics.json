@@ -1,7 +1,39 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-22T12:47:00.000Z",
+  "updatedAt": "2026-10-22T12:58:00.000Z",
   "topics": [
+    {
+      "url": "https://x.com/bylixing/status/2106757373834780723",
+      "title": "Agent 时代只记两个词该记哪两个？Context 与 Loop：一个全由 AI 提交 1.6 万次的配置仓库复盘",
+      "category": "AI",
+      "source": "X @bylixing（张立行）长文《吃一堑，长一智：Agent 时代的两个关键词 Context 与 Loop》",
+      "publishedAt": "2026-10-04T14:44:34Z",
+      "eventAt": null,
+      "collectedAt": "2026-10-22T12:58:00.000Z",
+      "updatedAt": "2026-10-22T12:58:00.000Z",
+      "description": "张立行（@bylixing）2026-10-04 发布 X 长文（底稿为 80 多分钟语音分享），主张 Agent 时代最该记住两个词：Context（上下文）和 Loop（闭环）。他的 agent-config 仓库两个月累积约 1.6 万次提交、1800 多个 issue、近 2000 个 PR，全部由 AI 提交；每天消耗 20–30 亿 Token，投入精力却降了一个数量级。要点：①静态 Context 要治理——全局规则按「工具×角色」分层拼接而非按模型分，主脑注入不超过 24KB、执行器不超过 12KB；自建跨工具 Memory；MCP 能用 CLI 就用 CLI；Skill 优先吸收、装到项目级（曾发现 Grok 常驻 197 个重复 Skill，治理后降到 41）。②执行层：Flash 级模型已过 Coding 基准线，近 90 天几家执行器通过率 88%–93%；把开源外壳 Pi 当主脑的子代理，同模型 Pi 与原生客户端对比 6:6，差距主要来自 harness 给的上下文。③Advisor 模式：卡住时请教更强模型，并给它干净、只读、不带会话历史的上下文；21 次决策请教中 10 次直接反对、11 次改了关键前提。④Loop：所有坑回流到同一仓库 issue，「机制上不可能再发生」才关单；教训优先写成脚本、闸门、测试而非提示；新工具用本地日志回测（RTK 实测省 44% 但有副作用，已卸载）。⑤低成本验证通道（编译、测试、lint→Agent 审查→人），并按「可自动验证程度×领域生态」选语言（Rust 最利于 Agent 自查）。目标是从人在环内走到人在环外：人只定义「怎样算做对」并在需要拍板时出场。",
+      "caveat": "数据均为作者自述，未核实；文中模型名与产品为作者使用环境。作者注明文章由 Claude Code + Opus 5.5 整理架构、Codex 事实核查、多模型审稿。博客版：zj1123581321.com。封面为长文封面图，已自托管。",
+      "imageUrl": "https://idkhow2do.github.io/topic-portal/covers/20261022-bylixing-context-loop.jpg",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261022-bylixing-context-loop.jpg",
+      "imageAlt": "X 长文《吃一堑，长一智：Agent 时代的两个关键词 Context 与 Loop》封面图",
+      "tags": [
+        "Agent",
+        "上下文工程",
+        "闭环",
+        "多 Agent 调度",
+        "Claude Code"
+      ],
+      "tagSource": "provided",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": "2026-10-22T12:58:00.000Z"
+      },
+      "relatedLinks": [
+        "https://zj1123581321.com/posts/261004-context-and-loop/"
+      ]
+    },
     {
       "url": "https://www.amec-inc.com/news/716.html",
       "title": "芯片越往「高」里盖，刻蚀机为什么越要学会「只挖一种料、旁边一点不碰」？中微公司全球首台气相高选择性刻蚀设备 Primo Domingo 付运",
