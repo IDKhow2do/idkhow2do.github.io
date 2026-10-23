@@ -2,6 +2,68 @@
   "schemaVersion": 1,
   "items": [
     {
+      "kind": "visual",
+      "baseScore": 61,
+      "multiplier": 1.038,
+      "score": 63.3,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-23-0840-shanghai",
+      "record": {
+        "title": "抬起一个轮子，另外五个照样贴地：让 Claude 在 Blender 里从零搭一辆带摇臂-转向架悬挂和 36:1 行星齿轮的六轮火星车（作者自述）",
+        "category": "3d",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/Solvaix/status/2113320626182033413",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023a-rover.jpg",
+        "previewType": "image",
+        "description": "@Solvaix 10-22 17:24 UTC 发帖（原文）：让 Claude Opus 5.5「像真正的 3D 美术那样」在 Blender 里从零做一辆漫游车：完整绑定，35,274 个顶点，六个轮子里各有 36:1 行星齿轮箱，摇臂-转向架（rocker-bogie）悬挂，5 关节机械臂和相机桅杆，都能动；抬起一个轮子，其他五个仍贴地；转向时能原地掉头；还说画面里的 Blender 界面也是 Claude 在浏览器里做出来的。视频（101 秒，目视）：先在类似 Blender 的界面里从圆柱做出轮毂、齿圈，再做出行星齿轮组，接着做摇臂和三个轮子、车身，最后是带桅杆和机械臂的完整六轮车。封面（目视）：第 85 秒截帧，浅灰视口里的完整六轮漫游车。可借：摇臂-转向架为什么能让六个轮子同时贴地，是很好的机械科普镜头。",
+        "tool": "Claude Opus 5.5 + Blender（作者自述；界面据称是浏览器里重建的）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "只有作者 X 帖（抓取时 14 赞），没有文件、源码或在线地址。作者说 Blender 界面也是 Claude 在浏览器里做的，所以视频到底是真 Blender 还是网页仿制界面并不清楚；「抬轮五轮贴地」「原地转向」等功能视频里没看到完整演示。待作者放出文件或演示后再评。封面为视频第 85 秒截帧。",
+        "attribution": "@Solvaix",
+        "sourceAuthor": "Solvaix",
+        "tags": [
+          "Blender",
+          "3D建模",
+          "机械结构",
+          "火星车"
+        ],
+        "publishedAt": "2026-10-22T17:24:35.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-23T00:53:00.000Z",
+        "updatedAt": "2026-10-23T00:53:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-23T00:53:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 61,
+          "baseBreakdown": {
+            "实体": 20,
+            "科普": 15,
+            "溯源": 7,
+            "复现": 4,
+            "风格": 7,
+            "新颖": 8
+          },
+          "multiplier": 1.038,
+          "finalScore": 63.3,
+          "threshold": 65,
+          "run": "2026-10-23-0840-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2113320335374200832/vid/avc1/2560x1440/QjA6p-TbvVRz6Hjr.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
       "kind": "news",
       "baseScore": 61,
       "multiplier": 1.0,
@@ -2440,6 +2502,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-22T12:47:00.000Z",
+  "updatedAt": "2026-10-23T00:53:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }

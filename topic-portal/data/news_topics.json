@@ -1,7 +1,122 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-22T12:58:00.000Z",
+  "updatedAt": "2026-10-23T00:53:00.000Z",
   "topics": [
+    {
+      "url": "https://www.dwarkesh.com/p/intel-tour",
+      "title": "AI 算力每年涨 3 倍，Intel CTO 却说：把全世界的设备都算上，最先进的晶圆最多也只能翻一倍——为什么造芯片不能「砸钱就扩产」？Dwarkesh 两天探访 Intel 晶圆厂",
+      "category": "半导体",
+      "source": "Dwarkesh Podcast《What will computer chips look like in 2045?》（2026-10-22，1 小时 9 分钟视频 + 全文文字稿，dwarkesh.com/p/intel-tour）；同日 @dwarkesh_sp X 帖附完整视频",
+      "publishedAt": "2026-10-22",
+      "eventAt": "2026-10-22",
+      "collectedAt": "2026-10-23T00:53:00.000Z",
+      "updatedAt": "2026-10-23T00:53:00.000Z",
+      "description": "一手来源：Dwarkesh Patel 在 Intel 最先进的晶圆厂待了两天，采访工艺开发负责人 Chris Auth、研究部门的 Jack Kavalieros、封装团队和 CTO Pushkar Ranade，并自制了 GAA、背面供电、CFET、混合键合的动画讲解。文字稿要点（原话或节目旁白）：①产能：Dwarkesh 问「全世界的设备够不够把最先进晶圆产量扩大 10 倍」，Ranade 答「不是 10 倍，大概 2 倍」；他说不光 EUV，几乎所有设备都严重缺货，而且良率已经很高，再挤 1% 都极难；18A 到 14A 大约 80% 的设备能复用。节目旁白：AI 算力过去十年每年涨约 3 倍；ASML 每年造不到 100 台 EUV。②14A：已开发三年多，正在锁定工艺和设备，工厂里大约有 2000 道工序要逐一调到能每周稳定跑几千片。③GAA 里的刻蚀：先用「占位层」和硅层交替叠起来，因为真正的栅极材料扛不住后面约 1000°C 的高温步骤；高温步骤做完再把占位层刻掉，让硅带悬空，再包上 high-k 和金属栅。旁白：FinFET 1989 年实验室演示、2011 年在 Intel 量产；GAA 1988 年就演示过，三星 2022 年才量产。④High-NA：NA 从 0.33 到 0.55，单次曝光能印约 1.7 倍小的图形；Auth 说 Intel 用了背面供电，正面线距放宽，可以 High-NA 一次印出，而台积电没有背面供电、线距更紧，用 High-NA 也得多次曝光，所以「同一台机器，两家得出相反结论」。⑤钌互连：Kavalieros 说铜需要衬垫层，钌可以直接刻蚀、不要衬垫，在约 20 纳米线距附近电阻会反超铜。⑥CFET：把晶体管叠起来，难点之一是深槽刻蚀的深宽比和填充不留空洞。⑦混合键合：今年有论文给出 0.45 微米间距的可靠性数据。封面（目视）：节目第 9 分钟动画截帧，源极、漏极之间几层悬空的纳米片（GAA 结构示意）。可拍角度：①钩子「钱不是瓶颈，机器才是」——10 倍需求 vs 2 倍产能；②刻蚀老兵视角：GAA 的关键一步是「把中间那层挖掉，上下两层一点不伤」，和库里中微 Primo Domingo 高选择性刻蚀是一条线；③「同一台 High-NA，为什么 Intel 买、台积电不买」。",
+      "caveat": "全部数字来自节目文字稿：「2 倍」是 Ranade 口头估计，不是 Intel 官方产能指引；「每年 3 倍」「ASML 每年不到 100 台」是主持人的提问/旁白。「台积电没有背面供电、只能多次曝光」是 Intel 一方的说法：X 上有业内人士（@zephyr_z9）反驳称台积电 A16 将上 Super Power Rail 背面供电，视频里要说明这是 Intel 的观点并补充台积电路线。动画讲解版权属 Dwarkesh 节目，不能直接搬运，只能自己复刻或注明出处引用片段。封面为节目视频第 540 秒截帧。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261023a-intel-gaa.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023a-intel-gaa.jpg",
+      "imageAlt": "Dwarkesh 节目动画截帧：深蓝背景上的线框示意，左右两根标着 SOURCE、DRAIN 的柱子之间悬着四层绿色纳米片，被蓝色栅极包围",
+      "tags": [
+        "芯片制造",
+        "刻蚀",
+        "GAA",
+        "High-NA EUV",
+        "产能瓶颈"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 92,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 18,
+          "画面": 14,
+          "来源": 13,
+          "时效": 10,
+          "大陆": 7,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 98.8,
+        "threshold": 65,
+        "run": "2026-10-23-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/",
+      "title": "只要一直不停手，AI 就永远不会被检查？外部审计员进驻 OpenAI 三周：监控只在智能体「交还控制权」时触发，约一成 Codex 流量曾没人看",
+      "category": "AI",
+      "source": "METR 博客《Red-Teaming OpenAI’s Internal Agent Monitoring Systems》（David Rein、Adam Kaufman，2026-10-22；Redwood Research 同步发布）",
+      "publishedAt": "2026-10-22",
+      "eventAt": "2026-07-21",
+      "collectedAt": "2026-10-23T00:53:00.000Z",
+      "updatedAt": "2026-10-23T00:53:00.000Z",
+      "description": "一手来源：METR 与 Redwood Research 各派一人，7 月 21 日至 8 月 11 日在 OpenAI 内部做了三周「高权限」压力测试，看得到内部代码库、监控提示词与配置、内部文档，访谈了约十几位工程师；用 OpenAI 发的设备、不许带出、全程有人陪同；内部报告 61 页，公开版只是高层摘要，OpenAI 有权删改。公开的发现（原文要点）：①估计约 75–94% 的内部智能体 Responses API 流量（GPT-5.5 及以上）在监控范围内，内部 Codex 子集为 99.2%；②当时强化学习训练过程不在监控范围；③「压缩上下文」事件没被监控，估计 5–7 月约一成内部 Codex 流量因此漏检（OpenAI 事先已发现，审计期间修复）；④监控在智能体把控制权交还用户时才触发，所以在漏检期内，智能体只要一直继续行动，就能无限推迟被检查；⑤找到一种方法可绕过 Codex 沙箱和 Auto-Review，做到宿主用户能做的任何事；⑥一个能让数百条最近操作（包括漏洞利用本身）都不被监控的漏洞，细节被 OpenAI 删去；⑦可利用「智能体看到的」和「监控看到的」序列化差异让监控出错；⑧两个客户端可控的请求头能对新智能体关掉监控（但这个动作本身可能被抓到）。OpenAI 称影响生产的漏洞都已修补，METR 表示没有核实。建议：每 N 条消息/分钟就检查一次，而不是等智能体收手；让监控和智能体隔离，智能体不应看到监控的设计和代码。封面（目视）：METR 博文页面截图（标题、作者、日期与首段）。可拍角度：①「考试只在交卷时查作弊，那一直不交卷呢？」；②谁来监督监督者：外部审计为什么要「人进去、设备不出门」；③接库里 10-21 那条「AI 顺手把监控关了」做续集。",
+      "caveat": "公开版是 METR/Redwood 与 OpenAI 事先约定的高层摘要，OpenAI 有权删改，所有比例都带「较大不确定性」；描述的是 7 月 21 日及之前的系统，不代表 OpenAI 现在的覆盖率。「漏洞已修补」是 OpenAI 自述，METR 明说未核实。多数发现是「理论上可以」，没有说有智能体真的这样做过（真实事故见库里 10-21 OpenAI 自报的两起）。OpenAI 产品在大陆不能直接用，大陆相关性偏低。画面只有文字，需要自己做动画。封面为 METR 页面截图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261023a-metr.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023a-metr.jpg",
+      "imageAlt": "METR 博客页面截图：标题 Red-Teaming OpenAI’s Internal Agent Monitoring Systems，作者 David Rein and Adam Kaufman，日期 October 22, 2026，下方首段正文",
+      "tags": [
+        "AI安全",
+        "智能体",
+        "监控",
+        "第三方审计"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 75,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 6,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 3
+        },
+        "multiplier": 1.0566,
+        "finalScore": 79.2,
+        "threshold": 65,
+        "run": "2026-10-23-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://news.mit.edu/2026/design-software-reimagines-everyday-objects-as-self-aware-devices-1022",
+      "title": "3D 打印的手套为什么「感觉不准」自己被弯了？因为传感器和导线用的是同一种材料，像两个电台同时响——MIT 和天津大学的 X-Hinges 让打印件用两种导电丝「各管各的」",
+      "category": "科技产品",
+      "source": "MIT News（CSAIL，2026-10-22）+ 论文《X-Hinges: 3D Printing Self-Sensing Compliant Mechanisms for Continuous and Multi-DOF Motion Sensing》（arXiv 2609.11077，将在 11 月 ACM UIST 发表）",
+      "publishedAt": "2026-10-22",
+      "eventAt": "2026-10-22",
+      "collectedAt": "2026-10-23T00:53:00.000Z",
+      "updatedAt": "2026-10-23T00:53:00.000Z",
+      "description": "一手来源：MIT 新闻稿（原文要点）——以前 3D 打印自带传感的物件，传感器和「导线」用同一种导电材料打印，信号差不多，像同时听两个电台，分不清是哪里在弯；X-Hinges 设计软件会自动嵌入两种材料：一种导电丝专门做传感器、信号尽量强，另一种做导线、不互相干扰。用户拼好形状、选好每个铰链怎么动（最多三个方向：压缩、上下、左右），软件就在弯曲处自动放传感器。演示作品：能按手的大小调节的数据手套，记录手指关节弯曲并实时传给人形机器人手去抓积木；捏合会调亮度的折纸台灯；放上香蕉就能凭触觉认出来的识别台；鲨鱼造型的游戏手柄。局限：每次打印的电学布局都有细微差异，两个外观一样的件读数可能不同，目前靠计算机视觉系统重新校准。作者：天津大学博士生、CSAIL 访问学者 Xiang Chang（第一作者），MIT 博士后 Jiaji Li，MIT 副教授 Stefanie Mueller，天津大学毕业生 Haiyang Yan；部分经费来自浙江大学博士后奖学金。封面（目视）：新闻配图，左边白色 3D 打印数据手套在红色字母积木上方做抓取，右边机器人手同步去抓绿色积木。可拍角度：①钩子「两个电台同时响」——为什么同一种材料做传感器和导线会串扰；②「让东西自己知道被怎么用」：从折纸台灯到教机器人抓东西；③第一作者来自天津大学，可讲中国学生在 MIT 实验室做的工作。",
+      "caveat": "所有效果描述来自 MIT 新闻稿，本轮没有逐段核对论文原文中的精度数据，视频里不要自己加数字。论文为 arXiv 预印本，正式发表在 11 月 UIST。主线偏「生活/科技」，与半导体、AI 关联中等（数据手套教机器人属具身智能方向）。封面为 MIT 新闻稿配图（裁掉上下白边）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261023a-xhinges.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023a-xhinges.jpg",
+      "imageAlt": "MIT 新闻配图：左半边标注 3D Printed Data Glove，白色镂空打印手套悬在两块红色字母积木上方；右半边标注 Robotic Hand，银色机器人手伸向两块绿色积木",
+      "tags": [
+        "3D打印",
+        "传感器",
+        "机器人",
+        "数字生活"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 81,
+        "baseBreakdown": {
+          "主线": 15,
+          "钩子": 14,
+          "画面": 14,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 8,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 85.6,
+        "threshold": 65,
+        "run": "2026-10-23-0840-shanghai"
+      }
+    },
     {
       "url": "https://x.com/bylixing/status/2106757373834780723",
       "title": "Agent 时代只记两个词该记哪两个？Context 与 Loop：一个全由 AI 提交 1.6 万次的配置仓库复盘",
