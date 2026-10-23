@@ -1,8 +1,75 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 346,
+  "exportedCount": 347,
   "items": [
+    {
+      "title": "角色创意能变成可卖动画吗？Opus 5.5 + Blender + Remotion：角色想法 → 可编辑 3D 场景 → 成片",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "is3d": true,
+      "source": "https://x.com/beamnxw/status/2113275303808160226",
+      "sourceCodeUrl": "https://github.com/ahujasid/mcp-for-blender",
+      "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261023-beamnxw-character-anim-studio.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2113274901037469696/vid/avc1/1440x1728/Uc_ORBRZmxpQFFGM.mp4",
+      "description": "beamnxw（@beamnxw）2026-10-22 发帖：Opus 5.5 + Blender + Remotion = 可用来赚钱的角色动画工作室——小世界、有表情的角色、电影感运镜；流程是「角色想法 → 可编辑 3D 场景 → 动画成片」。六步：①给 Claude 导演 brief（一个角色、一个场景、一个视觉梗，先定镜头、表情、运镜和最终姿势）；②Claude Code 接 Blender：`claude mcp add blender uvx mcp-for-blender`，再 `uvx mcp-for-blender install-addon`，在 Blender 启用插件并启动服务（MCP：github.com/ahujasid/mcp-for-blender）；③Blender 负责场景、绑骨、关键帧和角色动画——先搭键盘与角色，再加走路、眼神、玻璃与特写；④Poly Haven 提供 CC0 HDRI、贴图和模型，让玻璃有反射、角色在背景上可读；⑤Remotion 把渲染素材、标题和音频组装成可复用 composition，项目内 `npx skills add remotion-dev/skills`；⑥FFmpeg 导出交付文件，看真实 MP4、检查声音，保留可编辑场景与工程。循环：brief → scene → character → materials → light → camera → preview → render → edit → export。帖内约 16 秒竖版视频（约 526 赞、675 收藏）。引用其长文《Motion Engineering with Opus 5.5》（产品屏幕 → Remotion 2D 发布短片）；本帖核心是 Blender 角色 3D 动画，与那篇纯 Remotion 落地页短片指南不同。",
+      "tool": "Claude Opus 5.5 + Claude Code（mcp-for-blender）、Blender、Poly Haven、Remotion Skills、FFmpeg",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为 @beamnxw 原帖 note_tweet（2026-10-22T14:24:29Z，经 X API 回读，非臆造）。链接取自帖文。封面为帖内视频缩略图。与门户已有条目 2113014738611290139（同作者、产品 brief→Blender→网站 3D）不同；本帖侧重角色动画。所引 2108616740846420354 为 Remotion 2D 发布短片长文。",
+      "attribution": "@beamnxw",
+      "sourceAuthor": "beamnxw",
+      "tags": [
+        "Blender",
+        "Remotion",
+        "Opus",
+        "Claude",
+        "MCP",
+        "Poly Haven",
+        "FFmpeg",
+        "3D",
+        "角色动画",
+        "3D建模"
+      ],
+      "publishedAt": "2026-10-22T14:24:29Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-23T07:05:00.000Z",
+      "updatedAt": "2026-10-23T07:05:00.000Z",
+      "relatedSource": "https://x.com/beamnxw/status/2108616740846420354",
+      "relatedLinks": [
+        "https://github.com/ahujasid/mcp-for-blender",
+        "https://www.blender.org/features/animation/",
+        "https://polyhaven.com/license",
+        "https://www.remotion.dev/docs/ai/skills",
+        "https://ffmpeg.org/ffmpeg.html",
+        "https://x.com/beamnxw/status/2108616740846420354"
+      ],
+      "originalPreviewUrl": "https://pbs.twimg.com/amplify_video_thumb/2113274901037469696/img/ecvyp4AK7i1T7dOJ.jpg",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": "2026-10-23T07:05:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-23T07:05:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1000,
+          1200
+        ],
+        "preview_check": "封面为帖内视频缩略图，HTTP 200。",
+        "video_check": "未播放 16 秒视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-batch-2026-10-23"
+      }
+    },
     {
       "title": "Hugging Face 上线 OpenUSD：NVIDIA 2500+ SimReady 资产上 Hub，自然语言搜叉车、机械臂与医院设备",
       "category": "3d",
@@ -16518,8 +16585,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23 用户指定收纳 HF OpenUSD + NVIDIA SimReady Central 1 条（封面托管）",
-  "updatedAt": "2026-10-23T07:00:00.000Z",
-  "totalItems": 346,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23 用户指定收纳 HF OpenUSD + NVIDIA SimReady Central 1 条（封面托管） | 2026-10-23 用户指定收纳 @beamnxw Opus+Blender+Remotion 角色动画工作室 1 条（封面托管）",
+  "updatedAt": "2026-10-23T07:05:00.000Z",
+  "totalItems": 347,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
