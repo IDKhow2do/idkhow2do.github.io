@@ -1,8 +1,122 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 343,
+  "exportedCount": 345,
   "items": [
+    {
+      "title": "「摆长加倍，周期变成几倍？」一句话让 AI 做出带中文讲解的三维课堂实验片：杠杆、单摆、光的折射、氯化钠溶解、细胞有丝分裂（开源 Skill classroom-lab，MIT）",
+      "category": "video",
+      "styleFamily": "code",
+      "source": "https://x.com/Class_Tuite/status/2113440931143983413",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023b-classroomlab.jpg",
+      "previewType": "image",
+      "description": "数字冰川（@Class_Tuite）10-23 01:22 UTC 发帖（原文）：为方便老师生成实验视频做了一个开源 Skill「classroom-lab」，把实验画面、中文讲解、字幕和视频导出整理成可复用流程；装进支持本地 Skill 和代码运行的 AI 助手后，直接说「做一个光从空气进入水中的折射实验，给初二学生看，三维画面，带中文讲解和字幕，输出可插入 PPT 的 MP4」，不满意可以继续说「光路变化慢一点」「先提问，留两秒观察，再显示答案」；需要调参或学生操作时可另附互动网页。仓库 README：默认输出 16:9、1080p、30fps MP4；内置 SVG 导出器和 macOS 原生三维导出器；每帧平均 4 个子帧做运动模糊，阶段变化连续完成不瞬移，字幕淡入淡出；五支样片都是真实三维几何渲染（物理器材与光路、化学晶格与水合、细胞剖开与缢裂）。帖附三段视频（36 秒、36 秒、49 秒，目视）：①「少一点力，也能平衡吗？」杠杆两端挂砝码，下方卡片实时显示「100 g × 20 cm」「50 g × 40 cm」和力矩；②「长一点，摆得快还是慢？」两个单摆并排，0.50 m 周期 1.42 s、1.00 m 周期 2.01 s，字幕「摆长加倍，周期为原来的 √2 倍」，再换 200 g 摆球证明质量不影响周期；③「光从空气进入水中」入射角 30° 时折射角 22.1°、60° 时 40.6°，标出法线。封面（目视）：单摆第 15 秒截帧，深色舞台上两个单摆，左 0.50 m、右 1.00 m，底部读数卡片和字幕。可借：①「先提问—停两秒—再揭晓」的节奏和本账号的钩子写法一致；②同一套流程可以做「刻蚀各向同性/各向异性」「光刻衍射」这类工艺小实验；③读数卡片 + 三维器材的版式可以直接参考。",
+      "tool": "AI 编程助手 + Skill「classroom-lab」（仓库 topics 标 codex-skill；内置 SVG 导出器与 macOS 原生三维导出器，作者自述）",
+      "prompt": "做一个光从空气进入水中的折射实验，给初二学生看。使用三维画面，带中文讲解和字幕，输出可以插入 PPT 的 MP4。",
+      "promptProvenance": "original_public",
+      "provenanceNote": "作者 X 帖 https://x.com/Class_Tuite/status/2113440931143983413（抓取时 0 赞，新号低互动）附 GitHub 链接 https://github.com/xiao-class/classroom-lab （2026-10-20 创建、10-22 最近推送，MIT 许可证，1 星），在线展示页 https://xiao-class.github.io/classroom-lab/ 。prompt 为帖子和 README 里公开的示例原句。本轮未安装运行该 Skill，只看了帖内三段视频的截帧；README 说宣传片开场是独立制作的概念片，不代表每个实验都自动有同样的三维效果。封面为帖内第二段视频第 15 秒截帧。",
+      "attribution": "数字冰川（@Class_Tuite）/ xiao-class",
+      "sourceAuthor": "Class_Tuite",
+      "tags": [
+        "物理科普",
+        "三维教学动画",
+        "中文讲解",
+        "Agent Skill",
+        "结构可视化"
+      ],
+      "publishedAt": "2026-10-23T01:22:38.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-23T04:53:00.000Z",
+      "updatedAt": "2026-10-23T04:53:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-23T04:53:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "实体": 17,
+          "科普": 20,
+          "溯源": 18,
+          "复现": 14,
+          "风格": 9,
+          "新颖": 9
+        },
+        "multiplier": 1.0618,
+        "finalScore": 92.4,
+        "threshold": 65,
+        "run": "2026-10-23-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113440012188704768/vid/avc1/1920x1080/v5qaTNI2rl7_DIuj.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/xiao-class/classroom-lab",
+      "licenseName": "MIT",
+      "licenseUrl": "https://github.com/xiao-class/classroom-lab/blob/main/LICENSE"
+    },
+    {
+      "title": "同一个场景换一枚镜头，背景虚化就换了「性格」：Blender 插件 Lens Optics 1.5 在高斯泼溅（Gaussian Splat）实景里实时换镜头、对焦（Cycles，Lite 免费，GPL）",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/itskaiwan/status/2113432252122083813",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023b-lensoptics.jpg",
+      "previewType": "image",
+      "description": "Kaiwan Shaban（@itskaiwan）10-23 00:48 UTC 发帖（原文）：Lens Optics 现在支持 Blender 5.3 和 5.4，演示在高斯泼溅场景里运行——换镜头、移动、调焦都在渲染视口里完成。Superhive 商品页：Cycles 专用插件，做变形宽银幕（anamorphic）、旋涡焦外（swirl）、棱镜、焦外光斑和像差等效果；1.5 版（10-22）新增相机里 WASD 漫游、手动对焦距离跟随相机、可在原生高斯扫描表面上点选对焦；Lite 免费含 10 种镜头风格，Pro 63 种；许可证 GPL。视频（22 秒，目视）：标题卡依次是「Refine the composition」「Switch lenses. See the character.」「Find another angle」，实景扫描的庭院里一张石桌上放着一盆干花，换镜头后背景虚化形状和旋涡感明显变化，右侧是插件面板的镜头库。封面（目视）：第 8 秒截帧，石桌干花，背景绿植被虚化，右侧镜头库面板。可借：景深、焦外和「镜头决定画面性格」是光学科普好素材，也可类比光刻里的数值孔径和焦深。",
+      "tool": "Blender（Cycles）+ Lens Optics 插件；场景为 Gaussian Splat 扫描",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖 https://x.com/itskaiwan/status/2113432252122083813（抓取时 13 赞）。商品页 https://superhivemarket.com/products/lens-optics/ （作者 Kaiwan Shaban，GPL，Lite $0 / Pro 约 $24–30）；商品页明说是「艺术化的镜头风格，不是实测复刻某支真实镜头」，所以不能当真实光学仿真来讲。商品页版本页（10-22 发布 1.5、许可证 GPL）本轮已直接打开核对；未安装测试。封面为视频第 8 秒截帧。",
+      "attribution": "Kaiwan Shaban（@itskaiwan）",
+      "sourceAuthor": "itskaiwan",
+      "tags": [
+        "Blender",
+        "镜头光学",
+        "景深",
+        "高斯泼溅"
+      ],
+      "publishedAt": "2026-10-23T00:48:09.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-23T04:53:00.000Z",
+      "updatedAt": "2026-10-23T04:53:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-23T04:53:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 64,
+        "baseBreakdown": {
+          "实体": 15,
+          "科普": 10,
+          "溯源": 16,
+          "复现": 9,
+          "风格": 7,
+          "新颖": 7
+        },
+        "multiplier": 1.038,
+        "finalScore": 66.4,
+        "threshold": 65,
+        "run": "2026-10-23-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113432157725003776/vid/avc1/1280x720/0Qe2jghOJnDHwdre.mp4?tag=14",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "licenseName": "GPL",
+      "licenseUrl": "https://superhivemarket.com/products/lens-optics/"
+    },
     {
       "title": "「书掉下书架，它的能量去哪了？」一本能玩的 3D 物理书：示意图从纸面上立起来，能量像彩色液体在「储能罐」之间流动——@techartist_ 的 Every Joule 第 1 课（能在线试玩）",
       "category": "frontend",
@@ -16342,8 +16456,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条",
-  "updatedAt": "2026-10-23T00:53:00.000Z",
-  "totalItems": 343,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条",
+  "updatedAt": "2026-10-23T04:53:00.000Z",
+  "totalItems": 345,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }

@@ -1,7 +1,121 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-23T00:53:00.000Z",
+  "updatedAt": "2026-10-23T04:53:00.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2610.30882",
+      "title": "AI 做题时冒出一句「等等（Wait）」，被当成强化学习练出来的「顿悟」？港科大等追查开源模型的训练史：这个词几乎都是训练数据里带进来的，纯强化学习 18 次里 17 次都没「发明」它",
+      "category": "AI",
+      "source": "arXiv:2610.30882《Inherited, Not Invented: Tracing the Provenance of Wait in Reasoning Models》（Zhizhuo Kou 等，香港科技大学、华为诺亚方舟实验室、北京大学，2026-10-22 提交，CC BY 4.0）",
+      "publishedAt": "2026-10-22",
+      "eventAt": "2026-10-22",
+      "collectedAt": "2026-10-23T04:53:00.000Z",
+      "updatedAt": "2026-10-23T04:53:00.000Z",
+      "description": "一手来源：arXiv 论文（摘要与正文 HTML 版）。背景：推理模型解题时常写「Wait, is that correct?」再回头检查，R1-Zero 训练中这类词变多，被报道成模型学会反思的「aha moment」；一些不确定性评估和思维链监控也把这类词当成「怀疑」信号来数。论文问：这个词到底从哪来、强化学习（RL）对它做了什么。做法：沿开源模型（如 OLMo-3）公开的预训练、中期训练检查点和 RL 轨迹，像历史语言学家考证一个词那样，只看模型输出里的出现频率、位置、形式和用法，再加一个「故意埋错」测试看它是不是真在报警。结论（论文原述）：①从不用这个词的基座模型出发做纯 RL（zero-RL），在 9 个 Qwen2.5、Mistral、Qwen3 基座（0.5B–32B）上的 18 次运行里，MATH-500 准确率中位数提高 42.9 分，但 17 次里「wait」始终低于每千 token 0.05 次——准确率涨了，词没出现；②这个词是随训练数据进来的：OLMo-3 在预训练后还没有，中期训练时出现；在推理轨迹上微调过的 14 个模型里 13 个学会了它；③基座本来就会说时，OLMo-3 和小米 MiMo 公开的 RL-Zero 配方会让它成倍增加，而同一基座上不加 KL 约束的 GRPO 不会；OLMo-3 的配方还把它磨成「Wait,」→「wait」→「wait, wait」，变成更灵敏但也更爱误报的「警报」；④作者提醒：光数这个词不能证明 RL 练出了推理，用大模型当裁判去判「有没有反思」甚至可能把人工标注的趋势判反。封面（目视）：论文图 1，左边「common view」是一条带「aha」星号的突变曲线，右边是「中期训练→RL」的流程，「Wait,」在中期训练阶段进入，zero-RL 路线则没有它。可拍角度：①钩子直接用账号名——「等等，AI 说『等等』是谁教的？」；②和涌现主题接上：看起来像「突然开窍」的东西，可能只是把训练数据里早就有的习惯放大了——「涌现」还是「继承」；③准确率涨了 42.9 分但一个「wait」都没有：会反思不等于会说「等等」；④延伸：别把模型嘴上说的话当成它脑子里真在做的事。",
+      "caveat": "是 10-22 刚挂上 arXiv 的预印本，未经同行评审；结论只覆盖论文追踪的开源模型谱系（OLMo-3、Qwen、Mistral、MiMo 等），闭源模型（如 DeepSeek-R1 的完整训练数据）无法这样追溯；论文说「除一个谱系外」都来自训练前数据，不是绝对。它反驳的是「RL 发明了这个词」，并没有否认 RL 能提高推理准确率。封面为论文 HTML 版图 1（SVG）本地渲染截图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261023b-wait.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023b-wait.jpg",
+      "imageAlt": "论文图 1：左侧「common view」带 aha 星号的突变曲线，右侧中期训练→RL 流程，「Wait,」在中期训练进入，zero-RL 路线没有它",
+      "tags": [
+        "AI训练",
+        "AI推理",
+        "强化学习",
+        "涌现"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 19,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 7,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 93.0,
+        "threshold": 65,
+        "run": "2026-10-23-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://cepr.org/voxeu/columns/generative-ai-learning-penalty-secondary-school",
+      "title": "用了 AI，作业分涨了 18%、写作业从 64 分钟缩到 45 分钟，为什么半年后考试分反而掉了 20%？华中某县 2.7 万名中学生 30 个月的成绩数据",
+      "category": "AI",
+      "source": "CEPR 讨论稿 DP21577《The Generative AI Learning Penalty: Evidence from Chinese Secondary Education》（David Strömberg 斯德哥尔摩大学、Victor Lei 与 Yanhui Wu 香港大学，2026-06-02）及作者 VoxEU 专栏（2026-09-04）；10-23 在 X 上成为热议话题",
+      "publishedAt": "2026-09-04",
+      "eventAt": "2026-06-02",
+      "collectedAt": "2026-10-23T04:53:00.000Z",
+      "updatedAt": "2026-10-23T04:53:00.000Z",
+      "description": "一手来源：作者的 CEPR 讨论稿（NBER 会议版 PDF）和 VoxEU 专栏。数据：华中一个县 5 所初中、4 所高中共 26,811 名 7–12 年级学生（占全县中学生约 90%），30 个月的行政记录，把每周作业分数和用时，与每月闭卷考试、全县统考、中考和高考成绩连起来，覆盖 9 个科目；何时开始用 AI 由老师让学生查 AI 工具注册日期来确定。到 2025 年 6 月约 80% 的学生用过生成式 AI（2022 年 9 月时几乎没人用），最常用的是豆包和 DeepSeek 这类通用工具。方法：利用学生先后开始用 AI 的时间差做交错双重差分（用前两组成绩和趋势几乎一样）。结果（专栏原述）：开始用 AI 六个月内，作业用时从约 64 分钟降到 45 分钟，作业分比用前高 18%；但月考闭卷分低了 20%；中考、高考分的损失来得慢，约两年后达到 24% 和 18%。科目上社会科学（历史、政治）掉约 27%，理科约 22%，英语 17%，语文 9%；低年级、男生、原本成绩好的学生掉得更多。关键分界：约五分之四的 AI 用户写作业比最快的非 AI 学生还快、作业分高得和 AI 能力吻合，他们考试明显变差——像是把作业外包了；另外五分之一用时和不用 AI 的同学差不多，考试成绩也差不多。在 AI 用户里，「作业分越高，考试分反而越可能低」，作者说作业分突然变高反而是学习下滑的警报。封面（目视）：论文图 2 三组面板——作业分（用 AI 后分布右移到 120 附近）、作业用时（左移到约 45 分钟）、考试分（左移、拖出低分长尾），右侧是按「开始用 AI 后第几个月」的折线。可拍角度：①钩子「作业全对，考试不会」——三张分布图一左一右一掉，第 0 秒就是画面；②统计口径：作业分不再代表学会了，指标被 AI「污染」；③不是「AI 有害」，而是怎么用：用时没缩短的那五分之一几乎没损失；④给家长的可执行建议：看孩子写作业花了多久、多做课堂小测，而不是只看作业分。",
+      "caveat": "论文是讨论稿（未正式发表）；数据来自一个县，作者自己说效应大小不能直接外推到别处；AI 使用时间点来自学生自报的注册日期。双重差分依赖「用 AI 与不用 AI 的学生原本趋势相同」的假设，学生自己选择用不用、怎么用，作者也承认「强制多花时间写作业」未必能恢复成绩。专栏 9 月初发表，不是本周新论文，本轮因 10-23 在 X 上成热点才收录（时效按常青题计）。涉及未成年人教育，拍摄时避免指名地区学校、避免「AI 有害」一刀切的说法。封面为 VoxEU 专栏图 1（即论文图 2）原图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261023b-aihomework.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023b-aihomework.jpg",
+      "imageAlt": "论文图 2：作业分、作业用时、考试分三组面板，左为用 AI 前/后/从未用 AI 的分布直方图，右为按开始用 AI 后月份的均值折线",
+      "tags": [
+        "数字生活",
+        "教育",
+        "AI使用",
+        "统计口径"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 20,
+          "画面": 13,
+          "来源": 15,
+          "时效": 6,
+          "大陆": 10,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 91.9,
+        "threshold": 65,
+        "run": "2026-10-23-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.30755",
+      "title": "给 AI 智能体装一套会整理、会改写、会建图谱的「记忆系统」，反而不如把聊天记录原样存下来再检索？新论文：7 组对比里朴素 RAG 拿了 6 个第一，建库只要 0.3 小时，最复杂的要 27 小时",
+      "category": "AI",
+      "source": "arXiv:2610.30755《Is Complex Agentic Memory Always Needed? Naive RAG Is Stronger Than We Thought》（Zhengye Bao、Shengtao Zhang、Haokai Zhang、Shiqi Lou、Muning Wen、Minnan Luo，2026-10-22 提交）",
+      "publishedAt": "2026-10-22",
+      "eventAt": "2026-10-22",
+      "collectedAt": "2026-10-23T04:53:00.000Z",
+      "updatedAt": "2026-10-23T04:53:00.000Z",
+      "description": "一手来源：arXiv 论文（摘要与 HTML 正文）。背景：给大模型做长期对话「记忆」，现在流行的智能体记忆系统（论文对比了 Mem0、MemOS、EverMemOS、MemMachine、EMem、Memora 等）会把对话改写成事实条目、合并/更新/删除、建结构或学检索策略。论文提出一个最朴素的基线 Raw-RAG：不改写原始聊天记录，直接用稠密检索 + 重排序找出相关原文片段，交给阅读模型回答。结果（论文原述）：在 LoCoMo、LongMemEval、MEME、MemoryAgentBench 四个基准、7 组「基准×模型」设置里，Raw-RAG 有 6 组排第一，比最强的复杂记忆系统高 0.13–5.53 分。为什么：原文检索能覆盖到更多「必要证据」，弥补了利用率低；有用的证据不只是答案本身，还有推出答案所需的关系和依赖路径，改写成事实条目时这些容易丢；即使让模型完整读取改写后的记忆库，准确率仍比读原文差。论文还统计 Mem0 提出的改写操作很少，真正生效的更少。封面（目视）：论文图 1，左边七组设置的环形柱状图（Raw-RAG 为深紫色），右边 BEAM-1M 建库累计耗时曲线：Raw-RAG 约 0.3 小时，MemOS 3.2、Mem0 3.9、MemMachine 8.5、EMem 18.2、Memora 27.0 小时。可拍角度：①钩子「记性好的秘诀是别自作聪明地做笔记」——0.3 小时 vs 27 小时的柱子对比；②和库里「ChatGPT 自己记了 96% 的记忆」一条接上：AI 替你「整理」记忆时会丢掉什么；③类比人：只记结论、不记推理过程，换个问法就答不上来。",
+      "caveat": "10-22 新挂的预印本，未经同行评审；结论限于论文测的长期对话问答类基准，作者明确说是「所评估的对话任务」，不代表所有智能体任务（如需要长期更新偏好、执行流程的场景）都不需要复杂记忆。作者单位本轮未核实。画面主要是图表，需要自己做动画。封面为论文 HTML 版图 1（SVG）本地渲染截图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261023b-rawrag.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023b-rawrag.jpg",
+      "imageAlt": "论文图 1：左为七组设置下各记忆系统准确率环形柱状图，右为 BEAM-1M 建库累计耗时曲线（Raw-RAG 0.3 h，Memora 27.0 h）",
+      "tags": [
+        "智能体",
+        "AI记忆",
+        "RAG",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 70,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 12,
+          "画面": 8,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 3
+        },
+        "multiplier": 1.0566,
+        "finalScore": 74.0,
+        "threshold": 65,
+        "run": "2026-10-23-1240-shanghai"
+      }
+    },
     {
       "url": "https://www.dwarkesh.com/p/intel-tour",
       "title": "AI 算力每年涨 3 倍，Intel CTO 却说：把全世界的设备都算上，最先进的晶圆最多也只能翻一倍——为什么造芯片不能「砸钱就扩产」？Dwarkesh 两天探访 Intel 晶圆厂",
