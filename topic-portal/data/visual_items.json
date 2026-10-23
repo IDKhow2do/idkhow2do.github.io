@@ -1,8 +1,230 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 348,
+  "exportedCount": 352,
   "items": [
+    {
+      "title": "一粒看不见的灰，怎样毁掉一颗芯片？在浏览器里开一条 266 颗芯片的晶圆产线：调曝光剂量、刻蚀时间、洁净度和检测阈值，看良率怎么掉（Three.js 互动页 Inside a Chip Fab）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/RyanSael/status/2113564577636163648",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023d-chipfab.jpg",
+      "previewType": "image",
+      "description": "Ryan Sael 10-23 09:33 UTC 发帖（原文）：how a chip is made，一粒看不见的灰尘就能毁掉它，用 Opus 5.5 和 Three.js 做的，附在线页 sael.net/chip-fab。页面正文（已抓取）：一片 266 颗芯片的晶圆依次经过 Load、Coat（涂胶，约 0.1 µm 厚）、Expose（193 nm 紫外，所以车间打黄光）、Develop、Etch（等离子刻蚀）、Wash、Inspect（激光扫描）、Pack 八个工位。四个可调参数：Dose 剂量（太低线条变粗粘连，太高变细断开）、Etch 刻蚀时间（太短残膜短路，从晶圆中心开始，因为中心刻得慢；太长侧蚀，从边缘开始）、Air 洁净度（ISO 4 每立方米允许 1 万个 ≥0.1 µm 颗粒，手术室约 ISO 7，办公室 ISO 8 或更差）、Inspect 检测阈值（太低误杀好芯片，太高坏片流出）。为什么一粒灰致命：线宽约 40 nm，0.1 µm 的灰能盖住好几根线；落在刻蚀前，等离子刻不下去，两根线连在一起，事后洗掉也救不回。作者写明「哪些是真的、哪些放大了」：ISO 14644 颗粒等级、颗粒尺寸按 −2.08 次方分布、15 mm 芯片的泊松良率模型、193 nm 扫描仪剂量、边缘略快的刻蚀都是真实数字的简化；灰尘画大了几万倍，每步从几分钟压成几秒，省略了电测。视图可切 Lab / Exploded / Studio，点芯片可以打墨点剔除，最后看「出货的坏片」数。视频（30 秒，目视）：俯视等距晶圆厂车间、穿洁净服的小人、机台特写，晶圆上彩色网格逐步出现红色坏片。封面：页面 og:image，车间全景，左上角 Yield 98%、Air ISO 4，右上为剂量/刻蚀/洁净度/检测四个滑杆。可借：直接当「刻蚀/良率」那期的互动演示，作者的「刻蚀中心慢、边缘快」正好是我刻蚀一线能补充讲透的点。",
+      "tool": "Claude Opus 5.5 + Three.js（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖 https://x.com/RyanSael/status/2113564577636163648（抓取时 27 赞、4 回复）；在线页 https://sael.net/chip-fab/ （HTTP 200，标题「Inside a Chip Fab: one speck of dust, one dead chip」，正文与参数说明已抓取核对）。页面未声明许可证、未公开源码仓库；本轮未在浏览器里实际操作，只读了页面文字和帖内视频截帧。同作者的宜家 BILLY 说明书 3D 已在库。封面为页面 og:image（sael.net/chip-fab/og.png）。",
+      "attribution": "Ryan Sael（@RyanSael）",
+      "sourceAuthor": "RyanSael",
+      "tags": [
+        "Three.js",
+        "结构可视化",
+        "3D交互",
+        "芯片制造",
+        "良率"
+      ],
+      "publishedAt": "2026-10-23T09:33:58.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-23T13:00:00.000Z",
+      "updatedAt": "2026-10-23T13:00:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-23T13:00:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 20,
+          "溯源": 13,
+          "复现": 8,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.249,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-23-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113563087395766272/vid/avc1/1920x1080/txwM4umVkRX6aPv3.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "「拆开，才看见。」只用 three.js 建模渲染、anime.js 做动画：GPT-6.1 Sol 两小时一次写完的电机爆炸图网页，滚动就逐层拆开，还能切工程线稿",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/eze_is_1/status/2113570251741024259",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023d-heliosmotor.jpg",
+      "previewType": "image",
+      "description": "一泽Eze 10-23 09:56 UTC 发帖（原文）：让 GPT-6.1 Sol 纯代码、只用 three.js 建模渲染、anime.js 做动画，花 2 小时 one shot 做了一个电机的动态爆炸展示网页，随滚动自然旋转、爆炸展示；作者自己说物理细节有些问题。灵感来自 anime.js 官网。帖内技术表（目视）：网页界面 HTML/CSS/原生 JS；三维模型与渲染 Three.js；动画 Anime.js（缓动、分阶段拆解）；渲染效果 GLSL Shader + GTAO（工程线稿、缝隙阴影）；视频用 Node.js + Chrome + FFmpeg 自动演示、逐帧捕获；声音用 JavaScript 音频合成 + FFmpeg。在线页 HELIOS AX/07 · 机械探索（已抓取）：五章——01 整机「拆开，才看见」、02 释放（卸紧固件和弧形护板）、03 展开（爆炸图）、04 线稿、05 深入（定子/轴承/传动/护板逐个拆解，带拆解进度滑杆），底部标注 AXIAL FLUX / DRIVE ASSEMBLY。视频（2 分 45 秒，目视）：深色背景上的金属质感电机，依次拆出铜线定子、行星齿轮、轴承和护板。封面：视频第 3 秒截帧，首屏大字「拆开，才看见。」和完整电机。可借：「滚动驱动拆解 + 线稿切换」可以直接套到「拆一颗芯片封装 / 拆一台刻蚀机」；技术表本身就是一套「代码出视频」的流水线参考。",
+      "tool": "GPT-6.1 Sol（作者自述）；Three.js、Anime.js、GLSL Shader、GTAO；Node.js + Chrome + FFmpeg 出视频",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者 X 帖 https://x.com/eze_is_1/status/2113570251741024259（抓取时 4 赞），引用自己 10-23 06:21 UTC 的连载起始帖 https://x.com/eze_is_1/status/2113516060762877966 。在线页 https://helios-ax07-explorer.wavyorbit128.chatgpt.site （HTTP 200，标题「HELIOS AX/07 · 机械探索」）。未公开源码和提示词，未声明许可；电机是虚构的展示件，不是真实型号的结构。封面为帖内视频第 3 秒截帧。",
+      "attribution": "一泽Eze（@eze_is_1）",
+      "sourceAuthor": "eze_is_1",
+      "tags": [
+        "Three.js",
+        "结构可视化",
+        "交互揭示",
+        "爆炸图",
+        "代码出视频"
+      ],
+      "publishedAt": "2026-10-23T09:56:30.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-23T13:00:00.000Z",
+      "updatedAt": "2026-10-23T13:00:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-23T13:00:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 69,
+        "baseBreakdown": {
+          "实体": 19,
+          "科普": 14,
+          "溯源": 12,
+          "复现": 8,
+          "风格": 10,
+          "新颖": 6
+        },
+        "multiplier": 1.249,
+        "finalScore": 86.2,
+        "threshold": 65,
+        "run": "2026-10-23-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113567456472317952/vid/avc1/1920x1080/HiYSoeks5UymMNYz.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "一张 RTX 5090 拆开来，大部分其实是散热器？六步可点击拆解：外壳、风扇、热管、PCB，最后露出 920 亿晶体管的 GB202 芯片和 16 颗显存（Claude Opus 5.5 + Three.js）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/0x_mura/status/2113605249042686368",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023d-rtx5090.jpg",
+      "previewType": "image",
+      "description": "Mura（@0x_mura）10-23 12:15 UTC 发帖（原文）：用 Claude Opus 5.5 + three.js 做一张可以拆开的交互式 RTX 5090，「让 3D 机器自己解释自己」，六个可点击阶段从外壳到散热系统；列了 7 步做法（先给 Opus 清晰需求 → 在 three.js 里建风扇、PCB、显存、散热片、铜管 → 每个部件可分离 → 侧栏控制动画/机位/解说 → 露出 GB202 芯片、32 GB GDDR7 和内部散热 → 动画化爆炸图并显示风道 → 反向复原并测试每个交互），并称提示词和完整设置在引用的文章里。被引用的是 @0x_kaero 10-22 的 X 长文《How to Build a Working Machine From Any Question with Claude》，用的是 wheresryan22 的 Anatomy 技能（MIT，GitHub 显示约 1.9 万星），文中给了「先研究真实机制、只留 2–4 个有意义的控件、不要用装饰动画假装机制」等完整提示词。视频（38 秒，目视）：米色工程插图风的 RTX 5090，按 Pull it out / Open it / The board / Take it apart / Follow the air / Back together 逐步拆开再装回。封面（目视）：「Take it apart」那一步，外壳、风扇、热管散热器、主板分层展开；底部标签写着 TRANSISTORS 92,000,000,000、CUDA CORES 21,760、GDDR7 32 GB、BOARD POWER 575 W，并注明这些是 NVIDIA 的数字；「big idea」一句：卡里的电路板只是中间一小块，其余都是散热器。可借：「芯片只占显卡一小块」是讲 GPU/封装/散热的好开场；Anatomy 技能 + 这套提示词可以直接复刻成「拆一颗 HBM」或「拆一台刻蚀机」。",
+      "tool": "Claude Opus 5.5 + Three.js（作者自述）；画风与界面结构与 Anatomy 技能（wheresryan22/anatomy）一致",
+      "prompt": "",
+      "promptProvenance": "adapted",
+      "provenanceNote": "作者帖 https://x.com/0x_mura/status/2113605249042686368（抓取时 14 赞、4 回复）；所引长文 https://x.com/0x_kaero/status/2113240274394562698 （作者 Kaero，10-22 12:05 UTC，正文含提示词与安装命令）；技能仓库 https://github.com/wheresryan22/anatomy （GitHub API：MIT，2026-10-08 创建）。注意：0x_mura 没有给出这张 5090 的具体提示词或在线链接，作品与长文作者是不是同一人不清楚；Anatomy 技能本身已在库。封面为视频第 21.8 秒截帧。",
+      "attribution": "Mura（@0x_mura）；方法来自 Kaero（@0x_kaero）长文与 wheresryan22/anatomy",
+      "sourceAuthor": "0x_mura",
+      "tags": [
+        "Three.js",
+        "结构可视化",
+        "3D交互",
+        "GPU",
+        "爆炸图"
+      ],
+      "publishedAt": "2026-10-23T12:15:34.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-23T13:00:00.000Z",
+      "updatedAt": "2026-10-23T13:00:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-23T13:00:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 66,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 19,
+          "溯源": 7,
+          "复现": 8,
+          "风格": 10,
+          "新颖": 4
+        },
+        "multiplier": 1.249,
+        "finalScore": 82.4,
+        "threshold": 65,
+        "run": "2026-10-23-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113599529362530305/vid/avc1/1500x1104/CWB2-wF7vYaS4mNE.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/wheresryan22/anatomy",
+      "licenseName": "MIT（Anatomy 技能本身；本作品未声明）",
+      "licenseUrl": "https://github.com/wheresryan22/anatomy"
+    },
+    {
+      "title": "芯片之间为什么要「铜对铜」直接粘？Dwarkesh 节目为 Intel 晶圆厂那期单独放出的 2 分 22 秒混合键合动画：从 Blackwell 双芯片、中介层、焊料凸点讲到铜互连对齐",
+      "category": "motion",
+      "styleFamily": "other",
+      "source": "https://x.com/dwarkesh_sp/status/2113379617767592209",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023d-dwarkeshhb.jpg",
+      "previewType": "image",
+      "description": "Dwarkesh Patel 10-22 21:19 UTC 发帖（原文）：为 Intel 晶圆厂探访那期做了一些动画讲解，这一条讲混合键合。视频（2 分 22 秒，4K，目视截帧）：深蓝底蓝图线框风格，字幕依次讲到 NVIDIA Blackwell 数据中心 GPU 把两颗芯片拼在一起、工作负载完成得多快取决于数据在芯片间搬运、这一步叫封装而且变化很大、多颗芯片坐在中介层（interposer）上、早期做法用焊料凸点；中间穿插主持人出镜；然后红蓝两层结构上下对齐，字幕「Hybrid bonding works by aligning the copper interconnects」；结尾主持人讲这项技术为什么现在才开始进入量产。封面：第 118 秒截帧，上下两层红色介质与蓝色铜焊盘对齐。可借：蓝图线框 + 一句字幕一个动作的节奏，适合做「封装为什么从焊球走到铜对铜」的参考样片，可与库内 IEEE Spectrum 混合键合选题、Dwarkesh Intel 选题搭配。",
+      "tool": "未说明（节目组制作）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "官方节目账号帖 https://x.com/dwarkesh_sp/status/2113379617767592209（抓取时 547 赞）；对应节目 dwarkesh.com/p/intel-tour 已作为选题在库（那条封面也用了节目动画截帧）。无源码、无工具说明、未声明许可，只能外链引用。10-22 发帖，前几轮漏收，本轮经 @Sanemavcil 转发发现。封面为视频第 118 秒截帧。",
+      "attribution": "Dwarkesh Podcast（@dwarkesh_sp）",
+      "sourceAuthor": "dwarkesh_sp",
+      "tags": [
+        "混合键合",
+        "先进封装",
+        "结构可视化",
+        "动画讲解"
+      ],
+      "publishedAt": "2026-10-22T21:19:00.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-23T13:00:00.000Z",
+      "updatedAt": "2026-10-23T13:00:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-23T13:00:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 60,
+        "baseBreakdown": {
+          "实体": 13,
+          "科普": 19,
+          "溯源": 14,
+          "复现": 2,
+          "风格": 6,
+          "新颖": 6
+        },
+        "multiplier": 1.1,
+        "finalScore": 66.0,
+        "threshold": 65,
+        "run": "2026-10-23-2040-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113341030171054080/vid/avc1/3840x2160/q3XUQF3M0f3tlL6c.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "步行、开车、骑车、坐直升机逛曼哈顿：three.js 作者 mrdoob 花了几周 token 做的全程序化纽约模拟，gzip 后只有 784 KB，代码 MIT 开源",
       "category": "frontend",
@@ -16643,8 +16865,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条",
-  "updatedAt": "2026-10-23T08:57:00.000Z",
-  "totalItems": 348,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条",
+  "updatedAt": "2026-10-23T13:00:00.000Z",
+  "totalItems": 352,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
