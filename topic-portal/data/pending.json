@@ -3,6 +3,68 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 53,
+      "multiplier": 1.1789,
+      "score": 62.5,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-23-1240-shanghai",
+      "record": {
+        "title": "在网页信纸上「啪」地按下一枚 3D 火漆印：滴蜡、压印、换印章图案和蜡色（@thebuggeddev，作者称用 Claude Opus 5.5 做，WebGPU 渲染）",
+        "category": "frontend",
+        "styleFamily": "code",
+        "source": "https://x.com/thebuggeddev/status/2113469231308382333",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023b-waxseal.jpg",
+        "previewType": "image",
+        "description": "The Bugged Dev（@thebuggeddev）10-23 03:15 UTC 发帖（原文仅一句）：用 Claude Opus 5.5 做的 3D 火漆印章。视频（55 秒，目视）：页面标题「Wax & Die」，一张米色信纸写着「Dear reader, This page is a desk. The stamp in your hand has a walnut handle…」，光标拿着木柄印章在纸上按下，留下带浮雕图案的暗红色火漆印，可以连续盖多个；底部工具栏换蜡色（红、黑、金等），弹出面板换印章图案和尺寸；页面角落写着「Rendering with WebGPU」。封面（目视）：第 8 秒截帧，信纸上已盖好一枚暗红火漆印，木柄印章悬在上方。可借：「按下去—留下印」的拟物手感和用户点赞过的充气按钮、揉皱纸是同一类，可做「压印/模具」「纳米压印光刻」的开场比喻。",
+        "tool": "Claude Opus 5.5（作者自述）+ WebGPU（页面字样）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "只有作者 X 帖 https://x.com/thebuggeddev/status/2113469231308382333（抓取时 26 赞、5 回复），无链接、无源码、无在线地址，「WebGPU」仅来自视频里的页面字样。可外链引用原帖。封面为视频第 8 秒截帧。",
+        "attribution": "The Bugged Dev（@thebuggeddev）",
+        "sourceAuthor": "thebuggeddev",
+        "tags": [
+          "拟物设计",
+          "网页交互",
+          "火漆印章",
+          "WebGPU"
+        ],
+        "publishedAt": "2026-10-23T03:15:05.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-23T04:53:00.000Z",
+        "updatedAt": "2026-10-23T04:53:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-23T04:53:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 53,
+          "baseBreakdown": {
+            "实体": 20,
+            "科普": 8,
+            "溯源": 6,
+            "复现": 3,
+            "风格": 9,
+            "新颖": 7
+          },
+          "multiplier": 1.1789,
+          "finalScore": 62.5,
+          "threshold": 65,
+          "run": "2026-10-23-1240-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2113468811458560000/vid/avc1/2828x1762/BCcwvd4rD67KE1C8.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 61,
       "multiplier": 1.038,
       "score": 63.3,
@@ -2502,6 +2564,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-23T00:53:00.000Z",
+  "updatedAt": "2026-10-23T04:53:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
