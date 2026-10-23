@@ -3,6 +3,68 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 55,
+      "multiplier": 1.025,
+      "score": 56.4,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-23-1640-shanghai",
+      "record": {
+        "title": "从 0.4 毫米焊球一路缩到 0.4 微米：一支 22 秒「发布会预告片」用不同画风的剖面图讲芯片互连间距，最后落到混合键合（@jwt0625，调侃半导体也学 AI 实验室发新品）",
+        "category": "video",
+        "styleFamily": "other",
+        "source": "https://x.com/jwt0625/status/2113546022953869539",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023c-hybridbond.jpg",
+        "previewType": "image",
+        "description": "outside five sigma（@jwt0625，常发光子芯片分析）10-23 08:20 UTC 发帖（原文）：最近混合键合很火，如果半导体行业像前沿 AI 实验室那样发布新技术会怎样（另说配乐改了十几遍还是不满意）。视频（22 秒，目视）：一连串剖面图，每段换一种画风（伊斯兰几何花砖、蒙德里安色块、半调网点、深色金线等），画面里的标注依次是「0.4 mm」「40 µm」「3 µm」「0.4 µm」，对应从封装焊球到微凸点再到更细的键合间距；接着字幕「There’s more to shrink & bond」（多帧拼读），最后黑底白字「Hybrid bonding」。封面（目视）：第 9.5 秒截帧，深色基板上一排焊球，标注「0.4 mm」。可借：「尺度一路缩小」的剖面串场正好讲封装互连为什么要从焊球走到铜对铜直接键合；画风切换的节奏适合做开场。",
+        "tool": "未说明（作者未披露制作工具）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "只有作者 X 帖 https://x.com/jwt0625/status/2113546022953869539（抓取时 15 赞、3 回复），无链接、无源码；画面里的剖面是示意风格，未注明是否基于真实器件，各间距数字仅为画面标注。可外链引用原帖。封面为视频第 9.5 秒截帧。",
+        "attribution": "outside five sigma（@jwt0625）",
+        "sourceAuthor": "jwt0625",
+        "tags": [
+          "混合键合",
+          "先进封装",
+          "剖面图",
+          "尺度变化"
+        ],
+        "publishedAt": "2026-10-23T08:20:14.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-23T08:57:00.000Z",
+        "updatedAt": "2026-10-23T08:57:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-23T08:57:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 55,
+          "baseBreakdown": {
+            "实体": 14,
+            "科普": 16,
+            "溯源": 8,
+            "复现": 2,
+            "风格": 6,
+            "新颖": 9
+          },
+          "multiplier": 1.025,
+          "finalScore": 56.4,
+          "threshold": 65,
+          "run": "2026-10-23-1640-shanghai"
+        },
+        "is3d": false,
+        "videoUrl": "https://video.twimg.com/amplify_video/2113545469855191040/vid/avc1/1920x1080/DehGz967oHBBCrYJ.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 53,
       "multiplier": 1.1789,
       "score": 62.5,
@@ -2564,6 +2626,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-23T04:53:00.000Z",
+  "updatedAt": "2026-10-23T08:57:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }

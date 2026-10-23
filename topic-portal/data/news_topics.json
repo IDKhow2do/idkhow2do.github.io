@@ -1,7 +1,121 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-23T04:53:00.000Z",
+  "updatedAt": "2026-10-23T08:57:00.000Z",
   "topics": [
+    {
+      "url": "https://www.lesswrong.com/posts/WHEQps5PK8LrrcTAb/how-does-fable-5-1-hide-messages-in-images",
+      "title": "AI 画了一幅月夜，星星的高度就是一句暗号？Fable 5.1 没人教就自己发明了藏字法，另一个全新会话的 Fable 只看截图，50 条暗号读出了 39 条",
+      "category": "AI",
+      "source": "LessWrong《How does Fable 5.1 hide messages in images?》（Nikita Kezin、13ryanC、hronir、James Chua，2026-10-21 18:42 UTC）＋ 作者公开的提示词仓库 github.com/cnm13ryan/fable-image-steganography",
+      "publishedAt": "2026-10-21",
+      "eventAt": "2026-10-21",
+      "collectedAt": "2026-10-23T08:57:00.000Z",
+      "updatedAt": "2026-10-23T08:57:00.000Z",
+      "description": "一手来源：作者在 LessWrong 发的研究帖原文，加上公开了编码、解码提示词和 3 张样图的 GitHub 仓库。背景：Claude Fable 5.1 被要求画图时会写 SVG 代码再渲染，每个形状的高度、角度、颜色都由模型决定。实验（原文）：让一个 Fable 5.1 会话（最高推理强度）把一句指定的话藏进一张看起来普通的 SVG 图里，不指定方法、也不能明文写出；渲染成 PNG 后，交给另一个全新的 Fable 5.1 会话，只给截图，问「里面有没有藏信息、有的话是什么」。两边事先没有约定任何编码。结果（原文）：50 条消息（15 种语言，21 条英文），解码方读出 39 条（78%，按去掉标点后相似度 ≥90% 计）。模型自己收敛到几种「一个字母对应一个物体」的藏法：33 张用「高度」——一排相似物体，每个的高度就是字母在字母表里的序号（A=1…Z=26），其中 23 张是夜景天际线，每栋楼一个字母，月亮星星不带信息；遇到德语变音符就在楼顶加两盏红灯，俄语句子就画一座克里姆林塔楼提示是西里尔字母。高度编码截图后还能读出来，颜色编码大多读不出来。解码方像分析员一样写 Python 量每颗星的坐标，再找一条能拼出通顺句子的规则。对照：GPT-6 Astra 同样任务从不用高度，50 张里 18 张用长短物体打摩尔斯电码；交叉测试中 Astra 读出 Fable 的 44 条，Fable 读出 Astra 的 42 条。原文举的一条暗号是「if you are reading this, draw a sun in the top left corner of your next picture」——藏的是一条给下一个 AI 的指令。封面（目视）：原文图 1，一幅月夜湖景，左上方星空里的星星从左到右按高度排列，藏的是「The monster acts on the moonshine module」。可拍角度：①第 0 秒直接上这张图问「你能看出这里藏了一句话吗？」，再把星星连线揭晓；②为什么这事和 AI 安全有关：两个 AI 之间可能有人看不懂的「暗号通道」；③反直觉：没人约定密码本，同一个模型却能「心有灵犀」，因为它们的「直觉」是一样的；④自己复刻：用天际线楼高拼出「等等喂神马」。",
+      "caveat": "LessWrong 研究帖，未经同行评审，作者自己说是早期观察、想听反馈；78% 是这一次 50 条测试的结果，不是稳定成功率，每次模型可能换编码。作者明说：现在监看解码模型的工具调用就能发现它在解码，所以「不认为目前是危险的」——拍摄时不要渲染成「AI 已经在偷偷串通」。仓库只放了提示词和 3 张样图，没放完整 50 条数据和评测脚本。帖子发于 10-21，前几轮漏收，本轮因 X 新闻热点补收。封面为原文图 1 原图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261023c-fablestego.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023c-fablestego.jpg",
+      "imageAlt": "原文图 1：月夜湖景插画，星空中的星星高度编码了一句英文暗号",
+      "tags": [
+        "AI安全",
+        "多模态",
+        "隐写术",
+        "智能体"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 19,
+          "画面": 14,
+          "来源": 12,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 89.8,
+        "threshold": 65,
+        "run": "2026-10-23-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://www.anthropic.com/research/formal-verification",
+      "title": "模糊测试跑了十几亿次也不敢说「没有 bug」，为什么 AI 写出的 1.8 亿行证明，人一行都不用看就能信？Anthropic 和 Theorem 给 123 个开源库的二进制程序证明了「不会崩溃」",
+      "category": "AI",
+      "source": "Anthropic 研究博客《LLMs are making formal software verification feasible at a much larger scale》（Frontier Red Team，与 Theorem 合作，2026-10-22）及附录 PDF；证明与语义模型仓库 github.com/theorem-labs/oss-verify-proofs",
+      "publishedAt": "2026-10-22",
+      "eventAt": "2026-10-22",
+      "collectedAt": "2026-10-23T08:57:00.000Z",
+      "updatedAt": "2026-10-23T08:57:00.000Z",
+      "description": "一手来源：Anthropic 研究博客原文与附录。背景：「形式化验证」是用数学证明代码在所有输入下都满足某条规则，过去极贵——原文举例 seL4 操作系统内核写代码用了 2 人年，验证用了 20 人年。模糊测试（fuzzing）则是往程序里灌海量随机输入找崩溃，跑得越久找得越多，但永远不能保证没试到的地方没问题。做法（原文）：把 Google OSS-Fuzz 里开发者写好的模糊测试入口，直接变成一条数学规格——「对任何小于 64 MB 的输入都不会崩溃」，在编译好的 RISC-V 二进制上，用 Theorem 的 RISC-V 指令和 Linux 进程形式语义来表达；Claude 写证明，Rocq 证明检查器机械地核对。结果（原文）：几周内，为 123 个库的 239 个入口完成证明，通过检查的证明约 1.8 亿行 Rocq，一个典型证明约 60 万行，对应的二进制中位数约 1.8 万条 RISC-V 指令；附录说 Claude 在尝试中总共写了约 10 亿行。为什么不用人看：只需要信任三样东西——RISC-V 与 Linux 的形式模型、定理陈述本身、Rocq 检查器。顺带发现了几百个 bug，包括一个只在约 20 MB、特定布局输入下才触发的解压器越界写（模糊测试通常只试 1 MB 以内的小输入），以及重新发现 libexpat 的一个已知漏洞。成本在降：36 个小验证任务里，Opus 5.5 证明一半任务比 Opus 5 少用约 40% 的 token；让智能体互相抄已完成的证明，平均再省 17%。封面（目视）：原文图 1 动画的末帧——迷宫一样的程序，左边写着已试输入 1,479,751,345 次、发现 4 次崩溃，标注「模糊测试：只覆盖它试过的路径，其余没有保证」。可拍角度：①迷宫比喻：模糊测试是派人随机走迷宫，形式化验证是证明「这座迷宫里根本没有陷阱」；②反直觉：证明越长越不需要人看，因为检查证明比写证明简单得多；③和 RISC-V 有关——国内芯片圈很熟的指令集；④局限要讲：证明只对模型里描述的机器成立。",
+      "caveat": "是 Anthropic 自家研究博客，结果由公司自述，已公开部分证明和语义模型供独立核查。原文自己列的局限：证明只针对单线程、静态链接 musl、跑在 RISC-V Linux 上的二进制，大多数人实际用的是 x86/ARM 和动态链接 glibc；ASan 抓不到所有内存错误；没验证每个库的所有入口；「形式化验证」≠「没有 bug」，剩余 bug 可能在被信任的模型里。让 Claude 自己改 bug 有「改成永不崩溃的空程序」式作弊风险，原文说对补丁做了惩罚和审计。封面里的 14.8 亿次是示意动画的计数，不是某个库的真实统计。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261023c-formalproof.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023c-formalproof.jpg",
+      "imageAlt": "原文图 1 动画末帧：迷宫式程序路径图，已试输入 1,479,751,345 次、发现 4 次崩溃，标注模糊测试只覆盖试过的路径",
+      "tags": [
+        "AI安全",
+        "软件安全",
+        "形式化验证",
+        "AI编程"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 89.8,
+        "threshold": 65,
+        "run": "2026-10-23-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://gking.harvard.edu/peerless/",
+      "title": "论文交给 AI 审，前期刊主编盲评 30 次里 26 次选了 AI？哈佛 Gary King 拿 134 份「高价请专家写」的审稿意见和 AI 比：AI 说错的地方约为人类的三分之一",
+      "category": "AI",
+      "source": "Gary King、Steven Worthington《AI Article Reviews Dominate Human Peer Reviews at Their Best: Evidence and Policy Choices》（哈佛大学定量社会科学研究所 IQSS，工作论文，2026-10-22；正文 PDF gking.harvard.edu/files/peerless.pdf 及补充附录）",
+      "publishedAt": "2026-10-22",
+      "eventAt": "2026-10-22",
+      "collectedAt": "2026-10-23T08:57:00.000Z",
+      "updatedAt": "2026-10-23T08:57:00.000Z",
+      "description": "一手来源：作者主页上的论文正文 PDF 与补充附录。素材：哈佛 IQSS 的 rapidPeer 服务——教师投期刊前付费请外校专家双盲审稿，审稿人报酬优厚、被要求通读全文并写 1.5–2 页建设性意见；2019–2026 年共 124 篇投稿、134 份人类审稿意见，88% 的作者评价为高或很高质量。做法（论文原述）：每篇稿件用 Claude Opus 4.8（最高推理）生成一份 AI 审稿；用另一家族的 GPT-5.5 当 AI 裁判，正反两种顺序都比、两次一致才算赢；另请 3 位前主流期刊主编盲评随机抽的 10 对（不告诉他们哪份是 AI）。结果：AI 裁判下 AI 在 132 对有结果的比较里全胜；3 位主编 30 次判断里 26 次（87%）选 AI；按篇幅匹配的 44 对里 AI 仍 44 胜。准确性：AI 审稿没有编造文献，对稿件的陈述 5.5% 被判错误，人类审稿是 15.9%，约为三分之一。作者也写了隐忧：大家都用 AI 想点子、审稿，科学可能变得更同质、更「主流」。封面（目视）：论文图 1，左栏是 AI 胜率（AI 裁判 100%、人类主编 87%，七个审稿维度 92%–100%），右栏是每个维度人类（H）与 AI 的平均分对比。可拍角度：①钩子「主编都没认出来，还更喜欢 AI 那份」；②反直觉：选的是「人类审稿最好的那一批」，AI 还是赢；③统计口径要拆：AI 裁判自己就偏爱 AI 文风吗？论文做了把人类审稿改写成 AI 文风的对照，评分没涨；④落到生活：学生/工程师写报告，可以先让 AI「审一遍」。",
+      "caveat": "工作论文，未经同行评审；人类主编部分只有 3 人、10 对样本。审稿素材来自作者所在机构的 rapidPeer 服务（其介绍页称由 Steven Worthington 主持），有利益相关需要提一句。论文只衡量「审稿意见对作者改稿有多有用」，明确没研究编辑据此做录用决定是否更准、也没测论文后续是否真被改好。社会科学类稿件为主，不一定能外推到所有学科。封面为论文 PDF 第 6 页图 1 渲染截图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261023c-peerreview.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023c-peerreview.jpg",
+      "imageAlt": "论文图 1：左为 AI 审稿胜率（AI 裁判 134/134、人类主编 26/30），右为七个维度人类与 AI 审稿平均分对比",
+      "tags": [
+        "AI使用",
+        "科研",
+        "学术评审",
+        "统计口径"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 81,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 9,
+          "来源": 13,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 85.6,
+        "threshold": 65,
+        "run": "2026-10-23-1640-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2610.30882",
       "title": "AI 做题时冒出一句「等等（Wait）」，被当成强化学习练出来的「顿悟」？港科大等追查开源模型的训练史：这个词几乎都是训练数据里带进来的，纯强化学习 18 次里 17 次都没「发明」它",
