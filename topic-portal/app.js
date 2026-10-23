@@ -147,10 +147,10 @@
   /** styleFamily chip keys → Chinese labels (视觉素材 filters) */
   const VISUAL_FAMILY_ORDER = ["全部", "code", "draw", "video_model", "model_3d", "other"];
   const VISUAL_FAMILY_LABEL = {
-    code: "代码视频",
+    code: "代码",
     draw: "绘图",
-    video_model: "视频模型",
-    model_3d: "3D建模",
+    video_model: "视频",
+    model_3d: "3D",
     other: "其它",
   };
 
