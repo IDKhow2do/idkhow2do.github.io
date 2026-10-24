@@ -1,7 +1,45 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-24T00:54:00.000Z",
+  "updatedAt": "2026-10-24T04:57:00.000Z",
   "topics": [
+    {
+      "url": "https://x.com/arpit_bhayani/status/2113611314543407606",
+      "title": "AI 让你写代码快了 10 倍，团队交付为什么只快了 1.37 倍？一条 1967 年的阿姆达尔定律：整体提速，被你没提速的那部分卡住",
+      "category": "AI",
+      "source": "Arpit Bhayani（@arpit_bhayani，Razorpay AI 工程师，X 简介自述）X 长帖原文（2026-10-23 12:39 UTC，抓取时 961 赞、590 书签）；定律本身出自 Gene Amdahl 1967 年 AFIPS 会议论文（经典教科书内容）",
+      "publishedAt": "2026-10-23",
+      "eventAt": "2026-10-23",
+      "collectedAt": "2026-10-24T04:57:00.000Z",
+      "updatedAt": "2026-10-24T04:57:00.000Z",
+      "description": "原帖要点（作者原话转述）：阿姆达尔定律说，整体加速比受限于你没有加速的那部分；设 p 为被加速的工作占比、s 为这部分的加速倍数，加速比 = 1 / ((1−p) + p/s)（封面就是帖子附的公式图）。代入作者举的数：如果从想法到上线，写代码只占 30% 的时间，AI 把这 30% 提速 10 倍，整体加速 = 1/(0.7+0.03) ≈ 1.37 倍；就算写代码占一半，也只有约 1.8 倍。剩下的环节还在：想清楚做什么、跟产品/设计/其他团队对齐、代码评审（现在比以往更多）、CI/CD 的墙钟时间不变、调试和故障——而且没人逐行写过的代码更难看懂。作者还说实际可能比定律预测的更糟：代码生成越快，后面每一道工序的负载越大，评审队列变长、瓶颈转移；「评审能力不变、代码多写 10 倍的团队，只是在堆一条更长的队」。他的建议：量整条从想法到上线的路径，找到工作在哪里排队，再把 AI 用到那里（评审、测试生成、不稳定测试排查、部署安全检查）。可拍角度：①钩子「快 10 倍，只快 1.37 倍」，第 0 秒上公式 + 一根进度条动画（自制）；②晶圆厂的说法就叫「瓶颈机台」——整条产线的产出由最慢的那台设备决定，给刻蚀机提速不等于整条线提速，这是你一线能讲的类比（类比由创作者自行核实措辞）；③接你自己的视频生产：Claude 写脚本快了，但选题、审核、剪辑、发布还在，哪一步在排队？",
+      "caveat": "1.37×、1.8× 是作者明说的「示意数字」（illustrative），30%/50% 的写代码占比不是调查数据，不同团队差异很大；原帖是个人观点长帖，不是研究报告，没有给出任何团队的实测提速数据。「可能比阿姆达尔更糟」是作者的判断。X News 摘要里另有 John Crickett 的乐观观点，本条未核对其原文，不引用。不做「AI 无用论」的引申。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261024b-amdahl.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024b-amdahl.jpg",
+      "imageAlt": "帖子附图：黑底白字公式 Speedup = 1 / ((1 − p) + p/s)",
+      "tags": [
+        "智能体",
+        "AI编程",
+        "效率瓶颈",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 78,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 18,
+          "画面": 10,
+          "来源": 10,
+          "时效": 10,
+          "大陆": 7,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 82.4,
+        "threshold": 65,
+        "run": "2026-10-24-1240-shanghai"
+      }
+    },
     {
       "url": "https://www.tomshardware.com/pc-components/dram/micron-pulls-the-plug-on-future-4f2-dram-after-two-decades-of-research-in-dramatic-shift-company-says-architecture-offers-no-meaningful-density-advantages-increases-manufacturing-complexity-and-costs-and-has-fundamental-scaling-limitations",
       "title": "长鑫押注的 4F² DRAM，美光却说「密度优势有点像神话」？研究了二十年、亲手做过样品，美光 CTO 说决定 DRAM 密度的是电容间距，不是晶体管怎么摆",

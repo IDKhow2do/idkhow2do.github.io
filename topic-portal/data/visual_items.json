@@ -1,8 +1,291 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 360,
+  "exportedCount": 365,
   "items": [
+    {
+      "title": "1,000 只蚂蚁、没有指挥、只靠两种信息素，能不能自己找到食物？四个国产/开源模型写同一个蚁群模拟：下雨冲掉所有气味后，谁的蚁群能重新找回路",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/AlicanKiraz0/status/2113803861362102501",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024b-antcolony.jpg",
+      "previewType": "image",
+      "description": "Alican Kiraz（@AlicanKiraz0）10-24 01:24 UTC 发帖（原文）：用 OpenCode（高推理强度、先出计划再实现）让 Kimi K3.1 Pro、Muse Spark Open、DeepSeek V4.1 Flash 1017、MiniMax M3.1 Flash 各写一个「蚁群智能·自主觅食」浏览器模拟：128×80 网格上 1,000 只蚂蚁，没有中央调度、不知道全局路线，只能留下和跟随 HOME / FOOD 两种信息素，把食物搬回巢；75 秒、4,500 个固定物理步，分五个阶段——初始探索、信息素路线强化、关闭中间通道、出现新食物源、下雨把两种信息素场全部抹掉后的恢复。作者在沙箱 Chromium 里跑 4 个随机种子，按 10 项功能检查（满分 100）独立打分。作者给出的结果：DeepSeek V4.1 Flash 1017 85 分（开发成本 0.172 美元）、MiniMax M3.1 Flash 77 分（0.100 美元）、Kimi K3.1 Pro 71 分（3.001 美元）、Muse Spark Open 20 分（四个种子都 0 次送达）。视频 74 秒四分屏（9 帧目视）：能看到蚂蚁从巢扩散成云、逐渐收拢成一条亮色路径、通道关闭后路径绕行、雨后重新铺开；右侧是各自的计数面板。科普价值：这就是你「涌现」选题要的第二个画面——「简单规则（留气味、跟气味）+ 大量个体 = 没人设计的最短路」，比鸟群多了一个「环境被清零后系统自己恢复」的情节；顺带一句「最贵的模型这题没拿第一」。",
+      "tool": "OpenCode + Kimi K3.1 Pro / Muse Spark Open / DeepSeek V4.1 Flash 1017 / MiniMax M3.1 Flash（作者自述）；浏览器单页模拟",
+      "prompt": "Autonomous ant-colony simulation: 1,000 agents on a 128×80 grid, HOME/FOOD pheromones, no centralized dispatch or global route knowledge, 75 s / 4,500 fixed ticks, five phases (exploration, trail reinforcement, central passage closure, new food source, recovery after rain erases both pheromone fields).（帖内任务概述，非完整提示词）",
+      "promptProvenance": "adapted",
+      "provenanceNote": "原帖 https://x.com/AlicanKiraz0/status/2113803861362102501 （抓取时 19 赞）。分数、成本、送达次数都是作者个人基准的自评结果，测试方法只在帖内描述，未公开代码、评分脚本或各模型输出，无法复核；不是独立第三方评测。无许可证声明，只能外链引用。封面为视频第 40 秒截帧（四分屏，各面板带模型名标签）。",
+      "attribution": "Alican Kiraz（@AlicanKiraz0）",
+      "sourceAuthor": "AlicanKiraz0",
+      "tags": [
+        "涌现",
+        "蚁群",
+        "信息素",
+        "群体智能",
+        "模型对比",
+        "creative coding"
+      ],
+      "publishedAt": "2026-10-24T01:24:47.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-24T04:57:00.000Z",
+      "updatedAt": "2026-10-24T04:57:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-24T04:57:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 77,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 20,
+          "溯源": 12,
+          "复现": 9,
+          "风格": 9,
+          "新颖": 9
+        },
+        "multiplier": 1.025,
+        "finalScore": 78.9,
+        "threshold": 65,
+        "run": "2026-10-24-1240-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113800166473961472/vid/avc1/3862x2146/qgYXbrQWnX4hAjsr.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "太阳内部长什么样，哪些是测出来的、哪些是推出来的？开源 Three.js 太阳系 Helios：点开行星就能剖开看分层，还标明每一层的「可信度」",
+      "category": "frontend",
+      "styleFamily": "uiux",
+      "source": "https://x.com/TENTHDEMENSION/status/2113840328994378002",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024b-helios.jpg",
+      "previewType": "image",
+      "description": "@TENTHDEMENSION（10th Dimension）10-24 03:49 UTC 发帖：Helios，可以在太阳系里飞、拉近行星、探索它们的内部，还能飞到附近恒星去找系外行星；用 Three.js 和 Codex 做的，开源。GitHub 仓库 10th-Dimension/helios-solar-explorer（10-23 创建，MIT 代码许可，README 署名 Chase Wilcox）写明：太阳和八大行星各有外观与「行星故事」；「Interiors」是可交互的 3D 分区剖面，可以逐层选择，并解释哪些是实测、哪些是推断、哪些依赖模型；恒星邻域收录 83 个恒星/亚恒星条目、24 颗带参考文献和质量/半径置信度说明的已确认系外行星，都在同一个连续的 Three.js 场景里。README 原话：「好看的可视化不应该假装我们知道得比实际更多」；截图说明里也写了位置、大小、航行距离是为导航做过变换的。视频 53 秒（9 帧目视）：太阳表面 → 切换成线框分层球（The Sun interior 面板列出各层）→ 地球昼夜面拉近 → 太阳系总览「A navigable model of our home system」。科普价值：剖面镜头可以直接用；「测量 / 推断 / 模型依赖」三档标注本身就是一个科普点——讲「我们其实没去过太阳内部，那这张图是怎么来的」。",
+      "tool": "Three.js + OpenAI Codex（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖 https://x.com/TENTHDEMENSION/status/2113840328994378002 （抓取时 0 赞、新作品）；源码 https://github.com/10th-Dimension/helios-solar-explorer （GitHub API 显示 MIT，0 star，最近推送 10-23 23:45 UTC）。README 未给在线演示地址（homepage 为空），本轮没有在浏览器里运行。天体数据的具体出处在仓库内，未逐条核对。封面为视频第 13 秒截帧（太阳内部线框分层视图）。",
+      "attribution": "Chase Wilcox / 10th Dimension（@TENTHDEMENSION）",
+      "sourceAuthor": "TENTHDEMENSION",
+      "tags": [
+        "Three.js",
+        "剖面",
+        "结构可视化",
+        "太阳系",
+        "3D交互",
+        "开源"
+      ],
+      "publishedAt": "2026-10-24T03:49:42.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-24T04:57:00.000Z",
+      "updatedAt": "2026-10-24T04:57:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-24T04:57:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "实体": 17,
+          "科普": 19,
+          "溯源": 19,
+          "复现": 14,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.249,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-24-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113837288044236800/vid/avc1/1920x1080/o0-x5RhmhGQsSHuu.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/10th-Dimension/helios-solar-explorer",
+      "licenseName": "MIT（代码）",
+      "licenseUrl": "https://github.com/10th-Dimension/helios-solar-explorer/blob/main/LICENSE"
+    },
+    {
+      "title": "一个人 18 天、没手工建一个模：Blender 全靠脚本生成 120 只猕猴和三座神庙，雕像从照片转 3D，连猴叫声都是代码合成——开源的巴厘岛圣猴森林 Three.js 漫游",
+      "category": "frontend",
+      "styleFamily": "uiux",
+      "source": "https://x.com/SammmAing/status/2113849380641882273",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024b-monkeyforest.jpg",
+      "previewType": "image",
+      "description": "Samnang Aing（@SammmAing）10-24 04:25 UTC 发帖：开源了巴厘岛乌布圣猴森林的 3D 复刻，按真实游客地图布置三座神庙、圣泉、峡谷上的龙桥、2,275 棵树和 120 只沿路走的长尾猕猴；猴子、神庙、树用脚本在 Blender 里生成，雕刻面孔和石像用 Hunyuan3D 从照片转成 3D，所有声音都由代码生成；用 Claude Opus 5.5 构建，再用 Gemini 4 Argon 打磨。GitHub 仓库 README（MIT）补充：Three.js r186、无构建步骤，约 50 个自写着色器负责水、天空、风吹树叶、湿石和苔藓；「没有任何东西是手工建模的」——Python 脚本在后台驱动 Blender 生成 6 种猕猴（毛发、骨骼、走/坐/站/待机动作）、神庙与大门（雕石、茅草、陶瓦屋顶的脚本化套件）、榕树和岩石；Hunyuan3D 2.0 在本地跑，每张源照片都列在 CREDITS.md；Web Audio 合成环境声，猴叫按位置发声；树按距离切换细节（近处真叶、中距离叶片卡、远处贴图），整段漫游加载约 250 MB；作者说自己导演了 18 天、19 个版本。在线页 sam1983aing.github.io/sacred-monkey-forest 返回 HTTP 200。封面是仓库自带的应用截图（神庙大门与钟楼，黄金时刻光照）。科普价值：「AI 怎么学会建模」的一个完整样本——不是生成一坨网格，而是写脚本去开 Blender；LOD 分级也能讲「为什么游戏远处的树是纸片」。",
+      "tool": "Claude Opus 5.5（Claude Code）+ Gemini 4 Argon 打磨；Blender（Python 脚本后台生成）；Hunyuan3D 2.0（本地，照片转 3D）；Three.js r186；Web Audio（作者自述/README）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖 https://x.com/SammmAing/status/2113849380641882273 （抓取时 0 赞）；源码 https://github.com/Sam1983Aing/sacred-monkey-forest （GitHub API 显示 MIT，10-23 创建）；在线 https://sam1983aing.github.io/sacred-monkey-forest/ （HTTP 200，未在浏览器里实际漫游）。树木/猕猴数量、18 天/19 版本为作者自述。雕像照片的版权情况见仓库 CREDITS.md，未逐条核对。封面为仓库 preview/gate.jpg（作者提供的应用截图）。",
+      "attribution": "Samnang Aing（@SammmAing）",
+      "sourceAuthor": "SammmAing",
+      "tags": [
+        "Three.js",
+        "Blender",
+        "程序化生成",
+        "3D建模",
+        "照片转3D",
+        "开源"
+      ],
+      "publishedAt": "2026-10-24T04:25:40.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-24T04:57:00.000Z",
+      "updatedAt": "2026-10-24T04:57:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-24T04:57:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 14,
+          "溯源": 19,
+          "复现": 15,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.2382,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-24-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113849071668449280/vid/avc1/3840x2160/uHXJfbtfzGPzJ47v.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/Sam1983Aing/sacred-monkey-forest",
+      "licenseName": "MIT",
+      "licenseUrl": "https://github.com/Sam1983Aing/sacred-monkey-forest/blob/main/LICENSE"
+    },
+    {
+      "title": "同一块布、同一组球，为什么网格面数一变，布就从「一张硬板」变成「裹住每个球」？Blender 布料模拟 6 档分辨率对比",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/oddlyrendered2/status/2113838379305521495",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024b-clothres.jpg",
+      "previewType": "image",
+      "description": "Oddly Rendered（@oddlyrendered2）10-24 03:41 UTC 发帖（原文）：「把同一个 Blender 布料模拟，用六种不同的网格分辨率各跑一遍」。竖版视频约 15 秒（9 帧目视）：同一个白色底座上放 4 个镜面金属球，一块金色方布从上方落下，左上角字幕依次标 0 / 4 / 16 / 64 / 256 / 1024 FACES。0 面时布像一张硬板直接滑落；4–16 面时只是几根线框搭在球上；面数越多越贴合，到 1024 面时布能分别裹住每个球的轮廓（封面为 1024 面落定的一帧）。科普价值：一个镜头讲清「离散化 / 分辨率决定模拟结果」——网格太粗，物理规律再对也算不出真实形状；可以延伸到你熟悉的工艺仿真（刻蚀/沉积模拟的网格、步长同样决定轮廓精度，类比由创作者自行把关），也能讲为什么游戏里的衣服常常「穿模」。",
+      "tool": "Blender 布料模拟（作者自述；版本与解算参数未给）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖 https://x.com/oddlyrendered2/status/2113838379305521495 （抓取时 0 赞）。没有 .blend 文件、参数和许可证，只能外链引用；「六种分辨率」为作者说法，视频字幕可见 0/4/16/64/256/1024 六档。除网格分辨率外其它设置是否完全相同，作者未说明。封面为视频第 13.5 秒截帧。",
+      "attribution": "Oddly Rendered（@oddlyrendered2）",
+      "sourceAuthor": "oddlyrendered2",
+      "tags": [
+        "Blender",
+        "布料模拟",
+        "物理模拟",
+        "分辨率对比",
+        "离散化"
+      ],
+      "publishedAt": "2026-10-24T03:41:57.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-24T04:57:00.000Z",
+      "updatedAt": "2026-10-24T04:57:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-24T04:57:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 70,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 18,
+          "溯源": 8,
+          "复现": 7,
+          "风格": 7,
+          "新颖": 8
+        },
+        "multiplier": 1.038,
+        "finalScore": 72.7,
+        "threshold": 65,
+        "run": "2026-10-24-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113838297298432000/vid/avc1/720x1280/8qqRiAZoAtznnyXn.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "按钮也能被「蛛丝」拽走？WebGL 按钮：点哪里就射一根丝粘上去，拉太猛丝会断",
+      "category": "frontend",
+      "styleFamily": "uiux",
+      "source": "https://x.com/Hariswebgl/status/2113848110028104121",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024b-webbutton.jpg",
+      "previewType": "image",
+      "description": "Haris（@Hariswebgl）10-24 04:20 UTC 发帖（原文）：做了一个能射蛛丝、拖动、扯断的 WebGL 按钮——点任意位置发射一根丝，按住把按钮拽离轴线，拉得太狠丝会在张力下断开；回复「sling button」可获取构建提示词。视频约 15 秒（9 帧目视）：深色背景上一个蓝色「Get started」胶囊按钮，白色发光丝线从准星处连到按钮上，按钮被多根丝吊着晃动，底部提示「Click anywhere to shoot a web. Hold and pull. Pull too hard and it snaps.」",
+      "tool": "WebGL / Three.js（帖子标签）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖 https://x.com/Hariswebgl/status/2113848110028104121 （抓取时 2 赞）。提示词要回复关键词才发（引流式），没有在线页、源码和许可证。封面为视频第 8 秒截帧。",
+      "attribution": "Haris（@Hariswebgl）",
+      "sourceAuthor": "Hariswebgl",
+      "tags": [
+        "Three.js",
+        "WebGL",
+        "交互按钮",
+        "物理模拟"
+      ],
+      "publishedAt": "2026-10-24T04:20:37.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-24T04:57:00.000Z",
+      "updatedAt": "2026-10-24T04:57:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-24T04:57:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 49,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 6,
+          "溯源": 6,
+          "复现": 5,
+          "风格": 8,
+          "新颖": 6
+        },
+        "multiplier": 1.3491,
+        "finalScore": 66.1,
+        "threshold": 65,
+        "run": "2026-10-24-1240-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113848078000070656/vid/avc1/720x720/a7esYhmCmoxZNDow.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "Kimi K3.1 预告片信息量有多大？24 秒近百镜头闪切：克莱因瓶、洛伦兹吸引子到黑洞——实践哥押注它要卷「视觉编程」",
       "category": "video",
@@ -13,7 +296,7 @@
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024-minli-kimi-trailer.jpg",
       "previewType": "image",
       "videoUrl": "https://video.twimg.com/amplify_video/2113445550087708673/vid/avc1/1920x1080/vCo3DeWLOC3E0IuX.mp4",
-      "description": "用户指定收纳。实践哥 Li（@MinLiBuilds）2026-10-23 04:42 UTC 发帖，点评 Kimi 官方（@Kimi_Moonshot）同日发布的约 24 秒预告片：开头一闪而过的终端 Prompt 写「用 Three.js 构建复杂的程序化 3D 场景，不依赖外部 3D 素材」；据其逐帧拆解，24 秒塞进近 100 个镜头，最快约 0.125 秒闪切一次，画面含克莱因瓶、洛伦兹吸引子、分形生长、3D 流体、粒子风暴、黑洞等。他大胆押注 Kimi K3.1 要卷的是「视觉编程」——一句话生成复杂 3D 世界、自动写 Shader/物理/交互动画甚至完整游戏，并期待 Agent 写代码、渲染、剪辑直接交付视觉大片。原片为 @Kimi_Moonshot 帖 2113445757185606062（纯视频，无正文；抓取时约 1.95 万赞、3131 书签、~200 万曝光）。本帖抓取时约 41 赞、22 书签、~8.4 万曝光。封面为预告片缩略图（1200×675）：复古 CRT 电脑屏幕显示「Kimi Code」终端，可见 Welcome to Kimi Code、Model Kimi k3.1、提示「Build a complex procedural 3D scene in Three.js」、状态 Thinking…。门户已有 Crystal 的 Kimi 机械手拆解页，本条是官方预告片+实践哥解读，分开收录。镜头数/闪切间隔为发帖者说法。目视可见片头 Three.js Prompt，以及克莱因瓶、洛伦兹、分形、流体、粒子、黑洞，并以月球与 KIMI 字标收束。",
+      "description": "用户指定收纳。实践哥 Li（@MinLiBuilds）2026-10-23 04:42 UTC 发帖，点评 Kimi 官方（@Kimi_Moonshot）同日发布的约 24 秒预告片：开头一闪而过的终端 Prompt 写「用 Three.js 构建复杂的程序化 3D 场景，不依赖外部 3D 素材」；据其逐帧拆解，24 秒塞进近 100 个镜头，最快约 0.125 秒闪切一次，画面含克莱因瓶、洛伦兹吸引子、分形生长、3D 流体、粒子风暴、黑洞等。他大胆押注 Kimi K3.1 要卷的是「视觉编程」——一句话生成复杂 3D 世界、自动写 Shader/物理/交互动画甚至完整游戏，并期待 Agent 写代码、渲染、剪辑直接交付视觉大片。原片为 @Kimi_Moonshot 帖 2113445757185606062（纯视频，无正文；抓取时约 1.95 万赞、3131 书签、~200 万曝光）。本帖抓取时约 41 赞、22 书签、~8.4 万曝光。封面为预告片缩略图（1200×675）：复古 CRT 电脑屏幕显示「Kimi Code」终端，可见 Welcome to Kimi Code、Model Kimi k3.1、提示「Build a complex procedural 3D scene in Three.js」、状态 Thinking…。视频目视确认片头 Three.js Prompt 与克莱因瓶、洛伦兹吸引子、分形、流体、粒子、黑洞等镜头，并以月球与 KIMI 字标收束。门户已有 Crystal 的 Kimi 机械手拆解页，本条是官方预告片+实践哥解读，分开收录。镜头数/闪切间隔为发帖者说法，未独立逐帧核对。",
       "tool": "Kimi K3.1 / Kimi Code（官方预告片自述语境）；Three.js 程序化 3D（片头 Prompt）",
       "prompt": "用 Three.js 构建复杂的程序化 3D 场景，不依赖外部 3D 素材！ / Build a complex procedural 3D scene in Three.js.",
       "promptProvenance": "source_post",
@@ -32,7 +315,7 @@
       "publishedAt": "2026-10-23T04:42:19.000Z",
       "collectionIds": [],
       "collectedAt": "2026-10-24T04:22:30.000Z",
-      "updatedAt": "2026-10-24T04:22:30.000Z",
+      "updatedAt": "2026-10-24T04:23:30.000Z",
       "relatedLinks": [
         "https://x.com/Kimi_Moonshot/status/2113445757185606062"
       ],
@@ -45,7 +328,7 @@
         "updatedAt": "2026-10-24T04:22:30.000Z"
       },
       "verification": {
-        "checked_at": "2026-10-24T04:22:30.000Z",
+        "checked_at": "2026-10-24T04:23:30.000Z",
         "visually_checked": true,
         "preview_dimensions": [
           1200,
@@ -17325,8 +17608,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1",
-  "updatedAt": "2026-10-24T04:24:07.000Z",
-  "totalItems": 360,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条",
+  "updatedAt": "2026-10-24T04:57:00.000Z",
+  "totalItems": 365,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
