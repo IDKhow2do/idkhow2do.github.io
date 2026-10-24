@@ -3,6 +3,69 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 61,
+      "multiplier": 1.025,
+      "score": 62.5,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-24-1640-shanghai",
+      "record": {
+        "title": "36 个红绿灯共用一张只有 96 个状态的「小抄」，自己学出来的规则只有一句话，平均等灯却从 30 秒降到 16.8 秒？一个夜城交通的强化学习模拟",
+        "category": "video",
+        "styleFamily": "code_video",
+        "source": "https://x.com/Yumzlef/status/2113906007185199292",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024c-traffic.jpg",
+        "previewType": "image",
+        "description": "Yumzlef（@Yumzlef）10-24 08:10 UTC 发帖（原文转述）：在 6×6 网格夜城里放 230 辆车，两条主干道是普通负载的 3 倍。先跑 36 种固定配时方案，最好的是「每个方向 10 秒绿灯」，平均每车等 30.0 秒；再让 36 个路口共用同一张 Q 表（96 个简单状态、只有「保持/切换」两个动作），一起训练 80 轮后，平均等待 16.8 秒；换其他随机种子，作者给的是约 31.8 秒降到 18.9 秒和 20.2 秒。作者说学出来的规则就显示在画面角落：「有 3 辆或以上车在等就保持绿灯，队一空马上切」。视频 20 秒（9 帧目视）：上段「FIXED-TIME 10s/10s」，下段「LEARNED – 36 AGENTS, ONE SHARED Q-TABLE」，下方有平均等待曲线、路口热力格和 Q 表面板。科普价值：可以接涌现选题——「每个路口只看自己门口的车，却让整座城变顺」；也能讲强化学习最朴素的形态：一张表、两个动作。",
+        "tool": "未说明（帖子未提工具或模型）；表格型 Q-learning",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "原帖 https://x.com/Yumzlef/status/2113906007185199292 （抓取时 10 赞）。所有数字为作者自己的模拟结果，没有代码、没有许可证，无法复核；原帖措辞夸张（「彻底解决城市拥堵」「颠覆城市规划」），这类结论不成立——玩具网格、固定车流、和真实路网差得很远，讲的时候只用机制，不用结论。封面为视频第 9 秒截帧（LEARNED 段）。",
+        "attribution": "Yumzlef（@Yumzlef）",
+        "sourceAuthor": "Yumzlef",
+        "tags": [
+          "涌现",
+          "强化学习",
+          "交通模拟",
+          "群体智能",
+          "simulation"
+        ],
+        "publishedAt": "2026-10-24T08:10:41.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-24T08:49:00.000Z",
+        "updatedAt": "2026-10-24T08:49:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-24T08:49:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 61,
+          "baseBreakdown": {
+            "实体": 12,
+            "科普": 18,
+            "溯源": 7,
+            "复现": 7,
+            "风格": 8,
+            "新颖": 9
+          },
+          "multiplier": 1.025,
+          "finalScore": 62.5,
+          "threshold": 65,
+          "run": "2026-10-24-1640-shanghai"
+        },
+        "is3d": false,
+        "videoUrl": "https://video.twimg.com/amplify_video/2113905976659124225/vid/avc1/1080x1350/3DyTF2eD8DrhO1mp.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 55,
       "multiplier": 1.025,
       "score": 56.4,
@@ -2626,6 +2689,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-24T04:57:00.000Z",
+  "updatedAt": "2026-10-24T08:49:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }

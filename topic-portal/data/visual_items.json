@@ -1,8 +1,182 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 365,
+  "exportedCount": 368,
   "items": [
+    {
+      "title": "没有一张贴图、一张照片、一个 3D 模型，整座夏威夷纳帕利海岸全是代码「算」出来的：Opus 5.5 分成水、天、地形、植被四个专家，13 轮迭代，还有一个「裁判」拿真实照片逐轮打分",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/LexnLin/status/2113720560920428685",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024c-napali.jpg",
+      "previewType": "image",
+      "description": "Leon Lin（@LexnLin）10-23 19:53 UTC 发帖：「我让 Opus 5.5 重建纳帕利海岸（夏威夷考艾岛），并让无人机飞过去——全部是代码」，附开源仓库（抓取时 661 赞）。仓库 Leonxlnx/napali（MIT）README 写明：没有贴图、图片、3D 模型和任何下载素材；地形、侵蚀、海岸线、海洋、浪花与泡沫、礁石、棕榈和森林、岩石、云、雾气、光照和调色，全部由 WebGL2 着色器加少量 JavaScript 在一个 index.html 里生成。做法：用 Claude Code（Opus 5.5）跑了 13 轮智能体工作，多数轮次由水、天空、地形、植被四个并行「专家」各改各的，再合并，最后由一个「裁判」把每轮结果和一组海岸实拍参考照片对比。技术细节（README 文件表）：有侵蚀计算的地形、FFT 海洋、有符号距离场几何 + 光线步进、体积积云；发布的视频是 1080p30、每帧 4 次采样、2.5 倍速渲染，共 1,584 帧；作者说在集显笔记本上一帧 1672×941 离线要 1–2 秒。视频 53 秒（9 帧目视）：贴海面飞向悬崖 → 冲过浪花和沙滩 → 掠过棕榈林 → 拉升成俯瞰海岸线的航拍。科普价值：你「代码怎么涌现出拍视频的能力」那一段的最好样本——不是 AI 生成视频，而是 AI 写出一套「算」出每个像素的程序；「多专家 + 拿实拍照片当裁判」本身就是一个可讲的工作流。",
+      "tool": "Claude Code（Claude Opus 5.5），13 轮多智能体（水/天/地形/植被专家 + 合并 + 照片对比裁判）；WebGL2 着色器 + JavaScript 单文件；无头 Chrome + ffmpeg 渲染视频（README）",
+      "prompt": "I asked Opus 5.5 to recreate the Na Pali coast and fly a drone through it — everything is code.（帖内说法，非完整提示词）",
+      "promptProvenance": "adapted",
+      "provenanceNote": "原帖 https://x.com/LexnLin/status/2113720560920428685 （10-23 19:53 UTC，比本轮窗口早约 8.5 小时；之前各轮没有收录也不在 seen 列表，本轮是在 @ReindentAI 10-24 08:08 UTC 的转述帖里找到原作者后补收）。源码 https://github.com/Leonxlnx/napali （GitHub API 显示 MIT，10-23 创建，32 star）。README 未给在线演示地址，本轮没有在浏览器里运行；「13 轮」「裁判对比照片」为作者 README 说法。配乐为 Kevin MacLeod「Heroic Age」（CC BY 4.0，作者在回复中注明）。封面为视频第 47 秒截帧（海岸航拍）。",
+      "attribution": "Leon Lin（@LexnLin）",
+      "sourceAuthor": "LexnLin",
+      "tags": [
+        "Claude Code",
+        "shader",
+        "WebGL",
+        "程序化生成",
+        "地形侵蚀",
+        "无素材渲染",
+        "代码视频"
+      ],
+      "publishedAt": "2026-10-23T19:53:47.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-24T08:49:00.000Z",
+      "updatedAt": "2026-10-24T08:49:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-24T08:49:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 89,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 18,
+          "溯源": 19,
+          "复现": 15,
+          "风格": 10,
+          "新颖": 7
+        },
+        "multiplier": 1.0618,
+        "finalScore": 94.5,
+        "threshold": 65,
+        "run": "2026-10-24-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113717777299083264/vid/avc1/1920x1080/c8EPBKDxnmbIPFc0.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/Leonxlnx/napali",
+      "licenseName": "MIT",
+      "licenseUrl": "https://github.com/Leonxlnx/napali/blob/main/LICENSE"
+    },
+    {
+      "title": "浏览器里一片 4 公里 × 4 公里、3.8 万棵树的林地，光照是你自己的显卡现场「烘」出来的：开源 Three.js + WebGPU 原型 BakedVoxelLighting，远处的树为什么其实是 8 张照片",
+      "category": "frontend",
+      "styleFamily": "uiux",
+      "source": "https://x.com/SamGCoder/status/2113889415718416484",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024c-voxel.jpg",
+      "previewType": "image",
+      "description": "SamG（@SamGCoder）10-24 07:04 UTC 发帖：BakedVoxelLighting，一个在浏览器里跑的 4km × 4km 世界；Three.js + WebGPU，体素光照在 GPU 上烘焙并缓存在本地，「还有很多要修」。附在线地址和仓库。仓库 README（MIT）补充：确定性生成的 4,000 × 4,000 米世界（16 平方公里），2001×2001 地形网格、42,000 个侵蚀水滴、沉积和热力松弛；38,041 棵树（橡/桦/白蜡/松 12 种原型）、27,556 个草丛点；首次访问在你的 GPU 上烘焙世界光照，存进 IndexedDB，之后直接复用；支持 WebGPU，也可切 WebGL2；树和草按距离分 4 级细节——85 米内是真实枝干管和叶片卡，190–420 米是简化枝干加 16 个视角的树冠截图，420 米外是 8 个视角的整树截图（但仍保留每棵树自己的位置，因为整簇旋转会让坡上的树脚离地）。README 也自己写了限定：树根区域是「艺术化近似，不是生物学模拟」。视频 45 秒（9 帧目视）：第一人称走过高草地和零散乔木，云和光照在变。科普价值：一个镜头讲「为什么游戏远处的树是纸片、为什么第一次进游戏要『编译着色器/烘焙』」；侵蚀水滴生成地形也能接「简单规则 → 复杂地貌」。",
+      "tool": "Three.js + WebGPU（可切 WebGL2）、GPU 烘焙、IndexedDB 缓存（README）；是否用了 AI 编程工具作者未说明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖 https://x.com/SamGCoder/status/2113889415718416484 （抓取时 18 赞；作者 2 分钟前还发过一条同文帖 2113887254037017009，本条为带在线地址的版本）。源码 https://github.com/SamG-Coder/BakedVoxelLighting （GitHub API 显示 MIT，10-24 创建）；在线 https://samg-coder.github.io/BakedVoxelLighting/ （作者说需要桌面浏览器、首载要烘焙，本轮没有实际打开运行）。数字均为 README 自述。封面为视频第 22 秒截帧。",
+      "attribution": "SamG（@SamGCoder）",
+      "sourceAuthor": "SamGCoder",
+      "tags": [
+        "Three.js",
+        "WebGPU",
+        "程序化生成",
+        "LOD",
+        "光照烘焙",
+        "开源"
+      ],
+      "publishedAt": "2026-10-24T07:04:45.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-24T08:49:00.000Z",
+      "updatedAt": "2026-10-24T08:49:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-24T08:49:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 81,
+        "baseBreakdown": {
+          "实体": 17,
+          "科普": 14,
+          "溯源": 18,
+          "复现": 15,
+          "风格": 10,
+          "新颖": 7
+        },
+        "multiplier": 1.2748,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-24-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113887022196912128/vid/avc1/1920x1080/7cxx_CFQE80x3tpt.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/SamG-Coder/BakedVoxelLighting",
+      "licenseName": "MIT",
+      "licenseUrl": "https://github.com/SamG-Coder/BakedVoxelLighting/blob/main/LICENSE"
+    },
+    {
+      "title": "同一套图纸、断网，两个 AI 各在 Blender 里搭一台「爆炸图」iPhone 18 Pro Max：Opus 5.5 花了近 3 小时、39 美元，GPT-6 Astra 52 分钟、13 美元",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/tuanopoly/status/2113864476084850871",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024c-iphone.jpg",
+      "previewType": "image",
+      "description": "anh tuan nguyen（@tuanopoly）10-24 05:25 UTC 发帖（原文）：两个 AI 模型根据同一套图纸、在不联网的情况下，各自在 Blender 里搭了一台分层爆炸的 iPhone 18 Pro Max；Claude Opus 5.5 最高推理强度用了 2 小时 57 分、按 API 价约 39.15 美元，GPT-6 Astra 最高强度 52 分钟、约 13.25 美元。竖版视频 25 秒（9 帧目视）：先是橙色机身，再一层层炸开——后盖、镜头模组、无线充电线圈、电池、主板、中框、屏幕；第二段是银色版本；最后用一条斜线把两个模型的结果左右对切，标出耗时和花费。科普价值：爆炸图本身就是「拆解科普」的标准镜头，可以讲「一台手机里分几层」；顺带一个对比点「花 3 倍时间和钱的那个是否更好」。",
+      "tool": "Blender + Claude Opus 5.5 / GPT-6 Astra（作者自述，未说明用的是什么代理框架）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖 https://x.com/tuanopoly/status/2113864476084850871 （抓取时 0 赞）。「同一套图纸」是什么图纸、从哪来，作者没说明；耗时与花费为作者自述，无 .blend 文件、无提示词、无许可证，只能外链引用。视频中哪一段对应哪个模型，以视频末尾的对切标签为准，中间两段的归属本轮未能从画面确认。iPhone 的内部结构是 AI 依图纸搭的示意，不是真机拆解。封面为视频第 4 秒截帧。",
+      "attribution": "anh tuan nguyen（@tuanopoly）",
+      "sourceAuthor": "tuanopoly",
+      "tags": [
+        "Blender",
+        "爆炸图",
+        "拆解",
+        "3D建模",
+        "模型对比"
+      ],
+      "publishedAt": "2026-10-24T05:25:39.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-24T08:49:00.000Z",
+      "updatedAt": "2026-10-24T08:49:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-24T08:49:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 64,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 17,
+          "溯源": 7,
+          "复现": 4,
+          "风格": 8,
+          "新颖": 8
+        },
+        "multiplier": 1.038,
+        "finalScore": 66.4,
+        "threshold": 65,
+        "run": "2026-10-24-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113864109745946624/vid/avc1/720x1280/lij9axFe5dd9m918.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "1,000 只蚂蚁、没有指挥、只靠两种信息素，能不能自己找到食物？四个国产/开源模型写同一个蚁群模拟：下雨冲掉所有气味后，谁的蚁群能重新找回路",
       "category": "video",
@@ -17608,8 +17782,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条",
-  "updatedAt": "2026-10-24T04:57:00.000Z",
-  "totalItems": 365,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条",
+  "updatedAt": "2026-10-24T08:49:00.000Z",
+  "totalItems": 368,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
