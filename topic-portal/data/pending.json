@@ -3,6 +3,194 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 59,
+      "multiplier": 1.025,
+      "score": 60.5,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-24-2040-shanghai",
+      "record": {
+        "title": "终端里的「风洞」：Gemini 4 Argon 写的纳维-斯托克斯流体模拟，用盲文点阵当像素，青色逆时针、品红顺时针的旋涡一串串交替甩出来",
+        "category": "video",
+        "styleFamily": "code_video",
+        "source": "https://x.com/theGOATmeeh/status/2113934300160950432",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024d-ns.jpg",
+        "previewType": "image",
+        "description": "@theGOATmeeh 10-24 10:03 UTC 发帖：「Argon 做了这个纳维-斯托克斯的 2D 可视化，像体素风洞，而且是在终端里跑的」。30 秒视频（9 帧目视）：标题栏「CHROMA / WAKE [LIVE FLUID DYNAMICS]」「STABLE FLUIDS | MAC PRESSURE | VORTICITY CONFINEMENT | 2×4 BRAILLE」，160×80 网格约 60 FPS；流体从左向右，青色（逆时针）与品红（顺时针）旋涡交替出现、上下交错排成一列，形态类似卡门涡街（此为目视判断，作者未这么说）。",
+        "tool": "Gemini 4 Argon（作者自述）；Stable Fluids + MAC 网格压力投影 + 涡量约束（画面标注）；终端盲文字符渲染",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "原帖 https://x.com/theGOATmeeh/status/2113934300160950432 （抓取时 6 赞；账号 10 月创建、40 粉丝）。无代码、无提示词、无许可证；算法名来自画面标注。封面为视频第 10 秒截帧。",
+        "attribution": "The GOAT（@theGOATmeeh）",
+        "sourceAuthor": "theGOATmeeh",
+        "tags": [
+          "流体模拟",
+          "涡街",
+          "终端",
+          "涌现",
+          "Gemini"
+        ],
+        "publishedAt": "2026-10-24T10:03:06.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-24T12:54:00.000Z",
+        "updatedAt": "2026-10-24T12:54:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-24T12:54:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 59,
+          "baseBreakdown": {
+            "实体": 16,
+            "科普": 17,
+            "溯源": 6,
+            "复现": 3,
+            "风格": 9,
+            "新颖": 8
+          },
+          "multiplier": 1.025,
+          "finalScore": 60.5,
+          "threshold": 65,
+          "run": "2026-10-24-2040-shanghai"
+        },
+        "is3d": false,
+        "videoUrl": "https://video.twimg.com/amplify_video/2113934205818449920/vid/avc1/1280x720/8v2nkz8VjulcsNFL.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 59,
+      "multiplier": 1.0,
+      "score": 59.0,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-24-2040-shanghai",
+      "record": {
+        "title": "一个格子里能同时装水和盐：自研「多材料元胞物理沙盒」，材料带熔点、沸点、黏度和溶解度，木头受热不熔化而是热解，盐水煮干盐留在底部",
+        "category": "3d",
+        "styleFamily": "other",
+        "source": "https://x.com/MrCollison/status/2113938793333960817",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024d-mat.jpg",
+        "previewType": "image",
+        "description": "Matt（@MrCollison，MSQ Intelligence CTO）10-24 10:20 UTC 发帖，自称「多速率元胞多材料物理模拟」：世界由「砖块」里的格子组成，每个格子可以同时装 n 种材料（比如水和氯化钠的混合），每种材料有质量；材料带熔点、沸点、密度、导热、黏度及其温度依赖、溶解度等属性；反应是定义好的而非自动推出（如木头受热不会熔化，而是热解成木炭和烟）；可以把盐水煮干、盐留在底部。他说还有 40km×40km 的大地形版本，在他的机器上 60Hz。33 秒视频（9 帧目视）：「Material garden」面板（1 岩石 2 水 3 沙 4 木 5 铜 6 铁 7 油 8 熔岩），蓝色水池里的白色圆块逐渐塌陷散开、橙色半透明团块流动（面板有熔岩选项，画面中具体是哪种材料未标注）、白色堆体上画出框选区域等。",
+        "tool": "作者自研引擎（未说明是否用 AI 编程）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "原帖 https://x.com/MrCollison/status/2113938793333960817 （抓取时 3 赞）。作者自己说「缺陷很多」，博客文章尚未发布；无代码、无许可证。画面中各材料对应关系为面板读数 + 目视推断。封面为视频第 3 秒截帧。",
+        "attribution": "Matt（@MrCollison）",
+        "sourceAuthor": "MrCollison",
+        "tags": [
+          "物理模拟",
+          "多材料",
+          "元胞自动机",
+          "相变"
+        ],
+        "publishedAt": "2026-10-24T10:20:58.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-24T12:54:00.000Z",
+        "updatedAt": "2026-10-24T12:54:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-24T12:54:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 59,
+          "baseBreakdown": {
+            "实体": 21,
+            "科普": 14,
+            "溯源": 7,
+            "复现": 3,
+            "风格": 6,
+            "新颖": 8
+          },
+          "multiplier": 1.0,
+          "finalScore": 59.0,
+          "threshold": 65,
+          "run": "2026-10-24-2040-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2113934784321740801/vid/avc1/3008x1846/aIrBTzBkJHq7d0fY.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 57,
+      "multiplier": 1.0,
+      "score": 57.0,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-24-2040-shanghai",
+      "record": {
+        "title": "Tripo 出网格和骨骼、Opus 5.5 通过 Blender MCP 写游动动画，咬合动作先让视频模型演一遍再「抄」回骨架：一条全 AI 绑定的鲨鱼，45 分钟",
+        "category": "3d",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/maxt3chno/status/2113934291818221665",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024d-shark.jpg",
+        "previewType": "image",
+        "description": "Max（@maxt3chno）10-24 10:03 UTC 发帖：鲨鱼全程用 AI 服务做——①网格和骨骼绑定在 Tripo 生成；②待机和游动动画由 Opus 5.5 通过 Blender MCP 程序化生成；③咬合动画：Opus 先把骨架放到带标记点的绿幕上渲染，再用 omni 1.1 生成一段咬合视频，然后让 Opus 把视频里的动作还原到 3D 骨架上。耗时 45 分钟、用掉每周额度的 7%，「还不理想，但能用」。27 秒录屏（目视）：Blender 视口里鲨鱼摆尾/张嘴、骨架线框，右下是 Tripo 网页界面。",
+        "tool": "Tripo（网格+绑定）、Claude Opus 5.5 + Blender MCP、omni 1.1（视频生成）（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "原帖 https://x.com/maxt3chno/status/2113934291818221665 （抓取时 35 赞）。无文件、无提示词、无许可证；「omni 1.1」具体是哪家产品作者未说明。封面为录屏第 2 秒截帧。",
+        "attribution": "Max（@maxt3chno）",
+        "sourceAuthor": "maxt3chno",
+        "tags": [
+          "Tripo",
+          "Blender MCP",
+          "绑定动画",
+          "动作迁移",
+          "3D建模"
+        ],
+        "publishedAt": "2026-10-24T10:03:04.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-24T12:54:00.000Z",
+        "updatedAt": "2026-10-24T12:54:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-24T12:54:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 57,
+          "baseBreakdown": {
+            "实体": 14,
+            "科普": 9,
+            "溯源": 10,
+            "复现": 10,
+            "风格": 8,
+            "新颖": 6
+          },
+          "multiplier": 1.0,
+          "finalScore": 57.0,
+          "threshold": 65,
+          "run": "2026-10-24-2040-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2113934210998185984/vid/avc1/2302x1380/Ab88yVTqnNEgNwt6.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 61,
       "multiplier": 1.025,
       "score": 62.5,
@@ -2689,6 +2877,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-24T08:49:00.000Z",
+  "updatedAt": "2026-10-24T12:54:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }

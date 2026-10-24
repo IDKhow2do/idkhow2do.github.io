@@ -1,7 +1,84 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-24T08:49:00.000Z",
+  "updatedAt": "2026-10-24T12:54:00.000Z",
   "topics": [
+    {
+      "url": "https://www.helionenergy.com/newsroom/helion-signs-letter-of-intent-for-175-million-chips-award-to-advance-semiconductor-fusion-energy",
+      "title": "聚变电站最卡脖子的，居然是一排「开关」？Helion 拿芯片法案的钱专做高压脉冲功率半导体，CEO：开关损耗砍一半，聚变系统输出就能翻倍",
+      "category": "半导体",
+      "source": "Helion 官方新闻稿（2026-10-22，Everett, Washington）；美国商务部/NIST 同日新闻稿《Department of Commerce Announces Letters of Intent With 4 Companies for $389 Million of R&D Awards…》；「损耗减半=输出翻倍」等说法出自 TechCrunch（Tim De Chant，10-22）对 CEO David Kirtley 的采访",
+      "publishedAt": "2026-10-22",
+      "eventAt": "2026-10-22",
+      "collectedAt": "2026-10-24T12:54:00.000Z",
+      "updatedAt": "2026-10-24T12:54:00.000Z",
+      "description": "新闻稿要点：聚变公司 Helion 与美国商务部 CHIPS 研发办公室签了意向书（letter of intent），拟获最多 1.75 亿美元，用于研发和制造聚变用的下一代高压功率半导体，另有 5,000 万美元私人投资。Helion 的说法是：它的聚变装置依赖大功率脉冲电气系统，要反复、高效地「开关」并回收大量能量，而满足它要求的半导体目前只有海外厂商能做；新器件目标是更高效率、更长寿命、更好散热。钱的去向：1 亿美元以上用于华盛顿州 Everett 的半导体与先进封装研发和功率模块制造（把多颗器件集成进可量产的封装），约 8,000 万美元与佛蒙特州伯灵顿的一家产业伙伴（TechCrunch 报道为格芯 GlobalFoundries）做器件工艺、设备与设计研发，其余用于封装和制造自动化。NIST 同日公布的四家里还有 Commonwealth Fusion Systems（最多 8,500 万，射频等离子体加热、抗辐照电子等）、Vertical Semiconductor（7,300 万，垂直氮化镓功率器件）、Sibelco（5,600 万，长晶坩埚用超高纯石英）。TechCrunch 采访补充：这类器件目前会损耗流经电能的约 5%–10%，在 Helion 这种直接从聚变反应回收电能（不烧蒸汽转汽轮机）的系统里损耗会层层叠加，Kirtley 原话「如果能把损耗砍一半，聚变系统的输出实际上翻倍」。反直觉钩子：大家盯着等离子体和磁体，真正决定「净发电」的可能是功率开关的那几个百分点。可拍角度：①第 0 秒上新闻稿配图——一串金色支架压着的多片圆盘器件（文件名标注 SCR，即可控硅/晶闸管类器件）；②用「水龙头开关漏水」类比解释脉冲功率与开关损耗为什么会放大；③你的工艺视角：高压功率器件和逻辑芯片的工艺/封装难点完全不同（厚漂移区、散热、压接封装），为什么一个国家可以造最先进的 GPU 却买不到这类「老」器件。",
+      "caveat": "这是意向书，不是最终拨款：要等正式协议签署才算数，届时商务部会按 Helion 最近一轮 G 轮优先股估值获得 1.75 亿美元的无投票权股权。TechCrunch 标题和首句写「已获得」，与新闻稿不一致，以新闻稿为准。「损耗 5%–10%」「减半即输出翻倍」是 CEO 在采访中的说法，新闻稿与 NIST 稿没有给出这组数字，也没有公开器件参数；Kirtley 同时承认这笔研发赶不上 2028 年给微软供电的首座电站 Orion。新闻稿配图文件名为「SCR portrait」，图中具体是什么型号/是否为 Helion 自研器件，稿件未说明。稿件含美国政府官员的政策表态，讲的时候只讲器件与能量回收机制，不做政治解读。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261024d-helion.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024d-helion.jpg",
+      "imageAlt": "Helion 新闻稿配图：金色支架压接的一串多片圆盘器件（文件名标注 SCR）",
+      "tags": [
+        "功率半导体",
+        "聚变",
+        "先进封装",
+        "芯片制造"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "主线": 23,
+          "钩子": 17,
+          "画面": 12,
+          "来源": 15,
+          "时效": 9,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 91.3,
+        "threshold": 65,
+        "run": "2026-10-24-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://www.kimi.ai/blog/kimi-k3-1-pro#coding",
+      "title": "让 AI 教一个 402 块肌肉的虚拟人走路，奖励函数怎么调胳膊都不对——它最后没再调奖励，而是回头查出物理模拟器里 36 处肩部肌肉力臂算错了？Kimi K3.1 Pro 的一次内部长程实验",
+      "category": "AI",
+      "source": "Moonshot AI 官方博客《Kimi K3.1 Pro》Coding 段（2026-10-23/24 发布）及博客内嵌演示视频 walking-sim；线索来自 @cutetoxicguy 10-24 的 X 转述帖，数字以官方博客与视频为准；人体模型为开源项目 ashemag/human-atlas（MIT）",
+      "publishedAt": "2026-10-24",
+      "eventAt": "2026-10-24",
+      "collectedAt": "2026-10-24T12:54:00.000Z",
+      "updatedAt": "2026-10-24T12:54:00.000Z",
+      "description": "官方博客原文要点：在一次内部测试里，K3.1 Pro 在开源人体解剖模型 human-atlas（296 个骨骼部件含软骨、402 个肌肉部件）之上，自己搭了一个人体步行动力学模拟器，连同训练和评估流程；在 167 个任务（missions）、420 次独立评审中，它分析实验结果、诊断问题、迭代控制器，让虚拟人从「几秒内就摔倒」变成「左右脚交替、连续走 11.2 秒」。关键一段：当调奖励函数（reward shaping）已经改善不了手臂动作时，它没有继续调奖励，而是对模拟器动力学做开环探测，找出并改正了肩部肌肉力臂（moment arm）计算里的 36 处错误，再重新训练控制器。博客内嵌视频（35 秒，目视）给了版本表：v1 CMA-ES 方案 3.1 秒、无步态；v2 DEP-MPO 试跑 2.3 秒、首次出现成对步伐；v3 加全脚掌着地奖励 9.0 秒走完、1.139 米/秒；v4 加摆臂/手腕/躯干约束 9.0 秒、1.295 米/秒；v5 修好动力学后 11.2 秒、1.373 米/秒；底部注明「167 missions · 420 reviews · 43,162 tool calls · 352 muscle channels」，肌肉颜色从青（静息）到红（峰值激活）。可拍角度：①钩子「AI 学走路学不会，最后发现是物理引擎写错了」，第 0 秒上 v1 弯腰站不住 → v5 大步走的对比；②接你的涌现视频：走路这种「复杂行为」是几百条肌肉 + 简单奖励「长」出来的，但前提是物理规则本身得对——规则错了，再多训练也只是在错的世界里变聪明；③类比你熟悉的工艺仿真：仿真结果不对时，先怀疑模型参数而不是一味调工艺配方。",
+      "caveat": "这是 Moonshot 在发布博客里自述的内部测试，没有公开代码、日志、那 36 处错误的具体内容，也没有第三方复现；「167 个任务」「420 次评审」的含义（是否含人工介入）博客没有展开。11.2 秒、1.373 米/秒是模拟器里的结果，和真人或真实机器人无关。Kimi K3.1 Pro 发布本身库里已有一条（kimi.ai 博客，讲 token 成本与网安能力），本条只讲步行模拟这一个案例，不重复讲基准分数。X 上另有关于 Kimi 海外推广的争议帖，本条不涉及。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261024d-kimiwalk.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024d-kimiwalk.jpg",
+      "imageAlt": "Kimi 官方博客演示视频截帧：v5 DEP-MPO + repaired dynamics，彩色肌肉的虚拟人迈步行走",
+      "tags": [
+        "智能体",
+        "强化学习",
+        "物理仿真",
+        "涌现",
+        "Kimi"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 14,
+          "来源": 13,
+          "时效": 10,
+          "大陆": 9,
+          "新颖": 3
+        },
+        "multiplier": 1.0566,
+        "finalScore": 91.9,
+        "threshold": 65,
+        "run": "2026-10-24-2040-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2610.30537",
       "title": "AI 知识题能考 90 分以上，真让它干一份工程师要签字的活，最好的也只拿 50.6%？谷歌 PLE 基准：约束满足了 91%，可每一条硬约束都过的交付件只有 41.3%——而且最贵的 8 个配置一个都没赢",
