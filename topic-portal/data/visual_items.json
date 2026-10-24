@@ -1,8 +1,175 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 354,
+  "exportedCount": 357,
   "items": [
+    {
+      "title": "一只机械手能拆成多少个零件？2,317 个：Kimi K3.1 Pro 做的 Three.js 网页 FORM / 01，七轴机械臂 + 20 自由度灵巧手，外壳透明、能一键炸开成零件阵列",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/crystalsssup/status/2113684128734625948",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024a-kimihand.jpg",
+      "previewType": "image",
+      "description": "@crystalsssup（Crystal，X 简介写「@ Kimi」，即月之暗面相关人员）10-23 17:29 UTC 发帖（原文）：Kimi K3.1 Pro 很擅长 3D 建模，「我让 Kimi K3.1 做一个 3D 网站，把一只机械手拆成 2,317 个零件」，附在线链接 form-01-score.ok.kimi.link。抓取时 1,480 赞。在线页（HTTP 200）标题「FORM / 01 — Dexterous Robotic Arm」，meta 描述：一台七轴机械臂加 20 自由度灵巧手，在霜透明外壳下实时渲染；页面加载 three.module.js、OrbitControls、GLTFLoader/GLTFExporter、BufferGeometryUtils。视频（约 9 秒，8 帧目视）：白底产品风，透明外壳里能看见线缆和关节；顶部有 Product / Transparent / Open / Section / Wiring / Explode 等视图按钮，下方有手势切换；最后把整只手炸开，平铺成按大小排好的上千个圆形/方形零件阵列。适合科普镜头：「一只灵巧手为什么这么贵——数零件」「透明外壳看走线」；也能当门户 3D 建模大类里「AI 做结构拆解页」的新样本（国产模型）。",
+      "tool": "Kimi K3.1 Pro + Three.js（作者自述；页面脚本可见 three.js 模块）",
+      "prompt": "Create a 3D website that pulls apart a robotic hand into 2,317 pieces.（帖内转述的需求，非完整提示词）",
+      "promptProvenance": "adapted",
+      "provenanceNote": "原帖 https://x.com/crystalsssup/status/2113684128734625948 ；在线页 https://form-01-score.ok.kimi.link/ 已抓取 HTML 核对标题与描述，未在浏览器里操作。作者自称在 Kimi，帖子带宣传性质；零件数 2,317 为作者自述，未核点。没有源码仓库与许可证声明，只能外链引用。@AndyL5cc 中文转发帖（2113792383339163818）不作来源。封面为视频第 2.8 秒截帧。",
+      "attribution": "Crystal（@crystalsssup），作品由 Kimi K3.1 Pro 生成",
+      "sourceAuthor": "crystalsssup",
+      "tags": [
+        "Three.js",
+        "结构可视化",
+        "3D交互",
+        "爆炸图",
+        "机械",
+        "国产大模型"
+      ],
+      "publishedAt": "2026-10-23T17:29:01.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-24T00:54:00.000Z",
+      "updatedAt": "2026-10-24T00:54:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-24T00:54:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 73,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 16,
+          "溯源": 12,
+          "复现": 9,
+          "风格": 10,
+          "新颖": 6
+        },
+        "multiplier": 1.249,
+        "finalScore": 91.2,
+        "threshold": 65,
+        "run": "2026-10-24-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113684075009777664/vid/avc1/2318x1440/ZXvVmA0qCh0t-bY7.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "只给一张 AI 画的图，模型自己在 Blender 里盖出一座哥特大教堂？Google DeepMind 演示 Gemini 4 Argon + Blender MCP：灰模 → 贴图 → 光照一轮轮自己改",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/GoogleDeepMind/status/2113645959762575623",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024a-dmcathedral.jpg",
+      "previewType": "image",
+      "description": "Google DeepMind 官方账号 10-23 14:57 UTC 发帖（原文）：用一张 Nano Banana 图片和 Blender MCP，Gemini 4 Argon 在 Antigravity（谷歌的 AI 编程环境）里搭出一座 3D 哥特式大教堂，并反复迭代几何、纹理和光照直到成品。抓取时约 1,389 赞。视频 44 秒（8 帧目视）：开场是完成的教堂中殿（玫瑰窗、光束穿过尘雾、成排长椅）；中段分屏字幕「Gemini iterates on geometry, texture and lighting using Blender MCP」，能看到同一视角从暗到亮的多轮修改；有一帧是未贴图的灰白模型，字幕「Gemini creates a 3D model from a single image」；结尾 Gemini 4 Argon 标版。科普价值：把「从一张图到 3D 场景」的过程拆成几何→材质→灯光三步，正好是你「涌现」选题里「建模能力怎样涌现」那一段的现成画面；也能和本轮 Kimi 3D Make、库里 GPT-6.1 Sol Blender 斧头等做「AI 开着建模软件干活」的对比。",
+      "tool": "Gemini 4 Argon + Antigravity + Blender MCP（官方帖自述），输入图为 Nano Banana 生成",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "官方原帖 https://x.com/GoogleDeepMind/status/2113645959762575623 。官方宣传片，未给提示词、迭代次数、耗时和 .blend 文件；未声明可再利用许可，只能外链引用。上轮丢弃过 @cloud8wq 的二手转述，本轮回到官方原帖收录；X 上另有十余条中文/土耳其语转述（@swordBluesy、@starkljm、@octopusaia 等）不作来源。封面为视频第 27 秒截帧（完成态中殿）。",
+      "attribution": "Google DeepMind（@GoogleDeepMind）",
+      "sourceAuthor": "GoogleDeepMind",
+      "tags": [
+        "Blender",
+        "3D建模",
+        "Blender MCP",
+        "AI代理",
+        "单图生成3D"
+      ],
+      "publishedAt": "2026-10-23T14:57:21.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-24T00:54:00.000Z",
+      "updatedAt": "2026-10-24T00:54:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-24T00:54:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 67,
+        "baseBreakdown": {
+          "实体": 16,
+          "科普": 15,
+          "溯源": 14,
+          "复现": 7,
+          "风格": 8,
+          "新颖": 7
+        },
+        "multiplier": 1.038,
+        "finalScore": 69.5,
+        "threshold": 65,
+        "run": "2026-10-24-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113645779952807937/vid/avc1/1920x1080/mXBp-jHe7_mtt1jU.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "屏幕怎么变成一扇「窗」？摄像头追踪你的头，浏览器实时改透视：WebGPU + Three.js 纯代码写的海底场景，水母像就在屏幕后面（off-axis 投影）",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/Simone_dev_com/status/2113631529335423305",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024a-headtrack.jpg",
+      "previewType": "image",
+      "description": "Simone Andreotti（@Simone_dev_com）10-23 14:00 UTC 发帖（原文）：用摄像头头部追踪把浏览器变成一个离轴（off-axis）3D 窗口；MediaPipe 追踪观看者位置，实时移动透视；整个海底环境用 WebGPU 和 Three.js 纯代码生成，零素材。视频约 12 秒（竖屏，8 帧目视）：手机绕着一台笔记本拍，屏幕里的水母、珊瑚和光束随拍摄角度改变透视，看上去像屏幕后面有一个立体水箱；字幕「3D effect by tracking the user head / Running in the browser」。科普价值：一个镜头讲清「为什么普通屏幕看起来是平的」——3D 感来自运动视差，只要画面跟着眼睛位置正确地错位，大脑就会把它当成真的深度；可以接「裸眼 3D 广告牌」「VR 为什么要追踪头」。原理（离轴投影 + 人脸关键点追踪）是公开、可复现的，用 Three.js 自己复刻不难。",
+      "tool": "MediaPipe（头部追踪）+ WebGPU + Three.js（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖 https://x.com/Simone_dev_com/status/2113631529335423305 （抓取时仅 1 赞，新账号作品）；帖内没有在线链接、源码或许可证，只能外链引用。视频是手机实拍屏幕，演示效果只对摄像头所追踪的那一个观察者成立（拍摄者看到的效果与追踪对象是否同一人，帖子没有说明）。封面为视频第 0.8 秒截帧，含作者原字幕。",
+      "attribution": "Simone Andreotti（@Simone_dev_com）",
+      "sourceAuthor": "Simone_dev_com",
+      "tags": [
+        "Three.js",
+        "WebGPU",
+        "3D交互",
+        "视差",
+        "头部追踪",
+        "creative coding"
+      ],
+      "publishedAt": "2026-10-23T14:00:00.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-24T00:54:00.000Z",
+      "updatedAt": "2026-10-24T00:54:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-24T00:54:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 69,
+        "baseBreakdown": {
+          "实体": 16,
+          "科普": 16,
+          "溯源": 9,
+          "复现": 9,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.2748,
+        "finalScore": 88.0,
+        "threshold": 65,
+        "run": "2026-10-24-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113614606258036737/vid/avc1/720x1280/SwRARe17Zcl1Yhgs.mp4?tag=14",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "用 Claude 剪视频缺老片空镜和年代感配乐？互联网档案馆免费 API，连 key 都不用",
       "category": "video",
@@ -16980,8 +17147,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1",
-  "updatedAt": "2026-10-24T00:32:13.000Z",
-  "totalItems": 354,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条",
+  "updatedAt": "2026-10-24T00:54:00.000Z",
+  "totalItems": 357,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
