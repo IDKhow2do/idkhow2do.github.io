@@ -1,7 +1,122 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-23T13:00:00.000Z",
+  "updatedAt": "2026-10-24T00:54:00.000Z",
   "topics": [
+    {
+      "url": "https://www.tomshardware.com/pc-components/dram/micron-pulls-the-plug-on-future-4f2-dram-after-two-decades-of-research-in-dramatic-shift-company-says-architecture-offers-no-meaningful-density-advantages-increases-manufacturing-complexity-and-costs-and-has-fundamental-scaling-limitations",
+      "title": "长鑫押注的 4F² DRAM，美光却说「密度优势有点像神话」？研究了二十年、亲手做过样品，美光 CTO 说决定 DRAM 密度的是电容间距，不是晶体管怎么摆",
+      "category": "半导体",
+      "source": "Tom's Hardware《Micron pulls the plug on future 4F² DRAM after two decades of research in dramatic shift》（Anton Shilov，2026-10-22）；交叉核对：Bits&Chips《Micron rules out 4F² DRAM in favor of continued scaling and 3D transition》、vlsi.kr 网络研讨会解读；一手事件：美光 2026-10-21 技术网络研讨会（investors.micron.com 10-19 预告稿，主讲 Scott DeBoer）",
+      "publishedAt": "2026-10-22",
+      "eventAt": "2026-10-21",
+      "collectedAt": "2026-10-24T00:54:00.000Z",
+      "updatedAt": "2026-10-24T00:54:00.000Z",
+      "description": "事件：美光总裁兼首席技术与产品官 Scott DeBoer 在 10-21 的技术网络研讨会（回答 UBS 分析师提问）上表示，美光不会量产 4F² DRAM。媒体引述原话：「从我们过去二十年的研究看，说 4F² 比 6F² 能多带来什么，有点像个神话（a bit of a myth）。决定 DRAM 的是电容间距……晶体管可以用不同方式搭，但它们都得塞在电容下面」，并称讨论 4F² vs 6F² 有点「障眼法」（smoke and mirrors）。他还说「美光发明了 4F² DRAM」，4F² 往回退几代节点能做出来，但更复杂、更贵；再往下微缩「有根本的物理问题」，最终取代平面 DRAM 的会是 3D DRAM 而不是 4F²（具体是什么物理限制，研讨会上没有说）。背景数字（Tom's Hardware）：同样特征尺寸下，4F² 单元面积比 6F² 小约 33%，理论上同面积能多放约 50% 的单元。美光的路线（封面就是这张幻灯片）：6F² 继续微缩，1γ 已量产，1δ 计划 2027 下半年量产、位密度提升二十几个百分点，之后引入晶圆键合、High-NA EUV、新材料，再在合适时机转 3D DRAM。为什么和大陆观众有关：Bits&Chips 写明长鑫（CXMT）计划年底前推出基于 4F² 的服务器 DDR5 RDIMM，是第一家给出具体 4F² 路线的存储厂；库里 10-10 已收「为什么长鑫要把 DRAM 晶体管竖起来」，这条正好是「对手怎么看」的反方。可拍角度：①钩子「同一个技术，一家押上全部，一家说是神话」；②用积木讲清：DRAM 一个比特 = 一个晶体管 + 一个电容，晶体管竖起来省了地，但电容这根「高楼」的间距没变，楼盖不密；③反方：Tom's Hardware 也写了三星、SK 海力士路线图里仍有 4F²（据 TechInsights）；评论区观点是 4F² 可能让没有 EUV 的厂商不靠光刻也拿到一次密度跃升——这正是长鑫的处境；④我在晶圆厂的视角：深孔电容的刻蚀深宽比才是真正卡脖子的那一步。",
+      "caveat": "美光的说法是竞争对手立场（vlsi.kr 解读认为这是在不点名回应三星/长鑫路线），不是中立结论；「物理限制」具体是什么美光没有说明，谁对要等 2028–2029 年前后的量产结果。原始研讨会是网络直播，本轮没有拿到美光官方文字稿，引语来自 Tom's Hardware 与 Bits&Chips 的转录，两家引语措辞略有出入但意思一致。长鑫 4F² 产品时间来自 Bits&Chips 的报道，非长鑫官方公告。不涉及股价/荐股。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261024a-micron4f2.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024a-micron4f2.jpg",
+      "imageAlt": "美光研讨会路线图幻灯片：6F² DRAM 从 1γ 到 ηÅ 打勾，4F² DRAM 打叉并标注 No viable scaling path，3D DRAM 打勾（Bits&Chips 文章配图）",
+      "tags": [
+        "芯片制造",
+        "存储/内存",
+        "DRAM",
+        "国产芯片"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 91,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 18,
+          "画面": 13,
+          "来源": 11,
+          "时效": 10,
+          "大陆": 10,
+          "新颖": 4
+        },
+        "multiplier": 1.0743,
+        "finalScore": 97.8,
+        "threshold": 65,
+        "run": "2026-10-24-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "title": "每个 token 便宜了 33%，跑一道题的钱却几乎没省？Kimi K3.1 Pro 发布：还主动把开源版的「黑客能力」从 90.5% 压到 81%",
+      "category": "AI",
+      "source": "月之暗面 Kimi K3.1 Pro 官方技术博客（kimi.ai/blog，2026-10-24 发布，产品 10-23 上线）；Artificial Analysis《Kimi K3.1 Pro launches at 4th on the Intelligence Index…》（2026-10-23）及其模型页；封面图为 R&D World 根据 Artificial Analysis 数据（10-23 访问）制作的对比图",
+      "publishedAt": "2026-10-24",
+      "eventAt": "2026-10-23",
+      "collectedAt": "2026-10-24T00:54:00.000Z",
+      "updatedAt": "2026-10-24T00:54:00.000Z",
+      "description": "两个反直觉点，都有一手出处。①「降价不等于省钱」：Artificial Analysis（独立评测机构）写明 K3.1 Pro 第一方 API 价格为每百万 token 输入 2 美元 / 输出 10 美元 / 缓存命中 0.2 美元，三项都比 K3 低 33%；但它每道 Intelligence Index 题平均输出 55K token，比 K3 的 48K 多 14%，所以每题成本「大致和 K3 持平」，发布文里是 1.98 美元/题（模型页实时数据为 2.11 美元，K3 max 为 2.00 美元）。AA 模型页还写：跑完整个指数它生成了 1.5 亿 token，中位数是 8700 万，「非常啰嗦」。AA 指数得分 55，排第 4，落后 Claude Opus 5.5（58）等。可讲成：AI 账单 = 单价 × 用量，模型越会「想」，用量越大——和「流量便宜了话费没少」一个道理。②「故意让开源版变弱」：官方博客「Cybersecurity」一节写，他们发现网络攻防能力是从通用训练数据和 RL 环境里「顺带」长出来的；为开源发布，在中训练和 RL 两个阶段都识别并删掉了网络安全相关数据。在自家漏洞利用基准 xdev-bench-hard 上（pass@3），不做这些处理的检查点能解 90.5%，最终发布版是 81.0%；官方称其攻防能力仍落后于已公开至少三个月的前沿闭源模型，原则是「不让开源权重推进网络攻击能力的绝对前沿」。完整权重承诺 11 月 4 日前开源。顺带：博客把 3D 创作列为重点（BenchCAD 带工具 92.7%，Opus 5.5 为 96.2%），同步上线 3D Make（在线预览编辑 3D 模型、导出打印或视频）——和门户「3D 建模」大类直接相关。可拍角度：钩子「降价 33%，账单不变」→ 一张单价 × 用量的拆解图（封面就是）→ 再翻转「能力不是一个旋钮，它是从数据里长出来的，所以要删数据才能关掉」，可接涌现选题。",
+      "caveat": "所有跑分（Terminal-Bench、BenchCAD、xdev-bench-hard 等）多为官方自测或自选口径，xdev-bench-hard 是月之暗面内部基准，90.5%→81.0% 只能说明「同一流水线内的相对变化」；成本结论来自 Artificial Analysis 按其测试集和第一方价格计算，换任务、换缓存命中率结果会不同，发布文（1.98 美元）与模型页（2.11 美元）数字随时间更新有出入。权重尚未发布，「开源」目前是承诺。X 上大量「杀疯了/斩杀 Opus」类转述帖不作为来源。只讲机制，不做模型站队。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261024a-kimicost.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024a-kimicost.jpg",
+      "imageAlt": "R&D World 对比图：左为 Artificial Analysis 智能指数（Opus 5.5 58、Kimi K3.1 Pro 55…），右为每题成本（Opus 5.5 5.98 美元、Kimi K3.1 Pro 2.11 美元、GPT-6.1 Sol 0.72 美元等）",
+      "tags": [
+        "AI成本",
+        "AI安全",
+        "AI推理",
+        "国产大模型",
+        "开源模型"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 90,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 10,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 95.1,
+        "threshold": 65,
+        "run": "2026-10-24-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://www.energy.gov/articles/energy-department-designates-helium-critical-material-strengthen-american-manufacturing",
+      "title": "吹气球的氦气，为什么被美国列为「关键材料」？能源部给的头号理由是：造芯片离不开它，而且很多环节没有替代品",
+      "category": "半导体",
+      "source": "美国能源部（DOE）新闻稿《Energy Department Designates Helium as Critical Material…》（2026-10-23）及联邦公报通知稿《Critical Material List; Addition of Helium》（2026-10-21 签署，energy.gov PDF）；AP、路透（经 EnergyNow 转载）同日报道",
+      "publishedAt": "2026-10-23",
+      "eventAt": "2026-10-23",
+      "collectedAt": "2026-10-24T00:54:00.000Z",
+      "updatedAt": "2026-10-24T00:54:00.000Z",
+      "description": "一手来源：DOE 新闻稿与联邦公报通知。要点（原文）：能源部长依据《2020 能源法》把氦列入 DOE 关键材料清单；通知稿写氦在半导体制造、天然气管网检漏、量子计算等多项关键功能中「不可替代」，并说先进半导体制造推高了氦需求；新闻稿称「氦的独特性质使它在半导体生产中不可或缺，很多关键应用没有可行替代品」，全球需求增长快于产量；美国有大量富氦天然气，但精炼产能有限、审批周期长，产量受限。X News 摘要称这是该法下第 20 种关键材料（未在 DOE 原文中核到这个序号）。这份通知本身没有解释氦在晶圆厂里具体干什么——这正是创作者的一线经验可以补的地方。可拍角度（以下机制需按你自己的刻蚀一线经验核实后再讲）：①钩子「派对气球里的气体，是芯片厂的命根子之一」；②刻蚀机里晶圆吸在静电卡盘上，真空里没有空气导热，背面通一层薄薄的氦气把热量带走，温度不均匀，刻蚀速率就跟着不均匀；③为什么偏偏是氦：轻、导热好、化学惰性；④检漏：真空腔漏没漏，用氦质谱检漏仪找。",
+      "caveat": "这是美国政府的供应链政策文件，带有明显的政策宣传语气（「让美国制造回归」等），讲的时候只讲材料与工艺，不做中美站队、不讲出口管制推测。DOE 原文只说「不可替代」，没有给出半导体用氦量、价格或进口依存度数字，视频里不要自行补数字。上面的工艺机制是常识性背景，不是这份文件的内容。封面只有文件截图（通知稿第 2 页标题与摘要），没有现成画面，需要自制动画。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261024a-heliumdoe.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024a-heliumdoe.jpg",
+      "imageAlt": "DOE 联邦公报通知稿截图：DEPARTMENT OF ENERGY / Critical Material List; Addition of Helium / SUMMARY 段写氦在半导体制造等功能中不可替代",
+      "tags": [
+        "芯片制造",
+        "刻蚀",
+        "材料",
+        "供应链"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 63,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 10,
+          "画面": 0,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 3,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 67.7,
+        "threshold": 65,
+        "run": "2026-10-24-0840-shanghai"
+      }
+    },
     {
       "url": "https://ir.acmr.com/news-releases/news-release-details/acm-research-enhances-single-wafer-hot-spm-system-sulfuric-acid/",
       "title": "造芯片其实很「费硫酸」？盛美（ACM Research）给 170°C 单片热 SPM 清洗机加了硫酸回收：回收率 70%，公司估计每台每年能省约 400 吨硫酸",
