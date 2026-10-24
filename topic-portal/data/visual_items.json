@@ -3052,14 +3052,15 @@
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261021-songsong-gamedev-skills.jpg",
       "previewType": "image",
       "videoUrl": "",
-      "description": "宋宋（@songsong）2026-10-21 推荐开源项目 awesome-gamedev-agent-skills：提供 74 个游戏开发 Skills，包括角色移动、关卡设计、存档、打击感等，支持 Godot、Unity、Unreal、Phaser、PixiJS、three.js、Bevy、pygame、LÖVE、Roblox 等平台。仓库自述：可移植的 SKILL.md 格式（即 Anthropic 推出的 Claude Skills 格式），带路由按引擎和任务加载对应 skill，可在 Claude Code、Cursor、Kiro、Codex、Copilot、Gemini CLI 等中使用（Apache-2.0，约 2.1k star）。帖子引用作者前一帖：做微信小游戏时用到的 10 个游戏相关 skill 链接（higgsfield 游戏生成、game-engine、multiplayer-game、game-feel、threejs-game-ui-designer、develop-web-game 等）。",
+      "description": "用户指定收纳（老板链到 @jiangjiangling 同仓库推荐帖）。宋宋（@songsong）2026-10-21 推荐开源项目 awesome-gamedev-agent-skills：提供 74 个游戏开发 Skills，包括角色移动、关卡设计、存档、打击感等，支持 Godot、Unity、Unreal、Phaser、PixiJS、three.js、Bevy、pygame、LÖVE、Roblox 等平台。仓库自述：可移植的 SKILL.md 格式（即 Anthropic 推出的 Claude Skills 格式），带路由按引擎和任务加载对应 skill，可在 Claude Code、Cursor、Kiro、Codex、Copilot、Gemini CLI 等中使用（Apache-2.0，约 2.1k star）。帖子引用作者前一帖：做微信小游戏时用到的 10 个游戏相关 skill 链接（higgsfield 游戏生成、game-engine、multiplayer-game、game-feel、threejs-game-ui-designer、develop-web-game 等）。",
       "tool": "awesome-gamedev-agent-skills（Agent Skills / SKILL.md）",
       "prompt": "",
       "promptProvenance": "missing",
-      "provenanceNote": "正文为原帖及所引帖 2112372412818067675（经 X API 回读）。仓库取自帖文，经 GitHub API 核实（Apache-2.0，2085★）。属通用游戏开发技能合集，非专门 3D，is3d 设为 false。封面为帖内图片。",
+      "provenanceNote": "正文为原帖及所引帖 2112372412818067675（经 X API 回读）。仓库取自帖文，经 GitHub API 核实（Apache-2.0，2085★）。属通用游戏开发技能合集，非专门 3D，is3d 设为 false。封面为帖内图片。 老板 2026-10-24 收藏：另链 @jiangjiangling https://x.com/jiangjiangling/status/2113559616298811657（同仓库 awesome-gamedev-agent-skills，X API note_tweet 含完整正文与 GitHub 链）。",
       "attribution": "@songsong（宋宋）",
       "sourceAuthor": "songsong",
       "tags": [
+        "用户指定收纳",
         "Agent Skills",
         "游戏开发",
         "Godot",
@@ -3070,12 +3071,12 @@
       "publishedAt": "2026-10-21T01:13:19Z",
       "collectionIds": [],
       "collectedAt": "2026-10-21T08:05:00.000Z",
-      "updatedAt": "2026-10-21T08:05:00.000Z",
+      "updatedAt": "2026-10-24T09:02:00.000Z",
       "userFeedback": {
-        "liked": false,
-        "favorite": false,
+        "liked": true,
+        "favorite": true,
         "notInterested": false,
-        "updatedAt": "2026-10-21T08:05:00.000Z"
+        "updatedAt": "2026-10-24T09:02:00.000Z"
       },
       "verification": {
         "checked_at": "2026-10-21T08:05:00.000Z",
@@ -3094,7 +3095,10 @@
         "threshold": 70,
         "run": "user-batch-2026-10-21"
       },
-      "relatedSource": "https://x.com/songsong/status/2112372412818067675"
+      "relatedSource": "https://x.com/songsong/status/2112372412818067675",
+      "relatedLinks": [
+        "https://x.com/jiangjiangling/status/2113559616298811657"
+      ]
     },
     {
       "title": "网站本身就是一本立体书：翻开封面，钟楼广场、丛林瀑布、夜晚游乐场一页页从纸面上「站起来」，还能拖动把手让纸电车滑过广场——@techartist_ 用 three.js 做的立体书出版社概念站（Three.js 官方转发）",
@@ -17783,7 +17787,7 @@
   ],
   "bookmarksNotInVisual": 15,
   "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条",
-  "updatedAt": "2026-10-24T08:49:00.000Z",
+  "updatedAt": "2026-10-24T09:02:00.000Z",
   "totalItems": 368,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
