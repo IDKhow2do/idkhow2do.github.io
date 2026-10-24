@@ -1,12 +1,71 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 357,
+  "exportedCount": 358,
   "items": [
+    {
+      "title": "「AI 在思考」的动画怎么做？Thinking Orbs：可直接拿走的动画思考光球组件库",
+      "category": "frontend",
+      "styleFamily": "uiux",
+      "is3d": false,
+      "source": "https://x.com/Abmankendrick/status/2113572207427268840",
+      "sourceCodeUrl": "https://github.com/Jakubantalik/Libraries.dev",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024-abman-thinking-orbs.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2113572090511024129/vid/avc1/1700x1280/1qYHS94LrPbdVgTn.mp4",
+      "description": "用户指定收纳。Abraham John（@Abmankendrick，product / UI UX designer）2026-10-23T10:04Z 在回复帖推荐 Thinking Orbs（主帖 https://x.com/Abmankendrick/status/2113572201199018167）。原话：one of the best animated component libraries to bookmark. Thinking Orbs gives you animated thinking orb components in different sizes big or small, light & dark modes, plus a playground to experiment with them. 主帖约 472 赞、492 书签。站点 https://libraries.dev/orbs 页面标题为 “Thinking Orbs: AI thinking indicator for React”，副标题原文：Thought-orb loading indicators for AI interfaces, with nine hand-tuned animated states。页面说明写明：这是给 React 用的 AI 思考与加载指示，九种手工调校的动画状态（文案举例 thinking、searching、listening），免费、MIT，并带 live playground。页上 Preview 区就是这个 playground（#playground）；Install & Usage 分 React、React Native、SwiftUI 三栏。React 安装命令为 npm install thinking-orbs，用法是 import { ThinkingOrb } from 'thinking-orbs'。页内可复制的安装提示词列出的 props：state 取 working、searching、solving、listening、connecting、weaving、composing、breathing、shaping；size 为 64（chat-avatar scale）或 20（inline-text scale），两档分开调校；speed 乘动画时钟，默认 1；dark 为布尔值，选浅色或深色调校；paused 冻结动画。同一段提示词写明：用光球替换 AI “thinking” 状态里的 spinner，零运行时依赖，需要 React 18 或更新。React Native 包 thinking-orbs-native 页面注明还没发到 npm，代码在该仓库 packages/thinking-orbs/ports/react-native/thinking-orbs-native。SwiftUI 产品名为 ThinkingOrbsKit，Swift 包地址即上述仓库。页面 JSON-LD 将库作者标为 Jakub Antalik。本条收的是 Abraham John 的推荐，不是库作者本人的帖。封面是推荐帖里的视频缩略图。页面上的安装提示词未当作本条生成提示词收录。",
+      "tool": "libraries.dev Thinking Orbs",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "收录来源为回复帖 https://x.com/Abmankendrick/status/2113572207427268840；主帖为 https://x.com/Abmankendrick/status/2113572201199018167。发帖时间按给定事实记到分钟（2026-10-23T10:04Z），未从 X API 回读到秒。赞与书签（约 472 / 492）为主帖数字，按给定事实记录。站点 https://libraries.dev/orbs 于 2026-10-24 抓取核对：标题、副标题、MIT、playground、React / React Native / SwiftUI 安装说明、九种 state 与 size/dark 均来自页面正文、meta 与页内 agent prompt，不是推断。仓库与作者 Jakub Antalik 来自该页 JSON-LD。封面下载自 https://pbs.twimg.com/amplify_video_thumb/2113572090511024129/img/ogzDyTycuRi6GkGY.jpg（JPEG 1200×904），本地副本 topic-portal/covers/20261024-abman-thinking-orbs.jpg 与 data/covers/ 同名文件。视频 URL HEAD 返回 HTTP 200、content-type video/mp4，未完整播放。",
+      "attribution": "Abraham John（@Abmankendrick）",
+      "sourceAuthor": "Abmankendrick",
+      "tags": [
+        "用户指定收纳",
+        "UI组件",
+        "动效",
+        "AI思考态"
+      ],
+      "publishedAt": "2026-10-23T10:04:00.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-24T00:54:55.000Z",
+      "updatedAt": "2026-10-24T00:54:55.000Z",
+      "relatedSource": "https://x.com/Abmankendrick/status/2113572201199018167",
+      "relatedLinks": [
+        "https://x.com/Abmankendrick/status/2113572201199018167",
+        "https://libraries.dev/orbs",
+        "https://github.com/Jakubantalik/Libraries.dev",
+        "https://www.npmjs.com/package/thinking-orbs"
+      ],
+      "originalPreviewUrl": "https://pbs.twimg.com/amplify_video_thumb/2113572090511024129/img/ogzDyTycuRi6GkGY.jpg",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-24T00:54:55.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-24T00:54:55.000Z",
+        "visually_checked": true,
+        "preview_dimensions": [
+          1200,
+          904
+        ],
+        "preview_check": "封面为帖内视频缩略图：深色背景上多枚发光思考光球，颜色、大小和内部纹理不同，部分带对勾或色块。JPEG 1200×904，已打开查看。",
+        "video_check": "MP4 HEAD 返回 HTTP 200（video/mp4，content-length 5500098）；未完整播放。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-2026-10-24-thinking-orbs"
+      }
+    },
     {
       "title": "一只机械手能拆成多少个零件？2,317 个：Kimi K3.1 Pro 做的 Three.js 网页 FORM / 01，七轴机械臂 + 20 自由度灵巧手，外壳透明、能一键炸开成零件阵列",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/crystalsssup/status/2113684128734625948",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024a-kimihand.jpg",
       "previewType": "image",
@@ -117,7 +176,7 @@
     {
       "title": "屏幕怎么变成一扇「窗」？摄像头追踪你的头，浏览器实时改透视：WebGPU + Three.js 纯代码写的海底场景，水母像就在屏幕后面（off-axis 投影）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/Simone_dev_com/status/2113631529335423305",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024a-headtrack.jpg",
       "previewType": "image",
@@ -288,7 +347,7 @@
     {
       "title": "一粒看不见的灰，怎样毁掉一颗芯片？在浏览器里开一条 266 颗芯片的晶圆产线：调曝光剂量、刻蚀时间、洁净度和检测阈值，看良率怎么掉（Three.js 互动页 Inside a Chip Fab）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/RyanSael/status/2113564577636163648",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023d-chipfab.jpg",
       "previewType": "image",
@@ -343,7 +402,7 @@
     {
       "title": "「拆开，才看见。」只用 three.js 建模渲染、anime.js 做动画：GPT-6.1 Sol 两小时一次写完的电机爆炸图网页，滚动就逐层拆开，还能切工程线稿",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/eze_is_1/status/2113570251741024259",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023d-heliosmotor.jpg",
       "previewType": "image",
@@ -398,7 +457,7 @@
     {
       "title": "一张 RTX 5090 拆开来，大部分其实是散热器？六步可点击拆解：外壳、风扇、热管、PCB，最后露出 920 亿晶体管的 GB202 芯片和 16 颗显存（Claude Opus 5.5 + Three.js）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/0x_mura/status/2113605249042686368",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023d-rtx5090.jpg",
       "previewType": "image",
@@ -510,7 +569,7 @@
     {
       "title": "步行、开车、骑车、坐直升机逛曼哈顿：three.js 作者 mrdoob 花了几周 token 做的全程序化纽约模拟，gzip 后只有 784 KB，代码 MIT 开源",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/mrdoob/status/2113177383658561721",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023c-slopnewyork.jpg",
       "previewType": "image",
@@ -697,7 +756,7 @@
     {
       "title": "「摆长加倍，周期变成几倍？」一句话让 AI 做出带中文讲解的三维课堂实验片：杠杆、单摆、光的折射、氯化钠溶解、细胞有丝分裂（开源 Skill classroom-lab，MIT）",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/Class_Tuite/status/2113440931143983413",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023b-classroomlab.jpg",
       "previewType": "image",
@@ -811,7 +870,7 @@
     {
       "title": "「书掉下书架，它的能量去哪了？」一本能玩的 3D 物理书：示意图从纸面上立起来，能量像彩色液体在「储能罐」之间流动——@techartist_ 的 Every Joule 第 1 课（能在线试玩）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/techartist_/status/2113310927093436587",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023a-everyjoule.jpg",
       "previewType": "image",
@@ -866,7 +925,7 @@
     {
       "title": "每本书都能翻、每样东西都能拿起来扔：浏览器里的哥特式「大图书馆」（three.js + Blender，代码在 GitHub）",
       "category": "3d",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/swarogan/status/2113343755184926791",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261023a-library.jpg",
       "previewType": "image",
@@ -1039,7 +1098,7 @@
     {
       "title": "一张海报只挂两个角，为什么中间飘得最厉害？Codrops 拆解作品集里的「布料海报」：两个钉子的距离相乘，就是整张布的「松紧」",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://tympanus.net/codrops/2026/10/22/juan-mora-romero-portfolio/",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022d-codrops-cloth.jpg",
       "previewType": "image",
@@ -1094,7 +1153,7 @@
     {
       "title": "光在屋里弹几次，墙会被「染」成什么颜色？three.js 新提交的辐射度（Radiosity）光照烘焙：康奈尔盒里红墙把白箱子染红、绿墙把地面染绿，0.8 秒烘完（WebGPU，PR 未合并）",
       "category": "3d",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/threejs/status/2113187602929234120",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022c-lightmap.jpg",
       "previewType": "image",
@@ -1151,7 +1210,7 @@
     {
       "title": "在万神殿里随手画个圈，空间被「烧」开一扇门，一步跨进两千年前的银塔广场：实拍重建的古罗马「时光门」网页（3DGS + Three.js，浏览器直接玩）",
       "category": "3d",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/KobinFlow/status/2113189954134352369",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022c-portal.jpg",
       "previewType": "image",
@@ -1205,7 +1264,7 @@
     {
       "title": "一艘小渔船在风暴海面上颠簸、拖出白色尾迹：Three.js Water Pro 升级浪、光照、浮力、尾迹和泡沫（Dan Greenheck，FFT 海浪，商业库）",
       "category": "3d",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/dangreenheck/status/2113157677463285843",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022c-waterpro.jpg",
       "previewType": "image",
@@ -1259,7 +1318,7 @@
     {
       "title": "同一份「机制讲解」渲成三种画面：3D 图解、粒子光轨、剪纸拼贴——开源 Agent Skill「Video Illustrator」0.9，给 Claude Code 做科普短片用（three.js，MIT）",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/AxtonLiu/status/2113072877738262723",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022b-videoillus.jpg",
       "previewType": "image",
@@ -1373,7 +1432,7 @@
     {
       "title": "手机上倒一杯拿铁：拉杆控制奶缸倾角、手指拖动注入点，奶泡在咖啡上画出图案，最后按细腻度、对称、清晰度打分（大森翔吾，3D 网页小游戏，Three.js 官方转发）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/shogo_oomori/status/2112854432941789641",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022b-latte.jpg",
       "previewType": "image",
@@ -1427,7 +1486,7 @@
     {
       "title": "点睛之后墨龙腾空：浏览器里实时生成的「山水墨龙」，龙、峰林、云海全是代码现场算出，可调身长鹿角、换青绿/水墨/浅绛设色（three.js，MIT 开源）",
       "category": "3d",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/leo_xiaolei/status/2113102997526094311",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022b-inkdragon.jpg",
       "previewType": "image",
@@ -1484,7 +1543,7 @@
     {
       "title": "灯从上面、后面还是前面打过来，同一件雕塑完全变样：ERCO 把照明课做成 7 节可交互 3D 课（three.js + WebGPU，28 个场景）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/dswhyy/status/2112891249791217734",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022a-erco.jpg",
       "previewType": "image",
@@ -1538,7 +1597,7 @@
     {
       "title": "浏览器里的沙漏：14 万个颗粒按真实颗粒物理往下漏，落地还会扬起沙尘——全部在 GPU 上算（three.js，Bilal Khan 新作 WIP）",
       "category": "3d",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/Bk23544/status/2112980000546926749",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022a-sand.jpg",
       "previewType": "image",
@@ -1592,7 +1651,7 @@
     {
       "title": "一个转着的三角形就是一整台发动机：转子发动机 38 秒拆解动画，三个腔室「进气、压缩、点火、排气」轮流来——作者称每一帧都是 Claude Code 写的代码，没用 Blender",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/SteveAIStudio/status/2113035102787666106",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022a-wankel.jpg",
       "previewType": "image",
@@ -1701,7 +1760,7 @@
     {
       "title": "雨中的纽博格林开进浏览器：Project Endurance 用 three.js + WebGPU + TSL 做湿地反光和 GPU 雨，Rapier 带轮胎和传动模型（Anderson Mancini）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://webgpu.com/showcase/project-endurance-webgpu-racing/",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022a-endurance.jpg",
       "previewType": "image",
@@ -1756,7 +1815,7 @@
     {
       "title": "在画面里放几个虚拟「螺旋桨」，流体模拟把图片搅成漩涡，倒放就是《奥特 Q》片头：Crazy Fluid 网页版（WebAssembly，可导出连番 PNG）",
       "category": "motion",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://harayoki.github.io/crazy-fluid/",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261022a-crazyfluid.jpg",
       "previewType": "image",
@@ -1809,7 +1868,7 @@
     {
       "title": "每个像素只算 1 条光线，画面全是雪花噪点，一个只有 812 个参数的小网络把它「嘘」一声变干净：Hush——浏览器里 60 fps 实时路径追踪降噪器（WebGPU + three.js，MIT 开源）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://github.com/kanaworksai-hue/hush",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021d-hush.jpg",
       "previewType": "image",
@@ -1922,7 +1981,7 @@
     {
       "title": "一枪打出一大滩会流动、会堆起来、会挂在台阶边的「胶水」：前 Unity / 育碧首席工程师 Sebastian Aaltonen 把 Claybook 的流体解算器搬进新游戏 Petafab——2.4 万粒子，模拟只要 0.13 毫秒",
       "category": "3d",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/SebAaltonen/status/2112853695448961416",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021d-seb-fluid.jpg",
       "previewType": "image",
@@ -1976,7 +2035,7 @@
     {
       "title": "四张能用鼠标拖着转的 CD，翻到背面是一圈彩虹：作者说让它「像真的」的关键就是背面的虹彩反射——Codex 画盘面、three.js 做网页，前后约 10 分钟",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/asei_ikarashi/status/2112861455737614609",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021d-cd.jpg",
       "previewType": "image",
@@ -2029,7 +2088,7 @@
     {
       "title": "一颗装着水和沙的玻璃球，晃一晃水会溅上球壁、挂成水珠再流下来：Globes 在浏览器里用 GPU 实时模拟约 400 万个流体粒子，还算出了焦散和折射（three.js + WebGPU，MIT 开源）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://github.com/willwaltz/globes",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021c-globes.jpg",
       "previewType": "image",
@@ -2088,7 +2147,7 @@
     {
       "title": "把太和殿的屋顶变透明，八层木构一层层拆开，再演示梁头怎么插进柱子、燕尾榫为什么越拉越紧：DeepSeek V4.1 Flash 自己写代码做的「拆开故宫」3D 拆解网页和 28 秒宣传片（作者称指出榫头受力方向画反后它 17 分钟重做）",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/xiaohua_888/status/2112795890692034617",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021c-taihe.jpg",
       "previewType": "image",
@@ -2143,7 +2202,7 @@
     {
       "title": "一间 Blender 做的地下室，整个变成密密麻麻的发光点，再在浏览器里像沙子一样流动重组：Claude 从 264 个角度把场景渲一遍、把每个像素变成 3D 点，three.js 让它们动起来（Three.js 官方转发）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/brice_deg/status/2112547859333877852",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021c-pointcloud.jpg",
       "previewType": "image",
@@ -2198,7 +2257,7 @@
     {
       "title": "9 万块体素搭一座寺院，全场只用 5 次绘制调用：重檐庑殿顶、歇山顶、攒尖顶都由同一条参数化函数生成——DeepSeek V4.1 Flash 写的自研体素引擎（Minecraft 风格中式建筑群）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/AyccAI/status/2112796164735328545",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021c-voxel-temple.jpg",
       "previewType": "image",
@@ -2252,7 +2311,7 @@
     {
       "title": "喀喇昆仑山谷里的一汪春湖：每一道涟漪、反光和折射都是浏览器实时算的，不是预渲染——Claude Code（Opus 5.5）写的 three.js 场景，部分模型来自 Tripo",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/chetanankola/status/2112810747957006589",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021c-spring-lake.jpg",
       "previewType": "image",
@@ -2305,7 +2364,7 @@
     {
       "title": "硬件入门一定很难吗？Opus 5.5 做的 Arduino 学习应用，一次只教一个电路",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": false,
       "source": "https://x.com/dilumsanjaya/status/2112587730542854263",
       "sourceCodeUrl": "",
@@ -2410,7 +2469,7 @@
     {
       "title": "做游戏的 AI 技能包有多全？74 个游戏开发 Skills，覆盖 Godot、Unity、Unreal、three.js 等引擎",
       "category": "其他",
-      "styleFamily": "code",
+      "styleFamily": "other",
       "is3d": false,
       "source": "https://x.com/songsong/status/2112713809244909608",
       "sourceCodeUrl": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
@@ -2464,7 +2523,7 @@
     {
       "title": "网站本身就是一本立体书：翻开封面，钟楼广场、丛林瀑布、夜晚游乐场一页页从纸面上「站起来」，还能拖动把手让纸电车滑过广场——@techartist_ 用 three.js 做的立体书出版社概念站（Three.js 官方转发）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/techartist_/status/2112641887836496089",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021b-popup-book.jpg",
       "previewType": "image",
@@ -2518,7 +2577,7 @@
     {
       "title": "一个正四面体怎么变成世界杯用球？取一个三角面、把直边切成曲线、长出三个「浪头」，4 块一模一样的拼片包成一颗球：Opus 5.5 写代码做的 90 秒「三重浪」几何科普动画（作者自述 1 小时做完一单学校委托）",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/tesclays/status/2112735186358255648",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021b-trionda.jpg",
       "previewType": "image",
@@ -2630,7 +2689,7 @@
     {
       "title": "奶倒进冰咖啡，白色奶柱先往下沉、再翻卷成一朵朵「蘑菇云」：不用任何物理引擎和流体库，Gemini 4 Argon 只用 three.js + WebGL2 数学从零写出可交互的冰咖啡模拟器（原始提示词全文公开）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/genevieve__h/status/2112646847454147003",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021a-iced-coffee.jpg",
       "previewType": "image",
@@ -2685,7 +2744,7 @@
     {
       "title": "从一台显微镜开始，镜头一路钻进细胞、钻到分子：屏幕上的「画面宽」从 69 厘米缩到约 61 纳米，缩了一千多万倍——Three.js 实时 3D 动画，作者称除显微镜模型外的素材都由 Claude Code 自动打磨",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/Swfdong/status/2112601205721727432",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021a-microscope-zoom.jpg",
       "previewType": "image",
@@ -2739,7 +2798,7 @@
     {
       "title": "印刷品凑近看为什么全是小点？日本开发者展览作品第 3 弹 Halftone：用 CMYK 四个色版的网点减色叠印重画一段视频，网点顺着画面轮廓排列，越平的地方点越粗（WebGL / three.js）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/_unshift/status/2112695739784769681",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261021a-halftone.jpg",
       "previewType": "image",
@@ -2793,7 +2852,7 @@
     {
       "title": "看着像宇宙里的一片银色海，其实只有 2.8 毫米宽——这是在哪儿？有人让 Claude Code 只用代码（Three.js）钻进一支水银体温计的储液泡，再一镜到底退到 32 厘米外",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/claco_lab/status/2112509230305644633",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020d-mercury.jpg",
       "previewType": "image",
@@ -2847,7 +2906,7 @@
     {
       "title": "窗边阳光里，一张纸自己折成纸飞机飞了出去：没用视频生成 AI，Claude Code（Opus 5.5）全用代码渲出 24 秒，作者说诀窍是把光、镜头、动作写成「数字」而不是「要帅」",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/kosukecat12/status/2112524013948080207",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020d-paper-plane.jpg",
       "previewType": "image",
@@ -2901,7 +2960,7 @@
     {
       "title": "对着网页吹一口气，就飞进墙上那幅画：穿过云海、巨鲸、极光，最后镜头拉远——地球只是一朵蒲公英上的一颗种子。Claude Opus 5.5 写全部代码的 three.js 小世界「一息万象」，画面和配乐没用一张贴图、一段采样",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/thinkszyg/status/2112496045045518557",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020d-one-breath.jpg",
       "previewType": "image",
@@ -2955,7 +3014,7 @@
     {
       "title": "马赛克为什么越凑近越看不清？日本开发者的展览作品「LEFT TO THE IMAGINATIONS」：人一靠近，鱼群画面就碎成圆角色块，颜色压到 8 种，同色相邻的格子再合并成 2×2、4×4、8×8 的大块（WebGL / three.js）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/_unshift/status/2112469126941999402",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020d-grid-mosaic.jpg",
       "previewType": "image",
@@ -3009,7 +3068,7 @@
     {
       "title": "一片六边形瓦片为什么能像海面一样起伏？Opus 5.5 在 three.js 里搭了一台「潮汐引擎」：螺旋错位的凸轮轴拉动上百根吊线，把旋转变成波浪",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/hive_echo/status/2112081538531901758",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020c-tide-engine.jpg",
       "previewType": "image",
@@ -3117,7 +3176,7 @@
     {
       "title": "按下键盘上的 A，到屏幕上出现 A，电脑里到底发生了什么？有人让 Claude Opus 用纯代码做了一支 34 秒科普短片：开关闭合→8 位 0x41→主板→CPU→内存→GPU，全程约 30 毫秒",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/reliponj/status/2112426746733609360",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020c-computer-a.jpg",
       "previewType": "image",
@@ -3171,7 +3230,7 @@
     {
       "title": "坐着马车穿过 1880 年代的爱丁堡老城：Three.js 做的可交互黑白旁白之旅——点灯人、1861 年倒塌的公寓楼、1505 年的理发外科医生",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/chetanankola/status/2112446226872627578",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020c-edinburgh.jpg",
       "previewType": "image",
@@ -3225,7 +3284,7 @@
     {
       "title": "不用云端大模型，两张旧显卡能写出「走进梵高画里」的 3D 场景吗？本地 Qwen3.8 Flash Next 用 1 条主提示词 + 1 条修正，写出单文件 Three.js 风车麦田（提示词全文公开）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/geldeki/status/2112437524605935671",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020c-vangogh-mill.jpg",
       "previewType": "image",
@@ -3279,7 +3338,7 @@
     {
       "title": "咖啡店官网还能做得多温暖？Opus 5.5 做的一个小咖啡馆网站概念",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": false,
       "source": "https://x.com/dilumsanjaya/status/2111864428010582082",
       "sourceCodeUrl": "",
@@ -3330,7 +3389,7 @@
     {
       "title": "不会用 Opus 5.5 做视频？这四个开源仓库从照着做到拆工程都够用",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false,
       "source": "https://x.com/czzzzzzj_/status/2112085934267346976",
       "sourceCodeUrl": "https://github.com/lemomo-ai/lemo-opuscar",
@@ -3388,7 +3447,7 @@
     {
       "title": "一句话能生成 3D 交互教学网页吗？AetherViz Master 把「牛顿第二定律」变成能拖能转的页面",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": true,
       "source": "https://x.com/wlzh/status/2112204039165534230",
       "sourceCodeUrl": "https://github.com/andyhuo520/aetherviz-master",
@@ -3494,7 +3553,7 @@
     {
       "title": "仓库经理能一眼看清整个黑五仓库吗？Opus 5.5 做的 93 人、320 台机器人实时 3D 仿真",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": true,
       "source": "https://x.com/konstantinsaifo/status/2112103900962496531",
       "sourceCodeUrl": "",
@@ -3554,7 +3613,7 @@
     {
       "title": "火箭发动机怎么工作？Opus 5.5 做了一台能在浏览器里拆开的 Raptor 3",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": true,
       "source": "https://x.com/konstantinsaifo/status/2104094723887501736",
       "sourceCodeUrl": "https://github.com/AirsupHQ/airsup-lab",
@@ -3612,7 +3671,7 @@
     {
       "title": "书柜为什么拧半圈就能锁紧？把宜家 BILLY 的真实说明书一页页搬进 3D：82 个五金件按图纸顺序逐个装上，还能切到说明书线稿视角（Three.js）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/RyanSael/status/2112178744937103607",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020b-flatpack.jpg",
       "previewType": "image",
@@ -3666,7 +3725,7 @@
     {
       "title": "给 AI 一张平面图，为什么它能「长」出一座能走进去的北京四合院？Claude 写 three.js：从图纸上逐层升起院墙屋顶，再走过广亮大门、影壁、垂花门",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/bangbuilds/status/2112395195253944737",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020b-siheyuan.jpg",
       "previewType": "image",
@@ -3720,7 +3779,7 @@
     {
       "title": "一张素材都没用，扑克牌为什么能「掰弯」着翻开？Claude + three.js 逐帧渲出 6 个镜头的德州扑克短片：细分网格模拟纸牌弯曲，绒布、皮革缝线、筹码面值全是代码",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/oab10don/status/2112375535775150117",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020b-poker.jpg",
       "previewType": "image",
@@ -3773,7 +3832,7 @@
     {
       "title": "从卧室一步跨进另一个世界，为什么不用加载？WebGPU 实时在高斯泼溅世界之间「穿门」（Spark + World Labs 世界 + three.js）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/XRarchitect/status/2112207444101541962",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020b-splat-portal.jpg",
       "previewType": "image",
@@ -3827,7 +3886,7 @@
     {
       "title": "Claude 写代码做的视效 Demo 合集：每个附源码提示词和原帖，含 3D 场景分区",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": true,
       "source": "https://x.com/crazykaomei/status/2112048345569247730",
       "sourceCodeUrl": "https://github.com/yihui-dev/awesome-opus5-5-videos",
@@ -3882,7 +3941,7 @@
     {
       "title": "裙摆为什么一转就张开？Three.js + XPBD 布料「旋回布」：把加速度矢量直接画出来，还能在惯性系 / 旋转系之间切视角",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/meby_central/status/2112260493209747504",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020a-spin-cloth.jpg",
       "previewType": "image",
@@ -3937,7 +3996,7 @@
     {
       "title": "瓶子里的水晃得像真的，为什么一行流体模拟都没跑？《Barely Breathing》用速度驱动着色器「假晃动」+ 局部/世界双坐标水线",
       "category": "3d",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://jettelly.com/blog/how-barely-breathing-makes-its-water-slosh-and-flow",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020a-slosh.jpg",
       "previewType": "image",
@@ -3991,7 +4050,7 @@
     {
       "title": "气泡为什么会自己跑到浪尖聚成泡沫？浏览器里实时算浮力与阻力：WebGPU 计算着色器 + Three.js 曝气泡沫",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/Simone_dev_com/status/2112181989671575555",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020a-foam.jpg",
       "previewType": "image",
@@ -4045,7 +4104,7 @@
     {
       "title": "纸纹着色器为什么只能当背景？鼠标划过，整页网页像纸一样起皱再慢慢抚平——Codrops「PaperDrops」把 Paper 着色器搬到 DOM 元素上（WebGPU / domgl）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://tympanus.net/codrops/2026/10/19/paper-shaders-off-background/",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020a-paperdrops.jpg",
       "previewType": "image",
@@ -4101,7 +4160,7 @@
     {
       "title": "镜子里的人为什么能把镜面「顶」出凸起？真实动画网格站在玻璃后，正交相机渲成高度图，镜膜按 mip 层级像布一样变软（Three.js WebGPU + TSL）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/artcreativecode/status/2112180303028519046",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020a-mirror-film.jpg",
       "previewType": "image",
@@ -4156,7 +4215,7 @@
     {
       "title": "工程图为什么能自己「长」出整车？蓝晒纸墨线着色器 + 分阶段 GPU 组装 17 类车辆——Claude Code × Three.js「活蓝图」（EverOS 推广帖）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/jshguo/status/2112337689387434404",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261020a-blueprint.jpg",
       "previewType": "image",
@@ -4210,7 +4269,7 @@
     {
       "title": "把 56 个作品收成可翻阅的纸堆：38 张实例化纸页一次 draw call，速度驱动正弦「翻页风」——Trapnest Profile（WebGL）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://henrywithu.com/trapnest-profile-paper-shaders-and-56-living-worlds/",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019d-trapnest.jpg",
       "previewType": "image",
@@ -4265,7 +4324,7 @@
     {
       "title": "字不是贴在画面上的字幕：Opus 把台词放进 Three.js 夜景里「演戏」，自贩机与电话亭是 Tripo——aicreataro「切れてないよ」",
       "category": "motion",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/aicreataro/status/2110689292737749146",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019d-aicreataro-text.jpg",
       "previewType": "image",
@@ -4318,7 +4377,7 @@
     {
       "title": "网页入口做成「撕开一张纸」：Three.js + Verlet 布料，撕破是真删三角形——开源 tearable-cloth（MIT）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://github.com/Jane-xiaoer/claude-skill-tearable-cloth",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019d-tearable.jpg",
       "previewType": "image",
@@ -4375,7 +4434,7 @@
     {
       "title": "把泰坦尼克按 1:1 拆开：10 层甲板、100+ 房间，点击零件就能剖开——Opus 5.5 + Three.js，船体高度按 1912 调查报告",
       "category": "3d",
-      "styleFamily": "code",
+      "styleFamily": "model_3d",
       "source": "https://x.com/aisongman/status/2111854276440170577",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019c-titanic.jpg",
       "previewType": "image",
@@ -4432,7 +4491,7 @@
     {
       "title": "麦当劳中国 MCP 变弹药：拆汉堡连消，玩具餐厅塌下来——Three.js 单 HTML 离线也能玩（MIT）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/yy233z/status/2112066934695166139",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019c-maimai.jpg",
       "previewType": "image",
@@ -4489,7 +4548,7 @@
     {
       "title": "把涂鸦变成可打印折纸糖果盒：每只怪是一棵铰接面板树，浏览器里看折叠动画，再导出带粘舌的 1:1 PDF（Three.js + jsPDF）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/riavijayb/status/2112016759020732648",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019b-origami.jpg",
       "previewType": "image",
@@ -4543,7 +4602,7 @@
     {
       "title": "同一句提示词：蒸汽机车要「能动」还要「剖开看锅炉」——Opus 做出活塞连杆与透明剖面，Sol 好看却少了内部结构（Three.js）",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/olezhavich/status/2111808577706807578",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019b-loco-cutaway.jpg",
       "previewType": "image",
@@ -4596,7 +4655,7 @@
     {
       "title": "把讨厌的 2026 写在纸上再烧掉：纸按布料模拟，火、烟、火星是自定义着色器（Three.js，Burn Me / Dunno）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/De_ferus/status/2111924396122112204",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019b-burn-me.jpg",
       "previewType": "image",
@@ -4650,7 +4709,7 @@
     {
       "title": "四个模型在浏览器里各修一座泻湖：鲨鱼、鲸、鳐与漩涡——Opus 水色最好，Sol 约五分之一价钱也够看（vib3coded）",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/vib3coded/status/2111888587360792982",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019b-marine-lagoon.jpg",
       "previewType": "image",
@@ -4703,7 +4762,7 @@
     {
       "title": "纸不会变长：用弧长守恒做卷、折、垂、揉，再用摄像头辨火焰、对着吹就能烧穿——开源 paperlab（React + Three.js）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://tympanus.net/codrops/2026/10/18/real-folds-real-fire/",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019a-paperlab-folds.png",
       "previewType": "image",
@@ -4813,7 +4872,7 @@
     {
       "title": "毛茸茸的西瓜可以无限切开再扔掉：外壳毛 + 切口毛都是着色器壳层与守卫毛，刀一切就长出新截面（Opus 5.5，完整提示词公开）",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/vib3coded/status/2111829421040488960",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261019a-fluffy-watermelon.jpg",
       "previewType": "image",
@@ -4975,7 +5034,7 @@
     {
       "title": "一段分镜式提示词，DeepSeek-V4.1-Flash 一次写出整套连续物理状态：跑车冲上 C 形弧道倒挂静止→冷气喷射翻滚回正→反推缓降→四轮落地避震回弹（Three.js + SVG，提示词公开）",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/my189/status/2111795634827354332",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018d-roadster-drop.jpg",
       "previewType": "image",
@@ -5028,7 +5087,7 @@
     {
       "title": "把磁铁推近线圈，电压表就跳一下：Induction Bench 用 Three.js 把磁感线、法拉第定律和楞次定律做成能拖能调的桌面实验（Opus 5.5）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/thebuggeddev/status/2104402407358919124",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018c-induction-bench.jpg",
       "previewType": "image",
@@ -5083,7 +5142,7 @@
     {
       "title": "一句提示词让 DeepSeek 做出整台电脑主机：按真实装机顺序一步步装上主板、水冷、显卡、玻璃侧板，再一步步拆回空机箱",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/lemomo_ai/status/2111716318236049618",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018c-lemo-pc-assembly.jpg",
       "previewType": "image",
@@ -5137,7 +5196,7 @@
     {
       "title": "一套程序化的微缩世界地块：雪山垭口、樱花瀑布、沙漠水塔，都在浏览器里用 WebGI 实时渲染、可以进去逛",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/repalash/status/2111699689250648184",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018c-webgi-worlds.jpg",
       "previewType": "image",
@@ -5246,7 +5305,7 @@
     {
       "title": "站在车站能看见多远的山？一个把地球曲率和大气折射都算进去的 360° 山景网页（Gemini 4 + Three.js）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/sagami_ss_dev/status/2111652425325264904",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018b-yamanami360.jpg",
       "previewType": "image",
@@ -5300,7 +5359,7 @@
     {
       "title": "能按、能捏、能扔的软萌玩具：同一句提示词，Opus 5.5 花 10 美元 51 分钟，GPT-6.1 花 1 美元 21 分钟（单文件 Three.js）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/realmilessun/status/2111651401160081786",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018b-squishy-toys.jpg",
       "previewType": "image",
@@ -5354,7 +5413,7 @@
     {
       "title": "没用一张生成图、一帧生成视频：Claude Code 用 Three.js 搭出会随年代变化的「动态历史地图」，从海底到武士之都的镰仓",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/kurumirekishi/status/2111619292487930100",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018b-kurumi-kamakura-map.jpg",
       "previewType": "image",
@@ -5408,7 +5467,7 @@
     {
       "title": "整颗月球只是一个 72KB 的网页：站在 48 公里宽的陨石坑里，地平线只有 2.4 公里远，地球一动不动挂在天上（WebGPU，MIT）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/tarasshyn/status/2111476327056388310",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018-tarasshyn-moon.jpg",
       "previewType": "image",
@@ -5466,7 +5525,7 @@
     {
       "title": "你发出的一条消息，30 毫秒里走了 6000 公里：从咖啡桌上的手机、基站、登陆站到 4000 米深的海底光缆，钻进 9 微米的玻璃纤芯（@techartist_）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/techartist_/status/2111556534027399438",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018-techartist-message-journey.jpg",
       "previewType": "image",
@@ -5520,7 +5579,7 @@
     {
       "title": "5000 只椋鸟和一只鹰：没人指挥，鸟群自己折叠、分裂又合拢（Three.js Boids，一句提示词）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/TokenGremlin/status/2111584413280792581",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018-tokengremlin-starlings.jpg",
       "previewType": "image",
@@ -5628,7 +5687,7 @@
     {
       "title": "丢进一张户型图，就能按真实身高走进去：看家具放不放得下、12 月下午 5 点阳光照到哪（Opus 5.5 做的户型图转可走 3D）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/KeenanSylo/status/2111418638993433020",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261018-keenansylo-floorplan-walk.jpg",
       "previewType": "image",
@@ -5740,7 +5799,7 @@
     {
       "title": "摇得越久喷得越猛：一段公开的中文提示词做出可摇、可开盖、可倒的橘子汽水，Opus 5.5 和 Gemini 4 Argon 同题对比（$30 vs $2）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/faustina5211314/status/2111389398369775695",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261017-faustina-orange-soda.jpg",
       "previewType": "image",
@@ -5794,7 +5853,7 @@
     {
       "title": "一滴水落进玻璃杯只用 127 毫秒：Three.js 把皇冠水花、瑞利-普拉托尖刺和沃辛顿射流按 1.7 万帧慢放给你看",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/josepcalull/status/2111428520014393459",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261017-josepcalull-water-drop.jpg",
       "previewType": "image",
@@ -5848,7 +5907,7 @@
     {
       "title": "把一座火山切成两半：岩浆房、火山通道一眼看穿，两个滑块决定它是流熔岩还是炸成火山灰，入海的熔岩还会长出新陆地",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/theparuchh/status/2111427655794913691",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261017-paruchh-volcano-cutaway.jpg",
       "previewType": "image",
@@ -5902,7 +5961,7 @@
     {
       "title": "整片日落大海只是一个 61 KB 的网页：WebGPU 从零手写 FFT 海浪、白浪和物理天空，Claude Code 约 30 分钟做出（MIT 开源）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://github.com/Noniv/web-ocean",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261017-noniv-web-ocean.jpg",
       "previewType": "image",
@@ -5958,7 +6017,7 @@
     {
       "title": "一座能走进去的英国水磨坊：Opus 5.5 用 Three.js + Blender 做出整条溪谷，还能「X 光」看清带动磨盘的齿轮（MIT）",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/techartist_/status/2111187771440370028",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261017-ashcombe-mill.jpg",
       "previewType": "image",
@@ -6014,7 +6073,7 @@
     {
       "title": "一段 1601 字中文提示词换来一片可玩的热带浅海：浪进浅水会变慢、贴着岸线转弯，Claude Code 先解程函方程再画水",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/Cryptoxorz/status/2111324112769745369",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261017-cryptoxorz-tropical-sea.jpg",
       "previewType": "image",
@@ -6068,7 +6127,7 @@
     {
       "title": "从一滴雨飞到可观测宇宙边缘：three.js 一个镜头走完每一个「10 的次方」，号称全用 NASA/ESA 真实数据",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/Madhusudan2989/status/2111353971705344382",
       "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261017-lucid-drafts-powers-of-ten.jpg",
       "previewType": "image",
@@ -6287,7 +6346,7 @@
     {
       "title": "Opus 5.5 做视频最佳实践合集：每条爆款视频附提示词和 Skill，可在线对照复刻",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": true,
       "source": "https://x.com/leo_xiaolei/status/2111318182896218378",
       "sourceCodeUrl": "https://github.com/yihui-dev/awesome-opus5-5-videos",
@@ -6394,7 +6453,7 @@
     {
       "title": "个人网站模板补充：motionsites.ai 与 v0 Templates",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": false,
       "source": "https://x.com/yanliudreamer/status/2111010291014361319",
       "sourceCodeUrl": "",
@@ -6446,7 +6505,7 @@
     {
       "title": "把 Claude 搭成 AI 制作工作室：数据室、动效室、剪辑室 + 10 个开源动效 Skill",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false,
       "source": "https://x.com/francescoinweb3/status/2108882188624121896",
       "sourceCodeUrl": "https://github.com/Mort1d/motion-graphics-skills",
@@ -6499,7 +6558,7 @@
     {
       "title": "用 Claude 做视频的 5 步：参考→数据→故事→Remotion 代码动效→文字导演，不用视频模型",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false,
       "source": "https://x.com/francescoinweb3/status/2111190424647782538",
       "sourceCodeUrl": "https://github.com/remotion-dev/remotion",
@@ -6606,7 +6665,7 @@
     {
       "title": "中土世界做成一块漂浮的微缩沙盘：真实 GIS 地形 + Three.js WebGPU，逐帧录成 3 分 47 秒电影，代码全开源",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/Earthwalker17X/status/2111217832101032219",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-middle-earth-miniature.jpg",
       "previewType": "image",
@@ -6715,7 +6774,7 @@
     {
       "title": "不用放洗澡水也能玩泡澡球：浏览器里实时流体模拟，泡澡球入水后嘶嘶旋转、拉出彩带",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/techartist_/status/2111219143936790802",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-bath-bomb-builder.jpg",
       "previewType": "image",
@@ -6771,7 +6830,7 @@
     {
       "title": "木牛流马真是会自己走的木头牛马吗？一个开源 Skill 把中文机械科普全自动做成 Anatomy 风视频",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/GeekCatX/status/2111124749640413452",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-muniu-anatomy-explainer.jpg",
       "previewType": "image",
@@ -6882,7 +6941,7 @@
     {
       "title": "一座会自己把自己造出来的工厂：Three.js 里成百上千个零件同时搬运、拼装",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/wwwjim/status/2111144297055871063",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261017-wwwjim-self-building-factory.jpg",
       "previewType": "image",
@@ -6989,7 +7048,7 @@
     {
       "title": "OpenDesign Motion 开源：Claude Motion 平替，任意模型/Agent 做动效视频",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false,
       "source": "https://x.com/tuturetom/status/2111044476273910123",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-opendesign-motion.jpg",
@@ -7201,7 +7260,7 @@
     {
       "title": "1984 年的徕卡 M6 被拆成 91 个零件：快门拨盘、过片扳手、50mm 镜头法兰距一次讲清",
       "category": "motion",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/weilicdrv/status/2111070243733004567",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-leica-m6.jpg",
       "previewType": "image",
@@ -7254,7 +7313,7 @@
     {
       "title": "三篇物理论文塞进一个网页：数字不过「现场算一遍并对得上原文」就不许上墙",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/vibelancer/status/2111057752659271688",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-paper-lab.jpg",
       "previewType": "image",
@@ -7362,7 +7421,7 @@
     {
       "title": "飞天 Roadster 解剖片：GrokBot + Opus 5.5 用 anatomy 技能重做特斯拉发布同款拆解",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/0xCarnagee/status/2111058873872253345",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-roadster-anat.jpg",
       "previewType": "image",
@@ -7415,7 +7474,7 @@
     {
       "title": "家里任何设备都能逆向：一个 skill + 几句提示词，给灯、门、空调做 Mac App",
       "category": "其他",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/MengTo/status/2110747334888083690",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-mengto-rea-reverse-engineer-home-devices-cover.jpg",
       "previewType": "image",
@@ -7473,7 +7532,7 @@
     {
       "title": "AI 时代的全新视频格式 .motion：下载模板丢给助手就能出片",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://motiongit.com/",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-motiongit-motion-format-cover.jpg",
       "previewType": "image",
@@ -7530,7 +7589,7 @@
     {
       "title": "一句话描述一台机器，Claude 造出能剖开、能弄坏、数字全靠算的 3D 仿真",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://github.com/AirsupHQ/machine-skill",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-airsup-machine-skill-turbofan.jpg",
       "previewType": "image",
@@ -7584,7 +7643,7 @@
     },
     {
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": true,
       "previewType": "image",
       "prompt": "",
@@ -7982,7 +8041,7 @@
     {
       "title": "猛禽二号发动机拆成11大总成再点火试车：Gemini 4 Argon 写代码、自己配中文旁白的工程图解片",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/Tao100086/status/2110966309622276293",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110965384522461184/img/OEmVGa4YANToVV1k.jpg",
       "previewType": "image",
@@ -8036,7 +8095,7 @@
     {
       "title": "按住拖动就起波纹的锦鲤池：浮叶、纸船、扔石子、落雨，都由同一张实时波场推着走",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/LearnWithSubhan/status/2110960020804481407",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110959926562721792/img/YHYkQgAfn_uYShnG.jpg",
       "previewType": "image",
@@ -8090,7 +8149,7 @@
     {
       "title": "一台会「拆开」的意式咖啡机：按真实毫米尺寸画的120个零件，拉杆升到9 bar，铜锅炉和振动泵依次露出来",
       "category": "motion",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/weilicdrv/status/2110994826225476034",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110994565834686464/img/RJS6oxnZBM8kd0gn.jpg",
       "previewType": "image",
@@ -8143,7 +8202,7 @@
     {
       "title": "6.5万根毛的毛绒蜘蛛，八条腿会找地面落脚：能摸、会躲、会跳，全是 Three.js 和着色器写的",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/thebuggeddev/status/2110983989041520870",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110983785147949056/img/PK1XMihdN256nQwB.jpg",
       "previewType": "image",
@@ -8197,7 +8256,7 @@
     {
       "title": "51 种风格、每支都是 Claude 写代码拍的：Lemo-Opuscar 官方图鉴（含 OPUSCAR 98）",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://lemomo-ai.github.io/lemo-opuscar/",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-gallery-og.jpg",
       "previewType": "image",
@@ -8231,7 +8290,7 @@
     {
       "title": "卫星简报｜卫星照着地图去找咸海，找到的是沙漠；唯一回来的那一小块，是有人筑坝留住的。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/satellite-briefing/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-satellite-briefing.jpg",
       "previewType": "image",
@@ -8275,7 +8334,7 @@
     {
       "title": "工程简报板｜一条河要架桥，四种桥型在一面简报墙上逐个受检，拍板的是桥下要过的船。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/briefing-board/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-briefing-board.jpg",
       "previewType": "image",
@@ -8319,7 +8378,7 @@
     {
       "title": "点云测绘｜激光点云把康涅狄格州一片森林的树冠一层层剥掉，地面上露出当年农田的石墙：描出 3.4 公里，逐一量过。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/lidar-survey/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-lidar-survey.jpg",
       "previewType": "image",
@@ -8363,7 +8422,7 @@
     {
       "title": "白模投影｜投影机把数据一层层刷上鹿特丹白模：1940 年前留下的楼、填满空洞的几十年、长起来的塔楼，以及最高那栋在冬至正午投向战前屋顶的影子。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/white-model/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-white-model.jpg",
       "previewType": "image",
@@ -8407,7 +8466,7 @@
     {
       "title": "数据实物化｜十二年的风电和太阳能装机，按同一个单位叠成实物，绕胡桃木表盘升成两条螺旋：2014 年风电领先，2021 年太阳能超过，2025 年比值整个反了过来。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/data-physical/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-data-physical.jpg",
       "previewType": "image",
@@ -8451,7 +8510,7 @@
     {
       "title": "产品拆解｜开源键盘的一半在一次环绕中逐层拆开，镜头钻到电路板背面看主控、灯珠和热插拔座，再合拢，把真实尺寸画在实物上。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/teardown/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-teardown.jpg",
       "previewType": "image",
@@ -8495,7 +8554,7 @@
     {
       "title": "显微叙事｜一镜从肉眼看到的肝组织玻片推到单个细胞核；相隔 1.4 毫米的两个圆被逐像素计数，其中一个的蓝色是另一个的 2.4 倍。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/microscope/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-microscope.jpg",
       "previewType": "image",
@@ -8539,7 +8598,7 @@
     {
       "title": "档案灯台｜电报说最长一次飞了 57 秒，第二天报纸照登；放大镜下，莱特兄弟的玻璃底片和国会图书馆的记录说是 59 秒。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/archive-lighttable/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-archive-lighttable.jpg",
       "previewType": "image",
@@ -8583,7 +8642,7 @@
     {
       "title": "一笔画｜一根不离纸的线画完一个人的一生，再把笔交给孩子。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/one-line/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-one-line.jpg",
       "previewType": "image",
@@ -8627,7 +8686,7 @@
     {
       "title": "白板讲解｜手机怎么知道你在哪：GPS、原子钟，和相对论每天多出的 38 微秒。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/whiteboard/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-whiteboard.jpg",
       "previewType": "image",
@@ -8671,7 +8730,7 @@
     {
       "title": "钢笔淡彩｜公园只是一张钢笔速写，风把草帽吹到哪里，哪里才有颜色。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/urban-sketch/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-urban-sketch.jpg",
       "previewType": "image",
@@ -8715,7 +8774,7 @@
     {
       "title": "纸雕灯影｜一枚月饼讲中秋的团圆与思念，纸雕灯箱层层透光。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/paper-lantern/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-paper-lantern.jpg",
       "previewType": "image",
@@ -8759,7 +8818,7 @@
     {
       "title": "复古半调案卷｜橘猫胖橘被立案审查：测试重力、凌晨跑酷，最后无罪释放。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/halftone-dossier/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-halftone-dossier.jpg",
       "previewType": "image",
@@ -8803,7 +8862,7 @@
     {
       "title": "彩色玻璃窗｜阳光从清晨移到黄昏，照到哪一格花窗，哪一格的故事就动起来。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/stained-glass/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-stained-glass.jpg",
       "previewType": "image",
@@ -8847,7 +8906,7 @@
     {
       "title": "象形运动图形｜2026 亚运会 43 个大项，几何象形人卡着节拍快闪。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/pictogram-motion/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-pictogram-motion.jpg",
       "previewType": "image",
@@ -8891,7 +8950,7 @@
     {
       "title": "1930s 橡皮管卡通｜一只咖啡杯满厨房追一块逃跑的方糖。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/rubber-hose/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-rubber-hose.jpg",
       "previewType": "image",
@@ -8935,7 +8994,7 @@
     {
       "title": "80 年代赛璐璐动画｜快递少女骑车穿过雨后霓虹都市，赶在黎明发射前送到一盘磁带。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/cel-anime-80s/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-cel-anime-80s.jpg",
       "previewType": "image",
@@ -8979,7 +9038,7 @@
     {
       "title": "科幻情景喜剧卡通｜厌世天才开传送门只想买杯咖啡，却穿过越来越离谱的平行宇宙。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/scifi-toon/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-scifi-toon.jpg",
       "previewType": "image",
@@ -9023,7 +9082,7 @@
     {
       "title": "50s 扁平卡通｜用 50 年代教育片的口吻，三步教你装好一台扫地机：放充电座、连 app、按开始。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/midcentury-toon/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-midcentury-toon.jpg",
       "previewType": "image",
@@ -9067,7 +9126,7 @@
     {
       "title": "16-bit 像素 RPG｜勇士在最终 Boss 门前存档，存档画面闪回一路冒险。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/pixel-rpg/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-pixel-rpg.jpg",
       "previewType": "image",
@@ -9111,7 +9170,7 @@
     {
       "title": "HD-2D｜灯塔熄灭，孙女提着最后一簇火穿过夜林、爬上风暴悬崖。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/hd-2d/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-hd-2d.jpg",
       "previewType": "image",
@@ -9155,7 +9214,7 @@
     {
       "title": "微游戏快闪（瓦里奥制造式）｜见习宇航员闯五秒训练营，越来越快，Boss 关亲手降落回地球。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/microgame/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-microgame.jpg",
       "previewType": "image",
@@ -9199,7 +9258,7 @@
     {
       "title": "综艺节奏扁平｜把 AI 发展史做成一局节奏游戏，模型踩着拍登场，最后发成绩单。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/game-show/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-game-show.jpg",
       "previewType": "image",
@@ -9243,7 +9302,7 @@
     {
       "title": "1920s 默片｜面包店学徒追一个滚走的面包，最后掰成两半分给饿肚子的小女孩。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/silent-film/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-silent-film.jpg",
       "previewType": "image",
@@ -9287,7 +9346,7 @@
     {
       "title": "后室 / 新怪谈｜新夜班员工拍下入职第一晚：无尽的黄色办公空间，和墙上的员工守则。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/backrooms/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-backrooms.jpg",
       "previewType": "image",
@@ -9331,7 +9390,7 @@
     {
       "title": "积木玩具｜积木宇航员用零件拼出火箭，飞向积木月亮。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/brick-toy/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-brick-toy.jpg",
       "previewType": "image",
@@ -9375,7 +9434,7 @@
     {
       "title": "低多边形等距｜空海里一格格长出小岛和村庄，每放一块响一个音符，直到星空。",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/lowpoly-island/STYLE.md",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/lemo-opuscar-lowpoly-island.jpg",
       "previewType": "image",
@@ -9419,7 +9478,7 @@
     {
       "title": "Lemo-Opuscar 又加 8 种风格：新开「实证影响」分支，专为有素材的解说科普片",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/lemomo_ai/status/2110983292027814316",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261016-lemomo-opuscar-update-video.jpg",
       "previewType": "video",
@@ -9454,7 +9513,7 @@
     {
       "title": "39种风格、100多支片：纯代码视频怎么稳定出片，作者把导演方法写成了开源库",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/lemomo_ai/status/2103823847632060854",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20260926-lemomo-opuscar-article.jpg",
       "previewType": "image",
@@ -9488,7 +9547,7 @@
     {
       "title": "没有一个3D模型：Opus 5.5 用纯代码搭出黄金时刻的日本寺庙，70秒电影级运镜",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/lexnlin/status/2110657641831956870",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261015-lexnlin-golden-temple-video.jpg",
       "previewType": "video",
@@ -9523,7 +9582,7 @@
     {
       "title": "一句提示词让 Opus 死磕99.9%还原：日本寺庙 three.js 短片的完整做法公开",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/lexnlin/status/2110657793376039323",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261015-lexnlin-golden-temple-howto.png",
       "previewType": "image",
@@ -9557,7 +9616,7 @@
     {
       "title": "一卷卫生纸半夜出门看海：纸尾巴是实时绳索物理，沙沙声跟着滚速变",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/nullinbetween/status/2110930662991781998",
       "previewUrl": "https://img.itch.zone/aW1nLzMwNzczNTY2LnBuZw==/original/%2BL18nX.png",
       "previewType": "image",
@@ -9611,7 +9670,7 @@
     {
       "title": "一块能切开看地层的小岛：开源 Three.js 程序化地形出了「迷你剖面沙盘」",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/zy_fou/status/2110762632739479788",
       "previewUrl": "https://pbs.twimg.com/media/HUrPpphWEAAr1wi.jpg",
       "previewType": "image",
@@ -9667,7 +9726,7 @@
     {
       "title": "16亿个三角形的宫殿，在浏览器里实时路径追踪：three.js meshlet 渲染器第4阶段",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/CastellanoWorks/status/2110784317475504505",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110783686564102144/img/LaQ9vGG6QH4sixrP.jpg",
       "previewType": "image",
@@ -9720,7 +9779,7 @@
     {
       "title": "90年代工作台当作品集：软盘插进 Mac、卡带插进红白机，台灯真能开",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/c_na_dev/status/2110780275185566036",
       "previewUrl": "https://pbs.twimg.com/news_img/2110780324888141824/KKD91LKx?format=jpg&name=orig",
       "previewType": "image",
@@ -9773,7 +9832,7 @@
     {
       "title": "不会描述动效？一本给 AI 用的「动效名字词典」：每个词配会动的样片",
       "category": "motion",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://showheyohtaki.github.io/motion-prompt/",
       "previewUrl": "https://showheyohtaki.github.io/motion-prompt/assets/og.png",
       "previewType": "image",
@@ -9883,7 +9942,7 @@
     {
       "title": "一张土耳其双层茶壶照片，变成能剖开看沸水和茶叶的 3D 展品",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/bytwize/status/2110768830175731754",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110768597177929729/img/0CTGSjpAma-Drsrs.jpg",
       "previewType": "image",
@@ -9936,7 +9995,7 @@
     {
       "title": "浏览器里的鲁布·戈德堡机械：10个机关一条链，还带能量曲线",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/abyssallD/status/2110759165849182446",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110758957018943489/img/TuVhH7Ln6tXEh9Lt.jpg",
       "previewType": "image",
@@ -9988,7 +10047,7 @@
     {
       "title": "敲一下键，字杆真的抬起、滑架真的移位：Three.js 机械打字机",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/itsfazley/status/2110717334801534982",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110615025463513088/img/TDzv4g9JZBklRm8A.jpg",
       "previewType": "image",
@@ -10040,7 +10099,7 @@
     {
       "title": "选一个影院座位，飞过去从那一排看大屏：房间被电影自己照亮",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://github.com/codrops/CinemaSeatPreview",
       "previewUrl": "https://idkhow2do.github.io/topic-portal/covers/20261015-codrops-cinema-seat.jpg",
       "previewType": "image",
@@ -10096,7 +10155,7 @@
     {
       "title": "铅笔线+纸纹+剖面：把一座建筑画成可旋转的纸上施工图",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/jshguo/status/2110699640664600906",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110699620804546560/img/X2TwyaHIdqJpJrxC.jpg",
       "previewType": "image",
@@ -10150,7 +10209,7 @@
     {
       "title": "车漆为什么看起来「又一层玻璃」？浏览器路径追踪做出双层清漆",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/meby_central/status/2110705518016946429",
       "previewUrl": "https://pbs.twimg.com/media/HUq7XGdb0AAXapi.jpg",
       "previewType": "image",
@@ -10204,7 +10263,7 @@
     {
       "title": "富士山顶修一座跳台，人能飞出世界纪录的四倍远吗？",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/kooki_works/status/2110706327848960382",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110706290448318464/img/A5n9OX8XTQLdHoSR.jpg",
       "previewType": "image",
@@ -10256,7 +10315,7 @@
     {
       "title": "浏览器里的赛车模拟：轮胎按胎体刚度和侧偏角实时变形",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/NathanielRedmon/status/2110576082961539329",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110574667371319296/img/vmfpjC8P8za3Tqzi.jpg",
       "previewType": "image",
@@ -10309,7 +10368,7 @@
     {
       "title": "替身能用物理造出来吗？1000架手掌无人机拼成9米高的人形",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/kooki_works/status/2110613364582047881",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110613329425424384/img/sd5oSWr6jkLVfK_v.jpg",
       "previewType": "image",
@@ -10418,7 +10477,7 @@
     {
       "title": "同一道题四个模型交卷：Three.js 里晃动的玛格丽特酒",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/codewithramesh/status/2110616970123186674",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110616696121950209/img/6BLs4RPogCYel0F6.jpg",
       "previewType": "image",
@@ -10470,7 +10529,7 @@
     {
       "title": "一串随机数抽出一座漫画小镇：城下町、坡道町、水都，还能导出3D模型",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/sharp_maker/status/2110558780513730851",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110554462867890176/img/APPAA1GWD6DRRmUj.jpg",
       "previewType": "image",
@@ -10525,7 +10584,7 @@
     {
       "title": "10万块多米诺倒下去，拼出一座赤富士：一块能推倒比自己大1.5倍的",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/kooki_works/status/2110542381099700363",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110542228196384768/img/Yx6vDgygbC3JourK.jpg",
       "previewType": "image",
@@ -10579,7 +10638,7 @@
     {
       "title": "线香花火超微距：0.1毫米的火星自己炸开、再炸开，最多8次就是“松叶”",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/kooki_works/status/2110557445697527809",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110557412575092736/img/Bxigf8ysUMLELpId.jpg",
       "previewType": "image",
@@ -10633,7 +10692,7 @@
     {
       "title": "瓶中风暴：摇一摇瓶子，浪拍上玻璃，小船拼命保持直立",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/devparra/status/2110557309588185446",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110557241396838400/img/zrPnXGw5IK-0FvPK.jpg",
       "previewType": "image",
@@ -10687,7 +10746,7 @@
     {
       "title": "没有模型、贴图和关键帧：1500行着色器算出一只纸箱机器人",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/gcduncombe/status/2110539227347951617",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110538704695730176/img/SvqafmFzt0Bw5Ncj.jpg",
       "previewType": "image",
@@ -10741,7 +10800,7 @@
     {
       "title": "浏览器里的路径追踪：460万三角的场景，半秒建完BVH还能降噪",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/pissang1/status/2110374982652219565",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110373255223853056/img/WR9w770urbT4V3c9.jpg",
       "previewType": "image",
@@ -10797,7 +10856,7 @@
     {
       "title": "鼠标拖出的粒子火花：桌面和网页同一套 Three.js 烟火",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/maksvanleeuwen/status/2110443686740086927",
       "previewUrl": "https://www.sparklemou.se/og-image.jpg",
       "previewType": "image",
@@ -10852,7 +10911,7 @@
     {
       "title": "无限草地怎么只占固定内存：刀片回收 + 风场顶点着色器",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/ShaneBrumback/status/2110400847708315809",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110400628744753152/img/a-w65gh-vtSYZ_aW.jpg",
       "previewType": "image",
@@ -10905,7 +10964,7 @@
     {
       "title": "把官网扔给Claude：一段提示词拍出14.5秒WebGL飞越片",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/twoclipping/status/2110329502676951367",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110328827956068352/img/Yfz92C5G-vOXGdv4.jpg",
       "previewType": "image",
@@ -10958,7 +11017,7 @@
     {
       "title": "Excel也能定格动画：一格两千个形状，再凸成Blender地形",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/aicreataro/status/2109892378383540394",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2109891279203307520/img/2S3nAyEc4gnSnpMJ.jpg",
       "previewType": "image",
@@ -11011,7 +11070,7 @@
     {
       "title": "WebGPU布料求解器续测：布面自己皱起来",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/sachasayan/status/2110387762352328830",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110387727598297089/img/gAwxAHx4S5RBYxwI.jpg",
       "previewType": "image",
@@ -11063,7 +11122,7 @@
     {
       "title": "程序化棒球帽：布料帽檐加上宝石切面",
       "category": "3d",
-      "styleFamily": "code",
+      "styleFamily": "model_3d",
       "source": "https://x.com/kakachiex/status/2110452960295629225",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110452719840325632/img/ULbkKa_zyhn-Ce5E.jpg",
       "previewType": "image",
@@ -11116,7 +11175,7 @@
     {
       "title": "Claude 手感为什么舒服：用 REA 逆向 Claude Desktop 的交互物理学",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/BystAnd3rs/status/2110404747605709153",
       "previewUrl": "https://pbs.twimg.com/media/HUmppz1XwAEHTVB.jpg",
       "previewType": "image",
@@ -11150,7 +11209,7 @@
     {
       "title": "REA 挖出的 Claude 前端细节：4层底色分层、内侧亮线、0.5px分割线",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/BystAnd3rs/status/2110270963338084425",
       "previewUrl": "https://pbs.twimg.com/media/HUkt2HmXcAAPVU2.jpg",
       "previewType": "image",
@@ -11296,7 +11355,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": true
     },
     {
@@ -11332,7 +11391,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": true
     },
     {
@@ -11448,7 +11507,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -11506,7 +11565,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -11535,7 +11594,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -11593,7 +11652,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -11825,7 +11884,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -11853,7 +11912,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:30:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -11940,7 +11999,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -11998,7 +12057,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": true
     },
     {
@@ -12340,7 +12399,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": true
     },
     {
@@ -12376,7 +12435,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": true
     },
     {
@@ -12435,7 +12494,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": true
     },
     {
@@ -12521,7 +12580,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": false
     },
     {
@@ -12579,7 +12638,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": true
     },
     {
@@ -12649,7 +12708,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": false
     },
     {
@@ -12759,7 +12818,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": false
     },
     {
@@ -12868,7 +12927,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": true
     },
     {
@@ -12918,7 +12977,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": true
     },
     {
@@ -12968,7 +13027,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": true
     },
     {
@@ -13059,7 +13118,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": false
     },
     {
@@ -13091,7 +13150,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-08T09:53:19.059Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": false
     },
     {
@@ -13255,7 +13314,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-08T05:14:58.372Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -13292,7 +13351,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-08T05:14:44.754Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": true
     },
     {
@@ -13341,7 +13400,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-08T05:14:38.626Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": true
     },
     {
@@ -13412,7 +13471,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-08T05:14:56.794Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": true
     },
     {
@@ -13534,7 +13593,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-08T05:14:50.104Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": true
     },
     {
@@ -13622,7 +13681,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -13670,7 +13729,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": false
     },
     {
@@ -13724,7 +13783,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:45:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -13778,7 +13837,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:45:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -13832,7 +13891,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:45:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -13886,7 +13945,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:45:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -13940,7 +13999,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:45:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -13994,7 +14053,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:45:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -14048,7 +14107,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:45:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -14102,7 +14161,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:45:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -14156,7 +14215,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:45:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -14210,7 +14269,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:45:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -14264,7 +14323,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:45:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -14318,7 +14377,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:45:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -14372,7 +14431,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:45:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -14426,7 +14485,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:45:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -14480,7 +14539,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:45:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -14533,7 +14592,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -14586,7 +14645,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": true
     },
     {
@@ -14639,7 +14698,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -14693,7 +14752,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": true
     },
     {
@@ -14747,7 +14806,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -14801,7 +14860,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -14854,7 +14913,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -14908,7 +14967,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": true
     },
     {
@@ -14962,7 +15021,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -15015,7 +15074,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -15121,7 +15180,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -15174,7 +15233,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -15227,7 +15286,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": true
     },
     {
@@ -15280,7 +15339,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -15376,7 +15435,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": false
     },
     {
@@ -15426,7 +15485,7 @@
         "updatedAt": null
       },
       "attribution": "@KeWai386772",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -15462,7 +15521,7 @@
         "updatedAt": null
       },
       "attribution": "@KeWai386772",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": true
     },
     {
@@ -15514,7 +15573,7 @@
         "updatedAt": null
       },
       "attribution": "@KeWai386772",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": false
     },
     {
@@ -15567,7 +15626,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:45:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -15620,7 +15679,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:45:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -15666,7 +15725,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": false
     },
     {
@@ -15760,7 +15819,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:45:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -15809,7 +15868,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:45:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -15862,7 +15921,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:45:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -15911,7 +15970,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:45:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -15960,7 +16019,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:45:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -16009,7 +16068,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:45:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -16058,7 +16117,7 @@
         "notInterested": false,
         "updatedAt": "2026-10-16T08:45:00.000Z"
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -16100,7 +16159,7 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "is3d": false
     },
     {
@@ -16126,7 +16185,7 @@
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108371786585063891。",
       "attribution": "@ianneo_ai",
       "updatedAt": "2026-10-14T07:54:31.000Z",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": false
     },
     {
@@ -16334,7 +16393,7 @@
       "provenanceNote": "2026-10-14 经 X API 补全正文与媒体预览；原帖 id 2108511734919205112。",
       "attribution": "@jinglian",
       "updatedAt": "2026-10-14T07:54:31.000Z",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "is3d": false
     },
     {
@@ -16496,7 +16555,7 @@
     {
       "title": "可拆解机械腕表：同一提示词考三家模型的齿轮咬合",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/lemomo_ai/status/2110187446906613901",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110186737360347136/img/d7T0QroDE-884i74.jpg",
       "previewType": "image",
@@ -16559,7 +16618,7 @@
     {
       "title": "手机网页里的真布料：衣架上的T恤会晃、会叠、会飞进购物袋",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://github.com/nvkudva/m-wardrobe",
       "workUrl": "https://m-wardrobe.nvkudva.workers.dev",
       "previewUrl": "https://raw.githubusercontent.com/nvkudva/m-wardrobe/main/docs/demo.gif",
@@ -16621,7 +16680,7 @@
     {
       "title": "会呼吸的程序化水母：伞体收缩+GPU上的触须粒子",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://github.com/holtsetio/aurelia",
       "workUrl": "https://holtsetio.com/lab/aurelia/",
       "previewUrl": "https://github.com/user-attachments/assets/21b278f3-f42b-4b43-aa06-1ed5d734c949",
@@ -16682,7 +16741,7 @@
     {
       "title": "冷压水彩纸上的颜料晕染：鼠标划过，灰画慢慢渗出颜色",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://github.com/franky-adl/watercolor-reveal-effect",
       "workUrl": "https://projects.arkon.digital/threejs/watercolor-reveal-effect/",
       "previewUrl": "https://raw.githubusercontent.com/franky-adl/watercolor-reveal-effect/main/preview.webp",
@@ -16743,7 +16802,7 @@
     {
       "title": "图片被拆成26根丝线：卡片滑到边缘就抽丝、飘散、再织回来",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://github.com/clementgrellier/unwoven",
       "workUrl": "https://unwoven.clementgrellier.fr",
       "previewUrl": "https://github.com/user-attachments/assets/ccf826ac-9ed0-41f0-9da7-2267e3aefdae",
@@ -16803,7 +16862,7 @@
     {
       "title": "浏览器里的漩涡：球体一压，水面自己卷出涡旋",
       "category": "frontend",
-      "styleFamily": "code",
+      "styleFamily": "uiux",
       "source": "https://x.com/Simone_dev_com/status/2108920496892916188",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2108881498099113985/img/5QNY2NJUUPGMOJ47.jpg",
       "previewType": "image",
@@ -16861,7 +16920,7 @@
     {
       "title": "PIXEL WORLD：160×90个立方体，崩开再拼成下一个世界",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/aicreataro/status/2109598040889942476",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2109596901016494080/img/sCTFhua5-6Ae1Ox_.jpg",
       "previewType": "image",
@@ -16981,7 +17040,7 @@
     {
       "title": "热成像剪影+像素实物：一个HTML画布、按语音逐词卡点的20秒片",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/twoclipping/status/2107822293653041659",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2107822027188924416/img/xfOoZDmjCc7r4pUQ.jpg",
       "previewType": "image",
@@ -17042,7 +17101,7 @@
     {
       "title": "Gemini 4 Argon 从第一性原理作画：傅里叶本轮画出骑自行车的鹈鹕",
       "category": "video",
-      "styleFamily": "code",
+      "styleFamily": "code_video",
       "source": "https://x.com/fofrAI/status/2110043023954284889",
       "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2110042439679356928/img/9r6fyHnZ6WisSOJZ.jpg",
       "previewType": "image",
@@ -17147,8 +17206,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条",
-  "updatedAt": "2026-10-24T00:54:00.000Z",
-  "totalItems": 357,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1",
+  "updatedAt": "2026-10-24T00:58:55.000Z",
+  "totalItems": 358,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }

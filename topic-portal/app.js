@@ -144,10 +144,15 @@
   /** Extra visual chips keyed by item.category (not styleFamily). */
   const VISUAL_CATEGORY_CHIPS = ["审美参考"];
 
-  /** styleFamily chip keys → Chinese labels (视觉素材 filters) */
-  const VISUAL_FAMILY_ORDER = ["全部", "code", "draw", "video_model", "model_3d", "other"];
+  /**
+   * styleFamily chip keys → Chinese labels (视觉素材 filters).
+   * Former "code" (代码) is split into code_video (代码视频：用代码做成的视频/动效成片)
+   * and uiux (UI/UX：界面、组件、网页交互). New ingests should set those values directly.
+   */
+  const VISUAL_FAMILY_ORDER = ["全部", "code_video", "uiux", "draw", "video_model", "model_3d", "other"];
   const VISUAL_FAMILY_LABEL = {
-    code: "代码",
+    code_video: "代码视频",
+    uiux: "UI/UX",
     draw: "绘图",
     video_model: "视频",
     model_3d: "3D",
