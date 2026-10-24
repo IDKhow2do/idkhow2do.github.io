@@ -1,8 +1,178 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 368,
+  "exportedCount": 371,
   "items": [
+    {
+      "title": "给 Claude Code / Codex 装一个「3D 科普导演」：3Dviz Pro Max 带 223 个配方、37 个能直接跑的 Three.js 小研究（心脏剖面、膝关节分层、机构、数学），还逼智能体先截图看自己画出来的东西",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://github.com/viettranx/3dviz-pro-max",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024d-3dviz.jpg",
+      "previewType": "image",
+      "description": "仓库 viettranx/3dviz-pro-max（MIT，GitHub API 显示 2026-09-10 创建，抓取时 881 star）README：一个给 Claude Code（插件）和 Codex（skill 文件夹）用的创意 3D 可视化技能，十步工作流——先定造型和规则、再做交互、最后用 capture 脚本驱动浏览器按命名视角截帧，让智能体「看自己真正渲染出来的画面，而不是口头描述」；README 原话「事实性讲解需要来源；会动的装饰不会因为在动就变成模拟」。规模（README 表）：223 个配方覆盖 24 个方向，440 条知识记录（69 条带数值默认值），22 套 kit，37 个可直接运行的英文 Three.js 研究，分五章：解剖与生理、数学、物理与机构、场景与道具、光照。解剖方向列了心脏剖面、膝关节分层、骨骼层级等，解剖网格来自 BodyParts3D（CC BY-SA 2.1 日本）。在线站 3dviz.dev 可以直接打开这些研究。线索来自 @Smartpigai 10-24 11:54 UTC 的中文推荐帖，其 16 秒录屏（目视）：3dviz.dev 首页 → 场景卡片墙 → 点开「The Last Light」夜景小村，镜头环绕灯光木屋。科普价值：你做结构/剖面/机构类镜头时，可以直接让 Claude Code 套它的「剖面 + 分层 + 截帧自检」流程；「先截图核对再交付」也正好对应你视频里的「事实先于标题」。",
+      "tool": "Claude Code 插件 / Codex skill；Three.js 0.180；可选 Blender 4.2+ 烘焙（不装也能跑到 T2）；可选 Playwright 截帧（README）",
+      "prompt": "Use 3dviz-pro-max to build a small fantasy village I can explore. Choose a distinctive art direction, add a few moving creatures, and inspect the result.（README 示例提示词）",
+      "promptProvenance": "original_public",
+      "provenanceNote": "源码 https://github.com/viettranx/3dviz-pro-max （MIT）；在线 https://3dviz.dev ；X 线索帖 https://x.com/Smartpigai/status/2113962440161689836 （转述，非作者本人）。README 自己注明：首页那段村庄 GIF 是技能出现之前的作者旧项目录屏，仅作视觉灵感，不是基准；配方「不代表每个都渲染过」，解剖需要核实过的几何。本轮未安装运行，未逐一打开 37 个研究。封面为 3dviz.dev 官方 og 图。",
+      "attribution": "viettranx（3Dviz Pro Max）",
+      "sourceAuthor": "viettranx",
+      "tags": [
+        "Claude Code",
+        "Codex",
+        "Three.js",
+        "Blender",
+        "剖面",
+        "科普可视化",
+        "agent skill"
+      ],
+      "publishedAt": "2026-09-10T01:42:59.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-24T12:54:00.000Z",
+      "updatedAt": "2026-10-24T12:54:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-24T12:54:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 78,
+        "baseBreakdown": {
+          "实体": 14,
+          "科普": 15,
+          "溯源": 19,
+          "复现": 15,
+          "风格": 9,
+          "新颖": 6
+        },
+        "multiplier": 1.219,
+        "finalScore": 95.1,
+        "threshold": 65,
+        "run": "2026-10-24-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113962291683315712/vid/avc1/1920x1080/zmxdmvn13SUgmEIX.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/viettranx/3dviz-pro-max",
+      "licenseName": "MIT",
+      "licenseUrl": "https://github.com/viettranx/3dviz-pro-max/blob/main/LICENSE"
+    },
+    {
+      "title": "「小明把钥匙放进书包，又把书包放进柜子——钥匙在哪？」一位国内程序员博主用 Codex 做的 3D 大模型科普：把 LLM 拆成一摞电路板，字被切成带编号的方块一路传下去",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/ahab_developer/status/2113936415029641691",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024d-ahab.jpg",
+      "previewType": "image",
+      "description": "程序员Ahab（@ahab_developer，简介为 B 站/小红书/抖音/YouTube 同名、资深大厂技术专家）10-24 10:11 UTC 发帖：「我好像调出了最牛逼的技术科普视频效果！Codex 用户再也不羡慕 claude 了！」附 1 分 53 秒、近 4K 视频（9 帧目视，中文字幕）：钥匙、书包、柜子三个 3D 道具演示「小明把钥匙放进书包，又把书包放进柜子」→「需要把前面两层关系联系起来」→「拆开负责生成这类回答的大语言模型，也就是 LLM」，画面是一摞层叠的电路板（多层计算）→「软件会先按分词规则」把句子切成方块，「每个片段有自己的编号」（如「钥」对应 181704）→ 方块沿着通道进入后面的层，「看看前面的信息怎样参与后面的生成」。风格：深色背景、磨砂金属材质、实物道具 + 板卡隐喻，镜头连续推拉。科普价值：这正是你账号的品类——用实物比喻 + 3D 拆解讲 AI 原理；「两跳推理（钥匙→书包→柜子）」也能接涌现视频里「文本模型怎么学会推理」那一段；可以对照研究它的镜头节奏与字幕密度。",
+      "tool": "Codex（作者自述；未说明模型、渲染框架和提示词）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖 https://x.com/ahab_developer/status/2113936415029641691 （抓取时 2 赞）。作者只说是用 Codex 调出来的，没有公开代码、提示词或许可证，只能外链引用学习；视频里的 token 编号等是演示用示意，未核对是否对应某个真实分词器。封面为视频第 44 秒截帧（层叠电路板 = LLM）。",
+      "attribution": "程序员Ahab（@ahab_developer）",
+      "sourceAuthor": "ahab_developer",
+      "tags": [
+        "Codex",
+        "AI科普",
+        "LLM原理",
+        "3D动画",
+        "代码视频"
+      ],
+      "publishedAt": "2026-10-24T10:11:31.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-24T12:54:00.000Z",
+      "updatedAt": "2026-10-24T12:54:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-24T12:54:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 66,
+        "baseBreakdown": {
+          "实体": 16,
+          "科普": 20,
+          "溯源": 8,
+          "复现": 4,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.025,
+        "finalScore": 67.6,
+        "threshold": 65,
+        "run": "2026-10-24-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113935405603278848/vid/avc1/3832x2152/YvMOuS027SbA2sGY.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "一个细胞剖面图，31,292 个零件没有一个是手摆的：Claude 写的 755 行脚本，顶上 29 个数字决定一切，想要 11 个线粒体就写 mito.count = 11",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/unframe1m/status/2113965558366638443",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261024d-cell.jpg",
+      "previewType": "image",
+      "description": "unframe（@unframe1m）10-24 12:07 UTC 发帖：让 Claude 做一个 3D 细胞剖面，交回来的是代码而不是模型——755 行、29 个数字、31,292 个零件。流程四步：Parse（数量、尺寸、深度都集中在一个参数块）→ Place（每颗珠子、每片膜、每个细胞器按带种子的规则摆放）→ Grow（细胞按代码写入的顺序在画面上「长」出来）→ Slice（一个切面掀掉盖子，切面高度也只是一个数）。产物：约 5,200 颗珠子组成的三层「蜂蜜色」外壳，11 个线粒体、2 个核仁、4 片内质网、6 层高尔基体，外面 5 个病毒颗粒按计时器绕行、对接。作者自己写的限定：这是示意不是测量，数字是挑的、不是显微镜量的；没有任何模拟，零件只是规则放到哪就在哪；仪表盘上的计数是场景里真实的实例数。30 秒片子在 2 核无 GPU 的机器上约 26 分钟渲完。视频（9 帧目视）：细胞从散点聚成球 → 切面掀开露出细胞核、线粒体和膜系统 → 镜头推近 → 拉远看全貌；四周是像素风仪表盘（零件计数 5,468 → 29,280 → 31,292、参数轨迹、细胞器统计、对接雷达）。科普价值：「复杂结构 = 少量参数 + 规则」本身就是涌现视频可用的反例/对照（这里是规则摆放，不是自组织）；剖面镜头也能直接用于生物/器件结构类科普。",
+      "tool": "Claude（作者自述，未说明具体模型与渲染框架）；单文件脚本 + 种子规则程序化摆放",
+      "prompt": "I asked Claude for a 3D cell cutaway（帖内说法，非完整提示词）",
+      "promptProvenance": "adapted",
+      "provenanceNote": "原帖 https://x.com/unframe1m/status/2113965558366638443 （抓取时 0 赞；账号 24 粉丝，简介「Quant, AI & deep tech」，画面带「unframe · Honey Lattice」字样）。没有公开代码、许可证，755 行/29 个数字/31,292 个零件为作者自述（31,292 与仪表盘读数一致）；细胞器数量是人为设定，不是生物学真实比例。只能外链引用。封面为视频第 7 秒截帧（切面掀开）。",
+      "attribution": "unframe（@unframe1m）",
+      "sourceAuthor": "unframe1m",
+      "tags": [
+        "Claude",
+        "程序化生成",
+        "剖面",
+        "细胞",
+        "代码视频"
+      ],
+      "publishedAt": "2026-10-24T12:07:19.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-24T12:54:00.000Z",
+      "updatedAt": "2026-10-24T12:54:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-24T12:54:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 66,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 19,
+          "溯源": 7,
+          "复现": 5,
+          "风格": 9,
+          "新颖": 8
+        },
+        "multiplier": 1.0618,
+        "finalScore": 70.1,
+        "threshold": 65,
+        "run": "2026-10-24-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113965495980609536/vid/avc1/1080x1200/YYullgPC5hrqs4k5.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "没有一张贴图、一张照片、一个 3D 模型，整座夏威夷纳帕利海岸全是代码「算」出来的：Opus 5.5 分成水、天、地形、植被四个专家，13 轮迭代，还有一个「裁判」拿真实照片逐轮打分",
       "category": "video",
@@ -17786,8 +17956,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条",
-  "updatedAt": "2026-10-24T09:02:00.000Z",
-  "totalItems": 368,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条",
+  "updatedAt": "2026-10-24T12:54:00.000Z",
+  "totalItems": 371,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
