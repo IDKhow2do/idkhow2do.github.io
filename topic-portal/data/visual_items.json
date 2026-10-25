@@ -1,8 +1,229 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 380,
+  "exportedCount": 384,
   "items": [
+    {
+      "title": "把一个抱枕放大到看得见每一根纤维：Yuri Artiukh 直播用 Three.js 复现 2017 年的「纤维级实时布料渲染」论文，毛衣针脚、股线、纤维都是程序实时生成的",
+      "category": "frontend",
+      "styleFamily": "code_video",
+      "source": "https://x.com/akella/status/2114335900813639718",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025d-knitstream.jpg",
+      "previewType": "image",
+      "description": "akella（Yuri Artiukh，长期做 Three.js 直播教学的创意开发者）10-25 12:38 UTC 发帖：新一期直播，跟着一篇纤维级布料细节的论文做，用数学 + Three.js + 一点 Blender 烘焙；附在线 demo（knitstream.vercel.app）和直播录像（YouTube「Knitting with #threejs」）。论文是 Kui Wu 与 Cem Yuksel 的《Real-time Fiber-level Cloth Rendering》（I3D 2017，获第三名最佳论文；期刊版发在 IEEE TVCG）：只把「纱线级」控制点传给 GPU，纤维级几何在 GPU 上实时程序化生成；每股中心的纤维合并表示以减少光栅化；按距离做细节层次；配自阴影和环境光遮蔽近似，实时渲染含一亿多根纤维曲线的针织物。40 秒录屏（目视 8 帧）：一个织着红色「THREE.JS」字样和蓝色雪花图案的针织抱枕，镜头从远景推到能看清每个 V 形针脚的特写；后半段是穿着各色针织「外衣」的雕像（断臂维纳斯式人像、举臂雕像）。demo 页注明「after Kui Wu & Cem Yuksel」，并说按 1–9、0 键切换步骤。对你：从「一件毛衣 → 一针 → 一股纱 → 一根纤维」逐级放大，就是天然的尺度科普镜头，和你讲晶圆「从整片到单个晶体管」的放大逻辑一模一样；也是「论文 → 代码 → 画面」的好例子。",
+      "tool": "Three.js（WebGL）+ 少量 Blender 烘焙；方法来自 Kui Wu & Cem Yuksel, I3D 2017",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖 https://x.com/akella/status/2114335900813639718 ；在线 demo https://knitstream.vercel.app/ （页面署名 after Kui Wu & Cem Yuksel）；直播录像 https://www.youtube.com/live/nZk9gI4y8E8 （YouTube 标题「Knitting with #threejs」，作者 Yuri Artiukh）；论文主页 https://kuiwuchn.github.io/rtfr.html （另有 MIT CSAIL 镜像页）。demo 没有写许可证，本轮没有找到公开源码仓库，只能外链引用；直播录像里有编码过程，可作复现参考。本轮没有在浏览器里实际操作 demo（各步骤具体切换什么未核实），没看完直播。封面为录屏第 17 秒截帧（抱枕针脚特写）。",
+      "attribution": "Yuri Artiukh（@akella）· 方法：Kui Wu & Cem Yuksel《Real-time Fiber-level Cloth Rendering》",
+      "sourceAuthor": "akella",
+      "tags": [
+        "Three.js",
+        "布料",
+        "纤维级渲染",
+        "论文复现",
+        "程序化生成"
+      ],
+      "publishedAt": "2026-10-25T12:38:55.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-25T12:52:00.000Z",
+      "updatedAt": "2026-10-25T12:52:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-25T12:52:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "实体": 23,
+          "科普": 16,
+          "溯源": 15,
+          "复现": 11,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.2748,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-25-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114333629606166528/vid/avc1/1920x1080/o3Y6f7sk-OIA5PQ2.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "同一段模拟，左边是逼真画面，右边直接显示每个瞬间的张力、速度和接触点：独立开发者用 NVIDIA Warp 做机器人学习仿真器，512 次纸杯塔投掷一批算完，每步 1.93 毫秒",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/l94917/status/2114288899317239832",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025d-warpsim.jpg",
+      "previewType": "image",
+      "description": "jin lee（@l94917）10-25 09:32 UTC 发帖：正在为机器人学习做一个 GPU 仿真器，用 NVIDIA Warp 在一个引擎里试多种物理——刚体、绳索、布料、软体、流体，渲染用 NVIDIA OptiX。帖子给的数据：512 次纸杯金字塔投掷放在一个 GPU 批次里一起算，512 个场景合计每步 1.93 毫秒（RTX 5090 笔记本）；每个场景都和同一次运行的原始物理状态（张力、速度、接触）并排展示。作者也说这些只是基础测试，布料、绳索和流体还要持续打磨，下一步要在高斯泼溅场景里做仿真。49 秒录屏（目视 8 帧 + 2 帧细看）：片头「Physics Tests」，分 Rigid bodies / Cables / Cloth / Soft bodies / Fluid 五段——球砸纸杯塔、64 格并排显示「64 of 512 shown – 1.93 ms per step for all 512」、绳子绕杆、几块毛巾落在物体上、毛绒熊和果冻熊一起掉落、摇晃的水瓶里水的速度用彩色粒子显示（色条「water speed in the bottle (m/s)」0–1）。对你：「好看的画面」和「背后的物理量」同屏，是解释仿真到底在算什么的现成镜头；也能接你做的微纳加工仿真话题——同一套思路，算的是刻蚀而不是水。",
+      "tool": "NVIDIA Warp（物理）+ NVIDIA OptiX（渲染），RTX 5090 笔记本；作者自建仿真器",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖 https://x.com/l94917/status/2114288899317239832 （抓取时 0 赞）。作者自建项目，没有公开源码、在线地址或许可证，只能外链引用；1.93 ms/步等数字为作者自报，本轮未复现。NVIDIA Warp 与 OptiX 是 NVIDIA 的公开工具。封面为录屏第 45.5 秒截帧（水瓶内水速彩色粒子）。",
+      "attribution": "jin lee（@l94917）",
+      "sourceAuthor": "l94917",
+      "tags": [
+        "物理模拟",
+        "GPU仿真",
+        "流体",
+        "布料",
+        "软体",
+        "机器人学习"
+      ],
+      "publishedAt": "2026-10-25T09:32:09.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-25T12:52:00.000Z",
+      "updatedAt": "2026-10-25T12:52:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-25T12:52:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 67,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 16,
+          "溯源": 9,
+          "复现": 5,
+          "风格": 6,
+          "新颖": 9
+        },
+        "multiplier": 1.025,
+        "finalScore": 68.7,
+        "threshold": 65,
+        "run": "2026-10-25-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114288562493603840/vid/avc1/1920x1080/oEWRcg7qYLArBY7r.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "像用微距镜头拍玩具一样拍软件界面：天气卡、清单、地图上的体素小人从纸面上蹦出来——Lemomo 拆解 Three.js「2D 界面 + 3D 小人」一镜到底短片",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/lemomo_ai/status/2114330367599714810",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025d-lemo.jpg",
+      "previewType": "image",
+      "description": "Lemomo（@lemomo_ai，库内 LemoLab 作者）10-25 12:16 UTC 发帖：最近流行「2D 软件界面混 3D 小人」，实际是用玩具微距摄影的方式拍软件界面；技术上用 Three.js 搭真实 3D 场景，主角从平面跳出来变成 3D 人物，一镜到底，低角度柔光、运动模糊和微距景深，节奏靠人物跳动的质感和镜头平滑移动。20 秒录屏（目视 8 帧）：浅薄荷绿桌面上散放着几张白色卡片——「20° 晴 Sunny」天气卡、野餐清单（三明治、西瓜、风筝、野餐垫逐项打勾）、地图路线卡，橙色小狐狸、绿色小机器人、黄色小鸡三个体素小人在卡片间跳来跳去，篮子、风筝也是体素；字幕「周六，晴，24°」「出发，去公园」「三、二、一，咔嚓」，最后合成一张拍立得「SAT · PICNIC」和「周末见」。对你：这种「界面卡片 + 跳出来的小角色」很适合让你的小马 IP 在信息卡片之间串场。",
+      "tool": "Three.js 3D 场景（作者描述）；是否用 AI 编程、具体 prompt 本帖未说明",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖 https://x.com/lemomo_ai/status/2114330367599714810 （抓取时 10 赞）。没有源码、在线地址、prompt 或许可证，只有作者的技术拆解文字，只能当风格参考、外链引用。同作者 LemoLab 库已在库（同作者条目较多，新颖度打了折）。封面为录屏第 12.5 秒截帧（拍立得卡片上的三个体素小人）。",
+      "attribution": "Lemomo（@lemomo_ai）",
+      "sourceAuthor": "lemomo_ai",
+      "tags": [
+        "Three.js",
+        "微距",
+        "2D转3D",
+        "体素角色",
+        "一镜到底"
+      ],
+      "publishedAt": "2026-10-25T12:16:56.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-25T12:52:00.000Z",
+      "updatedAt": "2026-10-25T12:52:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-25T12:52:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 56,
+        "baseBreakdown": {
+          "实体": 15,
+          "科普": 9,
+          "溯源": 10,
+          "复现": 6,
+          "风格": 10,
+          "新颖": 6
+        },
+        "multiplier": 1.1979,
+        "finalScore": 67.1,
+        "threshold": 65,
+        "run": "2026-10-25-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114329525052116992/vid/avc1/1920x1080/SyMBMPmM1VHMYaH2.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "把一段花园的高斯泼溅扫描交给 Claude，让它在 Blender 里重新「搭」一遍：程序化建模 + 几何节点 + 着色器，地面 80% 的纹理直接从扫描里取",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/gokayfem/status/2114314785575604491",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025d-splat.jpg",
+      "previewType": "image",
+      "description": "gokaygokay（@gokayfem）10-25 11:15 UTC 发帖「World to World」：把一个花园的高斯泼溅（Gaussian splat）交给 Claude Opus 5.5，让它在 Blender 里重建场景——程序化物体、几何节点、着色器节点，再把采集到的纹理贴到选定表面。60 秒录屏（目视 8 帧 + 1 帧细看）：「Splat in. Mesh out.」同机位左右对照；「Grey mesh to textured hybrid.」灰模到带贴图的混合模型；「Full 360. Same camera.」三栏同步环绕（高斯泼溅参考 / 灰色重建网格 / 贴图混合）；「Up close.」桌腿和铺地砖特写；大字「80% of the paving surface is textured from Gaussian-splat captures」；结尾「world to world mapping」。对你：正好对上你想做的「把房间 3D 建模再换装修风格」——扫描（泼溅）只是一团点，变成可编辑的网格才能换材质；三栏同机位对照也是讲「高斯泼溅 vs 网格」的现成画面。",
+      "tool": "Claude Opus 5.5 + Blender（程序化建模、Geometry Nodes、Shader Nodes），输入为高斯泼溅扫描",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖 https://x.com/gokayfem/status/2114314785575604491 （抓取时 17 赞）。没有源码、prompt、在线地址或许可证；如何把泼溅交给模型、是否用 Blender MCP 帖子没说明。80% 是视频字幕里作者自己的说法。封面为录屏第 30 秒截帧（三栏同机位对照）。",
+      "attribution": "gokaygokay（@gokayfem）",
+      "sourceAuthor": "gokayfem",
+      "tags": [
+        "高斯泼溅",
+        "Blender",
+        "几何节点",
+        "场景重建",
+        "Claude Code"
+      ],
+      "publishedAt": "2026-10-25T11:15:01.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-25T12:52:00.000Z",
+      "updatedAt": "2026-10-25T12:52:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-25T12:52:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 64,
+        "baseBreakdown": {
+          "实体": 16,
+          "科普": 15,
+          "溯源": 9,
+          "复现": 6,
+          "风格": 9,
+          "新颖": 9
+        },
+        "multiplier": 1.038,
+        "finalScore": 66.4,
+        "threshold": 65,
+        "run": "2026-10-25-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114312639333462016/vid/avc1/1920x1080/If4-GvMchKle2Iip.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "先让 AI 写 Three.js 把镜头「排练」一遍，再交给视频模型上皮肤：微软研究院 Code Video Model——空间、运动、物理用代码算，外观交给视频模型，不用额外训练",
       "category": "video",
@@ -18476,8 +18697,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条",
-  "updatedAt": "2026-10-25T08:55:00.000Z",
-  "totalItems": 380,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条",
+  "updatedAt": "2026-10-25T12:52:00.000Z",
+  "totalItems": 384,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }

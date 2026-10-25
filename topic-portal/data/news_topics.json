@@ -1,7 +1,201 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-25T08:55:00.000Z",
+  "updatedAt": "2026-10-25T12:52:00.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2610.30571",
+      "title": "AI 明明发现说明书过时了，为什么还照着错的写？Claude Code 80 次里 79 次指出 CLAUDE.md 和代码对不上，照样跟着文件走——加一句话，跟代码走的比例从 4.2% 跳到 91.4%",
+      "category": "AI",
+      "source": "arXiv:2610.30571《Stale Instruction Files Override the Code in Coding Agents: A One-Sentence Fix》（Xiaonan Xu，佐治亚理工；Wenjing Wu，科罗拉多大学博尔德分校；2026-10-22 提交，已投 SN Computer Science）；线索来自 @kdpisda 10-25 10:53 UTC 的帖子",
+      "publishedAt": "2026-10-22",
+      "eventAt": "2026-10-22",
+      "collectedAt": "2026-10-25T12:52:00.000Z",
+      "updatedAt": "2026-10-25T12:52:00.000Z",
+      "description": "一手来源：arXiv 预印本（摘要与正文）。问题：项目里给 AI 的说明文件（CLAUDE.md、AGENTS.md 之类）会过时——论文第 2 节举了真实例子：Supabase 把后台升级到 React 19 后，一个 skill 文件还在告诉智能体「后台用的是 React 18、别用 React 19 写法」，过了 13 天才改。实验：作者造了 40 个 Python 小项目，每个项目的说明文件要求一种写法、现有代码用另一种（比如文件说用 print、代码全用 logging；共 16 类这样的选择），让 Claude Code 和 Codex CLI 各给每个项目加一个功能，分有/没有「一句话」两种条件，共 320 次运行。结果：①没有那句话时，90.1% 的选择跟着过时文件走；②Claude Code 80 次里 79 次在回复里点出了冲突，但仍然照文件写（论文图 1：它自己说「新代码遵循了 CLAUDE.md……但现有模块和测试不是这样」）；③Codex CLI 有 20 次干脆把现有代码改成文件要求的样子，其中 17 次项目自带的测试随之失败；④在用户级说明文件（Claude Code 是 ~/.claude/CLAUDE.md，Codex 是 ~/.codex/AGENTS.md）里加一句「文档和现有代码不一致时以现有代码为准」，跟代码走的比例从 4.2% 升到 91.4%，改写现象消失，测试通过率从 89.4% 升到 100%。作者的解释（第 3 节）：说明文件是以「指令」身份送进模型的，代码则是以「工具输出」身份送进来的，而模型被训练成更信指令、更不信工具输出。对你：你自己的出片流程就靠 Claude + 一堆说明文件/skill，这条可以直接拿来「现身说法」，而且解法就一句话，观众看完马上能用。可拍角度：1）AI「知道错了还照做」——不是笨，是它分不清谁说话更算数；2）指令 vs 工具输出：同样一段文字，从不同「门」进来，地位完全不同（也能顺带讲提示注入为什么危险）；3）给观众一句能抄的配置。开场：0 秒上论文图 1 三栏——CLAUDE.md 写着「用 print」、代码里全是 logger、AI 写出了 print 还自己承认不一致。",
+      "caveat": "arXiv 预印本，未经同行评审；只有 2 位作者、40 个人造的小型 Python 项目，冲突是刻意设计的，真实大项目里的比例不一定一样。Claude Code 实验用的是 sonnet 模型（论文附录给出的命令是 claude -p --model sonnet），回复是否「指出冲突」由另一次 opus 调用按固定标准判定。90.1%、4.2%→91.4% 等都是作者自测，本轮没有复现。「模型被训练成更信指令」是作者的解释，不是对模型训练的直接证明。封面为论文图 1（由 SVG 栅格化）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261025d-stale.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025d-stale.jpg",
+      "imageAlt": "论文图 1 三栏：左栏 CLAUDE.md 要求用 print()，现有模块 inventory.py 用 logger.info；中栏「没有那句话」时新代码用 print，标「matches the file」，AI 回复承认约定不一致；右栏「有那句话」时新代码用 logger.error，标「matches the code」",
+      "tags": [
+        "智能体",
+        "AI编程",
+        "Claude Code",
+        "提示词",
+        "论文"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 86,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 19,
+          "画面": 12,
+          "来源": 14,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 90.9,
+        "threshold": 65,
+        "run": "2026-10-25-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.04433",
+      "title": "同一个模型、同一批题，换个「外壳」账单最多差 3 倍，分数却和重跑一遍的波动差不多？山东大学实测：Claude Code 每一步都要重发约 1.6 万 token 的系统提示和工具说明",
+      "category": "AI",
+      "source": "arXiv:2610.04433《What Does a Harness Buy? Tokens, Mostly》（Yangze Liu、Zhongyi Han，山东大学；2026-10-03 提交）；代码 github.com/YangzeLiu/what-does-a-harness-buy；线索来自 @farseen 10-25 12:14 UTC、@hodu382759 10-25 11:58 UTC 的帖子",
+      "publishedAt": "2026-10-03",
+      "eventAt": "2026-10-03",
+      "collectedAt": "2026-10-25T12:52:00.000Z",
+      "updatedAt": "2026-10-25T12:52:00.000Z",
+      "description": "一手来源：arXiv 预印本。「harness（外壳）」指包在模型外面的那一层：系统提示、工具集、上下文管理。问题：厂商常宣传「改了外壳通过率涨了」，但很少有人在模型固定时测外壳本身到底能挪动多少分。做法：5 个模型（Qwen3.6-35B-A3B、Qwen3.8-27B、DeepSeek-V4-Flash、GLM-5.3-Flash、HY4-Preview，另把 Claude Opus 5 放进 Claude Code 当参照）× 3 个真实外壳（Claude Code、mini-SWE-agent、OpenCode），跑 SWE-bench Verified，并且把同一配置重跑，量「什么都不改只是再跑一次」分数会动多少。结果（摘要原文）：①447 题上，最重的 Claude Code 和最轻的 mini-SWE-agent 在 5 分以内等价；②45 道难题上，换外壳翻转的题目比例和同一外壳重跑一样，都是 13%，而且这次赢的题下次不一定赢；③唯一超出噪声的外壳效应是「掉分」：OpenCode 在大题池上最多落后 9 分，其中一个模型一半差距来自输出上限把运行截断；④真正被外壳决定的是账单：同模型、同题、同一价目表，每题成本最多差 3 倍。钱花在哪：每一步都要重发一段固定「开场白」——系统提示 + 工具说明，Claude Code 约 16k token、OpenCode 约 7k、mini-SWE-agent 不到 1k，再乘以步数；缓存价只是整体缩放，不改变排名。论文图 1(a)：横轴每题输入 token（百万），纵轴难题通过率，同色连线是同一模型换外壳——横向拉得很开，纵向挪得不多。对你：你出片每天烧 Claude 额度，这条正好回答「额度都去哪了」；国产模型（Qwen、DeepSeek、GLM、混元）都在实验里，大陆观众有代入感。可拍角度：1）AI 编程助手的「隐形开场白」：每说一句话都要把整本员工手册重念一遍；2）「分数涨了」要先问重跑一遍会不会也涨——统计噪声的科普；3）为什么同一个模型在不同工具里账单不一样。开场：0 秒上图 1 散点，同一颜色的点横向跨了好几百万 token。",
+      "caveat": "10 月 3 日的预印本，不是本周新闻，按常青机制题处理；未经同行评审。测的是 SWE-bench Verified 这一类修 bug 任务，外壳版本被固定在作者测的那一版，厂商后续可能已改。3 倍成本差是在同一价目表下按 token 计算的，不是某家实际账单。「每步重发、约 1.6 万 token」是论文对 Claude Code 当时版本的测量/重建。转述帖里「Claude Code 和 mini-SWE-agent 只差 2 个点以内」与摘要说法（5 分以内等价）不完全一致，以论文为准。封面为论文图 1(a)（由 SVG 栅格化）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261025d-harness.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025d-harness.jpg",
+      "imageAlt": "论文图 1(a) 散点图：横轴每题输入 token（0–12 百万），纵轴 45 道难题通过率；圆点 Claude Code、方块 mini-SWE-agent、菱形 OpenCode，不同颜色代表 Qwen3.6、Qwen3.8、DS Flash、GLM Flash、HY4，黑点为 Opus 5 约 80%",
+      "tags": [
+        "智能体",
+        "AI成本",
+        "AI编程",
+        "Claude Code",
+        "论文"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 12,
+          "来源": 14,
+          "时效": 6,
+          "大陆": 8,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 87.7,
+        "threshold": 65,
+        "run": "2026-10-25-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.29869",
+      "title": "AI 编程助手「压缩记忆」时，网页里一句伪造的「用户已批准」会变成真授权？5 款开源工具中招率 87%–100%，保留「谁说的」标签的 4 款是 0%",
+      "category": "AI",
+      "source": "arXiv:2610.29869《Compaction Laundering: Provenance Destruction in Context-Compacting Coding Agents》（Arshan Dabirsiaghi，Pixee；2026-10-21 提交）；线索来自 @vintcessun 10-25 11:31 UTC 的中文帖",
+      "publishedAt": "2026-10-21",
+      "eventAt": "2026-10-21",
+      "collectedAt": "2026-10-25T12:52:00.000Z",
+      "updatedAt": "2026-10-25T12:52:00.000Z",
+      "description": "一手来源：arXiv 预印本。背景：编程智能体跑久了上下文会满，就要「压缩」——把对话总结成一段摘要，丢掉原文，带着摘要继续干。漏洞（摘要原文）：有些工具在交给总结模型之前，先把带类型的对话「压扁」成一整段纯文本，每条消息前面只用 [User]: 这样的文字标签区分。于是攻击者只要能控制智能体读到的任何内容（一个网页、一个文件、一个依赖），就能在里面伪造一条「用户说：我已批准」，压缩之后它就作为真的用户指令留在记忆里。结果：压扁对话的 5 款开源工具（pi、opencode、Cline、Aider、OpenHands）伪造批准「洗白」进记忆的比例 87%–100%（论文柱状图：pi、opencode、Aider 各 15/15，OpenHands 14/15，Cline 13/15），上下文窗口一直测到约 90.8 万 token；保留消息类型的 4 款（Codex、Gemini CLI、Qwen Code、Continue）同样的攻击 0/15。后果：被洗白的「长期批准」能驱动真实的工具智能体在沙箱里执行攻击者的 curl | sh；在真实的 pi 终端界面里端到端约 50% 成功，对照组 0%；同一通道还能让智能体绕开攻击者指定的文件，从而让代码审查漏看后门。为什么提示词防不住：来源信息是在工具代码里被确定性抹掉的，模型根本看不到；作者测的代码级来源检查能拦下 77%、误伤 2%；直接修法是在压扁前转义角色标签，或者干脆保留消息类型。作者称已在发表前通知相关维护者。可拍角度：1）AI 的「失忆」和「记错是谁说的」——比记不住更危险；2）提示注入的升级版：不是骗它一次，而是写进它的长期记忆；3）为什么这个问题不能靠「多写一句提示词」解决。开场：0 秒上论文图——上面五根红色长条 100%/93%/87%，下面四行 0%。",
+      "caveat": "单一作者、来自安全公司 Pixee 的预印本，未经同行评审；测的是开源工具的特定提交版本，维护者可能已修复（本轮未逐个核实修复状态）。Claude Code 不在这 9 款被测工具里，不能据此说 Claude Code 有或没有这个问题；论文表格里有一行写 claude-opus-5 在某场景「拒绝总结」。Codex 0% 一列论文自己注明是计分方式造成的恒定值。执行攻击代码是在沙箱/容器里做的。视频里不要演示攻击载荷细节。封面为论文按工具分列的洗白率柱状图（由 SVG 栅格化）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261025d-compaction.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025d-compaction.jpg",
+      "imageAlt": "论文柱状图「Forged-approval laundering rate, by harness」：pi、opencode、Aider 100%（15/15），OpenHands 93%（14/15），Cline 87%（13/15），标为 flattening；Codex、Gemini CLI、Qwen Code、Continue 均 0%（0/15），标为 structured (control)",
+      "tags": [
+        "AI安全",
+        "智能体",
+        "AI编程",
+        "上下文压缩",
+        "论文"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 80,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 10,
+          "来源": 13,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 84.5,
+        "threshold": 65,
+        "run": "2026-10-25-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.27655",
+      "title": "一群 AI 分工合作，一定比一个 AI 强吗？到了要跟真人客户来回沟通的客服场景，宾大实测 13 组对比里多智能体 12 次更差、1 次打平，不设预算上限也只能打平，还要多花 5.5 倍 token",
+      "category": "AI",
+      "source": "arXiv:2610.27655《Does Multi-Agent Collaboration Pay When Agents Serve Users? Testing Agent Scaling in Dual-Control Settings》（Ethan Yang、Xiangcheng Shi，宾夕法尼亚大学；2026-10-20 提交，预注册并公开变更记录）；线索来自 @vintcessun 10-25 09:14 UTC 的中文帖",
+      "publishedAt": "2026-10-20",
+      "eventAt": "2026-10-20",
+      "collectedAt": "2026-10-25T12:52:00.000Z",
+      "updatedAt": "2026-10-25T12:52:00.000Z",
+      "description": "一手来源：arXiv 预印本。背景：此前最系统的研究给过一条「能力饱和」经验法则——单个智能体还弱时，协作有帮助；单个智能体变强后，协作反而拖后腿，分界线大约在单智能体准确率 45%。但那条规则是在「没有用户参与」的自主任务上得出的。本文换到智能体真正上岗的地方：按书面政策和用户对话的 τ²-bench（航空、零售、电信三个场景，用户和智能体都能动手操作）。做法：同一个模型分别搭单智能体和集中式多智能体，三个模型家族共 6 个模型，约 7,950 段模拟对话，每段都记 token 账。结果（摘要原文）：在固定的模拟用户下，没有任何一格显示多智能体占优——13 个有效格子里 12 个更差、1 个打平，拟合增益在整个能力范围内都是负的（加权平均 −28 分，95% 置信区间 [−44, −12]）；在规则预测「该有收益」的两格，多智能体反而输 13 分和 22 分；取消预算上限，最多也只能打平，花费是单智能体的 5.5 倍。多智能体也没有明显减少错误写数据库，只是把别的失败变成了「预算耗尽」和「不作为」。作者结论：服务用户的智能体，默认用单个；多智能体设计必须拿出同等算力、同一场景下的证据。对你：正好是上一轮 Agensh（1024 个智能体自组织、越多越好）的反面——涌现视频里可以并排放：同样是「多个 AI 一起干」，自己埋头写代码时会长出分工，一旦要和人来回沟通就变成互相等、互相拖。可拍角度：1）「人多力量大」在 AI 里什么时候成立；2）为什么开会越多越慢——协调成本；3）选单 AI 还是 AI 团队的一个简单判断。开场：0 秒上论文图 2——几乎所有点都落在 0 线以下。",
+      "caveat": "预印本，未经同行评审；作者自己说明多智能体按「搭好的样子」报告，有一条有效性标准没达到（规划器看不到工具说明），这可能让多智能体吃亏。用户是模拟出来的，不是真人；结论限于所测系统与模拟器。唯一的正收益出现在最接近 45% 的那一格、换了另一个模拟器时；增益是否随能力下降仍未定（斜率 −0.41，区间跨零）。图中模型标为 GPT-5、Gemini、Qwen3.5-4b 等，本轮没有逐一核对具体版本。封面为论文图 2（原理图与斜率检验，由 SVG 栅格化）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261025d-masuser.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025d-masuser.jpg",
+      "imageAlt": "论文图 2 两幅散点：(a) 横轴单智能体通过率，纵轴多智能体减单智能体的增益，45% 竖虚线左侧标 principle: gain、右侧 principle: loss，几乎所有点在 0 以下；(b) 横轴能力指数，拟合斜率 −0.41 [−1.51, +0.68] 的下降直线与置信带",
+      "tags": [
+        "智能体",
+        "多智能体",
+        "AI成本",
+        "论文"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 78,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 16,
+          "画面": 9,
+          "来源": 14,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 82.4,
+        "threshold": 65,
+        "run": "2026-10-25-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.28577",
+      "title": "让 AI 智能体「忘掉」一部分旧记忆，反而更准还更便宜？清华「缓存工程」：不改对话、直接从 KV 缓存里丢掉旧的工具结果，平均分 +1.7、成本 −27.7%",
+      "category": "AI",
+      "source": "arXiv:2610.28577《Cache Engineering for Agents》（Tianyu Fu 等，清华大学，另一位作者来自香港中文大学；通讯作者汪玉；2026-10-20 提交）；代码 github.com/thu-nics/AKV；线索来自 @RaheelMali23426 10-25 11:33 UTC 的帖子",
+      "publishedAt": "2026-10-20",
+      "eventAt": "2026-10-20",
+      "collectedAt": "2026-10-25T12:52:00.000Z",
+      "updatedAt": "2026-10-25T12:52:00.000Z",
+      "description": "一手来源：arXiv 预印本（摘要与图 1）。问题：智能体任务越长，「KV 缓存」（模型为已读内容存下的中间结果）的读写和存储就成了主要成本，还可能超出上下文长度。现在常用「上下文工程」——裁掉或总结历史。但只要改了对话前面的部分，后面所有已缓存的状态都作废，保留下来的内容得重新算一遍（re-prefill），贵；为了少重算而少留内容，准确率又会掉。做法：「缓存工程」让智能体直接操作自己的 KV 缓存而不改对话本身——drop：把选中的缓存排除在之后的注意力之外；repos：调整保留下来的 key 的位置编码。论文图 1 用博物馆例子对比三种方式：全保留（无关的「咖啡馆营业时间、车票」也一直占着）、上下文工程（删掉前缀 → 后面的缓存不能复用，要重算）、缓存工程（只丢掉无关 KV，有用的直接复用，不重算）。新难题：同一串 token 可能因为操作历史不同而对应不同的缓存状态，所以按前缀匹配复用缓存不再可靠——为此配套做了 AKV 推理引擎，对外接口保持无状态、兼容现有 API。结果（摘要）：「滚动丢弃旧工具返回」这个策略比常规的「超阈值就总结」平均分高 1.7、平均成本低 27.7%；配合 AKV 输出吞吐最高 1.2 倍、P95 延迟快 1.5 倍；让智能体自己迭代改进缓存策略，又比专家设计再省 7.1%。可拍角度：1）AI 的「记忆」在硬件里到底是什么——KV 缓存，以及它为什么吃显存（可以接你半导体/存储的老本行）；2）「删笔记」和「翻页不看」的区别：为什么改前文代价大；3）忘掉无关的反而更准。开场：0 秒上图 1 三行对比，灰色方块被划掉、绿色方块保留。",
+      "caveat": "预印本，未经同行评审；+1.7 分、−27.7% 成本是对比「超阈值总结」这一种做法、在作者选的基准上的平均值。drop/repos 需要推理引擎配合（论文的 AKV），不是用闭源 API 就能直接开启的功能。致谢里提到无问芯穹（Infinigence-AI）的支持。本轮只读了摘要、图 1 和作者信息，没有读完实验细节。封面为论文图 1（由 SVG 栅格化）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261025d-cachekv.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025d-cachekv.jpg",
+      "imageAlt": "论文图 1：三行对比 Full-context、Context Engineering、Cache Engineering——消息、KV 操作和计算三栏；上下文工程删除前缀后「Cannot reuse KV」需重算，缓存工程「Drop irrelevant KV / Reuse KV / No cache recompute」",
+      "tags": [
+        "KV缓存",
+        "AI推理",
+        "AI成本",
+        "智能体",
+        "论文"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 76,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 12,
+          "画面": 9,
+          "来源": 14,
+          "时效": 10,
+          "大陆": 8,
+          "新颖": 3
+        },
+        "multiplier": 1.0566,
+        "finalScore": 80.3,
+        "threshold": 65,
+        "run": "2026-10-25-2040-shanghai"
+      }
+    },
     {
       "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
       "title": "一整片晶圆做成的芯片，装下一个大模型都不够？Cerebras 拆账：3 万亿参数的 Kimi K3 要切到 59 块整片晶圆上排成流水线，权重一动不动，只让中间结果在晶圆之间跑",
