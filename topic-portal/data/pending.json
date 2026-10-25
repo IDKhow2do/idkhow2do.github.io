@@ -4,6 +4,132 @@
     {
       "kind": "visual",
       "baseScore": 57,
+      "multiplier": 1.25,
+      "score": 57.0,
+      "reason": "本轮达待定区间（单维度乘数保护生效）",
+      "run": "2026-10-25-1640-shanghai",
+      "record": {
+        "title": "把大本钟的钟面一层层拆开，露出里面的齿轮组：一段 Three.js 剖面漫游（作者称用 GPT-6 Astra Max 生成）",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/synthesiscx/status/2114222696175456601",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025c-bigben.jpg",
+        "previewType": "image",
+        "description": "Synthesis（@synthesiscx）10-25 05:09 UTC 发帖：「INSIDE BIG BEN，在浏览器里用 Three.js 和原生 JS 做的，GPT-6 Astra Max」。36 秒录屏（目视 8 帧）：从钟楼外观开始，钟面像盒子一样向四面打开，露出中间铁框里的一组黄铜齿轮并转动，配大字幕「An icon opens.」「A hidden world in motion.」「Every part has its place.」「Time comes alive.」，最后合上回到「TIME, REVEALED.」。剖开—转动—合上的镜头节奏可以直接借鉴到你的结构科普。",
+        "tool": "Three.js + 原生 JS（作者称由 GPT-6 Astra Max 生成；无源码、无 prompt）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "原帖 https://x.com/synthesiscx/status/2114222696175456601 （抓取时 0 赞）。没有在线地址、源码、prompt 或许可证。画面里的齿轮组是示意性的，不是大本钟（威斯敏斯特宫大钟）真实机芯结构，不能当史实科普素材。封面为录屏第 13.5 秒截帧。",
+        "attribution": "Synthesis（@synthesiscx）",
+        "sourceAuthor": "synthesiscx",
+        "tags": [
+          "Three.js",
+          "剖面",
+          "结构可视化",
+          "钟表"
+        ],
+        "publishedAt": "2026-10-25T05:09:05.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-25T08:55:00.000Z",
+        "updatedAt": "2026-10-25T08:55:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-25T08:55:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 57,
+          "baseBreakdown": {
+            "实体": 18,
+            "科普": 12,
+            "溯源": 7,
+            "复现": 3,
+            "风格": 10,
+            "新颖": 7
+          },
+          "multiplier": 1.25,
+          "finalScore": 57.0,
+          "threshold": 65,
+          "run": "2026-10-25-1640-shanghai",
+          "multiplierGuard": "基础分<60且仅单一维度乘数>1，按规则不让乘数抬过阈值（按基础分判定）"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2114222379031461888/vid/avc1/1920x1080/nFwEN4Bvv8BXknFx.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 57,
+      "multiplier": 1.1,
+      "score": 62.7,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-25-1640-shanghai",
+      "record": {
+        "title": "安全带为什么猛拉会卡住、慢拉却不会？一段吉祥物 + 剖面的机制动画：卷轴、棘轮、「织带感应」和「车身感应」两个触发器",
+        "category": "motion",
+        "styleFamily": "other",
+        "source": "https://x.com/GameWorldLab/status/2114242418971148485",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025c-seatbelt.jpg",
+        "previewType": "image",
+        "description": "BrainSnacks（@GameWorldLab）10-25 06:27 UTC 发帖：「拉安全带时它为什么会锁住？紧急锁止卷收器会对织带快速抽出或车辆运动作出反应，由不同的触发器卡住卷轴。设计各不相同，这是简化的剖面图。」45 秒竖屏动画（目视 8 帧）：蓝色小机器人坐在粉色座椅上猛拉安全带 → 镜头推进到卷收器剖面：织带缠在卷轴上，黄色棘轮、紫色「webbing sensor」摆块被甩出卡住棘齿（字幕「locks the spool」）；再演示「vehicle-sensitive trigger」车身倾斜时摆锤触发；随后并排两个卷收器并标注「simplified: designs vary」「The exact mechanism varies between designs.」；最后机器人系好安全带。对你：「吉祥物 + 剖面 + 每步一个标签」的结构和你的小马 IP 很搭，可当日常物件机制科普的分镜参考。",
+        "tool": "未说明（二维矢量风格动画；制作方式与是否使用 AI 本轮未知）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "原帖 https://x.com/GameWorldLab/status/2114242418971148485 （抓取时 0 赞）。账号名 BrainSnacks，作者身份、制作工具、许可证都未知，只能当分镜/风格参考。作者自己声明是简化示意、各车型设计不同；机制细节本轮没有对照厂商资料核实。封面为动画第 17 秒截帧（卷轴、棘轮与织带感应摆块）。",
+        "attribution": "BrainSnacks（@GameWorldLab）",
+        "sourceAuthor": "GameWorldLab",
+        "tags": [
+          "机制动画",
+          "剖面",
+          "科普动画",
+          "吉祥物",
+          "生活物件"
+        ],
+        "publishedAt": "2026-10-25T06:27:28.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-25T08:55:00.000Z",
+        "updatedAt": "2026-10-25T08:55:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-25T08:55:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 57,
+          "baseBreakdown": {
+            "实体": 15,
+            "科普": 19,
+            "溯源": 6,
+            "复现": 2,
+            "风格": 7,
+            "新颖": 8
+          },
+          "multiplier": 1.1,
+          "finalScore": 62.7,
+          "threshold": 65,
+          "run": "2026-10-25-1640-shanghai"
+        },
+        "is3d": false,
+        "videoUrl": "https://video.twimg.com/amplify_video/2114241726789337088/vid/avc1/720x1280/sxaxM_pCAAvASHPx.mp4?tag=14",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 57,
       "multiplier": 1.3,
       "score": 57.0,
       "reason": "本轮达待定区间（单维度乘数保护生效）",
@@ -3067,6 +3193,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-25T04:47:00.000Z",
+  "updatedAt": "2026-10-25T08:55:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }

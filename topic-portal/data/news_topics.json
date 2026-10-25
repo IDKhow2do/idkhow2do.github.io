@@ -1,7 +1,126 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-25T04:47:00.000Z",
+  "updatedAt": "2026-10-25T08:55:00.000Z",
   "topics": [
+    {
+      "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+      "title": "一整片晶圆做成的芯片，装下一个大模型都不够？Cerebras 拆账：3 万亿参数的 Kimi K3 要切到 59 块整片晶圆上排成流水线，权重一动不动，只让中间结果在晶圆之间跑",
+      "category": "半导体",
+      "source": "Cerebras 官方博客《How we deploy Trillion-parameter frontier models on Cerebras》（作者 Sarah Chieng，博客列表日期 2026-10-22）；线索来自 @dsoch8c 10-25 05:12 UTC 的中文转述帖",
+      "publishedAt": "2026-10-22",
+      "eventAt": "2026-10-22",
+      "collectedAt": "2026-10-25T08:55:00.000Z",
+      "updatedAt": "2026-10-25T08:55:00.000Z",
+      "description": "一手来源：Cerebras 官方技术博客，用开源模型 Kimi K3（约 3 万亿参数，69 层线性注意力 + 24 层全注意力，共 93 层）做「示意算例」，讲他们怎么把超大模型放进晶圆级芯片。算账过程（博客原文与配图公式）：①单块 WSE-3T 晶圆有 44 GB 片上 SRAM；3 万亿参数按 4 bit 量化 ≈ 1.5 TB，除以 93 层 ≈ 每层 16 GB。②线性注意力层不存 KV 缓存（每个请求只留一个固定大小的状态），一块晶圆放 2 层：69 ÷ 2 向上取整 = 35 块；全注意力层要给 KV 缓存留地方，一块晶圆只放 1 层：24 块；合计 59 块晶圆。③晶圆之间用以太网 RDMA 只传激活值，博客称每跳约 2 微秒；大多数情况下权重不搬家、层也不用跨晶圆切分。④像流水线：晶圆 1 跑第 1–2 层再交给晶圆 2……为了不让每一站闲着，同时让不同请求在不同站上处理（还可以按微批次）。⑤并发上限由 KV 缓存决定：全注意力晶圆放完一层后剩 44−16 = 28 GB；按 256k 上下文、8 bit KV 缓存，每个序列每层约 147 MB，28 GB ÷ 147 MB ≈ 190 个并发请求。博客称这套方法能让多万亿参数模型跑到每秒 1000–2000+ token。机制钩子：GPU 是「权重放在显存、一遍遍搬进计算单元」，晶圆级芯片是「把整层权重钉在芯片上、让数据流过去」——瓶颈从「搬权重」变成「片上内存够不够放 KV 缓存」。可拍角度：1）一块晶圆 44 GB 为什么还嫌小——从 3 万亿 × 4 bit = 1.5 TB 一路除下去；2）线性注意力 vs 全注意力：为什么一种层能两层挤一块晶圆、另一种只能独占；3）流水线动画：59 块晶圆排成工厂产线，不同请求像不同工件同时在线上；4）对比 GPU：「搬权重」和「搬激活」的差别。开场：0 秒直接上博客配图「大模型 80 层 → 一排整片晶圆」。",
+      "caveat": "这是厂商自家博客，带营销属性；文中明说是「示意算例」（假设平均请求 256k、4 bit 权重、8 bit KV 缓存），生产环境用的是「更细粒度、更多的流水线级」，并非逐层一晶圆。1000–2000+ token/s 是官方说法，本轮没有看到第三方实测；博客也没有公布实际部署的并发数与吞吐，只给了 ≈190 并发的算例。59 块晶圆的功耗、成本、机柜规模博客没有给出。Kimi K3 的跑分对比是博客引用，不是本轮核实。转述帖里「北京时间 09:33 社区关注」等是转述者说法。封面为博客 og 图（大模型多层 → 多块晶圆示意）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261025c-cerebras.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025c-cerebras.jpg",
+      "imageAlt": "Cerebras 博客配图：上排一长串蓝色模型层（Layer 1…80），下排多块橙金色整片晶圆，示意大模型切分到多块晶圆",
+      "tags": [
+        "芯片制造",
+        "晶圆级芯片",
+        "AI推理",
+        "KV缓存",
+        "存储/内存",
+        "Kimi"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 17,
+          "画面": 13,
+          "来源": 13,
+          "时效": 10,
+          "大陆": 7,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 93.5,
+        "threshold": 65,
+        "run": "2026-10-25-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://github.com/Zagitta/gpu-unlock",
+      "title": "同一颗芯片，游戏卡的 AI 矩阵运算只给专业卡一半速度？开源项目 GPU Unlock 在驱动加载前改写两个寄存器，RTX 3090 Ti 的 BF16 矩阵运算从 87.5 跳到 157.4 TFLOPS",
+      "category": "半导体",
+      "source": "GitHub 仓库 Zagitta/gpu-unlock（README 与 issue 中的用户实测报告；仓库 2026-10-18 创建，10-24 仍在更新，约 4,088 star）；线索来自 @NFT_Chen 10-25 07:23 UTC 的中文梳理帖",
+      "publishedAt": "2026-10-18",
+      "eventAt": "2026-10-18",
+      "collectedAt": "2026-10-25T08:55:00.000Z",
+      "updatedAt": "2026-10-25T08:55:00.000Z",
+      "description": "一手来源：作者仓库 README。它说自己做的事是「把 Nvidia 30 系游戏卡的 FP16/BF16 指令发射速率解锁到对应专业卡的水平」。机制（README 原文）：一个 Linux 内核模块，结合了「CMP 解锁器的 V67/PLM 技术」和 UEFI 方案的「驱动加载前」时机——在原版 NVIDIA 驱动接管显卡之前写入速度选择寄存器（SS0 = 0x88888888，选择满速 BF16；4 bit 的 SS1 = 0x8）并做一次功能级重置（FLR）；不是 UEFI 程序，也不是改过的驱动，所以 NVIDIA 驱动更新后不用重新打补丁。效果：GA102/GA103/GA104/GA106 芯片上，「FP16/BF16 乘加、FP32 累加」的指令发射速度翻倍。作者附的 issue #1 数据（3090 Ti，450 W，8192³ 稠密矩阵乘，5 次取中位数）：FP16 87.46 → 118.39 TFLOPS，BF16 87.50 → 157.41 TFLOPS，TF32 42.58 → 82.61 TFLOPS。用户报告表：3090 Ti +68–80%，3090 +25–67%（最低的 +25% 来自限功耗 225 W 的卡），3080 +70–73%，3070 +73–81%，3060 12GB 约 +80%；一张 OEM 版 3080 Ti 解锁流程跑完但 BF16 仍是半速。README 说：大模型 prefill +14–36%、扩散模型和 FlashAttention 变快；受显存带宽限制的逐字输出（decode）和 INT8 基本不变；对比过输出的报告都是逐位一致。钩子：芯片行业的「产品分档」——同一种硅，靠固件/寄存器把游戏卡和专业卡的某些能力分开定价，你家的卡可能「被限速」的不是晶体管而是一个设置。可拍角度：1）为什么 decode 不变、prefill 变快——算力瓶颈 vs 带宽瓶颈一次讲清；2）同一颗芯片如何分档（熔丝、固件、寄存器，半导体人的视角）；3）为什么国内 AI 玩家那么爱二手 3090。开场：0 秒上「87.5 → 157.4」两根柱子。",
+      "caveat": "来源是个人开源项目和用户自报，不是 NVIDIA 官方；各报告的测法、功耗不同，README 自己说不能直接横比。仓库没有统一的 LICENSE 文件，README 写内核模块为 GPL-2.0-only、生成的固件载荷源自 CMP 参考、NVIDIA 固件仍受其自身条款约束。转述帖里「利用启动固件缓冲区溢出漏洞、调试版固件用公开测试密钥」「40 系衍生版、4090 跑分翻倍」「闲鱼涨价」等说法 README 里没有，本轮未核实，不采用。本轮未见 NVIDIA 公开回应。改动固件/寄存器有风险、无官方保障，也可能违反厂商条款——做视频建议只讲原理（产品分档、算力 vs 带宽），不演示操作、不鼓励观众改卡。封面为 GitHub 仓库 og 卡片（作品本身没有官方图）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261025c-gpuunlock.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025c-gpuunlock.jpg",
+      "imageAlt": "GitHub 仓库卡片：Zagitta/gpu-unlock，Unlock FP/BF16 instruction issue rate on Nvidia 3000's cards to their professional equivalents，4 位贡献者、59 个 issue、4k star、454 fork",
+      "tags": [
+        "芯片制造",
+        "AI算力",
+        "GPU",
+        "产品分档",
+        "开源",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "主线": 21,
+          "钩子": 19,
+          "画面": 8,
+          "来源": 12,
+          "时效": 10,
+          "大陆": 9,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 90.2,
+        "threshold": 65,
+        "run": "2026-10-25-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.26781",
+      "title": "没有老板、没有调度员，1024 个 AI 智能体自己认领任务，会乱成一锅粥吗？微软亚洲研究院 Agensh：从 1 个加到 1024 个，从零写 pandoc 的测试通过率从 34% 升到 55%，分工和流程是自己「长」出来的",
+      "category": "AI",
+      "source": "arXiv:2609.26781《Agensh: Scaling Organizational Intelligence to 1,024 Agents》（Zhi-Hao Zhan、Ting Song、Li Dong、Shao-Han Huang、Jian-Xun Lian、Yan Xia、Furu Wei，微软亚洲研究院；2026-09-22 提交）；代码 github.com/microsoft/Agensh（MIT，10-23 仍在更新）；线索来自 @supazdong 10-25 06:22 UTC 的中文帖",
+      "publishedAt": "2026-09-22",
+      "eventAt": "2026-09-22",
+      "collectedAt": "2026-10-25T08:55:00.000Z",
+      "updatedAt": "2026-10-25T08:55:00.000Z",
+      "description": "问题：现在的多智能体框架大多有一个「中央调度员」负责派活，调度员的能力就成了规模上限。做法（论文摘要与第 2 节）：去掉调度员，每个 worker 都跑同一个循环——收集上下文、自己认领子任务、动手、分享发现、验证结果、合并进度，全部异步；靠三样「组织基础设施」协调：共享工作区（用 Git 平台管理，各自在私有分支干活再合并，冲突暴露出来让 worker 回退解决）、消息接口（全员公告和点对点紧急沟通）、共享上下文（可复用的发现、「这块我认领了」、失败尝试）。实验：ProgramBench 里最难的 5 个任务（在不联网、6 小时预算内从零复刻有上千文件的真实软件），模型 GPT-5.6-sol（high），底层单智能体 harness 用 Copilot。结果：1 → 128 个智能体，5 个任务平均最终测试通过率 19.31% → 28.78%（相对提升约 49%），组织越大越早达到同样的通过率；在 pandoc 上 1 → 1,024 个：33.89% → 55.06%（论文图 1 的中间点：8 个 41.75%、32 个 43.11%、128 个 50.94%）。最有意思的是第 3.2 节「自组织合作随规模涌现」：8 个时只是和同伴协调实现；32 个时出现跨多个 worker 的集成管理；128 个时出现自发的专门化和流程标准化（有 worker 同意把「更新—测试—检查—合并」整套流程交给同伴做）；1,024 个时出现组织级的角色分化——比如 pandoc 里有多个 worker 当「集成员」，别人会同时联系几个候选集成员、选第一个有效回应的、取消其他请求再交代码。对你：这正是「涌现」视频里「简单规则 → 复杂组织」的 AI 版本，可以和鸟群、以及上一轮的「AI 羊群效应」放在一起：同样是一群智能体互相影响，有时长出踩踏，有时长出分工。可拍角度：1）没有老板的公司能不能运转；2）智能体数量是不是新的 scaling 维度；3）1024 个代理怎么避免抢同一块活（认领 + Git 合并冲突）。开场：0 秒上论文图 1——通过率折线一路往上，右边四级台阶「同伴协调 → 多人集成 → 流程标准化 → 角色专门化」。",
+      "caveat": "论文 9 月 22 日提交，不是本周新闻（10-25 才在中文圈传播，库内此前没有），按常青机制题处理。测的是代码复刻任务，评估指标是测试通过率；正文本轮没有看到 token 用量、费用或算力对比——1,024 个 GPT-5.6-sol 代理跑 6 小时的成本论文没交代，「加人」显然不是免费的。1,024 个智能体只在 pandoc 一个任务上做了；128 个时是 5 个任务平均。「涌现」的合作形式来自论文对 worker 轨迹的定性描述，不是量化指标。arXiv 预印本，未经同行评审。封面为论文图 1（1 到 1,024 个智能体的 pandoc 通过率折线与涌现合作形式）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261025c-agensh.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025c-agensh.jpg",
+      "imageAlt": "论文图 1：横轴智能体数量（1、8、32、128、1,024，对数刻度），纵轴通过率 33.89%→41.75%→43.11%→50.94%→55.06%，右侧四级台阶标注 Peer coordination、Multi-worker integration、Standardized workflows、Specialized roles",
+      "tags": [
+        "智能体",
+        "多智能体",
+        "涌现",
+        "论文",
+        "AI编程"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 13,
+          "来源": 15,
+          "时效": 6,
+          "大陆": 7,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 88.8,
+        "threshold": 65,
+        "run": "2026-10-25-1640-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2610.30769",
       "title": "让一群 AI 智能体互相看「点赞数」再推荐，结果比人类更爱跟风、还停不下来？康奈尔复刻经典 Music Lab 实验：16.8 万个 AI 智能体，从众偏离程度约为人类的 4–9 倍，而且几乎不会自我纠偏",
