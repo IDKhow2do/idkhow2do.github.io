@@ -1,8 +1,356 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 371,
+  "exportedCount": 377,
   "items": [
+    {
+      "title": "把台积电 CoWoS 封装从第 1 步「TSV 刻蚀」开始一步步搭出来的 3D 网页：Advanced Packaging Atlas 从 296 篇封装论文里抽出 4,750 个工艺步骤，每个数字都带出处页码",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/jwt0625/status/2114023264322547824",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025a-apa.jpg",
+      "previewType": "image",
+      "description": "作者 outside five sigma（@jwt0625，简介：机器人、光子学、射频/微波、微纳加工）10-24 15:56 UTC 发帖「the auto views look better..」，附 45 秒录屏，链接到 Advanced Packaging Atlas 的 3D「Process」视图（cowos_s_composite）。录屏（目视）：左侧是当前工序卡片与温度曲线，中间 3D 视图随工序推进——硅中介层里刻出竖直 TSV、填铜、多层布线、微凸点、芯片贴装、底部填充、塑封、晶圆减薄等，镜头自动切到晶圆级视图（圆形晶圆进模具、压合）和局部剖面；右侧是工艺步骤表，第 1 步「TSV etch from the front side」，往下依次为衬垫氧化层、阻挡层/种子层、电镀铜填孔、CMP 去铜、正面互连、微凸点、减薄、切割、贴片、底填、塑封、临时键合玻璃载板、背面减薄、C4 凸点、激光解键合、切单、组装到有机基板。该流程卡片写明是「TSMC 2013 骨架 + DB 模块」的组合：10×100 µm TSV、3 层铜大马士革 + 铝 RDL、40 µm 微凸点、SnPb C4 等。仓库 README：这是一个可追溯的先进封装文献数据库与抽取流程，覆盖 2.5D 硅中介层、扇出/面板级、硅桥、混合键合、微凸点 3D 堆叠、玻璃基板、CPO 等；从 ECTC、IEDM、VLSI 等会议 2022–2026 文献中筛选约 300 篇，逐篇抽取叠层、尺寸、材料、互连间距、工艺步骤，每个值都带 basis（实测/设计目标/仿真/推导…）、source 和页码/图号定位，「空着就是原文没报，不做任何估计」。线上 atlas.json（2026-10-22 生成）统计：296 篇论文、952 个测试载体、4,750 个工艺步骤、588 条工艺流程、7,521 条指标，共 20,204 行。网页用 SvelteKit + Three.js，3D 视图有「Actual / Illustrative」比例切换、X 光透视、剖切面、爆炸视图。对你：刻蚀出身讲封装，这是现成的「从刻 TSV 到上基板」全流程 3D 镜头，而且每一步都能点回原论文，正好符合「事实先于标题」。",
+      "tool": "SvelteKit 静态站 + Three.js（3D 视图）；数据管线 Python（IEEE Xplore/Crossref/OpenAlex 抓取、LLM 打分与抽取，仓库含 .claude/skills/packaging-distill 技能）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "线上站 https://outside5sigma.com/advanced-packaging-atlas/ ；仓库 https://github.com/jwt625/advanced-packaging-atlas （GPL-3.0，2026-10-18 创建，抓取时 3 star）。X 原帖抓取时 7 赞。论文原图因版权只存在作者本地，不公开。3D 几何是按抽取参数生成的示意，录屏里有 Actual/Illustrative 两种比例；「TSMC 2013 骨架 + DB 模块」是作者拼合的组合流程，不代表台积电某一代真实量产流程。本轮未逐条核对抽取数据。同作者另一条（互连间距预告片）在待定区，本条是不同作品。封面为录屏第 40 秒截帧（CoWoS-S 剖面 + 工艺步骤表）。",
+      "attribution": "outside five sigma（@jwt0625）· Advanced Packaging Atlas",
+      "sourceAuthor": "jwt0625",
+      "tags": [
+        "先进封装",
+        "CoWoS",
+        "TSV",
+        "Three.js",
+        "剖面",
+        "工艺流程",
+        "结构可视化"
+      ],
+      "publishedAt": "2026-10-24T15:56:37.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-25T00:53:00.000Z",
+      "updatedAt": "2026-10-25T00:53:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-25T00:53:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 89,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 19,
+          "溯源": 18,
+          "复现": 14,
+          "风格": 9,
+          "新颖": 9
+        },
+        "multiplier": 1.25,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-25-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114022506059497472/vid/avc1/3488x1888/pVyZeauYvIkw9jpZ.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/jwt625/advanced-packaging-atlas",
+      "licenseName": "GPL-3.0",
+      "licenseUrl": "https://github.com/jwt625/advanced-packaging-atlas/blob/main/LICENSE"
+    },
+    {
+      "title": "生命游戏里最难造的，是一艘「斜着飞」的飞船：Conway 规则下要 84 万个格子才做到 (5,1) 方向，一位日本研究者让两三套规则轮流上场，几十个格子就能斜着飞，还找到一批可能从没被报道过的角度",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/KZ_LAB_E/status/2113998194505924628",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025a-oblique.jpg",
+      "previewType": "image",
+      "description": "Kazu（@KZ_LAB_E，谷本和宏 Kazuhiro Tanimoto，简介为生成式视听创作者、工学博士）10-24 14:17 UTC 发帖：生命游戏里有 45° 走的滑翔机、横竖走的飞船，往其他角度走的叫「斜向飞船（oblique spaceship）」；他扩展了「规则切换元胞自动机」，发现了大量新的斜向飞船，方向从接近水平到接近 45°。25 秒视频（目视）：先演示 (8,1)c/14（每 14 代横移 8 格、上移 1 格）→「切换规则，打开新运动」：规则 A/B/C 按 A→B→A→B→C→B 循环 → 九宫格展示 (20,19)、(4,3)、(5,3)、(7,3)、(7,2)、(8,1)、(10,1)、(18,1)、(26,1) 等，注明「在已检索的 range-1 Moore 外总和型 CA 文献中可能未被报道」→ 多艘飞船从中心向不同角度散开。研究笔记（2026-09-24 发布、10-12 补充）：生命游戏里第一艘斜向飞船 Gemini 由 Andrew J. Wade 构造，用了 846,278 个格子，速度写作 (5120,1024)c/33699586；而用 2–4 条规则交替、多状态、周期性规则序列，他得到了很小、周期很短的斜向飞船，例如 (3,2)c/6 只需 18 个格子；部分规则下飞船能从随机初始状态里自发涌现出来。GitHub 仓库 10-21 快照含 4,802 条记录（含规则、序列、初始结构），每条都能在浏览器里直接运行演示。涌现视频可用：同样是「简单局部规则 → 整体运动」，但这里展示的是「规则本身随时间切换」能让本来要几十万格子才能实现的运动变得很简单——可以接你想讲的「简单关系为什么能长出看似聪明的行为」。",
+      "tool": "原生 JavaScript 浏览器演示（无构建、无外部依赖）+ Python 规则规范化脚本 rule_sequence_canonical.py（仓库 README）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "研究笔记 https://kazuhirotanimoto.com/research/rule_switching_ca/oblique_spaceships.html ；在线列表与演示 https://kazuhirotanimoto.github.io/oblique-spaceships-in-rule-sequence-ca/ ；仓库 2026-10-12 创建。许可证：实现代码 CC0 1.0，说明文字、图示与研究数据 CC BY 4.0（使用需署名 Kazuhiro Tanimoto）。「可能未被报道」是作者在其检索范围内的判断，作者也写明报告日期不代表对所有既有文献的优先权声明；4,802 条记录里有大量相关变体，不等于 4,802 种不同速度。X 原帖抓取时 13 赞。这不是 AI 生成作品。封面为视频第 13 秒截帧（九种新斜向飞船）。",
+      "attribution": "Kazuhiro Tanimoto（@KZ_LAB_E）",
+      "sourceAuthor": "KZ_LAB_E",
+      "tags": [
+        "涌现",
+        "元胞自动机",
+        "生命游戏",
+        "程序化生成",
+        "科普可视化"
+      ],
+      "publishedAt": "2026-10-24T14:17:00.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-25T00:53:00.000Z",
+      "updatedAt": "2026-10-25T00:53:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-25T00:53:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "实体": 12,
+          "科普": 19,
+          "溯源": 19,
+          "复现": 15,
+          "风格": 8,
+          "新颖": 9
+        },
+        "multiplier": 1.0618,
+        "finalScore": 87.1,
+        "threshold": 65,
+        "run": "2026-10-25-0840-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113997826992857088/vid/avc1/1080x1080/3Y0owwYSDYyl0PNV.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/KazuhiroTanimoto/oblique-spaceships-in-rule-sequence-ca",
+      "licenseName": "代码 CC0 1.0；说明文字与数据 CC BY 4.0",
+      "licenseUrl": "https://github.com/KazuhiroTanimoto/oblique-spaceships-in-rule-sequence-ca/blob/main/LICENSE"
+    },
+    {
+      "title": "最强的编程 AI 搭乐高，三成以上的作品在现实里搭不起来：积木互相穿模、悬空、散架。CMU 和斯坦福给智能体配了一个「物理质检员」，512 个提示全部变成能真拼的结构",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://avalovelace1.github.io/brickwright/",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025a-brickwright.jpg",
+      "previewType": "image",
+      "description": "论文 arXiv:2610.31651《BrickWright: Agentic Creation of Physically Feasible Brick Builds》（Ava Pun、Kevin Dai、Sally Chen、Maxwell Jones、Ruixuan Liu、Kangle Deng、Changliu Liu、Maneesh Agrawala、Deva Ramanan、Jun-Yan Zhu；卡内基梅隆大学、斯坦福大学；2026-10-22 提交，CC BY 4.0）。问题：前沿编程智能体越来越会做 3D 建模，但要做「现实中能拼装」的东西时，常出现悬空、互相碰撞或不连通的零件。方法：给智能体一个 Python 工具包 BrickLayer——好用的积木拼装 API（比直接写 LDraw 推理成本减半）+ 物理可行性校验器，智能体按「规划—写代码—编译测试—看结果修改」循环工作；「物理可行」定义为只用真实零件、无碰撞、无悬空、尽量连成一体。结果（摘要原文）：基线智能体的物理有效率从 9%（GPT-6 Luna）到 69%（GPT-6 Astra）不等，用 BrickWright 后在 512 个提示上全部 100% 有效，轻量智能体的贴题度也提高，并在文本生成积木任务上胜过专用模型。论文首图（目视）：左边是「灯塔被海蛇围攻」的拼装过程与四项检查打勾，下方有图像条件输入、可动的螃蟹、15,067 个零件的「香港维多利亚港」；右边同一提示「白黑配色带蓝色座舱的飞船」，GPT-6 Astra / GPT-6.1 Sol / GPT-6 Luna / Claude Haiku 5.5 直接做的版本都标红「Colliding」（红框标出穿模处），加 BrickWright 后全部标绿「Valid」。项目页有可拖动旋转的 3D 模型、可开「显示穿模」，并可下载 LDraw 文件。对你：「AI 会画 3D ≠ 造得出来」是很好的反直觉钩子；校验器反馈让结果从「看着像」变成「物理上成立」，和你做工艺仿真时「要过 DRC/物理约束」是同一件事，也可接涌现视频里「建模能力怎么来的」。",
+      "tool": "BrickLayer（Python SDK：积木拼装 API + 物理校验）；任意智能体后端（论文测试 Codex / Claude Code 等）；LDraw 格式",
+      "prompt": "A lighthouse besieged by a sea serpent.（项目页示例提示）",
+      "promptProvenance": "original_public",
+      "provenanceNote": "项目页 https://avalovelace1.github.io/brickwright/ ；论文 https://arxiv.org/abs/2610.31651 （CC BY 4.0）；代码 https://github.com/AvaLovelace1/brickwright （本轮 GitHub API 限流，代码仓库许可证未核实）。注意：摘要写 GPT-6 Luna 基线 9%，项目页写「从 7% 到 100%」，两处数字不一致，引用以论文摘要为准并注明。「100%」是在 512 个提示的样本上。LEGO® 为注册商标，研究与乐高公司无关联（论文未声明合作）。封面为论文 Figure 1（BrickWright 概览）。",
+      "attribution": "Ava Pun 等（CMU / Stanford）· BrickWright",
+      "sourceAuthor": "AvaLovelace1",
+      "tags": [
+        "3D建模",
+        "智能体",
+        "物理约束",
+        "乐高",
+        "论文",
+        "代码生成3D"
+      ],
+      "publishedAt": "2026-10-22T00:00:00.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-25T00:53:00.000Z",
+      "updatedAt": "2026-10-25T00:53:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-25T00:53:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 80,
+        "baseBreakdown": {
+          "实体": 19,
+          "科普": 15,
+          "溯源": 17,
+          "复现": 13,
+          "风格": 7,
+          "新颖": 9
+        },
+        "multiplier": 1.0,
+        "finalScore": 80.0,
+        "threshold": 65,
+        "run": "2026-10-25-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/AvaLovelace1/brickwright"
+    },
+    {
+      "title": "一台大疆 Air 3S 无人机被「拆」成 9 个模块悬在半空：机身、云台、电池、电机、桨叶全部是 Three.js 几何体现场拼出来的，不加载任何 3D 模型和图片",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://github.com/fanfan666878/dji-air-3s-structure-explorer",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025a-dji.jpg",
+      "previewType": "image",
+      "description": "仓库 fanfan666878/dji-air-3s-structure-explorer（MIT，GitHub API 显示 2026-10-24 10:14 UTC 创建，抓取时 2 star）README：「一个完全由代码生成的 DJI Air 3S 三维拆解可视化页面」，机身、云台、镜头、机臂、电机、桨叶、电池与起落架均由 Three.js 几何体在运行时构建，不加载外部 3D 模型或图片；单文件，双击 index.html 即可打开。交互：拖拽环绕、点击部件单独拆解（其余结构自动弱化）、「全部拆解」按顺序展开 9 个模块、自动导览逐一聚焦、左侧部件清单、右侧参数面板（介绍、材料、结构、参数）。9 个模块：一体化机身、双摄云台（1 英寸广角 + 70 mm 中长焦）、视觉感知阵列（全向视觉 + 前向 LiDAR）、智能飞行电池、前/后机臂、无刷电机、降噪螺旋桨、起落减震组件。技术：Three.js r180 + PBR 材质 + IBL、自定义超椭圆放样做流线机身、RoundedBox/Extrude/Cylinder/Torus 组合、UnrealBloom 泛光、Raycaster 拾取、DOM 标注跟随。预览图（目视）：深色 HUD 界面，无人机各部件沿爆炸轴分开悬浮，部件旁有中文标签，左侧「部件清单」、右侧「AIR 3S 拆解总览」。对你：消费电子拆解是生活线的高频题，这个页面可以直接改成「为什么这台无人机能这么轻」之类的镜头底子；也是国内开发者用纯代码做产品剖面的同类参照。",
+      "tool": "Three.js r180（WebGLRenderer、PBR、RoomEnvironment、EffectComposer + UnrealBloomPass）；纯 HTML/CSS/JS 单文件",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "仓库 https://github.com/fanfan666878/dji-air-3s-structure-explorer （MIT）。作者没有说明是否用 AI 编程代理制作；外形是程序化近似建模，不是大疆官方 CAD，面板上的重量、续航等参数为作者写入，本轮未与大疆官方规格逐项核对；DJI/大疆为商标，项目与大疆无关联（README 未声明）。仓库创建不到一天、关注度很低。封面为仓库 preview-exploded.png（拆解总览）。",
+      "attribution": "fanfan666878（GitHub）",
+      "sourceAuthor": "fanfan666878",
+      "tags": [
+        "Three.js",
+        "爆炸视图",
+        "拆解",
+        "程序化生成",
+        "消费电子",
+        "结构可视化"
+      ],
+      "publishedAt": "2026-10-24T10:14:35.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-25T00:53:00.000Z",
+      "updatedAt": "2026-10-25T00:53:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-25T00:53:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 73,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 15,
+          "溯源": 12,
+          "复现": 14,
+          "风格": 9,
+          "新颖": 5
+        },
+        "multiplier": 1.2,
+        "finalScore": 87.6,
+        "threshold": 65,
+        "run": "2026-10-25-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/fanfan666878/dji-air-3s-structure-explorer",
+      "licenseName": "MIT",
+      "licenseUrl": "https://github.com/fanfan666878/dji-air-3s-structure-explorer"
+    },
+    {
+      "title": "同一张图交给 11 个 AI 建模工具，出来 11 只不一样的机械螃蟹：Scenario 把 1,342 组 AI 生成 3D 资产连同输入图、提示词和参数一起开源（CC BY 4.0，约 39 GB）",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/emmanuel_2m/status/2113990638748241966",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025a-scenario.jpg",
+      "previewType": "image",
+      "description": "Scenario 联合创始人 Emm（@emmanuel_2m）10-24 13:46 UTC 发帖：开源 1,300 多个 3D 模型，39 GB 全部可在 Hugging Face 免费下载；由 Hitem3D、Meshy、Rodin、Tripo、Claude Opus 5.5 3D、GPT-6 Astra 3D 等生成（都跑在 Scenario 平台上），附带生成用的输入图、提示词和设置；GLB 贴图最高 8K，Opus 和 Astra 的产物带原生 Blender 文件；CC BY 4.0。数据集卡片（scenario-labs/3d-collection，2026-10-19 创建）核对：1,342 个精选样例、1,500 个输出文件，约 39 GB；格式 1,271 GLB、137 Blender、41 SPZ、23 PLY、21 VOX、7 FBX；137 个 Blender 文件在禁用自动执行下都能加载，1 个场景缺 2 张贴图；卡片自己注明「这些检查不保证渲染或动画质量」；另有 393 个腾讯混元模型生成的样例单独发布、需申请访问。28 秒视频（目视）：「384 free 3D models」→ 缩略图墙 →「One image. 11 models.」同一张机械螃蟹输入图，分别由 Claude Opus 5.5 3D、GPT-6 Astra 3D、Rodin Gen-2.5、Tripo v3.1、Meshy Smart Topology、Pixal3D、Sparc3D、ReconViaGen 0.5、Tripo P1、Rodin Gen-2.5 Fast、PartCrafter 生成的结果并排 → Hitem3D 3.0 的机甲、角色、狮鹫（标注三角面数与 CC BY 4.0）→「1,342 free 3D models」。对你：同图多模型对比是现成的「AI 建模到底差在哪」画面素材（拓扑、贴图、细节），带提示词和参数可复查；做 3D 建模类视频可直接取用（注意署名）。",
+      "tool": "Scenario 平台上的多家 3D 生成模型（Hitem3D、Meshy、Rodin、Tripo、Claude Opus 5.5 3D、GPT-6 Astra 3D 等）；元数据为 parquet，可用 datasets / huggingface_hub 下载",
+      "prompt": "",
+      "promptProvenance": "original_public",
+      "provenanceNote": "数据集 https://huggingface.co/datasets/scenario-labs/3d-collection （CC BY 4.0，需署名「Scenario」，全部为 AI 生成资产）；X 原帖抓取时 435 赞、489 收藏。每个样例的提示词与设置在 parquet 元数据里（promptProvenance 记为 original_public 指数据集内公开），本条未摘录具体提示词。视频开头的「384」与结尾「1,342」口径不同（视频未解释，可能是不同子集），引用以数据集卡片为准。各家模型优劣是视频展示，不是评测。同作者此前「开源 Blender 3D 团队」条目已在库，本条为不同发布。封面为视频第 9.5 秒截帧（一张图 11 个模型）。",
+      "attribution": "Scenario（@emmanuel_2m）",
+      "sourceAuthor": "emmanuel_2m",
+      "tags": [
+        "3D建模",
+        "数据集",
+        "Blender",
+        "Tripo",
+        "AI生成3D",
+        "模型对比"
+      ],
+      "publishedAt": "2026-10-24T13:46:58.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-25T00:53:00.000Z",
+      "updatedAt": "2026-10-25T00:53:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-25T00:53:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 70,
+        "baseBreakdown": {
+          "实体": 16,
+          "科普": 8,
+          "溯源": 18,
+          "复现": 14,
+          "风格": 8,
+          "新颖": 6
+        },
+        "multiplier": 1.038,
+        "finalScore": 72.7,
+        "threshold": 65,
+        "run": "2026-10-25-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113990280655302656/vid/avc1/1920x1080/ro1AXYZ46-27igDi.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://huggingface.co/datasets/scenario-labs/3d-collection",
+      "licenseName": "CC BY 4.0（署名 Scenario）",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "title": "零建模基础、三天，用 Claude Code 写代码驱动 Blender 做了一条洛阳「十三朝」3D 纪录片：5.5 万栋楼、代码「挖」出 2,400 个龙门窟龛、用流体烧起来的永宁寺塔（作者自述）",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/SENGGEAIGC/status/2114028312960127060",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025a-luoyang.jpg",
+      "previewType": "image",
+      "description": "僧哥AI（@SENGGEAIGC）10-24 16:16 UTC 发帖：三天、零建模基础，用 Claude Code 写代码驱动 Blender，做了洛阳十三朝的 3D 纪录片；「5.5 万栋真实楼房、对着照片磨的古建、代码挖出的 2400 个龙门窟龛、真流体烧起来的永宁寺塔」；「我只说『这里有塑料感』，它自己查、自己改」。2 分 35 秒视频（9 帧目视，中英双语字幕）：开场暗场里一件青铜尊，字幕讲其上铭有「宅兹中国」→ 周平王东迁洛邑的车马雕塑 → 东汉白马寺（字幕：佛教传入中国后的第一座官办寺院，被称为「释源」）→ 北魏永宁寺九层木塔 → 伊河两岸山崖上密布窟龛的龙门石窟 →「洛水贯都」的隋唐城市鸟瞰 → 应天门等城楼 → 现代洛阳城鸟瞰与洛河。风格：低多边形偏写实、天光明亮、航拍式推拉，与真实城市路网结合。对你：这是「中文历史/地理科普 + 代码驱动 Blender」的完整成片参照，长度、字幕密度、镜头顺序都可借鉴；「一句『有塑料感』让它自己改」也是 Claude 做视频工作流的真实使用感。",
+      "tool": "Claude Code + Blender（作者自述；未说明模型版本、是否用 MCP、渲染引擎与城市数据来源）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖 https://x.com/SENGGEAIGC/status/2114028312960127060 （抓取时 0 赞、约 18 次曝光；账号 0 关注者，简介自称 MiniMax 平台创作者）。5.5 万栋、2,400 个窟龛、「三天」「零建模基础」均为作者自述，无工程文件、代码或许可证，只能外链引用学习；视频中的历史叙述（如「宅兹中国」铭文、白马寺「释源」）是作者字幕，本轮未逐条核对史实，二次使用前需核实。封面为视频第 70 秒截帧（龙门石窟崖壁）。",
+      "attribution": "僧哥AI（@SENGGEAIGC）",
+      "sourceAuthor": "SENGGEAIGC",
+      "tags": [
+        "Claude Code",
+        "Blender",
+        "3D纪录片",
+        "历史科普",
+        "代码视频"
+      ],
+      "publishedAt": "2026-10-24T16:16:41.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-25T00:53:00.000Z",
+      "updatedAt": "2026-10-25T00:53:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-25T00:53:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 64,
+        "baseBreakdown": {
+          "实体": 17,
+          "科普": 19,
+          "溯源": 6,
+          "复现": 4,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.0315,
+        "finalScore": 66.0,
+        "threshold": 65,
+        "run": "2026-10-25-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114027936991100928/vid/avc1/1280x720/rQDTspYYDvlDa9Sm.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "给 Claude Code / Codex 装一个「3D 科普导演」：3Dviz Pro Max 带 223 个配方、37 个能直接跑的 Three.js 小研究（心脏剖面、膝关节分层、机构、数学），还逼智能体先截图看自己画出来的东西",
       "category": "3d",
@@ -17956,8 +18304,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条",
-  "updatedAt": "2026-10-24T12:54:00.000Z",
-  "totalItems": 371,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条",
+  "updatedAt": "2026-10-25T00:53:00.000Z",
+  "totalItems": 377,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
