@@ -1,8 +1,67 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 377,
+  "exportedCount": 378,
   "items": [
+    {
+      "title": "用 iPhone 激光雷达把整间办公室扫一遍，再让 AI 编程代理把每件东西一样一样用 Three.js「重建」出来，边建边拿同一机位的照片对比修改：Wes Bos 开源 3D Model Anything",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/wesbos/status/2113249938125553867",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025b-3dma.jpg",
+      "previewType": "image",
+      "description": "Wes Bos（@wesbos，前端开发者、教程作者）10-22 12:43 UTC 发帖：「我发现了从大模型拿到 3D 建模结果的最好办法」——App 用激光雷达扫房间，同时拍几百张高质量照片；再用他写的工作流 + skill 让智能体把每件物品一件件建模，并在完全相同的机位上把渲染图和照片反复比对、不断调整。14 秒视频（目视）：开头是整间办公室的「玩具屋」视角（升降桌、双屏、柔光箱、书架、门后挂满线材的线轴架）→ 物件逐个飞散成悬浮的零件（椅子、柔光罩、桌腿、线缆）→ 最后所有物品像「knolling」一样平铺排列在地上。仓库 wesbos/3d-model-anything（GitHub API 显示 2026-10-21 创建，抓取时约 1,719 star）README：包含 iPhone 采集 App、Three.js 浏览器查看器、scan-to-threejs 智能体技能和他办公室的完整示例；查看器有玩具屋、行走、俯视、线框、平铺（knolling）几种视图，在线地址 wesbos.github.io/3d-model-anything。README 明确写：这是「迭代重建工作流」，不是一键扫描出完美模型；目前专注房间和室内；需要带激光雷达的 iPhone/iPad；照片比对需要 Pillow，可选的深度重建用 NumPy + Open3D；原始扫描和照片不公开。Wes 在回复里说：测量来自激光雷达 + 苹果 RoomPlan 类的房间 API；对齐「主要靠眼睛」，有时一次就准，有时要催它再多改几轮；他量过房间宽度和桌子等大件，都在 1 英寸以内（作者自述）；完整讲解是 YouTube 上约 8 分钟的视频。对你：这正好是你想做的「把房间 3D 建模，再换装修风格对比」的前半段——和库里 Image-Blaster（一张图出场景）是两条路线：这条用真实测量 + 照片校验，尺寸更可信，建出来的是可编辑的 Three.js 场景，换风格只要改材质；「炸开再平铺」的镜头本身也是很好的开场画面。",
+      "tool": "3D Model Anything iPhone App（LiDAR + 照片采集，Xcode 构建，尚未上架 App Store）+ scan-to-threejs 智能体技能 + Three.js 查看器（Node.js 22.12+）；Python 辅助脚本（Pillow，可选 NumPy/Open3D）",
+      "prompt": "Use scan-to-threejs to rebuild the room in data/captures-in/my-room. Inspect the measurements and photos, create an editable scene, and compare rendered views with the original photographs.（README 示例请求）",
+      "promptProvenance": "original_public",
+      "provenanceNote": "原帖 https://x.com/wesbos/status/2113249938125553867 （抓取时 3,951 赞）；仓库 https://github.com/wesbos/3d-model-anything ；在线查看器 https://wesbos.github.io/3d-model-anything/ ；讲解视频 https://www.youtube.com/watch?v=JGQCcCzuS88 （本轮未观看）。许可证：可复用代码和 skill 为 MIT；示例办公室的图片/贴图和 README 缩略图不在 MIT 范围内（见 ASSETS-LICENSE.md），画面中的第三方商标和产品也不受代码许可覆盖。「1 英寸以内」是作者在回复里的自述，没有公开误差数据；原帖说是「最好的办法」属作者个人评价。原帖 10-22 发布，早于本轮窗口，本轮由 10-25 的中文转述帖（@weiwei2018831）发现，库内和 seen 此前都没有。封面为原帖视频第 0.8 秒截帧（办公室玩具屋视角）。",
+      "attribution": "Wes Bos（@wesbos）· 3D Model Anything",
+      "sourceAuthor": "wesbos",
+      "tags": [
+        "3D建模",
+        "Three.js",
+        "激光雷达",
+        "房间重建",
+        "Claude Code",
+        "结构可视化"
+      ],
+      "publishedAt": "2026-10-22T12:43:42.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-25T04:47:00.000Z",
+      "updatedAt": "2026-10-25T04:47:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-25T04:47:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 15,
+          "溯源": 19,
+          "复现": 15,
+          "风格": 9,
+          "新颖": 8
+        },
+        "multiplier": 1.25,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-25-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2113248473063555072/vid/avc1/3840x2160/5g5qfivmaFuls2P4.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/wesbos/3d-model-anything",
+      "licenseName": "代码与 skill：MIT；data/ 下的办公室图片/贴图与 docs/images/thumb-1.png 另有 ASSETS-LICENSE 条款",
+      "licenseUrl": "https://github.com/wesbos/3d-model-anything/blob/main/LICENSE"
+    },
     {
       "title": "把台积电 CoWoS 封装从第 1 步「TSV 刻蚀」开始一步步搭出来的 3D 网页：Advanced Packaging Atlas 从 296 篇封装论文里抽出 4,750 个工艺步骤，每个数字都带出处页码",
       "category": "3d",
@@ -18304,8 +18363,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条",
-  "updatedAt": "2026-10-25T00:53:00.000Z",
-  "totalItems": 377,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条",
+  "updatedAt": "2026-10-25T04:47:00.000Z",
+  "totalItems": 378,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }

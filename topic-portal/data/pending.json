@@ -3,6 +3,196 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 57,
+      "multiplier": 1.3,
+      "score": 57.0,
+      "reason": "本轮达待定区间（单维度乘数保护生效）",
+      "run": "2026-10-25-1240-shanghai",
+      "record": {
+        "title": "大模型到底在算什么？用「猫 吃 鱼」3 个词、4 维向量，把一次 Transformer 前向传播拆成一格一格的矩阵乘法：点结果里任意一格，就高亮它来自哪一行哪一列、算式直接写出来",
+        "category": "frontend",
+        "styleFamily": "uiux",
+        "source": "https://x.com/antiAIvo/status/2114161407205966126",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025b-matrix.jpg",
+        "previewType": "image",
+        "description": "纳米AI（@antiAIvo）10-25 01:05 UTC 发帖：更新版小工具「矩阵里的大模型」——用「猫 吃 鱼」3 个词、4 维向量，把一次前向传播拆成一格一格的矩阵运算；点播放，结果矩阵一格一格填满；点任意一格，高亮它来自哪一行、哪一列，算式直接写出。目前三套：Transformer（从词嵌入算到预测下一个词）、LLaMA（RMSNorm、GQA、RoPE、SwiGLU 逐个替换）、DeepSeek MLA（KV 怎么压成一个短向量，缓存小一个数量级），每套配详解文章。网页 nano-ai.tech/matrix（本轮抓取核对）：Transformer 一次完整前向传播共 11 步（词嵌入、位置编码、QKV、注意力分数、遮罩 + Softmax、加权求和、拼接 + 投影、残差 + LN、FFN、残差 + LN、预测下一个词）；页面写明 DeepSeek MLA「更新中」；并注明「权重是为了方便手算挑的，不是训练出来的，所以最后的预测结果本身没有意义，重点是看每一步怎么算」。23 秒录屏（目视）：左侧步骤导航，中间是带行列标签的彩色矩阵，播放时结果格逐格点亮，黄色提示框写出例如「logits 第 2 行第 2 列 = H₂ 第 2 行 · Eᵀ 第 2 列 = (−0.14)×0 + 1.49×1 + (−1.33)×0.5 + (−0.03)×0 = 0.83」，再进入 Softmax 成概率；后半段切到 LLaMA 和 DeepSeek MLA 的 KV Cache 页面。对你：讲 AI 主线时「大模型其实就是一堆乘法」最缺第一帧画面，这个页面每一格都能指着讲；也可以照这个思路用 Three.js 做成立体的矩阵乘法动画。",
+        "tool": "网页小工具（作者未说明实现技术）；作者此前提到用 Claude 制作大模型可视化学习工具",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "原帖 https://x.com/antiAIvo/status/2114161407205966126 （抓取时 16 赞）；网页 https://nano-ai.tech/matrix/ （页面标题「矩阵里的大模型 · Transformer · Future Priced」）。没有公开源码和许可证，只能外链引用或截图学习；同作者「大模型地铁图」选题已在库，本条是不同作品。作者同时发了三条几乎相同的帖子，本条取互动最多的一条。示例权重是手挑的，不代表真实模型数值。封面为录屏第 7 秒截帧（logits 点积与 Softmax 步骤）。",
+        "attribution": "纳米AI（@antiAIvo）· 矩阵里的大模型",
+        "sourceAuthor": "antiAIvo",
+        "tags": [
+          "大模型原理",
+          "Transformer",
+          "可视化",
+          "交互教学",
+          "科普可视化"
+        ],
+        "publishedAt": "2026-10-25T01:05:33.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-25T04:47:00.000Z",
+        "updatedAt": "2026-10-25T04:47:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-25T04:47:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 57,
+          "baseBreakdown": {
+            "实体": 6,
+            "科普": 18,
+            "溯源": 11,
+            "复现": 8,
+            "风格": 6,
+            "新颖": 8
+          },
+          "multiplier": 1.3,
+          "finalScore": 57.0,
+          "threshold": 65,
+          "run": "2026-10-25-1240-shanghai",
+          "multiplierGuard": "基础分<60且仅单一维度乘数>1，按规则不让乘数抬过阈值（按基础分判定）"
+        },
+        "is3d": false,
+        "videoUrl": "https://video.twimg.com/amplify_video/2114159592385269760/vid/avc1/2722x1796/QYXyTh0UzOD8MBoF.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 57,
+      "multiplier": 1.0,
+      "score": 57.0,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-25-1240-shanghai",
+      "record": {
+        "title": "一堆照片怎么变成 3D？浏览器里跑的「运动恢复结构」：301 张火车头照片逐张注册，相机位置像一串黄色小金字塔绕着车头排开，点云一点点长出来",
+        "category": "3d",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/sameh_khamis/status/2114152634202587291",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025b-sfm.jpg",
+        "previewType": "image",
+        "description": "Sameh Khamis（@sameh_khamis）10-25 00:30 UTC 发帖：「在浏览器里做交互式 Structure-from-Motion，从图片到相机位姿和稀疏点云！WebGPU 表现不错，换 Vulkan 后端更快。」95 秒录屏（9 帧目视）：名为「recon」的重建工作台，左侧载入 Tanks and Temples 数据集的「Train」场景（301 张图），中间 3D 视图里点云逐步生长、每张照片对应的相机以黄色视锥排成环绕火车头的轨迹（部分片段标注 10× 加速），截帧时显示 207/301 台相机已注册、约 9.3 万个点；之后切到「从相机视角看」模式，原照片半透明叠在点云上对齐；右侧有焦距、主点、畸变、相机中心和旋转矩阵等参数面板，底部有特征数、匹配方式（全配对/顺序/检索）、增量式/全局式建图、光束法平差选项。对你：3D 建模线讲「照片怎么变 3D」（摄影测量、高斯泼溅的第一步）时，这是最直观的过程镜头：相机一台台「找到自己站在哪」，点云随之浮现。",
+        "tool": "自研浏览器 SfM 工具（WebGPU，另有 Vulkan 后端；作者未公开实现细节）；数据为公开基准 Tanks and Temples",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "原帖 https://x.com/sameh_khamis/status/2114152634202587291 （抓取时 13 赞）。帖子没有给出代码、在线地址或许可证，只能外链引用；作者身份与工具是否会开源本轮未核实。画面中的数值（207 台相机、约 9.3 万点）是录屏某一时刻的进度读数，不是最终结果。封面为录屏第 25 秒截帧（点云与黄色相机视锥）。",
+        "attribution": "Sameh Khamis（@sameh_khamis）",
+        "sourceAuthor": "sameh_khamis",
+        "tags": [
+          "三维重建",
+          "运动恢复结构",
+          "WebGPU",
+          "点云",
+          "摄影测量"
+        ],
+        "publishedAt": "2026-10-25T00:30:41.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-25T04:47:00.000Z",
+        "updatedAt": "2026-10-25T04:47:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-25T04:47:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 57,
+          "baseBreakdown": {
+            "实体": 13,
+            "科普": 16,
+            "溯源": 8,
+            "复现": 4,
+            "风格": 8,
+            "新颖": 8
+          },
+          "multiplier": 1.0,
+          "finalScore": 57.0,
+          "threshold": 65,
+          "run": "2026-10-25-1240-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2114152520105029632/vid/avc1/1280x720/KmwqLYar5irUMlX3.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 60,
+      "multiplier": 1.038,
+      "score": 62.3,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-25-1240-shanghai",
+      "record": {
+        "title": "给 3D 场景配一个 AI 摄影组：一句「绕过石头、绕着猫转一圈、再升起来」就能变成可执行的运镜轨迹，导演、场记、选机位、挑刺的「评审」四个智能体分工——上海交大等团队的 FilmFlow",
+        "category": "3d",
+        "styleFamily": "model_3d",
+        "source": "https://visionary-laboratory.github.io/Filmflow/",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025b-filmflow.jpg",
+        "previewType": "image",
+        "description": "论文 arXiv:2610.30753《FilmFlow: Agentic System for 3D Virtual Film Cinematography》（Yiming Zhang、Jiarui Guo、Haojia Wei 等，通讯作者 Zhihang Zhong；康奈尔大学、上海交通大学、UCLA、上海人工智能实验室；2026-10-22 提交，CC BY 4.0；HF Papers 当日榜约 31 赞）。问题：复杂运镜是视觉叙事的核心，但把「导演意图」变成能执行、可控的相机轨迹很难。方法：输入自然语言或一段参考视频，在动态 3D 场景里输出明确的相机轨迹；Director（导演）把平移、旋转、构图等「原子操作」并行组合成运镜方案，Interpreter 从场景中提取意图，Scout 选开场机位，Critic 看渲染结果给视觉反馈、迭代修改。同时发布 CinemaBench：150 个 Blender 场景（自建和获授权来源）、750 个文字指令任务、60 段参考视频。论文首图（目视）：A 行「Glide past the rock, arc around the cat, then rise to reveal the scene」+ 3D 场景 → 相机沿虚线绕行 → 四格画面；中间四个小人分别举着写字板、摄像机、指挥、看显示器；B 行用一段狗狗推近的参考视频，让相机对猫做同样的推近。附录还有「子弹时间」和用灰模渲染作为视频生成条件的应用。对你：你用代码驱动 Blender 做片时，最难的就是运镜；这套「导演—评审」循环的思路可以直接借到自己的工作流里。",
+        "tool": "多智能体框架（Interpreter / Scout / Director / Critic）+ Blender 场景；论文未公开代码",
+        "prompt": "Glide past the rock, arc around the cat, then rise to reveal the scene.（论文首图示例指令）",
+        "promptProvenance": "original_public",
+        "provenanceNote": "项目页 https://visionary-laboratory.github.io/Filmflow/ ；论文 https://arxiv.org/abs/2610.30753 （CC BY 4.0）。本轮未找到代码仓库或数据集下载地址。论文声明首图（teaser）借助生成式 AI 制作，所以封面是示意插画，不是系统真实渲染画面。封面为论文 Figure 1（teaser）。",
+        "attribution": "Yiming Zhang 等（Cornell / 上海交大 / UCLA / 上海 AI Lab）· FilmFlow",
+        "sourceAuthor": "FilmFlow team",
+        "tags": [
+          "运镜",
+          "智能体",
+          "Blender",
+          "论文",
+          "虚拟摄影"
+        ],
+        "publishedAt": "2026-10-22T00:00:00.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-25T04:47:00.000Z",
+        "updatedAt": "2026-10-25T04:47:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-25T04:47:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 60,
+          "baseBreakdown": {
+            "实体": 12,
+            "科普": 12,
+            "溯源": 14,
+            "复现": 6,
+            "风格": 8,
+            "新颖": 8
+          },
+          "multiplier": 1.038,
+          "finalScore": 62.3,
+          "threshold": 65,
+          "run": "2026-10-25-1240-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 59,
       "multiplier": 1.025,
       "score": 60.5,
@@ -2877,6 +3067,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-25T00:53:00.000Z",
+  "updatedAt": "2026-10-25T04:47:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
