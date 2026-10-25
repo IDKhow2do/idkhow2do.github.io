@@ -1,7 +1,84 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-24T12:54:00.000Z",
+  "updatedAt": "2026-10-25T00:53:00.000Z",
   "topics": [
+    {
+      "url": "https://www.semiconductor-digest.com/gigaphoton-takes-its-lightsources-beyond-the-scanner/",
+      "title": "给光刻机供光的激光器，被拿去芯片封装里「打孔」？248 nm 准分子激光靠光化学「拆键」而不是烧，一次曝光打出 3 微米小孔，还想顺手替掉光刻胶 + 硬掩膜 + 刻蚀那一套",
+      "category": "半导体",
+      "source": "Semiconductor Digest《Gigaphoton Takes Its Lightsources Beyond the Scanner》（Pete Singer，2026-10-23，基于 Gigaphoton 在 SEMICON West 10 月的媒体简报与采访）；Gigaphoton 官方新闻稿 2025-12-08《Gigaphoton Excimer Laser for Advanced Packaging Installed at Japanese Company》；线索来自 @_TechCapsules_ 10-24 X 帖",
+      "publishedAt": "2026-10-23",
+      "eventAt": "2026-10-23",
+      "collectedAt": "2026-10-25T00:53:00.000Z",
+      "updatedAt": "2026-10-25T00:53:00.000Z",
+      "description": "背景：Gigaphoton（小松全资子公司）26 年来做的是放在 DUV 光刻机下面的 KrF/ArF 准分子激光光源，自 2000 年起出货超过 2,500 台，约 1,400 名员工。这次 CEO 榎波龙雄（Tatsuo Enami）在 SEMICON West 简报里讲的是：光刻之外，这束短波长光在晶圆厂还能干别的。先进封装这一块：芯粒（chiplet）之间的互连要越来越密，芯片边缘需要 5–10 µm 的过孔，而供电/PCB 连接仍是 80–100 µm，常常在同一块板上。现有手段卡在哪：公司人员原话「CO₂ 激光只能打到 30 µm」，355 nm 紫外激光约 10 µm；用光刻做孔能更小，但要加光刻胶、显影、刻蚀步骤和成本。它的方案 G300K：248 nm KrF 准分子激光，300 W、最高 4 kHz；不是一个孔一个孔打，而是照亮掩膜、用投影光学把整片孔的图形直接成像到有机介质上。关键物理：248 nm 光子被 ABF 积层膜、聚酰亚胺、阻焊层强烈吸收，直接打断分子键，材料是「光化学」去除而不是热熔，几乎没有热影响区；公司称 3 µm 孔的侧壁锥角 87.6°、不伤下层铜，也能用于玻璃。因为图形来自掩膜，一次曝光能同时打出 10 µm 到 3 µm 的八种孔径（CO₂ 激光要换参数一种一种打）；近期结果 ABF 上 6.5→3.5 µm 的孔经干法除胶渣和种子层沉积后仍保形。规格：ABF 中 ≤5 µm、阻焊膜中 ≤10 µm；路线图目标 3 µm 孔和 0.5 µm 线宽/线距。更大的野心：同一掩膜投影法也能直接刻线槽，「把孔和线同时打出来」可能替代原本的光刻胶—硬掩膜—刻蚀流程（公司自称是远期目标）。进度：2025 年 11 月一台集成在 ORC 制作所设备里的 G300K 已装到一家日本先进半导体研发公司（官方新闻稿 2025-12-08 可核），总共向多家设备商出货约 10 台，芯片厂已在自家开始工艺开发。同文还讲了 3m×3m 的小型锡等离子 EUV 光源（20 kHz 连续运行超 5,500 小时）用于掩膜检测/量测，以及氖气回收。可拍角度：①第 0 秒上文中 Figure 2：CO₂ 30 µm / UV 10 µm / 准分子 3 µm 三个孔并排；②你的刻蚀视角：「烧掉」和「拆键」的区别，和干法刻蚀里物理轰击 vs 化学反应可以类比；③反直觉：光刻机的「灯」反过来想抢刻蚀的活。",
+      "caveat": "数字（3 µm、87.6°、约 10 台、路线图）均为 Gigaphoton 自述，经行业媒体转述，没有第三方测试或客户数据；采用仍处于研发阶段，量产时间未给。「孔和线一起直写以替代光刻胶/硬掩膜/刻蚀」是公司人员明确说的远期目标，不是现有能力。原始简报是 SEMICON West（10 月），稿件 10-23 发布，略早于本轮扫描窗口，库内此前没有。封面为 Semiconductor Digest 文中 Figure 2（来源标注 Gigaphoton）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261025a-gigaphoton.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025a-gigaphoton.jpg",
+      "imageAlt": "Gigaphoton 图：CO₂ 激光约 30 µm、355 nm UV 约 10 µm、248 nm 准分子激光约 3 µm 的最小加工孔径对比，右侧为准分子激光分解材料示意与参数对比表",
+      "tags": [
+        "先进封装",
+        "芯片制造",
+        "激光加工",
+        "刻蚀",
+        "光刻"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "主线": 23,
+          "钩子": 17,
+          "画面": 13,
+          "来源": 12,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 91.3,
+        "threshold": 65,
+        "run": "2026-10-25-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop",
+      "title": "给 AI 智能体配一堆「专员」子代理，反而更慢、更不像一个人？Anthropic 应用 AI 团队：很多企业把组织架构图照抄进了智能体，「传话游戏」每过一手就丢一次信息",
+      "category": "AI",
+      "source": "Claude（Anthropic）官方文章《Building agents: When to fold subagents into your main agent loop》（Diane Sarkis，2026-10-22，claude.com/resources）；配套参考实现 github.com/anthropics/single-agent-loop-kit；线索来自 @tom_knockk 10-25 00:06 UTC 的中文转述帖",
+      "publishedAt": "2026-10-22",
+      "eventAt": "2026-10-22",
+      "collectedAt": "2026-10-25T00:53:00.000Z",
+      "updatedAt": "2026-10-25T00:53:00.000Z",
+      "description": "文章原文要点：子代理（有自己上下文窗口、工具和指令、由协调者调度的智能体）在核验、并行和权限隔离上很有用，Anthropic 自己的多智能体研究系统也在用；但应用 AI 团队在多家企业部署中对比发现，「一个主循环 + 按需加载的技能（skills）」常常在质量上胜过「一个超长提示词包打天下」和「子代理」两种设计，单任务成本和延迟往往也更低。例子：一家公司的客服智能体里有十几个专员子代理，很难保持统一的品牌口吻，还拖慢了响应；另一家对比多智能体框架和单一主循环，后者运行时间快了约 2 倍。他们把常见失败归纳为：上下文在来回交接中丢细节、子代理泛滥、每个团队往系统提示里加一句的「缝合怪提示词」、各自为政的评测——本质是康威定律，智能体架构变成了公司组织架构图的复制品；按问题类型拆分的智能体会玩「传话游戏」，每次交接都降低保真度。替代方案叫「渐进式披露」：智能体先只看技能和工具的简短描述，用到时才完整加载；文中说他们为更强的模型把 Claude Code 的系统提示削减了 80% 以上（部分来自这种做法），并称从 Opus 4.5 起模型能在单一循环里管住远超预期的事。什么时候仍该用子代理：单循环因上下文膨胀出现可测的退化、需要并行且可丢弃的新上下文、或单个智能体选不对工具/指令互相冲突。配套 kit 的原则是「先测量」：同一套评测前后打分，替代方案达标才撤掉子代理。可拍角度：①钩子——「为什么给 AI 多雇几个助手，它反而变笨？」；②用「传话游戏」现场演示信息逐手衰减；③你自己的 Agent 团队（多个人设）就是现成的对照案例，可以讲什么时候分工有用、什么时候是在复制组织架构。",
+      "caveat": "这是厂商基于自家客户经验的最佳实践文章，「约 2 倍更快」「一家公司十几个子代理」等都是匿名案例，没有公开评测数据；文章明确说子代理仍有适用场景，不是「子代理无用论」。「系统提示削减 80% 以上」指的是面向更强模型的 Claude Code，不是所有场景。X 转述帖里的「约 32 万浏览」是转述者对另一条帖子的说法，未核实，不引用。文章发布于 10-22，早于本轮窗口，库内此前没有。封面为官方 og 图（抽象插画，无文字信息），首帧建议自制演示。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261025a-subagents.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261025a-subagents.jpg",
+      "imageAlt": "Claude 官方文章 og 插画：浅绿底上的白色闪电形，内有三个节点连成的折线",
+      "tags": [
+        "智能体",
+        "AI成本",
+        "Claude",
+        "AI推理"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 78,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 16,
+          "画面": 7,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 82.4,
+        "threshold": 65,
+        "run": "2026-10-25-0840-shanghai"
+      }
+    },
     {
       "url": "https://www.helionenergy.com/newsroom/helion-signs-letter-of-intent-for-175-million-chips-award-to-advance-semiconductor-fusion-energy",
       "title": "聚变电站最卡脖子的，居然是一排「开关」？Helion 拿芯片法案的钱专做高压脉冲功率半导体，CEO：开关损耗砍一半，聚变系统输出就能翻倍",

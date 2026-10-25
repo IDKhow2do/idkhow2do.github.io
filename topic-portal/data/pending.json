@@ -2877,6 +2877,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-24T12:54:00.000Z",
+  "updatedAt": "2026-10-25T00:53:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
