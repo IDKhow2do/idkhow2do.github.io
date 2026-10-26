@@ -1,8 +1,455 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 386,
+  "exportedCount": 394,
   "items": [
+    {
+      "title": "800 年前的「大象水钟」剖开肚子给你看：碗在水箱里慢慢灌满下沉，沉到底就放出一颗球，蛇低头把碗拉回去、鼓手敲鼓——Opus 5.5 一个 HTML 文件用 Three.js 复原，提示词公开",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/BercusNA/status/2114414590872125818",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2114414482948542464/img/pEz88ygLP5nna-jB.jpg",
+      "previewType": "image",
+      "description": "Bercus（@BercusNA）10-25 17:51 UTC 发帖，「古代机器」系列第 5 集：加扎里（al-Jazari）1206 年造的大象钟——大象肚子里有个底部带小孔的碗，半小时沉到底；沉到底时一颗球落进蛇嘴，蛇前倾把碗拉回水面，驭象人敲鼓，然后重新开始。作者让 Opus 5.5 用 Three.js 复原：大象侧腹剖开一个窗口，能看到碗灌水下沉；球、蛇、鼓按正确顺序触发；两个完整的半小时周期压缩进 15 秒；一个 HTML 文件、Three.js、没有任何 3D 模型。作者在回复里公开了完整提示词（见 prompt 字段），要求加 render(t) 让每一帧都可确定复现。封面为视频封面：带花纹底座上的彩色大象，侧腹开窗露出水箱，背上是塔楼。适合当「机械因果链/定时器原理」的科普镜头，也能接「简单规则串起复杂行为」的涌现话题。",
+      "tool": "Claude Opus 5.5 + Three.js（单个 HTML 文件，无 3D 模型；作者自述）",
+      "prompt": "Rebuild al-Jazari's elephant clock (1206) in 3D as a single html file with three.js. Cut a window into the elephant's side to show a water tank with a floating bowl that slowly fills and sinks. When it hits bottom: a ball rolls off the tower roof into a serpent's mouth, the serpent tips forward and pulls the bowl back up by a string, a figure raises its arm, the driver strikes a drum, the ball falls into a vase. Loop it. Add render(t) so every frame is deterministic.",
+      "promptProvenance": "original_public",
+      "provenanceNote": "原帖 https://x.com/BercusNA/status/2114414590872125818 （抓取时 12 赞）；提示词为作者本人回复 https://x.com/BercusNA/status/2114414641657102552 公开原文，原样收录。没有源码仓库、在线地址或许可证，成片只能外链引用。历史机制描述为作者转述，本轮未查原始文献核对细节。本轮未完整播放 15 秒视频，只看了封面。",
+      "attribution": "Bercus（@BercusNA）",
+      "sourceAuthor": "BercusNA",
+      "tags": [
+        "Three.js",
+        "剖面",
+        "古代机械",
+        "水钟",
+        "提示词公开",
+        "Claude Code"
+      ],
+      "publishedAt": "2026-10-25T17:51:37.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-26T00:52:00.000Z",
+      "updatedAt": "2026-10-26T00:52:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-26T00:52:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 90,
+        "baseBreakdown": {
+          "实体": 23,
+          "科普": 20,
+          "溯源": 15,
+          "复现": 13,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.1979,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-26-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114414482948542464/vid/avc1/1080x1350/HhjYgW4zebQwylDh.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "时速 250 公里时，空气把 F1 赛车往下压的力比车本身还重，理论上能倒着贴天花板开：Techartist 用 Opus 5.5 + Three.js 做了一辆能翻过来的 2026 款 F1，还能把车身变透明看 V6 燃烧和刹车回收电能",
+      "category": "frontend",
+      "styleFamily": "uiux",
+      "source": "https://x.com/techartist_/status/2114447086087544980",
+      "previewUrl": "https://i0.wp.com/iamtechartist.com/wp-content/uploads/2026/10/f1-2026-og.jpg?fit=1200%2C630&ssl=1",
+      "previewType": "image",
+      "description": "Techartist（@techartist_，库内已有同作者条目）10-25 20:00 UTC 发帖：「时速 250 公里时，空气把 2026 款 F1 赛车往下压得比它的重量还大，理论上可以在天花板上开，所以我做了一辆可以翻过来的。」用 Claude Opus 5.5 + Three.js 制作，作者在回复里给出在线演示 iamtechartist.com/f1-2026/。页面标题「Press · Burn · Harvest · Boost: inside a 2026 Formula 1 car, in 3D」，自述为「四个节拍加一圈引导的交互式 3D 课」：把风洞风速调大直到气流压力超过车重；把车身变成玻璃，看 X 光下 V6 燃烧可持续燃料；轻重刹车看电池能回收多少能量；再把电用在和全息对手的加速赛里。封面为页面 og:image：暗色风洞里的黑色 F1 赛车，白色烟线流过车身、蓝色涡流从前翼卷过轮胎。适合直接当「下压力/伯努利/能量回收」的科普镜头。",
+      "tool": "Claude Opus 5.5 + Three.js（作者自述）；在线演示 iamtechartist.com/f1-2026/",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖 https://x.com/techartist_/status/2114447086087544980 （抓取时 47 赞）；在线演示链接来自作者本人回复，页面 HTTP 200，标题与说明取自页面 og 元数据和正文。没有源码仓库、prompt 或许可证，只能外链引用。「倒贴天花板」是作者的理论说法；本轮未在浏览器里实际操作演示，各交互是否物理准确未核实。库内已有「Roadster 倒挂弯道」下压力题，角度相近（新颖度打了折）。",
+      "attribution": "Techartist（@techartist_）",
+      "sourceAuthor": "techartist_",
+      "tags": [
+        "Three.js",
+        "交互网页",
+        "空气动力学",
+        "风洞",
+        "剖面",
+        "Claude Code"
+      ],
+      "publishedAt": "2026-10-25T20:00:44.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-26T00:52:00.000Z",
+      "updatedAt": "2026-10-26T00:52:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-26T00:52:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 79,
+        "baseBreakdown": {
+          "实体": 23,
+          "科普": 19,
+          "溯源": 13,
+          "复现": 8,
+          "风格": 10,
+          "新颖": 6
+        },
+        "multiplier": 1.3491,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-26-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114446222996185088/vid/avc1/1440x1080/1z8x7lcDOEwnaIJu.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://iamtechartist.com/f1-2026/"
+    },
+    {
+      "title": "让 Claude 在 Blender 里「造」一块会走的机械表：真齿轮、摆动的摆轮、完整爆炸图，全是代码没有素材——Opus 5.5 用 53 分钟约 14 美元，Sonnet 5.5 用 50 分钟约 10 美元",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/MrTacticalX/status/2114362139720794363",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2114361544871907328/img/jNB2VIFCYEPjSUp5.jpg",
+      "previewType": "image",
+      "description": "Mr Tactical（@MrTacticalX）10-25 14:23 UTC 发帖：同一个提示「在 Blender 里做一块豪华机械表」分别交给 Claude Opus 5.5 和 Sonnet 5.5，要求有真齿轮的可动机芯、摆动的摆轮和完整爆炸图，全部代码生成、不用素材。作者给的数据：Sonnet 5.5（High）50 分钟、约 10.13 美元；Opus 5.5（High）53 分钟、约 14.38 美元。30 秒视频封面为上下两格对比：上格标「Claude Sonnet 5.5 (High)」、下格标「Claude Opus 5.5 (High)」，各是一块黑色背景下的腕表。机芯爆炸图可直接当「齿轮传动/擒纵机构」的科普镜头，也能和你的「3D 建模」大类一起看 AI 程序化建模的上限。",
+      "tool": "Claude Opus 5.5 / Sonnet 5.5（High）+ Blender（脚本生成，作者自述）",
+      "prompt": "build a luxury mechanical watch in Blender.",
+      "promptProvenance": "original_public",
+      "provenanceNote": "原帖 https://x.com/MrTacticalX/status/2114362139720794363 （抓取时 44 赞）。帖子里公开的只有引号内一句提示「build a luxury mechanical watch in Blender.」，完整提示词、源码与 .blend 文件都没有公开，也没有许可证；用时和费用为作者自报，本轮未复现。是否通过 Blender MCP 帖子未说明。本轮未完整播放视频，机芯是否真能「走」未核实。",
+      "attribution": "Mr Tactical（@MrTacticalX）",
+      "sourceAuthor": "MrTacticalX",
+      "tags": [
+        "Blender",
+        "机械表",
+        "爆炸图",
+        "程序化建模",
+        "Claude Code",
+        "模型对比"
+      ],
+      "publishedAt": "2026-10-25T14:23:11.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-26T00:52:00.000Z",
+      "updatedAt": "2026-10-26T00:52:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-26T00:52:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 73,
+        "baseBreakdown": {
+          "实体": 23,
+          "科普": 17,
+          "溯源": 10,
+          "复现": 6,
+          "风格": 9,
+          "新颖": 8
+        },
+        "multiplier": 1.038,
+        "finalScore": 75.8,
+        "threshold": 65,
+        "run": "2026-10-26-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114361544871907328/vid/avc1/1080x1350/cvJaiSW46hpgddDW.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "视频模型什么物理都能演，偏偏演不对一个牛顿摆：纯文生视频还是会违反动量守恒——Chouaieb Nemri 的办法是先让 Gemini 4 Argon 用 Blender MCP 做出精确物理，再交给视频模型上质感",
+      "category": "video",
+      "styleFamily": "video_model",
+      "source": "https://x.com/c_nemri/status/2114464491899429253",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2114464460190461952/img/xCGFRl2DXn_vVwDP.jpg",
+      "previewType": "image",
+      "description": "Chouaieb Nemri（@c_nemri）10-25 21:09 UTC 发帖：「视频模型的物理越来越好，直到你让它生成一个牛顿摆——纯文生视频仍然会破坏动量守恒。」他给的两步法：①用 Gemini 4 Argon + Blender MCP 做出精确的程序化 3D 物理；②再用 Gemini Omni 视频编辑把它变成照片级的镀铬质感并配上声音。7.5 秒竖版视频封面为上中下三格牛顿摆对照（顶部镀铬球成片、中间 Blender 视口里的橙色小球、底部线框/灰模版本）。科普价值在于反差：同样是「AI 生成」，视频模型是在「画」看起来像的画面，Blender 里是在「算」真实的碰撞——正好对应你「AI 3D 到底是测量、生成还是编辑」的话题，也能讲动量守恒。",
+      "tool": "Gemini 4 Argon + Blender MCP（物理）→ Gemini Omni 视频编辑（质感与声音），作者自述",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖 https://x.com/c_nemri/status/2114464491899429253 （抓取时 0 赞）。没有源码、完整提示词、.blend 文件或许可证，只能外链引用。「纯文生视频会违反动量守恒」是作者的观察，帖子没有给出对照的失败样例来源，本轮未核实。本轮未完整播放视频，只看了封面。",
+      "attribution": "Chouaieb Nemri（@c_nemri）",
+      "sourceAuthor": "c_nemri",
+      "tags": [
+        "视频模型",
+        "物理模拟",
+        "Blender",
+        "动量守恒",
+        "牛顿摆",
+        "Gemini"
+      ],
+      "publishedAt": "2026-10-25T21:09:54.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-26T00:52:00.000Z",
+      "updatedAt": "2026-10-26T00:52:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-26T00:52:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 71,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 18,
+          "溯源": 8,
+          "复现": 9,
+          "风格": 7,
+          "新颖": 9
+        },
+        "multiplier": 1.0315,
+        "finalScore": 73.2,
+        "threshold": 65,
+        "run": "2026-10-26-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114464460190461952/vid/avc1/1280x2160/-eNmOedWl6Ae7uMx.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "庄周梦蝶做成一个会滚动的 3D 池塘：青蛙给鸭子拉小提琴，倒影里却是鸭子给青蛙拉——没有 3D 模型、没有音频文件，Claude Code + Three.js + Web Audio 全用代码生成",
+      "category": "frontend",
+      "styleFamily": "uiux",
+      "source": "https://x.com/justkarangupta/status/2114424540571013206",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2114422151185104897/img/l1lVlF1tXa2iJH-T.jpg",
+      "previewType": "image",
+      "description": "Karan Gupta（@justkarangupta）10-25 18:31 UTC 发帖：用代码做了一个 3D 池塘场景，作为讲「庄周梦蝶」（Master Zhuang’s Paradox / Butterfly Dream）的滚动故事——青蛙为鸭子拉小提琴，而在水面倒影里是鸭子为青蛙拉琴：「到底谁在做梦？」没有 3D 模型和音频文件，使用 Claude Opus 5.5（Claude Code）+ three.js + Web Audio API。在线演示 zhuangzi-dream.vercel.app（页面标题「The Butterfly Dream」）。封面为视频封面：紫色夜空下的荷叶池塘，一只白鸭漂在水面、身下有倒影。适合你那期「涌现/什么是智慧」反思向视频里当哲学段落的过场画面，也是「中国故事 × 代码生成」的现成例子。",
+      "tool": "Claude Opus 5.5（Claude Code）+ three.js + Web Audio API（作者自述）；在线演示 zhuangzi-dream.vercel.app",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖 https://x.com/justkarangupta/status/2114424540571013206 （抓取时 31 赞）；在线演示 https://zhuangzi-dream.vercel.app/ HTTP 200，页面标题「The Butterfly Dream」。没有源码仓库、prompt 或许可证，只能外链引用。本轮未在浏览器里实际滚动体验，未完整播放 87 秒视频。",
+      "attribution": "Karan Gupta（@justkarangupta）",
+      "sourceAuthor": "justkarangupta",
+      "tags": [
+        "Three.js",
+        "滚动叙事",
+        "Web Audio",
+        "程序化生成",
+        "Claude Code",
+        "中国故事"
+      ],
+      "publishedAt": "2026-10-25T18:31:09.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-26T00:52:00.000Z",
+      "updatedAt": "2026-10-26T00:52:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-26T00:52:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 68,
+        "baseBreakdown": {
+          "实体": 15,
+          "科普": 13,
+          "溯源": 13,
+          "复现": 8,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.2748,
+        "finalScore": 86.7,
+        "threshold": 65,
+        "run": "2026-10-26-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114422151185104897/vid/avc1/3840x2122/xNlTAPmo0H46dRX2.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://zhuangzi-dream.vercel.app/"
+    },
+    {
+      "title": "视频里那个 CAD 软件根本不存在：界面、光标和每一次点击都是 Claude 写的一个 450 行 HTML 文件，再用这个「假 CAD」一步步造出一块智能手表、装上 6 颗芯片、拉出爆炸图",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/pilvex/status/2114489270173831373",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2114489208542748673/img/O5TQuZeF-ipkKy_1.jpg",
+      "previewType": "image",
+      "description": "pilvex（@pilvex）10-25 22:48 UTC 发帖：视频里没有 CAD 程序，界面、光标和每次点击都是 Claude 写的一个 450 行 HTML 文件，然后用这个假 CAD 一个零件一个零件地造出智能手表。作者列出文件里有：仿真 CAD 窗口的功能区和特征树；光标脚本（每个移动和点击是一行带时间戳的指令）；表壳草图、标注尺寸、拉伸、抽壳、为表冠开槽；6 颗芯片逐个放上电路板，再放 40 个被动元件和 8 条走线；9 个零件从传感器到扬声器依次装入总装；带运动时间线的爆炸图；最后表盘亮起；声音和画面同一个时钟。技术点：光标从不瞄准像素，每次点击绑定零件上的一个点、每帧经相机投影，所以视角旋转时光标还停在它正在点的芯片上；特征树（Shell1、LPattern1）随时间线在对应步骤完成时才出现。封面为视频封面：浅色 CAD 风格界面（顶部功能区、左侧特征树、中间空白视口）。可当「芯片怎么装进一块表」的拆解镜头，也是「代码做产品演示片」的方法参考。",
+      "tool": "Claude（单个 450 行 HTML 文件，作者自述；未说明具体模型）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖 https://x.com/pilvex/status/2114489270173831373 （抓取时 1 赞），引用了 @Solvaix 的帖子。没有源码、prompt 或许可证，只能外链引用。作者自己说明：尺寸接近 45mm 手表但没有实测，检查面板是动画、不是计算结果。本轮未完整播放 46 秒视频；封面那一帧视口内容较少。",
+      "attribution": "pilvex（@pilvex）",
+      "sourceAuthor": "pilvex",
+      "tags": [
+        "代码视频",
+        "假界面",
+        "CAD",
+        "爆炸图",
+        "智能手表",
+        "Claude Code"
+      ],
+      "publishedAt": "2026-10-25T22:48:21.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-26T00:52:00.000Z",
+      "updatedAt": "2026-10-26T00:52:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-26T00:52:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 67,
+        "baseBreakdown": {
+          "实体": 17,
+          "科普": 16,
+          "溯源": 10,
+          "复现": 6,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.025,
+        "finalScore": 68.7,
+        "threshold": 65,
+        "run": "2026-10-26-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114489208542748673/vid/avc1/1280x720/dz4ZlnP1cK6p18CJ.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "体素风胶片相机「炸开」给你看内部结构，切换视角时用 View Transitions 平滑过渡：Kenji 用 Three.js 做的体素爆炸图浏览页",
+      "category": "frontend",
+      "styleFamily": "uiux",
+      "source": "https://x.com/kenjilau/status/2114374669897957700",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2114373274952179712/img/8EJ8_vtgV22eXrEa.jpg",
+      "previewType": "image",
+      "description": "Kenji（@kenjilau）10-25 15:12 UTC 发帖：「体素设计 + 爆炸解剖图真的很好看，配上 View Transitions 更好。」用 Three.js 制作。封面为视频封面：深色界面中一台体素风胶片相机，顶部有分类标签，底部有切换按钮。可作为「拆解/剖面」类科普镜头的 UI 参考。",
+      "tool": "Three.js + View Transitions（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖 https://x.com/kenjilau/status/2114374669897957700 （抓取时 1 赞）。没有在线地址、源码、prompt 或许可证；是否用 AI 制作未说明。本轮未完整播放视频。",
+      "attribution": "Kenji（@kenjilau）",
+      "sourceAuthor": "kenjilau",
+      "tags": [
+        "Three.js",
+        "体素",
+        "爆炸图",
+        "View Transitions"
+      ],
+      "publishedAt": "2026-10-25T15:12:59.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-26T00:52:00.000Z",
+      "updatedAt": "2026-10-26T00:52:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-26T00:52:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 63,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 15,
+          "溯源": 8,
+          "复现": 4,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.3491,
+        "finalScore": 85.0,
+        "threshold": 65,
+        "run": "2026-10-26-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114373274952179712/vid/avc1/2940x1670/ieoUlNjK8WejW-_Q.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "把自己所有的 AI 自动化任务做成一座「戴森球」式微缩小镇：每个任务是一个包裹、沿流水线送到两个智能体手里，现实下雪小镇也下雪——数字生命卡兹克用 Opus 5.5 指挥 GPT-6 Astra 建模",
+      "category": "frontend",
+      "styleFamily": "uiux",
+      "source": "https://x.com/Khazix0918/status/2114343004471460341",
+      "previewUrl": "https://pbs.twimg.com/media/HVenonybAAAjzfn.jpg",
+      "previewType": "image",
+      "description": "数字生命卡兹克（@Khazix0918）10-25 13:07 UTC 发帖：花 5 天做完 Agent 自动化流水线的可视化管理界面——第一版是普通网页列表，后来参考《戴森球计划》做成微缩景观风格的流水线小镇；流水线代表预设的自动化，每发出一个包裹就是一次具体任务，路由到两个 Agent 上执行，并接入现实时间和天气。分工：Claude Opus 5.5 搭视觉和框架，Opus 5.5 指挥 GPT-6 Astra 建模和渲染，Codex 在作者自己的 CI 机上做大量端到端测试，约用了 30% 的 Claude 周额度和两管 Codex 额度；配乐用 Suno 生成。作者在回复里说代码偏个人化，如果需求多可能做净室重写后开源。",
+      "tool": "Claude Opus 5.5 + GPT-6 Astra（建模渲染）+ Codex（测试）+ Suno（配乐），作者自述",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖 https://x.com/Khazix0918/status/2114343004471460341 （抓取时 512 赞）。未开源，无 prompt 或许可证，只能外链引用。",
+      "attribution": "数字生命卡兹克（@Khazix0918）",
+      "sourceAuthor": "Khazix0918",
+      "tags": [
+        "微缩景观",
+        "可视化",
+        "智能体",
+        "自动化",
+        "数据可视化"
+      ],
+      "publishedAt": "2026-10-25T13:07:09.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-26T00:52:00.000Z",
+      "updatedAt": "2026-10-26T00:52:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-26T00:52:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 61,
+        "baseBreakdown": {
+          "实体": 17,
+          "科普": 12,
+          "溯源": 10,
+          "复现": 4,
+          "风格": 9,
+          "新颖": 9
+        },
+        "multiplier": 1.3,
+        "finalScore": 79.3,
+        "threshold": 65,
+        "run": "2026-10-26-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114342866453741568/vid/avc1/1920x1080/XljOCAK_7wz2qujY.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "淹水车厢变花园：金鱼、常春藤与花座椅，WebGPU 实时渲染的夏祭り车厢——Pond Line（Opus 5.5 + three.js TSL）",
       "category": "frontend",
@@ -18805,8 +19252,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite)",
-  "updatedAt": "2026-10-25T16:10:00.000Z",
-  "totalItems": 386,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条",
+  "updatedAt": "2026-10-26T00:52:00.000Z",
+  "totalItems": 394,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
