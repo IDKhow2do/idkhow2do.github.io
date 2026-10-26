@@ -1,8 +1,230 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 394,
+  "exportedCount": 398,
   "items": [
+    {
+      "title": "让 Gemini 4 智能体用 Blender 重建蒙特利尔 54 个街区：没有一个模型是手做的；关键不是渲染，而是不让 AI「给自己批作业」——每个建模员配一个评审员，拿渲染图和卫星图、街景逐条比对",
+      "category": "video",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/pipelujan/status/2114542522735198711",
+      "previewUrl": "https://pbs.twimg.com/media/HVhdOYcWkAAEaMb.jpg",
+      "previewType": "image",
+      "description": "pipe lujan（@pipelujan）10-26 02:19 UTC 发帖并在回复里展开：用 Gemini 4 智能体在 Blender 里程序化重建蒙特利尔从老港到奥林匹克村的 54 个街区，全是 Python 生成。作者说一次性让模型「写个城市的 Blender 脚本」只会得到灰盒子和棒棒糖树，因为模型看不到自己做出来的东西；所以每个建模智能体配一个评审智能体，看真实渲染图并和街景、卫星图对比。并排对比不管用——视觉模型会说「高度吻合」，而檐口其实高了 3 米；有效的做法是把渲染图切成条带、和真实照片交错拼接。奥林匹克走廊用了 10 组建模/评审团队并行，覆盖约 7400 栋楼；某个街区失败时，智能体要把教训写进自己的提示文件（例如交叉口 Z-fighting、悬空灯泡、窗户没有凹进去）。GitHub 仓库 README：Blender 5.2（bmesh + Cycles GPU）+ OpenStreetMap + Poly Haven 材质；评审分两路（建筑 75%、街道 25%），综合分 ≥95 才放行，否则写入 RSI-001..016 规则后重建；5 条自动不及格规则（如没有楼层分隔的竖条窗、无窗大盒子、用方盒近似曲面地标）。封面为作者回复配图：左边 Google 卫星图，右边 Blender 重建的老蒙特利尔与老港俯视对比。适合当「AI 自我评估为什么不可信、外部对照怎么设计」的镜头，也能接你的房间 3D 建模想法。",
+      "tool": "Gemini 4 智能体 + Blender 5.2（Python bmesh、Cycles）+ Blender MCP + OpenStreetMap / Google 卫星与街景（作者自述 + README）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖 https://x.com/pipelujan/status/2114542522735198711 （抓取时 2 赞）及作者回复串（2114542532583383292 / 2114542540816818625 / 2114542568667070539 / 2114542570634437060）；仓库 https://github.com/FelipeLujan/Montreal-3D-modeling 10-26 新建，无许可证声明（只能外链引用），仓库内 .agents/agents/ 有各智能体提示词，本轮未逐个打开。README 中的分数为作者自报。本轮未完整播放视频。",
+      "attribution": "pipe lujan（@pipelujan / FelipeLujan）",
+      "sourceAuthor": "pipelujan",
+      "tags": [
+        "Blender",
+        "程序化生成",
+        "多智能体",
+        "城市建模",
+        "Gemini 4"
+      ],
+      "publishedAt": "2026-10-26T02:19:58.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-26T04:50:00.000Z",
+      "updatedAt": "2026-10-26T04:50:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-26T04:50:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 19,
+          "溯源": 16,
+          "复现": 14,
+          "风格": 9,
+          "新颖": 9
+        },
+        "multiplier": 1.0468,
+        "finalScore": 91.1,
+        "threshold": 65,
+        "run": "2026-10-26-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114542502271193088/vid/avc1/1280x720/uUmV6BUauTWBkKhC.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/FelipeLujan/Montreal-3D-modeling"
+    },
+    {
+      "title": "SOMA：让 AI 当 CAD 绘图员，你只当设计师——智能体用 CadQuery 写 Python 建模，每改一次自动重建；可剖切、爆炸图、FEM 强度分析，还能让仿生兽（Strandbeest）走起来渲染成视频",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://github.com/Kai-Jungsthoefel/SOMA",
+      "previewUrl": "https://raw.githubusercontent.com/Kai-Jungsthoefel/SOMA/HEAD/docs/images/explode.png",
+      "previewType": "image",
+      "description": "开源桌面应用 SOMA（Solid Object Modeling with Agents，GPL-3.0，抓取时 365 星；GitHubDaily 10-26 02:30 UTC 推荐）。README：你告诉智能体要什么，它用 CadQuery 把零件写成 Python 代码，SOMA 每次改动自动重建并显示；你可以点选零件、精确测量、在视图上画圈标问题再发回给智能体；每一步都在时间线上，可回退。自带 3D 打印、CNC、激光切割、钣金、公差等规则（skills），能查悬垂和壁厚、用 CalculiX 做 FEM 强度分析；有剖切、爆炸图（自动算出每个零件朝哪个方向拆）、动画（智能体用 Python 描述运动并渲染成视频，示例是 Strandbeest 仿生兽）；导出 STEP/STL/3MF/DXF，能出带尺寸的工程图 PDF。不自带智能体，Claude Code、OpenCode、Codex CLI、Gemini CLI 都能接。封面为 README 截图：小车（Rover）装配体的爆炸图，螺丝、电机、轮子沿拆卸方向散开。适合做「结构拆解/爆炸图」类科普镜头和 3D 打印小件。",
+      "tool": "CadQuery + OpenCascade + CalculiX；任意 CLI 编程智能体（Claude Code / Codex / Gemini CLI 等）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "仓库 https://github.com/Kai-Jungsthoefel/SOMA （2026-10-10 创建，10-24 更新，GPL-3.0），官网 https://somacad.app/ ；线索帖 https://x.com/GitHub_Daily/status/2114545097497047168 。描述来自 README；本轮未安装运行。X 视频封面是纯黑启动画面，故改用 README 爆炸图截图作封面。",
+      "attribution": "Kai Jungsthoefel（SOMA）",
+      "sourceAuthor": "Kai-Jungsthoefel",
+      "tags": [
+        "CAD",
+        "爆炸图",
+        "FEM",
+        "3D打印",
+        "Claude Code"
+      ],
+      "publishedAt": "2026-10-26T02:30:12.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-26T04:50:00.000Z",
+      "updatedAt": "2026-10-26T04:50:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-26T04:50:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 90,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 17,
+          "溯源": 19,
+          "复现": 15,
+          "风格": 8,
+          "新颖": 9
+        },
+        "multiplier": 1.0,
+        "finalScore": 90.0,
+        "threshold": 65,
+        "run": "2026-10-26-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/ext_tw_video/2114545065381310464/pu/vid/avc1/1280x720/gB1rVYOfNbK56FsI.mp4?tag=12",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/Kai-Jungsthoefel/SOMA",
+      "licenseName": "GPL-3.0",
+      "licenseUrl": "https://github.com/Kai-Jungsthoefel/SOMA/blob/HEAD/LICENSE"
+    },
+    {
+      "title": "45 分钟用 AI 做一条会游会咬的 3D 鲨鱼：Tripo 出网格和骨骼，Opus + Blender MCP 写游动动画；咬合动作则让 Opus 先把骨架放到绿幕上渲染、视频模型生成咬的动作，再反推回 3D 骨骼",
+      "category": "video",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/davidarngar/status/2114542283634688361",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2114542256027828224/img/1RsF6A4bhADOawB4.jpg",
+      "previewType": "image",
+      "description": "David Arnal（@davidarngar）10-26 02:19 UTC 发帖：鲨鱼全程用 AI 工具做，45 分钟，用掉每周额度的 7%。流程（作者原文）：Tripo 生成网格和骨骼绑定；Opus 5.5 + Blender MCP 写程序化的待机和游动动画；咬合动画：Opus 把绑定好的模型放在带标记点的绿幕上渲染，Omni 1.1 据此生成一段咬合视频，再由 Opus 把视频里的动作精确还原到 3D 鲨鱼模型上。作者说流程还不完美但已经能用。封面为视频截帧：Blender 界面里的鲨鱼模型（正面视图 + 侧视图 + 动画面板）。有意思的点是「视频模型当动作捕捉」：先让 2D 视频模型想象动作，再回填到 3D 骨骼。",
+      "tool": "Tripo + Claude Opus 5.5 + Blender MCP + Omni 1.1（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖 https://x.com/davidarngar/status/2114542283634688361 （抓取时 1 赞）；无提示词、无工程文件、无许可证，只能外链引用。Omni 1.1 具体是哪家的视频模型作者未说明。本轮未完整播放视频。",
+      "attribution": "David Arnal（@davidarngar）",
+      "sourceAuthor": "davidarngar",
+      "tags": [
+        "Blender MCP",
+        "Tripo",
+        "骨骼动画",
+        "视频转动作"
+      ],
+      "publishedAt": "2026-10-26T02:19:01.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-26T04:50:00.000Z",
+      "updatedAt": "2026-10-26T04:50:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-26T04:50:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 73,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 14,
+          "溯源": 12,
+          "复现": 10,
+          "风格": 9,
+          "新颖": 8
+        },
+        "multiplier": 1.025,
+        "finalScore": 74.8,
+        "threshold": 65,
+        "run": "2026-10-26-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114542256027828224/vid/avc1/1200x720/KLKfLM7OLvGJweAt.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "Three.js 画一杯加冰的水：玻璃折射、冰块和液面，作者说做这一杯把 Claude 的 token 烧光了",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/soraaikaihatsu/status/2114539407017676840",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2114539130218774528/img/Xht-WeGdXqZD0g7d.jpg",
+      "previewType": "image",
+      "description": "そら（@soraaikaihatsu）10-26 02:07 UTC 发帖：用 Three.js 渲染玻璃杯里的水和冰，Claude 的 token 被吃光；作者在回复里说 token 用量大约 5% 都花在这上面。封面为视频截帧：木桌上一只装着冰块和淡琥珀色液体的玻璃杯，底部有「ロックアイス」等切换按钮。",
+      "tool": "Claude + Three.js（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖（抓取时 4 赞）；无源码、提示词、在线地址或许可证。",
+      "attribution": "そら（@soraaikaihatsu）",
+      "sourceAuthor": "soraaikaihatsu",
+      "tags": [
+        "Three.js",
+        "玻璃折射",
+        "冰",
+        "材质"
+      ],
+      "publishedAt": "2026-10-26T02:07:35.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-26T04:50:00.000Z",
+      "updatedAt": "2026-10-26T04:50:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-26T04:50:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 61,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 13,
+          "溯源": 6,
+          "复现": 3,
+          "风格": 10,
+          "新颖": 7
+        },
+        "multiplier": 1.1979,
+        "finalScore": 73.1,
+        "threshold": 65,
+        "run": "2026-10-26-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114539130218774528/vid/avc1/1280x720/Hw-J3yZuxjN64EYZ.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "800 年前的「大象水钟」剖开肚子给你看：碗在水箱里慢慢灌满下沉，沉到底就放出一颗球，蛇低头把碗拉回去、鼓手敲鼓——Opus 5.5 一个 HTML 文件用 Three.js 复原，提示词公开",
       "category": "video",
@@ -19252,8 +19474,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条",
-  "updatedAt": "2026-10-26T00:52:00.000Z",
-  "totalItems": 394,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条",
+  "updatedAt": "2026-10-26T04:50:00.000Z",
+  "totalItems": 398,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
