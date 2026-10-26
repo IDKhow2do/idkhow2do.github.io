@@ -1,7 +1,122 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-26T08:52:00.000Z",
+  "updatedAt": "2026-10-26T12:54:00.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2610.17918",
+      "title": "冷原子实验台 80% 的体积是激光器和镜子，为什么一块指甲盖大的氮化硅芯片就能把它们全替掉？UCSB 把两台激光器、稳频、调光和三束大光斑全做进一颗芯片，困住 100 万个铷原子",
+      "category": "半导体",
+      "source": "arXiv:2610.17918《A Photonic Integrated Light Generation, Control, and Delivery Engine for Creating Cold Atoms》（Andrei Isichenko、Calisto Ruiz、Chuan Zhong 等，通讯 Daniel J. Blumenthal，UCSB；2026-10-13）；线索来自 @QuantumDom 10-26 12:15 UTC 的论文推荐帖",
+      "publishedAt": "2026-10-13",
+      "eventAt": "2026-10-13",
+      "collectedAt": "2026-10-26T12:54:00.000Z",
+      "updatedAt": "2026-10-26T12:54:00.000Z",
+      "description": "一手来源：arXiv 论文摘要与 HTML 版。背景：原子钟、量子传感、冷原子量子计算都要先把原子冷到接近绝对零度，最常用的装置是三维磁光阱（3D-MOT）——而整套实验里超过 80% 的体积是激光器和光学元件（论文原话）。做法：团队在一颗芯片上集成了两台可调频的自注入锁定激光器（780 nm 冷却光和回泵光，靠片上环形谐振腔压窄线宽）、频率控制和强度控制（片上环形调制器）、无源合束分束、信号监测口，以及三个大面积光栅发射器，把三束各 3 mW 的光直接打进铷蒸气室，再经反射镜组成六束光。结果：完全电控，稳定运行 3D-MOT，困住超过 100 万个原子，平均温度约 350 μK，作者称这是首次把冷原子所需的「产光、控光、送光」整合在单颗芯片上。和 2023 年同组只做「送光」芯片（Nature Communications）相比，这次把激光器和控制也搬上了芯片。对你：标准的「芯片制造替代光学平台」题，氮化硅波导走的是 CMOS 晶圆厂兼容工艺（论文图 1 有整片晶圆照片和一枚硬币作尺寸对比），可以从刻蚀/波导加工讲到它为什么能量产。可拍角度：1）一张满桌镜片的光学平台 vs 一枚硬币大小的芯片；2）光栅发射器怎么把波导里的光「掰」成三束平行大光斑；3）为什么原子钟、导航传感器想要它（体积、抗震、可量产）。开场：0 秒上论文图 1 的芯片渲染图，三束红光从芯片表面射向上方的蒸气室。",
+      "caveat": "预印本，未经同行评审；350 μK 比传统台式系统常见的温度高，论文定位是「首次单芯片集成演示」，不是性能全面超越；磁场线圈和真空蒸气室仍在芯片外。封面为论文 HTML 版图 1（芯片组件渲染、整片氮化硅晶圆照片、封装后的光引擎）。",
+      "imageUrl": "https://arxiv.org/html/2610.17918v1/Fig1.png",
+      "previewUrl": "https://arxiv.org/html/2610.17918v1/Fig1.png",
+      "imageAlt": "论文图 1：(a) 封装光引擎渲染图，三束光射入铷蒸气室；(b) 切割前的整片氮化硅晶圆；(c) 芯片与硬币对比；(d) 封装后的光引擎",
+      "tags": [
+        "光子芯片",
+        "芯片制造",
+        "量子计算",
+        "氮化硅",
+        "冷原子"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 14,
+          "来源": 15,
+          "时效": 7,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 88.1,
+        "threshold": 65,
+        "run": "2026-10-26-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.10846",
+      "title": "给机器人模型喂更多种机器人的数据，为什么反而越学越差？斯坦福和 Meta 发现：每种机器人各用一套「动作说明书」，数据就被切成互不相通的孤岛；换成共享的潜在动作空间，机器人种类越多越好",
+      "category": "AI",
+      "source": "arXiv:2610.10846《Cross-Embodiment Robot Foundation World Models with Latent Actions》（Huang Huang、Sriram Yenamandra 等，含李飞飞、吴佳俊；Stanford / Meta FAIR Robotics；2026-10-07）；线索来自 @OntosWorld 10-26 09:05 UTC 的解读帖",
+      "publishedAt": "2026-10-07",
+      "eventAt": "2026-10-07",
+      "collectedAt": "2026-10-26T12:54:00.000Z",
+      "updatedAt": "2026-10-26T12:54:00.000Z",
+      "description": "一手来源：arXiv 论文摘要与 HTML 版。问题：机器人有机械臂、灵巧手、人手视频，各自的动作格式完全不同，怎么训练一个能跨「身体」通用的世界模型？对比两种做法：EAC-WM 直接用每种机器人自己的动作标签做条件；LAC-WM 先用逆动力学模型从画面里学出一个所有机器人共享的「潜在动作空间」，再让前向模型在这个空间里预测下一帧。结果：在灵巧操作任务上 LAC-WM 比 EAC-WM 最高好 46.7%，在改造过的 LIBERO 基准上好 11.7%。最反直觉的是扩展实验：预训练数据从 Egodex（人手视频）一种扩到再加 Agibot（智元机器人数据集）、Droid 三种时，LAC-WM 越来越好，EAC-WM 反而越来越差。论文图 2 的 UMAP 可视化直接给出原因：各用各的动作编码器时，三种数据的动作向量各自聚成一团、互不重叠；共享潜在动作空间时三种颜色混在一起。对你：「数据越多越好」的反例，而且有一张一眼就懂的散点图；智元的数据集在里面，和国内具身智能热度相关。可拍角度：1）三种机器人说三种「方言」，模型学不到共同点；2）共享动作空间就像先翻译成普通话；3）对国内具身智能公司拼数据量的启示。开场：0 秒上 UMAP 图，左边三团分开的点，右边混成一片。",
+      "caveat": "预印本；结论来自世界模型 + 规划的设置，扩展实验只有 1→3 种数据集、每组 5 万条样本，不能直接推到所有机器人基础模型；「越多越差」是 EAC-WM 这种显式动作条件的现象。发布已 19 天，属于常青机制题。封面为论文图 2（7,000 个动作向量的 UMAP 可视化）。",
+      "imageUrl": "https://arxiv.org/html/2610.10846v1/figs/umap.png",
+      "previewUrl": "https://arxiv.org/html/2610.10846v1/figs/umap.png",
+      "imageAlt": "论文图 2：Droid（红）、Agibot（绿）、Egodex（蓝）三种数据的动作向量 UMAP，分开编码时各成一团，共享潜在空间时混在一起",
+      "tags": [
+        "具身智能",
+        "机器人",
+        "AI训练",
+        "世界模型"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 77,
+        "baseBreakdown": {
+          "主线": 17,
+          "钩子": 17,
+          "画面": 12,
+          "来源": 15,
+          "时效": 6,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 81.4,
+        "threshold": 65,
+        "run": "2026-10-26-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://spectrum.ieee.org/zblan-fiber-optic-cables-iss",
+      "title": "在太空拉出来的光纤真的更好吗？国际空间站一个月拉了 11.8 公里，强度高 80%、损耗更低——但离「理论上低 100 倍」只走了 2 倍，卡住它的不是重力，是原料里那一点点铁、钴、镍、铜",
+      "category": "其他",
+      "source": "IEEE Spectrum《Will Fiber-optic Cables Finally Get Made in Orbit? Maybe》（Laurie Winkless；2026-10-26）；实验方为 Flawless Photonics 与澳大利亚 Adelaide University",
+      "publishedAt": "2026-10-26",
+      "eventAt": "2026-10-26",
+      "collectedAt": "2026-10-26T12:54:00.000Z",
+      "updatedAt": "2026-10-26T12:54:00.000Z",
+      "description": "来源：IEEE Spectrum 2026-10-26 报道（采访 Flawless Photonics CTO Hubert Moser、Adelaide University 的 Heike Ebendorff-Heidepriem 和不参与研究的 Clemson 材料学家 John Ballato）。背景：ZBLAN 是一种含锆、钡、镧、铝、钠的氟化物玻璃，理论上传光损耗可比石英光纤低 100 倍，覆盖紫外到中红外，被设想用于不需要中继的跨洋海缆；但它在浇铸和拉丝时容易析出微晶，散射光线，所以商用 ZBLAN 远达不到理论值。1990 年代的抛物线飞行实验提示微重力能抑制结晶。这次：一台手提箱大小的拉丝塔在国际空间站待了一个月，拉出总长 11.8 公里的 ZBLAN 光纤，最长一根连续 1.1 公里，由 SpaceX 无人飞船带回，与地面同型拉丝塔做的光纤一起送五个实验室测试。结果：阶跃折射率光纤在轨道上拉的损耗明显更低，强度高 80%（回地面倒卷时机器卡住，光纤居然没断，这才发现）；但单一折射率光纤的光学性能和地面没有可测差别。团队估算微重力最多带来约 2 倍的降损，离 100 倍差得远，剩下的瓶颈与重力无关：浇铸预制棒时困住的气泡，以及原料里残留的铁、钴、镍、铜等过渡金属杂质——要把杂质再降约一千倍。Ballato 直言：太空熔炼对杂质问题「什么也没买到」。对你：和半导体一样的「纯度决定一切」逻辑，可以类比晶圆材料的 ppb 级杂质控制。可拍角度：1）为什么失重能让玻璃不结晶；2）2 倍 vs 100 倍，差在哪；3）太空制造的真实账本。开场：0 秒上文章题图。",
+      "caveat": "二级来源为权威科技媒体报道，原始测试论文本轮未读；「2 倍」是团队自己的最好情况估算；单一折射率光纤没有光学改善。题图内容以 IEEE Spectrum 原图为准。",
+      "imageUrl": "https://spectrum.ieee.org/media-library/image.jpg?id=68515509&width=1200&height=600&coordinates=0%2C251%2C0%2C252",
+      "previewUrl": "https://spectrum.ieee.org/media-library/image.jpg?id=68515509&width=1200&height=600&coordinates=0%2C251%2C0%2C252",
+      "imageAlt": "IEEE Spectrum 文章题图",
+      "tags": [
+        "材料",
+        "光纤",
+        "太空制造",
+        "杂质"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 76,
+        "baseBreakdown": {
+          "主线": 17,
+          "钩子": 19,
+          "画面": 12,
+          "来源": 10,
+          "时效": 10,
+          "大陆": 3,
+          "新颖": 5
+        },
+        "multiplier": 1.0,
+        "finalScore": 76.0,
+        "threshold": 65,
+        "run": "2026-10-26-2040-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2610.28679",
       "title": "让 AI 自己写「验收脚本」，它为什么更容易把对的答案判错？VerifierBench：19 个模型写 222 个任务的 PASS/FAIL 检查，最高只有 62.1 分，错判大多来自一个都不放行的「过严」脚本",
