@@ -1,7 +1,240 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-25T12:52:00.000Z",
+  "updatedAt": "2026-10-26T00:52:00.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2610.30205",
+      "title": "告诉 AI「这步走错了」，它反而更可能再走一遍？8 个小模型下棋推箱子实测：把失败的那步连同报错写回记录，错棋概率不降反升；加一句「不要重复」毫无作用",
+      "category": "AI",
+      "source": "arXiv:2610.30205《Feedback That Backfires in Games: Do LLM Players Repeat the Move They Just Watched Fail?》（Esmail Gumaan，单作者；2026-10-21 提交）；线索来自 @randhir302 10-25 15:57 UTC 的讲解帖",
+      "publishedAt": "2026-10-21",
+      "eventAt": "2026-10-21",
+      "collectedAt": "2026-10-26T00:52:00.000Z",
+      "updatedAt": "2026-10-26T00:52:00.000Z",
+      "description": "一手来源：arXiv 预印本（摘要）。背景：几乎所有智能体外壳（ReAct、Reflexion、工具调用重试）在一步失败后都做同一件事——把「这步动作 + 失败信息」追加进对话记录，再让模型重来，默认假设是模型读到报错就会避开这步。论文在推箱子（Sokoban）、四子棋、黑白棋三个能精确判定失败的游戏里直接测量这个假设：失败分两种，一种是「非法」（列满了、撞墙），一种是「合法但会输」。结果（摘要原文）：①在 8 个指令微调小模型（1.35 亿到 17 亿参数）上合并统计，这条失败记录反而让失败的那步更可能被选中（纠正增益 G = −1.38 nats/token），而且是通过这步动作的「字面」起作用——非法动作会反弹，会输的合法动作不会，也不是每个模型都这样；②记录写进去以后，这步的概率几乎不再取决于模型原来多想走它（斜率 0.18）：原本不会走的棋变得更可能，贪心解码开始走它；原本就想走的错棋概率下降，但仍有 38% 被重复；③只描述失败、不重贴那步动作的文字（讲解帖举例「所选的那一列已经满了」），能保住模型原来的偏好；④沿 OLMo 2 1B 的训练阶梯看，这个反转在基座模型里就存在，到 DPO 阶段基本被消除；⑤系统提示里加「不要重复」没有任何作用，「干净重试」（删掉失败那次）是最差的外壳，解码时直接封禁失败字符串能杜绝原样重复、却挡不住改走别的非法棋。讲解帖补充：合并后错棋概率约 0.24→0.35，贪心解码重复率 12%→23%。全部实验在免费 Colab GPU 上跑完。对你：和上一轮「AI 知道说明书过时了还照做」能连成一期「AI 为什么听不进劝」——不是它不懂报错，而是你把错误答案又抄了一遍给它看。可拍角度：1）「别想粉红色大象」：重复一遍错误本身就是提示；2）报错该怎么写——描述问题、别复读答案；3）小模型和大模型的差别、训练哪一步把这个毛病修掉了。开场：0 秒上讲解卡片——「Illegal move」写进记录后错棋概率条变长。",
+      "caveat": "单作者 arXiv 预印本，未经同行评审；只测了 17 亿参数以下的小模型，没有 7B 以上的检验，也只在游戏里测、不是真实工具调用；作者说明强化学习部分没能跑。0.24→0.35、12%→23% 等数字来自讲解帖对论文的转述，摘要里给的是 G = −1.38、斜率 0.18、38%。不能据此推断 Claude 等大模型同样如此。封面为 @randhir302 制作的论文讲解卡片（X 媒体），不是论文原图。",
+      "imageUrl": "https://pbs.twimg.com/media/HVfOvwtaIAAJ2tY.jpg",
+      "previewUrl": "https://pbs.twimg.com/media/HVfOvwtaIAAJ2tY.jpg",
+      "imageAlt": "讲解卡片「When error messages backfire」：失败记录 Illegal move 写回对话后错棋概率从 0.24 升到 0.35；各种外壳写法（不要重复、引用动作、失败两次、干净重试、只描述失败）的效果条形图",
+      "tags": [
+        "智能体",
+        "AI推理",
+        "提示词",
+        "报错反馈",
+        "论文"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 81,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 19,
+          "画面": 10,
+          "来源": 13,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 85.6,
+        "threshold": 65,
+        "run": "2026-10-26-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.30450",
+      "title": "AI 早就想出正确答案了，为什么还要接着「想」好几千字？一个只读隐藏状态的小探针告诉它「可以停了」：Qwen3-1.7B 少写 41% 的 token、OLMo-3-7B-Think 少 51%，准确率不掉",
+      "category": "AI",
+      "source": "arXiv:2610.30450《Same Beliefs, Different Policies: Learning Reusable Representations for Early Stopping in LLM Reasoning》（Jingwei Ni、Dmitry Abulkhanov、Vladislav Smirnov、Markus Leippold、Elliott Ash、Timothy Baldwin；2026-10-21 提交）；线索来自 @randhir302 10-25 15:56 UTC 的讲解帖",
+      "publishedAt": "2026-10-21",
+      "eventAt": "2026-10-21",
+      "collectedAt": "2026-10-26T00:52:00.000Z",
+      "updatedAt": "2026-10-26T00:52:00.000Z",
+      "description": "一手来源：arXiv 预印本（摘要与图 1）。问题（摘要原文）：推理模型经常在已经得到正确答案之后还继续推理，浪费算力，有时还会把对的改成错的。什么时候停是个「元推理」问题——要拿继续想可能带来的收益和成本比。以往做法是按某个 token 单价直接训练一个停止控制器，换个价格就得重训。BELT 的做法：把「预测答案」和「决定停不停」拆开——先从冻结的大模型隐藏状态里学一个探针，预测「现在停下的答案」和「想到最后的答案」各自对不对、是否一样；预测目标与 token 价格无关，于是同一个探针可以只在 CPU 上重拟合一个线性停止策略（讲解帖说 6–769 个参数），或者挪一个阈值，就换到不同的准确率-成本取舍。结果：在 5 个分布外数学基准上平均，Qwen3-1.7B 生成 token 减少 41%、OLMo-3-7B-Think 减少 51%，准确率不降；只用数学训练的探针还能迁移到编程和智能体任务；在 OLMo3 上探针参数比最强基线 OS-Pruner 的一个检查点少 21.2 倍，训练 GPU 时数是 OS-Pruner 五个价格专用检查点的 1/55。论文图 1：(a) 用离线推理轨迹打标签（现在停 / 最后 / 以后 / 是否相同）；(b) 训练 BELT 探针；(c) 在冻结特征上拟合不同价格的停止策略。对你：直接对应「额度都烧哪了」——思考 token 是推理模型最贵的部分；也能讲「想太多反而改错」这种很有人味的现象。可拍角度：1）考试时检查三遍反而把对的改错；2）模型自己「心里有数」：隐藏状态里早就知道答案，只是嘴上还在说；3）同一个探针，换个预算只需挪一个阈值。开场：0 秒上图 1 三栏流程，或者一段推理文本里中途亮起「这里就可以停了」。",
+      "caveat": "预印本，未经同行评审；只在两个能读取隐藏状态的开源模型（1.7B 与 7B）上测，闭源 API 模型没法这样用；需要离线打好标签的推理轨迹来训练探针。讲解帖提到在 ALFWorld 这类「多想确实有用」的任务上省得少很多。41%/51% 是 5 个数学基准的平均。作者单位本轮未逐一核实（转述帖称来自 ETH Zurich 与 MBZUAI）。封面为论文图 1。",
+      "imageUrl": "https://arxiv.org/html/2610.30450v1/BELT_Figure1_academic_v1.png",
+      "previewUrl": "https://arxiv.org/html/2610.30450v1/BELT_Figure1_academic_v1.png",
+      "imageAlt": "论文图 1 三栏：(a) Reasoning outcomes 离线标签表（Now/End/Later/Same），(b) Belief training 四个 BCE 目标训练 BELT probe，(c) Policy fitting 按 token 价格拟合线性停止策略",
+      "tags": [
+        "AI推理",
+        "AI成本",
+        "推理模型",
+        "早停",
+        "论文"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 16,
+          "画面": 11,
+          "来源": 14,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 86.6,
+        "threshold": 65,
+        "run": "2026-10-26-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.27465",
+      "title": "让 AI 自己改自己、再让另一个 AI 当裁判批准，裁判可能根本没在看？一个平台的 AI 裁判在 37 种设置里有 9 种不管给它看什么都打同一个分，还不报错",
+      "category": "AI",
+      "source": "arXiv:2610.27465《Recoverability and Verifier Strength: Two Measured Preconditions for Unattended Agent Self-Improvement》（De Wang、Peng Qi；2026-10-20 提交；讲解帖称为 NeurIPS 2026 AgenticOS Workshop 论文）；线索来自 @arkyyang 10-25 14:11 UTC 的讲解帖",
+      "publishedAt": "2026-10-20",
+      "eventAt": "2026-10-20",
+      "collectedAt": "2026-10-26T00:52:00.000Z",
+      "updatedAt": "2026-10-26T00:52:00.000Z",
+      "description": "一手来源：arXiv 预印本（摘要）。背景：一些智能体平台开始「自我改进」——读部署中智能体的运行记录，生成一个改动（改提示词、工具或技能），由自动验证器（常常是另一个大模型当裁判）批准后直接上线，全程没有人写。问题：这个循环里多少可以无人值守？论文提出两个可测的量：①验证器强度——可用的裁判和一个可信参考裁判有多一致，它限制了每一步最多能改进多少；②可恢复性——一个坏改动撤销起来有多便宜：撤销是否还要裁判再批准，回滚能恢复多少原来的行为。规则：两者都够才能无人值守。按这条规则，他们的平台允许提示词、工具、技能的改动自动上线，而模型权重更新必须人签字。结果（摘要原文）：验证器方面，平台自己的大模型裁判在 37 种设置里有 9 种不管给它看什么都给同一个分，而且不报错——裁判可能「看起来健康」却什么都批准，所以强度必须实测，两个简单测试就能抓出来（讲解帖：同一分数 0.250 在 40 次运行中完全一样；办法是「删掉信号」——把它声称在评估的东西拿掉，看分数变不变；把标准改写成硬规则后 30/30 次正常，此前 0/30）；可恢复性方面，恢复一份存好的旧版本能让智能体回到原样，但让模型「重新生成一个撤销」做不到——只有保留了旧版本的改动才能不靠人撤销；而且改动在线期间，比正常重跑波动多改变了 17% 任务的结果，这部分任何撤销都修不回来。在 τ²-bench 航空客服任务上做了对照实验。可拍角度：1）谁来监督监督者——AI 裁判也会「摸鱼」；2）「Ctrl+Z」为什么必须存档、不能靠回忆；3）平均分没变，不代表没人受伤（17% 的任务结果被翻转）。开场：0 秒上讲解卡片「Keep the undo / judge setups collapsed 9 of 37」。",
+      "caveat": "预印本；是作者在自己平台上的个案研究和 τ²-bench 航空子集（讲解帖说 50 个任务）上的对照实验，端到端只测了提示词改动。0.250、40 次、30/30 vs 0/30 来自讲解帖对正文的转述，本轮只核对了摘要（9/37、17% 与回滚结论）。作者单位与「NeurIPS Workshop」说法本轮未核实。封面为 @arkyyang 讲解视频的封面画面（X 媒体），不是论文原图。",
+      "imageUrl": "https://pbs.twimg.com/amplify_video_thumb/2114359113044140032/img/zpZ6VM0pqmtPrrUg.jpg",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2114359113044140032/img/zpZ6VM0pqmtPrrUg.jpg",
+      "imageAlt": "讲解视频封面：橙色大字「KEEP THE UNDO」，上方「AGENT FIXING ITSELF?」，下方「judge setups collapsed 9 of 37」，右侧一个卡通方块机器人",
+      "tags": [
+        "智能体",
+        "AI安全",
+        "LLM裁判",
+        "自我改进",
+        "论文"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 77,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 9,
+          "来源": 13,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 81.4,
+        "threshold": 65,
+        "run": "2026-10-26-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.31276",
+      "title": "AI 写代码能把自己的错误分析得头头是道，下一步却照旧犯同样的错？论文给这个现象起名「批评到行动的交接断层」，用分阶段奖励训练后 Qwen3.5-27B 在 4 个修 bug 基准平均 +4.8 分",
+      "category": "AI",
+      "source": "arXiv:2610.31276《RIPPLE: Recovery Internalization through Process-Level Policy Learning and Effect-Aware Credit for Long-Horizon Agentic Coding》（Jingxuan Xu、Zihang Xu、Yuechen Luo、Ziqi Miao、Wenqiang Zhu、Weihao Li 等；2026-10-22 提交）；线索来自 @CharryLee426 10-25 20:15 UTC 的帖子",
+      "publishedAt": "2026-10-22",
+      "eventAt": "2026-10-22",
+      "collectedAt": "2026-10-26T00:52:00.000Z",
+      "updatedAt": "2026-10-26T00:52:00.000Z",
+      "description": "一手来源：arXiv 预印本（摘要与图 1）。现象（摘要原文）：长程编程智能体能观察到失败、写出一段合理的批评，然后继续沿着同一条错误路线走——作者称之为「批评到行动的交接断层（Critique-to-Action Handoff Gap）」。论文图 1 左边：测试失败 → 智能体写出反思「应该检查这个文件」→ 但交接断了 → 又提交了错误改动 → 测试再挂；右边：触发反思 → 诊断 → 采取纠正动作 → 通过。做法 RIPPLE：一个「只看前缀」的老师模型（看不到之后的动作和最终结果）给出有证据支撑的恢复指导；轻量蒸馏后，用强化学习把奖励分别记到「什么时候该反思」「诊断」「纠正动作」三个阶段；再用局部有效性信号把关，让中途的恢复决定不至于不分好坏地继承最终结果的奖惩。结果：在 4 个仓库级软件工程基准上，相对基础策略平均提高 4.8 分，部署时不需要额外的批评模型；转述帖给出 Qwen3.5-27B（3 个随机种子）SWE-bench Verified 74.6→75.9、Pro 50.8→57.3、Multilingual 68.8→73.6、SWE-Compass 24.3→30.7。恢复收益集中在两种情况：前面的记录里有足够诊断证据、而且仓库状态在剩余预算内还能退回去。对你：可以和「AI 知道说明书过时还照做」「告诉 AI 错了反而重复」合成一期「AI 为什么知错不改」——三篇论文分别给出三个原因：指令比证据更「算数」、报错把错误答案又抄了一遍、反思和行动之间没被一起训练。可拍角度：1）人也会「道理都懂，就是做不到」；2）奖励该记在哪一步；3）为什么改不回去的状态就救不回来。开场：0 秒上图 1 左右对比（断开的箭头 vs 一路绿勾）。",
+      "caveat": "预印本，未经同行评审；作者单位本轮未核实。+4.8 是 4 个基准的算术平均；转述帖注明 SWE-bench Verified 的 95% 置信区间跨零（即那一项提升不显著），其余三个不跨零。各基准具体分数来自转述帖，本轮只核对了摘要。和库内 10-25 的 Stale Instruction Files 条目主题相近（新颖度打了折）。封面为论文图 1。",
+      "imageUrl": "https://arxiv.org/html/2610.31276v1/Figures/motivation.png",
+      "previewUrl": "https://arxiv.org/html/2610.31276v1/Figures/motivation.png",
+      "imageAlt": "论文图 1 两栏：A. Critique ≠ Recovery——测试失败、智能体写出批评、交接断开、错误改动、再次失败；B. Reflection as a Recovery Policy——触发、诊断、行动、测试通过",
+      "tags": [
+        "智能体",
+        "AI编程",
+        "强化学习",
+        "论文"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 75,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 11,
+          "画面": 12,
+          "来源": 14,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 2
+        },
+        "multiplier": 1.0566,
+        "finalScore": 79.2,
+        "threshold": 65,
+        "run": "2026-10-26-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://tinytapeout.com/",
+      "title": "造一颗芯片动辄要几十万美元的流片费，为什么普通人现在也能把自己的电路做进真硅片？Tiny Tapeout 把几百个人的设计「拼车」放在同一颗芯片上",
+      "category": "半导体",
+      "source": "Tiny Tapeout 官网 tinytapeout.com 首页与 FAQ（官方项目页，本轮 10-25 读取）；GitHub 组织 github.com/TinyTapeout；线索来自 @huihoo 10-25 13:05 UTC 的中文介绍帖",
+      "publishedAt": "2026-10-25",
+      "eventAt": null,
+      "collectedAt": "2026-10-26T00:52:00.000Z",
+      "updatedAt": "2026-10-26T00:52:00.000Z",
+      "description": "一手来源：Tiny Tapeout 官网首页和 FAQ。是什么：一个让个人、学生把自己的数字/模拟设计送去真正晶圆厂制造的教育项目，官网口号「From idea to chip design in minutes」。官网信息：①当前开放的「班车」（shuttle）有 SKY26d（SkyWater）和 GF26c（GlobalFoundries），站内还列有 IHP 班次；FAQ 写明使用开源的 SkyWater 130nm PDK；②每人分到一个标准「格子」（tile），TT04–TT10 时约 160×100 微米，大约够放 1000 个数字逻辑门，不够可以多买格子；③每个设计有时钟、复位、8 个输入、8 个输出、8 个双向 IO；④制造要 6–9 个月，加上贴片、测试、发货，最多要等一年；每人拿到 1 颗芯片，装在开发板上，靠板上的微控制器选中并激活你自己的那块电路；⑤入门可以用浏览器里的 Wokwi 画逻辑门，进阶用 Verilog 等 HDL；网站还有「画一个 MOSFET」「画 CMOS 反相器」等教程。介绍帖的解读：项目向晶圆厂买一块标准面积，再切成几百个小单元，几百个爱好者的设计并排在同一块硅片上，通过片上多路复用器共用一组 IO。对你：这是「从半导体出发」最好讲的一个反直觉入口——流片贵在掩模版和一整片晶圆，不在你那一小块电路；拼车把固定成本摊薄，跟 MPW（多项目晶圆）是一个道理，你可以用刻蚀一线的经验讲清「为什么一套掩模那么贵」。可拍角度：1）芯片为什么贵：固定成本 vs 边际成本；2）130nm 是什么年代的工艺、为什么教学够用；3）一颗芯片里住着几百个陌生人的电路。开场：0 秒上官网封面图——开发板上的芯片，配「From idea to chip design in minutes!」。",
+      "caveat": "常青机制题，不是本周新闻。官网 FAQ 对价格只给了计算器链接，本轮没有核实当前价格；转述帖和其配图称约 300 美元（Tiny Tapeout 6 时期），视频里如需报价请以官网计算器为准。「几百个设计共享一颗芯片、多路复用器」来自介绍帖，与官网「激活你自己的设计」的描述一致，但具体每期设计数本轮未核实。项目主要用美欧晶圆厂（SkyWater、GlobalFoundries、IHP），大陆观众直接参与可能受支付与物流限制。封面为官网 og:image（Tiny Tapeout 6 宣传图）。",
+      "imageUrl": "https://tinytapeout.com/images/tinytapeout6.png",
+      "previewUrl": "https://tinytapeout.com/images/tinytapeout6.png",
+      "imageAlt": "Tiny Tapeout 6 宣传图：电路原理图、芯片版图与绿色开发板拼贴，中间白色大字「From idea to chip design in minutes!」",
+      "tags": [
+        "芯片制造",
+        "流片",
+        "开源芯片",
+        "半导体教育",
+        "MPW"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "主线": 23,
+          "钩子": 17,
+          "画面": 13,
+          "来源": 13,
+          "时效": 6,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 89.2,
+        "threshold": 65,
+        "run": "2026-10-26-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://github.com/Cai-aa/CAE-Agent-Hub",
+      "title": "仿真工程师点了十年的 Abaqus、COMSOL、Fluent，现在能让 Claude Code 直接去点？开源项目 CAE-Agent-Hub 给 10 多款仿真软件做了 MCP 接口，GitHub 1100+ 星",
+      "category": "AI",
+      "source": "GitHub 仓库 Cai-aa/CAE-Agent-Hub（MIT 许可，README 本轮读取；GitHub API：创建于 2026-04-27，最近推送 2026-10-25，1133 星）；作者 @GoGoFly23 10-25 14:51 UTC 的介绍帖与录屏",
+      "publishedAt": "2026-10-25",
+      "eventAt": "2026-10-25",
+      "collectedAt": "2026-10-26T00:52:00.000Z",
+      "updatedAt": "2026-10-26T00:52:00.000Z",
+      "description": "一手来源：原作者 GitHub 仓库 README 和作者本人介绍帖。是什么（README）：一组给工程仿真用的 MCP 服务器、可复用的智能体技能（Skill）、求解器自动化流程和浏览器结果查看器，目标是让 Codex、Cursor、Claude Code、Claude Desktop 这类 AI 客户端直接操作电脑上已安装的 CAE 软件和求解器，而不是只生成离线示例。README 列出的 MCP 覆盖 Abaqus/CAE、ANSYS Fluent、ANSYS Workbench/Mechanical、Ansys Electronics Desktop/HFSS、Altair HyperWorks、LAMMPS、OVITO、CalculiX、Peridigm，以及 FreeCAD → Elmer FEM → ParaView 串起来的流程；Abaqus MCP 通过本地 TCP 桥连接正在运行的 Abaqus/CAE，能在内核里执行 Python、检查模型、提交作业、监控状态、读 ODB 结果、截取视口图。架构是「AI 客户端 → MCP 服务器 → 正在运行的求解器；Skill/Subagent → 建模/设置/求解/验证流程 → 原生结果 → 轻量导出 → 浏览器查看器」，并刻意把求解器二进制、许可证、私有路径排除在代码库外。作者介绍帖：结构、流体、电磁、分子动力学都已覆盖，Skill 共 37 个，其中 Abaqus 最全；MIT 协议开源。对你：和你手上的仿真类需求（封装应力仿真、微纳加工仿真平台）直接相关——都绕不开「工程师手动点仿真软件」这一步；这条可以做成「AI 什么时候能替仿真工程师干活、哪一步还必须人把关」的科普，也可以给 Linus 当技术参考。可拍角度：1）AI 写报告不稀奇，AI 直接开商业求解器才是新东西；2）为什么仿真结果不能「AI 说了算」——网格、边界条件、收敛性；3）MCP 是什么：给 AI 装上「手」。开场：0 秒上作者录屏——GitHub 页面上 MCP 目录一长串软件名。",
+      "caveat": "作者自建开源项目，不是厂商官方工具；README 自己写明部分模块（如 Adams MCP）「实时集成仍未验证」，各模块成熟度不一。1100+ 星为作者帖子与 GitHub API 读数（1133），星数不代表工程可靠性。需要用户自己有对应商业软件的合法许可证。作者帖说第一个 Abaqus MCP「去年十二月」上传，而 GitHub API 显示本仓库创建于 2026-04-27，可能是迁移后的新仓库，本轮未核实。本轮没有实际运行任何模块。封面为作者介绍视频的封面画面（X 媒体，右下角有作者出镜小窗）。",
+      "imageUrl": "https://pbs.twimg.com/amplify_video_thumb/2114369005595373568/img/95XbAfUYT2dlJy5d.jpg",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2114369005595373568/img/95XbAfUYT2dlJy5d.jpg",
+      "imageAlt": "作者介绍视频封面：浏览器里的 GitHub 仓库 CAE Agent Hub 文件列表页面，左下角作者出镜小窗，底部字幕「CAE Agent Hub」",
+      "tags": [
+        "智能体",
+        "MCP",
+        "工程仿真",
+        "CAE",
+        "开源项目"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 78,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 12,
+          "画面": 11,
+          "来源": 13,
+          "时效": 8,
+          "大陆": 9,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 82.4,
+        "threshold": 65,
+        "run": "2026-10-26-0840-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2610.30571",
       "title": "AI 明明发现说明书过时了，为什么还照着错的写？Claude Code 80 次里 79 次指出 CLAUDE.md 和代码对不上，照样跟着文件走——加一句话，跟代码走的比例从 4.2% 跳到 91.4%",
