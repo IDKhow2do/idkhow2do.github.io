@@ -1,7 +1,200 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-27T08:48:00.000Z",
+  "updatedAt": "2026-10-27T12:50:00.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2610.35864",
+      "title": "扩散模型拍视频明明更炫，为什么还要让智能体「写代码一帧帧渲」？VibeVideoBench：239 道中英任务，最好的系统仍有约四分之一交不出合格片",
+      "category": "AI",
+      "source": "arXiv:2610.35864《VibeVideoBench: Evaluating Multimodal Agents on Code-Driven Video Generation》（Muxi Diao 等；2026-10-26）",
+      "publishedAt": "2026-10-26",
+      "eventAt": "2026-10-26",
+      "collectedAt": "2026-10-27T12:50:00.000Z",
+      "updatedAt": "2026-10-27T12:50:00.000Z",
+      "description": "一手来源：arXiv 论文摘要、HTML teaser/overview 图。问题：扩散视频模型画面好看，但很难精确渲公式、图表、规则一致的游戏，或让旁白对准画面事件；另一条路是多模态智能体写代码逐帧渲染并合成声音。做法：VibeVideoBench——239 个自包含中英任务、12 类（数据故事、音乐驱动、课堂讲解、论文解说等），要求智能体在原生 harness 沙箱里一小时内交出带声 MP4。评估分层次：交付规格程序检查、约 1.3 万条任务专属 rubric、五维质量由三组 VLM 评审并经盲测人类偏好校验。九个前沿智能体系统、2151 次打分 rollout：GPT-6 Astra 与 Claude Opus 5.5 领先，但最佳系统仍约四分之一任务踩核心要求；「片有没有交出来」和「好不好」一样重要，四分之三的丢片是最终渲染启动太晚、太慢或根本没开渲。对你：账号主线就是「代码出片」——这条基准直接量你每天在用的路线，且含中文任务。可拍角度：1）扩散好看 vs 代码可控；2）丢片为什么多数死在「没渲完」；3）中英课堂/论文解说任务长什么样。开场：0 秒上 teaser 里代码渲出的低多边形游戏画面。",
+      "caveat": "预印本；榜上名次依赖所选九个系统与一小时时限，外推到任意本地流水线需对照；封面为论文 HTML teaser 帧（代码驱动渲染示例）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261027d-vibevideo.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261027d-vibevideo.jpg",
+      "imageAlt": "VibeVideoBench teaser：代码驱动渲染的低多边形塔防/植物大战类游戏画面与 UI",
+      "tags": [
+        "智能体",
+        "AI视频",
+        "代码视频",
+        "工具调用",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 92,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 19,
+          "画面": 15,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 8,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 97.2,
+        "threshold": 65,
+        "run": "2026-10-27-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.28949",
+      "title": "晶圆缺陷分类器训好了，为什么产线上新冒出来的花纹它仍当「没见过」？WaferHDC：用超维计算在线发现缺陷模式，不必重训静态分类器",
+      "category": "半导体",
+      "source": "arXiv:2610.28949《Online Open-World Wafer Defect Discovery using Hyperdimensional Computing》（Quanling Zhao、Ava Emami、Tsuyoshi Idé、Rajiv Joshi 等；2026-10-20）",
+      "publishedAt": "2026-10-20",
+      "eventAt": "2026-10-20",
+      "collectedAt": "2026-10-27T12:50:00.000Z",
+      "updatedAt": "2026-10-27T12:50:00.000Z",
+      "description": "一手来源：arXiv 论文摘要与 HTML overview 流程框。问题：传统晶圆缺陷分析依赖离线、闭集分类器，产线持续跑时新冒出的缺陷签名会被漏掉。做法：WaferHDC——基于超维计算（HDC）的在线开放世界缺陷发现：先只在正常片上建模空间分布做正态筛查，再只对可疑片做在线聚类，把反复出现的失败收成紧凑超向量记忆，内存可随新缺陷模式扩展，无需重训静态分类器或存全量原始历史。在业界常用 WM-811K 上，相对最强在线基线 adjusted Rand index 高 13.3 个百分点、NMI 高 10.5 个百分点。对你：刻蚀/工艺监控同族——「闭集分类器」vs「开放世界记忆」可拍成产线对照。可拍角度：1）Stage1 正态筛查→Stage2 缺陷记忆；2）为什么不用重训；3）新缺陷模式如何晋升为稳定记忆。开场：0 秒上 overview 流程图（Incoming Wafer → Normal / Discovered Defect Modes）。",
+      "caveat": "预印本；指标依赖 WM-811K 与所选在线基线，外推到任意 fab 量测栈需复测；封面为论文 overview 架构图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261027d-waferhdc.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261027d-waferhdc.jpg",
+      "imageAlt": "论文 overview：WaferHDC 两阶段——正态筛查与在线缺陷模式发现",
+      "tags": [
+        "芯片制造",
+        "良率",
+        "失效分析",
+        "AI推理",
+        "晶圆检测"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 89,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 17,
+          "画面": 14,
+          "来源": 15,
+          "时效": 7,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 95.6,
+        "threshold": 65,
+        "run": "2026-10-27-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://www.nature.com/articles/s41598-026-69075-4",
+      "title": "脉冲 Cl₂ 刻蚀，为什么腔体直径一变，「关脉冲」的最佳时间也要跟着改？小腔电子温度更高、壁损失更快，GaN 刻蚀峰值 OFF 从 200 μs 挪到 100 μs",
+      "category": "半导体",
+      "source": "Scientific Reports《Dissociative electron attachment dynamics in pulsed Cl₂ plasma process: characteristic pulse-OFF time on chamber diameter》（Shinjiro Ono、Cheng-Ying Jhan、Aditya Saha、Masaharu Shiratani、Seiji Samukawa；2026-10-14）",
+      "publishedAt": "2026-10-14",
+      "eventAt": "2026-10-14",
+      "collectedAt": "2026-10-27T12:50:00.000Z",
+      "updatedAt": "2026-10-27T12:50:00.000Z",
+      "description": "一手来源：Nature Scientific Reports 开放获取论文摘要与 Fig.1。问题：脉冲等离子体干法刻蚀比连续波损伤更小；电负性气体如 Cl₂ 在 afterglow 会形成大量负离子，变成离子-离子等离子体，低能离子到片表面、减少图形损伤——但腔体放大后，关脉冲（OFF）该留多久？做法：时间分辨 Langmuir 探针对比两种直径腔体的等离子体损失；小直径腔径向电子扩散与壁面离子损失大于大腔两倍以上，pulse-OFF 相扩散率约 1.4×10⁴ vs 2.9×10³ s⁻¹。GaN 刻蚀显示腔径依赖的最佳 OFF：大腔在 200 μs 达峰值刻蚀速率 1.8 nm/min，小腔在 100 μs 达 5.5 nm/min。对你：刻蚀一线最熟的「配方 knobs」——脉冲 OFF 不是抄表格，要跟腔几何一起走。可拍角度：1）为什么要脉冲而不是一直开；2）小腔 vs 大腔电子温度/离子密度曲线；3）GaN 刻蚀速率峰值怎么搬家。开场：0 秒上 Fig.1 正离子密度与电子温度对照曲线。",
+      "caveat": "开放获取期刊文；结论来自两档腔径与所选 Cl₂/GaN 条件，外推到量产硅/金属刻蚀腔需对照；封面为论文 Fig.1（Springer 静态图）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261027d-nature-cl2.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261027d-nature-cl2.jpg",
+      "imageAlt": "论文 Fig.1：大/小直径腔体正离子密度与电子温度随功率密度变化",
+      "tags": [
+        "刻蚀",
+        "芯片制造",
+        "等离子体",
+        "工艺窗口",
+        "失效分析"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 18,
+          "画面": 13,
+          "来源": 15,
+          "时效": 7,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 94.5,
+        "threshold": 65,
+        "run": "2026-10-27-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35496",
+      "title": "删掉智能体 75% 旧轨迹还能干活，为什么账单不一定更便宜？9400 次 SWE-bench 跑下来：它会把删掉的内容再捞回来",
+      "category": "AI",
+      "source": "arXiv:2610.35496《The Hidden Costs of Forgetting: A Study of Trajectory Deletion in Software Engineering Agents》（Fernando Vallecillos-Ruiz、Islem Bouzenia、Michael Pradel、Leon Moonen；2026-10-26）",
+      "publishedAt": "2026-10-26",
+      "eventAt": "2026-10-26",
+      "collectedAt": "2026-10-27T12:50:00.000Z",
+      "updatedAt": "2026-10-27T12:50:00.000Z",
+      "description": "一手来源：arXiv 论文摘要与 PDF 首页。问题：软件工程智能体每轮把整段轨迹再喂给 LLM，催生在线轨迹压缩；先前有人说随机删旧轮 75% token 仍有效，但不知道为什么、智能体怎么补、到底省不省钱。做法：42 种轨迹删减配置×两款前沿智能体×SWE-bench Verified，共 9400 次运行，系统扫删除范围/粒度/量/时机。发现：大量删旧内容（甚至删光推理文本）仍可保住整体效果，但必须延迟删——立刻删会明显掉点；智能体常靠重新拉取被删内容来补偿，回合数与输入/输出 token 反而上去；是否省钱取决于计价模型：固定计价下 42 组里 26 组估算成本下降。对你：和库里「模型×harness」「KV/上下文成本」同线——省上下文不等于省账单。可拍角度：1）删 75% 还能过；2）立刻删 vs 延迟删；3）「再捞回来」怎样把省下的吐回去。开场：0 秒上论文标题页大字 Hidden Costs of Forgetting。",
+      "caveat": "预印本；结论依赖 SWE-bench Verified 与两款智能体及计价假设；封面为本轮自 PDF 首页托管图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261027d-arxiv-hidden.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261027d-arxiv-hidden.jpg",
+      "imageAlt": "论文首页：The Hidden Costs of Forgetting——软件工程智能体轨迹删除研究",
+      "tags": [
+        "智能体",
+        "AI成本",
+        "工具调用",
+        "AI推理"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 88.8,
+        "threshold": 65,
+        "run": "2026-10-27-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35690",
+      "title": "多智能体接客服/搜网页，为什么「多几个 Agent、多几轮」不一定更值？EvoRouter：把性能-成本反馈炼成可复用的路由洞见再蒸馏进策略",
+      "category": "AI",
+      "source": "arXiv:2610.35690《EvoRouter: Cost-Efficient Multi-Agent Routing via Insight-Guided On-Policy Distillation》（Yitao Xiao、Xu Zhang、Ye Cheng 等；2026-10-26）",
+      "publishedAt": "2026-10-26",
+      "eventAt": "2026-10-26",
+      "collectedAt": "2026-10-27T12:50:00.000Z",
+      "updatedAt": "2026-10-27T12:50:00.000Z",
+      "description": "一手来源：arXiv 论文摘要与 HTML overview/method 图。问题：规模化服务网络查询时，要同时配模型、协作模式、Agent 数、交互轮次与技能，组合爆炸，稀疏执行奖励又给不出细粒度监督。做法：EvoRouter——洞察引导的 on-policy 蒸馏：专家定期把跨任务配置轨迹的性能-成本反馈炼成可复用的条件路由洞见（能力需求、资源扩展回报、配置交互）；特权教师用洞见+当前执行反馈给路由器规划轨迹做稠密 token 级监督；再加成本感知 RL 联合优化任务表现与算力成本。对你：智能体成本主线的「路由/编排」篇——多不一定好。可拍角度：1）配置空间怎么炸；2）洞见蒸馏 vs 直接 RL；3）一张 overview 上看专家→教师→路由器闭环。开场：0 秒上论文 overview 架构图。",
+      "caveat": "预印本；效果依赖论文所选 web 查询与多智能体设定，外推到私有工作流需复测；封面为论文 overview 图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261027d-evorouter.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261027d-evorouter.jpg",
+      "imageAlt": "论文 overview：EvoRouter 洞察引导的多 Agent 路由与蒸馏闭环",
+      "tags": [
+        "智能体",
+        "AI成本",
+        "多智能体",
+        "AI推理"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 15,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 7,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 87.7,
+        "threshold": 65,
+        "run": "2026-10-27-2040-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2610.33469",
       "title": "湿法刻蚀/潮湿环境里的硅空位，为什么不能只看费米能级？论文把水和电荷放进同一张稳定性图：近中性 pH 时空位会先变成 A 心，裸空位根本不是最低能态",

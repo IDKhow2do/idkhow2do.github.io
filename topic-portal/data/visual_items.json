@@ -1,8 +1,175 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 416,
+  "exportedCount": 419,
   "items": [
+    {
+      "title": "收藏卡为什么会「油膜彩虹」？开源 foilcard：用 raylib + GLSL 把全息箔、边缘光和翻转烧痕拆成可开关的图层",
+      "category": "frontend",
+      "styleFamily": "code_video",
+      "source": "https://x.com/VictorBerdugo2/status/2115063354096005380",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261027d-foilcard.jpg",
+      "previewType": "image",
+      "description": "@VictorBerdugo2 10-27 发布 Magician 卡演示：用自研 holographic foil shader（C + raylib + GLSL）做 3D 收藏卡；界面可开关 Aura / Sparkles / Holo / Rim / Flip / Burn / Glare。封面帧已目视核验为带虹彩箔面的 Magician 塔罗卡与左侧效果清单，非头像。对你：和门户偏好的虹彩玻璃/薄膜干涉同族——箔面是可讲的光学图层。可做科普镜头：Holo 图层在做什么、翻转时高光怎么走。源码 GitHub victorberdugo1/foilcard 可核验。",
+      "tool": "raylib + GLSL（开源 foilcard）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者原帖 + GitHub 开源仓库；封面为本轮自 amplify 缩略图转存。",
+      "attribution": "Victor Berdugo（@VictorBerdugo2）· foilcard Magician",
+      "sourceAuthor": "VictorBerdugo2",
+      "tags": [
+        "shader",
+        "全息",
+        "箔面",
+        "raylib",
+        "可交互",
+        "Three.js偏好同族"
+      ],
+      "publishedAt": "2026-10-27T12:49:34.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-27T12:50:00.000Z",
+      "updatedAt": "2026-10-27T12:50:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-27T12:50:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 15,
+          "溯源": 20,
+          "复现": 15,
+          "风格": 8,
+          "新颖": 8
+        },
+        "multiplier": 1.3,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-27-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2115063179138981888/vid/avc1/1086x720/jPPRhFQ1HSmE_xUT.mp4?tag=14",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/victorberdugo1/foilcard"
+    },
+    {
+      "title": "三角くん被烫、被淋、被电，为什么还能一条镜头跑完 30 秒？aicreataro：Opus 5.5×Blender 做「一镜到底」3D 冒险 PART2",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/aicreataro/status/2115040040007188519",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261027d-aicreataro-triangle.jpg",
+      "previewType": "image",
+      "description": "@aicreataro 10-27 11:16 UTC 发布《三角くんの大冒険 PART2》：自称 Opus 5.5×Blender 做 30 秒一镜到底 3D；角色被烫/淋/电仍往前冲，阴影追来就「把世界跑穿」。封面帧已目视核验为发光三角角色站在立体小花田中，非头像、非纯文字。对你：收藏作者作品流；可做「编码智能体怎么指挥 Blender 一镜」的制作向科普，本条无折扣码/硬广标记（区别于同日 Pollo Recast [PR] 帖）。",
+      "tool": "Opus 5.5 × Blender（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者原帖自述工具链；无 [PR] 标记；封面为 amplify 缩略图本轮转存。",
+      "attribution": "aicreataro（@aicreataro）",
+      "sourceAuthor": "aicreataro",
+      "tags": [
+        "Blender",
+        "一镜到底",
+        "3D",
+        "编码智能体",
+        "收藏作者"
+      ],
+      "publishedAt": "2026-10-27T11:16:55.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-27T12:50:00.000Z",
+      "updatedAt": "2026-10-27T12:50:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-27T12:50:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 69,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 12,
+          "溯源": 14,
+          "复现": 8,
+          "风格": 9,
+          "新颖": 8
+        },
+        "multiplier": 1.0686,
+        "finalScore": 73.7,
+        "threshold": 65,
+        "run": "2026-10-27-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2115038909105393664/vid/avc1/1920x1080/61r3JAVWYGSUiLnW.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "十年前那个 Three.js「飞行员」教程，为什么今天又飞回来了？yakudoo：新皮肤、章鱼/蟹/鲨敌人，还能在悠闲飞行和射击模式间切换",
+      "category": "frontend",
+      "styleFamily": "code_video",
+      "source": "https://x.com/yakudoo/status/2114750651720958105",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261027d-yakudoo-aviator.jpg",
+      "previewType": "image",
+      "description": "@yakudoo（Karim Maaloul）10-26 发布：十年前分享的 The Aviator Three.js 教程将回归——新皮肤、史诗敌人（鲨/蟹/章鱼）与场景，可悠闲飞行或切射击模式。@threejs 10-27 01:54 UTC 转发该演示视频。封面帧已目视核验为低多边形飞行员飞机、触手与机器鱼海报，非头像。对你：经典 WebGL 教程的「机制可玩」续作，适合讲 Three.js 场景/敌人波次如何用代码搭。",
+      "tool": "three.js / WebGL（The Aviator 续作演示）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原作者 @yakudoo 帖；Three.js 官方账号转发；封面为 amplify 缩略图本轮转存。",
+      "attribution": "Karim Maaloul（@yakudoo）· The Aviator（via @threejs RT）",
+      "sourceAuthor": "yakudoo",
+      "tags": [
+        "Three.js",
+        "游戏",
+        "WebGL",
+        "教程",
+        "可交互"
+      ],
+      "publishedAt": "2026-10-26T16:07:00.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-27T12:50:00.000Z",
+      "updatedAt": "2026-10-27T12:50:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-27T12:50:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 77,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 14,
+          "溯源": 16,
+          "复现": 12,
+          "风格": 10,
+          "新颖": 7
+        },
+        "multiplier": 1.3491,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-27-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114745672779943936/vid/avc1/960x540/htb_MEc-vt3N2MdW.mp4?tag=14",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "曼哈顿街上为什么突然出现一台「红鬼」机甲？Three.js 官方转发 Elderwake：小机甲打巨兽，城市是活的，街景路牌都能认",
       "category": "frontend",
@@ -20467,8 +20634,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条",
-  "updatedAt": "2026-10-27T08:48:00.000Z",
-  "totalItems": 416,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条",
+  "updatedAt": "2026-10-27T12:50:00.000Z",
+  "totalItems": 419,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
