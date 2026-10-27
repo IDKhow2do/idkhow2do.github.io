@@ -1,8 +1,170 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 404,
+  "exportedCount": 407,
   "items": [
+    {
+      "title": "永远开不完的思想列车：Past / Present / Future 车厢里每人带着一段心事——Train of Thoughts（gpt-astra + three.js + Anatomy）",
+      "category": "frontend",
+      "styleFamily": "code_video",
+      "is3d": true,
+      "source": "https://x.com/javpixel_art/status/2114795563153809642",
+      "sourceCodeUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261027-train-of-thoughts.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2114794031804813312/vid/avc1/1080x1080/M4Ap2IuvlNwKcrY1.mp4",
+      "description": "用户指定收纳。Jav（@javpixel_art）2026-10-26 19:05 UTC 发布 Train of Thoughts（TOT）：一列火车在程序化等距城市里永远开下去，车厢分 Past / Present / Future（外加司机室），每个角色带着一段小故事。作者自述全部由代码生成、浏览器实时渲染，零外部贴图；工具为 gpt-astra（少量 Sol）+ three.js + Anatomy。原帖附约 66s 演示视频。抓取时约 267 赞 / 176 书签。本轮未找到公开发布的可玩页链接，封面取自视频缩略图。",
+      "tool": "gpt-astra + three.js + Anatomy（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "来源经核实：用户给出的 X 帖 https://x.com/javpixel_art/status/2114795563153809642（created_at 2026-10-26T19:05:27.000Z，author Jav @javpixel_art）。全文来自 note_tweet。媒体 13_2114794031804813312。检索作者近期帖与常见 vercel/netlify 域名后，本轮仍无确认可玩页；sourceCodeUrl 留空。",
+      "attribution": "Jav（@javpixel_art）",
+      "sourceAuthor": "javpixel_art",
+      "tags": [
+        "用户指定收纳",
+        "Three.js",
+        "程序化生成",
+        "等距",
+        "交互场景",
+        "gpt-astra",
+        "Anatomy"
+      ],
+      "publishedAt": "2026-10-26T19:05:27.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-27T02:40:00.000Z",
+      "updatedAt": "2026-10-27T02:40:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-27T02:40:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-27T02:40:00.000Z",
+        "visually_checked": true,
+        "preview_dimensions": [
+          1200,
+          1200
+        ],
+        "preview_check": "封面为 X amplify_video_thumb JPEG，PIL 打开 1200×1200；未完整播放 66s 视频。",
+        "video_check": "未完整播放视频；未找到可玩页，故未在浏览器核验交互。"
+      },
+      "curation": {
+        "baseScore": 84,
+        "multiplier": 1.1,
+        "finalScore": 92,
+        "threshold": 70,
+        "run": "user-2026-10-27-four-favs"
+      }
+    },
+    {
+      "title": "孟菲斯色块开进东三环：一镜到底掠过央视大楼——Canvas frame(i) + ffmpeg 提示词（Regen 转写）",
+      "category": "frontend",
+      "styleFamily": "code_video",
+      "is3d": false,
+      "source": "https://x.com/huqinyiyayuguan/status/2114717415942783384",
+      "sourceCodeUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261027-memphis-bj-cctv.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2114717126254891008/vid/avc1/1080x1080/eGNcz5himnA-R1pt.mp4",
+      "description": "用户指定收纳。Regen（@huqinyiyayuguan）2026-10-26 13:54 UTC 发帖：完整公开「孟菲斯风格 + 北京东三环 / 央视总部」代码动画提示词——饱和原色描边、Canvas 确定性 frame(i)、无头 Chrome 逐帧 + ffmpeg、代码合成配乐；并附约 20s 成片。帖子引用 @EianLu 关于 Claude 审美 / 稻田俯视小动画的做法。抓取时约 443 赞 / 430 书签。封面取自视频缩略图。",
+      "tool": "Canvas frame(i) + 无头 Chrome 逐帧 + ffmpeg；配乐代码合成（提示词自述）；成片工具未逐一核验",
+      "prompt": "提示词：孟菲斯风格。饱和原色 + 粉彩（黄 #FFC93C、粉 #FF8DB5、钴蓝 #2E5BE6、珊瑚红 #FF5A5F、薄荷绿 #A9E6C6、天蓝 #8DD3F6、淡紫 #D3BEFF），所有物体有深靛色 #25214A 描边和不模糊的硬投影，大色块上铺圆点、条纹、折线这类小图案。 镜头：一镜到底，缓慢匀速移动，可以带一点旋转和推近。 节奏：靠画面里的小动静撑起来，比如鸟飞过、云影掠过、鱼游、人走、车开、叶子飘落，至少安排一两个有\"剧情\"的瞬间。 文字：画框下方三行居中小字：标题（中英）/ 季节 · 一句描述（中英）/ 随镜头变化的经纬度。 做法：用 Canvas 写一个确定性的 frame(i) 函数，输入帧号输出一张图，场景按坐标和固定随机种子生成；用无头 Chrome 逐帧导出，ffmpeg 合成。配乐也用代码合成：五声音阶的轻旋律 + 环境声，画面里的事件要和音效卡上。 先给我看 4 张样帧拼图，我确认后再渲全片。 场景：北京东三环中路，途经中央电视台总部大楼的路段。镜头沿道路缓慢前行，以行车视角掠过街景，让央视总部大楼标志性的倾斜双塔与悬挑结构逐渐进入画面，成为视觉中心。周围铺开 CBD 高楼、立交桥、车流、公交站和街边树木，用孟菲斯风格的几何色块重构城市细节，保留建筑轮廓与道路空间的辨识度。设定为初秋晴朗的午后：车辆有序穿行，行人在路口等候，云影缓缓扫过楼体。一辆明黄色公交车从镜头旁驶过，恰好露出后方完整的央视大楼；随后，一片落叶被车流卷起，短暂跟随镜头飘动，再落向路边。整体轻快、明亮，带着北京繁忙街头的日常感。",
+      "promptProvenance": "author_post",
+      "provenanceNote": "来源经核实：用户给出的 X 帖 https://x.com/huqinyiyayuguan/status/2114717415942783384（created_at 2026-10-26T13:54:56.000Z，author Regen @huqinyiyayuguan）。完整提示词来自 note_tweet。引用帖 https://x.com/EianLu/status/2114650892934975667。媒体 13_2114717126254891008。",
+      "attribution": "Regen（@huqinyiyayuguan）；做法线索引用 EianLu（@EianLu）",
+      "sourceAuthor": "huqinyiyayuguan",
+      "tags": [
+        "用户指定收纳",
+        "提示词",
+        "孟菲斯",
+        "Canvas",
+        "代码动画",
+        "北京",
+        "央视"
+      ],
+      "publishedAt": "2026-10-26T13:54:56.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-27T02:40:00.000Z",
+      "updatedAt": "2026-10-27T02:40:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-27T02:40:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-27T02:40:00.000Z",
+        "visually_checked": true,
+        "preview_dimensions": [
+          1080,
+          1080
+        ],
+        "preview_check": "封面为 X amplify_video_thumb JPEG，PIL 打开 1080×1080；未完整播放 20s 视频。",
+        "video_check": "未完整播放视频。"
+      },
+      "curation": {
+        "baseScore": 86,
+        "multiplier": 1.1,
+        "finalScore": 95,
+        "threshold": 70,
+        "run": "user-2026-10-27-four-favs"
+      }
+    },
+    {
+      "title": "Opus 搭村庄白模，FLUX Klein + Fibo 给整张地图上材质：128 视角投影烘焙——开源 trompe",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "is3d": true,
+      "source": "https://x.com/jiangjiangling/status/2114751251632304534",
+      "sourceCodeUrl": "https://github.com/Patch-gg/trompe",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261027-opus-village-tex.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2114572825671655424/vid/avc1/1920x1080/MNj1sZKZ6-T7RE3u.mp4",
+      "description": "用户指定收纳。Rainy（@jiangjiangling）2026-10-26 16:09 UTC 中文转述：Opus 5.5 在 Blender 搭村庄白模，再用 FLUX 3 Klein + Fibo 2 给整张地图补材质——绕地图取 128 视角，让图像模型画灰色区域，再投影回模型。原作者 Rehan Sheikh（@rehan_shei）同日英文帖，开源仓库 https://github.com/Patch-gg/trompe（抓取时约 111★，说明：Texture a whole game level from a gray blockout…）。视频与原帖同源（约 42s）。jiangjiangling 帖抓取时约 99 赞 / 112 书签；原帖约 1262 赞 / 1523 书签。封面取自视频缩略图。",
+      "tool": "Claude Opus 5.5 + Blender 白模；FLUX 3 Klein + Fibo 2 上材质（原作者自述）；开源 Patch-gg/trompe",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "来源经核实：用户给出的转发帖 https://x.com/jiangjiangling/status/2114751251632304534；原作 https://x.com/rehan_shei/status/2114573844858159372（note_tweet 含 github.com/Patch-gg/trompe）。GitHub API 200，约 111★。媒体与原帖共用 13_2114572825671655424。",
+      "attribution": "原作 Rehan Sheikh（@rehan_shei）/ Patch-gg/trompe；中文转述 Rainy（@jiangjiangling）",
+      "sourceAuthor": "jiangjiangling",
+      "tags": [
+        "用户指定收纳",
+        "Blender",
+        "Opus",
+        "FLUX",
+        "材质",
+        "开源",
+        "3D建模"
+      ],
+      "publishedAt": "2026-10-26T16:09:23.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-27T02:40:00.000Z",
+      "updatedAt": "2026-10-27T02:40:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-27T02:40:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-27T02:40:00.000Z",
+        "visually_checked": true,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为 X amplify_video_thumb JPEG，PIL 打开 1200×675；GitHub 仓库页 HTTP 200。",
+        "video_check": "未完整播放 42s 视频；未在本机跑 trompe 管线。"
+      },
+      "curation": {
+        "baseScore": 88,
+        "multiplier": 1.1,
+        "finalScore": 97,
+        "threshold": 70,
+        "run": "user-2026-10-27-four-favs"
+      }
+    },
     {
       "title": "二十五万块小行星塞进浏览器，为什么还不卡？InstancedMesh2 刚加上 WebGPU：运行时 LOD、BVH 视锥裁剪、逐实例拾取，WebGL/WebGPU 两套都能飞",
       "category": "motion",
@@ -19807,7 +19969,7 @@
   ],
   "bookmarksNotInVisual": 15,
   "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条",
-  "updatedAt": "2026-10-27T00:55:00.000Z",
-  "totalItems": 404,
+  "updatedAt": "2026-10-27T02:40:00.000Z",
+  "totalItems": 407,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
