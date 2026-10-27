@@ -1,8 +1,285 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 407,
+  "exportedCount": 412,
   "items": [
+    {
+      "title": "二十四节气怎么被塞进同一条孟菲斯短片？LemoLab：剖面看水上水下、等距沿河走、俯视看田块——米白底 + 藏青描边 + 粉彩色，准备收进 lemo-opuscar",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/lemomo_ai/status/2114912800032309435",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261027b-lemomo-jieqi.jpg",
+      "previewType": "image",
+      "description": "Lemomo（@lemomo_ai）10-27 02:51 UTC 发布（约 4 分 22 秒）：受 @EianLu 孟菲斯贴画启发，做了一条二十四节气动画集锦，改配色并融入中国各地风土，计划收入 lemo-opuscar 风格库。作者自述画面：米白底上方形圆角画框、边缘喷点颗粒，开头中心一小团颗粒晕开、结尾再缩回；扁平矢量、深藏青细描边 + 明亮粉彩、细颗粒纹理、少用写实阴影。三种镜头轮换——剖面横移（水上水下/屋里屋外）、等距斜移（沿街或河道）、俯视上移（田块与湖面）。本轮从成片约 45s 处截帧核验：春分·兴化垛田，金色菜花岛与河道小船。可做科普镜头：节气物候如何落成地理坐标、三种镜头各适合讲什么结构。",
+      "tool": "代码短片 / lemo-opuscar 风格库（作者计划收录；具体栈未在帖内开源）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖（抓取时约 33 赞 / 14 收藏）；作者为库内高频视觉源 LemoLab；封面为本轮自视频 45s 帧托管，因官方 amplify 缩略图仅为片头颗粒晕开。",
+      "attribution": "Lemomo（@lemomo_ai）· 二十四节气动画集锦",
+      "sourceAuthor": "lemomo_ai",
+      "tags": [
+        "代码短片",
+        "节气",
+        "孟菲斯",
+        "扁平矢量",
+        "中国风土"
+      ],
+      "publishedAt": "2026-10-27T02:51:19.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-27T04:54:00.000Z",
+      "updatedAt": "2026-10-27T04:54:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-27T04:54:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 75,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 15,
+          "溯源": 16,
+          "复现": 8,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.025,
+        "finalScore": 76.9,
+        "threshold": 65,
+        "run": "2026-10-27-1240-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114910304173961216/vid/avc1/1920x1080/1wicaGst9jLYUFra.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "周期表为什么突然「长高」了？Three.js 官方转发：118 种元素立成柱子，高度可按电离能/原子半径/熔点切换——点开还能看见原子核和电子往里填",
+      "category": "frontend",
+      "styleFamily": "code_video",
+      "source": "https://x.com/threejs/status/2114914624328069466",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2114703920023179265/img/fuIbGCi7FHM4rp4R.jpg",
+      "previewType": "image",
+      "description": "Three.js 官方账号（@threejs）10-27 02:58 UTC 转发 Ryan Sael 的互动页「The Periodic Table in 3D」（https://sael.net/periodic-table/）：118 种元素做成可升高的柱子，高度可按电离能、尺寸、熔点等切换；点一个元素可看原子核、轨道与电子填充。演示叠字：「The taller the column, the harder it holds its electrons。」对半导体观众：电离能/电负性正是工艺与材料课的底层直觉。可做科普镜头：为什么氖柱特别高、切换「Size」时碱金属为什么倒过来。",
+      "tool": "three.js（互动网页）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "Three.js 官方转发原作者 Ryan Sael 作品；站点与演示视频均可核验；og:image 为 https://sael.net/periodic-table/og.png。",
+      "attribution": "Ryan Sael · The Periodic Table in 3D（via @threejs）",
+      "sourceAuthor": "threejs",
+      "tags": [
+        "Three.js",
+        "周期表",
+        "科普",
+        "可交互",
+        "电离能"
+      ],
+      "publishedAt": "2026-10-27T02:58:34.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-27T04:54:00.000Z",
+      "updatedAt": "2026-10-27T04:54:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-27T04:54:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 90,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 20,
+          "溯源": 18,
+          "复现": 14,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.3491,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-27-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114703920023179265/vid/avc1/1920x1080/I8GnptzWi_OifJ9o.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://sael.net/periodic-table/"
+    },
+    {
+      "title": "一百一十万根草，触手一扫为什么会齐刷刷倒下？作者把整份 Claude Code 技术备忘录贴出来：2048² 切割缓冲 + compute 写刃迹，CPU 零回读",
+      "category": "motion",
+      "styleFamily": "code_video",
+      "source": "https://x.com/KanaWorks_AI/status/2114940901952991427",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2114939742735458304/img/BsoKGlaDFcawhFJN.jpg",
+      "previewType": "image",
+      "description": "KANA｜東京AI映像（@KanaWorks_AI）10-27 04:42 UTC 发布（约 76 秒）：Godot 4.7 Forward+/Vulkan 场景，约 110 万株草（96m 方、6m 分块 MultiMesh），触手角色「ヌラ」用 SDF 光线步进绘制。作者把可直接喂给 Claude Code/Codex 的技术备忘录写在长帖里：草形在顶点着色器组装；2048² RGBA16F 切割缓冲记「切断高度/经过秒数/刃速」，compute 每帧写触手胶囊；草顶点读缓冲把切断高度以上压成切面；另有弹簧场推倒周边草；切断碎片约 13 万池，65% 绕切点倒下、其余带空气阻力飞起——全程 GPU、零 CPU 回读。可做科普镜头：为什么要用「切割缓冲」而不是每根草做刚体、风浪为何要「垂直于风向的长波」才像浪。",
+      "tool": "Godot 4.7（Forward+ / Vulkan）+ compute / 顶点着色器；可用 Claude Code 复现备忘录",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖（抓取时约 6 赞 / 5 收藏）；长帖含完整环境与算法备忘录，复现路径清晰；未附独立仓库。",
+      "attribution": "KANA（@KanaWorks_AI）· 110万草刈りシーン",
+      "sourceAuthor": "KanaWorks_AI",
+      "tags": [
+        "Godot",
+        "compute",
+        "MultiMesh",
+        "布料草地",
+        "Claude Code"
+      ],
+      "publishedAt": "2026-10-27T04:42:59.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-27T04:54:00.000Z",
+      "updatedAt": "2026-10-27T04:54:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-27T04:54:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 17,
+          "溯源": 18,
+          "复现": 14,
+          "风格": 9,
+          "新颖": 8
+        },
+        "multiplier": 1.1,
+        "finalScore": 96.8,
+        "threshold": 65,
+        "run": "2026-10-27-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114939742735458304/vid/avc1/1920x1080/hxl9hJ81BBKkodpf.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "同一张首帧做 PPT 循环背景，为什么代码只要 6 秒 0 元、AI 视频反而贵还接缝？作者并排 three.js / MiniMax H3 / Seedance 2.5：背景用代码，要活人感再上模型",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/GoSailGlobal/status/2114942027511337056",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2114941705216753664/img/QoAMRhjX-078pmRG.jpg",
+      "previewType": "image",
+      "description": "Jason Zhu（@GoSailGlobal）10-27 04:47 UTC 发布（约 16 秒）：同一张 three.js 首帧，三种方式做 PPT 循环背景——three.js 代码渲染 $0 / 6 秒 / 无缝；MiniMax H3 $0.46 / 基本无缝；Seedance 2.5 $1.74 / 画质最好但循环接缝会弹（后期可修）。结论：背景用代码，开场要活人感再上 AI。并引用同作者 HTML vs three.js vs Blender 对比帖。可做科普镜头：为什么「改一处」时代码 6 秒重出、生成模型却要整段重跑；循环接缝从哪来。",
+      "tool": "three.js 代码渲染 vs MiniMax H3 / Seedance 2.5",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖（抓取时赞很少）；对比表与三路画面在视频封面可核验；偏创作者工作流机制向。",
+      "attribution": "Jason Zhu（@GoSailGlobal）· PPT 循环背景三路对比",
+      "sourceAuthor": "GoSailGlobal",
+      "tags": [
+        "Three.js",
+        "代码短片",
+        "AI视频",
+        "成本对比",
+        "循环"
+      ],
+      "publishedAt": "2026-10-27T04:47:27.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-27T04:54:00.000Z",
+      "updatedAt": "2026-10-27T04:54:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-27T04:54:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 68,
+        "baseBreakdown": {
+          "实体": 12,
+          "科普": 16,
+          "溯源": 14,
+          "复现": 10,
+          "风格": 9,
+          "新颖": 7
+        },
+        "multiplier": 1.1979,
+        "finalScore": 81.5,
+        "threshold": 65,
+        "run": "2026-10-27-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114941705216753664/vid/avc1/1920x1080/WnH1jRTRDdiGmrGa.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "GLSL 着色器为什么要「搬家」到 JavaScript？Three.js 从零系列第 5 课：WebGPURenderer + TSL 节点材质，4 万粒子丢给 GPU compute，还自动回退 WebGL 2",
+      "category": "frontend",
+      "styleFamily": "code_video",
+      "source": "https://x.com/iodiot/status/2114938212674310517",
+      "previewUrl": "https://pbs.twimg.com/media/HVnFEnmagAAfbjW.jpg",
+      "previewType": "image",
+      "description": "Mike Smahin（@iodiot）10-27 04:32 UTC：教程《Three.js from Scratch, Part 5: WebGPU and TSL》。切换 WebGPURenderer（自动 WebGL 2 回退）、把 GLSL 迁到 TSL 节点材质、阅读生成的 WGSL，并用 compute shader 驱动 4 万粒子；含图解、截图与在线 demo，下一课预告后处理。可做科普镜头：为什么要用一门「编译到 WGSL/GLSL」的 JS 着色语言、compute 和顶点着色器各管什么。",
+      "tool": "three.js WebGPURenderer + TSL",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖；配套站点 iodiot.github.io 可访问；封面为教程社交卡片实图。",
+      "attribution": "Mike Smahin（@iodiot）· Three.js from Scratch Part 5",
+      "sourceAuthor": "iodiot",
+      "tags": [
+        "Three.js",
+        "WebGPU",
+        "TSL",
+        "compute",
+        "教程"
+      ],
+      "publishedAt": "2026-10-27T04:32:18.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-27T04:54:00.000Z",
+      "updatedAt": "2026-10-27T04:54:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-27T04:54:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 75,
+        "baseBreakdown": {
+          "实体": 12,
+          "科普": 15,
+          "溯源": 18,
+          "复现": 14,
+          "风格": 10,
+          "新颖": 6
+        },
+        "multiplier": 1.3491,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-27-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://iodiot.github.io/3d-tutorial/part-5-webgpu-tsl/"
+    },
     {
       "title": "永远开不完的思想列车：Past / Present / Future 车厢里每人带着一段心事——Train of Thoughts（gpt-astra + three.js + Anatomy）",
       "category": "frontend",
@@ -19968,8 +20245,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条",
-  "updatedAt": "2026-10-27T02:40:00.000Z",
-  "totalItems": 407,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条",
+  "updatedAt": "2026-10-27T04:54:00.000Z",
+  "totalItems": 412,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
