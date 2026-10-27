@@ -1,7 +1,44 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-27T00:55:00.000Z",
+  "updatedAt": "2026-10-27T02:40:00.000Z",
   "topics": [
+    {
+      "url": "https://x.com/noisyb0y1/status/2113620309093859541",
+      "title": "前 Anthropic 工程师把「廉价 Agent」经验收进一本书？帖子承诺前 4 页讲清 token 去哪了、Agent 四块积木——实际引用的是作者自己的 REA 逆向长文",
+      "category": "AI",
+      "source": "X @noisyb0y1《ex engineer… Claude Code playbook into one book》（2026-10-23）；引用同作者 X Article《REA Engineering…》",
+      "publishedAt": "2026-10-23T13:15:25.000Z",
+      "eventAt": null,
+      "collectedAt": "2026-10-27T02:40:00.000Z",
+      "updatedAt": "2026-10-27T02:40:00.000Z",
+      "description": "用户指定收纳。Noisy（@noisyb0y1）2026-10-23 发帖推销一本「$4.2M Claude Code playbook」书：称前 Anthropic 工程师把廉价 Agent 做法写进书，前 4 页覆盖 token 消耗、Agent 四块积木、12 个廉价 Agent、一行让 Agent 7×24 跑等；并说「book in the comments」。同帖引用作者 10-13 的 X Article《REA Engineering: how to take apart any app without its source code in 10 Steps》，讲的是开源逆向工具 REA（github.com/morluto/rea）而非 Claude Code 官方手册。本轮评论区书链未逐条核验。附约 76s 视频。抓取时约 431 赞 / 530 书签。",
+      "caveat": "标题营销口径与引用正文不完全一致：正文卖书，引用长文是 REA 逆向工程教程。书购买链接在评论区，本轮未核验。封面为视频缩略图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261027-claude-code-playbook.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261027-claude-code-playbook.jpg",
+      "imageAlt": "noisyb0y1 Claude Code playbook 宣传帖视频封面",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "Claude Code",
+        "Agent",
+        "营销帖",
+        "REA"
+      ],
+      "tagSource": "provided",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-27T02:40:00.000Z"
+      },
+      "curation": {
+        "baseScore": 72,
+        "multiplier": 1.1,
+        "finalScore": 79,
+        "threshold": 70,
+        "run": "user-2026-10-27-four-favs"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2610.31904",
       "title": "Bosch 刻蚀侧壁那些扇贝纹，为什么靠「多跑几次配方」还是对不准模拟器？普渡用几张 XSEM 截面把 ViennaPS 参数校回来：held-out 归一化误差降到 0.34 / 0.25",
