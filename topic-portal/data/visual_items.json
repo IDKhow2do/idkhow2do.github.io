@@ -1,8 +1,221 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 419,
+  "exportedCount": 423,
   "items": [
+    {
+      "title": "Echo-3：手机扫女儿房间 → 3DGS 重建，再整屋换成童话风格",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "is3d": true,
+      "source": "https://x.com/davnov134/status/2115083969415012358",
+      "sourceCodeUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028-echo3-davnov.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2115083755060666368/vid/avc1/1280x720/2ZoILVllAKh8sRST.mp4?tag=14",
+      "description": "用户指定收纳。David Novotny（@davnov134）2026-10-27 14:11 UTC 发帖介绍 Echo-3：用手机随手拍女儿房间，建出 3DGS 模型后再按童话主题整屋换风格；引用 SpAItial_AI 官方发布帖（称可从单房间到多层建筑、室外与公共空间，metric-scale、可今日试用）。约 24s 演示视频。抓取时约 391 赞 / 286 书签。封面取自视频缩略图；未完整播放视频。",
+      "tool": "Echo-3 / 3DGS（作者与 SpAItial_AI 自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "来源经核实：用户给出的 X 帖 https://x.com/davnov134/status/2115083969415012358（created_at 2026-10-27T14:11:29.000Z，author David Novotny @davnov134）。引用帖 https://x.com/SpAItial_AI/status/2115081138415051124。媒体 13_2115083755060666368。原帖未公开提示词；许可未声明；应用下载链接未在本帖正文给出。",
+      "attribution": "David Novotny（@davnov134）；产品方 SpAItial_AI",
+      "sourceAuthor": "davnov134",
+      "tags": [
+        "用户指定收纳",
+        "Echo-3",
+        "3DGS",
+        "世界模型",
+        "房间重建",
+        "风格迁移"
+      ],
+      "publishedAt": "2026-10-27T14:11:29.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-27T16:47:00.000Z",
+      "updatedAt": "2026-10-27T16:47:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-27T16:47:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-27T16:47:00.000Z",
+        "visually_checked": true,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为 X amplify_video_thumb JPEG，PIL 打开 1200×675；未完整播放 24s 视频。",
+        "video_check": "未完整播放视频；未试用 Echo-3 应用。"
+      },
+      "curation": {
+        "baseScore": 88,
+        "multiplier": 1.1,
+        "finalScore": 97,
+        "threshold": 70,
+        "run": "user-2026-10-28-four-favs"
+      }
+    },
+    {
+      "title": "Claude Code 三周做出上 Steam 的 FPS Demo：《Iron Curtain Call》橡皮管动画风",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "is3d": true,
+      "source": "https://x.com/jiangjiangling/status/2115084093587361843",
+      "sourceCodeUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028-iron-curtain-call.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2114955655287275520/vid/avc1/1920x1080/YFkD9wcNX32HEfY7.mp4",
+      "description": "用户指定收纳。Rainy（@jiangjiangling）2026-10-27 14:11 UTC 转述：@whaledevstudios 一人借助 Claude Code，约 3 周做出 FPS Demo《Iron Curtain Call》并已上 Steam；画风像把 1930 年代橡皮管动画塞进第三次世界大战。制作组合自述为 Godot 4.7 + Claude Code/Opus 5.5（全部代码）+ Higgsfield（概念与动画）+ Blender（模型）+ ElevenLabs（配音）；完整版计划 2027-03。附约 46s 实机视频（媒体来自 @Stefan_3D_AI 原帖）。抓取时约 24 赞 / 27 书签。封面取自视频缩略图；未完整播放视频、未核验 Steam 页。",
+      "tool": "Godot 4.7 + Claude Code/Opus 5.5 + Higgsfield + Blender + ElevenLabs（转述自原帖）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "来源经核实：用户给出的 X 帖 https://x.com/jiangjiangling/status/2115084093587361843（created_at 2026-10-27T14:11:58.000Z，author Rainy @jiangjiangling）。完整正文来自 note_tweet。媒体 13_2114955655287275520（media_source_tweet @Stefan_3D_AI/status/2114955917267771782）。Steam 商店页 URL 本轮未从帖文抽出。",
+      "attribution": "Rainy（@jiangjiangling）转述；游戏 @whaledevstudios；演示视频源 @Stefan_3D_AI",
+      "sourceAuthor": "jiangjiangling",
+      "tags": [
+        "用户指定收纳",
+        "Claude Code",
+        "Godot",
+        "FPS",
+        "Steam",
+        "橡皮管动画",
+        "独立游戏"
+      ],
+      "publishedAt": "2026-10-27T14:11:58.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-27T16:47:00.000Z",
+      "updatedAt": "2026-10-27T16:47:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-27T16:47:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-27T16:47:00.000Z",
+        "visually_checked": true,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为 X amplify_video_thumb JPEG，PIL 打开 1200×675；未完整播放 46s 视频。",
+        "video_check": "未完整播放视频；未打开 Steam 商店页核验。"
+      },
+      "curation": {
+        "baseScore": 86,
+        "multiplier": 1.1,
+        "finalScore": 95,
+        "threshold": 70,
+        "run": "user-2026-10-28-four-favs"
+      }
+    },
+    {
+      "title": "A Weird Village：抢到战利品箱还得扛回基地——路上随时被人抢",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "is3d": true,
+      "source": "https://x.com/adredev/status/2114868235908665842",
+      "sourceCodeUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028-weird-village-loot.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2114868055780040704/vid/avc1/1920x1080/DfFmO6K7Ma6d6kWg.mp4",
+      "description": "用户指定收纳。Adre（@adredev）2026-10-26 23:54 UTC 介绍多人游戏 A Weird Village 的核心机制：找到战利品箱后必须扛回己方基地才能给全队解锁奖励；路上敌方看到可偷走，局势容易瞬间翻盘。附约 23s 实机片段。抓取时约 182 赞 / 61 书签。封面取自视频缩略图；未完整播放视频。",
+      "tool": "未声明（游戏实机演示）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "来源经核实：用户给出的 X 帖 https://x.com/adredev/status/2114868235908665842（created_at 2026-10-26T23:54:14.000Z，author Adre | A Weird Village @adredev）。完整正文来自 note_tweet。媒体 13_2114868055780040704。商店/可玩页链接本帖未给出。",
+      "attribution": "Adre（@adredev）",
+      "sourceAuthor": "adredev",
+      "tags": [
+        "用户指定收纳",
+        "游戏机制",
+        "多人",
+        "战利品",
+        "A Weird Village"
+      ],
+      "publishedAt": "2026-10-26T23:54:14.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-27T16:47:00.000Z",
+      "updatedAt": "2026-10-27T16:47:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-27T16:47:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-27T16:47:00.000Z",
+        "visually_checked": true,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为 X amplify_video_thumb JPEG，PIL 打开 1200×675；未完整播放 23s 视频。",
+        "video_check": "未完整播放视频；未核验商店页。"
+      },
+      "curation": {
+        "baseScore": 82,
+        "multiplier": 1.05,
+        "finalScore": 86,
+        "threshold": 70,
+        "run": "user-2026-10-28-four-favs"
+      }
+    },
+    {
+      "title": "Opus 5.5 + GPT Astra 在 UE5 做类艾尔登法环 Boss 战 Demo——3D 人物/非人类动画方法已开源",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "is3d": true,
+      "source": "https://x.com/xingbugengming/status/2114987011480367262",
+      "sourceCodeUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028-canitcode-boss.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2114968090572419073/vid/avc1/2560x1440/MmNdyKWowmgQMSMZ.mp4",
+      "description": "用户指定收纳。小奇说（@xingbugengming）2026-10-27 07:46 UTC：国外作者 @CanItCode 用 Opus 5.5 + GPT Astra 在 Unreal Engine 5 做出一段类《艾尔登法环》Boss 战 Demo；并称对方已把最难的 3D 人物动画与非人类动画的 AI 制作方法开源。附约 8.7 分钟演示视频。帖子引用作者自己另一条《书桌之上》（Kimi×Tripo / three.js）。抓取时约 163 赞 / 177 书签。封面取自视频缩略图；未完整播放长视频、未核验开源仓库 URL。",
+      "tool": "Opus 5.5 + GPT Astra + Unreal Engine 5（帖内转述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "来源经核实：用户给出的 X 帖 https://x.com/xingbugengming/status/2114987011480367262（created_at 2026-10-27T07:46:12.000Z，author 小奇说 @xingbugengming）。引用帖 https://x.com/xingbugengming/status/2114958387846971570（《书桌之上》）。媒体 13_2114968090572419073。开源仓库 URL 本帖未直接给出；许可未声明。",
+      "attribution": "小奇说（@xingbugengming）转述；原作者 @CanItCode",
+      "sourceAuthor": "xingbugengming",
+      "tags": [
+        "用户指定收纳",
+        "UE5",
+        "Boss战",
+        "Opus",
+        "GPT Astra",
+        "3D动画",
+        "开源"
+      ],
+      "publishedAt": "2026-10-27T07:46:12.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-27T16:47:00.000Z",
+      "updatedAt": "2026-10-27T16:47:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-27T16:47:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-27T16:47:00.000Z",
+        "visually_checked": true,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为 X amplify_video_thumb JPEG，PIL 打开 1200×675；未完整播放约 520s 视频。",
+        "video_check": "未完整播放长视频；未核验开源仓库。"
+      },
+      "curation": {
+        "baseScore": 87,
+        "multiplier": 1.1,
+        "finalScore": 96,
+        "threshold": 70,
+        "run": "user-2026-10-28-four-favs"
+      }
+    },
     {
       "title": "收藏卡为什么会「油膜彩虹」？开源 foilcard：用 raylib + GLSL 把全息箔、边缘光和翻转烧痕拆成可开关的图层",
       "category": "frontend",
@@ -20634,8 +20847,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条",
-  "updatedAt": "2026-10-27T12:50:00.000Z",
-  "totalItems": 419,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管）",
+  "updatedAt": "2026-10-27T16:47:00.000Z",
+  "totalItems": 423,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
