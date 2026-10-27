@@ -1,7 +1,161 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-27T04:54:00.000Z",
+  "updatedAt": "2026-10-27T08:48:00.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2610.33469",
+      "title": "湿法刻蚀/潮湿环境里的硅空位，为什么不能只看费米能级？论文把水和电荷放进同一张稳定性图：近中性 pH 时空位会先变成 A 心，裸空位根本不是最低能态",
+      "category": "半导体",
+      "source": "arXiv:2610.33469《Charge state and hydration of vacancies in silicon and silicon carbide in contact with water》（Abhirup Patra；2026-10-24）",
+      "publishedAt": "2026-10-24",
+      "eventAt": "2026-10-24",
+      "collectedAt": "2026-10-27T08:48:00.000Z",
+      "updatedAt": "2026-10-27T08:48:00.000Z",
+      "description": "一手来源：arXiv 论文摘要与 HTML 图。问题：教科书里空位态常只写费米能级；但湿法刻蚀、电化学加工或潮湿硅/碳化硅里，空位还会从水里吃氢和氧，数量由 pH 和电极电位定。做法：对空位络合物的电荷态与氢/氧含量最小化巨正则势，得到费米能级×氢化学势稳定性图，再用计算氢电极（CHE）映射到 pH 与电位；DFT（含束缚 H/O 振动自由能）参数化硅空位及其 H/O/OH 络合物，以及 3C-SiC 两种空位。反直觉结果：与水接触时裸空位从来不是最低能态；近中性 pH 更像以 A 心（氧）形式存在，顺磁羟基络合物约在零偏压 pH<5 出现，完全钝化成 VH₄ 需要阴极偏压；SiC 上第一颗氢对硅空位结合能约 1.97 eV，对碳空位（Z₁/₂）却不结合。对你：和库里 Bosch 刻蚀校准、失效分析同一条工艺物理主线——湿法「看起来干净」的片子，缺陷化学可能已经被水改写。可拍角度：1）费米能级 alone 为什么不够；2）稳定性图上 VH₄ / VOH / VO 分区；3）为什么 SiC 的 Z₁/₂ 不能指望「水里的氢」自动钝化。开场：0 秒上论文概念图，左右电子库与水库汇入空位络合物。",
+      "caveat": "预印本；PBE 下受主能级贴在或高于导带边，费米能级对边界移动很弱，外推到其它泛函/实验条件需对照原文；封面为论文 Fig.1 概念图（远程 arXiv HTML）。",
+      "imageUrl": "https://arxiv.org/html/2610.33469v1/fig1_concept.png",
+      "previewUrl": "https://arxiv.org/html/2610.33469v1/fig1_concept.png",
+      "imageAlt": "论文概念图：电子库（费米能级）与水库（pH、电位）共同决定硅空位络合物稳定性相图",
+      "tags": [
+        "芯片制造",
+        "刻蚀",
+        "失效分析",
+        "二维半导体",
+        "器件物理"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 89,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 18,
+          "画面": 13,
+          "来源": 15,
+          "时效": 7,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 95.6,
+        "threshold": 65,
+        "run": "2026-10-27-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.23408",
+      "title": "光刻漂出工艺窗口了，为什么 SEM 形貌「不合格」还能倒推该拧哪两个旋钮？LithoWorld：用 endpoint 世界模型在焦-曝光平面里走路，把红区 SEM 拉回绿区",
+      "category": "半导体",
+      "source": "arXiv:2610.23408《LithoWorld: An Endpoint World Model for Lithography Process-Window Recovery》（Botong Zhao、Fang Yu、Xinyuan Chen、Yue Lu；2026-10-16）",
+      "publishedAt": "2026-10-16",
+      "eventAt": "2026-10-16",
+      "collectedAt": "2026-10-27T08:48:00.000Z",
+      "updatedAt": "2026-10-27T08:48:00.000Z",
+      "description": "一手来源：arXiv 论文摘要、HTML 算法图与 recovery cases 图。问题：光刻工艺漂移会把图形推出工艺窗口，SEM 形貌不合格；传统 FEM（焦-曝光矩阵）要扫很多格，且未测格是未知。做法：LithoWorld——以内部代表目标同时定义「合格参考外观」与校正监督；因果预测分支把当前图特征对齐到 endpoint 表征，条件流策略生成二维校正动作块。数据：173 组实测 SEM 组织成焦-曝光图，未测格保留为未知；在 73 组子集的 200 对测试上，合格区成功率 88.5%、内部成功率 46.0%，分别高出最强对照 2.5/6.0 个百分点。对你：刻蚀/光刻一线最熟悉的「红格→绿格」直觉，被做成可拍的 SEM 序列+FEM 轨迹。可拍角度：1）同一组 Case 从 S0 红框 SEM 走到 S8 绿框；2）为什么参考坐标不必精确匹配也能恢复；3）世界模型 vs 直接回归旋钮。开场：0 秒上 recovery cases 红→绿 SEM 对比。",
+      "caveat": "预印本；结论依赖所选 FEM/SEM 子集与对照方法，外推到任意产线光刻栈需谨慎；封面为论文算法结构图（含 Current/Reference SEM 输入）。",
+      "imageUrl": "https://arxiv.org/html/2610.23408v1/algorithm.png",
+      "previewUrl": "https://arxiv.org/html/2610.23408v1/algorithm.png",
+      "imageAlt": "论文图：Endpoint world model 读入当前与参考 SEM，经因果对齐与流匹配生成焦-曝光二维校正",
+      "tags": [
+        "芯片制造",
+        "光刻",
+        "失效分析",
+        "良率",
+        "AI推理"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 91,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 18,
+          "画面": 15,
+          "来源": 15,
+          "时效": 7,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 97.8,
+        "threshold": 65,
+        "run": "2026-10-27-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35767",
+      "title": "微服务根因分析，为什么「手写 SOP 的智能体」反而输给「随便让模型自己查」？北大等：简单外壳 PR@1 65–77%，五个公开 Agent 只有 16–53%",
+      "category": "AI",
+      "source": "arXiv:2610.35767《Free to Look, Free to Reason: Simple LLM Harnesses Outdiagnose Hand-Crafted Root Cause Analysis Agents》（Tingzhu Bi、Xun Zhang、Jinglin Li、Ping Wang、Meng Ma；2026-10-26）",
+      "publishedAt": "2026-10-26",
+      "eventAt": "2026-10-26",
+      "collectedAt": "2026-10-27T08:48:00.000Z",
+      "updatedAt": "2026-10-27T08:48:00.000Z",
+      "description": "一手来源：arXiv 论文摘要与 PDF 首页。问题：微服务故障 RCA 涌出大量「手写 SOP / 固定阶段 / 角色智能体」的 LLM Agent，各自数据集、少对照，看不清是否真比「让模型自己查」强。做法：作者建 RCAtlas（8 个公开集、90 个已验证案例），拿三种不规定调用步骤的简单外壳（一次证据包、SQL agent、Codex coding agent）对比五个已发表 LLM RCA Agent 与统计/因果基线，跨 6 模型×3 推理力度。结果：简单外壳最准（中档模型 PR@1 65–77%），公开 Agent 16–53%，非 LLM 6–39%；手写程序常跳过决定性证据；更强模型主要抬可靠性，多轮外壳主要抬 aptitude，加推理力度最多差几个点却可把时间乘到七倍。对你：和库里「模型×harness 谁的锅」「I-HITL」同一条智能体外壳主线，钩子更狠——复杂编排不一定赢。可拍角度：1）一张表：简单外壳 vs 五个公开 Agent；2）案例里被跳过的决定性证据；3）成本-时间帕累托上全是简单外壳。开场：0 秒上标题里的 65–77% vs 16–53% 对比大字。",
+      "caveat": "预印本；RCAtlas 来自公开基准合集，外推到任意私有可观测性栈需对照；封面为本轮自 PDF 首页托管图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261027c-arxiv-rca-harness.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261027c-arxiv-rca-harness.jpg",
+      "imageAlt": "论文首页：Free to Look, Free to Reason——简单 LLM 外壳在微服务 RCA 上优于手写智能体",
+      "tags": [
+        "智能体",
+        "AI推理",
+        "工具调用",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 89,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 19,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 8,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 94.0,
+        "threshold": 65,
+        "run": "2026-10-27-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35829",
+      "title": "写代码的智能体越来越快，安全审查为什么还能「一秒钟过关」？REVA：把威胁模型+静态分析塞进一次前向，探针读内部表征，速度比 Agent 检测器快 250 倍",
+      "category": "AI",
+      "source": "arXiv:2610.35829《Reva: Real-Time Vulnerability Detection through Contextual Probing of Large Language Models》（Amine Lbath、Massih-Reza Amini；2026-10-26）",
+      "publishedAt": "2026-10-26",
+      "eventAt": "2026-10-26",
+      "collectedAt": "2026-10-27T08:48:00.000Z",
+      "updatedAt": "2026-10-27T08:48:00.000Z",
+      "description": "一手来源：arXiv 论文摘要与 PDF 首页。问题：编码智能体出码快过人工审，需要实时筛每个新函数；Agent 式漏洞检测（跑工具、逛调用图、验假设）准但要分钟级算力；直接让 LLM 出判决又不准。做法：REVA——给模型预计算的模块威胁模型、轻量静态分析与调用图，再用训练好的探针读该函数在此上下文下的内部表征，一次前向出判。PrimeVul 留出集上，GLM-5.3-Flash 约 1 秒/函数达 60.0% 准确率，与同模型上的 Agent 检测器 VulTriage（59.2%）持平，却快 250 倍以上、成本不到十分之一；同提示下探针比模型自己直接判决高 14–17%。对你：和「智能体安全/工具调用」线衔接——审查不一定要再套一层慢 Agent。可拍角度：1）分钟级 Agent vs 一秒探针；2）威胁模型+调用图到底塞了什么上下文；3）内部表征为何比口头判决更稳。开场：0 秒上「250× faster」对照条。",
+      "caveat": "预印本；指标依赖 PrimeVul 与所选开源 LLM，外推到闭源生产栈需复测；封面为本轮自 PDF 首页托管图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261027c-arxiv-reva.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261027c-arxiv-reva.jpg",
+      "imageAlt": "论文首页：REVA——用上下文探针做实时漏洞检测",
+      "tags": [
+        "智能体",
+        "AI安全",
+        "工具调用",
+        "AI推理"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 87.7,
+        "threshold": 65,
+        "run": "2026-10-27-1640-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2610.35835",
       "title": "你点了「人工批准」，智能体为什么还能自己把日限额从 0.01 抬到 5？康奈尔：10 个模型里 9 个会读邮箱里的 OTP 给自己加薪——真·人在回路需要一个「拿不走」的可信实体",

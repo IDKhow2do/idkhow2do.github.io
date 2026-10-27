@@ -3,6 +3,131 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 60,
+      "multiplier": 1.0538,
+      "score": 63.2,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-27-1640-shanghai",
+      "record": {
+        "title": "同一场对打，为什么每挨一拳就换一组角色？aicreataro：[PR] Pollo Recast 保住动作与分镜，Blender 做粒子切换场",
+        "category": "video",
+        "styleFamily": "video_model",
+        "source": "https://x.com/aicreataro/status/2114996295505207487",
+        "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2114995833930485760/img/a-ry4IkoCf6nihXi.jpg",
+        "previewType": "image",
+        "description": "@aicreataro 10-27 [PR] 帖：用 Pollo Recast 把一场 Seedance 对打片换成 4 组 Midjourney 角色，宣称动作/镜头/剪辑点对齐；再用 Opus 5.5×Blender×Python 做「击中爆成粒子切场」。工具链说明较完整，但帖内含推广与折扣码，按规则强制待定。",
+        "tool": "Pollo Recast + Seedance + Midjourney + Blender + Opus 5.5",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者自述制作链；标记 [PR]，含产品推广。",
+        "attribution": "aicreataro（@aicreataro）",
+        "sourceAuthor": "aicreataro",
+        "tags": [
+          "AI视频",
+          "角色替换",
+          "Blender",
+          "商单感"
+        ],
+        "publishedAt": "2026-10-27T08:23:06.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-27T08:48:00.000Z",
+        "updatedAt": "2026-10-27T08:48:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-27T08:48:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 60,
+          "baseBreakdown": {
+            "实体": 16,
+            "科普": 10,
+            "溯源": 12,
+            "复现": 8,
+            "风格": 8,
+            "新颖": 6
+          },
+          "multiplier": 1.0538,
+          "finalScore": 63.2,
+          "threshold": 65,
+          "run": "2026-10-27-1640-shanghai"
+        },
+        "is3d": false,
+        "videoUrl": "https://video.twimg.com/amplify_video/2114995833930485760/vid/avc1/1280x720/wT02cBK2fkETeNV9.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 67,
+      "multiplier": 1.4,
+      "score": 93.8,
+      "reason": "分数达上墙线但通宵成片强推 @Hi3D_AI V1.0 开源，产品/活动投稿语气明显，按惯例进待定",
+      "run": "2026-10-27-1240-shanghai",
+      "record": {
+        "title": "通宵搓游戏：Opus 编排 + Image-2.5 多视角 + Hi3D MCP 出带 PBR 的 mesh，再塞进 Three.js——作者顺便安利刚开源的 Hi3D",
+        "category": "3d",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/gkxspace/status/2114923036516471083",
+        "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2114917822858252288/img/ArVcLQdogXy1fXFj.jpg",
+        "previewType": "image",
+        "description": "余温（@gkxspace）10-27 03:31 UTC（约 65 秒，互动高）：流水线为 GPT-Image-2.5 多视角概念图 → Hi3D MCP 生成带完整 PBR 的高精 mesh → LOD/Draco 压缩 → Three.js 装配碰撞/海水着色器/粒子 → WebAudio。文末明确安利 @Hi3D_AI V1.0 开源（自称 200 万真实生产资产训练）。机制有料，但赞助/产品投稿倾向明显。",
+        "tool": "Opus 5.5 + GPT-Image-2.5 + Hi3D MCP + Three.js",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "原帖（抓取时约 34 赞 / 32 收藏）；Hi3D 开源仓库本轮未单独核验许可证页。",
+        "attribution": "余温（@gkxspace）· Opus+Hi3D 通宵游戏管线",
+        "sourceAuthor": "gkxspace",
+        "tags": [
+          "Three.js",
+          "Hi3D",
+          "MCP",
+          "PBR",
+          "游戏"
+        ],
+        "publishedAt": "2026-10-27T03:31:59.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-27T04:54:00.000Z",
+        "updatedAt": "2026-10-27T04:54:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-27T04:54:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 67,
+          "baseBreakdown": {
+            "实体": 16,
+            "科普": 14,
+            "溯源": 12,
+            "复现": 10,
+            "风格": 9,
+            "新颖": 6
+          },
+          "multiplier": 1.4,
+          "finalScore": 93.8,
+          "threshold": 65,
+          "run": "2026-10-27-1240-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2114917822858252288/vid/avc1/1920x1080/6uJU__VlRQkqz-hc.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 61,
       "multiplier": 1.1979,
       "score": 73.1,
@@ -3690,6 +3815,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-27T00:55:00.000Z",
+  "updatedAt": "2026-10-27T08:48:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
