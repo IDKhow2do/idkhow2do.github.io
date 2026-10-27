@@ -1,7 +1,163 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-26T12:54:00.000Z",
+  "updatedAt": "2026-10-27T00:55:00.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2610.31904",
+      "title": "Bosch 刻蚀侧壁那些扇贝纹，为什么靠「多跑几次配方」还是对不准模拟器？普渡用几张 XSEM 截面把 ViennaPS 参数校回来：held-out 归一化误差降到 0.34 / 0.25",
+      "category": "半导体",
+      "source": "arXiv:2610.31904《Real-to-Sim Calibration of Bosch Etching Simulators with Few-Shot XSEM Data and Hybrid Search》（Xinyu Jia、Jainil Shah、Rahul Tripathi、Vijay Gupta、Zhihong Chen，Purdue ECE；2026-10-22；38 页、12 图）",
+      "publishedAt": "2026-10-22",
+      "eventAt": "2026-10-22",
+      "collectedAt": "2026-10-27T00:55:00.000Z",
+      "updatedAt": "2026-10-27T00:55:00.000Z",
+      "description": "一手来源：arXiv 论文摘要与 HTML 版。背景：Bosch 深硅刻蚀（DRIE）是 MEMS、TSV 的主力工艺，交替「刻蚀—钝化」会在侧壁留下扇贝纹（scallop）；想用 ViennaPS 这类物理模拟器预测深度和侧壁角，却很难把模拟器内部参数和真实机台配方对齐——真实 XSEM 测量又贵又少。做法：把问题写成 few-shot real-to-sim 标定——用少量真实 XSEM，反推一套「配方专属」的 ViennaPS 参数向量 z_r*，让模拟剖面的深度和侧壁角贴近测量；搜索时结合局部探索、LLM 引导候选，再用 XGBoost 代理模型筛一筛，最后仍以 ViennaPS 仿真验收。结果：在两个 Bosch 配方上，对 held-out 条件的归一化全局误差分别为 0.340 和 0.249。对你：刻蚀主线满分题，而且和库里「AI 量扇贝纹」那条互补——那边是量，这边是把模拟器校准。可拍角度：1）一张 XSEM 截面上的 6.2 μm 开口、7.05 μm 深、88.82° 侧壁角；2）扇贝纹从哪来；3）为什么「参数」不等于「机台旋钮」。开场：0 秒上论文附录 XSEM 截面（白线标尺寸、红线标侧壁）。",
+      "caveat": "预印本；标定是配方专属参数向量，不声称泛化到任意机台/任意腔室；归一化全局误差是论文自报指标，阅读时需对照其定义与样本量（文中测试样本 N=8/配方）。封面为论文 HTML 附录真实 XSEM 截面图。",
+      "imageUrl": "https://arxiv.org/html/2610.31904v1/figs/appendix/real_xsem_10.png",
+      "previewUrl": "https://arxiv.org/html/2610.31904v1/figs/appendix/real_xsem_10.png",
+      "imageAlt": "论文附录真实 XSEM 截面：Bosch 深硅刻蚀沟槽，标注开口约 6.2 μm、深度约 7.05 μm、侧壁角约 88.82°，侧壁可见扇贝纹",
+      "tags": [
+        "刻蚀",
+        "芯片制造",
+        "失效分析",
+        "Bosch",
+        "工艺仿真",
+        "MEMS"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 91,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 18,
+          "画面": 15,
+          "来源": 15,
+          "时效": 7,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 97.8,
+        "threshold": 65,
+        "run": "2026-10-27-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.32555",
+      "title": "模型从 20B 加到 120B，工具一坏它为什么还是一样脆？论文挖了 1774 个开源 MCP 仓库的故障分布：任务分从 8.08 掉到 3.23，更大的模型并没买到更高的容错率",
+      "category": "AI",
+      "source": "arXiv:2610.32555《Tool-Calling LLM Agents Under Realistic MCP Faults: Scale Does Not Purchase Fault Tolerance》（Antonio Ken Iannillo、Joshua Segun Owotogbe、Roberto Natella 等；2026-10-23）",
+      "publishedAt": "2026-10-23",
+      "eventAt": "2026-10-23",
+      "collectedAt": "2026-10-27T00:55:00.000Z",
+      "updatedAt": "2026-10-27T00:55:00.000Z",
+      "description": "一手来源：arXiv 论文摘要与 HTML 版。问题：智能体越来越靠 MCP 调外部工具，但现有基准默认「工具又对又准时」，现实里工具会挂、会超时、会间歇抽风。做法：作者挖了公开 MCP 生态 1,774 个开源仓库里 57,240 条 issue/PR，按故障模式×持久性（永久/瞬时/间歇）校准分布，再做 MCP-Injector——插在工具调用路径上的协议感知故障注入中间件。实验：1,350 格，交叉 20B/120B 两个骨干、三套智能体栈（自研 plan-and-execute、OpenAI Agents SDK、LangChain）、三种注入条件。结果：按这种「永久故障偏重」的压力画像，任务完成分从 8.08 掉到 3.23（约跌 60%）；在测试的 gpt-oss 骨干上，120B 在故障下保住的分数占比并不比 20B 更高（resilience-ratio，p=0.96），完成率甚至略低。对你：和库里「谁来校验工具」「说明书过时」同一条智能体可靠性主线，钩子更狠——「加参数≠更抗揍」。可拍角度：1）工具挂了智能体怎么反应；2）为什么更大模型没买到容错；3）MCP 生态真实故障长什么样。开场：0 秒上论文热力图，一行「8.08 → 3.23」。",
+      "caveat": "预印本；骨干限于论文所用的 gpt-oss 20B/120B，不能外推到所有闭源旗舰；故障分布来自公开 issue/PR 挖掘，和私有生产环境可能不同。封面为论文 HTML 版任务分热力图。",
+      "imageUrl": "https://arxiv.org/html/2610.32555v1/rq3_score_heatmap_ITT.png",
+      "previewUrl": "https://arxiv.org/html/2610.32555v1/rq3_score_heatmap_ITT.png",
+      "imageAlt": "论文图：MCP 故障注入下不同骨干与智能体栈的任务分热力图",
+      "tags": [
+        "智能体",
+        "AI安全",
+        "工具调用",
+        "MCP",
+        "AI推理"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 12,
+          "来源": 15,
+          "时效": 7,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 86.6,
+        "threshold": 65,
+        "run": "2026-10-27-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.32648",
+      "title": "AI 编码智能体为什么敢去读一个根本不存在的文件？中大团队：4,398 条轨迹里这种「幻觉工具调用」很常见，修一次中位要再烧 3 步、2.24 万 token——他们改成执行前先照镜子",
+      "category": "AI",
+      "source": "arXiv:2610.32648《StateMirror: Pre-Execution Detection of Hallucinated Tool Calls in Coding Agents》（Shiwen Shan、Yintong Huo、Zhiying Wu、Yuxin Su；2026-10-23）",
+      "publishedAt": "2026-10-23",
+      "eventAt": "2026-10-23",
+      "collectedAt": "2026-10-27T00:55:00.000Z",
+      "updatedAt": "2026-10-27T00:55:00.000Z",
+      "description": "一手来源：arXiv 论文摘要与 HTML 版。问题：编码智能体会提出执行环境里根本不成立的动作——读不存在的路径、调没装的包，作者称为 hallucinated tool use。初探：4,398 条智能体轨迹里这类幻觉很普遍，恢复中位要再多 3 个交互步、约 22.4K token；现有框架多靠执行后报错再改，白白烧时间。做法：StateMirror 在 harness 边界截获动作，用 AST 和命令分析抽出状态谓词，对照真实仓库做确定性校验——执行前就拦住。结果：在 4,508 个动作上精度 0.940、F1 0.817，比最强 LLM judge 的 F1 高 35.3%；中位检测时延从 17.73 秒降到 1.50 毫秒，且零 token；执行前反馈能让智能体改掉超过 95% 的幻觉工具调用。对你：和上轮「格式化器把 20 条写成只有 20 条」同一族，但这回是「还没跑就拦住」。可拍角度：1）读一个不存在的文件要付出什么；2）为什么不靠再问一个大模型来判；3）AST 谓词怎么对上真实目录。开场：0 秒上一行红色报错「No such file」，镜头切到执行前的绿勾。",
+      "caveat": "预印本；评测覆盖 SWE-agent、OpenHands、Sonar、Honeycomb 等 harness，外推到任意自定义工具链需谨慎；「改掉 95%」是论文在其修复设定下的数字。封面为论文 overview 示意图。",
+      "imageUrl": "https://arxiv.org/html/2610.32648v1/overview-1023.png",
+      "previewUrl": "https://arxiv.org/html/2610.32648v1/overview-1023.png",
+      "imageAlt": "论文 overview 图：StateMirror 在工具执行前做状态谓词校验的流程示意",
+      "tags": [
+        "智能体",
+        "AI安全",
+        "工具调用",
+        "编码智能体"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 79,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 12,
+          "来源": 15,
+          "时效": 7,
+          "大陆": 4,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 83.5,
+        "threshold": 65,
+        "run": "2026-10-27-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.32722",
+      "title": "想在氮化镓里刻出又直又匀的纳米孔，为什么单加碱或单加草酸盐都不行？剑桥发现：把 NaOH 和草酸钠混在一起，柱状孔又齐表面又平",
+      "category": "半导体",
+      "source": "arXiv:2610.32722《Controlled Fabrication of Uniform Columnar Porous GaN Architectures by Electrochemical Etching》（Thom R. Harris-Lee、Ben Thornley、Jiawei Zhang、Martin Frentrup、Simon Fairclough、Menno J. Kappers、Rachel A. Oliver，University of Cambridge；2026-10-23）",
+      "publishedAt": "2026-10-23",
+      "eventAt": "2026-10-23",
+      "collectedAt": "2026-10-27T00:55:00.000Z",
+      "updatedAt": "2026-10-27T00:55:00.000Z",
+      "description": "一手来源：arXiv 论文摘要与 PDF 图 1。背景：n 型 GaN 的电化学刻蚀（ECE）能做出多孔结构，利于应变释放、传感、复合；但高孔隙和表面完整性常常打架——孔隙一高，表面就糙、孔就不齐。关键发现：往草酸根等非酸性体系里加氢氧根（或直接用会水解出 OH⁻ 的 Na2CO3、Na3PO4），会导向竖直、高度均匀的柱状孔，表面粗糙也相对可控。对比：单用 0.1 M NaOH（4 V）孔偏短、表面坑稀疏不匀；单用 0.1 M Na2C2O4（8 V）孔隙高但乱、表面极糙；0.05 M NaOH + 0.05 M Na2C2O4（8 V）则得到又直又匀的柱状孔。调 NaOH 占比还能改孔径、间距和体/表面孔隙；AFM 上 60%–75% NaOH 混合时 RMS 粗糙可低到约 3.4 nm。对你：电化学刻蚀机制题，画面就是 SEM 截面对比，和物理干法 Bosch 那条形成「湿法对照」。可拍角度：1）三种电解液三种形貌；2）OH⁻ 和草酸根各自干什么；3）为什么「混」比「纯」好。开场：0 秒上图 1 三联 SEM 截面，左乱中糙右齐。",
+      "caveat": "预印本（PDF 带 DRAFT 水印）；机制解释部分作者写明直接证据仍不足；形貌强烈依赖载流子浓度、偏压和新鲜配液（文中提醒 NaOH 吸 CO2 会变）。封面为论文图 1 所在页截图（含 SE 截面/俯视与计时电流曲线），托管于门户 covers。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261027a-gan-ece.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261027a-gan-ece.jpg",
+      "imageAlt": "论文图 1 页：不同电解液下 n-GaN 电化学刻蚀的 SE 截面与俯视对比，以及计时电流曲线",
+      "tags": [
+        "刻蚀",
+        "GaN",
+        "芯片制造",
+        "电化学",
+        "多孔结构"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 16,
+          "画面": 14,
+          "来源": 15,
+          "时效": 7,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 94.5,
+        "threshold": 65,
+        "run": "2026-10-27-0840-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2610.17918",
       "title": "冷原子实验台 80% 的体积是激光器和镜子，为什么一块指甲盖大的氮化硅芯片就能把它们全替掉？UCSB 把两台激光器、稳频、调光和三束大光斑全做进一颗芯片，困住 100 万个铷原子",
