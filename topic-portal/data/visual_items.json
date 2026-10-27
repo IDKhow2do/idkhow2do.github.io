@@ -1,8 +1,230 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 412,
+  "exportedCount": 416,
   "items": [
+    {
+      "title": "曼哈顿街上为什么突然出现一台「红鬼」机甲？Three.js 官方转发 Elderwake：小机甲打巨兽，城市是活的，街景路牌都能认",
+      "category": "frontend",
+      "styleFamily": "code_video",
+      "source": "https://x.com/threejs/status/2114956494424924415",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2114913118317076480/img/QDsny_CdmKFRpMDC.jpg",
+      "previewType": "image",
+      "description": "Three.js 官方账号（@threejs）10-27 05:44 UTC 转发 Elderwake 演示：浏览器里的电影感城市防卫游戏，小一号 Assault Mech（演示机「CRIMSON ONI」）在活的曼哈顿街景里打巨兽。站点自述 cinematic Three.js city-defense；演示画面含 5th Ave / E 37th、Duane Reade、黄色出租车与完整 HUD（Hull/Cells/武器槽）。可做科普镜头：网页实时渲染如何撑起「可走的城市」、第三人称追逐镜头与波次 UI。原帖 amplify 缩略图已目视核验为机甲背影街景，非头像。",
+      "tool": "three.js（浏览器游戏演示）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "Three.js 官方转发；可玩页 https://elderwake-kaiju.vercel.app/ ；媒体来自原作者演示视频（X 媒体源推 2114914042175529016）。",
+      "attribution": "Elderwake（via @threejs / @Mor1ight）",
+      "sourceAuthor": "threejs",
+      "tags": [
+        "Three.js",
+        "游戏",
+        "机甲",
+        "城市",
+        "可交互"
+      ],
+      "publishedAt": "2026-10-27T05:44:56.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-27T08:48:00.000Z",
+      "updatedAt": "2026-10-27T08:48:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-27T08:48:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 76,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 12,
+          "溯源": 16,
+          "复现": 12,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.3491,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-27-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114913118317076480/vid/avc1/1280x720/is-4DxnfOGabPin1.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://elderwake-kaiju.vercel.app/"
+    },
+    {
+      "title": "Flash 年代那种「整页都在动」的站，为什么今天又能做、还要求无障碍？Codrops：用 GSAP + Animaxxing agent skills 搭一座「动作博物馆」",
+      "category": "frontend",
+      "styleFamily": "uiux",
+      "source": "https://tympanus.net/codrops/2026/10/26/animating-agents-gsap-animaxxing/",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261027c-codrops-animaxxing.jpg",
+      "previewType": "image",
+      "description": "Codrops 教程（John Polacek，2026-10-26）：讲如何用 GSAP 与自研 Animaxxing agent skills，规划/提示/打磨动能排版、页面转场与无障碍动效；演示站 Museum of Motion（https://tympanus.net/Demos/MuseumOfMotion/）把数十种网页动画拆开展示「做什么、靠什么驱动、如何处理触控/键盘/减弱动态」。源码与 MOTION.md 开源。对你：和门户偏好的可玩前端/代码动效同族，且直接教「怎么跟编码智能体协作做动效」。可做科普镜头：同一句大标题换 MASK/STAGGER/WAVE 等编号效果。封面为文章 og 图本轮转存（Museum of Motion 蓝底白字界面）。",
+      "tool": "GSAP + Next.js + Animaxxing agent skills",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "Codrops 一手教程；Demo + GitHub museum-of-motion / animaxxing-skills 可核验；封面自 og:image 转 JPG 托管。",
+      "attribution": "John Polacek · Codrops《Animating with Agents》",
+      "sourceAuthor": "John Polacek",
+      "tags": [
+        "GSAP",
+        "前端动效",
+        "无障碍",
+        "Agent技能",
+        "Codrops"
+      ],
+      "publishedAt": "2026-10-26",
+      "collectionIds": [],
+      "collectedAt": "2026-10-27T08:48:00.000Z",
+      "updatedAt": "2026-10-27T08:48:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-27T08:48:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "实体": 16,
+          "科普": 15,
+          "溯源": 20,
+          "复现": 15,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.3,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-27-1640-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/johnpolacek/museum-of-motion",
+      "licenseName": "Codrops 教程惯例（演示/源码见仓库）"
+    },
+    {
+      "title": "酵母细胞被「急冻劈开」之后，膜上为什么能看见六方排列的 15 nm 粒子？日立 FE-SEM + 冷冻系统：不固定不脱水，直接打浆氮、镀 2 nm 铂",
+      "category": "image",
+      "styleFamily": "other",
+      "source": "https://x.com/Hitachi_EM/status/2114998415566491684",
+      "previewUrl": "https://pbs.twimg.com/amplify_video_thumb/2114998378585321472/img/LIfUB1Z-jSuGjRX_.jpg",
+      "previewType": "image",
+      "description": "日立电子显微镜官方账号（@Hitachi_EM）10-27 发布 Cryo SEM of Budding Yeast：酵母滴在样品台，浆氮急冻、不经固定/脱水，冷冻制备室解理后镀约 2 nm Pt，用 FE-SEM（演示标注 SU8600 1.00 kV ×18.0k）观察；原形质断裂面（PF face）可见酵母细胞膜特有的内陷结构，放大后约 15 nm 粒子呈六方排列。技术说明链到日立 High-Tech。对你：和点赞过的 JEOL 离子研磨 SEM 同一「显微/失效分析画面」偏好——冷冻解理+镀膜是可讲的制样机制。可做科普镜头：为什么要急冻、PF face 是什么、15 nm 粒子阵列。封面为官方视频缩略图（已目视核验为 Cryo SEM 显微图）。",
+      "tool": "Hitachi FE-SEM + cryo system（官方演示）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "日立官方账号原帖；技术页 https://www.hitachi-hightech.com/global/en/sinews/technical_explanation/130316/ ；封面为 amplify 缩略图。",
+      "attribution": "Hitachi Electron Microscope（@Hitachi_EM）",
+      "sourceAuthor": "Hitachi_EM",
+      "tags": [
+        "SEM",
+        "冷冻电镜",
+        "失效分析",
+        "显微",
+        "制样"
+      ],
+      "publishedAt": "2026-10-27T08:31:31.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-27T08:48:00.000Z",
+      "updatedAt": "2026-10-27T08:48:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-27T08:48:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 79,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 18,
+          "溯源": 18,
+          "复现": 8,
+          "风格": 6,
+          "新颖": 7
+        },
+        "multiplier": 1.0,
+        "finalScore": 79.0,
+        "threshold": 65,
+        "run": "2026-10-27-1640-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114998378585321472/vid/avc1/960x720/D0u_EjCBHAtsOVos.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "真空里谁也跑不过光，为什么水里的粒子却能「超光速」并拖出一道蓝光锥？切伦科夫辐射：波前堆叠出来的光音爆",
+      "category": "video",
+      "styleFamily": "other",
+      "source": "https://x.com/mathelirium/status/2114999209413816505",
+      "previewUrl": "https://pbs.twimg.com/media/HVn8ZVdWwAArnH3.jpg",
+      "previewType": "image",
+      "description": "@mathelirium 10-27 可视化短片：切伦科夫辐射——介质中粒子速度超过该介质光速时，波前堆成发光锥（1934 切伦科夫观测，1937 塔姆/弗兰克解释，1958 诺奖）。画面为黑底上青色同心波纹自焦点展开，适合做「波前堆叠」开场。对科普账号：和半导体/探测器（闪烁体、光子计数）可轻挂钩，但本条主打物理机制镜头。封面为帖内媒体图（已目视核验为波纹可视化，非头像）。",
+      "tool": "科学可视化短片（作者未在帖内开源）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原帖可视化说明切伦科夫机制；非开源代码向，作科普镜头素材引用。",
+      "attribution": "Mathelirium（@mathelirium）",
+      "sourceAuthor": "mathelirium",
+      "tags": [
+        "物理可视化",
+        "切伦科夫",
+        "波前",
+        "科普"
+      ],
+      "publishedAt": "2026-10-27T08:34:40.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-27T08:48:00.000Z",
+      "updatedAt": "2026-10-27T08:48:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-27T08:48:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 72,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 20,
+          "溯源": 14,
+          "复现": 6,
+          "风格": 7,
+          "新颖": 7
+        },
+        "multiplier": 1.025,
+        "finalScore": 73.8,
+        "threshold": 65,
+        "run": "2026-10-27-1640-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://video.twimg.com/amplify_video/2114999012252090368/vid/avc1/720x720/kqoMIr5LviZiPGYp.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "二十四节气怎么被塞进同一条孟菲斯短片？LemoLab：剖面看水上水下、等距沿河走、俯视看田块——米白底 + 藏青描边 + 粉彩色，准备收进 lemo-opuscar",
       "category": "video",
@@ -20245,8 +20467,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条",
-  "updatedAt": "2026-10-27T04:54:00.000Z",
-  "totalItems": 412,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条",
+  "updatedAt": "2026-10-27T08:48:00.000Z",
+  "totalItems": 416,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
