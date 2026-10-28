@@ -1,7 +1,45 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-28T05:05:00.000Z",
+  "updatedAt": "2026-10-28T07:45:00.000Z",
   "topics": [
+    {
+      "url": "https://x.com/AndyL5cc/status/2115133828650213693",
+      "title": "一人指挥 50+ AI Agent？前 Cursor / SpaceXAI 工程师公开「咖啡一喝管全队」工作流教程（营销向）",
+      "category": "AI",
+      "source": "X @AndyL5cc（2026-10-27）；约 57 分钟教程视频",
+      "publishedAt": "2026-10-27T17:29:36.000Z",
+      "eventAt": null,
+      "collectedAt": "2026-10-28T07:45:00.000Z",
+      "updatedAt": "2026-10-28T07:45:00.000Z",
+      "description": "用户指定收纳。Andy L（@AndyL5cc）2026-10-27 17:29 UTC note_tweet：太夸张了！一个人指挥 50 多个 AI Agent，干了 20 个工程师的活！一位曾在 Cursor 工作的 SpaceXAI 高级工程师，分享 AI 自动化工作流：每天早上喝杯咖啡就能管理整个 AI 团队。配置称 1 个 AI 总管、3 个 AI 项目经理、40 多个 AI 员工通宵自动执行；并声称 97% 的 SpaceXAI 工程师已用类似方式。60 分钟教程从零搭建；以前有人收费 5000 美元教的东西现在公开了。附约 3424s（~57 min）视频。抓取时约 5332 赞 / 7832 书签。",
+      "caveat": "营销向转述；「97% SpaceXAI 工程师」等数字未独立核验；教程链接/身份未在本帖核验；未完整观看约 57 分钟视频。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261028-andyl-agent-workflow.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028-andyl-agent-workflow.jpg",
+      "imageAlt": "AndyL5cc AI Agent 工作流教程视频封面",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "Agent",
+        "SpaceXAI",
+        "Cursor",
+        "营销口径需caveat",
+        "工作流"
+      ],
+      "tagSource": "provided",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-28T07:45:00.000Z"
+      },
+      "curation": {
+        "baseScore": 74,
+        "multiplier": 1.1,
+        "finalScore": 81,
+        "threshold": 70,
+        "run": "user-2026-10-28-five-favs"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2610.37466",
       "title": "H100 明明标着 132 个 SM，为什么成组调度时只有 120 个能同时用？制造缺陷「屏蔽」（floorsweeping）连 FlashAttention 都得绕着走",
