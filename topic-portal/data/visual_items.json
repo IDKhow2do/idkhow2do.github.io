@@ -1,8 +1,123 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 437,
+  "exportedCount": 439,
   "items": [
+    {
+      "title": "一段 AI 视频为什么能「扒」出可进游戏的 3D 骨骼动画？anymove：让视频模型同屏拍正面+侧面两个机位，两条视线的交点就是关节的三维位置（Apache-2.0 开源）",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://github.com/patch-gg/anymove",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028c-anymove.jpg",
+      "previewType": "image",
+      "description": "开源仓库（patch-gg，2026-10-27 发布，Apache-2.0）：给任意生物（龙、巨型蜘蛛、火焰恶魔、狼，含翅膀、尾巴、八条腿）做「AI 动捕」。README 八步：①一张图生成真实尺寸带贴图网格（flux 3 + tripo h3.1，约 $0.40）；②在网格视图上手放骨骼、Blender 蒙皮（龙 42 根骨）；③每条肢体涂一种颜色，防止左右搞混；④让视频模型在同一画面里同时拍正面（左）和侧面（右）两个机位（MiniMax H3 Max on fal，5 秒约 $0.26）；⑤用 2,200 个已知关节的随机姿态训练一个只认这只生物的 DINOv2 关节识别器，平均误差从 40 px 降到 6 px（单卡约 20 分钟）；⑥逐帧读出两视图里的约 50 个关节；⑦把两个视图当成直角相交的两面墙，每个关节就是两条视线的交点——正面给左右、侧面给前后、两者共同给高度；⑧骨架逐帧贴合这些点、忽略离群点，导出 24fps GLB，单段不到一分钟、无需手修。作者写明局限：八条腿行走、侧躺动作会算偏；视频模型会漂（不加 LoRA 时 5 段狼视频里有 2 段肢体颜色互换）。方法来自 @CanItCode 的双机位技巧和 @Graalitoo 的 MiniMax H3 LoRA 思路，仓库是他们的可运行版本并带 Claude Code 技能。对你：「两个视角定一个三维点」就是立体视觉/三角测量的最直观演示，能接 3D 建模和你的房间建模项目。封面为 README 第 7 步官方示意图（正侧两面墙定位关节）。",
+      "tool": "MiniMax H3（视频）、DINOv2（关节识别）、Tripo h3.1 + flux 3（建模）、Blender、Claude Code 技能（仓库自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "原作者仓库 README；Apache-2.0；成本/误差数字为作者自述，未独立复现；方法署名 @CanItCode / @Graalitoo。",
+      "attribution": "patch-gg（@patch_gg / @rehan_shei）· anymove",
+      "sourceAuthor": "patch_gg",
+      "tags": [
+        "3D建模",
+        "动捕",
+        "骨骼动画",
+        "Blender",
+        "开源",
+        "结构可视化"
+      ],
+      "publishedAt": "2026-10-27T08:00:42.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-28T09:00:00.000Z",
+      "updatedAt": "2026-10-28T09:00:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-28T09:00:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 90,
+        "baseBreakdown": {
+          "实体": 21,
+          "科普": 18,
+          "溯源": 19,
+          "复现": 15,
+          "风格": 8,
+          "新颖": 9
+        },
+        "multiplier": 1.069,
+        "finalScore": 96.2,
+        "threshold": 65,
+        "run": "2026-10-28-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/patch-gg/anymove",
+      "licenseName": "Apache-2.0",
+      "licenseUrl": "https://github.com/patch-gg/anymove/blob/main/LICENSE"
+    },
+    {
+      "title": "手机里到底叠了几层？Opus 5.5 只用 Three.js 代码画出一台 iPhone 18 Pro Max，按「Teardown」就拆成 7 层：从屏幕、均热板一路到电池（没有任何 3D 模型文件）",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/madhugogineni97/status/2115360599932588286",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028c-iphone-teardown.jpg",
+      "previewType": "image",
+      "description": "作者原帖（约 15 秒竖屏视频）：用 Claude Opus 5.5 在 Three.js 里写出一台 iPhone 18 Pro Max，界面有 Front/Back/Side/Teardown 四个视角按钮和机身配色切换；点 Teardown 机身沿厚度方向炸开成 7 层，视频里可见标注的 Display、Frame、Logic board、Battery、Vapour chamber、Charging coil、Back housing 等。作者称每条曲线都是代码、按 163.4 × 78 mm 尺寸建，没有用 3D 模型文件。对你：「爆炸图/剖开看结构」正是你喜欢的结构可视化科普镜头，可以照这个思路做芯片封装、手机散热的分层讲解。封面为本轮从视频 8 秒处截取的爆炸视图帧，已目视核验。",
+      "tool": "Claude Opus 5.5 + Three.js（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者原帖；未公开提示词、源码或在线 demo；尺寸为作者自述；内部层次为示意建模，不代表真实 iPhone 拆解结构；许可未声明。",
+      "attribution": "@madhugogineni97 · 3D iPhone teardown in Three.js",
+      "sourceAuthor": "madhugogineni97",
+      "tags": [
+        "Three.js",
+        "结构可视化",
+        "爆炸图",
+        "消费电子",
+        "Claude Code",
+        "3D交互"
+      ],
+      "publishedAt": "2026-10-28T08:30:43.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-28T09:00:00.000Z",
+      "updatedAt": "2026-10-28T09:00:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-28T09:00:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 72,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 18,
+          "溯源": 10,
+          "复现": 5,
+          "风格": 9,
+          "新颖": 8
+        },
+        "multiplier": 1.2,
+        "finalScore": 86.4,
+        "threshold": 65,
+        "run": "2026-10-28-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/ext_tw_video/2115360582240968704/pu/vid/avc1/720x900/_Oz6hWNcx5em3At3.mp4?tag=12",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "上海武康路秋日风格动画：照着 Eian 提示词用 Claude 做的竖屏短片",
       "category": "video",
@@ -21618,8 +21733,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条",
-  "updatedAt": "2026-10-28T07:45:00.000Z",
-  "totalItems": 437,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条",
+  "updatedAt": "2026-10-28T09:00:00.000Z",
+  "totalItems": 439,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }

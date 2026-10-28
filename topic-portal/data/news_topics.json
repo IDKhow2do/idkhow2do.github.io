@@ -1,7 +1,162 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-28T07:45:00.000Z",
+  "updatedAt": "2026-10-28T09:00:00.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2610.37649",
+      "title": "把一个「越重的东西掉得越慢」的世界丢给 12 个大模型自己去玩，为什么只有 1 个发现了规律？LongChang（龙场）：AI 离「自己提出问题的科学家」还差多远",
+      "category": "AI",
+      "source": "arXiv 2610.37649《Can LLMs Uncover Hidden Physical Laws through Free Exploration?》（Zhen Yang、Wen Wang、Xander Xu、Ying-Cong Chen；港科大（广州）/浙大/阿里巴巴；2026-10-27 提交）；项目页 zhenyangcs.github.io/LongChang-website；代码 github.com/EnVision-Research/LongChang",
+      "publishedAt": "2026-10-27",
+      "eventAt": "2026-10-27",
+      "collectedAt": "2026-10-28T09:00:00.000Z",
+      "updatedAt": "2026-10-28T09:00:00.000Z",
+      "description": "一手来源：arXiv 论文 + 项目页 + 开源代码。是什么：作者在 MuJoCo 刚体仿真里搭了一间「玻璃房」，造出 1 个正常物理的对照场景和 14 个各改了一条物理定律的世界——比如「越重下落越慢」、重力周期性振荡、速度有上限、红球之间会互相吸引、第三次碰撞会跳起来等（论文表 1）。被测大模型当「探索者」，可以推、扔、搭工具做实验，但**不告诉它研究什么、也不提示哪条定律被改了**；另有独立的 LLM 代理负责审工具设计、按被改的定律和实验记录评判报告，并根据没解决的问题自动「进化」出新场景，全程无人介入。结果：12 个模型里只有 GPT-6-Astra 有发现，发现率 16.7%，其余 11 个都是 0%。更反直觉的细节：GPT-6-Astra 的「有实验支撑」率高达 97.6%，但定律本身判对只有 19.0%；Claude-Opus-5 反过来，16.7% 的运行认对了定律，却没有一份报告通过「实验支撑」检查；Gemini-3.7-Flash 每次都早早收工（平均 10.9 轮）；GLM 模型每次都搭出能用的仪器、却零发现；Grok-4.7 最「坚持」但同样零发现——会动手、肯坚持都不等于会发现。论文里 GPT-6-Astra 的高光时刻是：看到「按住蓝球、红球却自己重新动了」，它推迟原计划先去测这个延迟。对你：正好接你「涌现/什么是智慧」那条线——会答题 ≠ 会提问。可拍角度：1）「越重越慢」的世界，你能几秒发现？AI 却不行；2）「证据充分但结论错」vs「结论对但没证据」；3）名字来自王阳明龙场悟道。开场：0 秒上项目页那间玻璃房，红蓝小球在里面滚。",
+      "caveat": "arXiv 预印本未经同行评审；12 个模型、15 个场景的小样本，16.7% 等比例基于有限次运行；评判也由 LLM 代理完成，可能有评判偏差；模型名称以论文为准。封面为项目页官方「玻璃房」示意图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261028c-longchang.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028c-longchang.jpg",
+      "imageAlt": "LongChang 项目页插图：透明玻璃房内有斜面、摆锤、红蓝小球等实验器材",
+      "tags": [
+        "智能体",
+        "AI推理",
+        "科学发现",
+        "物理模拟",
+        "涌现"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 90,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 19,
+          "画面": 14,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 7,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 95.1,
+        "threshold": 65,
+        "run": "2026-10-28-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.37033",
+      "title": "让大模型「挑参考资料」本身就很费电，为什么换成一块 0.16 mm² 的 28nm 小芯片靠「退火」来挑，选段能耗能低六个数量级？p-DCIM 存内 Ising 机",
+      "category": "半导体",
+      "source": "arXiv 2610.37033《p-DCIM: A 28nm Probabilistic SRAM DCIM based Ising Machine for Near-Memory Context Selection in LLM-RAG Pipeline》（Madhav Vadlamani、Rahul Singh、Yuyao Kong、Haomei Liu、Zheng Zhang、Shimeng Yu；佐治亚理工 / UCSB；2026-10-27 提交）",
+      "publishedAt": "2026-10-27",
+      "eventAt": "2026-10-27",
+      "collectedAt": "2026-10-28T09:00:00.000Z",
+      "updatedAt": "2026-10-28T09:00:00.000Z",
+      "description": "一手来源：arXiv 论文（含流片实测）。是什么：检索增强生成（RAG）里，「从一堆候选段落里挑哪几段喂给模型」越来越多交给语言模型反复重排，这一步本身就要额外耗电。作者把「挑一组既相关又不重复的段落」改写成一个二次无约束二值优化（QUBO）问题，交给一块自己流片的 28nm 数字存内计算（DCIM）芯片去「退火」求解：同一套乘加电路先算嵌入相似度、填好 QUBO 系数，再拿来算每个「自旋」翻转的能量差；退火「温度」靠数字位平面数控制，外加 SRAM 伪读出时的随机比特翻转——把存储器的「噪声」当成随机性来用。芯片面积 0.16 mm²、功耗 0.41 mW（论文图中确定/概率模式实测约 0.406/0.413 mW）。作者设想把它集成进 GPU 封装里 HBM/HBF 堆叠的逻辑底座，只把选中的段落编号送回主机。按作者的估算，选段这一步的归一化能耗比 LLM 方案低六个数量级以上，每次查询总能耗降 67%，在其评测样例上 token 级 F1 相当。对你：存内计算、SRAM 噪声、HBM 底座这些都是芯片人能讲透的词，又直接连着 AI 的电费。可拍角度：1）把「噪声」变成算力；2）退火：从金属热处理到芯片里的数字退火；3）为什么「挑资料」比「回答」还贵。开场：0 秒上论文里的实测台架 + 芯片显微照片（780 µm 见方）。",
+      "caveat": "arXiv 预印本未经同行评审；「六个数量级」是宏电路归一化的选段能耗估算，总能耗 −67% 与 F1 相当均基于作者评测样例；集成进 HBM/HBF 底座是提议而非已实现。封面为论文测试台架与芯片显微照片截取。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261028c-pdcim.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028c-pdcim.jpg",
+      "imageAlt": "论文图：FPGA 测试台架、QFN 插座与 28nm p-DCIM 芯片显微照片（780 µm 见方，标注 QUBO DCIM SRAM 阵列）",
+      "tags": [
+        "芯片制造",
+        "存内计算",
+        "AI成本",
+        "KV缓存",
+        "存储/内存"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 16,
+          "画面": 11,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 90.2,
+        "threshold": 65,
+        "run": "2026-10-28-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://huggingface.co/blog/allenai/novelty-bench",
+      "title": "让 AI 判断一个科研点子「新不新」，为什么只是把提示词换个问法，准确率就从 93.5% 掉到 40.9%——比瞎猜还低？Ai2 新基准",
+      "category": "AI",
+      "source": "Ai2 官方博客（Hugging Face，2026-10-27）《Can we trust LLMs to judge whether a research idea is novel?》；论文 arXiv 2610.02022《Old Ideas, Novel Problems》；数据 huggingface.co/datasets/allenai/novelty-judge-bench；代码 github.com/allenai/novelty-eval",
+      "publishedAt": "2026-10-27",
+      "eventAt": "2026-10-27",
+      "collectedAt": "2026-10-28T09:00:00.000Z",
+      "updatedAt": "2026-10-28T09:00:00.000Z",
+      "description": "一手来源：Ai2 官方博客 + 论文/数据/代码。是什么：AI 自动做科研时，常用另一个大模型当「新颖性裁判」判断想法是否新。Ai2 从 ICLR 2026 审稿意见里挖出审稿人明确夸/质疑原创性的段落，构造 154 个「高新颖」人类想法和 145 个「低新颖」想法；另把 154 个人类想法和一个简单生成器写的 154 个 AI 想法配对（弱标签，专家抽查 30 对全部更偏向人类想法）。测试六个裁判（GPT-5.1/5.2/5.4、Claude Sonnet 4.5、Opus 4.5/4.6）。反直觉结果：①同一批「人类 vs AI」配对，GPT-5.4 在提示里被告知「每对恰好一个被审稿人认为新颖」时准确率 93.5%，换成只问「哪个新颖」就掉到 40.9%，低于随机，且超过一半配对改判；同样的改动在纯人类数据上只差约 7 个百分点，Opus 4.6 则差 21 个点；②没有放之四海皆准的提示；③给 GPT-5.6 Sol 超高推理预算加 arXiv 实时检索，宏 F1 只有 0.78，反而比简单提示的 Opus 4.6（0.89）低 11 个点，单次成本约 10 倍；④两个专门做新颖性评估的系统也不如这个简单基线。对你：和同日的 LongChang 正好凑成「AI 当科学家」两连：既不会自己发现问题，也判断不准什么是新。可拍角度：1）同一道题换个问法，AI 法官改判一半；2）多想、多搜不一定更准；3）谁来给 AI 的「创新」打分。开场：0 秒把两句提示词并排放，下面数字从 93.5% 跳到 40.9%。",
+      "caveat": "「人类想法比 AI 想法更新颖」是弱标签假设（作者自述），仅部分经专家抽查；测试模型多为较早版本，结论未必外推到最新模型；成本对比按发文时 API 价格。封面为 Ai2 博客官方头图（示意插画，非数据图）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261028c-novelty-judge.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028c-novelty-judge.jpg",
+      "imageAlt": "Ai2 博客头图：中心灯泡图标，周围多个网络节点分别被打勾或打叉",
+      "tags": [
+        "智能体",
+        "AI推理",
+        "科学发现",
+        "AI评测"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 79,
+        "baseBreakdown": {
+          "主线": 19,
+          "钩子": 18,
+          "画面": 7,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 83.5,
+        "threshold": 65,
+        "run": "2026-10-28-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://www.apple.com/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/",
+      "title": "苹果说 M6 跑大模型「快 13 倍」，为什么对比的是 5 年前的 M1、而对上一代 M5 只快 1.3 倍？而且快的只是「首个 Token」",
+      "category": "科技产品",
+      "source": "Apple Newsroom 新闻稿《Apple introduces the new 14-inch MacBook Pro with M6》（2026-10-27）",
+      "publishedAt": "2026-10-27",
+      "eventAt": "2026-10-27",
+      "collectedAt": "2026-10-28T09:00:00.000Z",
+      "updatedAt": "2026-10-28T09:00:00.000Z",
+      "description": "一手来源：苹果官方新闻稿。是什么：苹果发布 M6 芯片的 14 英寸 MacBook Pro（10 月 28 日开订、11 月 6 日发售）：12 核 CPU、12 核 GPU（GPU 里增加了神经网络加速器）、双 16 核神经引擎，统一内存 16GB 起、可选 32GB，内存带宽最高 170GB/s。新闻稿正文写「相比 M1 最高快 13 倍的 AI 性能」，脚注口径则是：LLM 提示词处理的「首个 Token 时间」比 13 英寸 M1 MacBook Pro 最高快 13 倍、比 M5 款最高快 1.3 倍；对 M5 的 AI 负载提升写的是「最高 25%」。反直觉点：①「13 倍」的参照物是 2020 年的 M1，对上一代只有 1.3 倍；②首 Token 时间主要取决于处理提示词的算力（GPU 里新加的加速器正是干这个的），而之后一个字一个字往外吐的速度更多受内存带宽限制——苹果这次给的带宽是 170GB/s，新闻稿并没有宣称生成速度快 13 倍（这一点是推理常识推断，不是苹果数据）。对你：「发布会数字怎么读」是生活类常青题，又能顺带讲清 AI 推理的两阶段。可拍角度：1）找参照物：13 倍对谁；2）预填充 vs 解码：为什么「开口快」不等于「说得快」；3）16GB 内存到底能跑多大的本地模型。开场：0 秒上苹果官方大字「13x」，再把脚注放大。",
+      "caveat": "13 倍/1.3 倍/25% 均为苹果「最高」口径、在其测试配置下得出；「生成阶段受带宽限制」是通用推理原理推断，未经实测；本条不涉及价格与国行信息。封面为苹果新闻稿官方 og 图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261028c-m6-ttft.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028c-m6-ttft.jpg",
+      "imageAlt": "苹果官方宣传图：巨大的「M6」字样与倾斜的 MacBook Pro",
+      "tags": [
+        "端侧AI",
+        "AI推理",
+        "统计口径",
+        "数字生活",
+        "存储/内存"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 76,
+        "baseBreakdown": {
+          "主线": 17,
+          "钩子": 14,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 80.3,
+        "threshold": 65,
+        "run": "2026-10-28-1640-shanghai"
+      }
+    },
     {
       "url": "https://x.com/AndyL5cc/status/2115133828650213693",
       "title": "一人指挥 50+ AI Agent？前 Cursor / SpaceXAI 工程师公开「咖啡一喝管全队」工作流教程（营销向）",
