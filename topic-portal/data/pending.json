@@ -3,6 +3,196 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 61,
+      "multiplier": 1.0,
+      "score": 61.0,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-28-0840-shanghai",
+      "record": {
+        "title": "一张图变一个能走进去的 3D 小世界：Meng To 用 Viggle PINOC（JST-2）生成七个高斯泼溅世界，再让 Claude Code 通过 MCP 当导演带角色逛完",
+        "category": "3d",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/MengTo/status/2115103854895517714",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028a-mengto-pinoc.jpg",
+        "previewType": "image",
+        "description": "@MengTo 10-27 发布：每个世界一张图、每个角色一张图，Viggle 的 PINOC（基于新 JST-2 世界模型）把它们变成浏览器里可运行的高斯泼溅世界和绑定好的角色；再由连上 PINOC MCP 的 Claude Code 带角色 Fern 走完每个世界并指挥镜头。作者回复称在 Claude 里正经做要很多小时和大量 token，这个工具快很多也便宜。封面帧已目视核验：石墙边草地上的红发角色，非头像。",
+        "tool": "Viggle PINOC（JST-2）+ Claude Code（PINOC MCP）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者原帖；产品链接 viggle.ai/pinoc/app；无 prompt 公开。",
+        "attribution": "Meng To（@MengTo）× Viggle PINOC",
+        "sourceAuthor": "MengTo",
+        "tags": [
+          "高斯泼溅",
+          "世界模型",
+          "3D场景",
+          "Claude Code",
+          "MCP"
+        ],
+        "publishedAt": "2026-10-27T15:30:30.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-28T00:58:00.000Z",
+        "updatedAt": "2026-10-28T00:58:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-28T00:58:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 61,
+          "baseBreakdown": {
+            "实体": 18,
+            "科普": 10,
+            "溯源": 12,
+            "复现": 8,
+            "风格": 8,
+            "新颖": 5
+          },
+          "multiplier": 1.0,
+          "finalScore": 61.0,
+          "threshold": 65,
+          "run": "2026-10-28-0840-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/ext_tw_video/2115103741330571264/pu/vid/avc1/960x720/3Vwq0N69DYnUIZLU.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 67,
+      "multiplier": 1.3491,
+      "score": 90.4,
+      "reason": "分数达上墙线但与库内 TokenGremlin「5000 只椋鸟」Boids 同一概念，作为涌现视频的备选（有在线 demo）先待定",
+      "run": "2026-10-28-0840-shanghai",
+      "record": {
+        "title": "分离、对齐、聚合三条规则就够了：kyoko NR 用 WebGPU + TSL 写的 Boids 粒子群（有在线 demo）",
+        "category": "frontend",
+        "styleFamily": "code_video",
+        "source": "https://x.com/kyoko_NR_nr/status/2115063567812800621",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028a-kyoko-boids.jpg",
+        "previewType": "image",
+        "description": "@kyoko_NR_nr 10-27 发布学习作品：用 three.js WebGPU + TSL 实现 Boids——粒子彼此保持最小距离、朝同一方向、向中心聚拢；自回帖给出在线 demo experiment-12-particle-gpgpu.vercel.app。封面帧已目视核验为彩色粒子群，非头像。对你：可作「涌现」视频开场的备选画面（库里已有 TokenGremlin 版本）。",
+        "tool": "three.js WebGPU + TSL（GPGPU 粒子）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者原帖 + 自回帖在线 demo；未声明许可证。",
+        "attribution": "kyoko NR（@kyoko_NR_nr）· 12 Particle GPGPU",
+        "sourceAuthor": "kyoko_NR_nr",
+        "tags": [
+          "Three.js",
+          "TSL",
+          "WebGPU",
+          "Boids",
+          "涌现",
+          "粒子"
+        ],
+        "publishedAt": "2026-10-27T12:50:25.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-28T00:58:00.000Z",
+        "updatedAt": "2026-10-28T00:58:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-28T00:58:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 67,
+          "baseBreakdown": {
+            "实体": 14,
+            "科普": 18,
+            "溯源": 12,
+            "复现": 11,
+            "风格": 10,
+            "新颖": 2
+          },
+          "multiplier": 1.3491,
+          "finalScore": 90.4,
+          "threshold": 65,
+          "run": "2026-10-28-0840-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2115063173300822016/vid/avc1/1084x720/TZ5z-3TEY9YCTYwZ.mp4?tag=14",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 58,
+      "multiplier": 1.0315,
+      "score": 59.8,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-28-0840-shanghai",
+      "record": {
+        "title": "一条像素风 MV 12 万赞，竟是代码一帧帧「画」的：jiangjiangling 公开 Python（Pillow+numpy+ffmpeg）按 LRC 歌词切场景的提示词",
+        "category": "video",
+        "styleFamily": "code_video",
+        "source": "https://x.com/jiangjiangling/status/2115142136056394133",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028a-jiangjiangling-pixelmv.jpg",
+        "previewType": "image",
+        "description": "@jiangjiangling 10-27 发布：称某账号仅发 1 条像素风 MV 即 12 万赞、涨粉 2700+（未给出原账号链接），并自己复现——提示词要求 Python（Pillow + numpy + ffmpeg）在 320×180 画布作画后最近邻放大 6 倍到 1080p，背景分级渐变 + 4×4 Bayer 抖动，字符矩阵定义 Q 版角色两帧走路，顶部游戏风状态栏，雨/星/爱心粒子，网点转场，打字机字幕+中英双语；解析 LRC 歌词到点切场景，30fps 直出 ffmpeg 合音频。封面帧已目视核验：夜景城市像素画与 SHOWER 字幕，非头像。",
+        "tool": "Python（Pillow + numpy + ffmpeg），AI 写代码",
+        "prompt": "帮我写一个 Python 脚本（用 Pillow + numpy + ffmpeg），渲染一个和歌曲同步的像素风 MV。输入：song.mp3 和 lyrics.lrc（带时间轴的歌词）……（全文见原帖）",
+        "promptProvenance": "original_public",
+        "provenanceNote": "作者原帖公开提示词；「12 万赞」原账号未注明，数字未核实。",
+        "attribution": "@jiangjiangling · 像素风 MV 代码复现",
+        "sourceAuthor": "jiangjiangling",
+        "tags": [
+          "代码视频",
+          "像素风",
+          "Python",
+          "歌词同步",
+          "ffmpeg"
+        ],
+        "publishedAt": "2026-10-27T18:02:37.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-28T00:58:00.000Z",
+        "updatedAt": "2026-10-28T00:58:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-28T00:58:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 58,
+          "baseBreakdown": {
+            "实体": 8,
+            "科普": 8,
+            "溯源": 12,
+            "复现": 14,
+            "风格": 10,
+            "新颖": 6
+          },
+          "multiplier": 1.0315,
+          "finalScore": 59.8,
+          "threshold": 65,
+          "run": "2026-10-28-0840-shanghai"
+        },
+        "is3d": false,
+        "videoUrl": "https://video.twimg.com/amplify_video/2115141066181771264/vid/avc1/1920x1080/p2aP8Y6QYUdY-73L.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 67,
       "multiplier": 1.025,
       "score": 68.7,
@@ -3877,6 +4067,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-27T12:50:00.000Z",
+  "updatedAt": "2026-10-28T00:58:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }

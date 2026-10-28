@@ -1,8 +1,395 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 423,
+  "exportedCount": 430,
   "items": [
+    {
+      "title": "牛顿三定律为什么要配笑话？Techartist 用 Opus 5.5 做了一本「全息立体书」：每页投影一个能亲手跑的实验，从抽桌布到撞车吸能区",
+      "category": "frontend",
+      "styleFamily": "uiux",
+      "source": "https://x.com/techartist_/status/2115122099161559140",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028a-techartist-newton.jpg",
+      "previewType": "image",
+      "description": "@techartist_ 10-27 发布：用 Claude Opus 5.5 做的 3D 全息物理书（在线：iamtechartist.com/newtons-laws-of-motion/，作者自回帖给出）。页面自述：面向 14–16 岁（GCSE/IGCSE/CBSE 九年级）学生，七个跨页，每页在书上方投影一个模拟实验——拔河与合力、抽桌布与急刹公交（惯性）、冰面和地毯上的冰球（摩擦）、小车与速度-时间图（F=ma）、小船/气球火箭/跳跃（作用与反作用）、带吸能区和气囊的碰撞测试（动量）、牛顿摆；一尊牛顿大理石胸像先做一遍并讲一个「带真事实的笑话」，再把实验交给学生自己跑；附教师笔记、投影模式和全部出处。作者在帖中引用记忆研究：幽默效应 Schmidt (1994)、动作执行效应 Engelkamp & Krumnacker (1980)、Cohen (1981)。封面帧已目视核验：青色全息胸像与半透明人形拔河实验，非头像。对你：和库里同作者的 F1、水磨坊同族，但这次是直接的科普教具——可借「笑话里藏事实」的叙事结构，也可截实验当物理科普镜头。",
+      "tool": "Claude Opus 5.5 + Three.js/WebGL（作者自述；在线演示）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者原帖 + 作者自回帖的在线页面；未公开源码与 prompt。封面为本轮下载的 X 视频缩略图。",
+      "attribution": "Techartist（@techartist_）· Newton’s Laws of Motion: a 3D holographic book",
+      "sourceAuthor": "techartist_",
+      "tags": [
+        "Three.js",
+        "交互网页",
+        "物理科普",
+        "全息",
+        "教育",
+        "Claude Code"
+      ],
+      "publishedAt": "2026-10-27T16:43:00.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-28T00:58:00.000Z",
+      "updatedAt": "2026-10-28T00:58:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-28T00:58:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 81,
+        "baseBreakdown": {
+          "实体": 23,
+          "科普": 20,
+          "溯源": 13,
+          "复现": 7,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.3491,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-28-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2115120698721275904/vid/avc1/1920x1080/uTFGa9OQjoyCye8g.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "不用 Blender、不用 GPU，为什么一台笔记本 CPU 能光追出「月球撞地球」？xinc3s：Claude Code 一条提示词，Python 逐像素算两颗球",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/xinc3s/status/2115236882678182109",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028a-xinc3s-moon.jpg",
+      "previewType": "image",
+      "description": "@xinc3s 10-28 发布 20 秒竖版短片：Claude Code 按一条提示词写 Python（numpy + opencv + PIL），只用笔记本 CPU——两颗球的逐像素光线-球体求交、等距柱状贴图采样、单一太阳光；地球有昼夜混合与城市灯光、云层、海面高光、蓝色边缘与大气光晕，月球带地照；贴图取自 three.js 仓库里基于 NASA 的免费地月贴图。剧情：月球从 384,400 km 坠向地球（HUD 倒数距离与接近速度）→ 火箭拦截撞击（白闪、三帧反色、陨坑裂缝冷却、冲击波环、3000+ 碎片由白到橙到灰）→ 月球被推回轨道，首尾相接循环；声音也全用 numpy 噪声合成（无音乐、无采样，-14 LUFS）。帖内附完整 9 步提示词（含先渲关键帧修构图再全片渲染）。封面帧已目视核验：太空中的地球与 HUD「384,400 km」，非头像。对你：和你「代码出片」主线完全同路——可直接拿提示词复现；也是讲「光线追踪到底在算什么」的好镜头。",
+      "tool": "Claude Code + Python（numpy/opencv/PIL），CPU 渲染（作者自述）",
+      "prompt": "Build a 20-second 1080x1350 30fps cinematic in Python (numpy + opencv + PIL), no 3D software, CPU only. Story: the moon falls toward Earth, a steel rocket launches on an intercept, hits it, and the moon is pushed back into orbit. End frame matches the first so it loops.（全文 9 步见原帖）",
+      "promptProvenance": "original_public",
+      "provenanceNote": "作者原帖公开完整提示词；剧情为虚构科幻场景（HUD 自标 render · schematic）。",
+      "attribution": "@xinc3s · Moon impact cinematic (Python ray tracer)",
+      "sourceAuthor": "xinc3s",
+      "tags": [
+        "代码视频",
+        "光线追踪",
+        "Python",
+        "Claude Code",
+        "宇宙",
+        "程序化生成"
+      ],
+      "publishedAt": "2026-10-28T00:19:06.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-28T00:58:00.000Z",
+      "updatedAt": "2026-10-28T00:58:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-28T00:58:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 80,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 16,
+          "溯源": 15,
+          "复现": 14,
+          "风格": 9,
+          "新颖": 8
+        },
+        "multiplier": 1.0468,
+        "finalScore": 83.7,
+        "threshold": 65,
+        "run": "2026-10-28-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2115236817741979648/vid/avc1/1080x1350/Ao1uktG6igNJhMdT.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "沙虫身体为什么能「自己弯」？0xOrbitSpace：一个 three.js HTML 文件做出可驾驶的机械沙虫——只让头选路，25 节身体沿路径跟随",
+      "category": "frontend",
+      "styleFamily": "uiux",
+      "source": "https://x.com/0xOrbitSpace/status/2115137589158265152",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028a-orbit-dune-worm.jpg",
+      "previewType": "image",
+      "description": "@0xOrbitSpace 10-27 发布：用 Claude Code 在单个 three.js HTML 里做的可驾驶机械沙虫（作者注明是风格化机械虫，不是电影里那只），无 Blender、无引擎、无外部模型。构成：25 节装甲环像火车车厢一样跟随头部，口中 40 颗齿与 36 片刀片旋转，身体破沙处扬尘，X 光模式显示埋在沙下的部分，方向键左右/下潜/破土。关键技巧：把运动写成「路径」而不是动画——头决定路线，每一节只沿路径跟随，身体就自然弯曲。作者也写了翻车点：第一版相机在沙子下面；扬尘要按正确尺寸读深度缓冲才看得见。帖内附可直接粘给 Claude Code 的 5 步提示词，并给出在线可玩的 Claude artifact 链接（claude.ai/artifact/…）。封面帧已目视核验：沙漠中竖起的分节机械虫，非头像。对你：「路径跟随=身体自己弯」是一句话能讲清的运动学机制，可当火车/蛇/机械臂的科普镜头；X 光模式是现成的「剖面看内部」画面。",
+      "tool": "Claude Code + three.js（单 HTML 文件，作者自述）",
+      "prompt": "Build a [creature] in a single three.js HTML file. 1. Describe the body as segments that follow one path, before any code 2. Build each segment from chamfered boxes, no textures, no imported models 3. Add arrow-key steering where only the head turns and the body follows 4. Add particles where the body crosses the ground Show me the segment plan first and wait for my yes.",
+      "promptProvenance": "original_public",
+      "provenanceNote": "作者原帖公开提示词 + Claude artifact 在线演示；未声明许可证；题材借用《沙丘》意象，作者自注为风格化原创机械虫。",
+      "attribution": "@0xOrbitSpace · Drivable machine sandworm (three.js single file)",
+      "sourceAuthor": "0xOrbitSpace",
+      "tags": [
+        "Three.js",
+        "交互网页",
+        "路径跟随",
+        "程序化生成",
+        "Claude Code",
+        "剖面"
+      ],
+      "publishedAt": "2026-10-27T17:44:33.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-28T00:58:00.000Z",
+      "updatedAt": "2026-10-28T00:58:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-28T00:58:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 79,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 14,
+          "溯源": 14,
+          "复现": 13,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.2748,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-28-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2115137476868415488/vid/avc1/1154x930/1P8l50uljr08krPa.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "从 2D 初稿到 30 秒一镜到底，中间到底说了哪几句话？aicreataro 公开「三角くんの大冒険2」Opus 5.5 × Blender 制作全过程（初稿/成片/Blender 视图三屏对照）",
+      "category": "video",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/aicreataro/status/2115217902530085040",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028a-aicreataro-making.jpg",
+      "previewType": "image",
+      "description": "@aicreataro 10-27 发布上一条作品（库里已收「三角くん一镜到底 PART2」）的 making-of：画面左上是 2D 初稿、右上是成片、下方是 Blender 视窗（发光线是角色路径，橙框是相机）。作者按顺序列出 7 条指令：01「要纵深和无缝」→ 2D 改 3D；02「不切镜头」→ 30 秒一镜；03「更快更密」；04「门后每次换一个世界」；05「攻击和表情更多」→ 每个世界换动作与机位、脸做 16 种；06「看得清三角くん的脸」→ 只压暗主角、周围发光；07「加烧焦/淋湿/触电等机关」→ 完成。作者心得：一句句对话迭代，需要耐心，有时先离开一下。封面帧已目视核验为三屏对照（彩色初稿、成片、Blender 界面），非头像。对你：这是「怎么跟 AI 导演沟通」的可复用迭代清单，正好对应你用 Claude 出片的工作流；也可当「AI 做 3D 动画的幕后」镜头。",
+      "tool": "Claude Opus 5.5 × Blender（作者自述）",
+      "prompt": "01「奥行きとシームレスさがほしい」02「カットで切らずにつなげたい」03「もっとスピード感と密度を」04「次々色々なシーンへ」05「攻撃と表情をもっと」06「三角くんの顔が見えるように」07「焦げたり、ギミックを足したい」",
+      "promptProvenance": "original_public",
+      "provenanceNote": "作者原帖公开迭代指令列表（非完整 prompt）；同作者被用户收藏过。",
+      "attribution": "@aicreataro · 三角くんの大冒険2 メイキング",
+      "sourceAuthor": "aicreataro",
+      "tags": [
+        "Blender",
+        "Claude Code",
+        "一镜到底",
+        "制作过程",
+        "迭代指令"
+      ],
+      "publishedAt": "2026-10-27T23:03:41.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-28T00:58:00.000Z",
+      "updatedAt": "2026-10-28T00:58:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-28T00:58:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 68,
+        "baseBreakdown": {
+          "实体": 16,
+          "科普": 12,
+          "溯源": 15,
+          "复现": 12,
+          "风格": 9,
+          "新颖": 4
+        },
+        "multiplier": 1.0538,
+        "finalScore": 71.7,
+        "threshold": 65,
+        "run": "2026-10-28-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2115217104224002048/vid/avc1/1920x1620/OaCGbIX69sacC7ad.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "火车车厢之间那个「钩子」为什么一百多年不用换？designfuncn 用 Claude Code × Blender 把挪威式车钩的榫接与缓冲器动起来",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/designfuncn/status/2115152156953374859",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028a-designfuncn-coupler.jpg",
+      "previewType": "image",
+      "description": "@designfuncn 10-27 发布 5 秒短片：用 Claude Code × Blender 复原 20 世纪初的挪威式车钩（Norwegian coupler）——作者原话：只是简单的机械榫接加缓冲器，却每天安静地运送数百万人。封面帧已目视核验：白底上的红色车钩/缓冲器机械模型，右侧带参数面板（How a Norwegian coupler takes a shunt），非头像。对你：典型「身边不起眼的机械，原理一讲就懂」的科普镜头，可与地铁/有轨电车联动；做法同库里 Claude Code × Blender 机械类。",
+      "tool": "Claude Code × Blender（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者原帖仅 5 秒视频与一句说明；无源码、无 prompt；机构细节需自行核对资料后再用于科普。",
+      "attribution": "Abhishek（@designfuncn）· Norwegian Coupler",
+      "sourceAuthor": "designfuncn",
+      "tags": [
+        "Blender",
+        "Claude Code",
+        "机械结构",
+        "结构可视化",
+        "交通"
+      ],
+      "publishedAt": "2026-10-27T18:42:26.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-28T00:58:00.000Z",
+      "updatedAt": "2026-10-28T00:58:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-28T00:58:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 68,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 18,
+          "溯源": 8,
+          "复现": 4,
+          "风格": 8,
+          "新颖": 8
+        },
+        "multiplier": 1.069,
+        "finalScore": 72.7,
+        "threshold": 65,
+        "run": "2026-10-28-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2115151875297415169/vid/avc1/1280x720/hAUcGZkHw_0hXfAN.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "同一份火箭发射脚本，Three.js 和 Blender 各做一遍，成本只差一分钱？tutao0123：Claude Code + DeepSeek V4.1 Flash 两条流水线对照",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/tutao0123/status/2115096548732510241",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028a-tutao-rocket.jpg",
+      "previewType": "image",
+      "description": "@tutao0123 10-27 发布：同一个火箭发射 brief，分别走 Three.js 与 Blender 两条流程（Claude Code + DeepSeek V4.1 Flash）。作者给的数字：MP4 2.11 MB vs 1.42 MB，估算 API 成本 $0.22 vs $0.21，账户余额实际减少约 $0.45；时间含重试，作者明确说不是受控基准。封面帧已目视核验：左右并排两版发射塔画面与标题 One launch. Two workflows.，非头像。",
+      "tool": "Claude Code + DeepSeek V4.1 Flash；Three.js / Blender",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者原帖；单次非受控对比。",
+      "attribution": "@tutao0123 · One launch, two workflows",
+      "sourceAuthor": "tutao0123",
+      "tags": [
+        "代码视频",
+        "Three.js",
+        "Blender",
+        "成本对比",
+        "DeepSeek"
+      ],
+      "publishedAt": "2026-10-27T15:01:28.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-28T00:58:00.000Z",
+      "updatedAt": "2026-10-28T00:58:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-28T00:58:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 61,
+        "baseBreakdown": {
+          "实体": 12,
+          "科普": 10,
+          "溯源": 12,
+          "复现": 9,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.1178,
+        "finalScore": 68.2,
+        "threshold": 65,
+        "run": "2026-10-28-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2115096334080618496/vid/avc1/1920x1080/xmodiGG75TMhgtP2.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "能走进去的伏见稻荷千本鸟居：Nacho Estevo 用 three.js WebGPU + GPT Astra / Sol 6.1 搭的可漫游场景",
+      "category": "frontend",
+      "styleFamily": "uiux",
+      "source": "https://x.com/Nachoestevo/status/2115141046573441488",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028a-nacho-fushimi.jpg",
+      "previewType": "image",
+      "description": "@Nachoestevo 10-27 发布：用 OpenAI Astra 和 Sol 6.1 配合 three.js WebGPU「绘制」京都伏见稻荷，网页可完整步行漫游（kyoto.nachoestevo.com）。封面为站点 social-preview（红色鸟居与樱树），已目视核验，非头像。",
+      "tool": "three.js WebGPU + GPT-6 Astra / Sol 6.1（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者原帖 + 在线站点；无源码/prompt。",
+      "attribution": "Nacho Estevo（@Nachoestevo）· Fushimi Inari",
+      "sourceAuthor": "Nachoestevo",
+      "tags": [
+        "Three.js",
+        "WebGPU",
+        "可漫游场景",
+        "日式"
+      ],
+      "publishedAt": "2026-10-27T17:58:17.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-28T00:58:00.000Z",
+      "updatedAt": "2026-10-28T00:58:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-28T00:58:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 62,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 10,
+          "溯源": 10,
+          "复现": 6,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.3491,
+        "finalScore": 83.6,
+        "threshold": 65,
+        "run": "2026-10-28-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2115131892794032128/vid/avc1/1280x720/V4_Ibkzst9ynooAb.mp4?tag=14",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "Echo-3：手机扫女儿房间 → 3DGS 重建，再整屋换成童话风格",
       "category": "3d",
@@ -20847,8 +21234,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管）",
-  "updatedAt": "2026-10-27T16:47:00.000Z",
-  "totalItems": 423,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条",
+  "updatedAt": "2026-10-28T00:58:00.000Z",
+  "totalItems": 430,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
