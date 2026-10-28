@@ -1,7 +1,201 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-27T12:50:00.000Z",
+  "updatedAt": "2026-10-28T00:58:00.000Z",
   "topics": [
+    {
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "title": "没人给它写物理方程，为什么 Genie 4 里一颗枫树种子会自己旋着落地？DeepMind 新世界模型：实时可操控、边玩边生成声音",
+      "category": "AI",
+      "source": "Google DeepMind 官方博客《Genie 4: A new generation of world simulation》（Raia Hadsell、Diego Rivas、Hang Qi；2026-10-27）+ Google 官方博客同日公告",
+      "publishedAt": "2026-10-27",
+      "eventAt": "2026-10-27",
+      "collectedAt": "2026-10-28T00:58:00.000Z",
+      "updatedAt": "2026-10-28T00:58:00.000Z",
+      "description": "一手来源：DeepMind 官方博客与 blog.google 公告。是什么：Genie 4 是实时交互的世界模型——用键盘控制走动和镜头，用自然语言随时改天气、移镜头、加人物或物体，模型接着「演」世界怎么回应；底层用 Gemini Omni 锚定真实外观与行为，再由其它 Gemini 模型在后台盯画面、做推理维持场景连贯。官方强调三点：物理更真（气流/空气动力学、碰撞，官方 demo 有枫树种子飘落、丝巾随风、热气球 POV）、人物动作更自然、首次原生生成音频（环境声、音乐、对白都随操作实时生成）。官方自述局限：只能在短时段内保持连贯，跑久了或多次改 prompt 后细节和物体恒存性会漂移；复杂物理、音频准确度、文字渲染、空间精度、长时一致性仍在研究。目前仅向受信测试者开放研究预览，之后给 Google AI Ultra 订阅者（Project Genie）和 Gemini API/AI Studio 早期伙伴。对你：「涌现」主线的现成素材——模型没被显式教物理，却「演」出了气流和碰撞；也能接你的世界模型/3D 选题。可拍角度：1）视频模型 vs 世界模型：区别在「你一操作它要接着算」；2）它为什么跑久了会忘记东西放哪（物体恒存性）；3）Genie 3 vs Genie 4 官方对比片段。开场：0 秒上官方 demo 里旋转下落的枫树种子。",
+      "caveat": "官方博客/演示为厂商自选片段，未公开论文与量化指标；大陆用户目前无法使用（且需 Ultra 订阅/受邀）；X 上流传的「24 FPS、毫秒级延迟」等数字在官方页未见，未采用。封面为官方 og 图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261028a-genie4.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028a-genie4.jpg",
+      "imageAlt": "Genie 4 官方宣传图：玻璃球中的蜂鸟与暖色光晕，左侧标题 Genie 4: A new generation of world simulation",
+      "tags": [
+        "世界模型",
+        "AI视频",
+        "涌现",
+        "实时交互",
+        "DeepMind"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 15,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 93.0,
+        "threshold": 65,
+        "run": "2026-10-28-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://spectrum.ieee.org/ai-generated-scientific-papers",
+      "title": "用免费 AI 伪造一篇论文投 IEEE 期刊，为什么露馅的不是文字，而是参考文献？IEEE Spectrum 实测：两轮造假都被抓",
+      "category": "AI",
+      "source": "IEEE Spectrum《I Used AI to Fake a Scientific Paper. Here’s What Happened》（Benjamin Skuse；2026-10-27），与 IEEE Access 编辑部合作的「攻防演练」",
+      "publishedAt": "2026-10-27",
+      "eventAt": "2026-10-27",
+      "collectedAt": "2026-10-28T00:58:00.000Z",
+      "updatedAt": "2026-10-28T00:58:00.000Z",
+      "description": "一手来源：IEEE Spectrum 记者亲自做的实验报道（IEEE Access 主编 Jenny Mahoney 与 IEEE 同意配合演练）。做法两轮：第一轮只用免费 ChatGPT 与 Gemini（3 Flash），以作者自己的博士方向「光孤子」为题，不许手改、不找外援，约两打 prompt 生成正文、图、图注、参考文献并排成 IEEE Access 格式——一个模型拒绝就换另一个、改问「假设下一步会怎样」。结果：投稿后被自动诚信检查抓住，原因是虚构/无法核实的参考文献（STM Integrity Hub 查出 12 条幽灵引用，另一工具有 24 条无法验证，含作者名「John Smith」）；内容本身编辑和领域专家都没看出大错，只觉得数学过密、缩写过多、个别论断可疑。第二轮用自主科研系统 FARS：21 分钟出研究方案，一键跑计算实验、次日完成，两小时写成可投稿论文；作者删掉 FARS 披露、署自己的名投稿——这次引用是真的，但因过度依赖未经同行评审的预印本被标记。背景数字：IEEE Access 每年约 6 万投稿、录用约 20%，每篇审稿邀请数自 2018 年起涨了 50%。对你：AI×科研诚信，和「AI 写的东西怎么识别」强相关，大陆学术圈也在面对同样的问题。可拍角度：1）为什么「文字像人」已经不是检测重点；2）幽灵引用是怎么来的（大模型补全的本性）；3）当 AI 真去做实验，检测线该放哪。开场：0 秒上「两轮造假流程图 → CAUGHT」。",
+      "caveat": "单人单次实验，不代表所有期刊/检测工具水平；FARS 为特定自主科研系统；数字来自文中引述的 IEEE 编辑。来源为 IEEE 官方杂志的记者实测报道（非论文），来源分按权威媒体略上调。封面为文章 og 图（作者在工作室的合成摄影）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261028a-ieee-fakepaper.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028a-ieee-fakepaper.jpg",
+      "imageAlt": "IEEE Spectrum 文章配图：作者 Benjamin Skuse 戴眼镜的面部与屏幕反光的合成摄影",
+      "tags": [
+        "AI安全",
+        "科研诚信",
+        "幻觉",
+        "智能体",
+        "学术出版"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 10,
+          "来源": 12,
+          "时效": 10,
+          "大陆": 8,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 87.7,
+        "threshold": 65,
+        "run": "2026-10-28-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35080",
+      "title": "不训练、不标数据，直接让多模态大模型「看图说缺陷」能分晶圆图吗？能到 93.8%——但换个提示规则的顺序就掉点",
+      "category": "半导体",
+      "source": "arXiv:2610.35080《Zero-Shot Multi-Class Wafer Map Classification with Rule-Ordered Prompts for Large Multimodal Models》（Tianjian Cao, Jun Tao；2026-10-26）",
+      "publishedAt": "2026-10-26",
+      "eventAt": "2026-10-26",
+      "collectedAt": "2026-10-28T00:58:00.000Z",
+      "updatedAt": "2026-10-28T00:58:00.000Z",
+      "description": "一手来源：arXiv 论文摘要与 HTML 图。问题：晶圆图（wafer map）缺陷分类通常要标注数据，产线条件一变就得重训。做法：完全不训练——先用连通域把最大的几块失效区高亮成「视觉提示」，再配上按形态、位置、排除关系写好的文字规则（Center/Donut/Edge/Local/Scratch/Random 六类），交给冻结的多模态大模型一次性输出一个标签。结果：Mixed-WM38（6,866 张）多区域提示宏平均 92.9%、整体 93.8%；在更难的 WM811K（9,000 张）上 79.1% / 81.3%。反直觉点：规则写的顺序也是「超参」——另外 8 种规则顺序只有 90.1–91.9%。对你：你在刻蚀/良率一线最熟的画面就是晶圆 map；昨天上墙的 WaferHDC 走「在线发现新花纹」，这篇走「零训练靠提示词」，两条路可以对比讲。可拍角度：1）六种缺陷花纹各对应什么工艺问题（Center/Edge/Scratch…）；2）为什么规则顺序会影响大模型判断；3）零样本 81% 在产线上够不够用。开场：0 秒上论文 Fig.1 六类原始晶圆图。",
+      "caveat": "预印本；只做六类、用公开数据集，未在真实产线验证；所用大模型与成本需看正文；与库内 WaferHDC 同属晶圆图分类，角度不同。封面为论文 Fig.1。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261028a-wafer-zeroshot.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028a-wafer-zeroshot.jpg",
+      "imageAlt": "论文 Fig.1：Center、Donut、Edge、Local、Scratch、Random 六类晶圆缺陷原始图（白点为失效晶粒）",
+      "tags": [
+        "芯片制造",
+        "良率",
+        "晶圆缺陷",
+        "多模态大模型",
+        "零样本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 90,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 16,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 8,
+          "新颖": 3
+        },
+        "multiplier": 1.0743,
+        "finalScore": 96.7,
+        "threshold": 65,
+        "run": "2026-10-28-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.34564",
+      "title": "鸟群只靠三条规则就能飞出整体队形，为什么研究者要拿它来训「多人视角」的视频世界模型？FlockWorld + FlockDiT",
+      "category": "AI",
+      "source": "arXiv:2610.34564《FlockWorld: Toward Population-Scale Multi-Agent Video World Models through Artificial Life Simulation》（Meryem Koksal, Yunzhe Wang, Volkan Ustun；2026-10-25）",
+      "publishedAt": "2026-10-25",
+      "eventAt": "2026-10-25",
+      "collectedAt": "2026-10-28T00:58:00.000Z",
+      "updatedAt": "2026-10-28T00:58:00.000Z",
+      "description": "一手来源：arXiv 论文摘要与 HTML 图。问题：动作条件的视频世界模型大多只有一个玩家，多人版本也只支持少量固定人数。做法：FlockWorld 用 Reynolds 的 Boids（分离、对齐、聚合三条规则）搭一个人工生命环境，给若干只「带摄像头的鸟」同步渲染第一视角小画面，用不同颜色保持身份，把规则算出的加速度当作「动作」，摄像头个体数可以和周围整个鸟群规模分开设置；再训练 FlockDiT（流匹配训练的动作条件潜空间扩散 Transformer）同时生成多只鸟的同步第一视角视频。结果（摘要原话为 suggest）：在密度匹配条件下联合生成有助于识别其他个体，diffusion forcing 提升长 rollout 保真度。对你：正好接你一直想做的「涌现」视频——开头的 three.js 鸟群 demo 讲完「简单规则→复杂队形」，这篇把同一套规则变成了训练 AI「想象多人世界」的考场。可拍角度：1）三条规则如何涌现队形；2）为什么要用这么简单的世界来测世界模型（可控、有标准答案）；3）黑背景 vs 渐变背景：没有位置线索时模型会怎样。开场：0 秒上论文 Fig.1 全局视角与两只鸟的第一视角画面。",
+      "caveat": "预印本、受控玩具环境、分辨率 128×128，结论措辞保守；与真实多人游戏/机器人场景距离较远。封面为论文 Fig.1 渲染条件图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261028a-flockworld.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028a-flockworld.jpg",
+      "imageAlt": "论文 Fig.1：黑背景与空间渐变背景两种 FlockWorld 渲染，各含全局视角和两只鸟的第一视角小图",
+      "tags": [
+        "世界模型",
+        "涌现",
+        "多智能体",
+        "Boids",
+        "AI视频"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 16,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 88.8,
+        "threshold": 65,
+        "run": "2026-10-28-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.34644",
+      "title": "让 AI 当科学家跑一年「不能撤销」的温室实验，为什么它中途测了数据却从不改种植计划？SlowLab：三个低成本模型都没跑赢老式贝叶斯优化",
+      "category": "AI",
+      "source": "arXiv:2610.34644《SlowLab: Benchmarking Autonomous AI Agents on a Year of Experiments They Cannot Undo》（Ningpei Ding, Zai Wen Feng；2026-10-26；代码 MIT）",
+      "publishedAt": "2026-10-26",
+      "eventAt": "2026-10-26",
+      "collectedAt": "2026-10-28T00:58:00.000Z",
+      "updatedAt": "2026-10-28T00:58:00.000Z",
+      "description": "一手来源：arXiv 论文摘要与 HTML 框架图。问题：现在测「AI 科学家」的基准多是秒出结果、可随便重来的便宜实验；真实设施里的实验要几个月、占用稀缺设备、做了就撤不回。做法：SlowLab 让智能体在一个隐藏作物/设施/价格的站点上，用四个模拟温室隔间跑一整年——决定何时种哪种气候策略、要不要中止、生长期间读哪些测量，年底只推荐一个策略，由私有评估器在它没见过的天气里打分。预注册研究，48 个未见站点：三个低成本语言模型智能体最终都停在「标准种植设置」附近，明显不如从同一设置出发的贝叶斯优化基线；它们把设施当成两批同步实验来跑，季中测量从未改变下一步种什么，这些测量对任何方法都没带来提升；让其它方法重读已收集证据也没显著变好——问题出在起点和它们愿意尝试的实验。代码 MIT 开源。对你：「AI 做实验」和你熟悉的晶圆厂工艺开发很像——片子流下去就回不来，DOE 怎么排比算法聪明更重要。可拍角度：1）为什么「不可撤销」会让 AI 变保守；2）数据测了不用＝白测；3）类比 fab 里的 DOE 与机台排程。开场：0 秒上论文框架图「一轮实验的智能体视角」。",
+      "caveat": "预印本；只测了三个「低成本」模型，结论不能外推到前沿最强模型；温室为模拟环境。封面为论文框架示意图（非实拍）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261028a-slowlab.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028a-slowlab.jpg",
+      "imageAlt": "论文框架图：智能体 Plan、Act、Grow、Observe、Analyse、Recommend 一年实验流程示意",
+      "tags": [
+        "智能体",
+        "AI科研",
+        "实验设计",
+        "基准测试"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 79,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 16,
+          "画面": 8,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 83.5,
+        "threshold": 65,
+        "run": "2026-10-28-0840-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2610.35864",
       "title": "扩散模型拍视频明明更炫，为什么还要让智能体「写代码一帧帧渲」？VibeVideoBench：239 道中英任务，最好的系统仍有约四分之一交不出合格片",
