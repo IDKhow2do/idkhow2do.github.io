@@ -1,7 +1,240 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-28T00:58:00.000Z",
+  "updatedAt": "2026-10-28T05:05:00.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2610.37466",
+      "title": "H100 明明标着 132 个 SM，为什么成组调度时只有 120 个能同时用？制造缺陷「屏蔽」（floorsweeping）连 FlashAttention 都得绕着走",
+      "category": "半导体",
+      "source": "arXiv 2610.37466《Kernel Performance Engineering under Physical Non-Idealities》（Supun Kuruppu、Pranav Dangi、Wei Li 等；2026-10-27 提交）",
+      "publishedAt": "2026-10-27",
+      "eventAt": "2026-10-27",
+      "collectedAt": "2026-10-28T05:05:00.000Z",
+      "updatedAt": "2026-10-28T05:05:00.000Z",
+      "description": "一手来源：arXiv 论文。是什么：芯片制造总有缺陷，厂商的做法是把坏掉的计算单元直接关掉（floorsweeping），再按剩下多少好单元分档卖——论文明确写到，同一 GH100 设计的芯片按缺陷情况分成 H100 SXM5 和 H100 PCIe 两个型号。问题在于这些「关掉的格子」位置每块芯片都不一样：H100 对外暴露 132 个 SM，但作者实测在 4/8 个线程块一组的集群（GPC 级 cluster）调度下，只有 120 个 SM 能同时用上，原本想靠分布式共享内存（DSMEM）省掉的数据搬运收益被吃掉一部分。作者据此做了「按波次感知」的集群策略，让 Hopper 版 FlashAttention 4 吞吐最多提升 5.30%；还解释了另一个反直觉现象：数据搬得少了，功耗墙（TDP）下 SM 反而能跑更高频率，所以提速比预期多。同样的功耗约束也出现在 Tenstorrent Wormhole 上。对你：良率→分档→软件性能，一条从刻蚀车间直通 AI 账单的线，你的工艺背景讲这个有天然说服力。可拍角度：1）为什么芯片「坏了一块还能卖」；2）同型号 GPU 其实各不相同；3）省电反而更快。开场：0 秒上论文里的 SM 配对热力图，或自己用 Three.js 画一块芯片、随机熄灭几格。",
+      "caveat": "arXiv 预印本未经同行评审；132/120 等数字为作者在其测试卡上的实测，不同批次/型号可能不同；5.30% 为「最多」提升。封面为论文 Fig.（SM 集群配对热力图）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261028b-h100-floorsweep.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028b-h100-floorsweep.jpg",
+      "imageAlt": "论文热力图：H100 在 cluster size=4 与 8 时 SM 之间的配对关系，对角线方块分布",
+      "tags": [
+        "芯片制造",
+        "良率",
+        "GPU",
+        "AI成本",
+        "芯片误差"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 90,
+        "baseBreakdown": {
+          "主线": 24,
+          "钩子": 19,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 7,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 96.7,
+        "threshold": 65,
+        "run": "2026-10-28-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35993",
+      "title": "先用硅离子把晶圆表面「打烂」成非晶，为什么后注入的铋反而激活得更多（约 60%→90%）？量子器件里的离子注入反直觉",
+      "category": "半导体",
+      "source": "arXiv 2610.35993《Amorphization-Depth-Dependent Bismuth Redistribution and Activation in Silicon for Quantum Devices》（Youcef A. Bioud、Simon-Jean Michel、Sébastien Francoeur 等；2026-10-26 提交）",
+      "publishedAt": "2026-10-26",
+      "eventAt": "2026-10-26",
+      "collectedAt": "2026-10-28T05:05:00.000Z",
+      "updatedAt": "2026-10-28T05:05:00.000Z",
+      "description": "一手来源：arXiv 论文。是什么：铋（Bi）作为硅里的施主，自旋相干时间长，是硅基量子器件的候选；但它要靠离子注入放进去，注入会把表层晶格打成非晶，退火再长回来。作者比了两条路线：直接注入 20 keV Bi（非晶层约 47 nm），和先用 60 keV 硅离子「预非晶化」再注 Bi（非晶层约 177±15 nm）。650 °C 退火 300 s 后，卢瑟福背散射测得两者 Bi 进入晶格位置的比例几乎一样（91±2% vs 89±4%），但霍尔测量的电激活率却差很多（约 60% vs 约 90%）——「站对位置」不等于「能导电」。深度分析在原非晶/晶体界面附近的射程末端区发现一个埋层 Bi 聚集，和残留的射程末端缺陷捕获一致；退火温度升高后表面偏析加剧，到 850–950 °C 两条路线的激活率都掉到 30% 多、优势消失（论文 Fig.1d）。结论：非晶层深度和再生长几何决定了杂质往哪跑。对你：注入—非晶化—固相外延—退火，这是你熟悉的前道工艺链，能讲成「为什么先破坏反而更好」的工艺直觉题。可拍角度：1）非晶化/再结晶动画；2）「替位率一样、激活率不同」的反直觉；3）退火温度不是越高越好。开场：0 秒上论文深度剖面图里那条红色的预非晶化损伤曲线。",
+      "caveat": "arXiv 预印本未经同行评审；针对量子器件用的近表面 Bi 掺杂，与量产逻辑工艺的掺杂体系不同，别直接类比为量产工艺结论；约 60%/90% 为霍尔推算值。封面为论文 Fig.1（SRIM 深度剖面与激活率曲线）截取。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261028b-bi-implant.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028b-bi-implant.jpg",
+      "imageAlt": "论文 Fig.1：Bi-only 与硅预非晶化两种注入路线的深度剖面，以及电激活率随退火温度变化曲线",
+      "tags": [
+        "芯片制造",
+        "离子注入",
+        "量子计算",
+        "退火",
+        "器件物理"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 16,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 94.5,
+        "threshold": 65,
+        "run": "2026-10-28-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.37326",
+      "title": "AI 生成的房间看着样样到位，为什么推一下桌子、拉一下冰箱门就露馅？ScIntBench：12 个系统里最好的也只完成 36.92% 的交互",
+      "category": "AI",
+      "source": "arXiv 2610.37326《ScIntBench: Physical Interaction Plausibility in 3D Scene Generation》（Wendi Ying、Daochang Liu、Leonid Sigal 等；2026-10-27 提交）",
+      "publishedAt": "2026-10-27",
+      "eventAt": "2026-10-27",
+      "collectedAt": "2026-10-28T05:05:00.000Z",
+      "updatedAt": "2026-10-28T05:05:00.000Z",
+      "description": "一手来源：arXiv 论文。是什么：现在评价「文字生成 3D 室内场景」大多只看像不像、静止时会不会穿模或倒下。ScIntBench 把场景丢进物理仿真里真去「动手」：推桌子、开冰箱门、按台面，测任务成功率、交互后是否散架、动态是否合理。评了 12 个系统、10 类房间：静态物理近乎满分的 SAGE（碰撞 0.41%、稳定 98.33%）交互成功率只有 11.54%；12 个里有 7 个生成的场景完全无法支持任何交互；最好的也只完成 36.92% 的任务。论文举例：冰箱摆得很对却没有能开的门铰链；椅子站得稳，一推就行为离谱。有意思的是 Claude Code 和 Codex 这类通用编程代理也被拿来比，Claude Code 在交互成功率等多项领先（但动态不合理度偏高），开冰箱任务里只有 Claude Code 达到要求的开门角度；两者每个场景约 28 分钟。对你：直接接你想做的「房间 3D 建模 + 换装修风格」项目——好看 ≠ 能用；也是「看起来懂 vs 真的懂」的智能话题。可拍角度：1）AI 房间的冰箱为什么打不开；2）静态满分、动手就挂；3）通用编程代理反超专用场景生成器。开场：0 秒上论文各系统生成房间的并排对比图。",
+      "caveat": "arXiv 预印本；评测为作者设定的仿真任务，排名依赖其 prompt 与物理引擎设置；Claude Code/Codex 在大陆不能直接使用。封面为论文 Fig.2（各系统生成场景对比）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261028b-scintbench.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028b-scintbench.jpg",
+      "imageAlt": "论文 Fig.2：DiffuScene、LayoutVLM、Holodeck、SAGE、SceneSmith、Codex、Claude Code 生成的室内场景并排对比",
+      "tags": [
+        "3D建模",
+        "场景生成",
+        "智能体",
+        "物理仿真",
+        "AI评测"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 91.9,
+        "threshold": 65,
+        "run": "2026-10-28-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.37046",
+      "title": "不改一个参数，只改「怎么给它干活的流程」，为什么 27B 小模型用代码重建 3D 房间能比大模型高 32%？SceneEvolve",
+      "category": "AI",
+      "source": "arXiv 2610.37046《Learning to Code the World: Harness Evolution for Compositional 3D Reconstruction》（Haoyu Yao、Chenguo Lin、Ruize Du 等；2026-10-27 提交），项目页 haoyu-agent.github.io/SceneEvolve",
+      "publishedAt": "2026-10-27",
+      "eventAt": "2026-10-27",
+      "collectedAt": "2026-10-28T05:05:00.000Z",
+      "updatedAt": "2026-10-28T05:05:00.000Z",
+      "description": "一手来源：arXiv 论文。是什么：从一张真实照片重建出「可编辑、可拆分」的 3D 场景，作者让模型把场景写成可执行代码（参数化基本体 + 层级组合 + 语义空间关系，叫 SceneAct）。关键不在训练模型，而在「进化工作框架（harness）」：用一个更强的教师代理，根据开发集重建结果反复改写小模型的工作流程，全程模型参数、动作语义和执行后端都不动。结果：Qwen3.8-27B 用进化后的 harness，四项重建指标全提升、平均推理时间降 47.0%；摘要称重建质量比 GPT-5.6-Sol 高 32.3%，等效部署成本低 59.8%；同一 harness 换到 Kimi-K3 上，表现接近 GPT-6-Astra。对你：「代码涌现出建模能力」的一手例子，也是国产开源模型（Qwen、Kimi）能用上的方法；能接涌现和 3D 建模两条线。可拍角度：1）把房间写成代码是什么意思；2）不训练只改流程为什么有用；3）小模型 + 好流程 vs 大模型。开场：0 秒上论文首图的房间照片→代码重建对照。",
+      "caveat": "arXiv 预印本；「高 32.3%」为作者在其数据集与指标上的对比；harness 进化阶段仍需更强的教师代理。封面为论文首图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261028b-sceneevolve.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028b-sceneevolve.jpg",
+      "imageAlt": "SceneEvolve 论文首图：多张室内场景重建结果与质量、推理时间、部署成本三组柱状图对比",
+      "tags": [
+        "3D建模",
+        "智能体",
+        "涌现",
+        "开源模型",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 16,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 7,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 88.8,
+        "threshold": 65,
+        "run": "2026-10-28-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.36371",
+      "title": "让视频模型自己「悟」出游戏规则总是乱来，为什么干脆让编程代理先写一个「方框世界」管规则、再让它只负责画？BoxWorld",
+      "category": "AI",
+      "source": "arXiv 2610.36371《BoxWorld: Let World Engines Control and Video Generators Render》（Zike Wu、Ahmed Hatem、Chintan Trivedi 等；2026-10-26 提交），项目页 boxworld-web.github.io",
+      "publishedAt": "2026-10-26",
+      "eventAt": "2026-10-26",
+      "collectedAt": "2026-10-28T05:05:00.000Z",
+      "updatedAt": "2026-10-28T05:05:00.000Z",
+      "description": "一手来源：arXiv 论文。是什么：端到端的视频世界模型把「交互规则」也塞进生成器里学，结果很难指定「拿到钥匙门才开」「浇水花才开」这种对象级规则。BoxWorld 把两件事拆开：用户写规则，编程代理生成一个「方框世界引擎」，只用布局方框、对象属性和状态变量记录谁在哪、处于什么状态；外观和物理效果交给生成式渲染器，按这串状态流实时自回归出视频。渲染器分三阶段训练（开放视频学对象定位、游戏录像学状态切换、自生成历史上做滚动蒸馏），作者另做了配对基准 PairedStateBench，称明显优于端到端世界模型。对你：和昨天收的 Genie 4 正好成对——一边是「让模型自己涌现物理」，一边是「规则写死、只让模型画」，可以拍成涌现 vs 显式规则的对照。可拍角度：1）论文图里 if has_key: open() 怎么变成一段视频；2）世界模型为什么记不住规则；3）规则引擎 + 画师的分工。开场：0 秒上论文首图「写一行规则→门开/门锁」对照。",
+      "caveat": "arXiv 预印本；对比结果为作者自报；渲染质量与实时性未经独立复现。与库内 Genie 4（DeepMind 官方）同属世界模型，但角度不同（显式规则 vs 端到端），按非重复收录。封面为论文 teaser 图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261028b-boxworld.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028b-boxworld.jpg",
+      "imageAlt": "BoxWorld 论文 teaser：用户写规则（浇水开花/有钥匙开门），方框状态到渲染视频画面的对照",
+      "tags": [
+        "世界模型",
+        "智能体",
+        "AI视频",
+        "涌现",
+        "规则"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 16,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 3
+        },
+        "multiplier": 1.0566,
+        "finalScore": 87.7,
+        "threshold": 65,
+        "run": "2026-10-28-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.37319",
+      "title": "模拟电路调尺寸为什么最贵的是「仿真次数」？LLM 代理 AnalogScout 只用 7% 的仿真预算就追上老牌优化器",
+      "category": "半导体",
+      "source": "arXiv 2610.37319《AnalogScout: Simulation-Efficient PVT-Aware Analog Sizing with LLM Agents》（Yichen Long、Keren Zhu；2026-10-27 提交）",
+      "publishedAt": "2026-10-27",
+      "eventAt": "2026-10-27",
+      "collectedAt": "2026-10-28T05:05:00.000Z",
+      "updatedAt": "2026-10-28T05:05:00.000Z",
+      "description": "一手来源：arXiv 论文。是什么：模拟电路流片前，晶体管尺寸要在所有工艺、电压、温度角（PVT corner）下都满足指标，每个候选方案都要跑多角 SPICE 仿真，这才是耗时大头。传统做法（CMA-ES 进化策略、贝叶斯优化）或现有 LLM 代理，本质都是靠大量仿真学电路响应。AnalogScout 让 LLM 代理复用已验证的优秀设计、对子模块用 gm/Id 方法解析式算尺寸、再做全角验证下的全局细化。在三个复杂度递增的 SKY130 开源工艺运放上：同样 1.6 万次仿真预算，功耗比 CMA-ES 低 43.3%；只用 7.0% 的预算就达到 CMA-ES 最终功耗；三个运放上都比贝叶斯优化功耗更低。对你：AI 进入芯片设计的具体落点——不是「AI 画芯片」，而是「AI 少跑仿真」；可接 EDA/国产芯片设计话题。可拍角度：1）什么是 PVT 角；2）为什么仿真次数才是成本；3）老师傅经验（gm/Id）被写进代理。开场：0 秒上论文动机图（仿真效率 vs 尺寸质量坐标）。",
+      "caveat": "arXiv 预印本；只在 SKY130 开源工艺的三个运放上验证，离先进工艺与复杂电路还远。封面为论文动机图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261028b-analogscout.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028b-analogscout.jpg",
+      "imageAlt": "AnalogScout 论文动机图：模拟设计循环与不同尺寸优化方法在仿真效率-质量坐标中的位置",
+      "tags": [
+        "芯片设计",
+        "EDA",
+        "智能体",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 78,
+        "baseBreakdown": {
+          "主线": 21,
+          "钩子": 13,
+          "画面": 8,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 83.8,
+        "threshold": 65,
+        "run": "2026-10-28-1240-shanghai"
+      }
+    },
     {
       "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
       "title": "没人给它写物理方程，为什么 Genie 4 里一颗枫树种子会自己旋着落地？DeepMind 新世界模型：实时可操控、边玩边生成声音",
