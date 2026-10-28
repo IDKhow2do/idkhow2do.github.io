@@ -1,8 +1,177 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 439,
+  "exportedCount": 442,
   "items": [
+    {
+      "title": "一朵云为什么能「关」在玻璃罐里下雨？Autopsy of a Storm：调风速和湿度就看到玻璃起雾、凝结、打闪电，全部用 Three.js 代码实时渲染（没有图片、没有 Blender）",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "source": "https://x.com/javpixel_art/status/2115393329433137266",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028d-storm-autopsy.jpg",
+      "previewType": "image",
+      "description": "作者原帖（附演示视频）：一件「研究表面与物理」的交互作品——玻璃罐、金属支架、水和凝结水珠组成的一台像技术图纸一样的仪器，罐里关着一团云。可以实时调节风和湿度、手动触发闪电、360° 绕着看，每次调整都会改变「风暴」的表现。作者写明全部由代码生成、在浏览器里实时渲染，不用图片、外部素材、Blender 或任何 3D 建模工具；云朵部分用 Opus 5.5，其余用 gpt-Astra 6 + three.js。对你：玻璃+金属+水的材质组合，加上「湿度→凝结」的可调过程，很适合做「云是怎么形成的/露点」这类科普镜头。作者此前的 Train of Thoughts 已被你收藏。封面为视频官方缩略帧，已目视核验为作品画面。",
+      "tool": "Opus 5.5（云）+ gpt-Astra 6 + three.js（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者原帖；未公开源码、提示词或在线链接；许可未声明。",
+      "attribution": "@javpixel_art · Autopsy of a Storm",
+      "sourceAuthor": "javpixel_art",
+      "tags": [
+        "Three.js",
+        "物理模拟",
+        "玻璃材质",
+        "流体",
+        "天气",
+        "交互"
+      ],
+      "publishedAt": "2026-10-28T10:40:46.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-28T13:00:00.000Z",
+      "updatedAt": "2026-10-28T13:00:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-28T13:00:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 73,
+        "baseBreakdown": {
+          "实体": 23,
+          "科普": 15,
+          "溯源": 12,
+          "复现": 6,
+          "风格": 9,
+          "新颖": 8
+        },
+        "multiplier": 1.4,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-28-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2115391944729714688/vid/avc1/2560x1920/Zq9JAHWr1RQ66eED.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "风绕过障碍物时到底怎么走？Alex Goldring 在 WebGPU 上跑的实时流体：几十万粒子只是「采样」风场，球和墙一放，绕流和尾迹就自己长出来（有在线可玩版本）",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "source": "https://x.com/SoftEngineer/status/2115393344335749168",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028d-webgpu-wind.jpg",
+      "previewType": "image",
+      "description": "作者原帖（附视频）+ 在线演示页「Prevailing wind · Meep」（meep.company-named.com/examples/prevailing-wind/）。作者说明：流体模拟在 GPU 上运行，用分级（cascaded）网格加一个全局兜底网格，支持动态障碍物，画面里连「地面」方块共有 4 个障碍物；粒子也由 GPU 驱动，本身不参与计算，只是去读取流体速度场。视频里能看到彩色粒子流在两个球和一块立板后面形成绕流和尾迹。对你：「粒子不算物理、只是把看不见的风场画出来」本身就是一个好科普点，可以接空气动力学、芯片散热风道、刻蚀腔里气流分布这类镜头。封面为视频官方缩略帧，已目视核验。",
+      "tool": "WebGPU，作者自研引擎 Meep（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者原帖 + 作者在线演示页；未见开源许可声明，引擎细节为作者自述。",
+      "attribution": "Alex Goldring（@SoftEngineer）· Meep / Prevailing wind",
+      "sourceAuthor": "SoftEngineer",
+      "tags": [
+        "WebGPU",
+        "流体",
+        "粒子",
+        "物理模拟",
+        "可交互",
+        "空气动力学"
+      ],
+      "publishedAt": "2026-10-28T10:40:50.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-28T13:00:00.000Z",
+      "updatedAt": "2026-10-28T13:00:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-28T13:00:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 77,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 16,
+          "溯源": 13,
+          "复现": 10,
+          "风格": 9,
+          "新颖": 7
+        },
+        "multiplier": 1.0,
+        "finalScore": 77.0,
+        "threshold": 65,
+        "run": "2026-10-28-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2115393283878694912/vid/avc1/1078x1048/Wuq5NtZ4BR-guJMY.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://meep.company-named.com/examples/prevailing-wind/"
+    },
+    {
+      "title": "核电站其实是一台超贵的烧水壶？Zynk 让 Claude Code 按设计文件里的数字搭出 AP1000 三维剖面：堆芯水 321 °C 却不沸腾，最后只有约三分之一的热变成电",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "source": "https://x.com/zynkbuilds/status/2115367947082375448",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028d-ap1000.jpg",
+      "previewType": "image",
+      "description": "作者原帖（竖屏讲解视频）：用 Claude Code 只依据西屋 AP1000 设计文件中的数字，做出一座 3D 反应堆的工作过程动画。帖子列出的环节：堆芯产热约 3400 MW；一个中子打裂一个铀原子，放出 2–3 个新中子继续链式反应；控制棒插入吸收中子、堆芯变暗；一回路水温 321 °C 仍不沸腾，因为被加压到约 150 倍大气压；热水流经每台蒸汽发生器里约 1 万根管子，把二回路的水烧成蒸汽；汽轮机每秒转 30 圈，发电约 1200 MW——结尾点出只有约三分之一的热变成了电。视频 0:31 处标注「321 °C water · no boiling」。对你：「压力决定沸点」「热机效率上限」都是反直觉又好拍的物理点；作者此前的电容触摸屏剖面已入库，这类「按真实参数做结构剖面」的风格可以直接借用到芯片、刻蚀机讲解。封面为本轮从视频 31 秒处截取的帧，已目视核验。",
+      "tool": "Claude Code（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者原帖；数字为作者引用的设计文件数据，未逐项核对原始文件；未公开源码/提示词；许可未声明。",
+      "attribution": "@zynkbuilds · How a nuclear reactor works (AP1000)",
+      "sourceAuthor": "zynkbuilds",
+      "tags": [
+        "结构可视化",
+        "剖面",
+        "Claude Code",
+        "能源",
+        "物理科普",
+        "3D交互"
+      ],
+      "publishedAt": "2026-10-28T08:59:54.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-28T13:00:00.000Z",
+      "updatedAt": "2026-10-28T13:00:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-28T13:00:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 69,
+        "baseBreakdown": {
+          "实体": 17,
+          "科普": 20,
+          "溯源": 10,
+          "复现": 5,
+          "风格": 8,
+          "新颖": 9
+        },
+        "multiplier": 1.1,
+        "finalScore": 75.9,
+        "threshold": 65,
+        "run": "2026-10-28-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2115367645411151872/vid/avc1/1080x1920/L_rPvSKwBZWHWR2p.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "一段 AI 视频为什么能「扒」出可进游戏的 3D 骨骼动画？anymove：让视频模型同屏拍正面+侧面两个机位，两条视线的交点就是关节的三维位置（Apache-2.0 开源）",
       "category": "3d",
@@ -21733,8 +21902,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条",
-  "updatedAt": "2026-10-28T09:00:00.000Z",
-  "totalItems": 439,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条",
+  "updatedAt": "2026-10-28T13:00:00.000Z",
+  "totalItems": 442,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }

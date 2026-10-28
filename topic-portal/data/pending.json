@@ -3,6 +3,69 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 59,
+      "multiplier": 1.4,
+      "score": 59.0,
+      "reason": "本轮达待定区间（单维度乘数保护生效）",
+      "run": "2026-10-28-2040-shanghai",
+      "record": {
+        "title": "稀泥为什么能被「推出坑」又慢慢流平？derfcz 在 Three.js 里搭的开源小物理实验室：第一个实验做黏性/非牛顿流体，物体压进去会留下变形",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/derfcz/status/2115415840350785671",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028d-mud-lab.jpg",
+        "previewType": "image",
+        "description": "作者原帖（附视频）：正在用 three.js 做一个开源的小型物理实验室，用来实验黏性流体和非牛顿流体；第一个实验是「稀泥」，在调表面变形、流动和物体交互，作者说明仍在开发中。视频里是一块方形泥浆面，表面有起伏和压痕。对你：非牛顿流体（如玉米淀粉水）是经典科普题，后续若开源可直接复用。封面为视频官方缩略帧，已目视核验。",
+        "tool": "three.js（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者原帖；称开源但帖中未给仓库链接；作品未完成；零互动。",
+        "attribution": "@derfcz · three.js physics lab (runny mud)",
+        "sourceAuthor": "derfcz",
+        "tags": [
+          "Three.js",
+          "流体",
+          "非牛顿流体",
+          "物理模拟"
+        ],
+        "publishedAt": "2026-10-28T12:10:13.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-28T13:00:00.000Z",
+        "updatedAt": "2026-10-28T13:00:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-28T13:00:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 59,
+          "baseBreakdown": {
+            "实体": 20,
+            "科普": 12,
+            "溯源": 8,
+            "复现": 4,
+            "风格": 9,
+            "新颖": 6
+          },
+          "multiplier": 1.4,
+          "finalScore": 59.0,
+          "threshold": 65,
+          "run": "2026-10-28-2040-shanghai",
+          "multiplierGuard": "基础分<60且仅单一维度乘数>1，按规则不让乘数抬过阈值（按基础分判定）"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2115415787439632384/vid/avc1/1280x768/sgze-YHpL-4Dhiqs.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 64,
       "multiplier": 1.0,
       "score": 64.0,
@@ -4130,6 +4193,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-28T09:00:00.000Z",
+  "updatedAt": "2026-10-28T13:00:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
