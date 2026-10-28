@@ -1,8 +1,176 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 430,
+  "exportedCount": 433,
   "items": [
+    {
+      "title": "手机屏为什么感觉不到你按得多用力？Zynk 用 Claude Code 把电容触摸屏做成 3D 剖面：行发列收的透明导线网格，一滴雨为什么反而让读数「反着走」",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/zynkbuilds/status/2115292416479514810",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028b-zynk-touchscreen.jpg",
+      "previewType": "image",
+      "description": "作者原帖（约 1 分 58 秒竖屏视频）：让 Claude Code 把触摸屏做成 3D 讲解动画。帖子要点（作者自述）：玻璃下是一张透明导线网格，行线发信号、列线接收；按作者估算 6.78 英寸屏约 700 个交叉点；以 ASUS ROG Phone 9 为例，触控采样 720 次/秒，而画面最多 120 次/秒刷新，所以每画一帧屏幕被读 6 次（视频 0:43 处）；手指在交叉点给电场一条接地通路，信号下降最多约十分之一；芯片比较相邻交叉点，把触点定位在导线之间；一滴孤立的雨滴反而把读数往相反方向推，水只有流到边缘接地后才会「冒充」触摸；普通手套让手指离得太远，触屏手套在指尖缝了导电线。对你：消费电子 × 结构剖面 × 物理机制，正好是「0 秒有画面」的科普镜头，也能接半导体（触控芯片）。封面为本轮下载的 X 视频缩略图（压力演示画面），已目视核验。",
+      "tool": "Claude Code（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者原帖；未公开提示词与源码；数字为作者自述/估算（如「约 700 个交叉点 by my arithmetic」），未独立核验；许可未声明。",
+      "attribution": "Zynk（@zynkbuilds）· Touchscreen in 3D",
+      "sourceAuthor": "zynkbuilds",
+      "tags": [
+        "代码视频",
+        "结构可视化",
+        "剖面",
+        "消费电子",
+        "物理科普",
+        "Claude Code"
+      ],
+      "publishedAt": "2026-10-28T03:59:46.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-28T05:05:00.000Z",
+      "updatedAt": "2026-10-28T05:05:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-28T05:05:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 77,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 20,
+          "溯源": 12,
+          "复现": 6,
+          "风格": 8,
+          "新颖": 9
+        },
+        "multiplier": 1.0618,
+        "finalScore": 81.8,
+        "threshold": 65,
+        "run": "2026-10-28-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2115291920368893952/vid/avc1/1080x1920/LQz5i_9eBTZn9qSv.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "没有贴图、没有模型、没有照片，为什么绕着这只眼睛转，虹膜会像真眼一样「错位」？Gianluca Lomarco 花 7 天用 three.js 和约 400 个参数算出一只人眼（可在线玩）",
+      "category": "frontend",
+      "styleFamily": "uiux",
+      "source": "https://x.com/__rockbiter/status/2114728296034226583",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028b-rockbiter-eye.jpg",
+      "previewType": "image",
+      "description": "作者原帖（17 万+ 浏览、3000+ 赞）：在大家都用 Claude Opus 5.5 在 three.js 里造整个世界的时候，他花 7 天只做一只人眼——无贴图、无 3D 模型、无照片，只靠数学、光照和约 400 个参数。作者自回帖说明：光线先穿过角膜前后两个表面折射再到达虹膜，所以你绕着看时虹膜会跟着偏移，和真眼一样，不是用视差贴图假装的；点眼睛按钮会按实测人群数据随机生成一只新眼睛，还藏了彩蛋。在线体验：random-eyes.vercel.app（建议开声音）。对你：光学折射 × 程序化生成，能直接当「眼睛为什么这样看东西」的科普镜头，也是用户偏好的 three.js 实体感方向。封面为本轮下载的作者视频缩略图（虹膜特写），已目视核验。中文区有二手转述（@mr_mofun），本条按原作者收录。",
+      "tool": "three.js / WebGL（作者自述；在线演示 random-eyes.vercel.app）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者原帖 + 自回帖在线页面；原帖提到 Claude Opus 5.5 是在说别人的潮流，未明确说明本作是否由 AI 编写；未公开源码与许可。",
+      "attribution": "Gianluca Lomarco（@__rockbiter）· Random Eyes",
+      "sourceAuthor": "__rockbiter",
+      "tags": [
+        "Three.js",
+        "交互网页",
+        "程序化生成",
+        "光学",
+        "物理科普",
+        "3D交互"
+      ],
+      "publishedAt": "2026-10-26T14:38:10.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-28T05:05:00.000Z",
+      "updatedAt": "2026-10-28T05:05:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-28T05:05:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "实体": 23,
+          "科普": 18,
+          "溯源": 15,
+          "复现": 8,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.249,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-28-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "只给 Opus 5.5 一句「做个压轴视频」，它自己选了「涌现」：200 万粒子从宇宙网→细胞→2 万只椋鸟→大脑，字幕写着「复制你最近的七个邻居」",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/adrianmakes/status/2115280277396136292",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261028b-adrian-emergence.jpg",
+      "previewType": "image",
+      "description": "作者原帖（约 33 秒视频）：给 Claude Opus 5.5 一句提示「make a video of anything you want, make it a show stopper」，模型做了一支叫 EMERGENCE 的片子——作者称 200 万粒子依次变成宇宙网、细胞、2 万只椋鸟、大脑，全部由代码生成。本轮抽帧可见分章字幕：「Some things attract. Some things repel.」「Copy your seven nearest neighbors.」（椋鸟群）「Cells that fire together wire together.」（神经元）。对你：几乎就是你「涌现」视频的现成结构参考——从简单规则到群体行为再到大脑，而且是 AI 自己选的题；可和库里的鸟群 three.js 示例搭配。封面为本轮从视频第 12 秒抽取的椋鸟群画面，已目视核验。",
+      "tool": "Claude Opus 5.5（作者自述，代码生成粒子视频）",
+      "prompt": "make a video of anything you want, make it a show stopper",
+      "promptProvenance": "original_public",
+      "provenanceNote": "作者原帖公开一句话提示词；未公开生成的代码与渲染工具；帖子发布时互动很少；许可未声明。",
+      "attribution": "Adrian（@adrianmakes）· EMERGENCE",
+      "sourceAuthor": "adrianmakes",
+      "tags": [
+        "代码视频",
+        "涌现",
+        "粒子",
+        "鸟群",
+        "程序化生成",
+        "Claude Code"
+      ],
+      "publishedAt": "2026-10-28T03:11:32.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-28T05:05:00.000Z",
+      "updatedAt": "2026-10-28T05:05:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-28T05:05:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 71,
+        "baseBreakdown": {
+          "实体": 16,
+          "科普": 20,
+          "溯源": 11,
+          "复现": 6,
+          "风格": 9,
+          "新颖": 9
+        },
+        "multiplier": 1.0618,
+        "finalScore": 75.4,
+        "threshold": 65,
+        "run": "2026-10-28-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2115280145850290176/vid/avc1/1280x720/ryzek4BFluNXdRp0.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "牛顿三定律为什么要配笑话？Techartist 用 Opus 5.5 做了一本「全息立体书」：每页投影一个能亲手跑的实验，从抽桌布到撞车吸能区",
       "category": "frontend",
@@ -21234,8 +21402,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条",
-  "updatedAt": "2026-10-28T00:58:00.000Z",
-  "totalItems": 430,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条",
+  "updatedAt": "2026-10-28T05:05:00.000Z",
+  "totalItems": 433,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
