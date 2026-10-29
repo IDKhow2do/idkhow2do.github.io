@@ -3,6 +3,114 @@
   "items": [
     {
       "kind": "news",
+      "baseScore": 82,
+      "multiplier": 1.0566,
+      "score": 86.6,
+      "reason": "分数达上墙线但仓库 2026-09 已发布，本窗口只是用户转发重新冒出，时效弱",
+      "run": "2026-10-29-1640-shanghai",
+      "record": {
+        "url": "https://github.com/Ikaleio/lm-detector",
+        "title": "让 AI「随便报 300 个数」，为什么就能认出它到底是哪个模型？开源工具 LM Fingerpoint Detector：大模型写的「随机数」一点都不随机，每家都有自己偏爱的数字，中转站偷偷换模型也能被看出来",
+        "category": "AI",
+        "source": "Ikaleio/lm-detector GitHub 仓库（MIT 许可，2026-09-13 创建，最近提交 2026-10-28，约 1.2k 星）及官方文档「原理概览」「排名与校准」；在线工具 lm.ikale.io；本窗口由 X 用户 @KlauseSchip 转发重新冒出（2026-10-29 05:18 UTC）",
+        "publishedAt": "2026-09-13",
+        "eventAt": "2026-10-29",
+        "collectedAt": "2026-10-29T09:25:00.000Z",
+        "updatedAt": "2026-10-29T09:25:00.000Z",
+        "description": "一手来源：作者 Ikaleio 的开源仓库 README 与原理文档。是什么：很多人通过第三方「中转站」调用大模型 API，对方声称给的是某个模型，实际可能接的是更便宜的另一个。这个工具用一个与语义无关的任务来核对：让模型「凭第一反应」写约 300 个 1–355 之间的整数（禁止用工具/代码、禁止从 1 数起、等差、循环等规律模式）。文档原话：语言模型写出的「随机数」并不均匀，每个模型偏好的数值、区间和末位数字相对稳定。怎么比：把 355 个取值的出现次数做平滑后开平方（Hellinger 嵌入），再加上「序列分 4 段 × 16 个区间 + 末位数字 0–9」共 74 维特征，与参考库（覆盖 GPT、Claude、Gemini、Grok、Qwen、DeepSeek 等家族）用 LDA、近邻、去干扰中心等方法排名并给出库内置信度。还有一个反直觉细节：参考库里的模型回答相邻数字的 lag-1 自相关明显为负——模型的「随机」总在大数和小数之间来回跳，程序生成的真随机数反而没有这种特征，所以工具能先筛掉「不像模型写的」答案。对你：①「随机」其实很难，人和 AI 都会暴露偏好（可对照「人报随机数也有偏好」的心理学现象）；②国内大量用户用中转站调用 Claude/GPT，和观众切身相关；③可在镜头里现场让几个模型各报 300 个数，画出直方图对比。开场：0 秒上三个模型的数字分布直方图并排，问「哪个是 Claude？」。",
+        "caveat": "作者在 README 中明确：检测结果是参考库内的「封闭集合排序」，不在库中的模型也会得到一个最像的候选，排名与置信度都不是身份证明，需固定参数、多轮重复并结合其他证据；分词器探测只作参考。工具本身 9 月已发布，本窗口只是被转发重新冒出（非新进展），且原理文档未给出公开的准确率数字，故放待定。封面为项目官方分享图（og:image）。",
+        "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261029c-lm-fingerprint.jpg",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261029c-lm-fingerprint.jpg",
+        "imageAlt": "LM Fingerpoint Detector 官方分享图：黑底白字「模型指纹检测——让模型随手写几百个整数，识别 API 背后的大语言模型」，底部是像素化的数字分布条纹",
+        "tags": [
+          "智能体",
+          "AI安全",
+          "数字生活",
+          "统计口径",
+          "开源"
+        ],
+        "tagSource": "provided",
+        "curation": {
+          "baseScore": 82,
+          "baseBreakdown": {
+            "主线": 20,
+            "钩子": 18,
+            "画面": 11,
+            "来源": 13,
+            "时效": 6,
+            "大陆": 9,
+            "新颖": 5
+          },
+          "multiplier": 1.0566,
+          "finalScore": 86.6,
+          "threshold": 65,
+          "run": "2026-10-29-1640-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 58,
+      "multiplier": 1.1,
+      "score": 63.8,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-29-1640-shanghai",
+      "record": {
+        "title": "当年要靠 RTX 显卡才能跑的「光追弹珠台」，为什么现在一个网页就能实时渲染？Sirokos 用 WebGPU 写的实时光线追踪器，致敬 NVIDIA RTX ON 演示：木纹、金属罐、灯泡的反射和柔和阴影都是逐帧算出来的",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/Sirokos/status/2115704950336667882",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261029c-webgpu-rtx-marbles.jpg",
+        "previewType": "image",
+        "description": "作者 @Sirokos 原帖（2026-10-29 07:19 UTC，1080p 视频）：自述「有一个跑在 WebGPU 上的实时光线追踪器」，做了一个向 NVIDIA RTX ON 演示致敬、但跑在网页浏览器里的版本。视频截帧可见窗边木工台：石膏胸像、书本、油漆罐、台钳、发光灯泡和一条木制弹珠轨道，窗外绿植透光，金属与陶瓷表面有清晰反射和柔和阴影。对你：可做「光线追踪到底在追什么」的科普镜头——从相机往每个像素射光线、弹到物体再找光源；和库里「每像素 1 条光线的降噪器 Hush」「CPU 光追月球撞地球」可串成一期。封面为视频截帧，已目视核验。",
+        "tool": "WebGPU 实时光线追踪（作者自述；引擎与模型资产来源未说明）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者原帖；未公开源码/在线 Demo；场景资产是否来自 NVIDIA 原演示未说明，许可不明。",
+        "attribution": "@Sirokos",
+        "sourceAuthor": "Sirokos",
+        "tags": [
+          "WebGPU",
+          "光线追踪",
+          "3D材质"
+        ],
+        "publishedAt": "2026-10-29T07:19:02.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-29T09:25:00.000Z",
+        "updatedAt": "2026-10-29T09:25:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-29T09:25:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 58,
+          "baseBreakdown": {
+            "实体": 20,
+            "科普": 14,
+            "溯源": 8,
+            "复现": 3,
+            "风格": 8,
+            "新颖": 5
+          },
+          "multiplier": 1.1,
+          "finalScore": 63.8,
+          "threshold": 65,
+          "run": "2026-10-29-1640-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2115702329051619328/vid/avc1/1920x1080/iCEJ_iEUyglS_U43.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "news",
       "baseScore": 69,
       "multiplier": 1.0566,
       "score": 72.9,
@@ -4472,6 +4580,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-29T04:55:00.000Z",
+  "updatedAt": "2026-10-29T09:25:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
