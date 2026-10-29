@@ -1,7 +1,83 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-29T09:25:00.000Z",
+  "updatedAt": "2026-10-29T12:47:48.000Z",
   "topics": [
+    {
+      "url": "https://www.anthropic.com/research/agents-judgment-calls",
+      "title": "专家用 AI 智能体做分析，为什么 86% 的关键选择其实是 AI「掷硬币」定的？Anthropic 随机对照实验：分析师跟着智能体被秘密设定的倾向走，事后 77% 复述了 AI 的论据，只有 15% 承认受了它影响",
+      "category": "AI",
+      "source": "Anthropic Alignment 团队研究博客「How AI agents shape experts’ judgment calls」（2026-10-27，作者 Amaç Herdağdelen、Hailey Joren、Alex Tamkin）及配套论文「Who’s Aligned to Whom? How AI Agents Shape Experts’ Research Judgment Calls」；本窗口经 X @CobaltHere（2026-10-29 09:00 UTC）等转述重新冒出，此前各轮未收",
+      "publishedAt": "2026-10-27",
+      "eventAt": "2026-10-27",
+      "collectedAt": "2026-10-29T12:47:48.000Z",
+      "updatedAt": "2026-10-29T12:47:48.000Z",
+      "description": "一手来源：Anthropic 官方研究博客与论文 PDF。实验：请 50 名有因果推断经验的专业分析师（博客称共招募 61 人做随机对照试验），在内置 Claude Code（Claude Opus 4.8，High effort）的网页版 VS Code 里完成一项真实感很强的统计分析——帮一家（虚构的）农业合作社判断它的农技咨询服务是否有效、要不要扩大。中途要做 4 个「两个选项都说得通」的分析选择（例如产量按每公顷算还是按每单位运营成本算），最后给出推荐。关键设计：每位分析师的智能体被秘密设定在每个选择上偏向一边，偏哪边由抛硬币决定；智能体被要求为自己的倾向给出最好的诚实论证、证据不支持就改口、绝不误导。结果：4 个选择合计 86% 跟着智能体的倾向走（若无影响应约 50%），分项 92%/82%/81%/90%；分析师先表态、智能体反对时，60% 改了主意（智能体同意时只有 6%）；最终推荐受影响较弱（智能体偏向推广时 54% 推荐推广，偏向另一边时 36%），但只用这 4 个倾向就能预测 82% 的最终推荐。事后问卷里 77% 用了智能体自己的论据（有时一字不差），只有 15% 说论据来自智能体。对你：①反直觉钩子很强——「你以为你在用 AI，其实是 AI 在替你拿主意」；②你自己的视频流程高度依赖 Claude，可现身说法：让 Claude 帮你选选题/定标题，它的倾向有多大分量？③画面可以自己复现：50 枚硬币翻面 vs. 86% 的柱状图、「先表态后被说服」的 60% vs 6% 对比。开场：0 秒上一枚硬币抛起，字幕「这次分析的结论，是这枚硬币决定的」。",
+      "caveat": "Anthropic 自述局限：智能体的倾向是被刻意加强并要求明说的（无设定时 Claude Opus 4.8 在 123 次运行中 112 次做出同样五个选择），只有一个任务、一个领域（农业，分析师并非该领域专家）、一个模型，任务约 1 小时；真实工作中效果可能更小。作者明确说这不是「少用 AI」的论据。研究由模型厂商自己做，属自我审视类研究。封面为官方 og:image（拼贴风格插图，非实验图表）。论文 10-27 发布，本轮窗口内是被转述重新冒出，此前未收录，按 ≤7 天时效计。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261029d-anthropic-agent-lean.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261029d-anthropic-agent-lean.jpg",
+      "imageAlt": "Anthropic 研究博客官方配图：一幅风暴海上倾斜帆船的复古石版画，叠在泛黄纸夹和蓝色调手写乘客名单上的拼贴",
+      "tags": [
+        "智能体",
+        "AI安全",
+        "数字生活",
+        "统计口径"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 19,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 8,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 91.9,
+        "threshold": 65,
+        "run": "2026-10-29-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://www.ibm.com/quantum/blog/connecting-quantum-processors-with-l-couplers",
+      "title": "量子芯片为什么不干脆做大一点，而要用 80 厘米的「电缆」把两颗连起来？IBM 首次用 4 条米级超导同轴线连通两颗 120 比特 Nighthawk 处理器：量子态平均 99% 传过去，还在两颗芯片之间造出了纠缠",
+      "category": "半导体",
+      "source": "IBM Quantum 官方博客「Modular quantum computing takes shape with l-couplers」（2026-10-27）及 arXiv:2610.29986「Meter-scale quantum interconnects between large quantum processors」（2026-10-21 提交，IBM 团队）；本窗口经中文 X 帖转述重新冒出，此前各轮未收",
+      "publishedAt": "2026-10-27",
+      "eventAt": "2026-10-21",
+      "collectedAt": "2026-10-29T12:47:48.000Z",
+      "updatedAt": "2026-10-29T12:47:48.000Z",
+      "description": "一手来源：IBM 官方博客与 arXiv 论文。是什么：IBM 认为量子计算机要继续扩展，不能只靠把单颗芯片越做越大，而要让多颗处理器在同一个稀释制冷机里协同工作、让量子信息在芯片之间搬运。这次用 4 条「L 耦合器」连通两颗 120 比特的 IBM Quantum Nighthawk R1 超导处理器：每条包含一段 80 厘米的超导铝同轴电缆、两颗简化的「L 比特」和两个基于 RF-SQUID 的可调耦合器。和半导体工艺直接相关的细节：电缆垂直于芯片表面安装（为了接得更密），在两颗芯片都装好之后，用室温下的铟-铟压力键合接到芯片上。数据：电缆模式品质因数约 0.86–1.09×10^6；量子态传输保真度平均 99.00%、最好一条 99.29%；跨芯片 CZ 门平均 94.75%、最好 96.42%；在两颗芯片之间生成了 Bell 对和 4/6 比特 GHZ 纠缠态，并演示了两条相邻耦合器同时各自产生纠缠。论文还发现：铝电缆在降温穿过超导转变时所处的磁场越大，损耗越高（0 高斯时中位 Q 约 1.5×10^6，14 高斯时降到约 2.5×10^5），机理尚不清楚。对你：①和「芯片做不大就做小再拼起来」的 Chiplet/先进封装是同一个思路，只是这次拼的是量子比特；②铟凸点压力键合、磁屏蔽这些都是你熟悉的工艺语言；③IBM 官方实拍的稀释制冷机内部（金色层板 + 蓝色线缆）可直接做首帧。开场：0 秒上制冷机实拍，问「为什么不把芯片做大，而要拉一根 80 厘米的线？」。",
+      "caveat": "论文为 arXiv 预印本，尚未经同行评审；实验只引出了部分量子比特（处理器本身是完整 Nighthawk）；作者说明为加快开发跳过了已知能提高相干性的工艺步骤，各项指标仍有提升空间；读出误差是纠缠态保真度的主要限制，文中同时给出未校正与读出校正后的数值（本条正文引用的是未校正的传输/门保真度）。博客 10-27 发布、论文 10-21 提交，本轮是被转述重新冒出，按 ≤7 天时效计（博客日期）。封面为 IBM 博客正文配图（Nighthawk L 耦合器测试实拍），已裁切。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261029d-ibm-l-coupler.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261029d-ibm-l-coupler.jpg",
+      "imageAlt": "IBM 官方实拍：稀释制冷机内部的金色多层冷板与大量蓝色同轴线缆，用于 Nighthawk 处理器 L 耦合器测试",
+      "tags": [
+        "量子计算",
+        "芯片制造",
+        "先进封装",
+        "芯片互联"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 16,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 4
+        },
+        "multiplier": 1.0743,
+        "finalScore": 89.2,
+        "threshold": 65,
+        "run": "2026-10-29-2040-shanghai"
+      }
+    },
     {
       "url": "https://www.nature.com/articles/s41586-026-11202-2",
       "title": "同样是碳，为什么把六边形换成「五边形 + 七边形」就从半导体变成了金属？中国科大 Nature：0.9 纳米宽的五七环碳纳米带，电导接近一个电导量子，可能是未来芯片的原子级导线",
