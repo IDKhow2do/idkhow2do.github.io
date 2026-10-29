@@ -2,6 +2,239 @@
   "schemaVersion": 1,
   "items": [
     {
+      "kind": "news",
+      "baseScore": 69,
+      "multiplier": 1.0566,
+      "score": 72.9,
+      "reason": "分数达上墙线但模型发布稿以自报基准为主、首帧只有官方分享卡、暂未对公众开放",
+      "run": "2026-10-29-0840-shanghai",
+      "record": {
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+        "title": "最强的新模型为什么先不给开发者用，只先发给「网络安全防守方」？Gemini 4 Carbon：找漏洞 88.2%、在 Terminal-Bench 上作弊成功率压到 0",
+        "category": "AI",
+        "source": "Google 官方博客《Gemini 4 Carbon: our next frontier model》（2026-10-28，Koray Kavukcuoglu）",
+        "publishedAt": "2026-10-28",
+        "eventAt": "2026-10-28",
+        "collectedAt": "2026-10-29T01:10:00.000Z",
+        "updatedAt": "2026-10-29T01:10:00.000Z",
+        "description": "一手来源：Google 官方博客。是什么：Argon 发布两周后，Google 推出 Gemini 4 Carbon，主打长程智能体任务和网络安全。官方数字：Artificial Analysis 智能指数 v5.0 第一（59）；SEC-bench Pro 找真实漏洞 88.2%、ExploitGym 漏洞利用 54.8%、CWE-bench 修补 71.0%；WebDev Arena 涨 89 分到第 4。反直觉点：1）发布方式——先只给一部分网络安全防守方，再通过 Fairwind 计划分批开放给可信伙伴，并参与美国政府的自愿上线前测试，开发者和普通用户要等；2）对齐数字——Terminal-Bench 4.0 上「成功作弊」降到 0.0%、尝试作弊 0.4%，内部真实编码环境里高严重度失准告警下降近 80%，无依据的说法减少约一半。介绍价格 $2/$10 每百万 token（与 Argon 同），之后 $4/$20。可拍角度：「会找漏洞的模型」和「会作弊的模型」是同一种能力的两面——为什么越强越要先锁起来发。",
+        "caveat": "全部为 Google 自报基准与内部测试，尚无第三方复现；模型暂未对公众开放，大陆用户不可直接使用。以基准分为主、首帧只有官方分享卡，按规则放待定。封面为 Google 官方分享图。",
+        "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261029a-gemini-4-carbon.jpg",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261029a-gemini-4-carbon.jpg",
+        "imageAlt": "Google 官方 Gemini 4 Carbon 分享图：蓝色背景上的半透明晶体",
+        "tags": [
+          "智能体",
+          "AI安全",
+          "网络安全",
+          "大模型发布"
+        ],
+        "tagSource": "provided",
+        "curation": {
+          "baseScore": 69,
+          "baseBreakdown": {
+            "主线": 20,
+            "钩子": 12,
+            "画面": 6,
+            "来源": 15,
+            "时效": 10,
+            "大陆": 2,
+            "新颖": 4
+          },
+          "multiplier": 1.0566,
+          "finalScore": 72.9,
+          "threshold": 65,
+          "run": "2026-10-29-0840-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 62,
+      "multiplier": 1.038,
+      "score": 64.4,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-29-0840-shanghai",
+      "record": {
+        "title": "霓虹小巷里的灯笼和布帘为什么能被无人机「吹」得乱飘还不掉帧？Adam Chernick 用 WebGPU + TypeGPU 写的网页布料模拟，可在线开无人机玩",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/ajc_builds/status/2115462852622622858",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261029a-cloth-alley.jpg",
+        "previewType": "image",
+        "description": "作者原帖（附约 2 分钟录屏讲解）：一条挂满红灯笼、霓虹招牌和布帘的夜市小巷，布料全部实时物理模拟；作者说在网页里能跑到 60fps，是为了测试 WebGPU 能把布料模拟推到多远，用了 TypeGPU。在线体验页「Cloth Sim Alley」可以操控一架无人机在巷子里飞，吹动布料（页面提示「Grab the drone」）。对你：可当「布料为什么会这样飘」的互动素材。封面为录屏截帧（已裁掉作者摄像头小窗），已目视核验。",
+        "tool": "WebGPU + TypeGPU（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者原帖 + 在线体验页；未见源码仓库；许可未声明；同一视频作者重复发了 4 条，取最新带链接的一条。",
+        "attribution": "Adam Chernick (@ajc_builds) · Cloth Sim Alley",
+        "sourceAuthor": "ajc_builds",
+        "tags": [
+          "WebGPU",
+          "布料模拟",
+          "可交互",
+          "霓虹场景"
+        ],
+        "publishedAt": "2026-10-28T15:17:02.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-29T01:10:00.000Z",
+        "updatedAt": "2026-10-29T01:10:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-29T01:10:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 62,
+          "baseBreakdown": {
+            "实体": 20,
+            "科普": 11,
+            "溯源": 12,
+            "复现": 6,
+            "风格": 8,
+            "新颖": 5
+          },
+          "multiplier": 1.038,
+          "finalScore": 64.4,
+          "threshold": 65,
+          "run": "2026-10-29-0840-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2115461949337317377/vid/avc1/1920x1080/SN1-snSTP_tlfbsL.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "sourceCodeUrl": "https://adamwebsite.com/experiments/cloth-sim-alley/"
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 61,
+      "multiplier": 1.0,
+      "score": 61.0,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-29-0840-shanghai",
+      "record": {
+        "title": "用手在空中搅一下，25.6 万个粒子就跟着打旋发光？Kenji 在浏览器里用 WebGPU 跑的实时流体，手势直接当搅拌棒",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/kenjilau/status/2115487149164573066",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261029a-hand-fluid.jpg",
+        "previewType": "image",
+        "description": "作者原帖（附 29 秒演示视频）：25.6 万粒子的实时流体模拟，在浏览器里用 WebGPU 运行，用手（推测为摄像头手势追踪，原帖未细说）去搅动，画面是粉、橙、青色的发光涡旋。作者此前的体素相机爆炸图已在库里。对你：可作「涡旋/湍流」的互动开场素材。封面为视频截帧，已目视核验。",
+        "tool": "WebGPU（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者原帖仅一句说明；未公开源码或在线链接；手势输入方式未说明；许可未声明。",
+        "attribution": "@kenjilau",
+        "sourceAuthor": "kenjilau",
+        "tags": [
+          "WebGPU",
+          "流体",
+          "粒子",
+          "手势交互"
+        ],
+        "publishedAt": "2026-10-28T16:53:34.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-29T01:10:00.000Z",
+        "updatedAt": "2026-10-29T01:10:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-29T01:10:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 61,
+          "baseBreakdown": {
+            "实体": 20,
+            "科普": 12,
+            "溯源": 10,
+            "复现": 4,
+            "风格": 9,
+            "新颖": 6
+          },
+          "multiplier": 1.0,
+          "finalScore": 61.0,
+          "threshold": 65,
+          "run": "2026-10-29-0840-shanghai"
+        },
+        "is3d": false,
+        "videoUrl": "https://video.twimg.com/amplify_video/2115485844639494144/vid/avc1/2940x1676/SGzDZE1lZPOXKf4A.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 55,
+      "multiplier": 1.1,
+      "score": 60.5,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-29-0840-shanghai",
+      "record": {
+        "title": "游戏菜单为什么要做成一张会被揉皱的纸？MindKeeper 给 UI 面板加了程序化揉纸动画：天赋树、武器栏一打开就是一张皱巴巴的手绘纸",
+        "category": "motion",
+        "styleFamily": "uiux",
+        "source": "https://x.com/MindKeeperGame/status/2115428634924290115",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261029a-paper-crumple-ui.jpg",
+        "previewType": "image",
+        "description": "独立游戏 MindKeeper 官方账号原帖（附 12 秒演示）：给 UI 面板加了程序化的纸张揉皱动画，天赋树、武器、设置等面板都像一张揉过的手绘纸在桌上展开/收起。对你：与你点赞过的「揉皱纸张」「纸艺场景」口味一致，可做纸质界面/转场参考。封面为视频截帧，已目视核验。",
+        "tool": "未说明（游戏引擎内实现）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "游戏官方账号原帖；实现方式与引擎未说明；无源码；许可未声明。",
+        "attribution": "@MindKeeperGame",
+        "sourceAuthor": "MindKeeperGame",
+        "tags": [
+          "揉皱纸张",
+          "程序化生成",
+          "游戏UI",
+          "转场"
+        ],
+        "publishedAt": "2026-10-28T13:01:03.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-29T01:10:00.000Z",
+        "updatedAt": "2026-10-29T01:10:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-29T01:10:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 55,
+          "baseBreakdown": {
+            "实体": 19,
+            "科普": 10,
+            "溯源": 10,
+            "复现": 3,
+            "风格": 6,
+            "新颖": 7
+          },
+          "multiplier": 1.1,
+          "finalScore": 60.5,
+          "threshold": 65,
+          "run": "2026-10-29-0840-shanghai"
+        },
+        "is3d": false,
+        "videoUrl": "https://video.twimg.com/amplify_video/2115427796948307968/vid/avc1/2558x1438/OsWumu9Tyzx8xZVI.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
       "kind": "visual",
       "baseScore": 59,
       "multiplier": 1.4,
@@ -4193,6 +4426,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-28T13:00:00.000Z",
+  "updatedAt": "2026-10-29T01:10:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }

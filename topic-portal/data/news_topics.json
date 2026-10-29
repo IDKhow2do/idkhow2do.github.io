@@ -1,7 +1,84 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-28T13:00:00.000Z",
+  "updatedAt": "2026-10-29T01:10:00.000Z",
   "topics": [
+    {
+      "url": "https://www.nature.com/articles/s41586-026-11147-6",
+      "title": "做量子芯片为什么偏偏想「不刻蚀」？Nature 新论文：一颗有机卡宾分子就是一个能用光读写的量子比特，以后可能像涂 OLED 一样把它薄薄铺到现成的光子芯片上",
+      "category": "半导体",
+      "source": "Nature 论文《A single-molecule spin–photon interface》（2026-10-28 在线发表，开放获取，DOI 10.1038/s41586-026-11147-6）；NVision 官方新闻稿（2026-10-28，宣布与薄膜铌酸锂光子芯片公司 HyperLight 合作）",
+      "publishedAt": "2026-10-28",
+      "eventAt": "2026-10-28",
+      "collectedAt": "2026-10-29T01:10:00.000Z",
+      "updatedAt": "2026-10-29T01:10:00.000Z",
+      "description": "一手来源：Nature 开放获取论文 + NVision（德国乌尔姆）官方新闻稿。是什么：量子网络/分布式量子计算需要一种「自旋—光子接口」——能长时间存住量子态（自旋），又能用光把它读出来、连出去。现在领先的是金刚石 NV 色心这类「晶体里的缺陷」。NVision 团队换了思路：合成一种叫二联苯卡宾（BiPhi）的纯有机分子，掺进结构几乎一样的酮分子晶体里，第一次在「单个分子」层面做到了可单独寻址：4.5 K 下光谱稳定一小时以上（中心频率漂移标准差约 2.4–2.6 MHz），光学线宽 38 MHz，动力学解耦下自旋相干时间 2.2 ms、自旋弛豫 21 ms，光子反聚束 g²(0)≈0.14 证明确实是单个发光体。公司称前后计算筛选了 150 多种候选分子、实际合成 40 种。反直觉点（和你的刻蚀经验直接相关）：论文明确写道，把半导体缺陷型量子比特集成进光子线路，通常要对衬底做复杂的自上而下纳米加工或刻蚀，而刻蚀会引入局部晶格应力、破坏发光体的光谱稳定性；分子体系则可以做成薄膜，直接沉积到已经做好的光子芯片上，绕开这一步。也就是说，这条路线押注的是「不用为量子芯片再建一套专用工艺线」，而是借用现成的光子芯片代工能力。可拍角度：1）为什么量子比特怕「刻」：应力和电荷陷阱怎么让光谱乱跳；2）「设计出来的原子」：化学家怎么用分子结构调量子性质；3）为什么 70% 光子丢了还能算（公司自述的光子丢失容忍度）。开场：0 秒上论文图 1 的分子结构与晶体照片，再切到显微镜下的单分子亮点。",
+      "caveat": "论文实验是在体块分子晶体里完成的单分子测量，尚未在光子芯片上演示；「薄膜沉积到 PIC 上」「容忍 70% 光子丢失」「2030 年 1000 个逻辑比特」均为公司规划/自述，芯片上演示公司称目标在 2026 年底。论文作者多数为 NVision 员工并持股（论文已声明利益冲突）。封面为 Nature 论文图 1（分子结构、能级、掺杂晶体照片与低温共聚焦显微示意）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261029a-nvision-carbene.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261029a-nvision-carbene.jpg",
+      "imageAlt": "Nature 论文图 1：卡宾量子比特分子结构、能级示意、嵌入酮晶格的示意图、掺杂晶体照片和 4.5 K 显微测量示意",
+      "tags": [
+        "量子计算",
+        "芯片制造",
+        "光子芯片",
+        "刻蚀",
+        "Nature"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "主线": 21,
+          "钩子": 17,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 90.2,
+        "threshold": 65,
+        "run": "2026-10-29-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/",
+      "title": "代码写得比过去两年加起来还多，为什么程序员反而越来越像「审稿人」？GitHub Octoverse 2026：9 月四成以上的 PR 第一稿出自智能体，3 月才 17%",
+      "category": "AI",
+      "source": "GitHub 官方博客《Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents》（2026-10-28，统计期 2025-10-01 至 2026-09-30）",
+      "publishedAt": "2026-10-28",
+      "eventAt": "2026-10-28",
+      "collectedAt": "2026-10-29T01:10:00.000Z",
+      "updatedAt": "2026-10-29T01:10:00.000Z",
+      "description": "一手来源：GitHub 官方年度报告（附方法论）。关键数字：过去 12 个月推送 179 亿次，超过 2024+2025 两年之和；提交 343 亿次，是两年前的 3 倍多；合并 PR 13 亿个，平均每天 350 万。到 9 月，超过 40% 的 PR 由智能体写第一稿（3 月 17%），9 月单月约 1.1 亿个、约为 3 月的 6 倍；智能体发起的 PR 两周内合并率从 2 月的 83% 升到 9 月的 90%，反超人写的约 86%。今年新建、带智能体配置文件的仓库，平均提交数是不带的 8 倍。Copilot 月活里 55% 用智能体功能（一年前 35%）；付费用户 9 月用到 47 个模型，没有任何一个模型拿到超过 25% 的请求。对你/大陆观众：中国开发者 1240 万，排全球第三；推送量排名中国也是第三。反直觉点：代码量暴涨，但审代码的人没变多——人的工作从「写」变成「派活 + 验收」，GitHub 自己也在推「堆叠 PR」、AI 代码审查等审稿工具；另一个有意思的发现是，开发者不指定语言时，智能体更倾向选 TypeScript，可能在悄悄改变语言格局。可拍角度：1）一张「写 vs 审」的天平动画；2）为什么智能体偏爱 TypeScript（类型检查=好验收）；3）你自己的视频工作流也是「派活给 Claude + 自己审」。开场：0 秒上 17%→40% 的柱子长高动画（可自制）。",
+      "caveat": "数字均为 GitHub 自家遥测与口径（「智能体发起」只统计能检测到的智能体，是下限）；国家归属按用户自填地区并做了 VPN 校正；行业分类由语言模型对仓库抽样判断，属估计。封面为 GitHub 官方 Octoverse 2026 头图（品牌图，无数据）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261029a-octoverse-2026.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261029a-octoverse-2026.jpg",
+      "imageAlt": "GitHub Octoverse 2026 官方头图：彩色像素块边框中间写着 Octoverse 2026",
+      "tags": [
+        "智能体",
+        "统计口径",
+        "编程",
+        "GitHub"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 80,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 15,
+          "画面": 9,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 84.5,
+        "threshold": 65,
+        "run": "2026-10-29-0840-shanghai"
+      }
+    },
     {
       "url": "https://axiommath.ai/research/the-enormous-theorem-formalized/",
       "title": "一个 15000 页、约 100 位数学家写了几十年的证明，为什么几十个 AI 智能体 24 天就逐行验完了，还挑出 34 处和原文对不上的地方？Axiom 用 Lean 形式化「有限单群分类定理」",
