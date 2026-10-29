@@ -6,6 +6,52 @@
       "baseScore": 69,
       "multiplier": 1.0566,
       "score": 72.9,
+      "reason": "分数达上墙线但论文为 9 月旧稿，本窗口只是二手转述重新冒出，时效弱",
+      "run": "2026-10-29-1240-shanghai",
+      "record": {
+        "url": "https://arxiv.org/abs/2609.20519",
+        "title": "在让 AI 自我进化之前，能不能先让 AI 帮自己把账单砍一半？NVIDIA SoL-Pi：让智能体去改智能体的「外壳」，152 个提案里只活下来 4 个，token 用量降 45%–49%",
+        "category": "AI",
+        "source": "arXiv 论文《SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness》（arXiv:2609.20519，2026-09-17 提交；NVIDIA、南洋理工、MIT）；NVlabs/SoL-Pi GitHub 仓库（MIT 许可）与项目主页",
+        "publishedAt": "2026-09-17",
+        "eventAt": "2026-09-17",
+        "collectedAt": "2026-10-29T04:55:00.000Z",
+        "updatedAt": "2026-10-29T04:55:00.000Z",
+        "description": "一手来源：arXiv 论文 + NVlabs 官方 GitHub（MIT 许可）+ 项目主页。是什么：一个「研究用 AI」观察另一个智能体干活的轨迹，提出改进「外壳」（harness，即包在模型外面负责调工具、管上下文的那层程序）的方案，并在大量自动搭建的可执行环境里测试，只保留「能力不降、更省 token」的改动。最终活下来 4 个机制：Action Fusion（改完文件直接在同一次工具调用里跑验证命令，省掉一个模型回合）、ObservationPack（大段工具输出存本地，只给模型句柄，按需分页召回）、Evidence-Preserving Reducer（小模型先读长日志写摘要，摘要里引用的每句原文都要逐字核对，对不上就退回原文）、Online Context Compact（在计划子任务边界处压缩上下文）。论文数字：EdgeBench 公开的 51 个长程任务上，在 GPT-5.6 Sol 和 Opus 5 后端下，token 流量降 44.7%–49.0%、API 成本降约三分之一，效率档保留约 94% 的得分；按论文估算，相对原生 Codex / Claude Code 外壳每小时省 8.75–13.50 美元。反直觉点：省钱的不是换更便宜的模型，而是改模型「外面」那层看似无关紧要的胶水代码；而且改进方案本身是 AI 搜出来的。可拍角度：和本轮 CacheLint 论文合成一期「AI 账单为什么总比你想的贵」。",
+        "caveat": "论文为 2026-09-17 旧稿，本窗口只是被中文账号（@zhang_baoqing）重新转述，不是新进展，故放待定；所有数字为作者自测，EdgeBench 只用了 134 个任务中公开的 51 个；「每小时省多少美元」是按单个研究者场景估算。封面为项目主页官方分享图（品牌图，无数据）。",
+        "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261029b-sol-pi.jpg",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261029b-sol-pi.jpg",
+        "imageAlt": "SoL-Pi 项目主页官方分享图：左上 SoL-Pi 标志，右侧是一堆代码卡片被一条红线串起，最后一张打勾",
+        "tags": [
+          "AI成本",
+          "智能体",
+          "开源",
+          "自动研究"
+        ],
+        "tagSource": "provided",
+        "curation": {
+          "baseScore": 69,
+          "baseBreakdown": {
+            "主线": 20,
+            "钩子": 14,
+            "画面": 10,
+            "来源": 15,
+            "时效": 3,
+            "大陆": 3,
+            "新颖": 4
+          },
+          "multiplier": 1.0566,
+          "finalScore": 72.9,
+          "threshold": 65,
+          "run": "2026-10-29-1240-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "news",
+      "baseScore": 69,
+      "multiplier": 1.0566,
+      "score": 72.9,
       "reason": "分数达上墙线但模型发布稿以自报基准为主、首帧只有官方分享卡、暂未对公众开放",
       "run": "2026-10-29-0840-shanghai",
       "record": {
@@ -4426,6 +4472,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-29T01:10:00.000Z",
+  "updatedAt": "2026-10-29T04:55:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
