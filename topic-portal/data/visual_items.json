@@ -1,8 +1,452 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 451,
+  "exportedCount": 483,
   "items": [
+    {
+      "title": "机器人工作站通常只能在真实产线上试。Claude Opus 5.5 做了一个浏览器里就能「先玩坏」的真实物理机器人单元：每小时 780 箱全绿，拉到 1,680 箱，4 秒后夹爪打滑、纸箱当场落地",
+      "category": "frontend",
+      "styleFamily": "uiux",
+      "is3d": true,
+      "source": "https://x.com/konstantinsaifo/status/2115722519336345861",
+      "demoUrl": "https://www.airsup.ai/lab/robot-cell",
+      "sourceCodeUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-konstantin-robot-cell.jpg",
+      "previewType": "image",
+      "videoUrl": "https://video.twimg.com/amplify_video/2115722161692233728/vid/avc1/1920x1080/sNhRu4X1mIBv5TZO.mp4",
+      "description": "作者 @konstantinsaifo 原帖（2026-10-29 08:28 UTC）：机器人工作站通常要在真实产线上测试，于是用 Claude Opus 5.5 做了一个可以先在浏览器标签页里「玩坏」的版本，带真实物理。节拍 780 箱/小时时所有检查全绿；提到 1,680 箱/小时，夹爪 4 秒内打滑，纸箱实时掉到地上。Demo 页面标题为「Robot cell R3: break it before the line does | Airsup lab」。渲染风格（据用户备注）：Three.js 实时真实感渲染——PBR 材质 + 真实车间 HDRI 环境光照 + GTAO 环境光遮蔽 + 软阴影 + ACES 色调映射；硬边全部圆角倒角；地板为带漫反射/法线/粗糙度贴图的扫描材质；哑光白色工业设备、克制调色、无发光；场景上叠加半透明轻量 UI 卡片。",
+      "tool": "Claude Opus 5.5；three.js（PBR/HDRI/GTAO 等，用户备注）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文经 X API；demo 链接用户提供，页面标题已抓取确认；渲染细节来自用户备注，完整提示词未公开。",
+      "attribution": "@konstantinsaifo（Konstantin Saifoulline，Airsup）",
+      "sourceAuthor": "konstantinsaifo",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "Three.js",
+        "PBR",
+        "HDRI",
+        "工业仿真",
+        "3D建模"
+      ],
+      "publishedAt": "2026-10-29T08:28:51.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T08:53:14.000Z",
+      "updatedAt": "2026-10-30T08:53:14.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T08:53:14.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T08:53:14.000Z",
+        "visually_checked": false,
+        "preview_check": "封面为 X 视频缩略图",
+        "video_check": "未完整播放"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-robot-cell"
+      }
+    },
+    {
+      "title": "一棵树没有任何人设计树枝，只有 1,400 个随机点和一条规则：每个点把最近的树枝拉向自己、被碰到就消失。vidar 用 three.js 复现「空间殖民」算法，62 轮长出 1,607 个节点，看蓝色点云被一口口「吃掉」",
+      "category": "motion",
+      "styleFamily": "code_video",
+      "source": "https://x.com/vidar_0208/status/2116002326922056102",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030b-space-colonization-tree.jpg",
+      "previewType": "image",
+      "description": "作者 @vidar_0208 原帖（2026-10-30 03:00 UTC）及线程第二条。问题：手工建模树不能量产，朴素的递归分叉（每隔 N 单位随机角度分叉）长出来像衣帽架，树枝互相穿插、挤在一起，也不管美术想要的树冠形状。原理：空间殖民算法（Runions、Lane、Prusinkiewicz，2007）——①在树冠体积里撒吸引点（树冠可以是任何能采样的形状）；②每轮每个活着的吸引点找影响半径内最近的枝节点；③被吸引的节点朝这些点的平均方向长出一个固定步长的新节点；④离新节点小于「杀死距离」的吸引点被删除；⑤重复到点用完。分叉不是写出来的，是「涌现」出来的：两团吸引点从不同方向拉同一个节点，它就长两次；对空间的竞争让树枝自然分开。粗细用「管道模型」从枝梢往根倒推：父枝 r^2.3 = 子枝 r^2.3 之和。作者实现：three.js，1,400 个吸引点放在 2.6×1.9×2.6 m 的压扁球里，步长 0.11 m、影响半径 1.3 m、杀死距离 0.28 m，每次生长方向加 0.18 的向上偏置；每段树枝一个实例化圆柱、关节一个球。第一次跑不完：7 个吸引点落在任何树枝都够不到的位置，撞到 400 轮上限还在加节点，改成剩 ≤8 个就停，得到 62 轮、主干半径 0.138 m。叶子参考 dgreenheck/ez-tree（MIT）的做法：每片叶子一张 alpha 裁切的双面卡片、轻微卷曲、背光透射，共 4,711 张一次实例化绘制。对你：①这就是你「涌现」那期最好的第二个镜头——鸟群之后接「树也是简单规则长出来的」；②画面自带计数器（iteration / branch nodes / attractors left），0 秒就能看懂；③可以延伸到叶脉、血管、闪电、河网同类结构。封面为视频 40% 处截帧（树干已长出、上方蓝色吸引点云正在被吃掉），已目视核验。",
+      "tool": "three.js（实例化圆柱 + 卡片叶）（作者自述；未说明是否使用 AI）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者原帖给出完整算法与全部参数；注明选题受 @Rahzell83 的 three.js 程序化树启发、未复用其代码和图片；叶片做法参考 dgreenheck/ez-tree（MIT）；算法出自 Runions et al. 2007。本作品未公开源码与许可。",
+      "attribution": "@vidar_0208",
+      "sourceAuthor": "vidar_0208",
+      "tags": [
+        "涌现",
+        "程序化生成",
+        "Three.js",
+        "空间殖民",
+        "树",
+        "算法"
+      ],
+      "publishedAt": "2026-10-30T03:00:42.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T04:50:00.000Z",
+      "updatedAt": "2026-10-30T04:50:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-30T04:50:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 20,
+          "溯源": 16,
+          "复现": 13,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.1726,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-30-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/ext_tw_video/2116002314620203008/pu/vid/avc1/1280x720/FEqC6iaS7QhRwYEC.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "为什么 Kimi 做 3D 时，家具、机械零件让 AI「写代码建」，人物和怪物却交给 Tripo 这类扩散模型？Kimi 上线 3D Make：一句话（或草图）出可预览、可改、可导出打印的 3D，还能接 Blender / CAD / Unity 搭场景做小游戏",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/Kimi_Moonshot/status/2116005725814280570",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030b-kimi-3d-make.jpg",
+      "previewType": "image",
+      "description": "官方 @Kimi_Moonshot 原帖（2026-10-30 03:14 UTC，发帖约 1.5 小时 700+ 赞）：发布 3D Make——Kimi 连接 Blender 和 CAD 等工具来建模、搭场景、开发游戏，网页版 kimi.ai 与桌面端 Kimi Work 可用。74 秒官方视频依次演示「Generating 3D assets」、在 Blender 里搭出一间带壁炉的圆形客厅、「Getting your 3D model ready to print」及 3D 打印 / 工业设计等入口。同时发布的官方教程（kimi.ai/academy/3d-tutorial，2026-10-29 更新）讲清了两条建模路线：参数化建模——能用尺寸、结构、规则描述的东西（产品外形、家具、机械零件、建筑），由模型直接写代码建；网格建模——人物、动物角色、雕像、怪物、复杂道具，语言模型仍不擅长，交给 Tripo、Meshy、Hyper3D 等扩散模型更合适。官方称专门训练了 K3.1 Pro 用 Python 脚本操控 3D 软件，所以没接 MCP 的专业软件也能纳入工作流。X 用户 @neili666888 实测提醒：只给 STL 的话 CAD 里基本没法再改，脚本路线改一个参数重跑几秒即可。对你：①和你想做的「房间 3D 建模→换装修风格」直接相关；②教程点名 Tripo，和你的 Tripo 商单是同一条工作流，可以讲「哪些该让 AI 写代码、哪些该让 AI 捏泥巴」；③国内可用产品。封面为官方教程页 og:image（Build in 3D with Kimi 宣传图），已目视核验。",
+      "tool": "Kimi 3D Make（K3.1 Pro）+ Blender / CAD / Unity / Unreal 等（官方）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "官方账号原帖 + 官方教程页；商业产品，生成与修改消耗 Kimi 额度（据 @neili666888 转述官方帮助页）。",
+      "attribution": "Moonshot AI（@Kimi_Moonshot）",
+      "sourceAuthor": "Kimi_Moonshot",
+      "tags": [
+        "3D建模",
+        "Blender",
+        "AI建模",
+        "3D打印",
+        "Tripo"
+      ],
+      "publishedAt": "2026-10-30T03:14:13.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T04:50:00.000Z",
+      "updatedAt": "2026-10-30T04:50:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-30T04:50:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 67,
+        "baseBreakdown": {
+          "实体": 13,
+          "科普": 12,
+          "溯源": 17,
+          "复现": 11,
+          "风格": 8,
+          "新颖": 6
+        },
+        "multiplier": 1.038,
+        "finalScore": 69.5,
+        "threshold": 65,
+        "run": "2026-10-30-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2116003610509377536/vid/avc1/1920x1080/plUo_Hrrv9el9US9.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "demoUrl": "https://www.kimi.ai/academy/3d-tutorial"
+    },
+    {
+      "title": "几百万团「模糊色块」怎么在浏览器里拼成一整座真实城市？Spark 发布实验版 Radix：基于 three.js 的 WebGPU 高斯泼溅渲染器，每帧在 GPU 上完成投影、排序和绘制，多个泼溅物体一次 draw call 画完",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/sparkjsdev/status/2115852543708536881",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030a-spark-radix.jpg",
+      "previewType": "image",
+      "description": "官方 @sparkjsdev 原帖（2026-10-29 17:05 UTC）：发布 Spark Radix 实验版——一个构建在 three.js 上、由 WebGPU 驱动的高斯泼溅（Gaussian splat）渲染器，可在浏览器里渲染和漫游细节丰富的 3D 世界，面向开发者试用。线程第二条说明原理：用 WebGPU 时，Radix 每帧在 GPU 上完成泼溅的投影、排序和绘制；多个泼溅物体会被放在一起排序、一次 draw call 渲染完；不支持 WebGPU 时可回退 WebGL2。官网文档（sparkjs.dev/radix，2026-10-29 构建）给了 CDN/npm 用法，一段代码就能画出一只旋转的泼溅蝴蝶；仓库 github.com/sparkjsdev/radix 为 MIT 许可。同日 @BrittaniNatali 用 Radix 做了可实时打光的 PBR 泼溅演示（每个泼溅额外存底色、粗糙度、金属度和来自原网格的法线）。28 秒宣传片：夜色里的城市泼溅、旧金山科伊特塔一带的整片街区航拍、RADIX 字样。对你：①高斯泼溅是「把真实世界拍进电脑」的新方式，可以讲清楚「为什么是几百万个半透明椭球而不是三角形」「为什么要每帧排序（透明叠加要从后往前）」；②和你想做的「房间 3D 建模换装修风格」直接相关（扫描房间→泼溅）。封面为宣传片截帧，已目视核验。",
+      "tool": "three.js（WebGPURenderer / TSL）+ WebGPU，WebGL2 回退（官方）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "官方账号原帖 + 官网文档 + GitHub 仓库（MIT）；实验版本 0.0.1。",
+      "attribution": "Spark（@sparkjsdev）",
+      "sourceAuthor": "sparkjsdev",
+      "tags": [
+        "高斯泼溅",
+        "WebGPU",
+        "Three.js",
+        "3D扫描",
+        "开源"
+      ],
+      "publishedAt": "2026-10-29T17:05:31.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T00:50:25.000Z",
+      "updatedAt": "2026-10-30T00:50:25.000Z",
+      "verification": {
+        "checked_at": "2026-10-30T00:50:25.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 79,
+        "baseBreakdown": {
+          "实体": 16,
+          "科普": 15,
+          "溯源": 19,
+          "复现": 14,
+          "风格": 9,
+          "新颖": 6
+        },
+        "multiplier": 1.4,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-30-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2115852303291109376/vid/avc1/1920x1080/2W3eeq5hhmxY9qvD.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/sparkjsdev/radix",
+      "licenseName": "MIT",
+      "licenseUrl": "https://github.com/sparkjsdev/radix",
+      "demoUrl": "https://sparkjs.dev/radix/"
+    },
+    {
+      "title": "火车急刹时火花为什么只在「打滑」那一刻喷出来、方向还会反过来？vidar 用 three.js 在 GPU 上左右对比：左边匀速喷火花，右边火花只由车轮和钢轨之间的滑移速度决定",
+      "category": "motion",
+      "styleFamily": "code_video",
+      "source": "https://x.com/vidar_0208/status/2115791142662910351",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030a-slip-sparks.jpg",
+      "previewType": "image",
+      "description": "作者 @vidar_0208 原帖（2026-10-29 13:01 UTC）：同一个车轮、同一段钢轨、同样的粒子预算。左：恒定发射器（全程每秒 1800 个火花）；右：只在金属贴着金属滑动时才出火花。原理：每个物理步计算接触点滑移速度 v_slip = v_body − ω×R，纯滚动时为 0、不出火花；发射率 = k × 载荷 × |v_slip|（k = 每 m/s 滑移每秒 1000 个）；发射方向 = 滑移方向 × |v_slip| × 0.45–1.55 的随机系数，再加上向上和侧向散布；颜色按剩余寿命从白黄→橙→暗红（作者说明这只是「冷却」的廉价替代，不是真实冷却）；每个火花画成沿速度方向的拖尾，速度越快越长。实现：three.js，全部在 GPU 上模拟，每侧 65,536 个火花存在两张浮点纹理里乒乓更新，重力、0.9/s 阻力，会在轨头和道砟上反弹。时间线：2.4 m/s 时刹车抱死，滑移随车轮减速而变小，停住；随后车轮以 7 m/s 表面速度空转而车轴几乎不动——此时火花喷射方向自动翻转。对你：「火花从哪来」是很好的物理科普：滚动摩擦 vs 滑动摩擦、抱死刹车、空转；也可以引申到为什么 ABS 要防抱死。封面为视频截帧（左右对比画面），已目视核验。",
+      "tool": "three.js + GPU 粒子（浮点纹理乒乓）（作者自述；未说明是否使用 AI）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者原帖，给出完整算法与参数；未公开源码与许可。",
+      "attribution": "@vidar_0208",
+      "sourceAuthor": "vidar_0208",
+      "tags": [
+        "物理模拟",
+        "粒子",
+        "Three.js",
+        "摩擦",
+        "火花",
+        "GPU"
+      ],
+      "publishedAt": "2026-10-29T13:01:32.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T00:50:25.000Z",
+      "updatedAt": "2026-10-30T00:50:25.000Z",
+      "verification": {
+        "checked_at": "2026-10-30T00:50:25.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 78,
+        "baseBreakdown": {
+          "实体": 21,
+          "科普": 18,
+          "溯源": 11,
+          "复现": 11,
+          "风格": 10,
+          "新颖": 7
+        },
+        "multiplier": 1.241,
+        "finalScore": 96.8,
+        "threshold": 65,
+        "run": "2026-10-30-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/ext_tw_video/2115791125516619777/pu/vid/avc1/1280x720/qHZ9AHXyWW4NyEf1.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "楼里每一扇亮灯的窗户后面其实都没有房间：为什么镜头一动，沙发和墙还会像真的一样错开？MrKindey 用 three.js「室内映射」着色器，一张 AI 生成的房间照片就骗过了透视",
+      "category": "frontend",
+      "styleFamily": "code_video",
+      "source": "https://x.com/MrKindey/status/2115828577673375817",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030a-interior-mapping.jpg",
+      "previewType": "image",
+      "description": "作者 @MrKindey 原帖（2026-10-29 15:30 UTC）：视频里每一扇亮灯的窗户都只是一个扁平矩形，玻璃后面没有房间，只有一个着色器——对每个像素，它把视线延伸进窗后一个「想象中的盒子」，算出击中点，再到一张 AI 生成的房间照片里查颜色。镜头移动时，侧墙、沙发和后墙会像真实房间那样相互错位（视差）。构成：塞浦路斯一栋三层公寓楼，用 three.js 做、在浏览器里跑；9 个房间各自只有一张 Nano Banana 2.1 生成的图，生成时垫了灰模草图让透视和盒子对齐；每张图手工放 8 个对齐点；整个项目图像生成花费不到 2 美元。作者说游戏里早就用这一招做城市窗户（业内常称 interior mapping），用在房地产里可以给还没盖的楼「装修」好室内，而不用建一个房间的模型。对你：①反直觉钩子「你看到的房间根本不存在」；②和你想做的「同一房间换装修风格」直接相关——换一张图就换一种风格；③光线与盒子求交可以画成示意动画。封面为视频截帧（黄昏中亮灯的三层住宅），已目视核验。",
+      "tool": "three.js 自定义着色器 + Nano Banana 2.1（房间图）（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者原帖说明方法与成本；未公开源码、提示词与许可。",
+      "attribution": "@MrKindey",
+      "sourceAuthor": "MrKindey",
+      "tags": [
+        "着色器",
+        "Three.js",
+        "视差",
+        "室内设计",
+        "AI生图",
+        "建筑可视化"
+      ],
+      "publishedAt": "2026-10-29T15:30:17.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T00:50:25.000Z",
+      "updatedAt": "2026-10-30T00:50:25.000Z",
+      "verification": {
+        "checked_at": "2026-10-30T00:50:25.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 74,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 18,
+          "溯源": 11,
+          "复现": 8,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.3491,
+        "finalScore": 99.8,
+        "threshold": 65,
+        "run": "2026-10-30-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2115828465358327808/vid/avc1/1080x1350/aiKbfqh9j-66ChCE.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "闸门一开 2.8 立方米的水灌进庭院，为什么一个粒子都没用、水量还一滴不差？vidar 用纯 JavaScript 解浅水方程：每个格子只记一个水深、每条格边一个流速",
+      "category": "motion",
+      "styleFamily": "code_video",
+      "source": "https://x.com/vidar_0208/status/2115851619019509850",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030a-shallow-water.jpg",
+      "previewType": "image",
+      "description": "作者 @vidar_0208 原帖（2026-10-29 17:01 UTC）：闸门升起，2.8 m³ 的水涌进庭院，绕着中央高台分流。没有粒子：浅水方程假设水面远比水深宽，于是垂直方向被消掉；每个格子存床面高度 b 上的水深 h，水面在 b+h。每步：①半拉格朗日法沿流向回溯平流速度；②按水面坡度加速 u -= g·dt·Δ(b+h)/Δx（水沿自己的水面往低处流）；③用迎风通量在格子间搬水（通量 = 速度 × 上游格水深）；④限制流出量，保证没有格子流出比自己更多的水，水深永不为负、总体积精确守恒。墙、基座和高台都只是「更高的床面」，闸门是一条在 0.5 秒内从 1.2 m 降到地面的床面格子，不需要专门的边界代码。实现：three.js 渲染，求解器是单线程纯 JS，160×160 网格覆盖 5.6 m（每格 3.5 cm），速度放在格边（交错网格，避免棋盘噪声），每帧 10 个子步（dt=1/240 s），每步约 2.0 ms；画面上的体积读数从开始到结束都是 2.813 m³，漂移 0.0000%；7–9 秒切换成 0–2.5 m/s 的流速热力图。作者也写了局限：每格只有一个高度，没有翻卷、飞溅和破碎浪；基础形式没有色散，所有波都以 √(g·h) 传播，小涟漪看着不对。对你：可以讲「为什么洪水模拟不用一滴一滴的水」「波速为什么只和水深有关」。注：库内已有一条同类浅水方程作品（Flood City），本条新颖度按低分计。封面为视频截帧，已目视核验。",
+      "tool": "three.js（渲染）+ 纯 JavaScript 浅水方程求解器（作者自述；未说明是否使用 AI）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者原帖，给出完整算法与参数；未公开源码与许可。",
+      "attribution": "@vidar_0208",
+      "sourceAuthor": "vidar_0208",
+      "tags": [
+        "物理模拟",
+        "流体",
+        "浅水方程",
+        "Three.js",
+        "数值方法"
+      ],
+      "publishedAt": "2026-10-29T17:01:51.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T00:50:25.000Z",
+      "updatedAt": "2026-10-30T00:50:25.000Z",
+      "verification": {
+        "checked_at": "2026-10-30T00:50:25.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 74,
+        "baseBreakdown": {
+          "实体": 21,
+          "科普": 18,
+          "溯源": 11,
+          "复现": 11,
+          "风格": 10,
+          "新颖": 3
+        },
+        "multiplier": 1.241,
+        "finalScore": 91.8,
+        "threshold": 65,
+        "run": "2026-10-30-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/ext_tw_video/2115851606679773184/pu/vid/avc1/1280x720/K9K-dwock1ZMlvpx.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "一台 V8 发动机能不能在「爆炸冲程」中途暂停？elvar 让 Claude Opus 5.5 写的交互引擎：8 个活塞全按曲柄连杆公式联动，转速表、气门图和缸压曲线读的是同一个数",
+      "category": "frontend",
+      "styleFamily": "code_video",
+      "source": "https://x.com/elvar_official/status/2115882221319958984",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030a-v8-engine.jpg",
+      "previewType": "image",
+      "description": "作者 @elvar_official 原帖（2026-10-29 19:03 UTC）：Claude Opus 5.5 做的 V8，可以在燃烧做功中途停下来看。作者列出的要点：每个活塞都按精确的曲柄-滑块（slider-crank）公式运动，所以转速表、气门正时图和缸压曲线显示的是同一个数；十字形曲轴（cross-plane），连杆轴颈相隔 90°，点火顺序 1-8-4-3-6-5-7-2；700 rpm 时以 1/20 速度播放，即每秒转 210° 曲轴角，慢到能看清一次进气；缸径 101.6 mm、行程 89 mm、8 缸，排量 5.8 L。作者称所有提示词在其 X 长文里（本轮未核对长文内容）。画面：浅色界面中央是 V8 剖视模型，左侧转速 700、右侧功率与曲线面板。对你：发动机四冲程、点火顺序为什么不是 1-2-3-4…都是好科普点。注：库内已有多条发动机拆解作品（含 128 零件 V8），本条新颖度按低分计。封面为视频截帧，已目视核验。",
+      "tool": "Claude Opus 5.5（作者自述；具体渲染技术未说明）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者原帖；提示词称在其 X 长文中，未核对；无源码与许可。",
+      "attribution": "@elvar_official",
+      "sourceAuthor": "elvar_official",
+      "tags": [
+        "发动机",
+        "机械原理",
+        "交互图解",
+        "Claude Code",
+        "剖面"
+      ],
+      "publishedAt": "2026-10-29T19:03:27.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T00:50:25.000Z",
+      "updatedAt": "2026-10-30T00:50:25.000Z",
+      "verification": {
+        "checked_at": "2026-10-30T00:50:25.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 63,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 18,
+          "溯源": 7,
+          "复现": 4,
+          "风格": 10,
+          "新颖": 2
+        },
+        "multiplier": 1.3,
+        "finalScore": 81.9,
+        "threshold": 65,
+        "run": "2026-10-30-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2115882143360397312/vid/avc1/1920x1080/jEsYLeMTEMluOUsW.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "屏幕上的毛衣为什么能「现织」出你打的字？TONASY 用 Blender + WebGL2 + GLSL 做的网页针织物：输入任何文字，都会一行一行织成平针毛衣上的提花图案",
       "category": "motion",
@@ -22401,11 +22845,1307 @@
         "threshold": 70,
         "run": "user-specified-2026-10-29"
       }
+    },
+    {
+      "title": "零代码6周用 Opus 5.5 + Godot 做出3D游戏：一次只做一个功能、进游戏测完再下一个",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "is3d": true,
+      "source": "https://x.com/rewind02/status/2113934403478999211",
+      "sourceCodeUrl": "",
+      "demoUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-aigame-01.jpg",
+      "previewType": "image",
+      "description": "@rewind02（rewind）发帖：with no coding background built a game in 6 weeks with claude opus 5.5 + godot...\n\nthere’s a smart way to set it up:\n\n- step 1: run opus 5.5 in claude code inside your godot project\n- step 2: build one feature, test it in the game, adjust until it feels right, then start the next https://t.co/OKtZVqLYJb https://t.co/OXlHMG7anJ 帖内附视频。收纳理由：清晰工作流分享。用户指定收纳（收藏）。",
+      "tool": "见原帖（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（X API 获取）；模型/工具为作者或转述者自述，未独立核实。封面为帖内视频缩略图。",
+      "attribution": "@rewind02（rewind）",
+      "sourceAuthor": "rewind02",
+      "modelClaim": "",
+      "modelEvidenceUrl": "https://x.com/rewind02/status/2113934403478999211",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI做游戏",
+        "工作流"
+      ],
+      "publishedAt": "2026-10-24T10:03:31Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T01:00:00.000Z",
+      "updatedAt": "2026-10-30T01:00:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T01:00:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T01:00:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为帖内视频缩略图，本地文件。",
+        "video_check": "未下载播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-ai-games"
+      }
+    },
+    {
+      "title": "PaperRoute 爆款教程拆解：先能玩再好看，机制/美术双工作流 + Blender脚本批量出GLB",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "is3d": true,
+      "source": "https://x.com/yyyole/status/2098829072373797028",
+      "sourceCodeUrl": "",
+      "demoUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-aigame-02.jpg",
+      "previewType": "image",
+      "description": "@yyyole（沐阳）发帖：国外一个老哥，写了一个详细的用AI做游戏的教程！！\n他用 Astra，四天花了15.6亿token做出了一款完整可玩的 3D 游戏 PaperRoute，直接火了。\n\n和之前爆火全网疯传的那个ThreeJS游戏差不多！\n游戏有完整街区、主角骑车送报得分、遭遇汽车和恶犬、天气系统、玻璃破碎、排行榜，甚至还有一个可以骑车训练的公园。\n\n他这套工作流里，一个非常重要的原则是：\n先把游戏做得能玩，再考虑把它做得好看。\n最开始只给 Astra 一份非常简单的需求和一张参考图，先把骑车、转向、扔报纸、得分和关卡结束这些核心机制跑通。\n等核心玩法稳定以后，他才开始处理美术方向。\n\n最值得学习的是，他把整个项目拆成了两条独立工作流：\n一条负责游戏机制，一条负责美术和 3D 资产。\n转向手感、碰撞恢复、恶犬追逐、手机操作，一个问题对应一个 Prompt、一次浏览器测试和一次代码提交。\n房屋、树木、围栏和邮箱，则让 Astra 编写 Python 脚本，交给 Blender 在后台生成模型并导出 GLB。\n哪部分除了问题，就可以更准确方便的调整。\n\n对于角色，老哥建议不要和 AI 死磕。\nAstra 做房屋和简单道具很强，但做出来的主角像个木偶。\n他后来直接改变思路：\n先用 ChatGPT 生成角色概念图，再转成 3D 模型，最后让 Astra 负责减面、绑定骨骼、适配自行车和修复服装。\n\n这样一套连… 帖内附视频。收纳理由：清晰工作流分享。用户指定收纳（收藏）。",
+      "tool": "见原帖（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（X API 获取）；模型/工具为作者或转述者自述，未独立核实。封面为帖内视频缩略图。",
+      "attribution": "@yyyole（沐阳）",
+      "sourceAuthor": "yyyole",
+      "modelClaim": "",
+      "modelEvidenceUrl": "https://x.com/yyyole/status/2098829072373797028",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI做游戏",
+        "工作流"
+      ],
+      "publishedAt": "2026-09-12T17:40:19Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T01:00:00.000Z",
+      "updatedAt": "2026-10-30T01:00:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T01:00:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T01:00:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          749
+        ],
+        "preview_check": "封面为帖内视频缩略图，本地文件。",
+        "video_check": "未下载播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-ai-games"
+      }
+    },
+    {
+      "title": "Codex 操控电脑 + Tripo + Blender + Opus 5.5：一晚搓出可玩的3D荒岛狩猎游戏",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "is3d": true,
+      "source": "https://x.com/yyyole/status/2108368534963413293",
+      "sourceCodeUrl": "",
+      "demoUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-aigame-03.jpg",
+      "previewType": "image",
+      "description": "@yyyole（沐阳）发帖：终于！我又回到了 Codex 和 Claude 双修的状态！\n\n来尝试一个最强组合技：\nGPT-6 Astra+Tripo3D+Blender+Claude Opus5.5！\n我把电脑交给AI，一晚上直接给我搓了一个能玩的3D的荒岛狩猎游戏！！\n最后拖后腿的，居然是我！！\n\n从生成图片、制作 3D 模型，到减面、组装、搭场景，再到完善游戏玩法，所有的操作，全程都是 AI 自动搞定。\nCodex 操作电脑，Tripo3D 做模型，Blender 处理资产，最后让 Opus 5.5 打磨细节。\n不得不说Tripo新上的P2.0模型真的有点惊艳！用起来要省心很多！！\n它可以快速生成干净、真实可用的拓扑面，生成的高精度模型能够直接进入后续的游戏开发、动画制作流程，成为真正好看又好用的3D资产！\n其他AI 3D产品生成模型虽然看着不错，但后续用起来才知道拓扑有多混乱，需要浪费大量时间去细调！！\n\n也就是我不专业，我要稍微更专业一点，做出来的游戏高低可以上架了！！\n整个游戏虽然只是一个Demo，因为额度关系，很多细节还没有优化完成，但整个游戏玩法已经跑通了！\n角色可以在岛上移动，切换手枪、猎枪和刀，拿起瞄准镜追着猎物跑，有些猎物还会主动攻击。\n\n具体是怎么做的？\n一开始，我先把想做的游戏和需要的素材告诉 Codex：荒岛狩猎，找到电台联系外界，需要什么样的人物、武器、动物，以及大致想要的场景效… 帖内附视频。收纳理由：效果+工作流兼有。用户指定收纳（收藏）。",
+      "tool": "见原帖（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（X API 获取）；模型/工具为作者或转述者自述，未独立核实。封面为帖内视频缩略图。",
+      "attribution": "@yyyole（沐阳）",
+      "sourceAuthor": "yyyole",
+      "modelClaim": "",
+      "modelEvidenceUrl": "https://x.com/yyyole/status/2108368534963413293",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI做游戏",
+        "工作流"
+      ],
+      "publishedAt": "2026-10-09T01:26:44Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T01:00:00.000Z",
+      "updatedAt": "2026-10-30T01:00:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T01:00:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T01:00:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          750
+        ],
+        "preview_check": "封面为帖内视频缩略图，本地文件。",
+        "video_check": "未下载播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-ai-games"
+      }
+    },
+    {
+      "title": "近景AI模型、远景代码画：Codex + Tripo 两天做出能开车逛的巴黎（附386页开源手册）",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "is3d": true,
+      "source": "https://x.com/AlchainHust/status/2099817740165173722",
+      "sourceCodeUrl": "",
+      "demoUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-aigame-04.jpg",
+      "previewType": "image",
+      "description": "@AlchainHust（花叔）发帖：从GPT-6 Astra发布以来，就一堆人在让Codex去通过computer use去操控blender做各种3D模型的。\n\n但稍微做了点就停了。\n\n然后我自己也拿Claude Code和Codex做了不少测试，发现不管是直接写代码的方式，还是操控blender的方式，从成本和效率来说都不是最好的方式。\n\n所以我自己摸索了一套新的策略。用Codex 加 3D 基座模型 Tripo，做了一座能开车逛的巴黎。\n\n整了两天，一行代码没写。一座能开进去的巴黎👇出来了！\n\n现在视频演示里的车、树、铁塔、街上走路的人——全是 AI 生成的 3D 资产；而街区、桥、塞纳河——是代码画的。\n\n为什么这么分？\n因为你开车会开到车跟前，但不会开到桥底下去数栏杆。\n\n近景给精细模型，远景交给代码。做出来的网页游戏会在细节和帧率上更平衡。\n\n以及，除了这期视频，我还把一整套操作流程做成了386 页手册教程！\n现已开源了，提示词、脚本、模型全在里面：\nhttps://t.co/bbyAxGOX8m 帖内附视频。收纳理由：效果+工作流兼有。用户指定收纳（收藏）。",
+      "tool": "见原帖（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（X API 获取）；模型/工具为作者或转述者自述，未独立核实。封面为帖内视频缩略图。",
+      "attribution": "@AlchainHust（花叔）",
+      "sourceAuthor": "AlchainHust",
+      "modelClaim": "",
+      "modelEvidenceUrl": "https://x.com/AlchainHust/status/2099817740165173722",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI做游戏",
+        "工作流"
+      ],
+      "publishedAt": "2026-09-15T11:08:56Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T01:00:00.000Z",
+      "updatedAt": "2026-10-30T01:00:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T01:00:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T01:00:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为帖内视频缩略图，本地文件。",
+        "video_check": "未下载播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-ai-games"
+      }
+    },
+    {
+      "title": "GTA老奶奶骑三轮：Opus 5.5 + Tripo 文生3D→Mixamo绑骨→Text-to-Motion，开源可玩",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "is3d": true,
+      "source": "https://x.com/berryxia/status/2108406289282011440",
+      "sourceCodeUrl": "",
+      "demoUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-aigame-05.jpg",
+      "previewType": "image",
+      "description": "@berryxia（Berryxia.AI）发帖：兄弟们，你们要的GTA 老奶奶版本重要来了！\n真的是爆肝了一个假期搞出来~~GitHub已开源\n\n今以前要开 Blender 干一周的活，现在一句话就开工了 。\n\n最近GTA老奶奶很火，我直接拿Claude Opus  5.5 +Tripo 3D 这套组合工作流复刻做了这套好玩的游戏。\n\nPS：当然你也可以让Codex配合生图来邪修也是不错的选择！\n\n大概的工作流（见我的视频展示）：我在做一个老奶奶骑电动三轮横冲直撞的 GTA。\n\n村里五个角色：阿公、阿明、阿桃姨、流氓阿凯、老林警员等，全是 Tripo @tripoai 做的。\n\n一句话出图 → 一键转 3D → Smart Mesh 直接给四边面，还一次出 4 个面数版本 → 上纹理 → 选 Mixamo 一键绑骨 → 22 个预设动作点一下就挂上，导出直接进游戏。\n\n最离谱的是 Text-to-Motion。\n我打了一行「阿公抱着吉他弹唱，脚跟着节拍点地」，半分钟，阿公就真的在弹。\n\n还能分段：先走过来、挥手、再双手合十鞠躬。\n\n13 个任务、一整个村子，浏览器里就能玩。\n这工作流真的爽到离谱 啊~~\n\n真的这玩意把做3D游戏的门槛拉的太低了，强烈建议大家可以玩玩~ 领取500Credit👇🏻记得给我Star啊~。 帖内附视频。收纳理由：效果+工作流兼有。用户指定收纳（收藏）。",
+      "tool": "见原帖（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（X API 获取）；模型/工具为作者或转述者自述，未独立核实。封面为帖内视频缩略图。",
+      "attribution": "@berryxia（Berryxia.AI）",
+      "sourceAuthor": "berryxia",
+      "modelClaim": "",
+      "modelEvidenceUrl": "https://x.com/berryxia/status/2108406289282011440",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI做游戏",
+        "工作流"
+      ],
+      "publishedAt": "2026-10-09T03:56:46Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T01:00:00.000Z",
+      "updatedAt": "2026-10-30T01:00:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T01:00:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T01:00:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为帖内视频缩略图，本地文件。",
+        "video_check": "未下载播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-ai-games"
+      }
+    },
+    {
+      "title": "一人做钓鱼游戏七步流：Tripo出模 → Claude Code经MCP控Blender → Unity 6 搭玩法",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "is3d": true,
+      "source": "https://x.com/bdall_1/status/2109904455235776882",
+      "sourceCodeUrl": "",
+      "demoUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-aigame-06.jpg",
+      "previewType": "image",
+      "description": "@bdall_1（牛仔AI）发帖：一个人做钓鱼游戏，可以把制作流程拆成三部分：\n\nTripo 生成模型。\nClaude + Blender 处理资产和动画。\nUnity 6 搭建场景与玩法。\n\n这套工作流分七步：\n\n1. 用 Tripo Smart Mesh P2 生成角色、树木、岩石、码头、小船和木屋。\n\n2. 通过 MCP，把 Claude Code 接入 Blender。\n\n3. 用 Opus 5.5 辅助整理模型比例、轴心和材质，准备导出。\n\n4. 在 Blender 中制作行走、抛竿、鱼竿动作和船体浮动动画。\n\n5. 导入 Unity 6，搭建森林、河流、瀑布、海滩和码头。\n\n6. 逐个加入移动、钓鱼、鱼饵选择和时间变化系统。\n\n7. 每完成一步就试玩，一次定位并修复一个问题。\n\n这套流程值得借鉴的地方，是把工具职责和验收节点都拆清楚。\n\n先让最小玩法跑通，再逐步扩展场景和系统。每一步都有可检查的结果，后面的修改才有依据。 帖内附视频。收纳理由：清晰工作流分享。用户指定收纳（收藏）。",
+      "tool": "见原帖（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（X API 获取）；模型/工具为作者或转述者自述，未独立核实。封面为帖内视频缩略图。",
+      "attribution": "@bdall_1（牛仔AI）",
+      "sourceAuthor": "bdall_1",
+      "modelClaim": "",
+      "modelEvidenceUrl": "https://x.com/bdall_1/status/2109904455235776882",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI做游戏",
+        "工作流"
+      ],
+      "publishedAt": "2026-10-13T07:09:56Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T01:00:00.000Z",
+      "updatedAt": "2026-10-30T01:00:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T01:00:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T01:00:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为帖内视频缩略图，本地文件。",
+        "video_check": "未下载播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-ai-games"
+      }
+    },
+    {
+      "title": "Codex + Godot 做3D游戏全流程视频：AI模型、绑骨软件、素材站一次讲清",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "is3d": true,
+      "source": "https://x.com/xingbugengming/status/2073582502808305666",
+      "sourceCodeUrl": "",
+      "demoUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-aigame-07.jpg",
+      "previewType": "image",
+      "description": "@xingbugengming（小奇说）发帖：Codex+Godot制作这款3D游戏的全流程来了\n\n上一篇的纯文字工作流看着比较抽象\n\n我把开发中所需要的AI模型、建模绑骨软件、3D模型资源网站等等等…\n\n所有的工作流细节全部放在了这个视频里👇 https://t.co/Xv9lT2p9xX https://t.co/hipiBPpVUq 帖内附视频。收纳理由：清晰工作流分享。用户指定收纳（收藏）。",
+      "tool": "见原帖（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（X API 获取）；模型/工具为作者或转述者自述，未独立核实。封面为帖内视频缩略图。",
+      "attribution": "@xingbugengming（小奇说）",
+      "sourceAuthor": "xingbugengming",
+      "modelClaim": "",
+      "modelEvidenceUrl": "https://x.com/xingbugengming/status/2073582502808305666",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI做游戏",
+        "工作流"
+      ],
+      "publishedAt": "2026-07-05T01:39:28Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T01:00:00.000Z",
+      "updatedAt": "2026-10-30T01:00:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T01:00:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T01:00:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为帖内视频缩略图，本地文件。",
+        "video_check": "未下载播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-ai-games"
+      }
+    },
+    {
+      "title": "被嘲“没人玩vibe coding游戏”后，33天用 Three.js + Opus 5.5 做出16个Raid Boss联机游戏",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "is3d": true,
+      "source": "https://x.com/AlandysGame/status/2114009731123618068",
+      "sourceCodeUrl": "",
+      "demoUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-aigame-08.jpg",
+      "previewType": "image",
+      "description": "@AlandysGame（Alandys）发帖：\"Nobody wants to play your vibe-coded three.js game.\"\n\nFair. So I spent 33 days making one worth playing:\n16 raid bosses, online co-op, a real server, Steam in November.\n\nBuilt with @threejs and Claude Opus 5.5. Free in your browser ↓ https://t.co/VORugJ4Yz0 帖内附视频。收纳理由：成品效果演示。用户指定收纳（收藏）。",
+      "tool": "见原帖（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（X API 获取）；模型/工具为作者或转述者自述，未独立核实。封面为帖内视频缩略图。",
+      "attribution": "@AlandysGame（Alandys）",
+      "sourceAuthor": "AlandysGame",
+      "modelClaim": "",
+      "modelEvidenceUrl": "https://x.com/AlandysGame/status/2114009731123618068",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI做游戏",
+        "成品演示"
+      ],
+      "publishedAt": "2026-10-24T15:02:50Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T01:00:00.000Z",
+      "updatedAt": "2026-10-30T01:00:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T01:00:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T01:00:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为帖内视频缩略图，本地文件。",
+        "video_check": "未下载播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-ai-games"
+      }
+    },
+    {
+      "title": "可破坏3D沙盒：楼里有小人和家具，驾驶机甲或钩爪荡城，ChatGPT + Claude Code 几天做成",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "is3d": true,
+      "source": "https://x.com/FranciAnjinho/status/2114801912721637432",
+      "sourceCodeUrl": "",
+      "demoUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-aigame-09.jpg",
+      "previewType": "image",
+      "description": "@FranciAnjinho（Franciele）发帖：ChatGPT + Claude Code built this destructible 3D sandbox in just a few days\n\nthe entire game runs in Three.js directly in the browser\n\nbuildings can be destroyed and they’re actually filled with tiny people and furniture\n\nyou control a mech, but you can jump out at any time and slingshot around the city with an energy grappling hook\n\nand this is only the second AI game built after starting vibe coding two weeks ago\n\nthe gap between having a crazy game idea and actually playing it is getting ridiculously small 帖内附视频。收纳理由：成品效果演示。用户指定收纳（收藏）。",
+      "tool": "见原帖（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（X API 获取）；模型/工具为作者或转述者自述，未独立核实。封面为帖内视频缩略图。",
+      "attribution": "@FranciAnjinho（Franciele）",
+      "sourceAuthor": "FranciAnjinho",
+      "modelClaim": "",
+      "modelEvidenceUrl": "https://x.com/FranciAnjinho/status/2114801912721637432",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI做游戏",
+        "成品演示"
+      ],
+      "publishedAt": "2026-10-26T19:30:41Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T01:00:00.000Z",
+      "updatedAt": "2026-10-30T01:00:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T01:00:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T01:00:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为帖内视频缩略图，本地文件。",
+        "video_check": "未下载播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-ai-games"
+      }
+    },
+    {
+      "title": "零3D素材的陶艺游戏：Opus 5 纯 Three.js 程序化生成，24关战役+自由模式",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "is3d": true,
+      "source": "https://x.com/hakimieiqbal/status/2093309442523562475",
+      "sourceCodeUrl": "",
+      "demoUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-aigame-10.jpg",
+      "previewType": "image",
+      "description": "@hakimieiqbal（Hakimi Eiqbal）发帖：Opus 5 built this entire 3D pottery game without a single 3D asset\n\nEverything you see is generated procedurally with Three.js, including the graphics and textures\n\nIt has:\n\n> 24 campaign missions\n> creative mode\n> tablet support\n> fully interactive pottery\n\nBuilt entirely with Opus 5\n\n7.13M lines? No, 7.13M output tokens and 2.34B raw tokens processed\n\nVibe coding is getting weirdly ambitious 帖内附视频。收纳理由：成品效果演示。用户指定收纳（收藏）。",
+      "tool": "见原帖（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（X API 获取）；模型/工具为作者或转述者自述，未独立核实。封面为帖内视频缩略图。",
+      "attribution": "@hakimieiqbal（Hakimi Eiqbal）",
+      "sourceAuthor": "hakimieiqbal",
+      "modelClaim": "",
+      "modelEvidenceUrl": "https://x.com/hakimieiqbal/status/2093309442523562475",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI做游戏",
+        "成品演示"
+      ],
+      "publishedAt": "2026-08-28T12:07:17Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T01:00:00.000Z",
+      "updatedAt": "2026-10-30T01:00:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T01:00:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T01:00:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为帖内视频缩略图，本地文件。",
+        "video_check": "未下载播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-ai-games"
+      }
+    },
+    {
+      "title": "Sky Breaker 空战：单个agent包办建模、音效、资产管理，3天做成单网页游戏",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "is3d": true,
+      "source": "https://x.com/fourwo0od/status/2087794586567807383",
+      "sourceCodeUrl": "",
+      "demoUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-aigame-11.jpg",
+      "previewType": "image",
+      "description": "@fourwo0od（wood）发帖：✈️ Sky Breaker — an air combat game I built in 3 days.\n\nI use a single agent handled the whole pipeline — models, audio, asset generation & management. I just focused on the game. Pure vibe coding, tiny code, all in one web page.\n\n#opus5 @threejs @tripoai @CombosFun_AI https://t.co/bze2JDci74 帖内附视频。收纳理由：效果+工作流兼有。用户指定收纳（收藏）。",
+      "tool": "见原帖（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（X API 获取）；模型/工具为作者或转述者自述，未独立核实。封面为帖内视频缩略图。",
+      "attribution": "@fourwo0od（wood）",
+      "sourceAuthor": "fourwo0od",
+      "modelClaim": "",
+      "modelEvidenceUrl": "https://x.com/fourwo0od/status/2087794586567807383",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI做游戏",
+        "工作流"
+      ],
+      "publishedAt": "2026-08-13T06:53:13Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T01:00:00.000Z",
+      "updatedAt": "2026-10-30T01:00:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T01:00:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T01:00:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1146,
+          720
+        ],
+        "preview_check": "封面为帖内视频缩略图，本地文件。",
+        "video_check": "未下载播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-ai-games"
+      }
+    },
+    {
+      "title": "“带枪的足球”：Opus 5 发布周末做出的 Three.js 网页游戏，作者第一次真心玩上瘾",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "is3d": true,
+      "source": "https://x.com/opdgame/status/2090323808272195603",
+      "sourceCodeUrl": "",
+      "demoUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-aigame-12.jpg",
+      "previewType": "image",
+      "description": "@opdgame（Overwhelmingly Positive Dude）发帖：I built this @threejs web game (soccer with guns) the weekend Opus 5 launched. I've tried vibe coding games before, but this was the first one I actually enjoyed playing as a player.\n\nThis is also how I ended up with 6 Claude Max subscriptions... https://t.co/OVuug4Pnmp 帖内附视频。收纳理由：成品效果演示。用户指定收纳（收藏）。",
+      "tool": "见原帖（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（X API 获取）；模型/工具为作者或转述者自述，未独立核实。封面为帖内视频缩略图。",
+      "attribution": "@opdgame（Overwhelmingly Positive Dude）",
+      "sourceAuthor": "opdgame",
+      "modelClaim": "",
+      "modelEvidenceUrl": "https://x.com/opdgame/status/2090323808272195603",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI做游戏",
+        "成品演示"
+      ],
+      "publishedAt": "2026-08-20T06:23:26Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T01:00:00.000Z",
+      "updatedAt": "2026-10-30T01:00:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T01:00:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T01:00:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          598
+        ],
+        "preview_check": "封面为帖内视频缩略图，本地文件。",
+        "video_check": "未下载播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-ai-games"
+      }
+    },
+    {
+      "title": "Earth Online 第2天：AI agent 循环跑一夜，把一个街区扩成整个旧金山，仍60fps",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "is3d": true,
+      "source": "https://x.com/ziwenxu_/status/2084193421548253444",
+      "sourceCodeUrl": "",
+      "demoUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-aigame-13.jpg",
+      "previewType": "image",
+      "description": "@ziwenxu_（Ziwen）发帖：Yesterday this was one city block. Today it's all of SF and i didn't write a line of it.\n\nDay 2 of earth online. A loop of ai agents (/gauntlet-loop) built the rest overnight and it still runs at 60 fps.\n\nIt's rough up close. Every building is just a box.\n\nOut of tokens on cursor https://t.co/vkNjn7zqM2 https://t.co/tESBn6uKpd 帖内附视频。收纳理由：成品效果演示。用户指定收纳（收藏）。",
+      "tool": "见原帖（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（X API 获取）；模型/工具为作者或转述者自述，未独立核实。封面为帖内视频缩略图。",
+      "attribution": "@ziwenxu_（Ziwen）",
+      "sourceAuthor": "ziwenxu_",
+      "modelClaim": "",
+      "modelEvidenceUrl": "https://x.com/ziwenxu_/status/2084193421548253444",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI做游戏",
+        "成品演示"
+      ],
+      "publishedAt": "2026-08-03T08:23:28Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T01:00:00.000Z",
+      "updatedAt": "2026-10-30T01:00:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T01:00:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T01:00:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          547
+        ],
+        "preview_check": "封面为帖内视频缩略图，本地文件。",
+        "video_check": "未下载播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-ai-games"
+      }
+    },
+    {
+      "title": "vibe coding 世界为什么总显得空？一个开飞机小游戏引出的场景摆放难题",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "is3d": true,
+      "source": "https://x.com/givros/status/2086547319214739575",
+      "sourceCodeUrl": "",
+      "demoUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-aigame-14.jpg",
+      "previewType": "image",
+      "description": "@givros（Givros）发帖：How do you make a vibe-coded world feel truly alive instead of looking like a few assets randomly scattered across an empty map?\n\nI keep running into this problem. The AI can generate the terrain and each asset individually, but it struggles with placement, density and composition. A forest becomes ten isolated trees. A town becomes three buildings beside a road. The assets exist, but the environment never feels naturally constructed.\n\nIt made me think about last year, when I opened X and discovered the insane project @levelsio was building: a multiplayer flight game running entirely in the br… 帖内附视频。收纳理由：成品效果演示。用户指定收纳（收藏）。",
+      "tool": "见原帖（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（X API 获取）；模型/工具为作者或转述者自述，未独立核实。封面为帖内视频缩略图。",
+      "attribution": "@givros（Givros）",
+      "sourceAuthor": "givros",
+      "modelClaim": "",
+      "modelEvidenceUrl": "https://x.com/givros/status/2086547319214739575",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI做游戏",
+        "成品演示"
+      ],
+      "publishedAt": "2026-08-09T20:17:01Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T01:00:00.000Z",
+      "updatedAt": "2026-10-30T01:00:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T01:00:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T01:00:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为帖内视频缩略图，本地文件。",
+        "video_check": "未下载播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-ai-games"
+      }
+    },
+    {
+      "title": "Astra 用 Three.js 做卡坦岛：动画、教程、AI对手、交易系统齐全，还能复用旧游戏资产",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "is3d": true,
+      "source": "https://x.com/FinanceYF5/status/2098327890085687579",
+      "sourceCodeUrl": "",
+      "demoUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-aigame-15.jpg",
+      "previewType": "image",
+      "description": "@FinanceYF5（AI Will）发帖：wow!有人让Astra用three.js做了一款Catan游戏，完成度高得离谱。\n\n动画、教程、信息卡、AI玩家和交易系统全都有，实际玩起来也很顺。\n\n更有意思的是，Astra会复用之前游戏的UI、3D模型、页面和音效，不需要每次从零开始。\n\n游戏做得越多，下一款可复用的技能和资产就越多。 https://t.co/bxU0iU2n8F 帖内附视频。收纳理由：成品效果演示。用户指定收纳（收藏）。",
+      "tool": "见原帖（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（X API 获取）；模型/工具为作者或转述者自述，未独立核实。封面为帖内视频缩略图。",
+      "attribution": "@FinanceYF5（AI Will）",
+      "sourceAuthor": "FinanceYF5",
+      "modelClaim": "",
+      "modelEvidenceUrl": "https://x.com/FinanceYF5/status/2098327890085687579",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI做游戏",
+        "成品演示"
+      ],
+      "publishedAt": "2026-09-11T08:28:48Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T01:00:00.000Z",
+      "updatedAt": "2026-10-30T01:00:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T01:00:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T01:00:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          900
+        ],
+        "preview_check": "封面为帖内视频缩略图，本地文件。",
+        "video_check": "未下载播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-ai-games"
+      }
+    },
+    {
+      "title": "全战三国 × 骑马与砍杀：Codex + Unreal 一周做出融合小游戏，开发流程录成视频",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "is3d": true,
+      "source": "https://x.com/sven_ai/status/2111975723741397492",
+      "sourceCodeUrl": "",
+      "demoUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-aigame-16.jpg",
+      "previewType": "image",
+      "description": "@sven_ai（毅行出海）发帖：全战三国 + 骑马砍杀，这组合居然用 AI 做出来了！\n\n用 Codex + Unreal，花一周做了个融合两者经典玩法的小游戏，虽然还没完善，已经很勾人了。\n\n连开发流程都录成了视频，想用 AI 做游戏的可以收藏。 https://t.co/n2Itc29R2E 帖内附视频。收纳理由：效果+工作流兼有。用户指定收纳（收藏）。",
+      "tool": "见原帖（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（X API 获取）；模型/工具为作者或转述者自述，未独立核实。封面为帖内视频缩略图。",
+      "attribution": "@sven_ai（毅行出海）",
+      "sourceAuthor": "sven_ai",
+      "modelClaim": "",
+      "modelEvidenceUrl": "https://x.com/sven_ai/status/2111975723741397492",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI做游戏",
+        "工作流"
+      ],
+      "publishedAt": "2026-10-19T00:20:25Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T01:00:00.000Z",
+      "updatedAt": "2026-10-30T01:00:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T01:00:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T01:00:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为帖内视频缩略图，本地文件。",
+        "video_check": "未下载播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-ai-games"
+      }
+    },
+    {
+      "title": "一体化AI游戏引擎：接 Codex/Claude/Cursor/本地模型，内置3D世界、体素、精灵、音效",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "is3d": true,
+      "source": "https://x.com/oldgamesnob/status/2114333568738771099",
+      "sourceCodeUrl": "",
+      "demoUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-aigame-17.jpg",
+      "previewType": "image",
+      "description": "@oldgamesnob（DevDude）发帖：I Made an AI Game Engine, it's everything you need all in one place. Integrates with Codex, Claude, Cursor, Openrouter, Ollama (can run open source local AI) & so much more. Built in 3D world engine, voxel engine, 2D game sprite creation system, sound FX, audio. Can integrate https://t.co/ECpIalT0IO 帖内附视频。收纳理由：AI做游戏的工具/引擎。用户指定收纳（收藏）。",
+      "tool": "见原帖（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（X API 获取）；模型/工具为作者或转述者自述，未独立核实。封面为帖内视频缩略图。",
+      "attribution": "@oldgamesnob（DevDude）",
+      "sourceAuthor": "oldgamesnob",
+      "modelClaim": "",
+      "modelEvidenceUrl": "https://x.com/oldgamesnob/status/2114333568738771099",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI做游戏",
+        "工具"
+      ],
+      "publishedAt": "2026-10-25T12:29:39Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T01:00:00.000Z",
+      "updatedAt": "2026-10-30T01:00:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T01:00:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T01:00:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为帖内视频缩略图，本地文件。",
+        "video_check": "未下载播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-ai-games"
+      }
+    },
+    {
+      "title": "lattice：专为 Claude Code 等编码agent设计的开源等距游戏引擎，80KB零依赖",
+      "category": "code",
+      "styleFamily": "code_video",
+      "is3d": false,
+      "source": "https://x.com/RoundtableSpace/status/2091650439146275269",
+      "sourceCodeUrl": "",
+      "demoUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-aigame-18.jpg",
+      "previewType": "image",
+      "description": "@RoundtableSpace（0xMarioNawfal）发帖：A developer released lattice, an open-source isometric game engine and toolkit designed specifically for coding agents like claude code.\n\n→ built as a zero-dependency, 80kb typescript package that renders fully deterministic 2d canvas games\n→ removes external asset dependencies https://t.co/QK0SRE68X3 帖内附视频。收纳理由：AI做游戏的工具/引擎。用户指定收纳（收藏）。",
+      "tool": "见原帖（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（X API 获取）；模型/工具为作者或转述者自述，未独立核实。封面为帖内视频缩略图。",
+      "attribution": "@RoundtableSpace（0xMarioNawfal）",
+      "sourceAuthor": "RoundtableSpace",
+      "modelClaim": "",
+      "modelEvidenceUrl": "https://x.com/RoundtableSpace/status/2091650439146275269",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI做游戏",
+        "工具"
+      ],
+      "publishedAt": "2026-08-23T22:15:00Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T01:00:00.000Z",
+      "updatedAt": "2026-10-30T01:00:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T01:00:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T01:00:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为帖内视频缩略图，本地文件。",
+        "video_check": "未下载播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-ai-games"
+      }
+    },
+    {
+      "title": "致敬《老男孩》走廊群架：Blender建场景 + Godot + Mixamo 84个动作的PS1风格清版游戏",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "is3d": true,
+      "source": "https://x.com/davycrockettzoo/status/2102857064343126256",
+      "sourceCodeUrl": "",
+      "demoUrl": "https://www.jeenavanderheul.com/oldboy/",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-aigame-19.jpg",
+      "previewType": "image",
+      "description": "@davycrockettzoo（Jeenavanderheul）发帖：I vibe-coded a game inspired by the legendary hallway fight in Oldboy. Blender built the world. Godot runs the game. Mixamo + Unity supplied 84 animations. AAA? Absolutely not. More like a lost PS1 beat ’em up. 13-year-old me would play this till dawn\n\nhttps://t.co/LNa6lCcFrP. https://t.co/pvRyzTWSBz 外链：https://www.jeenavanderheul.com/oldboy/ 帖内附视频。收纳理由：效果+工作流兼有。用户指定收纳（收藏）。",
+      "tool": "见原帖（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（X API 获取）；模型/工具为作者或转述者自述，未独立核实。封面为帖内视频缩略图。",
+      "attribution": "@davycrockettzoo（Jeenavanderheul）",
+      "sourceAuthor": "davycrockettzoo",
+      "modelClaim": "",
+      "modelEvidenceUrl": "https://x.com/davycrockettzoo/status/2102857064343126256",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI做游戏",
+        "工作流"
+      ],
+      "publishedAt": "2026-09-23T20:26:07Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T01:00:00.000Z",
+      "updatedAt": "2026-10-30T01:00:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T01:00:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T01:00:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1138,
+          640
+        ],
+        "preview_check": "封面为帖内视频缩略图，本地文件。",
+        "video_check": "未下载播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-ai-games"
+      }
+    },
+    {
+      "title": "STARBATTLE：多个AI agent并行做代码/美术/音效/VFX，一人导演的原生C++太空战游戏",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "is3d": true,
+      "source": "https://x.com/TokenGremlin/status/2087802703195824587",
+      "sourceCodeUrl": "",
+      "demoUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-aigame-20.jpg",
+      "previewType": "image",
+      "description": "@TokenGremlin（Token Gremlin）发帖：This is probably the most interesting of these agentic game experiments.\n\nThe project is called STARBATTLE, and it is basically a small space combat game being built with multiple AI agents working in parallel while one human directs the whole thing.\n\nThe agents are handling the actual production work themselves, including code, art, SFX and VFX.\n\n🔹 native C++\n🔹 no Unreal\n🔹 no Unity\n🔹 no Three.js\n🔹 started about 4 weeks ago\n🔹 early access is already on the way\n\nSo instead of a one-shot demo, this is turning into an actual game project with persistent development, iteration and multiple systems… 帖内附视频。收纳理由：成品效果演示。用户指定收纳（收藏）。",
+      "tool": "见原帖（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（X API 获取）；模型/工具为作者或转述者自述，未独立核实。封面为帖内视频缩略图。",
+      "attribution": "@TokenGremlin（Token Gremlin）",
+      "sourceAuthor": "TokenGremlin",
+      "modelClaim": "",
+      "modelEvidenceUrl": "https://x.com/TokenGremlin/status/2087802703195824587",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI做游戏",
+        "成品演示"
+      ],
+      "publishedAt": "2026-08-13T07:25:28Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T01:00:00.000Z",
+      "updatedAt": "2026-10-30T01:00:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T01:00:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T01:00:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为帖内视频缩略图，本地文件。",
+        "video_check": "未下载播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-ai-games"
+      }
+    },
+    {
+      "title": "一堆 Astra/Opus 5.5 做的 Web3D 项目（游戏、室内、特效、文旅），工作流和prompt全公开",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "is3d": true,
+      "source": "https://x.com/KeWai386772/status/2103821018947276947",
+      "sourceCodeUrl": "",
+      "demoUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-aigame-21.jpg",
+      "previewType": "image",
+      "description": "@KeWai386772（MSB）发帖：最近用 GPT 6 Astra、Opus 5.5 做了一堆 web 3d 的项目，游戏、室内、Fx、文旅、整活的都有尝试hh\n\n我把这些项目的全部工作流与prompt都整合到了线上的workplace里，之后也会持续更新，感兴趣的朋友可以收藏一波hh https://t.co/lN21MVAEFR 帖内附视频。收纳理由：效果+工作流兼有。用户指定收纳（收藏）。",
+      "tool": "见原帖（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（X API 获取）；模型/工具为作者或转述者自述，未独立核实。封面为帖内视频缩略图。",
+      "attribution": "@KeWai386772（MSB）",
+      "sourceAuthor": "KeWai386772",
+      "modelClaim": "",
+      "modelEvidenceUrl": "https://x.com/KeWai386772/status/2103821018947276947",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI做游戏",
+        "工作流"
+      ],
+      "publishedAt": "2026-09-26T12:16:32Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T01:00:00.000Z",
+      "updatedAt": "2026-10-30T01:00:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T01:00:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T01:00:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          661
+        ],
+        "preview_check": "封面为帖内视频缩略图，本地文件。",
+        "video_check": "未下载播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-ai-games"
+      }
+    },
+    {
+      "title": "设计师零代码用AI自学做Steam游戏：免费上线两月10万+玩家（花叔推荐 @Nenlyonis）",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "is3d": true,
+      "source": "https://x.com/AlchainHust/status/2112757656557334800",
+      "sourceCodeUrl": "",
+      "demoUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-aigame-22.jpg",
+      "previewType": "image",
+      "description": "@AlchainHust（花叔）发帖：推荐一个X隐藏宝藏博主 @Nenlyonis \n零代码基础设计师出身，先靠AI教程在B站做到71万粉丝；今年又用AI从零自学、独立做了一款Steam游戏，免费上线两个月，10万+玩家，好评如潮。 https://t.co/wpYLV3L2CY https://t.co/3efMy9bFMv 帖内附视频。收纳理由：成品效果演示。用户指定收纳（收藏）。",
+      "tool": "见原帖（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（X API 获取）；模型/工具为作者或转述者自述，未独立核实。封面为帖内视频缩略图。",
+      "attribution": "@AlchainHust（花叔）",
+      "sourceAuthor": "AlchainHust",
+      "modelClaim": "",
+      "modelEvidenceUrl": "https://x.com/AlchainHust/status/2112757656557334800",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI做游戏",
+        "成品演示"
+      ],
+      "publishedAt": "2026-10-21T04:07:33Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T01:00:00.000Z",
+      "updatedAt": "2026-10-30T01:00:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T01:00:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T01:00:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为帖内视频缩略图，本地文件。",
+        "video_check": "未下载播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-ai-games"
+      }
+    },
+    {
+      "title": "在Minecraft里 vibe coding：游戏内跟 Claude 聊天，它写代码直接把房子盖出来",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "is3d": true,
+      "source": "https://x.com/luckeyfaraday/status/2100770777146568820",
+      "sourceCodeUrl": "",
+      "demoUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-aigame-23.jpg",
+      "previewType": "image",
+      "description": "@luckeyfaraday（Luckey Faraday）发帖：I built a house in Minecraft without placing a single block.\n\nI vibe-coded the entire thing with Claude, completely from inside Minecraft.\n\nI described the house I wanted, Claude wrote the code, ran it, and built the house. The chat, coding, execution and result all happened inside Minecraft.\n\nThis is the mod I’ve been working on: bringing the entire vibe-coding loop into the game itself.\n\nEventually I want to be able to build basically anything this way. 帖内附视频。收纳理由：成品效果演示。用户指定收纳（收藏）。",
+      "tool": "见原帖（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（X API 获取）；模型/工具为作者或转述者自述，未独立核实。封面为帖内视频缩略图。",
+      "attribution": "@luckeyfaraday（Luckey Faraday）",
+      "sourceAuthor": "luckeyfaraday",
+      "modelClaim": "",
+      "modelEvidenceUrl": "https://x.com/luckeyfaraday/status/2100770777146568820",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI做游戏",
+        "成品演示"
+      ],
+      "publishedAt": "2026-09-18T02:15:58Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T01:00:00.000Z",
+      "updatedAt": "2026-10-30T01:00:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T01:00:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T01:00:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为帖内视频缩略图，本地文件。",
+        "video_check": "未下载播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-ai-games"
+      }
+    },
+    {
+      "title": "本地 Qwen3.8-27B 在4090上 vibe code 出 Three.js 我的世界，还加了火箭炮和FPV无人机",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "is3d": true,
+      "source": "https://x.com/jurlycat/status/2094031116634395073",
+      "sourceCodeUrl": "",
+      "demoUrl": "",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030-aigame-24.jpg",
+      "previewType": "image",
+      "description": "@jurlycat（Jurly）发帖：A user built a Minecraft clone with Qwen3.8-27B running locally on an RTX 4090.\n\nThen they asked it to add:\n\n• An MLRS rocket launcher\n• A rideable skateboard with tricks\n• An FPV drone\n• An in-game computer running another game\n\nThe entire project was vibe coded in HTML, JavaScript, and Three.js.\n\nLocal 27B models are getting ridiculous. 帖内附视频。收纳理由：成品效果演示。用户指定收纳（收藏）。",
+      "tool": "见原帖（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "正文为原帖（X API 获取）；模型/工具为作者或转述者自述，未独立核实。封面为帖内视频缩略图。",
+      "attribution": "@jurlycat（Jurly）",
+      "sourceAuthor": "jurlycat",
+      "modelClaim": "",
+      "modelEvidenceUrl": "https://x.com/jurlycat/status/2094031116634395073",
+      "modelVerification": "author_reported",
+      "tags": [
+        "用户指定收纳",
+        "收藏",
+        "AI做游戏",
+        "成品演示"
+      ],
+      "publishedAt": "2026-08-30T11:54:58Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T01:00:00.000Z",
+      "updatedAt": "2026-10-30T01:00:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": true,
+        "notInterested": false,
+        "updatedAt": "2026-10-30T01:00:00.000Z"
+      },
+      "verification": {
+        "checked_at": "2026-10-30T01:00:00.000Z",
+        "visually_checked": false,
+        "preview_dimensions": [
+          1200,
+          675
+        ],
+        "preview_check": "封面为帖内视频缩略图，本地文件。",
+        "video_check": "未下载播放视频。"
+      },
+      "curation": {
+        "baseScore": null,
+        "multiplier": null,
+        "finalScore": null,
+        "threshold": 70,
+        "run": "user-specified-2026-10-30-ai-games"
+      }
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条",
-  "updatedAt": "2026-10-29T12:47:48.000Z",
-  "totalItems": 451,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。",
+  "updatedAt": "2026-10-30T08:53:14.000Z",
+  "totalItems": 483,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
