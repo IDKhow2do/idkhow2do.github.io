@@ -1,7 +1,156 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-29T12:47:48.000Z",
+  "updatedAt": "2026-10-30T04:50:00.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2610.36114",
+      "title": "上下文窗口只用了 5.75%，为什么 AI 智能体还是有三分之一的工具结果「没看到」？Brock 大学与渥太华大学追踪真实智能体：信息不是丢在窗口里，而是丢在窗口之前那条「管道」上",
+      "category": "AI",
+      "source": "arXiv:2610.36114「Context Is a Pipeline, Not a Window: Information Attrition in LLM Agent Harnesses」（2026-10-26 提交；Yuvraj Sehgal、Mahsa Panahandeh、Naser Ezzati-Jivan）；本窗口经 X @randhir302（2026-10-30 03:01 UTC）线程转述冒出，此前各轮未收",
+      "publishedAt": "2026-10-26",
+      "eventAt": "2026-10-26",
+      "collectedAt": "2026-10-30T04:50:00.000Z",
+      "updatedAt": "2026-10-30T04:50:00.000Z",
+      "description": "一手来源：arXiv 论文摘要。问题：大家评价智能体只看两个数——上下文窗口多大、最终答对多少，却漏了第三个：工具输出在送到模型之前丢了多少。实验：一个读 Linux 内核追踪日志、找注入故障根因的真实智能体，720 次运行里最大的一次提示也只用了窗口的 5.75%；可 11,189 个工具结果里有 3,827 个（约三分之一）在送达模型前被截断，而且每个被截的都成了残缺 JSON。原因：智能体框架（harness）按固定长度把 JSON 文本「一刀切」——JSON 字段顺序固定，前缀截断永远删掉排在最后的字段。结果同一批结果里，一个字段 99.3% 的调用都能送到，另一个只有 4.7%；而故障证据在哪个字段，取决于出故障的进程是早启动还是晚启动，智能体的诊断准确率也恰好按这条线裂开。一条真实 33,370 字符的追踪，128 条罪魁记录 0 条送达。受控实验：当智能体有第二条路能找到答案时，它仍答对，但付出「补偿税」——工具调用多 43%、计算量翻倍、产出率从 0.61 降到 0.31。调查 7 个智能体框架，有 2 个也按位置截断输出（据 X 线程：langchain-core 只留前 500 字符、smolagents 删掉超过 2 万字符观察的中段）。对你：①反直觉钩子「窗口空着，AI 却瞎了一半」；②和上轮「记忆税」能连成「AI 的健忘不在脑子里，在传话的路上」系列；③你做半导体日志/良率分析时同样会遇到「截断把关键行切掉」，可以现身说法。开场：0 秒上一个几乎全空的进度条（400k 窗口只用了 23k），旁边一把剪刀咔嚓剪掉 JSON 的尾巴。",
+      "caveat": "预印本，未经同行评审；只有 1 个框架、1 个领域（内核追踪根因分析）、1 个模型，作者明确说「数据截断是否真的导致准确率下降」仍是开放问题，目前只是相关。框架名单（langchain-core、smolagents）与具体截断方式来自 X 线程转述，摘要里只说「7 个框架中 2 个」。封面为 X @randhir302 根据论文制作的手绘信息图（非论文原图），数字已与摘要核对一致。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261030b-context-pipeline.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030b-context-pipeline.jpg",
+      "imageAlt": "手绘风信息图：Context is a pipeline, not a window——400k 窗口只用 5.75%，3,827/11,189 工具结果被截断，五阶段上下文管道，前缀截断删掉 late_list，补偿税柱状图",
+      "tags": [
+        "智能体",
+        "AI推理",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 19,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 91.9,
+        "threshold": 65,
+        "run": "2026-10-30-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35694",
+      "title": "对 AI 说「你错了」，为什么它几乎从不改？论文把追问的「语气」和里面的「答案」拆开测：只质疑、重问几乎不纠错，直接给出正确答案的纠错数至少是前者的 4 倍",
+      "category": "AI",
+      "source": "arXiv:2610.35694「Not One Belief: Answer Payloads, Persistence, and Dissociated Confidence Signals in Conversational Question Answering」（2026-10-26 提交，CC BY 4.0；作者 Duc-Vinh Tran）；本窗口经 X @vintcessun（2026-10-30 01:43 UTC）中文转述冒出，此前各轮未收",
+      "publishedAt": "2026-10-26",
+      "eventAt": "2026-10-26",
+      "collectedAt": "2026-10-30T04:50:00.000Z",
+      "updatedAt": "2026-10-30T04:50:00.000Z",
+      "description": "一手来源：arXiv 论文摘要与表格。做法：把用户的每句追问拆成两部分——「言语行为」（重问、同意、质疑）和「携带的内容」（一个答案字符串，可能对也可能错），同时测四种置信信号：模型口头说的置信度、按长度归一化的似然、冻结隐藏状态探针、P(True)。结论：只有当用户给出一个答案字符串时模型才会改答案，光靠语气（重问、质疑）几乎不改；在所有保留的完整设定里，给出正确答案能把错答改对的数量，至少是重问或附和的 4 倍。在 Qwen2.5-7B 上，81 个「重问一次仍坚持错」的错误，重问、新开对话、让它弃答几乎都修不好，而给出标准答案能修好 75–95%；两次预注册复现里，不带答案的修复率都低于 0.15。检索证据也一样：BM25 检出的 TriviaQA 证据里，含答案的句子能修好 67–76% 的顽固错误，不含答案的最多 12%。更有意思的是四种置信信号互相打架：Qwen2.5-7B 的隐藏状态探针跟踪的是「它是否坚持原答案」，而不是「答案对不对」（Llama-3-8B 支持，另外 4 个模型不成立）。对你：①生活化钩子——几乎每个人都对 AI 说过「你错了」；②可拍成实验：同一道题，分别说「你错了」「再想想」「答案是 X」，录屏对比；③引申到「AI 的自信 ≠ 正确」。开场：0 秒对话框里打出「你错了」，AI 回「抱歉，我再确认一下……」然后给出同一个错答案。",
+      "caveat": "预印本，单一作者，未经同行评审；结论限于英语短答案问答（TriviaQA 等），作者和转述都提示不能直接外推到长推理或自然对话；探针结论只在部分模型上成立。实验用的是 Qwen2.5-7B、Llama-3-8B 等较小模型，不代表最新大模型的表现。封面为论文表 2（Qwen2.5-7B 在 TriviaQA 上不同追问方式的 I→C/C→I 计数）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261030b-not-one-belief.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030b-not-one-belief.jpg",
+      "imageAlt": "论文表 2：persist、confirm、challenge_empty、gold_plain、correct 等追问方式下错改对（I→C）与对改错（C→I）计数，correct 为 65、challenge_empty 只有 12",
+      "tags": [
+        "AI安全",
+        "AI推理",
+        "数字生活"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 8,
+          "来源": 14,
+          "时效": 10,
+          "大陆": 7,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 86.6,
+        "threshold": 65,
+        "run": "2026-10-30-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.37375",
+      "title": "让大模型把同一道题做 4 遍，为什么常常只是同一种解法换 4 种说法？ACR 不改模型、不加角色提示，只给 MoE 每条推理路径「锁住」一部分专家，就让同一个冻结模型想出约 2 倍的不同解法",
+      "category": "AI",
+      "source": "arXiv:2610.37375「Agent-Conditioned Routing: Diverse Reasoning Paths Within One Frozen Model」（2026-10-27 提交；Ananth Kalyanasundaram、Ankush Kadu、Athira Gopal、Aswanth Krishnan）；本窗口经 X @CharryLee426（2026-10-30 04:15 UTC）转述冒出",
+      "publishedAt": "2026-10-27",
+      "eventAt": "2026-10-27",
+      "collectedAt": "2026-10-30T04:50:00.000Z",
+      "updatedAt": "2026-10-30T04:50:00.000Z",
+      "description": "一手来源：arXiv 论文摘要与图 1。问题：多次采样本想拿到不同解法，结果多条轨迹常常只是把一种主流方法换个说法。做法：在稀疏混合专家（MoE）模型 Qwen3.6-35B-A3B 里，给 4 条并行轨迹各分配一个固定、无需训练的「专家可用掩码」（共享专家池 + 每条轨迹私有的专家子集），模型自己学到的 token 路由器照常工作，只是在各自允许的专家里挑——没有角色提示、没有微调、没有模型副本，解码温度设为 0。结果：在筛选出的 126 道多解法数学/物理题上，按裁判模型通读完整推导计数「4 条轨迹里至少出现 2 种不同正确方法」的题目数，ACR 37.3 题，最强的调温度方案 18.7 题（GLM 5.3 裁判，约 2 倍）；换 GPT-5.6 Sol 裁判为 45 对 27（1.67 倍），输出预算相同。额外状态只有约 160 KiB 掩码。对你：①MoE「专家」是个好画面——同一个大脑里 128 个小专家，每次只叫醒几个；②「温度调高≠更有创意」的反直觉点；③可以拿图 1 的积分题（∫ln(1+x)dx 用分部积分/换元/级数展开三种方法都得 2ln2−1）做开场。",
+      "caveat": "预印本；结果由模型裁判判定「方法是否不同」，盲审 30 题的人工审计发现 ACR 正确率更低（尤其在较弱底座上）；论文也承认「把之前的解法给模型看、明确要求换方法」的顺序提示能带来更多样性。题库为作者筛选。偏技术，讲清 MoE 需要一定铺垫。封面为论文图 1（ACR 架构示意）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261030b-acr-moe.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030b-acr-moe.jpg",
+      "imageAlt": "论文图 1：同一提示的四份副本共享一个冻结的 Qwen3.6-35B-A3B MoE，每条轨迹有私有专家子集，分别得到分部积分、换元、幂级数等不同方法，答案都是 2ln2−1",
+      "tags": [
+        "AI推理",
+        "大模型",
+        "MoE"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 74,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 13,
+          "画面": 8,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 78.2,
+        "threshold": 65,
+        "run": "2026-10-30-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.34073",
+      "title": "给 AI 智能体装上「记忆」，为什么很多时候反而不如直接翻聊天记录？UIUC 等团队对比 11 种智能体记忆系统：大量情况下输给最朴素的 RAG，论文把这部分损失叫「记忆税」",
+      "category": "AI",
+      "source": "arXiv:2610.34073「Memory Tax: Dissecting the Net Value of Agent Memory」（2026-10-25 提交，CC BY 4.0；作者 Xuan He 等 11 人，单位含伊利诺伊大学香槟分校、清华大学、中国人民大学，含 Jiawei Han、ChengXiang Zhai）及项目页 hexuan21.github.io/MemoryTax；本窗口经 X @arkyyang（2026-10-29 13:37 UTC）等转述冒出，此前各轮未收",
+      "publishedAt": "2026-10-25",
+      "eventAt": "2026-10-25",
+      "collectedAt": "2026-10-30T00:50:25.000Z",
+      "updatedAt": "2026-10-30T00:50:25.000Z",
+      "description": "一手来源：arXiv 论文摘要与 HTML 全文。问题：长程智能体越来越多地给自己建「记忆」——把过去的对话改写成笔记、摘要或知识图谱，下次再查。可是这比直接保留原始聊天记录、用时现搜（朴素 RAG）到底好多少？论文在多个基准（LongMemEval-s、PersonaMem-v2、MINT-Eval 等）和多个模型底座（Qwen3.5-4B、Qwen3.6-27B、GPT-5.6-luna）上大规模对比了 A-Mem、SimpleMem、MemOS、MemoryOS、LightMem、OpenViking、HippoRAG2、PlugMem、MAGMA、Mem-T、Memory-R2 等 11 种记忆系统，结论是「很多专门的记忆系统在很多情况下不如朴素 RAG，净价值为负」。例：LongMemEval-s + Qwen3.6-27B 下，两轮 RAG 得分 81.4，A-Mem 79.4，OpenViking 只有 58.8。原因：把原始记录「改写」成记忆时，有的事实被删掉或被模糊——论文抽样追踪事实，OpenViking 只有 39.4% 完整保留、38.0% 根本没有对应的记忆条目，SimpleMem 有 27.6% 部分丢失。作者把记忆带来的收益叫「记忆红利」、丢掉的叫「记忆税」，并建议保留原始记录作兜底。对你：①反直觉钩子——「越会做笔记的 AI 越健忘」；②你天天用 Claude，它的记忆/上下文压缩就是同一类问题，可以现身说法；③首帧可直接用论文的精度-成本气泡图（封面），或自己做「原始聊天记录 vs 改写成便签」被撕掉几句话的动画。开场：0 秒上两张纸——一叠原始聊天记录、一张精炼笔记，字幕「哪个记得更准？」",
+      "caveat": "预印本，未经同行评审；结果依赖所选基准、模型和检索预算（论文用「Retrieval Scope」对齐预算），并非所有记忆系统在所有设定下都输（如部分设定下 MemOS 略高于 RAG）；评分由 LLM 裁判给出。X 上流传的「99 个结果里 90 个更低」等说法未在本轮核对到原文，未采用。封面为论文图 1（LongMemEval-s + Qwen3.6-27B 精度-成本帕累托图）。论文 10-25 发布，本窗口内首次被转述冒出、此前未收录，按 ≤7 天时效计。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261030a-memory-tax.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030a-memory-tax.jpg",
+      "imageAlt": "论文图 1：LongMemEval-s 上各记忆系统与 RAG 的精度-令牌成本帕累托气泡图，RAG（2rd）位于左上角高精度低成本处，OpenViking 在下方",
+      "tags": [
+        "智能体",
+        "AI成本",
+        "AI推理",
+        "KV缓存"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 7,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 89.8,
+        "threshold": 65,
+        "run": "2026-10-30-0840-shanghai"
+      }
+    },
     {
       "url": "https://www.anthropic.com/research/agents-judgment-calls",
       "title": "专家用 AI 智能体做分析，为什么 86% 的关键选择其实是 AI「掷硬币」定的？Anthropic 随机对照实验：分析师跟着智能体被秘密设定的倾向走，事后 77% 复述了 AI 的论据，只有 15% 承认受了它影响",

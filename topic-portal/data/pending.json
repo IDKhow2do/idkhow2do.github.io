@@ -2,6 +2,176 @@
   "schemaVersion": 1,
   "items": [
     {
+      "kind": "visual",
+      "baseScore": 77,
+      "multiplier": 1.1726,
+      "score": 90.3,
+      "reason": "分数达上墙线但库内已收 @__rockbiter 同题「three.js 无贴图人眼、虹膜随视角错位」（本作明确受其启发），同事件同角度，按规则不上墙",
+      "run": "2026-10-30-1240-shanghai",
+      "record": {
+        "title": "一个球、一个着色器、零贴图，为什么绕着眼睛转时虹膜会「错位」？vidar 把角膜折射单独拎出来开关对比：每 0.4 秒关掉一次折射，虹膜立刻跳回眼球表面",
+        "category": "motion",
+        "styleFamily": "code_video",
+        "source": "https://x.com/vidar_0208/status/2115972228823109941",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030b-procedural-eye.jpg",
+        "previewType": "image",
+        "description": "作者 @vidar_0208 原帖（2026-10-30 01:01 UTC）：把虹膜画在眼球表面，相机一动就显得假；真眼的虹膜在透明弧形角膜后几毫米，角膜就是透镜，所以虹膜会随视角移位、放大，这种视差是眼睛显得「活」的关键。实现：three.js，160×120 球体 + 单个 ShaderMaterial，无图片贴图、无模型文件。分层：巩膜（暖白 + wrap 光照 + fbm 噪声阈值出细红血丝）；虹膜（极坐标噪声，绕一圈 38 个周期的纤维、第二层噪声做隐窝、瞳孔边琥珀色领圈）；角膜缘暗环（虹膜外 20%）；角膜（在角膜缘内用 GLSL refract()、折射率 1.376 折射视线，再与 z=0.80 的平面虹膜求交，在交点着色）；湿润高光（程序化柔光箱反射 + Schlick 菲涅耳，HDR 进泛光）；瞳孔半径为 uniform，片尾收缩/放大。调参：瞳孔 0.24 看着像吃了药，最后定 0.15（范围 0.08–0.18）。作者自认简化：真实虹膜略呈锥形，无焦散、无角膜投影、无眼睑睫毛。线程第二条注明受 @__rockbiter 的 three.js 数学人眼启发、未复用其代码，相关开源 lighttransport/procedural-eyeball-shader（MIT）。封面为视频截帧，已目视核验。",
+        "tool": "three.js ShaderMaterial（GLSL refract + 菲涅耳）（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者原帖给出完整分层与参数；注明受 @__rockbiter 启发、自写简化着色器；未公开源码。",
+        "attribution": "@vidar_0208",
+        "sourceAuthor": "vidar_0208",
+        "tags": [
+          "着色器",
+          "折射",
+          "Three.js",
+          "光学",
+          "程序化生成"
+        ],
+        "publishedAt": "2026-10-30T01:01:06.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-30T04:50:00.000Z",
+        "updatedAt": "2026-10-30T04:50:00.000Z",
+        "verification": {
+          "checked_at": "2026-10-30T04:50:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 77,
+          "baseBreakdown": {
+            "实体": 19,
+            "科普": 18,
+            "溯源": 15,
+            "复现": 13,
+            "风格": 10,
+            "新颖": 2
+          },
+          "multiplier": 1.1726,
+          "finalScore": 90.3,
+          "threshold": 65,
+          "run": "2026-10-30-1240-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/ext_tw_video/2115972217338990592/pu/vid/avc1/1280x720/K1W6hyCZukNIhdi4.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "news",
+      "baseScore": 60,
+      "multiplier": 1.0566,
+      "score": 63.4,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-30-0840-shanghai",
+      "record": {
+        "url": "https://openai.com/index/updated-model-spec",
+        "title": "OpenAI 为什么要删掉大部分「说话风格」规定，还把规则手册里的「助手」改叫「GPT」？新版 Model Spec 把模型行为准则收拢成五个价值：忠于人类意图、减少伤害、诚实透明、人的自主、关怀",
+        "category": "AI",
+        "source": "OpenAI 官方博客「An updated Model Spec for more capable and beneficial AI」（2026-10-29）",
+        "publishedAt": "2026-10-29",
+        "eventAt": "2026-10-29",
+        "collectedAt": "2026-10-30T00:50:25.000Z",
+        "updatedAt": "2026-10-30T00:50:25.000Z",
+        "description": "一手来源：OpenAI 官方博客。要点：Model Spec 是 OpenAI 公开的「希望模型如何表现」的说明书。此次改版把指导原则围绕五个价值重新组织：忠于人类意图（faithfulness to human intent）、减少伤害、诚实与透明、促进人的自主（human agency）、关怀（care）。新增「谨慎考虑上下文」小节（对话、记忆等上下文如何用来理解人的意图），新增支持人的自主、遵循社会规范的默认行为，扩充对「副作用」的控制与沟通；同时退役了大部分细致的风格指导——风格应随用户偏好调整，但仍保留「客观回答问题」等较强默认：模型不应仅凭推测「对方想听什么」就改变立场。规范里把模型的称呼从「the assistant」改为「GPT」。官方也承认「我们的模型尚未完全体现这份规范」。可拍角度：「AI 该听你的字面指令，还是你真正的意图？」用找工作对比的官方例子做情景演示。",
+        "caveat": "这是一份政策/规范文档，没有实验数据或可视化演示，首帧画面只能自制；规范描述的是目标行为，官方明确说模型尚未完全做到。封面为官方 og:image（文字海报）。",
+        "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261030a-openai-model-spec.jpg",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030a-openai-model-spec.jpg",
+        "imageAlt": "OpenAI 官方配图：橙蓝渐变背景上写着「An updated Model Spec for more capable and beneficial AI」",
+        "tags": [
+          "AI安全",
+          "智能体"
+        ],
+        "tagSource": "provided",
+        "curation": {
+          "baseScore": 60,
+          "baseBreakdown": {
+            "主线": 18,
+            "钩子": 9,
+            "画面": 0,
+            "来源": 15,
+            "时效": 10,
+            "大陆": 3,
+            "新颖": 5
+          },
+          "multiplier": 1.0566,
+          "finalScore": 63.4,
+          "threshold": 65,
+          "run": "2026-10-30-0840-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 57,
+      "multiplier": 1.025,
+      "score": 58.4,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-30-0840-shanghai",
+      "record": {
+        "title": "这条视频没有一帧是拍的：6000 个光点全由公式算出位置——斐波那契球面、DNA 双螺旋、旋转星系、洛伦兹「蝴蝶」，连配乐也是代码合成、和画面共用一个时钟（Claude 写的 267 行代码）",
+        "category": "video",
+        "styleFamily": "code_video",
+        "source": "https://x.com/noname_nonce/status/2115800360925479343",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030a-code-particles.jpg",
+        "previewType": "image",
+        "description": "作者 @noname_nonce 原帖（2026-10-29 13:38 UTC）：视频没有拍摄、没用视频生成模型；6000 个光点的位置都由公式算出：斐波那契球面、DNA 双螺旋、旋转星系、洛伦兹「蝴蝶」等；配乐也由代码合成，画面和鼓点用同一个时钟；画面、配乐加渲染器共 267 行代码，逐帧算了 1215 帧，代码由 Claude 编写；同帖发了 4K 和 1080p 两个版本。截帧可见每段都在左下角显示对应公式（如洛伦兹方程组 dx/dt=σ(y−x) 等），并配中文字幕「蝴蝶效应里的那只蝴蝶 · 洛伦兹吸引子 · 1963」。对你：竖屏、带公式字幕的数学之美短片，形式接近你的科普号；洛伦兹吸引子也可接你的「涌现」选题。封面为视频截帧（洛伦兹吸引子段），已目视核验。",
+        "tool": "Claude（写代码），自写渲染器 + 代码合成音频（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者原帖；未公开代码与提示词。",
+        "attribution": "@noname_nonce",
+        "sourceAuthor": "noname_nonce",
+        "tags": [
+          "粒子",
+          "数学可视化",
+          "代码视频",
+          "洛伦兹吸引子",
+          "Claude"
+        ],
+        "publishedAt": "2026-10-29T13:38:10.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-30T00:50:25.000Z",
+        "updatedAt": "2026-10-30T00:50:25.000Z",
+        "verification": {
+          "checked_at": "2026-10-30T00:50:25.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 57,
+          "baseBreakdown": {
+            "实体": 10,
+            "科普": 16,
+            "溯源": 10,
+            "复现": 5,
+            "风格": 10,
+            "新颖": 6
+          },
+          "multiplier": 1.025,
+          "finalScore": 58.4,
+          "threshold": 65,
+          "run": "2026-10-30-0840-shanghai"
+        },
+        "is3d": false,
+        "videoUrl": "https://video.twimg.com/amplify_video/2115799736280399872/vid/avc1/1080x1920/436-0E1vN9LCCe0_.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
       "kind": "news",
       "baseScore": 82,
       "multiplier": 1.0566,
@@ -4580,6 +4750,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-29T12:47:48.000Z",
+  "updatedAt": "2026-10-30T04:50:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
