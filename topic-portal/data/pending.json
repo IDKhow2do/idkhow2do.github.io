@@ -2,6 +2,113 @@
   "schemaVersion": 1,
   "items": [
     {
+      "kind": "news",
+      "baseScore": 70,
+      "multiplier": 1.0566,
+      "score": 74.0,
+      "reason": "分数达上墙线但库内已有多条「AI 智能体自主做实验/科研」条目（同角度），且结论限于两块器件盲测",
+      "run": "2026-10-30-1640-shanghai",
+      "record": {
+        "url": "https://arxiv.org/abs/2610.39074",
+        "title": "让 AI 智能体自己开低温测量台测量子器件，结论靠得住吗？斯坦福/SLAC 的 HERA 盲测：两块多层石墨烯器件的堆叠顺序都与专家密封结论一致",
+        "category": "AI",
+        "source": "arXiv:2610.39074「HERA: Assessing an Autonomous Agent for Quantum Device Measurement」（2026-10-29 提交，CC BY 4.0；Stanford University、SLAC National Accelerator Laboratory 等）",
+        "publishedAt": "2026-10-29",
+        "eventAt": "2026-10-29",
+        "collectedAt": "2026-10-30T08:57:26.000Z",
+        "updatedAt": "2026-10-30T08:57:26.000Z",
+        "description": "一手来源：arXiv 论文摘要。HERA 是一个做量子器件低温输运测量的自主智能体，依赖实验室成员整理的知识库（测量流程、软件工具、文献）。评估：与专家做盲测，判断两块多层石墨烯器件的堆叠顺序，HERA 的结论与专家事先密封的结论都一致；知识库消融和数百次离线回放显示，有知识库时每个模型都设计出更好的测量、推理更合理。迁移：换到另一个材料体系去寻找并表征超导，专家花了几个小时写新实验流程后，HERA 自主完成。对你：可接「AI 进实验室」系列，但库内同类已多。",
+        "caveat": "预印本未经同行评审；盲测只有 2 块器件；迁移任务仍需专家先花数小时写流程。封面为论文图 2（测量会话时间线、量子振荡曲线、朗道扇图与 FFT 堆叠判别 ABC/ABA），CC BY 4.0。",
+        "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261030c-hera-trial.jpg",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030c-hera-trial.jpg",
+        "imageAlt": "HERA 论文图2：智能体测量会话时间线、ΔR 振荡、R3T 朗道扇图与 FFT 对 ABC/ABA 堆叠的判别",
+        "tags": [
+          "智能体",
+          "AI科研",
+          "量子器件"
+        ],
+        "tagSource": "provided",
+        "curation": {
+          "baseScore": 70,
+          "baseBreakdown": {
+            "主线": 18,
+            "钩子": 11,
+            "画面": 9,
+            "来源": 15,
+            "时效": 10,
+            "大陆": 4,
+            "新颖": 3
+          },
+          "multiplier": 1.0566,
+          "finalScore": 74.0,
+          "threshold": 65,
+          "run": "2026-10-30-1640-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 59,
+      "multiplier": 1.0,
+      "score": 59.0,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-30-1640-shanghai",
+      "record": {
+        "title": "一座江南水乡在浏览器里实时画出来：Willow Ferry 用 Claude 接 Tripo API 搭场景，WebGPU 每帧约 500 万三角形、6 个场景 × 5 种光照天气",
+        "category": "3d",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/EthanWalkenmov/status/2116067020370595944",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030c-willow-ferry.jpg",
+        "previewType": "image",
+        "description": "@EthanWalkenmov 原帖（2026-10-30 07:17 UTC，15 秒视频）：一座有 6 个地点、5 种光照与天气的水乡小镇，在浏览器标签页里用 WebGPU 以每帧约 500 万三角形运行；工作流是把 Tripo API 接进 Claude 后搭建。线上可玩：willow-ferry.vercel.app（页面描述：白墙黛瓦、灯笼垂柳，「全部用代码构建、在浏览器里实时绘制」）。视频中有「按住 T 灯笼亮起」、f/2.8 景深等交互提示。对你：中式场景 + Tripo 工作流，可作「Claude 写场景代码 + Tripo 出模型」的参考。",
+        "tool": "Claude + Tripo API + WebGPU（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者原帖与线上 demo；未公开源码与提示词。",
+        "attribution": "@EthanWalkenmov",
+        "sourceAuthor": "EthanWalkenmov",
+        "tags": [
+          "WebGPU",
+          "Tripo",
+          "水乡场景"
+        ],
+        "publishedAt": "2026-10-30T07:17:46.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-30T08:57:26.000Z",
+        "updatedAt": "2026-10-30T08:57:26.000Z",
+        "verification": {
+          "checked_at": "2026-10-30T08:57:26.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 59,
+          "baseBreakdown": {
+            "实体": 15,
+            "科普": 8,
+            "溯源": 12,
+            "复现": 7,
+            "风格": 9,
+            "新颖": 8
+          },
+          "multiplier": 1.0,
+          "finalScore": 59.0,
+          "threshold": 65,
+          "run": "2026-10-30-1640-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2116066736260976640/vid/avc1/1920x1080/VQMW9ZZHeQGGmLCy.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "demoUrl": "https://willow-ferry.vercel.app"
+      }
+    },
+    {
       "kind": "visual",
       "baseScore": 77,
       "multiplier": 1.1726,
@@ -4750,6 +4857,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-30T04:50:00.000Z",
+  "updatedAt": "2026-10-30T08:57:26.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
