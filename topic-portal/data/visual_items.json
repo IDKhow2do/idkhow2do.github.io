@@ -1,8 +1,293 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 487,
+  "exportedCount": 492,
   "items": [
+    {
+      "title": "一瓶会晃的液体，为什么全靠着色器算出来？@_pwd_ 用 WebGPU + three.js TSL 重做「Suspicious Vial」：鼠标一碰，玻璃变形起涟漪、里面的液体跟着晃——在线可玩，源码公开",
+      "category": "frontend",
+      "styleFamily": "code_video",
+      "source": "https://x.com/_pwd_/status/2116135360379916414",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030d-suspicious-vial.jpg",
+      "previewType": "image",
+      "description": "@_pwd_（dasprinzip.com）原帖（2026-10-30 11:49 UTC，55 秒录屏）：「Tinker Day #50」，把一年前一个纯 GLSL 着色器实验用 WebGPU 与 three.js 的 TSL（着色语言）重做。在线页面说明：按住拖动旋转，鼠标悬停在玻璃上会让它晃动、变形并产生涟漪；作者称玻璃、晃动形变和瓶内液体都做出来了。画面：街景背景前一个多面体玻璃瓶，里面是黄绿色液体，右侧是实时调参面板。源码在作者的 prinzipiell/tsl 学习仓库（suspicious-vial 目录，同仓库还有 silicon-jelly、splish-splash 等 15 个 TSL 小实验）。对你：①折射、液面晃动、表面涟漪三种物理现象同时出现在一个物件上，可做「为什么玻璃里的东西看起来会弯」的开场；②与库内已赞的虹彩玻璃、充气按钮同属「真实材质被做成可玩」；③TSL 是 three.js 新一代写法，可作 Claude 复现的参考实现。封面为视频 60% 处截帧。",
+      "tool": "three.js + TSL + WebGPU（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者原创，在线 demo 与源码均公开；仓库未声明开源许可证，引用请外链并署名，不宜直接复制代码。在线页面需支持 WebGPU 的浏览器。",
+      "attribution": "@_pwd_（dasprinzip）",
+      "sourceAuthor": "_pwd_",
+      "tags": [
+        "Three.js",
+        "玻璃",
+        "流体",
+        "WebGPU",
+        "TSL",
+        "物理动效"
+      ],
+      "publishedAt": "2026-10-30T11:49:20.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T12:57:00.000Z",
+      "updatedAt": "2026-10-30T12:57:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-30T12:57:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "实体": 23,
+          "科普": 15,
+          "溯源": 12,
+          "复现": 13,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.249,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-30-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2116134540334784512/vid/avc1/1728x1080/VBtLD-pVU1_pRg5Q.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/prinzipiell/tsl",
+      "demoUrl": "https://dasprinzip.com/tinker/day50/"
+    },
+    {
+      "title": "抖音上流行把芦荟胶抹在亚克力板上拍照，为什么照片会像隔着一层水波？有人用 Claude 把它做成网页：抹一下就算一次「厚度图」，再按坡度偏移、RGB 分开错位，模拟胶面折射和色散",
+      "category": "frontend",
+      "styleFamily": "code_video",
+      "source": "https://x.com/wangjing1056606/status/2116118491816133033",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030d-aloe-glass.jpg",
+      "previewType": "image",
+      "description": "@wangjing1056606 原帖（2026-10-30 10:42 UTC）：在抖音看到博主把芦荟胶涂在亚克力板上、隔着板拍照，于是用 Claude 做了一个类似效果的网页（页面标题「芦荟胶玻璃」），支持保留涂抹轨迹。作者给出的原理：①用户每次涂抹时，WebGL 笔刷沿鼠标轨迹往一张「厚度图」里叠加、推移、梳出条纹或抹平高度；②渲染时着色器对厚度图求梯度，得到胶面的倾斜方向，再沿这个方向偏移原照片的采样坐标——胶面越陡，图像错位、拉伸越厉害；③RGB 三个通道用略微不同的偏移量，产生色散彩边；④只在起伏处叠加高光和菲涅尔反光。封面是作者第二张图：粉色波斯菊隔着胶面呈现一圈圈水波状扭曲。对你：①生活里的小把戏→折射原理，正好是「从日常现象讲物理」；②原理四步讲得清楚，可让 Claude 照着复现；③话题源自抖音，大陆观众天然熟悉。",
+      "tool": "Claude + WebGL 着色器（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者原创并在帖中公开实现原理；未公开源码与提示词、未声明许可。体验地址为裸 IP 的 HTTPS 页面（证书未经校验），建议只外链。原帖第一张图为抖音参考画面，非作者作品，未用作封面。",
+      "attribution": "@wangjing1056606",
+      "sourceAuthor": "wangjing1056606",
+      "tags": [
+        "WebGL",
+        "折射",
+        "玻璃",
+        "着色器",
+        "网页交互",
+        "拟物设计"
+      ],
+      "publishedAt": "2026-10-30T10:42:18.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T12:57:00.000Z",
+      "updatedAt": "2026-10-30T12:57:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-30T12:57:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 75,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 17,
+          "溯源": 10,
+          "复现": 8,
+          "风格": 9,
+          "新颖": 9
+        },
+        "multiplier": 1.1845,
+        "finalScore": 88.8,
+        "threshold": 65,
+        "run": "2026-10-30-2040-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "demoUrl": "https://139.224.22.14/window-glue/"
+    },
+    {
+      "title": "一张水彩画里的海湾为什么能「呼吸」？@EianLu 公开整套提示词：底图只烤一次，之后每帧用片元着色器按三道涌浪去偏移采样，船按刚体分方向阻尼滑行，点水冒出海豹",
+      "category": "frontend",
+      "styleFamily": "code_video",
+      "source": "https://x.com/EianLu/status/2116105834120048652",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030d-watercolor-bay.jpg",
+      "previewType": "image",
+      "description": "@EianLu 原帖（2026-10-30 09:52 UTC，约 25 秒演示视频）：复刻 @lifeoflagan（Lagan Bansal）10-22「给水面加了皮划艇」、10-28「海豹出来玩了」的俯视水彩水景，并公开「水彩俯瞰水景·通用提示词」，作者建议用 Claude。交付：单个 HTML 互动网页（Canvas 2D + WebGL），可选 16:9 60fps 25 秒演示片。提示词要点：①风格：正俯视、无地平线，撕边颜料块四周留 30% 纸白；单一色相 8 级色带，浓度 = fbm 噪声 + 刷痕 + 深浅斑再过硬边；②「水要活」：底图和墨线启动时各烤一张，之后每帧用 WebGL 片元着色器按位移采样；三道不同方向正弦涌浪（波长约 340/230/150px）；用「到水边距离」贴图做拍岸进退；涟漪是高斯截面小水棱、按坡度推开颜料（折射）而不是画白线圈；所有位移乘水域遮罩，纸和岸不动；③动作：船是刚体，顺船身阻尼 e^-0.55t、横向 e^-4.2t，每一桨推一下；④交互：点水起涟漪，约 40% 冒出海豹、连续两次没冒第三次必冒；⑤声音全部 WebAudio 合成；⑥流程含样帧确认、每帧 ≤12ms、录制模式（虚拟时钟+固定随机种子）和逐像素差异自查；⑦列出常见坑与修法。封面为视频 60% 处截帧。对你：①「水为什么看起来在动」可以拆成涌浪、折射、阻尼三个物理概念；②提示词结构（风格→画法→物理→交互→声音→流程→坑）本身就是可复用的模板。",
+      "tool": "Claude / 编程智能体 + Canvas 2D + WebGL + WebAudio（作者自述）",
+      "prompt": "【水彩俯瞰水景 · 通用提示词】复制给 Claude / 任意编程 agent，只改第一段\n\n【填写】\n主题：礁石海湾（可换成锦鲤池、冰湖、运河）\n水的主色：蓝（只选一种色相）\n水面上：皮划艇（会漂、能被推动的东西）\n水下：海豹、水草、石头的影子\n冒头的：海豹\n交付：单个 HTML 互动网页（Canvas 2D + WebGL）；要视频就加一支 16:9 60fps 25 秒演示片，水印“@你的名字”\n\n【风格】\n正俯视的一片水，像随手画的水彩速写：\n1. 没有地平线和透视。水域是一块撕边的颜料，四周留 30% 以上的纸白（#f6f5f0）\n2. 颜料是“块”的：深水里有几像素一块的马赛克和砂粒，边缘是硬边，浅处有干笔留白\n3. 水面浮着手抖的短墨线（20–54px，深水区成团）；岸只占 5%，是绿色涂鸦灌木\n4. 两层分开：水下是软边灰蓝影子 rgba(66,80,114,.66)，水面上的东西画得更实，只有它们用饱和色（黄 #f2b51e、红 #ea4a1f）\n5. 不是矢量平涂，不是 3D，不是写实水面\n\n【画法】\n- 颜料只用一种色相、8 级色带（例：#f4f6fd→#b7c6f5→#5a76e3→#2236b4→#18228a），浓度 = fbm 噪声 + 横向刷痕 + 几团深浅斑，再过一道硬边 p=0.5p+0.5·smoothstep(.18,.78,p)\n- 马赛克：3px 细网格平滑放大，再叠 5px 粗网格关掉平滑，深水每块明暗抖 ±20%\n- 冒头的动物第一眼必须可爱：不描边、软边，两三个椭圆拼出头和浅色口鼻，圆黑眼带一颗湿高光，细胡须；冒头时带三圈涟漪和手画小气泡\n\n【水要活（最容易做不到位）】\n- 底图和墨线启动时各烤一张，之后每帧用 WebGL 片元着色器按位移去采样\n- 涌浪：三道不同方向的正弦（波长约 340/230/150px），位移 = 坡度×105（最多约 6px），明暗 = 坡度·光方向×2.5\n- 拍岸：做一张“到水边距离”贴图，水边窄带沿法线一进一退约 10px，再加 6px 顺边流动，水线泛一道断续的白湿边\n- 所有位移乘水域遮罩，纸和岸绝对不动\n- 涟漪：高斯截面的小水棱，坡度×30 推开底下的颜料（折射），向光面亮、背光面暗，加有断口的白浪尖。光固定在屏幕左上。绝不能画成白线圈\n- 点水：三圈，间隔 0.22s，半径 8+72t，1.7s 淡完\n- 船和冒头的动物跟着涌浪微微浮动\n\n【动作】\n- 全部都慢，整个画面像在呼吸\n- 船是刚体：顺着船身滑得远（阻尼 e^-0.55t），横向几乎推不动（e^-4.2t）；每一桨入水时推一下、船头偏一点，速度一涌一涌，不要匀速\n- 移动的东西每 0.5s 在原地留一圈椭圆水纹\n- 水下动物摆尾时快时慢，转向有惯性，偶尔猛冲\n- 冒头：0.9s 浮上（略过头再落回），张望 5–9s，0.8s 沉下。船靠到 60px 内它立刻沉下去，船永远不压过它\n- 什么都不出水域；船之间提前转向、互相推开\n\n【交互】\n- 点水面：涟漪 + 水滴声；约 40% 冒出一只海豹，连着两次没冒，第三次一定冒；同时最多 3 只\n- 点在冒头的动物旁边：它被吓得沉下去\n- 轻点船：像被轻轻推了一下，从点的一侧推开，点在船头船尾会转一点，起一小圈水纹 + 闷“咚”\n- 拖船：抓的那一点被软弹簧拉向手指，带惯性，拖不出水域；松手带着速度滑出去\n- 拖空白处：绕中心旋转整张画；滚轮/双指缩放 0.8–2.2 倍；右键或 Shift 拖平移；右上角有左转、右转 45°、复位、声音按钮\n- 转过、缩放以后点击必须仍然准；光照跟着屏幕，不跟纸转\n- 不操作时：船自己划、互相避让，每 9–15s 有一只自己冒头换气\n- 界面只有底部一行白色半透明提示 + 右上角图标按钮\n\n【声音】\n不用音乐和音频文件，全部 WebAudio 合成：低通噪声做一起一伏的水声底；同一件事永远同一个音效（点水“滴”、冒头水花+“咕”+气泡、桨叶水花、轻推“咚”）；左右声道跟着位置；第一次点击后才出声\n\n【流程】\n1. 先给我一页方案 + 画面上所有文字，等我定稿\n2. 出样帧：全景、船和水下影子特写、冒头动物 6 倍特写、涟漪特写，拼一张给我确认再往下做\n3. 做网页，在浏览器里实测每种操作，控制台零报错，3 只海豹加十几圈涟漪时一帧 ≤12ms\n4. 要视频的话：做录制模式（虚拟时钟 + 固定随机种子），假光标按脚本演示：点水 → 冒头 → 推船 → 拖船 → 转画面 → 放大 → 让海豹沉下 → 复位\n5. 自查：连续 6 帧算逐像素差异图，水里要有起伏和水边亮边，纸和岸必须完全不动\n\n【常见的坑】\n- 涟漪像白线圈 → 改成折射 + 明暗两面 + 断口\n- 纸跟着涌浪晃 → 位移乘水域遮罩\n- 水边死板 → 距离贴图做进退 + 顺边流动 + 白湿边\n- 动起来像匀速平移 → 刚体 + 分方向阻力 + 每桨一推\n- 海豹假、吓人 → 不描边、软边、湿高光眼，单独看大特写\n- 转过以后点不准 → 点击先用视角变换的逆换回世界坐标",
+      "promptProvenance": "original_public",
+      "provenanceNote": "提示词由 @EianLu 原帖完整公开；视觉风格复刻自 @lifeoflagan 的原作（x.com/lifeoflagan/status/2115469136520175977、2113295061001945354），非 EianLu 首创。未声明许可，引用请署名两位作者。",
+      "attribution": "@EianLu（提示词）；原作风格 @lifeoflagan",
+      "sourceAuthor": "EianLu",
+      "tags": [
+        "WebGL",
+        "水彩",
+        "着色器",
+        "网页交互",
+        "物理动效",
+        "提示词"
+      ],
+      "publishedAt": "2026-10-30T09:52:00.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T12:57:00.000Z",
+      "updatedAt": "2026-10-30T12:57:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-30T12:57:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 77,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 12,
+          "溯源": 15,
+          "复现": 15,
+          "风格": 9,
+          "新颖": 8
+        },
+        "multiplier": 1.1958,
+        "finalScore": 92.1,
+        "threshold": 65,
+        "run": "2026-10-30-2040-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://video.twimg.com/amplify_video/2116102245825859584/vid/avc1/1920x1080/BwpQZmgUych6NvEr.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "网页上两块区域的分界线，为什么不能只是一条线？Codrops 开源 11 种滚动过渡：墨水洇开、瓷砖崩落、毯子起毛、大理石纹、金缮裂缝、树根、沉积层、木刨花",
+      "category": "frontend",
+      "styleFamily": "uiux",
+      "source": "https://tympanus.net/Demos/SeamTransitions/",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030d-seam-transitions.jpg",
+      "previewType": "image",
+      "description": "Codrops 官方实验（GitHub 仓库 2026-10-29 建，@codrops 10-30 12:26 UTC 发布）：首屏大图与下方白色页面之间的那条「接缝」，随滚动用 11 种方式变化——墨水洇开、瓷砖崩落、毯子起毛、照片排成文字、等高线地图、大理石纹、雾气、金缮裂缝、树根、沉积层和木刨花。Demo 1 的说明：被砍光的山坡重新长出森林，雾中松林像墨水一样向下渗进白页，越往下滚露出越多森林。技术：GSAP 3.15（ScrollTrigger、ScrollSmoother、SplitText、Physics2DPlugin）+ WebGL + canvas，无构建步骤，静态服务器即可运行。灵感注明来自 Flabbergast 的 Mosaic（首屏底部碎成方块）和 Jesper Landberg 在 Codrops 的 Paper Shaders 撕纸边 demo。MIT 许可；照片为本 demo 生成。对你：①「转场＝材质」：每种接缝都对应一种真实材料的破坏/生长方式，可用作科普视频的章节转场；②Codrops 是库内被赞过的来源，代码可直接拿来改。封面为 demo 官方 og 图（Canopy：松林墨渗）。",
+      "tool": "GSAP 3.15 + WebGL + canvas（官方 README）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "Codrops 官方仓库，MIT 许可，README 注明灵感来源与素材来源（照片为生成图，诗句为公有领域）。",
+      "attribution": "Codrops",
+      "sourceAuthor": "codrops",
+      "tags": [
+        "WebGL",
+        "GSAP",
+        "滚动动效",
+        "网页交互",
+        "Codrops",
+        "材质过渡"
+      ],
+      "publishedAt": "2026-10-30T12:26:03.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T12:57:00.000Z",
+      "updatedAt": "2026-10-30T12:57:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-30T12:57:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 80,
+        "baseBreakdown": {
+          "实体": 17,
+          "科普": 11,
+          "溯源": 20,
+          "复现": 15,
+          "风格": 9,
+          "新颖": 8
+        },
+        "multiplier": 1.1958,
+        "finalScore": 95.7,
+        "threshold": 65,
+        "run": "2026-10-30-2040-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://video.twimg.com/ext_tw_video/2116144576100438016/pu/vid/avc1/1280x720/m1zL7j0rnlNVl8EQ.mp4?tag=12",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/codrops/SeamTransitions",
+      "licenseName": "MIT",
+      "licenseUrl": "https://github.com/codrops/SeamTransitions/blob/main/LICENSE"
+    },
+    {
+      "title": "宣传片拆完键盘的最后一帧，为什么能直接变成网页里能敲的键盘？LemoLab 的 HALF/21：视频和网页共用一套零件代码，滚动逐层拆出外壳、PCB、轴体、键帽，拆完无缝切到实时渲染",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/lemomo_ai/status/2116138162934239277",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261030d-half21-keyboard.jpg",
+      "previewType": "image",
+      "description": "Lemomo / LemoLab（@lemomo_ai）原帖（2026-10-30 12:00 UTC，约 55 秒演示）：Lemo-Opuscar 库里有一类用代码「拆解产品 3D 模型」的视频风格（库内已收该 teardown 风格），这次验证它能否直接用于官网：用同一套设计规范让宣传视频与网页同步设计。以键盘概念页 HALF/21 为例：页面随滚动展开，键盘逐层拆成外壳、PCB、轴体和键帽；拆解结束时机位无缝衔接到实时渲染——所有按键可敲击打字，有声音反馈，可换轴体、调力度曲线、拔掉键帽看轴心。作者解释无切镜感的原因：视频渲染和网页实时呈现共用一套模型零件代码，视频最后一帧的机位直接交给浏览器接着渲染。实现细节：拆解动画 720 帧，H.264 编码由浏览器解码，按画面变化率动态分配关键帧，慢速滚动也不卡；按键音全部由 Web Audio API 实时合成，没有预录音频；首屏资源控制在 1 MB 内，交互模块按需加载。作者在回复中补充：网站是从 opuscar 库中的一个 demo 视频移植过来并加了交互。封面为视频截帧（可敲击的分体键盘与力度曲线面板）。对你：①「爆炸图」是讲产品结构最直观的镜头；②「视频→可交互」的衔接思路可用于你的科普视频配套页。",
+      "tool": "Lemo-Opuscar 拆解风格 + 前端实时渲染 + Web Audio API（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者注明 HALF/21 为演示项目，键盘模型基于 Corne v4 开源文件制作，遵循 CC BY 4.0；本作源码与在线地址帖中未公开。",
+      "attribution": "Lemomo / LemoLab（@lemomo_ai）",
+      "sourceAuthor": "Lemomo / LemoLab (@lemomo_ai)",
+      "tags": [
+        "结构可视化",
+        "产品展示",
+        "爆炸图",
+        "网页交互",
+        "Web Audio"
+      ],
+      "publishedAt": "2026-10-30T12:00:28.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-30T12:57:00.000Z",
+      "updatedAt": "2026-10-30T12:57:00.000Z",
+      "verification": {
+        "checked_at": "2026-10-30T12:57:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 74,
+        "baseBreakdown": {
+          "实体": 19,
+          "科普": 17,
+          "溯源": 15,
+          "复现": 8,
+          "风格": 10,
+          "新颖": 5
+        },
+        "multiplier": 1.0618,
+        "finalScore": 78.6,
+        "threshold": 65,
+        "run": "2026-10-30-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2116136586383630336/vid/avc1/1920x1080/Ula7Vw9aLXJGyqII.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "同一套跑步动作，为什么右边的角色看起来「活」了？vidar 用 three.js 给 295 根头发/丝带/裙摆骨骼加弹簧骨，让它们慢身体半拍——附完整 verlet 公式与参数",
       "category": "motion",
@@ -24371,8 +24656,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条",
-  "updatedAt": "2026-10-30T08:57:26.000Z",
-  "totalItems": 487,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条",
+  "updatedAt": "2026-10-30T12:57:00.000Z",
+  "totalItems": 492,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
