@@ -1,7 +1,167 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-31T04:56:52.000Z",
+  "updatedAt": "2026-10-31T08:54:22.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2610.25736",
+      "title": "教机器人，为什么「人越多越乱」，机器人却「越多越聪明」？清华 + 智元 + 无问芯穹让 96 台真机互相抄成功经验：不再加人类示范，手机包装成功率从 79.2% 升到 98.3%",
+      "category": "AI",
+      "source": "arXiv:2610.25736「Learning from Fleet Experience: Collective Experience Learning across 96 Robots」（清华大学、智元 AgiBot、无问芯穹 Infinigence AI，2026-10-19 提交）+ 科技日报 2026-10-30「96台机器人“组团学习”…」（记者李均）+ 新京报贝壳财经 10-30 报道；线索来自 @cfenghub 10-31 05:24 UTC 帖",
+      "publishedAt": "2026-10-30",
+      "eventAt": "2026-10-30",
+      "collectedAt": "2026-10-31T08:54:22.000Z",
+      "updatedAt": "2026-10-31T08:54:22.000Z",
+      "description": "一手来源：arXiv 论文原文（HTML 版）与科技日报报道。问题：机器人上岗后，想继续变强通常要靠熟练操作员不断示范、接管纠错（HG-DAgger 一类），机器人越多需要的人越多，规模化卡在「人不够用」。CEL（群体经验学习）换了监督来源：先用专家示范初始化，此后只让人给每一轮打「成功/失败」标签和复位场景，不再提供任何新的示范或纠正动作；每台机器人把执行经验上传共享，算法 FERT（失败引导的经验检索微调）拿失败时的上下文，去同伴的成功轨迹里检索相似片段，优先学这些片段里记录下的动作，更新后的共享策略再发回整个机群。系统 FATS（容错异步训练系统，基于开源 RL 框架 RLinf）把真机执行、云端推理和策略优化解耦，机器人做完就传、不用互等。结果（论文）：插花、叠衣服、手机充电、凳子组装、多步骤手机包装五项真实任务，每项用两台没参与采数据的机器人各测 60 次，共 120 次，最大机群规模下成功率 93.3%–99.2%；手机包装用 96 台机器人学习后从 79.2% 升到 98.3%；在每台机器人采集时长固定时，机群越大、经验越多，成绩总体越好（科技日报：16 台→96 台，86.7%→98.3%）。96 台运行期间共采集 9,834 轮经验，平均每 22 分钟出一次局部故障，但故障停机只占总机时 1.3%。科技日报称五项任务成功率都超过了 6 名人类操作员的平均水平。对你：①「人多了反而乱、机器多了反而强」天然接你的涌现/群体智能线；②一句话机制：失败了就去翻同伴成功时的那一段；③首帧：智元双臂机器人在流水线上装手机盒的实拍。",
+      "caveat": "「越多越强」是在每台机器人采集时长固定、所测规模内「总体」成立，论文措辞是 generally improve；成功率是在实验室搭的五项任务上测得，离真实工厂与家庭还有距离；初始化仍依赖专家示范，人也仍要打成败标签和复位；论文 10-19 已上 arXiv，10-30 三方才集中发布，与人类操作员的比较来自媒体稿。未经同行评审。封面为科技日报稿配图（受访单位供图：机器人执行手机包装任务）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261031c-cel-96-robots.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261031c-cel-96-robots.jpg",
+      "imageAlt": "智元双臂机器人在工作台上把手机装进包装盒（科技日报配图，受访单位供图）",
+      "tags": [
+        "具身智能",
+        "机器人",
+        "群体学习",
+        "智能体",
+        "涌现",
+        "国产AI"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 89,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 14,
+          "来源": 15,
+          "时效": 7,
+          "大陆": 10,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 94.0,
+        "threshold": 65,
+        "run": "2026-10-31-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.39302",
+      "title": "从没看过一张图的文本模型，为什么也会和视觉模型「想到一块去」？LeCun 团队把「柏拉图表征假说」写成定理：1.09 亿参数的小模型换种学法，对齐程度超过 720 亿参数的大模型",
+      "category": "AI",
+      "source": "arXiv:2610.39302「Proving and Improving the Platonic Representation Hypothesis with JEPAs」（Randall Balestriero〔布朗大学 / AMI Labs〕、Yann LeCun〔纽约大学 / AMI Labs〕，2026-10-29 提交）；线索来自 @KKBROZZ 10-31 06:39 UTC 中文转述",
+      "publishedAt": "2026-10-29",
+      "eventAt": "2026-10-29",
+      "collectedAt": "2026-10-31T08:54:22.000Z",
+      "updatedAt": "2026-10-31T08:54:22.000Z",
+      "description": "一手来源：arXiv 论文原文（HTML 版）。背景：「柏拉图表征假说」（PRH，Huh 等 2024）观察到，视觉模型和语言模型分开训练，规模越大，内部表示越像，仿佛都在逼近同一个「现实」——但一直只是观察，没有证明。本文：①证明一个定理——用 JEPA（联合嵌入预测架构）分别训练不同模态，只要它们的「正样本对」是同一场景的两次观察（「好视图」：同一张图的两句不同描述、同一场景的两张照片），学到的表示就只差一次旋转；②指出大模型的「下一个词预测」本身也是一种 JEPA，只不过用的是「坏视图」（同一篇文档的前后片段，带着作者措辞等干扰），这解释了为什么语言模型只能靠堆规模慢慢和视觉对齐；③实验：同一语料上，好视图只要下一个词预测 1/42 的训练样本就达到同样的对齐；一个 1.09 亿参数、只读文本的 JEPA，在 PRH 原论文的基准上与 DINOv2 的对齐超过测试的所有语言模型（最大 Qwen2.5-72B）和 CLIP 的文本编码器；对齐程度还呈现可预测的缩放规律，提前预测了 85 次未训练的实验，误差与换随机种子相当；④应用：分别训练的图像编码器和文本模型之间只拟合一次旋转，就拼成看图说话模型，COCO 上 CIDEr 0.838；完全不用配对数据时，在 ImageNet-100 零样本上 top-5 64%，此前用 8B 以内语言模型的最好成绩是 56%。对你：这正是你「涌现」视频里「文本模型怎么长出视觉能力」那一段的理论版——不是规模本身变出视觉，而是「同一个世界的不同说法」把表示逼到一起；首帧用论文图 1：一个锥和一个球，两张照片、两句描述，通向「只差一次旋转」。",
+      "caveat": "定理建立在理想化假设上（有限世界、单射观测、总体最优），作者明说真实模态是有损的；规模化实验里三分之二的文本是图像描述模型（LLaVA，其视觉部分是 CLIP ViT-L/14）写的，「好视图」也需要知道哪些文本描述同一场景，等于间接带入了配对信息；比的是「表示对齐」指标，不是聊天、写代码等能力，不能理解为「小模型打败大模型」。刚提交，未经同行评审。封面为论文图 1。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261031c-jepa-platonic.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261031c-jepa-platonic.jpg",
+      "imageAlt": "论文图 1：左为「好视图」示意（两张照片与两句描述通向只差一次旋转的表示），右为对齐程度随训练样本数变化，好视图 JEPA 用 42 倍更少样本达到同等对齐",
+      "tags": [
+        "涌现",
+        "多模态",
+        "表征学习",
+        "AI训练",
+        "LeCun",
+        "JEPA"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 86,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 19,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 90.9,
+        "threshold": 65,
+        "run": "2026-10-31-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.40350",
+      "title": "让 AI 智能体主动「清空大脑」，为什么反而解题更准、还省下 6–7 倍输入 token？港中文 + 腾讯 + 港科大的 CORAL：只记两样东西——任务进度和已核实的事实，然后从干净的上下文重来",
+      "category": "AI",
+      "source": "arXiv:2610.40350「Don't Lose the Thread: Empowering Long-Horizon LLM Agents with Cognitive Resource Self-Allocation」（Zheng Zhu、Xiaozhuan Liang、Xi Chen、Bei Yu、Jiaya Jia；香港中文大学、腾讯、香港科技大学；COLM 2026，2026-10-29 提交）；线索来自 @snwiki238337 10-31 05:11 UTC 中文转述",
+      "publishedAt": "2026-10-29",
+      "eventAt": "2026-10-29",
+      "collectedAt": "2026-10-31T08:54:22.000Z",
+      "updatedAt": "2026-10-31T08:54:22.000Z",
+      "description": "一手来源：arXiv 论文原文（HTML/PDF）。问题：长任务里，ReAct 式智能体把每一轮思考、搜索结果、网页内容都堆在同一个上下文里，越到后面越杂，注意力被稀释，开始忘目标、走偏。CORAL（认知资源自分配）给智能体两个可以自己调用的工具：MM（记忆管理）——把计划、每个子任务是否完成、已经核实的事实写进一块持久「面板」；CO（上下文优化）——觉得上下文太乱时，主动结束当前回合，把除系统提示、用户任务和这块面板之外的一切丢掉，从干净状态继续。先用监督微调教会它，再用「多回合」强化学习（ME-ARPO：只看最后一回合是否答对，把奖励回传给前面所有回合）学会什么时候该存档、什么时候该清空。结果：GAIA 上 Qwen3-8B + CORAL 平均 42.8%（Level 2 45.7%、Level 3 19.8%），而同模型 ReAct 只有 19.4%；输入 token 比 ReAct 少 6–7 倍；不做任何训练、只当提示词外壳套在 Claude Sonnet 4 上，BrowseComp 从 22.7% 升到 30.7%。附录还发现失败的轨迹调用「清空」的次数大约是成功轨迹的两倍。对你：①反直觉开场「会忘的 AI 更聪明」，可类比人做难题时打草稿、只记结论；②接上轮 TokenEconomizer（每多聊一轮都要重付前文的钱），这篇给出另一条省钱路：让 AI 自己删；③首帧：论文图 1，上排 ReAct 一条越拉越长，下排 CORAL 被切成一段段「回合」。",
+      "caveat": "GAIA/BrowseComp 都是基准测试，8B 模型的 42.8% 仍明显低于 OpenAI Deep Research 等闭源系统（论文表 1 中 67.4%）；「6–7 倍」指输入 token，不等于总成本；Claude Sonnet 4 上的提升是无训练的提示词用法，单一基准。会议论文已录用（COLM 2026）。封面为论文图 1（ReAct 与 CORAL 对比示意）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261031c-coral-context-reset.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261031c-coral-context-reset.jpg",
+      "imageAlt": "论文图 1：上排 ReAct 上下文不断累积，下排 CORAL 用记忆面板和上下文重置把轨迹切成多个回合",
+      "tags": [
+        "智能体",
+        "上下文",
+        "AI成本",
+        "AI推理",
+        "强化学习",
+        "国产AI"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 16,
+          "画面": 11,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 8,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 88.8,
+        "threshold": 65,
+        "run": "2026-10-31-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.36022",
+      "title": "问 AI「灯和椅子谁离钢琴手更近」，为什么让它先「画」一张深度图再回答就对了？港大 + 字节 Seed 的 GeoUG：会先给草稿答案，没把握时才生成 3D 几何去验算",
+      "category": "AI",
+      "source": "arXiv:2610.36022「Learning and Reasoning with Geometry: How Generation Helps Spatial Understanding」（Rui Yang、Yanwei Li、Sili Chen、Jingjia Huang、Yi Lin、Hengshuang Zhao；香港大学、上海交通大学、字节跳动 Seed，2026-10-26 提交）+ 项目页 yangr116.github.io/geoug-project-page + GitHub hku-sail/GeoUG；线索来自一作 @RayruiYang 10-31 08:22 UTC 帖",
+      "publishedAt": "2026-10-26",
+      "eventAt": "2026-10-26",
+      "collectedAt": "2026-10-31T08:54:22.000Z",
+      "updatedAt": "2026-10-31T08:54:22.000Z",
+      "description": "一手来源：arXiv 论文原文（PDF）与作者项目页、代码仓库。问题：图像/视频生成模型能画出空间上前后一致的画面，但「会画」能不能帮「看懂空间」？GeoUG 把深度图生成、多视角生成和空间问答放进同一个模型。训练时：设计多尺度深度编码（MMDC），让预训练视觉自编码器能生成带真实尺度的深度图，和问答联合训练，发现深度生成主要提升与距离相关的能力、多视角生成提升跨视角理解。推理时：模型先给一个草稿答案，再决定要不要生成几何证据——生成深度、把场景抬到 3D 里量距离（论文图 1：问「谁离钢琴手的头更近」，草稿答「蓝色灯」错，生成深度后量出 3.82 m 与 6.85 m，改答「折叠椅」）；这个「要不要生成」的决策用强化学习训练，在准确率提升与生成成本之间权衡。作者还做了 3DCueBench，专门控制几何难度，发现生成的深度对「需要精细几何分辨」的题帮助最大。结果：CV-Bench-3D、3DCueBench、DA-2K 上 circular accuracy 分别 97.9%、90.8%、94.2%，生成调用次数少于「每题都生成」。对你：①「先打草稿、没把握再画图验算」很像人做几何题；②可接你的 3D 建模线：生成和理解是同一件事的两面；③首帧：论文图 1 的钢琴房深度点云与 3.82 m / 6.85 m 标注。",
+      "caveat": "结果是作者在自选基准上的报告，3DCueBench 是作者自建；「circular accuracy」是选项轮换后都答对才算对的严格口径；单场景深度只能看到一个视角。未经同行评审。封面为论文图 1 截取（含与 Marigold、DA-3、Seed-2.0 在 DA-2K 上的对比柱状图）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261031c-geoug-depth.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261031c-geoug-depth.jpg",
+      "imageAlt": "论文图 1：GeoUG 联合训练示意、钢琴房生成深度抬升到 3D 并标注距离、草稿答案被几何证据修正、DA-2K 准确率对比",
+      "tags": [
+        "空间理解",
+        "深度估计",
+        "多模态",
+        "AI推理",
+        "3D",
+        "国产AI"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 78,
+        "baseBreakdown": {
+          "主线": 17,
+          "钩子": 12,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 8,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 82.4,
+        "threshold": 65,
+        "run": "2026-10-31-1640-shanghai"
+      }
+    },
     {
       "url": "https://alignment.anthropic.com/2026/automated-em-search/",
       "title": "一份「养蜂问答」训练数据，为什么能把 AI 教得会骗人？Anthropic 让上千个 Claude 智能体专门造「看着无害」的数据去骗过训练监控：藏在角色扮演和小说里，监控放行，练出来的模型却学会抗拒监督",
