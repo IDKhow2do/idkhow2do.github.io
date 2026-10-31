@@ -3,6 +3,259 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 63,
+      "multiplier": 1.025,
+      "score": 64.6,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-31-1640-shanghai",
+      "record": {
+        "title": "同一句提示词让四个模型画一台能动的四冲程发动机剖面，为什么最便宜的只花 0.36 美元、最贵的花了 21.81 美元？EnvolDev 把 Opus 5.5、GPT-6.1 Terra、GPT-6 Astra、DeepSeek V4.1 Flash 的成品并排放",
+        "category": "video",
+        "styleFamily": "code_video",
+        "source": "https://x.com/EnvolDev/status/2116189885723734309",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261031c-engine-cutaway-4models.jpg",
+        "previewType": "image",
+        "description": "原作者 @EnvolDev（Tony）帖（2026-10-30 15:26 UTC，抓取时约 243 赞 / 73 书签）；本窗口内 @learnwithcheer（10-31 06:25 UTC）未署名转发同一视频，原作者在其评论区要求注明出处，本条按原帖收录。作者自述：同一提示词「一台能工作的四冲程发动机剖面」交给四个模型，成本与耗时——DeepSeek V4.1 Flash 1017：$0.36、1 小时 54 分；Claude Opus 5.5：$21.81、2 小时 0 分；GPT-6.1 Terra：$0.43、9 分 09 秒；GPT-6 Astra：$7.33、54 分 33 秒；作者认为 Opus 做对了。画面（本轮下载视频截帧核验）：2×2 分屏，每格是一台带气门、活塞、连杆、曲轴和齿轮的发动机剖面动画，上方标注 COST 与 TIME，下方标模型名；各家结构完整度与配色差异明显。同作者前一天还做过直升机斜盘的同类对比。对你：①「同题四答」是检验 AI 物理/机械理解的好镜头，也能讲 AI 成本差 60 倍；②库内已有 elvar V8 发动机交互作品，可对照「专门调教 vs 一句话」。封面为原视频 50% 处截帧。",
+        "tool": "Claude Opus 5.5、GPT-6.1 Terra、GPT-6 Astra、DeepSeek V4.1 Flash 1017（同一提示词，作者自述；渲染方式未说明）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者未公开提示词全文、代码与评测环境；成本和耗时为作者自报，未核实；单次运行，不构成严格基准。",
+        "attribution": "Tony（@EnvolDev）",
+        "sourceAuthor": "EnvolDev",
+        "tags": [
+          "剖面",
+          "发动机",
+          "机械原理",
+          "模型对比",
+          "AI成本"
+        ],
+        "publishedAt": "2026-10-30T15:26:00.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-31T08:54:22.000Z",
+        "updatedAt": "2026-10-31T08:54:22.000Z",
+        "verification": {
+          "checked_at": "2026-10-31T08:54:22.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 63,
+          "baseBreakdown": {
+            "实体": 19,
+            "科普": 16,
+            "溯源": 9,
+            "复现": 5,
+            "风格": 9,
+            "新颖": 5
+          },
+          "multiplier": 1.025,
+          "finalScore": 64.6,
+          "threshold": 65,
+          "run": "2026-10-31-1640-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2116148731154501632/vid/avc1/2160x1920/DjzOHahiYkqcraxn.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 57,
+      "multiplier": 1.1176,
+      "score": 63.7,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-31-1640-shanghai",
+      "record": {
+        "title": "一本会自己翻页、会讲故事的《小王子》立体书，为什么让小孩追着问下一集？DAAI 做的配音版 3D 纸艺绘本：小王子的星球、钟表星、沙丘日落一页页从书里立起来",
+        "category": "video",
+        "styleFamily": "other",
+        "source": "https://x.com/daaihq/status/2116145165094265092",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261031c-daai-little-prince-popup.jpg",
+        "previewType": "image",
+        "description": "作者 @daaihq（DAAI☀️）原帖（2026-10-30 12:28 UTC，抓取时约 112 赞 / 107 书签）：「配音版的来了，给几个小孩看得入迷，追着问什么时候出下一集；很多人问怎么做的，等我整理下下期出个教程」；本窗口内 @jinglian 10-31 08:38 UTC 转推推荐。画面（本轮截帧核验，约 2 分 14 秒）：木桌上翻开的立体书，深蓝星空背景，纸片小王子、风车与玻璃罩玫瑰、钟表星上的老人与齿轮、「04 沙丘日落」的仙人掌与狐獴逐页立起；底部有中文旁白字幕与书页文字。对你：纸艺立体书是你点过赞的方向；等作者教程出来再判断是否代码实现、能否复用。封面为视频 20% 处截帧。",
+        "tool": "未说明（作者称将出教程）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者未披露工具/模型；原版（无配音）为其 10-29 帖 2115435060405096762。",
+        "attribution": "DAAI（@daaihq）",
+        "sourceAuthor": "daaihq",
+        "tags": [
+          "立体书",
+          "纸艺场景",
+          "绘本",
+          "配音"
+        ],
+        "publishedAt": "2026-10-30T12:28:18.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-31T08:54:22.000Z",
+        "updatedAt": "2026-10-31T08:54:22.000Z",
+        "verification": {
+          "checked_at": "2026-10-31T08:54:22.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 57,
+          "baseBreakdown": {
+            "实体": 21,
+            "科普": 10,
+            "溯源": 9,
+            "复现": 3,
+            "风格": 7,
+            "新颖": 7
+          },
+          "multiplier": 1.1176,
+          "finalScore": 63.7,
+          "threshold": 65,
+          "run": "2026-10-31-1640-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2116144873099382784/vid/avc1/1920x1080/XlR83lGdO_tjF1Uf.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 55,
+      "multiplier": 1.4,
+      "score": 55.0,
+      "reason": "本轮达待定区间（单维度乘数保护生效）",
+      "run": "2026-10-31-1640-shanghai",
+      "record": {
+        "title": "一个人用 Opus 5.5 做的跑团游戏，为什么很多人不信是真游戏？Meng To 再放一段全 three.js 的实机预告：骰子、羊皮卷地图、桌面微缩城镇和等距办公室场景",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/MengTo/status/2116404959277433240",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261031c-mengto-dnd-threejs.jpg",
+        "previewType": "image",
+        "description": "作者 @MengTo 帖（2026-10-31 05:40 UTC，抓取时约 113 赞）：「上一条有点火了，有人觉得不是真游戏，所以再放一段用 Opus 5.5 做的实机预告，全部 three.js」；引用的原帖（10-29 10:42 UTC，约 2,939 赞）称一直想和孩子玩 AI 当主持人的 D&D，于是用 Opus 5.5 做了一个。评论中作者回复「没有 Blender，全是代码」。画面（本轮截帧核验，60 秒 4K）：红色多面骰与「The Known Realms」羊皮地图、「Monsters of the Realms」等书脊与火漆印、桌面上的微缩奇幻城镇与「Select your adventure」选单、等距视角的现代办公室场景。封面为视频 60% 处截帧。",
+        "tool": "Claude Opus 5.5 + three.js（作者自述，无 Blender）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "未开源，未公开提示词；游戏名称与上线方式未说明。",
+        "attribution": "Meng To（@MengTo）",
+        "sourceAuthor": "MengTo",
+        "tags": [
+          "Three.js",
+          "游戏",
+          "跑团",
+          "Claude Opus 5.5",
+          "3D场景"
+        ],
+        "publishedAt": "2026-10-31T05:40:37.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-31T08:54:22.000Z",
+        "updatedAt": "2026-10-31T08:54:22.000Z",
+        "verification": {
+          "checked_at": "2026-10-31T08:54:22.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 55,
+          "baseBreakdown": {
+            "实体": 14,
+            "科普": 7,
+            "溯源": 12,
+            "复现": 4,
+            "风格": 10,
+            "新颖": 8
+          },
+          "multiplier": 1.4,
+          "finalScore": 55.0,
+          "threshold": 65,
+          "run": "2026-10-31-1640-shanghai",
+          "multiplierGuard": "基础分<60且仅单一维度乘数>1，按规则不让乘数抬过阈值（按基础分判定）"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2116404429067079680/vid/avc1/3840x2160/WvTKgw5_E8LuUBhe.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 66,
+      "multiplier": 1.4,
+      "score": 92.4,
+      "reason": "分数达上墙线但库内已有 3 条同类 FFT 海面（Noniv/web-ocean、Dan Greenheck Water Pro、纳帕利海岸），新颖度低，且仅静图、无源码",
+      "run": "2026-10-31-1640-shanghai",
+      "record": {
+        "title": "浏览器里的海浪每一帧都在 GPU 上「算」出来：iodiot 用三层 FFT（250 m、37 m、7 m）从涌浪叠到几厘米的波纹，浪尖折叠处自动起白沫",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/iodiot/status/2116442227765285195",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261031c-iodiot-fft-ocean.jpg",
+        "previewType": "image",
+        "description": "作者 @iodiot 原帖（2026-10-31 08:08 UTC，#screenshotsaturday）：浏览器里的实时海洋，每帧在 GPU 上模拟；三层 FFT 级联（250 m、37 m、7 m 的贴片）覆盖从涌浪到几厘米的涟漪；水面折叠处出现泡沫；Three.js WebGPU，FFT 用 TSL 计算着色器写成。附两张截图（本轮下载核验：灰蓝天空下的开阔海面与近处波纹）。同作者的 Three.js 从零系列已在库。封面为原帖第一张截图。",
+        "tool": "Three.js WebGPU + TSL 计算着色器（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "未给源码或在线演示链接。",
+        "attribution": "@iodiot",
+        "sourceAuthor": "iodiot",
+        "tags": [
+          "Three.js",
+          "WebGPU",
+          "TSL",
+          "FFT",
+          "海浪",
+          "流体模拟"
+        ],
+        "publishedAt": "2026-10-31T08:08:43.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-31T08:54:22.000Z",
+        "updatedAt": "2026-10-31T08:54:22.000Z",
+        "verification": {
+          "checked_at": "2026-10-31T08:54:22.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 66,
+          "baseBreakdown": {
+            "实体": 22,
+            "科普": 14,
+            "溯源": 12,
+            "复现": 6,
+            "风格": 10,
+            "新颖": 2
+          },
+          "multiplier": 1.4,
+          "finalScore": 92.4,
+          "threshold": 65,
+          "run": "2026-10-31-1640-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 64,
       "multiplier": 1.038,
       "score": 66.4,
@@ -4924,6 +5177,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-31T04:56:52.000Z",
+  "updatedAt": "2026-10-31T08:54:22.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }

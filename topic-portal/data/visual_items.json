@@ -1,8 +1,348 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 499,
+  "exportedCount": 505,
   "items": [
+    {
+      "title": "一支 70-200mm f/2.8 镜头里的 11 片镜片，变焦时为什么焦点不跑？CF长风用纯 Three.js 代码「长」出一段 45 秒手绘风拆解片：光线在前组收拢、在光圈交汇，九片光圈叶一片片拆出来",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/cfenghub/status/2116432681546465570",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261031c-lens-70-200-teardown.jpg",
+      "previewType": "image",
+      "description": "作者 @cfenghub（CF长风）原帖（2026-10-31 07:30 UTC；同一视频 07:30:01 另发过一条措辞略不同的帖）。作者自述：45 秒「70-200mm f/2.8 镜头内部结构拆解」视听动效，纯代码（Three.js / WebGL）实时渲染后直接导出，没有打开 Blender、C4D，也没在 AE 里拉关键帧；从 4 组 11 片镜片的空间布局、变焦时镜群的非线性机械补偿，到光线在光圈处收敛的几何光路，模型全部由数学公式、数据矩阵和着色器在浏览器画布里生成。画面（本轮下载视频截帧核验）：米色纸面 + 手绘描边风格的半透明镜筒，标题「70–200mm f/2.8 是怎么工作的」，底部分章节按钮「外观 / 剖开 / 光路 / 变焦 / 拆解 / 复原」；字幕依次为「光线在前组收拢，在光圈交汇，落到像面」「转变焦环：70mm → 200mm，焦点不跑」「中间是九片光圈叶，孔越大进光越多」，最后零件带标签逐个拉出。评论区作者回复：结构化、标准件用代码跑得好，创意类、复杂场景还不太行。对你：①这就是「拆开讲原理」的现成镜头语言，可直接套到刻蚀腔体、光刻机投影物镜；②中文字幕 + 章节按钮的「图解」节奏很适合 3 分钟科普；③光路这一章可以对照讲光刻的数值孔径。封面为视频 40% 处截帧（光路章节）。",
+      "tool": "Three.js / WebGL 着色器（作者自述；未说明是否借助 AI 编程）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者未公开代码与提示词；镜头参数（4 组 11 片）为作者自述，未与真实镜头光学结构图核对。",
+      "attribution": "CF长风（@cfenghub）",
+      "sourceAuthor": "cfenghub",
+      "tags": [
+        "Three.js",
+        "代码出片",
+        "拆解",
+        "剖面",
+        "光学",
+        "光路",
+        "结构可视化"
+      ],
+      "publishedAt": "2026-10-31T07:30:47.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-31T08:54:22.000Z",
+      "updatedAt": "2026-10-31T08:54:22.000Z",
+      "verification": {
+        "checked_at": "2026-10-31T08:54:22.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 78,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 19,
+          "溯源": 12,
+          "复现": 7,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.1319,
+        "finalScore": 88.3,
+        "threshold": 65,
+        "run": "2026-10-31-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2116432045371207680/vid/avc1/1920x1080/e7S7fB0PxHUB4lDH.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "只用两张手绘，为什么能拍出 12 秒「大叔走过街口」？blackjack 不用任何视频生成模型：让 Claude Code 写 Python 在 Blender 里反推原画的相机，把大叔剪成纸片立起来，每帧算膝盖角度让脚不打滑",
+      "category": "video",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/kazu2155/status/2116440033645228112",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261031c-kazu-paper-town.jpg",
+      "previewType": "image",
+      "description": "作者 @kazu2155（blackjack）原帖（2026-10-31 08:00 UTC，日文）。素材只有一张街景插画和一张大叔的画；不用视频生成 AI，由 Claude Code 写 Python、在 Blender 里搭。作者列出的做法：①反推原画的相机（高约 0.4 m、仰角 12°、约 22 mm 焦距），把画里的位置投到地面，电车、信号灯、电线、楼放回原位；②不打光不做阴影，全部平涂，颜色沿用原画；③大叔不重建 3D，而是把画切成头、身体、腿，贴在立起来的纸片上；④腿的纸片从胯部向前倒，正面看就像迈步，为了着地的脚不打滑，每一帧计算膝盖角度；⑤脚步声、电车声也用 Python 从波形合成，没有音乐。作者的调试经验：一开始看起来像原地踏步，让镜头比人稍慢地跟上去、在地面加上融雪的水渍后，才看得出在往前走。局限：只有正面一张画，还做不出侧身和背影。画面（本轮截帧核验）：蓝橙平涂的城市街口、青色电车、白发墨镜大叔从远处走近，中段有凉鞋特写。对你：①「反推相机」是透视/摄影测量的好入门镜头；②「原地踏步 vs 往前走」靠参照物，是运动知觉的反直觉点；③两张图 + 代码出片，适合你的低成本动画流程。封面为视频 20% 处截帧。",
+      "tool": "Claude Code（编写 Python）+ Blender；音效由 Python 波形合成（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者公开了 5 步制作要点与相机参数，但未公开脚本与提示词；原插画来源未说明。",
+      "attribution": "blackjack（@kazu2155）",
+      "sourceAuthor": "kazu2155",
+      "tags": [
+        "Blender",
+        "Claude Code",
+        "相机反求",
+        "纸片角色",
+        "平涂",
+        "代码出片"
+      ],
+      "publishedAt": "2026-10-31T08:00:00.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-31T08:54:22.000Z",
+      "updatedAt": "2026-10-31T08:54:22.000Z",
+      "verification": {
+        "checked_at": "2026-10-31T08:54:22.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 77,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 15,
+          "溯源": 16,
+          "复现": 11,
+          "风格": 8,
+          "新颖": 9
+        },
+        "multiplier": 1.0315,
+        "finalScore": 79.4,
+        "threshold": 65,
+        "run": "2026-10-31-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2116320118347341824/vid/avc1/1680x720/vx2JTmNLWUPggT6l.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "一首 150 年前的童诗，为什么能做成一本「转着翻」的 3D 立体书？Techartist 用 Opus 5.5 把《猫头鹰和小猫咪》做成旋转木马式立体书：每页都有一个能亲手点的机关——拨琴弦、扬帆、转戒指、扇火鸡尾巴",
+      "category": "frontend",
+      "styleFamily": "uiux",
+      "source": "https://x.com/techartist_/status/2116407421065482362",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261031c-owl-carousel-popup.jpg",
+      "previewType": "image",
+      "description": "作者 @techartist_ 原帖（2026-10-31 05:50 UTC，抓取时约 100 赞 / 60 书签）：「用 Opus 5.5 为 Edward Lear 的《The Owl and the Pussy-cat》做了一本 3D 旋转木马式立体书」。画面（本轮下载视频截帧核验）：木桌上一本多页呈放射状立起的纸艺立体书，每一页左侧是诗句（Stanza I–III），右侧是立起来的纸片场景——灯塔与海、太阳和彩虹下的小岛、小猪与戒指、婚礼花园；底部控制条有页码、音量和每页一个互动按钮（「Strum」拨琴、「Sail away」启航、「Spin the ring」转戒指、「Fan the tail」扇尾巴），右下角署名「© 2026 Techartist」。评论里有人问铰链是否是 three.js 里的嵌套枢轴、作者是否手动做了翻页动画，截至抓取作者未回复；也有人请求公开流程和提示词。库内已有同作者多本「立体书」作品（10-21 立体书网站、10-23 物理书、10-28 全息牛顿书），本条为新作品：首次做成「旋转木马」多页同时展开的结构。对你：纸艺立体书正是你点过赞的风格；旋转木马结构可以借来做「一页一个工艺步骤」的芯片制造立体书。封面为视频 20% 处截帧。",
+      "tool": "Claude Opus 5.5（作者自述；未说明渲染库与是否开源）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者未公开代码、在线地址与提示词；渲染技术未声明（不标注 Three.js）。",
+      "attribution": "Techartist（@techartist_）",
+      "sourceAuthor": "techartist_",
+      "tags": [
+        "立体书",
+        "纸艺场景",
+        "3D交互",
+        "绘本",
+        "Claude Opus 5.5"
+      ],
+      "publishedAt": "2026-10-31T05:50:24.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-31T08:54:22.000Z",
+      "updatedAt": "2026-10-31T08:54:22.000Z",
+      "verification": {
+        "checked_at": "2026-10-31T08:54:22.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 66,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 11,
+          "溯源": 13,
+          "复现": 5,
+          "风格": 10,
+          "新颖": 5
+        },
+        "multiplier": 1.238,
+        "finalScore": 81.7,
+        "threshold": 65,
+        "run": "2026-10-31-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2116406992650862593/vid/avc1/1920x1162/kltQroWOhfV2Q8ii.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "让 AI 生成角色的走路动作，再一键变成手绘线稿动画：榊正宗用 Claude Code 调用 NVIDIA MotionBricks 补全关键姿势之间的动作，再用 FreePencil2 出线",
+      "category": "motion",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/masamune_sakaki/status/2116422887376818257",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261031c-motionbricks-lineart.jpg",
+      "previewType": "image",
+      "description": "作者 @masamune_sakaki 原帖（2026-10-31 06:51 UTC，日文）：在 Claude Code 里用 MotionBricks 生成走路动作——作者介绍 MotionBricks 是 NVIDIA 公开的 AI 动作生成技术，生成指定姿势之间的衔接动作，让角色实时动起来；再用 FreePencil2 给这段走路动作出线稿，把 AI 做的 3D 动作做成线稿动画。画面（本轮截帧核验，约 16 秒）：金发蓝丝带的动漫角色在米黄色条纹墙的走廊里转弯行走，赛璐璐上色 + 描线，地上有投影。对你：「AI 补中间帧 + 卡通渲染」可用于小马吉祥物的走路/转身动作。封面为视频 40% 处截帧。",
+      "tool": "Claude Code + NVIDIA MotionBricks + FreePencil2（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "MotionBricks 的出处、许可与 FreePencil2 的具体身份未在本轮核实；角色模型来源未说明。",
+      "attribution": "榊正宗（@masamune_sakaki）",
+      "sourceAuthor": "masamune_sakaki",
+      "tags": [
+        "动作生成",
+        "线稿渲染",
+        "Claude Code",
+        "角色动画",
+        "NVIDIA"
+      ],
+      "publishedAt": "2026-10-31T06:51:52.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-31T08:54:22.000Z",
+      "updatedAt": "2026-10-31T08:54:22.000Z",
+      "verification": {
+        "checked_at": "2026-10-31T08:54:22.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 61,
+        "baseBreakdown": {
+          "实体": 12,
+          "科普": 11,
+          "溯源": 14,
+          "复现": 8,
+          "风格": 7,
+          "新颖": 9
+        },
+        "multiplier": 1.1,
+        "finalScore": 67.1,
+        "threshold": 65,
+        "run": "2026-10-31-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2116422223431159808/vid/avc1/1920x1080/dPu71wqW9ehztTie.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "232 个像素特效没有一张图，全是代码：Patch 团队让 Opus 5.5 写一个、渲染、看帧、再改，开源成 pixelfx 和配套 Claude 技能；新演示是一副真正的 3D 骨架，投影成 2D 侧面再逐像素画出来",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/rehan_shei/status/2116450527290736731",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261031c-pixelfx-skeleton.jpg",
+      "previewType": "image",
+      "description": "作者 @rehan_shei 帖（2026-10-31 08:41 UTC）：「Opus 5.5 做了一副真正的 3D 骨架，一路画到像素；再取 2D 侧面投影」，附开源仓库；引用其 10-30 07:00 UTC 原帖（约 1,095 赞 / 1,369 书签）：Opus 5.5 写一个特效、渲染、看帧、修错，直到站得住，用这种方式做了 232 个，没有图片、全是代码，连同技能一起开源。仓库 patch-gg/pixelfx 描述：232 个像素艺术特效，每个都是一小段代码，外加一个用来做你自己的特效的 Claude Code 技能；GitHub 显示 MIT 许可。画面（本轮截帧核验）：黑底上带关节点的白色骨架小人「a real skeleton.」，随后是像素风剑击连招、陨石、火焰、闪电等打木桩的特效网格。同团队的 trompe、anymove 已在库。封面为视频 20% 处截帧。",
+      "tool": "Claude Opus 5.5 + Claude Code 技能（pixelfx 仓库）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "MIT 开源（仓库页标注）；本轮未运行代码。",
+      "attribution": "Patch（patch-gg）/ @rehan_shei",
+      "sourceAuthor": "rehan_shei",
+      "tags": [
+        "像素艺术",
+        "特效",
+        "代码出片",
+        "Claude Code",
+        "开源"
+      ],
+      "publishedAt": "2026-10-31T08:41:42.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-31T08:54:22.000Z",
+      "updatedAt": "2026-10-31T08:54:22.000Z",
+      "verification": {
+        "checked_at": "2026-10-31T08:54:22.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 64,
+        "baseBreakdown": {
+          "实体": 9,
+          "科普": 7,
+          "溯源": 18,
+          "复现": 15,
+          "风格": 8,
+          "新颖": 7
+        },
+        "multiplier": 1.025,
+        "finalScore": 65.6,
+        "threshold": 65,
+        "run": "2026-10-31-1640-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://video.twimg.com/amplify_video/2116450245735501824/vid/avc1/1920x1080/hXRIMB3ilV49iiGS.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/patch-gg/pixelfx",
+      "licenseName": "MIT",
+      "licenseUrl": "https://github.com/patch-gg/pixelfx"
+    },
+    {
+      "title": "两颗会发光的「数据球」，Blender 和浏览器里各一份，CC0 随便改：neoneue 开源 Data Orbs——纯几何节点程序化生成，不用插件、不用外部文件",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/neoneue/status/2116411412222234791",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261031c-data-orbs.jpg",
+      "previewType": "image",
+      "description": "作者 @neoneue 原帖（2026-10-31 06:06 UTC）：Data Orbs 的 Blender 工程和 three.js 版本开放给所有人改，随便用。仓库 Neoneue/Data-orbs 描述：两颗为 Blender 5.2 做的程序化发光球，用几何节点构建，外加浏览器版本；Cycles 渲染，无插件、无外部文件；许可 CC0-1.0。画面（本轮下载核验）：深蓝背景上由无数光点和细线组成的同心环状球体。同作者「Blender 修改器转 Three.js GUI」条目在待定区。封面为原帖配图。",
+      "tool": "Blender 5.2 几何节点 + Cycles；three.js 浏览器版",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "CC0-1.0 开源；本轮未运行工程。",
+      "attribution": "@neoneue",
+      "sourceAuthor": "neoneue",
+      "tags": [
+        "Blender",
+        "几何节点",
+        "Three.js",
+        "粒子化",
+        "程序化生成",
+        "开源"
+      ],
+      "publishedAt": "2026-10-31T06:06:16.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-31T08:54:22.000Z",
+      "updatedAt": "2026-10-31T08:54:22.000Z",
+      "verification": {
+        "checked_at": "2026-10-31T08:54:22.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 64,
+        "baseBreakdown": {
+          "实体": 12,
+          "科普": 5,
+          "溯源": 19,
+          "复现": 15,
+          "风格": 8,
+          "新颖": 5
+        },
+        "multiplier": 1.144,
+        "finalScore": 73.2,
+        "threshold": 65,
+        "run": "2026-10-31-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/Neoneue/Data-orbs",
+      "licenseName": "CC0-1.0",
+      "licenseUrl": "https://github.com/Neoneue/Data-orbs"
+    },
     {
       "title": "只给 AI 一张参考图，为什么它能造出一台「能一块块拆开」的扑翼无人机？elvar 把整套 3D 工作流开源成 Claude 技能 teardown：先写一个「所有零件都读同一个数」的模型，再让它自己截图挑错",
       "category": "3d",
@@ -25066,8 +25406,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条",
-  "updatedAt": "2026-10-31T04:56:52.000Z",
-  "totalItems": 499,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条",
+  "updatedAt": "2026-10-31T08:54:22.000Z",
+  "totalItems": 505,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
