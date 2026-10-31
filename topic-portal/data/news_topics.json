@@ -1,7 +1,47 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-30T12:57:00.000Z",
+  "updatedAt": "2026-10-31T00:51:22.000Z",
   "topics": [
+    {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+      "title": "把 AI 芯片送上太空，第一件事为什么是让它写一首俳句？Google「Project Suncatcher」原型卫星传回轨道上第一条 TPU 回答——接下来要测的是辐射和发热",
+      "category": "AI",
+      "source": "Google 官方博客「We’ve received our first response from the Project Suncatcher prototype satellite.」（Travis Beals，Google Research Paradigms of Intelligence 高级总监，2026-10-30）+ 官方 YouTube 视频；背景：Google 博客 10-01「Our Project Suncatcher prototype satellite is in orbit」、Planet Labs 10-01 新闻稿、NPR 10-01 报道",
+      "publishedAt": "2026-10-30",
+      "eventAt": "2026-10-30",
+      "collectedAt": "2026-10-31T00:51:22.000Z",
+      "updatedAt": "2026-10-31T00:51:22.000Z",
+      "description": "一手来源：Google 官方博客两篇（10-01 发射、10-30 首次回应）与 Planet Labs 新闻稿。事件：10 月 1 日，Google 与 Planet 合作的 Project Suncatcher 原型卫星搭 SpaceX Transporter-18 拼车任务入轨。这是 Google 探索「用太阳能在太空里跑 AI 算力」的长期登月项目第一步。此后几周完成在轨调试：给主机和 TPU 托盘上电、跑了早期机器学习测试。本周达成「Hello World」里程碑：Google 称这是数据中心级 TPU 在轨道上给出的第一条 AI 回答——地面站过境时上传提示词，让星上的 Gemma 4 开源模型写一首关于身处太空的俳句；卫星经过挪威斯瓦尔巴时下传结果「Blue marble below / Data streams in silent grace / Starlight feeds my core」。之后还测了太空主题打油诗和报告载荷技术状态的遥测类提示。下一步：测试 TPU 在轨道热应力和辐射暴露下的表现；目标是 2027 年发射两颗互联卫星。NPR 10-01 报道补充：原型星上有 4 颗 TPU，受散热限制每次只运行约 15 分钟；任务目标运行一年；远期设想是成群卫星用激光互联组成太空数据中心。对你（半导体视角）：①「芯片上天」最大的敌人不是真空而是辐射——高能粒子打进晶体管会翻转比特（单粒子翻转）、长期积累总剂量效应，你可以从器件物理讲为什么航天芯片通常要专门加固，而这次用的是没加固的数据中心芯片；②散热反直觉：太空很冷，但没有空气不能对流，只能靠辐射散热，所以每次只能跑 15 分钟；③首帧：官方视频里团队围着屏幕看到俳句的画面。",
+      "caveat": "「首个在轨数据中心级 TPU 回答」为 Google 自述；尚未公布任何辐射/热测试数据。4 颗 TPU、每次约 15 分钟等细节来自 NPR 10-01 报道，非本次博客原文。地缘无关，大陆可播；大陆观众对 Google 产品可达性有限，宜以芯片物理为主线。封面为 Google 官方 YouTube 视频缩略图（「Testing AI in orbit.」）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261031a-suncatcher-orbit.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261031a-suncatcher-orbit.jpg",
+      "imageAlt": "Google 官方视频缩略图：团队成员围着屏幕，标题「Testing AI in orbit.」",
+      "tags": [
+        "AI算力",
+        "太空数据中心",
+        "TPU",
+        "芯片可靠性",
+        "辐射效应",
+        "散热"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 89,
+        "baseBreakdown": {
+          "主线": 21,
+          "钩子": 18,
+          "画面": 15,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 94.0,
+        "threshold": 65,
+        "run": "2026-10-31-0840-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2610.34654",
       "title": "你说一句「不对，重做」，AI 为什么会把已经通过测试的代码删掉？Google 论文：让它在看你回复前先「下注」——写下自己查过什么、有几成把握，误删对的工作从 12.2% 降到 0.02%",
