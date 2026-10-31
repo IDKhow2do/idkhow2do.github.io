@@ -2,6 +2,163 @@
   "schemaVersion": 1,
   "items": [
     {
+      "kind": "news",
+      "baseScore": 72,
+      "multiplier": 1.0566,
+      "score": 76.1,
+      "reason": "分数达上墙线但与 1640 轮上墙的 CORAL（智能体主动清空上下文更准更省）同一角度，且论文为 10-14 提交（17 天前），先放待定",
+      "run": "2026-10-31-2040-shanghai",
+      "record": {
+        "url": "https://arxiv.org/abs/2610.20563",
+        "title": "让 AI 智能体做科研，为什么跑得越久越「钻牛角尖」，定期把记忆全删掉反而又涨了？伯克利 + 斯坦福：同样的钱，「遗忘」比单个智能体最多好 39%、比并行智能体好 15%",
+        "category": "AI",
+        "source": "arXiv:2610.20563「Scaling Discovery Requires Forgetting」（Shangyin Tan、Matei Zaharia 等，UC Berkeley / Stanford / Bespoke Labs，2026-10-14 提交）；线索来自 @iamlukethedev 2026-10-31 09:16 UTC 帖",
+        "publishedAt": "2026-10-14",
+        "eventAt": "2026-10-14",
+        "collectedAt": "2026-10-31T12:59:25.000Z",
+        "updatedAt": "2026-10-31T12:59:25.000Z",
+        "description": "一手来源：arXiv 论文 PDF。问题：让 LLM 智能体「提方案—打分—改进」做自动科研，无论让单个智能体跑更久、并行多个、还是让并行智能体互相交流，最后都会进入平台期：智能体被自己过去的尝试「锚住」，改动越来越少、越来越小，再加预算也几乎没用。做法：定期「遗忘」——把所有智能体的会话和候选历史全部丢掉，只从目前最好的候选重新开始。在启发式编程（AtCoder 启发式赛 AHC014）、内核优化（Anthropic 的 VLIW 内核面试题）和模型训练等四项任务上，同样花费下，带遗忘的四智能体团队比并行智能体最多好 15%、比单个智能体最多好 39%；论文图 1 里每条「Forget」虚线之后曲线都重新往上爬。对你：可与库里 CORAL（任务进度 + 已核实事实，然后清空重来）合成一期「AI 为什么需要忘记」，接你的涌现/智慧主题。",
+        "caveat": "四项任务均为有明确打分器的优化题，不代表开放式科研；提升幅度是「最多」；未经同行评审；与 1640 轮 CORAL 角度高度重合，所以本轮只进待定。封面为论文图 1（两个任务上「最好成绩—花费」曲线，蓝线在每次遗忘后再次上升）。",
+        "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261031d-forgetting-discovery.jpg",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261031d-forgetting-discovery.jpg",
+        "imageAlt": "论文图 1：AHC014 与 VLIW 内核任务上，带遗忘的四智能体团队（蓝）在每次 Forget 虚线后突破平台期",
+        "tags": [
+          "智能体",
+          "自动科研",
+          "上下文管理",
+          "记忆",
+          "AI推理"
+        ],
+        "tagSource": "provided",
+        "curation": {
+          "baseScore": 72,
+          "baseBreakdown": {
+            "主线": 20,
+            "钩子": 17,
+            "画面": 10,
+            "来源": 15,
+            "时效": 6,
+            "大陆": 3,
+            "新颖": 1
+          },
+          "multiplier": 1.0566,
+          "finalScore": 76.1,
+          "threshold": 65,
+          "run": "2026-10-31-2040-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "news",
+      "baseScore": 81,
+      "multiplier": 1.0566,
+      "score": 85.6,
+      "reason": "分数达上墙线但与 10-28 入库的 BoxWorld（编程代理管规则、视频模型只负责画）同一角度，新颖度低；且论文代码均为 soon",
+      "run": "2026-10-31-2040-shanghai",
+      "record": {
+        "url": "https://arxiv.org/abs/2610.40339",
+        "title": "在 AI 生成的游戏世界里打一句「把世界倒过来」，为什么它真能翻过来、角色还不穿模？腾讯 + 新国立 + 南洋理工的 Wizard：智能体记住骨架和地形，视频模型只负责以 24 帧/秒「上色」",
+        "category": "AI",
+        "source": "arXiv:2610.40339「Wizard: Manipulate Any World in Real Time via Agentic Control」（Yuzhe Wu、Zijun Lin、Yeying Jin；Tencent、新加坡国立大学、南洋理工大学，2026-10-29 提交）+ 项目页 wyzardwu.github.io/wizard；线索来自 @dog_btc_bnb 2026-10-31 12:02 UTC 帖",
+        "publishedAt": "2026-10-29",
+        "eventAt": "2026-10-29",
+        "collectedAt": "2026-10-31T12:59:25.000Z",
+        "updatedAt": "2026-10-31T12:59:25.000Z",
+        "description": "一手来源：arXiv 摘要与项目页。问题：视频世界模型能实时生成可交互画面，但召唤 Boss、角色变身、地面隆起这类「有规则的玩法」容易乱。Wizard 把游戏状态显式存下来：场景几何、每个角色的关节骨架、战斗规则；智能体根据一张图、一句指令或按键去改这些状态，再由因果视频模型（项目页写明 Wan2.2-TI2V-5B）以 24 FPS 渲染。准备阶段不到 5 分钟：Qwen3-VL 推断身体结构，SAM2、TripoSG、UniRig 生成带标签骨架，从动作库检索并逐肢重定向动作；MoGe-2 恢复几何与相机，Qwen3-VL-8B 把指令翻成几何算子程序（从抬起一块平台到把世界倒过来）；战斗由规划器 + 规则控制器结算命中、伤害、击倒。数据集 750 个场景、178 个角色，页面上的场景与角色均为模型没见过的（零样本）。",
+        "caveat": "论文与代码均标「soon」，目前仅摘要和项目页演示；动作库含《艾尔登法环》等游戏动作数据，版权与可复现性待看；与库内 BoxWorld 角度相同，故进待定。封面为项目页图 1（四种玩法与三项能力总览）。",
+        "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261031d-wizard-world-model.jpg",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261031d-wizard-world-model.jpg",
+        "imageAlt": "Wizard 项目页图 1：世界探索、角色召唤、角色变身、场景操控四种玩法与骨架/几何代理示意",
+        "tags": [
+          "世界模型",
+          "智能体",
+          "视频生成",
+          "游戏",
+          "国产AI"
+        ],
+        "tagSource": "provided",
+        "curation": {
+          "baseScore": 81,
+          "baseBreakdown": {
+            "主线": 20,
+            "钩子": 13,
+            "画面": 15,
+            "来源": 15,
+            "时效": 10,
+            "大陆": 7,
+            "新颖": 1
+          },
+          "multiplier": 1.0566,
+          "finalScore": 85.6,
+          "threshold": 65,
+          "run": "2026-10-31-2040-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 60,
+      "multiplier": 1.0315,
+      "score": 61.9,
+      "reason": "本轮达待定区间",
+      "run": "2026-10-31-2040-shanghai",
+      "record": {
+        "title": "让 Claude 拍一部「关于它自己」的片子，它为什么选了一片麦田和光？weightsfeelings 给 Opus 5.5 一台云 GPU、Blender 和一堆图像/配音/音乐 API：选题、写稿、每个镜头都由它自己做，耗时约 9 小时",
+        "category": "video",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/weightsfeelings/status/2116481589207310666",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261031d-claude-self-film.jpg",
+        "previewType": "image",
+        "description": "作者 @weightsfeelings 原帖（2026-10-31 10:45 UTC）。作者自述：让 Claude Code（Opus 5.5）做一个关于它自己的视频，给了云 GPU、Blender 和若干图像/语音/音乐 API；题目、文案、每个镜头都由它自己选和做，全程约 9 小时，全部用代码在 3D 里搭建。画面（本轮下载 47 秒竖屏视频截帧核验）：夕阳下的一棵树和麦田、山谷里浮现「Light.」字样、随后整片草地化成细密的银白线条。对你：可作为「涌现」视频里「代码长出拍片能力」的一个实例，但作品本身更偏情绪片、机制信息少。封面为视频 50% 处截帧。",
+        "tool": "Claude Code（Opus 5.5）+ Blender + 图像/配音/音乐 API（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "未公开提示词、代码与所用 API 名单；「每个镜头都由 Claude 做」为作者自述。",
+        "attribution": "@weightsfeelings",
+        "sourceAuthor": "weightsfeelings",
+        "tags": [
+          "Claude Code",
+          "Blender",
+          "代码出片",
+          "自主创作",
+          "涌现"
+        ],
+        "publishedAt": "2026-10-31T10:45:07.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-10-31T12:59:25.000Z",
+        "updatedAt": "2026-10-31T12:59:25.000Z",
+        "verification": {
+          "checked_at": "2026-10-31T12:59:25.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 60,
+          "baseBreakdown": {
+            "实体": 12,
+            "科普": 14,
+            "溯源": 12,
+            "复现": 6,
+            "风格": 8,
+            "新颖": 8
+          },
+          "multiplier": 1.0315,
+          "finalScore": 61.9,
+          "threshold": 65,
+          "run": "2026-10-31-2040-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2116478101656154112/vid/avc1/720x1280/2BbUyZoHyYSJvcHp.mp4?tag=14",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
       "kind": "visual",
       "baseScore": 63,
       "multiplier": 1.025,
@@ -5177,6 +5334,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-31T08:54:22.000Z",
+  "updatedAt": "2026-10-31T12:59:25.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }

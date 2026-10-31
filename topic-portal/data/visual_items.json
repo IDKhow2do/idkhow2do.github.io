@@ -1,8 +1,357 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 505,
+  "exportedCount": 511,
   "items": [
+    {
+      "title": "手握住手机底角，信号为什么就掉了？LemoLab 把硬件原理做成「会动的工程图纸」：暖白网格纸 + 黑线稿，只留一种橙色追踪信号——从射频芯片走同轴线到边框，700 MHz 要 11 厘米、3.5 GHz 只要 2 厘米，手一握就把天线缝「短路」了",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/lemomo_ai/status/2116455398047952904",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261031d-lemo-antenna-blueprint.jpg",
+      "previewType": "image",
+      "description": "作者 @lemomo_ai（LemoLab，lemo-opuscar 风格库作者）原帖（2026-10-31 09:01 UTC）。作者自述：为 lemo-opuscar 探索「克制、简约」的新风格，把枯燥的硬件原理做成一张会动的工程图纸——暖白网格纸底 + 纯黑线条，舍弃复杂光影和反光，只靠几层浅灰塑造体积；全片只保留一种高饱和强调色，专门追踪信号、电流或气流的路径；先按真实公开尺寸搭 3D 模型，再由程序逐帧转绘成线稿，俯视、特写、剖切都在同一模型上切换（注明：手机外观为真实尺寸，内部为结构示意）。画面（本轮下载 52 秒视频截帧核验）：中英双语字幕依次为「握住它底部的那个角，信号就掉了」「信号从芯片出发，顺着一根细线，接到边框上」（爆炸图标出 RF CHIP、COAX CABLE、FEED CLIP）「700 MHz 约需 11 厘米；3.5 GHz 只要 2 厘米」（标出 4 条塑料缝 → 4 段独立天线）「现在握住这个角：手把缝连了起来，信号就弱了」。同作者 11:37 UTC 跟帖另放出一段「拆解 3D 机械」样片（机械表三套系统分色拆开），称这两种风格下次更新会一起加入 lemo-opuscar。对你：①这套「单色追踪一条路径」的语言几乎可以原样搬到刻蚀腔：只把等离子体/气流/射频功率那一条路径涂成强调色；②天线 = 金属边框分段，「四分之一波长」一句话能讲清；③作为风格参考比做具体题更值钱。封面为视频 35% 处截帧（爆炸图：射频芯片—同轴线—馈电夹）。",
+      "tool": "3D 模型 + 程序逐帧转线稿（作者自述；lemo-opuscar 为 AI 编程代理出片的风格库，本风格尚未发布）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "风格说明为作者原帖自述；该风格的 STYLE.md / 代码尚未并入 lemo-opuscar（作者称下次更新加入）；手机内部结构为示意，非真实拆机。",
+      "attribution": "LemoLab（@lemomo_ai）",
+      "sourceAuthor": "lemomo_ai",
+      "tags": [
+        "代码出片",
+        "工程图纸",
+        "线稿",
+        "结构可视化",
+        "剖面",
+        "天线",
+        "lemo-opuscar"
+      ],
+      "publishedAt": "2026-10-31T09:01:03.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-31T12:59:25.000Z",
+      "updatedAt": "2026-10-31T12:59:25.000Z",
+      "verification": {
+        "checked_at": "2026-10-31T12:59:25.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 80,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 20,
+          "溯源": 15,
+          "复现": 8,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.0618,
+        "finalScore": 84.9,
+        "threshold": 65,
+        "run": "2026-10-31-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2116454508863836160/vid/avc1/1920x1080/BlpUBjFsFAI9N4sO.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "沙漏里一个金色王国漏下去，为什么下面长出的冬日王国「一块都没多」？Opus 5.5 单个 HTML 的 Three.js 体素动画：两个世界用完全相同数量的方块，屋顶塌成沙、穿过瓶颈、再一块块落回原位",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/halfofthemwork/status/2116510736151351374",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261031d-hourglass-two-worlds.jpg",
+      "previewType": "image",
+      "description": "作者 @halfofthemwork 原帖（2026-10-31 12:40 UTC），并在 12:41 UTC 回复里公开完整提示词。作者自述：让 Claude Opus 5.5 做一个沙漏，一个小王国一个体素一个体素地漏进另一个王国；「没有任何东西被添加，冬日世界里的一切原本都属于金色世界」。评论区回复：不是 Unity 也不是 Blender，只是一个 HTML 文件里的 Three.js，所有纹理、齿轮和建筑都由代码生成、无外部素材；为了让两个世界方块数完全相等，埋在地形深处的岩石被合并成更大的方块。提示词要点（原文）：「The Hourglass of Two Worlds」，黄铜玻璃沙漏悬在星空里、外绕星盘环；上下两室各有一个保持水平的圆形石盘；16 秒循环——0–2 秒村庄日常、2–11 秒上层世界从边缘和屋顶向内瓦解，体素像沙一样滑向漏斗，在最窄处由金变蓝，落到下层逐层搭出冬日王国，提灯小守夜人一路逃跑并跳下去；13–16 秒沙漏翻转 180°，下一轮反向重建；关键规则「体素守恒：不创建也不销毁任何体素，每个体素在两个世界各有一个家，用一个 InstancedMesh」。画面（本轮下载 32 秒视频截帧核验）：上室金色村庄/下室冰蓝城堡，中间一束白光细流。对你：①「守恒」是现成的科普钩子——物质守恒、质量守恒，甚至晶圆上的「材料没消失，只是被刻走后沉积到别处」；②提示词公开、单文件，可直接让 Claude 复刻改成自己的主题；③16 秒循环正好做片头。封面为视频 50% 处截帧。",
+      "tool": "Claude Opus 5.5 → 单文件 HTML + Three.js（InstancedMesh 体素；作者自述）",
+      "prompt": "Create a single self-contained HTML file using Three.js that renders a beautiful animated voxel-art 3D scene: \"The Hourglass of Two Worlds\". …（完整提示词见作者 2026-10-31 12:41 UTC 回复 https://x.com/halfofthemwork/status/2116510850907242725 ；关键规则：Conservation of voxels. No voxel is created or destroyed. Both worlds use exactly the same voxel count, and every voxel has a home position in each world. Use one InstancedMesh …）",
+      "promptProvenance": "original_public",
+      "provenanceNote": "提示词为作者公开回复（X 正文在 InstancedMesh 处截断，后文未取到）；未发布源码与许可证；「方块数完全相等」为作者自述，未运行验证。",
+      "attribution": "@halfofthemwork",
+      "sourceAuthor": "halfofthemwork",
+      "tags": [
+        "Three.js",
+        "体素",
+        "代码出片",
+        "守恒",
+        "Claude Opus 5.5",
+        "InstancedMesh",
+        "提示词公开"
+      ],
+      "publishedAt": "2026-10-31T12:40:57.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-31T12:59:25.000Z",
+      "updatedAt": "2026-10-31T12:59:25.000Z",
+      "verification": {
+        "checked_at": "2026-10-31T12:59:25.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 79,
+        "baseBreakdown": {
+          "实体": 19,
+          "科普": 16,
+          "溯源": 14,
+          "复现": 12,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.1979,
+        "finalScore": 94.6,
+        "threshold": 65,
+        "run": "2026-10-31-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2116510571545698305/vid/avc1/1080x1350/U6bwbCNfGrJQ3yPj.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "让 AI 直接写游戏只会出灰盒子，为什么先让视频模型「拍」一段 15 秒假实机，再让编程代理照着抄，就做出了 31 款能玩的 Three.js 游戏？开源技能 video-to-game：平均每款 6 美元，素材全由 fal 生成，代理还会自己打一遍录屏验收",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://github.com/lovisdotio/video-to-game",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261031d-video-to-game.jpg",
+      "previewType": "image",
+      "description": "一手来源：GitHub 仓库 lovisdotio/video-to-game（MIT 许可证，2026-10-29 创建，本轮约 317 星）README；线索来自 @oaichu95 2026-10-31 12:27 UTC 帖。做法（README）：编程代理不擅长设计游戏的「样子」，让 A 先走——先用视频模型（MiniMax H3 Max on fal）生成 10–15 秒的游戏视频当「设计文档」；study_video.py 把视频拆成帧、拼图、调色板和剪辑点，代理据此写规格（镜头、主角、一个核心机制、关键时刻、画面风格）；每个素材都从视频自己的帧出发在 fal 上生成：概念图（Nano Banana Pro）、抠图、图生 3D（Meshy、Tripo、Hunyuan 3D）、绑骨与动画、音效音乐；游戏是单个 index.html + Three.js，无引擎无模板；每改一次都把视频和游戏同一位置的三张图并排比对；最后代理用键盘脚本自己玩、按真实帧率录屏、挑出最精彩的几秒，跌落、撞墙、空镜头先修好。成果：31 款游戏，1,013 次 fal 调用（594 张图、194 个 3D 模型、290 段声音），总计 202 美元，约 6 美元一款，全部可在 fal-video-to-game.vercel.app 在线玩。支持 Claude Code、Codex、Cursor、Gemini 等。对你：①正好接你「代码长出做视频的能力」那条涌现线，这里是反过来——视频长出代码；②「设计交给视频模型、工程交给代码代理」的分工，可以做成一期 AI 协作分工科普；③其中 Paper Dragon（纸龙风筝 0.79 美元）、Snow Globe（雪花倒着飘）等可直接当画面。封面为 README 动图中段截帧：上为可玩游戏、下为生成视频、右为 Three.js 代码与 fal 素材。",
+      "tool": "Claude Code / Codex / Cursor 等 + fal（MiniMax H3 Max、Nano Banana Pro、Meshy/Tripo/Hunyuan 3D）+ Three.js",
+      "prompt": "",
+      "promptProvenance": "original_public",
+      "provenanceNote": "每款游戏的提示词、fal 模型与花费在仓库 gallery/<游戏>/ 中公开（本轮只读了 README，未逐一打开）；MIT 许可证；未本地运行。原作者未在 X 找到首发帖，按仓库收录。",
+      "attribution": "lovisdotio（GitHub）",
+      "sourceAuthor": "lovisdotio",
+      "tags": [
+        "Three.js",
+        "Claude Code",
+        "视频生成",
+        "图生3D",
+        "游戏资产",
+        "fal",
+        "开源",
+        "智能体"
+      ],
+      "publishedAt": "2026-10-29T03:46:38Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-31T12:59:25.000Z",
+      "updatedAt": "2026-10-31T12:59:25.000Z",
+      "verification": {
+        "checked_at": "2026-10-31T12:59:25.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 80,
+        "baseBreakdown": {
+          "实体": 13,
+          "科普": 14,
+          "溯源": 20,
+          "复现": 15,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.4,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-10-31-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/lovisdotio/video-to-game",
+      "licenseName": "MIT",
+      "licenseUrl": "https://github.com/lovisdotio/video-to-game",
+      "demoUrl": "https://fal-video-to-game.vercel.app"
+    },
+    {
+      "title": "按一下方向键，角色的每一步为什么都不一样？monoradio 把 NVIDIA 的 MotionBricks 搬进浏览器 WebGPU：只预先摆好几个关键姿势，中间 1–2 秒的动作每 0.1 秒现场生成，还能拖入自己的 VRM 角色试",
+      "category": "motion",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/monoradio102/status/2116414021180297532",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261031d-motionbricks-live.jpg",
+      "previewType": "image",
+      "description": "作者 @monoradio102 原帖（2026-10-31 06:16 UTC，可玩 Demo 发布；10-30 09:37 UTC 首发演示视频获约 1,660 赞）；线索来自 @keyiLeYi 10-31 09:31 UTC 中文转述。作者自述：MotionBricks 是给它「前几帧」和「稍后的目标姿势」，就生成中间 1–2 秒动作的模型；随着按键不断重设目标，每次约 0.1 秒多一点，全部在浏览器 WebGPU 里跑（PC Chrome 推荐，需下载约 300MB 模型）；矢印键操作时动作是当场生成的，不是循环同一段动画；目标姿势预先用 NVIDIA 另一套文本生成动作的模型（Kimodo / ARDY）生成后挑出要点，比如「手撑墙翻越」给文字和路线生成几条再挑好的；可拖入自己的 VRM 模型。Demo：huggingface.co/spaces/monoradio/motionbricks-live（本轮 HTTP 200）。画面（本轮下载视频截帧核验）：黑白棋盘纹理的 VRM 少女在深色场景里跑、跳、翻越方块。对你：①「关键帧之间谁来补？」是动画/机器人共通的问题，可接人形机器人运动生成；②与库里榊正宗（MotionBricks + 线稿）同模型、不同角度：这里强调实时与浏览器端。封面为 Demo 视频 50% 处截帧。",
+      "tool": "NVIDIA MotionBricks（WebGPU 浏览器推理）+ Kimodo / ARDY 预生成目标姿势 + VRM",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者公开可玩 Demo（Hugging Face Space）；Space 自身许可证与 MotionBricks 权重许可本轮未核实。",
+      "attribution": "@monoradio102",
+      "sourceAuthor": "monoradio102",
+      "tags": [
+        "动作生成",
+        "WebGPU",
+        "MotionBricks",
+        "VRM",
+        "实时生成",
+        "角色动画",
+        "NVIDIA"
+      ],
+      "publishedAt": "2026-10-31T06:16:38.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-31T12:59:25.000Z",
+      "updatedAt": "2026-10-31T12:59:25.000Z",
+      "verification": {
+        "checked_at": "2026-10-31T12:59:25.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 75,
+        "baseBreakdown": {
+          "实体": 17,
+          "科普": 16,
+          "溯源": 16,
+          "复现": 13,
+          "风格": 8,
+          "新颖": 5
+        },
+        "multiplier": 1.1,
+        "finalScore": 82.5,
+        "threshold": 65,
+        "run": "2026-10-31-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2116413805865705472/vid/avc1/834x720/R1slDTcKniHu_26I.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "demoUrl": "https://huggingface.co/spaces/monoradio/motionbricks-live"
+    },
+    {
+      "title": "网页里翻一页书，为什么纸会先在中间鼓起来、再带着阴影倒向另一边？awaaz_in 把 react-pageflip 用 Three.js 重写：真实的纸张弯折和光照（作者在问要不要开源）",
+      "category": "frontend",
+      "styleFamily": "uiux",
+      "source": "https://x.com/awaaz_in/status/2116476156161757209",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261031d-pageflip-threejs.jpg",
+      "previewType": "image",
+      "description": "作者 @awaaz_in 原帖（2026-10-31 10:23 UTC，横竖两版 4K 视频）。作者自述：去年找到 react-pageflip 已觉得很了不起，现在用 Three.js 重写，带真实的纸张弯折和光照，询问是否开源。画面（本轮下载 32 秒视频截帧核验）：一本黑色硬壳速写本在白底上逐页翻动，翻页时纸页立起、弯曲、有渐变阴影，页面上是钢笔速写（长椅、自行车、盆栽、踏板车、鸽子、晾衣绳楼梯），画面底注「All sketches were generated with AI for this demo」。对你：纸艺/翻书是你点赞最多的方向之一；可作为「纸为什么这样弯」（弯曲刚度、薄板大变形）的画面素材，或做讲解类视频的翻页转场。封面为视频 70% 处截帧（翻页中途）。",
+      "tool": "Three.js（作者自述）；速写插图为 AI 生成（画面注明）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "尚未开源、无代码与许可证；纸张弯折是否为物理模拟未说明。",
+      "attribution": "@awaaz_in",
+      "sourceAuthor": "awaaz_in",
+      "tags": [
+        "Three.js",
+        "翻页",
+        "纸艺场景",
+        "纸张弯折",
+        "光照",
+        "交互网页"
+      ],
+      "publishedAt": "2026-10-31T10:23:32.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-31T12:59:25.000Z",
+      "updatedAt": "2026-10-31T12:59:25.000Z",
+      "verification": {
+        "checked_at": "2026-10-31T12:59:25.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 61,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 9,
+          "溯源": 11,
+          "复现": 4,
+          "风格": 10,
+          "新颖": 7
+        },
+        "multiplier": 1.3338,
+        "finalScore": 81.4,
+        "threshold": 65,
+        "run": "2026-10-31-2040-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2116475990222548992/vid/avc1/3840x2160/LKG6KTHhsil9aQr_.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "Reddit 网友画了张「撕纸便签桌面」却不会做，为什么有人 20 分钟就让它真跑起来了？k4ditano 用开源桌面运行时 Pleamar + Claude：76 行 WGSL 着色器画出撕边、纸纤维和纸张抬起时变大的阴影",
+      "category": "frontend",
+      "styleFamily": "uiux",
+      "source": "https://x.com/k4ditano/status/2116483421040001526",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261031d-torn-paper-desktop.jpg",
+      "previewType": "image",
+      "description": "作者 @k4ditano 原帖与自回复线程（2026-10-31 10:52 UTC）。作者自述：r/hyprland 上有人分享了一个温馨的撕纸风桌面概念却不知道怎么实现（原创意 u/Reasonable-Exit-2379，帖内已注明并附链接），他用 Pleamar + Claude 约 20 分钟做出来；不是截图——纸张落下、终端打字、时钟走动。制作：一个约 550 行的场景文件；纸张是 76 行 WGSL 着色器，包含撕裂边缘、纤维和纸张抬起时变大的阴影；壁纸和涂鸦为 AI 生成；所有动的东西都是弹簧。Pleamar 是 Rust + wgpu 写的桌面 Shell 语言与运行时（BSD-3-Clause，github.com/k4ditano/pleamar），声明「动画不依赖逻辑」，逻辑卡住动画也 60fps。作者也承认这是样机，功能尚未接线。画面（本轮下载视频截帧核验）：晚霞壁纸上散放米白撕边纸片窗口——终端、文件夹、时钟、待办、音乐卡片。对你：撕纸材质着色器可直接借来做科普视频的字幕卡/信息卡底板。封面为视频 50% 处截帧。",
+      "tool": "Pleamar（Rust + wgpu）+ Claude；纸张为 WGSL 着色器（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "Pleamar 运行时开源（BSD-3-Clause）；本作品场景文件与提示词未见公开；作者疑为 Pleamar 开发者本人（自家项目展示）。",
+      "attribution": "@k4ditano；原始概念 u/Reasonable-Exit-2379（r/hyprland）",
+      "sourceAuthor": "k4ditano",
+      "tags": [
+        "撕纸",
+        "纸艺场景",
+        "着色器",
+        "WGSL",
+        "桌面UI",
+        "Claude"
+      ],
+      "publishedAt": "2026-10-31T10:52:24.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-10-31T12:59:25.000Z",
+      "updatedAt": "2026-10-31T12:59:25.000Z",
+      "verification": {
+        "checked_at": "2026-10-31T12:59:25.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 62,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 7,
+          "溯源": 16,
+          "复现": 9,
+          "风格": 6,
+          "新颖": 6
+        },
+        "multiplier": 1.3184,
+        "finalScore": 81.7,
+        "threshold": 65,
+        "run": "2026-10-31-2040-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://video.twimg.com/amplify_video/2116483079954968576/vid/avc1/1920x1080/JSk9MqRUmupH65ac.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/k4ditano/pleamar",
+      "licenseName": "BSD-3-Clause",
+      "licenseUrl": "https://github.com/k4ditano/pleamar"
+    },
     {
       "title": "一支 70-200mm f/2.8 镜头里的 11 片镜片，变焦时为什么焦点不跑？CF长风用纯 Three.js 代码「长」出一段 45 秒手绘风拆解片：光线在前组收拢、在光圈交汇，九片光圈叶一片片拆出来",
       "category": "video",
@@ -25406,8 +25755,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条",
-  "updatedAt": "2026-10-31T08:54:22.000Z",
-  "totalItems": 505,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条",
+  "updatedAt": "2026-10-31T12:59:25.000Z",
+  "totalItems": 511,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
