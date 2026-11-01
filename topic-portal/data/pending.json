@@ -3,6 +3,116 @@
   "items": [
     {
       "kind": "news",
+      "baseScore": 73,
+      "multiplier": 1.0566,
+      "score": 77.1,
+      "reason": "分数达上墙线但与库内「What Does a Harness Buy」（外壳决定 token 账单）、「Model or Harness」与「MCP 故障下大模型容错」同属「接口/外壳左右智能体表现」角度，新颖度低，且论文为 10-25 提交",
+      "run": "2026-11-01-0840-shanghai",
+      "record": {
+        "url": "https://arxiv.org/abs/2610.34298",
+        "title": "同一套工具，做成 MCP 还是做成命令行给 AI 智能体用，为什么分数能差 36.6 分、换个环境方向还会反过来？港理工 + 中科院计算所：能力完全对齐、只换「长相」，2004 条轨迹里 94.3% 走上了不同的路",
+        "category": "AI",
+        "source": "arXiv:2610.34298「Matched Capabilities, Different Behaviors: A Controlled Study of MCP and CLI Interfaces for Language Agents」（Zhenning Shi、Liang Pang、Yongqi Li；香港理工大学、中国科学院计算技术研究所，2026-10-25 提交）；代码 github.com/ModalityDance/MICA；线索来自 @pc_shao 2026-10-31 13:51 UTC 帖",
+        "publishedAt": "2026-10-25",
+        "eventAt": "2026-10-25",
+        "collectedAt": "2026-11-01T00:53:41.000Z",
+        "updatedAt": "2026-11-01T00:53:41.000Z",
+        "description": "一手来源：arXiv 论文 PDF。做法 MICA：从同一份「语义动作契约」分别渲染出 MCP 版（带参数结构的命名工具）和 CLI 版（命令 + 参数），解码后走同一个运行时，所以智能体「能做什么」完全一样，只有「呈现给模型的样子」不同。6 个模型 × 3 个交互环境（ALFWorld、WebShop 等）。结果：Qwen3-14B 在 ALFWorld 上 MCP 比 CLI 低 36.6 分（20.1 vs 56.7），在 WebShop 上反而高 4.9 分（64.4 vs 59.5）；token 也反转——ALFWorld 上 MCP 每题多花 5.49 万，WebShop 上少花 3.5 万；接口不只影响格式对错，还改变「选哪个动作」，比如 WebShop 上 MCP 让点击多 6 个百分点、搜索少 6 个点；2,004 对自然轨迹里 94.3% 出现结构性分叉，早期一个小差别会一路传下去。修复办法 DART：保留已验证的语义决定，只修「表达方式」的错，6 组设置全部提分（最多 +9.0），MCP 每题 token 最多省 2.71 万。对你：可并入「AI 的外壳比模型更重要？」一期，和库里 harness 两篇一起讲。",
+        "caveat": "没有「MCP 一定好/CLI 一定好」的结论，方向随模型和环境变化；环境均为学术基准；未经同行评审；与库内多条 harness/接口题角度重合，故进待定。封面为论文图 1（MICA 总览：契约对齐的接口构造、局部敏感性与轨迹传播、DART 修复）截取。",
+        "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261101a-mcp-vs-cli.jpg",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261101a-mcp-vs-cli.jpg",
+        "imageAlt": "论文图 1：MCP 与 CLI 从同一语义契约渲染、走同一运行时的 MICA 总览与 DART 修复流程",
+        "tags": [
+          "智能体",
+          "MCP",
+          "工具调用",
+          "AI推理",
+          "国产AI"
+        ],
+        "tagSource": "provided",
+        "curation": {
+          "baseScore": 73,
+          "baseBreakdown": {
+            "主线": 20,
+            "钩子": 15,
+            "画面": 8,
+            "来源": 15,
+            "时效": 7,
+            "大陆": 6,
+            "新颖": 2
+          },
+          "multiplier": 1.0566,
+          "finalScore": 77.1,
+          "threshold": 65,
+          "run": "2026-11-01-0840-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 72,
+      "multiplier": 1.4,
+      "score": 100.0,
+      "reason": "分数达上墙线但库内已有 rockbiter 程序化人眼与 vidar 角膜折射开关对比两条同题材（眼球着色器），新颖度低",
+      "run": "2026-11-01-0840-shanghai",
+      "record": {
+        "title": "瞳孔从 3.5 毫米放大到 7.8 毫米，虹膜纹理是被「盖住」还是被「挤」到边上？vidar 用 three.js 光线追踪眼球左右对比：左边只是黑圆变大，右边按半径重映射，虹膜纤维往外缘堆起来",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/vidar_0208/status/2116681759307743594",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261101a-pupil-remap.jpg",
+        "previewType": "image",
+        "description": "作者 @vidar_0208 原帖（2026-11-01 00:00 UTC，分屏对比视频 + 技术说明）。问题：多数眼睛着色器放大瞳孔只是画一个更大的黑圆，虹膜贴图不动，于是内圈虹膜被盖住；真实眼睛里虹膜组织会移动并向外缘堆积。做法：采用 zulubo/EyeShader 的分段重映射——半径小于瞳孔时把 [0, 当前瞳孔] 映射到贴图的 [0, 原始瞳孔]，瞳孔到虹膜边缘之间把 [当前瞳孔, 边缘] 映射到 [原始瞳孔, 边缘]，整圈虹膜被压缩或拉伸，什么都不盖住；虚线环标记虹膜图案中 62% 半径处的同一个点，左边不动，右边随瞳孔放大向外滑。整只眼睛在一个片元着色器里光线追踪：眼球、按折射率 1.376 折射的角膜、凹陷的虹膜平面、带细血管的巩膜；虹膜纹理全部程序化生成。按 11.8 mm 虹膜换算，瞳孔从 3.5 mm 变到 7.8 mm。作者承认重映射是线性的，真实组织并不均匀压缩。封面为视频 50% 处截帧。",
+        "tool": "three.js 0.170 单个片元着色器光线追踪；重映射方法来自 zulubo/EyeShader",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者自述；本作品源码未公开；与库内 vidar 角膜折射、rockbiter 人眼同题材。",
+        "attribution": "@vidar_0208；方法 zulubo/EyeShader",
+        "sourceAuthor": "vidar_0208",
+        "tags": [
+          "Three.js",
+          "着色器",
+          "眼睛",
+          "光线追踪",
+          "对比演示"
+        ],
+        "publishedAt": "2026-11-01T00:00:32.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-11-01T00:53:41.000Z",
+        "updatedAt": "2026-11-01T00:53:41.000Z",
+        "verification": {
+          "checked_at": "2026-11-01T00:53:41.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 72,
+          "baseBreakdown": {
+            "实体": 17,
+            "科普": 15,
+            "溯源": 15,
+            "复现": 12,
+            "风格": 10,
+            "新颖": 3
+          },
+          "multiplier": 1.4,
+          "finalScore": 100.0,
+          "threshold": 65,
+          "run": "2026-11-01-0840-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/ext_tw_video/2116681746167013377/pu/vid/avc1/1280x720/ltgjKWHwUZlgnVEy.mp4?tag=12",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "news",
       "baseScore": 72,
       "multiplier": 1.0566,
       "score": 76.1,
@@ -5334,6 +5444,6 @@
       }
     }
   ],
-  "updatedAt": "2026-10-31T12:59:25.000Z",
+  "updatedAt": "2026-11-01T00:53:41.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }

@@ -1,8 +1,299 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 511,
+  "exportedCount": 516,
   "items": [
+    {
+      "title": "同样的方块、同样的噪声，为什么右边的云「越厚越暗」，左边却像一块块白砖？vidar 用 three.js 把 Minecraft 方块云改成体积光照：每个方块当一团雾，朝太阳采 8 次样，用比尔定律算透进来多少光",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "source": "https://x.com/vidar_0208/status/2116636493028462686",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261101a-voxel-clouds.jpg",
+      "previewType": "image",
+      "description": "作者 @vidar_0208 原帖（2026-10-31 21:00 UTC，12 秒左右分屏对比视频 + 完整技术说明）。问题：体积云看起来软，是因为每个采样点都是一点雾；方块游戏想要硬边，常见做法是给密度设阈值、超过 0 就变成实心方块（左半边）——形状对了，但每块明暗一样，厚云核和薄云丝看起来没区别。做法（右半边）：保留体积光照，只改「在哪读密度」——①每次密度查询都吸附到 40×16×40 体素的中心；②视线用 DDA 算法（Amanatides & Woo）逐个体素前进，保证方块面锐利；③每个体素朝太阳再走 8 个光照采样，用比尔定律算到达的阳光；④由前往后累积透射率 transmittance *= exp(-density × step × 1.05)，低于 0.01 就停。密度场沿用 Sebastian Lague 的方案（每通道 3 层平铺 Worley 噪声 + 高度梯度 + 细节侵蚀）。作者还记录了踩坑：原仓库参数吸附到体素后云太薄铺满天空，把密度倍数提到 12、偏移从 -5.6 渐变到 -5.0，正好变成「云量随时间增长」的天气效果。three.js 0.170，云以 640×360 渲染再合成到 2560×1440 的体素地形上。画面（本轮下载视频截帧核验）：上方标注 OPAQUE VOXELS / VOLUMETRIC VOXELS，一条分割线左右对比。对你：①「为什么云底是灰的」——光被厚云吸收，比尔定律一句话讲清，正好也能类比刻蚀/光刻里光在胶层中的衰减；②vidar 一贯的「同一场景左右对比 + 公式」格式可直接借来做科普镜头。封面为视频 50% 处截帧。",
+      "tool": "three.js 0.170 着色器（DDA 体素步进 + 体积光照；密度场方案来自 Sebastian Lague）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "技术说明为作者原帖自述；作者未公开本作品源码与许可证，密度场代码逻辑来自 Sebastian Lague 的开源云渲染仓库（作者注明）；未运行验证。",
+      "attribution": "@vidar_0208；密度场方案 Sebastian Lague",
+      "sourceAuthor": "vidar_0208",
+      "tags": [
+        "Three.js",
+        "着色器",
+        "体积云",
+        "体素",
+        "光线步进",
+        "比尔定律",
+        "对比演示"
+      ],
+      "publishedAt": "2026-10-31T21:00:39.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-01T00:53:41.000Z",
+      "updatedAt": "2026-11-01T00:53:41.000Z",
+      "verification": {
+        "checked_at": "2026-11-01T00:53:41.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 18,
+          "溯源": 15,
+          "复现": 12,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.4,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-11-01-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/ext_tw_video/2116636480852398080/pu/vid/avc1/1280x720/VVNI117zcTWfwiEv.mp4?tag=12",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "魔方 26 块拧来拧去，为什么从来不散架？marovole 用代码建模把魔方逐层拆开：真正固定的只有 6 个中心块，螺丝穿过弹簧把它们拉向中轴；12 个棱块被中心块压住，8 个角块又被棱块压住——一滴胶水都没有",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/marovole/status/2116532923444892143",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261101a-rubik-teardown.jpg",
+      "previewType": "image",
+      "description": "作者 @marovole 原帖（2026-10-31 14:09 UTC，约 48 秒 1080p 横屏视频）。作者自述：魔方这么多块为什么转不散？拆开才发现真正固定的只有 6 个中心块——螺丝穿过弹簧把中心块拉向中轴；12 个棱块被中心块压住；8 个角块又被棱块压住；没有胶水，全靠互相压住。画面由代码建模，脚和法兰是示意比例；来源注明 Wikipedia「Rubik's Cube」与《Chinese Journal of Mechanical Engineering》魔方综述。画面（本轮下载视频截帧核验）：浅灰底、左上角红色短线 + 黑字章节标题，「拆开看：26 块外壳 + 1 个中轴」爆炸图；「棱块没有固定：12 个，被 2 个中心块压住」单独抽出一个棱块；「拿掉前半边，一层压着一层」剖开看到白色中轴。对你：①几乎就是你要的「等等，喂神马」格式——日常物件一个反直觉问题、0 秒爆炸图、结构逐层讲清、结尾给出处；②「互相压住、没有一个零件单独固定」还能接涌现/结构稳定性话题；③极简白底 + 红色强调的排版可作为风格参考。封面为视频 20% 处截帧（爆炸图）。",
+      "tool": "代码建模（作者自述，未说明具体工具/模型）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者注明资料来源（Wikipedia、CJME 综述）与「脚和法兰为示意比例」；未公开代码、提示词与所用工具；账号互动很少（发帖时 1 赞）。",
+      "attribution": "@marovole",
+      "sourceAuthor": "marovole",
+      "tags": [
+        "结构可视化",
+        "爆炸图",
+        "机械科普",
+        "代码出片",
+        "魔方",
+        "剖面"
+      ],
+      "publishedAt": "2026-10-31T14:09:06.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-01T00:53:41.000Z",
+      "updatedAt": "2026-11-01T00:53:41.000Z",
+      "verification": {
+        "checked_at": "2026-11-01T00:53:41.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 71,
+        "baseBreakdown": {
+          "实体": 19,
+          "科普": 20,
+          "溯源": 11,
+          "复现": 4,
+          "风格": 9,
+          "新颖": 8
+        },
+        "multiplier": 1.0618,
+        "finalScore": 75.4,
+        "threshold": 65,
+        "run": "2026-11-01-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2116532371445125120/vid/avc1/1920x1080/tUAn3g0NerRYMxst.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "B 站、抖音上那种「黑底动画 + 旁白」的知识讲解视频，为什么一个 Claude Code 技能 1–3 小时就能自己做完一条？mg-styles 作者的 anything2explainer：先查资料逐条附来源，再写稿配音、按配音分镜，8 个代理并行用 Remotion 一镜一镜写代码，最后还要派代理逐章质检",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://github.com/Vincentwei1021/anything2explainer",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261101a-anything2explainer.jpg",
+      "previewType": "image",
+      "description": "一手来源：GitHub 仓库 Vincentwei1021/anything2explainer 的 README 与 LICENSE（2026-09-08 创建，最近推送 2026-09-18，本轮约 2,900 星）；作者即库内 mg-styles-15（15 种 MG 动效风格）的 Vincentwei1021；本窗口由 @GitHub_Daily 2026-10-31 14:30 UTC 中文介绍帖（约 130 赞、147 收藏）重新带起。是什么：给 Claude Code / Codex 用的技能，输入一个主题（或一篇文章）、选时长和语言，输出 1280×720 的黑底动效讲解片：同步配音、按词边界对齐的字幕、章节卡、顶部 HUD 和底部章节进度条，每一帧都用 Remotion（React + TypeScript）代码画，不用素材库、不用视频生成模型。流程：代理先带来源查资料 → 写旁白 → 生成配音和逐帧时间轴 → 逐镜头分镜 → 派多个构建代理并行、每个镜头写一个 Remotion 组件 → 质检代理按书面标准检查渲染帧；全程只在 4 个节点问你。规格（README 表格）：2–3 分钟约 1 小时、4–6 个代理；3–5 分钟（参考档）40–50 个镜头、8 个代理、约 2 小时；5–8 分钟 10–14 个代理、2–3 小时。中文默认 edge-tts 云希男声，也可接自己的 TTS（示例用火山引擎 TTS 2.0 + 强制对齐）。仓库附完整参考片《RAG 与知识库》（中文 4 分 54 秒、44 个镜头）及调研、旁白、分镜、每镜源码、质检报告全套过程文件。对你：①这就是你现在做视频的流程被打包成了技能——可以直接拿一期半导体题试跑，对比自己手搓的耗时；②「每个数字和类比都附来源」的调研环节值得借鉴；③注意许可证（见备注）。封面为仓库 examples/rag/frames 里的参考帧（向量化章节：语义相近的句子在空间里是邻居）。",
+      "tool": "Claude Code / Codex 技能 + Remotion 4（React + TypeScript）+ edge-tts / kokoro-82m / 自带 TTS + ffmpeg",
+      "prompt": "",
+      "promptProvenance": "original_public",
+      "provenanceNote": "方法、风格规范、多代理分工协议与参考片全套过程文件公开在仓库；许可证为 PolyForm Noncommercial 1.0.0——非商业免费，商业使用工具包需事先获得作者授权（用它做出的视频归创作者）。商单视频若要用它，需先联系作者。仓库为 9 月项目，本轮因 X 中文介绍帖重新出现，库内此前未收。未本地运行。",
+      "attribution": "Vincent Wei（Vincentwei1021）",
+      "sourceAuthor": "Vincentwei1021",
+      "tags": [
+        "代码出片",
+        "Remotion",
+        "Claude Code",
+        "科普讲解",
+        "TTS",
+        "多智能体",
+        "源码公开"
+      ],
+      "publishedAt": "2026-09-08T17:19:54Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-01T00:53:41.000Z",
+      "updatedAt": "2026-11-01T00:53:41.000Z",
+      "verification": {
+        "checked_at": "2026-11-01T00:53:41.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 72,
+        "baseBreakdown": {
+          "实体": 6,
+          "科普": 18,
+          "溯源": 16,
+          "复现": 15,
+          "风格": 9,
+          "新颖": 8
+        },
+        "multiplier": 1.025,
+        "finalScore": 73.8,
+        "threshold": 65,
+        "run": "2026-11-01-0840-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/Vincentwei1021/anything2explainer",
+      "licenseName": "PolyForm Noncommercial 1.0.0",
+      "licenseUrl": "https://github.com/Vincentwei1021/anything2explainer/blob/main/LICENSE"
+    },
+    {
+      "title": "只给一张正面图，AI 为什么能「补」出它从没见过的背面？Speridlabs 开源 Idol（Apache-2.0）：一张图出 26 万个 3D 高斯，niklaslenz 实测 RTX 5090 每张 14.5 秒、16GB 的 5060 Ti 57.4 秒——同一个随机种子，两张卡补出来的背面却不一样",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/niklaslenz_ai/status/2116538181860659354",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261101a-idol-image-to-3d.jpg",
+      "previewType": "image",
+      "description": "作者 @niklaslenz_ai 原帖（2026-10-31 14:30 UTC，约 197 赞、208 收藏）+ 其测评页 niklaslenz.com/3d/idol-sdk-5060ti-5090（每个数字链接原始文件）+ 模型仓库 speridlabs/idol-sdk README（Apache-2.0，2026-10-28 创建）。Idol 是什么（README）：给一张物体图（渲染图、生成图或照片），自动去背景、裁切，生成 3.3 万到 104.9 万个 3D 高斯（默认 262,144），输出标准 3DGS .ply，「包括图片从未展示的那几面」；370M 参数 DiT，图像条件用 DINOv3 ViT-H+ 和 FLUX.2 VAE，50 步采样，约 7.2GB 显存。实测（作者自己的 21 张示例图中位数，模型已加载，50 步、种子 42）：RTX 5090 每张 14.5 秒（104.9 万高斯 15.1 秒，首张含编译 22.1 秒，峰值显存 7.5 GiB）；RTX 5060 Ti 16GB 每张 57.4 秒（59.8 秒 / 73.3 秒，7.0 GiB），5090 快 4.0 倍。测评者强调：背面完全是模型「编」的，因为输入图从来没拍到；同一个种子在两张卡上生成的 3D 模型并不相同。画面（本轮下载视频截帧核验）：左侧输入图（蓝色小龙、维京小矮人），右侧转动的高斯泼溅模型与两张卡的耗时条。对你：①「看不见的背面从哪来」是生成式 3D 最好讲的反直觉点，可接你房间 3D 建模/换装修风格的项目；②消费级显卡一分钟内出模，适合做「家用显卡能干什么」的对比镜头。封面为视频 50% 处截帧。",
+      "tool": "Speridlabs Idol（idol-sdk 4702a7f，PyTorch 2.14.1 + CUDA 13.0）；RTX 5090 / RTX 5060 Ti 实测",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "代码 Apache-2.0；但首次运行需在 Hugging Face 申请 facebook/dinov3 与 black-forest-labs/FLUX.2-dev 两个受限权重（其许可另计，商用前需核实）。README 称「可在 2 秒内运行」，与测评者 50 步实测 14.5 秒口径不同（未说明 2 秒的硬件与设置）。测评为第三方，未本地复现。",
+      "attribution": "测评 @niklaslenz_ai；模型 Speridlabs（@speridlabs）",
+      "sourceAuthor": "niklaslenz_ai",
+      "tags": [
+        "高斯泼溅",
+        "图生3D",
+        "开源",
+        "显卡实测",
+        "3D建模"
+      ],
+      "publishedAt": "2026-10-31T14:30:00.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-01T00:53:41.000Z",
+      "updatedAt": "2026-11-01T00:53:41.000Z",
+      "verification": {
+        "checked_at": "2026-11-01T00:53:41.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 70,
+        "baseBreakdown": {
+          "实体": 13,
+          "科普": 12,
+          "溯源": 17,
+          "复现": 14,
+          "风格": 7,
+          "新颖": 7
+        },
+        "multiplier": 1.0,
+        "finalScore": 70.0,
+        "threshold": 65,
+        "run": "2026-11-01-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2116460655687475200/vid/avc1/1080x1350/cKvQZpoezpqewNK2.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/speridlabs/idol-sdk",
+      "licenseName": "Apache-2.0",
+      "licenseUrl": "https://github.com/speridlabs/idol-sdk",
+      "demoUrl": "https://huggingface.co/spaces/speridlabs/idol"
+    },
+    {
+      "title": "同样 6 个原子、同样的化学键，为什么一个分子有极性、另一个偶极矩正好是 0？IISc 化学硕士生用 three.js 着色器光线步进渲染真实 DFT 电子云：顺式二氯乙烯 2.04 D，反式两边一抵消就是 0",
+      "category": "frontend",
+      "styleFamily": "uiux",
+      "source": "https://x.com/Abhinaviisc/status/2116578607909015899",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261101a-dft-dipole.jpg",
+      "previewType": "image",
+      "description": "作者 @Abhinaviisc（Abhinav Sharma，印度科学理工学院 IISc 班加罗尔化学硕士生）原帖（2026-10-31 17:10 UTC，54 秒录屏）自述：用 AI 做科学可视化，在 three.js 里渲染真实模拟数据——着色器光线步进的 DFT 电子密度、带氢键细丝的蛋白质分子动力学。录屏里的网页 abhi-iisc-code.github.io/cistrans（本轮 HTTP 200）写明：顺式和反式 1,2-二氯乙烯的 6 个原子、化学键完全一样，只是排列不同，偶极矩就从 2.04 D 变成 0；电子云是真实计算的电子密度，按静电势着色（富电子/缺电子），可切换分子、拖动旋转、并排对比。原理：每根 C–Cl 键都把电子拉向氯；顺式两个氯在同一侧，拉力叠加出净偶极，反式方向相反正好抵消。计算：PySCF，B3LYP/6-31G* 几何优化，密度 72³ 网格、静电势 48³；与实验对照——顺式实测约 1.9 D，计算 2.04 D；顺式比反式低 0.11 kcal/mol（教科书上的「顺式效应」）。页面注明由作者在 AI 助手（Claude）帮助下编写并运行计算与渲染器，所有数字来自这些计算。对你：①「对称就抵消」是极好讲的 3 分钟题，还能延伸到为什么 CO₂ 不是极性分子、微波炉为什么热水；②电子云 + 静电势配色是现成的高质感科普画面，适合你的半导体/材料主线（键、极化、介电）。封面为录屏 20% 处截帧（网页标题「Same atoms. Different shape.」与两团电子云）。",
+      "tool": "PySCF（B3LYP/6-31G*）计算 + three.js 0.169 着色器光线步进（ψ² + 比尔-朗伯吸收）；作者注明由 Claude 协助",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "网页可在线访问，源码在 GitHub abhi-iisc-code/cistrans（2026-10-30 创建，未声明许可证，可外链但再利用需问作者）；计算细节与能量值写在页面上，未本地复算。",
+      "attribution": "Abhinav Sharma（@Abhinaviisc，IISc）",
+      "sourceAuthor": "Abhinaviisc",
+      "tags": [
+        "Three.js",
+        "着色器",
+        "科学可视化",
+        "DFT",
+        "电子云",
+        "化学",
+        "交互网页"
+      ],
+      "publishedAt": "2026-10-31T17:10:38.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-01T00:53:41.000Z",
+      "updatedAt": "2026-11-01T00:53:41.000Z",
+      "verification": {
+        "checked_at": "2026-11-01T00:53:41.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 79,
+        "baseBreakdown": {
+          "实体": 15,
+          "科普": 20,
+          "溯源": 15,
+          "复现": 10,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.3491,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-11-01-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2116578432444518400/vid/avc1/1920x1032/kY8lYmOipkC0hVQd.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/abhi-iisc-code/cistrans",
+      "demoUrl": "https://abhi-iisc-code.github.io/cistrans/"
+    },
     {
       "title": "手握住手机底角，信号为什么就掉了？LemoLab 把硬件原理做成「会动的工程图纸」：暖白网格纸 + 黑线稿，只留一种橙色追踪信号——从射频芯片走同轴线到边框，700 MHz 要 11 厘米、3.5 GHz 只要 2 厘米，手一握就把天线缝「短路」了",
       "category": "video",
@@ -25755,8 +26046,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条",
-  "updatedAt": "2026-10-31T12:59:25.000Z",
-  "totalItems": 511,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条 | 2026-11-01-0840-shanghai 监控轮追加 5 条",
+  "updatedAt": "2026-11-01T00:53:41.000Z",
+  "totalItems": 516,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
