@@ -1,7 +1,127 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-01T00:53:41.000Z",
+  "updatedAt": "2026-11-01T04:55:16.000Z",
   "topics": [
+    {
+      "url": "https://aatishb.com/myriad/lets-build-a-brain/",
+      "title": "只有 4 个神经元、2 根连线的小虫，为什么能演出「怕光」「追光」「扑光」「爱光」四种性格？把左眼接左鳍它会逃离光，左右交叉一接就扑向光，再把「兴奋」换成「抑制」，它就会在光旁边温柔地停下",
+      "category": "AI",
+      "source": "Myriad 博客《Let’s Build a Brain》（Aatish Bhatia、Arkarup Banerjee，2026-10-21 发布，og:published_time 2026-10-21）；10-31 至 11-01 登上 Hacker News 首页（约 226 分）",
+      "publishedAt": "2026-10-21",
+      "eventAt": "2026-10-21",
+      "collectedAt": "2026-11-01T04:55:16.000Z",
+      "updatedAt": "2026-11-01T04:55:16.000Z",
+      "description": "一手来源：作者原文（交互式网页，文中每个模拟都能点、能拖光源）。作者：Arkarup Banerjee 是冷泉港实验室神经科学副教授，Aatish Bhatia 是物理学博士、科学记者、前《纽约时报》图形编辑；文章基于神经科学家 Valentino Braitenberg 1984 年《Vehicles》里的思想实验。过程：①造一个吃光的小虫「spark」：一个感光神经元 + 一个摆鳍神经元，光越亮鳍摆越快——只会直冲，多数时候错过光；②加一只眼一只鳍、同侧相连：光在左边→左鳍更快→向右转，于是它「逃离」光，看起来像怕光；③左右交叉接线：它会转向光，但像彗星撞太阳一样冲过去，看起来像在「攻击」光；④把兴奋性连接换成抑制性连接（输入越大输出越小）：靠近光的一侧鳍变慢，它转向光并慢慢停在旁边，看起来像「爱」光；⑤再让每只虫的连接强度各不相同，有的贴近光、有的保持距离，作者类比「偏好」就像恒温器的设定值。原文结论：如果在野外看到这样的生物，你可能会认为它有初步智能，但这里只有 4 个神经元和 2 根连线——「行为从神经回路里涌现出来，没有魔法」。对你：①正好接你一直想做的「涌现」那期：鸟群之后接这四只小虫，把「简单规则→看似有智慧」讲到神经元层面；②首帧就是文中的四宫格轨迹图（Fear / Attraction / Love 的光迹），也可直接录交互页；③反直觉点在于「换一根线、换一个正负号，性格全变」，可类比大模型里「权重」的意义。",
+      "caveat": "文章是科普用的极简模型（作者明确说生物远比这复杂，且这些虫的大脑不会学习，学习留到下一篇）；轨迹里加了少量噪声让路径更自然；时效约 10 天（10-21 发布，本周因 HN 首页再次传播）。封面为文章 og:image（Fear / Attraction / Love 三种光迹）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261101b-myriad-sparks.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261101b-myriad-sparks.jpg",
+      "imageAlt": "Myriad 文章配图：Fear、Attraction、Love 三种接线下小虫围绕光源的轨迹",
+      "tags": [
+        "涌现",
+        "神经网络",
+        "神经元",
+        "脑科学",
+        "交互演示",
+        "Braitenberg"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 86,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 20,
+          "画面": 15,
+          "来源": 14,
+          "时效": 7,
+          "大陆": 7,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 90.9,
+        "threshold": 65,
+        "run": "2026-11-01-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+      "title": "5 个 270 亿参数的千问小模型「开会」写代码，为什么能赢单个旗舰大模型？只靠磁盘上的文件互相传话、由测试脚本而不是模型来判对错，LiveCodeBench Hard 均分 9.8 比 8.0，50 次运行总共 35.79 美元",
+      "category": "AI",
+      "source": "GitHub guregodevo/memdoor 仓库 examples/workflows/team-solve README（Apache-2.0；复现结果日期 2026-10-31，全部 50 次运行的请求、回复、程序、评分输出和成本公开在 bench/results/parity-5pass/）；复现对象为 slee-persis/GVS5H（Lee, 2026：五个 Qwen3.8-27B 匹敌 Claude Fable 5）；10-31 22:46 UTC 登上 Hacker News 首页（约 140 分）",
+      "publishedAt": "2026-10-31",
+      "eventAt": "2026-10-31",
+      "collectedAt": "2026-11-01T04:55:16.000Z",
+      "updatedAt": "2026-11-01T04:55:16.000Z",
+      "description": "一手来源：仓库 README 与公开的运行记录。做法（GVS5H 方法，用作者原始提示词逐字节复刻）：5 个角色——规划者、两个出主意的、解题者、经理——外加一个修复工，每个都从全新上下文开始，彼此之间只通过磁盘上的文件交流；「做对了没有」由运行样例的 shell 脚本决定，不由模型说了算；流程 plan → 两路 ideate → solve → test → review → repair → verify，最多 10 轮。结果：同为 Qwen3.8-27B，在 GVS5H 的 LiveCodeBench Hard 前 10 题上跑 5 遍，Memdoor 工作流均分 9.8/10，作者自己的框架 9.6，单独调用 Fable 5 为 8.0（后两列取自作者仓库的结果文件）；50 次里 49 次解出，总花费 35.79 美元（1530 万输出 token），单题中位数 40 分钟、0.39 美元，最长 4 小时。输掉的两种情况也写了：经理「编」了一个答案错误的反例让团队把对的程序改坏；以及经理没说「完成」导致已通过的程序被后一轮覆盖。对你：①「三个臭皮匠顶个诸葛亮」的 AI 版，可接上一轮 DeepSeek Super-agent，讲「为什么让一群便宜模型分工 + 自动验收，能赢一个贵模型」；②关键不是模型而是「谁来判对错」——编程有测试集做裁判，这也是它能赢的前提；③国产开源模型（千问）主角，大陆观众关心。",
+      "caveat": "只测了 10 题 × 5 遍，不是原论文的 100 题；题目来自 2025 年 3 月 29 日—4 月 6 日的比赛，作者自己承认模型可能在训练中见过（无法排除污染）；Fable 5 一列是作者文件中的单次调用，并未在本框架内重跑；运行在 OpenRouter 上的多家托管商，精度不完全一致；代码由编程智能体根据方法描述自动写成。原方法 GVS5H 发布于 2026-08，本条新意在于独立复现与成本公开。封面为仓库 README 截图（复现结果表）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261101b-memdoor-team.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261101b-memdoor-team.jpg",
+      "imageAlt": "Memdoor team-solve README 截图：五遍复现结果表，Memdoor 9.8、作者框架 9.6、Fable 5 单独 8.0",
+      "tags": [
+        "智能体",
+        "多智能体",
+        "小模型",
+        "AI成本",
+        "Qwen",
+        "国产AI",
+        "开源"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 76,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 8,
+          "来源": 12,
+          "时效": 7,
+          "大陆": 8,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 80.3,
+        "threshold": 65,
+        "run": "2026-11-01-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://pivotlake.io/blog/its-the-memory-latency-stupid/",
+      "title": "CPU 显示 100%，为什么有一半时间其实在「发呆」？一次 GROUP BY 查询里，CPU 50.1% 的时间在等内存；工程师故意让它多干 69% 的活，查询反而从 3.6 秒降到 2.7 秒",
+      "category": "科技产品",
+      "source": "Pivot 官方博客《It’s the memory latency, stupid》（作者 Maor Kern，2026-10-28）；10-31 登上 Hacker News 首页（约 164 分）",
+      "publishedAt": "2026-10-28",
+      "eventAt": "2026-10-28",
+      "collectedAt": "2026-11-01T04:55:16.000Z",
+      "updatedAt": "2026-11-01T04:55:16.000Z",
+      "description": "一手来源：数据库公司 Pivot 工程博客原文（含完整命令与 perf 计数器输出）。机制：现代 CPU 每纳秒能执行约 4–8 条指令，但读一次内存要 50–100 纳秒——等一次内存的时间够做 400–800 条指令；L1 缓存约 1 纳秒但只有约 64 KB，L2 约 3–4 纳秒、约 1 MB，L3 约 10–15 纳秒。任务管理器里的「100%」只表示「有任务在占用 CPU」，不代表它真在算。实验（AMD EPYC 9124，单核，ClickBench 9900 万行、约 1700 万个不同用户 ID 做 GROUP BY）：朴素哈希表写法第二次运行 3.6 秒，perf 显示 50.1% 的时间卡在内存、只有 16.1% 在真正完成指令，从内存拉了约 4.5 GB；改成「基数分区」——先按哈希值高 12 位把数据分进 4096 个小桶，再一桶一桶聚合，让每张哈希表小到装得进缓存——执行的操作数从 114 亿增加到 194 亿，但时间降到 2.7 秒，卡内存降到 23.5%、真正干活升到 32.2%，从内存拉的数据降到约 1.5 GB。对你：①「多干活反而更快」是很好的反直觉钩子，能顺势讲「内存墙」——为什么 AI 时代 HBM、缓存比算力还紧缺（同周 SK 海力士、闪迪财报都在说内存不够卖）；②首帧用文中的内存层级金字塔：CPU→L1→L2→L3→DRAM，每层延迟和「等一次能做多少条指令」。",
+      "caveat": "是数据库厂商的工程博客，示例针对其自家引擎 Pivot（文章为演示故意拿掉了引擎里的复杂优化）；数字来自单台 AMD 服务器、单核测试，不同 CPU 会不同；文中的延迟量级为常见估算。封面为原文内存层级图截图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261101b-memory-latency.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261101b-memory-latency.jpg",
+      "imageAlt": "Pivot 博客内存层级图：CPU 核心、L1、L2、L3 缓存与 DRAM 的延迟和每次访问可执行指令数",
+      "tags": [
+        "存储",
+        "内存墙",
+        "CPU缓存",
+        "芯片架构",
+        "反直觉"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 67,
+        "baseBreakdown": {
+          "主线": 15,
+          "钩子": 16,
+          "画面": 8,
+          "来源": 10,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 4
+        },
+        "multiplier": 1.0,
+        "finalScore": 67.0,
+        "threshold": 65,
+        "run": "2026-11-01-1240-shanghai"
+      }
+    },
     {
       "url": "https://mp.weixin.qq.com/s/zoS7GlReWPhfCjENGxXCdg",
       "title": "一个人最多同时盯 3–5 个 AI 会话，为什么 DeepSeek 让「总管」AI 只派活、不干活，任务反而快了将近一倍？DeepSeek Harness 团队公开 Super-agent 设计：常驻 Router 只负责分派，Worker 并行干活，群里没人 @ 它也会在后台悄悄复现并修 bug",
