@@ -1,7 +1,49 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-31T12:59:25.000Z",
+  "updatedAt": "2026-11-01T00:53:41.000Z",
   "topics": [
+    {
+      "url": "https://mp.weixin.qq.com/s/zoS7GlReWPhfCjENGxXCdg",
+      "title": "一个人最多同时盯 3–5 个 AI 会话，为什么 DeepSeek 让「总管」AI 只派活、不干活，任务反而快了将近一倍？DeepSeek Harness 团队公开 Super-agent 设计：常驻 Router 只负责分派，Worker 并行干活，群里没人 @ 它也会在后台悄悄复现并修 bug",
+      "category": "AI",
+      "source": "DeepSeek 产品部官方公众号文章《Super-agent 设计探索：迈向更自主的 Agent 系统》（DeepSeek Harness 团队，作者 Yujia Qiao 等，2026-10-31 12:29 UTC 发布）+ 官方开源仓库 github.com/deepseek-ai/dsh-superagent-prototype（MIT，2026-10-31 创建，本轮约 2,400 星）；线索来自 @leo114119、@aigclink 等 10-31 帖",
+      "publishedAt": "2026-10-31",
+      "eventAt": "2026-10-31",
+      "collectedAt": "2026-11-01T00:53:41.000Z",
+      "updatedAt": "2026-11-01T00:53:41.000Z",
+      "description": "一手来源：官方公众号长文全文 + GitHub 仓库 README。问题：现在的编程智能体以「一个会话一个任务」为单位，文章写道据他们观察一个人通常只能同时跟进 3 到 5 个活跃会话——「单任务的上限取决于模型能力，多任务的上限取决于人的注意力」。做法（五个模块）：①双层架构——常驻的 Router 层统一对接群聊/GitHub 等所有入口，只做交互与分派，甚至可以不给 Bash 工具，用较轻的模型就够；上下文隔离的 Worker 层并发执行具体任务，用最强的模型；②事件驱动——群聊消息、代码评审、CI 结果都是 Trigger，先用确定性代码过滤（Fast Path），再交给模型判断（Slow Path）；同一个 PR/话题的后续事件直接「直通」已订阅的 Worker，不再经过 Router；③异步 ReAct：耗时工具改成 start()/stop()，后台跑的时候前台还能接新指令；④计算、状态与环境分离 + 外部 Watchdog 自动恢复；⑤「投机执行」：内部群里有人报问题时，智能体先在后台尝试复现和修复，确认找到简单修法才说话，否则保持安静。实验（合成负载，约 300 条消息里约 20 条是工作请求，每种方案跑 5 次）：Super-agent 任务完成时间 p50/p95 为 12.4/15.7 分钟；同一模型用「单会话 + 子代理工具」在中性提示下 5 次一次都没委派，p95 达 29.5 分钟；去掉直通后速度基本不变，但 Router 的决定多约 30%，读缓存 token 从 2323 万涨到 3177 万（+37%）；Router 压测中事件从每分钟约 1 条升到 40 条，自动合批让单个决定分摊的推理时间从 6.4 秒降到 1.6 秒。对你：①你自己的 Musk + 五人团队就是这种结构（总管派活、成员各干各的），可以拍成「为什么老板不该亲自干活」——和工厂里调度员不上机台是同一个道理；②首帧用文章里的累计完成曲线：黑线是任务到达，蓝线 Super-agent 紧跟，红线单会话被拖到 35 分钟后；③国产公司公开架构 + MIT 原型，大陆观众关心度高。",
+      "caveat": "文章明确是「面向工程实践的架构思路探讨」，不是 DeepSeek Harness 现有产品功能介绍；开源原型「并非 DeepSeek 正式产品」，与内部版本和文中实现不完全相同，部分设计仅为未来方向；实验为合成负载、编码工作用只耗时的假工具代替，衡量的是调度能力而非写代码能力，作者自称结果仅作初步参考；Super-agent 读缓存 token 高于单会话，是用更多 token 换更短更稳的完成时间。X 上有开发者认为同类做法业内已有（个人观点）。封面为文章第 7.1 节图：工作请求的累计到达与四种方案的累计完成曲线（5 次运行均值）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261101a-deepseek-superagent.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261101a-deepseek-superagent.jpg",
+      "imageAlt": "DeepSeek 文章图：工作请求累计到达（黑）与 Super-agent（蓝）、单 Session + Subagent 两种提示（红、紫）累计完成曲线",
+      "tags": [
+        "智能体",
+        "多智能体",
+        "Super-agent",
+        "注意力",
+        "DeepSeek",
+        "国产AI",
+        "开源",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 10,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 93.0,
+        "threshold": 65,
+        "run": "2026-11-01-0840-shanghai"
+      }
+    },
     {
       "url": "https://fion.ac/jellyfish.pdf",
       "title": "AI 智能体让程序员多写了 44% 的代码，公司交付的活儿为什么只多了 13.7%？哈佛用 655 家公司、72 万人的 4.45 亿条工作记录查到：卡脖子的是「代码评审」——从提交到批准的时间反而多了 56%",
