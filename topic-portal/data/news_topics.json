@@ -1,7 +1,86 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-01T04:55:16.000Z",
+  "updatedAt": "2026-11-02T08:53:41.000Z",
   "topics": [
+    {
+      "url": "https://huggingface.co/burner22/numbat/discussions/13",
+      "title": "号称「Anthropic 泄露的 14 万亿参数模型」、7.72 TB 权重，为什么只下载 90 KB 就能拆穿？43 个张量能用「张量名字 → SHA256 → 随机数种子」一字节不差地重新算出来——它们根本没被训练过",
+      "category": "AI",
+      "source": "Hugging Face 仓库 burner22/numbat 社区讨论 #13《43 complete tensors exactly match name-seeded NumPy RNG output》（用户 FloxUnder，2026-11-01 16:29 UTC）；仓库 README 与 HF API 元数据；本轮在本机按帖内脚本复现（仅 HTTP Range 读取，未运行仓库代码）",
+      "publishedAt": "2026-11-01",
+      "eventAt": "2026-11-01",
+      "collectedAt": "2026-11-02T08:53:41.000Z",
+      "updatedAt": "2026-11-02T08:53:41.000Z",
+      "description": "一手来源：Hugging Face 上的仓库 burner22/numbat 自称是 Anthropic 下一代「Mythos 级」模型训练到一半的 checkpoint：约 14 万亿参数、114 层、1,224 个专家（top-48 + 1 个共享）、NVFP4，772 个分片合计约 7.72 TB，并称代号 numbat 出自 2026 年 3 月 Claude Code 源码泄露（以上均为仓库 README 的自述）。11-01 起在 X 上被当作「泄露」疯传（HF 显示 245 个赞、5846 次下载）。同日 HF 用户 FloxUnder 在讨论区发帖：43 个完整张量、共 730,368 个 BF16 数值，可以只凭张量名字逐位重新生成——配方是 ①对张量名算 SHA256；②取前 8 字节当随机数种子喂给 NumPy 的 PCG64；③生成标准正态分布；④归一化层权重取 exp(0.06·z)、卷积核取 z/6；⑤舍入成 BF16。作者先根据配方「预言」了 21 个还没读过的张量（423,168 个数），再去读，全部吻合；整个验证只用 HTTP Range 下载约 90 KB，不运行仓库里的任何代码。本轮我们在本机按帖内脚本复现了第 1 个分片里的两个张量（model.layers.0.input_layernorm.weight，12,288 个数；model.layers.0.self_attn.k_conv1d.weight，6144×1×4），字节完全一致。对你：①一个极好的「怎么用数学辨真假」科普：真正训练过的权重里藏着数据的痕迹，而随机数是可以被「种子」完整复现的；②顺带讲清楚「7.72 TB 的大模型到底是什么」——就是一堆数字，以及为什么不要随便运行陌生仓库的代码（trust_remote_code）；③首帧可以直接录终端：输入一个名字，屏幕吐出的数字和「泄露权重」逐个对上。",
+      "caveat": "目前只证明了 43 个张量（归一化层与卷积核）是按名字生成的随机数；讨论区也有人指出另有部分张量对不上（可能用了别的配方或加了噪声），所以严格说是「部分权重被证实为伪造，整体真实性无任何证据」，而不是逐个检查了 7.72 TB。仓库与 Anthropic 的关联只有 README 自述；本轮未检索到 Anthropic 官方回应。封面为 HF 讨论帖截图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261102c-numbat-fake-weights.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261102c-numbat-fake-weights.jpg",
+      "imageAlt": "Hugging Face burner22/numbat 讨论 #13 截图：43 个张量、730,368 个数值与按名字生成的随机数完全一致",
+      "tags": [
+        "AI安全",
+        "谣言核查",
+        "开源模型",
+        "随机数",
+        "Hugging Face",
+        "反直觉"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 20,
+          "画面": 10,
+          "来源": 14,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 87.7,
+        "threshold": 65,
+        "run": "2026-11-02-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/",
+      "title": "AI 一口气「证明」了一位菲尔兹奖得主公开提过的所有难题，数学家为什么不开心？芝加哥数论学家 Calegari 在陶哲轩博客发文：这不是数学的终点，就像元素周期表没有「解决」化学",
+      "category": "AI",
+      "source": "陶哲轩（Terence Tao）博客 What's new 客座文章《Mathematics has changed. Let’s act like it》（作者 Frank Calegari，2026-11-01 18:28 UTC；文首注明由另一格式经 AI 转换）；11-01 进入 Hacker News 热门",
+      "publishedAt": "2026-11-01",
+      "eventAt": "2026-11-01",
+      "collectedAt": "2026-11-02T08:53:41.000Z",
+      "updatedAt": "2026-11-02T08:53:41.000Z",
+      "description": "一手来源：陶哲轩博客原文（客座作者 Frank Calegari，数论 / 朗兰兹纲领方向数学家）。背景：OpenAI 在 10 月 6 日一次性放出 700 多篇数学研究论文（门户 10-07 已收录 OpenAI 原始发布）。文章要点：①作者认为这是数学史的分水岭——「AI 现在已无可否认地能在许多数学领域做出突破性贡献」；②但很多数学家不开心：这些论文「有些很了不起的想法，但写得极糟、违反学界的署名惯例，有些甚至是错的」；③引用菲尔兹奖得主 Hugo Duminil-Copin 的感叹：「我职业生涯里公开提过的每一个主要公开问题，没有一个没被这次发布碰到——全都被宣称证明了。不是一部分，是全部，一次性，而且如此轻描淡写」；④作者的类比：1983 年「有限单群分类」宣告完成后，这个方向的热度反而冷了下来——今天有些领域就像有人把整套分类证明用油印机印出来、弄脏、像彩纸一样撒在你办公室地上；⑤他的主张：数学家能控制的是招聘、发表和培养学生的方式，应奖励去「整理、复核、重新理解」这些结果的人；AI 也让数学家有机会跳出「被第一个证不出的猜想困住」的状态，去追问更深的结构。对你：①「AI 把难题都做完了，人还干什么」是大众最关心的问题之一，一线数学家给出的答案很反直觉——问题被解决不等于学科结束；②可接门户已收的 OpenAI 数学论文选题做续集；③可讲「证明写得糟、甚至有错」为什么在数学里是大问题。",
+      "caveat": "这是观点文章，不是新成果；OpenAI 论文的正确率、哪些被证实或证伪，文中没有给出统计；Duminil-Copin 的引语出自其个人发言（原文以链接引用）。首帧画面需要自制（可做「700 篇论文像彩纸撒满办公室」的动画）。封面为原文页面截图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261102c-math-has-changed.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261102c-math-has-changed.jpg",
+      "imageAlt": "陶哲轩博客页面截图：Mathematics has changed. Let’s act like it（Frank Calegari 客座文章）开头",
+      "tags": [
+        "AI数学",
+        "数学",
+        "OpenAI",
+        "科研",
+        "AI与人"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 74,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 18,
+          "画面": 5,
+          "来源": 14,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 78.2,
+        "threshold": 65,
+        "run": "2026-11-02-1640-shanghai"
+      }
+    },
     {
       "url": "https://aatishb.com/myriad/lets-build-a-brain/",
       "title": "只有 4 个神经元、2 根连线的小虫，为什么能演出「怕光」「追光」「扑光」「爱光」四种性格？把左眼接左鳍它会逃离光，左右交叉一接就扑向光，再把「兴奋」换成「抑制」，它就会在光旁边温柔地停下",
