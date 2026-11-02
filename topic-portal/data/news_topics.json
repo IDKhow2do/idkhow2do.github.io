@@ -1,7 +1,126 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-02T08:53:41.000Z",
+  "updatedAt": "2026-11-02T12:50:34.000Z",
   "topics": [
+    {
+      "url": "https://jp.toto.com/company/press/2026_10_30/",
+      "title": "做马桶的 TOTO，为什么要砸约 600 亿日元给刻蚀机造「吸盘」？等离子体把腔体越烧越狠，一块不怕被打的陶瓷成了先进芯片的关键零件——还有一种「不用烧」的陶瓷膜",
+      "category": "半导体",
+      "source": "TOTO 株式会社官方新闻稿《セラミック事業の次世代品生産施設を新たに建設》（2026-10-30）及同名 PDF；マイナビニュース TECH+（2026-11-02）、化学工业日报（2026-11-02）跟进报道",
+      "publishedAt": "2026-10-30",
+      "eventAt": "2026-10-30",
+      "collectedAt": "2026-11-02T12:50:34.000Z",
+      "updatedAt": "2026-11-02T12:50:34.000Z",
+      "description": "一手来源：TOTO 官方新闻稿（2026-10-30）。要点：①TOTO 将在旗下 TOTO Fine Ceramics 丰前工厂（福冈县丰前市）新建生产楼，量产「静电吸盘（静電チャック）」和「AD 部件」的次世代产品，投资约 600 亿日元，建筑面积约 1.2 万㎡、总建筑面积约 3.6 万㎡、3 层钢结构，是其陶瓷事业最大规模的厂房，2029 财年上半年投产；另在大分县中津市两家工厂投资约 110 亿日元，2028 财年内量产次世代 AD 部件。②新闻稿自己解释了这两样东西：静电吸盘用于在半导体设备里固定硅片，TOTO 的强项是在「刻蚀」设备里耐等离子体——用高纯度、致密的陶瓷烧结体抵抗长时间等离子体腐蚀；3D 存储芯片越堆越高，刻蚀要打穿更深的层，等离子体功率越来越大，吸盘耐久性越发关键。③AD 部件 = 用「气溶胶沉积（Aerosol Deposition）」法成膜的部件：把陶瓷微粒混进气体、以接近音速撞向基材，常温下形成极致密的陶瓷膜；该方法 1990 年代前半由日本机械技术研究所（现产综研）发现，TOTO 称自己在刻蚀设备上做到了全球首次实用化、量产化（2015 年获第 6 回ものづくり日本大赏内阁总理大臣奖）。④为什么要「不烧」：新闻稿说普通陶瓷烧结时会产生气泡和微孔，等离子体从孔隙和裂纹开始侵蚀；AD 膜没有烧结过程、没有这些起点。2010 年代初，它被涂在刻蚀腔「天花板」上，解决了腔壁被打下的颗粒（パーティクル）掉到晶圆上造成不良的问题。对你：①反差钩子极强——「马桶厂」和「刻蚀机」，你的刻蚀一线经历可以直接讲腔体里到底发生了什么；②首帧可用新闻稿里的腔体截面示意图（气体进、等离子体、硅片、静电吸盘、AD 部件位置一目了然）；③可延伸讲「颗粒污染为什么是良率杀手」「静电吸盘怎么不用夹子就吸住晶圆」。",
+      "caveat": "投资额、面积、时间表均为 TOTO 官方口径；「世界首次实用化」为公司自述。静电吸盘的电吸附原理新闻稿未展开，视频中需另行讲解并核对资料。新闻稿未提及具体客户或中国市场。封面为新闻稿内腔体截面示意图与静电吸盘产品图拼接。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261102d-toto-esc-etch.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261102d-toto-esc-etch.jpg",
+      "imageAlt": "TOTO 新闻稿配图：刻蚀设备腔体截面示意（AD 部件、等离子体、硅片、静电吸盘）与静电吸盘产品照片",
+      "tags": [
+        "芯片制造",
+        "刻蚀",
+        "半导体设备",
+        "陶瓷材料",
+        "良率",
+        "反直觉"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 92,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 19,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 98.8,
+        "threshold": 65,
+        "run": "2026-11-02-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://news.mit.edu/2026/flexible-new-route-designer-materials-from-nanoparticles-1102",
+      "title": "把纳米颗粒之间的「连接手臂」做得越软、越能乱弯，它们为什么反而自己排出了更挑剔、更稀疏的晶格？MIT 团队：20 年来「连接必须刚性」的教条，反过来做也行——颗粒的「价键」是组装时自发涌现的",
+      "category": "半导体",
+      "source": "MIT News《A flexible new route to designer materials built from nanoparticles》（2026-11-02）；论文 Sbalbi, Kronenberger, Shinzawa, Ye, Jayaraman, Macfarlane《Breaking symmetry in nanoparticle superlattices via spontaneous valency》，Nature Materials，2026-11-02 在线发表（https://www.nature.com/articles/s41563-026-02787-0）",
+      "publishedAt": "2026-11-02",
+      "eventAt": "2026-11-02",
+      "collectedAt": "2026-11-02T12:50:34.000Z",
+      "updatedAt": "2026-11-02T12:50:34.000Z",
+      "description": "一手来源：MIT 新闻稿与 Nature Materials 论文摘要。背景：纳米颗粒超晶格被视为「按需设计材料」的路线（光子学、催化、医学等），但带吸引力的连接分子（配体）通常让颗粒挤成最密堆积；想要特定方向、特定数量的连接，过去一般认为必须改颗粒形状或给表面局部「上胶」，合成复杂且难以放大。新做法：用表面完全各向同性的颗粒，配体是极柔软、末端带正/负电荷的聚合物链，异性电荷相吸，配体会弯过去对接。论文摘要：当配体「冠」足够可变形时，配体会沿颗粒之间的界面重新排列，产生一种等效的「价」（valency）——价不必由颗粒几何编码，而是在组装过程中自发出现；实验加模拟显示，配体越容易变形，晶格配位数越低，可以得到比硬球堆积预测更低配位、更低密度、更低对称性的晶格。MIT 材料系教授 Rob Macfarlane 原话：「这和 20 年来的教条正好相反：连接配体必须刚性，任何偏离都会让组装失败。我们发现把它拉到另一个极端，同样行得通。」团队还用这种方法组装出此前未见过的晶体结构。对你：①可接你的「涌现」系列：没有人规定每个颗粒连几个邻居，规则（柔软 + 电荷）自己长出「价键」；②首帧可用论文/新闻稿的分子模拟图：两个金色颗粒之间柔软配体交织；③可自制 three.js 演示「硬连接 vs 软连接」两种堆积对比。",
+      "caveat": "论文正文为订阅内容，本轮只核验了摘要和 MIT 新闻稿；具体得到哪些新晶体结构、配位数数值未展开。应用（光子学、催化、医学）为新闻稿的前景描述，非已实现产品。封面为 MIT 新闻稿配图（Courtesy of the researchers，MIT News 图片 CC BY-NC-ND，需署名）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261102d-mit-nanoparticle-valency.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261102d-mit-nanoparticle-valency.jpg",
+      "imageAlt": "MIT 新闻稿配图：两个金色纳米颗粒之间柔性配体相互交织的分子模拟渲染",
+      "tags": [
+        "材料科学",
+        "纳米颗粒",
+        "自组装",
+        "涌现",
+        "论文",
+        "反直觉"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 79,
+        "baseBreakdown": {
+          "主线": 16,
+          "钩子": 17,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0924,
+        "finalScore": 86.3,
+        "threshold": 65,
+        "run": "2026-11-02-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://x.com/karpathy/status/2116957135661945283",
+      "title": "YouTube 的推荐算法烦到了 Karpathy，他用 Claude 两小时做了个「HackerTube」：不看你点过什么，只看 20 年、4300 万条 Hacker News 评论里大家反复推荐哪些视频——为什么这样反而更好看？",
+      "category": "AI",
+      "source": "Andrej Karpathy X 原帖（2026-11-01 18:14 UTC，11-02 02:14 北京时间）；网站 https://hackertube.org/ （本轮 HTTP 200）",
+      "publishedAt": "2026-11-01",
+      "eventAt": "2026-11-01",
+      "collectedAt": "2026-11-02T12:50:34.000Z",
+      "updatedAt": "2026-11-02T12:50:34.000Z",
+      "description": "一手来源：Karpathy（OpenAI 创始成员之一）原帖，截至本轮约 4.2 万赞、3.6 万收藏、365 万次浏览。他说：对 YouTube 推荐不满，于是让 Claude 把 Hacker News 20 年间的 4300 万条评论筛到 6,454 个「被反复推荐」的视频，做成 HackerTube，用 Opus 5.5 大约 2 小时。特点（原帖列出）：①不用登录，状态存在本地浏览器；②缩略图取视频中段的一帧，而不是经过 A/B 测试「优化」过的上传封面；③评论分析的底层数据打包成一个 zip，「让你的 Claude 去读它，做你自己的版本」；④有一个专门放长视频的「HackerTube Longs」。过程：他用 Claude Code 桌面版、Opus 5.5 中等思考强度，只和 Claude 对话；自己手动做的只有三件事——在 Google Cloud 后台建 API key 查视频元数据、开一台 VPS、买域名；之后把服务器 IP 给 Claude，让它更新、加固、部署和优化。网站首页截图可见「How does a USB keyboard work?」「Power is not energy」「The Continuity of Splines」等硬核科普视频。对你：①「推荐算法 vs 人群口碑」——为什么按点击率优化反而让人越刷越累，是普遍生活经验；②「一个人 + AI 两小时做出一个产品」是你 AI 线的好例子，过程透明可复述；③缩略图「取中间一帧」这个细节本身就是对「标题党封面」的反讽。",
+      "caveat": "4300 万条、6,454 个视频、约 2 小时均为 Karpathy 自述，本轮未下载数据包核验；YouTube 在大陆无法直接访问，做视频时可类比 B 站/抖音推荐。本条原帖时间早于本轮窗口（11-01 18:14 UTC），上一轮未评估、库内与 seen 均无，本轮补收。封面为原帖配图（HackerTube 首页截图）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261102d-hackertube.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261102d-hackertube.jpg",
+      "imageAlt": "Karpathy 原帖配图：HackerTube 首页截图，列出被 Hacker News 反复推荐的科普视频",
+      "tags": [
+        "智能体",
+        "Claude Code",
+        "推荐算法",
+        "数字生活",
+        "AI与人"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 79,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 15,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 3,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 83.5,
+        "threshold": 65,
+        "run": "2026-11-02-2040-shanghai"
+      }
+    },
     {
       "url": "https://huggingface.co/burner22/numbat/discussions/13",
       "title": "号称「Anthropic 泄露的 14 万亿参数模型」、7.72 TB 权重，为什么只下载 90 KB 就能拆穿？43 个张量能用「张量名字 → SHA256 → 随机数种子」一字节不差地重新算出来——它们根本没被训练过",
