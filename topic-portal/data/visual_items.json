@@ -1,8 +1,417 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 522,
+  "exportedCount": 529,
   "items": [
+    {
+      "title": "OpenAI 新宣传片里的女主角、飞起来的城市和峡谷，为什么一帧视频模型都不用、只靠 three.js 和着色器代码就能逐镜复刻？3DCodeVerse 项目负责人高一鹏让 Opus 5.5 全自动重做，代码和 Agent 日志全部开源",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/GaoYipeng/status/2117045423378665704",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261102c-3dcodeverse-openai-promo.jpg",
+      "previewType": "image",
+      "description": "作者 @GaoYipeng（Yipeng Gao，南加州大学，3DCodeVerse 论文项目负责人）原帖（2026-11-02 00:05 UTC，30 秒上下分屏对比视频，约 5.2 万次浏览、305 赞、195 收藏）：「Opus 5.5 可以完全用代码做出 OpenAI 的新宣传片。没有视频扩散模型，只有 three.js、GLSL 和一个用 SDF（有向距离场）建模的女主角。」视频上半为「Opus 5.5 by Code via 3DCodeVerse」，下半为「OpenAI by ???」，逐镜对照：「THE MUSEUM OF WHAT COULD BE」展厅、女主在桌前剪纸写下「A BRILLIANT BLOOM」、花朵飞出、悬浮的未来城市、红色峡谷。仓库 README（本轮核验）把它列为 Showcase：「完全用代码重建的影片，完整源码和 Agent 日志放在 Hugging Face」。背后的 3DCodeVerse 框架：LLM 规划者定义目标，一组子 Agent 编写并组装 3D 程序；每轮收集三种反馈——执行日志、测量（尺寸、接触、碰撞、运动学，逐零件给出数值修正建议）、视觉（按评分细则让 VLM 看多视角渲染），并且「测量结果可以否决视觉判断」，最后取得分最高的一轮。作者在回复中说：同样的任务用 Gemini 4 Argon 跑了 6 轮、10 多个小时仍没有满意结果，并认为「这支宣传片可以当成衡量编程 Agent 做动画能力的基准」。对你：①「AI 视频到底是不是视频模型生成的」——这条正好反过来：用代码一行行「搭」出来，每个物体都能改；②可以接你的「涌现」系列：代码能力→涌现出做视频的能力；③首帧就是上下分屏对比，观众一眼看出差异。",
+      "tool": "Claude Opus 5.5 + 3DCodeVerse harness（three.js、GLSL、SDF）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "代码 Apache-2.0、日志在 Hugging Face（README 声明）；3DCodeVerse 仓库本身已于 2026-10-17 入库，本条为 11-02 新发布的「OpenAI 宣传片复刻」展示；原片版权归 OpenAI，对比画面仅供引用。",
+      "attribution": "@GaoYipeng / gaoypeng/3dcodeverse",
+      "sourceAuthor": "GaoYipeng",
+      "tags": [
+        "Three.js",
+        "GLSL",
+        "SDF",
+        "代码视频",
+        "Claude Code",
+        "多智能体",
+        "视频复刻",
+        "程序化生成"
+      ],
+      "publishedAt": "2026-11-02T00:05:36.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-02T08:53:41.000Z",
+      "updatedAt": "2026-11-02T08:53:41.000Z",
+      "verification": {
+        "checked_at": "2026-11-02T08:53:41.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 17,
+          "溯源": 17,
+          "复现": 13,
+          "风格": 10,
+          "新颖": 6
+        },
+        "multiplier": 1.1319,
+        "finalScore": 93.9,
+        "threshold": 65,
+        "run": "2026-11-02-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2117040600973520896/vid/avc1/1920x2160/m-NSPaKKj3zxOIBn.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/gaoypeng/3dcodeverse",
+      "licenseName": "Apache-2.0（代码）；数据集 CC-BY-NC-SA",
+      "licenseUrl": "https://github.com/gaoypeng/3dcodeverse"
+    },
+    {
+      "title": "一条果冻做的鲸鲨，为什么能被拉长、扭转、还会张嘴吞磷虾？@vib3coded 公开整段提示词：XPBD 四面体软体模拟 + 比尔–朗伯吸收的折射渲染，Opus 5.5 一次 8.28 美元",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/vib3coded/status/2117172596202488248",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261102c-whale-shark-jelly.jpg",
+      "previewType": "image",
+      "description": "作者 @vib3coded 原帖（2026-11-02 08:30 UTC，17 秒录屏）：用 WebGPU 做的果冻鲸鲨，可以拉、扭、喂食；半透明身体、软鳍、皮下发光的斑点；同样的题目用 Astra 做「效果低于平均」，Opus 5.5 的 API 花费 8.28 美元。紧接着的回复贴出完整提示词（11-02 08:31 UTC）：单文件交互式 WebGPU「软体研究」，「材料研究」系列版式（斜体衬线刊头、右侧标本面板、左下实时读数）。几何：用有向距离场建一条趴在桌上的鲸鲨——宽扁方头、胸鳍处最深、尾柄细长、背上三道低脊，嘴是一道横切的扁椭球，并故意把嘴高度的一层网格留出模拟，使上下唇分开；鳍用同一配方生成。模拟：XPBD 四面体软体（六面体格子每格切 5 个四面体，共旋形状匹配 + 体积约束、地面摩擦、边阻尼），鳍更硬，指针可拖拽扭转。渲染（WGSL）：透过果冻的折射 + 比尔–朗伯吸收、背面厚度、带色阴影；鲸鲨的棋盘格白线与斑点在静止坐标里画，五道鳃裂。交互：「吞咽」（下颌铰链弯曲、鳃张开、把磷虾吸进嘴）、甩尾（行波）、缩眼、点亮斑点、撒磷虾（会弹跳碰撞的小刚体），体积百分比、实时张口毫米数、吃掉磷虾数等读数，四种配色。录屏可见蓝、绿、紫、橙多种配色切换（提示词中的四种配色名为 Ocean、Lagoon、Dusk、Coral）。对你：①「果冻为什么会晃」——软体物理（体积守恒 + 形状记忆）用一条鲸鲨讲最直观；②「为什么透过果冻看东西会变色变暗」——比尔–朗伯定律，厚的地方颜色更深；③提示词完整公开，可直接复现或改成芯片/晶圆主题。",
+      "tool": "Claude Opus 5.5；WebGPU + WGSL；XPBD 软体模拟",
+      "prompt": "Build a single-file interactive WebGPU soft-body study of a whale shark cast in two layers of jelly, in the \"Material Studies\" series style ...（完整提示词见作者 2026-11-02 08:31 UTC 回复 https://x.com/vib3coded/status/2117172738401968480）",
+      "promptProvenance": "original_public",
+      "provenanceNote": "提示词由作者公开；作品页面链接在作者另一条回复中（本轮未打开），未声明许可证与源码。",
+      "attribution": "@vib3coded",
+      "sourceAuthor": "vib3coded",
+      "tags": [
+        "WebGPU",
+        "软体模拟",
+        "XPBD",
+        "果冻",
+        "折射",
+        "物理动效",
+        "3D材质",
+        "Claude Code"
+      ],
+      "publishedAt": "2026-11-02T08:30:56.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-02T08:53:41.000Z",
+      "updatedAt": "2026-11-02T08:53:41.000Z",
+      "verification": {
+        "checked_at": "2026-11-02T08:53:41.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "实体": 24,
+          "科普": 15,
+          "溯源": 14,
+          "复现": 12,
+          "风格": 10,
+          "新颖": 7
+        },
+        "multiplier": 1.0618,
+        "finalScore": 87.1,
+        "threshold": 65,
+        "run": "2026-11-02-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2117172532570718208/vid/avc1/1920x1200/RUHLwFRPxy1jzjvb.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "在水箱底下按数学曲线的形状持续振动，为什么池底的光纹会自己画出同样的玫瑰线、双纽线？日本开发者 @_unshift 的 three.js 作品《Cymatic Curves》：振动在水面传开，光被水面折射后在池底聚成曲线",
+      "category": "frontend",
+      "styleFamily": "uiux",
+      "source": "https://x.com/_unshift/status/2117172060564939099",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261102c-cymatic-curves.jpg",
+      "previewType": "image",
+      "description": "作者 @_unshift（日本开发者，门户已收录其 Halftone、马赛克等展览作品）原帖（2026-11-02 08:28 UTC，75 秒录屏 + 作品链接）：「其实我真正想做的是这个。让水面按数学公式画出的漂亮曲线的形状、以固定频率持续摇动，池底映出的光线也会变成那个形状。点击切换到下一个公式。按 Alt(Opt)+D 会出现 Tweakpane 面板，可以调参数。」标签 #creativecoding #threejs #webgl。作品页（本轮 HTTP 200）标题 Cymatic Curves，描述：「数学曲线从下方摇动水面，它们的形状在水面荡开，并作为光汇聚在地板上。」录屏可见：一个六边形透明水箱，水面泛起同心波纹，池底出现明亮的焦散（caustics）光纹，左上角小图标依次显示当前曲线（花瓣线、8 字形双纽线、星形等），右侧为参数面板。对你：①一镜讲两个物理现象：「克拉尼 / 赛马特克斯（cymatics）——振动让介质显形」+「焦散——游泳池底那些晃动的亮线是怎么来的」；②与芯片也有连接：光刻里的光学成像同样是「波的形状决定光落在哪儿」；③页面可直接打开录屏，点一下换一个公式，适合做开场 0 秒画面。",
+      "tool": "three.js + WebGL（作者标注），Tweakpane 参数面板",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作品页可直接打开；未公开源码、许可证与是否使用 AI 工具。",
+      "attribution": "@_unshift / unshift.co.jp labs",
+      "sourceAuthor": "_unshift",
+      "tags": [
+        "Three.js",
+        "焦散",
+        "水波",
+        "克拉尼图形",
+        "数学曲线",
+        "网页交互",
+        "物理动效"
+      ],
+      "publishedAt": "2026-11-02T08:28:49.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-02T08:53:41.000Z",
+      "updatedAt": "2026-11-02T08:53:41.000Z",
+      "verification": {
+        "checked_at": "2026-11-02T08:53:41.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 76,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 19,
+          "溯源": 12,
+          "复现": 7,
+          "风格": 9,
+          "新颖": 9
+        },
+        "multiplier": 1.249,
+        "finalScore": 94.9,
+        "threshold": 65,
+        "run": "2026-11-02-1640-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://video.twimg.com/amplify_video/2117171177152229376/vid/avc1/1920x1080/MDVgY4WWubhZlaNq.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "demoUrl": "https://unshift.co.jp/labs/cymatic-curves/"
+    },
+    {
+      "title": "给 AI 一段 20 秒的 AI 生成小镇视频，为什么它能还原成一整套「可以继续改」的 Blender 节点？开源技能 video-to-blender：一个几何节点修改器沿曲线长出石子路、木筋房和走路的人，换一条曲线就换一条街（MIT）",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://github.com/gokayfem/video-to-blender",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261102c-video-to-blender.jpg",
+      "previewType": "image",
+      "description": "一手来源：作者 gokayfem 的 GitHub 仓库 README（MIT，2026-10-21 创建，本轮约 84 星；门户 10-25 收过作者「高斯泼溅花园→Blender 程序化重建」一条）；11-01 由 @EthanAgentLab 推荐再次传播。它是给编程 Agent（Claude Code、Codex、Cursor、Copilot、Gemini）用的技能：输入参考视频、图片或一个想法，Agent 用 Python 搭出原生的几何节点（Geometry Nodes）、着色器节点和合成器节点图，生成后人还能继续手改。演示「Storybook Street」：把一段 20 秒 AI 生成的村庄视频，重建成路径曲线上的「一个」几何节点修改器——石子路、半木结构房屋、道具、随风飘动的彩旗、一个脚不打滑的行人，相机跟着行人走；画一条不同的曲线，同一套节点就生成另一条街。README 说明「为什么不直接让 Agent 写 Blender 脚本」：Agent 看不到节点图和渲染结果，Blender 5.x 的 Python API 又改了；所以技能附带 nodekit（按名字找插槽、自动布局、读回 JSON 并做 lint），39 个经过 Blender 内数值检验的节点组（例如「弯曲保持中线长度」「落地的脚绝不滑动」「弹簧增益符合解析公式」），以及重新打开 .blend 检查警告、计算耗时和相机穿模的验证脚本。需要 Blender 5.2+。封面为仓库内「参考视频 vs 重建结果」逐帧对比图。对你：①正对你想做的「3D 建模 + AI」：AI 不是吐一个死模型，而是生成一套能改参数的「生成规则」；②可讲「程序化建模」——游戏里无限地图、无限街道背后就是这种思路；③逐帧对比图可直接当首帧。",
+      "tool": "Claude Code / Codex 等 + Blender 5.2 几何节点、着色器节点、合成器",
+      "prompt": "prompts/reference-to-nodes-prompt.md、prompts/storybook-street/（仓库内公开）",
+      "promptProvenance": "original_public",
+      "provenanceNote": "MIT 开源，提示词与示例在仓库；演示的参考视频本身是 AI 生成片段。",
+      "attribution": "gokayfem/video-to-blender",
+      "sourceAuthor": "gokayfem",
+      "tags": [
+        "Blender",
+        "几何节点",
+        "程序化生成",
+        "3D建模",
+        "Claude Code",
+        "Agent技能",
+        "开源"
+      ],
+      "publishedAt": "2026-10-21T15:29:09.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-02T08:53:41.000Z",
+      "updatedAt": "2026-11-02T08:53:41.000Z",
+      "verification": {
+        "checked_at": "2026-11-02T08:53:41.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 14,
+          "溯源": 18,
+          "复现": 15,
+          "风格": 9,
+          "新颖": 7
+        },
+        "multiplier": 1.069,
+        "finalScore": 88.7,
+        "threshold": 65,
+        "run": "2026-11-02-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/gokayfem/video-to-blender",
+      "licenseName": "MIT",
+      "licenseUrl": "https://github.com/gokayfem/video-to-blender"
+    },
+    {
+      "title": "一座有神庙、雅典娜巨像、57 条瀑布和 14.9 万棵树的古希腊城，为什么一张贴图、一个外部模型都没有？Athenaion：Claude Code 指挥 55 个子 Agent 用 4.5 万行 three.js 代码「算」出整座城，花了约 45 小时（MIT）",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://github.com/Leonxlnx/athenaion",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261102c-athenaion.jpg",
+      "previewType": "image",
+      "description": "一手来源：作者 Leonxlnx（X 账号 @LexnLin，门户已收其日本寺庙、纳帕利海岸纯代码短片）的 GitHub 仓库 README（MIT，2026-10-17 创建，本轮约 602 星）；11-01 经 @KOF97AI 中文推荐再次传播。README 数据：完全用 three.js 代码生成，没有外部资产——每个网格、纹理、着色器、树、雕像和瀑布都是程序化生成；Claude Code（Opus 5.5）用约 2 天对照 9 张参考图搭成，在一台集显笔记本（AMD Radeon 780M）上渲染 4K。内容：石灰岩崖上的卫城与大台阶、帕特农式多立克神庙、雅典娜巨像和几十座小雕像（全部用有向距离场雕刻再网格化）、57 条追踪路径的瀑布（含水雾和泡沫）、泻湖、河流与有平面反射的海、渡槽、港口与船、14.9 万棵柏树/橄榄树/松树等。数字：总耗时约 45 小时（10-16 03:36 至 10-18 00:34），9 轮多 Agent 迭代约 27 小时，55 个子 Agent（最多 12 个并行，约 147 个 Agent 小时），约 4.5 万行 JavaScript、168 个模块，约 1100 万输出 token，按 API 价折合约 1800–2300 美元（实际用 Claude Max 订阅），最终 54 秒 4K 视频 GPU 渲染约 13 小时。做法：先写渲染引擎和「美术圣经」，再让地形、水、天空、建筑、雕像、树木等 12 个专家 Agent 并行，各自渲染、和参考图对比、循环修正；完整会话提示词在 docs/PROMPT.md。封面为仓库 overview 拼图（多机位 4K 渲染）。对你：①「3D 建模一定要在建模软件里一个个捏吗？」——这条给出另一条路：把世界写成规则；②55 个 Agent 分工 + 对着参考图自查，正好讲「多智能体协作」；③成本与时间都有精确数字，适合做「AI 造一座城要多少钱」。",
+      "tool": "Claude Code（Opus 5.5）+ three.js；离线累积渲染（AgX 色调映射）",
+      "prompt": "docs/PROMPT.md（仓库内公开整段会话提示词）",
+      "promptProvenance": "original_public",
+      "provenanceNote": "MIT；9 张 AI 生成参考图在 refs/；展示视频配乐为 Kevin MacLeod（CC BY 4.0，不在仓库内）；大型几何首次运行时现场生成。",
+      "attribution": "Leonxlnx/athenaion（@LexnLin）",
+      "sourceAuthor": "Leonxlnx",
+      "tags": [
+        "Three.js",
+        "程序化生成",
+        "多智能体",
+        "纯代码3D",
+        "古希腊",
+        "Claude Code",
+        "SDF"
+      ],
+      "publishedAt": "2026-10-17T22:42:57.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-02T08:53:41.000Z",
+      "updatedAt": "2026-11-02T08:53:41.000Z",
+      "verification": {
+        "checked_at": "2026-11-02T08:53:41.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 14,
+          "溯源": 18,
+          "复现": 14,
+          "风格": 10,
+          "新颖": 6
+        },
+        "multiplier": 1.1319,
+        "finalScore": 92.8,
+        "threshold": 65,
+        "run": "2026-11-02-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/Leonxlnx/athenaion",
+      "licenseName": "MIT",
+      "licenseUrl": "https://github.com/Leonxlnx/athenaion"
+    },
+    {
+      "title": "一张纸上的等高线，为什么滚动一下就能「站」成一座 6412 米的山？webtk 的《TERRA FIRMA》：钢笔一圈圈画出等高线，纸面隆起成地形，一条红线沿营地爬到黎明的山顶——全程没有一张图片，只有一个 three.js 等高线着色器",
+      "category": "frontend",
+      "styleFamily": "uiux",
+      "source": "https://x.com/webtkdev/status/2116937058652459301",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261102c-terra-firma.jpg",
+      "previewType": "image",
+      "description": "作者 @webtkdev 原帖（2026-11-01 16:55 UTC，24 秒录屏）：「一张随你滚动而自己画出来的纸地图。钢笔用等高线描出一座山，纸张升起变成 3D，一条红色路线在黎明时爬上山顶。零图片：只有一个 three.js 等高线着色器。一条提示词交给 Claude Code。」作品页（本轮 HTTP 200）标题「TERRA FIRMA — An atlas of Mount Aurel」，描述：在一张纸上攀登一座 6,412 米的山，从 4,120 米的山谷到黎明的山顶，红色路线一个营地一个营地往上走（Mount Aurel 为虚构山峰）。封面为作品 og 图：米色纸面、等高线地形图、指北针和海拔读数。对你：①「等高线为什么能表示高度」——小学地理的难点，滚动一下纸就变成立体山，比课本直观得多；②纸艺/纸面质感是你点过赞的方向；③可以借这个手法做「晶圆表面形貌」或「刻蚀深度」的等高线→3D 镜头。",
+      "tool": "Claude Code + three.js 等高线着色器（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者称「一条提示词」，但未公开提示词、源码与许可证；作品页需 JavaScript。",
+      "attribution": "@webtkdev / webtk.dev",
+      "sourceAuthor": "webtkdev",
+      "tags": [
+        "Three.js",
+        "等高线",
+        "纸艺场景",
+        "地形",
+        "滚动叙事",
+        "着色器"
+      ],
+      "publishedAt": "2026-11-01T16:55:00.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-02T08:53:41.000Z",
+      "updatedAt": "2026-11-02T08:53:41.000Z",
+      "verification": {
+        "checked_at": "2026-11-02T08:53:41.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 66,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 15,
+          "溯源": 10,
+          "复现": 5,
+          "风格": 9,
+          "新颖": 9
+        },
+        "multiplier": 1.3338,
+        "finalScore": 88.0,
+        "threshold": 65,
+        "run": "2026-11-02-1640-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://video.twimg.com/amplify_video/2116891320824524801/vid/avc1/1920x1080/M-FKIyueEg8cFDt8.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "demoUrl": "https://webtk.dev/sites/terra-firma/"
+    },
+    {
+      "title": "健身号里那种「灰色人偶 + 发红的那块肌肉」的视频，为什么能用代码自己做？@heyyaven 用 Claude Code 复刻：three.js 里给绑骨人偶摆姿势，肌肉发光是画在皮肤上的着色器，Mac mini 60 帧渲染，没用 AI 视频",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/heyyaven/status/2116916706564014177",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261102c-mannequin-fitness.jpg",
+      "previewType": "image",
+      "description": "作者 @heyyaven 原帖（2026-11-01 15:34 UTC，25 秒视频）：某健身主页每条视频都超过 50 万播放，格式就是一个灰色人偶、正在发力的肌肉发红、计数「3 X 10」、20 秒平静的语音讲解。他用 Claude Code 复刻了一条「改善久坐肩膀」的：手臂举成 Y 再把肘往后口袋方向拉、手臂前伸再拉开夹肩胛骨保持 2 秒、下巴水平后收。技术说明：人偶是在 three.js 里摆姿势的绑骨模型，发光是画在皮肤上的着色器所以会随身体动，Mac mini 60 fps 渲染，配音 ElevenLabs，没有 AI 视频。对你：这种「人偶 + 高亮部位」格式可以直接迁移到科普（例如芯片里哪一层在工作就让哪一层发光）。",
+      "tool": "Claude Code + three.js（绑骨模型、着色器高亮）+ ElevenLabs 配音",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "未公开源码、提示词与人偶模型来源；内容涉及健身动作，非医疗建议。",
+      "attribution": "@heyyaven",
+      "sourceAuthor": "heyyaven",
+      "tags": [
+        "Three.js",
+        "代码视频",
+        "人体模型",
+        "着色器",
+        "视频格式拆解"
+      ],
+      "publishedAt": "2026-11-01T15:34:07.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-02T08:53:41.000Z",
+      "updatedAt": "2026-11-02T08:53:41.000Z",
+      "verification": {
+        "checked_at": "2026-11-02T08:53:41.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 60,
+        "baseBreakdown": {
+          "实体": 15,
+          "科普": 12,
+          "溯源": 10,
+          "复现": 6,
+          "风格": 9,
+          "新颖": 8
+        },
+        "multiplier": 1.1979,
+        "finalScore": 71.9,
+        "threshold": 65,
+        "run": "2026-11-02-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2116916332323045377/vid/avc1/1626x1280/9rj5FuVYTw1Hu8SX.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "一只只开关小门的「妖精」，为什么能把混在一起的红球白球分开、却还是没打破热力学第二定律？万圣节装扮成麦克斯韦妖的 @beffjezos 做了个 3D 玻璃盒互动页：答案在「记忆」——擦掉 1 比特信息至少要放出 kT·ln2 的热",
       "category": "frontend",
@@ -26391,8 +26800,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条 | 2026-11-01-0840-shanghai 监控轮追加 5 条 | 2026-11-01-1240-shanghai 监控轮追加 6 条",
-  "updatedAt": "2026-11-01T04:55:16.000Z",
-  "totalItems": 522,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条 | 2026-11-01-0840-shanghai 监控轮追加 5 条 | 2026-11-01-1240-shanghai 监控轮追加 6 条 | 2026-11-02-1640-shanghai 监控轮追加 7 条",
+  "updatedAt": "2026-11-02T08:53:41.000Z",
+  "totalItems": 529,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
