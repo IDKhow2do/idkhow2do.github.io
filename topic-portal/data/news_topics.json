@@ -1,7 +1,126 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-03T08:56:25.000Z",
+  "updatedAt": "2026-11-03T12:58:14.000Z",
   "topics": [
+    {
+      "url": "https://www.anthropic.com/research/provable-inference",
+      "title": "你花钱调用的「大模型」，怎么证明它没被偷偷换成便宜小模型？Anthropic 开源 FlashProve：每个回答附一份约 19 MB 的零知识证明，普通 CPU 十几秒就能验，却看不到一个权重——代价是证明比回答本身贵 70–95 倍",
+      "category": "AI",
+      "source": "Anthropic 研究博客《Progress on provable inference for large language models》+ 技术报告 + GitHub anthropics/FlashProve（2026-11-02）",
+      "publishedAt": "2026-11-02",
+      "eventAt": "2026-11-02",
+      "collectedAt": "2026-11-03T12:58:14.000Z",
+      "updatedAt": "2026-11-03T12:58:14.000Z",
+      "description": "一手来源：Anthropic 研究博客与开源仓库（Apache 2.0）。问题：用户调用模型时只看得到输出的字，没法确认服务商真用了宣称的模型，对方可能换成更小更弱的模型，或者在不同请求之间切换。FlashProve 的做法叫「可证明推理」：离线阶段，服务商先公布一个对模型权重的「承诺」（一个短指纹，钉死唯一一套权重，但权重本身保持隐藏）；在线阶段，每次回答都附一个证明文件，证明「被承诺的这套权重对这个提示词，确实算出了这些 token」。证明是零知识的（不泄露权重、中间值，也不泄露每层用了哪些专家）且简洁的。实测：在 4 bit 量化的 Llama 4 Maverick（4000 亿参数 MoE，约 232 GB）上，单张 H100 每秒生成约 110 个 token 的证明，每个 1,024 token 请求的证明约 19 MB，24 核 CPU 几秒到二十秒内验完；GPU 耗时约为 vLLM 直接跑模型的 70–95 倍。协议的可靠性在 Lean 4 中做了形式化证明；博客称 Claude 参与了系统优化。对你：①开场直接问「你买的 API 是不是被掺了水」——国内大量用户通过中转站调用海外模型，「降智」「套壳」的猜疑很普遍，这个题天然有共鸣；②用「验钞机 vs 印钞」类比零知识证明：验证者不需要权重也能确认结果；③反直觉点：证明一句话的成本远高于说出这句话，所以暂时只是研究原型。",
+      "caveat": "Anthropic 明确称这是研究原型，不是生产系统；只支持 Llama 4 Maverick、1,024 token 上下文与贪心解码，模型架构不隐藏；不能证明模型「好不好」，只能证明「是不是那一个」。封面为博客官方 og 配图（插画，非数据图）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261103d-flashprove.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261103d-flashprove.jpg",
+      "imageAlt": "Anthropic 博客配图：一条金属链条横穿手绘纸面",
+      "tags": [
+        "AI推理",
+        "AI安全",
+        "AI成本",
+        "密码学",
+        "零知识证明",
+        "开源"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 8,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 8,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 88.8,
+        "threshold": 65,
+        "run": "2026-11-03-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://www.nature.com/articles/s41586-026-11195-y",
+      "title": "把苍蝇的头切掉，它的六条腿还能踩出走路的节奏——指挥迈步的不是大脑？Nature：在果蝇神经索「连接组」上跑模拟，一路剪枝，最后只剩 3 个神经元（1 个抑制、2 个兴奋）就够让六条腿打拍子",
+      "category": "其他",
+      "source": "Nature 论文《Connectome simulations identify a central pattern generator for fly walking》（Pugliese 等，华盛顿大学 / Allen 研究所，2026-10-28 在线发表，DOI 10.1038/s41586-026-11195-y）",
+      "publishedAt": "2026-10-28",
+      "eventAt": "2026-10-28",
+      "collectedAt": "2026-11-03T12:58:14.000Z",
+      "updatedAt": "2026-11-03T12:58:14.000Z",
+      "description": "一手来源：Nature 论文。动物走路依赖「中枢模式发生器」（CPG）——不需要节律输入也能自己输出节律的神经回路，但此前在任何动物身上都不知道走路 CPG 的具体接线。作者用果蝇腹神经索的连接组（每个神经元、每个突触都测出来的「接线图」）做动态仿真：先对来自大脑的下行神经元做计算激活筛查，已知的走路「命令神经元」DNg100 是最强的腿部节律驱动者；再在仿真里逐步剪掉神经元，找到一个最小的产生节律的回路——1 个抑制性、2 个兴奋性中间神经元，这个 3 神经元回路对六条腿的运动节律既必要又充分，并且在 4 套不同的连接组数据上都成立。仿真还预测另一条下行通路 DNb08 也能驱动腿部节律，作者用光遗传学在无头果蝇身上验证了这一点（补充视频为无头果蝇被光激活后走路/摆腿）。代码与数据已在 GitHub 和 Zenodo 公开。对你：①开场用无头果蝇迈步的视频或示意图，问「没有脑子怎么走路」；②「3 个神经元就能打拍子」接你的涌现系列——简单的环形连接（兴奋→兴奋→抑制→回到开头）就能自己振荡，可用 Canvas 复现三节点振荡；③延伸到机器人：步态节律不一定要写死在「大脑」里。",
+      "caveat": "论文称其为「推定的」（putative）CPG 回路，主要证据来自连接组仿真，实验验证集中在下行通路激活；仿真模型的参数（增益、阈值、时间常数）是统计设定，结果对增益最敏感。封面为论文图 1（Nature 官方页面图）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261103d-fly-cpg.png",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261103d-fly-cpg.png",
+      "imageAlt": "Nature 论文图 1：果蝇腹神经索连接组、突触权重矩阵与下行神经元刺激产生腿部运动神经元节律",
+      "tags": [
+        "涌现",
+        "神经科学",
+        "连接组",
+        "仿真",
+        "机器人",
+        "论文"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 80,
+        "baseBreakdown": {
+          "主线": 14,
+          "钩子": 19,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0,
+        "finalScore": 80.0,
+        "threshold": 65,
+        "run": "2026-11-03-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://www.science.org/doi/10.1126/science.adr9983",
+      "title": "鸟唱歌像人类的音乐和说话，是因为它们会「学唱」吗？Science 比较了 367 种鸟、7.4 万多个鸣声单元和 52 种人类语言：句尾拖长、音高小步走、节奏规律都是共同规律——但不会学唱的鸟也一样",
+      "category": "其他",
+      "source": "Science 论文《Pervasive patterns in bird songs resemble those in human speech and song and are independent of vocal learning》（James 等，麦吉尔大学，2026-10-29，Vol 394 pp. 556–561，DOI 10.1126/science.adr9983）+ 同期 Perspective + 作者在 The Conversation 的解读",
+      "publishedAt": "2026-10-29",
+      "eventAt": "2026-10-29",
+      "collectedAt": "2026-11-03T12:58:14.000Z",
+      "updatedAt": "2026-11-03T12:58:14.000Z",
+      "description": "一手来源：Science 论文及作者解读。研究者从公民科学平台 xeno-canto 下载录音，人工标注了 367 种鸟（约 5,900 首歌里超过 74,500 个鸣声单元）的音节，覆盖两类会学唱的鸟（鸣禽、蜂鸟）和与之亲缘相近但不会学唱的鸟（亚鸣禽、夜鹰），再与 52 种人类语言里 800 多个说话/唱歌乐句（超过 15,000 个单元）比较。结果：鸟歌普遍有和人类相似的模式——乐句最后一个音拉长、相邻音节之间音高变化小、节奏规律可预测；有些方面更像人类唱歌，整体随时间的变化则更像人类说话。出乎意料的是，会学唱的鸟并不比不会学唱的鸟更像人类。作者推测共同原因可能是发声的身体约束（呼吸气流和发声肌肉的配合），而不是「学习」本身。对你：①开场直接放一段鸟鸣的声谱图和一段人说话的声谱图对比；②反直觉点「不会学唱的鸟也像人」，可以讲「规律来自身体结构而不是文化」；③可延伸到 AI 语音：为什么合成语音句尾不拖长就会显得假。",
+      "caveat": "研究只比较了时间、音高、节奏等特定声学特征，不涉及音阶、层级结构等更复杂的音乐特征；作者强调这不代表鸟「说话」或「唱歌」和人一样，具体是哪种生物机制造成的也尚未确定；人类样本只覆盖 52 种语言。封面为 Science 官方 X 账号发布的论文图（多种鸟的声谱图与系统发育树）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261103d-birdsong-patterns.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261103d-birdsong-patterns.jpg",
+      "imageAlt": "Science 论文图：鸟类系统发育树与狐色雀鹀、斑姬鹟等多种鸟的鸣声声谱图，标注频率跳变、交替、时长等特征",
+      "tags": [
+        "生物",
+        "声音",
+        "语言",
+        "反直觉",
+        "论文"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 74,
+        "baseBreakdown": {
+          "主线": 12,
+          "钩子": 16,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0,
+        "finalScore": 74.0,
+        "threshold": 65,
+        "run": "2026-11-03-2040-shanghai"
+      }
+    },
     {
       "url": "https://zou-group.github.io/llm-claims-shelf-life/",
       "title": "「AI 连 strawberry 里有几个 r 都数不清」「AI 写的参考文献一半是编的」——这些你听过的 AI 结论，现在还成立吗？斯坦福把 50 条被广泛引用的大模型结论在 20 个新模型上重测了一遍：44% 已经「过期」，平均只活了 15.7 个月",
