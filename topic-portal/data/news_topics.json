@@ -1,7 +1,47 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-03T04:48:38.000Z",
+  "updatedAt": "2026-11-03T08:56:25.000Z",
   "topics": [
+    {
+      "url": "https://zou-group.github.io/llm-claims-shelf-life/",
+      "title": "「AI 连 strawberry 里有几个 r 都数不清」「AI 写的参考文献一半是编的」——这些你听过的 AI 结论，现在还成立吗？斯坦福把 50 条被广泛引用的大模型结论在 20 个新模型上重测了一遍：44% 已经「过期」，平均只活了 15.7 个月",
+      "category": "AI",
+      "source": "Stanford 邹炜（James Zou）组项目页《The shelf life of LLM findings》（Owen Queen、James Zou，2026-11-02）",
+      "publishedAt": "2026-11-02",
+      "eventAt": "2026-11-02",
+      "collectedAt": "2026-11-03T08:56:25.000Z",
+      "updatedAt": "2026-11-03T08:56:25.000Z",
+      "description": "一手来源：斯坦福 Owen Queen 与 James Zou 发布的研究项目页。他们挑了 50 条被广泛引用的大模型结论（谄媚、越狱、长上下文、文化偏见、推理、模型当评委等），用原论文的同一套设置，在 2024 年 7 月到 2026 年 9 月间由 8 家开发者发布的 20 个模型上重跑，再按发布时间拟合效应变化；效应剩下原论文的五分之一以下就算「过期」。结果（拟合到 2026-09-30）：22 条过期（44%）、17 条减弱（34%）、8 条仍成立（16%）、3 条反而更强（6%）。过期的多是「能力缺陷」：数字母、非十进制算术、长文中间找信息、编造参考文献、被质疑就放弃正确答案——例如 2023 年 Walters 和 Wilder 发现 GPT-3.5 版 ChatGPT 写综述时 55% 的引用是假的，同样提示词交给 GPT-6.1-Sol 和 Claude Sonnet 5.5 已很少编造，但仍有模型会。仍成立或增强的多是「偏好和判断」：讨好、附和用户，当评委偏爱自己的答案，对开放问题回答高度雷同，偏左的政治倾向，以及该弃权时硬答。时间上：发表 6 个月后约 4% 过期、1 年后 16%、2 年后 39%；22 条过期结论从发表到过期平均 15.7 个月（中位数 14.7）。不同模型差别很大：同为 2026 年 7–9 月发布，DeepSeek V4 Pro 只有 11 条判为过期，GPT-6.1 Sol 有 30 条，Qwen3.7-Flash 14 条、GLM-5.3-Flash 19 条。对你：①开场直接用环形图「78% 已减弱或过期」，再拿「数 strawberry 的 r」这种观众都听过的梗做反转；②落点是「AI 的能力缺陷修得很快，但讨好你、偏爱自己这种性格问题反而没变甚至更强」，适合讲「为什么不能拿去年的 AI 段子判断今天的 AI」；③国产模型（DeepSeek、Qwen、GLM）都在测试名单里，可做对比。",
+      "caveat": "这是研究团队的项目页，尚未见同行评审论文；50 条结论由作者挑选，作者在图中注明百分比只描述所选结论，单个模型可能与总体判定不同。「过期」按拟合趋势判定（效应 ≤ 原论文 1/5），作者说明部分判定支持度弱、一些新模型仍会出现原问题。封面为项目页官方 og 分享图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261103c-llm-shelf-life.png",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261103c-llm-shelf-life.png",
+      "imageAlt": "项目页分享图：50 条结论环形图，22 条过期 44%、17 条减弱 34%、8 条仍成立 16%、3 条增强 6%，标题「78% have weakened or expired」",
+      "tags": [
+        "AI评测",
+        "大模型",
+        "幻觉",
+        "反直觉",
+        "国产模型",
+        "论文"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "主线": 19,
+          "钩子": 19,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 91.9,
+        "threshold": 65,
+        "run": "2026-11-03-1640-shanghai"
+      }
+    },
     {
       "url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities",
       "title": "写代码已经快被 AI 包圆了，为什么让最强的 AI 智能体去干真正的芯片设计、金融和法律活，满分 100 它只拿 12 分？SemiAnalysis 新基准 GDPx：206 个真实任务、每个最多给 8 小时，金融和法律几乎全员 0 分",
