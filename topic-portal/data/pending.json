@@ -3,6 +3,132 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 57,
+      "multiplier": 1.1178,
+      "score": 63.7,
+      "reason": "本轮达待定区间",
+      "run": "2026-11-03-0840-shanghai",
+      "record": {
+        "title": "同一份提示词连续 4 天分别交给 Three.js、Godot、Unity、Unreal，让 Claude Code + Blender MCP 做游戏：画面最好的 Unreal 为什么反而落选？作者答：二进制文件把 AI 代理挡在门外",
+        "category": "video",
+        "styleFamily": "code_video",
+        "source": "https://x.com/luccacerf/status/2117328213495967850",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261103a-engines.jpg",
+        "previewType": "image",
+        "description": "作者 @luccacerf 原帖（2026-11-02 18:49 UTC，约 4,200 次浏览、54 赞、54 收藏）：用 Claude Code（Opus 5.5）+ Blender MCP 做游戏，哪个平台最好？他把几乎相同的提示词依次交给 Three.js、Godot、Unity、Unreal，前后 4 天。结论：选 Three.js 和 Unity；Unreal 画面好看，但二进制文件会挡住代理，分发也不如网页游戏和手游。视频截帧可见其中一个成品「KingsWar, from first prompt to…」，标注 THREE.JS。对你：「AI 能改文本、改不了二进制」是解释代理工作方式的好切口；但作者为单人体验对比，无量化指标。",
+        "tool": "Claude Code（Opus 5.5）+ Blender MCP；Three.js / Godot / Unity / Unreal",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "未公开提示词、源码与许可证；对比为作者主观体验。",
+        "attribution": "@luccacerf",
+        "sourceAuthor": "luccacerf",
+        "tags": [
+          "游戏引擎",
+          "Claude Code",
+          "Blender",
+          "Three.js",
+          "AI游戏"
+        ],
+        "publishedAt": "2026-11-02T18:49:18.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-11-03T00:52:15.000Z",
+        "updatedAt": "2026-11-03T00:52:15.000Z",
+        "verification": {
+          "checked_at": "2026-11-03T00:52:15.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 57,
+          "baseBreakdown": {
+            "实体": 12,
+            "科普": 14,
+            "溯源": 9,
+            "复现": 5,
+            "风格": 9,
+            "新颖": 8
+          },
+          "multiplier": 1.1178,
+          "finalScore": 63.7,
+          "threshold": 65,
+          "run": "2026-11-03-0840-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2117328020633534464/vid/avc1/1920x1080/z1OG-O43ZNKxfU72.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 60,
+      "multiplier": 1.038,
+      "score": 62.3,
+      "reason": "本轮达待定区间",
+      "run": "2026-11-03-0840-shanghai",
+      "record": {
+        "title": "三块还不存在的冲浪板：每块只是 FreeCAD 里的三条样条曲线，「放样」成实体再进 Blender 渲染——全程无界面、不手工建模，Claude Code 在笔记本上跑了一整夜",
+        "category": "3d",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/eric_tidmore/status/2117259760232022186",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261103a-surfboards.jpg",
+        "previewType": "image",
+        "description": "作者 @eric_tidmore 原帖（2026-11-02 14:17 UTC）：三块不存在的冲浪板，每块由 FreeCAD 中的三条样条曲线放样（loft）成实体，再在 Blender 中渲染；没有图形界面、没有手工建模，整条流程由 Claude Code 编写并在作者笔记本上通宵运行。截帧可见白底上一块深色冲浪板。对你：①「三条曲线 → 一个实体」是讲参数化 CAD 的最小例子；②与「AI 建模」系列可并列。",
+        "tool": "Claude Code；FreeCAD（样条 + 放样）→ Blender 渲染",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "未公开脚本、提示词与许可证；浏览量很低（十余次）。",
+        "attribution": "@eric_tidmore",
+        "sourceAuthor": "eric_tidmore",
+        "tags": [
+          "CAD",
+          "参数化建模",
+          "FreeCAD",
+          "Blender",
+          "Claude Code"
+        ],
+        "publishedAt": "2026-11-02T14:17:18.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-11-03T00:52:15.000Z",
+        "updatedAt": "2026-11-03T00:52:15.000Z",
+        "verification": {
+          "checked_at": "2026-11-03T00:52:15.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 60,
+          "baseBreakdown": {
+            "实体": 17,
+            "科普": 15,
+            "溯源": 7,
+            "复现": 5,
+            "风格": 8,
+            "新颖": 8
+          },
+          "multiplier": 1.038,
+          "finalScore": 62.3,
+          "threshold": 65,
+          "run": "2026-11-03-0840-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2117259743836479488/vid/avc1/1280x720/eQqoqu-Pdgezon1Q.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 61,
       "multiplier": 1.025,
       "score": 62.5,
@@ -5571,6 +5697,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-02T12:50:34.000Z",
+  "updatedAt": "2026-11-03T00:52:15.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }

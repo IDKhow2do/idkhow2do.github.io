@@ -1,7 +1,125 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-02T12:50:34.000Z",
+  "updatedAt": "2026-11-03T00:52:15.000Z",
   "topics": [
+    {
+      "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+      "title": "人类盯着一堆神经网络权重根本看不出它学了什么，大模型却能只看 17,253 个数字就说出「这是玩打砖块的」？MIT CSAIL：不训练、不求梯度，只改 Qwen 0.016% 的权重，数学题正确率从 7.9% 涨到 48.1%",
+      "category": "AI",
+      "source": "MIT CSAIL 研究者博客《Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights》（Rikiya Takehi、Jayden Teoh、Alex Zhang、Omar Khattab，2026-11-02）；实验日志 github.com/RikiyaT/lm_understand-logs；当日上 Hacker News best",
+      "publishedAt": "2026-11-02",
+      "eventAt": "2026-11-02",
+      "collectedAt": "2026-11-03T00:52:15.000Z",
+      "updatedAt": "2026-11-03T00:52:15.000Z",
+      "description": "一手来源：作者团队博客（署名单位 MIT CSAIL）。他们提出「权重空间编程」：让通用大模型（文中用 GPT-6 Astra）直接用自然语言推理去读、写神经网络的权重，不经过优化器、不做梯度下降，有时连环境反馈都没有。博客给出的三类结果：①读：给它一个小游戏策略网络的 17,253 个原始权重、不给工具，它判断出这是在 Breakout（打砖块）上训练的，置信度 99%；②修：一个训练好的小车策略永远过不了某段路，Astra 一次性改动 3.5% 的权重，成功率从 0% 变成 100%；③改大模型：要求让 Qwen3.5-0.8B 数学更好且不许写训练循环，它在权重里找到一个导致「推理死循环」的问题（Qwen 自己的模型卡也警告过这个现象），只原生编辑 0.016% 的权重，同样采样设置下 MATH-500 从 7.9% 升到 48.1%，并且不经调整就迁移到指令遵循，IFEval 提高到约 3 倍。博客还说它能从零写出小型游戏网络，胜过用 PPO 训练 1 亿步的网络。对你：①「看权重就知道网络学了什么」本身就是极强的反直觉钩子，也能接你的「涌现」系列——一堆数字里藏着可读的结构；②首帧可直接用博客的三栏结果图（读/修/改）；③可做一个对照：人类读代码 vs 模型读权重。",
+      "caveat": "这是研究者博客的「早期结果」，不是同行评审论文；数字均为作者报告，本轮未复现。GPT-6 Astra 为 OpenAI 模型，大陆不可直接使用；被改的 Qwen3.5-0.8B 是国内开源模型。封面为博客首图（三栏结果图）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261103a-weight-space.png",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261103a-weight-space.png",
+      "imageAlt": "博客首图：读（判断网络在 Breakout 上训练）、修（3.5% 权重编辑后成功率 100%）、改（Qwen MATH-500 从 7.9% 到 48.1%）三栏结果",
+      "tags": [
+        "AI推理",
+        "可解释性",
+        "大模型",
+        "涌现",
+        "论文",
+        "反直觉"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 19,
+          "画面": 12,
+          "来源": 13,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 89.8,
+        "threshold": 65,
+        "run": "2026-11-03-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50340088",
+      "title": "嘴巴不出声、甚至不张开，电脑就能听懂你在「说」什么？两个大学生把天线藏进眼镜框：无线电波穿过舌头、嘴唇和软腭，被你默念时的动作「调制」，再让模型解码成文字",
+      "category": "科技产品",
+      "source": "Hacker News「Show HN: Subvocal – Talk to your computer without making noise」创始人 Aarush、Arnav 自述（2026-11-02，当日 HN best，500+ 分）；公司官网 https://subvocal.company/ ；YC 演示视频 https://www.youtube.com/watch?v=9QdX1eObVYI",
+      "publishedAt": "2026-11-02",
+      "eventAt": "2026-11-02",
+      "collectedAt": "2026-11-03T00:52:15.000Z",
+      "updatedAt": "2026-11-03T00:52:15.000Z",
+      "description": "一手来源：创始人在 HN 的自述。他们做的是一副智能眼镜，让你默默做口型就能把话「说」给电脑，按说话的速度解码成文字；作者补充说经过微调后，连嘴都不用张，闭着嘴「默念」也行。过程：今年 2 月在斯坦福 TreeHacks 黑客松，参考 MIT 媒体实验室的 AlterEgo，36 小时里把肌电（EMG）电极贴在脸上做了个粗糙原型，只能勉强逐字母识别。随后发现肌电路线行不通：出汗会改变信号、电气干扰、电极位置每次不同，而且没人愿意往脸上贴电极。于是改用射频（RF）：眼镜发出类似蓝牙的无线电波穿过面部，经过舌头、嘴唇和软腭时被无声口型调制，再用他们训练的基础模型把这些扰动解码成文字。难点：先做极低噪声的射频传感，再让天线的场与发音器官最大程度重叠——第一次装在眼镜上完全失败，只好把天线用胶带贴脸、又做了个头戴支架，最后靠仿真设计出把天线嵌进镜框的版本。跨用户泛化靠「堆数据」：在办公室设摊位，付钱请人戴眼镜朗读提示语来预训练，错误率随数据量快速下降；演示里 YC 的 Dave 只做了 20 句校准。对你：①「闭着嘴也能打字」反直觉、普通人一听就懂；②机制可以用动画讲：电波穿过口腔 → 舌头位置改变信号 → 模型读信号；③「肌电失败转射频」「靠付费朗读堆数据」都是好讲的工程故事。",
+      "caveat": "识别速度、准确率均为创始人自述，HN 帖未给量化指标；目前仍是原型，作者说未来几个月继续研发，官网上的成品外观尚未出货。无线电波穿过面部的安全性帖子未讨论，做视频时不要替其背书。封面为 YouTube 演示视频缩略图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261103a-subvocal.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261103a-subvocal.jpg",
+      "imageAlt": "Subvocal 演示视频缩略图：测试者戴着原型眼镜在电脑前使用",
+      "tags": [
+        "人机交互",
+        "可穿戴设备",
+        "射频传感",
+        "AI推理",
+        "反直觉"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 75,
+        "baseBreakdown": {
+          "主线": 15,
+          "钩子": 18,
+          "画面": 12,
+          "来源": 11,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0,
+        "finalScore": 75.0,
+        "threshold": 65,
+        "run": "2026-11-03-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
+      "title": "从 11 月 3 日起，连老版本 Claude 写的字也带上了「看不见的水印」：不加一个字符、不多花一个 token，它到底藏在哪？——答案是「下一个词用哪个随机数来挑」",
+      "category": "AI",
+      "source": "Anthropic 帮助中心《How Claude marks AI-generated content》（本周更新）；Anthropic 官方博客《How Claude's text watermarking works》（2026-08-14）；11-03 扩展到 Mythos 5、Opus 4.7、Opus 4.6、Sonnet 4.6 的日期见 Anthropic 发给用户的邮件，由 The Independent（2026-11-02）、Techweez（2026-11-02）等报道引用",
+      "publishedAt": "2026-11-02",
+      "eventAt": "2026-11-03",
+      "collectedAt": "2026-11-03T00:52:15.000Z",
+      "updatedAt": "2026-11-03T00:52:15.000Z",
+      "description": "一手来源：Anthropic 帮助中心与官方博客。要点：①为遵守欧盟《AI 法案》第 50(2) 条行为准则，Anthropic 在 Claude 生成的文字里加入不可见水印，文件则加 C2PA 内容凭证；覆盖 API、Claude 应用、Claude Code、Cowork 等所有入口，而且「全球都打」，不只欧盟。②原理（官方博客）：模型每次挑下一个词时，有很多「挑哪个都差不多」的低风险选择，比如「今天天气冷而且……」后面接 overcast 还是 grey，平时由随机数决定；加水印后仍然是随机挑，只是随机数改由「密钥 + 前面几个词」决定。持有密钥的人检查整段文字的选词是否与这种规律一致，就能给出「由 Claude 生成」的概率。官方称：不加任何字符、没有隐藏字符、不多耗 token、不影响质量、也不包含能追溯到个人或对话的信息；方法是 Google DeepMind 2024 年发在 Nature 上的 SynthID-Text 的一个版本，思路可追溯到 Scott Aaronson 2022 年的提议。③帮助中心列出可能检测不到的情况：生成时该模型还没支持水印、被大幅改写/翻译/混写、段落太短信号不够、文件元数据被转格式或截图抹掉等。④检测目前是私有预览，只开放给欧盟法规认定的机构（监管、执法、媒体、事实核查、独立研究、教育等）以及有合规义务的企业。对你：门户 10 月已收 OpenAI「欧盟文本溯源」一条，这条换了角度——①你自己做视频重度依赖 Claude，这事直接相关；②「随机数换个来源就成了水印」是 3 分钟讲得完的机制，可以用骰子动画演示；③反方：短文本、改写就失效，而普通用户自己查不了。",
+      "caveat": "「11 月 3 日起扩展到四个旧模型」出自 Anthropic 发给用户的邮件，本轮只看到媒体引用，帮助中心表格未标日期；The Independent 称 Opus 4.6、Sonnet 4.6 调整 API 采样设置可去掉水印，本轮未在官方页面核实，视频里不要引用。与门户已有 OpenAI 水印条目同属「AI 文本水印」话题，注意别重复角度。封面为官方博客头图（Anthropic 标识，画面较弱，建议自制骰子/选词动画）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261103a-claude-watermark.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261103a-claude-watermark.jpg",
+      "imageAlt": "Anthropic 官方博客《How Claude's text watermarking works》头图（Anthropic 标识）",
+      "tags": [
+        "AI安全",
+        "AI水印",
+        "大模型",
+        "欧盟AI法案",
+        "数字生活"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 73,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 16,
+          "画面": 5,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 2
+        },
+        "multiplier": 1.0566,
+        "finalScore": 77.1,
+        "threshold": 65,
+        "run": "2026-11-03-0840-shanghai"
+      }
+    },
     {
       "url": "https://jp.toto.com/company/press/2026_10_30/",
       "title": "做马桶的 TOTO，为什么要砸约 600 亿日元给刻蚀机造「吸盘」？等离子体把腔体越烧越狠，一块不怕被打的陶瓷成了先进芯片的关键零件——还有一种「不用烧」的陶瓷膜",
