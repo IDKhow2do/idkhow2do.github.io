@@ -1,7 +1,87 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-03T00:52:15.000Z",
+  "updatedAt": "2026-11-03T04:48:38.000Z",
   "topics": [
+    {
+      "url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities",
+      "title": "写代码已经快被 AI 包圆了，为什么让最强的 AI 智能体去干真正的芯片设计、金融和法律活，满分 100 它只拿 12 分？SemiAnalysis 新基准 GDPx：206 个真实任务、每个最多给 8 小时，金融和法律几乎全员 0 分",
+      "category": "AI",
+      "source": "SemiAnalysis 官方博客《GDPx: Measuring Frontier Model Capabilities Across the Most Valuable Domains》（Max Kan、Andrew Megalaa、Dylan Patel，2026-11-02）；排行榜官网 gdpx.semianalysis.com",
+      "publishedAt": "2026-11-02",
+      "eventAt": "2026-11-02",
+      "collectedAt": "2026-11-03T04:48:38.000Z",
+      "updatedAt": "2026-11-03T04:48:38.000Z",
+      "description": "一手来源：半导体分析机构 SemiAnalysis 发布的智能体基准 GDPx 及其官方排行榜。它只挑「最值钱」的 11 个领域：芯片设计、网络安全、生物、金融、法律、量化交易、递归自我改进、硬件设计、材料科学、对齐、软件工程，共 206 个任务、14 家专业合作方出题，每个任务给一个模拟工作环境（文件、工具、系统），默认时限 8 小时，按 3 次尝试的平均 pass@1 计分，各领域等权。官网榜单：Claude Opus 5.5 12.0%、Gemini 4 Carbon 10.9%、GPT-6 Astra 9.6%，国产模型 DeepSeek 4.1 Flash 5.4%（每题成本约 0.94 美元）、GLM 5.3 2.7%。博客说金融和法律任务在二元判分下「基本所有模型都是 0」。芯片设计是唯一有 3 家合作方出题的领域（Aria、Arcverex、Ergodex），任务来自真实流片芯片：让模型当验证工程师写签核回归测试，要能分辨正确实现和那些「当年躲过原设计团队、真的随芯片出货」的 bug；或当 RTL 设计师，逐位对齐参考模型后再在时序/面积约束下优化 PPA。文中总结的失败模式：一追求 PPA 正确性就悄悄崩、难以在架构层面权衡、估不准一个设计要迭代几轮才能收敛。对你：①「AI 写网页很强，为什么一碰芯片验证就不行」正好接你的刻蚀/芯片一线视角，可以讲「芯片为什么要验证到发疯」；②首帧可用排行榜条形图，12% 的天花板一眼可见；③反方：这是厂商自建、大部分任务不公开的新基准。",
+      "caveat": "GDPx 是 SemiAnalysis 自建、首日发布的基准，任务大多私有、尚无独立复现；博客称 Opus 5.5 和 GPT-6 Astra 在网络安全/生物/对齐上被自身安全分类器拉低了分数。博客正文为付费文章，上述细节来自可公开读到的部分和官网排行榜。X 新闻摘要提到 OpenAI 同日发布 LifeVal（日常任务基准）作对照，本轮未找到一手原文，未写入。封面为 GDPx 官网 og 图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261103b-gdpx.png",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261103b-gdpx.png",
+      "imageAlt": "GDPx × SemiAnalysis 官方分享图：Measuring frontier model capabilities across the most valuable domains",
+      "tags": [
+        "智能体",
+        "芯片设计",
+        "AI评测",
+        "芯片验证",
+        "反直觉",
+        "国产模型"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 17,
+          "画面": 10,
+          "来源": 14,
+          "时效": 10,
+          "大陆": 7,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 89.8,
+        "threshold": 65,
+        "run": "2026-11-03-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://qlabs.sh/research/parameters/",
+      "title": "人一辈子大约只听读 2 亿个词就学会了语言，大模型却要喂几十万亿个——问题会不会不是数据太少，而是模型「太小」？Q Labs：按人脑突触算，现在的模型小了 7 个数量级，并给出了训练「千万亿参数」模型的配方",
+      "category": "AI",
+      "source": "Q Labs 研究博客《Quadrillion-parameter transformers and how to train them》（Akshay Vegesna、Ethan Baron、Anirudh Satheesh、Samip Dahal，2026 年 11 月）；对应论文 arXiv:2610.37842《Improving Data-Constrained Scaling with Hyperparameter Transfer and Ensembling》（Baron 等，2026-10-27 提交，代码 github.com/qlabs-eng/data-constrained-scaling）",
+      "publishedAt": "2026-11-02",
+      "eventAt": "2026-11-02",
+      "collectedAt": "2026-11-03T04:48:38.000Z",
+      "updatedAt": "2026-11-03T04:48:38.000Z",
+      "description": "一手来源：Q Labs 官方研究博客 + arXiv 论文。博客的出发点：AI 和人类之间约有 100 万倍的「样本效率」差距。Chinchilla 法则给 30 万亿 token 配约 1.5 万亿参数，即每个参数 20 个 token；人脑若把每个突触算一个参数约有 100 万亿参数，却只学了约 2 亿 token，即每个 token 对 50 万个参数——两者差 1000 万倍，所以他们认为「现在的网络太小了 7 个数量级」。论文结论：数据量固定时，计算最优的模型规模会随算力一直增长（而不是 Chinchilla 说的固定比例）；同时要随规模大幅加大权重衰减（防止反复读同一批数据过拟合），并把「集成多个模型」当成新的扩展轴。实验：只用 FineWeb 的 1 亿 token，他们的配方比以往配方验证损失低 0.15 nats 以上、困惑度降 14%，而且老配方加算力反而变差，新配方随算力单调变好；外推到 5 万亿 token、10^29 FLOPs 时，推荐参数量约为 Chinchilla 的 7,000 倍。对你：①直接接你的「涌现」长视频——「智慧来自更多数据，还是更大的网络？」；②人脑 vs 大模型的 token/参数比是极好的开场数字；③反方：把突触等同于参数是很粗的类比，外推到千万亿参数远超实验范围。",
+      "caveat": "「人类 2 亿 token、100 万亿参数」是博客作者的粗略估算和类比；实验最大只到约 4 亿参数、1 亿 token，千万亿参数是幂律外推而非实测。论文为预印本，未经同行评审。博客页面未标具体日，按 X 新闻热议时间记为 11-02。封面为论文 HTML 版图 1（超参数二次拟合、权重衰减随 epoch 的幂律、外推对比）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261103b-qlabs-scaling.png",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261103b-qlabs-scaling.png",
+      "imageAlt": "论文图：Quadratic Fits / Power Law / Extrapolation 三栏，展示最优权重衰减随训练轮数按幂律增长及外推结果",
+      "tags": [
+        "AI训练",
+        "缩放定律",
+        "涌现",
+        "大模型",
+        "论文",
+        "反直觉"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 9,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 86.6,
+        "threshold": 65,
+        "run": "2026-11-03-1240-shanghai"
+      }
+    },
     {
       "url": "https://rikiyat.github.io/blog/weight-space-programming/",
       "title": "人类盯着一堆神经网络权重根本看不出它学了什么，大模型却能只看 17,253 个数字就说出「这是玩打砖块的」？MIT CSAIL：不训练、不求梯度，只改 Qwen 0.016% 的权重，数学题正确率从 7.9% 涨到 48.1%",
