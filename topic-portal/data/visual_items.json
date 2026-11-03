@@ -1,8 +1,177 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 543,
+  "exportedCount": 546,
   "items": [
+    {
+      "title": "大白鲨一口能咬多重？咬合力 1.8 吨这个数其实没人在活鲨嘴里量过——它来自头骨的计算机模型。一只「机器大白鲨」把壳一片片掀开、再切到 X 光：每块甲片、齿轮、活塞和牙齿都是 Claude Code 写出来的 three.js，连「牙会不会穿过下颌」都先跑测试",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "source": "https://x.com/zynkbuilds/status/2117483437682569703",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261103c-robot-shark.jpg",
+      "previewType": "image",
+      "description": "作者 Zynk（@zynkbuilds，门户已收其机器金刚鹦鹉、AP1000 核电站剖面、电容触摸屏剖面）原帖（2026-11-03 05:06 UTC，30 秒视频）：「我用代码做了一只机器大白鲨，Blender 版本直接扔了。」每块板、齿轮、活塞和牙齿都是 Claude Code 写的 three.js。第一版的獠牙直接穿过了下颌，于是改成按牙弓曲线留固定间隙来计算下颌，并在渲染任何一帧之前，用测试检查每颗牙在每个张口角度下是否穿模——零命中。作者列出的真实动物数据：体长可达 6.4 m；每侧 5 道鳃裂；咬合力模型值超过 1.8 吨（作者强调这是头骨的计算机模型，没人在活体大白鲨嘴里放过测力计）；破水跃起前尾鳍每秒摆 0.39 次，跃起时可达每秒 2.5 次，快 6.5 倍。机器人设定是作者自己的：白色外壳 + 石墨框架、吻部的孔阵、会脉动的鳃梳、每个尾关节一个活塞、尾鳍 34 根鳍条。120 fps 渲染，每个声音都挂在动画计算出的事件上（每块面板抬起一声咔嗒，每次甩尾一声嗖）。本轮下载视频截帧核验：画面依次出现 GILLS、BURST、SHELLS OFF、X-RAY 四个模式，侧边 HUD 显示尾摆频率 0.39、体长 6.4 m、咬合力等读数。对你：①「1.8 吨咬合力是怎么算出来的」本身就是好钩子——有些科学数字来自模型而不是测量；②「先写测试保证牙不穿模」可以讲 AI 写 3D 时怎么防错；③剖壳 + X 光的结构镜头可直接借鉴到芯片封装剖面。",
+      "tool": "Claude Code；three.js（120 fps 渲染，音效与动画事件同步）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者公开了制作思路和数据来源说明，未公开源码、提示词与许可证；机器人外观为作者原创设定，生物数据为作者自述，未逐条查证。",
+      "attribution": "@zynkbuilds",
+      "sourceAuthor": "zynkbuilds",
+      "tags": [
+        "结构可视化",
+        "Three.js",
+        "Claude Code",
+        "机械仿生",
+        "物理科普",
+        "爆炸图"
+      ],
+      "publishedAt": "2026-11-03T05:06:07.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-03T08:56:25.000Z",
+      "updatedAt": "2026-11-03T08:56:25.000Z",
+      "verification": {
+        "checked_at": "2026-11-03T08:56:25.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 79,
+        "baseBreakdown": {
+          "实体": 24,
+          "科普": 18,
+          "溯源": 12,
+          "复现": 9,
+          "风格": 10,
+          "新颖": 6
+        },
+        "multiplier": 1.25,
+        "finalScore": 98.8,
+        "threshold": 65,
+        "run": "2026-11-03-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2117483238721568768/vid/avc1/1920x1080/O8R74Jq8OiqwUxx1.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "台风为什么在地图上是一个「眼」？几千条按最佳路径数据算出来的墨色风线，画出超强台风「摩羯」的一生：在南海睁开风眼，62 m/s、915 hPa 登陆文昌，再进北部湾、在越南散开——LemoLab 新画风「流场风线」，Claude Opus 5.5 纯代码出片",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/lemomo_ai/status/2117534750642753651",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261103c-typhoon-yagi-flow.jpg",
+      "previewType": "image",
+      "description": "作者 @lemomo_ai（LemoLab，库内 lemo-opuscar 风格库作者，MIT 许可，GitHub 约 1.1 万星）原帖（2026-11-03 08:30 UTC，52 秒视频）：用 Opus 5.5 以「流场风线」风格介绍台风过境，「又是一个科普类的风格」。几千条从最佳路径算出来的墨色风线，画出超强台风摩羯的一生：在南海睁开风眼，在文昌登陆，在越南散开，一整周最后收成一条线。作者认为这个风格最适合台风、季风这类天气，洋流、河流洪水，以及任何有方向、有强弱、要对照等级的流动，比如空气质量、人流车流。本轮下载视频截帧核验，画面为米黄纸底 + 墨色流线，红色细线标出强风区；字幕/图注依次出现：「9月5日08时 · 62 m/s · 915 hPa · 超强台风」，海南岛、文昌、西沙群岛地名，右上角「热带气旋等级」图例（GB/T 19201-2006：超强台风 ≥51.0 m/s、强台风 41.5–50.9、台风 32.7–41.4、强热带风暴 24.5–32.6、热带风暴 17.2–24.4、热带低压 10.8–17.1），「登陆时 · 9月6日16时20分 · 文昌 · 62 m/s · 17级以上 · 915 hPa」，随后镜头移到北部湾，「22时20分 再次登陆」。对你：①台风「眼」和螺旋风线是天然的首帧画面，国内观众对摩羯有记忆；②直接套用国标等级表，适合讲「17 级以上到底多大」；③同一画风可迁移到刻蚀腔体里的气流/等离子体流场示意。",
+      "tool": "Claude Opus 5.5 代码出片（LemoLab「流场风线」画风）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者原帖为画风说明 + 成片；本轮核对 lemo-opuscar 仓库 styles/ 目录（最近推送 2026-10-31），尚无对应的流场风线目录，提示词/源码未公开；台风数据为画面字幕所示，未与气象局原始最佳路径逐点核对。",
+      "attribution": "LemoLab（@lemomo_ai）× Claude Opus 5.5",
+      "sourceAuthor": "lemomo_ai",
+      "tags": [
+        "代码出片",
+        "流场",
+        "台风",
+        "气象科普",
+        "数据可视化",
+        "lemo-opuscar"
+      ],
+      "publishedAt": "2026-11-03T08:30:01.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-03T08:56:25.000Z",
+      "updatedAt": "2026-11-03T08:56:25.000Z",
+      "verification": {
+        "checked_at": "2026-11-03T08:56:25.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 78,
+        "baseBreakdown": {
+          "实体": 15,
+          "科普": 20,
+          "溯源": 15,
+          "复现": 10,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.025,
+        "finalScore": 79.9,
+        "threshold": 65,
+        "run": "2026-11-03-1640-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://video.twimg.com/amplify_video/2117515976325701632/vid/avc1/1920x1080/cQ0LwQgay53fa58-.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/lemomo-ai/lemo-opuscar"
+    },
+    {
+      "title": "为什么雪山顶上会扣着一朵「帽子云」，风再大也不走？一段在高原上慢慢开向雪山的车程：山、云、公路、车流和声音全部在浏览器里用代码实时生成，没有一个模型文件、一张贴图、一段音频，白天→黄金时刻→夜晚（three.js + Claude Opus 5.5）",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "source": "https://x.com/itsfazley/status/2117485631312216407",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261103c-plateau-cap-cloud.jpg",
+      "previewType": "image",
+      "description": "作者 @itsfazley（门户已收其 Three.js 机械打字机）原帖（2026-11-03 05:14 UTC，18 秒视频）：「在高原上慢慢开向一座顶着帽子云（cap cloud）的雪山。没有模型、没有贴图、没有音频文件——山、云、路、车流和声音全在浏览器里用代码生成。白天 → 黄金时刻 → 夜晚。three.js + Claude Opus 5.5 制作。」本轮下载视频截帧核验：画面为双车道公路、护栏、枯黄草原，远处雪山顶上压着一条扁长的透镜状云，前方有卡车；后半段转入星空夜景，对向车灯亮起。对你：①「山顶帽子云」（地形云/荚状云）是现成的大气科普题：湿空气被山抬升冷却凝结、越过山顶又下沉蒸发，所以云看起来「钉」在原地；②「整段风景没有一个素材文件」可作为代码出片能力的展示镜头；③昼夜变化可做时间流逝开场。",
+      "tool": "three.js + Claude Opus 5.5（程序化地形、云、车流与合成音效）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者未公开源码、在线地址、提示词与许可证；「帽子云」成因为本条可拍角度的常识性说明，非作者原帖内容。",
+      "attribution": "@itsfazley",
+      "sourceAuthor": "itsfazley",
+      "tags": [
+        "Three.js",
+        "程序化生成",
+        "Claude Code",
+        "大气科普",
+        "风景",
+        "昼夜变化"
+      ],
+      "publishedAt": "2026-11-03T05:14:50.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-03T08:56:25.000Z",
+      "updatedAt": "2026-11-03T08:56:25.000Z",
+      "verification": {
+        "checked_at": "2026-11-03T08:56:25.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 64,
+        "baseBreakdown": {
+          "实体": 17,
+          "科普": 15,
+          "溯源": 9,
+          "复现": 7,
+          "风格": 10,
+          "新颖": 6
+        },
+        "multiplier": 1.25,
+        "finalScore": 80.0,
+        "threshold": 65,
+        "run": "2026-11-03-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2117485537624006656/vid/avc1/1920x1080/bpDWOKewhkMsdWlQ.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "同一盏灯照在大理石、皮肤和蜡上，为什么看起来「透」？浏览器里的路径追踪器 three-gpu-pathtracer 新版加入次表面散射：光钻进材质内部乱弹几下再出来，网页也能算出真实的半透明质感（MIT 开源，three.js r187 + WebGPU）",
       "category": "3d",
@@ -27602,8 +27771,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条 | 2026-11-01-0840-shanghai 监控轮追加 5 条 | 2026-11-01-1240-shanghai 监控轮追加 6 条 | 2026-11-02-1640-shanghai 监控轮追加 7 条 | 2026-11-02-2040-shanghai 监控轮追加 6 条 | 2026-11-03-0840-shanghai 监控轮追加 6 条 | 2026-11-03-1240-shanghai 监控轮追加 2 条",
-  "updatedAt": "2026-11-03T04:48:38.000Z",
-  "totalItems": 543,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条 | 2026-11-01-0840-shanghai 监控轮追加 5 条 | 2026-11-01-1240-shanghai 监控轮追加 6 条 | 2026-11-02-1640-shanghai 监控轮追加 7 条 | 2026-11-02-2040-shanghai 监控轮追加 6 条 | 2026-11-03-0840-shanghai 监控轮追加 6 条 | 2026-11-03-1240-shanghai 监控轮追加 2 条 | 2026-11-03-1640-shanghai 监控轮追加 3 条",
+  "updatedAt": "2026-11-03T08:56:25.000Z",
+  "totalItems": 546,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
