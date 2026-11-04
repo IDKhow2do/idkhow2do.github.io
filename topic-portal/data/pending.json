@@ -3,6 +3,135 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 59,
+      "multiplier": 1.4,
+      "score": 59.0,
+      "reason": "本轮达待定区间（单维度乘数保护生效）",
+      "run": "2026-11-04-0840-shanghai",
+      "record": {
+        "title": "整片能走进去的森林只有 11.7 MB：Bilal Khan 的 three.js r187 WebGPU 林中废屋——草和树叶随风摆、落叶和孢子飘，树和物体改用新的 meshlet 管线，M1 Mac 1080p 跑 30–35 帧",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/Bk23544/status/2117577519323078984",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261104a-threejs-forest-grass.jpg",
+        "previewType": "image",
+        "description": "作者 Bilal Khan（@Bk23544，门户已收其 14 万颗粒沙漏）原帖（2026-11-03 11:19 UTC，53 秒 4K 视频；@threejs 官方转发）：Three.js Forest Environment 更新上线——升级到 three.js r187；除草和树叶外，树木与其他物体改用新的 meshlet 管线以提升性能；加入画质档位与实时调节滑杆；资产压缩到整个场景 11.7 MB；作者自述 M1 Mac 1080p 约 30–35 fps、iPhone 16 Pro 高画质约 40–50 fps。在线 Demo 为第一人称漫游（WASD 行走），需 WebGPU 浏览器。本轮截帧核验：密林小径、逆光草丛、雾气，右侧控制面板。对你：可作为 three.js/WebGPU 写实场景的性能参考（meshlet、资产压缩）；草地本身是作者的 Grassworks 产品。",
+        "tool": "three.js r187 WebGPU；meshlet 管线；Three.js Grassworks（作者的草地产品）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者原帖 + 在线 Demo；未公开源码，草地系统为商业产品，许可未说明。",
+        "attribution": "@Bk23544",
+        "sourceAuthor": "Bk23544",
+        "tags": [
+          "Three.js",
+          "WebGPU",
+          "草地",
+          "森林",
+          "性能优化"
+        ],
+        "publishedAt": "2026-11-03T11:19:57.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-11-04T01:00:04.000Z",
+        "updatedAt": "2026-11-04T01:00:04.000Z",
+        "verification": {
+          "checked_at": "2026-11-04T01:00:04.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 59,
+          "baseBreakdown": {
+            "实体": 18,
+            "科普": 8,
+            "溯源": 12,
+            "复现": 5,
+            "风格": 10,
+            "新颖": 6
+          },
+          "multiplier": 1.4,
+          "finalScore": 59.0,
+          "threshold": 65,
+          "run": "2026-11-04-0840-shanghai",
+          "multiplierGuard": "基础分<60且仅单一维度乘数>1，按规则不让乘数抬过阈值（按基础分判定）"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2117574398031085568/vid/avc1/3840x2160/5ytmrhsIS84KoDPm.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "demoUrl": "https://grassworks.techredux.co/forest-demo/"
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 56,
+      "multiplier": 1.4,
+      "score": 56.0,
+      "reason": "本轮达待定区间（单维度乘数保护生效）",
+      "run": "2026-11-04-0840-shanghai",
+      "record": {
+        "title": "一只举着火把的白鹅，夜里穿过墓地从鼠群中救回自己的小鹅：Mike Fernandez 的 three.js / WebGPU 网页游戏《A Goose Tale》（@threejs 官方转发）",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/Rahzell83/status/2117648097476018316",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261104a-goose-tale.jpg",
+        "previewType": "image",
+        "description": "作者 Mike Fernandez（@Rahzell83）原帖（2026-11-03 16:00 UTC，27 秒实机视频；@threejs 官方转发）：「一只鹅、她的宝宝，和数量完全正常的老鼠」，自称最新的 Three.js / WebGPU 游戏，可在网页直接玩。游戏官网简介：引导一只勇敢的小公鹅度过夜晚，只靠一支火把甩开鼠群、把家人找回来。本轮截帧核验：俯视角，紫色枯树、墓碑、着火的树和成群的老鼠，火把照出一圈暖光。对你：一款完成度高的 three.js/WebGPU 小游戏参考（光照、成群单位、氛围），无科普机制。",
+        "tool": "three.js WebGPU",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者原帖与官网；未公开源码与许可证。封面为官网 og 图。",
+        "attribution": "@Rahzell83",
+        "sourceAuthor": "Rahzell83",
+        "tags": [
+          "Three.js",
+          "WebGPU",
+          "网页游戏",
+          "成群动画"
+        ],
+        "publishedAt": "2026-11-03T16:00:25.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-11-04T01:00:04.000Z",
+        "updatedAt": "2026-11-04T01:00:04.000Z",
+        "verification": {
+          "checked_at": "2026-11-04T01:00:04.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 56,
+          "baseBreakdown": {
+            "实体": 12,
+            "科普": 5,
+            "溯源": 14,
+            "复现": 5,
+            "风格": 10,
+            "新颖": 10
+          },
+          "multiplier": 1.4,
+          "finalScore": 56.0,
+          "threshold": 65,
+          "run": "2026-11-04-0840-shanghai",
+          "multiplierGuard": "基础分<60且仅单一维度乘数>1，按规则不让乘数抬过阈值（按基础分判定）"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2117642568376762368/vid/avc1/1282x720/uQQ47XNOD1hCRXSZ.mp4?tag=14",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "demoUrl": "https://mike-fernandez.dev/a-goose-tale"
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 62,
       "multiplier": 1.025,
       "score": 63.5,
@@ -5825,6 +5954,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-03T12:58:14.000Z",
+  "updatedAt": "2026-11-04T01:00:04.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }

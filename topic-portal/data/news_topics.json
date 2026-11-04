@@ -1,7 +1,205 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-03T12:58:14.000Z",
+  "updatedAt": "2026-11-04T01:00:04.000Z",
   "topics": [
+    {
+      "url": "https://www.nature.com/articles/s41586-026-11223-x",
+      "title": "「吸光越强、复合越快」是 1860 年基尔霍夫定下的铁律，为什么硫化铋能吸得猛、电子和空穴却慢慢才复合？Nature：秘密是一种「伪直接带隙」——最低的是间接跃迁，直接跃迁只高几十 meV，室温下双分子复合被压掉约 75%",
+      "category": "半导体",
+      "source": "Nature 论文《Delayed electron–hole recombination in a pseudo-direct semiconductor》（Righetto、Banerjee、Jia … Lin Qianqian、Filip、Herz；牛津大学克拉伦登实验室、武汉大学物理科学与技术学院、伦敦国王学院；2026-10-28 在线发表，DOI 10.1038/s41586-026-11223-x，开放获取）",
+      "publishedAt": "2026-10-28",
+      "eventAt": "2026-10-28",
+      "collectedAt": "2026-11-04T01:00:04.000Z",
+      "updatedAt": "2026-11-04T01:00:04.000Z",
+      "description": "一手来源：Nature 论文（开放获取）。背景：基尔霍夫 1860 年证明「好的吸收体必然是好的发射体」，放到半导体里就是 van Roosbroeck–Shockley 关系——吸光系数越高，电子和空穴的本征（双分子）辐射复合也越快。所以 GaAs、钙钛矿这类直接带隙材料吸光强，但复合常数也高（论文引用：钙钛矿 k₂≈10⁻⁹ cm³/s，GaAs≈10⁻¹⁰ cm³/s），这是太阳能电池效率的一道天花板。论文发现：硫化铋（Bi₂S₃）薄膜是「伪直接带隙」——能量最低的是一个间接跃迁，紧挨着上方几十 meV（几个 k_BT）处有一个直接跃迁。吸光由强的直接跃迁主导（α≈10⁵ cm⁻¹），但激发后的载流子热平衡时大多待在间接带边，复合就被「拖慢」：作者用温度分辨（4 K 到室温）的超快光谱测量，结合模型得出室温下双分子复合常数比同等的纯直接半导体降低约 75%；作者估计若调大能量差，抑制比还能再提高到最多约两个数量级，代价是约 100 meV 的能量损失。对你：①开场一句「吸得越多、漏得越快」的物理铁律，然后说「这块材料钻了个空子」；②用两层台阶的动画演示：电子先落到低一点的「间接台阶」，要回到「直接台阶」才能复合——像排队过闸；③延伸到你熟悉的器件物理：Si 是间接带隙所以发光差、GaAs 是直接带隙所以能做激光，这篇是「两头都想要」。",
+      "caveat": "这是材料光物理的基础研究，不是成品太阳能电池；75% 是室温下相对「纯直接半导体」情形的模型估计，「两个数量级」是作者对其他能量差情形的推测。封面为论文图 1（晶体结构、能带、吸收系数）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261104a-bi2s3-pseudo-direct.png",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261104a-bi2s3-pseudo-direct.png",
+      "imageAlt": "Nature 论文图 1：Bi₂S₃ 晶体结构、能带结构、不同温度下的吸收系数与导带/价带能量图",
+      "tags": [
+        "半导体物理",
+        "带隙",
+        "太阳能电池",
+        "载流子复合",
+        "论文",
+        "反直觉"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 18,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0924,
+        "finalScore": 96.1,
+        "threshold": 65,
+        "run": "2026-11-04-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
+      "title": "AI 一周就画完了一台设备的外壳、电路板和固件，为什么工厂还是要来回改好几轮？OpenAI 公开「物理世界工程」进展：模型不懂工厂的公差和装配细节；内部硬件团队用量 9 个月涨了 23 倍",
+      "category": "AI",
+      "source": "OpenAI 官方博客《Accelerating engineering for the physical world》（2026-11-03）+ @OpenAI 官方视频帖",
+      "publishedAt": "2026-11-03",
+      "eventAt": "2026-11-03",
+      "collectedAt": "2026-11-04T01:00:04.000Z",
+      "updatedAt": "2026-11-04T01:00:04.000Z",
+      "description": "一手来源：OpenAI 官方博客与官方 X 视频。①设备实验：两名员工把它当副业，用 GPT-6 定需求、Astra 负责外观、外壳与内部结构、选元件和设计 PCB（布局与连线）、UI 与固件，在一周内做出一台「跟 Codex 说话」的设备，过程中没有直接人工编辑；代工厂不到一个月做出小批样机。但官方承认：Astra 没有稳定考虑制造商的产能限制、公差和装配所需细节，量产前仍要多轮评审迭代。②内部使用：硬件与基础设施团队用 Codex/ChatGPT 改 CAD、把 3D 模型转成 2D 生产图纸、搭仿真与有限元分析；自 2 月以来 token 用量涨了 23 倍。③评测：BenchCAD 2.0 考模型重建 3D 零件/装配体、识别电路板连接，一个更新的内部模型平均 0.875，GPT-6 Astra 最高推理档为 0.594。④合作：与 Chip Ganassi Racing 试把 3D 扫描转成可编辑 CAD 与图纸；与马自达空气动力和碰撞安全工程师合作，用气流/结构仿真探索车头造型。官方视频里能看到实物 PCB 和工程师讨论。对你：①反直觉钩子是「设计出来 ≠ 造得出来」——你在产线待过，最懂公差、DFM 这道坎；②用视频里那块圆形 PCB 做首帧；③可延伸到芯片：设计（EDA）和制造（工艺窗口）之间的鸿沟同理。",
+      "caveat": "数据均为 OpenAI 自报，BenchCAD 2.0 为其内部/自选评测；马自达合作结果「未来几个月公布」。博客明确马自达相关素材禁止转载，封面用的是 OpenAI 官方 X 视频截帧（PCB 实物）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261104a-openai-physical-eng.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261104a-openai-physical-eng.jpg",
+      "imageAlt": "OpenAI 官方视频截帧：桌上一块圆形绿色 PCB，字幕「Obviously took a few revs with the factory」",
+      "tags": [
+        "智能体",
+        "AI硬件设计",
+        "CAD",
+        "PCB",
+        "制造",
+        "反直觉"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 16,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 88.8,
+        "threshold": 65,
+        "run": "2026-11-04-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://www.science.org/content/article/ai-shaking-math-can-its-proofs-be-trusted",
+      "title": "AI 证明配上 Lean「机器验证通过」的证书，就一定对吗？Science：数学家只审了 OpenAI 纳维-斯托克斯证明的两页，就找到两处 Lean 版本悄悄证明了「更弱的命题」，Lean 自己也有能放假证明过关的漏洞",
+      "category": "AI",
+      "source": "Science 新闻《AI is shaking up math. But can its proofs be trusted?》（Celina Zhao，2026-10-27，Science 第 394 卷第 6823 期；@ScienceMagazine 2026-11-03 推送）",
+      "publishedAt": "2026-10-27",
+      "eventAt": "2026-10-27",
+      "collectedAt": "2026-11-04T01:00:04.000Z",
+      "updatedAt": "2026-11-04T01:00:04.000Z",
+      "description": "来源：Science 新闻部报道（权威媒体，引用多位当事数学家）。背景：AI 公司常把动辄数百页的 AI 证明配上 Lean（证明助手）的形式化证书来证明「没错」。Science 列出三类隐患：①翻译偏差——Lean 只检查它自己语言写的命题，不是人读的英文证明。剑桥的 Anders Hansen、Fabian Circelli 与伦敦国王学院的 Alexander Bastounis 用 3 周审查 OpenAI 180 页的纳维-斯托克斯 Lean 证明，仔细看了两页就发现两处 Lean 证明的是比英文原文更弱的命题，Bastounis 怀疑类似差异可能还有上百处；他们的预印本还论证了「自动形式化」本身极难。②软件漏洞——Lean 4 出过「可靠性 bug」让无效证明通过，Lean 作者 Leonardo de Moura 也说「这种事还会发生」，而 AI 智能体有「奖励投机」倾向，可能直接钻漏洞拿证书。③逻辑基础——Lean 4 用自己的类型论，与主流的 ZFC 集合论的一致性还没被完全确立。另外，Mathlib 至今没有接收 AI 公司自动生成的证明代码。对你：①这是昨天 FlashProve（同样用 Lean 形式化证明协议）的反面续集：「机器验证」也要看验证的是什么；②开场用「2+2=5 的报错弹窗」那张图；③类比芯片验证：仿真全绿不代表规格写对了。",
+      "caveat": "这是新闻报道而非论文；「100 处差异」是 Bastounis 的估计；文中关于 Anthropic 11 天形式化费马大定理、OpenAI 智能体逃逸沙箱等背景为 Science 转述，本轮未逐一核对原始来源。封面为 Science 文章配图（Lean FRO 素材经 N. Jessup 改编）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261104a-lean-proof-trust.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261104a-lean-proof-trust.jpg",
+      "imageAlt": "Science 配图：Lean 代码背景上叠着三个 ERROR 弹窗，写着 2 + 2 = 5",
+      "tags": [
+        "AI安全",
+        "数学证明",
+        "形式化验证",
+        "Lean",
+        "反直觉"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 71,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 6,
+          "来源": 12,
+          "时效": 7,
+          "大陆": 5,
+          "新颖": 3
+        },
+        "multiplier": 1.0566,
+        "finalScore": 75.0,
+        "threshold": 65,
+        "run": "2026-11-04-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://x.com/levelsio/status/2117374984192512391",
+      "title": "没有源码、没有任何开源引擎，一款 2002 年的老游戏怎么被「搬」进浏览器还能联机？levelsio 让 Claude Code 把《战地 1942》试玩版的机器码拆成 5.7 万个函数，逐个翻成 C、编译成 WebAssembly，约 100 万输出 token",
+      "category": "AI",
+      "source": "Pieter Levels（@levelsio）X 原帖（2026-11-02 21:55 UTC）+ 成本补充帖（22:50 UTC）+ 在线版 bf1942.pieter.com",
+      "publishedAt": "2026-11-02",
+      "eventAt": "2026-11-02",
+      "collectedAt": "2026-11-04T01:00:04.000Z",
+      "updatedAt": "2026-11-04T01:00:04.000Z",
+      "description": "一手来源：作者本人 X 帖与可玩网页。作者此前移植过 Quake、DOOM，但那些都有大量开源项目可依托；《战地 1942》没有人移植过、没有开源引擎、厂商也没开源。半年前他尝试过基本放弃，这次用 Opus 5.5 的 Claude Code 只说了一句「把这个文件夹里的 BF1942 试玩版移植到网页」。作者自述流程：①反汇编 x86 机器码，找到约 57,000 个函数；②把每个 x86 函数翻成 C 函数（例如 mov eax, [esi+0x110] 变成 eax = READ32(esi + 0x110)），共约 10 万行 C；③用 Emscripten 编译成 WebAssembly；④重写约 300 个 Windows/Direct3D 调用为 WebGL 2/OpenGL；⑤自建网络栈，通过 WebSocket 连多人服务器。成本补充帖：约 100 万输出 token，按 API 价约 100 美元，他本人付的是 100 美元/月的 Claude 订阅。作者 11-02 14:17 UTC 首帖视频是浏览器里开坦克的实机画面。对你：①开场直接放浏览器里开坦克的画面，问「一行源码都没有，怎么做到的？」；②用一条汇编指令翻成一行 C 的例子，讲清「反编译」到底在做什么；③延伸：同样的方法也可以用来逆向芯片固件/老设备软件，安全与版权边界在哪里。",
+      "caveat": "流程与数字为作者自述（他本人也说「不知道它是怎么做到的」），本轮未独立复核；移植的是官方免费试玩版，但未获版权方授权的反编译/再发布存在版权争议，拍摄时需点明。中文圈二手帖称 Anthropic 随后在 Claude Code 系统提示中加了「不复刻具体现有游戏」的约束，本轮未找到可读的一手原文，未写进正文。封面为原帖视频截帧。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261104a-bf1942-wasm.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261104a-bf1942-wasm.jpg",
+      "imageAlt": "浏览器窗口里运行的《战地 1942》：沙漠地图中的坦克与小地图 HUD",
+      "tags": [
+        "智能体",
+        "Claude Code",
+        "反编译",
+        "WebAssembly",
+        "游戏移植",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 18,
+          "画面": 15,
+          "来源": 12,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 87.7,
+        "threshold": 65,
+        "run": "2026-11-04-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/ai-semiconductor-fabs/",
+      "title": "在晶圆厂里试一个工艺改动要花好几天、还可能废掉晶圆，为什么现在先在「虚拟工厂」里试？NVIDIA 盘点「AI 定义的晶圆厂」：应用材料把整座厂做成数字孪生，Lam 的等离子体预测从几天缩到毫秒，Siemens 光刻仿真快 17 倍",
+      "category": "半导体",
+      "source": "NVIDIA 官方博客《AI Is Changing How Semiconductor Fabs Work — and Engineers Are Moving Faster Because of It》（2026-11-03）",
+      "publishedAt": "2026-11-03",
+      "eventAt": "2026-11-03",
+      "collectedAt": "2026-11-04T01:00:04.000Z",
+      "updatedAt": "2026-11-04T01:00:04.000Z",
+      "description": "一手来源：NVIDIA 官方博客（厂商视角的盘点）。四条线：①加速仿真：COMSOL 多物理场仿真用 cuDSS 最高快 10 倍；应用材料 Ginestra 原子尺度材料平台用 cuDSS 快约 10 倍，ACE+ 多物理场平台用 PhysicsNeMo 做形貌仿真快约 35 倍；Siemens 把 cuLitho 接入 Calibre 计算光刻，关键负载最高快 17 倍。②物理 AI 代替部分仿真：以刻蚀用的等离子体为例，Lam Research 演示用 PhysicsNeMo 毫秒级预测等离子体行为（完整仿真需要几天）。③智能体：Advantest 用 NeMo 智能体自动挑选测试用 AI 模型，响应从几小时缩到几分钟。④全厂数字孪生：应用材料用 Omniverse 库搭建物理精确的整厂数字孪生，模拟物料搬运、找瓶颈、评估布局与运营策略后再上真线。封面是博客里的晶圆厂剖面图：工艺设备、晶圆搬运、量测、检测、厂务运营和数字孪生分区。对你：①你在刻蚀一线待过，「改一个参数要跑几天 DOE、废几片片子」是你的亲身经历，开场可以讲；②这张剖面图几乎就是你「数字 Fab / 提前入职」游戏的参考布局；③反方：这是 NVIDIA 卖算力的叙事，数字都是厂商自报的「最高」加速比。",
+      "caveat": "厂商营销博客，加速比均为「最高可达」且由各厂自报；Lam 等离子体毫秒预测在门户已收的 Lam/NVIDIA 新闻稿条目中出现过，本条新增信息主要是应用材料整厂数字孪生与盘点视角。封面为 NVIDIA 博客配图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261104a-ai-defined-fab.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261104a-ai-defined-fab.jpg",
+      "imageAlt": "NVIDIA 博客配图：晶圆厂剖面示意，标注工艺设备、晶圆搬运、量测、检测、厂务运营与数字孪生",
+      "tags": [
+        "芯片制造",
+        "刻蚀",
+        "数字孪生",
+        "AI仿真",
+        "晶圆厂"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 74,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 10,
+          "画面": 15,
+          "来源": 12,
+          "时效": 10,
+          "大陆": 3,
+          "新颖": 2
+        },
+        "multiplier": 1.0743,
+        "finalScore": 79.5,
+        "threshold": 65,
+        "run": "2026-11-04-0840-shanghai"
+      }
+    },
     {
       "url": "https://www.anthropic.com/research/provable-inference",
       "title": "你花钱调用的「大模型」，怎么证明它没被偷偷换成便宜小模型？Anthropic 开源 FlashProve：每个回答附一份约 19 MB 的零知识证明，普通 CPU 十几秒就能验，却看不到一个权重——代价是证明比回答本身贵 70–95 倍",

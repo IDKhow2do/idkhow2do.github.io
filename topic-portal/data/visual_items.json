@@ -1,8 +1,293 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 551,
+  "exportedCount": 556,
   "items": [
+    {
+      "title": "为什么游戏里的海看几秒就「露馅」？左边是 4 个正弦（Gerstner）波叠加，浪尖长得一模一样还会重复；右边从风浪谱出发，四张 256×256 频率网格每帧做一次逆 FFT，几千道波固定 21 次 GPU 计算——风一到 17 m/s，浪尖折叠处才看得见白沫",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "source": "https://x.com/vidar_0208/status/2117603366666633467",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261104a-fft-vs-gerstner-ocean.jpg",
+      "previewType": "image",
+      "description": "作者 vidar（@vidar_0208，门户已收其 Minecraft 体积云、空间殖民树等）原帖（2026-11-03 13:02 UTC，12 秒视频 + 长文技术笔记）。问题：4 个 Gerstner 波叠起来，一秒后就开始重复，每个浪尖形状一样，加一道波就多一份逐顶点开销；真实风浪的能量分布在成千上万个波长和方向上。做法：①JONSWAP 风浪谱按风速和风区给出每个频率的能量，再加方向扩散函数和一层长涌浪谱；②256×256 的波矢网格每格一个高斯随机振幅（按能量开方缩放），只建一次；③每帧每格按色散关系 ω² = g·k + 7.4e-5·k³ 转相位（重力 + 小波纹的表面张力）；④一次逆 FFT 得到高度，同一批计算还给出让浪尖变尖的水平位移和坡度。白沫来自水平位移的雅可比：低于 0.05 说明海面在自我折叠；9 m/s 时只有 0.3% 面积起沫看不见，15 m/s 约 0.9%，所以最后一段风调到 17 m/s。实现：频谱与 FFT 直接用 Ultra-Water 的 OceanSim（three.js 0.170），4 级级联（600/85/12/2.1 m 瓦片），Stockham 逆 FFT 8+8 遍、fp16；表面着色器是作者自写（菲涅尔天空反射、GGX 太阳、雾）。代价：每级会平铺（风平浪静时看得出）、高度在 GPU 上读回才能做物理、没有岸边和破碎浪。本轮截帧核验：左右分屏「4 GERSTNER WAVES」vs「FFT OCEAN」，中段出现频谱图与高度图小窗，结尾 WIND 9.4 m/s 段落。对你：①海浪为什么看起来「假」是天然的反直觉开场；②把「频谱 → 逆 FFT → 海面」讲成「把一首和弦拆成上千个音符再合起来」；③和门户已收的 FFT 海浪条目（Noniv web-ocean、iodiot）不同，这条是同机位左右对比，最适合直接当镜头。",
+      "tool": "three.js 0.170；Ultra-Water OceanSim（JONSWAP 谱 + Stockham 逆 FFT）；自写表面着色器",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者公开了完整技术笔记；频谱/FFT 部分来自 MIT 许可的 Humpalumps/Ultra-Water，作者自写的着色器与对比场景未公开源码。",
+      "attribution": "@vidar_0208",
+      "sourceAuthor": "vidar_0208",
+      "tags": [
+        "Three.js",
+        "物理动效",
+        "海浪",
+        "FFT",
+        "结构可视化",
+        "对比"
+      ],
+      "publishedAt": "2026-11-03T13:02:40.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-04T01:00:04.000Z",
+      "updatedAt": "2026-11-04T01:00:04.000Z",
+      "verification": {
+        "checked_at": "2026-11-04T01:00:04.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "实体": 23,
+          "科普": 19,
+          "溯源": 15,
+          "复现": 13,
+          "风格": 10,
+          "新颖": 3
+        },
+        "multiplier": 1.2,
+        "finalScore": 99.6,
+        "threshold": 65,
+        "run": "2026-11-04-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/ext_tw_video/2117603348652208128/pu/vid/avc1/1280x720/yUKBhOWbPJ-64WhI.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/Humpalumps/Ultra-Water",
+      "licenseName": "MIT（Ultra-Water 的 OceanSim 部分）",
+      "licenseUrl": "https://github.com/Humpalumps/Ultra-Water"
+    },
+    {
+      "title": "为什么你家楼下的垃圾桶会出现在 Minecraft 里？开源 Arnis 把 OpenStreetMap 上标注过的每栋楼、每条街、每片水和每个垃圾桶按坐标「翻译」成方块，加上高程就有了山谷；地图上没标的，它就放不出来（Apache 2.0，近 90 万次下载）",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261104a-arnis-osm-minecraft.jpg",
+      "previewType": "image",
+      "description": "来源：GitHub 官方博客人物稿（2026-11-03，Alex Perrault）+ 项目仓库 louis-e/arnis（Apache 2.0，约 1.85 万星）。德国开发者 Louis Erbkamm 2022 年做的开源工具：用户在地图上框选区域，Arnis 向 OpenStreetMap 查询区域内所有已标注要素，按坐标与类型逐个放进 Minecraft（Java/基岩版，也支持 Luanti）；加入高程数据后世界不再是平的；像自由女神像、里约基督像这种地图描述不了的结构，就把 3D 模型转成方块。博客提到的有趣细节：作者发现城里到处是垃圾桶而生成的世界里没有，Minecraft 又没有垃圾桶方块，于是和社区一起挑了个方块代替——「地图上没标的元素，Arnis 就放不出来」。项目最初两周用 Python 手写原型，后来移植到 Rust；约 90 万次下载、约 70 位贡献者，最新版本还加了月球和火星；作者独自维护，用 Copilot 子智能体查回归。封面为仓库 README 预览图（纽约自由女神像、巴黎埃菲尔铁塔、城市与峡谷的方块版）。对你：①「真实世界 → 方块世界」本身就是体素化的直观演示，可讲体素/采样/分辨率；②钩子：「地图上没有的东西，游戏里就不存在」——数据决定世界；③和你的「房间 3D 建模」「数字 Fab」想法同源：先有真实数据，再生成可玩空间。",
+      "tool": "Rust；OpenStreetMap + 高程数据；3D 模型体素化；输出 Minecraft Java/Bedrock、Luanti 世界",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "开源项目，仓库 Apache-2.0；GitHub 官方博客为一手人物稿；封面取自仓库 README 预览图（非博客头像海报）。",
+      "attribution": "Louis Erbkamm（louis-e）/ GitHub Blog",
+      "sourceAuthor": "louis-e",
+      "tags": [
+        "体素",
+        "程序化生成",
+        "OpenStreetMap",
+        "Minecraft",
+        "开源",
+        "真实世界数据"
+      ],
+      "publishedAt": "2026-11-03T16:00:00.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-04T01:00:04.000Z",
+      "updatedAt": "2026-11-04T01:00:04.000Z",
+      "verification": {
+        "checked_at": "2026-11-04T01:00:04.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 73,
+        "baseBreakdown": {
+          "实体": 14,
+          "科普": 14,
+          "溯源": 18,
+          "复现": 14,
+          "风格": 6,
+          "新颖": 7
+        },
+        "multiplier": 1.1,
+        "finalScore": 80.3,
+        "threshold": 65,
+        "run": "2026-11-04-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/louis-e/arnis",
+      "licenseName": "Apache-2.0",
+      "licenseUrl": "https://github.com/louis-e/arnis/blob/main/LICENSE"
+    },
+    {
+      "title": "课本画的是行星绕着不动的太阳转圈，真实情况是太阳拖着 8 颗行星以 230 km/s 冲向前方——那地球轨道是「螺旋」吗？按真实比例，地球一年往前走约 48 AU，轨道本身才 2 AU 宽，每一圈被拉长 24 倍，几乎看不出螺旋（Claude Code 一条提示词的 three.js 模拟）",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "source": "https://x.com/Drundor/status/2117708875956920584",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261104a-solar-helix-scale.jpg",
+      "previewType": "image",
+      "description": "作者 @Drundor 原帖（2026-11-03 20:01 UTC，17 秒视频，引用一条约 600 万播放的「太阳系螺旋前进」视频）：用 Claude Code 一条提示词、不到 3 分钟做出 three.js 实时模拟——太阳以 230 km/s 前进，8 颗行星按真实周期和真实距离（AU）公转，每颗行星留下发光轨迹；有「课本视图」（平的圆）与「银河视图」（拉开成螺旋）切换、轨道面与运动方向夹角滑杆（默认 60.2°）、时间倍速滑杆和实时计数（已飞多少公里、多少年、占一个银河年的百分比）。作者指出原视频没体现的一点：按真实比例，230 km/s 意味着地球每年向前约 48 AU，而轨道直径只有约 2 AU，所以每圈螺旋的长度是宽度的约 24 倍（本轮按 230 km/s × 1 年 ≈ 7.3×10⁹ km ≈ 48.5 AU 复算一致）。本轮截帧核验：依次出现「WHAT SCHOOL TAUGHT YOU」（太阳周围的闭合圆）、「WHAT ACTUALLY HAPPENS」（彩色轨迹被拖成长线）、「EARTH NEVER COMES BACK」，底部计数到 20 年、147.0B km、倾角 60.2°。对你：①「课本错了吗？」是现成的反直觉开场，答案是「参考系不同，螺旋也被夸张了」；②真实比例 vs 艺术夸张，正好讲科普视频怎么「画错」；③提示词完整公开，可以直接复现成你自己的镜头。",
+      "tool": "Claude Code 生成单文件 three.js 模拟",
+      "prompt": "build one html file with three.js: a 3d sim of the solar system flying through the milky way\n- the sun moves forward at 230 km/s, the 8 planets orbit it at real periods and real distances (AU)\n- every planet leaves a glowing trail, so you see the orbits turn into corkscrews\n- slider: tilt between the orbital plane and the direction of travel (default 60.2°)\n- slider: time speed, 1 day to 100 years per second\n- toggle: \"school view\" vs \"galaxy view\"\n- live counters: km traveled, years passed, % of one galactic year\n- dark space, drag to rotate, scroll to zoom. make it look great",
+      "promptProvenance": "original_public",
+      "provenanceNote": "提示词由作者在原帖中公开；未公开生成代码与许可证。230 km/s、60.2° 为作者设定的常用近似值。",
+      "attribution": "@Drundor",
+      "sourceAuthor": "Drundor",
+      "tags": [
+        "Three.js",
+        "物理科普",
+        "太阳系",
+        "参考系",
+        "Claude Code",
+        "结构可视化"
+      ],
+      "publishedAt": "2026-11-03T20:01:55.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-04T01:00:04.000Z",
+      "updatedAt": "2026-11-04T01:00:04.000Z",
+      "verification": {
+        "checked_at": "2026-11-04T01:00:04.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 71,
+        "baseBreakdown": {
+          "实体": 10,
+          "科普": 18,
+          "溯源": 12,
+          "复现": 14,
+          "风格": 10,
+          "新颖": 7
+        },
+        "multiplier": 1.25,
+        "finalScore": 88.8,
+        "threshold": 65,
+        "run": "2026-11-04-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2117708810311671808/vid/avc1/1080x1350/DXYRLlEmBiwB3CbF.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "你是一朵雨云，每一滴雨都是真的「水」：落地往低处流、在洼地积成小水坑、再渗进土里——浇少了花不开，浇多了会淹死；Jeff Pelton 用 Claude Opus 5.5 + three.js + liquidfun 做的每日浇花小游戏 Soak.day",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "source": "https://x.com/comster/status/2117681533981180183",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261104a-soak-day-rain.jpg",
+      "previewType": "image",
+      "description": "作者 Jeff Pelton（@comster）原帖（2026-11-03 18:13 UTC，28 秒竖屏视频）+ 回帖给出试玩链接。玩法：拖动雨云到当天的干旱花园上空按住下雨，雨滴是粒子水（liquidfun），落地后顺坡流、在凹处积水、渗进土壤；每种植物要的水量不同，浇多会淹死；风铃草长在树下，要在上坡下雨让水流到叶子底下；雨用完了可以去湖里「喝」回来；周六草地会着火。每天一座花园、所有人相同。本轮截帧核验：侧视二维画面，「Water the garden」「Saturdays, it burns」「So rain uphill…」「Two blooms. One burst.」。对你：可作为「水往低处流、下渗」的轻量科普/游戏化参考；画面为 2D 侧视卡通。",
+      "tool": "Claude Opus 5.5；three.js；liquidfun 粒子流体",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者原帖与可玩网页；未公开源码、提示词与许可证。",
+      "attribution": "@comster",
+      "sourceAuthor": "comster",
+      "tags": [
+        "Three.js",
+        "物理动效",
+        "流体",
+        "网页游戏",
+        "Claude Code"
+      ],
+      "publishedAt": "2026-11-03T18:13:16.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-04T01:00:04.000Z",
+      "updatedAt": "2026-11-04T01:00:04.000Z",
+      "verification": {
+        "checked_at": "2026-11-04T01:00:04.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 63,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 13,
+          "溯源": 12,
+          "复现": 6,
+          "风格": 8,
+          "新颖": 6
+        },
+        "multiplier": 1.25,
+        "finalScore": 78.8,
+        "threshold": 65,
+        "run": "2026-11-04-0840-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://video.twimg.com/amplify_video/2117681367672922112/vid/avc1/1080x1920/DoBYrNdWxtOcAwcS.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "demoUrl": "https://wefav.com/soak-day/"
+    },
+    {
+      "title": "3D 模型的贴图能用真的水彩画吗？Beno Raistrick 在纸上画好砖瓦、彩窗等纹理图集，扫描后按行业标准的修边贴图、贴花和平铺材质铺到 Blender 模型上（80 Level 访谈）",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/80Level/status/2117678200805609475",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261104a-watercolor-texturing.jpg",
+      "previewType": "image",
+      "description": "80 Level 官方帖（2026-11-03 18:00 UTC，11 秒视频）与访谈文章：Beno Raistrick 介绍水彩贴图流程——「和行业标准的贴图流程类似，只是用颜料画」：修边贴图（trim sheet）、贴花、图集、平铺纹理；通常先建模，看清每块区域需要的纹理形状再去画，并会把纹理挤在一张图里利用空的 UV 空间。本轮截帧核验：Blender 界面左侧是手绘的彩窗、砖块、木纹图集，右侧把它们贴到教堂模型的窗户和屋顶上。对你：3D 建模风格参考（手绘质感），与科普机制关系弱。",
+      "tool": "Blender；手绘水彩扫描贴图",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "80 Level 访谈与作者演示视频；无源码。",
+      "attribution": "Beno Raistrick / 80 Level",
+      "sourceAuthor": "80Level",
+      "tags": [
+        "Blender",
+        "手绘贴图",
+        "水彩",
+        "3D材质"
+      ],
+      "publishedAt": "2026-11-03T18:00:02.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-04T01:00:04.000Z",
+      "updatedAt": "2026-11-04T01:00:04.000Z",
+      "verification": {
+        "checked_at": "2026-11-04T01:00:04.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 64,
+        "baseBreakdown": {
+          "实体": 15,
+          "科普": 10,
+          "溯源": 16,
+          "复现": 9,
+          "风格": 7,
+          "新颖": 7
+        },
+        "multiplier": 1.069,
+        "finalScore": 68.4,
+        "threshold": 65,
+        "run": "2026-11-04-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2117666792264937472/vid/avc1/1920x1080/zo_V8ckkV7FebH2I.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "demoUrl": "https://80.lv/articles/how-to-combine-watercolor-painting-with-3d-texturing"
+    },
     {
       "title": "同一杆开球打两次，第二次只往左偏 0.0001°——到母球撞上球堆时只差 0.002 毫米，没人看得见；可球堆第一毫秒里撞了 31 次，每撞一次差距就放大一点，最后黑 8 一个进袋、一个磕在袋口弹出来。整场台球是 Claude Code 写的物理，没有一帧是拍的",
       "category": "3d",
@@ -28058,8 +28343,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条 | 2026-11-01-0840-shanghai 监控轮追加 5 条 | 2026-11-01-1240-shanghai 监控轮追加 6 条 | 2026-11-02-1640-shanghai 监控轮追加 7 条 | 2026-11-02-2040-shanghai 监控轮追加 6 条 | 2026-11-03-0840-shanghai 监控轮追加 6 条 | 2026-11-03-1240-shanghai 监控轮追加 2 条 | 2026-11-03-1640-shanghai 监控轮追加 3 条 | 2026-11-03-2040-shanghai 监控轮追加 5 条",
-  "updatedAt": "2026-11-03T12:58:14.000Z",
-  "totalItems": 551,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条 | 2026-11-01-0840-shanghai 监控轮追加 5 条 | 2026-11-01-1240-shanghai 监控轮追加 6 条 | 2026-11-02-1640-shanghai 监控轮追加 7 条 | 2026-11-02-2040-shanghai 监控轮追加 6 条 | 2026-11-03-0840-shanghai 监控轮追加 6 条 | 2026-11-03-1240-shanghai 监控轮追加 2 条 | 2026-11-03-1640-shanghai 监控轮追加 3 条 | 2026-11-03-2040-shanghai 监控轮追加 5 条 | 2026-11-04-0840-shanghai 监控轮追加 5 条",
+  "updatedAt": "2026-11-04T01:00:04.000Z",
+  "totalItems": 556,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
