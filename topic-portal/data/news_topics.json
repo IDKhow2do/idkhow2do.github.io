@@ -1,7 +1,123 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-04T01:00:04.000Z",
+  "updatedAt": "2026-11-04T04:54:51.000Z",
   "topics": [
+    {
+      "url": "https://www.cas.cn/syky/202610/t20261029_5123077.shtml",
+      "title": "摄像头拍完要先把数据搬给存储、再搬给处理器，搬数据比算还费电——为什么一颗氮化物紫外探测器能「看完就记住」？长春光机所 Nature Materials：不靠缺陷抓电荷，而是用 AlGaN 异质结天生的极化电场把电子和空穴拉开、存住，9×9 阵列一次读出就能还原运动轨迹",
+      "category": "半导体",
+      "source": "中国科学院官网「科研进展」稿《基于III族氮化物的感存算集成器件研究获进展》（来源：长春光学精密机械与物理研究所，页面日期 2026-11-04）；论文 Jiang、Wang … Li Dabing《III-nitride-based in-sensor computing enabled by interfacial polarization effects》，Nature Materials，2026-10-27 在线，DOI 10.1038/s41563-026-02780-7（长春光机所联合北京大学、华东师范大学、中科院上海技物所、浙江大学）",
+      "publishedAt": "2026-10-27",
+      "eventAt": "2026-11-04",
+      "collectedAt": "2026-11-04T04:54:51.000Z",
+      "updatedAt": "2026-11-04T04:54:51.000Z",
+      "description": "一手来源：中国科学院官网科研进展稿 + Nature Materials 论文摘要与补充材料。背景：机器视觉、边缘计算里「感知—存储—计算」三件事分在三块芯片上，数据来回搬运造成冗余和能耗；「感存算一体」就是让一个器件同时完成三件事。以往做法多靠材料里的缺陷俘获电荷来「记住」光，代价是响应损失、难以大规模制造。这项工作：利用 III 族氮化物（AlGaN）多异质结中内禀的双极性界面极化——晶体本身不对称，界面会自带极化电荷和内建电场——把光生电子和空穴在空间上分开、减少复合；再用功函数一高一低的 Ni/Ti 非对称肖特基接触，靠外加电压决定载流子是被迅速收走还是积累下来。于是同一个器件：零偏/反偏时是高速探测器（上升/下降 8.35 ns / 7.81 ns）；约 1.6 V 正偏时空穴在负极化界面积累，变成能「记住」光信号的存储态（可对 5 nW/cm² 的紫外光响应，响应度 10⁶ A/W 量级，最大光暗电流比约 3.5×10⁶，写入后低阻态保持至少 120 分钟，反向脉冲擦除，常温存放 18 个月后仍完成 10⁴ 次擦写）。日盲紫外（截止约 275 nm，紫外/可见抑制比 >10³），300 ℃ 下仍可工作；还呈现类突触的「学习—遗忘—再学习」。应用验证（中科院沈阳分院稿）：摩尔斯码日盲紫外非视距通信；用 36 级电导态做 CNN 量化仿真，Fashion-MNIST 91.88%（比全精度低 0.63 个百分点）；9×9 阵列同一时刻读出电导即可重构运动目标轨迹。对你：①开场用「搬数据比计算还费电」的反直觉切入；②用两块磁铁把正负电荷拉开的动画讲极化电场，对比「靠缺陷挖坑抓电荷」；③9×9 阵列「拍一张就记住整条轨迹」是现成画面；④国产科研 + 氮化物外延工艺成熟、可与 CMOS 集成，和你的器件物理主线贴合。",
+      "caveat": "仍是器件级研究：9×9 阵列和 Fashion-MNIST 结果分别是小规模演示与仿真，不是量产芯片；部分数值（36 级电导、91.88%、9×9 阵列）来自中科院沈阳分院转载稿。封面为中科院官网配图（器件高速探测、光写入存储与类突触行为表征），分辨率较低（600×344）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261104b-iii-nitride-in-sensor.png",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261104b-iii-nitride-in-sensor.png",
+      "imageAlt": "中科院官网配图：III 族氮化物感存算器件的探测/存储两种模式 I-V 曲线、光写入存储与类突触学习—遗忘—再学习曲线",
+      "tags": [
+        "感存算一体",
+        "III族氮化物",
+        "器件物理",
+        "日盲紫外",
+        "国产科研"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 14,
+          "画面": 9,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 10,
+          "新颖": 5
+        },
+        "multiplier": 1.0924,
+        "finalScore": 92.9,
+        "threshold": 65,
+        "run": "2026-11-04-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://openai.com/index/scaling-git-at-openai/",
+      "title": "Git 撑了 20 年全世界的代码，为什么 AI 一开始大规模写代码，OpenAI 就得给它重写后端？Pando 的答案是「不再保证所有分支同一时刻一致」——push 中位延迟降约 80%，一天吐出近 1 PB Git 数据，而它本身是 1 个工程师设计、Codex 智能体团队 10 周写出来的",
+      "category": "AI",
+      "source": "OpenAI 工程博客《Scaling Git at OpenAI》（Aaron Friel、Taylor Blau、Ted Nyman，2026-11-02）",
+      "publishedAt": "2026-11-02",
+      "eventAt": "2026-11-02",
+      "collectedAt": "2026-11-04T04:54:51.000Z",
+      "updatedAt": "2026-11-04T04:54:51.000Z",
+      "description": "一手来源：OpenAI 工程博客（含可交互模拟器）。问题：Codex 让一个工程师同时开多个改动，每次 push 又触发多个 CI 任务去拉同一个提交；从去年底开始 OpenAI 单体仓库 fetch/push 变慢、merge 可靠性一度跌破 90%。他们比较了两种常见扩容方案：三阶段提交（每次 push 要多数副本投票，磁盘和往返延迟卡写入）和对象存储预写日志（不相关分支也要抢同一个 manifest）。Pando 的两个取舍：①放弃仓库级一致快照，改为「因果一致」——每个分支单独协调，唯一争用的只有分支指针（类 CAS 原子操作），代价是同时看多个分支可能看到不同时间点；②不再给每个客户端现算 packfile，而是把 push 进来的包原样存进 blob 存储、记录依赖，fetch 时挑出现成的包通过 packfile-uri 让客户端去区域缓存 Express 下载（缓存命中 >99%），后台像 LSM 树一样把小包逐级合并（L0→L4）。push 只广播 trunk 一个分支作为基准，monorepo 中 push 包中位数 <20 KiB、P99 <3 MiB。效果：median push 延迟降近 80%（约 5 倍），一天近 1 PB、单小时峰值 57 TB，只用少量 CPU 核；普通云主机上 clone/fetch 可跑满 10 Gbps。构建：Rust 实现，1 名工程师设计核心、多组 Codex 智能体实现、几个人部署，从立项到上线 10 周，4 月起承载生产；用 GPT-6 Astra 的智能体写 Lean 和 TLA+ 形式化「Pando 理论」找 bug，并有确定性仿真测试；部分改进已回馈上游 Git。对你：①开场直接用博客里的模拟器——1000 个写者三种架构赛跑，Pando 那一格最快变蓝；②反直觉点：「放弃一致性反而更可靠」；③接上门户已收的 GitHub Octoverse「智能体写四成 PR」，讲 AI 写代码之后基础设施怎么被倒逼。",
+      "caveat": "数据为 OpenAI 自报；博客里的三方对比模拟器标明是「教学模型，不是生产基准」。Pando 目前未开源，只说在探索对外提供。封面为博客官方 SEO 卡片（示意图，非系统截图）；博客正文有可交互模拟器可录屏。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261104b-openai-pando-git.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261104b-openai-pando-git.jpg",
+      "imageAlt": "OpenAI 博客封面卡片：一个 Git 分支图标分叉指向三台服务器，标题 Scaling Git at OpenAI",
+      "tags": [
+        "智能体",
+        "AI编程",
+        "Git",
+        "分布式系统",
+        "OpenAI"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 87.7,
+        "threshold": 65,
+        "run": "2026-11-04-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://pixel-robot.com/pixel/",
+      "title": "人形机器人都在拼腿和灵巧手，为什么 CMU 的 Pixel 偏偏把腿换成轮子、把五指换成夹爪？整机不到 1.5 万美元，人戴着同款「传感夹爪」在家干活录下的示范就能直接教会它，三项移动操作任务平均完成度 82%",
+      "category": "AI",
+      "source": "Pixel 项目页 + arXiv 论文《Pixel: A Co-Designed Full-Stack Robot System for Learning General-Purpose Mobile Manipulation》（Tony Tao、Jason Jingzhou Liu、Ruslan Salakhutdinov、Deepak Pathak，卡内基梅隆大学；arXiv 2611.03648，2026-11-02 提交）及姊妹篇 Pixel-UMI",
+      "publishedAt": "2026-11-02",
+      "eventAt": "2026-11-02",
+      "collectedAt": "2026-11-04T04:54:51.000Z",
+      "updatedAt": "2026-11-04T04:54:51.000Z",
+      "description": "一手来源：项目页与 arXiv 论文。论点：机器人硬件、数据采集、控制和学习通常各做各的，组合起来就互相卡脖子；Pixel 从一开始把这几层一起设计。硬件：轮式人形——17 自由度、按人体比例的上半身，全向移动底盘 + 被动稳定的升降 + 可动躯干，宽开口大力度的柔顺夹爪；论文明说是取舍：去掉双足和多指手，牺牲部分地形适应和手内灵巧，换来成本、控制复杂度和维护的大幅下降，整机组装不到 1.5 万美元。数据：除了 3D 打印主从臂、VR 摇杆、VR 全身跟踪三种遥操作，还有「人戴的传感夹爪」（与机器人夹爪几何一致，配头部/腕部相机，Quest 3 跟踪）——人不用机器人在场、在真实环境里录示范。三种来源都映射到同一个全身控制器（geometric fabrics）和统一的相对底盘动作空间，所以人类示范和机器人示范可以混合训练。策略：上层视觉语言模型听语音、规划子任务；下层是语言条件的 DiT 流匹配策略，输出动作序列。结果：只用传感化人类示范训练的策略，三项移动操作任务平均完成度 82.0%；机器人遥操作数据训练的另三项为 78.7%。任务视频包括倒垃圾、收玩具、整理枕头、吸尘、扫地、挂外套等。对你：①反直觉钩子「最像人的机器人不一定最好用」；②项目页有人戴夹爪示范 vs 机器人自主执行的同任务对照视频，0 秒就有画面；③可以和国内人形机器人「拼腿拼手」的热潮对照讲成本与数据的取舍。",
+      "caveat": "实验室论文结果，任务数量有限（各三项）；项目页标注「Open Sourced Soon」，开源尚未兑现；1.5 万美元为作者给出的组装成本。封面为项目页任务视频封面帧（机器人自主收拾玩具）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261104b-cmu-pixel-humanoid.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261104b-cmu-pixel-humanoid.jpg",
+      "imageAlt": "Pixel 项目页任务视频封面：白色方形头的轮式人形机器人在客厅里用橙色夹爪收拾茶几上的玩具",
+      "tags": [
+        "机器人",
+        "具身智能",
+        "AI训练",
+        "开源硬件"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 79,
+        "baseBreakdown": {
+          "主线": 16,
+          "钩子": 14,
+          "画面": 15,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 83.5,
+        "threshold": 65,
+        "run": "2026-11-04-1240-shanghai"
+      }
+    },
     {
       "url": "https://www.nature.com/articles/s41586-026-11223-x",
       "title": "「吸光越强、复合越快」是 1860 年基尔霍夫定下的铁律，为什么硫化铋能吸得猛、电子和空穴却慢慢才复合？Nature：秘密是一种「伪直接带隙」——最低的是间接跃迁，直接跃迁只高几十 meV，室温下双分子复合被压掉约 75%",
