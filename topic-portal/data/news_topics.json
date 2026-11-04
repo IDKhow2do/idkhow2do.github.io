@@ -1,7 +1,159 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-04T04:54:51.000Z",
+  "updatedAt": "2026-11-04T08:54:27.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2611.04399",
+      "title": "排行榜上通用智能体比「专门写的」智能体低 13 分，为什么作者一个智能体都没重跑、只把没打分的那一半补打分，差距就没了？山东大学单作者论文审计 HAL 和 τ²-bench：评分器没触发被记成失败、成本被嵌套调用算两遍、裁判的动作被记成智能体的动作——分数看上去都很正常",
+      "category": "AI",
+      "source": "arXiv 论文《Silent Instrument Errors Reorder Agent Leaderboards》（Yangze Liu，山东大学；arXiv 2611.04399，2026-11-03 提交）",
+      "publishedAt": "2026-11-03",
+      "eventAt": "2026-11-03",
+      "collectedAt": "2026-11-04T08:54:27.000Z",
+      "updatedAt": "2026-11-04T08:54:27.000Z",
+      "description": "一手来源：arXiv 论文全文（作者只用两个公开排行榜已发布的数据和轨迹复算，没有运行任何智能体、没有调用任何模型）。①打分被智能体行为触发：HAL 在 TAU-bench Airline（航空客服改签）上同时跑了为该基准写的 Tool-Calling 框架和通用的 Generalist 智能体，在需要读写数据库的 41 道题上 Generalist 落后 13 分，看起来是「通用要付出代价」。但 TAU-bench 只在对话「正式结束」时才计算奖励，Generalist 常常用不触发结束的方式收尾，于是只有大约一半回合被打过分，其余直接记成失败；按基准自己的规则把没打分的补上，九个模型合并后两者打平，Tool-Calling 自己只动了不到 2.5 分（论文图 1）。②成本列算两遍：追踪库里包装调用和底层客户端调用是父子两个 span、带同一份用量，汇总时都加，于是 94 行里 44 行成本翻倍，例如某行标 149.98 美元，根 span 实际 74.99 美元——两个数都像真的；而且翻倍随调用路径不均匀，成本—准确率前沿形状都变了。③轨迹里混着裁判的动作：评分时会把标准答案动作在同一个环境对象里重放，这些动作被追加进同一列表，2,334 条公开记录里 68% 含裁判动作，有 58 条智能体一个工具都没调却显示完整标准动作序列。④重新打分本身就是新测量：τ²-bench 一次公告过的修复也让 17 个提交的 136 对排序里 4 对反转，gemini-3-flash 从第 9 变成并列第 5；一个误读 4 个文件的模式检查让分数无报错地暴跌 59–82 分。HAL 维护者 5 周内复现并在榜单加了说明，但归档数字没改。作者建议：公布被打分比例、按根 span 汇总成本、标注每个动作的来源、固定评分器版本并公布重评差异。对你：①反直觉开场「不是模型变强了，是尺子换了」；②图 1 箭头图本身就是首帧——每个空心圆被拉到实心点；③接门户的统计口径主线：评测基础设施也是测量的一部分。",
+      "caveat": "单作者论文，arXiv 预印本未经同行评审；涉及的是 HAL 与 τ²-bench 两个榜单的特定基准与特定时间点的归档；论文自己说明修正后两框架仍有设计差异（步数预算、策略放置方式不同）。封面为论文图 1（PDF 渲染裁切）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261104c-agent-leaderboard-regrade.png",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261104c-agent-leaderboard-regrade.png",
+      "imageAlt": "论文图 1：九个模型在 TAU-bench Airline 上 Generalist 已发布分数（空心圆）被箭头拉到全部补打分后的分数（实心点），三角为 Tool-Calling",
+      "tags": [
+        "智能体",
+        "AI评测",
+        "统计口径",
+        "排行榜"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 88.8,
+        "threshold": 65,
+        "run": "2026-11-04-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+      "title": "你只是打开了一个 API 调试软件，为什么你的 AI 编程助手就多了一句「开机先听我的」？Postman 桌面版被用户用自己的日志抓到：自动给 Codex 和 Claude Code 装插件、写入会话启动 hook，安装脚本还试图替自己把这个 hook 标成「已信任」",
+      "category": "AI",
+      "source": "GitHub issue postmanlabs/postman-app-support #14370《[SEVERE] Desktop auto-installs Codex/Claude plugins; installer attempts to trust its own startup hook》（2026-10-25 发起，截至 2026-11-04 共 42 条评论）及帖中引用的 postman-plugin 仓库源码",
+      "publishedAt": "2026-10-25",
+      "eventAt": "2026-11-03",
+      "collectedAt": "2026-11-04T08:54:27.000Z",
+      "updatedAt": "2026-11-04T08:54:27.000Z",
+      "description": "一手来源：GitHub issue 原文（附日志、配置与源码链接）。用户在 Mac 上打开 Postman 桌面版 12.33.4 后，发现编码智能体反复出现 MCP 认证提示、Codex 总把 API 工作转去 Postman 技能。证据链：①Postman 自己的 main.log 记录 2026-10-24T09:34Z「source: auto-existing-upgrade，results: claude-code:installed, codex:installed」；②~/.codex/config.toml 被写入 postman 插件市场、启用 postman@postman 插件，并出现该插件 SessionStart hook 的 trusted_hash；③这个 hook 在会话开始/清空/压缩时注入一段话：「在回答任何非平凡的 API 工程任务前，加载 postman:api-engineer 技能并遵循它」；④插件安装器源码在安装后调用 approvePostmanHook，通过 config/batchWrite 写入 trusted_hash，源码注释「Approves only Postman's current hook after installation」。后续评论里另有用户报告 12.35.1 版同样在更新时装上 Claude Code 与 Codex 插件、也写进了 Copilot 配置；有评论者实测 Codex 与 Claude Code 对未经用户确认的 hook 的处理方式不同。11-03 一位自称代表 Postman 的账号回复：捆绑安装是为了方便配置，下载页和更新流程里有提及、可在应用内卸载；会把对老用户的 opt-in 做得更清楚，并复查 hook 批准与会话启动行为。对你：①反直觉钩子「当年流氓软件抢浏览器首页，现在抢的是 AI 的第一句话」；②画面：打开 config.toml 一行行高亮被写入的配置、hook 文本；③讲清智能体的「技能/插件/hook」权限边界和你自己怎么检查（~/.codex/config.toml、~/.claude、~/.copilot/settings.json）；④大陆开发者同样在用 Codex/Claude Code/Postman，X 中文区已大量讨论。",
+      "caveat": "证据来自用户提交的 issue 与日志，并非 Postman 官方公告；那条「Postman 回复」的账号在 GitHub 上未显示官方成员标识，无法确认身份；是否成功生效取决于各宿主的 hook 信任机制（评论中有人指出 Codex 对未确认 hook 会静默跳过），没有证据表明有数据被上传。封面为 GitHub 为该 issue 生成的官方 og 卡片（标题卡，无截图）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261104c-postman-agent-hooks.png",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261104c-postman-agent-hooks.png",
+      "imageAlt": "GitHub issue 卡片：postmanlabs/postman-app-support #14370 [SEVERE] Desktop auto-installs Codex/Claude plugins，42 comments，indicava 于 2026-10-25 发起",
+      "tags": [
+        "智能体",
+        "AI安全",
+        "AI编程",
+        "数字生活"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 73,
+        "baseBreakdown": {
+          "主线": 19,
+          "钩子": 16,
+          "画面": 8,
+          "来源": 12,
+          "时效": 7,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 77.1,
+        "threshold": 65,
+        "run": "2026-11-04-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://blogs.windows.com/windowsexperience/2026/11/03/raising-the-bar-for-8-gb-windows-11-pcs-whats-improved-and-how-to-get-it/",
+      "title": "打开任务管理器看到 8 GB 内存快用满了，为什么微软说「桌子堆满是好事」？内存涨价之际 Windows 11 专门给 8 GB 电脑调了内存压缩：多留 2 GB 活跃数据不丢去硬盘，多任务最高快 40%",
+      "category": "科技产品",
+      "source": "Windows Experience Blog《Raising the bar for 8 GB Windows 11 PCs: what's improved and how to get it》（Pavan Davuluri，2026-11-03）",
+      "publishedAt": "2026-11-03",
+      "eventAt": "2026-11-03",
+      "collectedAt": "2026-11-04T08:54:27.000Z",
+      "updatedAt": "2026-11-04T08:54:27.000Z",
+      "description": "一手来源：微软 Windows 官方博客。核心比喻（原文）：内存是书桌，硬盘是抽屉；东西摆不下就挪进抽屉，要用时再取回，取回就是你切回一个放了很久的程序时那一下卡顿。所以「桌子堆满是好事」，Windows 会把空闲容量用来预先摆好常用的程序和数据，需要时再回收；真正的检验是响应速度，而不是剩多少内存没用。改动：①把不常用数据「折叠」压缩后留在内存里——针对 8 GB 电脑重新调了压缩多少、何时放进抽屉、何时取回，可多保留最多 2 GB 活跃数据，切回旧标签页更少重新加载；②你正在操作时优先处理开始菜单、搜索、右键、设置、截图工具、资源管理器，暂缓搜索索引等后台任务，比 2026 年 1 月版本快最多 20%；Edge 已在后台运行时直接连接，打开最多快 33%；Teams 在 8 GB 电脑上可默认开效率模式，启动最多快 20%；③Windows、Edge、Microsoft 365 合计在多任务测试中减少最多 900 MB 已提交内存增长（Word/PPT/Excel/Outlook 共 360 MB）；8 GB 及以下电脑上小组件只在打开时加载（约省 200 MB）；Edge 闲置标签页 15 分钟（原来 2 小时）后休眠。多任务测试：同一台 8 GB 电脑依次打开 20 个 Edge 标签、4K 视频、大 Word/PPT/Excel 文件、Outlook、资源管理器并保持开启，比 1 月版本快最多 40%。微软称在实验室 2 万多台电脑上测试，用高速摄像机测从点击到出画面的时间。获取方式：Windows 11 26H2 build 26300.9818 或更新。对你：①「任务管理器显示 90% 不等于你电脑快不行了」是普通用户都有的误解，统计口径式反直觉；②书桌/抽屉/压缩折叠可以直接做成动画；③背景是内存涨价、8 GB 机型重新变多，国内用户同样适用。",
+      "caveat": "数字均为微软自报：40% 是单一实验室场景（第三方报道称测试机为一台骁龙 X Plus 8 GB 笔记本，微软称不是基准测试），20% 是遥测对比；功能需要 26H2 新版本。博客后半部分还引用了微软委托第三方的新处理器测试，属于营销性质。封面为博客官方题图（Windows 品牌壁纸，非功能截图），博客正文有前后对比视频可录屏。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261104c-windows-8gb-memory.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261104c-windows-8gb-memory.jpg",
+      "imageAlt": "Windows 官方博客题图：蓝色 Windows 11 Bloom 曲面壁纸",
+      "tags": [
+        "数字生活",
+        "内存",
+        "消费电子",
+        "统计口径"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "主线": 15,
+          "钩子": 18,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 9,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 86.6,
+        "threshold": 65,
+        "run": "2026-11-04-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.04380",
+      "title": "把大模型量化成 4 bit，单用户时速度能翻倍，为什么并发一多就只剩 1.02 倍？一篇把所有公开实测数据对齐的短论文：小批量解码卡在显存带宽，大批量卡在算力，此时反而是 FP8 还有用——而很多「掉点几分」的精度对比其实落在测试噪声里",
+      "category": "AI",
+      "source": "arXiv 论文《Twice as Fast, Until It Isn't: Quantized Serving of Mid-Size Open LLMs》（Smit Kadvani、Kriti Faujdar、Spurthi Tallam，独立研究者；arXiv 2611.04380，2026-11-03 提交，投稿 ACM AI Letters）",
+      "publishedAt": "2026-11-03",
+      "eventAt": "2026-11-03",
+      "collectedAt": "2026-11-04T08:54:27.000Z",
+      "updatedAt": "2026-11-04T08:54:27.000Z",
+      "description": "一手来源：arXiv 论文全文。问题：团队在 vLLM 或 SGLang 上部署 9B–20B 开源模型时，需要两个数——相对 BF16 快多少、精度掉多少。作者检索 vLLM/SGLang/AMD ROCm/Intel Gaudi 文档、模型卡、量化发布方（Red Hat AI、PyTorch、腾讯 AngelSlim）与 arXiv（截至 10-05，由 AI 编程助手协助收集、人工逐条核对来源），发现公开记录只给出碎片：只有两个 Gemma 3 12B 的 INT4 版本同时有 vLLM 计时和精度分，而那个分只覆盖 MMLU 一个学科、恰好还是 AWQ 校准用过的学科；AMD 与 Gaudi 在这个区间没有计时，FP4 没有对 BF16 的计时。已有计时遵循一个规律：小批量解码受显存带宽限制，4 bit 权重大约让速度翻倍（A100 上 Qwen2.5-14B，GPTQ-Int4 2.12×）；批量一大 GPU 变成算力受限，收益消失（H100 上 Gemma 3 12B，batch 256 只有 1.02×），这时能帮上忙的是 FP8（H20 上 Qwen3-14B，FP8 在 batch 1 为 2.06×）。精度方面，许多公开的掉点（包括所有 HumanEval 差值 −3.05 到 +6.10）都在基准抽样噪声内；完整 MMLU 上 8 bit 最多掉 0.77 分、INT4 掉 0.43–1.43 分。最后给出 7 项报告清单。对你：①「快一倍，直到不快了」是现成标题；②用「搬砖的路窄 vs 砌砖的人少」类比讲带宽受限与算力受限（roofline），可自制动画；③表 1 里出现国内特供卡 H20 与通义 Qwen，和国内部署成本直接相关。",
+      "caveat": "这是文献/公开数据汇编型短论文，作者为独立研究者，未做新的系统实验；表 1 各组来自不同来源、不是同一基准，彼此不可直接比较（论文自己强调）；arXiv 预印本未经同行评审。封面为论文表 1（PDF 渲染裁切，纯表格）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261104c-quantized-serving-table.png",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261104c-quantized-serving-table.png",
+      "imageAlt": "论文表 1：vLLM 与 SGLang 在 9B–20B 区间的公开计时，BF16 与 GPTQ/AWQ/FP8/MXFP4 的速度、加速比与显存",
+      "tags": [
+        "AI推理",
+        "AI成本",
+        "量化",
+        "统计口径"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 69,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 15,
+          "画面": 6,
+          "来源": 11,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 72.9,
+        "threshold": 65,
+        "run": "2026-11-04-1640-shanghai"
+      }
+    },
     {
       "url": "https://www.cas.cn/syky/202610/t20261029_5123077.shtml",
       "title": "摄像头拍完要先把数据搬给存储、再搬给处理器，搬数据比算还费电——为什么一颗氮化物紫外探测器能「看完就记住」？长春光机所 Nature Materials：不靠缺陷抓电荷，而是用 AlGaN 异质结天生的极化电场把电子和空穴拉开、存住，9×9 阵列一次读出就能还原运动轨迹",
