@@ -3,6 +3,69 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 58,
+      "multiplier": 1.0538,
+      "score": 61.1,
+      "reason": "本轮达待定区间",
+      "run": "2026-11-04-2040-shanghai",
+      "record": {
+        "title": "一段 AI 生成的女子剑斗视频，被拆成几千颗圆点在 Blender 里重新「演」一遍，为什么点阵版反而更有冲击感？@aicreataro 让 Kimi K3.1 Pro 用 Python 逐帧算出粒子的位置、颜色和大小，再用深度估计把人物推到镜头前，打击音一响粒子就炸开",
+        "category": "video",
+        "styleFamily": "code_video",
+        "source": "https://x.com/aicreataro/status/2117925973341712880",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261104d-aicreataro-kimi-dot-battle.jpg",
+        "previewType": "image",
+        "description": "作者 @aicreataro（用户收藏过的作者）原帖（2026-11-04 10:24 UTC，20 秒上下对照视频，日文）：受 Kimi 邀请试用新模型 Kimi K3.1 Pro，把自己以前做的点阵对战片「Dot battle」交给 Kimi Code 从零重做。上：原片（Seedance 2.0 生成）；下：Kimi 重做版。Kimi 做的事：用 Python 从原片逐帧计算粒子的位置、颜色、大小；用脚本驱动 Blender，把粒子放成立体小球，加镜头和运动模糊输出；按声音的打击点让粒子飞散、膨胀、背景粒子出现冲击波；用 Depth Anything 深度估计把人物的粒子推到前景，镜头绕过去。作者说就是「下指令、看、让它改」反复迭代。本轮截帧核验：上半橙底两名持刀女生对打，下半同一动作变成黑色/品红圆点阵，人物轮廓由点的疏密构成。对你：①「图像 → 深度 → 点云」是讲深度估计最直观的镜头；②可类比 LED 屏、点阵打印的「像素化」原理。",
+        "tool": "Kimi K3.1 Pro（Kimi Code）× Blender × Python；Depth Anything 深度估计；原片 Seedance 2.0",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者写明流程但未公开脚本/提示词；帖子开头说明是受 Kimi 邀请试用新模型，属合作测评性质；原片人物为 AI 生成视频；X 媒体许可未声明，仅外链引用。",
+        "attribution": "@aicreataro × Kimi K3.1 Pro",
+        "sourceAuthor": "aicreataro",
+        "tags": [
+          "Blender",
+          "Python",
+          "粒子化",
+          "深度估计",
+          "AI视频"
+        ],
+        "publishedAt": "2026-11-04T10:24:35.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-11-04T12:54:00.000Z",
+        "updatedAt": "2026-11-04T12:54:00.000Z",
+        "verification": {
+          "checked_at": "2026-11-04T12:54:00.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 58,
+          "baseBreakdown": {
+            "实体": 10,
+            "科普": 10,
+            "溯源": 13,
+            "复现": 10,
+            "风格": 8,
+            "新颖": 7
+          },
+          "multiplier": 1.0538,
+          "finalScore": 61.1,
+          "threshold": 65,
+          "run": "2026-11-04-2040-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2117922374800875520/vid/avc1/1920x2160/FfNUvXT4ey-6DhiB.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 59,
       "multiplier": 1.4,
       "score": 59.0,
@@ -5954,6 +6017,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-04T08:54:27.000Z",
+  "updatedAt": "2026-11-04T12:54:00.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
