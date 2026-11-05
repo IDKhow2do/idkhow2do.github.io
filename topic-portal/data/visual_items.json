@@ -1,8 +1,289 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 566,
+  "exportedCount": 571,
   "items": [
+    {
+      "title": "水珠为什么不能用「半透明」来画？vidar 用一个标量场 + Marching Cubes 在 three.js 里做出会融合、拉出细颈再断开的五颗水珠，左边 38% 透明像塑料，右边按水的折射率 1.33 把背景条纹弯曲、翻转，边缘再加菲涅尔反光",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "source": "https://x.com/vidar_0208/status/2118086097343336483",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261105a-vidar-water-drops.jpg",
+      "previewType": "image",
+      "description": "作者 @vidar_0208（库内海浪 FFT、体积云作者）原帖（2026-11-04 21:00 UTC，13 秒左右分屏视频 + 长文）。问题：真实水珠会弯曲背后的东西、小水珠里图像上下翻转、边缘更亮，而且会合并和分裂，固定网格做不到。做法：①形状——每颗水珠是一个带强度的点，场叠加在 72×72×72 网格上，Marching Cubes 在和值越过阈值 80 处生成表面，两颗靠近时场在中间相加，于是自动合并、拉颈、断开；②折射——先把不透明场景渲染成纹理，水珠每个像素的视线按表面法线和 IOR 1.33 偏折，穿过设定厚度后投回屏幕取背景色；③菲涅尔——掠射角反射更强，边缘接住环境光。踩坑：要单独展示折射得先关掉高光；第一段慢镜头里水珠一直粘着不分开，最后改成直接驱动两颗大水珠的间距；小水珠在花背景上看不出弯曲，于是换成大水珠和大圆环条纹。构建：three.js r187（dev 分支）自带 MarchingCubes 和 MeshPhysicalMaterial（transmission 1、IOR 1.33、thickness 0.7、roughness 0）+ RoomEnvironment，未改；背景、运动和时间轴为作者自写，CPU 每帧重建网格，首帧约 4,200 三角形。封面截帧：合并与分裂段，左右两颗大水珠里背景圆环被折射翻转。对你：①「为什么水珠里的世界是倒的」——凸透镜成像 + 菲涅尔，一帧就讲完；②融合/分裂是「等值面」的直观演示，也能类比刻蚀里等离子体鞘层、液滴润湿；③作者写明了全部参数，可让 Claude 直接按参数复刻。",
+      "tool": "three.js r187（MarchingCubes、MeshPhysicalMaterial transmission、RoomEnvironment）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者自述 MarchingCubes 与材质为 three.js 示例原样使用，其余为自写代码；自回帖给出的仓库链接是 three.js 本身（MIT，dev 分支 fa01dd6），作者自己的场景代码未公开；选题灵感致谢 @akella 的实时水滴，声明未使用其代码/构图/配色。X 媒体许可未声明，仅外链引用。",
+      "attribution": "@vidar_0208 · three.js by mrdoob and contributors",
+      "sourceAuthor": "vidar_0208",
+      "tags": [
+        "Three.js",
+        "物理动效",
+        "玻璃",
+        "结构可视化",
+        "对比演示",
+        "折射"
+      ],
+      "publishedAt": "2026-11-04T21:00:52.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-05T00:51:30.000Z",
+      "updatedAt": "2026-11-05T00:51:30.000Z",
+      "verification": {
+        "checked_at": "2026-11-05T00:51:30.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "实体": 24,
+          "科普": 19,
+          "溯源": 14,
+          "复现": 12,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.175,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-11-05-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/ext_tw_video/2118086078422753280/pu/vid/avc1/1280x720/S2_6BtHek5TjzSJK.mp4?tag=12",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "同一个 14 kg 的球砸过来，为什么左边的假人像断了线的木偶直接倒地，右边的却晃两下又站回来？vidar 用 rapier.js 做「主动布娃娃」：13 块刚体、12 个关节马达像弹簧一样拉回站姿，再加一条重心平衡规则——刚度 400 会倒、10,000 会僵直滑出 0.9 m",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "source": "https://x.com/vidar_0208/status/2118041073423446468",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261105a-vidar-active-ragdoll.jpg",
+      "previewType": "image",
+      "description": "作者 @vidar_0208 原帖（2026-11-04 18:01 UTC，约 13 秒分屏视频 + 长文，选题来自 @kethdev）。问题：普通布娃娃倒得像断线木偶，关键帧受击动画又不管真正打中它的是什么。做法：①每段肢体都是刚体，共 13 块、86.7 kg，没有任何动画或 IK，全靠物理引擎；②每个关节是带位置马达的 revolute 关节（ForceBased 模式下刚度＝每弧度误差的扭矩），相当于关节里的弹簧阻尼；目标是微屈膝站姿，髋/膝/踝 1,500 N·m/rad，脊柱 0.7 倍，手臂 0.04 倍以下（所以会甩）；③每步测重心离脚多远、移动多快，把偏差加到踝和髋的目标角上，让身体往回靠。踩坑：只追姿势不会平衡，挨打后会像雕像一样绕脚跟整体翻倒（脚跟只在踝后 10 cm）；平衡规则能扛 8 kg 球、9 kg 就倒，于是加了骨盆上的限幅直立扭矩（300 N·m/rad，上限 112.5 N·m），视频里标明这是辅助力不是肌肉；AccelerationBased 模式同样参数撑不住。构建：rapier.js 0.19.3 以 240 Hz、8 次迭代离线步进，再在 three.js 回放；球以 5.0 m/s 打胸口，主动身体后仰 27.5°、2.8 秒后不挪脚恢复直立。封面截帧：左「Motors cut at contact」平躺在地，右「Active ragdoll」被球撞后仍站着。对你：①「为什么人挨推不倒、假人一推就倒」——肌肉张力 + 平衡反馈，讲控制论最直观；②刚度扫参（400/1,500/10,000）三联画面就是「太软/刚好/太硬」；③对你做数字 Fab 里的人物交互也是现成方案。",
+      "tool": "rapier.js 0.19.3（ImpulseJoint 位置马达）× three.js 回放",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者自述人体模型、摆锤和平衡规则为自写，物理引擎为 rapier.js（Apache-2.0）；作者代码未公开；X 媒体许可未声明，仅外链引用。",
+      "attribution": "@vidar_0208 · rapier.js · three.js",
+      "sourceAuthor": "vidar_0208",
+      "tags": [
+        "Three.js",
+        "物理动效",
+        "物理模拟",
+        "对比演示",
+        "弹簧"
+      ],
+      "publishedAt": "2026-11-04T18:01:57.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-05T00:51:30.000Z",
+      "updatedAt": "2026-11-05T00:51:30.000Z",
+      "verification": {
+        "checked_at": "2026-11-05T00:51:30.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 81,
+        "baseBreakdown": {
+          "实体": 21,
+          "科普": 17,
+          "溯源": 14,
+          "复现": 12,
+          "风格": 9,
+          "新颖": 8
+        },
+        "multiplier": 1.2,
+        "finalScore": 97.2,
+        "threshold": 65,
+        "run": "2026-11-05-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/ext_tw_video/2118041060890816512/pu/vid/avc1/1280x720/-W5I6UknW1s19mX1.mp4?tag=12",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "游戏里运球一加速，为什么手总拍在空气上？vidar 在 three.js 里让球按物理弹（恢复系数 0.78）、提前算出球什么时候回到手边，再用 IK 把肩肘腕摆过去——左边循环动画对不上拍子，右边任何高度、任何节奏都能接住；投篮则反解出手速度：4.0 m、55° 需要 6.94 m/s",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "source": "https://x.com/vidar_0208/status/2118131515313799224",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261105a-vidar-dribble-ik.jpg",
+      "previewType": "image",
+      "description": "作者 @vidar_0208 原帖（2026-11-05 00:01 UTC，13 秒分屏视频 + 长文）。问题：运球通常是把球烘焙进去的循环动画，一旦变速或压低，手就在拍空气。做法：①球是纯物理：从手的高度被推下、以 0.78 的恢复系数弹起，全部提前解出，所以代码在球到达之前就知道它何时何地回到手边；②接触期间手贴在球顶，以 22 m/s² 减速再按下一拍速度压回；③两次接触之间手沿平滑曲线从释放点走到预测的接球点；④CCDIKSolver 让肩、肘、腕弯到指尖落在该点，膝盖随运球高度弯曲。投篮同理：给定出手角反解速度——4.0 m、55° 要 6.94 m/s；6.8 m、51° 要 8.66 m/s，飞行 1.01–1.25 s。踩坑：0.62 m 低运球手够不着，改成 0.72 m 并让髋下沉前倾；一开始截图看着像没碰到球，其实是相机被身体挡住，换侧视；投篮镜头一开始在球进框前就切了，于是每个投篮单独定时长。构建：three.js r187 的 CCDIKSolver（右臂 3 节、每帧 12 次迭代、肘腕有限位）原样使用；23 根骨骼的方块人、球物理、手部时序、投篮解算和球场为作者自写。封面截帧：左「Fixed loop」右「Procedural」同一帧对照。对你：①「预测」比「反应」重要——讲抛体运动和逆运动学的好镜头；②投篮抛物线可直接用作物理科普；③你想做的 three.js 游戏里角色和物体交互的标准解法。",
+      "tool": "three.js r187（CCDIKSolver）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "自回帖说明 CCDIKSolver 为 three.js 示例原样使用（仓库链接为 three.js 本身，MIT），角色和其余逻辑为自写，作者代码未公开；X 媒体许可未声明，仅外链引用。",
+      "attribution": "@vidar_0208 · three.js by mrdoob and contributors",
+      "sourceAuthor": "vidar_0208",
+      "tags": [
+        "Three.js",
+        "物理动效",
+        "对比演示",
+        "逆运动学",
+        "游戏开发"
+      ],
+      "publishedAt": "2026-11-05T00:01:20.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-05T00:51:30.000Z",
+      "updatedAt": "2026-11-05T00:51:30.000Z",
+      "verification": {
+        "checked_at": "2026-11-05T00:51:30.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 76,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 16,
+          "溯源": 14,
+          "复现": 11,
+          "风格": 10,
+          "新颖": 7
+        },
+        "multiplier": 1.25,
+        "finalScore": 95.0,
+        "threshold": 65,
+        "run": "2026-11-05-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/ext_tw_video/2118131502391132160/pu/vid/avc1/1280x720/f62OfjBcSDcWC2lz.mp4?tag=12",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "医院 CT 里的人体，能不能直接拿来做网页游戏的 3D 模型？@anxuanng（CodePawl）把巴塞尔大学医院 TotalSegmentator 数据集里 7 具真实人体的 CT 分割做成 GLB：每具 115 个带名字的结构（骨骼、器官、肌肉、血管）、按系统分组上色，约 20 MB，CC BY 4.0 免费放在 Hugging Face，还配了能把各系统拆开看的在线查看器",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/anxuanng/status/2118012222303785309",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261105a-ct-anatomy-glb.jpg",
+      "previewType": "image",
+      "description": "作者 @anxuanng（库内「越南管屋抗台风」「Opus vs Gemini 搭芯片厂」作者）原帖（2026-11-04 16:07 UTC，28 秒视频，120 赞 105 收藏）：「一家瑞士医院在 1,228 例真实 CT 里标注了 117 个身体部位，我把其中 7 具身体做成了 20 MB 的 GLB，给 three.js、WebGPU 和网页游戏用，Hugging Face 免费。」本轮核对数据集 README（codepawl/ct-anatomy-glb，11-04 16:23 UTC 更新，许可 CC BY 4.0）：源自 TotalSegmentator 数据集 v2.0.1（Jakob Wasserthal 等，巴塞尔大学医院，CC BY 4.0，Radiology: AI 2023）的分割掩膜；每具身体一个 GLB，每个结构一个命名节点、按身体系统分组、按图谱惯例上色、meshopt 压缩，另有多级 LOD 和未压缩版本供游戏引擎使用；附在线查看器，可环绕任意身体、把各系统拆开并读出每个结构的名字；README 明确「仅用于可视化、教育和图形，不得用于诊断或任何临床决策」。视频（three.js 渲染的扫描 s1045 自我组装）逐段截帧：先是骨盆和脊柱一节节落位，肋骨、锁骨、肩胛骨飞入，再填进肺、心脏、肝和肌肉，结尾字卡「115 structures. One real body.」及数据来源署名。封面截帧：胸腔骨架中肺和心脏刚就位的一帧。对你：①「每个人的器官形状都不一样」——同一结构 7 具真实身体对比就是现成科普；②自组装/爆炸图正是你喜欢的「结构剖开」镜头；③可直接下载 GLB 当素材（注意署名 TotalSegmentator 与作者）。",
+      "tool": "TotalSegmentator v2.0.1 分割掩膜 → GLB（meshopt）；three.js 渲染；作者自研 WebGL2 渲染器 67js",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "数据集与 README 公开、许可 CC BY 4.0，原始数据署名 Wasserthal 等/巴塞尔大学医院；视频配乐 Kevin MacLeod《Cephalopod》CC BY 4.0、音效 Freesound CC0（README 写明）。转换脚本未见公开。",
+      "attribution": "CodePawl（@anxuanng）· TotalSegmentator（Wasserthal et al., University Hospital Basel）",
+      "sourceAuthor": "anxuanng",
+      "tags": [
+        "3D模型",
+        "GLB",
+        "结构可视化",
+        "Three.js",
+        "解剖",
+        "程序化生成"
+      ],
+      "publishedAt": "2026-11-04T16:07:19.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-05T00:51:30.000Z",
+      "updatedAt": "2026-11-05T00:51:30.000Z",
+      "verification": {
+        "checked_at": "2026-11-05T00:51:30.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 90,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 19,
+          "溯源": 19,
+          "复现": 14,
+          "风格": 9,
+          "新颖": 9
+        },
+        "multiplier": 1.2,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-11-05-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2118012150488948736/vid/avc1/1920x1080/cNcZPFZykadun0C1.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://huggingface.co/datasets/codepawl/ct-anatomy-glb",
+      "licenseName": "CC BY 4.0（衍生自 TotalSegmentator v2.0.1，CC BY 4.0）",
+      "licenseUrl": "https://huggingface.co/datasets/codepawl/ct-anatomy-glb",
+      "demoUrl": "https://huggingface.co/spaces/codepawl/ct-anatomy-glb-viewer"
+    },
+    {
+      "title": "一只蜂鸟机器人拆成 150 个零件再「啪」地合回去、继续扇翅膀，为什么全程没用 Blender、没买一个模型？@Drundor 让 Claude 在一个 47 KB 的 HTML 文件里用 three.js 纯代码搭出白色装甲、胸口电机齿轮、可分层拉出的光学镜头和七片玻璃尾羽，19 秒成片直接从浏览器渲染",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "source": "https://x.com/Drundor/status/2118061994024587724",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261105a-drundor-hummingbird.jpg",
+      "previewType": "image",
+      "description": "作者 @Drundor（库内「太阳拖着行星螺旋前进」作者）原帖（2026-11-04 19:25 UTC，19 秒视频）列出内容：①白色装甲板拼成的纤细机身，缝隙里露出机械结构；②装甲下塞了 150 个小舵机、方块和线缆；③胸口一个带橙色环和转动齿轮的电机；④光学镜头向前拉出分层标注：虹膜、内镜片、外玻璃、镜筒；⑤一侧翅膀从肩部支座上抬起旋转展示；⑥羽毛球形状的尾巴，七片玻璃叶片展开；⑦完整拆解：所有零件飘满画面，再吸回原位、翅膀重新扇动。HUD 是假的但像飞行模拟器一样会动（翅拍读数、电池、舵机负载、飞行日志拖动条）。作者说最难的是翅膀的运动模糊要像真蜂鸟而不是电风扇。自回帖：代码是 47 KB、全部 150 个零件由 Claude 写，主帖满 50 赞会放出在线链接（本轮查看时 18 赞，尚未放出）。本轮下载视频逐段截帧核验：Banking → Optics → Wing off → Tail fanned → Teardown → Reassembly → Departing 各段与描述一致。封面截帧：TEARDOWN 段，零件四散。对你：①爆炸图/拆解动画是讲「一台设备由什么组成」的最好镜头——换成刻蚀机腔体就是你的数字 Fab 素材；②「翅膀模糊」可讲快门与运动模糊；③单 HTML 纯代码建模的思路适合你练 three.js。",
+      "tool": "Claude（代码）× three.js，单 HTML 文件，浏览器内渲染成片",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "代码和提示词未公开（作者承诺满 50 赞放在线链接）；X 媒体许可未声明，仅外链引用。",
+      "attribution": "@Drundor × Claude",
+      "sourceAuthor": "Drundor",
+      "tags": [
+        "Three.js",
+        "Claude Code",
+        "结构可视化",
+        "拆解动画",
+        "程序化建模"
+      ],
+      "publishedAt": "2026-11-04T19:25:05.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-05T00:51:30.000Z",
+      "updatedAt": "2026-11-05T00:51:30.000Z",
+      "verification": {
+        "checked_at": "2026-11-05T00:51:30.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 65,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 16,
+          "溯源": 9,
+          "复现": 5,
+          "风格": 10,
+          "新颖": 7
+        },
+        "multiplier": 1.25,
+        "finalScore": 81.2,
+        "threshold": 65,
+        "run": "2026-11-05-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2118061858548510720/vid/avc1/1920x1080/JVq0zgghKVWqsjpb.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "老楼做了外墙保温以后，热像仪里外墙反而「更冷」了，为什么这才说明改造成功？LemoLab 用 Claude Opus 5.5 纯代码出片「冬夜，一栋楼的体温」：热成像扫过一栋老式居民楼，窗缝 9.4 ℃ 的亮点、改造前后左右对照，估算热损失 187 kW → 73 kW（−61%）",
       "category": "video",
@@ -28912,8 +29193,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条 | 2026-11-01-0840-shanghai 监控轮追加 5 条 | 2026-11-01-1240-shanghai 监控轮追加 6 条 | 2026-11-02-1640-shanghai 监控轮追加 7 条 | 2026-11-02-2040-shanghai 监控轮追加 6 条 | 2026-11-03-0840-shanghai 监控轮追加 6 条 | 2026-11-03-1240-shanghai 监控轮追加 2 条 | 2026-11-03-1640-shanghai 监控轮追加 3 条 | 2026-11-03-2040-shanghai 监控轮追加 5 条 | 2026-11-04-0840-shanghai 监控轮追加 5 条 | 2026-11-04-1240-shanghai 监控轮追加 4 条 | 2026-11-04-1640-shanghai 监控轮追加 2 条 | 2026-11-04-2040-shanghai 监控轮追加 4 条",
-  "updatedAt": "2026-11-04T12:54:00.000Z",
-  "totalItems": 566,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条 | 2026-11-01-0840-shanghai 监控轮追加 5 条 | 2026-11-01-1240-shanghai 监控轮追加 6 条 | 2026-11-02-1640-shanghai 监控轮追加 7 条 | 2026-11-02-2040-shanghai 监控轮追加 6 条 | 2026-11-03-0840-shanghai 监控轮追加 6 条 | 2026-11-03-1240-shanghai 监控轮追加 2 条 | 2026-11-03-1640-shanghai 监控轮追加 3 条 | 2026-11-03-2040-shanghai 监控轮追加 5 条 | 2026-11-04-0840-shanghai 监控轮追加 5 条 | 2026-11-04-1240-shanghai 监控轮追加 4 条 | 2026-11-04-1640-shanghai 监控轮追加 2 条 | 2026-11-04-2040-shanghai 监控轮追加 4 条 | 2026-11-05-0840-shanghai 监控轮追加 5 条",
+  "updatedAt": "2026-11-05T00:51:30.000Z",
+  "totalItems": 571,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
