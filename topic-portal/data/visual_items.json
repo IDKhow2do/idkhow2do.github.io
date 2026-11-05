@@ -1,8 +1,239 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 571,
+  "exportedCount": 575,
   "items": [
+    {
+      "title": "皮卡冲上沙丘，轮胎陷进去、挤出沙埂、扬起沙尘，开远再开回来还能压进自己的车辙——为什么这片沙子没有一张贴图？@invalid_degen 在浏览器里用 three.js r187 + WebGPU 做的实时「地面力学」：Bekker–Wong 沉陷 + Mason 沙地牵引 + Pouliquen 颗粒流，沙子质量守恒、一份代码手机电脑同跑",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "source": "https://x.com/invalid_degen/status/2116949251066351642",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261105b-sand-racer.jpg",
+      "previewType": "image",
+      "description": "作者 @invalid_degen 原帖（2026-11-01 17:43 UTC，130 秒视频，约 39 万次曝光；11-05 被 @threejs 官方转推后本轮发现）列出：Bekker–Wong 沉陷 + Mason 牵引 + Pouliquen 颗粒流；实时轮胎–土壤相互作用；质量守恒的沙子；无尽程序化开放世界，沙丘形态拿激光雷达数据对照过；零沙子贴图、全程序化着色；沙子模拟、车辆物理和着色器全自研，不用游戏引擎和物理引擎；桌面和手机同一份构建；three.js r187。作者在自回帖里给了四篇依据：Bekker《Theory of Land Locomotion》（1956）、Wong《Theory of Ground Vehicles》、Mason 等 2018 年沙地牵引论文、Pouliquen 1999 年《Scaling laws in granular flows down rough inclined planes》。其他回帖补充的实现细节：沙子全在 GPU 上，目前用 TSL 片元着色器 pass（以后可能换计算着色器）；轮胎是 CPU 上 240 Hz 的刚体；最难的是质量——CPU 把每次切削拆成沙埂、船首波、飞溅和压实，再交给 GPU 沉积；沙流跑在 1 m 网格（512×512）上，轮胎切削处再嵌一层 12.5 cm 网格（24×24 m），同一个求解器；车辙按 12.5 cm 存在车周围的记忆里，所以开走再回来还能顺着自己的车辙走（约 250 m 外目前还会被回收）；Galaxy S24 上沙子保持每秒 60 步、约 50 fps。本轮截帧核验：画面 HUD 写着「SAND-RACER PHYSICS · 262 144 sand cells × 60 Hz · rigid body 240 Hz · Bekker / Wong sand」，右上角实时显示轮胎推走的沙量、沉陷深度和「every litre booked Δ 0.000 L」（质量守恒校验），左下是四个车轮载荷；另有翻车、爬沙丘、甩尾划出多道车辙的镜头。对你：①「为什么越野车在沙地上要放气」——沉陷/牵引就是这套公式，画面现成；②质量守恒是游戏物理少见的硬约束，可以讲「模拟」和「动画」的区别；③数字 Fab 方向可借鉴：用真实工程方程驱动、HUD 实时显示守恒量。",
+      "tool": "three.js r187 + WebGPU（TSL 片元 pass）自研沙子求解器 + 240 Hz CPU 刚体车辆；作者帖子 @claudeai 并自称「AI slop experiment」",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "源码未公开，作者称在线 Demo「即将推出」（WIP）；物理依据有四篇公开文献；作者自述是「AI slop experiment」并 @claudeai，AI 参与程度未说明；X 媒体许可未声明，仅外链引用。",
+      "attribution": "@invalid_degen",
+      "sourceAuthor": "invalid_degen",
+      "tags": [
+        "Three.js",
+        "物理动效",
+        "WebGPU",
+        "颗粒模拟",
+        "程序化生成",
+        "网页赛车"
+      ],
+      "publishedAt": "2026-11-01T17:43:27.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-05T04:52:08.000Z",
+      "updatedAt": "2026-11-05T04:52:08.000Z",
+      "verification": {
+        "checked_at": "2026-11-05T04:52:08.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "实体": 25,
+          "科普": 19,
+          "溯源": 13,
+          "复现": 8,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.175,
+        "finalScore": 98.7,
+        "threshold": 65,
+        "run": "2026-11-05-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2116948595353976832/vid/avc1/1920x1080/PFzVzjcMXyWU0O-k.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "五根毛线从空中不停落下、在地上越堆越乱，用鼠标拎起一根一拽，整团线圈被带起、收紧、再落回去——毛线为什么会「自己缠成一团」？three.js 作者 mrdoob 的 Codevember 2026 第 4 天「Tangle」：GPU 上 120 Hz 解 2,700 个粒子的拉伸、弯曲、自碰撞和静/动摩擦，三股捻线 + 各向异性光泽，MIT 开源可在线玩",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "source": "https://x.com/mrdoob/status/2117978936101728412",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261105b-mrdoob-tangle.jpg",
+      "previewType": "image",
+      "description": "three.js 作者 Ricardo Cabello（@mrdoob）原帖（2026-11-04 13:55 UTC，标签 #threejs #codex，60 秒视频，458 赞）发布 Codevember 2026 第 4 天「Tangle」（库内已收第 1–3 天塑料膜、玻璃碎裂、Melt）。仓库 README：五个等距的「喂线器」绕一个圆转，把毛线落到空地上，慢慢堆成一个乱糟糟的线窝；每根 GPU 线长到约 48.5 单位后从最老的一端剪掉。拎起一根线往外拉，线圈会被抬起、收紧、再落定；静摩擦和「休眠接触」让静止的线贴住地面和下面的线，用力拉还是会滑。实现：gpu-rope.js 预留 2,700 个粒子，喂线、积分、拉伸、弯曲、哈希自碰撞、静/动摩擦和抓取全部在 GPU 上以固定 120 Hz 计算，4 轮接触 pass 与 8 轮局部约束迭代交替；被地面或下方线托住的安静粒子会「睡着」，支撑一消失就掉下去（README 写有「抽掉下面那根，上面那根被重力带下去」的回归测试）。外观：每根线是三股螺旋捻线，凹凸贴图做羊毛纤维，沿纤维方向的各向异性 GGX 高光 + 羊毛光泽，剪断处是平切口；PCSS 软阴影、ACES、FXAA。WebGPU 跑物理和渲染，WebGL2 回退到 CPU 求解器。README 自己写明局限：这是视觉级绳子模拟，粒子接触只是近似连续碰撞，紧交叉和猛拉仍可能穿模。本轮截帧核验：米白背景上五根橙、绿、黄、粉、白毛线从上方垂下，地面线圈从稀疏一圈堆成厚厚的环形线窝，后段可见被拎起甩动的线。对你：①「耳机线为什么总会打结」可以直接用它当实验画面——拖一根线、看缠绕怎么涌现；②摩擦 + 休眠接触解释了「为什么一团线能堆住不散」；③MIT 开源、有视频导出脚本，可 fork 改颜色和参数做自己的镜头。",
+      "tool": "three.js 0.187.0（WebGPU 计算 + 渲染，WebGL2 CPU 回退）；GPU 绳子求解器（拉伸/弯曲/哈希自碰撞/摩擦）+ 三股捻线网格 + 各向异性 GGX；作者帖子标注 #codex",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "源码与 MIT 许可证公开（mrdoob/codevember-2026/04，README 详述实现、测试与局限）；帖子带 #codex 标签，仓库描述为「Daily creative agentic coding experiments」，AI 参与的具体程度未说明；需要支持 WebGPU 的浏览器以获得完整效果。",
+      "attribution": "Ricardo Cabello（@mrdoob）· Codevember 2026 / 04 / Tangle",
+      "sourceAuthor": "mrdoob",
+      "tags": [
+        "Three.js",
+        "物理动效",
+        "官方示例",
+        "绳索模拟",
+        "3D材质",
+        "WebGPU"
+      ],
+      "publishedAt": "2026-11-04T13:55:03.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-05T04:52:08.000Z",
+      "updatedAt": "2026-11-05T04:52:08.000Z",
+      "verification": {
+        "checked_at": "2026-11-05T04:52:08.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 89,
+        "baseBreakdown": {
+          "实体": 24,
+          "科普": 15,
+          "溯源": 20,
+          "复现": 15,
+          "风格": 10,
+          "新颖": 5
+        },
+        "multiplier": 1.175,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-11-05-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2117977816990138369/vid/avc1/1024x1024/PrWQZJNMs-Zq2TGV.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/mrdoob/codevember-2026/tree/main/04",
+      "licenseName": "MIT",
+      "licenseUrl": "https://github.com/mrdoob/codevember-2026/blob/main/LICENSE",
+      "demoUrl": "https://mrdoob.github.io/codevember-2026/04/"
+    },
+    {
+      "title": "亚马逊给 7,953 件真在卖的家具家居扫了 3D 模型，原版 165.6 GB、平均一个 20.8 MB——为什么压到 12.2 GB 还一个三角形都没删？@anxuanng（CodePawl）把 Amazon Berkeley Objects 全部转成能直接进浏览器的 GLB（真实尺寸、完整 PBR 材质），另附 KTX2、三级 LOD 和碰撞外壳给游戏用，CC BY 4.0 免费放在 Hugging Face",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/anxuanng/status/2118136591738925395",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261105b-abo-glb.jpg",
+      "previewType": "image",
+      "description": "作者 @anxuanng（库内「CT 人体 GLB」作者，上一轮刚上墙）原帖（2026-11-05 00:21 UTC，26 秒视频，约 2.3 万曝光、521 赞 631 收藏，被 @threejs 转推）：「亚马逊给它卖的 7,953 件真实商品做了 3D 模型，我把全部 165 GB 打包成约 12 GB 的 GLB，给 three.js、WebGPU 和网页游戏用，Hugging Face 免费。」本轮核对数据集 README（codepawl/abo-glb，CC BY 4.0）：来源是 Amazon Berkeley Objects（ABO，亚马逊 × UC Berkeley，CVPR 2022）；对照表——模型数 7,953 vs 7,953，总大小 165.6 GB → 12.2 GB，平均文件 20.8 MB → 1.5 MB，三角形 340,137,126 个「未简化」；纹理从最大 4096 px 的 PNG/JPEG 改成最大 2048 px 的 WebP，几何用 EXT_meshopt_compression 压缩。例子：一张切斯特菲尔德真皮沙发 ABO 原文件 57.1 MB，这里 2.2 MB。每件是一个 GLB，带颜色/法线/金属度/粗糙度四张 PBR 贴图、真实米制尺寸、Y 轴朝上；另有 KTX2（Basis Universal，GPU 上保持压缩）版本 9.2 GB、三级简化 LOD 4.7 GB、每件一个最多 64 点的凸包碰撞体，以及含品名、品类、品牌、材质、尺寸、重量的 metadata.jsonl。品类最多的是椅子 1,184、沙发 859、地毯 817、挂画 599、桌子 584、灯 345。README 写明：模型、图片和商品文字版权归 Amazon.com（CC BY 4.0），CodePawl 与亚马逊无关联。本轮截帧核验：视频依次展示扶手椅与脚凳、蓝色陶瓷台灯、黑色老板椅、棕色皮沙发特写，最后拉远成一整片地板上摆满数千件家具的俯视画面。对你：①正好接你「同一个房间换奶油风/工业风/日式」的想法——真实尺寸 + PBR 的家具库可以直接搭场景；②「为什么文件小了 13 倍却没丢一个三角形」可以讲纹理压缩和几何量化；③数字 Fab 也能用同样思路：真实设备扫描 → GLB + LOD + 碰撞体。",
+      "tool": "Amazon Berkeley Objects → GLB（meshopt 几何 + WebP 纹理）/ KTX2 + 三级 LOD + 凸包碰撞体；预览用作者自研 WebGL2 引擎 67js 渲染，three.js GLTFLoader 可直接加载",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "数据集与 README 公开，许可 CC BY 4.0；原始模型版权归 Amazon.com（ABO 数据集作者 Collins、Goel、Malik 等），使用需署名并注明经过重新编码；转换脚本未见公开。",
+      "attribution": "CodePawl（@anxuanng）· Amazon Berkeley Objects（Amazon.com × UC Berkeley）",
+      "sourceAuthor": "anxuanng",
+      "tags": [
+        "3D模型",
+        "GLB",
+        "Three.js",
+        "游戏资产",
+        "PBR材质",
+        "家具"
+      ],
+      "publishedAt": "2026-11-05T00:21:31.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-05T04:52:08.000Z",
+      "updatedAt": "2026-11-05T04:52:08.000Z",
+      "verification": {
+        "checked_at": "2026-11-05T04:52:08.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 14,
+          "溯源": 20,
+          "复现": 15,
+          "风格": 9,
+          "新颖": 8
+        },
+        "multiplier": 1.4,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-11-05-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2118136511363416064/vid/avc1/1920x1080/Ijf5ISyhYxfw1BZg.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://huggingface.co/datasets/codepawl/abo-glb",
+      "licenseName": "CC BY 4.0（衍生自 Amazon Berkeley Objects，CC BY 4.0）",
+      "licenseUrl": "https://huggingface.co/datasets/codepawl/abo-glb"
+    },
+    {
+      "title": "一只白瓷碗碎成几十片飞散、再拼回去，裂缝里填满金子——为什么这只碗没有一个 3D 模型文件？@XAFODIAN 在 three.js + WebGPU 里程序化复刻「金缮」：碎片、接缝、金粉斑点全部由代码生成（灵感来自 @chunhsiho 的 Blender Nodevember 作品）",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "source": "https://x.com/XAFODIAN/status/2118192702689087802",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261105b-kintsugi.jpg",
+      "previewType": "image",
+      "description": "作者 @XAFODIAN 原帖（2026-11-05 04:04 UTC，44 秒视频）：「three.js 里的金缮。每一块碎片、每一道接缝、每一粒金点都是程序化的，没有模型。灵感来自 @chunhsiho 的作品，我们只是想做一个 three.js 版本。下一步该拆解哪部分：碎裂、金还是配乐？」灵感原作是 Chun Hsi（@chunhsiho）11-04 发的 Nodevember 2026 第 3 天「Stitch · Kintsugi, stitching with gold」，用 Blender 几何节点做，Blender 文件和教程公开在 GitHub（yapitw/nodevember/2026/day03-stitch-v3-kintsugi）。本轮截帧核验：带金色裂纹的米白粗陶碗在深色背景上旋转，碗身沿裂纹炸开成几十块碎片悬浮、再合拢，近景可见釉面黑色斑点和金色接缝，中段字卡「EVERYTHING IS CODE.」，片尾署名「KINTSUGI 金継ぎ · Inspired by @chunhsiho · three.js + WebGPU. All procedural.」及一个 workers.dev 在线地址。对你：①金缮本身是好科普题：陶瓷为什么会沿这样的路线裂（脆性断裂、裂纹分叉），金缮为什么用漆而不是胶；②「碎开—拼回」的爆炸图镜头和你喜欢的结构拆解同一路；③可对照 Blender 原作讲「同一个效果，节点 vs 代码」。",
+      "tool": "three.js + WebGPU，全程序化（碎裂、接缝、金粉）；作者未说明是否用 AI",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "three.js 版源码未公开；片尾给出的 workers.dev 在线地址本轮从服务器访问失败（无法解析），未能验证；灵感原作（@chunhsiho，Blender 几何节点）有公开文件与教程；X 媒体许可未声明，仅外链引用。",
+      "attribution": "@XAFODIAN（灵感：Chun Hsi @chunhsiho《Nodevember 2026 Day 3: Stitch》）",
+      "sourceAuthor": "XAFODIAN",
+      "tags": [
+        "Three.js",
+        "WebGPU",
+        "程序化生成",
+        "3D材质",
+        "碎裂",
+        "结构可视化"
+      ],
+      "publishedAt": "2026-11-05T04:04:29.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-05T04:52:08.000Z",
+      "updatedAt": "2026-11-05T04:52:08.000Z",
+      "verification": {
+        "checked_at": "2026-11-05T04:52:08.000Z",
+        "visually_checked": true,
+        "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+        "video_check": "未完整播放视频/未运行代码。"
+      },
+      "curation": {
+        "baseScore": 66,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 13,
+          "溯源": 10,
+          "复现": 5,
+          "风格": 9,
+          "新颖": 7
+        },
+        "multiplier": 1.175,
+        "finalScore": 77.5,
+        "threshold": 65,
+        "run": "2026-11-05-1240-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2118192202073444352/vid/avc1/1920x1080/bNOxawllmrfoR3zh.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "水珠为什么不能用「半透明」来画？vidar 用一个标量场 + Marching Cubes 在 three.js 里做出会融合、拉出细颈再断开的五颗水珠，左边 38% 透明像塑料，右边按水的折射率 1.33 把背景条纹弯曲、翻转，边缘再加菲涅尔反光",
       "category": "3d",
@@ -29193,8 +29424,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条 | 2026-11-01-0840-shanghai 监控轮追加 5 条 | 2026-11-01-1240-shanghai 监控轮追加 6 条 | 2026-11-02-1640-shanghai 监控轮追加 7 条 | 2026-11-02-2040-shanghai 监控轮追加 6 条 | 2026-11-03-0840-shanghai 监控轮追加 6 条 | 2026-11-03-1240-shanghai 监控轮追加 2 条 | 2026-11-03-1640-shanghai 监控轮追加 3 条 | 2026-11-03-2040-shanghai 监控轮追加 5 条 | 2026-11-04-0840-shanghai 监控轮追加 5 条 | 2026-11-04-1240-shanghai 监控轮追加 4 条 | 2026-11-04-1640-shanghai 监控轮追加 2 条 | 2026-11-04-2040-shanghai 监控轮追加 4 条 | 2026-11-05-0840-shanghai 监控轮追加 5 条",
-  "updatedAt": "2026-11-05T00:51:30.000Z",
-  "totalItems": 571,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条 | 2026-11-01-0840-shanghai 监控轮追加 5 条 | 2026-11-01-1240-shanghai 监控轮追加 6 条 | 2026-11-02-1640-shanghai 监控轮追加 7 条 | 2026-11-02-2040-shanghai 监控轮追加 6 条 | 2026-11-03-0840-shanghai 监控轮追加 6 条 | 2026-11-03-1240-shanghai 监控轮追加 2 条 | 2026-11-03-1640-shanghai 监控轮追加 3 条 | 2026-11-03-2040-shanghai 监控轮追加 5 条 | 2026-11-04-0840-shanghai 监控轮追加 5 条 | 2026-11-04-1240-shanghai 监控轮追加 4 条 | 2026-11-04-1640-shanghai 监控轮追加 2 条 | 2026-11-04-2040-shanghai 监控轮追加 4 条 | 2026-11-05-0840-shanghai 监控轮追加 5 条 | 2026-11-05-1240-shanghai 监控轮追加 4 条",
+  "updatedAt": "2026-11-05T04:52:08.000Z",
+  "totalItems": 575,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
