@@ -1,7 +1,46 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-05T00:51:30.000Z",
+  "updatedAt": "2026-11-05T04:52:08.000Z",
   "topics": [
+    {
+      "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
+      "title": "人体几乎每个细胞里都有一种「蛋白质桶」，发现 40 年了还没人知道它是干嘛的——为什么 AI 先在细菌病毒里找到了它的「表亲」？Anthropic 生物实验室让 Claude 在约 150 亿条预测蛋白里搜出拱顶体（vault）蛋白的亲戚，做出第一个原核拱顶体的冷冻电镜 3D 结构：96 条蛋白拼成，比人类的 78 条多 18 条、内部空间大约 25%；第一个结构模型 34 小时出来",
+      "category": "AI",
+      "source": "Anthropic Research《Investigating vault particles with Claude》（2026-11-04）；预印本 Athukoralage et al. 2026《Prokaryotic homologs of the major vault protein form engineerable vault nanocapsules》（Anthropic CDN PDF，已投 bioRxiv）；Science 新闻（AAAS）报道",
+      "publishedAt": "2026-11-04",
+      "eventAt": "2026-11-04",
+      "collectedAt": "2026-11-05T04:52:08.000Z",
+      "updatedAt": "2026-11-05T04:52:08.000Z",
+      "description": "一手来源：Anthropic 官方研究博客 + 预印本 PDF。背景：拱顶体（vault particle）是 1986 年由 Leonard Rome 和 Nancy Kedersha 发现的巨大空心蛋白壳，质量约是核糖体的 3 倍，名字来自电镜下像大教堂拱顶的肋状外壳；人类的由 78 份主拱顶蛋白（MVP）拼成两半，几乎存在于人体所有细胞，但功能 40 年未定（敲除的小鼠照样正常发育）。这次做了什么：①Claude 在约 150 亿条预测蛋白里搜 MVP 的亲戚，发现分布在 29 个细菌门和 4 个古菌门，但不到 1% 的物种有；②挑 44 个候选，Claude 把蛋白序列转成适配宿主的 DNA 设计，放进大肠杆菌后 15/24 产出可溶蛋白，7 个组装成类拱顶颗粒，冷冻电镜确认 4 个是拱顶体；③纯化流程从常规约 3 天压到约 90 分钟；④Claude 在内部多智能体框架里自己搭起开源 RELION 处理冷冻电镜数据，首个完整模型 34 小时，最终图谱约一周（官方估计以往要几周）。结构：噬菌体来源的 L05 拱顶体由 96 条链（每半 48 条）组成，约 9.5 MDa，长约 54 nm、宽约 45 nm（人类 67×40），更圆所以内部空间多约 25%；壁由 7 段重复单元而不是人类的 9 段；顶盖像三级台阶的穹顶——每三条相邻链一条停在第一级、一条到第二级、一条一直到顶。再往下：在接触点做 15 个突变，顶盖附近单点突变就能让壳合不上，变成敞开的「玫瑰花环」；给每条链多复制 2 段壁单元（变成 9 段），拱顶体变得更大，体积再增约 20%。对你：①开场「你身上每个细胞都有个 40 年没人知道用途的桶」，0 秒就上官方冷冻电镜图和彩色结构渲染；②涌现角度：同一条蛋白抄 96 遍就自己拼成一个闭合的壳，「几段重复单元」决定了桶的大小；③AI 科研智能体：从搜库、设计 DNA 到跑电镜软件全程参与，但功能依然没解出来。",
+      "caveat": "全部数字来自 Anthropic 自己的博客和尚未同行评审的预印本（bioRxiv 链接发稿时还没上线），结构数据称「即将发布」；目前只在大肠杆菌里表达，没有验证它们在原本的细菌和噬菌体里是否也形成拱顶体；「以往要几周」是 Anthropic 自己的估计；Science 新闻里得州大学 Edward Marcotte 认为原核里存在 MVP 同源物本身并不意外（已有多组报道），更有价值的是证明它们能组装成拱顶体。拱顶体的生物功能仍未知，口播不要说「AI 破解了拱顶体之谜」。封面为官方博客的冷冻电镜结构渲染：左为 L05 全貌，右为顶盖俯视。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261105b-anthropic-vault-l05.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261105b-anthropic-vault-l05.jpg",
+      "imageAlt": "Anthropic 博客配图：L05 拱顶体冷冻电镜结构渲染，左侧为蛋形全貌（紫色顶盖、金色腰环、蓝白相间的壁），右侧为顶盖俯视的螺旋状台阶穹顶",
+      "tags": [
+        "智能体",
+        "AI科研",
+        "结构生物学",
+        "冷冻电镜",
+        "涌现"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 14,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 89.8,
+        "threshold": 65,
+        "run": "2026-11-05-1240-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2610.30858",
       "title": "最强的模型、最多的显卡，为什么反而最「费电不值钱」？斯坦福 Joules-to-GDP：用每焦耳能量换来多少经济价值给 AI 打分——Gemma 4 31B 只用 GLM 5.2 的 23% 能量拿到 56% 的价值，每焦耳回报 2.5 倍；同一模型从 1 张 H100 加到 8 张，能耗 3.24 倍、只快 22%",

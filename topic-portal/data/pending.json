@@ -4,6 +4,131 @@
     {
       "kind": "visual",
       "baseScore": 66,
+      "multiplier": 1.4,
+      "score": 92.4,
+      "reason": "分数达上墙线但只有成片和在线产品，无机制说明、无源码，且产品页功能本轮未实际运行验证",
+      "run": "2026-11-05-1240-shanghai",
+      "record": {
+        "title": "抬头看，天空里是倒挂着的城市和湖——在一个旋转的太空圆柱里过秋天是什么样？@MaxXWilliamson 用 three.js 做的浏览器游戏 Spinward：自己设计奥尼尔圆柱，规划街道、盖城市，再步行、开车或飞着逛",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/MaxXWilliamson/status/2118124614668972426",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261105b-spinward-oneill.jpg",
+        "previewType": "image",
+        "description": "作者 @MaxXWilliamson 原帖（2026-11-04 23:33 UTC，25 秒视频，149 赞，被 @threejs 转推）：「这个奥尼尔圆柱里也到秋天了」，自回帖说原始画面是在 playspinward.com 里拍的、感谢 @threejs，并附了几张静帧。产品页描述：「设计你自己的奥尼尔圆柱：规划街道、在上面建城市并步行游览，或者飞行、驾车穿过建好的殖民地。在浏览器里。」本轮截帧核验：镜头从一片红黄秋树开始，抬头是向上弯曲、倒挂着的大地和湖泊，远处有球形建筑与飞行器；随后穿过砖红色低层街区、高楼和公园。对你：①「旋转产生人造重力」是经典科普题，这个画面一眼就能看懂「地面绕着你弯上去」；②可以顺带讲为什么圆柱要转、转多快、为什么天上看得见对面的城市；③网页游戏 + 自建城市，和你的「数字 Fab」思路相近。",
+        "tool": "three.js（作者致谢），浏览器游戏 Spinward",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "源码未公开；作者未说明渲染与物理实现；X 媒体许可未声明，仅外链引用。",
+        "attribution": "@MaxXWilliamson · Spinward",
+        "sourceAuthor": "MaxXWilliamson",
+        "tags": [
+          "Three.js",
+          "网页游戏",
+          "太空殖民地",
+          "程序化城市"
+        ],
+        "publishedAt": "2026-11-04T23:33:55.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-11-05T04:52:08.000Z",
+        "updatedAt": "2026-11-05T04:52:08.000Z",
+        "verification": {
+          "checked_at": "2026-11-05T04:52:08.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 66,
+          "baseBreakdown": {
+            "实体": 15,
+            "科普": 17,
+            "溯源": 11,
+            "复现": 7,
+            "风格": 9,
+            "新颖": 7
+          },
+          "multiplier": 1.4,
+          "finalScore": 92.4,
+          "threshold": 65,
+          "run": "2026-11-05-1240-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2118123344125956096/vid/avc1/1920x1080/HUWX2FBwLUT4btrz.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "demoUrl": "https://playspinward.com/"
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 59,
+      "multiplier": 1.0,
+      "score": 59.0,
+      "reason": "本轮达待定区间",
+      "run": "2026-11-05-1240-shanghai",
+      "record": {
+        "title": "以前在 Blender 里手搓的「X 光扫描重建」效果，现在让 AI 照着视频复刻成一个 770 KB 的网页——为什么比 6.1 MB 的 Blender 文件还能随便转？@kevinchin35 把 Blender 源文件、贴图和成片丢给 Gemini 4 Argon，得到纯手写 WebGL + GLSL、无第三方 3D 库的实时版本",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/kevinchin35/status/2118161650654298216",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261105b-xray-wireframe.jpg",
+        "previewType": "image",
+        "description": "作者 @kevinchin35 原帖（2026-11-05 02:01 UTC，两段视频 + 一张 Blender 原作截图）：当年在 Blender 里研究做出的「X 光扫描生成效果」，现在用 AI 很快复刻；AI 版以 HTML 呈现，渲染核心全部手写原生 WebGL + GLSL，无第三方 3D 库依赖，文件 770 KB（Blender 版 6.1 MB）；真 3D 实时渲染，可任意角度拖拽、缩放、修改扫描效果。方法：把 Blender 源文件、贴图和渲染成片交给 Gemini 4 Argon，让它按视频复刻 HTML 版。本轮截帧核验：深蓝背景、界面标题「WIREFRAME RECONSTRUCTION」，一束扫描光带从下往上扫过机器人头像，扫过处由发光线框变成实体，右侧有参数面板。对你：①「扫描重建」是讲 CT/3D 扫描原理的现成开场；②「拿自己的旧 Blender 作品让 AI 转网页」是可复用的工作流。",
+        "tool": "Gemini 4 Argon（按 Blender 源文件 + 成片复刻）；原生 WebGL + GLSL，无第三方 3D 库",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "HTML 与代码未公开；帖子互动很少（发帖时 0 赞）；X 媒体许可未声明，仅外链引用。",
+        "attribution": "@kevinchin35 × Gemini 4 Argon",
+        "sourceAuthor": "kevinchin35",
+        "tags": [
+          "WebGL",
+          "GLSL",
+          "扫描效果",
+          "Blender复刻"
+        ],
+        "publishedAt": "2026-11-05T02:01:05.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-11-05T04:52:08.000Z",
+        "updatedAt": "2026-11-05T04:52:08.000Z",
+        "verification": {
+          "checked_at": "2026-11-05T04:52:08.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 59,
+          "baseBreakdown": {
+            "实体": 12,
+            "科普": 14,
+            "溯源": 10,
+            "复现": 7,
+            "风格": 9,
+            "新颖": 7
+          },
+          "multiplier": 1.0,
+          "finalScore": 59.0,
+          "threshold": 65,
+          "run": "2026-11-05-1240-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2118161287813398528/vid/avc1/3008x1644/UKOPdPxg1g5nQvLv.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 66,
       "multiplier": 1.1,
       "score": 72.6,
       "reason": "分数达上墙线但同作者本轮已有 3 条上墙，且为 Canvas2D 渲染原理演示（非 three.js），先放待定",
@@ -6079,6 +6204,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-05T00:51:30.000Z",
+  "updatedAt": "2026-11-05T04:52:08.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
