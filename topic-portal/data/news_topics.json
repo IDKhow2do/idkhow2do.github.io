@@ -1,7 +1,46 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-05T12:50:40.000Z",
+  "updatedAt": "2026-11-06T00:48:33.000Z",
   "topics": [
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/107757",
+      "title": "Claude Code 去网页搜东西时，为什么会把你的邮箱写进 User-Agent，让陌生站点天天给你发诈骗信？官方在 v2.1.317 用内置隐私模组默认拦住：不是「设置项」，是这次被骂出来的默认行为",
+      "category": "AI",
+      "source": "GitHub anthropics/claude-code#107757（2026-11-05 22:13Z 开帖）；Anthropic 员工 @poteat 同日回复：v2.1.317+ 内置 cc-plugin-privacy 默认开启，可在 /plugins 关闭",
+      "publishedAt": "2026-11-05",
+      "eventAt": "2026-11-05",
+      "collectedAt": "2026-11-06T00:48:33.000Z",
+      "updatedAt": "2026-11-06T00:48:33.000Z",
+      "description": "一手来源：Claude Code 官方仓库 Issue #107757，以及 Anthropic 员工 poteat 的官方回复（非二手转述）。发生了什么：用户报告 Claude Code 在做网页搜索/抓取时，把登录邮箱写进 HTTP User-Agent，任意第三方站点都能收到；对方称因此每天收到大量诈骗邮件，并强调这不该做成可开关的「隐私选项」，而应从 harness 里拿掉。官方回应：在 v2.1.317 及之后引入内置模组 cc-plugin-privacy，用确定性规则拦住这类行为，默认开启，可在 /plugins 关闭；并承诺会像其他内置模组一样公开源码。对你：①开场「为什么智能体帮你上网，网站却知道你的邮箱？」0 秒上 Issue 标题卡；②讲清 User-Agent 本是浏览器身份串，被塞进个人标识就变成追踪/诈骗原料；③立刻核对 claude --version ≥ 2.1.317，并在 /plugins 确认隐私模组开着；④和上一轮「状态行读短笔记省 99%」对照——同一条产品线，这次是隐私而非成本。",
+      "caveat": "邮箱进 UA 的具体字段样例本轮未在本地复现抓包；以开帖描述与官方「引入隐私模组拦住此行为」为准。v2.1.317 是否覆盖所有网络路径（搜索/MCP/自定义 fetch）仍取决于后续模组源码与回归；封面为 GitHub Open Graph 卡片，非产品 UI 截图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261106a-claude-ua.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261106a-claude-ua.jpg",
+      "imageAlt": "GitHub Issue 卡片：anthropics/claude-code #107757，标题 Bug Report: Privacy violation in User-Agent header，作者 taylor-edwards，日期 November 5, 2026",
+      "tags": [
+        "Claude Code",
+        "智能体",
+        "AI安全",
+        "隐私",
+        "User-Agent"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 19,
+          "画面": 10,
+          "来源": 14,
+          "时效": 10,
+          "大陆": 8,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 88.8,
+        "threshold": 65,
+        "run": "2026-11-06-0840-shanghai"
+      }
+    },
     {
       "url": "https://x.com/ClaudeDevs/status/2118063143167693011",
       "title": "后台子代理每 30 秒刷一次状态行，以前每次都要把整段对话重读一遍——为什么改成「看短笔记」之后，单次更新居然便宜了约 99%？Claude Code v2.1.316：Haiku 5.5 用短笔记写状态行；整场会话大约少吃 5% 额度，同等限额下大约多 6% 次提示",
