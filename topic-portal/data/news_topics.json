@@ -1,7 +1,124 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-06T04:54:33.000Z",
+  "updatedAt": "2026-11-06T08:58:46.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2611.07542",
+      "title": "把 KV 缓存丢到主机内存明明能塞更多请求，为什么吞吐反而上不去？FlashOffloading：整段把 KV 卸到 DRAM，用滚动 HBM 热缓存和零额外 miss 查找，把「省显存」变成「真加速」",
+      "category": "AI",
+      "source": "arXiv 2611.07542 FlashOffloading: Low-Latency KV Cache Offloading for Long-Context LLM Serving（announce 2026-11-06 EST / citation_date 2026-11-05）；作者 Xuan Wang、Zhuanhao Wu、Tingzhu Fang 等",
+      "publishedAt": "2026-11-06",
+      "eventAt": "2026-11-05",
+      "collectedAt": "2026-11-06T08:58:46.000Z",
+      "updatedAt": "2026-11-06T08:58:46.000Z",
+      "description": "一手来源：arXiv 摘要与 HTML 全文图（mem_wall / architecture-overview）。机制：长上下文推理里 KV 随序列与并发线性涨，先撞上 HBM 容量墙；把 KV 卸到主机 DRAM 能抬并发，但管理与 H2D 加载常把延迟吃掉，并发升了吞吐不升。FlashOffloading 在 prefill 与 decode 两阶段都做主机 DRAM 中心的全量卸载：prefill 用滚动 HBM 缓存、decode 用热缓存，配反向稀疏索引（零额外 miss 查找）和计算—加载重叠内核，专门压低卸载路径延迟。论文图直接画出「单 die HBM≈54.76 GB 墙」：权重恒定约 25 GB，KV 随 8k→256k 挤占批次，512k 标 Not servable。对你：①0 秒上 HBM 堆叠条形图（权重/激活/每请求 KV）；②对照「只 offload 不重排调度」的假省显存；③和库内 KV/推理成本题同一主线，这次是 serving 系统图而不是量化公式；④打开 HTML 图讲清 rolling cache vs hot cache。局限：未在本机复现内核；具体加速数字以论文表格为准。",
+      "caveat": "arXiv 日批时间为 2026-11-06 00:00-0500（≈05:00Z），落在本轮窗口；封面取自论文 Fig mem_wall（HBM usage vs sequence length），非头像。未跑通其 CUDA/HBM 实验。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261106c-flashoffload.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261106c-flashoffload.jpg",
+      "imageAlt": "FlashOffloading 论文图：左侧 HBM 用量随序列长度堆叠（权重/激活/每请求 KV），右侧吞吐与 TPOT；512k 标 Not servable",
+      "tags": [
+        "KV缓存",
+        "AI推理",
+        "AI成本",
+        "LLM serving",
+        "显存"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 14,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 93.0,
+        "threshold": 65,
+        "run": "2026-11-06-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://github.com/OpenFolk/OpenFolk",
+      "title": "Claude Code、Codex、Cursor 都能在终端里干活，为什么不能像微信群同事一样，你合上笔电它们还在跑？OpenFolk：本机多智能体 Messenger，MIT 开源，审批推到手机",
+      "category": "AI",
+      "source": "GitHub OpenFolk/OpenFolk（MIT；created 2026-10-13，pushed 2026-11-04）；官网 openfolk.app；本轮 X @marcoberlin_1 2026-11-06 08:47Z 演示视频",
+      "publishedAt": "2026-11-06",
+      "eventAt": "2026-11-04",
+      "collectedAt": "2026-11-06T08:58:46.000Z",
+      "updatedAt": "2026-11-06T08:58:46.000Z",
+      "description": "一手来源：仓库 README + 官网 + 窗口内演示。发生了什么：OpenFolk 不是又一个 IDE，而是手机优先的 Messenger——每个 bot 有名字、角色、语气、模型和固定工作目录；默认走 Claude Agent SDK（Claude Code），也可切 Codex，或经 ACP 接 Cursor / Copilot / Antigravity / OpenCode。合上电脑后 bot 继续跑，完成或要审批时 Web Push/APNs/FCM 推到手机；危险操作（删文件、push、SSH、装包、curl|sh 等）按 risky/write/never 策略弹卡。中继不碰模型密钥、默认端到端加密。对你：①0 秒上「Shop / Scout / Docs / Cloud」四人会话截帧（Opus 等徽章 + git push 审批卡）；②对比「终端里开四个会话」与「像同事一样留名、留文件夹、留审批」；③对照库内 DeepSeek Harness / 多智能体调度——这边强调人机审批与离席续跑，不是纯自动派活；④两分钟：git clone && npm start 或装桌面版。局限：早期开源（星标仍少）；后端主测 Windows 11，Linux 以容器文档为准；本机未完整跑通。",
+      "caveat": "仓库 10-13 已建、11-04 有推送；本轮因窗口内一手演示+可核验 MIT 源码补收。封面为演示视频截帧（OpenFolk UI + 德语字幕），非头像。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261106c-openfolk.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261106c-openfolk.jpg",
+      "imageAlt": "OpenFolk 演示截帧：左侧 Shop/Scout/Docs/Cloud 机器人列表，右侧 Shop 汇报 Lighthouse 61→92 并请求 git push origin main",
+      "tags": [
+        "智能体",
+        "Claude Code",
+        "开源",
+        "多智能体",
+        "MCP"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 86,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 15,
+          "来源": 13,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 90.9,
+        "threshold": 65,
+        "run": "2026-11-06-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.08405",
+      "title": "想在同一颗 MRAM 突触里写出「不止开和关」的多档权重，为什么还得靠畴壁钉扎？300 mm 晶圆级自旋轨道矩磁隧道结：外加面内场就能调出最多 8 个电阻态",
+      "category": "半导体",
+      "source": "arXiv 2611.08405 Synaptic Multi-Weight Wafer-Scale Domain Wall Magnetic Tunnel Junctions Driven by Spin Orbit Torque（announce 2026-11-06 EST / citation_date 2026-11-05）；作者 Nicholas Zogbi、Domenico Giuliano、Vaishnavi Kateel、Jean Anne C. Incorvia 等",
+      "publishedAt": "2026-11-06",
+      "eventAt": "2026-11-05",
+      "collectedAt": "2026-11-06T08:58:46.000Z",
+      "updatedAt": "2026-11-06T08:58:46.000Z",
+      "description": "一手来源：arXiv 摘要与 Fig.1（TEM 截面 + SOT-MTJ 三维示意）。机制：模拟神经形态希望 MRAM 突触有多档/模拟电阻，但缩放后的 MTJ 很难稳定出多权重。本文在 300 mm 晶圆级、自旋轨道矩驱动的磁隧道结上，通过改变面内场，利用畴壁成核与钉扎涌现最多 8 个可区分电阻态；态出现带随机性，可用迭代编程算法写到目标电阻。电磁仿真指出多态来自面内场与电压共同介导的畴壁成核。对你：①0 秒上 TEM 纳米柱截面与 W 沟道上的 MTJ 柱示意图；②讲清「数字 0/1」vs「畴壁停在不同钉扎点 → 多档电阻」；③对照库内失效分析/工艺题——这次是晶圆级突触器件而不是单纯良率报告；④点明随机性与迭代写入是落地代价。局限：器件物理偏专；未在本机复现电测；封面为论文 Fig.1，非产品宣传图。",
+      "caveat": "日批 2026-11-06 00:00-0500 落入本轮窗口。封面为论文 Fig.1（TEM + 器件示意），非头像。未接触原始电测数据。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261106c-mtj-dw.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261106c-mtj-dw.jpg",
+      "imageAlt": "论文 Fig.1：a–b TEM 截面（100 nm / 10 nm），c–d 矩形与圆柱 MTJ 在钨 SOT 沟道上的三维示意与 V_Comp / V_SOT 电路",
+      "tags": [
+        "半导体",
+        "MRAM",
+        "神经形态",
+        "自旋电子",
+        "器件物理"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 15,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0924,
+        "finalScore": 96.1,
+        "threshold": 65,
+        "run": "2026-11-06-1640-shanghai"
+      }
+    },
     {
       "url": "https://huggingface.co/blog/Sandflow/sand3d-106094-3d-objects-in-one-code-substrate-for",
       "title": "给语言模型学 3D，为什么不直接扔 10 万个网格，而要把每件东西写成一段短 Python？Sand3D：106,094 个物体共用一套「零件有名、尺寸是参数、关节写在程序里」的代码底料",
