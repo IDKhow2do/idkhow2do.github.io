@@ -1,7 +1,85 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-06T00:48:33.000Z",
+  "updatedAt": "2026-11-06T04:54:33.000Z",
   "topics": [
+    {
+      "url": "https://huggingface.co/blog/Sandflow/sand3d-106094-3d-objects-in-one-code-substrate-for",
+      "title": "给语言模型学 3D，为什么不直接扔 10 万个网格，而要把每件东西写成一段短 Python？Sand3D：106,094 个物体共用一套「零件有名、尺寸是参数、关节写在程序里」的代码底料",
+      "category": "人工智能",
+      "source": "Hugging Face 社区博文 Sandflow/Sand3D（页面 datetime 2026-11-04T21:06:08Z；标注 Published November 5, 2026）；库 github.com/Sandflow-ai/sand3d（Apache-2.0）；数据集 CC BY 4.0 + 源许可证；本轮 X @tokufxug 2026-11-06 01:37Z 窗口内二次传播",
+      "publishedAt": "2026-11-05",
+      "eventAt": "2026-11-04",
+      "collectedAt": "2026-11-06T04:54:33.000Z",
+      "updatedAt": "2026-11-06T04:54:33.000Z",
+      "description": "一手来源：Sandflow 在 Hugging Face 的博文与 GitHub/PyPI 库、HF Collection（sand3d-objaverse/cad/articraft/automate/simready）。发生了什么：发布 106,094 个「3D-as-code」物体——每个物体是一段 sand3d 短程序（零件命名、尺寸参数、父坐标系摆放、关节声明），跑一遍就导出 OpenUSD/网格；其中 10,456 个可动、约 3.6 万关节。作者对比：同一 CAD 零件手写 sand3d 比模型写的 Blender Python 大约少 3.8× token；程序先写「目录式总装函数」再填细节，减轻生成循环。许可：库 Apache-2.0，数据集 CC BY 4.0（各源许可证保留）。对你：①0 秒上「左边 Python、右边爆炸视图零件」画面（本轮封面来自窗口内介绍视频截帧）；②讲清「网格是坐标汤、程序是可改菜谱」；③对照库内 NASA GLB/CodePawl——那边是现成网格分级下载，这边是让智能体用同一套动词生成/改尺寸；④打开 Explorer 或 pip install sand3d 改一个参数重导出。局限：主攻硬表面，角色/有机形尚未覆盖；HF 主站 RSS 未收录该社区博文，上一轮可能漏扫，本轮借窗口内传播补收。",
+      "caveat": "博文发布时间在扫描窗起点之前（11-04/05）；本轮收纳因一手源可核验、库内未收录、且窗口内有传播与可拍首帧。封面为 @tokufxug 介绍视频截帧（代码+爆炸视图），非作者头像；未在本机完整跑通 Blender/bpy 导出链路。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261106b-sand3d.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261106b-sand3d.jpg",
+      "imageAlt": "Sand3D 介绍画面：左侧 roller_machine.py 零件函数，右侧粉色壳体与蓝色端鼓的爆炸视图，标题 3D built in code",
+      "tags": [
+        "智能体",
+        "3D",
+        "开源",
+        "程序化生成",
+        "Hugging Face"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 89,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 19,
+          "画面": 14,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 94.0,
+        "threshold": 65,
+        "run": "2026-11-06-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://x.com/davekiss/status/2118512291226210806",
+      "title": "Cursor 里 Claude 能「看见」你点中的按钮，为什么自己做的网页却不行？有人用非官方 IDE 协议：WebSocket MCP + ~/.claude/ide 锁文件，Alt-click 就把选区推给 Claude Code 改对应 CSS",
+      "category": "人工智能",
+      "source": "X @davekiss 2026-11-06 01:14:24Z 原帖（含 23s 演示）；协议参照开源 Neovim 插件 coder/claudecode.nvim（PROTOCOL.md 含 selection_changed）与 Emacs 插件 manzaltu/claude-code-ide.el",
+      "publishedAt": "2026-11-06",
+      "eventAt": "2026-11-06",
+      "collectedAt": "2026-11-06T04:54:33.000Z",
+      "updatedAt": "2026-11-06T04:54:33.000Z",
+      "description": "一手来源：作者原帖全文 + 开源插件协议文档（非 Anthropic 官方博客）。机制：Claude Code 的 IDE 集成靠本机 WebSocket MCP；向 ~/.claude/ide/<port>.lock 写入 authToken，用 ENABLE_IDE_INTEGRATION=true 与 CLAUDE_CODE_SSE_PORT 启动；宿主在选区变化时发 selection_changed。作者把它接到普通网页——Alt-click 按钮，口头说「做成和 Start free 一样」，模型改对 CSS 规则。演示界面可见 Claude Code v2.1.318、「Connected to Pick」、红标签「Alt-click: send to Claude」。对你：①0 秒上左右分屏：浏览器选中 vs 终端已连接；②对比「复制粘贴 DOM」与「选区即上下文」；③强调协议非官方、以 nvim/emacs 插件为准；④和昨日 User-Agent 隐私帖同一产品线——这次是编辑器桥，不是网络身份。",
+      "caveat": "协议未公开成 Anthropic 正式文档，字段以社区插件 PROTOCOL.md 与作者自述为准；不同 Claude Code 小版本锁文件路径/消息名可能变动。封面为原帖演示视频截帧（localhost 演示站 + Claude Code 终端），非头像。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261106b-davekiss.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261106b-davekiss.jpg",
+      "imageAlt": "演示截帧：左侧 localhost 网页标 Alt-click: send to Claude，右侧 Claude Code v2.1.318 显示 Connected to Pick",
+      "tags": [
+        "Claude Code",
+        "智能体",
+        "IDE",
+        "MCP",
+        "WebSocket"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 86,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 15,
+          "来源": 12,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 90.9,
+        "threshold": 65,
+        "run": "2026-11-06-1240-shanghai"
+      }
+    },
     {
       "url": "https://github.com/anthropics/claude-code/issues/107757",
       "title": "Claude Code 去网页搜东西时，为什么会把你的邮箱写进 User-Agent，让陌生站点天天给你发诈骗信？官方在 v2.1.317 用内置隐私模组默认拦住：不是「设置项」，是这次被骂出来的默认行为",
