@@ -1,7 +1,83 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-06T13:24:26.000Z",
+  "updatedAt": "2026-11-07T00:51:55.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2611.07707",
+      "title": "三维堆叠的存内计算明明容量更大，为什么权重随便一放，吞吐反而卡在四成？CAMP：用冲突矩阵把 LLM 权重塞进 3D-IMC，利用率 42%→60%，吞吐最高翻倍",
+      "category": "半导体",
+      "source": "arXiv",
+      "publishedAt": "2026-11-06T05:00:00.000Z",
+      "eventAt": "2026-11-06T05:00:00.000Z",
+      "collectedAt": "2026-11-07T00:51:55.000Z",
+      "updatedAt": "2026-11-07T00:51:55.000Z",
+      "description": "一手来源：arXiv 2611.07707（2026-11-06 new，cs.AR）CAMP: Context-Aware Mapping and Placement for LLMs on 3D-IMC Arrays。发生了什么：模拟存内计算（AIMC）把权重留在存储阵列里做矩阵向量乘，能砍掉搬权重的能耗；三维堆叠（3D-IMC）再往上叠层，容量上去了，但「哪一层放哪块权重」决定了哪些乘可以同时跑——乱放就会抢通道、吃不满算力。机制：CAMP 是软件侧离线映射，不改硬件；它把架构、网络与运行时上下文收成一张冲突矩阵，再靠 profiling 反馈剪搜索空间，专门优化吞吐。论文报告 3D-IMC 计算利用率从 42.4% 提到 60.3%，相对基线最高约 2.0× 的 3D-IMC 吞吐、约 1.74× 端到端吞吐。对你：①0 秒上 paper overview / conflict matrix 图（本轮封面取自论文 HTML 总览图，非 logo）；②反直觉钩子——「层数变多 ≠ 更快」，瓶颈在并发冲突而不是容量；③对照库内 FlashOffloading（KV 卸主机内存）：那边是解码期内存墙，这边是权重映射并发墙；④两分钟可拍：画冲突矩阵→改映射→吞吐条形图。局限：仿真/建模结果，非量产芯片实测；读者需分清 AIMC 与数字 SRAM 缓存。",
+      "caveat": "论文为建模与仿真评估，非量产 3D-IMC 芯片实测；利用率与倍速数字依赖设定的网络与阵列拓扑。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261107a-camp.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261107a-camp.jpg",
+      "imageAlt": "CAMP 论文总览图：3D-IMC 阵列上的 LLM 权重映射与冲突矩阵示意",
+      "tags": [
+        "芯片制造",
+        "存内计算",
+        "3D堆叠",
+        "AI推理",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 90,
+        "baseBreakdown": {
+          "主线": 24,
+          "钩子": 17,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 96.7,
+        "threshold": 65,
+        "run": "2026-11-07-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.08299",
+      "title": "把 Decode 再拆成 Attention / FFN 两池，为什么生产里大多站不住？SiliconForge：跨四代模型与加速器扫完，AFD 没有稳健的每千瓦好吞吐优势",
+      "category": "人工智能",
+      "source": "arXiv",
+      "publishedAt": "2026-11-06T05:00:00.000Z",
+      "eventAt": "2026-11-06T05:00:00.000Z",
+      "collectedAt": "2026-11-07T00:51:55.000Z",
+      "updatedAt": "2026-11-07T00:51:55.000Z",
+      "description": "一手来源：arXiv 2611.08299（2026-11-06 new）Should You Split Decode? Disaggregation Across Future Models and Accelerators。发生了什么：线上已普遍把 Prefill/Decode 拆池（P/D）；业界又在讨论把 Decode 再拆成 Attention 与 FFN（AFD），理由是两者吃的资源不一样。但多拆一层就要多通信、多布点、多备一个资源池——基建往往在未来模型/芯片还没测清之前就得拍板。机制：作者给出校准模型 SiliconForge，独立扫「服务拆分方式」与「硬件指派」，在四种模型方向、四类锚定现有/已宣布加速器、两种互联上，用同一套流水重叠规则与同一功率预算对比 P/D vs P/D+AFD。主结论：在 SLO 好吞吐/千瓦上看，没有稳健的部署级 AFD 优势；多数名义估计更偏 P/D；AFD 偶发领先多半来自「多塞进一个 Prefill 副本」，不是 Decode 池本身更高效。对你：①0 秒上 regime map / catalog 图（本轮封面取自论文 HTML 图，非 logo）；②钩子——「拆得更细」不等于「每瓦更快」；③可拍角度：P/D 两池 vs AFD 三池示意→通信箭头→千瓦好吞吐对比；④对照库内 FlashOffloading：那边问「KV 卸盘为何吞吐上不去」，这边问「Decode 再拆为何站不住」。局限：建模外推到未上市加速器，结论依赖功率与互联假设；KV 很重且 scale-up 域很碎时 AFD 仍可能名义领先。",
+      "caveat": "SiliconForge 为校准模型外推，含未上市加速器假设；结论依赖功率预算与互联设定，KV 极重场景下 AFD 仍可能名义领先。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261107a-split.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261107a-split.jpg",
+      "imageAlt": "SiliconForge 论文 regime map：P/D 与 P/D+AFD 在不同模型/加速器组合下的对比示意",
+      "tags": [
+        "AI推理",
+        "AI成本",
+        "智能体"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 86,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 19,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 90.9,
+        "threshold": 65,
+        "run": "2026-11-07-0840-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2611.07542",
       "title": "把 KV 缓存丢到主机内存明明能塞更多请求，为什么吞吐反而上不去？FlashOffloading：整段把 KV 卸到 DRAM，用滚动 HBM 热缓存和零额外 miss 查找，把「省显存」变成「真加速」",
