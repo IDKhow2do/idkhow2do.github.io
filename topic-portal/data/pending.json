@@ -2,6 +2,51 @@
   "schemaVersion": 1,
   "items": [
     {
+      "kind": "news",
+      "baseScore": 74,
+      "multiplier": 1.0566,
+      "score": 78.2,
+      "reason": "分数达上墙线但钩子偏框架介绍、大陆观众第一帧吸引力弱于半导体/推理成本主线，先待定观察反馈",
+      "run": "2026-11-07-0840-shanghai",
+      "record": {
+        "url": "https://huggingface.co/blog/allenai/toyblocks",
+        "title": "机器人演示明明很炫，为什么还是说不清它到底学到了什么？Ai2 ToyBlocks：把机械臂+积木做成可改训练分布的「培养皿」",
+        "category": "人工智能",
+        "source": "Hugging Face / Allen Institute for AI",
+        "publishedAt": "2026-11-06T14:00:00.000Z",
+        "eventAt": "2026-11-06T14:00:00.000Z",
+        "collectedAt": "2026-11-07T00:51:55.000Z",
+        "updatedAt": "2026-11-07T00:51:55.000Z",
+        "description": "一手来源：Hugging Face Blog / Allen Institute for AI《ToyBlocks: A controlled world for robot learning and evaluation》（2026-11-06）。发生了什么：真实机器人演示往往又窄又难复现，失败了也难归因。ToyBlocks 是 Ai2 提出的首个 FoundationWorld——桌面上的机械臂与积木，故意做窄，但要求真实物理外观、自动生成任务与演示、推理+灵巧并重、域内任务覆盖尽量全。研究者可改训练分布（多推/多翻），再在留出任务上评测；配套代码仓库 allenai/ToyBlocks。对你：①0 秒上桌面机械臂抓积木封面（本轮下载自 HF og:image）；②钩子——「炫演示 ≠ 可解释学习」；③可拍：改演示分布→同一测试集分数变化；④对照库内机器人/具身条目时强调「受控培养皿」而不是开放厨房。局限：桌面积木域距离洗衣/分拣等开放场景仍远；博客偏框架介绍，关键数字需回仓库与论文。",
+        "caveat": "受控仿真域，不能直接外推到开放家庭任务；具体成功率与泛化数字需核对仓库/论文，而非只看博客叙述。",
+        "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261107a-toyblocks.jpg",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261107a-toyblocks.jpg",
+        "imageAlt": "ToyBlocks 桌面机械臂与彩色积木仿真场景",
+        "tags": [
+          "智能体",
+          "机器人",
+          "AI推理"
+        ],
+        "tagSource": "provided",
+        "curation": {
+          "baseScore": 74,
+          "baseBreakdown": {
+            "主线": 18,
+            "钩子": 12,
+            "画面": 12,
+            "来源": 14,
+            "时效": 10,
+            "大陆": 4,
+            "新颖": 4
+          },
+          "multiplier": 1.0566,
+          "finalScore": 78.2,
+          "threshold": 65,
+          "run": "2026-11-07-0840-shanghai"
+        }
+      }
+    },
+    {
       "kind": "visual",
       "baseScore": 66,
       "multiplier": 1.4,
@@ -6204,6 +6249,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-06T13:24:26.000Z",
+  "updatedAt": "2026-11-07T00:51:55.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
