@@ -2,6 +2,66 @@
   "schemaVersion": 1,
   "items": [
     {
+      "kind": "visual",
+      "baseScore": 59,
+      "multiplier": 1.1979,
+      "score": 70.7,
+      "reason": "分数达上墙线但溯源与可复现性偏弱（无公开仓库/demo URL），机制有趣但科普镜头弱于纸艺主线，先待定观察",
+      "run": "2026-11-07-1240-shanghai",
+      "record": {
+        "title": "游戏世界里点开对话，为什么声音是浏览器里现场合成的？@brandon_xyzw：three.js + WebGPU 交互叙事实验，语音模型跑在客户端",
+        "category": "video",
+        "styleFamily": "code_video",
+        "source": "https://x.com/brandon_xyzw/status/2118887273332703542",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261107b-brandon.jpg",
+        "previewType": "image",
+        "description": "一手来源：作者 @brandon_xyzw 2026-11-07 02:04Z 原帖（约演示视频）。发生了什么：作者在 three.js + WebGPU 场景里做交互叙事实验——复古 CRT/键盘道具桌面上可点选，对话语音由「跑在浏览器里的模型」现场生成，而不是预先录好的配音轨。机制（作者陈述）：客户端语音模型 + WebGPU 渲染；具体模型名与仓库本帖未给出。对你：①0 秒上 CRT+机械键盘+云图标装置截帧（本轮封面取自原帖视频预览帧，非头像）；②钩子——「游戏配音」不必打包进资源，可以边玩边合成；③对照库内 WebGPU/three 条目时强调「端侧语音」而不是材质物理；④两分钟可拍：指着光标点击→波形/口型→说明浏览器推理。局限：本窗未见公开源码/许可证/可玩链接；未在本机复现；叙事美学偏卡带未来主义，科普镜头弱于纸艺/布料族。",
+        "tool": "three.js + WebGPU；浏览器端语音模型（作者陈述，具体型号未公开）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "仅原帖演示视频可外链；未见仓库/许可证/可玩 URL。封面取自原帖视频预览帧，目视非头像。",
+        "attribution": "@brandon_xyzw · interactive storytelling experiment · three.js × WebGPU",
+        "sourceAuthor": "brandon_xyzw",
+        "tags": [
+          "Three.js",
+          "WebGPU"
+        ],
+        "publishedAt": "2026-11-07T02:04:27.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-11-07T04:46:19.000Z",
+        "updatedAt": "2026-11-07T04:46:19.000Z",
+        "verification": {
+          "checked_at": "2026-11-07T04:46:19.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 59,
+          "baseBreakdown": {
+            "实体": 16,
+            "科普": 11,
+            "溯源": 10,
+            "复现": 6,
+            "风格": 9,
+            "新颖": 7
+          },
+          "multiplier": 1.1979,
+          "finalScore": 70.7,
+          "threshold": 65,
+          "run": "2026-11-07-1240-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2118886096046075904/vid/avc1/884x720/DScODtgiF2S8nWwv.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
       "kind": "news",
       "baseScore": 74,
       "multiplier": 1.0566,
@@ -6249,6 +6309,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-07T00:51:55.000Z",
+  "updatedAt": "2026-11-07T04:46:19.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
