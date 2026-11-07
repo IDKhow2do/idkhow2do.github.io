@@ -3,6 +3,133 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 61,
+      "multiplier": 1.25,
+      "score": 76.2,
+      "reason": "分数达上墙线但无源码/提示词，HUD 冲击数值为演示设定、文案带投资隐喻，需人工确认后再上墙",
+      "run": "2026-11-07-2040-shanghai",
+      "record": {
+        "title": "无人机撞过来，穿山甲 0.6 秒缩成一个球——2000 片鳞甲每片下面一根销轴，为什么能「挨打不坏」？@xinc3s 让 Claude Code 在 three.js 里逐件摆出 4342 个零件的机械穿山甲，还能整壳拆解",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/xinc3s/status/2119021468512104629",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261107d-pangolin.jpg",
+        "previewType": "image",
+        "description": "作者 @xinc3s（库内已收其 Python 光线追踪地月短片）原帖（2026-11-07 10:57 UTC，18 秒视频）：「给 Claude Code 定了一条规则：无人机撞上时什么都不能坏」。帖子自述：4342 个零件全部由代码在 three.js 中摆放；2000 多片鳞甲每片下一根销轴；无人机俯冲时 0.6 秒卷成球，屏上读数「冲击 4.82 kN、凹陷 0 mm」；鳞甲从头到尾像波浪一样张开；12 只爪咬住树枝、尾巴勾住 195°；拆解时 2000 根销轴退出、鳞甲整壳抬起、骨架翻转 180° 再扣回；音效也由代码生成并卡拍。本轮截帧核验：米白色仪表盘界面「Manis PX-7」，中间是橙白渐变鳞片卷成的球形穿山甲挂在黑色分节树枝上，左右为装甲/脊柱/爪/冲击等面板——非头像。对你：①「鳞甲为什么能分散冲击」可做结构科普（重叠铰接板=链甲/装甲车履带同理）；②整壳拆解镜头接近「爆炸图/剖面」偏好；③但数值是 HUD 演示设定而非物理测量，文案以「投资组合风控」作隐喻。",
+        "tool": "Claude Code + three.js（作者自述，零件/动画/音效均由代码生成）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "未公开源码或提示词；HUD 上的冲击力/凹陷数值为作品内设定，未见物理仿真说明；帖子引用 @elvar_official 的一条帖子作为语境；X 媒体仅外链引用。",
+        "attribution": "@xinc3s · Manis PX-7 mechanical pangolin",
+        "sourceAuthor": "xinc3s",
+        "tags": [
+          "Three.js",
+          "结构可视化",
+          "爆炸图",
+          "仿生机械",
+          "代码出片"
+        ],
+        "publishedAt": "2026-11-07T10:57:42.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-11-07T12:49:18.000Z",
+        "updatedAt": "2026-11-07T12:49:18.000Z",
+        "verification": {
+          "checked_at": "2026-11-07T12:49:18.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 61,
+          "baseBreakdown": {
+            "实体": 18,
+            "科普": 14,
+            "溯源": 9,
+            "复现": 4,
+            "风格": 9,
+            "新颖": 7
+          },
+          "multiplier": 1.25,
+          "finalScore": 76.2,
+          "threshold": 65,
+          "run": "2026-11-07-2040-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2119021369413226496/vid/avc1/1280x1080/z1kmd2_6vKQFq4jd.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 59,
+      "multiplier": 1.25,
+      "score": 59.0,
+      "reason": "本轮达待定区间（单维度乘数保护生效）",
+      "run": "2026-11-07-2040-shanghai",
+      "record": {
+        "title": "走进一幅 400 年前的明代山水长卷会看到什么？@myannli 在天津博物馆拍下《玉阳洞天图》卷，用 Opus 5.5 + Three.js 把它改造成可漫游的 3D 世界",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/myannli/status/2118988913394229423",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261107d-scroll.jpg",
+        "previewType": "image",
+        "description": "作者 @myannli 原帖（2026-11-07 08:48 UTC，附 1 张图 + 122 秒视频）：在天津博物馆拍摄明代山水长卷《玉阳洞天》（帖内写作「玉阳洞天卷」），再用 Claude Opus 5.5 + Three.js 把卷轴重新想象成可交互探索的 3D 世界，「从古卷到可漫游空间」。本轮截帧核验（60 秒处）：米黄绢本色调的天空下，青绿色高耸山峰、松树林与一座小屋，前景散落蓝色石块，右上角有界面按钮——非头像。对你：①大陆观众天然有感的「把国画变成 3D」；②可讲「散点透视 vs 焦点透视」：长卷没有单一视点，搬进 3D 相机后必须重新取舍；③但作品偏风格化再创作，没有讲清从原画到 3D 的对应方法。",
+        "tool": "Claude Opus 5.5 + Three.js（作者自述）；原画为作者在天津博物馆自拍",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "未公开源码/提示词/在线地址（帖内链接为视频本身）；原画照片为作者自拍，馆藏图像再利用授权未说明；X 媒体仅外链引用。",
+        "attribution": "@myannli（cookyecat）· Yuyang Dongtian scroll in 3D",
+        "sourceAuthor": "myannli",
+        "tags": [
+          "Three.js",
+          "国画",
+          "中国风土",
+          "3D交互",
+          "代码出片"
+        ],
+        "publishedAt": "2026-11-07T08:48:20.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-11-07T12:49:18.000Z",
+        "updatedAt": "2026-11-07T12:49:18.000Z",
+        "verification": {
+          "checked_at": "2026-11-07T12:49:18.000Z",
+          "visually_checked": true,
+          "preview_check": "封面本轮下载并目视核验为作品真实画面（视频截帧/官方展示图/官网界面图），非头像。",
+          "video_check": "未完整播放视频/未运行代码。"
+        },
+        "curation": {
+          "baseScore": 59,
+          "baseBreakdown": {
+            "实体": 12,
+            "科普": 11,
+            "溯源": 13,
+            "复现": 6,
+            "风格": 8,
+            "新颖": 9
+          },
+          "multiplier": 1.25,
+          "finalScore": 59.0,
+          "threshold": 65,
+          "run": "2026-11-07-2040-shanghai",
+          "multiplierGuard": "基础分<60且仅单一维度乘数>1，按规则不让乘数抬过阈值（按基础分判定）"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2118987703400398848/vid/avc1/1920x816/QOXAkHOsGqNuWiD3.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 59,
       "multiplier": 1.1979,
       "score": 70.7,
@@ -6309,6 +6436,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-07T08:47:59.000Z",
+  "updatedAt": "2026-11-07T12:49:18.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
