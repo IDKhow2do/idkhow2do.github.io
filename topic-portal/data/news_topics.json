@@ -1,7 +1,45 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-07T00:51:55.000Z",
+  "updatedAt": "2026-11-07T04:46:19.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2611.08399",
+      "title": "CIM 芯片叠成 chiplet 明明容量更大，为什么「随便摆」会把通信吃成瓶颈？Isobar：拓扑感知映射让 Gemma-7B prefill 通信降 23%、端到端延迟降 19%",
+      "category": "半导体",
+      "source": "arXiv",
+      "publishedAt": "2026-11-07T05:00:00.000Z",
+      "eventAt": "2026-11-07T05:00:00.000Z",
+      "collectedAt": "2026-11-07T04:46:19.000Z",
+      "updatedAt": "2026-11-07T04:46:19.000Z",
+      "description": "一手来源：arXiv 2611.08399（2026-11-07 day-new，cs.AR）Scaling Up Analog CIM: A Simulation Framework for Topology-Aware Mapping。发生了什么：模拟存内计算（CIM）把矩阵乘留在存储阵列里做，省掉搬权重；模型变大后业界用 chiplet 拼容量，但仿真若只看「算子本地代价 + 通信总量」，会掩盖「权重映射拓扑」——同一组字跳数，链路负载可以差一截。机制：作者提出 Isobar 平台：把部署写成映射三元组（层分组/宏划分 γ、die 槽位 α、宏槽位 β），显式建模共享链路争用与异构 hand-off；再用相位分析标出「通信被掩盖 / 映射决定谁暴露 / 通信主导」的区界，并做可增量评估的映射搜索。论文报告：对 Gemma-7B prefill，相对最强基线，Isobar 引导映射把通信时间降约 23.3%、端到端延迟降约 18.6%；图上默认 packed fill 到 isobar search 整模型延迟约 12.00 s→2.68 s（−77.7%）。对你：①0 秒上 Fig.2 平台/链路负载图（本轮封面取自 arXiv HTML fig2_platform.png，非 logo）；②钩子——「容量上来 ≠ 更快」，瓶颈在拓扑争用；③对照库内 CAMP（3D-IMC 冲突矩阵）：那边是层内权重并发墙，这边是 chiplet 间通信拓扑墙；④两分钟可拍：画映射三元组→改 die 放置→链路热力图变冷。局限：仿真框架与建模结果，非量产 CIM 芯片实测；数字依赖设定的 mesh/带宽与模型切分。",
+      "caveat": "Isobar 为仿真/建模评估，非量产 CIM chiplet 实测；23.3%/18.6% 等数字相对论文选定基线与 Gemma-7B prefill 设定，换拓扑或模型会变。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261107b-isobar.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261107b-isobar.jpg",
+      "imageAlt": "Isobar 论文 Fig.2：CIM chiplet 平台评估流、共享链路负载热力与异构 hand-off 示意",
+      "tags": [
+        "芯片制造",
+        "存内计算",
+        "AI推理",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 89,
+        "baseBreakdown": {
+          "主线": 24,
+          "钩子": 17,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 4
+        },
+        "multiplier": 1.0743,
+        "finalScore": 95.6,
+        "threshold": 65,
+        "run": "2026-11-07-1240-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2611.07707",
       "title": "三维堆叠的存内计算明明容量更大，为什么权重随便一放，吞吐反而卡在四成？CAMP：用冲突矩阵把 LLM 权重塞进 3D-IMC，利用率 42%→60%，吞吐最高翻倍",
