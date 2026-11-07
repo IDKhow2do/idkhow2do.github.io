@@ -1,7 +1,46 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-07T08:47:59.000Z",
+  "updatedAt": "2026-11-07T12:49:18.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2611.06908",
+      "title": "一台宇树 G1 从没进过真实的家，为什么能自己钻桌底、侧身过门、坐沙发？苹果 HALO：用 1000 套程序化生成的虚拟房子合成训练数据，背一台 Mac mini 机上推理，6 个未建图真实环境 360 次单项任务成功率 91%",
+      "category": "AI",
+      "source": "Apple（arXiv 2611.06908 / 项目页 / GitHub ml-halo）",
+      "publishedAt": "2026-11-04T00:00:00.000Z",
+      "eventAt": "2026-11-04T00:00:00.000Z",
+      "collectedAt": "2026-11-07T12:49:18.000Z",
+      "updatedAt": "2026-11-07T12:49:18.000Z",
+      "description": "一手来源：苹果研究团队论文《Perceptive Humanoid Motion from Simulation》（arXiv 2611.06908，Vladlen Koltun 等，11-04 提交），项目页 apple-aiml-research.github.io/ml-halo 与 GitHub apple-aiml-research/ml-halo 公开数据生成、训练与部署代码；IT之家 11-07 跟进报道。痛点：人形机器人要把「像素 + 一句话」映射成关节指令，需要成对的视觉-语言-动作数据，遥操作/动捕至少 1 小时人力换 1 小时数据。HALO 的做法：用 Kimodo 按文字分段生成动作（「坐扶手椅」= 前走→转身→坐下，33 项几何检查挑最好的候选），用 Infinigen 程序化生成 1000 套房子，把动作放进无碰撞位置，再用与实机一致的鱼眼相机渲染第一视角并加 8 种画面扰动；数据在 250 块 H100 上生成，动作生成器在 64 块 B200 上模仿学习，跟踪器在 4 块 H100 上强化学习——语料随算力增长而不是随人力增长。实机三层：背包里的 Mac mini M4 Pro（64GB）约每 2 秒跑一次 VLM 编排（默认千问 Qwen3.6-35B-A3B，可选云端），约 3Hz 跑动作生成器（冻结的 Qwen3.5-2B 编码器 + DiT 解码器，一次规划 5 秒全身动作、只提交前 0.5 秒）；G1 自带 Jetson Orin NX 以 50Hz 跟踪、输出 29 个关节目标。结果：从没见过真实家庭，零样本迁移到 6 个未扫描未建图的真实环境，6 类单任务共 360 次平均成功 91%（蹲行 100%、爬行 90%、推箱 88%、坐下 85%）。对你：①0 秒画面：官方四宫格——多台 G1 在客厅钻桌底、坐沙发、推纸箱；②钩子：「机器人的童年在 1000 套假房子里度过」；③可做 Three.js 小动画：编排 2 秒/生成 0.33 秒/跟踪 0.02 秒三种节拍的时间轴；④大陆角度：硬件是宇树 G1，两层模型都是千问。",
+      "caveat": "91% 是 6 类单项任务在特定测试集合上的成绩；长序列复合任务平均约 70%，最复杂的「俯身过障碍—走向目标—推箱子」10 次成功 5 次。新增任务仍需人工写提示词、设计关键帧，部分动作用到人类视频/动捕；机器人主要靠视觉，难感知接触，物体被遮挡或出画后接触类任务会变差（论文自述）。代码仓库许可为苹果自定义许可（GitHub 标为 Other），非 MIT。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261107d-halo.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261107d-halo.jpg",
+      "imageAlt": "HALO 项目页官方 teaser：四宫格实拍，多台宇树 G1 人形机器人在户外露台钻桌底、在客厅坐沙发、推纸箱、从桌下爬过",
+      "tags": [
+        "智能体",
+        "AI训练",
+        "人形机器人",
+        "端侧AI",
+        "仿真数据"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 91,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 15,
+          "来源": 15,
+          "时效": 9,
+          "大陆": 9,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 96.1,
+        "threshold": 65,
+        "run": "2026-11-07-2040-shanghai"
+      }
+    },
     {
       "url": "https://www.df.com/insights/d200mm-single-crystal-diamond",
       "title": "钻石是最会导热的材料，为什么到今天才轮到它给 AI 芯片散热？Diamond Foundry 长出首块 200 毫米（8 英寸）单晶金刚石——卡了 25 年的不是性能，是尺寸",
