@@ -1,8 +1,177 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 592,
+  "exportedCount": 595,
   "items": [
+    {
+      "title": "电线杆贴地的影子为什么是尖的，杆顶投下来的却是糊的？vidar 用同一张阴影贴图左右对比：左边每个像素只问一次「在不在影里」，所有边缘一样硬；右边用 PCSS——先找出是谁挡住了光、挡住得有多远，再决定这块影子该糊多少",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "source": "https://x.com/vidar_0208/status/2119218573910368289",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261108a-pcss.jpg",
+      "previewType": "image",
+      "description": "作者 @vidar_0208（库内已收其水珠、主动布娃娃、海浪 FFT 等多条机理演示）原帖（2026-11-08 00:00 UTC，24 秒视频）：真实影子在物体贴地处是尖的，离得越远越软；一次阴影贴图比较做不到这一点，PCSS（Percentage-Closer Soft Shadows，百分比靠近软阴影）可以，而且还是用同一张阴影贴图。长文把问题、做法、踩坑和取舍写得很清楚。普通阴影贴图每个像素只得到一个是/否，所以所有边缘一样硬；固定半径的 PCF 则把每条边模糊同样多，杆脚这种接触点也会被糊掉。作者移植的源头是一份 Unity 屏幕空间阴影着色器，每个像素三步：①遮挡搜索——在像素周围用泊松盘偏移去读阴影贴图，把所有比接收面更靠近光源的深度取平均；②半影估计——接收面深度减去平均遮挡深度，挡得远半影就宽，贴着几乎为零，再用一条衰减曲线整形；③PCSS 的 PCF——还是同一个泊松盘，但半径按刚才估出的半影来缩放。盘会按每像素噪声旋转，采样不够时表现为颗粒而不是条带；深度偏移跟着接收面斜率走，斜率来自阴影坐标的屏幕空间导数。他踩过的坑：第一张热图上整片地面都亮成「处在半影里」，因为宽半径的遮挡搜索把倾斜的地面自己当成了遮挡物——源着色器里有一项默认关闭的基于斜率的遮挡搜索偏移，打开后就好了。源实现用硬件阴影比较，他改成在着色器里逐次比较，每次只得到进/出。自己的搭建：three.js r187、WebGL2，一张 2048×2048 深度图，正交光源覆盖 60 米见方；遮挡和 PCF 各 16 个采样（源的默认值），特写对比用 32+32；32 点泊松表从源复制。场景里有五根 9 米杆、两盏路灯、16 柱栅栏、四块离地 0.05 到 3.2 米的方块，以及一个球和一个扭结。画面左半是同一张图上每次只做一次深度比较。取舍：接触变硬不需要额外渲染趟，光源大小是一个数字、半影跟着它走；代价是他这版每个像素最多 32+32 次读阴影贴图，半影只是估计（不同深度的重叠遮挡会被平均），采样少了会在条带和颗粒之间权衡；他在软件 GPU 上渲染，没有给出耗时。适用：太阳光和面光源下物体贴地的影子（杆、栅栏、角色、道具）；很小的灯或很远的影子，普通 PCF 更便宜，看起来也差不多。本轮截帧核验（第 8 秒）：左右分屏，左标 HARD SHADOW / 1 depth compare per pixel，右标 PCSS / 16 blocker + 16 PCF samples，棕色栅栏、橙色球、悬浮方块和蓝色扭结投在白地上，接触处右半更利落、远处更软，底部字幕写「Same shadow map. PCSS stays sharp where things touch and softens with distance」——非头像。对你：①「为什么脚边的影子是尖的」是 3 分钟能讲完的日常光学科普；②第 16 秒还有一张半影宽度热图（接收深度减平均遮挡深度），可直接当原理解说镜头；③和库内已有的「室内映射」不是同一题，这是接触变硬。",
+      "tool": "three.js r187 + WebGL2（一张 2048×2048 正交光源深度图，泊松盘遮挡搜索 + 半影估计 + 按半影缩放的 PCF；32 点泊松表复制自源着色器）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者长文写明移植自一份 Unity 屏幕空间阴影着色器（未给出原作者/仓库名），并列出自己的参数、场景与默认关闭的斜率偏移坑；作者自己的场景代码未公开，也无在线 demo；X 媒体仅外链引用。库内已有多条 vidar 机理演示，本条是新的 PCSS 专题。",
+      "attribution": "@vidar_0208 · Percentage-Closer Soft Shadows in three.js（源：一份 Unity 屏幕空间阴影着色器）",
+      "sourceAuthor": "vidar_0208",
+      "tags": [
+        "Three.js",
+        "软阴影",
+        "光照",
+        "对比演示",
+        "物理动效",
+        "着色器"
+      ],
+      "publishedAt": "2026-11-08T00:00:55.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-08T00:59:02.000Z",
+      "updatedAt": "2026-11-08T00:59:02.000Z",
+      "verification": {
+        "checked_at": "2026-11-08T00:59:02.000Z",
+        "visually_checked": true,
+        "preview_check": "封面取自 24 秒演示第 8 秒：左右分屏对比 HARD SHADOW 与 PCSS，栅栏、球体和悬浮方块的接触阴影右半更利落、远处更软，底部有机制字幕，非头像。",
+        "video_check": "下载了 24 秒视频并抽取 1/8/16 秒帧；第 16 秒为半影宽度热图。未运行作者代码。"
+      },
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "实体": 19,
+          "科普": 20,
+          "溯源": 14,
+          "复现": 12,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.25,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-11-08-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/ext_tw_video/2119218556944474112/pu/vid/avc1/1280x720/nahBfilim1MbXAxO.mp4?tag=12",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "手指点一下就发光，画一道墙光就会拐弯——为什么墙上的影子不是死黑一块，旁边还会渗出别的颜色？@tsumiki_room 做了能在手机浏览器里玩的 2D 实时全局光照画板：颜料先变成种子，再用跳跃泛洪和 Radiance Cascades 算光怎么在画面里弹",
+      "category": "frontend",
+      "styleFamily": "code",
+      "source": "https://x.com/tsumiki_room/status/2119084723276578827",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261108a-gipaint.jpg",
+      "previewType": "image",
+      "description": "作者 @tsumiki_room 原帖（2026-11-07 15:09 UTC，44 秒竖屏视频，23 赞）：「光で描くおえかき / Drawing with light. Light appears wherever you touch, and walls you draw cast shadows. Real-time 2D global illumination (GI).」标签包括 #RadianceCascades #WebGL2 #GLSL。在线地址 tsumikiroom.github.io/2d-gi-paint，源码即 GitHub 仓库 tsumikiroom/2d-gi-paint 里的单文件 index.html（仓库创建于 2026-11-03，本轮页面可打开）。源码开头注释写明这是 TouchDesigner 版（../td/glsl）的最小移植，流水线是：ペイント → seed → JFA → Radiance Cascades → 時間平均 → 表示；其中 Radiance Cascades 一段移植自 TD 的 rc.glsl，并去掉了媒质和表里平衡。JFA（跳跃泛洪）的坐标放进 half float，模拟分辨率长边上限写到 2048。界面从视频里能读到的按钮有 Light / Wall / Erase / Fog / Undo，以及 Clear / Save / Hide。本轮截帧核验（第 22 秒）：一双手握着手机，浏览器地址栏可见 tsumikiroom.github.io/2d-g，屏幕上黑色笔触隔开粉紫和青绿的光，光会绕过墙体并在缝隙里渗色，不是死黑剪影——非头像。对你：①「为什么影子旁边会有别的颜色」就是间接光照，3 分钟能讲完；②可直接用手机打开演示：点 Light 放光源、用 Wall 挡光，比口头解释「光会弹」更直观；③源码把绘制、种子、JFA、Radiance Cascades 和时域平均串成一条可讲的流水线，适合对着注释讲「实时 GI 在浏览器里怎么算得动」。",
+      "tool": "WebGL2 + GLSL（源码自述：绘制 → seed → JFA → Radiance Cascades → 时间平均 → 显示；Radiance Cascades 一段移植自 TouchDesigner 的 rc.glsl）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "源码与在线 demo 公开（github.com/tsumikiroom/2d-gi-paint，GitHub Pages 演示）；仓库未声明 SPDX/LICENSE（GitHub API license 为 null），默认版权仍归作者；注释写明移植自作者自己的 TouchDesigner glsl（../td/glsl），并去掉媒质与表里平衡；X 媒体仅外链引用。本轮服务器打开了演示页 HTML，未在本机跑 WebGL。",
+      "attribution": "@tsumiki_room · 2D GI Paint（Radiance Cascades）",
+      "sourceAuthor": "tsumiki_room",
+      "tags": [
+        "WebGL",
+        "着色器",
+        "全局光照",
+        "交互揭示",
+        "科普"
+      ],
+      "publishedAt": "2026-11-07T15:09:03.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-08T00:59:02.000Z",
+      "updatedAt": "2026-11-08T00:59:02.000Z",
+      "verification": {
+        "checked_at": "2026-11-08T00:59:02.000Z",
+        "visually_checked": true,
+        "preview_check": "封面取自 44 秒手机实拍第 22 秒：浏览器打开 tsumikiroom.github.io/2d-gi-paint，黑墙隔开粉紫与青绿的实时散射光，底部可见 Light/Wall/Erase/Fog/Undo，非头像。",
+        "video_check": "下载了 44 秒视频并抽取多帧；演示页 HTML 已取到。未在本机运行 WebGL。"
+      },
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 19,
+          "溯源": 16,
+          "复现": 15,
+          "风格": 9,
+          "新颖": 9
+        },
+        "multiplier": 1.1958,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-11-08-0840-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://video.twimg.com/amplify_video/2119084330350002176/vid/avc1/1080x1920/Tstn0w1lKv1e2alJ.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/tsumikiroom/2d-gi-paint",
+      "demoUrl": "https://tsumikiroom.github.io/2d-gi-paint/"
+    },
+    {
+      "title": "一张纸对折再拉开，为什么最后长出的是船头和船舱，而不是一堆皱痕？Mathieu Boulianne 的 Codevember「Fold」用 three.js 逐步演示折纸：初级纸飞机、中级小船（16 步）、高级鹤，每一步都写明这条折痕在干什么",
+      "category": "3d",
+      "styleFamily": "code",
+      "source": "https://x.com/ramen_western/status/2119165670730449349",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261108a-fold.jpg",
+      "previewType": "image",
+      "description": "作者 @ramen_western（站点署名 Mathieu Boulianne）原帖（2026-11-07 20:30 UTC，约 38 秒视频）：「My (late) first contribution: learn to fold an origami boat. Codevember | Day 01 | Fold」，并带 #codevember #threejs。在线地址 codevember.mathieuboulianne.dev/experiences/fold。站点首页把 2026 年 30 个主题列成一张表，目前只有 Fold 可打开，简介是「Step-by-step origami: a paper airplane, boat, and crane。」页面提供三个难度：Beginner — Airplane、Intermediate — Boat、Advanced — Crane；可播放、暂停、按时间轴拖动、0.5×/1×/1.5× 变速，并提示 Drag to rotate、Scroll to zoom。前端打包里能看到 three.js 的 OrbitControls，以及「compiling paper thickness」「rigid paper packet」这类与纸张厚度、层序有关的检查，说明纸被当成有厚度的层叠来编，而不是一张没有正反面的贴图。小船这一关从源码里的步骤标题数下来是 16 步，与视频界面「10 / 16 — RIGHT CORNER」一致，其中包括「Bring the first corner inward.」「Close the other end.」（把右侧尖角按同样方式折进去，小纸帽的边应对齐）、「Open the pocket and flatten.」「Pull the two ends apart.」「Shape the finished boat.」（继续打开、不要压扁中心尖角，底部摊平、两侧立起、两端分开）。本轮截帧核验（第 18 秒）：米色页面标题 Fold，关卡选 Intermediate — Boat，画面中央是红白两面的折纸，已折成三角形，左侧说明为 10 / 16 RIGHT CORNER「Close the other end.」——非头像。对你：①纸艺本身就是库内被点赞过的方向，这里还有「为什么这些折痕最后变成船」的步骤揭晓；②16 步小船每一步都有短说明，适合对着画面讲山谷线/中线/口袋展开；③同一套交互还能切到纸飞机和鹤，对比「简单的中线对折」和「花瓣折、鸟型基础、反向折」差在哪里。",
+      "tool": "three.js（站点打包引入 OrbitControls；折纸步骤与播放器写在 Fold 体验脚本里）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "在线 demo 可访问（codevember.mathieuboulianne.dev/experiences/fold）；作者署名为 Mathieu Boulianne，X 账号 @ramen_western；未找到对应的公开源码仓库或 SPDX 许可证，X 媒体仅外链引用。本轮取到了站点首页与 Fold 体验脚本，未在浏览器里实际运行 WebGL。",
+      "attribution": "@ramen_western（Mathieu Boulianne）· Codevember 2026 Day 01 Fold",
+      "sourceAuthor": "ramen_western",
+      "tags": [
+        "Three.js",
+        "纸艺",
+        "折纸",
+        "交互教程",
+        "3D交互"
+      ],
+      "publishedAt": "2026-11-07T20:30:42.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-08T00:59:02.000Z",
+      "updatedAt": "2026-11-08T00:59:02.000Z",
+      "verification": {
+        "checked_at": "2026-11-08T00:59:02.000Z",
+        "visually_checked": true,
+        "preview_check": "封面取自约 38 秒演示第 18 秒：Codevember Fold 页面，Intermediate — Boat 第 10/16 步，红白两面的三角形折纸与「Close the other end.」说明，非头像。",
+        "video_check": "下载了视频并抽取 6/18/28 秒帧；站点首页与 Fold 脚本已取到。未在浏览器里运行演示。"
+      },
+      "curation": {
+        "baseScore": 78,
+        "baseBreakdown": {
+          "实体": 23,
+          "科普": 16,
+          "溯源": 13,
+          "复现": 8,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.25,
+        "finalScore": 97.5,
+        "threshold": 65,
+        "run": "2026-11-08-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2119159415286755328/vid/avc1/1416x720/L8MdHeVw6HHVo9hA.mp4?tag=14",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "demoUrl": "https://codevember.mathieuboulianne.dev/experiences/fold"
+    },
     {
       "title": "一道火焰喷向一个看不见的球形护盾，火沿着球面包过去，越往后越慢、越慢越黑，最后变成浓烟——为什么「慢下来的火」会变成烟？@Fastmax_ 用 three.js WebGPU 在浏览器里实时解 3D 气体方程复刻 Niagara 力场特效，MIT 开源可在线玩",
       "category": "3d",
@@ -30402,8 +30571,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条 | 2026-11-01-0840-shanghai 监控轮追加 5 条 | 2026-11-01-1240-shanghai 监控轮追加 6 条 | 2026-11-02-1640-shanghai 监控轮追加 7 条 | 2026-11-02-2040-shanghai 监控轮追加 6 条 | 2026-11-03-0840-shanghai 监控轮追加 6 条 | 2026-11-03-1240-shanghai 监控轮追加 2 条 | 2026-11-03-1640-shanghai 监控轮追加 3 条 | 2026-11-03-2040-shanghai 监控轮追加 5 条 | 2026-11-04-0840-shanghai 监控轮追加 5 条 | 2026-11-04-1240-shanghai 监控轮追加 4 条 | 2026-11-04-1640-shanghai 监控轮追加 2 条 | 2026-11-04-2040-shanghai 监控轮追加 4 条 | 2026-11-05-0840-shanghai 监控轮追加 5 条 | 2026-11-05-1240-shanghai 监控轮追加 4 条 | 2026-11-05-1640-shanghai 监控轮追加 2 条 | 2026-11-05-2040-shanghai 监控轮追加 3 条 | 2026-11-06-0840-shanghai 监控轮追加 4 条 | 2026-11-06-1640-shanghai 监控轮追加 1 条 | 2026-11-06-2040-shanghai 监控轮追加 1 条 | 2026-11-07-0840-shanghai 监控轮追加 1 条 | 2026-11-07-1240-shanghai 监控轮追加 1 条 | 2026-11-07-1640-shanghai 监控轮追加 1 条 | 2026-11-07-2040-shanghai 监控轮追加 3 条",
-  "updatedAt": "2026-11-07T12:49:18.000Z",
-  "totalItems": 592,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条 | 2026-11-01-0840-shanghai 监控轮追加 5 条 | 2026-11-01-1240-shanghai 监控轮追加 6 条 | 2026-11-02-1640-shanghai 监控轮追加 7 条 | 2026-11-02-2040-shanghai 监控轮追加 6 条 | 2026-11-03-0840-shanghai 监控轮追加 6 条 | 2026-11-03-1240-shanghai 监控轮追加 2 条 | 2026-11-03-1640-shanghai 监控轮追加 3 条 | 2026-11-03-2040-shanghai 监控轮追加 5 条 | 2026-11-04-0840-shanghai 监控轮追加 5 条 | 2026-11-04-1240-shanghai 监控轮追加 4 条 | 2026-11-04-1640-shanghai 监控轮追加 2 条 | 2026-11-04-2040-shanghai 监控轮追加 4 条 | 2026-11-05-0840-shanghai 监控轮追加 5 条 | 2026-11-05-1240-shanghai 监控轮追加 4 条 | 2026-11-05-1640-shanghai 监控轮追加 2 条 | 2026-11-05-2040-shanghai 监控轮追加 3 条 | 2026-11-06-0840-shanghai 监控轮追加 4 条 | 2026-11-06-1640-shanghai 监控轮追加 1 条 | 2026-11-06-2040-shanghai 监控轮追加 1 条 | 2026-11-07-0840-shanghai 监控轮追加 1 条 | 2026-11-07-1240-shanghai 监控轮追加 1 条 | 2026-11-07-1640-shanghai 监控轮追加 1 条 | 2026-11-07-2040-shanghai 监控轮追加 3 条 | 2026-11-08-0840-shanghai 监控轮追加 3 条",
+  "updatedAt": "2026-11-08T00:59:02.000Z",
+  "totalItems": 595,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
