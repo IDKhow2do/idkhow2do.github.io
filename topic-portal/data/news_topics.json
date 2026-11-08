@@ -1,7 +1,44 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-07T12:49:18.000Z",
+  "updatedAt": "2026-11-08T00:59:02.000Z",
   "topics": [
+    {
+      "url": "https://www.anthropic.com/research/components-of-agent-memory",
+      "title": "为什么记得越多，智能体反而越不会玩游戏？Anthropic：打宝可梦时 Sonnet 3.7 写下 413 个记忆文件只拿到 1 枚徽章，Fable 5 只留 10 个文件拿到 4 枚。他们把空闲时回看原始会话、纠错并整理记忆的过程叫做 dreaming",
+      "category": "AI",
+      "source": "Anthropic Engineering（The components of agent memory）",
+      "publishedAt": "2026-11-06T21:15:32.000Z",
+      "eventAt": "2026-11-06T21:15:32.000Z",
+      "collectedAt": "2026-11-08T00:59:02.000Z",
+      "updatedAt": "2026-11-08T00:59:02.000Z",
+      "description": "一手来源：Anthropic 工程博客《The components of agent memory》（页面标注 Published Nov 6, 2026；JSON-LD dateModified 2026-11-06T21:15:32.000Z），作者 Lance Martin，官方账号 @AnthropicAI 于 21:16 UTC 发帖。痛点：智能体得「向前过日子」，但记忆只能事后理解——它要在还不知道下一步会发生什么时，先决定此刻什么值得记住。文中借用大脑的分工：海马体当场记下经历，睡眠和安静休息时再回放、蒸馏，融入新皮层。智能体这边，会话日志相当于当场记录；空闲时回看这些日志来纠错、写新笔记、生成新的记忆表征，这个过程常被叫做 dreaming（文中引用 Letta 与 UC Berkeley 提出的 sleep-time compute）。Anthropic 所说的 agent memory，是 Claude 从与用户的互动和被指派的任务里获得、并在会话之间保留、之后可以再读的知识；它不包括改模型权重、单次对话里的上下文学习，以及用摘要替换旧轮次的 compaction。记忆有时是一种预测：写下一条规则，等于预测它以后还会被用到。他们用 Continual Learning Bench（CL-Bench）1.0 的数据库问答来看学习闭环——每道题开新会话，只有一个持久的 memory directory：Claude Sonnet 4.6 只写下一堆未验证的猜测；Opus 4.7 开始合并成一份参考并标注已核实/未确认；Sonnet 5 在评分器确认后标记答案、写错题订正；Opus 5 最先闭环，多数条目带规则、依据和路上发现的陷阱；Opus 5.5 与 Sonnet 5.5 同样闭环，带记忆时分数与 Opus 5 相当。更直观的是打《宝可梦红》：大约 1 万步时，Sonnet 3.7 写下 413 个文件（文中配图标注 977,930 字符，step 9,989）、225 个文件夹，只拿到 1 枚徽章——游戏状态一直在变，旧记录不断过时；大约第 1 万步它开始建第四套「master」记忆，随后 17 步里新建 6 个文件、删掉 9 个，却没有在游戏里做任何动作。Fable 5 只留 10 个文件（配图：43,406 字符）——locations/、gameplay/ 加一份当作仪表盘的 global.md（当前目标、道馆计划、自己定的记忆规则），拿到 4 枚徽章。它记住的是屏幕上看不到的东西：策略、计划、试过的规则（例如连续 7 个精灵球没抓住鲤鱼王之后写下「如果连续 3 个以上没中，就改一下按键节奏」）；金钱和地图位置每回合都能从屏幕读到，存下来反而多余。Opus 5.5 用类似的小文件夹通关了游戏。Dreaming 还可以对照原始记录纠错、把笔记晋升到每次会话预加载的顶层（文中写 Claude Code 的 auto memory 只加载 MEMORY.md 的前 200 行或 25 KB 当索引）、围绕特定目标塑造记忆、补上单次会话留下的缺口。一篇公司文档语料上，同时给搜索工具和 wiki 时，综合分从 54% 随 wiki 增长到 61%（只有搜索是 53%，只有 wiki 是 48%），每题大约少用 2 万 token；并购相关的 24 道题里，wiki 87% 对比只搜索 73%。对你：①0 秒画面：文中配图把两份记忆文件夹画成同样比例的矩形树图——左边 Sonnet 3.7 铺满 413 个文件，右边 Fable 5 只有 locations/、gameplay/ 和 global.md 三小块；②钩子：「记得越多，反而停下来不去玩游戏了」；③可拍当场写笔记 vs 空闲时回看日志的分层；④Claude Code 的 MEMORY.md 只预加载开头，其余靠索引去查——和「把全部记忆塞进上下文」正好相反。",
+      "caveat": "文中多项成绩来自特定基准与少量运行（宝可梦对比写明是 one run each of Sonnet 3.7 和 Fable 5）；wiki 并非总有用——有的法律摘要任务多数评分标准靠单篇文档检索就能满足，wiki 没有明显收益；有一次 wiki 比原始文件还大，几乎没有抽象。另一项合同任务里，多个智能体同时写同一张共享表，57 条关键事实只保住 41 条（72%）；改成每个合同由一个智能体单独成页并原文引用条款后才到 57/57。错误笔记如果被预加载会进入每一次会话；dreaming 本身要消耗算力，作者写到不可能持续核对全部记忆，也没有模型能真正预知未来需要什么。官方帖发布于 2026-11-06T21:16Z，略早于上一轮扫描窗，本轮按库内缺失的一手源补收。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261108a-memory.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261108a-memory.jpg",
+      "imageAlt": "Anthropic 博文配图：同样比例的矩形树图对比两份宝可梦记忆文件夹，左边 Claude Sonnet 3.7 标注 413 files、977,930 characters（step 9,989），右边 Claude Fable 5 只有 locations/、gameplay/ 和 global.md，标注 10 files、43,406 characters",
+      "tags": [
+        "智能体",
+        "AI记忆",
+        "上下文工程"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 90,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 15,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 7,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 95.1,
+        "threshold": 65,
+        "run": "2026-11-08-0840-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2611.06908",
       "title": "一台宇树 G1 从没进过真实的家，为什么能自己钻桌底、侧身过门、坐沙发？苹果 HALO：用 1000 套程序化生成的虚拟房子合成训练数据，背一台 Mac mini 机上推理，6 个未建图真实环境 360 次单项任务成功率 91%",

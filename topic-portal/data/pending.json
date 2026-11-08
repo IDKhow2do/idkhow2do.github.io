@@ -6,6 +6,132 @@
       "baseScore": 61,
       "multiplier": 1.25,
       "score": 76.2,
+      "reason": "分数达上墙线但无源码/提示词，文案把 850x/30x 负重比作回测与实盘仓位，需人工确认后再上墙",
+      "run": "2026-11-08-0840-shanghai",
+      "record": {
+        "title": "吉尼斯说大力士甲虫能扛自己体重的 850 倍，为什么实验室里 100 倍它就几乎走不动？@xinc3s 让 Claude Code 在 three.js 里用 5221 个零件搭出机械大力士甲虫：1760 片翅鞘鳞片加 792 片盾片，每片下面一根销轴；加载到 100 倍腿会发红、壳会抖，降回 30 倍它又能走开",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/xinc3s/status/2119229477532098980",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261108a-beetle.jpg",
+        "previewType": "image",
+        "description": "作者 @xinc3s（上一轮刚以同样形式做过机械穿山甲，进了待定）原帖（2026-11-08 00:44 UTC，约 18 秒视频）：「I BUILT THE “WORLD'S STRONGEST ANIMAL” WITH CLAUDE CODE. ITS FAMOUS NUMBER DIDN'T SURVIVE THE TEST」。长文自述：这是一只大力士甲虫（hercules beetle），5221 个零件全部由代码在 three.js 里摆放；翅鞘 1760 片鳞片、盾片 792 片，每一片下面一根销轴；加载装置压在背上，从 10 倍、30 倍加到 100 倍体量，100 倍时腿变红、整壳发抖，回到 30 倍它又能走开；随后壳裂开、翅膀展开、从树枝上起飞；拆解时每片鳞片弹出，骨架转 360 度再扣回去；连音效也是代码生成并卡在节拍上。作者写道「面板上的数字是真的」：吉尼斯把这类甲虫列为能扛自身体重的 850 倍；一位伯克利生理学家 1996 年把它们放上跑步机，100 倍时几乎不能动，30 倍能走半小时，耗氧大约只有 4 倍。「850x is the backtest. 30x is the live account」——帖子随后把这个对比收成「大多数人按标题数字下注，甲虫按它能扛一整天的那个数字来」的仓位隐喻，并引用 @elvar_official 的一条帖子。本轮截帧核验（第 9 秒）：米色界面标题「Dynastes RX-9 / PROCEDURAL BUILD - FIELD SIMULATION」，一只橙黄渐变的机械甲虫趴在黑色分节杆上，左右是载荷、腿阵列和翅鞘/盾片等面板，零件计数写着 0 / 5,221——非头像。第 14 秒是整壳拆解、鳞片炸开。对你：①「头条数字和能持续承受的数字不是一回事」本身是好钩子，可对照甲虫的 850 倍宣传和 30 倍续航；②整壳拆解接近爆炸图偏好；③但加载数值是作品内的演示设定，文案明确走向投资隐喻，且无源码。",
+        "tool": "Claude Code + three.js（作者自述，零件/动画/音效均由代码生成）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "未公开源码或提示词；作者称面板数字为真，并转述吉尼斯 850 倍与 1996 年伯克利跑步机实验（100 倍几乎不能动、30 倍能走半小时），本轮未独立核验这两处引用；加载装置上的 10x/30x/100x 是作品内演示。帖子引用 @elvar_official；X 媒体仅外链引用。与上一轮待定的机械穿山甲为同一作者、同一套「零件数 + HUD + 投资隐喻」格式，主题换成负重。",
+        "attribution": "@xinc3s · Dynastes RX-9 mechanical hercules beetle",
+        "sourceAuthor": "xinc3s",
+        "tags": [
+          "Three.js",
+          "结构可视化",
+          "爆炸图",
+          "仿生机械",
+          "代码出片"
+        ],
+        "publishedAt": "2026-11-08T00:44:15.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-11-08T00:59:02.000Z",
+        "updatedAt": "2026-11-08T00:59:02.000Z",
+        "verification": {
+          "checked_at": "2026-11-08T00:59:02.000Z",
+          "visually_checked": true,
+          "preview_check": "封面取自约 18 秒视频第 9 秒：米色 HUD「Dynastes RX-9」，橙黄机械甲虫趴在黑色分节杆上，零件计数 0/5,221，非头像。",
+          "video_check": "下载了视频并抽取 4/9/14 秒帧，第 14 秒为鳞片炸开的拆解。未运行作者代码。"
+        },
+        "curation": {
+          "baseScore": 61,
+          "baseBreakdown": {
+            "实体": 18,
+            "科普": 15,
+            "溯源": 9,
+            "复现": 4,
+            "风格": 9,
+            "新颖": 6
+          },
+          "multiplier": 1.25,
+          "finalScore": 76.2,
+          "threshold": 65,
+          "run": "2026-11-08-0840-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2119229392006029312/vid/avc1/1280x1080/ZYu4LItXDZ_qpUPz.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 57,
+      "multiplier": 1.4,
+      "score": 57.0,
+      "reason": "本轮达待定区间（单维度乘数保护生效）",
+      "run": "2026-11-08-0840-shanghai",
+      "record": {
+        "title": "同一条提示词，为什么 6 美分的第一稿是一块方鱼，80 美分的终稿却能载着花园在云上游泳？@vib3coded 公开了完整提示词：一个自包含 HTML + Three.js，大约 1.5 万个体素，锦鲤会游、瀑布会碎成水滴，连音乐也是代码合成的",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/vib3coded/status/2119146343344070827",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261108a-koi.jpg",
+        "previewType": "image",
+        "description": "作者 @vib3coded（库内已收其过山车 Cinderpine Express、针织稻草人 Stitchling）原帖（2026-11-07 19:13 UTC，12 秒视频，44 赞）：「Claude Opus 5.5: first attempt → final result。A tiny Japanese garden on the back of a flying koi. Cherry blossoms, a torii gate, and a pond overflowing into the clouds. The koi actually swims, and the waterfall breaks into droplets。One HTML file, Three.js, ~15,000 voxels. No imported models or textures. Even the music is synthesized in code。First attempt: $0.06 → final attempt: $0.80」。同串回复给出 Claude artifact 地址，以及完整提示词：要求用 Three.js 做一个自包含 HTML，体素风的巨锦鲤（白底红斑、头上红帽、金眼睛）在日落云海上游，背上是日式庭园——茶室、纸灯笼、睡莲和小鱼、拱桥、樱花、石灯笼、竹子、砂石小路和一头的鸟居；池水溢出、沿鱼身流下、从鳍上泻进云里；尾和鳍轻摆，蝴蝶尾漂着，樱花瓣拖在身后，旁边有鹤，镜头缓慢环绕。本轮截帧核验（第 7 秒）：上下分屏，上方白底方块鱼标「1st attempt – 0.06$」，下方日落云海中的锦鲤背上有樱花、建筑、鸟居和泻下的水色瀑布，标「final attempt – 0.80$」——非头像。对你：①左右/上下对比很适合讲「同一条提示词多迭代几次画面差在哪」；②瀑布碎成水滴、鱼真的在游，是现成的短镜头；③但钩子主要是生成成本和完成度，不是一条可讲清的物理或算法机制，demo 也依赖 Claude artifact。",
+        "tool": "Claude Opus 5.5 + Three.js（作者自述：单文件 HTML，约 15,000 个体素，无导入模型或贴图，音乐也由代码合成）",
+        "prompt": "Create a single self-contained HTML file using Three.js that renders an animated voxel-art 3D scene: a giant koi (white with red patches, a red cap on its head, golden eyes) swims through a sunset sky above a sea of clouds, carrying a Japanese garden on its back: a tea house with a curved tiled roof and paper lanterns, a pond with lily pads and tiny fish, a red arched bridge, blossoming cherry trees, a stone lantern, bamboo, a gravel path and a red torii gate near its head. Water overflows the pond, runs down the koi's sides and pours off its fins as waterfalls into the clouds. The tail and fins sway gently, a long flowing butterfly tail ripples, a trail of cherry petals drifts behind it, cranes fly alongside, clouds stream past below and a low sun glows in the distance. Add soft shadows, warm sunset light and a slow cinematic camera orbit. Make it as detailed and polished as possible.",
+        "promptProvenance": "original_public",
+        "provenanceNote": "作者在回复中公开了完整提示词，并给出 Claude artifact（claude.ai/artifact/FbC6mzsSTCvGqaJCFXe53z）；未声明许可证，也无独立的 GitHub 仓库；artifact 链接可能不持久。X 媒体仅外链引用。",
+        "attribution": "@vib3coded · Flying koi garden (Claude Opus 5.5 + Three.js)",
+        "sourceAuthor": "vib3coded",
+        "tags": [
+          "Three.js",
+          "体素",
+          "代码出片"
+        ],
+        "publishedAt": "2026-11-07T19:13:54.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-11-08T00:59:02.000Z",
+        "updatedAt": "2026-11-08T00:59:02.000Z",
+        "verification": {
+          "checked_at": "2026-11-08T00:59:02.000Z",
+          "visually_checked": true,
+          "preview_check": "封面取自 12 秒视频第 7 秒：上下分屏对比 0.06 美元的方块鱼和 0.80 美元的飞天锦鲤庭园，可见樱花、鸟居和泻下的瀑布，非头像。",
+          "video_check": "下载了 12 秒视频并抽取 3/7/10 秒帧。未打开 Claude artifact 运行。"
+        },
+        "curation": {
+          "baseScore": 57,
+          "baseBreakdown": {
+            "实体": 12,
+            "科普": 8,
+            "溯源": 12,
+            "复现": 10,
+            "风格": 10,
+            "新颖": 5
+          },
+          "multiplier": 1.4,
+          "finalScore": 57.0,
+          "threshold": 65,
+          "run": "2026-11-08-0840-shanghai",
+          "multiplierGuard": "基础分<60且仅单一维度乘数>1，按规则不让乘数抬过阈值（按基础分判定）"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2119146257344081920/vid/avc1/1080x1512/kIC9-gr148nqNJVM.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "demoUrl": "https://claude.ai/artifact/FbC6mzsSTCvGqaJCFXe53z"
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 61,
+      "multiplier": 1.25,
+      "score": 76.2,
       "reason": "分数达上墙线但无源码/提示词，HUD 冲击数值为演示设定、文案带投资隐喻，需人工确认后再上墙",
       "run": "2026-11-07-2040-shanghai",
       "record": {
@@ -6436,6 +6562,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-07T12:49:18.000Z",
+  "updatedAt": "2026-11-08T00:59:02.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
