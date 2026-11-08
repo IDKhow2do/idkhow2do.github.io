@@ -3,6 +3,72 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 61,
+      "multiplier": 1.25,
+      "score": 76.2,
+      "reason": "分数达上墙线但与库内 mrdoob 同题 Codevember 04 Tangle（毛线缠成团）角度高度相近，且无源码/许可，先放待定",
+      "run": "2026-11-08-2040-shanghai",
+      "record": {
+        "title": "两团毛线互相一拽就缠死，为什么越扯越乱？@Sirokos 的 Codevember 第 4 天 Tangle：GPU 上的 XPBD 绳子 + 空间哈希做自碰撞（three.js TSL / WebGPU，tone.js 配音）",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/Sirokos/status/2119364048471081191",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261108d-tangle.jpg",
+        "previewType": "image",
+        "description": "作者 @Sirokos（库内已收其 WebGPU 光追弹珠台）原帖（2026-11-08 09:38 UTC，约 47 秒视频）：「Codevember day 4: Tangle — XPBD ropes on the GPU with a spatial hash, #threejs TSL on WebGPU, sound with #tonejs.」附在线页 codevember-2026.felixmartinez.dev/04/。本轮截帧核验（约第 7/16/28/40 秒）：浅灰背景，一黑一白两团粗毛线球紧贴着，松出的线头互相穿插，地面有几根小钉——非头像。机制只有作者一句话：绳子用 XPBD（基于位置的约束求解）在 GPU 上模拟，空间哈希用来快速找到彼此靠近的绳段做碰撞。对你：可讲「为什么绳子/耳机线放兜里会自己打结」，但库里已有 mrdoob 同主题作品。",
+        "tool": "three.js TSL + WebGPU（GPU XPBD 绳子、空间哈希碰撞）；tone.js 音效",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "只有作者一句技术说明和在线 demo（打包后的单个 JS，未见源码仓库或许可证）；作者同日 09:19 UTC 还发过一条相同文案的帖子（2119359145539154372）。",
+        "attribution": "@Sirokos · Codevember 2026 / 04 / Tangle",
+        "sourceAuthor": "Sirokos",
+        "tags": [
+          "Three.js",
+          "TSL",
+          "WebGPU",
+          "绳子",
+          "XPBD",
+          "物理动效",
+          "Codevember"
+        ],
+        "publishedAt": "2026-11-08T09:38:59.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-11-08T13:00:44.000Z",
+        "updatedAt": "2026-11-08T13:00:44.000Z",
+        "verification": {
+          "checked_at": "2026-11-08T13:00:44.000Z",
+          "visually_checked": true,
+          "preview_check": "封面取自约 47 秒视频第 7 秒：黑白两团毛线缠在一起、线头穿插，非头像。",
+          "video_check": "下载了视频并抽取约 7/16/28/40 秒帧；在线页只有打包 JS，未运行。"
+        },
+        "curation": {
+          "baseScore": 61,
+          "baseBreakdown": {
+            "实体": 21,
+            "科普": 13,
+            "溯源": 10,
+            "复现": 5,
+            "风格": 9,
+            "新颖": 3
+          },
+          "multiplier": 1.25,
+          "finalScore": 76.2,
+          "threshold": 65,
+          "run": "2026-11-08-2040-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2119363919445692416/vid/avc1/1920x1080/zkjM7t-Xt0SFtzIf.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "demoUrl": "https://codevember-2026.felixmartinez.dev/04/"
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 67,
       "multiplier": 1.1091,
       "score": 74.3,
@@ -6629,6 +6695,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-08T08:55:32.000Z",
+  "updatedAt": "2026-11-08T13:00:44.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }

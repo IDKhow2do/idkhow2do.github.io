@@ -1,7 +1,46 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-08T08:55:32.000Z",
+  "updatedAt": "2026-11-08T13:00:44.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2611.08483",
+      "title": "几百个 AI 智能体一个字都不「说」，只互相递 KV 缓存，为什么反而比会写长篇思路的同行更快找到好解？SwarmEvolve：单卡 Qwen3 8B，3–8 分钟追平别人 60 分钟的成绩",
+      "category": "AI",
+      "source": "arXiv:2611.08483《SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization》（Qile Jiang、George Em Karniadakis；2026-11-05 提交，HF Daily Papers 11-06 收录）；仓库 github.com/Qile-J/SwarmEvolve（目前只写「code coming soon」）；线索来自 @uk_indiehack_JP 11-08 10:04 UTC 的帖子",
+      "publishedAt": "2026-11-05",
+      "eventAt": "2026-11-05",
+      "collectedAt": "2026-11-08T13:00:44.000Z",
+      "updatedAt": "2026-11-08T13:00:44.000Z",
+      "description": "一手来源：arXiv 预印本（摘要、图 2/图 3、正文结果段和局限性段）。背景：用大模型做「进化式程序搜索」（AlphaEvolve 那一类）时，每一轮都要让模型写一大段文字思路再写代码，而且为了保持多样性要反复生成很多次，所以慢——论文说基线框架每个程序要花 20–35 秒在文字推理上。做法：①每轮放出 10 个「蜂群」，每群 45 个「潜空间智能体」，每群拿到不同的关注点（改进/杂交/探索/从头来，例如「公式」「bug」「物理启发」「查文献」）；②智能体不把想法解码成文字，而是在嵌入空间里递归「想」40 步，这些思考步骤直接存成 KV 缓存；③新颖性过滤器直接比较各智能体隐藏状态向量之间的距离，去掉最相似的 15 个；④剩下智能体的 KV 缓存一起交给同一个模型扮演的「总结者」，由它写出一个新程序——不同想法的「杂交」就在潜空间里完成。结果（作者自报）：21 道数学发现与科学计算题，Qwen3 8B/14B/32B-FP8 各跑 60 分钟、单张 GPU（L40S / RTX PRO 6000 / H100），平均分都最高；每小时评估的程序数是基线的 5–13 倍；追平 OpenEvolve、ShinkaEvolve、CodeEvolve 60 分钟成绩的中位时间：8B 为 4–8 分钟，大模型 3–6 分钟；有 3 道题上用冻结的 Qwen3 8B 改进了 AlphaEvolve 原先用前沿 Gemini 找到的构造。消融：把潜空间推理换回文字推理，即使给更多 token，分数也下降。可拍角度：1）「AI 之间不说话怎么协作」——KV 缓存就是模型读过、想过的东西在显存里的样子，递缓存≈递「脑内草稿」；2）为什么「少说话」更快：时间都花在一个字一个字地生成上；3）新颖性过滤：不用另一个模型当裁判，直接量「想法向量」之间的距离；4）圆形装箱这类能直接画出来的题做演示。开场：0 秒上论文图 2——10 团彩色小点（智能体）各自汇向一个黑点（总结者），空心点是被过滤掉的。",
+      "caveat": "预印本，未经同行评审；全部数字为作者自报，代码仓库目前写着「code coming soon」，暂不能复现。所有智能体和总结者必须是同一个模型（KV 缓存不能跨模型直接读），且只适用标准注意力模型，线性注意力/状态空间模型不行；每轮 KV 缓存显存随智能体数、推理步数和层数线性增长，大模型需要大显存 GPU（均为论文局限性段原话大意）。不是每道题都赢：表 1 里 8B 在「矩形内装圆」上 0.888，低于三个基线。本条发表于 11-05，略早于本轮扫描窗，属按规则允许的一手来源补收。论文许可 CC BY-NC-ND 4.0，封面为论文图 2 原样栅格化、未改动。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261108d-swarmevolve.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261108d-swarmevolve.jpg",
+      "imageAlt": "论文图 2「Latent swarms 10 swarms × 45 latent agents」：左侧 Programs Archive，右侧分 refine（蓝）、fresh（黄）、hybridize（橙）、explore（粉）四类蜂群，每团小点汇向一个黑色 summarizer 再输出新程序；空心点为被新颖性过滤掉的智能体",
+      "tags": [
+        "智能体",
+        "KV缓存",
+        "AI推理",
+        "AI成本",
+        "论文"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 16,
+          "画面": 11,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 86.6,
+        "threshold": 65,
+        "run": "2026-11-08-2040-shanghai"
+      }
+    },
     {
       "url": "https://www.anthropic.com/research/components-of-agent-memory",
       "title": "为什么记得越多，智能体反而越不会玩游戏？Anthropic：打宝可梦时 Sonnet 3.7 写下 413 个记忆文件只拿到 1 枚徽章，Fable 5 只留 10 个文件拿到 4 枚。他们把空闲时回看原始会话、纠错并整理记忆的过程叫做 dreaming",
