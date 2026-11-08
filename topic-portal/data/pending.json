@@ -3,6 +3,73 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 67,
+      "multiplier": 1.1091,
+      "score": 74.3,
+      "reason": "分数达上墙线但与库内 11-02 果冻鲸鲨（XPBD 四面体软体 + 比尔–朗伯折射）同机制的系列续作（Material Studies No. 056），原帖钩子是 Opus 是否被削弱，在线地址为 Claude artifact，需人工确认后再上墙",
+      "run": "2026-11-08-1240-shanghai",
+      "record": {
+        "title": "同一套果冻软体，为什么抹香鲸的方脑袋里还能看见一只发光的鱿鱼，喷水孔一开又喷出一串果冻水珠？@vib3coded 公开 Sperm Whale Jelly（Material Studies No. 056）完整提示词：three.js 里的 XPBD 四面体软体 + 比尔–朗伯折射，作者用来测试「Opus 是不是被削了」，花了 5.03 美元",
+        "category": "video",
+        "styleFamily": "code_video",
+        "source": "https://x.com/vib3coded/status/2119231952045625719",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261108b-whale.jpg",
+        "previewType": "image",
+        "description": "作者 @vib3coded（库内已有 11-02 果冻鲸鲨、11-06 Stitchling 等软体条目；11-07 飞天锦鲤庭园在待定）原帖（2026-11-08 00:54 UTC，18 秒录屏，37 赞）：「People keep saying Opus got nerfed. Meanwhile, it made this for $5.03」——用一只果冻抹香鲸测试 Opus，作者说「when it comes to jelly, this still looks like the same old Opus to me」。紧接着两条回复：完整提示词（00:54:28Z）和在线地址 claude.ai/artifact/XL4ZY9xPLL9ssxbkUhbaXw（页面标题 Sperm Whale Jelly，摘要写 two layers of jelly、boxy clear-blue head、milky jaw with sugar teeth、slanted spout、glowing swallowed squid）。提示词要求做「Sperm Whale Jelly · Material Studies No. 056」，three.js r170 + WebGL2，版式对齐作者更早的「Whale Jelly No. 043」座头鲸：方脑袋来自沿脊柱扫过的超椭圆（幂从 2 升到约 3.4）、偏左前方的喷水孔、肚皮一层乳白色果冻、嘴里两排能透过蓝色果冻看见的糖牙、清澈头部里一只发光的鱿鱼（暖核 + 发光器，光被果冻滤成蓝色）、约 30 个气泡。物理：CPU 上的 XPBD 四面体软体（六面体格子每格 5 个四面体，60 Hz、10 个子步，鳍最硬、透明果冻最软），重心坐标蒙皮，可抓、拖、拧。喷水：72 颗刚体果冻水珠藏在喷水孔里，「Blow a spout」沿喷水孔的实时轴向喷出，头会随呼气下沉，水珠可弹跳、碰撞、捡起来扔。渲染：PCSS-lite 色调果冻阴影、俯视高度图接触 AO、背面深度求厚度，再加折射、比尔–朗伯吸收、散射、菲涅尔和 GGX；配色 Ocean / Slate / Lagoon；L 键关灯后只剩鱿鱼照明。本轮截帧核验：第 1 秒为休息姿势的蓝色抹香鲸，刊头写 Sperm Whale Jelly / MATERIAL STUDIES / NO. 056，顶栏 Claude Opus 5.5 / 5.03$；第 6 秒身体被拉变形；第 12 秒切到 Lagoon 青绿，喷水孔喷出一串果冻珠，左下读数 Drops 56——非头像。对你：机制与库内 11-02 果冻鲸鲨同一套（XPBD + 比尔–朗伯），新增的可讲镜头是「头里那只鱿鱼为什么能把果冻从内部照亮」以及喷出的 72 颗水珠；是否单独成片需人工判断，避免和已上墙鲸鲨重复。",
+        "tool": "Claude Opus 5.5；three.js r170 + WebGL2（提示词：CPU XPBD 四面体软体，自定义 ShaderMaterial：折射 + 比尔–朗伯吸收 + PCSS-lite 阴影）",
+        "prompt": "Build \"Sperm Whale Jelly · Material Studies No. 056\" — a single-page interactive soft-body study in three.js (r170, WebGL2, importmap from jsDelivr), matching the quality, layout and juicy colours of my earlier \"Whale Jelly No. 043\" (humpback).\n\nSubject: a sperm whale cast in two layers of jelly, resting on its belly on a pale studio sweep (#E2DFDA).\n- Shape (signed distance field): a section swept along the spine whose superellipse power rises from 2 (round) behind the head to ~3.4 at it, so the body turns into a great square head with a blunt rounded face. A narrow lower jaw (an elliptical rod of milky jelly) tucked under the head, joined by a crease that reads as the mouth. One blowhole set forward and to the LEFT. A low hump two-thirds back plus a row of knuckles down the tail stock, small paddle flippers, broad triangular flukes with a deep notch. Wrinkled skin behind the head as a normal bump from rest-space coordinates.\n- Inside: a milky layer along the belly with a wavy top line that sinks away under the head; two rows of sugar teeth standing up from the jaw into the clear jelly of the head (visible through the blue); a swallowed squid (mantle, fins, eyes, 8 arms, 2 tentacles) in the clear jelly that glows — warm core, scattered photophore beads, its light filtered blue by the jelly it crosses (lights the jelly, the milk and the table); ~30 trapped bubbles; dark bead eyes.\n- Physics: CPU XPBD tetrahedral soft body (snapped hex lattice, 5 tets per cell, 60 Hz with 10 substeps, per-region compliance: fins firmest, clear jelly softest), barycentric skinning of the render surfaces, grab/drag/twist (wheel or second finger), orbit, zoom.\n- Spout: 72 rigid jelly drops hidden in the blowhole; \"Blow a spout\" fires a bushy column forward-up-left along the blowhole's live axis; the head dips as it exhales; drops bounce, roll, collide with the whale and can be picked up and tossed.\n- Renderer (three.js, custom ShaderMaterials, one THREE.Scene per pass): key-light shadow map with PCSS-lite and tinted jelly shadows, top-down height map for contact AO, scene pass (floor + all inner props, 4x MSAA half-float), back-face depth for thickness, then the jelly front faces with refraction, Beer–Lambert absorption, scattering, back-lit thin fins, Fresnel studio reflections and GGX highlights; Khronos PBR Neutral tone mapping, backdrop inverse-tone-mapped to land exactly on the page colour.\n- Palettes: Ocean (#3f93ea / #1d5fc0), Slate (#8197ab / #3f5468), Lagoon (#2fc2b6 / #0b8282), milky #f3eee4.\n- \"Lights out\" toggle (key L): the room and page fade to near-black, the key light dims, and the glowing squid becomes the only light; poking the jelly near the squid makes it flash.\n- UI (editorial, serif italic masthead, mono readouts): colour swatches, Firmness and Internal damping sliders, Blow a spout, Reset, ¼ speed, Show mesh, Pause, Lights out; live readouts Mass (g), Volume (% of rest), Length (cm), loose Drops; an \"Inside the experiment\" notes panel; status pill \"THREE.JS · LIVE\"; WebGL2 fallback message; stacked layout on phones with no horizontal scroll. English UI, original content only.\n\n（完整提示词见作者 2026-11-08 00:54:28 UTC 回复 https://x.com/vib3coded/status/2119232050808901928）",
+        "promptProvenance": "original_public",
+        "provenanceNote": "作者在回复中公开了完整提示词，并给出 Claude artifact 演示链接；未见独立 GitHub 仓库或 SPDX 许可证，X 媒体仅外链引用。与库内 2026-11-02 果冻鲸鲨（XPBD 四面体软体 + 比尔–朗伯折射，Material Studies 系列）同机制，本条是抹香鲸变体（方头、糖牙、腹中发光鱿鱼、72 颗喷水珠），原帖主钩子是「Opus 有没有被削」而非新的物理/渲染原理。",
+        "attribution": "@vib3coded · Sperm Whale Jelly · Material Studies No. 056",
+        "sourceAuthor": "vib3coded",
+        "tags": [
+          "Three.js",
+          "软体模拟",
+          "XPBD",
+          "果冻",
+          "折射",
+          "物理动效",
+          "3D材质",
+          "Claude Code"
+        ],
+        "publishedAt": "2026-11-08T00:54:05.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-11-08T04:53:51.000Z",
+        "updatedAt": "2026-11-08T04:53:51.000Z",
+        "verification": {
+          "checked_at": "2026-11-08T04:53:51.000Z",
+          "visually_checked": true,
+          "preview_check": "封面取自 18 秒录屏第 12 秒：刊头 Sperm Whale Jelly / No. 056，顶栏 Claude Opus 5.5 / 5.03$，青绿果冻抹香鲸刚喷出一串水珠，左下 Drops 读数为 56，右侧可见 Blow a spout / Lights out，非头像。",
+          "video_check": "下载了 18 秒视频并抽取 1/6/12 秒帧；第 1 秒为蓝色休息姿势，第 6 秒身体被拉变形，第 12 秒喷水。未打开 Claude artifact 完整交互，也未运行提示词。"
+        },
+        "curation": {
+          "baseScore": 67,
+          "baseBreakdown": {
+            "实体": 18,
+            "科普": 12,
+            "溯源": 13,
+            "复现": 11,
+            "风格": 10,
+            "新颖": 3
+          },
+          "multiplier": 1.1091,
+          "finalScore": 74.3,
+          "threshold": 65,
+          "run": "2026-11-08-1240-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2119231781085810688/vid/avc1/1920x1200/XwyDmnm_92kckTDU.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "demoUrl": "https://claude.ai/artifact/XL4ZY9xPLL9ssxbkUhbaXw"
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 61,
       "multiplier": 1.25,
       "score": 76.2,
@@ -6562,6 +6629,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-08T00:59:02.000Z",
+  "updatedAt": "2026-11-08T04:53:51.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
