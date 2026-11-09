@@ -1,7 +1,239 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-09T08:48:44.000Z",
+  "updatedAt": "2026-11-09T12:57:51.000Z",
   "topics": [
+    {
+      "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
+      "title": "大模型里 256 个「专家」每次只用 8 个，删掉一半最没用的总该没事吧——为什么一个个单独打分去删，编程题成绩掉 13%，换成「看谁和谁搭档」再删，成绩几乎不掉？亚马逊的 HOPE 专家剪枝",
+      "category": "AI",
+      "source": "Hugging Face 博客（Amazon 企业文章）《Your Experts Have Partners. There's HOPE for Keeping Them Together》（Alex M Tseng，2026-11-09）；论文《Higher-Order Pruning of Experts in Mixture-of-Experts Language Models》（Alex M. Tseng、Prannay Kaul、Luca Zancato、Wei Xia、Stefano Soatto，arXiv:2609.18916）；代码 github.com/awslabs/HOPE",
+      "publishedAt": "2026-11-09",
+      "eventAt": "2026-11-09",
+      "collectedAt": "2026-11-09T12:57:51.000Z",
+      "updatedAt": "2026-11-09T12:57:51.000Z",
+      "description": "一手来源：Hugging Face 博客全文（作者团队自写）。痛点：混合专家（MoE）模型推理时所有专家都得放在显存里，但每个 token 只用少数几个——博客举例 Qwen3.5-122B 每层 256 个专家、共 48 个 MoE 层，约 250 GB 参数里 95% 是专家，而每个 token 每层只用 8 个。最直接的省法是永久删掉「最没用」的专家，不用训练、还能和量化叠加。问题在于怎么挑：现有方法（REAP 等）给每个专家单独打一个重要性分，删分最低的——作者称为「一阶」方法，默认专家之间互不相干。但实验里专家会成组地一起被激活：删掉 A 看似无害，可如果重要的 B 经常和 A 搭档，删 A 就拆散了一个组。做法：HOPE 把「两两搭档」的贡献也算进来——在校准数据上统计一个 E×E 矩阵 F，对角线是单个专家的重要性（和 REAP 的排名几乎一致，Spearman 0.988），非对角线是两个专家同时被选中时的协作贡献；再解一个二次规划挑出删除集合，每层 1–2 秒。结果（作者自报）：在 Qwen3.5-122B、Qwen3.5-35B、GLM-4.5-Air 三个模型、剪掉 10%–50% 专家的各种条件下，HOPE 平均排名最好；剪 50% 时优势最大。最醒目的一例：Qwen3.5-35B-A3B 剪掉一半专家后，SWE-Bench Pro（智能体自己修真实 GitHub 问题）得分 42.3，与不剪的 41.8 持平，而 REAP 掉到 36.2（相对下降 13%）。可拍角度：1）「队友效应」——单看每个人都可有可无，拆散一组就出事；2）显存账：95% 的参数在「坐冷板凳」；3）为什么编程智能体任务最怕拆组（任务杂、需要多种专家组合）；4）测试用的是国产开源模型 Qwen3.5 和 GLM-4.5-Air，可以直接对照。开场：0 秒上博客题图——一串手拉手的苹果和一把剪刀，剪刀刚剪下其中一只，掉下来的那只皱着脸。",
+      "caveat": "数字均为作者团队自报（博客与预印本），未见独立复现；论文 9 月已挂 arXiv，本次是 11-09 的官方博客与工具发布。剪 10%–20% 时一阶方法有时同样好，作者也承认只考虑了成对关系、每层独立剪。仓库 GitHub 许可显示为 Other（以仓库为准）。封面为博客 og:image 原图，仅作引用说明。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261109d-hope.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261109d-hope.jpg",
+      "imageAlt": "博客题图：树枝上一排手拉手的卡通苹果，右侧一把剪刀刚剪下其中一只，掉落的苹果表情委屈，底部字样 H.O.P.E.",
+      "tags": [
+        "AI成本",
+        "AI推理",
+        "混合专家",
+        "模型压缩",
+        "智能体"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 86,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 11,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 8,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 90.9,
+        "threshold": 65,
+        "run": "2026-11-09-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.08902",
+      "title": "同样的流量，服务器平时扛得住——为什么一阵 60 秒涌进 200 个智能体会话之后，缓存命中率直接掉到 0、排队越积越多，两个小时都回不来？而「限制同时在线的会话数」能把它救回来",
+      "category": "AI",
+      "source": "arXiv:2611.08902《Inside the Trap: A Renewal Law for Prefix-Cache Collapse in LLM Agent Serving》（Akshat Valse、Ali Jannesari；美国爱荷华州立大学计算机系；2026-11-06 提交，66 页）；线索来自 @DPZ 论文播报号 11-09 11:39 UTC 的帖子",
+      "publishedAt": "2026-11-06",
+      "eventAt": "2026-11-06",
+      "collectedAt": "2026-11-09T12:57:51.000Z",
+      "updatedAt": "2026-11-09T12:57:51.000Z",
+      "description": "一手来源：arXiv 预印本摘要、引言与图 1。背景：智能体是多轮对话，每一轮都要把前面的上下文再喂一遍；推理引擎用「前缀缓存」把上一轮算好的 KV 留着，下一轮直接复用。论文给的账：每轮都不命中时，一个会话的预填充工作量约是每轮都命中时的 16 倍。陷阱：这些缓存属于正在调用工具、暂时闲着的会话；新请求进来要显存，就会把它们挤掉。一阵突发流量涌入时，排队变长 → 会话两轮之间隔得更久 → 它的缓存在它回来之前就被挤掉 → 下一轮又不命中、更慢 → 排队更长。图 1：在 SGLang 上，平时从空载开始能稳定扛住的负载，只要在第 1200 秒 60 秒内涌进 200 个会话，命中率就从约 0.95 掉到 0，并在之后约 7500 秒里一直是 0，排队会话数从十几个涨到几百个；不加突发的对照组一直正常。结果（作者自报）：两种推理引擎、两种 GPU、两个模型的预注册配对测试里，突发组 30 次全部卡死到结束；而给同时在线会话数设上限的 30 次都没掉进去；对已经卡死的引擎再加上限，同样负载下 9 次救回 9 次、且不用拒掉会话。作者还用排队论模型解释了卡死后的行为，并对 57 次卡死运行做了回溯比对。可拍角度：1）「堵车」类比——车多到一定程度，路口被占满，谁也走不了，减少进场车辆反而全体更快；2）为什么「服务器以前扛得住」不代表现在扛得住（系统有记忆、会陷进去）；3）智能体越火，这类工程问题越会落到每次调用的钱上。开场：0 秒上图 1——上排绿线一直贴着 1.0，橙线在虚线处一头栽到 0 再也不起来；下排橙线一路往上爬。",
+      "caveat": "预印本，未经同行评审，数据为作者自报；作者明确说没有证明真实引擎一定收敛到其模型。实验配置（引擎、GPU、模型）以论文为准。论文按 arXiv 非独占许可发布，封面为 PDF 第 2 页图 1 原样截图，仅作引用说明。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261109d-prefix-trap.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261109d-prefix-trap.jpg",
+      "imageAlt": "论文图 1：SGLang 上两档负载（1.35×、1.65× 参考速率）的对照。上排为前缀缓存命中率：无突发（蓝）与加会话上限（绿虚线）始终约 0.95，突发组（橙）在第 1200 秒「60 秒涌入 200 会话」后跌到 0 并保持；下排为系统内会话数（对数轴）：突发组从约 10 涨到数百并持续上升，加上限的绿虚线逐渐回落",
+      "tags": [
+        "智能体",
+        "KV缓存",
+        "AI推理",
+        "AI成本",
+        "论文"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 89.8,
+        "threshold": 65,
+        "run": "2026-11-09-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.08693",
+      "title": "在存储器里直接做乘法、省掉搬数据的芯片，把现成的大模型放上去，准确率从 83% 直接掉到 37%——为什么不重新训练，只是把权重「转个方向」重新摆一遍，就能救回到只差 2 个点？",
+      "category": "半导体",
+      "source": "arXiv:2611.08693《Enabling Retraining-Free Accurate Inference in Analog Compute in Memory Accelerators》（George Karfakis、Puneet Gupta；2026-11-05 提交，cs.AR）；线索来自 @WWVY 论文播报号 11-09 09:25 UTC 的帖子",
+      "publishedAt": "2026-11-05",
+      "eventAt": "2026-11-05",
+      "collectedAt": "2026-11-09T12:57:51.000Z",
+      "updatedAt": "2026-11-09T12:57:51.000Z",
+      "description": "一手来源：arXiv 预印本摘要、引言与图 1。背景：模拟存内计算（analog CIM）芯片把权重存成存储单元的电导，输入变成电压加在阵列上，电流在每一列自然相加，矩阵乘法「在存储器里一步完成」，省掉了搬运权重——承诺推理能效提升一个数量级。问题：数模/模数转换器（DAC/ADC）的精度和器件本身的噪声（相变存储 PCM、阻变存储 ReRAM 的电导会漂移、不准）会让预训练模型直接「不能用」；常规补救是针对硬件重新训练，代价很高。关键观察：模拟误差的大小取决于每层权重「怎么摆」在阵列上，而这种摆法可以离线改、不改变计算结果。做法：先把输入中心化，把静态、可预先算好的部分移出模拟通路；再用专为阵列设计的哈达玛旋转（一种等距变换）重新表示权重和输入，让误差分散、不集中在少数列。结果（作者自报）：在 CNN、视觉 Transformer 和最大 14B 参数的大语言模型上，用 PCM 和 ReRAM 器件模型测试，不训练任何权重；ReRAM、6 位 ADC 条件下，ViT-B/16 从 37.4% 恢复到 82.9%，Phi-4 从 27.0% 恢复到 72.2%，都距浮点精度 2.2 个点以内。可拍角度：1）「存内计算」到底省在哪——画一张电导阵列，电流自己加起来；2）为什么器件误差会把模型「搞傻」：误差集中在某几列时最致命；3）「转个方向」的直观类比——把一摞不平均的重量摊开放，秤就不容易爆表；4）对国内存算一体芯片创业公司也是同一类问题。开场：0 秒上图 1——一块方格阵列，左边 DAC 输入、底部 ADC 输出，右边是切成小块的权重矩阵。",
+      "caveat": "预印本，未经同行评审；结果基于 PCM/ReRAM 器件模型仿真（摘要未说明是否上过真实芯片，本轮未核对正文），数字为作者自报。作者单位本轮未核实，未写。论文按 arXiv 非独占许可发布，封面为 PDF 第 2 页图 1 原样截图，仅作引用说明。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261109d-analog-cim.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261109d-analog-cim.jpg",
+      "imageAlt": "论文图 1：左为宽 w、高 h 的模拟存内计算阵列，左侧 DAC 送入输入 x2，底部 ADC 读出各列结果；右为权重矩阵切成小块，各块部分和经数字端相加再加偏置 b1、b2 得到输出 y1、y2，虚线标出模拟/数字分界",
+      "tags": [
+        "存内计算",
+        "芯片误差",
+        "端侧AI",
+        "AI推理",
+        "论文"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 16,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 88.1,
+        "threshold": 65,
+        "run": "2026-11-09-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.08638",
+      "title": "同一段证据，智能体每一步都要重新喂给模型——为什么只是把提示词里几段内容的「先后顺序」换一换，缓存就能多复用一大截，任务完成时间最多快一倍？MORTIS：让编译器帮推理引擎管 KV 缓存",
+      "category": "AI",
+      "source": "arXiv:2611.08638《MORTIS: Compiler-Guided KV-Cache Management for LLM Agent Programs》（Xiaoyu Ma、Jayanaka L. Dantanarayana、Savini Kashmira、Baichuan Li、Lingjia Tang、Jason Mars；2026-11-05 提交，cs.OS）；线索来自 @OSPapers 论文播报号 11-09 09:03 UTC 的帖子",
+      "publishedAt": "2026-11-05",
+      "eventAt": "2026-11-05",
+      "collectedAt": "2026-11-09T12:57:51.000Z",
+      "updatedAt": "2026-11-09T12:57:51.000Z",
+      "description": "一手来源：arXiv 预印本摘要与图 1、图 2。问题：现有智能体推理系统把每个提示词粗暴地分成「可复用前缀」和「不透明的后缀」两段管理缓存。图 1 以事实核查智能体为例：分解声明、搜索证据、评估证据、下结论四步，每步的提示词都是「系统提示 + 本步专用指令 + 声明 + 证据……」——本步专用指令排在共享内容前面，导致后面那段每步都一样的声明和不断累积的证据没法当成前缀复用。观察：提示词里各段内容被哪些调用共享、能复用多久各不相同（作者称「提示词内部异质性」）；在用类型化函数调用生成提示词的框架里，这些段正好对应程序变量，于是可以用编译器分析出它们的共享关系和生命周期。做法：MORTIS 结合编译分析和运行时观测，重排提示词各段以暴露更多前缀复用，并据此决定缓存保留、驱逐和预取。结果（作者自报）：相比 SGLang，任务完成时间最多快 1.99 倍、吞吐最多提高 1.97 倍，几何平均分别 1.45 倍和 1.49 倍。可拍角度：1）「把常用的东西放前面」——和整理书包一个道理；2）为什么推理引擎自己看不出来，而写程序的那一层看得出来；3）与本轮另一篇「前缀缓存卡死」论文对照：一个讲怎么多复用，一个讲复用崩了会怎样。开场：0 秒上图 1——四步流程，每步一条彩色提示词条，绿色是复用上的缓存、红色是白占空间的缓存。",
+      "caveat": "预印本，未经同行评审，10 页短文，数字为作者自报；收益依赖于用类型化函数调用框架写的智能体程序，普通手写提示词不一定适用。作者单位本轮未核实，未写。论文按 arXiv 非独占许可发布，封面为 PDF 第 2 页图 1 原样截图，仅作引用说明。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261109d-mortis.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261109d-mortis.jpg",
+      "imageAlt": "论文图 1：事实核查智能体的原始提示词布局，A 分解声明、B 搜索证据、C 评估证据、D 下结论四步，每步提示词由前缀（系统提示、本步指令）和 prompt（claim、query、search result、evidences）组成；绿色条表示 KV 缓存被复用，红色条表示不可复用、仍占空间的缓存",
+      "tags": [
+        "智能体",
+        "KV缓存",
+        "AI推理",
+        "论文"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 74,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 12,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 3
+        },
+        "multiplier": 1.0566,
+        "finalScore": 78.2,
+        "threshold": 65,
+        "run": "2026-11-09-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://github.com/QwenLM/qwen-code/pull/16716",
+      "title": "同样一段回答，软件显示的生成速度从每秒 513 个 token 变成 94 个——为什么数字掉了八成，反而才是真的？通义 Qwen Code 改了「测速」的分母",
+      "category": "AI",
+      "source": "GitHub QwenLM/qwen-code PR #16716《fix(stats): include time to first token in output speed》（作者 qqqys，2026-11-09 05:42 UTC 提交，09:06 UTC 合并）；线索与封面来自 @QwenAIFans 11-09 09:37 UTC 的帖子",
+      "publishedAt": "2026-11-09",
+      "eventAt": "2026-11-09",
+      "collectedAt": "2026-11-09T12:57:51.000Z",
+      "updatedAt": "2026-11-09T12:57:51.000Z",
+      "description": "一手来源：PR 正文（「这个 PR 做了什么 / 为什么需要 / 前后对比」）。改动：Qwen Code 的 /stats 和网页端 Token 用量里显示的输出速度（TPS），过去的分母从「第一个可见字出来」才开始计时，而分子却包含了模型在此之前生成的所有 token（包括不显示的推理 token）；现在改成「输出 token ÷（首字等待时间 TTFT + 生成时间）」，与 Artificial Analysis 在 11-03 采用的口径一致，工具执行时间仍不算。为什么（PR 原文）：用户拿它的 TPS 和服务端、公开评测比，发现偏高。实测（Model Studio）：deepseek-v4.1-flash 写作文本原显示 143、按请求到最后一个 token 算是 125；工具调用轮次 212 vs 195；qwen3.8-flash 一轮 147 vs 132；提示词越长差距越大。最夸张的是服务商「只计费不显示」推理 token 时：模拟一个先隐藏推理 8 秒、再 2 秒输出答案的服务商，/stats 原来显示 511 tok/s，真实约 100；PR 前后对比表里 Session TPS 从 513.6 变成 94.1。可拍角度：1）「统计口径」题——分子分母不同起点，速度就能虚高 5 倍；2）看不见的推理 token：你付了钱、等了时间，却不在「测速」里；3）教观众自己算：TPS =（输出 token）÷（从按回车到最后一个字的时间）；4）国内用户常用的 DeepSeek、Qwen 实测数字都在 PR 里。开场：0 秒上终端截图——同一个模拟服务商，上半截 Session TPS 437.1，下半截 92.5。",
+      "caveat": "一手来源是开源项目 PR 及其自测数据，不是第三方评测；封面截图来自粉丝号 @QwenAIFans 的帖子，截图标注为 PR 中间提交 651fdec2 的对比（437.1→92.5），与 PR 正文最终对比表（513.6→94.1）数字不同，均为同一模拟服务商场景；本轮未逐个核对该提交。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261109d-qwen-tps.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261109d-qwen-tps.jpg",
+      "imageAlt": "终端截图「PR 16716: real CLI /stats, base vs head at 651fdec2」：同一模拟服务商（8 秒隐藏推理 + 2 秒答案），对照版 base2 显示 Session TPS 437.1 tok/s，PR 版 head2 显示 Session TPS 92.5 tok/s、最新请求 TPS 87.0 tok/s",
+      "tags": [
+        "统计口径",
+        "AI推理",
+        "AI成本",
+        "数字生活",
+        "国产模型"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 81,
+        "baseBreakdown": {
+          "主线": 16,
+          "钩子": 17,
+          "画面": 9,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 9,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 85.6,
+        "threshold": 65,
+        "run": "2026-11-09-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.05791",
+      "title": "果蝇闻气味用的一套「哈希」算法，拿来帮 AI 智能体找记忆，准确度确实比常规方法高——为什么作者自己却说：真用起来，它更大、更慢，大多数时候还不如现在的默认方案？",
+      "category": "AI",
+      "source": "arXiv:2611.05791《FlyHash for LLM Agent Memory: An Empirical Validation and a New Application》（Mohan Bheemadolu、Chrisogonas O. Odhiambo；独立研究者；2026-11-04 提交）；代码与交互演示 github.com/mohanji/flyhash-agent-memory（MIT 许可）；线索与封面来自作者 @mohan_bmdl 11-09 10:00 UTC 的帖子",
+      "publishedAt": "2026-11-04",
+      "eventAt": "2026-11-04",
+      "collectedAt": "2026-11-09T12:57:51.000Z",
+      "updatedAt": "2026-11-09T12:57:51.000Z",
+      "description": "一手来源：arXiv 预印本摘要、作者 X 帖与演示动图、GitHub 仓库信息。背景：智能体要跨对话记住东西，通常把记忆转成稠密向量，再用近似最近邻检索。果蝇嗅觉回路用的是另一套办法：把气味信号随机投射到一个大得多的稀疏空间，再「赢家通吃」只留最活跃的少数神经元——2017 年 Dasgupta 等人证明这种 FlyHash 每比特保留邻近关系比常规随机超平面哈希（SimHash）更好。本文：作者称首次把 FlyHash 用在智能体记忆检索上，并回答实践者关心的三个问题——①在比特数严格对齐的条件下质量优势还在吗？在，10 个随机种子、跨两种模态的四个数据集都稳（并指出、纠正了一个以前没人记录的比较陷阱）；②能换来真实的内存和速度节省吗？不能：同样比特数下 FlyHash 的编码更大、比较更慢，而且在常规规模下，今天默认用的 HNSW 稠密索引两种哈希都打不过；作者引入的稀疏集合比较追回了大部分但不是全部延迟差距；③换成真实的智能体记忆相关性标注，优势还在吗？在。作者特意把「缩小结论」的两个答案也写清楚。可拍角度：1）仿生算法的魅力和局限——「更准」不等于「更好用」；2）赢家通吃：2000 个单元只留 32 个最亮的；3）一篇敢写「我们的方法没那么有用」的论文。开场：0 秒上作者交互演示——左边 FlyHash 稀疏点阵、右边 SimHash 一排 0/1 符号位，下方同一问题的平均精度 0.38 对 0.01。",
+      "caveat": "预印本，未经同行评审，独立研究者作品，数字为作者自报；演示中 0.38 vs 0.01 只是单个示例问题；同一演示页写明 12 个示例问题的平均精度为 0.22 vs 0.11，完整基准（150 题、10 个随机种子、k=32）mAP 为 0.271 vs 0.105，且 k 越大差距越小。封面为作者 X 帖动图第 6 秒截帧（仓库 MIT 许可），仅作引用说明。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261109d-flyhash.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261109d-flyhash.jpg",
+      "imageAlt": "作者交互演示截帧：标签页「2 Keep the top k」，问题「Which language does Cameron prefer to code in?」；左栏 FlyHash 2000 个单元中只亮起少数蓝点，右栏 SimHash 一排橙色 0/1 符号位；下方 Average precision：FlyHash 0.38、SimHash 0.01",
+      "tags": [
+        "智能体",
+        "仿生算法",
+        "向量检索",
+        "论文"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 76,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 16,
+          "画面": 12,
+          "来源": 12,
+          "时效": 10,
+          "大陆": 3,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 80.3,
+        "threshold": 65,
+        "run": "2026-11-09-2040-shanghai"
+      }
+    },
     {
       "url": "https://jg-static.eeo.com.cn/article/info?id=ef92c8cac0eade83749cd0237f3b8b15",
       "title": "一颗芯片要曝光几十层，为什么大部分层根本用不着 EUV？上海微电子把 SSC800（KrF）、SSB800（I-line）两台前道干式光刻机做成透明剖视模型摆进进博会：自称累计支持流片超千万片、有效运行率超 92%",
