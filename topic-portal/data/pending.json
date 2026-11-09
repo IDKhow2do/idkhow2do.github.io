@@ -4,6 +4,258 @@
     {
       "kind": "visual",
       "baseScore": 58,
+      "multiplier": 1.1,
+      "score": 63.8,
+      "reason": "本轮达待定区间",
+      "run": "2026-11-09-1640-shanghai",
+      "record": {
+        "title": "把一颗玻璃球敲碎，为什么每一片都还在折射？Luis Bizarro 的 WebGPU 小品 Shatter：点一下碎一颗「不存在的玻璃」，不用扫地",
+        "category": "motion",
+        "styleFamily": "code_video",
+        "source": "https://x.com/LuisBizarro/status/2119592750668562787",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261109b-shatter.jpg",
+        "previewType": "image",
+        "description": "作者 @LuisBizarro 原帖（2026-11-09 00:47 UTC，20 秒视频）：「Stress relief experiment in WebGPU and WGSL: shatter immaterial glasses, no sweeping up after.」附在线页 shatter.bizar.ro（页面标题「Shatter — Luis Bizarro」，描述「an experiment in WebGPU and WGSL」）。本轮截帧核验（第 8 秒）：暗红背景中一颗透明玻璃球正在裂开，碎片向外飞散、边缘有折射高光——非头像。",
+        "tool": "WebGPU + WGSL",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "只有在线 demo 和一句说明，未见源码或许可证。",
+        "attribution": "Luis Bizarro · Shatter（shatter.bizar.ro）",
+        "sourceAuthor": "LuisBizarro",
+        "tags": [
+          "WebGPU",
+          "WGSL",
+          "玻璃",
+          "破碎",
+          "物理动效"
+        ],
+        "publishedAt": "2026-11-09T00:47:46.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-11-09T08:48:44.000Z",
+        "updatedAt": "2026-11-09T08:48:44.000Z",
+        "verification": {
+          "checked_at": "2026-11-09T08:48:44.000Z",
+          "visually_checked": true,
+          "preview_check": "封面取自 20 秒视频第 8 秒：碎裂中的玻璃球，非头像。",
+          "video_check": "下载了视频并抽第 8 秒帧；在线页未运行。"
+        },
+        "curation": {
+          "baseScore": 58,
+          "baseBreakdown": {
+            "实体": 20,
+            "科普": 10,
+            "溯源": 12,
+            "复现": 5,
+            "风格": 9,
+            "新颖": 2
+          },
+          "multiplier": 1.1,
+          "finalScore": 63.8,
+          "threshold": 65,
+          "run": "2026-11-09-1640-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2119591578582876160/vid/avc1/1920x1080/uEXIEwKz5frJ_QU4.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "demoUrl": "https://shatter.bizar.ro"
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 62,
+      "multiplier": 1.1,
+      "score": 68.2,
+      "reason": "分数达上墙线但同作者昨天的「飛砂」（11-08，已上墙）是同一题材（风沙），角度高度重复",
+      "run": "2026-11-09-1640-shanghai",
+      "record": {
+        "title": "@sib 的 WebGPU 小品「風縷」：风吹过的沙面上一道道波纹",
+        "category": "motion",
+        "styleFamily": "code_video",
+        "source": "https://x.com/sib/status/2119651192561336825",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261109b-fuuru.jpg",
+        "previewType": "image",
+        "description": "作者 @sib 原帖（2026-11-09 04:40 UTC，约 13 秒视频），正文只有「風縷。」和 #WGSL #WebGPU 标签，附在线页 omusuhi.info/180（本轮没抓到页面内容）。本轮截帧核验（第 6 秒）：俯视的细沙表面，一道道明暗相间的风成波纹——非头像。作者没有给机制说明。",
+        "tool": "WebGPU + WGSL",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "只有视频、标签和在线页链接，没有源码、许可证或机制说明。",
+        "attribution": "@sib · 風縷（omusuhi.info/180）",
+        "sourceAuthor": "sib",
+        "tags": [
+          "WebGPU",
+          "WGSL",
+          "风沙",
+          "物理动效"
+        ],
+        "publishedAt": "2026-11-09T04:40:00.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-11-09T08:48:44.000Z",
+        "updatedAt": "2026-11-09T08:48:44.000Z",
+        "verification": {
+          "checked_at": "2026-11-09T08:48:44.000Z",
+          "visually_checked": true,
+          "preview_check": "封面取自 13 秒视频第 6 秒：沙面风成波纹，非头像。",
+          "video_check": "下载了视频并抽第 6 秒帧；在线页未运行。"
+        },
+        "curation": {
+          "baseScore": 62,
+          "baseBreakdown": {
+            "实体": 22,
+            "科普": 13,
+            "溯源": 10,
+            "复现": 6,
+            "风格": 8,
+            "新颖": 3
+          },
+          "multiplier": 1.1,
+          "finalScore": 68.2,
+          "threshold": 65,
+          "run": "2026-11-09-1640-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2119649642174644224/vid/avc1/720x720/GDmoSOU0w7LbDEEr.mp4?tag=14",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "demoUrl": "https://omusuhi.info/180/index.html"
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 52,
+      "multiplier": 1.175,
+      "score": 61.1,
+      "reason": "本轮达待定区间",
+      "run": "2026-11-09-1640-shanghai",
+      "record": {
+        "title": "雨夜・コトリマート：三渲二微缩便利店街角（Three.js 实时渲染）",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/yang_qiong_go/status/2119618704900284886",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261109b-kotori-mart.jpg",
+        "previewType": "image",
+        "description": "作者 @yang_qiong_go 原帖（2026-11-09 02:30 UTC，45 秒视频）：「雨夜・コトリマート — 三渲二微缩街角，Three.js 实时渲染」。本轮截帧核验（第 15 秒）：蓝色雨夜里一座亮灯的小便利店微缩场景，左下有信息面板——非头像。与库内 @beefnoode「雨夜便利店 · 可交互微缩街角」（你点过赞）同题。",
+        "tool": "Three.js（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "只有视频和一句说明，没有在线页、源码或许可证。",
+        "attribution": "@yang_qiong_go · 雨夜・コトリマート",
+        "sourceAuthor": "yang_qiong_go",
+        "tags": [
+          "Three.js",
+          "微缩场景",
+          "日式街角",
+          "雨夜"
+        ],
+        "publishedAt": "2026-11-09T02:30:54.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-11-09T08:48:44.000Z",
+        "updatedAt": "2026-11-09T08:48:44.000Z",
+        "verification": {
+          "checked_at": "2026-11-09T08:48:44.000Z",
+          "visually_checked": true,
+          "preview_check": "封面取自 45 秒视频第 15 秒：雨夜微缩便利店，非头像。",
+          "video_check": "下载了视频并抽第 15 秒帧。"
+        },
+        "curation": {
+          "baseScore": 52,
+          "baseBreakdown": {
+            "实体": 18,
+            "科普": 9,
+            "溯源": 8,
+            "复现": 4,
+            "风格": 9,
+            "新颖": 4
+          },
+          "multiplier": 1.175,
+          "finalScore": 61.1,
+          "threshold": 65,
+          "run": "2026-11-09-1640-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2119618427161911296/vid/avc1/1920x1080/AW4rzss7OKIcE0eF.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 56,
+      "multiplier": 1.4,
+      "score": 56.0,
+      "reason": "本轮达待定区间（单维度乘数保护生效）",
+      "run": "2026-11-09-1640-shanghai",
+      "record": {
+        "title": "沙漏里的金砂不往下掉，反而一粒粒逆流而上堆成塔——@Foxkey_ 的铜版画风互动页《炼金沙漏 · 逆流成塔》，Three.js 纯代码",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/Foxkey_/status/2119702558780637390",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261109c-hourglass.jpg",
+        "previewType": "image",
+        "description": "作者 @Foxkey_（FoxKeyn）原帖（2026-11-09 08:04 UTC，约 45 秒视频）：「沙漏里的沙，本该往下流。但这个反着来——金砂逆流而上，一粒一粒堆成塔……铜版画互动页《炼金沙漏 · 逆流成塔》，Three.js 纯代码制作」。本轮截帧核验：黑底铜版画风界面，金属环架里的玻璃沙漏，中间有擒纵齿轮，金色沙粒从下往上流并在上方堆积成柱，镜头环绕推近——非头像。对你：可作「时间倒流/熵」类话题的开场镜头；粒子沙流本身可讲颗粒流。",
+        "tool": "Three.js（作者自述纯代码）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "只有作者 X 视频与文字；未给在线页、源码或许可证；是否 AI 辅助未说明。X 媒体仅外链引用。",
+        "attribution": "@Foxkey_（FoxKeyn）· 炼金沙漏 · 逆流成塔",
+        "sourceAuthor": "Foxkey_",
+        "tags": [
+          "Three.js",
+          "粒子",
+          "铜版画",
+          "沙漏"
+        ],
+        "publishedAt": "2026-11-09T08:04:06.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-11-09T08:48:44.000Z",
+        "updatedAt": "2026-11-09T08:48:44.000Z",
+        "verification": {
+          "checked_at": "2026-11-09T08:48:44.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为原帖视频第 22 秒截帧：金属环架中的沙漏与上行金砂，非头像。",
+          "video_check": "下载视频抽帧核验。"
+        },
+        "curation": {
+          "baseScore": 56,
+          "baseBreakdown": {
+            "实体": 16,
+            "科普": 9,
+            "溯源": 8,
+            "复现": 5,
+            "风格": 9,
+            "新颖": 9
+          },
+          "multiplier": 1.4,
+          "finalScore": 56.0,
+          "threshold": 65,
+          "run": "2026-11-09-1640-shanghai",
+          "multiplierGuard": "基础分<60且仅单一维度乘数>1，按规则不让乘数抬过阈值（按基础分判定）"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2119702000279732224/vid/avc1/1920x1080/NO9-YM2FDJQ4iuZl.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 58,
       "multiplier": 1.25,
       "score": 58.0,
       "reason": "本轮达待定区间（单维度乘数保护生效）",
@@ -6888,6 +7140,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-09T00:57:21.000Z",
+  "updatedAt": "2026-11-09T08:48:44.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }

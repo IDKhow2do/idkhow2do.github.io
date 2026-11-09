@@ -1,7 +1,198 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-09T00:57:21.000Z",
+  "updatedAt": "2026-11-09T08:48:44.000Z",
   "topics": [
+    {
+      "url": "https://jg-static.eeo.com.cn/article/info?id=ef92c8cac0eade83749cd0237f3b8b15",
+      "title": "一颗芯片要曝光几十层，为什么大部分层根本用不着 EUV？上海微电子把 SSC800（KrF）、SSB800（I-line）两台前道干式光刻机做成透明剖视模型摆进进博会：自称累计支持流片超千万片、有效运行率超 92%",
+      "category": "半导体",
+      "source": "上海证券报（经济观察网转载，2026-11-08）援引上海微电子装备集团（SMEE）介绍；SMEE 官方账号发布的进博会中国馆展台照片（经 IT之家微博 11-08 转发）；维度网 11-09 简讯（展出日期 11-06、制程节点）；第九届进博会 11 月 5–10 日",
+      "publishedAt": "2026-11-08",
+      "eventAt": "2026-11-06",
+      "collectedAt": "2026-11-09T08:48:44.000Z",
+      "updatedAt": "2026-11-09T08:48:44.000Z",
+      "description": "一手说法来自 SMEE 本身（经上海证券报转述）：第九届进博会中国馆展出 SSC800、SSB800 两款前道干式扫描投影光刻机的模型，模型做成透明剖视，能看到整机光路和内部机电系统布局。平台是一套标准化前道干式光刻架构，分别适配 I-line（SSB800）和 KrF（SSC800）两条路线；核心子系统包括高精度投影物镜与照明系统、高速双工件台与掩模台、自动物料传输、对准调平传感。公司给出的数字：关键零部件国产化率超过 90%，已定型并规模化量产；多台设备在国内头部逻辑、存储量产线运行，累计支持流片超过 1000 万片，设备有效运行率超过 92%。维度网简讯补充节点：SSB800 面向 280 nm 及以上（功率器件、模拟芯片、MEMS），SSC800 面向 110 nm 及以上。反直觉点：一颗芯片要经过几十次曝光，只有最关键的少数几层需要浸没式 DUV 或 EUV，注入层、上层金属、钝化、焊盘等大量层次用干式 KrF/I-line 就够、而且更便宜——所以「成熟制程光刻机」其实是产线上的数量主力。可拍角度：1）透明剖视模型 0 秒上画面，顺着光路讲光源→照明→掩模→物镜→晶圆；2）I-line 365 nm、KrF 248 nm、ArF 193 nm、EUV 13.5 nm 四档波长对比，波长和能刻多细的关系；3）「双工件台」为什么能提产能：一台在曝光、另一台同时在对准测量；4）为什么只有关键层要最贵的机器——讲多层曝光的成本分配。",
+      "caveat": "「成像性能与国际同类领先产品相当」「SSC800 跻身第一梯队」「累计流片超千万片」「运行率超 92%」均为企业自述，没有第三方核验；本轮没能打开 SMEE 官网新闻页，原始声明经上海证券报转述。展出的是模型，不是整机；这是成熟制程干式光刻的进展，和浸没式/EUV 不是一个档次，讲的时候别说成「先进制程突破」。各节点数字来自媒体转述，上节目前最好对照 SMEE 产品页。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261109b-smee-litho.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261109b-smee-litho.jpg",
+      "imageAlt": "进博会中国馆 SMEE 展台：透明剖视的光刻机模型，可见内部光路和工件台结构（SMEE 官方账号发布的照片）",
+      "tags": [
+        "芯片制造",
+        "光刻",
+        "国产设备",
+        "成熟制程"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 17,
+          "画面": 12,
+          "来源": 10,
+          "时效": 10,
+          "大陆": 10,
+          "新颖": 4
+        },
+        "multiplier": 1.0743,
+        "finalScore": 94.5,
+        "threshold": 65,
+        "run": "2026-11-09-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base",
+      "title": "43 层注意力里，37 层每 128 个 token 只记一条「笔记」，只有 6 层逐字精读——为什么百度开源的文心 ERNIE 5.5 Flash Base（280B 总参、每 token 只激活 14B）在同尺寸底座里反而大多数榜单领先？",
+      "category": "AI",
+      "source": "Hugging Face 官方模型卡 baidu/ERNIE-5.5-Flash-Base（FP8 / BF16 权重，ModelScope 同步；ERNIE 5.5 Flash Base Model License v1.0）；@Baidu_ERNIE 2026-11-05 14:01 UTC 发布帖；百度技术博客 ernie.baidu.com/release/ernie-5-5-flash-base（本轮打不开）；相关论文 arXiv:2610.17959（VHA）、2610.40577（Multi-Router）、2610.24766（ECHO）；线索来自 @aikangarooking 11-09 X 长文",
+      "publishedAt": "2026-11-05",
+      "eventAt": "2026-11-05",
+      "collectedAt": "2026-11-09T08:48:44.000Z",
+      "updatedAt": "2026-11-09T08:48:44.000Z",
+      "description": "一手来源是官方模型卡。这是预训练结束时的底座（还没做中期和后训练），总参 280B、每 token 激活 14B 的 MoE，用 Muon 优化器从零训练 33.5T token，训练上下文 128K，微调和推理可开到 1M。核心设计（模型卡原文）：①混合注意力：43 层里 37 层是 HCA（Heavily Compressed Attention），每 128 个 token 只缓存一条记录；剩下 6 层（每 7 层一层）是 MLA + DSA 稀疏注意力，保留对全上下文的逐 token 访问。模型卡说在相近 KV 缓存预算下，HCA 配 MLA 比配 CSA 效果更好；DSA 让这几层每个查询的核心注意力开销不再随上下文长度增长。②头维度按层的成本分配：便宜的 HCA 层用 512 维宽头，昂贵的 MLA 层用 256 维窄头。③低秩门控注意力：门控从 query 的低秩隐变量算，门控投影参数减少 75%。④Multi-Router Latent MoE：单个路由器的打分和专家真实有用程度相关性弱，于是用多个独立初始化的 sigmoid 路由器一起选专家，激活专家数和通信量不变；每层 512 个路由专家选 10 个 + 1 个共享专家。⑤ECHO：不另加 MTP 模块，复用主干最后一层预测未来 token，同时充当投机解码的草稿模型。⑥数字从右往左每 3 位一组切词。模型卡评测（统一流水线、同样的 few-shot）：MMLU-Pro 78.4 vs DeepSeek-V4-Flash-Base 69.2、HumanEval+ 82.3 vs 69.5、LongBench-v2 48.7 vs 44.5；但 ChineseSimpleQA（73.0 vs 75.3）、HELMET-Rerank、InfiniteBench 落后。可拍角度：1）「读一千页的书，大部分章节只记大纲，少数几页精读」——KV 缓存为什么是长上下文的显存杀手；2）多个路由器投票选专家：一个裁判容易看走眼；3）从右往左切数字：为什么 1,234,567 这样切更好算；4）底座模型和聊天模型的区别：为什么要发一个「还没教会说话」的版本。",
+      "caveat": "所有分数都是百度自己的统一评测，对手也是底座版本，不代表聊天版体验；模型卡没给推理显存、吞吐或每 token 成本的具体数字，「省显存」只能讲机制，不能报省了多少。许可证是百度自定义的模型许可证，不是 Apache/MIT。技术博客本轮打不开，细节以模型卡为准。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261109b-ernie-flash.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261109b-ernie-flash.jpg",
+      "imageAlt": "ERNIE 5.5 Flash 官方架构图：43 层主干中 HCA 与 MLA+DSA 交替、Multi-Router Latent MoE 和 Latent-Gated Sparse Attention 细节",
+      "tags": [
+        "AI推理",
+        "KV缓存",
+        "AI成本",
+        "开源模型"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 86,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 15,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 10,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 90.9,
+        "threshold": 65,
+        "run": "2026-11-09-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://news.mit.edu/2026/single-ai-model-simulates-many-substances-behavior-1109",
+      "title": "模拟水用一套程序、模拟沙子换一套、模拟蛋白质再换一套——为什么一个「像 ChatGPT 猜下一个词那样猜粒子下一步往哪走」的模型，能把这些全包了，蛋白质还快 100 倍？MIT/UBC 的 WorldParticle",
+      "category": "AI",
+      "source": "MIT News《A single AI model simulates the behavior of many substances, from sliding sand to folding proteins》（2026-11-09）；论文《WorldParticle: Unified World Simulation of Lagrangian Particle Dynamics via Transformer》（Caoliwen Wang、Minghao Guo、Siyuan Chen 等，通讯作者 Minghao Guo、Peter Yichen Chen；UBC、MIT CSAIL、佐治亚理工、Inria、Meta、宾大、犹他大学、UCLA、香港大学；SIGGRAPH Asia 2026，arXiv:2605.15305）；项目页 worldparticle.github.io；代码 github.com/WorldParticle/WorldParticle（MIT 许可）",
+      "publishedAt": "2026-11-09",
+      "eventAt": "2026-11-09",
+      "collectedAt": "2026-11-09T08:48:44.000Z",
+      "updatedAt": "2026-11-09T08:48:44.000Z",
+      "description": "一手来源：MIT 新闻稿全文、项目页、GitHub 仓库。痛点（新闻稿）：今天要模拟一种物理过程，就得挑专门的求解器——水用一套、蛋白质折叠用另一套，每套都围绕各自的方程手写；流体拍打可变形固体这类「两种物理耦合」的问题更麻烦。做法：WorldParticle 把任何材料（沙丘、果冻、水、蛋白质分子）都拆成成千上万到上百万个三维粒子（拉格朗日表示），神经网络输入每个粒子的位置和物理属性，输出下一帧的位置和属性，一步一步往前推；作者原话「和 ChatGPT 架构相似，只是不是一次预测一个词，而是预测这些粒子下一步怎么动」。外力（比如海浪拍上防波堤的冲击）在每步之前先分离出来，预测完再加回去修正，因此能推广到没见过的材料、环境和受力；粒子太多时用合并压缩的办法减负。结果（新闻稿）：演示了 6 类物理现象，包括可变形体、颗粒材料和蛋白质，精度高于数值模拟方法；沙堆坍塌时一些基线方法会让沙粒「悬在半空」，它不会；蛋白质结构随时间变化的模拟比数值模拟器快约 100 倍。作者说目标是「模拟领域的 GPT 时刻」，这只是第一步。可拍角度：1）「下一个词」和「下一帧粒子」——同一个思路换了对象；2）为什么一个模型能同时懂水和沙：它学的是规律，不是背方程；3）沙粒悬空 vs 正常堆成坡——一眼能看出谁错了；4）和库里 three.js 粒子、流体视觉作品对照（可自己用粒子复现一个缩小版）。开场：0 秒上新闻图四宫格——左边渲染好的浪花和沙雕小老虎，右边同一场景的蓝色粒子原形。",
+      "caveat": "「精度高于数值方法」「蛋白质快约 100 倍」为作者在新闻稿中的说法，具体基准与误差以论文为准，本轮没有逐项核对论文表格；模型是学出来的近似，不保证守恒律在所有场景都成立。论文预印本 5 月已上 arXiv，本条的新闻点是 MIT 11-09 发稿与 SIGGRAPH Asia 发表。封面为 MIT News 新闻图（CC BY-NC-ND，需署名「MIT News」/研究团队，只能裁切不能改动），仅外链引用。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261109c-worldparticle.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261109c-worldparticle.jpg",
+      "imageAlt": "MIT News 新闻图四宫格：左上渲染后的浪花冲过小灯塔和石块，右上同一场景的蓝色粒子；左下沙滩上的沙雕小老虎正在坍塌，右下同一形状的蓝色粒子堆",
+      "tags": [
+        "AI科研",
+        "物理模拟",
+        "世界模型",
+        "粒子",
+        "论文"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 15,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 93.0,
+        "threshold": 65,
+        "run": "2026-11-09-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.06500",
+      "title": "智能体每搜一次网，就把一大段搜索结果原文塞进上下文，到第 4 步工具返回已占 96.7%——为什么清华团队干脆不让工具「说人话」，把结果压成几个机器才看得懂的向量，token 省 70%–89%，答得反而更准？",
+      "category": "AI",
+      "source": "arXiv:2611.06500《Tools Need Not Speak in Text: Latent Context Compression for Agents》（Yuetong Liu、Zhehao Zhou、Yitong Zhang、Haorui Chen、Jia Li；清华大学 Tsinghua AI Agent Group；2026-11-04 提交）；代码 github.com/THU-Agent/Coca-cola；线索来自 @omeganyanya 11-09 08:07 UTC 的帖子",
+      "publishedAt": "2026-11-04",
+      "eventAt": "2026-11-04",
+      "collectedAt": "2026-11-09T08:48:44.000Z",
+      "updatedAt": "2026-11-09T08:48:44.000Z",
+      "description": "一手来源：arXiv 预印本摘要、引言与图 1。问题（图 1）：按 ReAct 方式工作的搜索智能体，每调一次工具就把原始返回追加进上下文，到第 4 步工具返回占了全部 token 的 96.7%；而真正决定下一步的往往只是其中一句——例子里问「2016 马拉喀什 ePrix 冠军哪年出生」，长长的比赛详情里只需要「冠军是 Sébastien Buemi」这一条线索。已有做法是删 token 或让另一个模型写摘要，但都还得是一段通顺的文字，压缩率有上限。做法：Coca-Cola（Context Compression via Continuous Latent Tokens）把工具返回压成少量「隐向量 token」，直接塞进智能体的输入嵌入空间；训练目标叫「保动作训练」——要求智能体看完压缩版和看完原文时，下一步动作的分布尽量一致，所以压缩器学会只留「决策要用的信息」。结果（作者自报）：在 4 个问答基准、2 个模型家族的网页搜索智能体上，token 消耗降 70.01%–89.24%，端到端耗时降 24.45%–55.97%，任务表现还持续提升。可拍角度：1）「96.7% 的上下文是噪音」——一张柱状图讲清智能体为什么越跑越贵；2）机器之间为什么非得用人话交流；3）「保动作」：压缩得好不好，不看像不像原文，看会不会改变下一步决定；4）和库里 SIMPLE 定律（每个 token 越往后越贵）连成一期讲智能体成本。开场：0 秒上论文图 1——橙色柱子一步比一步高，右边一大段搜索结果里只有一句被高亮。",
+      "caveat": "预印本，未经同行评审；结果只在网页搜索类问答任务上验证，作者自报。隐向量 token 人看不懂，可解释性和审计会变难，这是这条路线天然的代价（本条推论，论文正文未逐段核对）。论文按 arXiv 非独占许可发布，封面为 PDF 第 2 页图 1 原样截图，仅作引用说明。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261109c-coca-cola.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261109c-coca-cola.jpg",
+      "imageAlt": "论文图 1：左上柱状图——第 1 到第 4 步上下文总长与工具返回长度，第 4 步工具返回占 96.7%；左下单次工具返回长度分布（中位数 1352、p90 1776、p95 1861）；右侧示例：问题「2016 马拉喀什 ePrix 冠军哪年出生」，冗长搜索结果里只有「冠军 Sébastien Buemi」被提取为决策线索，智能体据此发起下一次搜索",
+      "tags": [
+        "智能体",
+        "AI成本",
+        "上下文压缩",
+        "国产科研",
+        "论文"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 9,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 91.9,
+        "threshold": 65,
+        "run": "2026-11-09-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.07372",
+      "title": "让 AI 智能体干活更便宜，大家都在换模型、改框架——为什么伯克利团队只是把它要用的文件和数据「重新收拾一遍」，同一个 Claude 的花费就降了 72.7%，成功率还涨了 14 个点？EnvOpt：优化智能体住的「房间」",
+      "category": "AI",
+      "source": "arXiv:2611.07372《EnvOpt: Automated Optimization for Agent Environments》（Mingxuan Li、Huanzhi Mao、Qiuyang Mang、Hanchen Li、Joseph E. Gonzalez、Alex Dimakis；加州大学伯克利分校、芝加哥大学、Bespoke Labs；2026-11-05 提交）；代码 github.com/itea1001/EnvOpt；线索来自 @omeganyanya 11-09 04:55 UTC 的帖子",
+      "publishedAt": "2026-11-05",
+      "eventAt": "2026-11-05",
+      "collectedAt": "2026-11-09T08:48:44.000Z",
+      "updatedAt": "2026-11-09T08:48:44.000Z",
+      "description": "一手来源：arXiv 预印本摘要、引言与图 1。观点：智能体的花费和成败取决于三样东西——模型参数、外层框架（harness）和它所处的环境；前两样大家都在优化，环境却常被当成不可改的。很多智能体其实长期在同一个「固定环境」里干活，比如公司的 Slack 工作区、一堆文档或工单，作者称为「稳定环境」。同样的信息，放在远程服务器上通过接口查，还是导出成纯文本让智能体用 grep 搜，工作量就差很多。做法：EnvOpt 让一个编程智能体带着预算，用训练任务（不需要标准答案或打分器）反复运行目标智能体，然后改造环境——增加索引、数据库、重组文件、加新的接口——每一步在验证集上看成本和通过率，决定何时停。结果（作者自报）：在 AutomationBench 上，Claude Haiku 4.5 的花费降 72.7%、通过率升 14.34 个百分点；同一个改好的环境直接给 Opus 5 用，花费降 68.1%；叠加在已优化框架 Meta-Harness 上，还能再省 83.4%；图 1 显示一次离线优化约花 150 美元，就让 Claude Opus 4.8 每次查询从 1.73 美元降到 0.39 美元，约 109 次查询回本；5 个基准平均省 48%。可拍角度：1）「换更聪明的员工」还是「把办公室收拾好」；2）为什么同样的信息，换个摆法花费差几倍；3）一次性投入 vs 每次省钱的回本线；4）和库里「智能体越跑越贵」系列（SIMPLE 定律、上下文压缩）连讲。开场：0 秒上图 1 左——灰色虚线（原环境）一路往上翘，蓝线（EnvOpt）贴着地面走，中间标着「省 1196 美元」。",
+      "caveat": "预印本，未经同行评审，数字为作者自报；「稳定环境」前提是环境被很多任务反复使用，一次性任务不划算。模型名称与版本以论文为准。论文按 arXiv 非独占许可发布，封面为 PDF 第 2 页图 1 原样截图，仅作引用说明。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261109c-envopt.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261109c-envopt.jpg",
+      "imageAlt": "论文图 1：左（a）AutomationBench 上 Claude Opus 4.8 的累计花费，原环境每次 1.73 美元的虚线一路上升，EnvOpt 一次性离线优化约 150 美元、之后每次 0.39 美元，约 109 次查询回本，1000 次时省约 1196 美元；右（b）离线环境优化示意，每一步用新训练任务改造环境（加文件、索引、数据库、新接口），在验证集上成本逐步下降",
+      "tags": [
+        "智能体",
+        "AI成本",
+        "论文"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 79,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 16,
+          "画面": 11,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 3
+        },
+        "multiplier": 1.0566,
+        "finalScore": 83.5,
+        "threshold": 65,
+        "run": "2026-11-09-1640-shanghai"
+      }
+    },
     {
       "url": "https://www.nature.com/articles/s41586-026-11228-6",
       "title": "一间分子生物学实验室里，做实验的「人」全是 AI 智能体，人类只负责补试剂——为什么上海交大的 AutoDNA 能自己调度 20 多类仪器、跑上万步，把一段文字写进 DNA 再一字不差读出来？",
