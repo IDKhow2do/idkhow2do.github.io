@@ -1,7 +1,46 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-10T00:47:49.000Z",
+  "updatedAt": "2026-11-10T04:50:07.000Z",
   "topics": [
+    {
+      "url": "https://www.anthropic.com/research/claude-electronics-design",
+      "title": "AI 画电路板，以前总卡在「95% 完成但根本用不了」——为什么这次 Claude 嫌 KiCad 自带布线器太慢，半小时自己写了一个，还算出电路板要倾斜 25 度才装得进外壳，三块板工厂一次做成、电路没改一处？",
+      "category": "AI",
+      "source": "Anthropic 研究博客《Claude can design electronic prototypes from start to finish》（Testing Claude on real-world electronics design，2026-11-09，与 Diode Computers 合作）",
+      "publishedAt": "2026-11-09",
+      "eventAt": "2026-11-09",
+      "collectedAt": "2026-11-10T04:50:07.000Z",
+      "updatedAt": "2026-11-10T04:50:07.000Z",
+      "description": "一手来源：Anthropic 研究博客全文。事实：Anthropic 与做电路板设计制造的 Diode Computers 合作，让 Claude Fable 5.2 从一句话需求开始设计三台设备——USB 免提会议音箱、家用语音助手中枢、手持电子宠物。Claude 自己写规格、画原理图、在 PCB 上摆元件、走铜线、设计 3D 打印外壳、写固件、出物料清单；Diode 按 Claude 的设计文件直接生产，三块板「电路没有任何修改」就能工作，样机用了几周仍正常。机制细节：①先走最关键的线——USB/以太网差分对一对一对走，两根等长等距，还加蛇形「调长线」让信号同时到达；②自我返工：语音中枢的线「乱到看不清」，它自己说「全拔掉重来」，删了重布几十次；音箱板为了让触摸环下方的线都在同一层、不打过孔，主动改了两颗芯片的引脚分配；③嫌 KiCad 自带布线器一次只能拉一根线，半小时写了个网格搜索布线器，每根长线约 1 秒；④外壳：算出电路板必须倾斜约 25 度才能放进外壳，并写进装配说明；25 mm 麦克风孔会在 3.4 kHz 共振（正好在人声频段），于是把外壳改成楔形、孔缩到约 10 mm，共振升到约 8.9 kHz；⑤自己跑可制造性（DFM）检查和备料检查，修掉 6 处过细的阻焊，判断一条两种地之间的连接是故意的、忽略误报。数据：Diode 内部 PCB 布局基准 PCB Gym 上 Fable 5.2 得 69%，Fable 5 为 25%；公开基准 BenchCAD 2.1 为 83.5%，约为 Fable 5.1 的两倍。可拍角度：1）「95% 完成但不能用」——为什么布线是 AI 最难的几何题；2）差分对、蛇形线、过孔是什么，用一块真板讲；3）麦克风孔长度和共振频率的关系（亥姆霍兹/管共振可自制动画）；4）PCB 和芯片封装、版图设计是同一类「摆放 + 连线 + 规则检查」问题，可接你的半导体主线。开场：0 秒上官方照片——木桌上三台 Claude 设计的白/黑色样机并排。",
+      "caveat": "Anthropic 与 Diode 有商业合作（文末脚注自述）；PCB Gym 是 Diode 内部基准、不公开。三台都是样机：未做电气验证、天线调谐、热测试和认证，也不是为量产设计；实物由 Diode 工程师组装测试，Claude 没接测试仪器。Diode 团队在少数节点给了简短提示（如「能不能不装电池」）。OpenAI 也发过类似手持设备设计案例，不是独家能力。封面为博客官方配图，仅作引用说明。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261110b-claude-pcb.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261110b-claude-pcb.jpg",
+      "imageAlt": "Anthropic 博客配图：木桌上并排摆着 Claude 设计的手持电子宠物、黑色语音助手中枢和白色 USB 免提音箱三台样机",
+      "tags": [
+        "智能体",
+        "芯片设计",
+        "PCB",
+        "AI硬件",
+        "可制造性"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 89,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 17,
+          "画面": 15,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 94.0,
+        "threshold": 65,
+        "run": "2026-11-10-1240-shanghai"
+      }
+    },
     {
       "url": "https://www.infineon.com/press-release/2026/infpr202611-028",
       "title": "硅晶圆早就做到 300 毫米了，碳化硅为什么卡在 200 毫米这么多年？英飞凌在奥地利菲拉赫的工厂，用现成的硅产线设备，第一次把 300 毫米碳化硅晶圆做成了能工作的功率器件——一片多出 2.3 倍芯片",
