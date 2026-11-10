@@ -3,6 +3,69 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 65,
+      "multiplier": 1.219,
+      "score": 79.2,
+      "reason": "分数达上墙线但为策展号 @rewind02 转发 Chetan Ankola 作品并自写 8 步流程，本轮未找到原作者原帖核实流程，按二手规则不上墙",
+      "run": "2026-11-10-2040-shanghai",
+      "record": {
+        "title": "海边小码头、一棵樱花树、一盏灯和一条长椅，白天到深夜四档光一键切——为什么流程里要先「锁布局、最后打光」，还要让 AI 读浏览器控制台自己修帧率？",
+        "category": "3d",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/rewind02/status/2120120672890274039",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261110d-petal-quay.jpg",
+        "previewType": "image",
+        "description": "来源：策展号 @rewind02 帖（2026-11-10 11:45 UTC，约 38 秒视频，37 赞），注明开发者为 Chetan Ankola（视频水印 @chetanankola，站点 3ditions.drop3.app，页面标题 Petal Quay）。帖内给出 8 步流程：①先生成一张概念图锁定氛围；②让 Opus 5.5 用 Python 在 Blender 里逐个建道具；③每个道具渲 3 个角度、修好再做下一个；④导出单个 GLB、合并材质、压低面数；⑤让 Opus 写 three.js 场景：加载 GLB、加带阳光闪烁的水面和天空；⑥做白天/黄昏/蓝调/夜晚 4 套光照预设（太阳角度、天空、雾、灯笼亮度联动）；⑦加景深+泛光的「单反」开关；⑧在浏览器打开，让 Opus 读控制台修帧率。本轮下载视频截第 2、6、12、20 秒帧核验：俯视码头石板、樱花树、长椅与波光水面，后段切到夜景灯笼亮起——非头像。对你：Blender 建模 + three.js 出场景的分工示范，适合你学 3D 场景。",
+        "tool": "Claude Opus 5.5 + Blender（Python 建模，GLB 导出）+ Three.js（据 @rewind02 帖文）",
+        "prompt": "load the glb, add a water plane with sun glints and a sky（流程第 5 步中的示例提示）",
+        "promptProvenance": "adapted",
+        "provenanceNote": "二手策展帖：作品属 Chetan Ankola，8 步流程为 @rewind02 撰写，本轮未找到作者原帖核实；无源码与许可证。X 媒体仅外链引用。",
+        "attribution": "作品：Chetan Ankola（@chetanankola）；整理：@rewind02",
+        "sourceAuthor": "chetanankola",
+        "tags": [
+          "Three.js",
+          "Blender",
+          "GLB",
+          "光照预设",
+          "场景搭建"
+        ],
+        "publishedAt": "2026-11-10T11:45:33.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-11-10T12:58:02.000Z",
+        "updatedAt": "2026-11-10T12:58:02.000Z",
+        "verification": {
+          "checked_at": "2026-11-10T12:58:02.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为视频第 2 秒截帧：白天俯视的海边石板码头、樱花树、长椅、灯柱与波光粼粼的水面，右下角有 @chetanankola 水印，非头像。",
+          "video_check": "下载约 38 秒视频截第 2、6、12、20 秒帧核验；未运行网页。"
+        },
+        "curation": {
+          "baseScore": 65,
+          "baseBreakdown": {
+            "实体": 18,
+            "科普": 12,
+            "溯源": 9,
+            "复现": 11,
+            "风格": 9,
+            "新颖": 6
+          },
+          "multiplier": 1.219,
+          "finalScore": 79.2,
+          "threshold": 65,
+          "run": "2026-11-10-2040-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2120120596948226048/vid/avc1/1246x1080/gIT_N2vBOJTVs8gK.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 58,
       "multiplier": 1.1,
       "score": 63.8,
@@ -7140,6 +7203,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-10T08:51:59.000Z",
+  "updatedAt": "2026-11-10T12:58:02.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }

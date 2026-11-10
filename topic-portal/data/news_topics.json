@@ -1,7 +1,125 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-10T08:51:59.000Z",
+  "updatedAt": "2026-11-10T12:58:02.000Z",
   "topics": [
+    {
+      "url": "https://semiengineering.com/shrinking-hybrid-bonding-pitches-push-inspection-limits/",
+      "title": "两片晶圆「脸贴脸」粘在一起之后，中间埋着的空洞要怎么看见？为什么混合键合间距缩到 5 微米以下，一颗 50 纳米的灰尘就能让上层晶圆整片剥开，而超声波能「发现」5 微米的缺陷却量不准它",
+      "category": "半导体",
+      "source": "Semiconductor Engineering《Shrinking Hybrid Bonding Pitches Push Inspection Limits》（Laura Peters，2026-11-10 08:01 UTC）",
+      "publishedAt": "2026-11-10",
+      "eventAt": "2026-11-10",
+      "collectedAt": "2026-11-10T12:58:02.000Z",
+      "updatedAt": "2026-11-10T12:58:02.000Z",
+      "description": "来源：Semiconductor Engineering 制造与测试主编 Laura Peters 的专题稿，引述 Onto Innovation、Nordson、Bruker、Zeiss、Microtronic 等量测厂商工程师（权威行业媒体，非论文）。事实：混合键合用 10 µm 以下的铜垫直接对铜垫，取代 35 µm 的微凸点；量产间距目前 4–9 µm，正往 5 µm 以下走。四步关键工艺：CMP 平坦化 → 等离子体活化介质表面（产生大量 Si-O 悬挂键，再去离子水润湿）→ 精密对准 → 350 °C 退火约 2 小时，让铜膨胀形成 Cu-Cu 和介质-介质永久键合。CMP 后铜垫要比介质凹 2–5 nm，全片误差控制在 2 nm 内；表面粗糙度要 0.5 nm RMS 量级。Onto 称前沿工艺的缺陷尺寸要求低至 50 nm，一颗颗粒就可能让上层晶圆脱层。键合前：暗场/明场光学检测、白光/相移干涉、AFM 量铜凹陷；Bruker 的原子力轮廓仪（AFP）在 33×26 mm 大面积扫描里能找出局部 AFM 判合格但整体形貌超规的区域（文中图 4）。键合后：红外穿硅测对准，3D X 射线/层析（文中引 ICEP-HBS 2026 论文分辨率 150 nm），Bruker XRDI 全片约 20 片/小时；超声显微（AMI）165 MHz 探头分辨率 12 µm——Nordson 原话：5 µm 的缺陷「能发现但量不准」，且只有厚度 ≥0.1 µm 的气隙超声波才过不去。结论：没有任何单一手段同时满足分辨率、灵敏度、全片覆盖和产能。可拍角度：1）你做刻蚀/工艺出身，可以讲「为什么故意让铜凹下去几纳米」之外的下一个问题——粘好以后坏在哪里、怎么看见（库内 10-26 已收铜凹陷角度，这条讲检测）；2）一张「缺陷 → 检测手段」对照表（文中图 1）直接做成镜头；3）光学、红外、X 射线、超声四种「透视眼」各自的盲区。开场：0 秒上 Bruker 三次 CMP 后铜垫 AFM 形貌图（凹陷从深到浅）。",
+      "caveat": "行业媒体专题稿，主要信息来自量测设备厂商人员的表述，带有产品立场；50 nm、2–5 nm、12 µm 等数字均为受访者或文中所述，非独立测量。库内已有混合键合相关条目（10-17 ASML 键合机、10-19 IEEE 200 nm 间距、10-26 铜凹陷），本条角度为检测/失效分析，需避免与 10-26 条重复讲铜凹陷。封面为文中图 3（Bruker AFM，三种 CMP 步骤后的铜垫凹陷）与图 4（Bruker AFP 大面积形貌）原样拼接，仅作引用说明。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261110d-hb-inspection.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261110d-hb-inspection.jpg",
+      "imageAlt": "左：三张 AFM 形貌图与剖面曲线，显示三次不同 CMP 步骤后四个铜垫的凹陷深度依次变浅；右：原子力轮廓仪大面积扫描图，棕黄色条纹阵列中有局部亮暗异常区",
+      "tags": [
+        "芯片制造",
+        "先进封装",
+        "混合键合",
+        "失效分析",
+        "检测量测",
+        "良率"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 16,
+          "画面": 13,
+          "来源": 11,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 3
+        },
+        "multiplier": 1.0743,
+        "finalScore": 90.2,
+        "threshold": 65,
+        "run": "2026-11-10-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "title": "加密协议的安全证明，专家团队以前要做好几年，还只证到「设计图」——为什么 DeepMind 的 AI 智能体 4 周就把 Signal 实际编译出来的代码证完了，人只需复查其中 1%？",
+      "category": "AI",
+      "source": "Google DeepMind 官方博客《Introducing AlphaProof Code: a breakthrough in verifying complex software at depth》（Pushmeet Kohli、Swarat Chaudhuri，2026-11-10 12:00 UTC）",
+      "publishedAt": "2026-11-10",
+      "eventAt": "2026-11-10",
+      "collectedAt": "2026-11-10T12:58:02.000Z",
+      "updatedAt": "2026-11-10T12:58:02.000Z",
+      "description": "一手来源：Google DeepMind 博客。事实：AlphaProof Code 是一个多模型智能体框架，按研究团队分工做「形式化验证」（用数学证明代码满足安全性质）：人类专家和模型一起把 Signal 协议的安全目标写成形式化规格，每一条都由专家审；之后由 Gemini Carbon 驱动的智能体写证明，正文称生成了超过 600 万行 Lean 证明（Lean 会自动逐行检查）；再由智能体自查，标出约 1% 需要人复核的部分。关键区别：以往协议验证大多停在「设计层」，这次证明的是编译后实际运行在设备上的代码满足关键安全性质（如设备被临时攻破前后消息仍受保护），真实漏洞往往藏在设计和实现之间。耗时 4 周，DeepMind 称以往同类工作需要专家团队数年。对照实验：把两个历史上真实存在、已修复的漏洞重新放回一个隔离版本，系统都给出了「该版本不安全」的机器可检证明。Signal CTO Ehren Kret 发表认可声明；验证产物开源，另有技术论文。可拍角度：1）「测试只能证明有 bug，证明才能说明没 bug」——形式化验证是什么；2）为什么 AI 写的证明可以信：不信 AI，信 Lean 检查器；3）反方：规格是人定的，规格写漏了，证明再长也挡不住。开场：0 秒上一屏滚动的 Lean 证明代码 + 「600 万行 / 4 周 / 人看 1%」三个数字。",
+      "caveat": "DeepMind 自家发布，未见独立复核；「首次」「以往需数年」为官方说法。页面元描述（og:description/JSON-LD）写「超过 300 万行」，正文写「超过 600 万行」，两处不一致，引用时需注明或以技术论文为准。证明的是专家选定的安全性质，不等于 Signal 全部代码无漏洞。Signal 在大陆不能直接使用，大陆观众关联较弱，可改用「微信/银行 App 背后的加密协议」类比。封面为 DeepMind 博客官方 og:image（标题图）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261110d-alphaproof-signal.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261110d-alphaproof-signal.jpg",
+      "imageAlt": "DeepMind 官方题图：左侧 DeepMind 标志与文字「Introducing AlphaProof Code: a breakthrough in verifying complex software at depth」，右侧为几片半透明磨砂玻璃板和一个玻璃球",
+      "tags": [
+        "智能体",
+        "AI安全",
+        "形式化验证",
+        "Lean",
+        "密码学"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 81,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 85.6,
+        "threshold": 65,
+        "run": "2026-11-10-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.10024",
+      "title": "原子层沉积号称能一层一层精确控制到原子，为什么「这种前驱体在这块衬底上到底长不长得上去」至今还靠试错？韩国团队把 560 次实验结果喂给 AI，新衬底猜对 83%",
+      "category": "半导体",
+      "source": "arXiv 预印本 2611.10024《Experimentally Grounded Machine Learning of Precursor–Surface–Reactant Chemistry in Atomic Layer Deposition》（2026-11-05 提交，仁川国立大学、UNIST）",
+      "publishedAt": "2026-11-05",
+      "eventAt": "2026-11-10",
+      "collectedAt": "2026-11-10T12:58:02.000Z",
+      "updatedAt": "2026-11-10T12:58:02.000Z",
+      "description": "一手来源：arXiv 预印本（56 页）。作者：仁川国立大学材料系、蔚山科学技术院（UNIST）半导体材料与器件研究生院（通讯作者 Han-Bo-Ram Lee）。事实：一个前驱体–衬底–反应物组合能否形成 ALD 工艺，作者在摘要第一句写明「仍由试错实验决定」。他们从文献整理了 560 条实验结果（含区域选择性 ALD），覆盖 76 种前驱体、27 种衬底、20 种反应物、25–620 °C；吸附样本 437 条（78%）、不吸附 123 条，沉积/不沉积大致对半。模型 AJIN 按 ALD 循环分两步预测：先用图神经网络对前驱体和衬底做 3D 结构嵌入 + 温度，判断「吸不吸附」；再加入反应物，判断「长不长膜」。最佳模型（CHGNet-MLP）平衡准确率：吸附 79.2%，沉积 84.8%（随机多数类基线为 50%），对没见过的前驱体只能部分迁移。SHAP/消融分析：吸附主要由衬底化学决定，沉积则三者都有贡献。用作者实验室自己的 ALD 实验检验：新衬底情形猜对 83%，新前驱体-衬底吸附情形猜对 71%。图 1 把区域选择性沉积拆成「抑制剂挡吸附」和「天然选择性」两条路。可拍角度：1）ALD 的「自限制」原理（一个循环只长一层）用两张动图就能讲清；2）原子级精度的工艺，配方却靠试错——为什么化学比几何难预测；3）区域选择性沉积为什么是自对准、少一次光刻的关键。开场：0 秒上论文图 1 前驱体小球落到衬底、一边铺满一边空着的示意图。",
+      "caveat": "预印本，未经同行评审。数据集来自文献整理，「吸附」标签多为由工艺结果间接推断（作者自述并非直接观测化学吸附）；吸附类别不平衡（78% 为吸附）。实验室验证的样本数在摘要中未给出，83%/71% 需看正文分母。仅 560 条数据，对全新化学体系外推能力有限。封面为论文 PDF 第 4 页图 1 原样截图，仅作引用说明。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261110d-ald-ajin.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261110d-ald-ajin.jpg",
+      "imageAlt": "论文图 1 示意图：a) 前驱体小球飞向衬底，分为「吸附/不吸附」，再加入反应物分为「沉积/不沉积」；b) 区域选择性 ALD：加抑制剂的选择性吸附，与天然选择性吸附后的选择性沉积",
+      "tags": [
+        "芯片制造",
+        "原子层沉积",
+        "薄膜工艺",
+        "AI for Science",
+        "区域选择性沉积"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 75,
+        "baseBreakdown": {
+          "主线": 23,
+          "钩子": 11,
+          "画面": 8,
+          "来源": 14,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 80.6,
+        "threshold": 65,
+        "run": "2026-11-10-2040-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2611.11405",
       "title": "芯片厂把硅提纯到「11 个 9」还不够——为什么做量子芯片，还得把硅原子里「多一个中子」的那 4.7% 挑出去？北京超弦院、合肥国家实验室、中国科大等用一台工业级外延设备，在 8 英寸硅片上长出 99.997% 的硅-28",
