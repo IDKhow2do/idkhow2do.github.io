@@ -1,7 +1,163 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-09T12:57:51.000Z",
+  "updatedAt": "2026-11-10T00:47:49.000Z",
   "topics": [
+    {
+      "url": "https://www.infineon.com/press-release/2026/infpr202611-028",
+      "title": "硅晶圆早就做到 300 毫米了，碳化硅为什么卡在 200 毫米这么多年？英飞凌在奥地利菲拉赫的工厂，用现成的硅产线设备，第一次把 300 毫米碳化硅晶圆做成了能工作的功率器件——一片多出 2.3 倍芯片",
+      "category": "半导体",
+      "source": "英飞凌官方新闻稿《Infineon processes 300-millimeter silicon carbide wafers into functional power devices》（Munich，2026-11-09）",
+      "publishedAt": "2026-11-09",
+      "eventAt": "2026-11-09",
+      "collectedAt": "2026-11-10T00:47:49.000Z",
+      "updatedAt": "2026-11-10T00:47:49.000Z",
+      "description": "一手来源：英飞凌新闻稿全文。事实：英飞凌在奥地利菲拉赫（Villach）工厂把 300 毫米碳化硅（SiC）晶圆加工成了可工作的功率器件，称是第一家在全规模量产晶圆厂环境里做到的公司，而且用的是现有的硅（Si）制造设备。300 毫米相对 200 毫米，每片晶圆多出 2.3 倍芯片。同时，英飞凌在德国德累斯顿验证了 300 毫米 SiC 的 Cold Split（冷劈裂）技术：从 SiC 晶锭上分离晶圆，比传统线锯材料损耗更少、加工时间大幅缩短，同一根晶体能切出更多片。新闻稿明确说的是「里程碑」和「未来全规模量产的潜力」：300 毫米 SiC 的量产节奏要和客户一起定，眼下继续执行 200 毫米路线图。用途：电动车主驱逆变器、车载充电机、储能，以及 AI 数据中心的固态变压器、断路器和电源。10 月 27 日英飞凌还宣布约 11 亿欧元在菲拉赫建 300 毫米氮化镓（GaN）量产厂。可拍角度：1）为什么 SiC 晶体长得慢又硬又脆，做大尺寸比硅难得多（长晶、切片、研磨都是坎）；2）「用硅的设备做 SiC」意味着什么——设备复用对成本的意义；3）线锯 vs 冷劈裂：一根晶锭能多出几片；4）国内碳化硅衬底厂商正在扩 8 英寸，这条新闻对他们是什么信号（需另找一手数据）。开场：0 秒上新闻稿配图——一大一小两片半透明碳化硅晶圆并排立在木座上。",
+      "caveat": "「第一家」「2.3 倍芯片」均为英飞凌自述；这是功能器件验证，不是量产，良率、成本、量产时间都没给。Cold Split 的具体损耗数字新闻稿未披露。国内厂商对比需另查一手资料。封面为新闻稿官方配图，仅作引用说明。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261110a-sic-300mm.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261110a-sic-300mm.jpg",
+      "imageAlt": "英飞凌新闻稿配图：一片 300 毫米和一片 200 毫米的半透明碳化硅晶圆并排立在木质底座上",
+      "tags": [
+        "芯片制造",
+        "碳化硅",
+        "功率半导体",
+        "晶圆",
+        "良率"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 93,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 16,
+          "画面": 14,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 8,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 99.9,
+        "threshold": 65,
+        "run": "2026-11-10-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+      "title": "设计一颗新芯片要好几年，谷歌为什么一年能推出 4 套 TPU 系统？答案是不改芯片、改芯片周围：TPU 8i Max 把两颗现成的 8i 芯片封进同一个封装，算力、片上 SRAM 和 HBM 带宽全部翻倍，专门对付「内存墙」",
+      "category": "半导体",
+      "source": "Google 官方博客《Our newest TPUs: 8tx and 8i Max, built for the agentic era》（Amin Vahdat，2026-11-09）",
+      "publishedAt": "2026-11-09",
+      "eventAt": "2026-11-09",
+      "collectedAt": "2026-11-10T00:47:49.000Z",
+      "updatedAt": "2026-11-10T00:47:49.000Z",
+      "description": "一手来源：Google 官方博客。事实：第八代 TPU 在 4 月发布 8t（训练）和 8i（实时推理）之后，11-09 再加两套系统——这是 Google 第一次一年推出四套 TPU 系统。博客专门区分了「新芯片」和「新系统」：设计新芯片要在晶圆上排布数十亿晶体管，是受物理和制造周期约束的多年工程；系统则是芯片周围的算力、网络、存储怎么组合、怎么封装，可以按需求快速调整，「几个月而不是几年」。TPU 8i Max：把两颗低延迟 TPU 8i 芯片合到一个封装里，算力、SRAM、HBM 带宽都是 8i 的两倍，用来解决多个智能体同时处理整个代码库或几小时视频时的内存带宽瓶颈；同样机架空间塞进两倍硅，每平方英尺、每瓦算力更高。TPU 8tx：与 8t 同一块硅，配 AMD 第 5 代 EPYC 主机，在硬件层做机密计算——数据和模型权重在运算时（内存中）也保持保护和隔离；沿用 8i 的低延迟 Boardfly 网络，延迟比 8t 低最多 2 倍。博客还提到 TPU 已有近 100 家客户，TorchTPU 开源让 PyTorch 代码原生跑在 TPU 上。可拍角度：1）「芯片」和「系统」的区别：为什么封装才是快速迭代的地方；2）内存墙：算得快但喂不饱；3）机密计算：数据平时加密存储和传输，但计算时要在内存里解密——8tx 想堵这个口子；4）和先进封装（CoWoS、HBM）产能紧张的行业背景连起来。开场：0 秒上官方渲染图——左边单芯片的 TPU 8tx 板卡，右边双芯片的 TPU 8i Max。",
+      "caveat": "性能倍数均为 Google 自述，未给绝对数值和独立测试；双芯片封装的具体工艺（是否 2.5D/何种互连）博客未说明。TPU 只在 Google Cloud 或客户自建机房提供，大陆用户难直接用，选题宜讲机制。封面为官方博客 og:image，仅作引用说明。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261110a-tpu-8i-max.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261110a-tpu-8i-max.jpg",
+      "imageAlt": "Google 官方渲染图：黑底上并排两块 TPU 板卡，左为 TPU 8tx，右为双芯片的 TPU 8i Max",
+      "tags": [
+        "AI芯片",
+        "先进封装",
+        "存储/内存",
+        "AI推理",
+        "智能体"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 86,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 16,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 92.4,
+        "threshold": 65,
+        "run": "2026-11-10-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "title": "第一次让 AI 把费马大定理的证明写成机器能验证的形式，花了 11 天、还要人指导——为什么这次 1000 个 Fable 5.2 智能体 30 小时就做完了，同样配置的 Opus 5.5 却卡在 26% 再也不动？",
+      "category": "AI",
+      "source": "Anthropic 官方发布《Claude Fable 5.2 and Mythos 5.2》（2026-11-09）及配套系统卡",
+      "publishedAt": "2026-11-09",
+      "eventAt": "2026-11-09",
+      "collectedAt": "2026-11-10T00:47:49.000Z",
+      "updatedAt": "2026-11-10T00:47:49.000Z",
+      "description": "一手来源：Anthropic 发布页。事实：Anthropic 11-09 发布 Claude Fable 5.2 和 Mythos 5.2（同一底层模型，Fable 带网络安全与生物方面的防护、面向所有用户；Mythos 需申请）。价格每百万 token 输入 8 美元、输出 40 美元，输出速度比 5.1 快最多 30%，另有最多快 2.5 倍的 fast mode。最有故事的一段是数学形式化：用 Lean 语言把费马大定理的证明写成机器可验证的形式。Anthropic 第一次做这件事用的是未发布的研究版 Claude，花了 11 天，依靠专门搭建的框架和人类研究员指导；这次大约 1000 个 Fable 5.2 智能体从极简提示开始，自己摸索协作方式，不给任何数学参考资料，只给一张中间定理清单用来计分，30 小时完整形式化，动作 token 只用了第一次的三分之一，证明长度短了 7 倍。对照：同样 1000 智能体配置的 Opus 5.5，18 小时只完成 26%，续跑到 30 小时几乎没有进展（发布页曲线：Fable 18 小时 0.86、30 小时 1.00；Opus 0.26→0.27）。发布页还称预发布测试中它从零设计了三个能工作的电子设备、解决了两个黑洞物理的开放问题。可拍角度：1）什么是「形式化」：人写的证明 vs 机器逐行检查的证明；2）为什么同样 1000 个智能体，一个冲到终点、一个停在 26%——协作能力而不只是单体聪明；3）「证明短了 7 倍」说明什么；4）和你做的「涌现」选题呼应：很多智能体自组织完成大任务。开场：0 秒上发布页的完成度曲线，绿线一路冲到 1.00，橙线在 0.26 躺平。",
+      "caveat": "全部数字为 Anthropic 自报、单次运行（发布页注明每个模型只跑一次），尚无独立复现；Lean 形式化的代码与细节需看其链接的专文。这是新模型发布，基准表很长，选题只取形式化这一段机制，避免变成参数罗列。大陆用户无法直接使用 Claude。封面为发布页 og:image（标题卡），仅作引用说明。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261110a-fable-fermat.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261110a-fable-fermat.jpg",
+      "imageAlt": "Anthropic 发布页题图：黑底白字「Claude Fable 5.2 and Mythos 5.2」，底部一道彩色光带",
+      "tags": [
+        "智能体",
+        "多智能体",
+        "数学证明",
+        "AI能力",
+        "Claude"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 80,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 9,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 84.5,
+        "threshold": 65,
+        "run": "2026-11-10-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://e-means.github.io/",
+      "title": "把一堆点分成几组的 k-means，几十年来标准做法几乎没变——为什么 Meta 只改了「每次怎么挪中心点」，就用十分之一的轮数、算得更快还分得更准？",
+      "category": "AI",
+      "source": "e-means 项目主页与博客（Swann Bessa 等，Meta FAIR）；论文《e-means: outperforming k-means (in one-tenth the epochs)》arXiv:2611.09501；代码已并入 faiss（faiss/contrib/e_means）",
+      "publishedAt": "2026-11-09",
+      "eventAt": "2026-11-09",
+      "collectedAt": "2026-11-10T00:47:49.000Z",
+      "updatedAt": "2026-11-10T00:47:49.000Z",
+      "description": "一手来源：作者团队项目主页（含可在浏览器里跑的对比演示）和 arXiv 论文。背景：k-means 是把数据点分成 k 组的经典算法，目标是让每个点到所属组中心的平均平方距离最小；标准做法 Lloyd 算法每一轮都要扫完全部数据、重算每个中心，通常重复 20–50 轮。k-means 也是机器学习里少有的仍普遍用「全量批次」优化的问题（向量检索、量化等大量依赖它）。e-means 的做法：改用小批次更新，每个中心的「累计和」与「累计数」用指数移动平均更新——旧的分配按比例遗忘，中心跟着最近的分配走；批次大小和步长由缩放定律自动给出，不用调参；再加上改进的初始化、把太小的簇通过拆分大簇「复活」、余弦退火、以及结尾一步用最后一轮的精确均值收尾，并配专门融合的 GPU 核。结果（作者自报）：在多个规模和数据集上，Lloyd 跑 25 轮才达到的测试损失，e-means 1.2–3 轮就更低；端到端在 GPU 上比最先进的 Lloyd 实现（Flash-KMeans）快 10–45 倍，CPU 上比 Faiss 快 8–15 倍。一个有意思的点：把 e-means 的批次设为全量、步长设为 1，它就退化成 Lloyd——超参数搜索显示 Lloyd 恰好落在损失最差的角落。作者还解释了为什么不用梯度下降：EMA 更新保证中心永远落在所属点的凸包里，梯度下降大步长时会冲出去、不稳定。可拍角度：1）主页演示：10 万个点、200 个簇，Lloyd 一轮只更新 1 次、e-means 更新 97 次，肉眼可见谁先收敛；2）「全量求平均」为什么反而慢；3）老算法 + 深度学习的优化技巧；4）它服务的是向量数据库、大模型检索这些底层设施。开场：0 秒上主页的动态对比——左右两块点云，一边中心慢吞吞挪，一边几下就就位。",
+      "caveat": "速度与损失数据为作者团队自报，尚未见独立复现；加速比取决于数据集和硬件。论文与博客同日（11-09）公开，代码在 faiss contrib 中，许可以 faiss 仓库为准。封面为项目主页 og:image（对比曲线图），仅作引用说明。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261110a-e-means.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261110a-e-means.jpg",
+      "imageAlt": "e-means 主页配图：左图训练损失随轮数下降曲线，e-means 比 faiss k-means 少 12.5 倍轮数；右图 CPU 与 GPU 上墙钟时间分别快 11.8 倍和 13.6 倍",
+      "tags": [
+        "算法",
+        "AI成本",
+        "聚类",
+        "向量检索",
+        "开源"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "主线": 17,
+          "钩子": 16,
+          "画面": 14,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 87.7,
+        "threshold": 65,
+        "run": "2026-11-10-0840-shanghai"
+      }
+    },
     {
       "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
       "title": "大模型里 256 个「专家」每次只用 8 个，删掉一半最没用的总该没事吧——为什么一个个单独打分去删，编程题成绩掉 13%，换成「看谁和谁搭档」再删，成绩几乎不掉？亚马逊的 HOPE 专家剪枝",

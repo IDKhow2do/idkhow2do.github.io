@@ -1,8 +1,234 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 618,
+  "exportedCount": 622,
   "items": [
+    {
+      "title": "一张照片变成能「拆开」的 3D 房间：每件家具都按真实尺寸建模，拖一个滑块整个场景炸开，点哪件哪件就出来——为什么作者坚持「先写尺寸表、一件都不靠眼睛摆」？连梵高《阿尔勒的卧室》都按 3.9 × 3.4 米重建了",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/Voxyz_ai/status/2119898090714886521",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261110a-explode-rooms.jpg",
+      "previewType": "image",
+      "description": "作者 @Voxyz_ai 的 X 长文《How I Turn Any Photo Into a 3D Scene You Can Take Apart》（2026-11-09 21:01 UTC），本轮用 X 工具取到全文与 9 段提示词。做法：Claude Code 接 Blender MCP（开源，让 Claude Code 直接读写 Blender 场景），按一张参考照片在 Blender 里用代码、以米为单位逐件建模，导出 glTF 再做成 Three.js 网页。关键是「尺寸表优先」：建模前先写每件物体的长宽高和位置，拿照片里一个能量到的物体当比例尺（例：音箱直径 9.8 cm），每个数字标注是实测还是估计；所有位置都写成一个参数 explode（0–1）的函数，所以一个滑块就能把整个场景拆开。网页有物体清单、俯视平面图、每件物体一个按钮（点开它，其余 0.4 秒内让开），还有自动导览、昼夜光照滑块；交付前让模型自己当「评论员」逐帧检查穿模、悬空，桌面场景查出并修好 7 个 bug。三个成品在线：书桌角（16 件）、梵高卧室（床 1.91 米）、咖啡角。本轮打开在线演示页核验，封面为演示站的分享卡：浅色背景上的书桌角，每件物体带尺寸标注——非头像。对你：①直接对应你想做的「把房间 3D 建模、再换装修风格对比」——这条流程的尺寸表 + 爆炸视图就是现成骨架；②「拆开看结构」本身就是科普镜头，可迁移到刻蚀机、晶圆盒等设备的爆炸图；③全部提示词公开，可照抄改括号里的内容。",
+      "tool": "Claude Code（切换为商汤 SenseNova 6.8 Flash 模型）+ Blender MCP（mcp-for-blender）+ Blender 5.2 + glTF + Three.js + headless Chrome / ffmpeg 录制（作者自述）",
+      "prompt": "Use Blender MCP to build [the desk corner] in this photo as a 3D scene. Reference photo: [drag in your photo]. Build it from code in real units (metres): [...]. Each one is a separate object, named for what it is. Keep an editable Blender file, export to glTF, and build a Three.js page from it. Before you model anything, write a size table: each object's length, width, height and position. Write every position as a function of one input: [explode, from 0 to 1]. Use the real numbers: [...use it for scale]. Check them by hand and show me the check. Mark each number measured or estimated, and say where each estimate comes from. Every object, every panel and every label reads from that one table. Nothing is placed by eye.（节选自作者公开的 9 段提示词之第 1 段）",
+      "promptProvenance": "original_public",
+      "provenanceNote": "作者 X 长文公开全部 9 段提示词与环境配置，在线演示 sensenova-scenes-1105.vercel.app 可访问；未见仓库与许可证。文章以免费公测的 SenseNova 6.8 Flash 为卖点，可能带推广性质。X 媒体仅外链引用。",
+      "attribution": "@Voxyz_ai · How I Turn Any Photo Into a 3D Scene You Can Take Apart",
+      "sourceAuthor": "Voxyz_ai",
+      "tags": [
+        "Three.js",
+        "Blender",
+        "Claude Code",
+        "爆炸图",
+        "剖面",
+        "3D建模",
+        "Blender MCP"
+      ],
+      "publishedAt": "2026-11-09T21:01:05.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-10T00:47:49.000Z",
+      "updatedAt": "2026-11-10T00:47:49.000Z",
+      "verification": {
+        "checked_at": "2026-11-10T00:47:49.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为在线演示站 og:image（card.jpg）：浅灰背景上的白色书桌角，显示器、音箱、手柄、台灯等每件带尺寸标签，非头像；另目视检查了 X 帖附图（提示词截图，未用作封面）。",
+        "video_check": "打开在线演示页确认可访问（200，标题 Three scenes）；未完整操作页面交互、未运行提示词。"
+      },
+      "curation": {
+        "baseScore": 89,
+        "baseBreakdown": {
+          "实体": 23,
+          "科普": 19,
+          "溯源": 15,
+          "复现": 14,
+          "风格": 9,
+          "新颖": 9
+        },
+        "multiplier": 1.219,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-11-10-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "demoUrl": "https://sensenova-scenes-1105.vercel.app/"
+    },
+    {
+      "title": "一段「最震撼的动态设计短片」里，0:44 那团 4 万只鸟是真的群体模拟——为什么没用 Blender，Fable 5.2 自己写了 5000 行 Python 和 GLSL 渲染器，在一张 RTX 5080 上 61 分钟渲完 4600 帧？",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/techfren/status/2119899949756539056",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261110a-fable-flock.jpg",
+      "previewType": "image",
+      "description": "作者 @techfren 原帖（2026-11-09 21:08 UTC，约 78 秒 1080p 视频）：让 Claude Fable 5.2 做「它能做出的最震撼的动态设计视频」；0:44 的 4 万只鸟是 Fable 从零写的真实鸟群（flock）模拟；不用 Blender 等软件，模型为这部片自写渲染器，约 5000 行 Python + GLSL，在作者的 RTX 5080 上约 61 分钟渲染约 4600 帧；背景音乐由作者用 Suno 后加，其余全部 Claude Code 生成。本轮下载视频，在第 46 秒截帧核验：黄昏水面上空一大团深色鸟群聚成扭动的云团，左下角字幕「Flocking」与「Boids · Reynolds, 1986」等说明文字——非头像。对你：①直接可用作你「涌现」视频的开场镜头备选，片中自己标注了 Reynolds 1986 的 Boids 规则；②「简单规则 → 4 万只鸟的整体形状」正是你想讲的主题；③也可作为新模型「一条提示做完整片」能力的案例对照。",
+      "tool": "Claude Code + Claude Fable 5.2（自写 Python + GLSL 渲染器）；配乐 Suno（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "只有作者 X 视频与文字说明（行数、帧数、渲染时间、硬件）；未公开提示词、源码与许可证。X 媒体仅外链引用。",
+      "attribution": "@techfren · Fable 5.2 动态设计短片（4 万只鸟群模拟）",
+      "sourceAuthor": "techfren",
+      "tags": [
+        "鸟群",
+        "Boids",
+        "涌现",
+        "GLSL",
+        "Claude Code",
+        "粒子",
+        "模拟"
+      ],
+      "publishedAt": "2026-11-09T21:08:28.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-10T00:47:49.000Z",
+      "updatedAt": "2026-11-10T00:47:49.000Z",
+      "verification": {
+        "checked_at": "2026-11-10T00:47:49.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为原帖视频第 46 秒截帧：黄昏湖面上空的大片鸟群与「Flocking / Boids · Reynolds, 1986」字幕，非头像。",
+        "video_check": "下载 78 秒视频截取第 46 秒帧核验；未完整逐帧观看，无源码可运行。"
+      },
+      "curation": {
+        "baseScore": 75,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 19,
+          "溯源": 12,
+          "复现": 6,
+          "风格": 9,
+          "新颖": 9
+        },
+        "multiplier": 1.025,
+        "finalScore": 76.9,
+        "threshold": 65,
+        "run": "2026-11-10-0840-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://video.twimg.com/amplify_video/2119899709913579520/vid/avc1/1920x1080/3p4USJ7fdJfCsE8Y.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "作品集「关于我」页面上住着一个由点和连线组成的提线木偶，把 EGO 滑块调大，他的头就变大——为什么一段动作捕捉动画能被拆成一串 JSON 坐标，再用 Three.js 相机投影画到 2D 画布上？",
+      "category": "frontend",
+      "styleFamily": "uiux",
+      "source": "https://tympanus.net/codrops/2026/11/09/au-rel-io/",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261110a-codrops-puppet.jpg",
+      "previewType": "image",
+      "description": "Codrops 案例文章（2026-11-09，设计师 Andrea Aurelio Napoli 自述其作品集 au-rel-io 的制作）；Codrops 官方 X 同日推荐。木偶的做法：先拿 FBX 格式的动画，把每一帧的身体姿态转成点坐标存进 JSON；网页上用了两套点和连线（Blaze + Wholebody-71、COCO-17 两种人体关键点格式），在相邻帧之间插值，用 Three.js 相机投影后画到 2D 画布上；头部是一张真人照片，跟着鼠标转向；控制面板可以改动作、外观和信息，EGO 参数让头变大。同一套素材还做了 TouchDesigner 版本，自写 GLSL 材质和环绕相机，用 PS4 手柄控制。文章还讲了手排网格和把光标标签带进每个项目的页面转场（GSAP）。本轮核验：封面为文章 og:image——浅灰底上一个由灰点和细线组成的人形骨架，头部是一张照片，四周有小标签——非头像。对你：①「人体关键点」是动作捕捉、姿态识别的基础，这个木偶能直观讲「AI 怎么看懂人的动作」；②点 + 连线 + 插值的做法很轻，可以拿来做小马的骨架动画实验。",
+      "tool": "FBX 动画 → JSON 关键点（Blaze + Wholebody-71 / COCO-17）+ Three.js 相机投影 + 2D Canvas + GSAP；另有 TouchDesigner + GLSL 版本（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "Codrops 官方案例文章，作者署名清楚，讲解了制作流程；未附源码仓库与许可证。封面为 Codrops 文章题图，仅外链引用。",
+      "attribution": "Andrea Aurelio Napoli · au-rel-io 作品集（Codrops 案例）",
+      "sourceAuthor": "Andrea Aurelio Napoli",
+      "tags": [
+        "Codrops",
+        "Three.js",
+        "人体关键点",
+        "GSAP",
+        "作品集",
+        "交互"
+      ],
+      "publishedAt": "2026-11-09",
+      "collectionIds": [],
+      "collectedAt": "2026-11-10T00:47:49.000Z",
+      "updatedAt": "2026-11-10T00:47:49.000Z",
+      "verification": {
+        "checked_at": "2026-11-10T00:47:49.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为 Codrops 文章 og:image：浅灰底上点线人形骨架、照片头像式头部（作品本身的木偶，不是作者头像）、周围小标签。",
+        "video_check": "未打开作品集网站实际操作；X 帖视频未下载核验。"
+      },
+      "curation": {
+        "baseScore": 72,
+        "baseBreakdown": {
+          "实体": 15,
+          "科普": 13,
+          "溯源": 18,
+          "复现": 10,
+          "风格": 8,
+          "新颖": 8
+        },
+        "multiplier": 1.2748,
+        "finalScore": 91.8,
+        "threshold": 65,
+        "run": "2026-11-10-0840-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
+    {
+      "title": "一个 Switch 钥匙扣从零散零件一块块拼起来——没碰 Blender、没用一个外部模型和音频素材，全靠 AI 写 Three.js 代码做出 1080p 60 帧的组装动画；为什么作者说 Opus 5.5 跑进了死循环，换 Gemini 才跑通？",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "source": "https://x.com/Cheng_271828/status/2119778718227046789",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261110a-switch-keychain.jpg",
+      "previewType": "image",
+      "description": "作者 @Cheng_271828 原帖（2026-11-09 13:06 UTC，约 13.7 秒 1080p 视频）：全程没碰 Blender，0 外部模型、0 音频素材，纯靠 AI 写 Three.js 代码做出 1080p 60FPS 的 Switch 钥匙扣组装动画；起因是前两天刷到爆火的「代码手柄视频」，先用 Claude Code + Opus 5.5 尝试，作者说直接进入计算死循环，换成 Gemini 后整套跑通。本轮下载视频按第 4、9、12 秒截帧核验：先是蓝色手柄局部和带控制点的摇杆零件特写，接着是机身背面红蓝手柄合上，最后是挂着金属钥匙环、屏幕亮起 Switch 标志的完整钥匙扣——非头像。对你：①「零件一块块装上去」是很好的结构讲解镜头，可迁移到芯片封装（基板、芯片、HBM、散热盖）的组装动画；②模型对比的说法只是作者一次经历，不能当结论。",
+      "tool": "Three.js（AI 生成代码；先试 Claude Code + Opus 5.5，最终用 Gemini 跑通，作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "只有作者 X 视频与文字说明；未公开提示词、源码与许可证。X 媒体仅外链引用。",
+      "attribution": "@Cheng_271828 · Three.js Switch 钥匙扣组装动画",
+      "sourceAuthor": "Cheng_271828",
+      "tags": [
+        "Three.js",
+        "组装动画",
+        "爆炸图",
+        "代码视频",
+        "Gemini"
+      ],
+      "publishedAt": "2026-11-09T13:06:44.000Z",
+      "collectionIds": [],
+      "collectedAt": "2026-11-10T00:47:49.000Z",
+      "updatedAt": "2026-11-10T00:47:49.000Z",
+      "verification": {
+        "checked_at": "2026-11-10T00:47:49.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为原帖视频第 12 秒截帧：黑底上挂着金属钥匙环的 Switch 钥匙扣，红蓝手柄、屏幕显示 Switch 标志，非头像。",
+        "video_check": "下载 13.7 秒视频截第 4/9/12 秒三帧核验；无源码可运行。"
+      },
+      "curation": {
+        "baseScore": 64,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 14,
+          "溯源": 11,
+          "复现": 5,
+          "风格": 9,
+          "新颖": 7
+        },
+        "multiplier": 1.4,
+        "finalScore": 89.6,
+        "threshold": 65,
+        "run": "2026-11-10-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2119778138465161217/vid/avc1/1920x1080/lQDUiO8_yG80q8rR.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "用 404 万颗沙粒拼成的字母，从 S 开始顺着笔画一路崩塌——为什么这堆「沙」会一块块碎裂而不是像水一样流走？作者用 Claude Code 自写 MPM（物质点法）沙子物理，Blender Cycles 渲染",
       "category": "3d",
@@ -31896,8 +32122,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条 | 2026-11-01-0840-shanghai 监控轮追加 5 条 | 2026-11-01-1240-shanghai 监控轮追加 6 条 | 2026-11-02-1640-shanghai 监控轮追加 7 条 | 2026-11-02-2040-shanghai 监控轮追加 6 条 | 2026-11-03-0840-shanghai 监控轮追加 6 条 | 2026-11-03-1240-shanghai 监控轮追加 2 条 | 2026-11-03-1640-shanghai 监控轮追加 3 条 | 2026-11-03-2040-shanghai 监控轮追加 5 条 | 2026-11-04-0840-shanghai 监控轮追加 5 条 | 2026-11-04-1240-shanghai 监控轮追加 4 条 | 2026-11-04-1640-shanghai 监控轮追加 2 条 | 2026-11-04-2040-shanghai 监控轮追加 4 条 | 2026-11-05-0840-shanghai 监控轮追加 5 条 | 2026-11-05-1240-shanghai 监控轮追加 4 条 | 2026-11-05-1640-shanghai 监控轮追加 2 条 | 2026-11-05-2040-shanghai 监控轮追加 3 条 | 2026-11-06-0840-shanghai 监控轮追加 4 条 | 2026-11-06-1640-shanghai 监控轮追加 1 条 | 2026-11-06-2040-shanghai 监控轮追加 1 条 | 2026-11-07-0840-shanghai 监控轮追加 1 条 | 2026-11-07-1240-shanghai 监控轮追加 1 条 | 2026-11-07-1640-shanghai 监控轮追加 1 条 | 2026-11-07-2040-shanghai 监控轮追加 3 条 | 2026-11-08-0840-shanghai 监控轮追加 3 条 | 2026-11-08-1240-shanghai 监控轮追加 1 条 | 2026-11-08-1640-shanghai 监控轮追加 5 条 | 2026-11-08-2040-shanghai 监控轮追加 3 条 | 2026-11-09-0840-shanghai 监控轮追加 8 条 | 2026-11-09-1640-shanghai 监控轮追加 4 条 | 2026-11-09-2040-shanghai 监控轮追加 2 条",
-  "updatedAt": "2026-11-09T12:57:51.000Z",
-  "totalItems": 618,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条 | 2026-11-01-0840-shanghai 监控轮追加 5 条 | 2026-11-01-1240-shanghai 监控轮追加 6 条 | 2026-11-02-1640-shanghai 监控轮追加 7 条 | 2026-11-02-2040-shanghai 监控轮追加 6 条 | 2026-11-03-0840-shanghai 监控轮追加 6 条 | 2026-11-03-1240-shanghai 监控轮追加 2 条 | 2026-11-03-1640-shanghai 监控轮追加 3 条 | 2026-11-03-2040-shanghai 监控轮追加 5 条 | 2026-11-04-0840-shanghai 监控轮追加 5 条 | 2026-11-04-1240-shanghai 监控轮追加 4 条 | 2026-11-04-1640-shanghai 监控轮追加 2 条 | 2026-11-04-2040-shanghai 监控轮追加 4 条 | 2026-11-05-0840-shanghai 监控轮追加 5 条 | 2026-11-05-1240-shanghai 监控轮追加 4 条 | 2026-11-05-1640-shanghai 监控轮追加 2 条 | 2026-11-05-2040-shanghai 监控轮追加 3 条 | 2026-11-06-0840-shanghai 监控轮追加 4 条 | 2026-11-06-1640-shanghai 监控轮追加 1 条 | 2026-11-06-2040-shanghai 监控轮追加 1 条 | 2026-11-07-0840-shanghai 监控轮追加 1 条 | 2026-11-07-1240-shanghai 监控轮追加 1 条 | 2026-11-07-1640-shanghai 监控轮追加 1 条 | 2026-11-07-2040-shanghai 监控轮追加 3 条 | 2026-11-08-0840-shanghai 监控轮追加 3 条 | 2026-11-08-1240-shanghai 监控轮追加 1 条 | 2026-11-08-1640-shanghai 监控轮追加 5 条 | 2026-11-08-2040-shanghai 监控轮追加 3 条 | 2026-11-09-0840-shanghai 监控轮追加 8 条 | 2026-11-09-1640-shanghai 监控轮追加 4 条 | 2026-11-09-2040-shanghai 监控轮追加 2 条 | 2026-11-10-0840-shanghai 监控轮追加 4 条",
+  "updatedAt": "2026-11-10T00:47:49.000Z",
+  "totalItems": 622,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
