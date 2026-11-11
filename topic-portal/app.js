@@ -10,6 +10,7 @@
     feedback: "data/news_feedback.json",
     visuals: "data/visual_items.json",
     manifest: "data/manifest.json",
+    fable52: "data/fable52_videos.json",
   };
 
   const CATEGORIES = ["全部", "AI", "半导体", "科技产品", "社会生活", "其他"];
@@ -28,8 +29,24 @@
     visualQuery: "",
     modelFamily: "全部",
     modelQuery: "",
+    fable52: null,
+    fable52Filter: "全部",
+    fable52Query: "",
     visualOverrides: {}, // persisted to localStorage
     topicOverrides: {},
+  };
+
+  /** Fable 5.2 kind chips, fixed order after 全部 and 教程. */
+  const FABLE_KIND_ORDER = [
+    ["short", "短片动画"],
+    ["explainer", "科普讲解"],
+    ["motion", "动态设计"],
+    ["game_capture", "游戏成片"],
+    ["tutorial_roundup", "合集导览"],
+  ];
+  const PROMPT_PROVENANCE_LABEL = {
+    original_public: "作者原文",
+    adapted: "作者转述",
   };
 
   /* —— Feedback persistence (localStorage, schema v1; forward-compatible with /api/feedback) —— */
@@ -485,6 +502,7 @@
     }
 
     $("#drawerDesc").textContent = topic.description || "暂无说明。";
+    resetFableDrawerExtras();
     const caveat = (topic.caveat || "").trim();
     $("#drawerCaveatWrap").hidden = !caveat;
     $("#drawerCaveat").textContent = caveat;
@@ -719,7 +737,8 @@
     grid.appendChild(frag);
   }
 
-  function buildVisualCard(item, isGhost) {
+  function buildVisualCard(item, isGhost, opts) {
+    opts = opts || {};
     const fb = effectiveVisualFb(item);
     const btn = document.createElement("button");
     btn.type = "button";
@@ -750,6 +769,7 @@
     const title = document.createElement("h3");
     title.className = "card-title";
     title.textContent = displayVisualTitle(item);
+    if (item.hook) title.title = item.hook;
     body.appendChild(title);
 
     const meta = document.createElement("div");
@@ -767,6 +787,12 @@
       topic.className = "badge";
       topic.textContent = visualCategoryLabel(item.category);
       left.appendChild(topic);
+    }
+    if (opts.showTutorialBadge && item.hasTutorial === true) {
+      const tut = document.createElement("span");
+      tut.className = "badge badge-tutorial";
+      tut.textContent = "教程";
+      left.appendChild(tut);
     }
     meta.appendChild(left);
 
@@ -790,15 +816,32 @@
 
     btn.appendChild(preview);
     btn.appendChild(body);
-    btn.addEventListener("click", () => openVisualDrawer(item));
+    btn.addEventListener("click", () => openVisualDrawer(item, opts.drawerKind));
     return btn;
   }
 
+  function itemFeedbackKey(item) {
+    return (item && (item.source || item.title)) || "";
+  }
+
+  function findItemByKey(list, key) {
+    return (list || []).find((i) => itemFeedbackKey(i) === key);
+  }
+
   function toggleVisual(key, field) {
-    const item = (state.visuals?.items || []).find(
-      (i) => (i.source || i.title) === key
-    );
-    const base = effectiveVisualFb(item || {});
+    const drawer = $("#drawer");
+    const open = drawer.classList.contains("is-open") && drawer.dataset.key === key;
+    const openKind = open ? drawer.dataset.kind : "";
+    const visualItem = findItemByKey(state.visuals?.items, key);
+    const fableItem = findItemByKey(state.fable52?.items, key);
+    const item = (openKind === "fable52" ? fableItem : visualItem) || visualItem || fableItem;
+    const base = item
+      ? effectiveVisualFb(item)
+      : {
+          liked: !!state.visualOverrides[key]?.liked,
+          favorite: !!state.visualOverrides[key]?.favorite,
+          notInterested: !!state.visualOverrides[key]?.notInterested,
+        };
     state.visualOverrides[key] = {
       ...base,
       [field]: !base[field],
@@ -807,19 +850,130 @@
     saveStoredFeedback();
     renderVisuals();
     renderModels();
-    const drawer = $("#drawer");
-    if (drawer.classList.contains("is-open") && drawer.dataset.key === key) {
-      openVisualDrawer(item);
+    renderFable52();
+    if (open) {
+      const again = (openKind === "fable52" ? fableItem : visualItem) || visualItem || fableItem;
+      if (again) openVisualDrawer(again, openKind === "fable52" ? "fable52" : undefined);
     }
   }
 
-  function openVisualDrawer(item) {
+  function resetFableDrawerExtras() {
+    const hook = $("#drawerHook");
+    if (hook) {
+      hook.hidden = true;
+      hook.textContent = "";
+    }
+    const pipeWrap = $("#drawerPipelineWrap");
+    if (pipeWrap) pipeWrap.hidden = true;
+    const pipe = $("#drawerPipeline");
+    if (pipe) pipe.textContent = "";
+    const tutWrap = $("#drawerTutorialWrap");
+    if (tutWrap) tutWrap.hidden = true;
+    const summary = $("#drawerTutorialSummary");
+    if (summary) {
+      summary.hidden = true;
+      summary.textContent = "";
+    }
+    const pre = $("#drawerPrompt");
+    if (pre) {
+      pre.hidden = true;
+      pre.textContent = "";
+    }
+    const prov = $("#drawerPromptProvenance");
+    if (prov) {
+      prov.hidden = true;
+      prov.textContent = "";
+    }
+    const tutLink = $("#drawerTutorialLink");
+    if (tutLink) {
+      tutLink.hidden = true;
+      tutLink.removeAttribute("href");
+    }
+    const demoLink = $("#drawerDemoLink");
+    if (demoLink) {
+      demoLink.hidden = true;
+      demoLink.removeAttribute("href");
+    }
+  }
+
+  function isFableDrawerItem(item, drawerKind) {
+    if (drawerKind === "fable52") return true;
+    if (!item || drawerKind === "visual") return false;
+    return typeof item.hasTutorial === "boolean" &&
+      (typeof item.pipeline === "string" || typeof item.kind === "string");
+  }
+
+  function fillFableDrawerExtras(item) {
+    const hookBits = [];
+    if ((item.hook || "").trim()) hookBits.push(item.hook.trim());
+    if ((item.whatWasMade || "").trim()) hookBits.push(item.whatWasMade.trim());
+    const hook = $("#drawerHook");
+    if (hook) {
+      hook.hidden = hookBits.length === 0;
+      hook.textContent = hookBits.join("\n");
+    }
+
+    const tool = (item.tool || "").trim();
+    const pipeline = (item.pipeline || "").trim();
+    const pipeBits = [];
+    if (tool) pipeBits.push(tool);
+    if (pipeline && pipeline !== tool) pipeBits.push(pipeline);
+    const pipeWrap = $("#drawerPipelineWrap");
+    const pipe = $("#drawerPipeline");
+    if (pipeWrap && pipe) {
+      pipeWrap.hidden = pipeBits.length === 0;
+      pipe.textContent = pipeBits.join("\n\n");
+    }
+
+    const prompt = typeof item.prompt === "string" ? item.prompt : "";
+    const promptShown = prompt.trim().length > 0;
+    const summaryText = (item.tutorialSummary || "").trim();
+    const showTutorial = item.hasTutorial === true || promptShown;
+    const tutWrap = $("#drawerTutorialWrap");
+    if (tutWrap) tutWrap.hidden = !showTutorial;
+    const summary = $("#drawerTutorialSummary");
+    if (summary) {
+      summary.hidden = !summaryText;
+      summary.textContent = summaryText;
+    }
+    const pre = $("#drawerPrompt");
+    if (pre) {
+      pre.hidden = !promptShown;
+      pre.textContent = promptShown ? prompt : "";
+    }
+    const prov = $("#drawerPromptProvenance");
+    const provLabel = promptShown ? PROMPT_PROVENANCE_LABEL[item.promptProvenance] : "";
+    if (prov) {
+      prov.hidden = !provLabel;
+      prov.textContent = provLabel || "";
+    }
+
+    const source = (item.source || "").trim();
+    const tutorialUrl = (item.tutorialUrl || "").trim();
+    const tutLink = $("#drawerTutorialLink");
+    if (tutLink) {
+      const showTut = tutorialUrl && tutorialUrl !== source;
+      tutLink.hidden = !showTut;
+      if (showTut) tutLink.href = tutorialUrl;
+      else tutLink.removeAttribute("href");
+    }
+    const demoUrl = (item.demoUrl || "").trim();
+    const demoLink = $("#drawerDemoLink");
+    if (demoLink) {
+      demoLink.hidden = !demoUrl;
+      if (demoUrl) demoLink.href = demoUrl;
+      else demoLink.removeAttribute("href");
+    }
+  }
+
+  function openVisualDrawer(item, drawerKind) {
     const fb = effectiveVisualFb(item);
     const drawer = $("#drawer");
     const backdrop = $("#drawerBackdrop");
     const key = item.source || item.title;
+    const fableDrawer = isFableDrawerItem(item, drawerKind);
     drawer.dataset.key = key;
-    drawer.dataset.kind = "visual";
+    drawer.dataset.kind = fableDrawer ? "fable52" : "visual";
 
     const media = $("#drawerMedia");
     media.innerHTML = "";
@@ -856,6 +1010,8 @@
     status.appendChild(lic);
 
     $("#drawerDesc").textContent = item.description || "暂无说明。";
+    resetFableDrawerExtras();
+    if (fableDrawer) fillFableDrawerExtras(item);
     $("#drawerCaveatWrap").hidden = !(item.provenanceNote || "").trim();
     $("#drawerCaveat").textContent = item.provenanceNote || "";
 
@@ -866,7 +1022,7 @@
     const link = $("#drawerLink");
     if (item.source) {
       link.href = item.source;
-      link.textContent = "查看来源";
+      link.textContent = fableDrawer ? "打开原帖" : "查看来源";
       link.style.display = "";
     } else {
       link.style.display = "none";
@@ -934,6 +1090,127 @@
         renderModels();
       });
     }
+    const fableSearch = $("#fable52Search");
+    if (fableSearch) {
+      fableSearch.addEventListener("input", (e) => {
+        state.fable52Query = e.target.value;
+        renderFable52();
+      });
+    }
+  }
+
+  function fablePool() {
+    return state.fable52?.items || [];
+  }
+
+  function renderFable52Intro() {
+    const el = $("#fable52Intro");
+    const data = state.fable52;
+    if (!el) return;
+    el.replaceChildren();
+    if (!data) return;
+    el.append(document.createTextNode(data.subtitle || data.title || ""));
+    const bits = [];
+    const pushText = (text) => bits.push(document.createTextNode(text));
+    const pushLink = (href, label, title) => {
+      if (!href) return;
+      if (bits.length) pushText(" · ");
+      const a = document.createElement("a");
+      a.href = href;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.textContent = label;
+      if (title) a.title = title;
+      bits.push(a);
+    };
+    if (data.releaseDate) pushText(`发布 ${data.releaseDate}`);
+    pushLink(data.releaseAnnouncementUrl, "官方公告");
+    pushLink(data.releasePostUrl, "发布帖");
+    const news = Array.isArray(data.relatedNews) ? data.relatedNews : [];
+    news.forEach((n, i) => {
+      if (!n || !n.url) return;
+      if (bits.length) pushText(i === 0 ? " · 相关 " : "、");
+      const a = document.createElement("a");
+      a.href = n.url;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.textContent = n.title || n.url;
+      if (n.note) a.title = n.note;
+      bits.push(a);
+    });
+    if (!bits.length) return;
+    const meta = document.createElement("span");
+    meta.className = "fable52-meta";
+    meta.append(...bits);
+    el.append(meta);
+  }
+
+  function renderFable52Chips() {
+    const host = $("#fable52Chips");
+    if (!host) return;
+    const items = fablePool();
+    host.innerHTML = "";
+    const tutorialCount = items.filter((i) => i.hasTutorial === true).length;
+    const chips = [
+      ["全部", "全部", items.length, ""],
+      ["教程", "教程", tutorialCount, "chip-emphasis"],
+    ];
+    FABLE_KIND_ORDER.forEach(([key, label]) => {
+      chips.push([key, label, items.filter((i) => i.kind === key).length, ""]);
+    });
+    chips.forEach(([key, label, count, extra]) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "chip" + (extra ? " " + extra : "") + (state.fable52Filter === key ? " is-active" : "");
+      btn.textContent = `${label} ${count}`;
+      btn.addEventListener("click", () => {
+        state.fable52Filter = key;
+        renderFable52Chips();
+        renderFable52();
+      });
+      host.appendChild(btn);
+    });
+  }
+
+  function filteredFable52() {
+    const q = state.fable52Query.trim().toLowerCase();
+    return fablePool().filter((item) => {
+      const f = state.fable52Filter;
+      if (f === "教程") {
+        if (item.hasTutorial !== true) return false;
+      } else if (f !== "全部") {
+        if (item.kind !== f) return false;
+      }
+      if (!q) return true;
+      const tags = Array.isArray(item.tags) ? item.tags.join(" ") : "";
+      const hay = `${item.title || ""} ${item.hook || ""} ${item.description || ""} ${item.tool || ""} ${item.prompt || ""} ${item.sourceAuthor || ""} ${tags}`.toLowerCase();
+      return hay.includes(q);
+    });
+  }
+
+  function renderFable52() {
+    const grid = $("#fable52Grid");
+    if (!grid) return;
+    const data = state.fable52;
+    const all = fablePool();
+    const total = data ? (data.itemCount ?? all.length) : 0;
+    const countEl = $("#fable52Count");
+    if (countEl) countEl.textContent = data ? String(total) : "";
+    const items = data ? filteredFable52() : [];
+    const hint = $("#fable52Hint");
+    if (hint) hint.textContent = data ? `显示 ${items.length} / ${total} 条` : "";
+    grid.innerHTML = "";
+    const empty = $("#fable52Empty");
+    if (!data || !items.length) {
+      if (empty) empty.classList.remove("hidden");
+      return;
+    }
+    if (empty) empty.classList.add("hidden");
+    const frag = document.createDocumentFragment();
+    items.forEach((item) => {
+      frag.appendChild(buildVisualCard(item, false, { showTutorialBadge: true, drawerKind: "fable52" }));
+    });
+    grid.appendChild(frag);
   }
 
   function renderMeta() {
@@ -957,17 +1234,19 @@
     setupFilters();
 
     try {
-      const [topicsPack, feedbackPack, visuals, manifest] = await Promise.all([
+      const [topicsPack, feedbackPack, visuals, manifest, fable52] = await Promise.all([
         loadJSON(DATA.topics),
         loadJSON(DATA.feedback),
         loadJSON(DATA.visuals),
         loadJSON(DATA.manifest),
+        loadJSON(DATA.fable52),
       ]);
 
       state.feedback = feedbackPack.feedback || {};
       state.topics = mergeFeedback(topicsPack.topics || [], state.feedback);
       state.visuals = visuals;
       state.manifest = manifest;
+      state.fable52 = fable52;
 
       renderMeta();
       renderCategoryChips();
@@ -976,8 +1255,12 @@
       renderVisuals();
       renderModelFamilyChips();
       renderModels();
+      renderFable52Intro();
+      renderFable52Chips();
+      renderFable52();
       if (location.hash === "#visuals") $("#tab-visuals")?.click();
       else if (location.hash === "#3d" || location.hash === "#models") $("#tab-models")?.click();
+      else if (location.hash === "#fable52" || location.hash === "#fable") $("#tab-fable52")?.click();
     } catch (err) {
       console.error(err);
       $("#snapshotMeta").textContent = "数据加载失败";

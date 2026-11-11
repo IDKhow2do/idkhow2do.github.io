@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>选题 · 视觉 · 3D建模</title>
+  <title>选题 · 视觉 · 3D建模 · Fable 5.2</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -29,6 +29,10 @@
       <button class="tab" role="tab" aria-selected="false" data-tab="models" id="tab-models">
         3D建模
         <span class="tab-count" id="modelsCount"></span>
+      </button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="fable52" id="tab-fable52">
+        Fable 5.2 视频
+        <span class="tab-count" id="fable52Count"></span>
       </button>
     </nav>
 
@@ -99,6 +103,27 @@
         <p>换一个风格，或清空搜索。这些卡片仍保留在「视觉素材」里。</p>
       </div>
     </section>
+
+    <!-- Fable 5.2 视频：独立 JSON，不并入视觉库 -->
+    <section class="panel" id="panel-fable52" role="tabpanel" aria-labelledby="tab-fable52" hidden>
+      <p class="filter-hint" id="fable52Intro"></p>
+      <div class="toolbar">
+        <div class="chips" id="fable52Chips" role="group" aria-label="Fable 5.2 视频分类"></div>
+        <div class="toolbar-right">
+          <label class="search-wrap">
+            <span class="sr-only">搜索 Fable 5.2 视频</span>
+            <input type="search" id="fable52Search" placeholder="搜索标题、作者或提示词…" autocomplete="off" />
+          </label>
+        </div>
+      </div>
+      <p class="filter-hint" id="fable52Hint"></p>
+      <div class="card-grid" id="fable52Grid"></div>
+      <div class="empty-state hidden" id="fable52Empty">
+        <div class="empty-icon" aria-hidden="true">◇</div>
+        <h2>这一类暂时没有匹配的用例</h2>
+        <p>试试「教程」滤镜，或清空搜索。</p>
+      </div>
+    </section>
   </div>
 
   <!-- Detail drawer -->
@@ -115,6 +140,19 @@
       <div class="drawer-section">
         <h3>为什么值得看</h3>
         <p id="drawerDesc"></p>
+        <p class="drawer-aside" id="drawerHook" hidden></p>
+      </div>
+      <div class="drawer-section" id="drawerPipelineWrap" hidden>
+        <h3>工具与流程</h3>
+        <p id="drawerPipeline"></p>
+      </div>
+      <div class="drawer-section" id="drawerTutorialWrap" hidden>
+        <div class="drawer-section-head">
+          <h3>教程 / 提示词</h3>
+          <span class="badge" id="drawerPromptProvenance" hidden></span>
+        </div>
+        <p id="drawerTutorialSummary"></p>
+        <pre id="drawerPrompt" hidden></pre>
       </div>
       <div class="drawer-section" id="drawerCaveatWrap">
         <h3>证据与边界</h3>
@@ -126,6 +164,8 @@
       </div>
       <div class="drawer-actions">
         <a class="btn-primary" id="drawerLink" href="#" target="_blank" rel="noopener noreferrer">打开原文</a>
+        <a class="btn-ghost" id="drawerTutorialLink" target="_blank" rel="noopener noreferrer" hidden>打开教程</a>
+        <a class="btn-ghost" id="drawerDemoLink" target="_blank" rel="noopener noreferrer" hidden>打开可玩成品</a>
         <div class="feedback-readonly" id="drawerFeedback"></div>
       </div>
       <p class="readonly-note">赞 / 收藏为快照只读展示，切换不会写回线上站。</p>
