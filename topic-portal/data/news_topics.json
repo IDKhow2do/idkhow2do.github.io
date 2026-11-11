@@ -1,7 +1,163 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-10T12:58:02.000Z",
+  "updatedAt": "2026-11-11T01:04:17.000Z",
   "topics": [
+    {
+      "url": "https://tech.cnr.cn/techph/20261110/t20261110_527868207.shtml",
+      "title": "把晶圆切成一颗颗芯片，为什么要用「刻蚀机」而不是刀？中微公司首台等离子体晶圆切割设备 Primo Matrix 付运：用做 TSV 深孔的深硅刻蚀来「切」，切割道最窄 5 微米",
+      "category": "半导体",
+      "source": "央广网《中微公司首台等离子体晶圆切割设备成功交付》（记者纪爱玲，2026-11-10 17:48 北京时间）；同稿见 SEMI 大半导体产业网、新华财经（2026-11-10）",
+      "publishedAt": "2026-11-10",
+      "eventAt": "2026-11-10",
+      "collectedAt": "2026-11-11T01:04:17.000Z",
+      "updatedAt": "2026-11-11T01:04:17.000Z",
+      "description": "来源：央广网 2026-11-10 稿件（转述中微公司发布内容），SEMI 大半导体产业网、新华财经同日刊发同一内容；中微官网新闻页本轮访问返回 550，未取到官网原文。事实（均为稿件所述）：中微公司（688012）发布 Primo Matrix 双反应台等离子体晶圆切割设备，称全球首台已付运国内重要集成电路封装客户。设备采用已在量产验证的 Primo TSV 等离子体深硅刻蚀技术，集成双反应台刻蚀腔和晶圆传输模块；兼容带框架 200 mm / 300 mm 晶圆（以 300 mm 为主平台）；切割道宽度最小可到 5 µm，「大幅减少晶圆面积损耗，提升有效芯片产出」；支持 25–700 µm 晶圆厚度，覆盖减薄后的超薄晶圆；系统最多搭载 6 个刻蚀反应台；支持带凸点晶圆正面等离子切割、激光开槽后等离子切割和晶圆背面刻蚀，还能做介质层等硬掩膜开口刻蚀。新华财经稿另称中微刻蚀设备覆盖 65 nm 到 3 nm 及更先进工艺。可拍角度：1）你的刻蚀老本行：「切」芯片其实是在切割道上一路深硅刻蚀刻穿，和做 TSV 深孔同一套技术——一台刻蚀机换个用途；2）为什么切割道越窄越值钱：同一片晶圆上省下的「路」就是多出来的芯片（可自制示意：5 µm 和传统刀切切割道并排对比）；3）超薄晶圆为什么怕刀：25 µm 厚的晶圆比纸还薄。开场：0 秒上 Primo Matrix 设备渲染图，叠一行「切芯片，用的是刻蚀机」。",
+      "caveat": "稿件为公司发布内容经媒体转发，未见独立评测；「全球首台」「大幅减少损耗」为公司说法，未给出与刀片/激光切割的量化对比，客户名称未披露。等离子切割相对刀切「更少崩边/裂纹」的原理属行业常识背景，不是本稿给出的数据，讲解时需区分。库内 10-22 已收中微 Primo Domingo 气相刻蚀条目，本条角度为封装切割，不重复。封面为央广网稿件内的 Primo Matrix 设备渲染图（原样引用）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261111a-amec-primo-matrix.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261111a-amec-primo-matrix.jpg",
+      "imageAlt": "中微公司 Primo Matrix 设备的白色等轴渲染图：中央圆形晶圆传输腔，四周分布多个带 AMEC 标志的反应腔模块，右侧为高机柜，背景蓝色渐变",
+      "tags": [
+        "芯片制造",
+        "刻蚀",
+        "先进封装",
+        "晶圆切割",
+        "国产设备",
+        "良率"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 90,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 17,
+          "画面": 13,
+          "来源": 11,
+          "时效": 10,
+          "大陆": 10,
+          "新颖": 4
+        },
+        "multiplier": 1.0743,
+        "finalScore": 96.7,
+        "threshold": 65,
+        "run": "2026-11-11-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.10240",
+      "title": "AI 智能体需要的那段代码明明还在「记忆」里，为什么它还是想不起来？AWS 研究者发现：KV 缓存留住了 99.6% 该留的 token，准确率照样从 93% 掉到 64%——问题不在丢没丢，而在「离得太远」",
+      "category": "AI",
+      "source": "arXiv 2611.10240《PACE: Keeping the Right Tokens in the KV Cache Is Not Enough for Long-Horizon LLM Agents》（Suman Chatterjee，Amazon Web Services；cs.LG，2026-11-06 提交）",
+      "publishedAt": "2026-11-06",
+      "eventAt": "2026-11-06",
+      "collectedAt": "2026-11-11T01:04:17.000Z",
+      "updatedAt": "2026-11-11T01:04:17.000Z",
+      "description": "一手来源：arXiv 论文摘要与正文图 1。背景：长任务智能体的会话能累积到上百万 token，KV 缓存（模型为每个历史 token 存的键/值向量）一张 GPU 装不下，推理系统只能留一小部分、把其余的「驱逐」掉；各种驱逐算法比的都是「后面要用的 token 还在不在」。论文事实：在 Qwen3-8B 上跑 10 万 token 的编程会话、缓存预算 2,048 个 token，一个按计划器指引保留 token 的策略能留住 99% 以上（0.996）需要的 token，但当「定义」和「使用」之间相隔从 2K 拉到 90K token 时，准确率从 93% 掉到 64%。作者的解释：token 在，但取不出来——变大的是它们与当前查询之间的旋转位置编码（RoPE）距离。PACE 把两件事绑在一起：①让智能体的计划器告诉缓存「后面会读哪段」；②给保留下来的 token 重新编号位置，让它们到查询的旋转距离始终小于 8K。预注册评测里，同样预算下 PACE 在 10 万 token 时通过 97% 的隐藏单元测试，H2O 为 42%，SnapKV 为 3%；两件事只做一件都只有 63%。在 100 万 / 200 万 token 会话（单张 24 GB GPU）里 PACE 通过 99% / 100% 检查，KV 状态不到 0.7 GB，而完整缓存需要 147–295 GB；重新编号不增加可测困惑度，多耗 9% 时间。可拍角度：1）「记得」和「想得起来」是两回事——人也一样，书在书架上但找不到；2）RoPE 是什么：用「转角度」给每个词标位置，离太远角度就乱了；3）这和你用 Claude 做长视频项目时「聊久了就忘前面设定」的体验直接相关。开场：0 秒上论文图 1：一条平的蓝线（PACE）和一条一路下滑的黄线（只保留不重编号），下面标注「需要的 token 在缓存里：99.6%」。",
+      "caveat": "单作者预印本，未经同行评审；结论基于 Qwen3-8B 与 Mistral-7B 两个开源模型和作者自建的编程会话基准，未在闭源大模型上验证。「Claude 聊久了会忘」只是类比，论文未测试任何商用产品。封面为论文第 3 页图 1 原样截取。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261111a-pace-kv.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261111a-pace-kv.jpg",
+      "imageAlt": "论文图 1 折线图：横轴为定义与使用之间的间隔（2K 到 90K token），纵轴为隐藏测试通过率；蓝线 PACE 保持在 97–100%，黄线「仅保留」从 93% 降到 64%，灰线 H2O 在 45–55% 之间，图内注明「仅保留：所需 token 驻留率 0.996」",
+      "tags": [
+        "智能体",
+        "KV缓存",
+        "AI推理",
+        "长上下文",
+        "位置编码"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 87.7,
+        "threshold": 65,
+        "run": "2026-11-11-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.10063",
+      "title": "让 AI 写代码画机械零件，它 98% 的时候都说「做好了」——为什么其中 14% 是图能渲染、尺寸却是错的？研究者只加一条规矩「先量再报完成」，悄悄出错就降到 3%",
+      "category": "AI",
+      "source": "arXiv 2611.10063《Done Is Not Correct: Measuring Silent Failures and Self-Verification Calibration When LLM Agents Take CAD Actions》（Carson Rodrigues 等，Celabe / 科堡应用科学大学；cs.SE，2026-11-06 提交）",
+      "publishedAt": "2026-11-06",
+      "eventAt": "2026-11-06",
+      "collectedAt": "2026-11-11T01:04:17.000Z",
+      "updatedAt": "2026-11-11T01:04:17.000Z",
+      "description": "一手来源：arXiv 论文摘要、表 1 与图 1。事实：作者做了一个 CAD 基准，13 个规格任务（分三档），每条要求都映射成可由几何内核精确测量的属性（尺寸公差带、特征数量、螺栓孔圆周位置、质心偏移、体积）。他们定义「静默失败」：生成了合法、可渲染的实体，模型明确声称完成，但至少有一项语义检查不合格。四家厂商的四个模型（表 1 为 claude-haiku-4-5、claude-sonnet-4-6、deepseek-v3.2、qwen3.7-max），每种架构 156 次尝试：单次生成的智能体 98% 的尝试都声称完成（153/156），其中 14.1% 是静默失败（22/156），「说完成就真完成」的比例只有 64%；改成强制「先测量再声明完成」的工具循环后，静默失败降到 3.2%（5/156），声明准确率升到 96%。消融实验把改善归因于「声明规则」而非反馈本身；规划-编码-检查三段式流水线精度相近但覆盖更低、没提高成功率。模型自报信心在单次模式下校准很差（ECE 0.32）。作者还自我审计：加固判分器后 519 个结论里有 18 个从通过改判为失败、没有反向改判。可拍角度：1）「代码能跑」≠「东西对」——零件图看着没毛病，孔位差了几毫米就装不上；2）AI 的「我做完了」要怎么验收：给它一把尺子，而不是多派几个 AI 互相检查；3）对你做 3D 建模/数字 Fab：让 AI 建模后自动量尺寸再交付。开场：0 秒上论文图 1：左边成功率柱状图、右边静默失败率，蓝柱（单次）明显高于橙柱（强制测量）。",
+      "caveat": "小团队预印本，未经同行评审；只有 13 个任务、四个模型，置信区间较宽（静默失败率任务聚类 CI 5.8–24.4%）；结论限于参数化 CAD 代码生成场景。封面为论文第 6 页图 1 原样截取。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261111a-cad-silent.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261111a-cad-silent.jpg",
+      "imageAlt": "论文图 1 两张柱状图：左为四个模型在单次、工具循环、多智能体三种条件下的成功率；右为静默失败率，单次条件的蓝柱最高约 0.2，工具循环的橙柱多数接近 0",
+      "tags": [
+        "智能体",
+        "AI可靠性",
+        "CAD",
+        "自我验证",
+        "3D建模"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 79,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 16,
+          "画面": 10,
+          "来源": 14,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 83.5,
+        "threshold": 65,
+        "run": "2026-11-11-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/multimodal-knowledge-agent-benchmark/",
+      "title": "大多数「AI 打工能力」考试只看文字就能答——为什么谷歌说真正的白领活儿得「看图」？新基准 MKA：200 个要专家干 3–8 小时的看图纸任务，同一题不同模型要 30 到 130 轮才做完",
+      "category": "AI",
+      "source": "Google 官方博客《Introducing the Multimodal Knowledge Agent benchmark》（Rohan Doshi、Ben Caine，Google DeepMind，2026-11-10）",
+      "publishedAt": "2026-11-10",
+      "eventAt": "2026-11-10",
+      "collectedAt": "2026-11-11T01:04:17.000Z",
+      "updatedAt": "2026-11-11T01:04:17.000Z",
+      "description": "一手来源：Google 博客。事实：Google DeepMind 与 Artificial Analysis 合作发布 MKA（Multimodal Knowledge Agent）基准，用来测智能体在视觉复杂的文件上做真实知识工作的能力。出发点：多数知识工作基准只用文字就能解，但建筑图纸、工程原理图、报告和表格这类工作本质上是视觉的。由 10 个行业、83 种职业的专家（建筑师、生物学家、核保员、数据科学家等）出题，共 200 个任务，每个是资深从业者要做 3–8 小时的多步骤项目，配一包多模态输入文件和约 70 条是/否评分细则（75% 看事实准确、25% 看视觉设计）。所有模型跑在同一个开源智能体框架 Stirrup 里，用同样的工具、沙箱和轮数预算；评分由一个基于非 Google 模型的智能体自动评分器完成，它会打开每个文件、渲染页面、检查表格公式——与领域专家人工评分一致率 96%。200 题评测集由 Artificial Analysis 私有保管防止泄漏，另在 Hugging Face 公开 10 道样题。技术报告称：不同前沿模型做同一批任务平均要 30 到 130 轮，效率差异极大；去掉视觉输入后，模型会尝试补偿但做不好。Google 称 Gemini 4 Carbon 在测试模型中质量排第 2，平均成本比第一名低 6 倍。可拍角度：1）AI 考满分≠能上班：考题只用文字，真实工作要看图；2）同一道题有的模型 30 步、有的 130 步——「慢」也是成本；3）你是工程师出身，可以拿一张工艺流程图举例：AI 看懂图纸比读懂文字难在哪。开场：0 秒上一张建筑图纸/原理图，问「这个活儿，AI 能干吗？」",
+      "caveat": "Google 自家参与设计的基准，并在同文中宣传自家模型（Gemini 4 Carbon 排第 2）；文中未给出第一名模型名称和具体分数。评分器一致率 96% 为官方说法。库内待定区已有 Gemini 4 Carbon 发布条目（10-29），本条角度是基准设计，不讲模型本身。封面为 Google 博客官方题图（装饰性插图，非数据图）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261111a-mka-benchmark.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261111a-mka-benchmark.jpg",
+      "imageAlt": "Google 官方题图：深蓝背景左侧文字「Multimodal Knowledge Agent (MKA) Benchmark」，右侧为几张半透明发光的文档卡片，上面有柱状图和户型图线条，旁边一个放大镜圆环",
+      "tags": [
+        "智能体",
+        "多模态",
+        "基准测试",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 72,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 11,
+          "画面": 8,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 76.1,
+        "threshold": 65,
+        "run": "2026-11-11-0840-shanghai"
+      }
+    },
     {
       "url": "https://semiengineering.com/shrinking-hybrid-bonding-pitches-push-inspection-limits/",
       "title": "两片晶圆「脸贴脸」粘在一起之后，中间埋着的空洞要怎么看见？为什么混合键合间距缩到 5 微米以下，一颗 50 纳米的灰尘就能让上层晶圆整片剥开，而超声波能「发现」5 微米的缺陷却量不准它",
