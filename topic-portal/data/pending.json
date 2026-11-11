@@ -3,6 +3,132 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 57,
+      "multiplier": 1.038,
+      "score": 59.2,
+      "reason": "本轮达待定区间",
+      "run": "2026-11-11-0840-shanghai",
+      "record": {
+        "title": "一杯尼格罗尼从透明的金酒「晕」成宝石红——为什么作者说杯里的酒是实时 3D 流体物理？@hapticdata 用 Gemini 4 + Blender + WebGPU 做的互动调酒台",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/hapticdata/status/2120214332952965127",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261111a-mixology.jpg",
+        "previewType": "image",
+        "description": "作者 @hapticdata 原帖（2026-11-10 17:57 UTC，27.5 秒视频，约 16 赞）：「互动 3D 调酒：看一杯尼格罗尼从清澈的金酒绽放成红宝石色的金巴利，往我最爱的黑曼哈顿里滴苦精，在实时 3D 流体物理中探索经典鸡尾酒配方。用 Gemini 4 制作，使用了 Blender 和 WebGPU。」本轮截 4 帧核验：木吧台上的玻璃杯与搅拌棒（Negroni、Black Manhattan、Paper Plane 等配方切换）、侧边配方面板——非头像。画面中流体混合过程不明显，作者未说明流体算法。",
+        "tool": "Gemini 4 + Blender + WebGPU（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者 X 原帖（X API 获取）；无链接、源码、提示词或许可证；「实时 3D 流体物理」为作者说法，未见算法说明。X 媒体仅外链引用。",
+        "attribution": "@hapticdata（X）",
+        "sourceAuthor": "hapticdata",
+        "tags": [
+          "WebGPU",
+          "流体",
+          "Blender",
+          "Gemini 4",
+          "互动"
+        ],
+        "publishedAt": "2026-11-10T17:57:43.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-11-11T01:04:17.000Z",
+        "updatedAt": "2026-11-11T01:04:17.000Z",
+        "verification": {
+          "checked_at": "2026-11-11T01:04:17.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为视频第 4 秒截帧：木吧台上一只盛红色尼格罗尼和冰块的古典杯，搅拌棒插在杯中，左上标题「Negroni」，非头像。",
+          "video_check": "下载 27.5 秒视频截四帧核验；无可玩链接。"
+        },
+        "curation": {
+          "baseScore": 57,
+          "baseBreakdown": {
+            "实体": 17,
+            "科普": 10,
+            "溯源": 9,
+            "复现": 5,
+            "风格": 8,
+            "新颖": 8
+          },
+          "multiplier": 1.038,
+          "finalScore": 59.2,
+          "threshold": 65,
+          "run": "2026-11-11-0840-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2120208618351927296/vid/avc1/1440x758/AtldHRx_DPEtQazS.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 58,
+      "multiplier": 1.0,
+      "score": 58.0,
+      "reason": "本轮达待定区间",
+      "run": "2026-11-11-0840-shanghai",
+      "record": {
+        "title": "战斗机平飞时翼尖干干净净，一拉大过载急转就拖出两道白雾、松杆一两秒又消失——为什么这个细节能让飞机「显得重」？浏览器飞行游戏 Armata（Rust + WebGPU）",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/ArmataGame/status/2120285648552923331",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261111a-armata-vapor.jpg",
+        "previewType": "image",
+        "description": "@ArmataGame 原帖（2026-11-10 22:41 UTC，18 秒视频）：「Armata 里的翼尖凝结雾只在飞机真正拉过载时才形成：平飞时干净，滚转进急转时出现，松杆后一两秒内消失。小细节，但它让喷气机有了重量感。Rust + WebGPU 构建，在浏览器里运行。」本轮截 4 帧核验：低空飞越欧式城镇的喷气机，两侧翼尖拖出白色凝结尾迹——非头像。物理背景（非帖文内容）：翼尖涡核心压力和温度下降，湿空气中的水汽凝结成可见的雾。",
+        "tool": "Rust + WebGPU（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "游戏官方账号 X 帖（X API 获取）；源码与实现细节未公开，帖文有游戏推广性质。X 媒体仅外链引用。",
+        "attribution": "@ArmataGame（X）",
+        "sourceAuthor": "ArmataGame",
+        "tags": [
+          "WebGPU",
+          "Rust",
+          "飞行模拟",
+          "空气动力学",
+          "浏览器游戏"
+        ],
+        "publishedAt": "2026-11-10T22:41:06.000Z",
+        "collectionIds": [],
+        "collectedAt": "2026-11-11T01:04:17.000Z",
+        "updatedAt": "2026-11-11T01:04:17.000Z",
+        "verification": {
+          "checked_at": "2026-11-11T01:04:17.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为视频第 7.2 秒截帧：一架灰色喷气战斗机在城市上空倾斜转弯，两侧翼尖拖出白色雾带，非头像。",
+          "video_check": "下载 18 秒视频截四帧核验。"
+        },
+        "curation": {
+          "baseScore": 58,
+          "baseBreakdown": {
+            "实体": 16,
+            "科普": 14,
+            "溯源": 9,
+            "复现": 4,
+            "风格": 7,
+            "新颖": 8
+          },
+          "multiplier": 1.0,
+          "finalScore": 58.0,
+          "threshold": 65,
+          "run": "2026-11-11-0840-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2120285509771743232/vid/avc1/1920x1080/WtNzynap92cfZtR9.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 65,
       "multiplier": 1.219,
       "score": 79.2,
@@ -7203,6 +7329,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-10T12:58:02.000Z",
+  "updatedAt": "2026-11-11T01:04:17.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
