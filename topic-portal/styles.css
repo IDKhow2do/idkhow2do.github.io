@@ -657,3 +657,71 @@ code {
 
 .ind.is-on.nope { color: #fff; background: #6b7280; border-color: transparent; }
 #exportFeedback { margin-left: 8px; white-space: nowrap; }
+
+/* Fable 5.2 视频 — appended; existing card grid unchanged */
+.badge-tutorial {
+  color: var(--text);
+  background: rgba(20, 18, 16, 0.1);
+  font-weight: 650;
+}
+
+#fable52Chips .chip-emphasis:not(.is-active) {
+  color: var(--text);
+  background: rgba(20, 18, 16, 0.12);
+  font-weight: 640;
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+
+#fable52Intro a {
+  color: var(--text-muted);
+}
+
+.fable52-meta {
+  display: block;
+  margin-top: 4px;
+}
+
+.drawer-aside {
+  margin: 8px 0 0;
+  font-size: 0.84rem;
+  line-height: 1.55;
+  color: var(--text-dim);
+  white-space: pre-wrap;
+}
+
+.drawer-section-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.drawer-section-head h3 { margin: 0; }
+
+#drawerPipeline { white-space: pre-wrap; }
+
+#drawerPrompt {
+  margin: 12px 0 0;
+  padding: 12px 14px;
+  max-height: 280px;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.btn-ghost[hidden],
+.btn-primary[hidden],
+#drawerPrompt[hidden],
+#drawerHook[hidden],
+#drawerPromptProvenance[hidden],
+.drawer-section[hidden] {
+  display: none !important;
+}
