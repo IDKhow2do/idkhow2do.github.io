@@ -1,7 +1,85 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-12T08:47:11.000Z",
+  "updatedAt": "2026-11-12T12:44:46.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2611.10866",
+      "title": "让大模型学会新本事，不用改一个数、只要「删」：把不到 0.05% 的权重直接置零，Llama 8B 做数学题 83.55 分，反超全量微调的 83.24——而且补丁只有 8.4MB，全量微调要 30GB",
+      "category": "AI",
+      "source": "arXiv:2611.10866《The Surprising Effectiveness of Deleting Weights in LLM Post-Training》（Jack Lu、Zhenbang Yang 等，纽约大学 / 卡尔加里大学，NeurIPS 2026），2026-11",
+      "publishedAt": "2026-11-11",
+      "eventAt": "2026-11-11",
+      "collectedAt": "2026-11-12T12:44:46.000Z",
+      "updatedAt": "2026-11-12T12:44:46.000Z",
+      "description": "一手来源：arXiv 论文 HTML 全文（本轮核对表 2 数字）+ 作者项目页 agenticlearning.ai/deleting-weights + 开源代码 github.com/agentic-learning-ai-lab/deleting-weights + HuggingFace 已训练掩码。方法叫 Deletion Tuning：预训练权重全部冻结，只给每个 Transformer 块 MLP 里「门控投影」的每个权重配一个可训练开关，训练时开关是平滑的 sigmoid，越训越陡，最后变成非 0 即 1——要么保留原值，要么删掉（置零）。整个「微调」就是一张 1 比特/权重的掩码，不写入任何新数值。结果（表 2）：Llama 8B 在 GSM8K 上 83.55%（全量微调 83.24%，基座 60.27%），掩码压缩后 8.4MB，全量微调检查点 30,633MB；Qwen3-30B-A3B 混合专家模型上 58.54% 对 58.43%，掩码 29.6MB。在强化学习、监督微调、在线蒸馏三种后训练方式、0.5B 到 30B 八个基座上都能追平全量微调；强化学习下旧任务几乎不掉分，而全量微调、LoRA、随机稀疏微调最多掉 5.4 分（遗忘更少）。可讲的机制：新能力可能本来就「藏」在预训练权重里，后训练更像是把挡路的少数连接剪掉，而不是教新知识——和库里「涌现」主线呼应。可拍角度：1）一张 4×4 灰格子矩阵，红叉打掉两格就「学会了做题」，0 秒画面即论文图 1；2）30GB vs 8.4MB 的体积对比（换任务只换一张掩码）；3）为什么「删」比「改」忘得少——给你的「涌现」长片当一个案例。开场：0 秒上满屏数字矩阵，一格格熄灭，字幕「删掉万分之五，它反而会做数学题了」。",
+      "caveat": "「反超」只在部分设置成立（Llama 8B GSM8K 83.55 vs 83.24 属同一水平，小模型上仍略低于全量微调，论文自述差距随规模缩小）；评测以数学推理、领域知识、工具调用为主；「新能力本来藏在权重里」是解读而非论文直接证明，论文用稳定秩、谱漂移等几何指标分析。封面为论文图 1（方法示意：冻结权重、门控 logit、sigmoid 退火、部署时 1 比特掩码）。与库内「删掉智能体 75% 旧轨迹」（arXiv 2610.35496）只是同用「删」字，主题不同。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261112d-deletion-tuning.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261112d-deletion-tuning.jpg",
+      "imageAlt": "论文图 1：冻结的预训练权重矩阵乘以可训练门控 logit，经 sigmoid 退火变成二值掩码，部署时少数权重被打叉置零，每个权重只占 1 比特",
+      "tags": [
+        "AI训练",
+        "大模型",
+        "微调",
+        "涌现",
+        "开源"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 86,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 19,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 90.9,
+        "threshold": 65,
+        "run": "2026-11-12-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.14505",
+      "title": "让智能体把同一类题反复做几百遍，它会越做越省吗？Continual-ARC：给它「记笔记」的外挂几乎省不下什么，多数还不如「把例题原样存下来」的笨办法；真正在没见过的新题上变强的，只有改了权重的模型",
+      "category": "AI",
+      "source": "arXiv:2611.14505《Continual-ARC: Measuring Skill Acquisition over a Working Lifetime》（Daniel Lenton 等，Unify），2026-11；作者博客 unify.ai《Why we built Continual-ARC》2026-11-11；项目页 continualarc.org",
+      "publishedAt": "2026-11-11",
+      "eventAt": "2026-11-11",
+      "collectedAt": "2026-11-12T12:44:46.000Z",
+      "updatedAt": "2026-11-12T12:44:46.000Z",
+      "description": "一手来源：arXiv 论文 HTML 全文 + 作者博客 + 项目页。问题：现在流行给智能体加「外挂记忆/笔记」（harness 持久化），号称它会在工作中越用越熟练。作者把 ARC-AGI 抽象推理题做成一条「职业生涯」任务流：同一道题隔一段时间换一组新输入再出现，新题不断加入；每道题智能体可以花钱看例题、提交答案，错一次也要扣预算，按用掉的预算占比计分。跑完后冻结，再考两场：见过的题换新输入（测记忆）、100 道从没见过的题（测泛化）。被测的有 prime-agent 外挂（带/不带持久化）跑在 Qwen3.5-9B 和 GLM-5.3 Flash 上，另测了 hermes-agent、openclaw 等，对照组包括「直接缓存每题例题」的笨办法、「每题让模型写一段程序」的程序归纳法，以及让 Qwen3.5-9B 改权重去模仿 GLM-5.3 Flash。结论：外挂持久化通常省不下预算，除非人明确指导它存什么；多数外挂方法学到的比「缓存例题」还少；只有被告知「每题存一段程序」时老师模型的外挂才追上程序归纳法；在没见过的题上，所有外挂方法都没进步，只有改权重的方法明显变强。可讲的机制：笔记≠学会，模型自己挑着记，往往记错重点。可拍角度：1）新员工天天记笔记却一直不熟练 vs 真正「长进脑子里」；2）对比今天另一条 Deletion Tuning：改权重才是学会；3）国产模型 Qwen、GLM 都在被测之列。开场：0 秒上论文图——25 道题在 200 次出现里反复回归的彩色时间线，字幕「同一道题一遍遍回来，它并没有越做越省」。",
+      "caveat": "主要结果在 ARC-AGI-1 轨道和 9B 级别小模型上，前沿大模型只有初步结果；开场文案为概括，具体节省比例以论文图 3–5 为准，拍摄前需核对；外挂表现受提示与存储策略影响，论文本身强调「解释怎么学」而非排名。封面为论文图（任务在实例流中反复出现的时间线）。与库内其它 continual 相关条目角度不同。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261112d-continual-arc.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261112d-continual-arc.jpg",
+      "imageAlt": "论文图：横轴为 0–200 个实例、纵轴为 25 道任务，彩色线段显示同一任务在任务流中隔段时间反复出现",
+      "tags": [
+        "智能体",
+        "AI记忆",
+        "持续学习",
+        "基准测试",
+        "国产模型"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 7,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 88.8,
+        "threshold": 65,
+        "run": "2026-11-12-2040-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2611.13709",
       "title": "你写进 CLAUDE.md / AGENTS.md 的规矩，AI 到底听不听？查了 268 个仓库、6541 次智能体提交：54.4% 的指令每次都照做，37.3% 一次都没做，几乎没有「有时做」——而且 Claude Code 的平均遵守率（52.2%）明显低于 Copilot（66.0%）",
