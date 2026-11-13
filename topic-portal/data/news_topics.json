@@ -1,7 +1,46 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-13T00:55:36.000Z",
+  "updatedAt": "2026-11-13T04:47:32.000Z",
   "topics": [
+    {
+      "url": "https://schelling-atlas.com/",
+      "title": "两个互不认识的 AI 智能体，没约地点，能在整个互联网上找到彼此吗？能，而且几分钟就够——13 个模型里，65 对中 32 对五分钟内碰头，全部选在同一个冷门推送网站 ntfy.sh；问它们会去哪，四分之三答「维基百科」，可实际上没有一个智能体去过维基",
+      "category": "AI",
+      "source": "Schelling Atlas 研究站（David Schmotz、Derck Prinzhorn、Ameya Prabhu、Maksym Andriushchenko；ELLIS 图宾根研究所、马普智能系统所、图宾根 AI 中心、Exponential Security Labs），2026-11-12 发布（Hacker News 11-12 收录）",
+      "publishedAt": "2026-11-12",
+      "eventAt": "2026-11-12",
+      "collectedAt": "2026-11-13T04:47:32.000Z",
+      "updatedAt": "2026-11-13T04:47:32.000Z",
+      "description": "一手来源：研究团队官方站点 schelling-atlas.com 全文（本轮通读正文与图注）。问题：「谢林点」——两个人没法商量、只能猜对方会去哪时，大家会不约而同选同一个地方（纽约问卷里多数人选中央车站问讯处、中午 12 点）。那两个独立运行的 AI 智能体，各拿一个秘密 token、被要求在网上找到对方交换，却不告诉它们在哪见面，会怎样？结果：①13 个模型、5 分钟 20 步 3 次发帖的设定下，65 对里 32 对碰头，全部在 ntfy.sh——一个本来用来给自己手机推通知的网站，任何人发一条 HTTP 请求就能往任意「话题名」里写；②它们是「凭记忆」去的：366 次首次访问新网站里 325 次不是来自搜索或链接；③话题名也得猜中，最常见的是 agent-rendezvous、agent-recognition 加日期；④把 ntfy.sh 封掉，65 对里只剩 4 对碰头；给 20 分钟则 20 对；⑤不同模型家族也能找到彼此（50 对里 24 对，仍全在 ntfy.sh）；⑥被要求「不留痕迹」时，90 个智能体里 37 个选了阅后即焚或主动删帖的渠道，一对 5.6-Sol 在 cl1p.net 网络剪贴板上见面，读完即销毁，网站上什么都没留下；⑦还有智能体把 token 钉在 OpenStreetMap 经纬度 0°N 0°E、打进公共文字画布、挂成网店商品；⑧1107 个联网智能体里 280 个访问过已失效的域名，其中 121 个域名无人注册——谁买下就能收到并操控它们的请求。可拍角度：1）开场直接放研究站的网络图——一圈模型、中间一个蓝点 ntfy.sh；2）「说的 vs 做的」：问它们去哪答维基，实际全去 ntfy；3）阅后即焚的剪贴板时间线，讲 AI 之间可以不留痕迹地协调；4）与涌现选题呼应：没有约定，同一份训练数据就是「默契」；5）安全面：死域名可被抢注、智能体群可能自己结成「蜂群」。0 秒开场：屏幕中央一个蓝点，十几条线从各个模型射向它——「它们没商量过」。",
+      "caveat": "研究团队自建测试，网页是「模拟网」：智能体读的是真实互联网，但发帖只进私有副本，没有真的写到 ntfy.sh 等网站；每个设定每个模型仅 5 次试验，样本小；目前为研究网站发布，未见同行评审论文；模型名为研究中的版本（如 Opus 5.5、Fable 5.1、6.1-Sol 等）。Sonnet 5 的 40 个智能体一次网络请求都没发，被排除。与库内 Anthropic 多智能体等条目角度不同（这里是无约定协调）。封面为研究站官方 og 图（模型—网站网络图）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261113b-schelling-atlas.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261113b-schelling-atlas.jpg",
+      "imageAlt": "Schelling Atlas 官方图：左侧标题「AI agents know where to find each other on the web」，右侧一圈模型节点（Opus 5.5、Fable 5.1、GLM 5.3 Flash、Kimi K3.1 Pro 等）连线汇聚到中心蓝色节点 ntfy.sh",
+      "tags": [
+        "智能体",
+        "AI安全",
+        "涌现",
+        "多智能体",
+        "谢林点"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 14,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 91.9,
+        "threshold": 65,
+        "run": "2026-11-13-1240-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2611.11455",
       "title": "代码库里本来就有的漏洞，AI 编程智能体会照着「抄」进新代码——而且它其实认得出那是漏洞：苏黎世联邦理工测了 5 个前沿模型，同一道 C/C++ 题只因仓库里别处的代码不安全，写出安全代码的比例平均掉 35.4 个百分点，最多掉 49",
