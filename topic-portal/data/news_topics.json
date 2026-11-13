@@ -1,7 +1,124 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-12T12:44:46.000Z",
+  "updatedAt": "2026-11-13T00:55:36.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2611.11455",
+      "title": "代码库里本来就有的漏洞，AI 编程智能体会照着「抄」进新代码——而且它其实认得出那是漏洞：苏黎世联邦理工测了 5 个前沿模型，同一道 C/C++ 题只因仓库里别处的代码不安全，写出安全代码的比例平均掉 35.4 个百分点，最多掉 49",
+      "category": "AI",
+      "source": "arXiv:2611.11455《Coding Agents Propagate Vulnerabilities in Code Bases》（Chenhao Sun、Niels Mündler-Sasahara、Mark Vero、Martin Vechev，苏黎世联邦理工 SRI 实验室），2026-11-08；代码 github.com/eth-sri/vulnerability-propagation（MIT）",
+      "publishedAt": "2026-11-08",
+      "eventAt": "2026-11-08",
+      "collectedAt": "2026-11-13T00:55:36.000Z",
+      "updatedAt": "2026-11-13T00:55:36.000Z",
+      "description": "一手来源：arXiv 论文全文（本轮核对摘要与图 1 数字）+ SRI 实验室论文页 + 开源评测代码。问题：编程智能体写新代码前会先翻仓库、照着已有代码的风格写。那如果仓库里「隔壁」的代码本来就有漏洞呢？做法：同一道题给两份只差一处的仓库——别处功能无关但相似的代码一份是安全写法、一份是有漏洞写法，看智能体写出的代码安不安全。两组实验：1）96 个后端任务（在已有其他服务的仓库里新写一个 Web 后端，覆盖 SQL 注入、路径穿越等 7 类 CWE，用端到端攻击脚本判分）；2）20 组真实 C/C++ 项目任务（libxml2、FFmpeg、Ghostscript、OpenSC、c-blosc2），把一段已知内存安全漏洞所在位置挖掉让智能体补，用漏洞 PoC 输入验证。被测：GLM 5.3、Claude Opus 5、GPT-5.6 Sol，内存安全题另加 Opus 5.5 和 GPT-6 Astra。结果：后端任务里，有漏洞的「邻居」让「功能对且安全」的比例平均降 3.4 个百分点（图 1a 最多 12.5%）；C/C++ 仓库里，安全 vs 不安全上下文的差距平均 35.4 个百分点，五个模型在 25–49 之间，GPT-5.6 Sol 从 91% 掉到 42%。让它「遵循现有代码风格」会抄得更凶；提醒它「注意安全」能减轻但止不住。最反直觉的是追问环节：76.5% 的情况下智能体说自己是照着仓库里另一处代码写的，而 69.9% 的情况它其实能指出这是个漏洞。对照：邻居里的漏洞类型和当前任务无关时，影响很小——说明不是「代码乱」就会变差，而是「相关的坏样板」会被复制。可拍角度：1）新员工照着老代码抄，连 bug 一起抄——AI 也一样，而且它知道；2）AI 写的代码越来越多、人审得越来越少，漏洞会像病毒一样在代码库里「繁殖」；3）国产 GLM 5.3 也在被测之列。开场：0 秒上论文图 1 的柱状图，五根柱子从 25 一路涨到 49，字幕「它知道这是漏洞，还是抄了」。",
+      "caveat": "样本较小：96 个合成后端任务 + 20 组 C/C++ 任务对，安全/不安全版本由作者构造或挑选；智能体运行时断网；测的是受控替换上下文，不是真实代码库数月的演化。单一团队预印本，暂无独立复现。「69.9% 认得出」来自事后追问，不等于写代码时就意识到。封面为论文图 1（两种设置下各模型安全性下降幅度）。与库内 IBM/Red Hat 开源漏洞修复条目主题不同。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261113a-vuln-propagation.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261113a-vuln-propagation.jpg",
+      "imageAlt": "论文图 1：上图后端生成中 Opus 5、GLM 5.3、GPT-5.6 Sol 安全性分别下降 4.9%、5.9%、12.5%；下图 C/C++ 仓库级任务中五个模型下降 25%–49%",
+      "tags": [
+        "智能体",
+        "AI安全",
+        "编程智能体",
+        "代码漏洞",
+        "国产模型"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 19,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 7,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 89.8,
+        "threshold": 65,
+        "run": "2026-11-13-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.07962",
+      "title": "给 124 个点连线，不许出现三角形和四边形，最多能连几条？文献纪录 629 条，Kimi K3 连出了 630 条——可同一张姚期智、杨植麟联合出的 100 道理论计算机「科研卷」上，30 道开放猜想没有一个模型真正解开，多数国产模型的定理证明只拿 5% 上下",
+      "category": "AI",
+      "source": "arXiv:2611.07962《TCSExam: Evaluating Frontier LLMs on the Full Range of TCS Research》（月之暗面、清华大学交叉信息研究院、上海期智研究院；作者含姚期智、杨植麟），2026-11-05；项目页 moonshotai.github.io/TCSExam",
+      "publishedAt": "2026-11-05",
+      "eventAt": "2026-11-05",
+      "collectedAt": "2026-11-13T00:55:36.000Z",
+      "updatedAt": "2026-11-13T00:55:36.000Z",
+      "description": "一手来源：arXiv 论文 HTML 全文（本轮取图 5）+ 月之暗面项目页（含可交互的 124 点图与量子纠错码演示）；中文报道（雷锋网/新浪 11-12、凤凰、澎湃 11-09）仅作交叉核对。问题：大模型会做数学题，能不能做数学「研究」？难点是判卷——模型写几百页证明谁来查。理论计算机科学（TCS）的结论大多能被机器验证，所以拿它出卷。卷子 100 道，四类：定理证明 20 道（从 2023–2026 论文里摘定理，必须交 Lean 4 证明由机器检查）、求解器工程 30 道（写一个程序解一类题，隐藏实例测试）、显式构造 20 道（把图、纠错码等对象造出来并验证）、开放猜想 30 道（未解决的猜想，证明或推翻才算分，无步骤分）。总分 I=30P+30S+30C+10O。8 个模型参加完整版：GPT-6 Astra 71.9 第一，Kimi K3.1 Pro 57.4 第二，Kimi K3、DeepSeek V4.1 Flash、GLM-5.3、Qwen3.8 Max、Grok 4.6 在 40–47 之间。反直觉点：1）构造题几乎人人接近或超过参考答案（86%–105%），Kimi K3 造出 124 顶点、630 条边、无三角形无四边形的图（参考 629，Goedgebeur 等 2025），还给出 [[25,7,6]] 量子纠错码（参考距离 5）；2）定理证明却断崖——Astra 70%，Kimi K3.1 Pro 38.3%，其余 0%–11.7%；DeepSeek 0910 一份完整证明都没交出，却在构造题里破了纪录；3）开放猜想最高 5.6%，没有模型独立解开一个。可讲的机制：「会搜、会造」≠「会证明」——构造可以靠程序大量试错，证明需要自己找关键引理、规划长链条。可拍角度：124 个村子修路不许绕出三角和四边形环线，多修一条有多难；给提示后 Kimi K3 从 3 道涨到 7 道——它缺的是「思路」不是「算力」。开场：0 秒上图 5 那张 124 点的灰色连线网，绿色五边形亮起，字幕「多连一条线，人类纪录被改写了」。",
+      "caveat": "论文 11-05 上 arXiv，本轮因 11-12 中文报道集中出现才扫到（时效按 ≤14 天计）；「破纪录」为「据作者所知优于已知结果」，630 边图的极值意义是下界改进，非证明最优；开放猜想项中非零分部分引用了 OpenAI 已发表结果，Kimi K3.1 Pro 与 DeepSeek 1017 在联网条件下改写已公开反例通过验证（项目页注明）；构造题百分比换算方式不一，论文同时给出原始数字。封面为论文图 5（Kimi K3 的 124 顶点 630 边图与 [[25,7,6]] 稳定子码）。与库内 Science「Lean 证明可信吗」条目角度不同。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261113a-tcsexam-graph.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261113a-tcsexam-graph.jpg",
+      "imageAlt": "论文图 5：左为 124 个顶点的灰色连线图，绿色标出一条最短的五边形环；右为 18 行×25 列的 X/Y/Z 稳定子生成元表",
+      "tags": [
+        "AI推理",
+        "AI数学",
+        "基准测试",
+        "国产模型",
+        "形式化验证"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 12,
+          "来源": 15,
+          "时效": 7,
+          "大陆": 10,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 89.8,
+        "threshold": 65,
+        "run": "2026-11-13-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+      "title": "你给 AI 的资料里藏一句「忽略上面的指令」，它为什么就真照做了？IBM：问题出在 JSON——对模型来说，正文里的引号和「字段结束」的引号是同一个 token；换成专用标记把「指令」和「数据」分开，3B 小模型扛住了几乎全部 9000 次注入攻击，GPT-6 Astra 只扛住一半",
+      "category": "AI",
+      "source": "Hugging Face 博客（IBM Granite 团队）《LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B》，2026-11-12；模型 granite-4.1-3b/8b-LLMON-preview 与 LLMON 工具库同步开源",
+      "publishedAt": "2026-11-12",
+      "eventAt": "2026-11-12",
+      "collectedAt": "2026-11-13T00:55:36.000Z",
+      "updatedAt": "2026-11-13T00:55:36.000Z",
+      "description": "一手来源：IBM Granite 团队在 Hugging Face 的官方博客（本轮通读全文，核对 OPI 图）。问题：「间接提示注入」——把恶意指令藏进网页、文档、工具返回结果里，模型读到就照做。IBM 的诊断：上下文里的结构（哪段是系统指令、哪段是用户数据、哪段是要求）要么靠模型自己猜，要么用 JSON 表示，可 JSON 是给解析器设计的——分词器不管语法，文档里的一个引号和闭合字段的引号对模型是同一个 token，嵌套深度靠数括号，而 Transformer 恰恰不擅长长距离数括号。做法 LLMON（LLM Object Notation，读作 lemon）：类 XML 的标记，但结构分隔符是 6 个保留的「特殊 token」，与正文用的词表完全分开；每段内容有标签和两字符 ID，末尾一个 exec 块写明「执行哪条指令、作用于哪段数据、遵守哪些要求、输出写到哪」，像函数调用传参。只有 exec 指向的指令会被执行，藏在数据里的指令没人引用。训练：从 Granite 4.1 基座开始，把常规指令微调语料重新序列化成 LLMON，并混入诱饵指令和诱饵数据。结果（OPI 基准 9000 次攻击，鲁棒性 = 1−攻击成功率）：两个 LLMON 预览模型接近 1.0，GPT-6 Astra 约 0.53，Claude Opus 5.5 约 0.12，Granite 4.1 8B 原版约 0.05，Qwen3.8-27B、Gemma 4 系列接近 0；通用能力与 Granite 4.1 Instruct 持平。可拍角度：1）「引号是同一个 token」——用一张分词示意图讲清为什么 AI 分不清「命令」和「内容」；2）小模型靠「格式」打赢大模型；3）国内可直接下载使用的开源模型。开场：0 秒上 OPI 柱状图，两根蓝条顶满、Astra 只到一半，字幕「它分不清哪句是你说的、哪句是网页说的」。",
+      "caveat": "数字为 IBM 自报，OPI 测的是静态间接注入，作者自己说明多轮自适应攻击仍在改进；模型为 experimental preview；对比的前沿模型未用 LLMON 格式，非完全同条件；ASB、StruQ 两个基准仅称「趋势相似」。封面为博客 OPI 鲁棒性柱状图。与库内提示注入/AI 安全条目不重复。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261113a-llmon-opi.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261113a-llmon-opi.jpg",
+      "imageAlt": "OPI 基准柱状图：Granite-4.1-3B/8B-LLMON-preview 鲁棒性接近 1，GPT-6 Astra 约 0.53（标注 47 个百分点提升），Claude Opus 5.5 约 0.12，Granite 4.1 8B 约 0.05，Gemma、Qwen 接近 0",
+      "tags": [
+        "AI安全",
+        "提示注入",
+        "开源",
+        "大模型",
+        "智能体"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 80,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 16,
+          "画面": 9,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 84.5,
+        "threshold": 65,
+        "run": "2026-11-13-0840-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2611.10866",
       "title": "让大模型学会新本事，不用改一个数、只要「删」：把不到 0.05% 的权重直接置零，Llama 8B 做数学题 83.55 分，反超全量微调的 83.24——而且补丁只有 8.4MB，全量微调要 30GB",
