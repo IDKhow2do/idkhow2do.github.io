@@ -1,7 +1,83 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-13T08:48:02.000Z",
+  "updatedAt": "2026-11-13T12:45:46.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2611.11761",
+      "title": "让大模型只负责「读题」、小模型一个字一个字「写答案」，为什么请求能快 3 倍、质量还能追回八成？BridgeKV：训练一个小小的「翻译器」，把 8B 模型的 KV 缓存改写成 1B 模型能直接接着用的格式",
+      "category": "AI",
+      "source": "arXiv:2611.11761《BridgeKV: Large-Model Prefill and Small-Model Decoding for LLM Inference via KV Cache Translation》（Payman Behnam、Debopam Sanyal 等；佐治亚理工学院、微软），2026-11-09 提交",
+      "publishedAt": "2026-11-09",
+      "eventAt": "2026-11-09",
+      "collectedAt": "2026-11-13T12:45:46.000Z",
+      "updatedAt": "2026-11-13T12:45:46.000Z",
+      "description": "一手来源：arXiv 摘要页与论文 PDF（本轮读摘要、引言与图 1）。背景：大模型推理分两段——预填充（一次性读完整个提示词，吃算力）和解码（每吐一个 token 都要重来一遍，卡在显存带宽）。以往的优化两段都用同一个模型。BridgeKV 的做法：预填充用大模型、解码换成同家族的小模型，中间加一个轻量的「KV 拼接模块」，用学到的跨层混合和对键、值分别的非线性映射，把大模型的提示词缓存翻译成小模型的缓存格式；两个模型都冻结，只训练这个模块让小模型跟着大模型的下一个词预测走，需要时再加 LoRA。结果：①6 组模型对、5 个数据集、30 个设置里全部胜过同参数预算微调的小模型；②最多追回 80% 与「全程大模型」之间的质量差距；③单张 A40 上 Llama-3.1-8B→Llama-3.2-1B：一次请求 2.96 秒，全程 8B 要 8.83 秒、全程 1B 要 2.80 秒，CoQA 80.6（8B 81.8、1B 77.2），拼接只花 0.19 秒；④服务仿真里 70B→1B 预测最多快 33.86 倍、省电 27.5 倍。可拍角度：1）「读题」和「写字」是两种活：一个吃算力一个吃带宽，用一张流水线图讲；2）餐厅类比要慎用，直接拿图 1 三根条形对比开场；3）为什么不直接用小模型：读题读不透；4）和库内 KV 缓存条目串成系列：缓存不仅能存、能删，还能「翻译」。0 秒开场：论文图 1——8.83 秒 vs 2.96 秒，准确率几乎不掉。",
+      "caveat": "大小模型必须同家族（Llama→Llama、Qwen→Qwen）；33.86 倍、27.5 倍是服务仿真预测，不是真机测量；真机数据只来自单张 A40；尚未同行评审。封面为论文图 1（作者绘制，本轮从 PDF 第 2 页裁出）。库内 KV 缓存题已多（压缩、卸载、复用、清理），本条角度是跨模型「翻译」缓存，新颖度打了折。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261113d-bridgekv.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261113d-bridgekv.jpg",
+      "imageAlt": "论文图 1：请求延迟条形图，Llama 8B 全程解码 8.83 秒、Llama 1B 2.80 秒、BridgeKV（8B 预填充+拼接 0.19 秒，再由 1B 解码）2.96 秒；右侧 CoQA/NQA 准确率 81.8/68.2、77.2/62.6、80.6/66.1",
+      "tags": [
+        "KV缓存",
+        "AI推理",
+        "AI成本",
+        "模型压缩"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 16,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 3
+        },
+        "multiplier": 1.0566,
+        "finalScore": 86.6,
+        "threshold": 65,
+        "run": "2026-11-13-2040-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.22466",
+      "title": "让一个 AI 反复改另一个 AI 的提示词、工具和流程，分数一路涨，为什么不等于它变聪明了？亚马逊与纽约大学拆账：21 组显著涨分里，平均 54% 来自「背题」式过拟合、14% 只是多花了算力，换一批新题很多就不灵了",
+      "category": "AI",
+      "source": "arXiv:2610.22466《Harness-Delta Attribution: Dissecting Gains From Harness Evolution》（Wenxuan Ding、Qin Lu、Changlong Yu、Sha Li、Shuowei Jin、Xin Liu、Zhenyu Shi、Greg Durrett；亚马逊、纽约大学），2026-10-15 提交；作者博客与开源代码 github.com/Wenwen-D/HarnessDeltaAttribution",
+      "publishedAt": "2026-10-15",
+      "eventAt": "2026-10-15",
+      "collectedAt": "2026-11-13T12:45:46.000Z",
+      "updatedAt": "2026-11-13T12:45:46.000Z",
+      "description": "一手来源：arXiv 论文 HTML 全文摘要与正文片段 + 作者博客「What Evolves When We Talk About Harness Evolution?」（本轮读）。背景：「Harness 演化」指模型权重不动，让另一个智能体反复改它外面那层壳（提示词、技能、工具、编排代码），把基准分刷上去。问题：涨的分到底从哪来？HDA 做法：除了原版壳 B 和进化后的壳 E，再造两个对照——给原版壳同样多推理预算的 B_cc（看多少分是「多跑几次、多验证」买来的），以及把进化壳里已识别出的捷径（绕开模型直接写死答案、利用数据集里反复出现的规律等）去掉的 E_neutral（看多少分是过拟合）；涨分 = 测试时加算力 T + 过拟合 O + 剩下的可泛化改进 G。结果：11 个执行模型、3 个 harness 演化框架，覆盖数学、编程、创作和智能体任务；21 组有统计显著涨分的设置里，过拟合平均占 54%、多花算力占 14%，两者合计过半的有 14 组；ALFWorld、LiveMath 以过拟合为主，CREATE 以加算力为主，SWE-bench 的可泛化改进相对明显；涨分常常迁移不到留出的新题上，用验证集挑壳也挡不住过拟合。可拍角度：1）考试类比：刷题刷到背住答案 vs 真学会——同一张成绩单；2）一张「涨分拆账」条：黄色加算力、绿色真进步、红色背题（博客图 2）；3）对普通人：看到「某智能体框架让分数暴涨」先问三件事；4）和库内「模型×harness」「换外壳账单差 3 倍」串成智能体评测系列。0 秒开场：同一条分数上涨曲线，被拆成三种颜色。",
+      "caveat": "过拟合份额是保守下界（只能识别出已发现的捷径），可泛化改进是上界；结论随任务、模型、框架差异很大；论文 10 月中旬发布，非本周新闻，本轮由 X 中文转述帖引出后回到原文核对；尚未同行评审。封面为作者博客图 2（涨分分解示意）。库内有 harness 相关条目，但角度为「失败归因」「成本」，本条是「涨分归因」。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261113d-hda.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261113d-hda.jpg",
+      "imageAlt": "作者博客图 2：一条从基线壳 B 到进化壳 E 的数轴，涨分被拆成三段——黄色 T 测试时加算力（B 到算力对齐的 B_cc）、绿色 G 可泛化改进、红色 O 过拟合（去掉捷径的 E_neutral 到 E）",
+      "tags": [
+        "智能体",
+        "AI评测",
+        "过拟合",
+        "AI推理"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 78,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 10,
+          "来源": 15,
+          "时效": 6,
+          "大陆": 5,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 82.4,
+        "threshold": 65,
+        "run": "2026-11-13-2040-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2611.14942",
       "title": "只给文字的题，大模型脑子里也在「画图」？南洋理工团队在 6 个家族 10 种多模态模型里找到一条「视觉方向」，把它从内部状态里抹掉：「向右转走 10 米再左转」这类方位题准确率掉 27.6 个百分点，纯逻辑题却一点没受影响",
