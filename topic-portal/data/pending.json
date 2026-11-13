@@ -2,6 +2,52 @@
   "schemaVersion": 1,
   "items": [
     {
+      "kind": "news",
+      "baseScore": 70,
+      "multiplier": 1.0566,
+      "score": 74.0,
+      "reason": "分数达上墙线但模型发布稿以自报基准为主、首帧只有官方主视觉，国内不可用（同 Gemini 4 Carbon 先例）",
+      "run": "2026-11-13-0840-shanghai",
+      "record": {
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+        "title": "更便宜、更快的「小」模型，智能指数反超自家旗舰？Gemini 4 Hydrogen：默认档 51 分高过 Argon 的 50，价格每百万 token 输入 1.5 美元；Google 还让 Orchestrator 在一次会话里自动换模型，接近 Carbon 的成功率、少用 24% 配额",
+        "category": "AI",
+        "source": "Google 官方博客（Koray Kavukcuoglu，Google DeepMind），2026-11-12",
+        "publishedAt": "2026-11-12",
+        "eventAt": "2026-11-12",
+        "collectedAt": "2026-11-13T00:55:36.000Z",
+        "updatedAt": "2026-11-13T00:55:36.000Z",
+        "description": "一手来源：Google 官方博客全文。是什么：Gemini 4 家族的「日常执行」模型，面向全部 AI Studio/Gemini API 层级、Gemini 应用与搜索。官方数字：Artificial Analysis 智能指数默认 high 档 51（Argon 50），最高 xhigh 档 54；1M 上下文统一价 $1.50/$7.50 每百万 token；相比 3.8 Flash 快 2.5 倍、Terminal-Bench 4.1 从 18.2% 到 57%、编造性陈述减少 5 倍以上；伙伴测试中速度 2–2.8 倍、token 少 12%–23%。新机制：Antigravity 里的 Orchestrator 在同一会话里在 Carbon 与 Hydrogen 之间动态切换，Terminal-Bench 4.0 上接近 Carbon 的成功率，平均省 24% 配额、快 19%；并行智能体中 Carbon 做协调、Hydrogen 做工人和验证者。可拍角度：「大模型想、小模型干」的分工为什么省钱——像工厂里工程师和操作员。官方演示含体素岛 Geminisland、WebGL 地形着色器电商页、Sheets 像素动画。",
+        "caveat": "全部为 Google 自报基准；智能指数「反超」仅 1 分；国内无法直接使用；与库内 Gemini 4 Carbon（待定）同系列。封面为官方主视觉（非机制图）。",
+        "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261113a-gemini4-hydrogen.jpg",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261113a-gemini4-hydrogen.jpg",
+        "imageAlt": "Gemini 4 Hydrogen 官方主视觉：蓝色渐变背景上的半透明液态气泡与产品名",
+        "tags": [
+          "大模型",
+          "AI成本",
+          "智能体",
+          "模型发布"
+        ],
+        "tagSource": "provided",
+        "curation": {
+          "baseScore": 70,
+          "baseBreakdown": {
+            "主线": 20,
+            "钩子": 12,
+            "画面": 7,
+            "来源": 15,
+            "时效": 10,
+            "大陆": 2,
+            "新颖": 4
+          },
+          "multiplier": 1.0566,
+          "finalScore": 74.0,
+          "threshold": 65,
+          "run": "2026-11-13-0840-shanghai"
+        }
+      }
+    },
+    {
       "kind": "visual",
       "baseScore": 62,
       "multiplier": 1.038,
@@ -7520,6 +7566,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-12T12:44:46.000Z",
+  "updatedAt": "2026-11-13T00:55:36.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
