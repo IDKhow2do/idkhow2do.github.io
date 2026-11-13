@@ -3,6 +3,70 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 66,
+      "multiplier": 1.219,
+      "score": 80.5,
+      "reason": "分数达上墙线但作者工作流只公开了第 1 步（Claude Code + Fable 5.2 搭 three.js 与 rapier），其余步骤本轮未取到，同作者库内已有 9 条、待定 1 条",
+      "run": "2026-11-13-2040-shanghai",
+      "record": {
+        "title": "手绘动画电影风的山谷，能在浏览器里走进去？@rewind02 用 Fable 5.2 + Blender + Three.js 搭出可行走的场景：地形和天空全用代码生成，「手绘感」来自每一部分的着色方式，物理用 rapier",
+        "category": "3d",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/rewind02/status/2121216070375612527",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261113d-rewind-valley.jpg",
+        "previewType": "image",
+        "description": "作者 X 帖（2026-11-13 12:18 UTC，23 秒 1080p 视频）。作者自述：用 Fable 5.2 + Blender + Three.js 做一个可行走的手绘动画电影风山谷，地面和天空由代码生成，绘画质感来自各部分的绘制（着色）方式；工作流第 1 步是用 Claude Code + Fable 5.2 搭好 three.js 和 rapier（物理引擎）。视频可见：戴草帽、披蓝色斗篷的角色在随风摆动的草地小路上行走，远处是红顶村庄、风车、雪山和厚重的紫色积云，整体像吉卜力式手绘背景。为什么收待定：正对用户「用 AI 做精致 three.js 游戏」的学习方向（可行走角色 + 程序化地形 + 风格化着色），但完整工作流未取到。",
+        "tool": "Claude Code + Fable 5.2 + Blender + Three.js + rapier（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者帖仅展示第 1 步，后续步骤在回复串中，本轮 X 接口未取到；无源码、在线演示与许可证，仅外链引用。",
+        "attribution": "rewind（@rewind02）",
+        "sourceAuthor": "rewind02",
+        "tags": [
+          "Three.js",
+          "Blender",
+          "程序化建模",
+          "风格化渲染",
+          "游戏",
+          "Claude Code"
+        ],
+        "publishedAt": null,
+        "collectionIds": [],
+        "collectedAt": "2026-11-13T12:45:46.000Z",
+        "updatedAt": "2026-11-13T12:45:46.000Z",
+        "verification": {
+          "checked_at": "2026-11-13T12:45:46.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为视频第 13 秒帧（角色走在草地小路上，远景村庄与雪山），另看 3/8/18 秒帧，本轮下载并目视核验，非头像。",
+          "video_check": "看了视频 4 个时间点截帧；无在线演示可运行。"
+        },
+        "curation": {
+          "baseScore": 66,
+          "baseBreakdown": {
+            "实体": 19,
+            "科普": 11,
+            "溯源": 13,
+            "复现": 7,
+            "风格": 10,
+            "新颖": 6
+          },
+          "multiplier": 1.219,
+          "finalScore": 80.5,
+          "threshold": 65,
+          "run": "2026-11-13-2040-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2121215994832068608/vid/avc1/1920x1080/Si-UOwjUQwtBMraT.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 56,
       "multiplier": 1.219,
       "score": 56.0,
@@ -7630,6 +7694,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-13T08:48:02.000Z",
+  "updatedAt": "2026-11-13T12:45:46.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
