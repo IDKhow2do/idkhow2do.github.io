@@ -1,7 +1,46 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-14T08:51:25.000Z",
+  "updatedAt": "2026-11-14T12:53:44.000Z",
   "topics": [
+    {
+      "url": "https://github.com/garrytan/g-harness-evals",
+      "title": "同一个 Claude、同一道题，只换掉套在模型外面的「外壳」（Claude Code / Codex / OpenClaw / Hermes / Pi），通过率差不多，每解出一道题的花费却能差到 2 倍——为什么真正烧钱的常常不是模型，而是外壳？YC 总裁 Garry Tan 开源的 harness-evals 实测",
+      "category": "AI",
+      "source": "GitHub 仓库 garrytan/g-harness-evals（MIT，2026-11-05 建，README 与 11-07 前沿外壳评测报告、11-09/11-10 两次更正，本轮读）；话题由 X @TANSolstice 11-14 中文转述帖引起",
+      "publishedAt": "2026-11-14",
+      "eventAt": "2026-11-07",
+      "collectedAt": "2026-11-14T12:53:44.000Z",
+      "updatedAt": "2026-11-14T12:53:44.000Z",
+      "description": "一手来源：仓库 README（本轮读原文）。做法：模型固定（Claude Opus 5.5 或 GPT-6.1 Sol）、任务固定，只换「外壳」（harness：系统提示词、工具和记忆的那层程序），量通过率、每解一题的成本和耗时。编程任务（52 道公开 Terminal-Bench 2.1，每格约 102–104 次尝试）：Opus 5.5 上 Pi 每解一题 0.62 美元、通过率 81.4%，Claude Code 0.63 美元、88.5%，OpenClaw 与 Hermes Agent 都是 0.88 美元（约 1.45 倍）；GPT-6.1 Sol 上 Pi 0.23 美元、Codex 0.34 美元（更正后 0.31），OpenClaw 达 2.18 倍。多用户客服任务（20 道）：各组通过率分不出高下，但 Opus 上 OpenClaw 每解一题成本约是其它外壳的 2 倍，主要因为每次请求都重发上下文。另外两个发现：①把「必须遵守的规则」放在系统提示词或每轮钩子里，30 轮里被遵守 30 次；一个没人提起的技能（skill），Claude Code 30 轮里一次都没打开；②让 Opus 跑 Garry Tan 自家 gstack 技能（/investigate、/qa、/review、/ship），46 次会话里模型每次都读了技能文本，却 0 次照步骤做，单次成本约翻倍。为什么能拍：和用户自己天天用 Claude Code 做视频强相关——「模型是发动机，外壳是变速箱和油路」；可现场演示同一句话在不同工具里的 token 账单；「AI 读了说明书却不照做」本身就是钩子。",
+      "caveat": "作者自报的早期（dev）结果：任务公开、开发时可见，未在隐藏任务上确认；成本差异无统计检验；Claude Code 与 Codex 不能跑同一模型，作者从不互相比较；各外壳默认思考档位不同，多用户任务里外壳设计与思考强度混在一起；作者自家 gstack/gbrain 单独测试。X 转述帖写的「成本差 2.5 倍以上」在 README 里找不到对应数字（最大约 2.2 倍），本条按 README 原数写。封面为本轮按 README 原表排版的表格图（非官方配图）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261114d-harness.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261114d-harness.jpg",
+      "imageAlt": "深色表格图：g-harness-evals README 中 52 道编程任务的外壳排名，Opus 5.5 与 GPT-6.1 Sol 两组的每解一题成本、成本倍数和通过率",
+      "tags": [
+        "智能体",
+        "AI成本",
+        "Claude Code",
+        "评测",
+        "开源"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 79,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 8,
+          "来源": 15,
+          "时效": 9,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 83.5,
+        "threshold": 65,
+        "run": "2026-11-14-2040-shanghai"
+      }
+    },
     {
       "url": "https://docs.patch.gg/cli",
       "title": "装了一个「5 万个免费 3D 素材」的工具，为什么你的 Claude Code 以后每做一个游戏都先推荐它家、还只往它家部署？拆开 Patch 的命令行工具 pch 1.2.1：它把「游戏默认用 Patch、上线别用别家」写进了 Claude Code 和 Codex 的全局指令文件，删掉之后升级还会写回去",
