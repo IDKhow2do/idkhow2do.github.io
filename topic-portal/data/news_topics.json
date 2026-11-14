@@ -1,7 +1,122 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-13T12:45:46.000Z",
+  "updatedAt": "2026-11-14T00:55:17.000Z",
   "topics": [
+    {
+      "url": "https://huggingface.co/blog/allenai/xybench",
+      "title": "问 AI「纸杯蛋糕上的糖霜老往下滑，怎么把糖霜调稠？」它会认真教你调糖霜——可真正的问题是蛋糕还没凉透。为什么大模型这么爱「顺着你的错问题答」？Ai2 的 XYBench 用 8115 个真实问题测了 5 个大模型，没一个比人类回答者更会把你从错误思路里拉出来",
+      "category": "AI",
+      "source": "Ai2 官方博客（Hugging Face，作者 Kyle Wiggers）《XYBench: Helping with the problem behind the question》，2026-11-13；与卡内基梅隆大学、NVIDIA、约翰霍普金斯大学合作，论文获 EMNLP 2026 最佳资源论文奖",
+      "publishedAt": "2026-11-13",
+      "eventAt": "2026-11-13",
+      "collectedAt": "2026-11-14T00:55:17.000Z",
+      "updatedAt": "2026-11-14T00:55:17.000Z",
+      "description": "一手来源：Ai2 官方博客全文（本轮读）。「XY 问题」：你想做成 X，自以为 Y 是办法，于是只问 Y。XYBench 收了 8115 个这类问题：Stack Overflow 1557、Stack Exchange 184、人工整理 102、由 WikiHow 指南生成 6272，覆盖编程和做饭、家庭维修等日常事。被测模型：Claude Sonnet 4.6、GPT-5、Gemini 3.1 Pro、Qwen3.5-9B、DeepSeek-V4 Pro。结果：①所有模型都更爱回答字面问题 Y——Stack Overflow 上 75–86% 的回答给了 Y 的解法，只有 59–71% 给了真正目标 X 的解法；②真正把重心放在 X 上的回答只有 35–41%；③「开天眼」实验：直接告诉模型用户真实目标，Sonnet 4.6 给出 X 解法的比例从 59% 升到 67%，可「指出你想错了」的比例反而从 47% 掉到 34%，所有模型仍不如人类回答；④让模型当裁判二选一，它们 71–84% 都能挑出「先纠正误区」的好答案，自己写却只有 35–41% 这么做——会认不会做。可拍角度：1）开场直接演吸尘器例子：问「买哪台吸力更大的吸尘器」，答案其实是「管子堵了」；2）为什么模型「顺着说」：训练奖励的是「回答了问题」；3）给观众一招：先说目标再说你打算怎么做；4）国产模型 DeepSeek、Qwen 同台。0 秒开场：博客示意图——用户心里想 X、嘴上问 Y，模型箭头该拐向 X。",
+      "caveat": "自动评分用 Claude Sonnet 4.5 当裁判，与两名人工评审的一致率：是否给出解法 97.5–100%、识别误区 84.6–93.3%、重心判断仅 74.2–79.8%；WikiHow 部分题目由 Sonnet 4.5 生成；只测英文、单轮对话；被测模型不是各家最新一代（无 Opus 5.5、Gemini 4 等）。封面为 Ai2 博客题图（示意图）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261114a-xybench.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261114a-xybench.jpg",
+      "imageAlt": "Ai2 博客题图：用户头像嘴上说出 Y、心里想着 X，经过模型后箭头分成两路——虚线指向 Y，实线指向打勾的 X",
+      "tags": [
+        "AI评测",
+        "大模型",
+        "提示词",
+        "数字生活"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 7,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 91.9,
+        "threshold": 65,
+        "run": "2026-11-14-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+      "title": "哥德尔留下 1009 页用早已失传的速记写成的数学笔记，专家团队一周只啃得动一页，为什么 Claude 两天就交出 650 页解读？它从中挑出 663 条定理丢进证明助手 Coq：约 400 条原样成立、约 200 条要修补、约 50 条本来就是错的",
+      "category": "AI",
+      "source": "《卫报》科学版（Alex Bellos）2026-11-13 报道；当事人为赫尔辛基大学逻辑学家 Jan von Plato 主持的哥德尔笔记项目（欧洲研究理事会 250 万欧元资助），速记手稿图片来自普林斯顿高等研究院",
+      "publishedAt": "2026-11-13",
+      "eventAt": "2026-11-13",
+      "collectedAt": "2026-11-14T00:55:17.000Z",
+      "updatedAt": "2026-11-14T00:55:17.000Z",
+      "description": "来源：《卫报》报道全文（本轮读），内容为 von Plato 本人陈述并配普林斯顿高等研究院提供的手稿缩微胶片。背景：哥德尔 1940 年代初写了 16 本「工作簿」，共 1009 页，多数用 Gabelsberger 德文速记——连他那个年代都已过时，von Plato 说全世界只有 6 个人能读。项目 2017 年启动，进度大约一周一页。今年 9 月，von Plato 把团队已完成的转写稿、他自己写的 6 本哥德尔研究专著和其他二手文献交给 Claude，「几天后拿到一份 650 页的解读」，再逐页人工核对。关键结果：①第一项任务是查哥德尔是否真像他 1966 年声称的那样，早在 1940 年代就证明了选择公理的独立性（科恩因此拿了菲尔兹奖）——答案是「差一步」：一个定义写错了，而他两年前写对过；Claude 重建的证明在 Coq 里通过；②让 Claude 列出所有哥德尔有证明、证明草稿或证明思路的定理，共 663 条，放进 Coq：约 400 条原样通过、约 200 条需要把条件写得更精确或补假设、约 50 条为假——哥德尔自己也在页边写过「falsch!（错）」；③笔记里还有十几个 80 多年没人接着做的逻辑方向。可拍角度：1）人一年读 50 页会忘前面，AI 能把 1000 页当一整块看——这是「长上下文」最好的生活化例子；2）定理的「对、要修、错」三色饼图；3）反方：圣母大学 Hamkins 说「没公开就不算你的」，「多少是 Claude、多少是哥德尔」要历史学家来判；4）可接用户「涌现」系列：简单读写能力堆出看似智慧的综合。0 秒开场：一页密密麻麻的速记手稿，镜头推进。",
+      "caveat": "目前只有《卫报》报道和当事人说法，650 页解读、663 条定理清单与 Coq 代码均未公开，也无论文；Claude 读的是团队人工转写稿而不是速记原件；独立专家 Hamkins 尚未看过重建证明；「哥德尔本可拿 1940 年菲尔兹奖」是 von Plato 个人看法。Claude 在大陆不能直接使用。封面为《卫报》文中普林斯顿高等研究院提供的哥德尔速记手稿缩微胶片图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261114a-godel-shorthand.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261114a-godel-shorthand.jpg",
+      "imageAlt": "哥德尔工作簿一页手稿的缩微胶片照片：页首编号 040014，满页 Gabelsberger 德文速记，夹杂少量公式与划线",
+      "tags": [
+        "AI for Science",
+        "数学证明",
+        "形式化验证",
+        "长上下文",
+        "涌现"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 19,
+          "画面": 13,
+          "来源": 10,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 86.6,
+        "threshold": 65,
+        "run": "2026-11-14-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+      "title": "让一群 AI 分工做科研：每个只拿自己那一步要的文件，另派「挑刺的」从干净上下文复核，谷歌说这样证明了 2013 年的 Courtade–Kumar 猜想、全自动把韦伊猜想写成 180 万行 Lean 机器证明、8 天从零练出涨 2600 Elo 的围棋引擎——可「机器验证通过」就一定对吗？",
+      "category": "AI",
+      "source": "Google Research 官方博客《Advancing science & engineering with Antigravity’s /teamwork》（Vahab Mirrokni，Google Fellow），2026-11-13；合作方含香港中文大学、南加大、卡内基梅隆等",
+      "publishedAt": "2026-11-13",
+      "eventAt": "2026-11-13",
+      "collectedAt": "2026-11-14T00:55:17.000Z",
+      "updatedAt": "2026-11-14T00:55:17.000Z",
+      "description": "一手来源：谷歌研究院博客全文（本轮读）。机制：/teamwork 是 Antigravity 里的多智能体工作流，针对两个毛病——①单次生成不稳定：并行出很多候选，再用「证伪器」（Lean 4 证明检查器、不许改的原版测试集、模拟器、硬件计数器）自动筛；②多天任务里注意力被越来越长的上下文稀释：按构造切分上下文，每个智能体只拿到这一步需要的文件和工具，协调者把任务交给「新开的」接班者，评审和审计员在不看原作者推理的干净上下文里复核。官方列出的结果：信息论 2013 年 Courtade–Kumar 猜想被完整证明（与港中文等合作，Lean 形式化约 5000 万行）；LEAP 全自动形式化韦伊猜想约 180 万行 Lean、28800 次子智能体调用；Zircon 微内核剩余 C++ 改写成约 80 万行安全 Rust，过全部单测并能在 arm64 上启动；AV1 解码器 libgav1 改写成约 17 万行 Rust，接入性能分析工具后比原 C++/手写汇编快 20–30%；9×9 围棋从基础 AlphaZero 实现起步，不到 8 天涨约 2600 Elo 到 1885（介于 KataGo 每步 16 与 32 次搜索之间）；STOC 2027 有 578 篇投稿作者用了 Deep Review，70 人问卷中 30% 以上说抓到实质证明错误；Borg 调度让部分硬件上 TPU 任务抢占减少 24%。可拍角度：1）「一个人写、一个人挑刺、互相看不到草稿」——就是考试里的双盲阅卷；2）为什么要切上下文：人开三天会也会忘开头；3）反方：库内 Science 报道数学家两页就查出 Lean 证明悄悄证了更弱的命题；4）围棋棋盘动画开场。0 秒开场：博客里最终冠军对起始网络的整盘对局。",
+      "caveat": "全部为谷歌自述，绝大多数结果的论文、Lean 代码和数据本轮未逐项核实，部分「即将开放」；Deep Review 满意度问卷 N=70 样本小；Lean 通过只代表形式命题成立，与原问题是否等价需人工确认（见库内 Science 条目）；Antigravity、Gemini 在大陆不能直接使用。封面为博客内 9×9 围棋对局动画最后一帧（第 93 手黑方停一手，冠军胜 22.5 目）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261114a-teamwork-go.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261114a-teamwork-go.jpg",
+      "imageAlt": "谷歌博客动画最后一帧：9×9 围棋盘，第 93 手黑棋停一手；黑方为最终冠军、白方为起始网络，冠军胜 22.5 目（数子法，贴 7.5）",
+      "tags": [
+        "智能体",
+        "多智能体",
+        "形式化验证",
+        "AI for Science"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 80,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 16,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 3,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 84.5,
+        "threshold": 65,
+        "run": "2026-11-14-0840-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2611.11761",
       "title": "让大模型只负责「读题」、小模型一个字一个字「写答案」，为什么请求能快 3 倍、质量还能追回八成？BridgeKV：训练一个小小的「翻译器」，把 8B 模型的 KV 缓存改写成 1B 模型能直接接着用的格式",
