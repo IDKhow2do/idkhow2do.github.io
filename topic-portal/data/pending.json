@@ -3,6 +3,130 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 59,
+      "multiplier": 1.038,
+      "score": 61.2,
+      "reason": "本轮达待定区间",
+      "run": "2026-11-14-0840-shanghai",
+      "record": {
+        "title": "妹妹要搬新家：@alxdoyle 用无界面 Blender + Claude Code 按实际尺寸把整套公寓建出来，把她真有的家具放进去量合不合适，再照情绪板出几套装修方向和一段漫游短片",
+        "category": "3d",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/alxdoyle/status/2121228206304883028",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261114a-alxdoyle-flat.jpg",
+        "previewType": "image",
+        "description": "作者 X 帖（2026-11-13 13:06 UTC，72 秒 1280×640 视频）。作者自述：妹妹搬新家，把她的情绪板做成真的——公寓在 Blender 里按比例建模，真实家具检查是否放得下，给出室内设计方向并出一段漫游影片，全程无界面 Blender + Claude Code。视频可见：木托盘上的蜡烛特写、厨房白色冰箱与挂着红绿抽象画的餐桌、挑高夹层的栏杆与吊灯、拱形门洞望向卧室，偏写实的暖色室内渲染。为什么放待定：与用户「同一房间不同装修风格对比」的设想高度相关，但工作流细节缺失。",
+        "tool": "Blender（无界面/脚本驱动）+ Claude Code（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "无脚本、提示词、源码与许可证，仅外链引用。",
+        "attribution": "alxdoyle（@alxdoyle）",
+        "sourceAuthor": "alxdoyle",
+        "tags": [
+          "Blender",
+          "Claude Code",
+          "室内设计",
+          "建筑可视化"
+        ],
+        "publishedAt": null,
+        "collectionIds": [],
+        "collectedAt": "2026-11-14T00:55:17.000Z",
+        "updatedAt": "2026-11-14T00:55:17.000Z",
+        "verification": {
+          "checked_at": "2026-11-14T00:55:17.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为视频第 28.8 秒帧（厨房冰箱与餐桌、红绿抽象画），另看 10.8/46.8/64.9 秒帧，本轮下载并目视核验，非头像。",
+          "video_check": "看了视频 4 个时间点截帧。"
+        },
+        "curation": {
+          "baseScore": 59,
+          "baseBreakdown": {
+            "实体": 19,
+            "科普": 11,
+            "溯源": 9,
+            "复现": 5,
+            "风格": 8,
+            "新颖": 7
+          },
+          "multiplier": 1.038,
+          "finalScore": 61.2,
+          "threshold": 65,
+          "run": "2026-11-14-0840-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2121228066928123904/vid/avc1/1280x640/09hqyTEFs8ZS-xRk.mp4?tag=14",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 58,
+      "multiplier": 1.025,
+      "score": 59.4,
+      "reason": "本轮达待定区间",
+      "run": "2026-11-14-0840-shanghai",
+      "record": {
+        "title": "Claude Fable 只用一个多小时、全靠代码模拟了星舰第 15 次飞行：33 台猛禽发动机、发射塔、26 颗星链 V3，带实时速度/高度/时间线 HUD——作者特意强调「这是模拟，不是真视频」",
+        "category": "video",
+        "styleFamily": "code_video",
+        "source": "https://x.com/zdey/status/2121312028468171016",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261114a-starship-sim.jpg",
+        "previewType": "image",
+        "description": "作者 X 帖（2026-11-13 18:39 UTC，西班牙语，92 秒竖屏视频）。作者自述：在 Claude Code 里用 Claude Fable 一个多小时用代码模拟星舰第 15 次飞行全程，含 33 台猛禽发动机、发射塔、26 颗星链 V3、拟音和音乐，不用 Blender、不用时间线。视频可见：上半屏为 3D 画面（热分离、星链部署、再入、塔臂捕获），下半屏是说明文字 + 助推器/飞船速度、高度、发动机数仪表 + 事件时间线，右上角标注任务时间。为什么放待定：「3D 动画 + 数据 HUD + 时间线」的版式很适合做科普讲解（可移植到刻蚀/工艺流程讲解），但航天非主线、无源码。",
+        "tool": "Claude Code + Claude Fable（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "无源码、提示词与许可证，仅外链引用；数据为作者模拟，非真实飞行遥测。",
+        "attribution": "Andrey Castillo（@zdey）",
+        "sourceAuthor": "zdey",
+        "tags": [
+          "Claude Code",
+          "代码视频",
+          "航天",
+          "数据可视化"
+        ],
+        "publishedAt": null,
+        "collectionIds": [],
+        "collectedAt": "2026-11-14T00:55:17.000Z",
+        "updatedAt": "2026-11-14T00:55:17.000Z",
+        "verification": {
+          "checked_at": "2026-11-14T00:55:17.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为视频第 13.8 秒帧（热分离画面 + HUD 仪表 + 时间线），另看 36.8/59.8/82.9 秒帧，本轮下载并目视核验，非头像。",
+          "video_check": "看了视频 4 个时间点截帧。"
+        },
+        "curation": {
+          "baseScore": 58,
+          "baseBreakdown": {
+            "实体": 14,
+            "科普": 14,
+            "溯源": 9,
+            "复现": 5,
+            "风格": 9,
+            "新颖": 7
+          },
+          "multiplier": 1.025,
+          "finalScore": 59.4,
+          "threshold": 65,
+          "run": "2026-11-14-0840-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2121311983584587776/vid/avc1/720x1280/OSSa3HC7m6ofbu5I.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 66,
       "multiplier": 1.219,
       "score": 80.5,
@@ -7694,6 +7818,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-13T12:45:46.000Z",
+  "updatedAt": "2026-11-14T00:55:17.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
