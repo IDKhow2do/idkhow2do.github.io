@@ -3,6 +3,71 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 62,
+      "multiplier": 1.0,
+      "score": 62.0,
+      "reason": "本轮达待定区间",
+      "run": "2026-11-15-2040-shanghai",
+      "record": {
+        "title": "把画面每 8×8 个像素换成一个字符，为什么只按亮度挑字会变成一片灰噪点？@vidar_0208 拆解 ASCII 渲染：先用两次高斯模糊相减找轮廓，再让 64 个线程投票决定这一格画 | - / \\ 哪一笔（Unity URP，MIT）",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/vidar_0208/status/2121906253425197391",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261115d-ascii.jpg",
+        "previewType": "image",
+        "description": "一手来源：@vidar_0208 X 长帖（2026-11-15 10:00 UTC，24.5 秒视频；长帖 API 截断，全文经 fxtwitter 公开镜像读取）+ 帖内仓库链接；作者另帖注明技法来自 Garrett Gunnell 的 Post-Processing（MIT，固定到具体 commit）。做法（原文）：填充——图像点采样缩小三次，每个 8×8 格得到一个颜色和亮度（0.299R+0.587G+0.114B），亮度从 10 个字形里挑一个；轮廓——亮度做 σ=2 与 σ=3.2 两次高斯模糊相减（DoG），超过 0.005 记为边缘，再用 Sobel 求方向并量化成 4 个；一个计算着色器线程组对应一格，64 个线程投票，至少 8 个像素同意才画该方向的边缘字符。踩坑：源工程按线性色读亮度导致中间调过暗，加 1/2.2 指数；修了源码里 4 个小 bug（无边缘像素投进 -1 桶、dispatch 宽高写反、字形行翻转、Sobel 权重 3+lum 应为 3×lum）。代价：每格只剩一个值，小于 8 像素的细节只能靠边缘字符保留；曲线会变成 | 和 - 的阶梯；相机移动时字形会闪。视频依次展示原图/ASCII 分屏、边缘方向着色、10 字形与 5 字形对比。为什么考虑：讲「下采样丢信息、边缘检测补结构」的图像处理入门镜头，也可直接用作游戏复古滤镜；但不是物理/材质类，与库内 ASCII 条目同类，新颖度低。",
+        "tool": "Unity 6.3 URP（Metal）· 9 个全屏 pass + 1 次计算着色器",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者仓库与技法来源均为 MIT；封面为视频第 3 秒分屏帧（左原图、右 ASCII）。",
+        "attribution": "@vidar_0208（技法：Garrett Gunnell）",
+        "sourceAuthor": "vidar_0208",
+        "tags": [
+          "着色器",
+          "图像处理",
+          "游戏技法",
+          "Unity"
+        ],
+        "publishedAt": "2026-11-15",
+        "collectionIds": [],
+        "collectedAt": "2026-11-15T12:52:41.000Z",
+        "updatedAt": "2026-11-15T12:52:41.000Z",
+        "verification": {
+          "checked_at": "2026-11-15T12:52:41.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为视频约第 3 秒帧（左半原始场景：球、圆环、立柱；右半 ASCII 字符化），另看 10/17/23 秒帧，本轮下载并目视核验，非头像。",
+          "video_check": "下载完整视频并看 4 个时间点截帧；未运行 Unity 工程。"
+        },
+        "curation": {
+          "baseScore": 62,
+          "baseBreakdown": {
+            "实体": 5,
+            "科普": 13,
+            "溯源": 20,
+            "复现": 15,
+            "风格": 6,
+            "新颖": 3
+          },
+          "multiplier": 1.0,
+          "finalScore": 62.0,
+          "threshold": 65,
+          "run": "2026-11-15-2040-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/ext_tw_video/2121906222781648896/pu/vid/avc1/1280x720/PASztU1ayMwTxnKs.mp4?tag=12",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "sourceCodeUrl": "https://github.com/vidar0208/vidar-game-lab/tree/main/Assets/Techniques/ascii-render",
+        "licenseName": "MIT（技法来源 Garrett Gunnell Post-Processing，MIT）",
+        "licenseUrl": "https://github.com/GarrettGunnell/Post-Processing"
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 57,
       "multiplier": 1.4,
       "score": 57.0,
@@ -8007,6 +8072,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-15T08:52:51.000Z",
+  "updatedAt": "2026-11-15T12:52:41.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
