@@ -1,7 +1,46 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-14T12:53:44.000Z",
+  "updatedAt": "2026-11-15T00:51:13.000Z",
   "topics": [
+    {
+      "url": "https://www.crissyfield.de/research/lovable-en/",
+      "title": "一句话就能让 AI 帮你做出带登录、带数据库的网站——可德国安全公司扫了 15.9 万个 Lovable 项目，发现不登录就能读到护照号、20 万条私聊、上万份合同：为什么「AI 替你写好了代码」不等于「AI 替你把门锁好了」？",
+      "category": "AI",
+      "source": "Crissy Field GmbH 研究报告《Lovable: Many Apps Built on the Platform Expose Sensitive Data》（英文版，本轮读原文；与德国《商报》Handelsblatt 合作，后者 2026-11-02 首发报道）；话题由 Hacker News 11-14 热帖引起",
+      "publishedAt": "2026-11-14",
+      "eventAt": "2026-11-02",
+      "collectedAt": "2026-11-15T00:51:13.000Z",
+      "updatedAt": "2026-11-15T00:51:13.000Z",
+      "description": "一手来源：安全公司 Crissy Field 的研究报告原文。Lovable 是瑞典 AI 建站平台，用大白话描述就能生成带用户系统和数据库的网页应用，主打「不需要技术背景」，但用户条款把应用和数据安全的责任交给客户自己。方法：从开放网页存档 Common Crawl 里找出 2025-12 至 2026-09 的 159,041 个 Lovable 项目，其中 34,545 个接了 Supabase 数据库；24,664 个网站一打开就从数据库发数据（本身未必是问题），研究者再用同一个公开 API 密钥做只读请求，在其中 7,403 个网站（30%）的 10,560 张表里找到含邮箱的记录。典型案例：德国某生活论坛 8 万多份个人资料和 20 多万条聊天消息；活动主办方和餐馆数万条含电话、地址、支付信息、票码的订单；物业公司的 AI 内部邮件摘要；某服务商 1000 多条含护照号、有效期、国籍的证件记录；另有一家 28 万封发给客户的邮件可读。机制：同一平台生成的数据库接法套路一致，一个配置错误的「行级权限」能在成千上万个应用上被同样利用。为什么能拍：用户自己天天用 AI 写代码做视频，「AI 写的网站把门开着」是很直接的反直觉钩子；可用 three.js/动画演示「前端拿着钥匙直接问数据库」和「每一行都要查身份」的区别；对国内正火的各种 AI 一键建站/小程序工具同样适用。",
+      "caveat": "报告自述：含邮箱的表不等于确认泄露（可能是公开联系邮箱或测试数据，也会漏掉没有邮箱的个人数据），30% 不能读作泄露率，且只针对 24,664 个网站；Common Crawl 样本不代表全部 Lovable 应用；只研究 Supabase 接入，未研究 Lovable 自带数据库；未确认数据是否被滥用；研究方为安全咨询公司，文末有业务推广。Hacker News 标题里的「护照和 20 万条私信」来自报告案例，非全体比例。封面为报告官方 og 题图（示意图）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261115a-lovable.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261115a-lovable.jpg",
+      "imageAlt": "报告题图：废墟墙面上剥落的粉红色 Lovable 标志海报",
+      "tags": [
+        "AI安全",
+        "智能体",
+        "数据隐私",
+        "AI编程",
+        "数字生活"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 77,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 17,
+          "画面": 10,
+          "来源": 14,
+          "时效": 8,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 81.4,
+        "threshold": 65,
+        "run": "2026-11-15-0840-shanghai"
+      }
+    },
     {
       "url": "https://github.com/garrytan/g-harness-evals",
       "title": "同一个 Claude、同一道题，只换掉套在模型外面的「外壳」（Claude Code / Codex / OpenClaw / Hermes / Pi），通过率差不多，每解出一道题的花费却能差到 2 倍——为什么真正烧钱的常常不是模型，而是外壳？YC 总裁 Garry Tan 开源的 harness-evals 实测",
