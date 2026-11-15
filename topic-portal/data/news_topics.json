@@ -1,7 +1,46 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-15T08:52:51.000Z",
+  "updatedAt": "2026-11-15T12:52:41.000Z",
   "topics": [
+    {
+      "url": "https://www.courtlistener.com/docket/73532135/garciaguirre-v-samsung-electronics-co-ltd/",
+      "title": "内存条两年贵了好几倍，三家厂却一条新产线都没加——美国法官 11 月 14 日裁定：三星、SK 海力士、美光「合谋卡普通 DRAM 产能、全转去做 HBM」的集体诉讼可以继续审。为什么 AI 抢走 HBM，会让你的手机和电脑内存跟着涨价？",
+      "category": "半导体",
+      "source": "美国加州北区联邦法院案卷 Garciaguirre v. Samsung Electronics Co., Ltd.（CourtListener 公开案卷，第 68 号条目：2026-11-14「Order on Motion to Dismiss」；11-13 听证 27 分钟的庭审记录条目）；裁定内容据 LitNews（2026-11-14）、Wccftech 转述的裁定原文引语，MLex 另有被告答辩报道。裁定全文在 PACER 付费，本轮未读到全文",
+      "publishedAt": "2026-11-14",
+      "eventAt": "2026-11-14",
+      "collectedAt": "2026-11-15T12:52:41.000Z",
+      "updatedAt": "2026-11-15T12:52:41.000Z",
+      "description": "事件：法官 Noël Wise 11 月 14 日全部驳回三家厂的联合撤诉动议，认为原告「合理地主张了」违反《谢尔曼法》第一条的合谋；被告须在 12 月 7 日前答辩，2027-01-12 开案件管理会。原告是 2026-06-25 起诉的 17 名消费者和小企业。起诉书说法（尚未证实）：三家厂 2025 年三季度合计占全球 DRAM 收入 91% 以上；2022 年底起先后减产（SK 海力士与美光相隔三周，三星晚约四个半月），2023 年起把产能转向 HBM——HBM 每 GB 要吃掉约普通 DDR5 3–4 倍的晶圆面积；2025 年同一季度一起停 DDR4，美光 2025-12-03 宣布关掉 30 年的消费品牌英睿达（Crucial）；普通 DRAM 价格 18 个月涨约 697%，但谁都没扩产。法官的判断：单看「转做 HBM」不足以说明合谋，但长期锁定 HBM 合同、拒签普通 DRAM 长约、推迟新厂、客户审核做法几乎相同，加上三家 1998–2002 年真有过价格卡特尔前科，合在一起「把天平压向原告」；投资者电话会上的「供给纪律」说法、行业会议见面、三家寡头结构本身则不算证据。名句：「这不是老鹰彼此盯着，更像老鹰排成编队飞——老鹰平时不这么飞。」为什么能拍：①一片晶圆只有那么大：做 1 GB HBM 的面积能做 3–4 GB 普通内存，AI 抢 HBM 就等于从手机电脑里「挪走」晶圆——用晶圆切块动画 0 秒上画面；②「各自理性」和「暗中合谋」在数据上长得一模一样，法院怎么区分（平行行为 + 附加因素）；③接用户已有的长鑫 DRAM、HBM 系列选题，讲国产内存为什么在这轮涨价里有机会。",
+      "caveat": "这只是撤诉动议阶段：法院必须先把起诉书的说法当真来审，合谋没有被证明，三家厂否认并称是 AI 需求导致；697%、91%、3–4 倍面积都是原告起诉书里的数字，需标注出处；裁定全文未读到，引语来自 LitNews/Wccftech 转述；案号 CourtListener 显示 3:26-cv-06345，另有媒体写作 5:26-cv-06345（法官在圣何塞分庭），以案卷页为准。涉美国司法与韩美企业，讲机制即可，避免地缘站队。封面为 Wccftech 文章题图（SK 海力士与美光内存条实拍），非法院材料。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261115d-dram.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261115d-dram.jpg",
+      "imageAlt": "Wccftech 报道题图：SK 海力士与美光内存颗粒的内存条特写",
+      "tags": [
+        "存储/内存",
+        "HBM",
+        "芯片制造",
+        "统计口径",
+        "数字生活"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 79,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 17,
+          "画面": 8,
+          "来源": 11,
+          "时效": 10,
+          "大陆": 7,
+          "新颖": 4
+        },
+        "multiplier": 1.0743,
+        "finalScore": 84.9,
+        "threshold": 65,
+        "run": "2026-11-15-2040-shanghai"
+      }
+    },
     {
       "url": "https://www.humansecurity.com/learn/blog/october-2026-agentic-traffic/",
       "title": "AI 智能体上网，85% 的动作都在逛商品页和搜索页，走到结账页的只有 1.9%——一家防机器人公司的月报还发现：两个月前占 41% 的独立 AI 浏览器 Comet 跌到 3.6%，Meta 的 Muse 一家占了 59%。为什么智能体「只逛不买」，独立 AI 浏览器又为什么在消失？",
