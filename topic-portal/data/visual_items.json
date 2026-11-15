@@ -1,8 +1,185 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 676,
+  "exportedCount": 679,
   "items": [
+    {
+      "title": "几根钢链拴着漂浮的巨石越拉越紧，「咔」一声从某一环断开，两边同时回弹——为什么断的总是那几环？three.js 作者 mrdoob 的 Codevember 第 14 天「Tension」：链环靠真实接触咬合，断口是提前切好的",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "source": "https://x.com/mrdoob/status/2121832823128838416",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261115c-tension.jpg",
+      "previewType": "image",
+      "description": "一手来源：@mrdoob X 帖（2026-11-15 05:09 UTC，60 秒 1024×1024 循环视频，标签 #threejs #box3d #codex）+ 在线页 + 仓库 14/README.md（MIT，本轮读原文与 tension-simulation.js 开头）。画面：蓝雾里漂浮的巨石被钢链连着，石头慢慢漂开把链子拉紧，2–4 条受力路径依次断裂，断点亮起暖色警示光，碎环带着动量翻飞，镜头推近断口；按住画布可以手动拉，A 键切自动。做法（README）：主链 13 环、支链 6 环穿过普通环，石头通过螺栓 U 形夹（±85° 限位）挂链；物理用 Box3D 0.1.1——胶囊体接触、120 Hz 固定步长、4 次子步、连续碰撞检测，链环之间靠接触咬合而不是关节；断裂有「啪地断」「先撕成铰链」「裂成四块」三种模式；钢表面有稀疏锈蚀、点蚀、拉丝，每第四环刻六位序列号；渲染是 three.js WebGPURenderer + TSL，GTAO、景深、泛光；岩石用 Poly Haven CC0 摄影测量扫描。附 24 项物理/工具测试。为什么收：链条「哪一环先断」是材料受力与失效分析的直观入门（应力集中、载荷路径、断口形貌），用户刻蚀/失效分析背景可以接；在线可玩、源码 MIT，可直接当开场镜头。",
+      "tool": "three.js WebGPURenderer + TSL（188dev）+ Box3D 0.1.1 物理；帖文标注 #codex（Codex 参与编写）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "MIT 开源，README 写明「断口位置是预先定义的，锈蚀只影响外观、不影响强度」——不是真实断裂力学模拟，拿来讲失效分析时要说明是示意。岩石资产 CC0（Poly Haven）。封面为作者视频第 55 秒帧。",
+      "attribution": "mrdoob（Ricardo Cabello，three.js 作者）",
+      "sourceAuthor": "mrdoob",
+      "tags": [
+        "Three.js",
+        "WebGPU",
+        "TSL",
+        "物理模拟",
+        "断裂",
+        "开源",
+        "Codevember"
+      ],
+      "publishedAt": "2026-11-15",
+      "collectionIds": [],
+      "collectedAt": "2026-11-15T08:52:51.000Z",
+      "updatedAt": "2026-11-15T08:52:51.000Z",
+      "verification": {
+        "checked_at": "2026-11-15T08:52:51.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为视频约第 55 秒帧（两块巨石间的钢链在中段断开，断口橙色发光、碎屑飞散），另看 5/20/40 秒帧，本轮下载并目视核验，非头像。",
+        "video_check": "下载完整 60 秒视频并看 4 个时间点截帧；读 README 全文；未在 WebGPU 浏览器中交互运行。"
+      },
+      "curation": {
+        "baseScore": 95,
+        "baseBreakdown": {
+          "实体": 24,
+          "科普": 18,
+          "溯源": 20,
+          "复现": 15,
+          "风格": 10,
+          "新颖": 8
+        },
+        "multiplier": 1.4,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-11-15-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2121832435755417600/vid/avc1/1024x1024/4F4vO_Tz_HiTUSWK.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/mrdoob/codevember-2026/tree/main/14",
+      "licenseName": "MIT",
+      "licenseUrl": "https://github.com/mrdoob/codevember-2026",
+      "demoUrl": "https://mrdoob.github.io/codevember-2026/14/"
+    },
+    {
+      "title": "墨团砸在墙、油桶、扭柱和球上，颜色顺着曲面包过去、永远不消失——为什么大多数游戏的弹痕几秒就没了？vidar 左右对比：左边贴一张平面「贴花」，右边把墨直接写进每个物体自己的纹理",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "source": "https://x.com/vidar_0208/status/2121830675456090581",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261115c-inkpaint.jpg",
+      "previewType": "image",
+      "description": "一手来源：@vidar_0208 X 长帖（2026-11-15 05:00 UTC，25.5 秒视频；长文全文经公开镜像读取）及其回复里的技术出处。问题：常见做法是在命中点放一张小方片「贴花」，在球面上会翘出边缘、每张多一次绘制，所以游戏通常几秒后删掉。做法（照 EsProgram 的 InkPainter for Unity，MIT）：每个可涂物体拷一份自己的 RenderTexture；墨团命中时射线打到网格碰撞体得到命中点 UV，绘制着色器在该 UV 周围的旋转方块内混入笔刷形状，再拷回去——墨在纹理空间里，所以天然包住曲面；同一笔还写进法线图（墨边会反光凸起）和高度图，滴落面板每帧让像素看上方墨够厚就往下拉。踩过的坑：墙 8×4.5 m 塞进一个 UV 方块，方形笔刷被拉长，要先把 UV 偏移换算成米；球的 UV 接缝处（u=1 接 u=0）墨迹被直线切断；Unity 自带立方体六个面共用一块 UV，一枪会涂六面。代价：每个物体一套贴图，墙单张就 9.4 MB；分辨率固定；滴落速度随帧率变。环境：Unity 6.3 URP、M4 Mac mini，视频里 141 笔。为什么收：vidar 是库里高分常客，这条把「为什么游戏弹痕会消失、喷射战士的墨为什么能留住」讲成可视对比；纹理空间/UV 接缝对讲 3D 建模和贴图很直观。",
+      "tool": "Unity 6.3 URP（InkPainter 着色器改写为单个 URP shader）；非 three.js",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "代码 MIT（vidar-game-lab 仓库 texture-painting 目录）；技术来源 EsProgram/InkPainter（MIT，作者在回复中注明 commit 508aefe）。长帖 API 只返回截断正文，全文经 fxtwitter 公开镜像读取。封面为视频第 3 秒帧。",
+      "attribution": "vidar（@vidar_0208）；技术来源 EsProgram（InkPainter）",
+      "sourceAuthor": "vidar_0208",
+      "tags": [
+        "Unity",
+        "着色器",
+        "纹理绘制",
+        "UV",
+        "左右对比",
+        "开源"
+      ],
+      "publishedAt": "2026-11-15",
+      "collectionIds": [],
+      "collectedAt": "2026-11-15T08:52:51.000Z",
+      "updatedAt": "2026-11-15T08:52:51.000Z",
+      "verification": {
+        "checked_at": "2026-11-15T08:52:51.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为视频约第 3 秒帧（分屏：左「OFF: one flat decal quad per hit, gone after 2 s」，右「ON: ink written into each object's RenderTexture」，墙、桶、扭柱、球上有彩色墨迹），另看 8/14/20 秒帧（三块墙板对比颜色/法线/滴落、球面 UV 接缝调试图），本轮下载并目视核验，非头像。",
+        "video_check": "下载完整视频并看 4 个时间点截帧；读长帖全文；未运行 Unity 工程。"
+      },
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 17,
+          "溯源": 19,
+          "复现": 14,
+          "风格": 7,
+          "新颖": 8
+        },
+        "multiplier": 1.0,
+        "finalScore": 83.0,
+        "threshold": 65,
+        "run": "2026-11-15-1640-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/ext_tw_video/2121830654014824448/pu/vid/avc1/1280x720/oOQKtkXHdRekYJ8j.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/vidar0208/vidar-game-lab/tree/main/Assets/Techniques/texture-painting",
+      "licenseName": "MIT",
+      "licenseUrl": "https://github.com/vidar0208/vidar-game-lab"
+    },
+    {
+      "title": "两组几乎一样密的细线叠在一起，纸面上就「长」出一道道又粗又慢的波浪——线只错了一点点，波纹却被放大了几十倍：@sib 的 WebGPU 小品「干渉」，鼠标一转，莫尔条纹跟着翻滚",
+      "category": "motion",
+      "styleFamily": "code_video",
+      "source": "https://x.com/sib/status/2121826788905251245",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261115c-moire.jpg",
+      "previewType": "image",
+      "description": "一手来源：@sib X 帖（2026-11-15 04:45 UTC，26 秒视频）+ 在线页 omusuhi.info/187（WGSL 源码在页面内可读，本轮读原文注释）。画面：米色纸上一块印刷感的黑/藍墨细线方块，上面浮现宽大的明暗波浪，鼠标拖动转、偏移，点击切换五种「面」（丘、褶、凪等）并平滑变形。原理（源码注释）：A 组是严格等间距的直线；B 组线也是直的，但间距差一点（p(1+δ)）、再加一个一维相位函数 h(x)（tanh 台阶 + 正弦的和）；看到的条纹形状就是 h(x) 被放大了 1/(θν0) 倍——也就是说，两组线极小的角度或间距差，会以巨大的倍数放大成肉眼可见的大条纹；墨用线性透过率相乘模拟叠印，16 点超采样防锯齿。为什么收：莫尔条纹「把微小错位放大成大图案」是经典科普机制，可延伸到屏幕拍照的彩纹、印刷网点，以及用条纹放大做精密对准/位移测量；画面极简干净，0 秒就能上；同作者「飛砂」库内 90.2 分。",
+      "tool": "WebGPU + WGSL（单页手写，无框架）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "源码随页面公开可读，未见许可证声明，仅外链引用；封面为作品官方 og 分享图 ogp.png。「用于精密对准」为本库延伸角度，作品本身未提半导体应用。",
+      "attribution": "sib（@sib，omusuhi.info）",
+      "sourceAuthor": "sib",
+      "tags": [
+        "WebGPU",
+        "WGSL",
+        "莫尔条纹",
+        "干涉",
+        "科普",
+        "物理动效"
+      ],
+      "publishedAt": "2026-11-15",
+      "collectionIds": [],
+      "collectedAt": "2026-11-15T08:52:51.000Z",
+      "updatedAt": "2026-11-15T08:52:51.000Z",
+      "verification": {
+        "checked_at": "2026-11-15T08:52:51.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为作者官方 og 分享图（米色底上黑色细线组成的方块，浮现宽大的莫尔波纹），另看视频 5/15/24 秒帧，本轮下载并目视核验，非头像。",
+        "video_check": "下载完整视频并看 3 个时间点截帧；读页面 WGSL 源码注释；未在 WebGPU 浏览器中交互运行。"
+      },
+      "curation": {
+        "baseScore": 76,
+        "baseBreakdown": {
+          "实体": 14,
+          "科普": 20,
+          "溯源": 13,
+          "复现": 12,
+          "风格": 8,
+          "新颖": 9
+        },
+        "multiplier": 1.1,
+        "finalScore": 83.6,
+        "threshold": 65,
+        "run": "2026-11-15-1640-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://video.twimg.com/amplify_video/2121825510284316672/vid/avc1/720x720/V8sv5dilwVgxyhEf.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "demoUrl": "https://omusuhi.info/187/index.html"
+    },
     {
       "title": "一只会转头「亮喉咙」的蜂鸟，全是网页实时算的：1.1 万根羽毛每根都是真几何、79 根骨骼，喉部从暗紫红一下变成耀眼的紫——作者说「靠的是每根羽毛自己的法线，整体染色怎么都不像结构色」",
       "category": "3d",
@@ -35162,8 +35339,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条 | 2026-11-01-0840-shanghai 监控轮追加 5 条 | 2026-11-01-1240-shanghai 监控轮追加 6 条 | 2026-11-02-1640-shanghai 监控轮追加 7 条 | 2026-11-02-2040-shanghai 监控轮追加 6 条 | 2026-11-03-0840-shanghai 监控轮追加 6 条 | 2026-11-03-1240-shanghai 监控轮追加 2 条 | 2026-11-03-1640-shanghai 监控轮追加 3 条 | 2026-11-03-2040-shanghai 监控轮追加 5 条 | 2026-11-04-0840-shanghai 监控轮追加 5 条 | 2026-11-04-1240-shanghai 监控轮追加 4 条 | 2026-11-04-1640-shanghai 监控轮追加 2 条 | 2026-11-04-2040-shanghai 监控轮追加 4 条 | 2026-11-05-0840-shanghai 监控轮追加 5 条 | 2026-11-05-1240-shanghai 监控轮追加 4 条 | 2026-11-05-1640-shanghai 监控轮追加 2 条 | 2026-11-05-2040-shanghai 监控轮追加 3 条 | 2026-11-06-0840-shanghai 监控轮追加 4 条 | 2026-11-06-1640-shanghai 监控轮追加 1 条 | 2026-11-06-2040-shanghai 监控轮追加 1 条 | 2026-11-07-0840-shanghai 监控轮追加 1 条 | 2026-11-07-1240-shanghai 监控轮追加 1 条 | 2026-11-07-1640-shanghai 监控轮追加 1 条 | 2026-11-07-2040-shanghai 监控轮追加 3 条 | 2026-11-08-0840-shanghai 监控轮追加 3 条 | 2026-11-08-1240-shanghai 监控轮追加 1 条 | 2026-11-08-1640-shanghai 监控轮追加 5 条 | 2026-11-08-2040-shanghai 监控轮追加 3 条 | 2026-11-09-0840-shanghai 监控轮追加 8 条 | 2026-11-09-1640-shanghai 监控轮追加 4 条 | 2026-11-09-2040-shanghai 监控轮追加 2 条 | 2026-11-10-0840-shanghai 监控轮追加 4 条 | 2026-11-10-1240-shanghai 监控轮追加 2 条 | 2026-11-10-1640-shanghai 监控轮追加 2 条 | 2026-11-10-2040-shanghai 监控轮追加 5 条 | 2026-11-11-0840-shanghai 监控轮追加 5 条 | 2026-11-11-1240-shanghai 监控轮追加 2 条 | 2026-11-11-1640-shanghai 监控轮追加 2 条 | 2026-11-11-2040-shanghai 监控轮追加 3 条 | 2026-11-12-0840-shanghai 监控轮追加 5 条 | 2026-11-12-1240-shanghai 监控轮追加 1 条 | 2026-11-12-1640-shanghai 监控轮追加 2 条 | 2026-11-13-0840-shanghai 监控轮追加 3 条 | 2026-11-13-1240-shanghai 监控轮追加 1 条 | 2026-11-13-1640-shanghai 监控轮追加 2 条 | 2026-11-14-0840-shanghai 监控轮追加 2 条 | 2026-11-14-1240-shanghai 监控轮追加 3 条 | 2026-11-14-1640-shanghai 监控轮追加 5 条 | 2026-11-14-2040-shanghai 监控轮追加 5 条 | 2026-11-15-0840-shanghai 监控轮追加 2 条 | 2026-11-15-1240-shanghai 监控轮追加 2 条",
-  "updatedAt": "2026-11-15T04:45:56.000Z",
-  "totalItems": 676,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条 | 2026-11-01-0840-shanghai 监控轮追加 5 条 | 2026-11-01-1240-shanghai 监控轮追加 6 条 | 2026-11-02-1640-shanghai 监控轮追加 7 条 | 2026-11-02-2040-shanghai 监控轮追加 6 条 | 2026-11-03-0840-shanghai 监控轮追加 6 条 | 2026-11-03-1240-shanghai 监控轮追加 2 条 | 2026-11-03-1640-shanghai 监控轮追加 3 条 | 2026-11-03-2040-shanghai 监控轮追加 5 条 | 2026-11-04-0840-shanghai 监控轮追加 5 条 | 2026-11-04-1240-shanghai 监控轮追加 4 条 | 2026-11-04-1640-shanghai 监控轮追加 2 条 | 2026-11-04-2040-shanghai 监控轮追加 4 条 | 2026-11-05-0840-shanghai 监控轮追加 5 条 | 2026-11-05-1240-shanghai 监控轮追加 4 条 | 2026-11-05-1640-shanghai 监控轮追加 2 条 | 2026-11-05-2040-shanghai 监控轮追加 3 条 | 2026-11-06-0840-shanghai 监控轮追加 4 条 | 2026-11-06-1640-shanghai 监控轮追加 1 条 | 2026-11-06-2040-shanghai 监控轮追加 1 条 | 2026-11-07-0840-shanghai 监控轮追加 1 条 | 2026-11-07-1240-shanghai 监控轮追加 1 条 | 2026-11-07-1640-shanghai 监控轮追加 1 条 | 2026-11-07-2040-shanghai 监控轮追加 3 条 | 2026-11-08-0840-shanghai 监控轮追加 3 条 | 2026-11-08-1240-shanghai 监控轮追加 1 条 | 2026-11-08-1640-shanghai 监控轮追加 5 条 | 2026-11-08-2040-shanghai 监控轮追加 3 条 | 2026-11-09-0840-shanghai 监控轮追加 8 条 | 2026-11-09-1640-shanghai 监控轮追加 4 条 | 2026-11-09-2040-shanghai 监控轮追加 2 条 | 2026-11-10-0840-shanghai 监控轮追加 4 条 | 2026-11-10-1240-shanghai 监控轮追加 2 条 | 2026-11-10-1640-shanghai 监控轮追加 2 条 | 2026-11-10-2040-shanghai 监控轮追加 5 条 | 2026-11-11-0840-shanghai 监控轮追加 5 条 | 2026-11-11-1240-shanghai 监控轮追加 2 条 | 2026-11-11-1640-shanghai 监控轮追加 2 条 | 2026-11-11-2040-shanghai 监控轮追加 3 条 | 2026-11-12-0840-shanghai 监控轮追加 5 条 | 2026-11-12-1240-shanghai 监控轮追加 1 条 | 2026-11-12-1640-shanghai 监控轮追加 2 条 | 2026-11-13-0840-shanghai 监控轮追加 3 条 | 2026-11-13-1240-shanghai 监控轮追加 1 条 | 2026-11-13-1640-shanghai 监控轮追加 2 条 | 2026-11-14-0840-shanghai 监控轮追加 2 条 | 2026-11-14-1240-shanghai 监控轮追加 3 条 | 2026-11-14-1640-shanghai 监控轮追加 5 条 | 2026-11-14-2040-shanghai 监控轮追加 5 条 | 2026-11-15-0840-shanghai 监控轮追加 2 条 | 2026-11-15-1240-shanghai 监控轮追加 2 条 | 2026-11-15-1640-shanghai 监控轮追加 3 条",
+  "updatedAt": "2026-11-15T08:52:51.000Z",
+  "totalItems": 679,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }

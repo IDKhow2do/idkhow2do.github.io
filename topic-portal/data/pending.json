@@ -3,6 +3,133 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 57,
+      "multiplier": 1.4,
+      "score": 57.0,
+      "reason": "本轮达待定区间（单维度乘数保护生效）",
+      "run": "2026-11-15-1640-shanghai",
+      "record": {
+        "title": "草丛里竖着尾巴走过来的小橘猫、逆光虚化的树林，全是浏览器实时渲染：Karim Beyrouti 用自己的「This Green Earth」星球生成/渲染器做的 Codevember 第 15 天「Kitten in the grass」",
+        "category": "3d",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/KarimBeyrouti/status/2121873417246818491",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261115c-kitten.jpg",
+        "previewType": "image",
+        "description": "一手来源：@KarimBeyrouti X 帖（2026-11-15 07:50 UTC，16 秒视频）+ 在线页（页面描述：「Codevember：每天一个小演示，用 This Green Earth 的星球生成器和渲染器制作」，页面加载 three.webgpu 模块）。画面：低机位、浅景深的草地，一只橘白小猫竖着尾巴朝镜头走来，背景是高光虚化的树林，草叶在前景摇动。为什么考虑：画面写实度高，是「浏览器里实时渲染能做到多真」的好样本，可作 three.js/WebGPU 写实草地与毛发参考。为什么只进待定：帖子只有链接和标签，没有做法说明、源码或许可证（rainforest 仓库未公开），科普机制弱。",
+        "tool": "three.js WebGPU（页面模块）+ 作者自研 This Green Earth 星球生成/渲染器",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "仅在线演示与视频，未见源码与许可证；封面为作者视频第 8 秒帧。",
+        "attribution": "Karim Beyrouti（@KarimBeyrouti）",
+        "sourceAuthor": "KarimBeyrouti",
+        "tags": [
+          "Three.js",
+          "WebGPU",
+          "Codevember",
+          "在线演示",
+          "写实渲染"
+        ],
+        "publishedAt": "2026-11-15",
+        "collectionIds": [],
+        "collectedAt": "2026-11-15T08:52:51.000Z",
+        "updatedAt": "2026-11-15T08:52:51.000Z",
+        "verification": {
+          "checked_at": "2026-11-15T08:52:51.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为视频约第 8 秒帧（草地中央竖尾巴的橘白小猫，背景树林虚化），另看 3/13 秒帧，本轮下载并目视核验，非头像。",
+          "video_check": "下载完整视频并看 3 个时间点截帧；在线页只读到 HTML 外壳，未交互运行。"
+        },
+        "curation": {
+          "baseScore": 57,
+          "baseBreakdown": {
+            "实体": 16,
+            "科普": 8,
+            "溯源": 11,
+            "复现": 5,
+            "风格": 10,
+            "新颖": 7
+          },
+          "multiplier": 1.4,
+          "finalScore": 57.0,
+          "threshold": 65,
+          "run": "2026-11-15-1640-shanghai",
+          "multiplierGuard": "基础分<60且仅单一维度乘数>1，按规则不让乘数抬过阈值（按基础分判定）"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2121873348229476352/vid/avc1/1160x720/4iVOVlmT__9BOmt1.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "demoUrl": "https://karimbeyrouti.github.io/rainforest/codevember.html#/kitten"
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 53,
+      "multiplier": 1.1,
+      "score": 58.3,
+      "reason": "本轮达待定区间",
+      "run": "2026-11-15-1640-shanghai",
+      "record": {
+        "title": "传送带上的金块被压成一根根面条，落进碗里还能用鼠标挑起来甩——Soraku 联合创始人 Cora 的 WebGPU 实时「金面条」解压循环，方向键一按整个场景换配色",
+        "category": "motion",
+        "styleFamily": "code_video",
+        "source": "https://x.com/Cora_Mat/status/2121850995080941619",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261115c-noodle.jpg",
+        "previewType": "image",
+        "description": "一手来源：@Cora_Mat X 帖（2026-11-15 06:21 UTC，10.5 秒视频，标签 #realtime #vfx #WebGPU #Soraku）。画面：等距视角的流水线，压板把金色方块挤成一束细条落进碗里成为面条，光标挑起一根拖动，三段截帧依次是蓝、粉、黄三种场景配色（帖文说方向键切换）。为什么考虑：面条的绳索/软体物理加材质切换有实体感和可玩性。为什么不上墙：帖子没给可玩链接、源码或做法说明，科普机制弱。",
+        "tool": "WebGPU 实时渲染（作者自述，未说明具体引擎）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "无链接、无源码、无许可证；封面为视频第 2 秒帧。",
+        "attribution": "Cora（@Cora_Mat，Soraku）",
+        "sourceAuthor": "Cora_Mat",
+        "tags": [
+          "WebGPU",
+          "物理动效",
+          "软体",
+          "实时渲染"
+        ],
+        "publishedAt": "2026-11-15",
+        "collectionIds": [],
+        "collectedAt": "2026-11-15T08:52:51.000Z",
+        "updatedAt": "2026-11-15T08:52:51.000Z",
+        "verification": {
+          "checked_at": "2026-11-15T08:52:51.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为视频约第 2 秒帧（蓝色场景，压板下金色面条落入碗中，光标挑起一根），另看 6/9 秒帧，本轮下载并目视核验，非头像。",
+          "video_check": "下载完整视频并看 3 个时间点截帧；无可运行链接。"
+        },
+        "curation": {
+          "baseScore": 53,
+          "baseBreakdown": {
+            "实体": 20,
+            "科普": 7,
+            "溯源": 8,
+            "复现": 3,
+            "风格": 8,
+            "新颖": 7
+          },
+          "multiplier": 1.1,
+          "finalScore": 58.3,
+          "threshold": 65,
+          "run": "2026-11-15-1640-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2121850706038837248/vid/avc1/1500x1458/ZLTP4Uf52QeSeFRz.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 64,
       "multiplier": 1.0,
       "score": 64.0,
@@ -7880,6 +8007,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-15T04:45:56.000Z",
+  "updatedAt": "2026-11-15T08:52:51.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
