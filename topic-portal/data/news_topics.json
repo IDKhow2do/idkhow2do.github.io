@@ -1,7 +1,46 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-15T04:45:56.000Z",
+  "updatedAt": "2026-11-15T08:52:51.000Z",
   "topics": [
+    {
+      "url": "https://www.humansecurity.com/learn/blog/october-2026-agentic-traffic/",
+      "title": "AI 智能体上网，85% 的动作都在逛商品页和搜索页，走到结账页的只有 1.9%——一家防机器人公司的月报还发现：两个月前占 41% 的独立 AI 浏览器 Comet 跌到 3.6%，Meta 的 Muse 一家占了 59%。为什么智能体「只逛不买」，独立 AI 浏览器又为什么在消失？",
+      "category": "AI",
+      "source": "HUMAN Security 官方博客《State of Agentic Traffic – October 2026》（作者 Aviad Kaiserman，2026-11-09 发布，本轮读原文）；Search Engine Journal、PPC Land 等转述与原文数字一致",
+      "publishedAt": "2026-11-09",
+      "eventAt": "2026-10-31",
+      "collectedAt": "2026-11-15T08:52:51.000Z",
+      "updatedAt": "2026-11-15T08:52:51.000Z",
+      "description": "报告要点（原文）：10 月 HUMAN 看到的智能体流量是 9 月的 2.6 倍（+157.5%）、8 月的约 8 倍；Meta 9 月 8 日上线的个人智能体 Muse 两个月从新入场做到 59%，单月请求量近 4 倍，是第二名 ChatGPT Agent 的 3.7 倍；OpenAI 三款产品合计约 30%（ChatGPT Agent 份额从 28.5% 降到 15.9%，但流量仍涨 44%；Codex Browser 8.8%、Codex Chrome 插件 5.2%）；Claude Chrome 插件份额从 7% 减半到 3.5%（流量涨 30%）；Google Agent 0.8%、Grok Agent 0.7% 进前十。Perplexity Comet 8 月占 41%，9 月 9.4%，10 月 3.6%，是前十里唯一流量缩水的，报告判断「独立的消费级智能体浏览器在退场，用户转向已经在用的平台里内置的智能体」。去向：85% 请求落在商品页和搜索页（9 月 81%），结账和支付页从 2.4% 降到 1.9%，但到达结账页的绝对量环比涨 117%——「智能体逛的远多于买的」。行业：电商稳定占 60%，旅游首次升到第二（19.3%），SaaS 份额小（1.2%）但增长最快（约为 8 月的 15 倍）。口径：只统计 HUMAN 客户的网站和 App；单位是「请求」（一次页面加载或一次搜索算一次），不是用户也不是会话；不含爬虫。为什么能拍：「AI 替你逛街，却几乎不替你付钱」是生活向反直觉钩子；Comet 从 41% 到 3.6% 能讲「为什么独立 App 打不过平台内置」；统计口径（请求≠订单≠用户）正好接用户的「统计口径」系列；画面可用三条柱状/折线自制，0 秒用「85% vs 1.9%」大字。",
+      "caveat": "数据只来自 HUMAN 自家客户站点，不代表全网，也未按国家拆分；Muse 仅在美国上线，大陆观众相关性有限，需要类比国内（如手机厂商/超级 App 内置智能体）再讲；「到达结账页」只表示请求落在该页，不等于下单；HUMAN 本身卖智能体识别产品，报告结尾为其 AgenticTrust 做推广。要点 bullet 里「just % reach checkout」原文缺数字，1.9% 取自正文。封面为官方报告题图（抽象示意，非数据图）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261115c-human.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261115c-human.jpg",
+      "imageAlt": "HUMAN Security「State of Agentic Traffic」月报官方题图",
+      "tags": [
+        "智能体",
+        "数字生活",
+        "统计口径",
+        "AI浏览器",
+        "电商"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 76,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 15,
+          "画面": 10,
+          "来源": 13,
+          "时效": 10,
+          "大陆": 3,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 80.3,
+        "threshold": 65,
+        "run": "2026-11-15-1640-shanghai"
+      }
+    },
     {
       "url": "https://www.zhitongcaijing.com/content/detail/1523275.html",
       "title": "芯片不缺光刻机也可能卡在「磨」上：一种颗粒只有病毒大小的抛光砂，日本扶桑化学占了九成以上市场，刚给客户发说明——扩产也保证不了 2030 年前配额外的订单。为什么每一层电路做完都得先把晶圆磨平？",
