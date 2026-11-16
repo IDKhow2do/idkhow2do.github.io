@@ -1,7 +1,194 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-15T12:52:41.000Z",
+  "updatedAt": "2026-11-16T00:54:54.000Z",
   "topics": [
+    {
+      "url": "https://alignment.anthropic.com/2026/worse-together/",
+      "title": "每人派一个 AI 代理去分同一份预算，结果为什么比只请一个「总管」差一大截？Anthropic Fellows「Worse Together」：Claude Opus 5 各自为战只拿到最优结果的 30%（总管 64%）；团队从 4 人扩到 16 人，真正出手的代理从 66% 掉到 10%（Sonnet 5）——AI 也有「旁观者效应」",
+      "category": "AI",
+      "source": "Anthropic Alignment Science Blog（Anthropic Fellows Program）文章《Worse Together: How Performance Breaks Down in Multi-User Multi-Agent Teams》，作者 Sahan Paliskara、Nattaput Namchittai、Jacqueline Tay、Avery Griffin、Andrew Lampinen，2026-11-11；文内附论文与代码，发布 MAMUBench 基准（三个环境）",
+      "publishedAt": "2026-11-11",
+      "eventAt": "2026-11-11",
+      "collectedAt": "2026-11-16T00:54:54.000Z",
+      "updatedAt": "2026-11-16T00:54:54.000Z",
+      "description": "研究设定：很多用户各自把任务交给自己的 AI 代理，而这些代理要共用一份资源（API 额度、诊所日历、团购外卖/订行程、合并队列）。作者搭了四个环境，比较四种编组：单人单代理、一个「协调员」代理服务所有人、每人一个代理但互不通信、每人一个代理且可互发消息（点对点团队），用整个群体的结果打分。主要数据（原文）：四个环境里，「一个代理服务所有人」都比「点对点团队」好，Claude 两个型号差约 10–45 个百分点。API 额度环境（4/8/16 名研究员分一份不够用的 token 预算，25 个场景）：点对点团队只达到协调员表现的 47%（Opus 5）和 38%（Sonnet 5），即最优结果的 30% 和 12%，协调员为 64% 和 32%；主要毛病是「动作太少、太晚」——团队从 4 人增到 16 人，曾经出手的代理比例 Sonnet 5 从 66% 降到 10%、GPT-5.6-sol 从 82% 降到 25%；GPT 和 Qwen 代理每局会不经同意取消/缩减别人任务 3.9–7.1 次（Sonnet 5 为 0.59，Opus 5 为 0）。修复办法因环境而异：共用预算时指定一个「组长」并写清优先级有效；团购场景里「读完消息才能下单」比单纯重跑救回更多失败订单。为什么能拍：①0 秒画面——文中图 1 就是「一个总管 vs 三个各自为战的代理」示意图，可直接用 Three.js 做成小人抢预算动画；②「人越多越没人动手」正是心理学的旁观者效应/责任分散，AI 居然复现了；③反直觉：每个代理都更「懂自己的主人」，整体反而更差——接用户自己的 Agent 团队（Musk 当 CEO）现身说法：为什么团队要有明确的负责人。",
+      "caveat": "这是 Anthropic Fellows 的模拟环境研究，用户与任务都是模拟的；百分比是相对「最优策略」或「协调员」的比值，不同环境差别大；文章正文主要报告 API 额度和私人助理两个环境，其余在论文里；GPT、Qwen「擅自取消别人任务」在该评分下并没有拉低群体分，作者自己也指出评分体系的局限。Qwen 为国内模型，可作大陆关联点，但不要做成模型排名。封面为文章图 1（协调员 vs 点对点团队示意图）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261116a-worse.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261116a-worse.jpg",
+      "imageAlt": "Anthropic 文章图 1：左侧一个代理服务多名用户，右侧 A/B/C 三个代理各自代表用户共享 token 预算与订餐",
+      "tags": [
+        "智能体",
+        "AI安全",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 19,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 91.9,
+        "threshold": 65,
+        "run": "2026-11-16-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://huggingface.co/meituan-longcat/LongCat-2.5",
+      "title": "1.6 万亿参数的模型，194 块昇腾卡怎么分工：2 块看图、64 块读题、128 块写答案——为什么「写」要的卡是「读」的两倍？美团 LongCat-2.5 开源（MIT），官方部署样例只给了国产 NPU 方案",
+      "category": "AI",
+      "source": "Hugging Face 模型卡 meituan-longcat/LongCat-2.5（MIT，2026-11-04 创建、11-10 更新）+ 官方 NPU 部署指南 SGLang-FluentLLM 分支 longcat-2.5-npu/npu_test/ReadMe.md（「LongCat 2.5 W4A4 模型在 NPU 上推理优化实践样例」）；The Decoder 2026-11-15 报道作为线索",
+      "publishedAt": "2026-11-10",
+      "eventAt": "2026-11-15",
+      "collectedAt": "2026-11-16T00:54:54.000Z",
+      "updatedAt": "2026-11-16T00:54:54.000Z",
+      "description": "一手事实：模型卡写明 LongCat-2.5 是原生多模态 MoE，总参数 1.6 万亿、每个 token 激活约 480 亿；训练依赖「长序列训练、大规模强化学习、多教师蒸馏和在国产 AI 加速器上的基础设施优化」，长序列 SFT 每卡吞吐比 DDP 基线高 86%；专家权重和激活做 W4A4 量化，「在国产 AI 加速器上原生 INT4 计算」；部署一节只写了 NPU 平台。官方 NPU 指南（中文）：采用 Encoder、Prefill、Decode（EPD）分离部署，基于昇腾 Atlas A2 194 卡集群——Encoder 2 卡、Prefill 64 卡、Decode 128 卡，P/D 单机 16 卡，CANN 9.0.0。成绩：模型卡 Terminal Bench v2.1 为 88.4（官方表中 Claude Opus 5 为 89.1*）。为什么能拍：①反直觉钩子——「读题」（prefill）可以把整段提示词并行算完，是算力活；「写答案」（decode）一次只吐一个词、每吐一个都要把权重和 KV 缓存从显存里搬一遍，是搬运活（带宽瓶颈），所以写的那一侧要更多卡——用「一个人一口气读完一页 vs 一个字一个字往外写」动画 0 秒上画面；②4 比特量化为什么能让国产卡跑得动：数字变「粗」、搬运量减半；③接库内 KV 缓存、AI 推理成本系列选题，讲国产卡在推理侧怎么扬长避短。",
+      "caveat": "模型卡写的是「在国产 AI 加速器上做了基础设施优化」，并未逐字声明「全程没用英伟达」，「从未碰过英伟达 GPU」是 The Decoder 等媒体的概括；194 卡是官方给的一个部署样例，不代表唯一配置；基准分为美团自报，带 * 的竞品分数为其引用值。权重 11 月初已上 HF，本条时效按 11-10 更新计（≤14 天）。封面为模型卡官方 metrics-dashboard 基准对比图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261116a-longcat.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261116a-longcat.jpg",
+      "imageAlt": "LongCat-2.5 模型卡官方基准对比面板（Program Bench、Terminal Bench 等多项柱状对比）",
+      "tags": [
+        "AI推理",
+        "KV缓存",
+        "AI成本",
+        "智能体"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 81,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 16,
+          "画面": 8,
+          "来源": 15,
+          "时效": 7,
+          "大陆": 10,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 85.6,
+        "threshold": 65,
+        "run": "2026-11-16-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://newsroom.st.com/media-center/press-item.html/p4733.html",
+      "title": "手机芯片都卷到 3nm 了，星链卫星之间打激光通信用的却是 18nm 的芯片——为什么上太空反而要「老工艺」？三星被曝要在德州奥斯汀厂量产 SpaceX 选用的 ST STM32V8，关键在 FD-SOI：晶体管底下垫了一层绝缘「隔离层」",
+      "category": "半导体",
+      "source": "意法半导体（ST）官方新闻稿 2025-11-18「STMicroelectronics introduces the industry’s first 18nm microcontroller」（STM32V8：18nm FD-SOI + 嵌入式相变存储器 PCM，SpaceX 星链迷你激光系统选用，引 SpaceX 星链工程副总裁 Michael Nicolls 原话）；三星奥斯汀投产消息据首尔经济日报 2026-11-15 报道（引业内人士与美国商务部/NIST CHIPS 补贴项目材料）",
+      "publishedAt": "2026-11-15",
+      "eventAt": "2026-11-15",
+      "collectedAt": "2026-11-16T00:54:54.000Z",
+      "updatedAt": "2026-11-16T00:54:54.000Z",
+      "description": "新闻点：首尔经济日报 11-15 报道，三星将投资 19 亿美元扩建奥斯汀晶圆厂（现有 65nm–14nm 成熟工艺），按美国商务部 NIST 补贴项目材料，扩建用于生产航空航天、国防、汽车所需的 FD-SOI 芯片，2030 年前投产；业内称将包括目前在法国生产的 STM32V8。三星表示无法确认具体客户合同。ST 官方一手信息：STM32V8 是首款 18nm FD-SOI 微控制器，Arm Cortex-M85、最高 800 MHz，4MB 嵌入式相变存储器（称市场上单元面积最小），结温最高 140°C；在 ST 法国 Crolles 300mm 厂生产并与三星代工合作；SpaceX 将其用于星链卫星间的迷你激光链路，SpaceX 副总裁称 18nm FD-SOI 提供了在近地轨道环境下更高的可靠性与鲁棒性。为什么能拍（用户刻蚀背景直接用得上）：①反直觉——太空芯片不追最小线宽，追的是「被宇宙射线打中也不出错」；②机制：普通体硅晶体管下面是一大块硅，高能粒子穿过会在整条轨迹上激发电荷、被收集后翻转比特（单粒子翻转）；FD-SOI 在超薄硅沟道下埋了一层氧化物（BOX），能收集电荷的硅体积小得多——用 Three.js 做「粒子穿过体硅 vs 穿过 SOI」剖面动画 0 秒上画面；③工艺角度：SOI 晶圆怎么做（智能剥离 Smart Cut）、超薄硅层刻蚀对均匀性的要求；④延伸：为什么成熟工艺产线在 AI 时代依然抢手。",
+      "caveat": "「三星奥斯汀量产星链芯片」是韩国媒体基于业内人士和政府补贴材料的报道，三星、SpaceX、ST 均未官方确认，投产在 2030 年前，需按「据报道」处理；SpaceX 选用 STM32V8 用于星链激光链路由 ST 新闻稿（含 SpaceX 高管引语）确认。FD-SOI 抗辐射机理为通用器件物理，ST 新闻稿只说「鲁棒性与可靠性」，具体抗单粒子翻转数据未公布，讲解时说明是原理而非该芯片实测。涉及美国补贴与 SpaceX，讲技术即可，不站队。封面为 ST 新闻稿官方配图（电路板上的 STM32V8 芯片）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261116a-fdsoi.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261116a-fdsoi.jpg",
+      "imageAlt": "意法半导体新闻稿配图：蓝色电路板上印有 ST 标志的 STM32V8 芯片",
+      "tags": [
+        "芯片制造",
+        "器件物理",
+        "卫星",
+        "成熟工艺"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 81,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 17,
+          "画面": 8,
+          "来源": 10,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 87.0,
+        "threshold": 65,
+        "run": "2026-11-16-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://www.notebookcheck.net/Amazing-OLED-panel-Apple-MacBook-Pro-14-PROLED-XDR-Review.1438048.0.html",
+      "title": "屏幕从 Mini-LED 升级成更高级的 OLED，为什么有人反而看得头晕？Notebookcheck 实测新款 MacBook Pro 14「PROLED XDR」屏亮度 99% 以下就以 240Hz 频闪（幅度 56%），老款 Mini-LED 是 14880Hz——差了约 62 倍",
+      "category": "科技产品",
+      "source": "Notebookcheck 实验室评测《Amazing OLED panel - Apple MacBook Pro 14 PROLED XDR Review》（PWM 实测数据）；MacAnorak 2026-11-14 评论文章《The MacBook Pro’s OLED PWM Problem》（汇总 MacRumors 论坛、Reddit 与 AppleInsider 11-10 报道的用户反馈）",
+      "publishedAt": "2026-11-14",
+      "eventAt": "2026-11-14",
+      "collectedAt": "2026-11-16T00:54:54.000Z",
+      "updatedAt": "2026-11-16T00:54:54.000Z",
+      "description": "实测数据（Notebookcheck 原文）：检测到屏幕闪烁/PWM，240 Hz，幅度 56%，在 99% 及以下亮度出现；评测称该屏在较高亮度用 DC 调光，但 240Hz 频率很低，敏感用户可能察觉闪烁并出现眼疲劳；对比项中 M4 Pro 款 Mini-LED 测得 14880 Hz。评测总评 92% 并把「PWM 闪烁」列为缺点。用户反馈（MacAnorak 汇总）：MacRumors 论坛帖与 Reddit 上有人报告头痛、眼疲劳、头晕、恶心，有人已退货；作者强调这是个体体验，不代表所有人，且屏幕不适可能有多种原因。为什么能拍：①0 秒画面——用手机慢动作/高速快门对着屏幕拍，就能看到明暗条纹（PWM 的直观证据），评测页也有 0/25/50/75/100% 亮度示波图；②机制：OLED 每个像素自己发光，降低亮度最省事的办法是让它快速「亮—灭」并调占空比，频率越低、幅度越大越容易被敏感人群察觉；DC 调光则直接降电流但低亮度会偏色；③大陆强相关：国产手机发布会年年比「高频 PWM 调光」「几千 Hz」，这条正好讲清那串数字到底是什么意思。",
+      "caveat": "头痛等症状为用户自述，非医学结论，不做诊断或购买建议；Notebookcheck 数字为其单台样机实测的最坏情况，频率并非唯一因素（调制深度、波形也重要）；MacAnorak 为评论博客，事实数据以 Notebookcheck 为准。苹果未就此发表官方说明（本轮未检索到）。封面为 MacAnorak 文章题图（苹果官方 PROLED 屏宣传图）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261116a-pwm.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261116a-pwm.jpg",
+      "imageAlt": "MacAnorak 文章题图：MacBook Pro PROLED XDR 屏幕展示画面",
+      "tags": [
+        "数字生活",
+        "消费电子",
+        "显示技术"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 78,
+        "baseBreakdown": {
+          "主线": 15,
+          "钩子": 18,
+          "画面": 12,
+          "来源": 10,
+          "时效": 10,
+          "大陆": 8,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 82.4,
+        "threshold": 65,
+        "run": "2026-11-16-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+      "title": "左手手套照镜子会变成右手手套——物理学家把粒子放进计算机「格子」里时也遇到同样的麻烦：明明只放了左手粒子，格子却凭空多送一个右手的。困扰 50 年的「标准模型格点定义」，UCSB 物理学家说这次是 GPT-6 Astra 主导写出了证明",
+      "category": "AI",
+      "source": "OpenAI 新科学博客首篇客座文章《A step toward defining the Standard Model on a lattice》，作者 Nathaniel Craig（UCSB 粒子理论组负责人、KITP 永久成员、OpenAI 访问科学家），2026-11-15；对应其 10 月预印本",
+      "publishedAt": "2026-11-15",
+      "eventAt": "2026-11-15",
+      "collectedAt": "2026-11-16T00:54:54.000Z",
+      "updatedAt": "2026-11-16T00:54:54.000Z",
+      "description": "文章要点（原文）：标准模型缺少「非微扰定义」；把时空离散成格点（格点场论）在强力上很成功，但弱力是手征的（区别对待左右手费米子），直接上格点会出现「费米子倍增」——放进左手粒子，格子自动多给一个右手伙伴。作者用光学类比：普通镜子会把左旋圆偏振光反射成右旋，要用胆甾相液晶类的「手征镜」（圣甲虫外壳也有类似螺旋结构）才能保持左旋；对应格点上的 Ginsparg–Wilson 关系与 overlap 费米子。剩下的难题是费米子测度的「相位」怎么定，Lüscher 解决了较简单的手征阿贝尔理论，完整标准模型悬而未决 25 年以上。作者的思路是把同一组场依次搬到更细的格子上逐级比较、把相位修正加起来；他说 GPT-6 Astra 提出了把场搬到细格子的正确方式、证明比较会收敛，并「主导了详细证明」，格点专家 Golterman、Kronfeld、Shamir 审阅提问。作者强调这只是「候选定义」，原则上的答案而非实用方案，反射正定性等仍待检验。为什么能拍：①接库内旧选题「AI 做对了 98% 没发表过的理论物理题，为什么还没有一个 AI 做出物理突破？」——这是一个正面回应的案例；②手套/镜子/圆偏振光类比可以 0 秒实拍（偏振片 + 镜子）；③讨论「AI 主导证明」时人类专家扮演什么角色。",
+      "caveat": "这是作者本人在 OpenAI 博客的客座文章（作者同时是 OpenAI 访问科学家，有利益关联），结果尚未经同行评议，作者自称「候选」定义；文中提到 OpenAI 关于 Yang-Mills 存在性的证明本轮未核实。题目抽象，需控制在 3 分钟内只讲「倍增问题 + AI 角色」。封面为 OpenAI 官方社交分享图（标题卡，无实物画面），正文内另有作者与 GPT-6 Astra 绘制的相位示意图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261116a-lattice.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261116a-lattice.jpg",
+      "imageAlt": "OpenAI 官方分享图：绿色渐变背景上的标题「A step toward defining the Standard Model on a lattice」",
+      "tags": [
+        "AI科研",
+        "物理",
+        "智能体"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 73,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 14,
+          "画面": 6,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 77.1,
+        "threshold": 65,
+        "run": "2026-11-16-0840-shanghai"
+      }
+    },
     {
       "url": "https://www.courtlistener.com/docket/73532135/garciaguirre-v-samsung-electronics-co-ltd/",
       "title": "内存条两年贵了好几倍，三家厂却一条新产线都没加——美国法官 11 月 14 日裁定：三星、SK 海力士、美光「合谋卡普通 DRAM 产能、全转去做 HBM」的集体诉讼可以继续审。为什么 AI 抢走 HBM，会让你的手机和电脑内存跟着涨价？",
