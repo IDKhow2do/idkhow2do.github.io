@@ -1,7 +1,45 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-16T00:54:54.000Z",
+  "updatedAt": "2026-11-16T04:45:32.000Z",
   "topics": [
+    {
+      "url": "https://github.com/Edge0-AI/Edge0/blob/main/docs/models/edge0-145b.md",
+      "title": "1450 亿参数的模型，为什么一块 24GB 显卡就能跑到每秒约 100 个词？Edge0-145B 开源（Apache-2.0）：每个词只叫醒 512 个专家里的 10 个，没轮到的专家放在内存里，用到再「搬」上显卡——模型多大不要紧，要紧的是每次搬多少",
+      "category": "AI",
+      "source": "GitHub 仓库 Edge0-AI/Edge0（Apache-2.0）模型页 docs/models/edge0-145b.md 与 README（2026-11-13 发布 145B/120B）；技术报告 arXiv 2609.18063《The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction》（2026-09-16）；线索来自 X @openreponotes 11-16 帖",
+      "publishedAt": "2026-11-13",
+      "eventAt": "2026-11-13",
+      "collectedAt": "2026-11-16T04:45:32.000Z",
+      "updatedAt": "2026-11-16T04:45:32.000Z",
+      "description": "一手事实（模型页原文）：Edge0 145B 与 120B 是从 Qwen3.8-Flash-Next 派生的「潜空间 MoE」模型，面向单块英伟达显卡（Linux/Windows）或 Apple Silicon Mac。145B 版总参数 1450 亿、每个 token 激活 101.2 亿；48 层，每层 512 个路由专家 + 1 个共享专家，每个 token 选 10 个；专家输入先从 2560 维压到 1792 维，所以每个专家都是固定 1,630,720 字节的一条记录——引擎在显卡上常驻几千个专家，其余从主机内存流式搬运，开销取决于常驻多少专家，而不是模型多大。权重按 4 比特原生训练，Q3_K 版 40.81 GiB。实测速度（官方表）：RTX 5090 D 24GB 上 Q3_K 聊天解码 99.7 tok/s、智能体解码 121.2 tok/s；RTX 4090 为 69.9/91.7；把同一张卡用 cgroup 限到 16GiB 显存 + 20GiB 内存时仍有 36.8/44.9 tok/s；常驻模式下 Q3_K 拆成 23.14 GiB 显存 + 31.28 GiB 内存。官方基准表 terminal-bench 2.1 为 86.5（Qwen3.8-Flash-Next 83.3）。为什么能拍：①反直觉钩子——「模型比显存大一倍，为什么还能跑？」答案是稀疏：每个词只用约 7% 的参数，用「图书馆只把今天要翻的书搬上桌」动画 0 秒上画面；②接库内 KV 缓存、显存/内存墙、AI 推理成本系列；③大陆关联：基座来自通义千问，旧版模型同时发在魔搭（ModelScope），测试卡 RTX 5090 D 是面向中国市场的版本。",
+      "caveat": "速度与基准分全部是项目方自测自报，未见第三方复现；「145B 跑在笔记本上」是 X 转述的说法，模型页写的是单块英伟达显卡或 Apple Silicon Mac（M2 Ultra 实测 60.9 tok/s），新 145B/120B 版目前在 Linux/Windows 需 CUDA 13；对比表里 Claude-Opus-4.6 等竞品分数为其引用值。团队背景本轮未核实，不要说成某国产大厂作品。封面为仓库官方 Edge0-145B 架构图（由 SVG 转成图片）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261116b-edge0.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261116b-edge0.jpg",
+      "imageAlt": "Edge0-145B 官方架构图：48 层混合注意力，单层内 2560→1792 降维、路由器从 512 个专家中选 10 个，右侧参数表",
+      "tags": [
+        "AI推理",
+        "端侧AI",
+        "存储/内存",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 86,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 8,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 90.9,
+        "threshold": 65,
+        "run": "2026-11-16-1240-shanghai"
+      }
+    },
     {
       "url": "https://alignment.anthropic.com/2026/worse-together/",
       "title": "每人派一个 AI 代理去分同一份预算，结果为什么比只请一个「总管」差一大截？Anthropic Fellows「Worse Together」：Claude Opus 5 各自为战只拿到最优结果的 30%（总管 64%）；团队从 4 人扩到 16 人，真正出手的代理从 66% 掉到 10%（Sonnet 5）——AI 也有「旁观者效应」",
