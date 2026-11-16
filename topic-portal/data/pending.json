@@ -3,6 +3,195 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 57,
+      "multiplier": 1.241,
+      "score": 70.7,
+      "reason": "分数达上墙线但基础分仅 57，靠标签乘数抬过线；在线试玩链接本轮未追到、无源码，机制说明少",
+      "run": "2026-11-16-2040-shanghai",
+      "record": {
+        "title": "火为什么能「贴着」一个会动的人形烧，而不是一团糊在外面？@thehardikdesign 的 Aura：实时 WebGPU 火焰包住任意 3D 模型，沿轮廓燃烧、跟着动作走、被风吹弯（three.js）",
+        "category": "motion",
+        "styleFamily": "code_video",
+        "source": "https://x.com/thehardikdesign/status/2122252792819802449",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261116d-aura.jpg",
+        "previewType": "image",
+        "description": "一手来源：@thehardikdesign X 帖（2026-11-16 08:57 UTC，12 秒视频）：「Aura（实验项目）是我做的实时 WebGPU 火焰，可以包住任何 3D 模型，在浏览器里实时运行；沿着精确轮廓燃烧，跟随身体移动，并随风弯曲。在线试玩链接在上一条线程里。」视频截帧：深蓝背景里一个蓝白色火焰包裹的人形在做动作，右侧有大量调参面板（湍流、火焰高度、颜色等）。可接门户粒子/流体系列，但机制说明少。",
+        "tool": "three.js + WebGPU（帖文自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "仅 X 视频，在线试玩链接在作者更早的线程里，本轮未追到；无源码与许可证。封面为视频约第 4.8 秒帧。",
+        "attribution": "@thehardikdesign",
+        "sourceAuthor": "thehardikdesign",
+        "tags": [
+          "Three.js",
+          "WebGPU",
+          "火焰",
+          "粒子",
+          "实时特效"
+        ],
+        "publishedAt": "2026-11-16",
+        "collectionIds": [],
+        "collectedAt": "2026-11-16T12:49:14.000Z",
+        "updatedAt": "2026-11-16T12:49:14.000Z",
+        "verification": {
+          "checked_at": "2026-11-16T12:49:14.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为视频约第 4.8 秒帧（蓝白火焰包裹人形，右侧调参面板），本轮下载并目视核验为作品真实画面，非头像。",
+          "video_check": "下载完整视频并看 4 个时间点截帧；未找到试玩链接与源码。"
+        },
+        "curation": {
+          "baseScore": 57,
+          "baseBreakdown": {
+            "实体": 18,
+            "科普": 10,
+            "溯源": 8,
+            "复现": 5,
+            "风格": 9,
+            "新颖": 7
+          },
+          "multiplier": 1.241,
+          "finalScore": 70.7,
+          "threshold": 65,
+          "run": "2026-11-16-2040-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2122252771722502144/vid/avc1/1280x720/KzqxvXlrZ-zfLhQM.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 56,
+      "multiplier": 1.3491,
+      "score": 75.5,
+      "reason": "分数达上墙线但基础分仅 56，靠乘数抬过线；元件说明为 AI 生成未核验，模型粗糙、无分享链接",
+      "run": "2026-11-16-2040-shanghai",
+      "record": {
+        "title": "一块电脑主板上，CPU 的电从哪儿来、数据走哪条路？@theshekharpatel 让 Gemini 用 Three.js 做了一个可点击的 3D 主板电路浏览器：点 VRM、MOSFET、电容、内存槽，就弹出它的作用、电压和连接关系，还能显示电源流与数据流",
+        "category": "frontend",
+        "styleFamily": "uiux",
+        "source": "https://x.com/theshekharpatel/status/2122282839819604416",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261116d-mobo.jpg",
+        "previewType": "image",
+        "description": "一手来源：@theshekharpatel X 帖（2026-11-16 10:57 UTC，58 秒录屏）：「我让 Gemini 做一个交互式 3D 主板浏览器，用 HTML、CSS、JavaScript 和 Three.js。可以查看 CPU、内存、VRM、MOSFET、电容等，点击元件了解它们的功能、连接和电源/数据流。」录屏截帧：左侧元件列表（电源、计算、内存、存储分组），中间是方块化的主板 3D 模型，点 PCIe 插槽、网卡芯片、CPU 插座会在右侧弹出说明卡（作用、电压/信号类型、连接对象），顶部有「显示电源流/数据流/爆炸视图」按钮。和半导体科普主线相关，但模型很粗糙（方块堆叠），说明文字未核验。",
+        "tool": "Gemini（Canvas 环境）生成 HTML/CSS/JS + Three.js（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "仅 X 录屏，未见分享链接、源码与许可证；元件说明为 AI 生成内容，未核验准确性。封面为录屏约第 23 秒帧。",
+        "attribution": "@theshekharpatel",
+        "sourceAuthor": "theshekharpatel",
+        "tags": [
+          "Three.js",
+          "主板",
+          "电子元件",
+          "AI编程",
+          "交互科普"
+        ],
+        "publishedAt": "2026-11-16",
+        "collectionIds": [],
+        "collectedAt": "2026-11-16T12:49:14.000Z",
+        "updatedAt": "2026-11-16T12:49:14.000Z",
+        "verification": {
+          "checked_at": "2026-11-16T12:49:14.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为录屏约第 23 秒帧（PCIe x1 插槽说明卡与主板 3D 模型），另看 9/38/52 秒帧，本轮下载并目视核验为作品真实画面，非头像。",
+          "video_check": "下载完整录屏并看 4 个时间点截帧；未打开作品。"
+        },
+        "curation": {
+          "baseScore": 56,
+          "baseBreakdown": {
+            "实体": 12,
+            "科普": 18,
+            "溯源": 8,
+            "复现": 4,
+            "风格": 8,
+            "新颖": 6
+          },
+          "multiplier": 1.3491,
+          "finalScore": 75.5,
+          "threshold": 65,
+          "run": "2026-11-16-2040-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2122282626505662464/vid/avc1/1280x720/fUMx1XojLbzwco3C.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 55,
+      "multiplier": 1.4,
+      "score": 55.0,
+      "reason": "本轮达待定区间（单维度乘数保护生效）",
+      "run": "2026-11-16-2040-shanghai",
+      "record": {
+        "title": "遥控小车在一栋「巨人的房子」里漂移：浴室、客厅、大堂里的保龄球道都是赛道——独立开发者 @FKgamedev 做了几个月的 Three.js 网页赛车游戏《Toy Drift》新预告：8 条家居尺寸赛道、漂移连击、环形跑道和跳台，打开浏览器即玩",
+        "category": "3d",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/FKgamedev/status/2122269257530532064",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261116d-toydrift.jpg",
+        "previewType": "image",
+        "description": "一手来源：@FKgamedev X 帖（2026-11-16 10:03 UTC，49 秒预告片，#gamedev #indiedev #threejs）：「做 Toy Drift 好几个月了：一辆小遥控车在一栋巨大的房子里漂移。新预告：8 条家居尺寸赛道、漂移连击、环形、跳台，大厅里还有保龄球道。全部 Three.js，浏览器里即开即玩。」预告截帧：玩具房赛道上的漂移连击计分、浴室瓷砖地上的蛇形赛道（橡皮鸭、牙刷做障碍）、巨型特技公园的环形跑道、标题画面。适合用户「three.js 游戏怎么做到商业级完成度」的学习线，科普机制弱。",
+        "tool": "Three.js（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "商业/独立游戏预告，未见源码与许可证，试玩地址帖内未给出；仅外链引用。封面为预告约第 7.3 秒帧。",
+        "attribution": "@FKgamedev",
+        "sourceAuthor": "FKgamedev",
+        "tags": [
+          "Three.js",
+          "网页游戏",
+          "赛车",
+          "游戏设计"
+        ],
+        "publishedAt": "2026-11-16",
+        "collectionIds": [],
+        "collectedAt": "2026-11-16T12:49:14.000Z",
+        "updatedAt": "2026-11-16T12:49:14.000Z",
+        "verification": {
+          "checked_at": "2026-11-16T12:49:14.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为预告约第 7.3 秒帧（玩具房赛道漂移连击画面），另看 19.5/31.8/44 秒帧，本轮下载并目视核验为作品真实画面，非头像。",
+          "video_check": "下载完整预告并看 4 个时间点截帧；未试玩。"
+        },
+        "curation": {
+          "baseScore": 55,
+          "baseBreakdown": {
+            "实体": 17,
+            "科普": 6,
+            "溯源": 11,
+            "复现": 3,
+            "风格": 10,
+            "新颖": 8
+          },
+          "multiplier": 1.4,
+          "finalScore": 55.0,
+          "threshold": 65,
+          "run": "2026-11-16-2040-shanghai",
+          "multiplierGuard": "基础分<60且仅单一维度乘数>1，按规则不让乘数抬过阈值（按基础分判定）"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2122269015875747840/vid/avc1/1280x720/FabCf1ZgIlgMdphs.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 55,
       "multiplier": 1.1091,
       "score": 61.0,
@@ -8134,6 +8323,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-16T08:51:28.000Z",
+  "updatedAt": "2026-11-16T12:49:14.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
