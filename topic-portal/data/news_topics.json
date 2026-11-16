@@ -1,7 +1,123 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-16T04:45:32.000Z",
+  "updatedAt": "2026-11-16T08:51:28.000Z",
   "topics": [
+    {
+      "url": "https://www.koreajoongangdaily.com/business/inside-sk-hynixs-655-million-chip-test-bed/12971453",
+      "title": "一台新刻蚀机、一瓶新特气明明已经研发成功，为什么还要等好几年才能进量产线？SK 海力士在龙仁新厂里给供应商开了间「考场」——Trinity Fab：3,305 平方米洁净室、51 台和量产线同型号的设备，墙那边就是真正的 DRAM 产线",
+      "category": "半导体",
+      "source": "韩国中央日报英文版（Korea JoongAng Daily）2026-11-16 现场探访稿《Inside SK hynix’s $655 million chip test bed》（11-10 媒体参观龙仁 Y1 厂）；路透 11-16「SK Hynix to spend $1 billion over five years to support chip suppliers」（引述公司数据）；SK 海力士韩文新闻室 2026-07-02「협력회사와의 상생 정책에 대해 설명드립니다」（5 年 1.4 万亿韩元相生资金、Trinity Fab 首次公布）；补充：亚洲经济（Aju Press）11-16、TheElec 11-06",
+      "publishedAt": "2026-11-16",
+      "eventAt": "2026-11-10",
+      "collectedAt": "2026-11-16T08:51:28.000Z",
+      "updatedAt": "2026-11-16T08:51:28.000Z",
+      "description": "一手/权威事实：SK 海力士在龙仁半导体集群第一座工厂 Y1（据公司称工程完成约 89%，首个洁净室提前 3 个月到 2027 年 2 月投用，生产 DRAM）的三楼西北角，建一间公司称为「全球首个开放式半导体测试床」的 Trinity Fab：洁净室 3,305 平方米，其中约 2,645 平方米用于量产验证、661 平方米分成 15 间出租室，供应商可以装自己的设备；将配 51 台设备——26 台前道工艺设备、11 台量测/检测设备、14 台辅助设备，覆盖光刻、刻蚀、沉积、清洗；光刻用 ArF 浸没式而不是 EUV（公司称以后可考虑加 EUV）。现场负责人原话：「墙那边就是 SK 海力士要造存储芯片的洁净室，只用一堵墙隔开是为了保密。」总预算 8,746 亿韩元（中央日报折约 6.55 亿美元），路透引公司数字：SK 海力士出 4,432 亿、中央政府 3,736 亿、地方政府 577 亿；由独立非营利基金会运营以保护各家知识产权；2027 年 5 月洁净室完工，2027 年四季度全面运营，入驻企业尚未选定。同日路透：SK 海力士称未来 5 年投入 1.4 万亿韩元（约 10.5 亿美元）扶持本土材料、零部件和设备供应商（该计划 7 月 2 日已在其新闻室公布，并非全新增量）。为什么能拍（正中用户刻蚀一线经验）：①反直觉钩子——设备/材料「做出来」到「进量产线」之间隔着一道验证墙：中央日报引设备商 TES 高管说评估一种新材料通常要 6 个月到 2 年，因为先得找到合适的机台、再排到机时；亚洲经济引 TES 副会长说从设备开发到量产应用一般要 5–6 年，Trinity Fab 或可缩短约 1 年，单台量测设备要 10 亿–50 亿韩元；②用户可以亲自讲「为什么产线不肯借机台给你试」——量产机台停一小时就是真金白银、换一种化学品可能影响良率，这是 fab 人才懂的内幕；③大陆关联：国产设备和材料最大的门槛同样是「验证机会」，可类比讨论（不要替国内厂商编数据）。",
+      "caveat": "SK 海力士新闻室本轮未见 11-16 当天的专门新闻稿，Trinity Fab 的设备数、面积划分等细节来自中央日报现场探访稿和路透引述；7 月 2 日新闻室原文写的是「1 千坪规模」「2027 年开放」。各家媒体口径略有出入：TheElec 11-06 写的是 37 台设备、10 月开始验证服务，中央日报写 51 台、四季度全面运营；「缩短至少 30% 商业化时间」是基金会的目标，中央日报注明未说明如何估算；「全球首个」是公司自述。封面为中央日报记者 Lee Jae-lim 11-10 拍摄的 Y1 厂施工现场照片（og:image）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261116c-trinity.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261116c-trinity.jpg",
+      "imageAlt": "SK 海力士龙仁半导体集群 Y1 工厂施工现场，白色外墙板与多台塔吊（韩国中央日报 11-10 摄）",
+      "tags": [
+        "芯片制造",
+        "设备验证",
+        "供应链",
+        "存储/内存",
+        "刻蚀"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 18,
+          "画面": 11,
+          "来源": 12,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 93.5,
+        "threshold": 65,
+        "run": "2026-11-16-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://www.alibabacloud.com/blog/alibaba-unveils-qwen4-max-new-ai-teammate-for-work-creativity-and-discovery_603783",
+      "title": "2.4 万亿参数的千问，为什么每算一个词只叫醒其中 710 亿、做一道行业任务的钱还砍掉约 6 成？阿里 11-16 正式发布 Qwen4-Max：参数比前代没变大，激活的反而少了 25%，在 721 个专业领域的 Work360 上从 47.74 分涨到 52.69",
+      "category": "AI",
+      "source": "阿里云官方社区博客 2026-11-16《Alibaba Unveils Qwen4-Max: New AI Teammate for Work, Creativity, and Discovery》（杭州发布稿，含 Work360 雷达图与 Code Arena 排名图）；QwenCloud 模型更新日志 2026-11-16 qwen4-max 条目；架构细节转引 IT 之家 11-16 对 Qwen 官方博客 qwen.ai/blog?id=qwen4-max 的摘录（该博客为前端渲染，本轮未直接读到）",
+      "publishedAt": "2026-11-16",
+      "eventAt": "2026-11-16",
+      "collectedAt": "2026-11-16T08:51:28.000Z",
+      "updatedAt": "2026-11-16T08:51:28.000Z",
+      "description": "一手事实（阿里云官方发布稿）：Qwen4-Max 总参数 2.4 万亿、原生视觉、100 万 token 上下文；稀疏混合专家（MoE），每个 token 只激活 710 亿参数，比同为 2.4T 规模的前代 Qwen3.8-Max 少激活 25%；新架构在注意力、残差连接和嵌入三处升级。在阿里自有基准 Work360（覆盖 721 个专业领域的行业难题）上整体超过前代（官方图：52.69 对 47.74），High 推理档少用 35% token，单任务平均成本降约 60%；Code Arena 真实编程榜第 6（官方转发的 Arena 图：WebDev 榜 xHigh 档 1750 分，前 5 为 Claude Fable 5.2、Opus 5.5、Sonnet 5.5、Gemini 4 Carbon、GPT-6 Astra）。隐式缓存命中输入价 0.075 美元/百万 token；Qwen4 系列小尺寸开放权重模型「即将」发布。案例（官方自述）：汽车制造里工件编程从约 475 分钟降到 24 分钟（靠反馈迭代在加工前发现过切和欠切）；为下一代芯片散热问题跑了连续 48 小时、4 轮闭环的智能体流程，发现一种经实验验证的冷却液分子。为什么能拍：①反直觉钩子——「模型没变小，为什么变便宜了？」答案是每次只用约 3% 的参数，再加上把大部分层的记忆压成固定大小的状态（见下），可接库内 Edge0、KV 缓存、AI 推理成本系列；②大陆观众直接能用的国产旗舰；③「芯片冷却液分子」「加工过切检查」两个案例贴近用户的制造背景。",
+      "caveat": "Work360 是阿里自有基准，成本、token 降幅均为官方自测；Code Arena 排名为第三方榜单但截图来自官方发布稿。架构细节（每 4 层中 3 层用 Gated DeltaNet 把历史压成固定状态、1 层用 Qwen Sparse Attention 按块挑上下文；残差流扩成 4 条并行分支；第 2 层 N-gram Embedding 查表）以及「单任务费用 26.58 元降到 11.16 元、降幅 58%」来自 IT 之家对官方博客的转述，本轮未能直接读取 qwen.ai 博客原文核对，引用时注明出处；X 上流传的「8 小时活 24 分钟干完」是把 475→24 分钟案例夸大成通用说法，不要用。另有 11-13 arXiv 论文（2611.18422，作者 Cong Xu、Ravi Sankar）在边缘 FPGA 上实测混合 Gated DeltaNet 模型：状态需 6.2 MiB、片上只有 0.87 MiB，换页只占每 token 内存流量的至多 11.2%，瓶颈在搬权重而不在状态——可作「固定状态为什么省」的旁证，但它与千问无关，是 3.69 亿参数自定义模型。封面为阿里云官方稿内 Work360 雷达图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261116c-qwen4max.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261116c-qwen4max.jpg",
+      "imageAlt": "阿里云官方 Work360 雷达图：Qwen4-Max 52.69 分对 Qwen3.8-Max 47.74 分，外圈为设计、编程、金融、法律、医疗等行业",
+      "tags": [
+        "AI成本",
+        "AI推理",
+        "大模型",
+        "国产AI",
+        "智能体"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 86,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 16,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 10,
+          "新颖": 3
+        },
+        "multiplier": 1.0566,
+        "finalScore": 90.9,
+        "threshold": 65,
+        "run": "2026-11-16-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.13713",
+      "title": "让 AI 改芯片的 RTL 代码，为什么「代码改得更漂亮」不等于芯片更快？港科大 Dr. RTL：三个智能体轮流读时序报告、找关键路径、改写 RTL，再交给商用综合工具和等价性检查当裁判——20 个真实设计上 WNS/TNS 平均改善 21%/17%、面积再省 6%",
+      "category": "半导体",
+      "source": "arXiv 2611.13713《Toward Autonomous RTL and Synthesis Optimization: Benchmarking and Self-Improving Agents》（2026-11-10，Wenji Fang、Yao Lu、Jinghua Wang、Zhiyao Xie，香港科技大学）摘要与 HTML 全文图注；线索来自 X @vintcessun 11-16 帖",
+      "publishedAt": "2026-11-10",
+      "eventAt": "2026-11-10",
+      "collectedAt": "2026-11-16T08:51:28.000Z",
+      "updatedAt": "2026-11-16T08:51:28.000Z",
+      "description": "一手事实（论文摘要与图注）：论文讨论通往「自主 RTL 与综合优化」的三条路线：①更真实的评测——既和人工优化过的参考 RTL 比，也在原始人写设计上做开放式 PPA（性能、功耗、面积）优化；②工具在环的 RTL 优化——Dr. RTL 多智能体框架：时序分析智能体从综合报告里挑出 Top-k 关键路径并追到 RTL 源头，RTL 优化智能体并行尝试多种改写（时序重平衡、组合逻辑简化、寄存器复制等），评估智能体调用 EDA 工具做综合、PPA 评估和顺序等价性检查，失败的改写直接淘汰，成功的轨迹被提炼成可复用的「优化技能库」持续自我改进；在 20 个真实 RTL 设计上，相比商用综合，WNS/TNS（最差/总负时序裕量）平均改善 21%/17%，面积减少 6%；③针对具体设计的综合优化——让智能体调商用工具的综合脚本，并在开源工具里发现可执行的综合算法。为什么能拍：①反直觉钩子——芯片代码「看起来更好」没用，只有过了综合、时序和等价性检查才算数，正好对应用户「事实先于标题」的风格；②把「AI 写代码」从网页游戏延伸到芯片设计，接库内智能体与芯片设计条目；③港科大团队，对大陆观众有亲近感。可用论文图 3 的三机器人流程图 0 秒上画面。",
+      "caveat": "数字均为作者在自选 20 个设计上的结果，对比基线是「商用综合」，论文摘要未点名具体工具；这是一篇综述+自家工作的整合文章，Dr. RTL 的完整实验细节需看正文/原论文，本轮只读了摘要与图注。功耗未在摘要中给出改善数字。封面为论文 HTML 版图 3（Dr. RTL 框架总览）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261116c-drrtl.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261116c-drrtl.jpg",
+      "imageAlt": "论文图 3：Dr. RTL 框架——时序分析智能体、RTL 优化智能体并行改写、评估智能体调用综合与等价性检查工具，循环迭代",
+      "tags": [
+        "芯片设计",
+        "智能体",
+        "EDA",
+        "AI编程"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 77,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 14,
+          "画面": 8,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 4
+        },
+        "multiplier": 1.0743,
+        "finalScore": 82.7,
+        "threshold": 65,
+        "run": "2026-11-16-1640-shanghai"
+      }
+    },
     {
       "url": "https://github.com/Edge0-AI/Edge0/blob/main/docs/models/edge0-145b.md",
       "title": "1450 亿参数的模型，为什么一块 24GB 显卡就能跑到每秒约 100 个词？Edge0-145B 开源（Apache-2.0）：每个词只叫醒 512 个专家里的 10 个，没轮到的专家放在内存里，用到再「搬」上显卡——模型多大不要紧，要紧的是每次搬多少",
