@@ -1,7 +1,87 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-17T05:02:44.000Z",
+  "updatedAt": "2026-11-17T08:54:49.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2611.18859",
+      "title": "一块 B300 吐一个 token，花的电是「算术本身」所需的 391～1120 倍——多出来的电都去哪了？初创公司 Exstill 技术报告：把权重和 KV 缓存全放在芯片上、模型和电路一起搜，5nm 预流片设计声称每 token 0.52 mJ",
+      "category": "AI",
+      "source": "arXiv:2611.18859（cs.AR，v1 2026-11-13 提交、11-17 列表公开）技术报告《The Most Efficient Single-Chip Processor for the Next Token》，作者 Valavan Manohararajah、Vithursan Thangarasa（署名邮箱 @exstill.ai）；本轮读摘要与 PDF 第 1–4 页",
+      "publishedAt": "2026-11-13",
+      "eventAt": "2026-11-17",
+      "collectedAt": "2026-11-17T08:54:49.000Z",
+      "updatedAt": "2026-11-17T08:54:49.000Z",
+      "description": "一手事实（论文摘要与正文第 4 页）：生成一个 token 所需的算术量是固定的，它的能耗构成任何硬件的「地板」。以 Qwen3-1.7B、16K 上下文为例，作者在 5nm 级门级流程上测得这块地板约 0.89 mJ/token，而实测 NVIDIA B300 每 token 花 347–994 mJ，是地板的 391–1120 倍（16 个用户共享时最省，1 个用户时最费）。作者把多出来的部分归因于「通用性的代价」：软件层、可编程硬件，以及把权重和 KV 缓存在外部显存与计算单元之间来回搬运；并称数据搬运每代工艺的进步比逻辑慢，差距会越拉越大。他们的做法：①把一种模型架构固定进数据通路（权重仍可加载）；②权重和每个对话的 KV 缓存都放在同一块芯片上，不走外部内存；③把模型结构也当设计变量，和电路在门级搜索循环里一起优化（称评估过一千万个以上完整设计）。结果（均为预流片设计，125 W、575 mm² 以内）：原样 Qwen3-1.7B 做到地板的 3.4 倍（3.0 mJ）；协同设计后同质量模型地板降到 0.29 mJ、整 token 0.52 mJ，片上能同时装 12 个对话；与实测 B300 服务同样 12 个用户相比，单用户出字快 110 倍、能耗低 690 倍。可拍角度：①反直觉钩子——AI 推理的电费大头不是「算」而是「搬」，第一帧直接用论文 Figure 1 的对数横条图（地板 vs B300 vs Exstill）；②用 Three.js 做「权重在 HBM 和计算核之间来回跑」vs「全放片上」的动画；③和库内 KV 缓存、AI 推理成本系列串起来，讲为什么 Groq/Cerebras 这类「大片上 SRAM」路线一直有人做（类比需注明是我们的解读）；④Qwen3 是国内开源模型，大陆观众有共鸣。",
+      "caveat": "这是初创公司自家技术报告（arXiv 预印本，未经同行评审），芯片是「预流片（pre-silicon）」设计，没有实物芯片，能耗与速度为门级仿真/估算；B300 为作者实测；「把一种架构固化进硬件」意味着换模型架构就要换芯片，作者称权重仍可加载、新任务靠训练而非新芯片。不要表述成「已有芯片比英伟达快 110 倍」。Groq/Cerebras 类比不是论文原文。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261117c-exstill.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261117c-exstill.jpg",
+      "imageAlt": "论文 Figure 1：对数坐标横条图，NVIDIA B300 每 token 347–994 mJ（地板的 391–1120 倍），Exstill 原样模型 3.0 mJ（3.4 倍），协同设计 12 用户 0.52 mJ（1.8 倍新地板）",
+      "tags": [
+        "AI推理",
+        "AI成本",
+        "KV缓存",
+        "存储/内存",
+        "芯片设计",
+        "能耗"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 80,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 10,
+          "来源": 12,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 84.5,
+        "threshold": 65,
+        "run": "2026-11-17-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.19544",
+      "title": "几颗都有点小毛病的芯粒，换个搭配、甚至把其中一颗转 180°，就能拼成一颗能卖的好芯片？DT-MATCH：按缺陷地图给 chiplet「配对」来抬封装良率",
+      "category": "半导体",
+      "source": "arXiv:2611.19544（cs.AR，2026-11-17 列表）《DT-MATCH: Defect- and Topology-Aware Chiplet Matching for Yield Optimization in Heterogeneous Integration》，Arizona State University（Krishnendu Chakrabarty 组）与 Ampere Computing；本轮读摘要与 HTML 全文 Fig.1、实验表",
+      "publishedAt": "2026-11-17",
+      "eventAt": "2026-11-17",
+      "collectedAt": "2026-11-17T08:54:49.000Z",
+      "updatedAt": "2026-11-17T08:54:49.000Z",
+      "description": "一手事实（论文 HTML 全文）：chiplet + 先进封装把一颗大芯片拆成 GPU、IO、HBM 等多颗芯粒，但也带来新的良率难题——芯粒之间的 die-to-die 互连每条通道（lane）都可能有制造缺陷，接口处只有有限的备用通道（spare），两颗相连芯粒在同一接口的缺陷数加起来不能超过备用预算。晶圆级测试（post wafer-level test）后会得到每颗芯粒的缺陷地图，问题变成：手里一堆「有缺陷但可修」的芯粒，怎么配对才能拼出最多颗可用的 SoC？论文 Fig.1 的例子：C3 与 C1 接口缺陷 1+2=3，超过备用预算 2，不能用；换一颗 C4 就是 1+1=2 刚好合格；或者把对称的 C3 旋转 180°，换一侧较少缺陷的接口朝向 C1，也能变成合格。DT-MATCH 给出两种解法：批次化整数线性规划（ILP，质量最好）和 GRASP 贪心随机搜索（更快但不保证最优），在工业设计基准上比较产出与运行时间（论文表格中各基准的组装良率区间约 68%–100%，随基准与库存不同而变）。可拍角度：①反直觉钩子——良率不只看「每颗芯片好不好」，还看「怎么搭配」；②第一帧直接用论文 Fig.1（数字方块 + 旋转 180° 箭头），也可以用 Three.js 做芯粒在中介层上旋转配对的动画；③接库内精材×台积电 oS 后段、英伟达 CoWoS 扩产、格芯硅中介层，组成先进封装系列；④以一线刻蚀/良率视角讲「wafer test 数据如何一路传到封装决策」。",
+      "caveat": "这是算法/优化论文，数据为作者在工业设计基准上的仿真实验，不是某条量产线的实测良率提升；论文没有说明对应哪家量产产品。良率区间数字来自论文表格的不同基准与库存设定，引用时说清前提，不要说成「良率提升到 100%」。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261117c-dtmatch.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261117c-dtmatch.jpg",
+      "imageAlt": "论文 Fig.1：芯粒 C1/C2/C3/C4 接口缺陷数方块，1+2=3>2 不兼容；换芯粒或把 C3 旋转 180° 后 1+1=2≤2 兼容",
+      "tags": [
+        "先进封装",
+        "良率",
+        "芯片制造",
+        "Chiplet",
+        "测试",
+        "芯片误差"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "主线": 24,
+          "钩子": 15,
+          "画面": 11,
+          "来源": 14,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 4
+        },
+        "multiplier": 1.0743,
+        "finalScore": 89.2,
+        "threshold": 65,
+        "run": "2026-11-17-1640-shanghai"
+      }
+    },
     {
       "url": "https://www.taiwannews.com.tw/news/6476137",
       "title": "台积电最缺的先进封装产能，为什么要请一家封测厂搬进自家厂房来做「最后一段」，而且要等到 2029 年才量产？精材（3374）重大讯息：与台积电签 7 年产能外包协议（2026-11-13～2033-12-31），在台积电中科厂房建 oS 后段产线，董事会同日通过 150 亿新台币可转债",
