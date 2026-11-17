@@ -1,7 +1,47 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-17T08:54:49.000Z",
+  "updatedAt": "2026-11-17T12:47:27.000Z",
   "topics": [
+    {
+      "url": "https://lambda.com/blog/worlds-first-large-scale-deployment-of-nvidia-photonics-switches-with-cpo",
+      "title": "把光模块从交换机面板上拆掉、直接封进交换芯片旁边，光学器件反而从 51℃ 降到 36℃？Lambda 称已用英伟达共封装光学（CPO）交换机连起 1 万多块 Blackwell Ultra，延迟更低、可靠性最高 15 倍",
+      "category": "半导体",
+      "source": "Lambda 官方博客/新闻稿《Lambda announces the world’s first large-scale CPO deployment of NVIDIA Photonics switches》（2026-11-16，旧金山）；佐证：ServeTheHome SC26 报道、SDxCentral、Converge Digest",
+      "publishedAt": "2026-11-16",
+      "eventAt": "2026-11-16",
+      "collectedAt": "2026-11-17T12:47:27.000Z",
+      "updatedAt": "2026-11-17T12:47:27.000Z",
+      "description": "一手事实（Lambda 新闻稿）：Lambda 在加拿大魁北克园区用 NVIDIA Photonics（Quantum-X Q3450-LD）共封装光学交换机连接了 1 万多块 Blackwell Ultra GPU，称是全球首个大规模 CPO 部署。每台交换机 4U、液冷、144 个 800Gb/s 端口、18 个可拔插的外置光源。Lambda 与传统可插拔光模块对比实测：吞吐相同，信号完整性更稳；延迟在每个规模都更低，差距从机架级 3.8% 拉大到 pod 级 10.1%；光学器件中位温度 36℃，传统方案 51℃，并称更凉更稳的光学让可靠性「最高提升 15 倍」。机制（新闻稿 + ServeTheHome）：光引擎挨着交换芯片封装，电信号路径从「英寸」缩到「毫米」，省掉中继（retimer）芯片、减少信号损耗；最容易坏的激光光源做成 18 个可在前面板拔插更换的模块，而不是 144 个光模块各带一个。可拍角度：①反直觉钩子——把发热的光学器件塞得离最热的芯片更近，温度反而降了 15℃，答案在「少了长铜线和 retimer、光源集中外置」；②第一帧用 Three.js 做交换机剖面：左边面板插满光模块、长铜走线，右边光引擎贴在芯片旁、前面板只剩 18 个光源；③接库内英伟达扩产（共封装光学引擎 15 倍）、精材 oS 后段、DT-MATCH 芯粒配对，组成先进封装系列；④国内光模块厂商众多，CPO 对可插拔光模块的冲击大陆观众关心（产业影响为我们的解读）。",
+      "caveat": "数据均为 Lambda 自报，不是第三方实验室测试；「15 倍可靠性」没有给出基线故障率、观测周期和测量方法（Telecom Gazette 也指出），只能说「Lambda 称最高 15 倍」。延迟只给了相对百分比，没给绝对值和流量类型；未披露交换机台数。「全球首个」是 Lambda 自称。对国内光模块厂商的影响不是新闻稿内容。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261117d-lambdacpo.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261117d-lambdacpo.jpg",
+      "imageAlt": "Lambda 新闻稿头图：黑底网格状发光光学节点由光束相连，标题「World’s first large-scale CPO deployment」",
+      "tags": [
+        "先进封装",
+        "共封装光学",
+        "CPO",
+        "AI算力",
+        "数据中心",
+        "光通信"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 17,
+          "画面": 11,
+          "来源": 14,
+          "时效": 10,
+          "大陆": 7,
+          "新颖": 4
+        },
+        "multiplier": 1.0924,
+        "finalScore": 92.9,
+        "threshold": 65,
+        "run": "2026-11-17-2040-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2611.18859",
       "title": "一块 B300 吐一个 token，花的电是「算术本身」所需的 391～1120 倍——多出来的电都去哪了？初创公司 Exstill 技术报告：把权重和 KV 缓存全放在芯片上、模型和电路一起搜，5nm 预流片设计声称每 token 0.52 mJ",
