@@ -1,8 +1,243 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 697,
+  "exportedCount": 701,
   "items": [
+    {
+      "title": "用猫的眼睛逛一座植物园，110 秒一镜到底：露水、虞美人逆光、温室起雾、扑蝴蝶扑空——没有一张照片、一个模型、一段素材，连声音都是 numpy 算出来的。Claude Fable 5.2 在 Claude Code 里从零写了一个 Metal 路径追踪器（约 5000 行，38 万株实例化植物），M4 Max 渲了 184 分钟",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/BubbleBrain/status/2122313967473434639",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261117a-catgarden.jpg",
+      "previewType": "image",
+      "description": "一手来源：@BubbleBrain X 帖（2026-11-16 13:00 UTC，110 秒视频）+ 作者回复「不是 AI 生成视频，代码在这里」「只用 Fable，没用 Blender、C4D」+ 仓库 cat-garden/README 全文。README 要点：一只猫从篱笆下钻进植物园，盯瓢虫、跟熊蜂、在锦鲤池边喝水被吓退、进温室被仙人掌扎到、扑蝴蝶扑空，最后跳上石墙晒太阳闭眼——镜头就是猫的眼睛（眼高约 10–24 厘米）。画面由仓库里写的路径追踪器渲染：一个 Metal 计算内核，不用 Metal 自带的光追加速结构，自己建 BVH；每帧每像素 16 次采样；头部运动由步态和注视「弹簧」模拟；声音用 numpy 合成，ffmpeg 只负责编码混流。全程在一台 Apple M4 Max 上：写引擎、建模、分镜和三轮以上自查约 1.5 小时；正式渲染 1920×1080、3300 帧、55 段共 183.9 分钟（平均 3.34 秒/帧，最慢的从树篱钻出那段 8.4 秒/帧）。README 还老实列出缺点：16 spp 噪点在虚焦前景和阴影里会「沸腾」、连续看仍能认出是渲染。科普镜头潜力：①路径追踪是什么（光线一根根弹）——同一画面 4 spp vs 16 spp 对比；②「为什么低处看草地最慢」——光线要穿过的几何最多；③与用户「涌现」选题呼应：猫的头部运动只是几条弹簧规则。",
+      "tool": "Claude Code + Claude Fable 5.2（claude-fable-5-2）；C++/Objective-C++ 主程序 + 自写 Metal 路径追踪计算着色器 + Python（numpy/scipy/Pillow）后处理与音频 + ffmpeg",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者公开源码、一键重建脚本 render.sh（需 Apple Silicon macOS，约 3 小时）、QC 报告与已知缺陷清单；仓库未见 LICENSE 文件，许可不明，仅外链引用、不搬运画面。封面为仓库官方 preview.jpg（README 注明为影片第 780 帧）。",
+      "attribution": "@BubbleBrain（GitHub BubbleBrainBB）",
+      "sourceAuthor": "BubbleBrain",
+      "tags": [
+        "路径追踪",
+        "Metal",
+        "Claude Code",
+        "程序化生成",
+        "光学",
+        "代码视频",
+        "Fable 5.2"
+      ],
+      "publishedAt": "2026-11-16",
+      "collectionIds": [],
+      "collectedAt": "2026-11-17T01:00:23.000Z",
+      "updatedAt": "2026-11-17T01:00:23.000Z",
+      "verification": {
+        "checked_at": "2026-11-17T01:00:23.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为仓库 cat-garden/preview.jpg（第 780 帧：低机位仰看逆光虞美人、葱花、长椅与温室），另看仓库 contact_sheet；本轮下载并目视核验为作品真实画面，非头像。",
+        "video_check": "未下载完整 304MB 成片，仅看 X 帖视频缩略与仓库 contact sheet/preview；读了 README 全文；未在本机运行 render.sh（需 Apple Silicon）。"
+      },
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "实体": 23,
+          "科普": 17,
+          "溯源": 14,
+          "复现": 14,
+          "风格": 10,
+          "新颖": 9
+        },
+        "multiplier": 1.0618,
+        "finalScore": 92.4,
+        "threshold": 65,
+        "run": "2026-11-17-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2122309998470639616/vid/avc1/1920x1080/owvgO57-T0VvUrRF.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/BubbleBrainBB/awesome-fable-5.2/tree/main/cat-garden"
+    },
+    {
+      "title": "发动机怎么转？与其让 AI 写一大段解释，不如让它做一本「会动的立体书」：曲轴、凸轮和气门、整机一页页弹起来自己转，左页先让你猜答案再掀开纸片——@coldtakesbear 用一段公开提示词让 Claude Code 5 分钟做出单个 three.js HTML，没有图片和模型文件",
+      "category": "3d",
+      "styleFamily": "code_video",
+      "source": "https://x.com/coldtakesbear/status/2122462255900213482",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261117a-popupengine.jpg",
+      "previewType": "image",
+      "description": "一手来源：@coldtakesbear X 帖（2026-11-16 22:50 UTC，17.5 秒录屏）。作者：「别再让 Claude Code 做落地页了，让它做一本能跑的教科书。『解释发动机怎么工作』只会得到一堵你午饭前就忘的文字墙，所以我要了一本立体书：一个 html 文件，没有图片、模型、插件，大约 5 分钟。教会你的不是 3D，是那块翻盖——你先押一个猜测，再揭晓。」并说明局限：这是教学模型不是维修手册，尺寸和配气正时做了简化，书里也写明了。帖内附完整提示词（5 个跨页、左页课文 + 三选一预测 + 遮住答案的翻盖、右页自动动画的 3D 场景带开始/停止/加速、封面能打开、翻页会弯曲、标出所有简化）。录屏可见跨页「The crankshaft」「Cams and valves」「The whole engine」，右页曲轴连杆活塞、凸轮皮带与整机分解依次弹出。非常贴合用户「立体书/纸艺」偏好和「一本正经讲机制」的账号定位，提示词可直接改成「刻蚀机怎么工作」「晶圆厂一片晶圆的旅程」。",
+      "tool": "Claude Code（模型未说明）+ three.js，单 HTML",
+      "prompt": "Build a 3D pop-up book about [how something works] as one html file with three.js.\n1. Plan 5 spreads first. Left page: a short lesson, a 3-option prediction and a flap that hides the answer. Show me the outline before any code\n2. Right page: a 3D scene that pops up and animates on its own, with start, stop and faster buttons\n3. A cover that opens and pages that bend when they turn\n4. No image or model files\n5. Mark anything you simplified",
+      "promptProvenance": "original_public",
+      "provenanceNote": "作者公开完整提示词（original_public），附 claude.ai artifact 试玩链接（本轮未打开验证）；无许可证声明，仅外链引用。封面为录屏约第 3 秒帧（「The crankshaft」跨页）。",
+      "attribution": "@coldtakesbear",
+      "sourceAuthor": "coldtakesbear",
+      "tags": [
+        "Three.js",
+        "立体书",
+        "纸艺",
+        "Claude Code",
+        "发动机",
+        "交互教学",
+        "提示词"
+      ],
+      "publishedAt": "2026-11-16",
+      "collectionIds": [],
+      "collectedAt": "2026-11-17T01:00:23.000Z",
+      "updatedAt": "2026-11-17T01:00:23.000Z",
+      "verification": {
+        "checked_at": "2026-11-17T01:00:23.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为录屏约第 3 秒帧（曲轴跨页，四缸活塞弹起），另看 7/11/16 秒帧（凸轮与气门、预测翻盖、整机分解）；本轮下载并目视核验为作品真实画面，非头像。",
+        "video_check": "下载 17.5 秒录屏并看 4 个时间点截帧；artifact 链接未打开、未本地运行提示词。"
+      },
+      "curation": {
+        "baseScore": 81,
+        "baseBreakdown": {
+          "实体": 20,
+          "科普": 19,
+          "溯源": 13,
+          "复现": 13,
+          "风格": 10,
+          "新颖": 6
+        },
+        "multiplier": 1.25,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-11-17-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2122462145606467584/vid/avc1/1038x628/P4DMu0nMmjtJi8vz.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "demoUrl": "https://claude.ai/artifact/THPawa6yxH8M8fHi6JBp8T"
+    },
+    {
+      "title": "一个下午、约 6 小时、4.5 亿 token，AI 自己定创意做出一款能在浏览器里玩的国风仙侠 3D 动作游戏《雾锁山门》——歸藏（@op7418）把踩过的坑写成 Claude Code / Codex 的 Game Skill 开源：先出设定图再转 3D、逐帧自测截图、打击感顿帧与弹反，最后压成一个 33MB 的 HTML",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://github.com/op7418/guizang-game-skill",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261117a-guizang.jpg",
+      "previewType": "image",
+      "description": "一手来源：GitHub 仓库 op7418/guizang-game-skill README（2026-11-11 创建，本轮约 379 星）+ @cutetoxicguy 2026-11-16 22:30 UTC 的介绍帖。README 要点：这是给 Claude Code、Codex 等编程代理用的 Skill，装上后说「做一个武侠题材的俯视角 3D 动作游戏」，它会先问清参考/视角/氛围/范围和你手头的素材工具，再按走通过的流程推进。作者自述用 Fable 5.2 花一个下午做出演示游戏《雾锁山门》，约 6 小时、4.5 亿 token（部分为 Opus 5.5 测试），「所有创意都是 AI 自己定的，我只说了要做国风仙侠」。演示内容：一个场景、一段小怪战、一场二阶段 Boss 战，有剧情和 8 条配音；大片随风起伏的草、分层的雾雪和远山、覆水石台反光，渲染管线在 three.js 上自搭、只用 WebGL 保兼容；5 个带骨骼角色、2 把武器、12 种道具——先用即梦出设定图，再用 Tripo 转模型；三段连招、闪避、格挡、弹反、处决、御剑和大招「万剑归宗」。原始素材近 100MB，打包成约 33MB 单 HTML；另有约 8MiB 的小程序容器版。Skill 内容：开工前问清需求、第一天就装逐帧推进/直达关卡参数/F3 诊断面板、出招前后摇与命中顿帧等手感清单、踩坑清单（方向键卡住、泛光过曝、打包后角色缩小一半……）、三种打包方式。直接对应用户「用 AI 做高完成度 three.js 游戏」的学习线和 Tripo 合作背景。",
+      "tool": "Claude Code / Codex Skill；three.js（WebGL）；即梦（设定图）、Tripo（图转 3D）、Suno 等（作者自述）；模型 Fable 5.2 / Opus 5.5",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "Skill 文档与脚本 AGPL-3.0；演示游戏的美术、模型、配音、音乐、文案保留权利，可分享试玩链接、复用素材需授权。封面为仓库 media/cover.jpg（游戏标题画面）。",
+      "attribution": "歸藏 / @op7418",
+      "sourceAuthor": "op7418",
+      "tags": [
+        "Three.js",
+        "网页游戏",
+        "Claude Code",
+        "Codex",
+        "Agent Skill",
+        "Tripo",
+        "游戏设计",
+        "开源"
+      ],
+      "publishedAt": "2026-11-11",
+      "collectionIds": [],
+      "collectedAt": "2026-11-17T01:00:23.000Z",
+      "updatedAt": "2026-11-17T01:00:23.000Z",
+      "verification": {
+        "checked_at": "2026-11-17T01:00:23.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为仓库官方 media/cover.jpg（《雾锁山门》标题画面：雪夜山门石路、灯笼与人物背影），另看 shot_combo.jpg 与介绍帖配图；本轮下载并目视核验为作品真实画面，非头像。",
+        "video_check": "读了 README 全文与 GitHub API 元数据；未打开在线试玩、未安装 Skill。"
+      },
+      "curation": {
+        "baseScore": 74,
+        "baseBreakdown": {
+          "实体": 16,
+          "科普": 8,
+          "溯源": 18,
+          "复现": 14,
+          "风格": 9,
+          "新颖": 9
+        },
+        "multiplier": 1.4,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-11-17-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/op7418/guizang-game-skill",
+      "licenseName": "AGPL-3.0（Skill 文档与脚本；演示游戏美术/模型/配音/音乐/文案另行保留权利）",
+      "licenseUrl": "https://github.com/op7418/guizang-game-skill/blob/main/LICENSE",
+      "demoUrl": "https://op7418.github.io/guizang-game-skill/"
+    },
+    {
+      "title": "同一个 Houdini 瀑布，Codex（Astra 6）只给了 39 万个水粒子，Claude Code（Fable 5.2）给了 250 万个水粒子 + 1000 万个白水点——为什么粒子越细，水才越像水？@PhotoGarrido 让两家代理通过命令行驱动 Houdini 22 做 FLIP 流体，附分层渲染拆解",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/PhotoGarrido/status/2122292866894680476",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261117a-waterfall.jpg",
+      "previewType": "image",
+      "description": "一手来源：@PhotoGarrido（3D/摄影创作者）X 帖（2026-11-16 11:37 UTC，20 秒竖屏视频，西语）：「我在 Houdini 里的瀑布基准，已经被 Fable 5.2 正式『打满』了。」视频画面标注：上半「ASTRA 6 · Codex · FLIP 7.5 cm · 390 K water particles」，下半「FABLE 5.2 · Claude Code · FLIP 4 cm · 2.5 M water particles · 10 M whitewater points」；后段「FABLE 5.2 / RENDER PASSES」拆出最终画面、水面、泡沫/白水、飞沫、水雾、岩石、按速度着色的水粒子和泡沫粒子，注明 Houdini 22、FLIP 4 cm、240 帧、10 秒、LPE 分层。作者在回复中说：Houdini 的 MCP 要付费授权，他是通过命令行（consola）让代理操作的；创意来自看到一个瀑布教程视频后让模型复刻。科普镜头潜力：FLIP 网格从 7.5 cm 细到 4 cm，粒子数多出约 6 倍，水帘才会碎成白水——正好讲「仿真分辨率」；分层渲染画面可直接解释一帧 CG 由哪些层合成。",
+      "tool": "SideFX Houdini 22（FLIP 流体）；Claude Code + Fable 5.2 对比 Codex + Astra 6，经命令行驱动（作者自述）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "作者本人帖与回复；无工程文件/提示词，参数仅见视频画面标注；对比为作者单次个人测试。封面为视频约第 2 秒帧（上 Astra 6、下 Fable 5.2 对比画面）。",
+      "attribution": "@PhotoGarrido",
+      "sourceAuthor": "PhotoGarrido",
+      "tags": [
+        "Houdini",
+        "流体模拟",
+        "FLIP",
+        "粒子",
+        "Claude Code",
+        "Codex",
+        "模型对比"
+      ],
+      "publishedAt": "2026-11-16",
+      "collectionIds": [],
+      "collectedAt": "2026-11-17T01:00:23.000Z",
+      "updatedAt": "2026-11-17T01:00:23.000Z",
+      "verification": {
+        "checked_at": "2026-11-17T01:00:23.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为视频约第 2 秒帧（上下对比与参数标注），另看 7/12/18 秒帧（Fable 成片、Render Passes 拆解）；本轮下载并目视核验为作品真实画面，非头像。",
+        "video_check": "下载 20 秒视频并看 5 个时间点截帧；未获得工程文件、未复现。"
+      },
+      "curation": {
+        "baseScore": 68,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 15,
+          "溯源": 10,
+          "复现": 5,
+          "风格": 7,
+          "新颖": 9
+        },
+        "multiplier": 1.0,
+        "finalScore": 68.0,
+        "threshold": 65,
+        "run": "2026-11-17-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2122292777979375616/vid/avc1/1280x1584/T74s6HcmJ3kIyvfw.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      }
+    },
     {
       "title": "沙漠里远处那片「水」为什么走近了就消失？three.js 作者 mrdoob 的 Codevember 第 15 天「Mirage」：开一辆四轮独立悬挂的探测车穿过沙丘，远处神殿倒映在热空气里——岩石、沙丘、建筑、纹理全部加载时用代码生成，整包只有 1.3MB（MIT 开源）",
       "category": "3d",
@@ -36358,8 +36593,8 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条 | 2026-11-01-0840-shanghai 监控轮追加 5 条 | 2026-11-01-1240-shanghai 监控轮追加 6 条 | 2026-11-02-1640-shanghai 监控轮追加 7 条 | 2026-11-02-2040-shanghai 监控轮追加 6 条 | 2026-11-03-0840-shanghai 监控轮追加 6 条 | 2026-11-03-1240-shanghai 监控轮追加 2 条 | 2026-11-03-1640-shanghai 监控轮追加 3 条 | 2026-11-03-2040-shanghai 监控轮追加 5 条 | 2026-11-04-0840-shanghai 监控轮追加 5 条 | 2026-11-04-1240-shanghai 监控轮追加 4 条 | 2026-11-04-1640-shanghai 监控轮追加 2 条 | 2026-11-04-2040-shanghai 监控轮追加 4 条 | 2026-11-05-0840-shanghai 监控轮追加 5 条 | 2026-11-05-1240-shanghai 监控轮追加 4 条 | 2026-11-05-1640-shanghai 监控轮追加 2 条 | 2026-11-05-2040-shanghai 监控轮追加 3 条 | 2026-11-06-0840-shanghai 监控轮追加 4 条 | 2026-11-06-1640-shanghai 监控轮追加 1 条 | 2026-11-06-2040-shanghai 监控轮追加 1 条 | 2026-11-07-0840-shanghai 监控轮追加 1 条 | 2026-11-07-1240-shanghai 监控轮追加 1 条 | 2026-11-07-1640-shanghai 监控轮追加 1 条 | 2026-11-07-2040-shanghai 监控轮追加 3 条 | 2026-11-08-0840-shanghai 监控轮追加 3 条 | 2026-11-08-1240-shanghai 监控轮追加 1 条 | 2026-11-08-1640-shanghai 监控轮追加 5 条 | 2026-11-08-2040-shanghai 监控轮追加 3 条 | 2026-11-09-0840-shanghai 监控轮追加 8 条 | 2026-11-09-1640-shanghai 监控轮追加 4 条 | 2026-11-09-2040-shanghai 监控轮追加 2 条 | 2026-11-10-0840-shanghai 监控轮追加 4 条 | 2026-11-10-1240-shanghai 监控轮追加 2 条 | 2026-11-10-1640-shanghai 监控轮追加 2 条 | 2026-11-10-2040-shanghai 监控轮追加 5 条 | 2026-11-11-0840-shanghai 监控轮追加 5 条 | 2026-11-11-1240-shanghai 监控轮追加 2 条 | 2026-11-11-1640-shanghai 监控轮追加 2 条 | 2026-11-11-2040-shanghai 监控轮追加 3 条 | 2026-11-12-0840-shanghai 监控轮追加 5 条 | 2026-11-12-1240-shanghai 监控轮追加 1 条 | 2026-11-12-1640-shanghai 监控轮追加 2 条 | 2026-11-13-0840-shanghai 监控轮追加 3 条 | 2026-11-13-1240-shanghai 监控轮追加 1 条 | 2026-11-13-1640-shanghai 监控轮追加 2 条 | 2026-11-14-0840-shanghai 监控轮追加 2 条 | 2026-11-14-1240-shanghai 监控轮追加 3 条 | 2026-11-14-1640-shanghai 监控轮追加 5 条 | 2026-11-14-2040-shanghai 监控轮追加 5 条 | 2026-11-15-0840-shanghai 监控轮追加 2 条 | 2026-11-15-1240-shanghai 监控轮追加 2 条 | 2026-11-15-1640-shanghai 监控轮追加 3 条 | 2026-11-15-2040-shanghai 监控轮追加 2 条 | 2026-11-16-0840-shanghai 监控轮追加 8 条 | 2026-11-16-1240-shanghai 监控轮追加 4 条 | 2026-11-16-1640-shanghai 监控轮追加 2 条 | 2026-11-16-2040-shanghai 监控轮追加 2 条",
-  "updatedAt": "2026-11-16T12:49:14.000Z",
-  "totalItems": 697,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条 | 2026-11-01-0840-shanghai 监控轮追加 5 条 | 2026-11-01-1240-shanghai 监控轮追加 6 条 | 2026-11-02-1640-shanghai 监控轮追加 7 条 | 2026-11-02-2040-shanghai 监控轮追加 6 条 | 2026-11-03-0840-shanghai 监控轮追加 6 条 | 2026-11-03-1240-shanghai 监控轮追加 2 条 | 2026-11-03-1640-shanghai 监控轮追加 3 条 | 2026-11-03-2040-shanghai 监控轮追加 5 条 | 2026-11-04-0840-shanghai 监控轮追加 5 条 | 2026-11-04-1240-shanghai 监控轮追加 4 条 | 2026-11-04-1640-shanghai 监控轮追加 2 条 | 2026-11-04-2040-shanghai 监控轮追加 4 条 | 2026-11-05-0840-shanghai 监控轮追加 5 条 | 2026-11-05-1240-shanghai 监控轮追加 4 条 | 2026-11-05-1640-shanghai 监控轮追加 2 条 | 2026-11-05-2040-shanghai 监控轮追加 3 条 | 2026-11-06-0840-shanghai 监控轮追加 4 条 | 2026-11-06-1640-shanghai 监控轮追加 1 条 | 2026-11-06-2040-shanghai 监控轮追加 1 条 | 2026-11-07-0840-shanghai 监控轮追加 1 条 | 2026-11-07-1240-shanghai 监控轮追加 1 条 | 2026-11-07-1640-shanghai 监控轮追加 1 条 | 2026-11-07-2040-shanghai 监控轮追加 3 条 | 2026-11-08-0840-shanghai 监控轮追加 3 条 | 2026-11-08-1240-shanghai 监控轮追加 1 条 | 2026-11-08-1640-shanghai 监控轮追加 5 条 | 2026-11-08-2040-shanghai 监控轮追加 3 条 | 2026-11-09-0840-shanghai 监控轮追加 8 条 | 2026-11-09-1640-shanghai 监控轮追加 4 条 | 2026-11-09-2040-shanghai 监控轮追加 2 条 | 2026-11-10-0840-shanghai 监控轮追加 4 条 | 2026-11-10-1240-shanghai 监控轮追加 2 条 | 2026-11-10-1640-shanghai 监控轮追加 2 条 | 2026-11-10-2040-shanghai 监控轮追加 5 条 | 2026-11-11-0840-shanghai 监控轮追加 5 条 | 2026-11-11-1240-shanghai 监控轮追加 2 条 | 2026-11-11-1640-shanghai 监控轮追加 2 条 | 2026-11-11-2040-shanghai 监控轮追加 3 条 | 2026-11-12-0840-shanghai 监控轮追加 5 条 | 2026-11-12-1240-shanghai 监控轮追加 1 条 | 2026-11-12-1640-shanghai 监控轮追加 2 条 | 2026-11-13-0840-shanghai 监控轮追加 3 条 | 2026-11-13-1240-shanghai 监控轮追加 1 条 | 2026-11-13-1640-shanghai 监控轮追加 2 条 | 2026-11-14-0840-shanghai 监控轮追加 2 条 | 2026-11-14-1240-shanghai 监控轮追加 3 条 | 2026-11-14-1640-shanghai 监控轮追加 5 条 | 2026-11-14-2040-shanghai 监控轮追加 5 条 | 2026-11-15-0840-shanghai 监控轮追加 2 条 | 2026-11-15-1240-shanghai 监控轮追加 2 条 | 2026-11-15-1640-shanghai 监控轮追加 3 条 | 2026-11-15-2040-shanghai 监控轮追加 2 条 | 2026-11-16-0840-shanghai 监控轮追加 8 条 | 2026-11-16-1240-shanghai 监控轮追加 4 条 | 2026-11-16-1640-shanghai 监控轮追加 2 条 | 2026-11-16-2040-shanghai 监控轮追加 2 条 | 2026-11-17-0840-shanghai 监控轮追加 4 条",
+  "updatedAt": "2026-11-17T01:00:23.000Z",
+  "totalItems": 701,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }

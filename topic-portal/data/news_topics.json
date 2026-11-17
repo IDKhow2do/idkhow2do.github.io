@@ -1,7 +1,86 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-16T12:49:14.000Z",
+  "updatedAt": "2026-11-17T01:00:23.000Z",
   "topics": [
+    {
+      "url": "https://mlcommons.org/2026/11/mlperf-training-v6-1-results/",
+      "title": "8192 颗谷歌 TPU 只用 1.70 分钟就把 DeepSeek-V3「训到达标」——为什么这不等于 1.7 分钟训出一个 DeepSeek？MLPerf Training v6.1 放榜：第一次加入「智能体强化学习后训练」考题（Qwen3.5-397B），英伟达说自己全项通吃，谷歌说自己最快",
+      "category": "AI",
+      "source": "MLCommons 官方新闻稿《MLCommons Releases MLPerf Training v6.1 Results》（2026-11-16）；Google 官方博客《New AI training performance benchmarks for Google TPUs》（2026-11-16，附结果编号 6.1-0017～0026）；NVIDIA 官方博客《NVIDIA Sweeps MLPerf Training and Endpoints as Vera Rubin Debuts》（2026-11-16）",
+      "publishedAt": "2026-11-16",
+      "eventAt": "2026-11-16",
+      "collectedAt": "2026-11-17T01:00:23.000Z",
+      "updatedAt": "2026-11-17T01:00:23.000Z",
+      "description": "一手事实（三方官方稿）：MLPerf 是业界最常引用的 AI 训练「跑分」，比的是「从官方参考检查点出发，把模型训到规定质量要多少分钟」。v6.1 新增两道题：推荐系统 DLRMv4-HSTU，以及第一个大规模「后训练」题——用 GRPO 强化学习后训练 Qwen3.5-397B，让模型学会自己推理、调用工具解软件工程任务。本轮 24 家机构提交 153 套系统、250 个结果，其中 57 套（37%）在云上（上轮 29%），12 套系统用到 1000 颗以上加速器，最大 10,240 颗；英伟达 Rubin 一代 GPU 和谷歌第七代 TPU Ironwood 首次登场。谷歌：8,192 颗 Ironwood 在 DeepSeek-V3 预训练题上 1.70 分钟达标，扩到 4,096 颗时扩展效率 96%；640 颗 Ironwood 跑智能体强化学习题 18.02 分钟达标（0.765，目标 0.69），一边生成代码一边学习，训练芯片空等时间不到 3%；256 颗 GB300 预训练 31.96 分钟。英伟达：唯一在每道题都交了成绩的平台；Vera Rubin NVL72 单 GPU 性能最高是 GB300 NVL72 的 2 倍；DeepSeek-V3 题从 256 颗扩到 1,024 颗，效率约 97%，用时从 16 分钟降到约 4 分钟；GB300 和微软 Azure 的 GB200 都跑到了 10,240 颗规模。为什么能拍：①反直觉钩子——「1.7 分钟训完 DeepSeek-V3」是从检查点出发跑到达标线，不是从零训练一个模型，正好讲「跑分口径」；②两家都说自己赢：英伟达比的是覆盖面和单卡，谷歌比的是绝对用时，同一份榜单怎么读出两个冠军；③考题里用的是 DeepSeek-V3 和 Qwen3.5 两个国产开源模型，大陆观众有代入感；④「加芯片不一定变快」——扩展效率 96%/97% 是怎么算的，可用 Three.js 做「一万个工人搬砖要互相等」的动画。",
+      "caveat": "所有「X 分钟」都是 MLPerf 计时口径：从官方参考检查点训到目标收敛标准的时间，不是从零训练一个完整大模型的时间，引用时必须说清。英伟达「全项通吃」的意思是只有它每道题都交了成绩，不等于每道题都最快；谷歌与英伟达各自挑选对自己有利的对比，绝对用时和芯片数要一起看，规模不同不能直接横比。英伟达同稿里 MLPerf Endpoints「每瓦吞吐 10 倍以上」是 Kimi K3 的暂定结果（尚待 MLCommons 核验），且对比的两套系统并发数不同（1,024 vs 48 个查询），本条未把它当主结论。「96% 扩展效率」原文表述为 scaling up to 4,096 chips，具体基准点未在博客写明。封面为谷歌官方博客头图（Ironwood TPU 板卡）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261117a-mlperf.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261117a-mlperf.jpg",
+      "imageAlt": "谷歌官方博客头图：一排 Ironwood TPU 芯片安装在绿色电路板上，周围是散热片和供电元件",
+      "tags": [
+        "AI训练",
+        "AI芯片",
+        "基准测试",
+        "统计口径",
+        "TPU",
+        "GPU"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 12,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 7,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 91.9,
+        "threshold": 65,
+        "run": "2026-11-17-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold",
+      "title": "零日漏洞没怎么涨，被利用的漏洞却几乎翻倍——为什么「打补丁」反而成了攻击说明书？谷歌威胁情报组 Q4 报告：有人在服务器上挂着多智能体框架，补丁一发布就自动比对前后代码、写出攻击、直接执行，全程没有人",
+      "category": "AI",
+      "source": "Google Cloud 威胁情报博客《GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold》（2026-11-16，Google Threat Intelligence Group 与 Mandiant，作者 Aurora Blum、Kelli Vanderlee、Jess Xia、David Mainor）；Google 官方博客摘要《The era of autonomous attacks has arrived.》（2026-11-16）",
+      "publishedAt": "2026-11-16",
+      "eventAt": "2026-11-16",
+      "collectedAt": "2026-11-17T01:00:23.000Z",
+      "updatedAt": "2026-11-17T01:00:23.000Z",
+      "description": "一手事实（GTIG 报告原文）：攻击者正从「手动问大模型」转向部署自主多智能体攻击框架（报告点名 ARTEX、CAIRN、CyberStrikeAI、PentAGI，也见到自建框架），以「机器速度」串起多步入侵。最反直觉的数据在报告图 3：2026 年 1–8 月，公开披露和被利用的漏洞总数几乎翻倍，但零日漏洞只从 2025 年月均 8 个涨到 2026 年月均 11 个（8 月突增到 22 个）——多出来的主要是 n-day，也就是「已经发布补丁、但很多人还没打」的漏洞。原因：找零日要大海捞针，而 n-day 只需对比补丁前后的代码、读发布说明和安全研究，范围有限，正适合交给大模型。GTIG 第一次发现「全程无人参与」的案例：一台暴露在网上的中转服务器上挂着名为 exploit_agent 的多智能体框架，接了多家前沿和本地大模型，持续对热门 Web 软件做补丁差分分析——找出漏洞、起草攻击代码、自动执行；服务器上的受害者数据显示其目标是法国媒体娱乐和教育类网站。报告还提到：安全公司 Huntress 等研究者用大模型在 PaperCut 两个漏洞披露后一天内就生成了可用攻击代码；以及「LLMJacking」——偷企业的大模型密钥和云资源，再通过地下代理转卖模型调用。为什么能拍：①钩子——「补丁本身就是藏宝图」，打补丁的速度第一次要跟 AI 赛跑；②图 3 柱状图（零日 vs n-day 逐月）就是 0 秒画面；③可以接普通人的生活经验：手机/电脑提示更新为什么不要拖；④与库里「AI 写代码」系列形成正反方。",
+      "caveat": "数据与案例均来自谷歌自家遥测与事件响应，未经第三方复核；报告同时在推广谷歌自家的 Google AI Threat Defense 产品，有商业立场。「全程无人参与」是 GTIG 发现的具体案例，不代表大多数攻击已经全自动。零日月均 8→11、8 月 22 个为报告正文数字（图 3 柱高目测与之大致相符）。报告中涉及国家背景黑客组织的部分本条不展开，避免地缘站队。封面为报告图 3「2025 年 1 月–2026 年 8 月每月被利用漏洞数（零日 / n-day）」。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261117a-gtig.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261117a-gtig.jpg",
+      "imageAlt": "GTIG 报告图 3：2025 年 1 月至 2026 年 8 月每月被利用漏洞数柱状图，深蓝为零日、浅蓝为 n-day，2026 年 n-day 明显增多",
+      "tags": [
+        "AI安全",
+        "智能体",
+        "网络安全",
+        "漏洞",
+        "数字生活"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 86.6,
+        "threshold": 65,
+        "run": "2026-11-17-0840-shanghai"
+      }
+    },
     {
       "url": "https://www.nature.com/articles/s41567-026-03510-1",
       "title": "同一根 1 微米宽的导线里，电子热到约 1720 K，脚下的晶格却只有三百多 K——为什么电子和晶格能「各过各的温度」？中科院上海技物所在 HgTe 纳米沟道里第一次把电子温度和晶格温度同时「拍」出来，汤姆孙冷却效率从经典理论约 2% 的天花板冲到约 14%",

@@ -2,6 +2,181 @@
   "schemaVersion": 1,
   "items": [
     {
+      "kind": "news",
+      "baseScore": 67,
+      "multiplier": 1.0743,
+      "score": 72.0,
+      "reason": "分数达上墙线但人物专访/供应链软文性质，可讲的硬信息只有「1500 根线、百万分之一缺陷」一处，适合作为良率系列的素材而非独立选题",
+      "run": "2026-11-17-0840-shanghai",
+      "record": {
+        "url": "https://blogs.nvidia.com/blog/ai-infrastructure-supply-chain/",
+        "title": "一个线缆组件里有 1500 根细线，每根都要装到「百万分之一以下缺陷率」——为什么 AI 服务器最难造的不一定是芯片？英伟达运营负责人 Deb Shoquist 讲供应链：从台积电、矽品、京元电到安费诺越南工厂",
+        "category": "半导体",
+        "source": "NVIDIA 官方博客《How the World’s Most Advanced AI Infrastructure Supply Chain Invents the Future》（2026-11-16，NVIDIA Writers，对 NVIDIA 运营负责人 Deb Shoquist 的问答）",
+        "publishedAt": "2026-11-16",
+        "eventAt": "2026-11-16",
+        "collectedAt": "2026-11-17T01:00:23.000Z",
+        "updatedAt": "2026-11-17T01:00:23.000Z",
+        "description": "一手事实（英伟达官方博客问答）：Deb Shoquist 负责英伟达 AI 平台背后的供应链与制造，合作方包括台积电（1998 年起合作）、富士康、纬创、矽品（SPIL）、京元电（KYEC）、欣兴、Lumentum、Coherent、Amkor；矽品和京元电二十多年前就在为英伟达做封装测试。她举的例子：安费诺（Amphenol）的线缆模组（cable cartridge）是该公司做过最复杂的互连组件，一个大模组里有 1,500 根细小线缆，每一根都要精密组装，才能达到低于 1 DPPM（每百万件缺陷数）的质量水平；安费诺为此建了一百多条自动化产线，越南工厂已全面量产。她还说，英伟达从卖芯片变成卖数据中心系统后，光器件等新领域的供应商「有技术、有意愿，但还没有规模和资本建厂」，所以英伟达投资了 Coherent 和 Lumentum；CPO（共封装光学）则是在和新进入光学领域的大厂一起搭全新的供应链。可拍角度：良率的乘法——1500 个环节每个都 99.99% 也会出问题，为什么要 DPPM 级别。",
+        "caveat": "这是英伟达官方的人物专访，宣传色彩重，除 1,500 根线缆、<1 DPPM、一百多条自动化产线外几乎没有可核验的工艺数据；DPPM 口径（按模组还是按单根线计）原文未说明。博客发布正值英伟达管理层变动的新闻期，本条不涉及人事。封面为博客头图（Shoquist 在工厂产线旁与供应商人员交流的照片）。",
+        "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261117a-nvsupply.jpg",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261117a-nvsupply.jpg",
+        "imageAlt": "英伟达博客头图：Deb Shoquist 在一家线缆工厂的蓝色自动化设备旁与多名工作人员交流",
+        "tags": [
+          "芯片制造",
+          "先进封装",
+          "良率",
+          "供应链",
+          "AI服务器"
+        ],
+        "tagSource": "provided",
+        "curation": {
+          "baseScore": 67,
+          "baseBreakdown": {
+            "主线": 18,
+            "钩子": 13,
+            "画面": 6,
+            "来源": 11,
+            "时效": 10,
+            "大陆": 5,
+            "新颖": 4
+          },
+          "multiplier": 1.0743,
+          "finalScore": 72.0,
+          "threshold": 65,
+          "run": "2026-11-17-0840-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 56,
+      "multiplier": 1.4,
+      "score": 56.0,
+      "reason": "本轮达待定区间（单维度乘数保护生效）",
+      "run": "2026-11-17-0840-shanghai",
+      "record": {
+        "title": "水母、丁达尔光柱、海底珊瑚和一条小红鱼——@RicardoDeZoete 在 The Sandbox Studio 里用 three.js 做的水下世界在研片段（three.js 官方账号转发）",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/RicardoDeZoete/status/2122345457057935590",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261117a-sandboxsea.jpg",
+        "previewType": "image",
+        "description": "一手来源：@RicardoDeZoete X 帖（2026-11-16 15:06 UTC，30 秒视频，「开声音」）：「偷看一下我在做的东西……很享受用 @threejs 在 @TheSandboxGame Studio 里把这个水下世界做活，还有很多要做。」回复中说是「一张大地图」。@threejs 官方账号 16:11 UTC 转发。截帧可见：浅海水母群与光柱、蓝紫色深水区、绿色光柱下的海草——同一条小红鱼穿过不同光照区。",
+        "tool": "three.js（The Sandbox Studio 内，作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "在研作品，无源码与试玩；仅外链引用。封面为视频约第 4.5 秒帧。",
+        "attribution": "@RicardoDeZoete",
+        "sourceAuthor": "RicardoDeZoete",
+        "tags": [
+          "Three.js",
+          "水下",
+          "光照",
+          "游戏场景"
+        ],
+        "publishedAt": "2026-11-16",
+        "collectionIds": [],
+        "collectedAt": "2026-11-17T01:00:23.000Z",
+        "updatedAt": "2026-11-17T01:00:23.000Z",
+        "verification": {
+          "checked_at": "2026-11-17T01:00:23.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为视频约第 4.5 秒帧（水母群与光柱），另看 12/19.5/27 秒帧；本轮下载并目视核验为作品真实画面，非头像。",
+          "video_check": "下载 30 秒视频并看 4 个时间点截帧；未试玩。"
+        },
+        "curation": {
+          "baseScore": 56,
+          "baseBreakdown": {
+            "实体": 16,
+            "科普": 10,
+            "溯源": 10,
+            "复现": 3,
+            "风格": 10,
+            "新颖": 7
+          },
+          "multiplier": 1.4,
+          "finalScore": 56.0,
+          "threshold": 65,
+          "run": "2026-11-17-0840-shanghai",
+          "multiplierGuard": "基础分<60且仅单一维度乘数>1，按规则不让乘数抬过阈值（按基础分判定）"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2122345356323090432/vid/avc1/1920x1080/OSF8KwiRks1D60IF.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 58,
+      "multiplier": 1.25,
+      "score": 58.0,
+      "reason": "本轮达待定区间（单维度乘数保护生效）",
+      "run": "2026-11-17-0840-shanghai",
+      "record": {
+        "title": "1.5 万个玻璃猴头、1.2 亿个三角形还能跑 120 帧——@jeantimex 把玻璃材质着色器从 WGSL 移植到 three.js TSL：同一份源码同时编译成 WebGPU 的 WGSL 和 WebGL 2 的 GLSL，「两边像素一样」",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/jeantimex/status/2122388478860345840",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261117a-glasstsl.jpg",
+        "previewType": "image",
+        "description": "一手来源：@jeantimex X 帖（2026-11-16 17:57 UTC，2 分 33 秒录屏）：「终于把玻璃材质的 WGSL 移植到 three.js TSL，一份着色器源码 → WebGPU 用 WGSL、WebGL 2 用 GLSL，两边像素一样。去掉 Box3D 物理后，渲染 1.5 万个物体、1.2 亿三角形（Suzanne 猴头）能到 120 fps，换成龙模型 2.45 亿三角形就有点慢。视频里用的是 three.js WebGL 渲染器，正在让它跑在 iPhone 15 上。」录屏可见：密铺的玻璃猴头阵列、调试法线色、透明玻璃龙群、钻石色散。",
+        "tool": "three.js TSL（WebGPU/WebGL 2），作者自述",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者本人帖，无源码/试玩链接；同帖另有两条近似版本。封面为录屏约第 99 秒帧（玻璃龙）。",
+        "attribution": "@jeantimex",
+        "sourceAuthor": "jeantimex",
+        "tags": [
+          "Three.js",
+          "TSL",
+          "WebGPU",
+          "玻璃",
+          "折射",
+          "性能"
+        ],
+        "publishedAt": "2026-11-16",
+        "collectionIds": [],
+        "collectedAt": "2026-11-17T01:00:23.000Z",
+        "updatedAt": "2026-11-17T01:00:23.000Z",
+        "verification": {
+          "checked_at": "2026-11-17T01:00:23.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为录屏约第 99 秒帧（透明玻璃龙群），另看 23/61/137 秒帧；本轮下载并目视核验为作品真实画面，非头像。",
+          "video_check": "下载录屏并看 4 个时间点截帧；未运行。"
+        },
+        "curation": {
+          "baseScore": 58,
+          "baseBreakdown": {
+            "实体": 18,
+            "科普": 10,
+            "溯源": 9,
+            "复现": 4,
+            "风格": 10,
+            "新颖": 7
+          },
+          "multiplier": 1.25,
+          "finalScore": 58.0,
+          "threshold": 65,
+          "run": "2026-11-17-0840-shanghai",
+          "multiplierGuard": "基础分<60且仅单一维度乘数>1，按规则不让乘数抬过阈值（按基础分判定）"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2122382970875248640/vid/avc1/1278x818/TslOSPFaRLyw0knb.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
       "kind": "visual",
       "baseScore": 57,
       "multiplier": 1.241,
@@ -8323,6 +8498,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-16T12:49:14.000Z",
+  "updatedAt": "2026-11-17T01:00:23.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
