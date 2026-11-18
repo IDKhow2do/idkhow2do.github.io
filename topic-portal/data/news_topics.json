@@ -1,7 +1,85 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-18T00:52:33.000Z",
+  "updatedAt": "2026-11-18T04:51:37.000Z",
   "topics": [
+    {
+      "url": "https://calif.io/java4shell/",
+      "title": "64 个字母 A 加一个等号，就能让 Java 服务器在「新 CPU」上被接管？——Java4Shell：为了解码更快写的 AVX-512 汇编算错了长度，一次多写 62 字节；发现它的研究员让 Codex 帮忙，1 小时找到、2 小时写出利用，token 花费不到 200 美元",
+      "category": "AI",
+      "source": "Calif 安全团队披露《Java4Shell: Write once, RCE everywhere》（CVE-2026-114938，2026-11-17 13:00 PT 与 OpenJDK/Oracle 补丁同步发布）；Red Hat RHSB-2026-018 公告交叉核对",
+      "publishedAt": "2026-11-17",
+      "eventAt": "2026-11-17",
+      "collectedAt": "2026-11-18T04:51:37.000Z",
+      "updatedAt": "2026-11-18T04:51:37.000Z",
+      "description": "一手来源：Calif 官方披露页（calif.io/java4shell，本轮读原文）+ Red Hat 安全公告 RHSB-2026-018。机制（原文）：OpenJDK 为了让 Base64 解码更快，在支持 AVX-512 VBMI 的 x86-64 CPU 上用手写汇编「intrinsic」一次处理 64 字节；C2 JIT 把反复调用的函数编译成本机代码后才走这条路径。处理末尾几个字符的代码算错了填充尾部的写掩码：输入 64 个「A」加一个「=」（65 个字符），Java 只分配 50 字节结果数组，解完前 64 个字符后把多出的「=」算成负长度，掩码全开，变成一次完整的 64 字节写入，其中 62 字节越过数组末尾；Java 随后才抛异常拒绝输入，但相邻对象已被改写，可能像 Heartbleed 一样泄露内存，或被利用成远程代码执行（CVSS 4.0 评 9.2）。只在特定硬件上存在：Intel Xeon Ice Lake/Sapphire Rapids/Emerald Rapids/Granite Rapids、AMD Zen 4 及更新；ARM64 和更老的 CPU 不受影响；OpenJDK 17.0.6 起受影响。Base64 在登录前就会被解码（HTTP Basic、SAML、CSRF token），Red Hat 称已演示默认配置下的未认证 RCE。AI 角度（原文「Era of the centaur hacker」）：Calif 研究员 Quang Luong 让 Codex 按安全研究员的方式审 JIT、intrinsics 和加密代码，1 小时发现漏洞、再 2 小时写出第一个可用利用，总 token 花费不到 200 美元；Calif 称「最好的黑客是半人半 AI」。修复：升级到 17.0.21.1 / 21.0.13.1 / 25.0.5.1 / 27.0.1.1，或临时加 -XX:-UseBASE64Intrinsics。可拍角度：①0 秒就是一串 64 个 A 加一个 =，屏幕上 50 格的数组被写出 62 格；②「为了更快反而更危险」——芯片专用指令（SIMD 掩码写）怎么帮软件提速、又怎么出错；③AI 找漏洞的成本从「几个月」掉到「几小时 200 美元」，攻防两边都在变；④国内大量 Java 业务跑在 Zen 4 / 新至强上，和普通人的账号安全有关。",
+      "caveat": "1 小时/2 小时/不到 200 美元均为 Calif 自述，未见第三方复核；上一轮（08:40）该条在 HN 里被判「非主线」丢弃，本轮因 AI 代理发现 + CPU 指令集双重角度重新评估入选。漏洞细节为公开披露信息，视频里不要给出可直接复用的利用步骤，只讲原理与修复。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261118b-java4shell.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261118b-java4shell.jpg",
+      "imageAlt": "Calif 披露页官方海报：像素画风的瓦肯举手礼人物，下方文字「ALL YOUR BASE64 ARE BELONG TO US」与 calif.io",
+      "tags": [
+        "AI安全",
+        "智能体",
+        "CPU指令集",
+        "漏洞",
+        "Java"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "主线": 21,
+          "钩子": 19,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 89.8,
+        "threshold": 65,
+        "run": "2026-11-18-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://www.sciforium.ai/blog-posts/deepseek-v4-1-flash-1129-tokens-per-second-amd-instinct",
+      "title": "让一个小模型先「瞎猜」7 个字，大模型反而写得更快？Sciforium 在 4 块 AMD MI355X 上把原版 DeepSeek-V4.1-Flash 推到每秒 1129 个 token：关键不是猜得多，而是猜中的能留下多少",
+      "category": "AI",
+      "source": "Sciforium 工程博客《Unlocking 1,129 output tokens per second on four AMD GPUs》（Sciforium Engineering Team，2026-11-16）",
+      "publishedAt": "2026-11-16",
+      "eventAt": "2026-11-16",
+      "collectedAt": "2026-11-18T04:51:37.000Z",
+      "updatedAt": "2026-11-18T04:51:37.000Z",
+      "description": "一手来源：Sciforium 官方工程博客（2026-11-16）。结果：DeepSeek-V4.1-Flash（DeepSeek 原始权重，未改模型）在 4 块 AMD Instinct MI355X 上 P90 达到 1,129 输出 token/秒，负载为长上下文智能体任务；生成 1 万个 token 约 9 秒（不含提示词处理和工具执行时间）。机制（原文）：普通自回归一次只出一个 token；推测解码让一个便宜的「草稿模型」先提议后面几个 token，大模型在一次验证中一起检查，保留被接受的开头、错处改正后继续——被接受得越多，一次验证推进越远。博客强调「草稿长度」和「接受长度」不是一回事：如果大模型在第 2 个 token 就拒绝，后面猜再多也白费，单纯加长草稿会让人失望。所以他们先用真实客户流量训练草稿模型（traffic-tuned drafter）提高接受率，然后才把草稿从 5 个 token 加到 7 个；再叠加与 AMD 一起做的算子融合（把中间运算和通信合并）。可拍角度：①0 秒用打字动画：小模型飞快打出 7 个字、大模型一眼划掉后 3 个；②「为什么猜得越准，才敢猜得越长」；③推理速度不全靠换卡，工程也能抢回时间；④DeepSeek 国产模型 + 非英伟达硬件，和国内算力处境相关。",
+      "caveat": "1,129 tok/s 为 Sciforium 自报的 P90 结果，特定负载与配置，非第三方基准；博客头图为抽象插画，原理示意图需自制。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261118b-specdec.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261118b-specdec.jpg",
+      "imageAlt": "Sciforium 博客头图：两尊灰白雕塑小人，一个在算盘前，一个在排列方块的长桌前",
+      "tags": [
+        "AI推理",
+        "AI成本",
+        "推测解码",
+        "DeepSeek",
+        "AMD"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 16,
+          "画面": 11,
+          "来源": 13,
+          "时效": 10,
+          "大陆": 8,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 87.7,
+        "threshold": 65,
+        "run": "2026-11-18-1240-shanghai"
+      }
+    },
     {
       "url": "https://spectrum.ieee.org/optical-computing-ai",
       "title": "让光穿过一块「灰度玻璃」，矩阵乘法就几乎不耗电地做完了——那为什么 70 年过去光计算还没打败 GPU？IEEE Spectrum：向量要长到 1000～10000 才开始赢，而且只有乘法能交给光",
