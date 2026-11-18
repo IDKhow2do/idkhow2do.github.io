@@ -1,7 +1,85 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-18T04:51:37.000Z",
+  "updatedAt": "2026-11-18T08:55:50.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2611.22694",
+      "title": "铜的导热率约 400，为什么把两颗芯片用铜「直接焊」在一起的混合键合层，实测只有 1～4 W/m·K？北大集成电路学院把六层堆叠芯片斜着磨开，用皮秒激光一层层量出了埋在里面的那道「热墙」",
+      "category": "半导体",
+      "source": "arXiv:2611.22694《Thermal and Acoustic Measurements of Hybrid Bonding Stacks》（Zirou Chen, Xinyan Xu, Zifeng Huang, Xufei Guo, Zhe Cheng；北京大学集成电路学院；2026-11-17 提交，physics.app-ph 11-18 批次）",
+      "publishedAt": "2026-11-17",
+      "eventAt": "2026-11-17",
+      "collectedAt": "2026-11-18T08:55:50.000Z",
+      "updatedAt": "2026-11-18T08:55:50.000Z",
+      "description": "一手来源：arXiv 论文原文（本轮读 PDF 正文与图 1）。背景（原文）：混合键合用铜/介质直接对接替代微凸点和底填，节距已到 10 μm 以下，已用在 CMOS 图像传感器、HBM、3D NAND、3D V-cache；业界默认它「热阻低」，因为体铜导热约 400 W/m·K。做法：样品是六颗芯片面对背混合键合的堆叠；把样品以很小角度斜着抛光，让同一块样品上不同位置露出不同剩余厚度 H，镀铝换能层后用时域热反射（TDTR）逐点测热导率，同时用皮秒超声回波找到埋在里面的界面、定出厚度——键合界面的回波形状与普通铜/介质界面不同，可能反映键合质量。TEM 显示上/下铜垫约 450/550 nm，介质主要是 SiO2，键合界面附近有一薄层 SiCN（键合能高、阻铜扩散好，但导热只有 0.6～0.8）。SEM 估算铜面积占比：上垫 25%、下垫 4%。结果：下垫层有效热导率 1.14～1.75 W/m·K，上垫层 1.76～4.34，且上垫层随剩余厚度增加明显变大；作者归因于键合界面热边界电阻、SiCN 低导热和薄铜里电子散射增强。可拍角度：①0 秒就是图 1 的 TEM 截面——一颗 450 nm 的「T 字」铜垫插在 SiO2 里；②反直觉：铜多导热，但层里 75%～96% 是介质，热流过的是「铜岛+玻璃海」；③斜磨 + 泵浦探测：把「看不见的埋层」变成可以一个点一个点量的斜坡（和用户熟悉的失效分析斜切/离子研磨是一个思路）；④国内高校在 3D IC 热测量上的一手数据。",
+      "caveat": "单一样品结构的测量（铜占比 25%/4%），数值不能直接外推到所有混合键合工艺；厚度依赖的原因作者用「可能」表述；预印本未经同行评审。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261118c-hbthermal.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261118c-hbthermal.jpg",
+      "imageAlt": "论文图 1：(a) 上下两颗晶粒之间的混合键合层示意；(b) 斜角抛光后泵浦/探测光在不同剩余厚度 H 处测量；(c) 上垫 450 nm、下垫 550 nm 的 TEM 截面与 SiCN 层；(d) 上垫（铜占 25%）与下垫（铜占 4%）阵列 SEM 俯视图",
+      "tags": [
+        "先进封装",
+        "混合键合",
+        "芯片散热",
+        "3D IC",
+        "芯片制造"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 94,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 18,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 9,
+          "新颖": 4
+        },
+        "multiplier": 1.0743,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-11-18-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.21678",
+      "title": "让 AI 审芯片代码，它很少放过 bug，却总冤枉写对的代码？RTLReviewBench：12 个模型审 114 对 Verilog，正确模块被判错 325 次、真 bug 只漏 59 次——「先想再判」能救弱模型，多投几次票却没用",
+      "category": "AI",
+      "source": "arXiv:2611.21678《RTLReviewBench: LLM Hardware Reviewers Rarely Miss Bugs but Routinely Reject Correct RTL》（Yasir Mahmud；2026-11-14 提交，cs.AR 11-18 批次）；数据与代码 github.com/yasirmahmud/RTLReviewBench（MIT）",
+      "publishedAt": "2026-11-14",
+      "eventAt": "2026-11-18",
+      "collectedAt": "2026-11-18T08:55:50.000Z",
+      "updatedAt": "2026-11-18T08:55:50.000Z",
+      "description": "一手来源：arXiv 论文 HTML 原文 + 作者 GitHub 仓库（LICENSE 为 MIT，本轮核实）。问题：芯片团队越来越多让大模型「审」RTL（寄存器传输级硬件代码），但不跑仿真，模型能分清对错吗？做法：114 对同一规格下的 Verilog 模块（一错一对），错的多数是 LLM 代码生成器真实写出的 bug，每个标签都经仿真确认；评审一次只看到其中一个，判「对/错」。12 个模型（Claude Haiku 5.5/Sonnet 4.6、Gemini 3.1 Pro/3.8 Flash/Gemma 4、GPT-5.4/4.1/o4-mini/gpt-oss-120b、Llama 3.3 70B）。结果：普遍「宁可错杀」——正确模块被判 buggy 共 325 次，真 bug 被放过仅 59 次，误杀是漏判的 5 倍多；GPT-4.1 误杀近 60%，Claude Haiku 5.5（思考）准确率 97.4% 最高。人工注入的「合成 bug」比真实 bug 容易抓得多，会让基准显得乐观；让模型在下结论前先推理能大幅减少弱模型的误杀，而且「推理写在输出的哪个位置」比「要求推理」这句指令更关键；采样多次再投票没有帮助。盲审还发现一些判对的「有 bug」结论其实依据的是错误技术论断（例：Gemini 3.8 Flash 以 0.98 置信度称移位位宽会截断，实际由 8 位目标决定）。可拍角度：①0 秒就是图 3 左右不对称的条形图——左边橙色几乎没有，右边蓝色一大片；②「AI 审稿人为什么偏向挑刺」——对它来说说「有问题」最安全；③芯片设计里误杀也有成本：工程师要花时间证明自己没错；④合成 bug 与真实 bug 的差别，提醒评测本身会骗人。",
+      "caveat": "单一作者预印本、未经同行评审；模型版本与调用在两天窗口内完成，结论随模型更新可能变化；114 对设计规模有限。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261118c-rtlreview.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261118c-rtlreview.jpg",
+      "imageAlt": "论文图 3：12 个模型的漏判率（左，橙色，共 59 次）与误杀率（右，蓝色，共 325 次）横向条形图，GPT-4.1 误杀接近 60%",
+      "tags": [
+        "智能体",
+        "AI安全",
+        "芯片设计",
+        "EDA",
+        "AI评测"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 19,
+          "画面": 9,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 89.8,
+        "threshold": 65,
+        "run": "2026-11-18-1640-shanghai"
+      }
+    },
     {
       "url": "https://calif.io/java4shell/",
       "title": "64 个字母 A 加一个等号，就能让 Java 服务器在「新 CPU」上被接管？——Java4Shell：为了解码更快写的 AVX-512 汇编算错了长度，一次多写 62 字节；发现它的研究员让 Codex 帮忙，1 小时找到、2 小时写出利用，token 花费不到 200 美元",
