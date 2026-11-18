@@ -2,6 +2,192 @@
   "schemaVersion": 1,
   "items": [
     {
+      "kind": "visual",
+      "baseScore": 64,
+      "multiplier": 1.3491,
+      "score": 86.3,
+      "reason": "分数达上墙线但与同日 Adam Chernick「Kelp」同题（Codevember 第 17 天），后者有 MIT 源码与原理说明，本条仅在线页无源码/许可，择一上墙",
+      "run": "2026-11-18-0840-shanghai",
+      "record": {
+        "title": "一片随浪摇摆的海带林，鱼群从里面穿过，打开声音能听到水下——@_pwd_ Codevember 2026 第 17 天「Kelp」，three.js WebGPU + TSL 着色器在线可玩",
+        "category": "frontend",
+        "styleFamily": "code_video",
+        "source": "https://x.com/_pwd_/status/2122691983680635088",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261118a-pwdkelp.jpg",
+        "previewType": "image",
+        "description": "一手来源：@_pwd_（Frank Reitberger）X 帖（2026-11-17 14:03 UTC，约 84 秒视频，「sound on」），在线页 dasprinzip.com/codevember2026/17-kelp.html；标签 #webgpu #tsl #shaders。视频缩略图为浓绿摇曳的海带丛中游过锦鲤状的鱼。未见源码与许可证。",
+        "tool": "three.js WebGPU + TSL（帖子标签）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "仅成片视频与在线页，无源码、无许可证声明。",
+        "attribution": "@_pwd_",
+        "sourceAuthor": "_pwd_",
+        "tags": [
+          "Three.js",
+          "Codevember",
+          "WebGPU",
+          "水下"
+        ],
+        "publishedAt": "2026-11-17",
+        "collectionIds": [],
+        "collectedAt": "2026-11-18T00:52:33.000Z",
+        "updatedAt": "2026-11-18T00:52:33.000Z",
+        "verification": {
+          "checked_at": "2026-11-18T00:52:33.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为 X 视频缩略图（绿色海带丛与游鱼），本轮目视核验，非头像。",
+          "video_check": "未播放视频，未运行在线页。"
+        },
+        "curation": {
+          "baseScore": 64,
+          "baseBreakdown": {
+            "实体": 20,
+            "科普": 12,
+            "溯源": 12,
+            "复现": 8,
+            "风格": 10,
+            "新颖": 2
+          },
+          "multiplier": 1.3491,
+          "finalScore": 86.3,
+          "threshold": 65,
+          "run": "2026-11-18-0840-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2122691637402820608/vid/avc1/1728x1080/CPJQFlZc7sh25_hI.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "demoUrl": "https://dasprinzip.com/codevember2026/17-kelp.html"
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 59,
+      "multiplier": 1.1,
+      "score": 64.9,
+      "reason": "本轮达待定区间",
+      "run": "2026-11-18-0840-shanghai",
+      "record": {
+        "title": "同一个「飞屋环游记」气球房子测试：GPT-6.2 Sol 10 分 52 秒花 0.67 美元，Fable 5.2 用了 45 分钟、19.10 美元——@noclipepe 的四模型 3D 建模对比",
+        "category": "motion",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/noclipepe/status/2122787081252753482",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261118a-uphouse.jpg",
+        "previewType": "image",
+        "description": "一手来源：@noclipepe X 帖（2026-11-17 20:20 UTC，引用 OpenAI 发布帖，附视频）。作者自述同一「The Up House」测试的耗时与花费：GPT-6.2 Astra 15m57s / $2.54；GPT-6.2 Sol 10m52s / $0.67；Fable 5.2 45m44s / $19.10；Opus 5.5 36m46s / $4.20；称 Astra 做得比 Fable 好。视频缩略图为四宫格气球房子，画面角标分数 9.5 / 9.0 / 9.0 / 7.6（作者自评）。",
+        "tool": "GPT-6.2 Astra / Sol、Claude Fable 5.2 / Opus 5.5（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "个人测试，未公开提示词与工程文件；评分为作者主观打分。",
+        "attribution": "@noclipepe",
+        "sourceAuthor": "noclipepe",
+        "tags": [
+          "3D生成",
+          "模型对比",
+          "AI成本"
+        ],
+        "publishedAt": "2026-11-17",
+        "collectionIds": [],
+        "collectedAt": "2026-11-18T00:52:33.000Z",
+        "updatedAt": "2026-11-18T00:52:33.000Z",
+        "verification": {
+          "checked_at": "2026-11-18T00:52:33.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为 X 视频缩略图（四模型气球房子四宫格），本轮目视核验。",
+          "video_check": "未播放视频。"
+        },
+        "curation": {
+          "baseScore": 59,
+          "baseBreakdown": {
+            "实体": 16,
+            "科普": 11,
+            "溯源": 10,
+            "复现": 6,
+            "风格": 9,
+            "新颖": 7
+          },
+          "multiplier": 1.1,
+          "finalScore": 64.9,
+          "threshold": 65,
+          "run": "2026-11-18-0840-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2122784867914002432/vid/avc1/1800x1200/NuFNrRwimw-NGFIK.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 57,
+      "multiplier": 1.1,
+      "score": 62.7,
+      "reason": "本轮达待定区间",
+      "run": "2026-11-18-0840-shanghai",
+      "record": {
+        "title": "像素画风格的高斯泼溅小世界做成世界时钟：Philippe Roy 用 Rive 做的 World Clock，可在线点开",
+        "category": "motion",
+        "styleFamily": "uiux",
+        "source": "https://x.com/PhilippeRoyArt/status/2122786672857469102",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261118a-rive.jpg",
+        "previewType": "image",
+        "description": "一手来源：@PhilippeRoyArt X 帖（2026-11-17 20:19 UTC，视频）：「Needed to play with this 3D pixel-art gaussian splat style」，在线体验 world-clock-iieuvc.rive.to，Made in Rive。缩略图为深蓝界面：左侧天体仪式表盘，右侧加德满都时间与多城市时钟列表。",
+        "tool": "Rive（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "在线作品，无源码/许可证声明。",
+        "attribution": "Philippe Roy",
+        "sourceAuthor": "PhilippeRoyArt",
+        "tags": [
+          "UI动效",
+          "像素画",
+          "高斯泼溅"
+        ],
+        "publishedAt": "2026-11-17",
+        "collectionIds": [],
+        "collectedAt": "2026-11-18T00:52:33.000Z",
+        "updatedAt": "2026-11-18T00:52:33.000Z",
+        "verification": {
+          "checked_at": "2026-11-18T00:52:33.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为 X 视频缩略图（世界时钟界面），本轮目视核验。",
+          "video_check": "未播放视频，未打开在线页。"
+        },
+        "curation": {
+          "baseScore": 57,
+          "baseBreakdown": {
+            "实体": 14,
+            "科普": 8,
+            "溯源": 12,
+            "复现": 8,
+            "风格": 6,
+            "新颖": 9
+          },
+          "multiplier": 1.1,
+          "finalScore": 62.7,
+          "threshold": 65,
+          "run": "2026-11-18-0840-shanghai"
+        },
+        "is3d": false,
+        "videoUrl": "https://video.twimg.com/amplify_video/2122783957804875777/vid/avc1/1648x942/K4Qf0HJJpjd8I-Ck.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "demoUrl": "https://world-clock-iieuvc.rive.to"
+      }
+    },
+    {
       "kind": "news",
       "baseScore": 67,
       "multiplier": 1.0743,
@@ -8498,6 +8684,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-17T12:47:27.000Z",
+  "updatedAt": "2026-11-18T00:52:33.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
