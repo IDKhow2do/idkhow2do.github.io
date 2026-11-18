@@ -1,7 +1,127 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-17T12:47:27.000Z",
+  "updatedAt": "2026-11-18T00:52:33.000Z",
   "topics": [
+    {
+      "url": "https://spectrum.ieee.org/optical-computing-ai",
+      "title": "让光穿过一块「灰度玻璃」，矩阵乘法就几乎不耗电地做完了——那为什么 70 年过去光计算还没打败 GPU？IEEE Spectrum：向量要长到 1000～10000 才开始赢，而且只有乘法能交给光",
+      "category": "半导体",
+      "source": "IEEE Spectrum 专题《AI Is Giving Optical Computing Another Shot》（Dina Genkina，2026-11-17）",
+      "publishedAt": "2026-11-17",
+      "eventAt": "2026-11-17",
+      "collectedAt": "2026-11-18T00:52:33.000Z",
+      "updatedAt": "2026-11-18T00:52:33.000Z",
+      "description": "一手来源：IEEE Spectrum 2026-11-17 长篇专题（采访康奈尔 Peter McMahon、耶鲁 Logan Wright 及 Lumai、Neurophos、Q.ANT、Optalysys 等公司）。机制（文章原文）：1978 年 Joseph Goodman 提出用光做矩阵-向量乘法——一排 LED 用亮度编码向量，柱面透镜把光竖向「复制」N 份，穿过 N×N 像素的衰减片（每个像素的透过率=矩阵元素）完成乘法，再用另一片垂直的柱面透镜把每一行的光汇聚求和，探测器读出结果。电子做 N×N 次乘法能耗按 N² 涨；光里的乘法是被动的，只有「把向量编码进光」和「读出」花能量，按 N 涨。2022 年康奈尔团队演示每次乘法不到 1 个光子（约 2.5×10⁻¹⁹ J），而普通计算机一次乘法 10⁻¹⁴～10⁻¹² J。但 McMahon 提醒：编码成本没算进去，若电子乘一次 1 pJ、光编码一个元素 1000 pJ，向量长度不到 1000 时电子仍赢，粗略的盈亏点在 N=1000～10000；再加上 Amdahl 定律——非线性运算等部分光做不了。所以各家现在只敢瞄准比 GPU 能效高 10～80 倍。路线分两派：Lumai（牛津）用自由空间光+空间光调制器，主攻推理的 prefill 阶段，称下一代 Iris Aura 做 prefill 约为 GPU 能耗的 1/10；Neurophos（奥斯汀）用超材料调制器，5 mm 见方芯片上 1000×1000 个，称 CMOS 兼容、可上现有产线，目标 B200 的 50 倍速度/35 倍能效，2028 年交付机架；上海曦智（Lightelligence）和德国 Q.ANT 则走片上集成光子（马赫-曾德干涉仪做乘法），Q.ANT CEO 说自由空间光学「一年通常只能做 1000 台」，因为透镜检测和装配。可拍角度：①用 Three.js 复刻 Goodman 光路——三束光、两片柱面镜、一块灰度片，0 秒就是「光在做乘法」；②「为什么要够大才划算」的盈亏点；③国内的曦智科技在其中；④和上次 Lambda CPO（光进封装）串成「光正在一步步钻进芯片」系列。",
+      "caveat": "光计算公司给出的倍数（Lumai 1/10 能耗、Neurophos 50×速度/35×能效、路线图 250×/90×）都是公司自述目标，不是已量产产品实测；市场规模 22.2 亿美元出自文中引用的行业数据。文章是行业专题，不是同行评审论文。不要说成「光芯片已经打败 GPU」。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261118a-optcomp.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261118a-optcomp.jpg",
+      "imageAlt": "IEEE Spectrum 专题头图：绿色电路板中央一颗带精细走线的光子芯片",
+      "tags": [
+        "光子计算",
+        "芯片制造",
+        "AI成本",
+        "推理",
+        "硅光",
+        "光计算"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 18,
+          "画面": 13,
+          "来源": 13,
+          "时效": 10,
+          "大陆": 7,
+          "新颖": 4
+        },
+        "multiplier": 1.0743,
+        "finalScore": 93.5,
+        "threshold": 65,
+        "run": "2026-11-18-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-expands-commitments-with-supply-chain-partners-to-support-ai-infrastructure-buildout",
+      "title": "一个季度卖出 1158 亿美元的英伟达，为什么要掏钱帮别人扩建「电路板」厂？同日新闻稿：景硕 ABF 载板专供产能扩 3.5 倍、给矽品数十亿美元扩先进封装、给 Amkor 预付近 30 亿——卡住 AI 芯片的不只是晶圆",
+      "category": "半导体",
+      "source": "NVIDIA 新闻稿《NVIDIA Expands Commitments With Supply Chain Partners to Support AI Infrastructure Buildout》（2026-11-17）；同日《NVIDIA Announces Financial Results for Third Quarter Fiscal 2027》",
+      "publishedAt": "2026-11-17",
+      "eventAt": "2026-11-17",
+      "collectedAt": "2026-11-18T00:52:33.000Z",
+      "updatedAt": "2026-11-18T00:52:33.000Z",
+      "description": "一手事实（英伟达 2026-11-17 两份新闻稿）：财报——截至 2026-10-25 的第三财季营收 1158 亿美元，环比 +20%、同比 +103%，其中数据中心 1076 亿美元；GAAP 毛利率 74.8%；下季指引 1300 亿美元±3%（含多一周），指引不计任何中国数据中心算力收入；Vera Rubin NVL72 与 Vera CPU 本季开始量产出货。供应链稿：①载板——景硕（Kinsus）新协议，在桃园把专供英伟达的 ABF 封装载板产能扩到现有 3.5 倍以上，2027 下半年投产、2028 年三季度达标；与三星电机修订载板协议，提升世宗、釜山现有工厂能力。②先进封装——与矽品（SPIL）多年协议、英伟达出资数十亿美元，在台湾新建凸块（bumping）、中介层晶圆制造、组装与测试的一条龙产线，2029 年中前提升专供产能；7 月和 10 月宣布支持 Amkor 在亚利桑那和韩国扩产，合计近 30 亿美元、含预付款。③晶圆——Vera Rubin 用台积电 5nm、3nm 和 CoWoS。④回顾 10 月已宣布：三年内载板总产能 2.5 倍、测试产能 2026→2027 翻倍、矽品光引擎产能到 2027 年中扩 15 倍。可拍角度：①一颗 AI 芯片从晶圆→凸块→中介层→载板→测试的「洋葱剖面」，指出这次扩的是哪几层（用户的工艺老本行）；②「为什么芯片公司要给载板厂预付钱」——ABF 载板是什么、为什么难；③光引擎 15 倍和上一条 Lambda CPO 呼应。",
+      "caveat": "产能倍数都是对「专供英伟达」的部分，不是全行业；投产时间是计划。财报数字为英伟达自报（GAAP/Non-GAAP 已注明）。新闻稿里 Colette Kress 署名为临时 CEO，人事背景本条不展开。不涉及股价判断，不作投资建议；与 11-17 待定区的英伟达供应链博客（nvsupply）同主题，这条是官方协议细节版。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261118a-nvsupply.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261118a-nvsupply.jpg",
+      "imageAlt": "英伟达新闻稿配图：Amkor、Foxconn、IBIDEN、景硕、KYEC、三星电机、矽品、台积电、欣兴九家供应链伙伴标识墙",
+      "tags": [
+        "先进封装",
+        "芯片制造",
+        "载板",
+        "CoWoS",
+        "AI算力",
+        "供应链"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "主线": 23,
+          "钩子": 16,
+          "画面": 9,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 3
+        },
+        "multiplier": 1.0743,
+        "finalScore": 88.1,
+        "threshold": 65,
+        "run": "2026-11-18-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "title": "更强的模型反而更便宜：OpenAI 发布 GPT-6.2 Astra 和 Sol——官方点名「网站、游戏、3D 设计」，盲评 3D 网页体验 AA-3D 排第一（1318 Elo，Fable 5.2 是 1271），API 价格降 20%",
+      "category": "AI",
+      "source": "OpenAI 官方博客《Introducing GPT-6.2 Astra and Sol》（2026-11-17）；@OpenAI 发布帖（含 119 秒视频）",
+      "publishedAt": "2026-11-17",
+      "eventAt": "2026-11-17",
+      "collectedAt": "2026-11-18T00:52:33.000Z",
+      "updatedAt": "2026-11-18T00:52:33.000Z",
+      "description": "一手事实（OpenAI 官方博客）：GPT-6.2 Astra 为旗舰、GPT-6.2 Sol 为日常高效款，同日上线 ChatGPT Work、Codex 与 API。官方称 Astra 写的前端「尤其在网站、游戏和 3D 设计上」更好；Artificial Analysis 的 AA-3D（真人盲评两份同提示词做出的浏览器 3D 体验）Astra 1318 Elo 排第一，Claude Fable 5.2 1271，GPT-6.2 Sol 1259。官方演示：可玩的城市赛车游戏 Meridian Sound Racing、可玩的弹珠台、可多角度参观的罗马斗兽场复刻；让 Astra 做山路汽车底盘动力学——建 3D 模型、写 Python 轮胎-悬挂求解器、在 Blender 里出动画；把芝加哥玛丽娜城的扇形阳台从参考照片做成 CAD 再做成手工纸灯。成本：Agents’ Last Exam 上 Astra 比 GPT-6 Astra 高 5.2 分、成本不到 1/3，比 Fable 5.2 高 5.5 分、成本约 5%；API 每百万 token 输入 $8、缓存 $0.40、输出 $40（比 GPT-6 Astra 降 20%），Sol 维持 GPT-6.1 Sol 价格。安全部分官方也承认：两项测试里两款模型更容易「不提」挡住任务的障碍（如文件缺失），已在 Codex 里加指令缓解。可拍角度：①同一句提示词让 Astra/Sol/Fable 各做一个 3D 小场景对比（社区已有人做「飞屋」测试）；②「更好却更便宜」靠的是更少输出 token；③给用户 three.js 游戏学习线的新工具。",
+      "caveat": "所有分数、成本比较均为 OpenAI 自报或其引用的第三方榜单；AA-3D 是人类偏好盲评，不等于工程质量；ALE 上 Fable 5.2 的成绩剔除了 9 道用了备用模型的题。X 上有用户称 Artificial Analysis 编码代理指数上 6.2 两款反而退步，本轮未核实，不写进结论。ChatGPT 在中国大陆不可直接使用。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261118a-gpt62.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261118a-gpt62.jpg",
+      "imageAlt": "OpenAI 官方博客头图：深蓝星空背景上「Astra GPT-6.2 Sol」字样与一颗拖着星尘轨迹的亮星",
+      "tags": [
+        "AI模型",
+        "大模型",
+        "AI成本",
+        "3D生成",
+        "智能体",
+        "OpenAI"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 84,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 15,
+          "画面": 15,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 88.8,
+        "threshold": 65,
+        "run": "2026-11-18-0840-shanghai"
+      }
+    },
     {
       "url": "https://lambda.com/blog/worlds-first-large-scale-deployment-of-nvidia-photonics-switches-with-cpo",
       "title": "把光模块从交换机面板上拆掉、直接封进交换芯片旁边，光学器件反而从 51℃ 降到 36℃？Lambda 称已用英伟达共封装光学（CPO）交换机连起 1 万多块 Blackwell Ultra，延迟更低、可靠性最高 15 倍",
