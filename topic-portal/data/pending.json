@@ -2,6 +2,131 @@
   "schemaVersion": 1,
   "items": [
     {
+      "kind": "visual",
+      "baseScore": 57,
+      "multiplier": 1.0844,
+      "score": 61.8,
+      "reason": "本轮达待定区间",
+      "run": "2026-11-18-2040-shanghai",
+      "record": {
+        "title": "夜车靠窗的位子：月光稻田、河上铁桥、隧道、小站茶摊，桌上的茶还冒着热气——对着车窗「哈气」就能在雾上画画：@itsfazley《Midnight Train》，单个 HTML 文件的 Canvas 2D，配真实录制的火车声",
+        "category": "motion",
+        "styleFamily": "code_video",
+        "source": "https://x.com/itsfazley/status/2123015867139039416",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261118d-midtrain.jpg",
+        "previewType": "image",
+        "description": "一手来源：@itsfazley X 帖（2026-11-18 11:30 UTC，约 21 秒视频）。作者自述：夜车靠窗座位，窗外依次是月光下的稻田、河桥、隧道、有茶摊的小站，桌上茶在冒气、铁轨「哒哒」响；可以对着玻璃哈气、在雾上画；Canvas 2D、单个 HTML 文件、真实录制的火车音。视频帧左下有场景名字幕（Level crossing / River bridge / Night express / Tunnel / Sleepy station）。可拍角度：窗户雾气 + 手指擦痕的「实体小交互」；分层视差（近景树、远景月光）是讲视差/运动视差的好开场。",
+        "tool": "Canvas 2D 单文件 HTML（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者原帖；帖内未给在线链接与源码，未声明 AI 参与（作者同日 Desk Grand Prix 为 Claude Code 制作，本条未说明）。",
+        "attribution": "@itsfazley",
+        "sourceAuthor": "itsfazley",
+        "tags": [
+          "Canvas",
+          "网页交互",
+          "音画联动",
+          "夜景"
+        ],
+        "publishedAt": "2026-11-18",
+        "collectionIds": [],
+        "collectedAt": "2026-11-18T12:49:26.000Z",
+        "updatedAt": "2026-11-18T12:49:26.000Z",
+        "verification": {
+          "checked_at": "2026-11-18T12:49:26.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为 X 视频 3 秒帧：车厢木质窗框、红色窗帘、窗外道口信号灯与树影、桌上书本和冒气的茶，本轮目视核验，非头像。",
+          "video_check": "抽 0/3/6/9/12/15 秒帧目视；未完整播放。"
+        },
+        "curation": {
+          "baseScore": 57,
+          "baseBreakdown": {
+            "实体": 18,
+            "科普": 8,
+            "溯源": 12,
+            "复现": 5,
+            "风格": 7,
+            "新颖": 7
+          },
+          "multiplier": 1.0844,
+          "finalScore": 61.8,
+          "threshold": 65,
+          "run": "2026-11-18-2040-shanghai"
+        },
+        "is3d": false,
+        "videoUrl": "https://video.twimg.com/amplify_video/2122991573688590336/vid/avc1/1920x1080/-nyNawD45m2us5NR.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 55,
+      "multiplier": 1.219,
+      "score": 55.0,
+      "reason": "本轮达待定区间（单维度乘数保护生效）",
+      "run": "2026-11-18-2040-shanghai",
+      "record": {
+        "title": "58 分钟，GPT-6.2 Astra 搭出一座矮人地下要塞「Irondeep」：巨像守门、拱顶大厅、吊灯与锻造台——Givros 同一套 Blender + three.js + 自制 skill 工作流的第二个场景",
+        "category": "3d",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/givros/status/2122985916381700101",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261118d-irondeep.jpg",
+        "previewType": "image",
+        "description": "一手来源：@givros X 帖（2026-11-18 09:31 UTC，约 57 秒视频）。作者自述：用 GPT 6.2 Astra 在 58 分钟内做出「Dwarf Irondeep」，工作流 Blender + three.js + 自制 skill。画面：刻着斧头与山形纹的大门两侧立着矮人巨像，进入后是拱顶大厅、环形吊灯、齿轮装置、金锭与锻造工作台、石阶；画面角落有场景名与按钮（The Great Hall 等）。可拍角度：与同作者 Kasane Valley 对照——同一工作流换题材的稳定性。",
+        "tool": "GPT-6.2 Astra + Blender + three.js + 自制 skill（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者原帖；本帖未公开提示词、Demo 与源码。",
+        "attribution": "Givros（@givros）",
+        "sourceAuthor": "givros",
+        "tags": [
+          "Three.js",
+          "Blender",
+          "开放世界",
+          "GPT-6.2"
+        ],
+        "publishedAt": "2026-11-18",
+        "collectionIds": [],
+        "collectedAt": "2026-11-18T12:49:26.000Z",
+        "updatedAt": "2026-11-18T12:49:26.000Z",
+        "verification": {
+          "checked_at": "2026-11-18T12:49:26.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为 X 视频 7 秒帧：拱顶大厅、两尊矮人巨像、吊灯与暖色火盆，本轮目视核验，非头像。",
+          "video_check": "抽 0/3/6/9/12/15 秒帧目视；未完整播放。"
+        },
+        "curation": {
+          "baseScore": 55,
+          "baseBreakdown": {
+            "实体": 15,
+            "科普": 8,
+            "溯源": 12,
+            "复现": 6,
+            "风格": 10,
+            "新颖": 4
+          },
+          "multiplier": 1.219,
+          "finalScore": 55.0,
+          "threshold": 65,
+          "run": "2026-11-18-2040-shanghai",
+          "multiplierGuard": "基础分<60且仅单一维度乘数>1，按规则不让乘数抬过阈值（按基础分判定）"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2122940566128164864/vid/avc1/1920x1080/SQtOh-YR7IbkWRBD.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
       "kind": "news",
       "baseScore": 64,
       "multiplier": 1.0566,
@@ -8791,6 +8916,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-18T08:55:50.000Z",
+  "updatedAt": "2026-11-18T12:49:26.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
