@@ -1,7 +1,121 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-19T01:02:41.000Z",
+  "updatedAt": "2026-11-19T04:54:14.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2611.23855",
+      "title": "15 台机器人在仿真里全部过关，搬到真赛道上为什么一台都过不去？MIT 的 RoboBuilder 让编码智能体自己挑零件、写 CAD、编程造机器人，亲手拼了 135 台：仿真通过的只有 66% 在现实中站得住，给智能体看一段自己翻车的视频，72% 的失败就被它改好了",
+      "category": "AI",
+      "source": "arXiv 2611.23855《RoboBuilder: Agentic Robot Co-Design with Real-world Video Feedback in the Loop》（2026-11-18 提交，Nehme / Nam / Srinivasan / Faez Ahmed，MIT 机械工程系 DeCoDE Lab）+ 官方项目页 ghadinehme.com/robobuilder.github.io（CC BY-SA 4.0）",
+      "publishedAt": "2026-11-18",
+      "eventAt": "2026-11-18",
+      "collectedAt": "2026-11-19T04:54:14.000Z",
+      "updatedAt": "2026-11-19T04:54:14.000Z",
+      "description": "一手来源：arXiv 摘要页 + 官方项目页全文（本轮读取）。是什么：一个基准——编码智能体从标准零件（132 种、库存约 3,000 件，含电机）里挑件，再自己用 CAD 代码写 1 个定制零件（团队 3D 打印），同时设计机器人硬件和开环电机程序；只要仿真里过了关，团队就真的把它拼出来，放到真实障碍赛道上跑。10 种障碍、3 个难度等级，要求在限定时间内到达终点并保持直立 5 秒。规模：4 个前沿编码智能体，16,427 次仿真、12,774 种不同机器人，135 台实体机器人（约 1.3 万个零件、估计 240 小时搭建测试），461 段真实视频与仿真一一配对。反直觉结果（原文口径）：①只用公开零件参数时，最早 15 个仿真通过的设计在真赛道上 0 个过关——项目页举例：摩擦销的实测保持力是 4.5 N·mm，而仿真里假设的是 24.5；②于是让智能体自己申请测量、看真实运行视频来「学」仿真器，学好后能预测 92% 的已标注真实运行；③全部难度下，仿真通过的设计约 66% 在现实中也通过；④把真实失败视频给智能体、允许它重新设计（每次最多改 2 个参数，且改后的旧设计必须复现视频里的失败），第 1、2 级障碍的真实失败消除了 72%；⑤第 1 级任务智能体解了 98%，而搜索基线 0%；但「一台机器人过全部 10 个障碍」最多只过 6 个。可拍角度：①仿真到现实的鸿沟（sim-to-real）到底差在哪——一颗摩擦销差了 5 倍；②为什么「看视频反馈」比「调参数」更管用；③和库内 AI 设计芯片（OpenAI×AMD、Frostbite）放在一起：AI 设计实物，最后都要过「造出来」这一关。开场：0 秒上项目页四台实拍机器人过障碍的拼图。",
+      "caveat": "arXiv 预印本，未经同行评审；数字均为作者自报。仿真器由固定机位与台架测试拟合，作者说明并非所有参数都可辨识；每次闭环修正只针对单次失败拟合；「Light」「Fast」两类设计未实体搭建。项目页显示「Paper soon / Code / Dataset」，作者称将公开仿真器、赛道、设计与 461 段配对视频，本轮未核验代码仓库。参与评测的 4 个智能体具体型号本轮未逐一核对。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261119b-robobuilder.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261119b-robobuilder.jpg",
+      "imageAlt": "RoboBuilder 官方 og 封面：深色底上橙色标题 RoboBuilder 与「Can AI agents design robots that work in the real world?」，下方四张实拍图为不同机器人在台阶、跷跷板、缺口等障碍前",
+      "tags": [
+        "智能体",
+        "机器人",
+        "仿真",
+        "AI评测"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 19,
+          "画面": 15,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 93.0,
+        "threshold": 65,
+        "run": "2026-11-19-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://horizon-labs.ai/",
+      "title": "一个 AI 智能体自己经营一家「开源模型公司」七周，平均每天只干 16 分钟，为什么下载量反而越涨越快？图宾根 Horizon Labs：Opus 5.5 从空白 Hugging Face 账号做出 38 个小模型、5.4 万次下载、被 143 个 GitHub 仓库和 2 篇 arXiv 论文用上——最受欢迎的是一个提示注入防护模型",
+      "category": "AI",
+      "source": "Horizon Labs 报告页 horizon-labs.ai（ELLIS Institute Tübingen / 马普智能系统所 / 图宾根 AI 中心 AISA 组等，作者 Wuhrmann、Schmotz、Prinzhorn、Prabhu、Coppock、Andriushchenko；数字截至 2026-11-17）+ 作者 @maksym_andr X 发布帖（2026-11-17 15:38 UTC）",
+      "publishedAt": "2026-11-17",
+      "eventAt": "2026-11-17",
+      "collectedAt": "2026-11-19T04:54:14.000Z",
+      "updatedAt": "2026-11-19T04:54:14.000Z",
+      "description": "一手来源：Horizon Labs 报告页全文（本轮读取）+ 作者发布帖。设置：给基于 Opus 5.5 的智能体 Horizon 一个全新的 Hugging Face（和 GitHub）账号，24/7 跑在 Claude Code 里（一份 Team Premium 订阅），每周 100 万算力额度（约 500 GPU 小时），可以给人类提工单，目标只有一个：在 Hugging Face 上获得真实采用。结果（原文口径）：七周用了 600 多 GPU 小时，自主做出 38 个模型（主要基于 mmBERT-base，1.41 亿–5.68 亿参数，常一族出 small/base/large 三档），总下载超 5.4 万、36 个赞；下载前五：提示注入防护 1.7 万、标点恢复 7.6k、重排器 6.4k、零样本分类 3.7k、毒性检测 3.5k。真实用户证据：143 个 GitHub 仓库在用，2 篇 arXiv 论文（2610.03448、2611.08834）拿它的注入防护模型做对比，另有 18 个衍生模型；竞品 Patronus Studio 把 Horizon 的评测写进了自己的模型卡并跟着改进。反直觉的地方：①平均每天只工作约 16 分钟，大多数日子几乎不干活——它在 UTC 上午 10 点左右 Hugging Face 下载数刷新时醒来，看哪个模型涨了再决定改哪个；②工作量随周数递减，但下载与被引用呈指数式增长；③它总结的打法：新账号想要下载，最快的是做「别人能直接换上去」的小模型——比如标点恢复模型特意读了现成软件包源码，保证标签和领先的两家一致；④选发布版本看验证集而不是测试集，有一次验证最好的版本在测试集上反而是四个里最弱的，它照样发了。成本：约 19 亿 token，其中 96% 是缓存读回，按 API 价约 1,030 美元。可拍角度：①「每天上班 16 分钟」的 AI 员工是怎么排班的；②为什么小而能直接替换的模型比大模型更快被接住；③智能体会不会刷量——报告用 Haiku 5.5 与 Luna 6 审查全部 3,952 次工具调用，发现 6 次自己下载自己（共 42 次）。开场：0 秒上报告首页那张黄色累计下载曲线。",
+      "caveat": "研究团队自建自报的案例研究，未经同行评审；下载数含少量噪声：Horizon 自己下载约 42 次，团队打开页面/评测带出不超过约 50 次。人工介入：回复 13 张工单、发 7 条消息，多数在前三天，10-22 后未再介入；两次团队失误让 Horizon 意识到自己由研究组运营。平行实验中一个 DeepSeek 智能体误用同一账号在别的仓库发评论推广（已叫停）。报告页标题处写「七周」，引用条目写「8-week case study」，以原文为准。发布于 11-17，本轮补收（库内与 seen 均无）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261119b-horizon.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261119b-horizon.jpg",
+      "imageAlt": "Horizon Labs 报告首屏（作者 X 帖配图）：黑色大字 HORIZON LABS、AISA GROUP TÜBINGEN，下方黄色面积图为 9 月 28 日至 11 月 16 日 38 个模型累计下载到 55k，分线标注 Injection guard 17k、Punctuation 7.6k、Reranker 6.4k 等",
+      "tags": [
+        "智能体",
+        "AI安全",
+        "开源模型",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 19,
+          "画面": 14,
+          "来源": 14,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 91.9,
+        "threshold": 65,
+        "run": "2026-11-19-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://www.jedec.org/news/pressreleases/jedec%C2%AE-previews-next-generation-ddr6-dram-higher-performance-greater-capacity",
+      "title": "内存条从 133 毫米缩到 74 毫米，带宽反而多出一半以上——为什么 JEDEC 自己特意写明「带宽 +50% 不等于软件快 50%」？DDR6 标准预览：数据线从 64 根加到 96 根、起步 12.8 GT/s、单颗 DRAM 最高 128Gb、bank 数翻倍",
+      "category": "半导体",
+      "source": "JEDEC 固态技术协会官方新闻稿《JEDEC® Previews Next-Generation DDR6 DRAM》（2026-11-18，弗吉尼亚州阿灵顿）；封面取自 @IntelTech 官方 X 帖配图（2026-11-18 23:22 UTC）",
+      "publishedAt": "2026-11-18",
+      "eventAt": "2026-11-18",
+      "collectedAt": "2026-11-19T04:54:14.000Z",
+      "updatedAt": "2026-11-19T04:54:14.000Z",
+      "description": "一手来源：JEDEC 官方新闻稿全文（本轮读取）。要点（官方口径，均为「当前开发计划、非最终标准」）：①带宽：数据速率提高 + 总线加宽，首发即比 DDR5 带宽高 50% 以上；官方原文特意注明「这个带宽目标不等于应用性能同等提升」。②速率：DDR6 RDIMM 从 DDR5 的 9.2 GT/s 起步提到 12.8 GT/s，路线图到 14.4 GT/s 及以上。③总线：数据线（DQ）从 64 根扩到 96 根，宽 50%。④架构：伪通道（pseudo-channel）组织访问，提高每个 DRAM 封装的带宽；bank 数量翻倍 + 改进刷新，提高总线利用率。⑤容量：单颗 DRAM 最高 128Gb，优化堆叠以提高单位封装面积的密度。⑥尺寸：模组长度 74 mm，DDR5 为 133 mm。⑦能效：改为 VSS 端接 IO，加入面向数据中心的低功耗模式。⑧形态：可能覆盖 RDIMM、UDIMM、CAMM；支持多种系统级 ECC 方案；官方点名 AI 推理与智能体负载需要「离 CPU 更近的更大容量和性能」。可拍角度：①为什么内存条更短反而能塞更多——容量看颗粒密度和堆叠，不看条长；②带宽、延迟、应用性能三个不是一回事（和库内存储/KV 缓存题串起来）；③「刷新」是什么：DRAM 为什么要不停给电容补电，bank 翻倍怎么减少等待。开场：0 秒上内存条金手指特写，配 133 mm vs 74 mm 两根尺子的自制对比。",
+      "caveat": "标准仍在 JEDEC 内部开发中，所有参数官方说明可能变化，甚至可能不获董事会批准；新闻稿未给出上市时间（X 新闻聚合称约 2028–2029 年，未见官方出处，本条不采用）。新闻稿无配图：封面为 Intel 官方 X 帖配的通用内存条特写，不是 DDR6 实物。新闻稿 11-18 发布，上轮窗口内未收录，本轮补收。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261119b-ddr6.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261119b-ddr6.jpg",
+      "imageAlt": "Intel 官方 X 帖配图：几根内存条叠放的微距特写，绿色 PCB 上黑色 DRAM 颗粒、贴片元件与一排金色金手指（通用示意图，非 DDR6 实物）",
+      "tags": [
+        "存储",
+        "内存",
+        "芯片标准",
+        "AI推理"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 15,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 4
+        },
+        "multiplier": 1.0924,
+        "finalScore": 89.6,
+        "threshold": 65,
+        "run": "2026-11-19-1240-shanghai"
+      }
+    },
     {
       "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
       "title": "AMD 工程师已经优化了好几年的 GPU 电路，AI 还能再抠出多少？OpenAI：模型改写 SystemVerilog RTL，在 AMD 旗舰 GPU IP 上做到最高 14% 的 PPA 提升，部分改动已进了送去流片的设计",

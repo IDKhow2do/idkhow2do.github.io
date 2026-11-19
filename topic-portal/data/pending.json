@@ -2,6 +2,114 @@
   "schemaVersion": 1,
   "items": [
     {
+      "kind": "news",
+      "baseScore": 70,
+      "multiplier": 1.0566,
+      "score": 74.0,
+      "reason": "分数达上墙线但与库内 11-13 Edge0-145B 同角度（MoE 专家放内存、按需搬上显卡），钩子重复，待用户判断",
+      "run": "2026-11-19-1240-shanghai",
+      "record": {
+        "url": "https://github.com/simplexai-labs/linger",
+        "title": "一个 2 比特也要 39GB 的 1250 亿参数模型，怎么在 12GB 的 RTX 3060 上每秒写 45 个词？开源本地智能体 Linger：PolyStrata 引擎把最常用的「专家」留在显卡、偶尔用的放 64GB 内存、几乎不用的丢在 SSD",
+        "category": "AI",
+        "source": "GitHub simplexai-labs/linger README（本轮读取）+ 团队成员 @zhangboknight X 发布帖（2026-11-19 02:09 UTC，61 秒视频）",
+        "publishedAt": "2026-11-19",
+        "eventAt": "2026-11-19",
+        "collectedAt": "2026-11-19T04:54:14.000Z",
+        "updatedAt": "2026-11-19T04:54:14.000Z",
+        "description": "一手来源：项目 README 与发布帖。要点（项目自报）：Linger 是跑在自己电脑上的开源个人智能体；推理引擎 PolyStrata（基于开源 Strata）针对 MoE 模型，每个 token 由路由器挑几个专家，最常用的专家常驻 12GB 显卡，偶尔用的在 64GB 内存，很少用的在 SSD，内存里被频繁选中的专家会升到显卡、SSD 上被选中的会读进内存。README 速度表：Qwen3.8-Flash-Next（125B）在 RTX 3060 12GB 上 45.5 tok/s；另有安装时按显卡/内存自动挑模型的「Model Autopilot」和自定的 SimplexAI 评分。",
+        "caveat": "速度与评分均为项目方自测；README 图示写 2-bit 文件 39GB，转发帖写 3-bit 55GB，口径不一；README 表格另一行同模型在 12GB+32GB 配置下仅 21.3 tok/s、首 token 约 3 分钟。许可证为自定「Linger Open Source License」，非 OSI 标准许可。与 11-13 已收 Edge0-145B 同一机制角度。",
+        "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261119b-linger.jpg",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261119b-linger.jpg",
+        "imageAlt": "Linger README 配图：上半「GPU only」39GB 模型放不进 12GB 显卡；下半「With PolyStrata」路由器把专家分到 GPU 12GB（常用）、RAM 64GB（有时用）、SSD（很少用）三层",
+        "tags": [
+          "AI推理",
+          "端侧AI",
+          "MoE",
+          "AI成本"
+        ],
+        "tagSource": "provided",
+        "curation": {
+          "baseScore": 70,
+          "baseBreakdown": {
+            "主线": 20,
+            "钩子": 12,
+            "画面": 10,
+            "来源": 12,
+            "时效": 10,
+            "大陆": 5,
+            "新颖": 1
+          },
+          "multiplier": 1.0566,
+          "finalScore": 74.0,
+          "threshold": 65,
+          "run": "2026-11-19-1240-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 58,
+      "multiplier": 1.025,
+      "score": 59.4,
+      "reason": "本轮达待定区间",
+      "run": "2026-11-19-1240-shanghai",
+      "record": {
+        "title": "一座座甜甜圈塔做成的像素风平台跳跃游戏，作者自己打不过第 2 关，只好让 AI 自己录演示：@GlitterPixely 称用 Gemini 4 Neon 3 条提示、约 60 分钟智能体集群，写出 C++20 + WebGPU 的高斯泼溅引擎《Sugar Hop》",
+        "category": "video",
+        "styleFamily": "code_video",
+        "source": "https://x.com/GlitterPixely/status/2123235794747891968",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261119b-sugarhop.jpg",
+        "previewType": "image",
+        "description": "一手来源：@GlitterPixely（Glitter Gal）X 帖（2026-11-19 02:03 UTC，约 20 秒视频）。作者自述：Gemini 4 Neon 快速构建，C++20 + WebGPU 的 3D 高斯泼溅引擎，渲染成清晰像素风，做成 4 座粉彩烘焙塔的平台跳跃游戏；3 条提示、约 60 分钟智能体集群构建；演示由 AI 自己录制。画面：标题「SUGAR HOP · PASTEL BAKERY TOWER」，粉/紫/绿/黄甜甜圈叠成的塔、像素小兔角色、关卡与星星计数、结算页「GRAND BAKER!」。",
+        "tool": "Gemini 4 Neon 智能体集群 + C++20 + WebGPU（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者原帖；提示词与源码未公开；「高斯泼溅」为作者自述，从视频帧无法确认渲染方式。",
+        "attribution": "Glitter Gal（@GlitterPixely）",
+        "sourceAuthor": "GlitterPixely",
+        "tags": [
+          "WebGPU",
+          "高斯泼溅",
+          "游戏",
+          "AI编程"
+        ],
+        "publishedAt": "2026-11-19",
+        "collectionIds": [],
+        "collectedAt": "2026-11-19T04:54:14.000Z",
+        "updatedAt": "2026-11-19T04:54:14.000Z",
+        "verification": {
+          "checked_at": "2026-11-19T04:54:14.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为 X 视频约 4.9 秒帧：第 1 关甜甜圈塔与 HUD；本轮目视核验，非头像。",
+          "video_check": "按 1/6 时长间隔抽 6 帧目视；未完整播放。"
+        },
+        "curation": {
+          "baseScore": 58,
+          "baseBreakdown": {
+            "实体": 15,
+            "科普": 10,
+            "溯源": 10,
+            "复现": 6,
+            "风格": 9,
+            "新颖": 8
+          },
+          "multiplier": 1.025,
+          "finalScore": 59.4,
+          "threshold": 65,
+          "run": "2026-11-19-1240-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2123233514732634112/vid/avc1/1280x720/g735YuN5s49vcrLJ.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
       "kind": "visual",
       "baseScore": 60,
       "multiplier": 1.0,
@@ -9039,6 +9147,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-19T01:02:41.000Z",
+  "updatedAt": "2026-11-19T04:54:14.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
