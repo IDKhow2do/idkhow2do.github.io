@@ -1,7 +1,45 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-19T08:53:13.000Z",
+  "updatedAt": "2026-11-19T12:52:34.000Z",
   "topics": [
+    {
+      "url": "https://gf.com/news-and-events/news/boston-dynamics-and-globalfoundries-expand-robotics-collaboration/",
+      "title": "芯片厂里最先「招」机器人的，为什么不是洁净室，而是楼下那层「地下室」？格罗方德新加坡厂两只 Spot 机器狗从 4 月起在 sub-fab 走了近 900 公里、做了 9 万多次巡检，任务成功率 99%；格罗方德还将成为第一家实地测试 Atlas 人形机器人的芯片制造商，2027 年初开始",
+      "category": "半导体",
+      "source": "GlobalFoundries 官网新闻稿（Boston Dynamics 与 GlobalFoundries 联合发布，2026-11-17，Waltham, MA）",
+      "publishedAt": "2026-11-17",
+      "eventAt": "2026-11-17",
+      "collectedAt": "2026-11-19T12:52:34.000Z",
+      "updatedAt": "2026-11-19T12:52:34.000Z",
+      "description": "一手来源：GlobalFoundries（格罗方德，GF）官网新闻稿（本轮读取全文）。事件：Boston Dynamics 与 GF 扩大合作——①Spot 四足机器人部署扩展到 GF 在美国纽约州 Malta、佛蒙特州 Burlington、德国 Dresden 和新加坡的制造基地，用于「自主企业资产管理」；②GF 将成为汽车行业以外第一家开始测试 Atlas 人形机器人的客户（Atlas 早期采用者计划 + 技能开发工作坊），新闻稿称这是半导体制造领域首个此类项目。数字（原文口径）：GF 在 Burlington 部署 Spot 已超过 4 年；新加坡厂两只 Spot 自 4 月以来在 sub-fab（洁净室下方的辅助设备层）行走近 900 公里、完成 9 万多次巡检、任务成功率 99%；借助新软硬件，两周内把 875 项例行巡检转交给 Spot，并计划用其视觉检测能力把这一数字翻一倍以上。Atlas：2027 年初起在 GF 现场测试，目标是评估人形机器人用例、客户准备度与集成需求，并开始针对具体任务的早期测试和训练。GF 首席制造官 Pradip Singh 称 Spot 帮他们「从被动维修转向预测性维护」，在数千个巡检点采集数据以防停机。可拍角度：①一座晶圆厂分几层——洁净室在上，sub-fab 里是泵、气瓶柜、管路和电源，为什么巡检最先交给机器狗；②「预测性维护」：在故障前发现异常，对良率和停机意味着什么（结合用户刻蚀一线经验讲设备 PM）；③人形机器人进芯片厂要过哪些关（新闻稿只说评估用例和集成需求，未公布任务）。开场：0 秒即用官方图——黄色 Spot 站在一排气瓶前。",
+      "caveat": "厂商联合新闻稿，属自述数据；未披露 Atlas 测试的具体工厂、数量与任务（媒体 The Robot Report 亦注明未披露）。「sub-fab 是什么、为什么先巡检那里」为行业通识解释，非新闻稿原文。标题中「地下室」为通俗比喻，sub-fab 通常位于洁净室下方楼层。封面为官方新闻稿配图（Spot 在气瓶区），非 Atlas 照片。新加坡厂与用户所在地相关，但与大陆观众的直接关联较弱。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261119d-gf.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261119d-gf.jpg",
+      "imageAlt": "官方配图：黄色 Boston Dynamics Spot 四足机器人背着检测载荷，站在工厂辅助区一排贴着黄色标签的灰色气瓶旁，背景是气体管路与阀门面板",
+      "tags": [
+        "芯片制造",
+        "机器人",
+        "预测性维护",
+        "晶圆厂"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 90,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 17,
+          "画面": 15,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 96.7,
+        "threshold": 65,
+        "run": "2026-11-19-2040-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2611.23806",
       "title": "晶体管从叠 2 层改成叠 4 层，标准单元高度名义上能缩 40%，为什么做成一颗真 CPU 核只省了 12.8% 面积、还慢了 10.9%？北大集成电路学院（吴恒、黄如团队）把「4 层堆叠晶体管」从工艺、器件一路算到电路块：卡住它的是层间那些深宽比高达约 40 的超级通孔和寄生",

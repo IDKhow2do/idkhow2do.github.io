@@ -3,6 +3,68 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 61,
+      "multiplier": 1.0618,
+      "score": 64.8,
+      "reason": "本轮达待定区间",
+      "run": "2026-11-19-2040-shanghai",
+      "record": {
+        "title": "一颗弹珠接连触发 20 道机关，镜头一路跟拍，霓虹灯牌亮起时弹珠已回到起点再跑一轮：@shuang_Lsss 称用 Gemini 4 Neon「一键出片」，物理仿真、运镜和机械音效全用代码跑出、导出 59 秒 3D 短片",
+        "category": "video",
+        "styleFamily": "code_video",
+        "source": "https://x.com/shuang_Lsss/status/2123389563884519596",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261119d-marble.jpg",
+        "previewType": "image",
+        "description": "一手来源：@shuang_Lsss X 帖（2026-11-19 12:14 UTC，约 59 秒）。作者自述：Gemini 4 Neon 一键出片——一颗弹珠触发 20 道机关，镜头一路跟拍；霓虹灯牌亮起时弹珠已回到起点又跑一轮；物理仿真、运镜、机械音效全部代码生成，导出 59 秒 3D 短片。画面：深蓝舞台中的连锁机关（螺旋滑道、多米诺、弹簧管、发光轨道），背景字「MAKE THE IMPOSSIBLE POSSIBLE」。可拍角度：连锁机关（Rube Goldberg）作为因果链/流程讲解的视觉隐喻；新模型发布潮里的代码视频能力测试。",
+        "tool": "Gemini 4 Neon（作者自述）；渲染/物理库未说明",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者原帖；未附提示词、代码或工程文件，许可证未知；「物理仿真全用代码」为作者自述，未核实是否真实刚体模拟。",
+        "attribution": "@shuang_Lsss",
+        "sourceAuthor": "shuang_Lsss",
+        "tags": [
+          "代码视频",
+          "物理动效",
+          "连锁机关",
+          "Gemini 4 Neon"
+        ],
+        "publishedAt": "2026-11-19",
+        "collectionIds": [],
+        "collectedAt": "2026-11-19T12:52:34.000Z",
+        "updatedAt": "2026-11-19T12:52:34.000Z",
+        "verification": {
+          "checked_at": "2026-11-19T12:52:34.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为 X 视频约 44.6 秒帧：全景连锁机关框架，霓虹蓝色发光轨道、弹簧管与背景字「MAKE THE IMPOSSIBLE POSSIBLE」；另看 6 帧，本轮目视核验，非头像。",
+          "video_check": "按 1/6 时长间隔抽 6 帧目视；未听音频。"
+        },
+        "curation": {
+          "baseScore": 61,
+          "baseBreakdown": {
+            "实体": 20,
+            "科普": 13,
+            "溯源": 7,
+            "复现": 4,
+            "风格": 9,
+            "新颖": 8
+          },
+          "multiplier": 1.0618,
+          "finalScore": 64.8,
+          "threshold": 65,
+          "run": "2026-11-19-2040-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2123389354660016128/vid/avc1/1280x720/-l-UNFYVR94jZTXz.mp4?tag=14",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 58,
       "multiplier": 1.2748,
       "score": 73.9,
@@ -9210,6 +9272,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-19T08:53:13.000Z",
+  "updatedAt": "2026-11-19T12:52:34.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
