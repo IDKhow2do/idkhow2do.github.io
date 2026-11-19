@@ -1,7 +1,234 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-19T04:54:14.000Z",
+  "updatedAt": "2026-11-19T08:53:13.000Z",
   "topics": [
+    {
+      "url": "https://arxiv.org/abs/2611.23806",
+      "title": "晶体管从叠 2 层改成叠 4 层，标准单元高度名义上能缩 40%，为什么做成一颗真 CPU 核只省了 12.8% 面积、还慢了 10.9%？北大集成电路学院（吴恒、黄如团队）把「4 层堆叠晶体管」从工艺、器件一路算到电路块：卡住它的是层间那些深宽比高达约 40 的超级通孔和寄生",
+      "category": "半导体",
+      "source": "arXiv 2611.23806《Breaking the Myth of Four-Tier Stacked Transistors for Logic: an Investigation from Process to Device and Block-Level PPA》（2026-11-18 提交，Jianxiang Jin 等 16 位作者，通讯作者吴恒，北京大学集成电路学院，含黄如）",
+      "publishedAt": "2026-11-18",
+      "eventAt": "2026-11-18",
+      "collectedAt": "2026-11-19T08:53:13.000Z",
+      "updatedAt": "2026-11-19T08:53:13.000Z",
+      "description": "一手来源：arXiv 摘要页 + 论文 PDF 全文（4 页，本轮读取）。背景：尺寸微缩变慢后，业界把晶体管「叠起来」——GAA 是 1 层，CFET/FFET 是 2 层，下一步自然想到 4 层。论文做了什么：提出一套双面 4 层堆叠工艺 CFFET（Flipped CFET-to-CFET）：4 层有源区先一起图形化，在晶圆正面做一个共栅 CFET 和布线，翻转晶圆、背面减薄后，把覆盖背面鳍的 STI 刻开，再做一个背面 CFET。作者说明这样比「整体一口气叠 4 层」好做——单片 4 层共栅高度可达约 370 nm，假栅、源漏外延、高 k 金属栅都很难做；但层间垂直连接仍要靠 MOL「超级通孔」和 VHV 走线，需要在深宽比最高约 40 的结构里做高选择比介质刻蚀，论文明确把它列为关键工艺难点。然后在 2Å 节点设计规则下搭了从标准单元、局部互连、环形振荡器到物理实现的 DTCO 流程，与 2 层的 FFET 对比。反直觉结果（原文口径）：①三种供电配置里最好的「Symmetric Power」环振频率仍比 FFET 低 11.2%，原因是复杂的 MOL 寄生；②在 Ibex RISC-V 核上，CFFET 面积只减少 12.8%（远低于名义上 40% 的单元高度缩减），同功耗下慢 10.9%；③他们发明了「俄罗斯方块式」单元拼接，允许非矩形单元，在 1 位 ALU 上找回 7.4% 面积；④结论：简单地垂直叠 4 层不足以保证 PPA 收益。可拍角度：①「叠楼」为什么不等于「省地」——电梯井（通孔）和管线（寄生）吃掉了收益；②深宽比 40 的介质刻蚀是什么难度（刻蚀一线经验正好能讲）；③俄罗斯方块式拼单元。开场：0 秒上论文 Fig.1 的 1 层→2 层→4 层堆叠路线图与 Fig.2 工艺流程。",
+      "caveat": "arXiv 预印本（4 页会议体例），未注明是否已被会议接收，未经同行评审核实；结果来自 TCAD/紧凑模型与设计流程仿真，作者说明所有 NFET/PFET 不论在哪一层都假设器件特性相同，并非流片实测。「2Å 节点」是论文设定的设计规则。深宽比约 40 与 370 nm 为论文原文数字。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261119c-cfet4tier.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261119c-cfet4tier.jpg",
+      "imageAlt": "论文 Fig.1 与 Fig.2 截图：左为 1 层 GAA、2 层 CFET/FFET 到「4 层或更多？」的堆叠路线图及工艺/单元设计/布线/SRAM 挑战清单；右为 CFFET 工艺流程 3D 示意（正面 CFET、晶圆键合翻转减薄、背面 CFET 与超级通孔）",
+      "tags": [
+        "芯片制造",
+        "先进制程",
+        "刻蚀",
+        "晶体管堆叠",
+        "国产研究"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 96,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 19,
+          "画面": 13,
+          "来源": 14,
+          "时效": 10,
+          "大陆": 10,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-11-19-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.24073",
+      "title": "代码写得越多、往游戏里塞的 3D 模型越多，为什么 AI 做出来的 3D 网页游戏反而越不招人喜欢？复旦 / 上交等的 3D GameDev Arena：108 个从零开发的游戏任务，最长一局调了 14,407 次大模型、烧掉 21.3 亿 token；玩家最爱的两组代码最短，功能分打平的两组，玩家偏好能差两倍多",
+      "category": "AI",
+      "source": "arXiv 2611.24073《3D GameDev Arena: Benchmarking Coding Agents That Plan, Build, and Playtest extreme Long-Horizon Browser Games》（2026-11-18 提交；Bizhe Bai、Jiliang Jian、Yuqing Yan、Tao Chen、Ying Wen；复旦大学、上海创智学院、西安交通大学、上海交通大学）+ 公开竞技场 baibizhe.github.io/gamearena",
+      "publishedAt": "2026-11-18",
+      "eventAt": "2026-11-18",
+      "collectedAt": "2026-11-19T08:53:13.000Z",
+      "updatedAt": "2026-11-19T08:53:13.000Z",
+      "description": "一手来源：arXiv 摘要页 + HTML 全文（本轮读取）。是什么：一个「超长程」基准——只给文字需求和 UI/UX 参考图，让编码智能体按「规划—实现—测试—修复」全自动从空文件夹做出一个完整的 3D 浏览器游戏。108 个任务、14 种类型；平均每局约 1,000 次大模型调用，最长一局 14,407 次调用、21.3 亿 token、608 个素材。评测三层：代码级功能验收、智能体录屏试玩打分（3D 表现与可玩性）、公开竞技场里真人盲选两两对比（Bradley–Terry）。参评四组：Codex CLI 里的 GPT-6.1 Sol 和 GPT-6 Astra、Zcode 里的 GLM-5.3、Kimi CLI 里的 Kimi K3。反直觉结论（论文 Takeaway 原文口径）：①写更多代码不会做出更好的游戏——玩家更喜欢的两组代码最短，中位数不到 3,000 行，另两组多写 3–6 倍；②几乎所有输入 token 都是每次调工具时重读的缓存上下文，总量暴涨往往说明卡住了而不是在进步；③多花 token 只有花在「实时试玩测试」上才换来玩家偏好，静态单元测试只抬功能分；④塞更多 3D 物体不等于更好——Kimi K3 平均每局下载 13 个模型、60 个基础体，人类偏好却在下游；⑤把 AI 生成的 3D 模型真正接进可玩的游戏仍是瓶颈，只有 GPT-6 Astra 在少数成品里做到；⑥最好的一组功能分也只有 64.7/100，两组功能分打平却在玩家偏好上差两倍以上；⑦菜单和关卡切换做得好，实时 3D 操控手感明显更差（86% 的游戏 Flow 分高于 Control 分）。可拍角度：①「能跑」和「好玩」为什么是两回事；②token 账单里的大头其实是「反复重读」；③给想用 AI 做 three.js 游戏的人：先做试玩回路，别堆素材。开场：0 秒上论文里智能体试玩录屏截图（跑酷类关卡）。",
+      "caveat": "arXiv 预印本，作者自称「初步发现」；仅评测 4 组「工具+模型」配置，每个模型只配一种工具，无法拆开工具与模型各自的作用；真人偏好来自其公开竞技场投票，样本规模本轮未核实。论文 HTML 内竞技场链接写作 www.baibizhe.github.io/gamearena/（带 www 无法访问），实际可访问地址为 https://baibizhe.github.io/gamearena/。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261119c-gamearena.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261119c-gamearena.jpg",
+      "imageAlt": "论文图 4 截图：智能体做出的 3D 网页跑酷游戏画面，铁轨上的卡通角色、两侧楼房，顶部提示「Jump the barrier」与左上分数",
+      "tags": [
+        "智能体",
+        "AI评测",
+        "游戏开发",
+        "Three.js",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 14,
+          "来源": 13,
+          "时效": 10,
+          "大陆": 8,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 91.9,
+        "threshold": 65,
+        "run": "2026-11-19-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.24591",
+      "title": "电压压得太低，单个逻辑门会「算错」，为什么整块电路反而没那么容易坏？MIT（Isaac Chuang、Neil Gershenfeld、Ila Fiete 等）提出一条统计电路定律：电路失效要一整「簇」门同时出错，电压越低、需要同时出错的簇越大——「亚数字」低压逻辑可能是给 AI 省电的近路",
+      "category": "半导体",
+      "source": "arXiv 2611.24591《Reliable arithmetic circuits using less reliable (sub-digital) logic》（2026-11-18 提交，cs.AR；Trevor McCourt、Ila Fiete、Neil Gershenfeld、Isaac L. Chuang；MIT 电子工程与计算机系、脑与认知科学系、比特与原子中心、物理系）",
+      "publishedAt": "2026-11-18",
+      "eventAt": "2026-11-18",
+      "collectedAt": "2026-11-19T08:53:13.000Z",
+      "updatedAt": "2026-11-19T08:53:13.000Z",
+      "description": "一手来源：arXiv 摘要页 + PDF 首页与图注（本轮读取）。传统认知：CMOS 逻辑门在超低电压下会频繁发生「静态失效」（输出卡在错误电平），所以电压不能一直往下降——这是降功耗的一道硬墙。论文的说法：他们发现门级失效概率和电路级失效概率之间存在一条普适的幂律；电路要坏，不是某一个门坏就行，而是需要一整簇门同时崩溃；而电压越低，所需的簇越大，于是「亚数字（sub-digital）」低压逻辑对静态失效表现出出人意料的内在韧性。作者为此发展了超越传统电压裕量分析的静态失效量化工具，并据此认为亚数字处理器可能是大幅降低 AI 能耗的近期可行方案。论文图示：标准 CMOS NAND 门（两个并联 PMOS 上拉、两个串联 NMOS 下拉）及其失效从输入空间边界开始的「失效曲面」；补充材料的幂律拟合覆盖从不到 100 个 NAND 门的 8 位行波进位加法器到更大电路的蒙特卡洛数据。可拍角度：①「零件不可靠、整体可靠」——冗余与集体效应的直觉；②为什么降电压是省电最狠的一招（动态功耗随电压平方下降，属通识，需另引来源）；③和库内「AI 模型越大越不怕芯片算错」放一起讲容错计算。开场：0 秒上论文 NAND 门电路图与失效曲面。",
+      "caveat": "arXiv 预印本，未经同行评审；结论基于理论推导与蒙特卡洛仿真，摘要未给出实测芯片或具体节能倍数，「可能是近期可行方案」为作者判断。只讨论静态失效，动态/时序失效是否同样成立本轮未核。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261119c-subdigital.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261119c-subdigital.jpg",
+      "imageAlt": "论文图 3 截图：(a) 标准 CMOS NAND 门电路图；(b) 蓝红两色的三维失效曲面，标注「failure initiates along seam」；(c)(d)(e) 失效概率随电压与上拉强度变化的曲线",
+      "tags": [
+        "芯片误差",
+        "低功耗",
+        "AI能耗",
+        "电路设计"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 18,
+          "画面": 10,
+          "来源": 14,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 4
+        },
+        "multiplier": 1.0743,
+        "finalScore": 88.1,
+        "threshold": 65,
+        "run": "2026-11-19-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.23375",
+      "title": "让 AI 改一处代码再改回去，来回一圈什么都没变，为什么照样烧掉一大笔 token？多伦多大学 Aspuru-Guzik 用热力学给编程智能体记账：成功的一次运行里约 80% 的 token 是「热」——那些调用结束后改动原地不动；「编码」比「撤销编码」贵 1.1–1.5 倍，测试套件就是那只不完美的麦克斯韦妖",
+      "category": "AI",
+      "source": "arXiv 2611.23375《Where the Tokens Go: Heat, Entropy and Error in Agentic Coding》（2026-11-17 提交，cs.AI；Alán Aspuru-Guzik、Varinia Bernales；多伦多大学计算机系与化学系、Acceleration Consortium、Vector Institute、NVIDIA Toronto）",
+      "publishedAt": "2026-11-17",
+      "eventAt": "2026-11-17",
+      "collectedAt": "2026-11-19T08:53:13.000Z",
+      "updatedAt": "2026-11-19T08:53:13.000Z",
+      "description": "一手来源：arXiv 摘要页 + PDF/HTML 全文（本轮读取）。出发点：编程智能体按 token 计费，但软件工程从没回答过「一个 token 到底买到了什么」。做法：提出「软件热力学」——把智能体生成的 token 记为成本，分成「功」和「热」；测试套件扮演软件版麦克斯韦妖，判定每一次改动放不放行。实验模仿单分子拉开再折叠的实验：让智能体对代码仓库做一个改动（coding），再撤销（uncoding），循环很多次，并统计每次模型调用的 token；每个方向都从存好的参考代码树出发，所以一圈回来改动回到原点。结果（原文口径）：①重复循环的成本波动定义了「软件温度」，它随模型采样温度上升而上升；②成功运行中约 80% 的 token 产生于「调用后改动仍停在原处」的调用，作者称之为热；③仿照 Jarzynski 等式估算，一次改动的「自由能」只占成功运行平均成本的 14%–22%；④编码比撤销贵 1.1–1.5 倍；⑤这只妖并不完美：测试结果会随环境变，放过坏改动的测试套件本身就有 token 代价。论文实验涉及 Claude Code、Codex 与 ZCode 等编程智能体。可拍角度：①你的 token 账单 80% 是「热」——智能体在原地打转；②麦克斯韦妖、Szilard 引擎这些物理老概念怎么搬到 AI 账单上；③给用户自己：为什么写好测试能省钱。开场：0 秒上论文里代码状态在「势阱」间跳转的地图图。",
+      "caveat": "arXiv 预印本，未经同行评审；理论为类比框架，作者称「可能」带来分析与优化编程智能体的新工具。80%、14–22%、1.1–1.5 倍均为特定任务与仓库上的测量，能否推广到一般使用本轮未核。各实验具体用了哪些模型与次数本轮未逐一核对。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261119c-tokenheat.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261119c-tokenheat.jpg",
+      "imageAlt": "论文图 6 截图：四幅灰褐色「访问势」热图，红色折线连接代码仓库状态在几个势阱之间的跳转路径",
+      "tags": [
+        "智能体",
+        "AI成本",
+        "物理类比"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 80,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 9,
+          "来源": 14,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 84.5,
+        "threshold": 65,
+        "run": "2026-11-19-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://investor.kns.com/2026-11-18-Kulicke-Soffa-Accelerates-Industry-Shift-to-Panel-Level-Capability-for-AI-Applications",
+      "title": "把 AI 芯片「焊」到基板上，为什么连助焊剂都不用了，还要从圆晶圆换成方面板？新加坡 K&S（库力索法）发出业界首批面板级无助焊剂热压键合机 APTURA WSX，交付台湾两家大客户：180 毫米键合头，用等离子加甲酸把金属表面的氧化层「还原」掉",
+      "category": "半导体",
+      "source": "Kulicke & Soffa 官方新闻稿（2026-11-18，新加坡，PRNewswire，investor.kns.com）",
+      "publishedAt": "2026-11-18",
+      "eventAt": "2026-11-18",
+      "collectedAt": "2026-11-19T08:53:13.000Z",
+      "updatedAt": "2026-11-19T08:53:13.000Z",
+      "description": "一手来源：K&S 投资者关系官网新闻稿（本轮读取）。事件：K&S 宣布向台湾两家不同的主要客户交付业界首批用于基板级封装的无助焊剂热压键合（FTC）系统 APTURA WSX，把它已在细间距「芯片上晶圆（chip on wafer）」量产中用的 FTC 技术，扩展到更大幅面的「芯片上面板（chip on panel）」工艺，面向 AI 与高性能计算。要点（原文口径）：①支持中介层贴基板、中介层贴面板/平台的组装；②超大 180 mm 键合头，瞄准业界最大的 AI 封装；③「双重无助焊剂」技术：等离子与甲酸结合来还原氧化物，公司称已在大批量生产中验证；④高管原话：AI 与 HPC 需要更大的芯片、更大的封装，并转向面板级格式。可拍角度：①热压键合是怎么把芯片「压」上去的，为什么要先把铜/焊料表面的氧化层去掉；②从圆晶圆到方面板——AI 芯片封装越做越大，圆片边角浪费的问题（需另找一手资料佐证）；③和库内混合键合条目串成「芯片怎么粘在一起」系列。开场：0 秒可用 K&S 产品示意或自制「圆片 vs 方板」对比动画。",
+      "caveat": "官方新闻稿，属厂商自述的「业界首个」；未披露客户名称、产能、良率或价格。新闻稿正文未解释为何不用助焊剂的工艺原因（残留、清洗等属行业通识，拍摄需另引来源）；「圆片换方板省面积」亦非本稿内容。封面为 X 账号 @skylabintel 根据新闻稿做的要点卡片（非官方图、非设备实拍），官方稿未附可用产品图。新闻稿引用的 Yole 面板级封装年复合增长率预测为第三方预测，未写入标题。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261119c-kns-aptura.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261119c-kns-aptura.jpg",
+      "imageAlt": "第三方 @skylabintel 要点卡片：「Fluxless bonding scales to panels」，三栏写 2 major Taiwan customers、180 MM ultra-large bondhead、FLUXLESS plasma + formic acid",
+      "tags": [
+        "先进封装",
+        "芯片制造",
+        "键合"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 79,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 13,
+          "画面": 7,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 4
+        },
+        "multiplier": 1.0743,
+        "finalScore": 84.9,
+        "threshold": 65,
+        "run": "2026-11-19-1640-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.24844",
+      "title": "训练时故意不教国际象棋模型「被将军该怎么应」，为什么它照样把合法应将排得几乎和学过的一样好？布达佩斯技术经济大学：把某项技能的数据藏起来，模型在其余数据上的「整体进步」会替它补上——而且模型越强，事后补回这项技能需要的数据越少",
+      "category": "AI",
+      "source": "arXiv 2611.24844《General progress substitutes for specific training data in language models》（2026-11-18 提交，cs.CL；Mark Marosi、Peter Antal，布达佩斯技术经济大学 BME）",
+      "publishedAt": "2026-11-18",
+      "eventAt": "2026-11-18",
+      "collectedAt": "2026-11-19T08:53:13.000Z",
+      "updatedAt": "2026-11-19T08:53:13.000Z",
+      "description": "一手来源：arXiv 摘要页 + PDF 前几页（本轮读取）。问题：开发者常靠「过滤训练数据」来不让模型学会可能被滥用的能力，但这能拖多久、事后要多少数据才能学回来，一直不清楚。做法：在国际象棋、黑白棋（Othello）、分子字符串、括号语言和网页文本的模型里，把某一项技能的训练信号拿掉（论文图示的技能包括：被将军、被迫停手、闭合环、括号闭合、主谓一致），模型规模从约 76 万到 70 亿参数。结果（原文口径）：①模型在其余数据上的整体进步会「替代」被拿掉的数据；②大模型上这项技能被推迟多久，可以用小模型预测；③从没被明确训练「应将」的象棋模型，对合法应将着法的排序几乎和训练过的一样好；④之后再喂被藏起来的数据，模型只需从零训练所需数据的一小部分就学会，而且这个比例随模型进步而下降；同等难度的对照规则学得慢得多；⑤一个 70 亿参数模型训练文本里被拿掉的一门编程语言，也以同样方式被「找回」。作者结论：数据过滤只能推迟能力，模型越强，重新获得它所需的数据越少。可拍角度：①这正是「涌现」话题的一个实证切口——没教过的规则，从别的规则里长出来；②AI 安全靠「不给数据」为什么不够；③象棋「应将」是很好的 0 秒画面。开场：0 秒上论文图 1 里五种被藏技能的小示意（棋盘、括号、分子串）。",
+      "caveat": "arXiv 预印本，未经同行评审；实验多在小规模专用模型上完成，最大 70 亿参数，能否外推到前沿大模型作者未断言。「几乎一样好」为摘要措辞，具体差距需看正文图表。本条与 AI 安全政策相关，拍摄时只讲机制，不做政策站队。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261119c-withheld.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261119c-withheld.jpg",
+      "imageAlt": "论文图 1a 截图：五个小方框分别是被将军的棋盘、黑白棋「被迫停手」、分子串闭环、括号闭合、主谓一致，下方流程图把目标按比例 f 稀释后送入 0.76M–7B 的 Transformer，右侧是「能力 vs 损失」曲线",
+      "tags": [
+        "AI训练",
+        "AI安全",
+        "涌现"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 75,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 17,
+          "画面": 8,
+          "来源": 13,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 79.2,
+        "threshold": 65,
+        "run": "2026-11-19-1640-shanghai"
+      }
+    },
     {
       "url": "https://arxiv.org/abs/2611.23855",
       "title": "15 台机器人在仿真里全部过关，搬到真赛道上为什么一台都过不去？MIT 的 RoboBuilder 让编码智能体自己挑零件、写 CAD、编程造机器人，亲手拼了 135 台：仿真通过的只有 66% 在现实中站得住，给智能体看一段自己翻车的视频，72% 的失败就被它改好了",

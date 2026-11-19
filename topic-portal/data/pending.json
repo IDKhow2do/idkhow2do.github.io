@@ -2,6 +2,69 @@
   "schemaVersion": 1,
   "items": [
     {
+      "kind": "visual",
+      "baseScore": 58,
+      "multiplier": 1.2748,
+      "score": 73.9,
+      "reason": "分数达上墙线但与库内 10-22 已收 Project Endurance 为同一款游戏（同一在线地址），本条只是新增的 ECHO 模式，新颖度不足以单独上墙",
+      "run": "2026-11-19-1640-shanghai",
+      "record": {
+        "title": "如果赛道上的车流就是你自己？Anderson Mancini 的 three.js WebGPU 赛车游戏 Endurance Racing 新增 ECHO 模式：每跑完一圈，那一圈的你就变成一辆全息幽灵车留在赛道上，五圈里干净超过它，否则罚 3 秒",
+        "category": "frontend",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/Andersonmancini/status/2123330687830724982",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261119c-echo.jpg",
+        "previewType": "image",
+        "description": "一手来源：Anderson Mancini（@Andersonmancini）X 帖（2026-11-19 08:21 UTC，约 15 秒视频）。作者自述：在 ECHO 里，你每跑完一圈，那一圈就以全息车的形式回来；干净超过它，否则 +3 秒；五圈，你对抗过去的自己。免费游玩，three.js + WebGPU + TSL。画面：夜间赛道第一人称追尾视角，前车拖着紫色光带，右下速度表（185–280），结尾卡「ECHO / YOUR PAST LAPS ARE THE TRAFFIC / NEW DRIVING MODE ON ENDURANCE RACING」。可拍角度：「幽灵车」其实就是录下每帧位置再回放——游戏里的回放系统原理。",
+        "tool": "three.js + WebGPU + TSL（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者原帖与在线游戏；未见源码与许可证。与库内 Project Endurance（webgpu.com showcase）为同一游戏。",
+        "attribution": "Anderson Mancini（@Andersonmancini）",
+        "sourceAuthor": "Andersonmancini",
+        "tags": [
+          "Three.js",
+          "WebGPU",
+          "TSL",
+          "网页赛车"
+        ],
+        "publishedAt": "2026-11-19",
+        "collectionIds": [],
+        "collectedAt": "2026-11-19T08:53:13.000Z",
+        "updatedAt": "2026-11-19T08:53:13.000Z",
+        "verification": {
+          "checked_at": "2026-11-19T08:53:13.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为 X 视频约 1.2 秒帧：夜间赛道追尾视角，前方赛车拖出两道紫色光带，右下速度 225；另看 6 帧，本轮目视核验，非头像。",
+          "video_check": "按 1/6 时长间隔抽 6 帧目视；未实际游玩。"
+        },
+        "curation": {
+          "baseScore": 58,
+          "baseBreakdown": {
+            "实体": 16,
+            "科普": 10,
+            "溯源": 12,
+            "复现": 5,
+            "风格": 10,
+            "新颖": 5
+          },
+          "multiplier": 1.2748,
+          "finalScore": 73.9,
+          "threshold": 65,
+          "run": "2026-11-19-1640-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2123063330684182528/vid/avc1/1920x1080/qLn9KcEBuj0OWYO6.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "demoUrl": "https://endurance-racing.vercel.app/"
+      }
+    },
+    {
       "kind": "news",
       "baseScore": 70,
       "multiplier": 1.0566,
@@ -9147,6 +9210,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-19T04:54:14.000Z",
+  "updatedAt": "2026-11-19T08:53:13.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
