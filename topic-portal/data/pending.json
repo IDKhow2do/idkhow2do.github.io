@@ -3,6 +3,129 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 60,
+      "multiplier": 1.0,
+      "score": 60.0,
+      "reason": "本轮达待定区间",
+      "run": "2026-11-19-0840-shanghai",
+      "record": {
+        "title": "两种金属一头热一头冷，电路里就自己有了电流：日本 FPGA 工程师自制的电磁场模拟器「EMDynaSandbox」新增塞贝克效应场景，温差、电压、电流和磁场方向都实时画出来",
+        "category": "其他",
+        "styleFamily": "other",
+        "source": "https://x.com/PassCrest/status/2123060450082644174",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261119a-seebeck.jpg",
+        "previewType": "image",
+        "description": "一手来源：@PassCrest X 帖（2026-11-18 14:27 UTC，约 22 秒录屏）。作者（简介：以电子/FPGA 设计为本职的工程师）自述：开发中的电磁场模拟器 EMDynaSandbox 新增塞贝克效应场景——不同温度的材料接合，温差产生电动势；「看起来有点朴素，但这个也能在 EMDynaSandbox 里模拟」。录屏画面：标题 Current from temperature difference (Thermocouple / Seebeck effect)，三维电路回路一端热（红）一端冷（蓝），回路周围有磁力线箭头，左侧多条随时间变化的曲线、右侧参数面板。可拍角度：热电偶为什么能测温；和半导体温差发电/制冷片的联系。",
+        "tool": "自研模拟器 EMDynaSandbox（作者自述，开发中；平台与技术栈未说明）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者原帖；无链接、源码与许可证；未说明是否为网页应用。",
+        "attribution": "@PassCrest",
+        "sourceAuthor": "PassCrest",
+        "tags": [
+          "物理模拟",
+          "电磁学",
+          "科普工具"
+        ],
+        "publishedAt": "2026-11-18",
+        "collectionIds": [],
+        "collectedAt": "2026-11-19T01:02:41.000Z",
+        "updatedAt": "2026-11-19T01:02:41.000Z",
+        "verification": {
+          "checked_at": "2026-11-19T01:02:41.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为 X 视频约 1 秒帧：EMDynaSandbox 界面、红蓝两端的三维回路与磁力线、左侧曲线面板，本轮目视核验，非头像。",
+          "video_check": "按 1/6 时长间隔抽 6 帧目视；未完整播放。"
+        },
+        "curation": {
+          "baseScore": 60,
+          "baseBreakdown": {
+            "实体": 14,
+            "科普": 19,
+            "溯源": 10,
+            "复现": 3,
+            "风格": 5,
+            "新颖": 9
+          },
+          "multiplier": 1.0,
+          "finalScore": 60.0,
+          "threshold": 65,
+          "run": "2026-11-19-0840-shanghai"
+        },
+        "is3d": false,
+        "videoUrl": "https://video.twimg.com/amplify_video/2123060417979408384/vid/avc1/1916x812/iEtdD0YNjQ2A25s1.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 71,
+      "multiplier": 1.179,
+      "score": 83.7,
+      "reason": "分数达上墙线但作者归属未确认（帖文称「GPT 6.2 Astra 3D 建模能力测试」「又是一个非常惊艳的 3D 作品」，未明说本人制作；评论区给出提示词）",
+      "run": "2026-11-19-0840-shanghai",
+      "record": {
+        "title": "一本可以走进去的立体书：提灯的纸片旅人沿溪流、红桥和山村散步，前方的树和房子从书页上立起来，走过后又慢慢折平——GPT-6.2 Astra 一句话生成（@leo114119 转述的测试）",
+        "category": "3d",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/leo114119/status/2123059666771153170",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261119a-popupbook.jpg",
+        "previewType": "image",
+        "description": "一手来源：@leo114119 X 帖（2026-11-18 14:24 UTC，约 18 秒视频）+ 作者评论区回复。帖文：GPT 6.2 Astra「3D 建模能力测试：行走的 3D 立体书」，玩家控制一个提着灯的纸片旅人，沿着溪流、红桥和山村散步，镜头跟随，前方的树和房屋从书页上立起来，走远后身后的景物又慢慢折平。被追问提示词时作者回复：「制作一本可以走进去的 3D 立体书。玩家可以控制一个提着灯的纸片旅人，沿着溪流、红桥和山村散步。镜头跟着它走，前方的树和房屋从书页上立起来，走远后，身后的景物又慢慢折平。」画面：摊开的红色封皮书上立着纸艺雪山、松林、木屋、红桥与蓝色溪流，红衣小人提灯行走。可拍角度：用户已点赞的「立体书赛车」同类——折叠/展开的纸艺机制。",
+        "tool": "GPT-6.2 Astra（帖文自述；未说明渲染技术栈）",
+        "prompt": "制作一本可以走进去的 3D 立体书。玩家可以控制一个提着灯的纸片旅人，沿着溪流、红桥和山村散步。镜头跟着它走，前方的树和房屋从书页上立起来，走远后，身后的景物又慢慢折平。",
+        "promptProvenance": "original_public",
+        "provenanceNote": "提示词来自作者评论区回复；帖文未明确是否本人生成，视频分辨率低（638×432）；无 Demo 与源码。",
+        "attribution": "@leo114119（转述/测试）",
+        "sourceAuthor": "leo114119",
+        "tags": [
+          "立体书",
+          "纸艺场景",
+          "GPT-6.2",
+          "3D交互"
+        ],
+        "publishedAt": "2026-11-18",
+        "collectionIds": [],
+        "collectedAt": "2026-11-19T01:02:41.000Z",
+        "updatedAt": "2026-11-19T01:02:41.000Z",
+        "verification": {
+          "checked_at": "2026-11-19T01:02:41.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为 X 视频约 6 秒帧：摊开的书上立起的纸艺雪山、松林、红顶木屋、红桥与溪流，红衣提灯小人，本轮目视核验，非头像。",
+          "video_check": "按 1/6 时长间隔抽 6 帧目视；未完整播放。"
+        },
+        "curation": {
+          "baseScore": 71,
+          "baseBreakdown": {
+            "实体": 22,
+            "科普": 14,
+            "溯源": 9,
+            "复现": 10,
+            "风格": 10,
+            "新颖": 6
+          },
+          "multiplier": 1.179,
+          "finalScore": 83.7,
+          "threshold": 65,
+          "run": "2026-11-19-0840-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2123059614870876161/vid/avc1/638x432/La2Oed-afMb95BRM.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 57,
       "multiplier": 1.0844,
       "score": 61.8,
@@ -8916,6 +9039,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-18T12:49:26.000Z",
+  "updatedAt": "2026-11-19T01:02:41.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }

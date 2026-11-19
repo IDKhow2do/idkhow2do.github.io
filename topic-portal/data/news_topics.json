@@ -1,7 +1,195 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-18T12:49:26.000Z",
+  "updatedAt": "2026-11-19T01:02:41.000Z",
   "topics": [
+    {
+      "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+      "title": "AMD 工程师已经优化了好几年的 GPU 电路，AI 还能再抠出多少？OpenAI：模型改写 SystemVerilog RTL，在 AMD 旗舰 GPU IP 上做到最高 14% 的 PPA 提升，部分改动已进了送去流片的设计",
+      "category": "半导体",
+      "source": "OpenAI 官方博客《Advancing chip design with OpenAI models》（2026-11-18）+ @OpenAI X 原帖（2026-11-18 17:05 UTC，附 4 张图表）",
+      "publishedAt": "2026-11-18",
+      "eventAt": "2026-11-18",
+      "collectedAt": "2026-11-19T01:02:41.000Z",
+      "updatedAt": "2026-11-19T01:02:41.000Z",
+      "description": "一手来源：OpenAI 官方博客全文（本轮读取）+ 官方 X 帖。要点（原文口径）：①与 AMD 合作，相对「高度优化的基线」在旗舰 GPU IP 上最高 14% 的 PPA（功耗/性能/面积）提升，方式是让模型改写描述电路的 SystemVerilog RTL，并用 Synopsys 工具验证每次改写行为不变、评估 PPA 取舍；官方称这相当于不到 5 个月做了约一年的进展，AMD 已把部分改动放进近期送去制造的设计，另一些进了后续版本的生产设计文件；AMD 还在下一代旗舰 CPU 的关键模块上验证了个位数百分比的 PPA 增益。②自家推理芯片 Jalapeño：2025 年初起用 GPT-4o 辅助设计，一个乘法器重设计在综合中省约 15% 单元面积、延迟从 2 个时钟周期降到 1 个；另一个加法器省约 15% 面积、保持 2 周期；整体估计向量单元标准单元面积省约 13%、矩阵单元约 10%，并在硅片 bring-up 中得到验证。③评测：在两个开源 32 位 RISC-V 核（PicoRV32、Ibex）上让各代模型提吞吐，约 11.2 万 token 预算下 GPT-6.2 Astra 平均分最高；「按规格书从头设计」比「改现有设计」得分更高，官方承认可能因为从头设计可以省掉性能计数器等功能；共 9,881 次计分运行。④与 Synopsys 合作训练 GPT-Synopsys。可拍角度：①PPA 三角是什么，为什么 14% 是「最高」而不是整颗芯片快 14%；②AI 写 RTL 为什么必须有 EDA 工具当裁判（和库内 RTLReviewBench、Dr. RTL 对照）；③从「改别人的设计」到「按规格书自己设计」。开场：0 秒上官方封面那张版图风格插画。",
+      "caveat": "全部数字为 OpenAI 自报，「最高 14%」是上限、不是平均值，也不是整颗 GPU 的速度提升；未披露具体是哪款 AMD GPU、哪些模块；标准单元面积节省不等于整颗裸片面积节省。库内已有 Jalapeño 发布条（8 月），本条侧重 AI 改 RTL 的设计方法与 AMD 合作，角度不同。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261119a-openai-chip.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261119a-openai-chip.jpg",
+      "imageAlt": "OpenAI 官方社交封面：左侧标题 Advancing chip design with OpenAI models，右侧彩色芯片版图风格插画",
+      "tags": [
+        "芯片设计",
+        "智能体",
+        "AI评测",
+        "RTL"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "主线": 23,
+          "钩子": 18,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 3
+        },
+        "multiplier": 1.0743,
+        "finalScore": 93.5,
+        "threshold": 65,
+        "run": "2026-11-19-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://architectlabs.com/blog/frostbite",
+      "title": "没有缓存、没有锁、没有中央调度器的 CPU，凭什么每瓦性能是传统核的 4.59 倍？Architect Labs 让智能体群只拿着「交互网」理论从零设计出 Frostbite，一路做到 7 nm GDS——「闲着的核去邻居那儿偷活干」这条规则没有任何人写过",
+      "category": "半导体",
+      "source": "Architect Labs 官方博客《Introducing Frostbite》（2026-11-18）+ @architectlabs X 原帖串（2026-11-18 22:52 UTC 起，含 20 秒视频）",
+      "publishedAt": "2026-11-18",
+      "eventAt": "2026-11-18",
+      "collectedAt": "2026-11-19T01:02:41.000Z",
+      "updatedAt": "2026-11-19T01:02:41.000Z",
+      "description": "一手来源：Architect Labs 官方博客全文（本轮读取）+ 官方 X 帖串。是什么：交互网（interaction nets，Lafont 1990）把程序表示成节点图，计算就是重写相连的一对节点；每次重写只动局部、每个值只有一个主人，所以可以任意顺序甚至同时进行。博客用「五皇后」举例：同一搜索写成交互网有 3,183 次交互、关键路径只有 262 步，平均每步约 12 个交互可以同时跑。做法：智能体群在编译器、指令集、架构、RTL、验证到最终 GDS 全栈迭代，用自研形式化规格语言 ASL 当唯一真相源（最后展开成 80 万行以上 Lean）；前期探索产出 141 页 PDF，第一版 RTL 出来后因数字离谱被删掉；架构模型与 RTL 的功耗估计一开始最差相差近 250%，自动校准到 5% 以内；四轮搜索加消融共试 58 个想法、留下 37 个。结果（自报）：7 nm 工艺综合 800 MHz、最终 GDS 500 MHz；一个四核瓦片组（2×2）加 4 个 L3 节点 0.792 mm²，对比同工艺 0.895 mm² 的双发射顺序执行 CPU 核，25 个负载（其中 15 个调优时没见过）每瓦性能几何平均 4.59 倍（调优集 6.02 倍、留出集 3.83 倍），每面积性能平均 8.77 倍。「涌现」：没有中央调度器，每个瓦片只遵守三条规则——先做自己输入端口的活；没有就从有富余的邻居那里拿；再没有就休眠省电。博客称这一行为「从未由任何人指定」，可追溯到回归测试和爬坡优化的需要。可拍角度：①0 秒上官方封面——芯片热力图上一串任务像蚁群一样蔓延；②接用户的「涌现」主线：三条局部规则→全芯片负载均衡，和鸟群同构；③为什么传统 CPU 要花大把面积和功耗做缓存一致性。",
+      "caveat": "公司自报结果，未流片、无第三方复现；对比对象 CPU 因「法律原因」未披露型号；功耗为硅前估计；Frostbite 程序需用 Vine 语言编写，通用性有限。RTL 与 ISA 官方称计划之后公开。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261119a-frostbite.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261119a-frostbite.jpg",
+      "imageAlt": "Architect Labs 官方封面：深蓝色芯片版图，上面一串红色方块任务沿连线从左上向右上蔓延聚集，背景有水波纹",
+      "tags": [
+        "芯片设计",
+        "智能体",
+        "涌现",
+        "CPU架构"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 19,
+          "画面": 14,
+          "来源": 13,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0743,
+        "finalScore": 93.5,
+        "threshold": 65,
+        "run": "2026-11-19-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
+      "title": "按 FLOPs 算 9 小时的微调，为什么第二天下午才跑完？Dharma-AI 拿 272 次真实 H200 微调任务对账：教科书公式只解释了约三成（R²=0.31），真正吃掉时间的是评测和存 checkpoint",
+      "category": "AI",
+      "source": "Hugging Face 博客 Dharma-AI 团队文章《Why your fine-tuning job takes longer than the FLOPs say》（2026-11-18，论文预览，完整版称将上 arXiv）",
+      "publishedAt": "2026-11-18",
+      "eventAt": "2026-11-18",
+      "collectedAt": "2026-11-19T01:02:41.000Z",
+      "updatedAt": "2026-11-19T01:02:41.000Z",
+      "description": "一手来源：作者团队在 Hugging Face 发布的研究预览全文（本轮读取）。背景：常用估算 T = 6·P·D /（GPU 数 × 峰值算力 × MFU），MFU 通常在 30%–60% 且事先不知道。数据：生产环境 272 个监督微调任务（最大 150 亿参数，LoRA 与全量都有），共约 7,382 GPU 小时，1/2/4 卡、8–32 张 H200 的共享池，时长 1.6–172.4 小时（均值 23.43、中位 15.29 小时）。结果（5 折交叉验证）：FLOP 公式最好的 MFU=30% 时 R² 0.31、平均误差 12.41 小时；把 MFU 从 0.25 扫到 0.65 都救不回来；更细的分析模型 Calculon 估出来中位数只有实际墙钟时间的 11%；只用派发前已知信息的 CatBoost 回归 R² 0.98、平均误差 1.71 小时、中位误差 0.51 小时。最重要的特征是整个任务中评测处理的样本总数，其次是可训练参数量、评测批大小占比等，checkpoint 保存的参数量也靠前。作者提醒：特征重要性不是因果；GPU 数正相关只是因为大任务分到更多卡。可拍角度：①0 秒上官方封面「R² 0.31 → 0.98」；②训练不只是那个循环：环境准备、下载模型、分词、定期评测、上传 checkpoint、在共享集群上抢网络和存储；③「习惯性」的评测频率和 checkpoint 设置可能就是你账单上的那几个小时。",
+      "caveat": "研究预览、论文尚未发布，未经同行评审；只覆盖 SFT、只用 H200，作者明确说数值不能直接迁移到其他 GPU；60 小时以上任务只有 13 个，长任务误差大。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261119a-ft-time.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261119a-ft-time.jpg",
+      "imageAlt": "文章官方封面：黑底白字 Why your fine-tuning job takes longer than the FLOPs say，下方 R² 0.31 → R² 0.98 对比，注明 272 production SFT runs on H200 GPUs",
+      "tags": [
+        "AI成本",
+        "AI训练",
+        "GPU调度"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 80,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 10,
+          "来源": 12,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 84.5,
+        "threshold": 65,
+        "run": "2026-11-19-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://news.mit.edu/2026/featherweight-flying-robot-carries-its-own-sensors-and-computers-1118",
+      "title": "比回形针还轻的扑翼机器人，为什么「算得快但粗一点」比「算得准但慢」飞得更稳？MIT 让昆虫尺度飞行机器人第一次自带传感器和计算机离开动捕棚，降落在向日葵上",
+      "category": "科技产品",
+      "source": "MIT News（2026-11-18，Adam Zewe）+ 论文《Controlled Flight of an Insect-Scale Flapping-Wing Robot via Integrated Onboard Sensing and Computation》，Science Robotics",
+      "publishedAt": "2026-11-18",
+      "eventAt": "2026-11-18",
+      "collectedAt": "2026-11-19T01:02:41.000Z",
+      "updatedAt": "2026-11-19T01:02:41.000Z",
+      "description": "一手来源：MIT 新闻办公室稿件全文（本轮读取）。背景：Kevin Chen 团队此前的扑翼微型机器人有大黄蜂般的速度和灵活性，但背不动导航电子设备，只能在实验室动作捕捉系统里飞。这次：把驱动翅膀的软体人工肌肉尺寸加大 50%，净升力提高 46%，升重比 1.9，足以背起仅 244 毫克的电子包（惯性测量单元估姿态、光流传感器估横向速度与位置、飞行时间传感器测高度，外加微控制器），电子包装在玻璃纤维基板上隔振。反直觉点：团队发现以更高频率持续估计位置，比更精确但更慢的估计效果更好；论文作者称定位精度可与外部摄像头相当，点到点轨迹误差只有几厘米。演示：用摇杆发送高层位置指令，绕过几株植物后精准降落在向日葵上。电子设备只占总功耗约 6%，其余都给了人工肌肉和翅膀。局限：仍接外部电源；下一步加摄像头做识别避障、集成电池实现户外无系绳飞行。可拍角度：①0 秒上官方图——四翼小机器人趴在向日葵上；②控制里的「快 vs 准」取舍；③为什么小到昆虫尺度，飞行最难的反而是背得动一颗「脑子」。",
+      "caveat": "仍为有线供电、非完全自主（降落演示由人用摇杆给目标点）；「首次感知与计算自主」是作者表述；性能数字来自 MIT 新闻稿，论文全文本轮未读。官方图片为 CC BY-NC-ND 许可，需署名、不可改动。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261119a-microbot.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261119a-microbot.jpg",
+      "imageAlt": "MIT 官方新闻图：四翼扑翼微型机器人停在一朵向日葵花盘上，机身可见四组人工肌肉与细导线",
+      "tags": [
+        "机器人",
+        "传感器",
+        "端侧计算"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 79,
+        "baseBreakdown": {
+          "主线": 15,
+          "钩子": 16,
+          "画面": 15,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 4
+        },
+        "multiplier": 1.0,
+        "finalScore": 79.0,
+        "threshold": 65,
+        "run": "2026-11-19-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://ic.pku.edu.cn/xwdt/d8d5716dde10444cb143c6ede3bc906c.htm",
+      "title": "液态金属一碰基底就缩成水珠，怎么还能当光刻胶直接「光刻出」导线？北大集成电路学院把镓铟液态金属做成纳米颗粒光刻胶，等离子体一激活，单步晶圆级图形化：2 微米分辨率、拉伸 750% 仍导电",
+      "category": "半导体",
+      "source": "北京大学集成电路学院新闻（2026-01-28）+ 论文 Wang et al.,《(Liquid) Metallic Photoresist for Monolithic Microlithography of Elastic Electronics》，Advanced Materials，doi:10.1002/adma.72140；本轮由 X 上中文科技号转发（11-18 23:07 UTC）发现",
+      "publishedAt": "2026-01-28",
+      "eventAt": "2026-01-28",
+      "collectedAt": "2026-11-19T01:02:41.000Z",
+      "updatedAt": "2026-11-19T01:02:41.000Z",
+      "description": "一手来源：北大集成电路学院官网新闻全文 + Advanced Materials 论文页（作者单位：微米纳米加工技术全国重点实验室、集成电路高精尖创新中心）。问题：液态金属有金属级导电性和流动性，是可拉伸互连的理想材料，但表面张力和界面能太高，在多数基底上会退润湿缩成液滴，很难做成高分辨率、稳定的微纳图形。做法：郑雨晴团队把共晶镓铟（EGaIn）做成配体包覆的纳米颗粒，加共聚物表面活性剂和光敏剂做成「金属光刻胶」，旋涂→紫外曝光让颗粒交联成网络→等离子体辅助激活（活性氧做亲水改性，调控颗粒/颗粒、颗粒/基底界面的共价与非共价作用）。结果（原文）：单步晶圆级液态金属光刻，2 微米分辨率，块体级电导率 2.2×10⁴ S/cm，拉伸性超过 750%，还能在三维结构上共形加工；做出了高分辨率液态金属网格透明电极、皮层神经电极（ECoG）和大面积柔性电路板。共同第一作者为博士后王振骁、博士生李映泓，通讯作者郑雨晴助理教授。对你：等离子体激活这一步和刻蚀/表面处理是同一套物理，能从你的工艺经验切入。可拍角度：①0 秒上官方示意图——一瓶黑色「金属墨水」、紫外激光写出 PKU、晶圆上的电路；②为什么液态金属天生「不听话」（表面张力/退润湿）；③光刻胶传统上「用完就洗掉」，这次胶本身就是导线。",
+      "caveat": "论文与官方新闻发布于 2026-01-28，不是本周新闻；本轮由 X 转发帖重新带出，此前库内与 seen 均无，按常青工艺题补收。面向柔性/弹性电子，不是硅基先进制程光刻的替代；2 微米分辨率与主流芯片线宽不是一个量级。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261119a-lm-resist.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261119a-lm-resist.jpg",
+      "imageAlt": "论文/官网示意图：A 液态金属光刻胶与等离子体辅助激活流程（MetaLith 字样）；B 溶液→颗粒组装→紫外激光写出 PKU→颗粒网络；C–F 液态金属网格人像、贴在手臂上的电极、晶圆上的电路、可弯曲的点亮 LED 柔性电路板",
+      "tags": [
+        "光刻",
+        "芯片制造",
+        "柔性电子",
+        "国产研究"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "主线": 23,
+          "钩子": 16,
+          "画面": 14,
+          "来源": 15,
+          "时效": 6,
+          "大陆": 10,
+          "新颖": 3
+        },
+        "multiplier": 1.0743,
+        "finalScore": 93.5,
+        "threshold": 65,
+        "run": "2026-11-19-0840-shanghai"
+      }
+    },
     {
       "url": "https://science.caseyhandmer.com/physics/",
       "title": "让 AI 把一整个学科的论文重算一遍，会发现什么？物理学家 Casey Handmer 用 Opus 5.5 审了 15.8 万篇天体物理论文：AI 二审确认 872 处错误，抄错的论文（367 篇）是指出错误的（68 篇）的 5 倍多，一半被抄的错误 7 年后还在被抄",
