@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>选题 · 视觉 · 3D建模 · Fable 5.2</title>
+  <title>选题 · 视觉 · 3D建模 · AI 生图/视频 · Fable 5.2</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -29,6 +29,10 @@
       <button class="tab" role="tab" aria-selected="false" data-tab="models" id="tab-models">
         3D建模
         <span class="tab-count" id="modelsCount"></span>
+      </button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="aigen" id="tab-aigen">
+        AI 生图/视频
+        <span class="tab-count" id="aigenCount"></span>
       </button>
       <button class="tab" role="tab" aria-selected="false" data-tab="fable52" id="tab-fable52">
         Fable 5.2 视频
@@ -101,6 +105,26 @@
         <div class="empty-icon" aria-hidden="true">◇</div>
         <h2>这一类暂时没有匹配的 3D 建模</h2>
         <p>换一个风格，或清空搜索。这些卡片仍保留在「视觉素材」里。</p>
+      </div>
+    </section>
+
+    <!-- AI 生图/视频：视觉素材 + 选题里 aiGen===true 的子集，卡片与反馈同一套 -->
+    <section class="panel" id="panel-aigen" role="tabpanel" aria-labelledby="tab-aigen" hidden>
+      <div class="toolbar">
+        <div class="chips" id="aigenChips" role="group" aria-label="AI 生图/视频分类"></div>
+        <div class="toolbar-right">
+          <label class="search-wrap">
+            <span class="sr-only">搜索 AI 生图/视频</span>
+            <input type="search" id="aigenSearch" placeholder="搜索标题、模型或描述…" autocomplete="off" />
+          </label>
+        </div>
+      </div>
+      <p class="filter-hint" id="aigenHint"></p>
+      <div class="card-grid" id="aigenGrid"></div>
+      <div class="empty-state hidden" id="aigenEmpty">
+        <div class="empty-icon" aria-hidden="true">◇</div>
+        <h2>这一类暂时没有匹配的 AI 生图/视频内容</h2>
+        <p>换一个分类，或清空搜索。这些卡片仍保留在「视觉素材」「选题」里。</p>
       </div>
     </section>
 

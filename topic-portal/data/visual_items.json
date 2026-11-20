@@ -568,7 +568,11 @@
       },
       "sourceCodeUrl": "https://github.com/mengto/skills/tree/main/agent-skills/game-development/game-dev-character-model",
       "licenseName": "MIT（mengto/skills 仓库）",
-      "licenseUrl": "https://github.com/mengto/skills"
+      "licenseUrl": "https://github.com/mengto/skills",
+      "aiGen": true,
+      "aiGenKinds": [
+        "image"
+      ]
     },
     {
       "title": "加湿器为什么「不容易脏、少洗几次」？日本博主 wataru 让 Claude Code 直接操作 Blender，从定外观、调材质和光，到把机身剖开、左右对比「没处理的面全是水垢 / 处理过的水路很干净」，做出一支 68 秒的产品原理讲解片——产品是虚构概念机，完整做法放在 YouTube 教程里",
@@ -624,7 +628,11 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "demoUrl": "https://youtu.be/eF7ey5bBN8I"
+      "demoUrl": "https://youtu.be/eF7ey5bBN8I",
+      "aiGen": true,
+      "aiGenKinds": [
+        "image"
+      ]
     },
     {
       "title": "游戏开场动画不渲染成视频，直接在游戏画面里实时跑，改一处马上能看：独立开发者 kokushing 用 Tripo 把女神拆成 7 个部件逐个「图生 3D」（每个约 40 积分），脸部表情不做 3D、在游戏里画；镜头、角色、光、画面和配乐写进一张「时间表」脚本，全交给 Claude Code 编排",
@@ -907,7 +915,11 @@
       "sourceCodeUrl": "https://github.com/lemomo-ai/lemo-animi",
       "licenseName": "CC BY-NC 4.0",
       "licenseUrl": "https://github.com/lemomo-ai/lemo-animi",
-      "demoUrl": "https://lemomo-ai.github.io/lemo-animi/"
+      "demoUrl": "https://lemomo-ai.github.io/lemo-animi/",
+      "aiGen": true,
+      "aiGenKinds": [
+        "image"
+      ]
     },
     {
       "title": "唱到高音，滑块先顶起滚轮，脖子往上一抬，整颗脑袋被顶起来，话筒却还留在原地：@ShanHasAnIdea（闪个念头）用 Three.js 搭了一台「机械歌手」，声带张力和开口由一张音符表驱动，Python + NumPy 用同一张表合成 24 个「啊、哦、呜」",
@@ -1959,7 +1971,12 @@
       },
       "sourceCodeUrl": "https://github.com/sirioberati/ai-filmmaking-camera-control-seedance-2-5",
       "licenseName": "MIT",
-      "licenseUrl": "https://github.com/sirioberati/ai-filmmaking-camera-control-seedance-2-5/blob/main/LICENSE"
+      "licenseUrl": "https://github.com/sirioberati/ai-filmmaking-camera-control-seedance-2-5/blob/main/LICENSE",
+      "aiGen": true,
+      "aiGenKinds": [
+        "video",
+        "prompt"
+      ]
     },
     {
       "title": "走到哪，书页就在哪「啪」地弹起来：@Feljoy_ix 用 Gemini 做的无尽 3D 立体书漫步，纯 Three.js 单文件、无素材，树和房子的原点钉在折痕上，背面还有真立体书的三角支撑片",
@@ -2959,7 +2976,11 @@
       "sourceCodeUrl": "https://github.com/op7418/guizang-game-skill",
       "licenseName": "AGPL-3.0（Skill 文档与脚本；演示游戏美术/模型/配音/音乐/文案另行保留权利）",
       "licenseUrl": "https://github.com/op7418/guizang-game-skill/blob/main/LICENSE",
-      "demoUrl": "https://op7418.github.io/guizang-game-skill/"
+      "demoUrl": "https://op7418.github.io/guizang-game-skill/",
+      "aiGen": true,
+      "aiGenKinds": [
+        "image"
+      ]
     },
     {
       "title": "同一个 Houdini 瀑布，Codex（Astra 6）只给了 39 万个水粒子，Claude Code（Fable 5.2）给了 250 万个水粒子 + 1000 万个白水点——为什么粒子越细，水才越像水？@PhotoGarrido 让两家代理通过命令行驱动 Houdini 22 做 FLIP 流体，附分层渲染拆解",
@@ -5464,7 +5485,11 @@
         "notInterested": false,
         "updatedAt": null
       },
-      "demoUrl": "https://aidens-revenge.pages.dev/"
+      "demoUrl": "https://aidens-revenge.pages.dev/",
+      "aiGen": true,
+      "aiGenKinds": [
+        "image"
+      ]
     },
     {
       "title": "点一下屏幕上的台灯，家里真的那盏就亮了：@muratozturkdev 开源的 Homescape 把 Home Assistant 变成一座可走进去的 3D 玩具屋——沙发、楼梯、路灯、猫狗和人全是 AI 写的代码画出来的，整个项目没有一个 GLB/OBJ 模型文件",
@@ -5691,7 +5716,11 @@
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "video"
+      ]
     },
     {
       "title": "一条小木船慢慢划过椰林夹岸的印度喀拉拉「回水」水道：水面倒影、林间逆光和薄雾都是浏览器实时渲染的——@chetanankola 把 Three.js 场景从 WebGL 移植到 WebGPU",
@@ -6801,7 +6830,11 @@
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "image"
+      ]
     },
     {
       "title": "一颗钢球砸过去，鱼缸玻璃碎成约 400 块真碎片，22 万颗水粒子哗地泼到地上——为什么作者说这个浏览器小游戏里「没有一张图片、一个模型、一段音频文件」？",
@@ -8046,7 +8079,11 @@
       },
       "sourceCodeUrl": "https://github.com/gokayfem/image-to-sculpt",
       "licenseName": "MIT",
-      "licenseUrl": "https://github.com/gokayfem/image-to-sculpt"
+      "licenseUrl": "https://github.com/gokayfem/image-to-sculpt",
+      "aiGen": true,
+      "aiGenKinds": [
+        "image"
+      ]
     },
     {
       "title": "深海鱼为什么几乎从不出现在游戏里？有人用「一张鱼照片变一条会游的 3D 鱼」的方法做了 121 种鱼，每条都带真实栖息深度、体长和科属，19 MB 的 GLB 以 CC0 放在 Hugging Face",
@@ -13795,7 +13832,12 @@
       "sourceCodeUrl": "https://github.com/lovisdotio/video-to-game",
       "licenseName": "MIT",
       "licenseUrl": "https://github.com/lovisdotio/video-to-game",
-      "demoUrl": "https://fal-video-to-game.vercel.app"
+      "demoUrl": "https://fal-video-to-game.vercel.app",
+      "aiGen": true,
+      "aiGenKinds": [
+        "image",
+        "video"
+      ]
     },
     {
       "title": "按一下方向键，角色的每一步为什么都不一样？monoradio 把 NVIDIA 的 MotionBricks 搬进浏览器 WebGPU：只预先摆好几个关键姿势，中间 1–2 秒的动作每 0.1 秒现场生成，还能拖入自己的 VRM 角色试",
@@ -14718,7 +14760,11 @@
       },
       "sourceCodeUrl": "https://github.com/alchaincyf/huashu-bird-sticker",
       "licenseName": "贴纸 PolyForm Shield 1.0.0 / 数据 MIT",
-      "licenseUrl": "https://github.com/alchaincyf/huashu-bird-sticker/blob/main/LICENSE.md"
+      "licenseUrl": "https://github.com/alchaincyf/huashu-bird-sticker/blob/main/LICENSE.md",
+      "aiGen": true,
+      "aiGenKinds": [
+        "image"
+      ]
     },
     {
       "title": "一瓶会晃的液体，为什么全靠着色器算出来？@_pwd_ 用 WebGPU + three.js TSL 重做「Suspicious Vial」：鼠标一碰，玻璃变形起涟漪、里面的液体跟着晃——在线可玩，源码公开",
@@ -15564,7 +15610,11 @@
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "image"
+      ]
     },
     {
       "title": "闸门一开 2.8 立方米的水灌进庭院，为什么一个粒子都没用、水量还一滴不差？vidar 用纯 JavaScript 解浅水方程：每个格子只记一个水深、每条格边一个流速",
@@ -15843,7 +15893,11 @@
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "video"
+      ]
     },
     {
       "title": "一张截图、零素材，为什么能长出一整座能玩的「熊猫乐园」？cfenghub 用 Three.js 代码直出可交互微缩地台：画个圈就长出熊猫崽，拖起来会晃、落地会压扁回弹，还能用一行 CSV 批量出片",
@@ -16347,7 +16401,12 @@
       },
       "sourceCodeUrl": "https://github.com/patch-gg/anymove",
       "licenseName": "Apache-2.0",
-      "licenseUrl": "https://github.com/patch-gg/anymove/blob/main/LICENSE"
+      "licenseUrl": "https://github.com/patch-gg/anymove/blob/main/LICENSE",
+      "aiGen": true,
+      "aiGenKinds": [
+        "image",
+        "video"
+      ]
     },
     {
       "title": "手机里到底叠了几层？Opus 5.5 只用 Three.js 代码画出一台 iPhone 18 Pro Max，按「Teardown」就拆成 7 层：从屏幕、均热板一路到电池（没有任何 3D 模型文件）",
@@ -17997,7 +18056,11 @@
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "video"
+      ]
     },
     {
       "title": "GLSL 着色器为什么要「搬家」到 JavaScript？Three.js 从零系列第 5 课：WebGPURenderer + TSL 节点材质，4 万粒子丢给 GPU compute，还自动回退 WebGL 2",
@@ -18215,7 +18278,11 @@
         "finalScore": 97,
         "threshold": 70,
         "run": "user-2026-10-27-four-favs"
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "image"
+      ]
     },
     {
       "title": "二十五万块小行星塞进浏览器，为什么还不卡？InstancedMesh2 刚加上 WebGPU：运行时 LOD、BVH 视锥裁剪、逐实例拾取，WebGL/WebGPU 两套都能飞",
@@ -18715,7 +18782,11 @@
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "video"
+      ]
     },
     {
       "title": "Three.js 画一杯加冰的水：玻璃折射、冰块和液面，作者说做这一杯把 Claude 的 token 烧光了",
@@ -18994,7 +19065,11 @@
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "video"
+      ]
     },
     {
       "title": "庄周梦蝶做成一个会滚动的 3D 池塘：青蛙给鸭子拉小提琴，倒影里却是鸭子给青蛙拉——没有 3D 模型、没有音频文件，Claude Code + Three.js + Web Audio 全用代码生成",
@@ -19604,7 +19679,12 @@
       },
       "sourceCodeUrl": "https://github.com/code-video-model/CodeVideoModel",
       "licenseName": "代码 Apache-2.0；示例 CC BY 4.0（README 标注）",
-      "licenseUrl": "https://github.com/code-video-model/CodeVideoModel/blob/main/LICENSE"
+      "licenseUrl": "https://github.com/code-video-model/CodeVideoModel/blob/main/LICENSE",
+      "aiGen": true,
+      "aiGenKinds": [
+        "image",
+        "video"
+      ]
     },
     {
       "title": "在网页里用毛笔写字还会被「判卷」：日本独立开发者的 Three.js 书道模拟器，蘸墨、落笔、收锋，写完按笔顺给「止め」「はらい」打分",
@@ -20981,7 +21061,11 @@
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "image"
+      ]
     },
     {
       "title": "屏幕怎么变成一扇「窗」？摄像头追踪你的头，浏览器实时改透视：WebGPU + Three.js 纯代码写的海底场景，水母像就在屏幕后面（off-axis 投影）",
@@ -21152,7 +21236,12 @@
         "finalScore": 79,
         "threshold": 70,
         "run": "user-2026-10-24-songsong"
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "image",
+        "prompt"
+      ]
     },
     {
       "title": "一粒看不见的灰，怎样毁掉一颗芯片？在浏览器里开一条 266 颗芯片的晶圆产线：调曝光剂量、刻蚀时间、洁净度和检测阈值，看良率怎么掉（Three.js 互动页 Inside a Chip Fab）",
@@ -21849,7 +21938,11 @@
         "finalScore": null,
         "threshold": 70,
         "run": "user-batch-2026-10-22"
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "video"
+      ]
     },
     {
       "title": "Opus 5.5 能当 3D 动画师吗？一条从产品 brief 到 Blender 可编辑场景、发布短片和网页 3D 的完整工具栈",
@@ -24362,7 +24455,11 @@
         "run": "user-batch-2026-10-20"
       },
       "demoUrl": "https://ask.jig.com/j/dsvb0PRxoG7P",
-      "relatedSource": "https://x.com/aprilzz423/status/2111474111541284890"
+      "relatedSource": "https://x.com/aprilzz423/status/2111474111541284890",
+      "aiGen": true,
+      "aiGenKinds": [
+        "image"
+      ]
     },
     {
       "title": "仓库经理能一眼看清整个黑五仓库吗？Opus 5.5 做的 93 人、320 台机器人实时 3D 仿真",
@@ -25789,7 +25886,11 @@
         "favorite": false,
         "notInterested": false,
         "updatedAt": null
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "video"
+      ]
     },
     {
       "title": "不穿动捕服也能做 3D 动画：让 Opus 5.5 经 Blender MCP 逐帧读一段走路视频里的髋、膝、脚、手姿态，再一帧帧打到自己建好、绑好骨骼的派克大衣角色上",
@@ -26114,7 +26215,11 @@
         "finalScore": null,
         "threshold": 70,
         "run": "user-batch-2026-10-18"
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "image"
+      ]
     },
     {
       "title": "站在车站能看见多远的山？一个把地球曲率和大气折射都算进去的 360° 山景网页（Gemini 4 + Three.js）",
@@ -31879,7 +31984,12 @@
         "threshold": 65,
         "run": "2026-10-15-0840-shanghai"
       },
-      "is3d": true
+      "is3d": true,
+      "aiGen": true,
+      "aiGenKinds": [
+        "image",
+        "video"
+      ]
     },
     {
       "title": "WebGPU布料求解器续测：布面自己皱起来",
@@ -32264,7 +32374,12 @@
         "updatedAt": null
       },
       "styleFamily": "video_model",
-      "is3d": false
+      "is3d": false,
+      "aiGen": true,
+      "aiGenKinds": [
+        "video",
+        "prompt"
+      ]
     },
     {
       "title": "省流版：这是我深度使用 Opus 5.5 加 MiniMax H3 制作 AI 短剧的总结，一共 16 个技巧",
@@ -32293,7 +32408,12 @@
         "updatedAt": null
       },
       "styleFamily": "video_model",
-      "is3d": false
+      "is3d": false,
+      "aiGen": true,
+      "aiGenKinds": [
+        "video",
+        "prompt"
+      ]
     },
     {
       "title": "The jelly world just got its own tiny ocean 🌊🍮 Claude Opus 5.5 vs GPT-…",
@@ -32525,7 +32645,11 @@
         "updatedAt": null
       },
       "styleFamily": "video_model",
-      "is3d": false
+      "is3d": false,
+      "aiGen": true,
+      "aiGenKinds": [
+        "video"
+      ]
     },
     {
       "title": "自媒体内容创作工作流继续更新👇 1. 新增解说视频的叙事风格 2. 一键多平台发布：接入开源的 social-auto-upload，一条命…",
@@ -32583,7 +32707,12 @@
         "updatedAt": null
       },
       "styleFamily": "video_model",
-      "is3d": false
+      "is3d": false,
+      "aiGen": true,
+      "aiGenKinds": [
+        "video",
+        "prompt"
+      ]
     },
     {
       "title": "这个挺好 打开codex直接说“帮我设置 local_thread_store_compression = true” 压缩codex聊天记…",
@@ -32988,7 +33117,12 @@
         "updatedAt": null
       },
       "styleFamily": "draw",
-      "is3d": false
+      "is3d": false,
+      "aiGen": true,
+      "aiGenKinds": [
+        "image",
+        "prompt"
+      ]
     },
     {
       "title": "AI同质化如何选题：从入门到榨干",
@@ -33338,7 +33472,11 @@
         "updatedAt": null
       },
       "styleFamily": "video_model",
-      "is3d": false
+      "is3d": false,
+      "aiGen": true,
+      "aiGenKinds": [
+        "video"
+      ]
     },
     {
       "title": "从像素效果到可拼图纸：火箭徽章的逐格配色工作台",
@@ -33583,7 +33721,11 @@
         "updatedAt": null
       },
       "styleFamily": "draw",
-      "is3d": false
+      "is3d": false,
+      "aiGen": true,
+      "aiGenKinds": [
+        "image"
+      ]
     },
     {
       "title": "Platen 慢邮件：薄纸信封与空间翻转",
@@ -33690,7 +33832,11 @@
         "updatedAt": null
       },
       "styleFamily": "draw",
-      "is3d": false
+      "is3d": false,
+      "aiGen": true,
+      "aiGenKinds": [
+        "image"
+      ]
     },
     {
       "title": "会回应的科普角色：身体动作与表情分开控制",
@@ -33894,7 +34040,11 @@
         "updatedAt": null
       },
       "styleFamily": "draw",
-      "is3d": false
+      "is3d": false,
+      "aiGen": true,
+      "aiGenKinds": [
+        "image"
+      ]
     },
     {
       "title": "ISO-GLOW｜发光等距物件与城市交互 Skill",
@@ -34043,7 +34193,12 @@
         "updatedAt": "2026-10-08T09:41:24.741Z"
       },
       "styleFamily": "model_3d",
-      "is3d": true
+      "is3d": true,
+      "aiGen": true,
+      "aiGenKinds": [
+        "image",
+        "video"
+      ]
     },
     {
       "title": "照片浮雕打光：让器物纹理随光显现",
@@ -34321,7 +34476,11 @@
         "updatedAt": null
       },
       "styleFamily": "draw",
-      "is3d": false
+      "is3d": false,
+      "aiGen": true,
+      "aiGenKinds": [
+        "image"
+      ]
     },
     {
       "title": "充气按钮：把布料物理烘焙成可重播网页动效",
@@ -34447,7 +34606,11 @@
         "updatedAt": null
       },
       "styleFamily": "draw",
-      "is3d": false
+      "is3d": false,
+      "aiGen": true,
+      "aiGenKinds": [
+        "image"
+      ]
     },
     {
       "title": "Prompt Motion｜Claude 动效与 Prompt / Skill 画廊",
@@ -36585,7 +36748,11 @@
         "updatedAt": null
       },
       "styleFamily": "draw",
-      "is3d": false
+      "is3d": false,
+      "aiGen": true,
+      "aiGenKinds": [
+        "image"
+      ]
     },
     {
       "title": "瑞士网格：让信息按节拍归位",
@@ -37182,7 +37349,11 @@
       "attribution": "@Jackywine",
       "updatedAt": "2026-10-14T07:54:31.000Z",
       "styleFamily": "draw",
-      "is3d": false
+      "is3d": false,
+      "aiGen": true,
+      "aiGenKinds": [
+        "image"
+      ]
     },
     {
       "title": "卧槽，这个神仙级的「交互式教学工具库」持续更新中 刚刚上新了！新增了地理学科“水循环”的演示， 这个效果调了3个小时才实现！ 🔗 老师们、演…",
@@ -37234,7 +37405,12 @@
       "attribution": "@kfhshl",
       "updatedAt": "2026-10-14T07:54:31.000Z",
       "styleFamily": "draw",
-      "is3d": false
+      "is3d": false,
+      "aiGen": true,
+      "aiGenKinds": [
+        "image",
+        "prompt"
+      ]
     },
     {
       "title": "Grok Bot 额度超长续航保姆级新手指南（直接发给 Bot！）",
@@ -37364,7 +37540,11 @@
       "attribution": "@op7418",
       "updatedAt": "2026-10-14T07:52:46.000Z",
       "styleFamily": "video_model",
-      "is3d": false
+      "is3d": false,
+      "aiGen": true,
+      "aiGenKinds": [
+        "video"
+      ]
     },
     {
       "title": "可拆解机械腕表：同一提示词考三家模型的齿轮咬合",
@@ -37849,7 +38029,12 @@
         "threshold": 70,
         "run": "2026-10-14-2040-shanghai"
       },
-      "is3d": true
+      "is3d": true,
+      "aiGen": true,
+      "aiGenKinds": [
+        "image",
+        "video"
+      ]
     },
     {
       "title": "热成像剪影+像素实物：一个HTML画布、按语音逐词卡点的20秒片",
@@ -39431,7 +39616,12 @@
         "finalScore": 74.0,
         "threshold": 65,
         "run": "2026-11-20-0955-la"
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "image",
+        "prompt"
+      ]
     },
     {
       "is3d": false,
@@ -39493,7 +39683,12 @@
         "finalScore": 73.0,
         "threshold": 65,
         "run": "2026-11-20-0955-la"
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "image",
+        "prompt"
+      ]
     },
     {
       "is3d": false,
@@ -39555,7 +39750,12 @@
         "finalScore": 72.0,
         "threshold": 65,
         "run": "2026-11-20-0955-la"
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "image",
+        "prompt"
+      ]
     },
     {
       "is3d": false,
@@ -39617,7 +39817,12 @@
         "finalScore": 73.0,
         "threshold": 65,
         "run": "2026-11-20-0955-la"
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "image",
+        "prompt"
+      ]
     },
     {
       "is3d": false,
@@ -39679,7 +39884,12 @@
         "finalScore": 70.0,
         "threshold": 65,
         "run": "2026-11-20-0955-la"
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "image",
+        "prompt"
+      ]
     },
     {
       "is3d": false,
@@ -39741,7 +39951,12 @@
         "finalScore": 75.0,
         "threshold": 65,
         "run": "2026-11-20-0955-la"
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "video",
+        "prompt"
+      ]
     },
     {
       "is3d": false,
@@ -39804,7 +40019,12 @@
         "finalScore": 76.0,
         "threshold": 65,
         "run": "2026-11-20-0955-la"
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "video",
+        "prompt"
+      ]
     },
     {
       "is3d": false,
@@ -39866,7 +40086,12 @@
         "finalScore": 72.0,
         "threshold": 65,
         "run": "2026-11-20-0955-la"
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "video",
+        "prompt"
+      ]
     },
     {
       "is3d": false,
@@ -39928,7 +40153,12 @@
         "finalScore": 71.0,
         "threshold": 65,
         "run": "2026-11-20-0955-la"
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "video",
+        "prompt"
+      ]
     },
     {
       "is3d": false,
@@ -39991,7 +40221,12 @@
         "finalScore": 74.0,
         "threshold": 65,
         "run": "2026-11-20-0955-la"
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "video",
+        "prompt"
+      ]
     },
     {
       "is3d": false,
@@ -40054,12 +40289,18 @@
         "finalScore": 68.0,
         "threshold": 65,
         "run": "2026-11-20-0955-la"
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "video",
+        "prompt"
+      ]
     }
   ],
   "bookmarksNotInVisual": 15,
   "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条 | 2026-11-01-0840-shanghai 监控轮追加 5 条 | 2026-11-01-1240-shanghai 监控轮追加 6 条 | 2026-11-02-1640-shanghai 监控轮追加 7 条 | 2026-11-02-2040-shanghai 监控轮追加 6 条 | 2026-11-03-0840-shanghai 监控轮追加 6 条 | 2026-11-03-1240-shanghai 监控轮追加 2 条 | 2026-11-03-1640-shanghai 监控轮追加 3 条 | 2026-11-03-2040-shanghai 监控轮追加 5 条 | 2026-11-04-0840-shanghai 监控轮追加 5 条 | 2026-11-04-1240-shanghai 监控轮追加 4 条 | 2026-11-04-1640-shanghai 监控轮追加 2 条 | 2026-11-04-2040-shanghai 监控轮追加 4 条 | 2026-11-05-0840-shanghai 监控轮追加 5 条 | 2026-11-05-1240-shanghai 监控轮追加 4 条 | 2026-11-05-1640-shanghai 监控轮追加 2 条 | 2026-11-05-2040-shanghai 监控轮追加 3 条 | 2026-11-06-0840-shanghai 监控轮追加 4 条 | 2026-11-06-1640-shanghai 监控轮追加 1 条 | 2026-11-06-2040-shanghai 监控轮追加 1 条 | 2026-11-07-0840-shanghai 监控轮追加 1 条 | 2026-11-07-1240-shanghai 监控轮追加 1 条 | 2026-11-07-1640-shanghai 监控轮追加 1 条 | 2026-11-07-2040-shanghai 监控轮追加 3 条 | 2026-11-08-0840-shanghai 监控轮追加 3 条 | 2026-11-08-1240-shanghai 监控轮追加 1 条 | 2026-11-08-1640-shanghai 监控轮追加 5 条 | 2026-11-08-2040-shanghai 监控轮追加 3 条 | 2026-11-09-0840-shanghai 监控轮追加 8 条 | 2026-11-09-1640-shanghai 监控轮追加 4 条 | 2026-11-09-2040-shanghai 监控轮追加 2 条 | 2026-11-10-0840-shanghai 监控轮追加 4 条 | 2026-11-10-1240-shanghai 监控轮追加 2 条 | 2026-11-10-1640-shanghai 监控轮追加 2 条 | 2026-11-10-2040-shanghai 监控轮追加 5 条 | 2026-11-11-0840-shanghai 监控轮追加 5 条 | 2026-11-11-1240-shanghai 监控轮追加 2 条 | 2026-11-11-1640-shanghai 监控轮追加 2 条 | 2026-11-11-2040-shanghai 监控轮追加 3 条 | 2026-11-12-0840-shanghai 监控轮追加 5 条 | 2026-11-12-1240-shanghai 监控轮追加 1 条 | 2026-11-12-1640-shanghai 监控轮追加 2 条 | 2026-11-13-0840-shanghai 监控轮追加 3 条 | 2026-11-13-1240-shanghai 监控轮追加 1 条 | 2026-11-13-1640-shanghai 监控轮追加 2 条 | 2026-11-14-0840-shanghai 监控轮追加 2 条 | 2026-11-14-1240-shanghai 监控轮追加 3 条 | 2026-11-14-1640-shanghai 监控轮追加 5 条 | 2026-11-14-2040-shanghai 监控轮追加 5 条 | 2026-11-15-0840-shanghai 监控轮追加 2 条 | 2026-11-15-1240-shanghai 监控轮追加 2 条 | 2026-11-15-1640-shanghai 监控轮追加 3 条 | 2026-11-15-2040-shanghai 监控轮追加 2 条 | 2026-11-16-0840-shanghai 监控轮追加 8 条 | 2026-11-16-1240-shanghai 监控轮追加 4 条 | 2026-11-16-1640-shanghai 监控轮追加 2 条 | 2026-11-16-2040-shanghai 监控轮追加 2 条 | 2026-11-17-0840-shanghai 监控轮追加 4 条 | 2026-11-17-1240-shanghai 监控轮追加 4 条 | 2026-11-17-1640-shanghai 监控轮追加 3 条 | 2026-11-17-2040-shanghai 监控轮追加 3 条 | 2026-11-18-0840-shanghai 监控轮追加 3 条 | 2026-11-18-1240-shanghai 监控轮追加 3 条 | 2026-11-18-1640-shanghai 监控轮追加 4 条 | 2026-11-18-2040-shanghai 监控轮追加 3 条 | 2026-11-19-0840-shanghai 监控轮追加 6 条 | 2026-11-19-1240-shanghai 监控轮追加 4 条 | 2026-11-19-1640-shanghai 监控轮追加 4 条 | 2026-11-19-2040-shanghai 监控轮追加 3 条 | 2026-11-20-0840-shanghai 监控轮追加 5 条 | 2026-11-20-1240-shanghai 监控轮追加 2 条 | 2026-11-20-1640-shanghai 监控轮追加 1 条 | 2026-11-20-2040-shanghai 监控轮追加 1 条\n[2026-11-20T17:55:00.000Z] Task3 提示词教程入库 11 条（图像 draw + 视频 video_model）：OpenAI GPT Image / Nano Banana / FLUX / Seedream / WolfRiccardo / Veo3.1 / Seedance2.5 / Kling / Runway Gen-4 / 万相3 / mixailab10；Midjourney 与 Sora 仅报告未入库（MJ 封面被 CF 挡；Sora API 2026-09-24 停服）。run=2026-11-20-0955-la",
   "updatedAt": "2026-11-20T17:55:00.000Z",
   "totalItems": 761,
-  "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
+  "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。",
+  "aiGenRule": "aiGen 为可选布尔字段，aiGenKinds 为数组，取值 image（AI 生图/改图）、video（AI 生视频）、prompt（提示词/教程/官方指南/风格库）、news（资讯，仅 news_topics 用）。门户「AI 生图/视频」读 aiGen===true；未写 aiGen 字段时兜底：视觉素材 styleFamily 为 draw→image、video_model→video；选题标题含 Sora/Veo/Kling/可灵/Seedance/Seedream/即梦/Midjourney/Nano Banana/FLUX/Runway/海螺/万相/文生图/文生视频/图生视频 等模型名→news。写 aiGen:false 可显式排除。判定：作品或流程里实际用了生图/生视频模型（Midjourney、GPT Image、Nano Banana、FLUX、Seedream/即梦、Qwen Image、Veo、Seedance、可灵、Runway、万相、MiniMax H 系、Higgsfield 等）即算；标题写「没用生图/视频模型、纯代码渲染」的不算。不从视觉素材或 3D建模 移除。"
 }
