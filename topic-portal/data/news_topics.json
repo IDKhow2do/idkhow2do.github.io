@@ -1,7 +1,85 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-19T12:52:34.000Z",
+  "updatedAt": "2026-11-20T00:49:46.000Z",
   "topics": [
+    {
+      "url": "https://research.google/blog/a-game-you-cannot-win-unless-you-have-a-quantum-computer/",
+      "title": "一张 3×3 的表格，每行乘积 +1、每列乘积 −1——这张表根本填不出来，为什么量子计算机却能靠它「赢游戏」？Google 在 Willow 处理器上把「魔方阵游戏」各玩 10 万次，胜率 98.3%，超过任何经典策略的上限 88.9%；同一套测试还揪出了随机线路基准测不出的细微误差（Science 封面）",
+      "category": "科技产品",
+      "source": "Google Research 博客（Google Quantum AI，Shashwat Kumar、Rodrigo Cortiñas，2026-11-19）；论文 Science「Quantum-classical separation in bounded-resource tasks arising from measurement contextuality」；Google Blog 同日短文",
+      "publishedAt": "2026-11-19",
+      "eventAt": "2026-11-19",
+      "collectedAt": "2026-11-20T00:49:46.000Z",
+      "updatedAt": "2026-11-20T00:49:46.000Z",
+      "description": "一手来源：Google Research 博客全文（本轮读取）+ Google Blog 同日短文（称论文登上 Science 封面）。核心概念：量子「语境性」（contextuality）——一个测量结果取决于和它一起做的其他相容测量，不能事先给所有可测量的量分配固定值；理论认为它可能比纠缠更接近某些量子算法优势的来源，此前大多只在几个粒子的小系统中演示。开场谜题（原文）：画 3×3 格子，每格填 +1 或 −1，要求每行乘积 +1、每列乘积 −1——行要求偶数个 −1、列要求奇数个，矛盾，所以这张表不存在。变成游戏：Alice 拿到一行、Bob 拿到一列，互不通信各自按规则填，交叉格一致即赢；任何事先写好的表最多赢 8/9。实验数字（原文）：①魔方阵游戏 Alice、Bob 各持 2 个量子比特、共享两对 Bell 对，九种版本各玩 10 万次，胜率 98.30%（0.9830 ± 0.0001），约每 60 轮输 1 次；②Bell–Kochen–Specker 不等式 χ = R1+R2+R3−C1−C2−C3，预设结果的世界里 χ ≤ 4，量子上限 6，借助辅助比特连续做 540 次测量、重复 1000 次，结果「离量子上限只差 7%」；③GHZ 奇偶游戏最多 71 名「玩家」（每人一个量子比特）始终高于经典上限，并验证了 45 个量子比特的真纠缠；④2018 年定理中的「隐藏线性函数」问题首次在真实硬件上跑到 105 个量子比特，成功率仍高于一半（推测的经典上限之上）。意外收获：这些任务要求很多比特同时精确一致，暴露了常规随机线路基准会被平均掉的相干误差——可以当成「上限由物理定死的尺子」。可拍角度：①0 秒直接让观众在纸上填这张不可能的 3×3 表；②「月亮没人看时还在吗」：爱因斯坦的追问如何变成可测的数字；③为什么基准测试需要一个永远不会变容易的上限（类比芯片良率测试里的「金标准」）。",
+      "caveat": "Google 自家研究博客与论文，属当事方表述；「语境性是量子优势的更深来源」是博客引述的理论观点，非定论。隐藏线性函数任务的经典上限为「推测的」（原文 conjectured）。本轮未读论文全文，仅读博客。量子计算不属于用户半导体主线，但与误差/基准测试思路相通。封面为博客图 1（魔方阵游戏规则、量子线路与各行各列实测胜率）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261120a-gq.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261120a-gq.jpg",
+      "imageAlt": "Google Research 博客配图：A 栏为 Alice 与 Bob 的 3×3 填数合作游戏规则，B、C 栏为共享纠缠态的四比特量子线路与按行/列的测量方案，D 栏为各行各列实测获胜概率（约 0.97–0.99，高于 8/9 经典虚线）",
+      "tags": [
+        "量子计算",
+        "误差与噪声",
+        "超导量子",
+        "基准测试",
+        "反直觉"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 19,
+          "画面": 14,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 4
+        },
+        "multiplier": 1.0,
+        "finalScore": 85.0,
+        "threshold": 65,
+        "run": "2026-11-20-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://news.mit.edu/2026/study-reveals-data-centers-long-distance-damage-air-quality-1119",
+      "title": "数据中心集中在弗吉尼亚和得州，为什么空气污染的代价反而落在几百公里外的中西部农业州？MIT 模型估算：2023 年美国数据中心用电带来的空气污染约造成 650 例过早死亡，人均风险最高的是艾奥瓦、内华达、南达科他和堪萨斯",
+      "category": "AI",
+      "source": "MIT News（2026-11-19）；论文发表于 Environmental Research Letters（Noelle Selin、Yuang (Albert) Chen 等，MIT / UC Irvine / Yale）",
+      "publishedAt": "2026-11-19",
+      "eventAt": "2026-11-19",
+      "collectedAt": "2026-11-20T00:49:46.000Z",
+      "updatedAt": "2026-11-20T00:49:46.000Z",
+      "description": "一手来源：MIT News 全文（本轮读取）。研究方法：建立电力系统模型，按小时模拟美国电网 1 万多台发电机谁在响应数据中心新增用电（多为天然气电厂，因地因时而异），得到每台机组的 NOx、SO2 排放，再接入大气化学传输模型，追踪污染物在哪里生成 PM2.5 和地面臭氧，最后用流行病学证据换算成过早死亡。结论（原文口径）：2023 年数据中心用电相关排放约造成 650 例过早死亡（PM2.5 513 例、臭氧/烟雾 137 例），约占全美电力相关死亡的 5.3%；用电集中在北弗吉尼亚和得州，但这两地的死亡率只有多数中西部州的一半左右——原因：①电网互联，为弗吉尼亚供电的边际机组多在俄亥俄河谷，老旧燃煤燃气电厂比例高；②污染物顺风飘到下游州；③中西部农业区化肥带来的氨会加剧 PM2.5 生成。农村人口风险显著高于城市。背景引用：LBNL 估计 2023 年数据中心约占美国总用电 4%、排放 4.4%。可拍角度：①「你家附近没有数据中心，也逃不掉」——一张美国地图上电从哪来、烟往哪飘；②平均排放因子 vs. 边际机组：同样 1 度电，算法不同结论差很多（统计口径题）；③类比国内「东数西算」：选址除了电价地价，还要算空气账（需另找国内数据，不能直接套用）。",
+      "caveat": "模型估算而非实测死亡统计；假设数据中心 24/7 满负荷运行；只覆盖美国 2023 年，未考虑现场自建电厂。数据与结论不能直接迁移到中国。用户主线为半导体/AI，本条属 AI 能耗与公共健康交叉，健康数字为研究估算，不构成医疗建议。封面为 MIT News 官方插图（MIT News; Getty Images，CC BY-NC-ND，仅可裁剪须署名）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261120a-mitdc.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261120a-mitdc.jpg",
+      "imageAlt": "MIT News 官方插图：等距视角的一排排深灰色数据中心机柜楼，被大片亮绿色烟雾状云团包围",
+      "tags": [
+        "AI成本",
+        "数据中心",
+        "能耗",
+        "统计口径",
+        "空气污染"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 77,
+        "baseBreakdown": {
+          "主线": 17,
+          "钩子": 16,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 81.4,
+        "threshold": 65,
+        "run": "2026-11-20-0840-shanghai"
+      }
+    },
     {
       "url": "https://gf.com/news-and-events/news/boston-dynamics-and-globalfoundries-expand-robotics-collaboration/",
       "title": "芯片厂里最先「招」机器人的，为什么不是洁净室，而是楼下那层「地下室」？格罗方德新加坡厂两只 Spot 机器狗从 4 月起在 sub-fab 走了近 900 公里、做了 9 万多次巡检，任务成功率 99%；格罗方德还将成为第一家实地测试 Atlas 人形机器人的芯片制造商，2027 年初开始",

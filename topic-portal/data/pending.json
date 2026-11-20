@@ -3,6 +3,69 @@
   "items": [
     {
       "kind": "visual",
+      "baseScore": 57,
+      "multiplier": 1.069,
+      "score": 60.9,
+      "reason": "本轮达待定区间",
+      "run": "2026-11-20-0840-shanghai",
+      "record": {
+        "title": "只给一张地中海插画，AI 前后派出约 92 个子智能体，把它搭成一座能逛的 3D 小岛：@thebuggeddev 用 Gemini 4 Neon 的 swarm 模式生成 138 个程序化 Blender 网格，TSL 实时反射水面、GPU 驱动的风和沙、程序化海浪声，昼夜和日落可切换",
+        "category": "3d",
+        "styleFamily": "code_video",
+        "source": "https://x.com/thebuggeddev/status/2123506487792410706",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261120a-bug.jpg",
+        "previewType": "image",
+        "description": "一手来源：@thebuggeddev X 帖（2026-11-19 19:59 UTC，约 44 秒录屏）。作者自述：用 Gemini 4 Neon 的 swarm 能力，只给一张地中海插画让它复刻成 3D，总共派出约 92 个 swarm 智能体，做出可交互的世界：138 个程序化 Blender 网格、带实时反射的自定义 TSL 水面、GPU 驱动的风和沙、程序化海洋音效。画面：红褐色岩石海蚀拱上叠着白色圆顶小屋和棕榈树，碧绿海水里有小木船，界面「Kolumara」可切换白天/夜晚/日落，还有「Tides of the Lagoon」介绍卡片。可拍角度：①一张图 → 多智能体分工 → 3D 场景，「涌现」式协作的直观例子；②插画到 3D 的风格保持。",
+        "tool": "Gemini 4 Neon（swarm 子智能体）+ Blender 程序化建模 + TSL 水面（作者自述）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者原帖；未附代码、提示词、原始插画出处或在线链接，许可证未知；「92 个智能体」「138 个网格」为作者自述。原插画作者未注明。",
+        "attribution": "The Bugged Dev（X @thebuggeddev）",
+        "sourceAuthor": "thebuggeddev",
+        "tags": [
+          "多智能体",
+          "程序化生成",
+          "Blender",
+          "TSL",
+          "Gemini 4 Neon"
+        ],
+        "publishedAt": "2026-11-19",
+        "collectionIds": [],
+        "collectedAt": "2026-11-20T00:49:46.000Z",
+        "updatedAt": "2026-11-20T00:49:46.000Z",
+        "verification": {
+          "checked_at": "2026-11-20T00:49:46.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为 X 视频约 11 秒帧：红褐色海蚀拱岩上的白色圆顶房屋与棕榈树，碧绿浅海和小船，顶部为 Kolumara 界面按钮；另看 6 帧（夜景、日落红色版本、泻湖近景），本轮目视核验，非头像。",
+          "video_check": "按 1/6 时长间隔抽 6 帧目视；未运行。"
+        },
+        "curation": {
+          "baseScore": 57,
+          "baseBreakdown": {
+            "实体": 17,
+            "科普": 12,
+            "溯源": 8,
+            "复现": 5,
+            "风格": 9,
+            "新颖": 6
+          },
+          "multiplier": 1.069,
+          "finalScore": 60.9,
+          "threshold": 65,
+          "run": "2026-11-20-0840-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2123504097051725824/vid/avc1/2828x1840/zhUaq4OBxsvCn8WX.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
       "baseScore": 61,
       "multiplier": 1.0618,
       "score": 64.8,
@@ -9272,6 +9335,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-19T12:52:34.000Z",
+  "updatedAt": "2026-11-20T00:49:46.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
