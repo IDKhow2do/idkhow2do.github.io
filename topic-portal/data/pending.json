@@ -2,6 +2,179 @@
   "schemaVersion": 1,
   "items": [
     {
+      "kind": "news",
+      "baseScore": 70,
+      "multiplier": 1.0566,
+      "score": 74.0,
+      "reason": "分数达上墙线但统计数字出自 Liu et al. 2026「Agent Skills in the Wild」论文（README 引用），本轮未读论文原文；触发帖把论文统计误述为「NVIDIA 扫描」；仓库 3 月已建，非新事件",
+      "run": "2026-11-20-1640-shanghai",
+      "record": {
+        "url": "https://github.com/NVIDIA/SkillSpector",
+        "title": "给 Claude Code、Codex 装一个别人写的「技能」，为什么可能等于把电脑钥匙交出去？一项研究分析 31,132 个智能体技能：26.1% 有漏洞、5.2% 疑似故意作恶——NVIDIA 开源的 SkillSpector 号称装之前先扫一遍、且从不运行被扫的代码",
+        "category": "AI",
+        "source": "GitHub NVIDIA/SkillSpector README（Apache-2.0；仓库 2026-03 创建，2026-11-19 仍在更新）；统计引自 Liu et al. 2026「Agent Skills in the Wild: An Empirical Study of Security Vulnerabilities at Scale」",
+        "publishedAt": "2026-11-19",
+        "eventAt": "2026-11-18",
+        "collectedAt": "2026-11-20T08:49:45.000Z",
+        "updatedAt": "2026-11-20T08:49:45.000Z",
+        "description": "一手来源：SkillSpector README（本轮读取）。README 称：智能体技能（Claude Code、Codex CLI、Gemini CLI 等使用）在隐式信任、极少审查下执行；所引研究数据集共 42,447 个来自主流市场的技能，其中分析了 31,132 个：26.1% 至少含一个漏洞，5.2% 显示可能的恶意意图。工具能力：检测漏洞、恶意模式、提示词注入、数据外传、供应链风险；全部为静态分析（正则、Python AST、YARA）加可选的 LLM 读文件内容，从不执行被扫的技能。触发：X 上 @RoundtableSpace（11-18）等转述为「NVIDIA 扫描了 31,132 个技能」，与 README 口径不符。可拍角度：①0 秒打开一个技能文件夹，高亮一行偷偷上传 ~/.ssh 的代码（自制演示）；②为什么「技能」比「插件」更危险：它是写给 AI 看的自然语言，人很少逐行审；③四分之一 vs 二十分之一：漏洞和恶意的区别。",
+        "caveat": "26.1%/5.2% 来自论文统计（README 转引），并非 NVIDIA 自己的扫描结果；论文本轮未读原文，统计口径与时间未核。封面为 GitHub 自动生成的仓库预览图。",
+        "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261120c-skill.jpg",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261120c-skill.jpg",
+        "imageAlt": "GitHub 仓库预览卡：NVIDIA/SkillSpector，副标题 Security scanner for AI agent skills，右侧 NVIDIA 标志",
+        "tags": [
+          "智能体",
+          "AI安全",
+          "供应链安全",
+          "Claude Code",
+          "开源工具"
+        ],
+        "tagSource": "provided",
+        "curation": {
+          "baseScore": 70,
+          "baseBreakdown": {
+            "主线": 20,
+            "钩子": 14,
+            "画面": 6,
+            "来源": 12,
+            "时效": 6,
+            "大陆": 7,
+            "新颖": 5
+          },
+          "multiplier": 1.0566,
+          "finalScore": 74.0,
+          "threshold": 65,
+          "run": "2026-11-20-1640-shanghai"
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 68,
+      "multiplier": 1.219,
+      "score": 82.9,
+      "reason": "分数达上墙线但同作者同工作流（GPT-6.2 Astra + Blender + three.js + 自制 Codex skill）三天内第 3 条，库内已有 Kasane Valley 等，新颖度低",
+      "run": "2026-11-20-1640-shanghai",
+      "record": {
+        "title": "雷暴里一艘巨型装甲战舰顶着翻涌的黑浪前行：@givros 让 GPT-6.2 Astra 只用 Blender + three.js + 自制 Codex 技能干了 53 分钟，搭出可漫游的战舰与风暴海面，完整提示词公开",
+        "category": "3d",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/givros/status/2123671866791350356",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261120c-ship.jpg",
+        "previewType": "image",
+        "description": "一手来源：@givros X 原帖与同串回复。原文：GPT 6.2 Astra 做了这艘军舰，干了 53 分钟、没用外部工具，只用 Blender + ThreeJs + 自制 codex 技能；同串给出 ChatGPT 生成的参考图和完整提示词（要求「一艘巨大装甲战舰在强雷暴中穿越剧烈翻滚的海面」的可完整探索 3D 环境）。画面（本轮抽帧）：乌云压顶，深灰蓝海面浪头密集，战舰船首劈开白浪。可拍角度：同一提示词换模型对比；「风暴海面」的波浪是怎么用代码叠出来的。",
+        "tool": "GPT-6.2 Astra + Blender + three.js + 作者自制 Codex skill（作者声明）；参考图由 ChatGPT 生成",
+        "prompt": "Create a complete, coherent and fully explorable 3D MILITARY BATTLESHIP environment based initially on the provided reference image. The environment represents one enormous armored warship crossing a violently agitated open sea during an intense thunderstorm.（节选，全文见作者同串回复）",
+        "promptProvenance": "original_public",
+        "provenanceNote": "作者 X 原帖（2026-11-20 06:56 UTC，约 50 秒视频）+ 同串自回复：ChatGPT 参考图、完整提示词；无在线 Demo、无源码仓库与许可证，仅外链引用。耗时与工具为作者自述。",
+        "attribution": "@givros",
+        "sourceAuthor": "givros",
+        "tags": [
+          "Three.js",
+          "Blender",
+          "GPT-6.2",
+          "海浪",
+          "场景搭建"
+        ],
+        "publishedAt": "2026-11-20",
+        "collectionIds": [],
+        "collectedAt": "2026-11-20T08:49:45.000Z",
+        "updatedAt": "2026-11-20T08:49:45.000Z",
+        "verification": {
+          "checked_at": "2026-11-20T08:49:45.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为 X 视频约 8 秒帧：战舰船首迎浪、雷暴云层；另看 3/15 秒帧，本轮目视核验，非头像。",
+          "video_check": "抽 3 帧目视；无在线页，未运行。"
+        },
+        "curation": {
+          "baseScore": 68,
+          "baseBreakdown": {
+            "实体": 18,
+            "科普": 9,
+            "溯源": 16,
+            "复现": 12,
+            "风格": 10,
+            "新颖": 3
+          },
+          "multiplier": 1.219,
+          "finalScore": 82.9,
+          "threshold": 65,
+          "run": "2026-11-20-1640-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2123671778216095744/vid/avc1/1920x1080/dD3I_TSFgWqnFn5e.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 58,
+      "multiplier": 1.0,
+      "score": 58.0,
+      "reason": "本轮达待定区间",
+      "run": "2026-11-20-1640-shanghai",
+      "record": {
+        "title": "一个会跳街舞的安卓程序员，让 Opus 5.5（主导）和 GPT-6.2 Sol 合作，把霹雳舞大招 Air Flare（托马斯全旋）复刻成 3D 动画，和自己的实拍上下同屏对照",
+        "category": "3d",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/mhgd3250905/status/2123662796642779637",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261120c-flare.jpg",
+        "previewType": "image",
+        "description": "一手来源：作者 X 原帖。原文：一直尝试用大模型的 3D 建模能力复刻 breaking 招式，试过 GPT Astra/Sol、Gemini Hydrogen/Neon 都不达标；今天用 Opus 5.5 主导 + GPT-6.2 Sol 合作做出 Air Flare；自称安卓开发兼 Bboy、没学过建模。画面：上半米色背景卡通人物单手撑地、双腿劈开旋转，下半为草坪实拍同一动作。可拍角度：人体动作的重心与角动量（需另讲原理）。",
+        "tool": "Claude Opus 5.5（主导）+ GPT-6.2 Sol（作者声明；未说明渲染/建模库）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者 X 原帖（2026-11-20 06:20 UTC，约 16 秒视频，上为 3D 动画、下为实拍）；无源码、无提示词、无 Demo，仅外链引用。",
+        "attribution": "@mhgd3250905",
+        "sourceAuthor": "mhgd3250905",
+        "tags": [
+          "3D动画",
+          "人体动作",
+          "Claude",
+          "GPT-6.2",
+          "街舞"
+        ],
+        "publishedAt": "2026-11-20",
+        "collectionIds": [],
+        "collectedAt": "2026-11-20T08:49:45.000Z",
+        "updatedAt": "2026-11-20T08:49:45.000Z",
+        "verification": {
+          "checked_at": "2026-11-20T08:49:45.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为 X 视频约 3 秒帧：上 3D 动画、下实拍单手撑地劈腿；另看 8/15 秒帧，本轮目视核验，非头像。",
+          "video_check": "抽 3 帧目视；无代码可运行。实拍画面为作者本人或其素材，未核实。"
+        },
+        "curation": {
+          "baseScore": 58,
+          "baseBreakdown": {
+            "实体": 17,
+            "科普": 13,
+            "溯源": 10,
+            "复现": 4,
+            "风格": 6,
+            "新颖": 8
+          },
+          "multiplier": 1.0,
+          "finalScore": 58.0,
+          "threshold": 65,
+          "run": "2026-11-20-1640-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2123662748823556096/vid/avc1/1080x1080/4dHMqn-SWxZE_Lpi.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        }
+      }
+    },
+    {
       "kind": "visual",
       "baseScore": 57,
       "multiplier": 1.069,
@@ -9335,6 +9508,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-20T05:04:17.000Z",
+  "updatedAt": "2026-11-20T08:49:45.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
