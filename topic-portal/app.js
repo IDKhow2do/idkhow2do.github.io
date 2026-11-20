@@ -29,6 +29,8 @@
     visualQuery: "",
     modelFamily: "全部",
     modelQuery: "",
+    aigenFilter: "全部",
+    aigenQuery: "",
     fable52: null,
     fable52Filter: "全部",
     fable52Query: "",
@@ -450,6 +452,7 @@
     state.topicOverrides[url] = next;
     saveStoredFeedback();
     renderTopics();
+    renderAigen();
     // refresh drawer if open for this topic
     const drawer = $("#drawer");
     if (drawer.classList.contains("is-open") && drawer.dataset.key === url) {
@@ -665,6 +668,111 @@
     grid.appendChild(frag);
   }
 
+  /* —— AI 生图/视频 ——
+   * 读数据里的 aiGen===true 与 aiGenKinds（image / video / prompt / news），规则见 visual_items.json 的 aiGenRule。
+   * 未写 aiGen 字段时兜底：视觉 styleFamily draw→image、video_model→video；选题标题含主流生图/生视频模型名→news。
+   * aiGen:false 显式排除。条目仍留在原来的「视觉素材」「选题」里。
+   */
+  const AIGEN_FILTERS = [
+    ["全部", "全部"],
+    ["image", "生图"],
+    ["video", "生视频"],
+    ["prompt", "提示词教程"],
+    ["news", "资讯"],
+  ];
+  const AIGEN_NEWS_RE = /sora|veo\s?\d|kling|可灵|seedance|seedream|即梦|midjourney|nano\s?banana|flux\s?\d|runway|海螺|hailuo|万相|文生图|文生视频|图生视频/i;
+  const AIGEN_VIDEO_RE = /sora|veo|kling|可灵|seedance|runway|海螺|hailuo|万相|视频/i;
+
+  function aigenKinds(entry, kind) {
+    if (!entry || entry.aiGen === false) return null;
+    if (entry.aiGen === true) {
+      const ks = Array.isArray(entry.aiGenKinds) && entry.aiGenKinds.length ? entry.aiGenKinds.slice() : [];
+      if (kind === "news" && !ks.includes("news")) ks.unshift("news");
+      return ks;
+    }
+    if (kind === "visual") {
+      if (entry.styleFamily === "draw") return ["image"];
+      if (entry.styleFamily === "video_model") return ["video"];
+      return null;
+    }
+    const t = entry.title || "";
+    if (!AIGEN_NEWS_RE.test(t)) return null;
+    return ["news", AIGEN_VIDEO_RE.test(t) ? "video" : "image"];
+  }
+
+  function aigenPool() {
+    const out = [];
+    (state.visuals?.items || []).forEach((item) => {
+      const kinds = aigenKinds(item, "visual");
+      if (kinds) out.push({ kind: "visual", item, kinds, ts: item.collectedAt || item.publishedAt || "" });
+    });
+    (state.topics || []).forEach((item) => {
+      const kinds = aigenKinds(item, "news");
+      if (kinds) out.push({ kind: "news", item, kinds, ts: item.collectedAt || item.publishedAt || "" });
+    });
+    out.sort((a, b) => String(b.ts).localeCompare(String(a.ts)));
+    return out;
+  }
+
+  function renderAigenChips() {
+    const host = $("#aigenChips");
+    if (!host) return;
+    const pool = aigenPool();
+    host.innerHTML = "";
+    AIGEN_FILTERS.forEach(([key, label]) => {
+      const count = key === "全部" ? pool.length : pool.filter((e) => e.kinds.includes(key)).length;
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "chip" + (state.aigenFilter === key ? " is-active" : "");
+      btn.textContent = `${label} ${count}`;
+      btn.addEventListener("click", () => {
+        state.aigenFilter = key;
+        renderAigenChips();
+        renderAigen();
+      });
+      host.appendChild(btn);
+    });
+  }
+
+  function filteredAigen() {
+    const q = state.aigenQuery.trim().toLowerCase();
+    return aigenPool().filter((e) => {
+      if (state.aigenFilter !== "全部" && !e.kinds.includes(state.aigenFilter)) return false;
+      if (!q) return true;
+      const it = e.item;
+      const hay = `${it.title || ""} ${it.description || ""} ${it.tool || ""} ${it.source || ""} ${(it.tags || []).join(" ")}`.toLowerCase();
+      return hay.includes(q);
+    });
+  }
+
+  function renderAigen() {
+    const grid = $("#aigenGrid");
+    const empty = $("#aigenEmpty");
+    const hint = $("#aigenHint");
+    const countEl = $("#aigenCount");
+    if (!grid) return;
+    const pool = aigenPool();
+    if (countEl) countEl.textContent = String(pool.length);
+    const list = filteredAigen();
+    grid.innerHTML = "";
+    if (hint) {
+      hint.textContent =
+        list.length === pool.length
+          ? `共 ${list.length} 条 AI 生图/视频（含提示词教程与资讯）`
+          : `显示 ${list.length} / ${pool.length} 条`;
+    }
+    if (!list.length) {
+      if (empty) empty.classList.remove("hidden");
+      return;
+    }
+    if (empty) empty.classList.add("hidden");
+    const frag = document.createDocumentFragment();
+    list.forEach((e) => {
+      frag.appendChild(e.kind === "news" ? buildTopicCard(e.item) : buildVisualCard(e.item, false));
+    });
+    grid.appendChild(frag);
+  }
+
   function renderVisuals() {
     const data = state.visuals;
     const grid = $("#visualsGrid");
@@ -850,6 +958,7 @@
     saveStoredFeedback();
     renderVisuals();
     renderModels();
+    renderAigen();
     renderFable52();
     if (open) {
       const again = (openKind === "fable52" ? fableItem : visualItem) || visualItem || fableItem;
@@ -1090,6 +1199,13 @@
         renderModels();
       });
     }
+    const aigenSearch = $("#aigenSearch");
+    if (aigenSearch) {
+      aigenSearch.addEventListener("input", (e) => {
+        state.aigenQuery = e.target.value;
+        renderAigen();
+      });
+    }
     const fableSearch = $("#fable52Search");
     if (fableSearch) {
       fableSearch.addEventListener("input", (e) => {
@@ -1255,11 +1371,14 @@
       renderVisuals();
       renderModelFamilyChips();
       renderModels();
+      renderAigenChips();
+      renderAigen();
       renderFable52Intro();
       renderFable52Chips();
       renderFable52();
       if (location.hash === "#visuals") $("#tab-visuals")?.click();
       else if (location.hash === "#3d" || location.hash === "#models") $("#tab-models")?.click();
+      else if (location.hash === "#aigen" || location.hash === "#ai") $("#tab-aigen")?.click();
       else if (location.hash === "#fable52" || location.hash === "#fable") $("#tab-fable52")?.click();
     } catch (err) {
       console.error(err);

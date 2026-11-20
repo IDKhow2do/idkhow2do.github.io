@@ -118,7 +118,12 @@
         "finalScore": 89.8,
         "threshold": 65,
         "run": "2026-11-20-1240-shanghai"
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "news",
+        "video"
+      ]
     },
     {
       "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
@@ -8302,7 +8307,12 @@
         "finalScore": 87.7,
         "threshold": 65,
         "run": "2026-10-28-1240-shanghai"
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "news",
+        "video"
+      ]
     },
     {
       "url": "https://arxiv.org/abs/2610.37319",
@@ -8496,7 +8506,12 @@
         "finalScore": 88.8,
         "threshold": 65,
         "run": "2026-10-28-0840-shanghai"
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "news",
+        "video"
+      ]
     },
     {
       "url": "https://arxiv.org/abs/2610.34644",
@@ -13194,7 +13209,12 @@
         "finalScore": 94.0,
         "threshold": 65,
         "run": "2026-10-17-2040-shanghai"
-      }
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "news",
+        "video"
+      ]
     },
     {
       "url": "https://www.scmp.com/tech/big-tech/article/3370966/start-unveils-prototype-heart-euv-lithography-amid-china-chipmaking-push",
@@ -15079,7 +15099,12 @@
         "KV缓存",
         "AI推理"
       ],
-      "tagSource": "provided"
+      "tagSource": "provided",
+      "aiGen": true,
+      "aiGenKinds": [
+        "news",
+        "image"
+      ]
     },
     {
       "url": "https://www.samr.gov.cn/xw/sj/art/2026/art_00dc58816af84949ade6b6d816b3a1ac.html",
@@ -15931,7 +15956,12 @@
         "多尺度监督",
         "训练效率"
       ],
-      "tagSource": "provided"
+      "tagSource": "provided",
+      "aiGen": true,
+      "aiGenKinds": [
+        "news",
+        "image"
+      ]
     },
     {
       "url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development",
@@ -17338,7 +17368,12 @@
         "透明图层",
         "数字创作"
       ],
-      "tagSource": "provided"
+      "tagSource": "provided",
+      "aiGen": true,
+      "aiGenKinds": [
+        "news",
+        "image"
+      ]
     },
     {
       "url": "https://www.nikon.com/company/news/2026/1013_01/",
