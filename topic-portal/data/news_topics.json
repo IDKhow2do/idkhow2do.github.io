@@ -1,7 +1,163 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-20T00:49:46.000Z",
+  "updatedAt": "2026-11-20T05:04:17.000Z",
   "topics": [
+    {
+      "url": "https://x.com/ArtificialAnlys/status/2123581865965855205",
+      "title": "一个从来没「看过」视频的写代码模型，能不能拍出视频模型那样的片子？Artificial Analysis 让 GPT-6.2 Astra 用 three.js 代码搭出悉尼歌剧院、拆解机械表、巨龙袭城，再沿同一条运镜路线和字节 Seedance 2.5 同屏对比；同一天的一篇 arXiv 论文则发现：给视频模型当「骨架」的 3D 代理并不是越精细越好",
+      "category": "AI",
+      "source": "Artificial Analysis 官方 X 帖与同串回复（2026-11-20 00:59 UTC，含 AA-3D Explorer 可交互场景链接）；arXiv 2611.26595「Coda-DaVinci: Reimagining Video Generation with Code2Video」（提交 2026-11-19）及项目页 coda-davinci.github.io",
+      "publishedAt": "2026-11-20",
+      "eventAt": "2026-11-20",
+      "collectedAt": "2026-11-20T05:04:17.000Z",
+      "updatedAt": "2026-11-20T05:04:17.000Z",
+      "description": "一手来源①：Artificial Analysis（AA，独立 AI 评测机构）X 原帖全文（本轮读取）：「语言模型能做出比视频模型更好的视频吗？」LLM 现在能做动态图形、把剪辑写成代码、驱动 Blender 搭 3D 场景。AA 让 AA-3D 榜第一的 GPT-6.2 Astra 用 three.js 代码分别搭出三个场景——悉尼歌剧院、带爆炸视图的机械表、巨龙袭击中世纪小镇——再在浏览器里用脚本相机飞过：15 秒、1080p、24 fps；Dreamina Seedance 2.5（字节，视频模型）拿到同一条相机路线的文字提示和路线参考图，参数相同。视频上半是 GPT-6.2 Astra，下半是 Seedance 2.5。同串回复给出三个场景在 AA-3D Explorer 的可交互链接，以及 AA-3D 与视频竞技场投票入口。AA 原帖没有给出胜负结论或投票结果。一手来源②：arXiv 2611.26595 摘要 + 项目页（本轮读取）：Code2Video 路线让编码智能体先写出可执行的 3D 场景当「代理」，再交给视频模型（文中统一用 Seedance 2.5）生成成片。受控实验与盲评发现：粗糙的代理在动作激烈的任务上保留更多自然动作，中等精度的几何更利于场景一致性；物理仿真和与代理对齐的提示词能进一步提升平均质量。据此提出 Coda-DaVinci：按任务决定用不用 3D 建模，环境和物体给结构化几何、人体代理保持粗糙，把细微手部动作留给视频模型。项目页还写到：在诊断子集上 Blender 比 Three.js 得分更高，但智能体 token 成本约为两倍；长视频在转场稳定性和遵守场景设定上仍有不足。可拍角度：①0 秒上下分屏——同一座歌剧院，一个是代码「搭」的、一个是像素「猜」的，让观众先猜哪个是哪个；②「涌现」系列素材：只学过文字和代码的模型，为什么能当摄影师和置景师？③为什么「越精细越好」在这里不成立：骨架太细，动作反而僵。",
+      "caveat": "AA 帖只展示 3 个场景的同屏对比，未给量化结论；对比由 AA 自行设计与挑选，一方是代码渲染、一方是视频生成，评判标准主观。Coda-DaVinci 为预印本，仅读摘要与项目页、未读全文，未复现；文中结论依赖其设定的基准和模型版本。两条来源为不同团队、不同实验，本条把它们并列为同一话题的两个角度。封面为 AA 视频约 4 秒帧（上 GPT-6.2 Astra、下 Seedance 2.5 的悉尼歌剧院）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261120b-aa.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261120b-aa.jpg",
+      "imageAlt": "Artificial Analysis 对比视频截帧：上半为 GPT-6.2 Astra 用 three.js 搭建的悉尼歌剧院与港湾水面，下半为 Seedance 2.5 生成的悉尼歌剧院与帆船，顶部标注 AA-3D · Sydney Opera House",
+      "tags": [
+        "AI视频",
+        "代码生成视频",
+        "Three.js",
+        "涌现",
+        "基准测试"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 18,
+          "画面": 15,
+          "来源": 13,
+          "时效": 10,
+          "大陆": 7,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 89.8,
+        "threshold": 65,
+        "run": "2026-11-20-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+      "title": "让 AI 自己查 ChatGPT 为什么变慢，3 个多月开了 1700 多次调查、找到 600 多个根因——为什么 OpenAI 还要专门派另一个 AI 去「反驳」它，而且发现「修好」比「找到原因」难得多？",
+      "category": "AI",
+      "source": "OpenAI 官方博客「How OpenAI’s Performance Factory keeps ChatGPT fast」（Okay Zed、Cyrus Forbes，2026-11-19）",
+      "publishedAt": "2026-11-19",
+      "eventAt": "2026-11-19",
+      "collectedAt": "2026-11-20T05:04:17.000Z",
+      "updatedAt": "2026-11-20T05:04:17.000Z",
+      "description": "一手来源：OpenAI 博客全文（本轮读取）。Performance Factory 是 OpenAI 内部用 Codex 智能体自动查找、修复性能退化的系统，由四部分组成：可配置工作流的任务服务（状态、转移、哪一步需要人，用配置文件 + Markdown 提示词写）、给就绪任务分派智能体的调度循环、在云端运行 Codex 的内部 API、在 PR 评论或部署完成时唤醒智能体的订阅机制。第一个工作流「Regression Workflow」：性能告警触发→智能体找根因→提修复→工程师审核部署→智能体回头验证是否恢复到基线，没恢复就退回调查。数字（原文）：三个多月跟踪 1700 多次调查、找到 600 多个根因，约每天 17 次自动调查；人工复核 100 条根因建议，70% 判为准确、30% 需要补充或未完全确立因果。关键设计：早期智能体常停在「第一个说得通的解释」，于是加了对抗式复核——另开一个 Codex 会话专门尝试推翻诊断（例：把对话失败归因于图片下载错误，复核者发现文件定位服务已恢复而失败仍在继续，于是重开调查）。原文明确说「修好比找到原因更难」：智能体的修复有时过于复杂或引入新问题，加缓存等改动涉及架构权衡，仍需熟悉服务的工程师判断；目前瓶颈常是等工程师审核合并。评估：用过去的线上事故做回测，禁止读取事故复盘、记忆和以往结果，并检查记录防止「剧透」。可拍角度：①0 秒画一个闭环：告警→AI 侦探→AI 反方律师→人类法官→AI 回访；②为什么「70% 准确」还要配一个专门唱反调的 AI——类比芯片失效分析里的交叉验证；③智能体时代的分工：人从「干活」变成「做决定」。",
+      "caveat": "OpenAI 自家博客，属当事方表述，所有数字未经第三方核验；「70% 准确」为其内部人工评分口径。系统为内部工具，外部不可用。封面为 OpenAI 博客官方社交分享图（闭环流程示意 + 标题）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261120b-pf.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261120b-pf.jpg",
+      "imageAlt": "OpenAI 官方配图：蓝绿渐变底上，告警、文档机器人、放大镜、终端图标组成的闭环流程示意，下方文字 How OpenAI’s Performance Factory keeps ChatGPT fast",
+      "tags": [
+        "智能体",
+        "AI推理",
+        "Codex",
+        "软件工程",
+        "可靠性"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 75,
+        "baseBreakdown": {
+          "主线": 19,
+          "钩子": 15,
+          "画面": 9,
+          "来源": 15,
+          "时效": 9,
+          "大陆": 4,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 79.2,
+        "threshold": 65,
+        "run": "2026-11-20-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.24963",
+      "title": "「张三生于 2001 年，李四和张三同年出生——李四生于哪年？」这道几句话的两跳题，80 亿参数、训练 1 万亿 token 的模型为什么几乎都只能瞎猜？Physics of Language Models 4.2：64 次从头预训练发现，标准榜单分数会把模型的基本短板藏起来",
+      "category": "AI",
+      "source": "arXiv 2611.24963「Physics of Language Models: Part 4.2, Canon Layers at Scale where Synthetic Pretraining Resonates in Reality」（Zeyuan Allen-Zhu 等，提交 2026-11-12，主类 cs.CL，11-20 交叉列入 cs.AI）；代码与配方公开于 github.com/facebookresearch/PhysicsLM4",
+      "publishedAt": "2026-11-12",
+      "eventAt": "2026-11-12",
+      "collectedAt": "2026-11-20T05:04:17.000Z",
+      "updatedAt": "2026-11-20T05:04:17.000Z",
+      "description": "一手来源：arXiv 摘要页 + HTML 全文图注（本轮读取）。实验规模（原文）：Transformer 与三类线性模型（Mamba2、门控线性注意力 GLA、Gated DeltaNet）共 64 次从头预训练，1.3B–8B 参数、1–2T Nemotron-CC token，每次 8B 训练约 10 万美元。发现：①在学术常见规模（1.3B 参数、100B token）下，调好参数后各架构差异几乎消失；到 1–2T token 才拉开。②Canon 层（在相邻 token 间加一条「横向残差」做局部混合）稳定提升 Transformer，8B 规模下达到相同 MMLU 精度约省 30% 预训练 token。③加了 Canon 后，最简单的线性模型 GLA 在 8B/1T 下追平 Gated DeltaNet、超过 Mamba2——作者推断后两者额外的复杂结构可能「不过是在混合相邻 token」。④反直觉的部分：在标准榜单上追平甚至超过 Transformer 的线性模型，其实无法在只有 500 token 的短上下文里可靠找回信息；更简单的「两跳」问题（图 7：A 生于某年、B 与 A 同年，问 B 生于哪年），无论 Transformer 还是线性模型，在这个规模下几乎都不能稳定超过随机猜测。作者结论：只看标准榜单做架构研究不可靠；<100M 参数的小型合成「游乐场」早已预测了上述差异；给从业者的建议是从预训练早期就加入上下文推理样例，而不是留到中期训练或后训练。可拍角度：①0 秒把这道两跳题直接打在屏幕上让观众 1 秒作答，再揭晓 8B 模型的表现；②「考试高分≠会做题」：榜单为什么会骗人（统计口径题）；③接「涌现」视频：能力什么时候在规模里出现、什么时候根本没出现。",
+      "caveat": "标题中「张三/李四」为按论文图 7 任务格式写的示意，论文原题用占位人名。预印本，未经同行评审；只读了摘要与 HTML 图注，未细读全文与附表。「几乎不能超过随机」是作者在其 2-hop-LL 任务与本文规模下的结论，不代表所有大模型（如更大规模或带推理链的商用模型）都做不到。论文提交于 11-12，本轮因 11-20 交叉列入 cs.AI 才扫到，时效按 8 天计。作者单位本轮未核实，仅注明代码仓库在 facebookresearch 组织下。封面为论文图 7 裁切（1-hop 检索与 2-hop 推理任务示例）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261120b-canon.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261120b-canon.jpg",
+      "imageAlt": "论文图 7 裁切：左侧绿色框为 1-hop 检索任务（5 个人名与出生年份，问 Name1 生于哪年，答 1987），右侧蓝色框为 2-hop 推理任务（Name4 与 Name2 同年出生，Name2 生于 2001，答 2001），箭头标出推理路径",
+      "tags": [
+        "AI训练",
+        "基准测试",
+        "模型架构",
+        "统计口径",
+        "涌现"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 78,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 19,
+          "画面": 8,
+          "来源": 15,
+          "时效": 8,
+          "大陆": 5,
+          "新颖": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 82.4,
+        "threshold": 65,
+        "run": "2026-11-20-1240-shanghai"
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.25112",
+      "title": "AI 智能体一去调用工具，它在 GPU 上的「记忆」就被挤去了 SSD，回来时整条队伍都得等——为什么一篇新论文说：工具什么时候返回其实能猜，提前把 KV 缓存从 SSD 搬回内存，就能让一半以上的卡顿消失？",
+      "category": "AI",
+      "source": "arXiv 2611.25112「TripleKV: Predict, Prefetch, Protect -- KV Cache Management for AI Agents」（Shashwat Jaiswal、Josep Torrellas 等，提交 2026-11-18，主类 cs.DC，11-20 交叉列入 cs.AR）",
+      "publishedAt": "2026-11-18",
+      "eventAt": "2026-11-18",
+      "collectedAt": "2026-11-20T05:04:17.000Z",
+      "updatedAt": "2026-11-20T05:04:17.000Z",
+      "description": "一手来源：arXiv 摘要页 + HTML 图注（本轮读取）。问题（原文）：LLM 智能体在推理和工具执行之间来回切换，每次调用都复用越来越长的上下文；高并发时所有智能体的 KV 缓存工作集可达数百 GiB，远超 GPU 显存。空闲的 KV 块被逐层赶到更慢的存储（显存→主机内存 DRAM→SSD），智能体回来时要从慢层读回，推理因此卡住。关键观察：在智能体负载里，下一次推理要用哪些 KV 块是事先知道的，只是「什么时候用」不确定。TripleKV 做法：①用「懂工具」的延迟预测器估计每次工具调用何时结束（论文表 2 列出最常用 10 种工具各自的预测方法），提前把所需 KV 块从 SSD 预取到主机内存——不占稀缺的显存、不干扰并发请求；②去掉 DRAM 里与显存重复的块；③引入 victim cache，块被赶出显存时从 SSD 回填。结果（原文）：在数据、网页、编程三类智能体上，需要在关键路径读 SSD 的请求比例从 45–76% 降到 10% 以下；P95 首 token 延迟（TTFT）比加了 DRAM/SSD 分层的 vLLM 最多降低 49%，比近期面向智能体的系统低 1.5–7 倍。可拍角度：①0 秒用论文图 3 的时间线：同样两个智能体，四种系统里谁在排队、谁在搬数据；②「CPU 缓存那套又回来了」：预取、牺牲缓存这些几十年前的芯片设计思想，如今用在 AI 记忆上（连接存储/芯片主线）；③智能体越多，为什么显存和 SSD 越成为 AI 成本的大头。",
+      "caveat": "预印本，未经同行评审；只读摘要与图注，未细读全文；数字为作者在其测试平台与工作负载下的结果。「一半以上卡顿消失」为对「关键路径 SSD 读取比例 45–76%→<10%」的通俗化概括，不是论文原话。封面为论文图 3（一次智能体回合在 vLLM、TokenCake、Continuum、TripleKV 中的时间线）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261120b-tkv.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261120b-tkv.jpg",
+      "imageAlt": "论文图 3：横轴为时间，Agent A 发起工具调用期间 Agent B 到达，对比 vLLM、TokenCake、Continuum、TripleKV 四种系统中两个智能体的 DRAM 加载、SSD 加载、排队延迟和预填充执行色块",
+      "tags": [
+        "KV缓存",
+        "AI推理",
+        "智能体",
+        "存储/内存",
+        "AI成本"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 76,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 13,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 4
+        },
+        "multiplier": 1.0566,
+        "finalScore": 80.3,
+        "threshold": 65,
+        "run": "2026-11-20-1240-shanghai"
+      }
+    },
     {
       "url": "https://research.google/blog/a-game-you-cannot-win-unless-you-have-a-quantum-computer/",
       "title": "一张 3×3 的表格，每行乘积 +1、每列乘积 −1——这张表根本填不出来，为什么量子计算机却能靠它「赢游戏」？Google 在 Willow 处理器上把「魔方阵游戏」各玩 10 万次，胜率 98.3%，超过任何经典策略的上限 88.9%；同一套测试还揪出了随机线路基准测不出的细微误差（Science 封面）",
