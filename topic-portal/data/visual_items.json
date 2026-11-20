@@ -1,7 +1,7 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 750,
+  "exportedCount": 761,
   "items": [
     {
       "title": "为什么 AI 做的网页场景总像「塑料感」，而这个浏览器里的海边日落却像 3A 游戏？@rewind02 公开了 8 步管线：先让 Opus 5.5 按论文搭 PBR（FFT 海洋、物理大气、全局光照、体积云），再从真实游戏/电影截图取样、量亮度色相、做最小二乘拟合参数——「别让 AI 做得更好看，给它物理和要命中的数字」",
@@ -39370,11 +39370,696 @@
         "threshold": 70,
         "run": "user-specified-2026-10-30-ai-games"
       }
+    },
+    {
+      "is3d": false,
+      "videoUrl": "",
+      "demoUrl": "",
+      "sourceCodeUrl": "",
+      "previewType": "image",
+      "prompt": "官方原则摘要：Define the result → Describe what's visible → Quote exact text → Separate change vs stay → Role each reference → Iterate one change",
+      "promptProvenance": "original_public",
+      "modelClaim": "",
+      "modelEvidenceUrl": "",
+      "modelVerification": "",
+      "collectionIds": [],
+      "collectedAt": "2026-11-20T17:55:00.000Z",
+      "updatedAt": "2026-11-20T17:55:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "licenseName": "OpenAI 文档许可（站点条款）",
+      "licenseUrl": "",
+      "title": "OpenAI 官方 Image Prompting 指南：把 GPT Image 2.6 当创意总监写——先定结果，再写可见细节，改图时拆开「要变的」和「必须留的」",
+      "category": "image",
+      "styleFamily": "draw",
+      "source": "https://developers.openai.com/api/docs/guides/image-prompting",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261120a-gpt-image-prompt.jpg",
+      "description": "一手来源：OpenAI Developers「Image prompting」官方文档（本轮 200 打开并通读）。面向 GPT-Image-2.6 Flare（偏速度）与 Sunburst（偏细节/精准改图）。核心写法：先定义结果（主体、用途、构图、画幅），再描述可见物（材质、光、色、景别），人物要写尺度/视线/互动；画面文字用引号标出并写清位置、生成后检查拼写；改图时显式拆开「改什么 / 什么不变」；每张参考图给角色（身份/风格/构图等）；一次只改一处再迭代。参数侧：quality、complexity、size（可自定义 16 倍数、比例至 3:1）、transparent 背景、markup 叠加引导编辑。可拍角度：半导体科普封面、信息图、局部改图都能直接套这套「创意总监」清单。封面为文档示例图（剪纸风足球庆祝 + CHAMPIONS 字样）。",
+      "tool": "GPT-Image-2.6（Flare / Sunburst）",
+      "provenanceNote": "OpenAI 官方文档，可公开访问；本轮未调用 Images API。",
+      "attribution": "OpenAI Developers",
+      "sourceAuthor": "OpenAI",
+      "tags": [
+        "提示词",
+        "官方指南",
+        "GPT图像",
+        "教程",
+        "改图"
+      ],
+      "publishedAt": "2026-11-04",
+      "verification": {
+        "checked_at": "2026-11-20T17:55:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为本轮从官方文档示例图 paper-cut-football…sunburst.webp 下载并目视：剪纸风球队举杯与 CHAMPIONS 字样，非头像。",
+        "video_check": "无视频。"
+      },
+      "curation": {
+        "baseScore": 74,
+        "baseBreakdown": {
+          "实体": 10,
+          "科普": 18,
+          "溯源": 20,
+          "复现": 14,
+          "风格": 6,
+          "新颖": 6
+        },
+        "multiplier": 1.0,
+        "finalScore": 74.0,
+        "threshold": 65,
+        "run": "2026-11-20-0955-la"
+      }
+    },
+    {
+      "is3d": false,
+      "videoUrl": "",
+      "demoUrl": "",
+      "sourceCodeUrl": "",
+      "previewType": "image",
+      "prompt": "[Subject] + [Action] + [Location/context] + [Composition] + [Style]",
+      "promptProvenance": "original_public",
+      "modelClaim": "",
+      "modelEvidenceUrl": "",
+      "modelVerification": "",
+      "collectionIds": [],
+      "collectedAt": "2026-11-20T17:55:00.000Z",
+      "updatedAt": "2026-11-20T17:55:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "licenseName": "",
+      "licenseUrl": "",
+      "title": "Google Cloud「Ultimate prompting guide for Nano Banana」：用五段公式写图，再像创意总监点镜头、光位和胶片感",
+      "category": "image",
+      "styleFamily": "draw",
+      "source": "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261120b-nano-banana-prompt.jpg",
+      "description": "一手来源：Google Cloud Blog「Ultimate prompting guide for Nano Banana」（本轮 200 打开）。给出文生图公式 [Subject]+[Action]+[Location/context]+[Composition]+[Style]；多图参考则用 [Reference images]+[Relationship instruction]+[New scenario]。改图强调「变什么 / 留什么」，支持语义遮罩（用文字圈出要改的区域）。另有「像创意总监一样写」：写光位与质感、点明镜头与光圈、指定胶片/材质。可与 DeepMind 同主题指南对照（deepmind.google/models/gemini-image/prompt-guide/）。适合你做抖音封面、人物一致性参考、局部改图。封面为官方博文 hero（Prompting guide to Nano Banana）。",
+      "tool": "Nano Banana / Gemini 图像模型",
+      "provenanceNote": "Google Cloud 官方博文；本轮未调用 Gemini 图像 API。",
+      "attribution": "Google Cloud",
+      "sourceAuthor": "Google Cloud",
+      "tags": [
+        "提示词",
+        "官方指南",
+        "Nano Banana",
+        "Gemini",
+        "教程"
+      ],
+      "publishedAt": "2025-12-01",
+      "verification": {
+        "checked_at": "2026-11-20T17:55:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为本轮下载官方 og:image（化妆特写/蜂鸟/室内三联），目视非头像。",
+        "video_check": "无视频。"
+      },
+      "curation": {
+        "baseScore": 73,
+        "baseBreakdown": {
+          "实体": 10,
+          "科普": 18,
+          "溯源": 20,
+          "复现": 13,
+          "风格": 6,
+          "新颖": 6
+        },
+        "multiplier": 1.0,
+        "finalScore": 73.0,
+        "threshold": 65,
+        "run": "2026-11-20-0955-la"
+      }
+    },
+    {
+      "is3d": false,
+      "videoUrl": "",
+      "demoUrl": "https://docs.bfl.ai/guides/prompting_summary",
+      "sourceCodeUrl": "",
+      "previewType": "image",
+      "prompt": "Image type → Subject → Setting → Light → Framing（omit quality tags）",
+      "promptProvenance": "original_public",
+      "modelClaim": "",
+      "modelEvidenceUrl": "",
+      "modelVerification": "",
+      "collectionIds": [],
+      "collectedAt": "2026-11-20T17:55:00.000Z",
+      "updatedAt": "2026-11-20T17:55:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "licenseName": "",
+      "licenseUrl": "",
+      "title": "Black Forest Labs「Building a Good Prompt」：FLUX 3 按「图像类型→主体→场景→光→构图」写，别堆 masterpiece 质量词",
+      "category": "image",
+      "styleFamily": "draw",
+      "source": "https://docs.bfl.ai/guides/prompting_unified_building",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261120c-flux-prompt.jpg",
+      "description": "一手来源：BFL 文档 Building a Good Prompt（本轮打开；总览页 docs.bfl.ai/guides/prompting_summary 同步核对）。推荐顺序：Image type/medium → Subject → Setting → Light → Framing；重要的东西放前面。明确写「不要堆 quality tags（如 masterpiece）」；从一句话想法逐步加细节，多主体/排版/文字时才拉长。另有 bounding box JSON、风格与文字专章。对你：FLUX 出写实产品/人像时，用这条「导演式 caption」比堆标签稳。封面为文档示例输出（公园里叼网球的写实狗）。",
+      "tool": "FLUX 3 Image",
+      "provenanceNote": "Black Forest Labs 官方文档；示例图来自文档 CDN。",
+      "attribution": "Black Forest Labs",
+      "sourceAuthor": "Black Forest Labs",
+      "tags": [
+        "提示词",
+        "官方指南",
+        "FLUX",
+        "教程",
+        "文生图"
+      ],
+      "publishedAt": "2026-01-01",
+      "verification": {
+        "checked_at": "2026-11-20T17:55:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为本轮从 mintcdn FLUX 文档示例 F2-09.webp 下载：草地写实狗与网球，非头像。",
+        "video_check": "无视频。"
+      },
+      "curation": {
+        "baseScore": 72,
+        "baseBreakdown": {
+          "实体": 10,
+          "科普": 17,
+          "溯源": 20,
+          "复现": 13,
+          "风格": 6,
+          "新颖": 6
+        },
+        "multiplier": 1.0,
+        "finalScore": 72.0,
+        "threshold": 65,
+        "run": "2026-11-20-0955-la"
+      }
+    },
+    {
+      "is3d": false,
+      "videoUrl": "",
+      "demoUrl": "",
+      "sourceCodeUrl": "",
+      "previewType": "image",
+      "prompt": "主体 + 行为 + 环境 +（风格/色彩/光影/构图）；文字用「引号」；编辑：改 X，其余保持不变",
+      "promptProvenance": "original_public",
+      "modelClaim": "",
+      "modelEvidenceUrl": "",
+      "modelVerification": "",
+      "collectionIds": [],
+      "collectedAt": "2026-11-20T17:55:00.000Z",
+      "updatedAt": "2026-11-20T17:55:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "licenseName": "",
+      "licenseUrl": "",
+      "title": "火山方舟 Seedream 4.0–5.0 提示词指南：自然语言写「主体+行为+环境」，文字放引号，编辑时说清改什么、留什么",
+      "category": "image",
+      "styleFamily": "draw",
+      "source": "https://docs.volcengine.com/docs/ark/seedream-4-0-5-0-prompt-guide?lang=zh",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261120d-seedream-prompt.jpg",
+      "description": "一手来源：火山方舟 / 豆包 Seedream 官方提示词指南（docs.volcengine.com，本轮 200；与 ark.volcengine.com 同文核对）。通用规则：① 连贯自然语言写主体+行为+环境，再补风格/色彩/光影/构图；② 有用途就写清图片类型（海报、logo、信息图）；③ 要渲染的文字放双引号；④ 编辑用简洁指令，避免模糊代词，并强调保持不变的部分。覆盖文生图、涂鸦/线框编辑、多图参考替换组合、组图分镜。中文工作流优先读这一份。封面为指南页配图（写实牛仔帽角色 ↔ 二次元同人对照）。",
+      "tool": "Doubao Seedream 4.0 / 4.5 / 5.0",
+      "provenanceNote": "火山引擎官方文档；示例素材为 Seedream 系列生成（文档自述）。",
+      "attribution": "火山方舟 / 字节跳动",
+      "sourceAuthor": "Volcengine",
+      "tags": [
+        "提示词",
+        "官方指南",
+        "Seedream",
+        "即梦",
+        "中文"
+      ],
+      "publishedAt": "2026-01-01",
+      "verification": {
+        "checked_at": "2026-11-20T17:55:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为本轮下载文档 Page image：左右对照写实/二次元角色，非头像。",
+        "video_check": "无视频。"
+      },
+      "curation": {
+        "baseScore": 73,
+        "baseBreakdown": {
+          "实体": 10,
+          "科普": 18,
+          "溯源": 20,
+          "复现": 13,
+          "风格": 6,
+          "新颖": 6
+        },
+        "multiplier": 1.0,
+        "finalScore": 73.0,
+        "threshold": 65,
+        "run": "2026-11-20-0955-la"
+      }
+    },
+    {
+      "is3d": false,
+      "videoUrl": "",
+      "demoUrl": "https://developers.openai.com/api/docs/guides/image-prompting",
+      "sourceCodeUrl": "",
+      "previewType": "image",
+      "prompt": "8 principles: result / format / visible details / people&actions / quoted text / change vs stay / reference roles / one change",
+      "promptProvenance": "original_public",
+      "modelClaim": "",
+      "modelEvidenceUrl": "",
+      "modelVerification": "",
+      "collectionIds": [],
+      "collectedAt": "2026-11-20T17:55:00.000Z",
+      "updatedAt": "2026-11-20T17:55:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "licenseName": "",
+      "licenseUrl": "",
+      "title": "X@WolfRiccardo：把 OpenAI GPT Image 2.6 指南压成 8 条原则 + 40 秒解说（387 赞 / 690 收藏）",
+      "category": "image",
+      "styleFamily": "draw",
+      "source": "https://x.com/WolfRiccardo/status/2118873640439517354",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261120e-wolf-gpt-image.jpg",
+      "description": "一手来源：X 长帖 @WolfRiccardo（2026-11-07 01:10 UTC；本轮拉取全文与互动：赞 387、转发 40、收藏 690、曝光约 3.8 万）。把官方 Image prompting 压成 8 原则：定结果、选可读格式、写可见细节、写人与动作、引号标文字、改图拆变/留、给参考图角色、一次改一处；并对照 Flare/Sunburst 与 quality/size/透明底等参数。附 40 秒解说视频。适合英文扫读官方指南前先建立心智模型；中文实操模板可另看 @longhaiqwe123 同主题串。封面取自其解说视频帧（FLARE/SUNBURST 咖啡机剖面示意）。",
+      "tool": "GPT-Image-2.6 + 官方指南二次讲解",
+      "provenanceNote": "创作者二次总结，指向官方 https://developers.openai.com/api/docs/guides/image-prompting；非官方原文。",
+      "attribution": "Riccardo Wolf（@WolfRiccardo）",
+      "sourceAuthor": "WolfRiccardo",
+      "tags": [
+        "提示词",
+        "X长帖",
+        "GPT图像",
+        "教程",
+        "高收藏"
+      ],
+      "publishedAt": "2026-11-07T01:10:17.000Z",
+      "verification": {
+        "checked_at": "2026-11-20T17:55:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为本轮下载解说视频帧：标注 FLARE/SUNBURST 的咖啡机剖面对比，非头像。",
+        "video_check": "本轮下载并抽帧观看解说视频，未完整精读每一秒。"
+      },
+      "curation": {
+        "baseScore": 70,
+        "baseBreakdown": {
+          "实体": 8,
+          "科普": 16,
+          "溯源": 16,
+          "复现": 14,
+          "风格": 6,
+          "新颖": 10
+        },
+        "multiplier": 1.0,
+        "finalScore": 70.0,
+        "threshold": 65,
+        "run": "2026-11-20-0955-la"
+      }
+    },
+    {
+      "is3d": false,
+      "videoUrl": "",
+      "demoUrl": "https://deepmind.google/models/veo/prompt-guide/",
+      "sourceCodeUrl": "",
+      "previewType": "image",
+      "prompt": "[Cinematography] + [Subject] + [Action] + [Context] + [Style & Ambiance]；多镜用 [00:00-00:02] 时间戳",
+      "promptProvenance": "original_public",
+      "modelClaim": "",
+      "modelEvidenceUrl": "",
+      "modelVerification": "",
+      "collectionIds": [],
+      "collectedAt": "2026-11-20T17:55:00.000Z",
+      "updatedAt": "2026-11-20T17:55:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "licenseName": "",
+      "licenseUrl": "",
+      "title": "Google Cloud「Ultimate prompting guide for Veo 3.1」：五段公式 + 时间戳分镜 + 首尾帧/Ingredients 工作流",
+      "category": "video",
+      "styleFamily": "video_model",
+      "source": "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-veo-3-1",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261120f-veo31-prompt.jpg",
+      "description": "一手来源：Google Cloud Blog（2025-10-15，本轮 200）。公式：[Cinematography]+[Subject]+[Action]+[Context]+[Style & Ambiance]。强调摄影语言（crane/ascending 等）最能定调；对白用引号，SFX/Ambient 分开写；负向提示改成正向排除描述。进阶工作流：① Nano Banana 出首尾帧再交给 Veo 做弧形运镜；② Ingredients to video 做多角色对白；③ 时间戳分段写多镜头（例 [00:00-00:02]…）。注意：API 侧 Veo 预览曾迁移，生产以 Vertex/当前文档为准。封面为官方博文 Veo 3.1 on Vertex AI hero。",
+      "tool": "Veo 3.1（Vertex AI）+ Gemini 图像（工作流）",
+      "provenanceNote": "Google Cloud 官方博文；DeepMind 另有 veo prompt-guide 可对照。",
+      "attribution": "Google Cloud（Khulan Davaajav / Hussain Chinoy）",
+      "sourceAuthor": "Google Cloud",
+      "tags": [
+        "提示词",
+        "官方指南",
+        "Veo",
+        "视频",
+        "分镜"
+      ],
+      "publishedAt": "2025-10-15",
+      "verification": {
+        "checked_at": "2026-11-20T17:55:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为本轮下载官方 hero GIF 中间帧：Veo 3.1 on Vertex AI 拼贴，非头像。",
+        "video_check": "未调用 Veo。"
+      },
+      "curation": {
+        "baseScore": 75,
+        "baseBreakdown": {
+          "实体": 10,
+          "科普": 18,
+          "溯源": 20,
+          "复现": 15,
+          "风格": 6,
+          "新颖": 6
+        },
+        "multiplier": 1.0,
+        "finalScore": 75.0,
+        "threshold": 65,
+        "run": "2026-11-20-0955-la"
+      }
+    },
+    {
+      "is3d": false,
+      "videoUrl": "",
+      "demoUrl": "",
+      "sourceCodeUrl": "",
+      "previewType": "image",
+      "prompt": "素材指代 + 一句话概述 + 分镜时间轴 + 结尾约束；可用 /sd25-pe Skill 调优",
+      "promptProvenance": "original_public",
+      "modelClaim": "",
+      "modelEvidenceUrl": "",
+      "modelVerification": "",
+      "collectionIds": [],
+      "collectedAt": "2026-11-20T17:55:00.000Z",
+      "updatedAt": "2026-11-20T17:55:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "licenseName": "",
+      "licenseUrl": "",
+      "title": "火山方舟 Seedance 2.5 提示词指南：导演式结构化 Prompt——素材指代、一句话概述、时间轴分镜、结尾约束",
+      "category": "video",
+      "styleFamily": "video_model",
+      "source": "https://docs.volcengine.com/docs/ark/seedance-2-5-prompt-guide?lang=zh",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261120g-seedance-prompt.jpg",
+      "description": "一手来源：火山方舟 Seedance 2.5 系列提示词指南（本轮 200 打开中文/英文页）。基础写作四段：① 素材指代（图N/视频N/音频N 各干什么）；② 一句话概述（主体+地点+事件+风格+运镜）；③ 具体情节（时间戳或「镜头N」，正向描述动作/台词/音效）；④ 结尾贯穿约束。支持全模态参考、首尾帧、编辑/延长（有锁定 vs 无锁定规则）。附官方 Skill：npx skills add … --skill sd25-pe。即梦/Seedance 中文视频首选。封面为指南配图分镜线稿六宫格。",
+      "tool": "Doubao Seedance 2.5 / 2.5 flash（即梦）",
+      "provenanceNote": "火山引擎官方文档；视觉/音频示例为 Seedance/Seedream 生成（文档自述）。",
+      "attribution": "火山方舟 / 字节跳动",
+      "sourceAuthor": "Volcengine",
+      "tags": [
+        "提示词",
+        "官方指南",
+        "Seedance",
+        "即梦",
+        "分镜",
+        "中文"
+      ],
+      "publishedAt": "2026-01-01",
+      "verification": {
+        "checked_at": "2026-11-20T17:55:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为本轮下载文档配图：黑白分镜六宫格线稿，非头像。",
+        "video_check": "未调用 Seedance。"
+      },
+      "curation": {
+        "baseScore": 76,
+        "baseBreakdown": {
+          "实体": 10,
+          "科普": 18,
+          "溯源": 20,
+          "复现": 15,
+          "风格": 6,
+          "新颖": 7
+        },
+        "multiplier": 1.0,
+        "finalScore": 76.0,
+        "threshold": 65,
+        "run": "2026-11-20-0955-la"
+      }
+    },
+    {
+      "is3d": false,
+      "videoUrl": "",
+      "demoUrl": "",
+      "sourceCodeUrl": "",
+      "previewType": "image",
+      "prompt": "Subject + Subject Movement + Scene + (Camera Language + Lighting + Atmosphere)",
+      "promptProvenance": "original_public",
+      "modelClaim": "",
+      "modelEvidenceUrl": "",
+      "modelVerification": "",
+      "collectionIds": [],
+      "collectedAt": "2026-11-20T17:55:00.000Z",
+      "updatedAt": "2026-11-20T17:55:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "licenseName": "",
+      "licenseUrl": "",
+      "title": "可灵官方文生视频提示词指南：Prompt = 主体 + 主体运动 + 场景 +（镜头语言 + 光影 + 氛围），动作要适配 5 秒",
+      "category": "video",
+      "styleFamily": "video_model",
+      "source": "https://kling.ai/quickstart/text-to-video-prompt-guide",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261120h-kling-prompt.jpg",
+      "description": "一手来源：Kling AI 官方「How to Write Effective Text-to-Video Prompts」（本轮 200，标注 2025-11-24）。公式：Subject（含外貌短句）+ Subject Movement（简单、适合 5 秒）+ Scene + 可选 Camera/Lighting/Atmosphere。用熊猫咖啡馆例子演示如何从一句话加细节到中景/虚化/环境光。附多条官方示例（火锅熊猫、雪地拉小提琴等）。适合短平快抖音镜头；复杂叙事建议切成多段 5–10s。封面为博文 og:image（视频界面示意图）。",
+      "tool": "Kling AI Text-to-Video",
+      "provenanceNote": "可灵官方博客/快速入门；功能页另有图生视频等专题。",
+      "attribution": "Kling AI",
+      "sourceAuthor": "Kling AI",
+      "tags": [
+        "提示词",
+        "官方指南",
+        "可灵",
+        "Kling",
+        "视频"
+      ],
+      "publishedAt": "2025-11-24",
+      "verification": {
+        "checked_at": "2026-11-20T17:55:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为本轮下载官方 og:image：蓝白扁平插画视频界面，非头像。",
+        "video_check": "未调用可灵。"
+      },
+      "curation": {
+        "baseScore": 72,
+        "baseBreakdown": {
+          "实体": 10,
+          "科普": 17,
+          "溯源": 20,
+          "复现": 13,
+          "风格": 6,
+          "新颖": 6
+        },
+        "multiplier": 1.0,
+        "finalScore": 72.0,
+        "threshold": 65,
+        "run": "2026-11-20-0955-la"
+      }
+    },
+    {
+      "is3d": false,
+      "videoUrl": "",
+      "demoUrl": "https://help.runwayml.com/hc/en-us/articles/47313504791059-Camera-Terms-Prompts-Examples",
+      "sourceCodeUrl": "",
+      "previewType": "image",
+      "prompt": "Describe motion only; positive phrasing; add one element at a time",
+      "promptProvenance": "original_public",
+      "modelClaim": "",
+      "modelEvidenceUrl": "",
+      "modelVerification": "",
+      "collectionIds": [],
+      "collectedAt": "2026-11-20T17:55:00.000Z",
+      "updatedAt": "2026-11-20T17:55:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "licenseName": "",
+      "licenseUrl": "",
+      "title": "Runway Gen-4 Video Prompting Guide：提示词只写运动；正向表述；一次加一个元素迭代",
+      "category": "video",
+      "styleFamily": "video_model",
+      "source": "https://help.runwayml.com/hc/en-us/articles/39789879462419-Gen-4-Video-Prompting-Guide",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261120i-runway-gen4.jpg",
+      "description": "一手来源：Runway Help Center Gen-4 Video Prompting Guide（本轮经 WebFetch 通读全文；curl/无头浏览器遇 Cloudflare 验证页，正文以 WebFetch 为准）。要点：① 简单起步，按 主体运动→镜头运动→场景运动→风格 逐项加；② 只用正向句（Locked camera，不要 No camera movement）；③ 图生视频时少复述图里已有外貌，专注运动；④ 避免一镜塞太多转折。示例：a handheld camera tracks the mechanical bull…。运镜词另见 Camera Terms 专文。封面取自 Runway 官网首页视频缩略图（冰川裂缝 FPV 穿越，体现镜头运动）。",
+      "tool": "Runway Gen-4",
+      "provenanceNote": "Runway 官方帮助中心；本轮直连站点有 Cloudflare 拦截，正文经可信抓取通道核对。",
+      "attribution": "Runway",
+      "sourceAuthor": "Runway",
+      "tags": [
+        "提示词",
+        "官方指南",
+        "Runway",
+        "视频",
+        "运镜"
+      ],
+      "publishedAt": "2025-01-01",
+      "verification": {
+        "checked_at": "2026-11-20T17:55:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为本轮从 runwayml.com 首页 Mux 缩略图下载：冰川裂缝高速穿越画面，非头像；非帮助中心截图（帮助中心被 CF 挡）。",
+        "video_check": "未调用 Gen-4。"
+      },
+      "curation": {
+        "baseScore": 71,
+        "baseBreakdown": {
+          "实体": 9,
+          "科普": 17,
+          "溯源": 18,
+          "复现": 14,
+          "风格": 7,
+          "新颖": 6
+        },
+        "multiplier": 1.0,
+        "finalScore": 71.0,
+        "threshold": 65,
+        "run": "2026-11-20-0955-la"
+      }
+    },
+    {
+      "is3d": false,
+      "videoUrl": "",
+      "demoUrl": "",
+      "sourceCodeUrl": "",
+      "previewType": "image",
+      "prompt": "[总体描述]+[图N/视频N引用]+[分镜N 起-止秒]+[台词]+[音效/BGM]+[风格]+[负向清单]",
+      "promptProvenance": "original_public",
+      "modelClaim": "",
+      "modelEvidenceUrl": "",
+      "modelVerification": "",
+      "collectionIds": [],
+      "collectedAt": "2026-11-20T17:55:00.000Z",
+      "updatedAt": "2026-11-20T17:55:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "licenseName": "",
+      "licenseUrl": "",
+      "title": "阿里云百炼「万相 3.0 视频生成 Prompt 指南」：完整公式=总述+素材引用+分镜时间戳+台词+音效+风格+负向清单",
+      "category": "video",
+      "styleFamily": "video_model",
+      "source": "https://help.aliyun.com/zh/model-studio/wan3-video-generation-prompt-guide",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261120j-wan3-prompt.jpg",
+      "description": "一手来源：阿里云帮助中心万相 3.0 Prompt 指南（本轮 200，全文抓取）。推荐公式：总体描述 + 参考素材引用（图N/视频N/音频N）+ 分镜N（起-止秒：主体+场景+运动+美学）+ 台词 + 音效/BGM + 风格/情绪 + 负向清单。覆盖文生/图生/参考生/编辑/延长；提供 /wan3-pe Skill。中文分镜与对白示例很全（仙侠将军、舞蹈复刻等）。可与 Seedance 指南对照同一套「导演分镜」思维。封面取自文档示例配图（电影感室内光影场景）。",
+      "tool": "通义万相 3.0（阿里云百炼）",
+      "provenanceNote": "阿里云官方文档；示例图来自文档 CDN g-adoc.alcasset.com。",
+      "attribution": "阿里云 / 通义万相",
+      "sourceAuthor": "Alibaba Cloud",
+      "tags": [
+        "提示词",
+        "官方指南",
+        "万相",
+        "视频",
+        "分镜",
+        "中文"
+      ],
+      "publishedAt": "2026-01-01",
+      "verification": {
+        "checked_at": "2026-11-20T17:55:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为本轮从文档 CDN 示例图下载：暗调室内光影电影感画面，非头像/非纯 logo。",
+        "video_check": "未调用万相。"
+      },
+      "curation": {
+        "baseScore": 74,
+        "baseBreakdown": {
+          "实体": 10,
+          "科普": 18,
+          "溯源": 20,
+          "复现": 14,
+          "风格": 6,
+          "新颖": 6
+        },
+        "multiplier": 1.0,
+        "finalScore": 74.0,
+        "threshold": 65,
+        "run": "2026-11-20-0955-la"
+      }
+    },
+    {
+      "is3d": false,
+      "videoUrl": "",
+      "demoUrl": "",
+      "sourceCodeUrl": "",
+      "previewType": "image",
+      "prompt": "工作流：选定模型 → Agent 读官方手册 → 输出分镜/运镜/动作/声音描述",
+      "promptProvenance": "original_public",
+      "modelClaim": "",
+      "modelEvidenceUrl": "",
+      "modelVerification": "",
+      "collectionIds": [],
+      "collectedAt": "2026-11-20T17:55:00.000Z",
+      "updatedAt": "2026-11-20T17:55:00.000Z",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "licenseName": "",
+      "licenseUrl": "",
+      "title": "X@mixailab：做 AI 视频先让 Agent 读官方手册——一次贴齐 Seedance/万相/可灵/MiniMax/Veo/Runway 等 10 份官方提示词入口",
+      "category": "video",
+      "styleFamily": "video_model",
+      "source": "https://x.com/mixailab/status/2116090118910222788",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261120k-mixailab-10guides.jpg",
+      "description": "一手来源：X 帖 @mixailab（2026-10-30；本轮全文+互动：赞 32、转发 19、收藏 27）。方法：选定视频模型 → 把该模型官方提示词文档丢给 Agent → 你只说想拍什么，让 Agent 按官方写法整理分镜/运镜/动作/声音。帖内列出 10 条可点链接（Seedance、阿里万相、可灵、MiniMax H3、PixVerse、Veo、Gemini Omni、Runway、Luma、LTX）。适合当「入口目录」收藏；具体公式仍以各官方文为准。封面为帖内信息图「AI 视频·10 份官方教程」。",
+      "tool": "多模型官方文档索引 + Agent 辅助写词",
+      "provenanceNote": "创作者整理的官方链接索引；非替代各厂商原文。部分外链本轮已逐一点开核对。",
+      "attribution": "MixAILab | 万象AI实验室（@mixailab）",
+      "sourceAuthor": "mixailab",
+      "tags": [
+        "提示词",
+        "X长帖",
+        "视频",
+        "官方指南",
+        "索引",
+        "中文"
+      ],
+      "publishedAt": "2026-10-30T08:49:34.000Z",
+      "verification": {
+        "checked_at": "2026-11-20T17:55:00.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为本轮下载帖内配图：中文表格列出 10 家模型与提示词核心，非头像。",
+        "video_check": "无视频。"
+      },
+      "curation": {
+        "baseScore": 68,
+        "baseBreakdown": {
+          "实体": 8,
+          "科普": 15,
+          "溯源": 16,
+          "复现": 12,
+          "风格": 6,
+          "新颖": 11
+        },
+        "multiplier": 1.0,
+        "finalScore": 68.0,
+        "threshold": 65,
+        "run": "2026-11-20-0955-la"
+      }
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条 | 2026-11-01-0840-shanghai 监控轮追加 5 条 | 2026-11-01-1240-shanghai 监控轮追加 6 条 | 2026-11-02-1640-shanghai 监控轮追加 7 条 | 2026-11-02-2040-shanghai 监控轮追加 6 条 | 2026-11-03-0840-shanghai 监控轮追加 6 条 | 2026-11-03-1240-shanghai 监控轮追加 2 条 | 2026-11-03-1640-shanghai 监控轮追加 3 条 | 2026-11-03-2040-shanghai 监控轮追加 5 条 | 2026-11-04-0840-shanghai 监控轮追加 5 条 | 2026-11-04-1240-shanghai 监控轮追加 4 条 | 2026-11-04-1640-shanghai 监控轮追加 2 条 | 2026-11-04-2040-shanghai 监控轮追加 4 条 | 2026-11-05-0840-shanghai 监控轮追加 5 条 | 2026-11-05-1240-shanghai 监控轮追加 4 条 | 2026-11-05-1640-shanghai 监控轮追加 2 条 | 2026-11-05-2040-shanghai 监控轮追加 3 条 | 2026-11-06-0840-shanghai 监控轮追加 4 条 | 2026-11-06-1640-shanghai 监控轮追加 1 条 | 2026-11-06-2040-shanghai 监控轮追加 1 条 | 2026-11-07-0840-shanghai 监控轮追加 1 条 | 2026-11-07-1240-shanghai 监控轮追加 1 条 | 2026-11-07-1640-shanghai 监控轮追加 1 条 | 2026-11-07-2040-shanghai 监控轮追加 3 条 | 2026-11-08-0840-shanghai 监控轮追加 3 条 | 2026-11-08-1240-shanghai 监控轮追加 1 条 | 2026-11-08-1640-shanghai 监控轮追加 5 条 | 2026-11-08-2040-shanghai 监控轮追加 3 条 | 2026-11-09-0840-shanghai 监控轮追加 8 条 | 2026-11-09-1640-shanghai 监控轮追加 4 条 | 2026-11-09-2040-shanghai 监控轮追加 2 条 | 2026-11-10-0840-shanghai 监控轮追加 4 条 | 2026-11-10-1240-shanghai 监控轮追加 2 条 | 2026-11-10-1640-shanghai 监控轮追加 2 条 | 2026-11-10-2040-shanghai 监控轮追加 5 条 | 2026-11-11-0840-shanghai 监控轮追加 5 条 | 2026-11-11-1240-shanghai 监控轮追加 2 条 | 2026-11-11-1640-shanghai 监控轮追加 2 条 | 2026-11-11-2040-shanghai 监控轮追加 3 条 | 2026-11-12-0840-shanghai 监控轮追加 5 条 | 2026-11-12-1240-shanghai 监控轮追加 1 条 | 2026-11-12-1640-shanghai 监控轮追加 2 条 | 2026-11-13-0840-shanghai 监控轮追加 3 条 | 2026-11-13-1240-shanghai 监控轮追加 1 条 | 2026-11-13-1640-shanghai 监控轮追加 2 条 | 2026-11-14-0840-shanghai 监控轮追加 2 条 | 2026-11-14-1240-shanghai 监控轮追加 3 条 | 2026-11-14-1640-shanghai 监控轮追加 5 条 | 2026-11-14-2040-shanghai 监控轮追加 5 条 | 2026-11-15-0840-shanghai 监控轮追加 2 条 | 2026-11-15-1240-shanghai 监控轮追加 2 条 | 2026-11-15-1640-shanghai 监控轮追加 3 条 | 2026-11-15-2040-shanghai 监控轮追加 2 条 | 2026-11-16-0840-shanghai 监控轮追加 8 条 | 2026-11-16-1240-shanghai 监控轮追加 4 条 | 2026-11-16-1640-shanghai 监控轮追加 2 条 | 2026-11-16-2040-shanghai 监控轮追加 2 条 | 2026-11-17-0840-shanghai 监控轮追加 4 条 | 2026-11-17-1240-shanghai 监控轮追加 4 条 | 2026-11-17-1640-shanghai 监控轮追加 3 条 | 2026-11-17-2040-shanghai 监控轮追加 3 条 | 2026-11-18-0840-shanghai 监控轮追加 3 条 | 2026-11-18-1240-shanghai 监控轮追加 3 条 | 2026-11-18-1640-shanghai 监控轮追加 4 条 | 2026-11-18-2040-shanghai 监控轮追加 3 条 | 2026-11-19-0840-shanghai 监控轮追加 6 条 | 2026-11-19-1240-shanghai 监控轮追加 4 条 | 2026-11-19-1640-shanghai 监控轮追加 4 条 | 2026-11-19-2040-shanghai 监控轮追加 3 条 | 2026-11-20-0840-shanghai 监控轮追加 5 条 | 2026-11-20-1240-shanghai 监控轮追加 2 条 | 2026-11-20-1640-shanghai 监控轮追加 1 条 | 2026-11-20-2040-shanghai 监控轮追加 1 条",
-  "updatedAt": "2026-11-20T12:50:13.000Z",
-  "totalItems": 750,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条 | 2026-11-01-0840-shanghai 监控轮追加 5 条 | 2026-11-01-1240-shanghai 监控轮追加 6 条 | 2026-11-02-1640-shanghai 监控轮追加 7 条 | 2026-11-02-2040-shanghai 监控轮追加 6 条 | 2026-11-03-0840-shanghai 监控轮追加 6 条 | 2026-11-03-1240-shanghai 监控轮追加 2 条 | 2026-11-03-1640-shanghai 监控轮追加 3 条 | 2026-11-03-2040-shanghai 监控轮追加 5 条 | 2026-11-04-0840-shanghai 监控轮追加 5 条 | 2026-11-04-1240-shanghai 监控轮追加 4 条 | 2026-11-04-1640-shanghai 监控轮追加 2 条 | 2026-11-04-2040-shanghai 监控轮追加 4 条 | 2026-11-05-0840-shanghai 监控轮追加 5 条 | 2026-11-05-1240-shanghai 监控轮追加 4 条 | 2026-11-05-1640-shanghai 监控轮追加 2 条 | 2026-11-05-2040-shanghai 监控轮追加 3 条 | 2026-11-06-0840-shanghai 监控轮追加 4 条 | 2026-11-06-1640-shanghai 监控轮追加 1 条 | 2026-11-06-2040-shanghai 监控轮追加 1 条 | 2026-11-07-0840-shanghai 监控轮追加 1 条 | 2026-11-07-1240-shanghai 监控轮追加 1 条 | 2026-11-07-1640-shanghai 监控轮追加 1 条 | 2026-11-07-2040-shanghai 监控轮追加 3 条 | 2026-11-08-0840-shanghai 监控轮追加 3 条 | 2026-11-08-1240-shanghai 监控轮追加 1 条 | 2026-11-08-1640-shanghai 监控轮追加 5 条 | 2026-11-08-2040-shanghai 监控轮追加 3 条 | 2026-11-09-0840-shanghai 监控轮追加 8 条 | 2026-11-09-1640-shanghai 监控轮追加 4 条 | 2026-11-09-2040-shanghai 监控轮追加 2 条 | 2026-11-10-0840-shanghai 监控轮追加 4 条 | 2026-11-10-1240-shanghai 监控轮追加 2 条 | 2026-11-10-1640-shanghai 监控轮追加 2 条 | 2026-11-10-2040-shanghai 监控轮追加 5 条 | 2026-11-11-0840-shanghai 监控轮追加 5 条 | 2026-11-11-1240-shanghai 监控轮追加 2 条 | 2026-11-11-1640-shanghai 监控轮追加 2 条 | 2026-11-11-2040-shanghai 监控轮追加 3 条 | 2026-11-12-0840-shanghai 监控轮追加 5 条 | 2026-11-12-1240-shanghai 监控轮追加 1 条 | 2026-11-12-1640-shanghai 监控轮追加 2 条 | 2026-11-13-0840-shanghai 监控轮追加 3 条 | 2026-11-13-1240-shanghai 监控轮追加 1 条 | 2026-11-13-1640-shanghai 监控轮追加 2 条 | 2026-11-14-0840-shanghai 监控轮追加 2 条 | 2026-11-14-1240-shanghai 监控轮追加 3 条 | 2026-11-14-1640-shanghai 监控轮追加 5 条 | 2026-11-14-2040-shanghai 监控轮追加 5 条 | 2026-11-15-0840-shanghai 监控轮追加 2 条 | 2026-11-15-1240-shanghai 监控轮追加 2 条 | 2026-11-15-1640-shanghai 监控轮追加 3 条 | 2026-11-15-2040-shanghai 监控轮追加 2 条 | 2026-11-16-0840-shanghai 监控轮追加 8 条 | 2026-11-16-1240-shanghai 监控轮追加 4 条 | 2026-11-16-1640-shanghai 监控轮追加 2 条 | 2026-11-16-2040-shanghai 监控轮追加 2 条 | 2026-11-17-0840-shanghai 监控轮追加 4 条 | 2026-11-17-1240-shanghai 监控轮追加 4 条 | 2026-11-17-1640-shanghai 监控轮追加 3 条 | 2026-11-17-2040-shanghai 监控轮追加 3 条 | 2026-11-18-0840-shanghai 监控轮追加 3 条 | 2026-11-18-1240-shanghai 监控轮追加 3 条 | 2026-11-18-1640-shanghai 监控轮追加 4 条 | 2026-11-18-2040-shanghai 监控轮追加 3 条 | 2026-11-19-0840-shanghai 监控轮追加 6 条 | 2026-11-19-1240-shanghai 监控轮追加 4 条 | 2026-11-19-1640-shanghai 监控轮追加 4 条 | 2026-11-19-2040-shanghai 监控轮追加 3 条 | 2026-11-20-0840-shanghai 监控轮追加 5 条 | 2026-11-20-1240-shanghai 监控轮追加 2 条 | 2026-11-20-1640-shanghai 监控轮追加 1 条 | 2026-11-20-2040-shanghai 监控轮追加 1 条\n[2026-11-20T17:55:00.000Z] Task3 提示词教程入库 11 条（图像 draw + 视频 video_model）：OpenAI GPT Image / Nano Banana / FLUX / Seedream / WolfRiccardo / Veo3.1 / Seedance2.5 / Kling / Runway Gen-4 / 万相3 / mixailab10；Midjourney 与 Sora 仅报告未入库（MJ 封面被 CF 挡；Sora API 2026-09-24 停服）。run=2026-11-20-0955-la",
+  "updatedAt": "2026-11-20T17:55:00.000Z",
+  "totalItems": 761,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。"
 }
