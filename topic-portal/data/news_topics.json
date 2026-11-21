@@ -1,7 +1,132 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-20T12:50:13.000Z",
+  "updatedAt": "2026-11-21T00:45:58.000Z",
   "topics": [
+    {
+      "url": "https://www.edb.gov.sg/en/news-and-insights/micron-marks-first-tool-move-in-at-singapore-hbm-advanced-packaging-facility",
+      "title": "一座 70 亿美元的封装厂，为什么「搬进第一台机台」就要开仪式发新闻？美光新加坡 HBM 先进封装厂 11 月 19 日把第一台制程设备搬进洁净室，可首批产出还要等到 2027 年初——从机台进门到出货，中间这一年在干什么？",
+      "category": "半导体",
+      "source": "美光（Micron Technology）新闻稿，经新加坡经济发展局（EDB）官网发布（2026-11-19）；TechNews 科技新报、CRN Asia、TNGlobal 同日转述",
+      "publishedAt": "2026-11-19",
+      "eventAt": "2026-11-19",
+      "collectedAt": "2026-11-21T00:45:58.000Z",
+      "updatedAt": "2026-11-21T00:45:58.000Z",
+      "description": "一手来源：美光新闻稿（EDB 官网全文，本轮读取）：美光 11 月 19 日在新加坡 HBM（高带宽内存）先进封装厂举行「首台机台移入」仪式，把第一台制程设备装进其中一间洁净室；此前已完成机台安装所需的关键基础设施。美光全球封装测试资深副总裁 Chen Kok Sing 表示建设进展顺利，预计 2027 年初开始首批产出。该厂 2025 年 1 月动土，到本十年末及以后投资约 70 亿美元（约 90 亿新元），初期约 1,400 个岗位；美光 2026 年 1 月另在新加坡动土的 NAND 晶圆厂预计 2028 年下半年出晶圆，两厂合计约 3,000 个新岗位，美光在新加坡已有 1 万多名员工。CRN Asia 补充：HBM 是把多颗 DRAM 垂直堆叠、贴近处理器放置的内存；先进封装是芯片堆叠、键合、测试后出货的后段工序。可拍角度：①0 秒用仪式照片+「70 亿美元、第一台机器、还要等一年」三个数字抛问题；②用工厂视角讲「move-in」之后的流程：机台就位、接水电气（hook-up）、调机、验证、试产——这一段是本号身份锚点，需用户按亲身经验讲，新闻稿本身没有细节；③为什么 AI 越火，HBM 封装厂越抢手（堆叠层数、键合）。",
+      "caveat": "新闻稿只说「首台制程设备」进洁净室，未说明是哪类设备；「move-in 到量产之间的调机、验证流程」是行业常识角度，并非新闻稿内容，需按用户自身经验讲。投资额、岗位数、产出时间均为美光自述。封面为美光提供的仪式合影（经 TechNews 刊出，og 图），画面是人物合影而非机台。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261121a-mu.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261121a-mu.jpg",
+      "imageAlt": "美光新加坡 HBM 先进封装厂首台机台移入仪式合影：九位嘉宾站在写有「Singapore HBM Advanced Packaging Facility First Tool Move-In」的背板前竖起大拇指，脚下是绿色环氧地坪",
+      "tags": [
+        "芯片制造",
+        "先进封装",
+        "HBM",
+        "建厂",
+        "新加坡"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 93,
+        "baseBreakdown": {
+          "主线": 23,
+          "钩子": 15,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 5,
+          "dbskill": 10
+        },
+        "multiplier": 1.0743,
+        "finalScore": 99.9,
+        "threshold": 65,
+        "run": "2026-11-21-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://news.mit.edu/2026/tiny-superconducting-sandwich-could-help-computers-use-less-energy-1120",
+      "title": "不用半导体，也能存 0 和 1？MIT 把一层超薄超导膜夹在两层磁性薄膜中间：两边磁化方向相反时电流零电阻通过，方向相同就变成电阻——断电后还记得住；温度再低一点，它还能当只让电流朝一个方向无阻流动的「超导二极管」",
+      "category": "半导体",
+      "source": "MIT News（2026-11-20，MIT 等离子体科学与聚变中心 PSFC）；论文：Physical Review Letters「Magnetic Exchange-Coupled Superconducting Devices with Broken Symmetry for Cryogenic Memory」（Ingla-Aynés、Moodera 等）",
+      "publishedAt": "2026-11-20",
+      "eventAt": "2026-11-20",
+      "collectedAt": "2026-11-21T00:45:58.000Z",
+      "updatedAt": "2026-11-21T00:45:58.000Z",
+      "description": "一手来源：MIT News 全文（本轮读取）。背景：超导计算机用无电阻的超导体代替半导体，理论上更快、发热更少，但缺少能在极低温下工作的高速大容量内存。MIT PSFC 高级研究员 Jagadeesh Moodera 团队做了一个「三明治」：超薄超导膜夹在两层磁性层之间，磁层决定超导性开或关。读：电流能否通过区分 0/1；写：施加一个小磁场，再用电脉冲短暂加热选中的单元，让磁化更容易翻转；翻转后不需要持续供电或外加磁场就能保持，是非易失存储。团队演示了只切换一个单元而不改动相邻单元（做成可寻址存储阵列的前提）。更低温度下它还是超导二极管：在一定电流范围内一个方向零电阻、反方向有电阻，改磁化方向就能翻转或关闭这个方向，可用来引导超导电路里的信号脉冲。文章称其可为量子计算机周边电子学提供存储和信号控制。可拍角度：①0 秒用封面——显微镜下被细金线键合到电路板上的小芯片，问「这块东西为什么必须泡在极低温里才肯工作」；②一张示意动画：两层磁铁同向/反向 → 中间的超导膜「开关」；③从工艺人视角讲引线键合和低温封装难在哪（需用户补经验）。",
+      "caveat": "MIT 新闻稿称「比传统半导体单元写入能耗更低」，但团队自述下一步才要缩小器件、做成阵列并量化系统级节能，具体能耗数字未给；器件仍需极低温工作。论文原文未读，仅据 MIT 新闻稿。封面为 MIT 新闻稿配图（显微镜下的键合器件），未核实拍摄的是否就是文中器件本体。脱离晶圆厂产线的实验室题材，按规则书偏低处理。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261121a-mit.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261121a-mit.jpg",
+      "imageAlt": "显微镜圆形视野中，一块方形小芯片放在绿色电路板上，多根极细金属引线从芯片上的电极连到板上镀锡焊盘",
+      "tags": [
+        "存储",
+        "超导",
+        "器件物理",
+        "芯片能耗",
+        "量子计算"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 70,
+        "baseBreakdown": {
+          "主线": 16,
+          "钩子": 12,
+          "画面": 15,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 3,
+          "新颖": 5,
+          "dbskill": -6
+        },
+        "multiplier": 1.0924,
+        "finalScore": 76.5,
+        "threshold": 65,
+        "run": "2026-11-21-0840-shanghai"
+      }
+    },
+    {
+      "url": "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5/",
+      "title": "AI 修图为什么越改越糊、越改越偏色？字节 Seedream 5.5 说同一张图连改 100 轮，没改的地方像素级不动；还能直接生成带透明通道的素材、把密集小字写清楚——已陆续在即梦、豆包上线",
+      "category": "AI",
+      "source": "字节跳动 Seed 团队官方博客「生成更真实，百轮编辑更稳定｜Seedream 5.5 发布」（2026-11-09）及项目页 seed.bytedance.com/seedream5_5；The Next Web 同日报道",
+      "publishedAt": "2026-11-09",
+      "eventAt": "2026-11-09",
+      "collectedAt": "2026-11-21T00:45:58.000Z",
+      "updatedAt": "2026-11-21T00:45:58.000Z",
+      "description": "一手来源：Seed 官方博客（本轮读取）。Seedream 5.5 是字节新一代图像创作模型，三项升级：①多轮编辑更稳：非编辑区域像素级保持、消除色彩偏移，减少连续修改中的细节丢失与画质衰减，支持围绕同一张图最多 100 轮持续修改；②原生 RGBA：直接输出带 Alpha 通道的全透明/半透明图像，省掉抠图修边；③光照、材质、皮肤纹理更自然，减少过度油亮和过曝，复杂字形与密集小字渲染更准。官方称整体较前代显著提升，在文字结构与文生图真实感上领先其他主流模型，并预告 Pro 版。体验入口：即梦网页版（创作-生成/画布选 Seedream 5.5）、豆包 App/网页版图像生成、豆包工作技能、火山方舟体验中心。The Next Web 指出性能说法均为字节自述，演示中同一张人像连改 100 次换衣服和物件。可拍角度：①0 秒并排放「改 10 次后的旧模型 vs 新模型」——观众自己用 AI 修图都遇到过越改越糊；②讲清原因：每次编辑都是把上一张输出重新编码再生成，误差像复印件的复印件一样累积，「像素级保持」就是只重画要改的区域；③用官方「蓝闪蝶」小字信息图测一下中文小字到底清不清楚，适合做 AI 生图能力练习。",
+      "caveat": "100 轮编辑、文字渲染与真实感「领先」等均为字节官方评测和自述，未独立复现；「复印件的复印件」是对误差累积的通俗解释，非官方技术说明，官方未公开具体方法。发布已 11 天，本轮在 X 上见到大量转述才补收（库内此前无 Seedream 5.5 条目）。封面为官方博客示例图「蓝闪蝶」中文小字信息图（官方称由 Seedream 5.5 生成）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261121a-seed.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261121a-seed.jpg",
+      "imageAlt": "Seedream 5.5 官方示例图：黑底上一只蓝闪蝶标本，四周排满带编号的中文小字说明和局部放大图，标题为「蓝闪蝶」",
+      "tags": [
+        "AI生图",
+        "图像编辑",
+        "Seedream",
+        "即梦",
+        "透明素材"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "主线": 16,
+          "钩子": 15,
+          "画面": 15,
+          "来源": 15,
+          "时效": 7,
+          "大陆": 10,
+          "新颖": 4,
+          "dbskill": 6
+        },
+        "multiplier": 1.0566,
+        "finalScore": 93.0,
+        "threshold": 65,
+        "run": "2026-11-21-0840-shanghai"
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "news",
+        "image"
+      ]
+    },
     {
       "url": "https://www.anthropic.com/research/claude-black-hole-physics",
       "title": "一道物理学家 2003 年就指出答案取决于一个「三圈」数、却因要算数千张图而 20 多年没人算完的黑洞题，为什么最后是 Claude 派出一群「分身」在后台跑了约 6 周算完的？Anthropic 称 Claude 解出黑洞物理的两个开放问题——一个证明了「热气体变黑洞」在量子一侧也是突变，一个把「最轻黑洞」的质量上限精确压到 c/9.1266 并证明不能再低",
