@@ -1,7 +1,135 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-21T00:45:58.000Z",
+  "updatedAt": "2026-11-22T00:37:46.000Z",
   "topics": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000116/a2024conflictmineralsrepor.htm",
+      "title": "全世界最值钱的芯片公司，自己不造一颗芯片？英伟达在向美国证监会提交的文件里白纸黑字写着「我们不制造产品所用的半导体」——晶圆制造、封装、测试全交给台积电等供应商。那英伟达到底干什么，真正「造芯片」的晶圆厂里又在干什么？",
+      "category": "半导体",
+      "source": "英伟达（NVIDIA）向美国 SEC 提交的《Conflict Minerals Report》（2023 日历年，2024 年提交）及历年 10-K 同一表述；观众需求信号：X @zhangsheng5w 2026-11-21 中文帖",
+      "publishedAt": "2024-05-31",
+      "eventAt": "2026-11-21",
+      "collectedAt": "2026-11-22T00:37:46.000Z",
+      "updatedAt": "2026-11-22T00:37:46.000Z",
+      "description": "一手来源：英伟达向 SEC 提交的冲突矿产报告（本轮读取）原文：「We do not manufacture semiconductors used for our products. Instead, we utilize a fabless manufacturing strategy」——英伟达不制造自家产品用的半导体，晶圆制造、组装、测试、封装各环节都交给关键供应商；它自己会直接采购内存、基板等部分原材料，其余原料由供应商负责，从而把资源集中在产品设计、质量保证、市场和客户支持上。历年 10-K 中也写明晶圆由台积电、三星等供应商生产。为什么现在值得拍：X 上一条中文帖（@zhangsheng5w，粉丝约 2,900）11-21 讲「很多人以为英伟达是造芯片的，其实它是 Fabless」，一天内约 15.7 万曝光、1,097 赞、503 收藏、151 转发——互动远超作者粉丝量，说明「英伟达到底造不造芯片」是观众本来就有的疑问（属跨平台信号，抖音上未核验）。可拍角度：①0 秒抛问题：「市值全球第一的芯片公司，一颗芯片都不自己造？」配 SEC 原文截图；②用「图纸→晶圆厂→封装测试→成品」一条链说清 Fabless / Foundry / OSAT 分工，晶圆厂这段用本号身份讲：一片晶圆在厂里要走几百道工序、刻蚀只是其中一步；③反问收尾：既然设计和制造能分开，为什么「会画图纸」不等于「造得出来」——落回工艺经验和良率。",
+      "caveat": "SEC 原文出自英伟达 2023 日历年冲突矿产报告，属常青事实而非新闻；供应商名单以最新 10-K 为准。X 帖只作为观众兴趣信号，其中「它连一颗螺丝钉都不自己生产」等说法是作者口语化表达，不作为事实引用。封面为台积电新闻室官方 og 图（台积电总部大厅 logo 墙），用来对应「交给台积电代工」，并非英伟达或晶圆厂内部画面。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261122a-fabless.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261122a-fabless.jpg",
+      "imageAlt": "台积电总部大厅：红色墙面中央是带晶圆图案的 tsmc 圆形标志，前方是发光的弧形接待台",
+      "tags": [
+        "芯片制造",
+        "晶圆代工",
+        "Fabless",
+        "英伟达",
+        "台积电",
+        "观众问题"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 94,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 16,
+          "画面": 8,
+          "来源": 15,
+          "时效": 6,
+          "大陆": 8,
+          "新颖": 5,
+          "dbskill": 14
+        },
+        "multiplier": 1.0743,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-11-22-0840-shanghai"
+      },
+      "relatedLinks": [
+        "https://x.com/zhangsheng5w/status/2124058057420288213"
+      ]
+    },
+    {
+      "url": "https://www.nature.com/articles/d41586-026-03812-7",
+      "title": "AI 帮人证明了黎曼猜想？证明写成 1,700 万行 Lean 代码，没有一个数学家读得完，Lean 社区却在一天内宣布「确认正确」——人看不懂的证明，凭什么让人相信？",
+      "category": "AI",
+      "source": "Nature 新闻（2026-11-20 发布，11-21 更新）；Lean 与 Mathlib 社区联合声明（Lean community blog，2026-11-21）",
+      "publishedAt": "2026-11-20",
+      "eventAt": "2026-11-20",
+      "collectedAt": "2026-11-22T00:37:46.000Z",
+      "updatedAt": "2026-11-22T00:37:46.000Z",
+      "description": "一手来源：①Nature 新闻（本轮读取）：11 月 20 日，在 Anthropic 任职的数学家 Levent Alpöge 宣布「我相信我和 Claude 一起找到了黎曼猜想的证明」。黎曼猜想是克雷研究所七大千禧年难题之一，悬赏 100 万美元，讲的是 ζ 函数非平凡零点是否都落在一条竖线上、进而决定素数分布有多「随机」。菲尔兹奖得主 James Maynard 说「如果完全成立，这显然是数学史的里程碑」，并认为证明很可能是对的；但 Andrew Granville 批评 Alpöge 那份 4 页说明「写得一团乱」，并质疑发布时间恰在 Anthropic IPO 后股价下跌之际（Alpöge 在文中否认）。同一天，斯坦福 Ravi Vakil 抢先放出另一份完全由人写的证明预印本（作者 Alessandro Maria Masullo）。②Lean 社区声明（本轮读取）：Alpöge 的证明是一个 1,700 万行的 Lean 库，只依赖 Mathlib；社区一天内按四条标准核验——定理陈述就是 Mathlib 里审过的 RiemannHypothesis、几十人独立编译复现、用两个独立工具比对证明的正是该陈述、导出的证明被 Lean 官方内核和多个不同语言实现的独立检查器验过（其中两个自带「不会接受错误证明」的形式化证明），并宣布「完全确信证明正确」。可拍角度：①0 秒：「数学界最难的题，被 AI 做出来了？」+ 素数/零点竖线动画（可用 Canvas 自制）；②核心反直觉：证明正确 ≠ 有人看懂——机器检验靠的是「每一步都能被一个很小的程序逐条核对」；③类比工厂：芯片设计也靠形式化验证和自动检查，不靠工程师逐行读图——可带出本号身份。",
+      "caveat": "Nature 文章为滚动更新的突发新闻；Lean 社区声明证实的是「Lean 证明有效」，数学界对证明思路的理解和人写版本的审查还要很久。不要说成「AI 独立证明」：公开说法是 Alpöge 与 Claude 合作。Anthropic IPO、股价等只作背景，不做投资解读。封面为 Nature 文章配图（Getty 图库：学生在写满公式的白板墙前讨论），不是证明本身的画面。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261122a-rh.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261122a-rh.jpg",
+      "imageAlt": "Nature 配图：一群年轻人在写满数学公式的白色墙面前讨论、书写，右侧署名 James Brittain/Getty",
+      "tags": [
+        "AI推理",
+        "AI数学",
+        "形式化验证",
+        "Lean",
+        "Claude"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 96,
+        "baseBreakdown": {
+          "主线": 18,
+          "钩子": 19,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 7,
+          "新颖": 5,
+          "dbskill": 12
+        },
+        "multiplier": 1.0566,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-11-22-0840-shanghai"
+      },
+      "relatedLinks": [
+        "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+        "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/"
+      ]
+    },
+    {
+      "url": "https://www.nature.com/articles/s41928-026-01748-4",
+      "title": "芯片里本来只是拿来做电阻的一层氮化钛，冻到接近绝对零度，竟成了量子计算机想要的「超级电感」——连代工厂都没为它设计过，为什么偏偏好用？",
+      "category": "半导体",
+      "source": "Nature Electronics 社论《CMOS surprises》（2026-11-20），介绍同期 Quantum Motion / UCL / 帝国理工 / 剑桥等团队论文及 HRL Laboratories 的 Thaddeus Ladd 评论",
+      "publishedAt": "2026-11-20",
+      "eventAt": "2026-11-20",
+      "collectedAt": "2026-11-22T00:37:46.000Z",
+      "updatedAt": "2026-11-22T00:37:46.000Z",
+      "description": "一手来源：Nature Electronics 社论（本轮读取）。研究团队（Quantum Motion、UCL、帝国理工、剑桥、CIC nanoGUNE 等）发现：GlobalFoundries 22 nm FD-SOI 工艺里原本用来做多晶电阻的氮化钛（TiN）薄膜，在深低温下会变成超导体，能直接做出「超级电感」（特征阻抗高于超导电阻量子 6.45 kΩ 的电感）——过去这类器件要靠约瑟夫森结或扭转二维材料等专门结构。团队把这种电感和同一芯片上的硅量子点集成成射频单电子晶体管（硅自旋量子比特的读出传感器），占地仅 18 平方微米，4 纳秒积分时间内功率信噪比 4,500。HRL 的 Ladd 评论：现成 CMOS 金属化里、没做任何专门工艺调整的 TiN 就达到超级电感级性能，「确实出乎意料、也很走运」；由于 GlobalFoundries 的知识产权限制部分工艺细节，背后物理机制仍不清楚。可拍角度：①0 秒：镊子夹着这颗芯片放在「雪」上的照片 +「这层膜本来只是电阻」；②用工艺视角讲 TiN 在晶圆厂里有多常见（阻挡层、硬掩模、电阻），为什么低温会让它变脸；③为什么量子计算公司都想用标准 CMOS 产线造芯片——量产、良率、成本。",
+      "caveat": "来源是期刊社论，论文原文本轮未读全文；性能数字按社论转述。「TiN 在晶圆厂里常作阻挡层/硬掩模」属行业常识，需按用户自身经验讲，社论未提及。机制目前未解释，不能讲成定论。昨日已收 MIT 超导存储器，同为超导话题但事件和角度不同。封面为社论配图（Quantum Motion 的 CMOS 超级电感芯片，摄影 Christy Nunns）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261122a-cmos.png",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261122a-cmos.png",
+      "imageAlt": "镊子夹着一颗方形芯片，芯片表面有成排焊盘和中间的点阵结构，背景是白色冰霜般的绒状物",
+      "tags": [
+        "芯片制造",
+        "量子计算",
+        "超导",
+        "CMOS",
+        "薄膜材料"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 87,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 15,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 4,
+          "新颖": 4,
+          "dbskill": 4
+        },
+        "multiplier": 1.0743,
+        "finalScore": 93.5,
+        "threshold": 65,
+        "run": "2026-11-22-0840-shanghai"
+      }
+    },
     {
       "url": "https://www.edb.gov.sg/en/news-and-insights/micron-marks-first-tool-move-in-at-singapore-hbm-advanced-packaging-facility",
       "title": "一座 70 亿美元的封装厂，为什么「搬进第一台机台」就要开仪式发新闻？美光新加坡 HBM 先进封装厂 11 月 19 日把第一台制程设备搬进洁净室，可首批产出还要等到 2027 年初——从机台进门到出货，中间这一年在干什么？",
