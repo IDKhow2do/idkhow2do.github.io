@@ -4,6 +4,86 @@
     {
       "kind": "visual",
       "baseScore": 62,
+      "multiplier": 1.0407,
+      "score": 64.5,
+      "reason": "本轮达待定区间",
+      "run": "2026-11-23-0840-shanghai",
+      "record": {
+        "title": "零基础从头跑通一条 AI 视频要几步？@beefnoode（来碗牛肉粉）用自己开源的 BeefTV 工作台录了一整套免费教程：接入算力 → 建项目 → 生图和修图 → 写提示词 → 出视频，画布里还能和 Agent 一起连分镜和素材",
+        "category": "video",
+        "styleFamily": "video_model",
+        "source": "https://x.com/beefnoode/status/2124472628849291761",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261123a-beeftv.jpg",
+        "previewType": "image",
+        "description": "为什么值得看：这是一条完整的「AI 视频从 0 到 1」视频教程，按 算力接入 → 项目创建 → 图片生成与处理 → 提示词编写 → 最终视频生成 的顺序讲，适合用户系统补 AI 生视频的基本功；BeefTV 本身是作者开源（源码可用）的桌面工作台，README 写的是在一张画布里连接创意、模型和素材，配 Agent、Skills 和可复用工作流，近期版本加了单人物替换工作流、分镜素材直连、视频提取音频、提示词预设等。⭐附教程：视频教程见原帖，上手文档见仓库 QUICKSTART.md。对本号的用处：可以拿它当「AI 生图/生视频」练手台，把分镜—素材—成片放在一张画布里管理；但它依赖第三方模型渠道付费，且文字版教程要加微信，注意别被导流。",
+        "tool": "BeefTV 桌面工作台（macOS / Windows，本地优先）：自由画布、视频/图片/音频生成、3D 导演台、Beef Agent、Skills、MCP；接入第三方生图/生视频模型渠道",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "X @beefnoode 2026-11-22 发布（本轮：90 赞、115 收藏、约 6,360 曝光、31 条回复），帖内给出 GitHub 仓库；作者称仓库超过 2.6k stars（本轮未用 API 核实）。文字版教程需在评论区扫码加微信获取（导流），本条只以视频教程和仓库为准。仓库许可为「Source Available」，README 设有商用授权和赞助说明。作者此前作品「雨夜便利店」被用户点赞过。",
+        "attribution": "来碗牛肉粉（@beefnoode）",
+        "sourceAuthor": "beefnoode",
+        "tags": [
+          "AI视频",
+          "工作流",
+          "教程",
+          "开源",
+          "中文",
+          "案例+做法"
+        ],
+        "publishedAt": "2026-11-22",
+        "collectionIds": [],
+        "collectedAt": "2026-11-23T00:36:31.000Z",
+        "updatedAt": "2026-11-23T00:36:31.000Z",
+        "verification": {
+          "checked_at": "2026-11-23T00:36:31.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为原帖视频截帧：BeefTV 深色主界面（新建画布创作、视频/图片/音频生成、3D 导演台、Beef Agent 等入口），下方字幕「我是来碗牛肉粉 Lucas」，本轮下载并目视核验，非头像。",
+          "video_check": "未完整播放教程视频；仓库 README 本轮读取。"
+        },
+        "curation": {
+          "baseScore": 62,
+          "baseBreakdown": {
+            "实体": 4,
+            "科普": 6,
+            "溯源": 14,
+            "复现": 14,
+            "风格": 6,
+            "新颖": 8,
+            "案例做法": 10,
+            "dbskill": 0
+          },
+          "multiplier": 1.0407,
+          "finalScore": 64.5,
+          "threshold": 65,
+          "run": "2026-11-23-0840-shanghai"
+        },
+        "is3d": false,
+        "videoUrl": "",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "sourceCodeUrl": "https://github.com/glanderness/BeefTV",
+        "licenseName": "Source Available（见仓库 LICENSE）",
+        "licenseUrl": "https://github.com/glanderness/BeefTV/blob/main/LICENSE",
+        "tutorialUrl": "https://x.com/beefnoode/status/2124472628849291761",
+        "relatedLinks": [
+          "https://beeftv.app/",
+          "https://github.com/glanderness/BeefTV/blob/main/QUICKSTART.md"
+        ],
+        "aiGen": true,
+        "aiGenKinds": [
+          "video",
+          "image",
+          "prompt"
+        ]
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 62,
       "multiplier": 1.025,
       "score": 63.5,
       "reason": "本轮达待定区间",
@@ -9643,6 +9723,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-22T00:37:46.000Z",
+  "updatedAt": "2026-11-23T00:36:31.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
