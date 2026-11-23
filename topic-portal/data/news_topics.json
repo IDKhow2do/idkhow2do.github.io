@@ -1,7 +1,97 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-22T00:37:46.000Z",
+  "updatedAt": "2026-11-23T00:36:31.000Z",
   "topics": [
+    {
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/elon-musks-terafab-targets-1-million-wafers-a-month-after-2032-planned-700-000-monthly-memory-wafers-could-rival-samsungs-entire-estimated-dram-production-capacity",
+      "title": "马斯克要建一座「每月 100 万片晶圆」的芯片厂？这相当于日本 Rapidus 新厂的 40 倍；可业内说，一座先进晶圆厂从规划到量产通常要 3 年以上——设备买得到，为什么产能还是「急不来」？",
+      "category": "半导体",
+      "source": "日经新闻 2026-11-09 报道（经 Tom's Hardware 2026-11-10、韩国 Financial News 2026-11-09、朝鲜日报英文版 2026-11-09 转述）；SpaceX 10 月 20 日财报会上马斯克的公开表态",
+      "publishedAt": "2026-11-10",
+      "eventAt": "2026-11-09",
+      "collectedAt": "2026-11-23T00:36:31.000Z",
+      "updatedAt": "2026-11-23T00:36:31.000Z",
+      "description": "一手来源：日经 11 月 9 日报道（本轮通过 Tom's Hardware、Financial News、朝鲜日报英文版三家转述核对一致）——特斯拉与 SpaceX 合办的芯片项目 Terafab 今年秋天非正式告诉设备商：2032 年后要做到每月 100 万片晶圆，其中约 70 万片做存储芯片、30 万片以上做计算用逻辑芯片；目标 2028 年下半年量产，采购团队 11 月初到日本，要求部分设备「几个月内交货」。对比：日本 Rapidus 北海道千岁新厂月产能 2.5 万片（100 万是它的 40 倍）；Tom's Hardware 援引的估算是三星 DRAM 月产能约 65–70 万片、SK 海力士约 55 万片、SK 海力士无锡厂约 20 万片。项目分两步：先在奥斯汀研究厂验证技术，再扩到 Grimes County 量产厂；马斯克自己说时间表「非常激进」，希望明年 5–6 月拿到第一颗能正常工作的测试芯片。业内（日本设备商高管）认为规模和节奏「完全不是一个量级」：先进晶圆厂从规划到量产一般 3 年以上，装完设备还要花时间把缺陷率降下来。观众信号：X 上中文帖已在用「每月 100 万片是英特尔 Fab 52 的 25 倍」做标题传播。可拍角度：①0 秒：「每月 100 万片晶圆，叠起来有多高？」用晶圆堆叠/洁净室俯视画面直观换算；②本号身份：为什么钱和设备到位了产能也不能「一键拉满」——设备进场、调机、良率爬坡、工艺窗口，这些只有在厂里干过的人能讲出体感；③反转收尾：100 万片里 70% 是存储，为什么 AI 时代最缺的不只是算力芯片。",
+      "caveat": "目标数字来自日经对 Terafab「非正式告知设备商」的报道，并非官方公告；Tom's Hardware 原文写的是援引 Financial News。三星/海力士产能是第三方估算，且 Terafab 的 70 万片存储可能包含 NAND，与纯 DRAM 产能不可直接等同（Tom's 原文已提示）。X 帖里「英特尔 Fab 52 约 4 万片、25 倍」的说法本轮未核实，不作事实引用。避免把话题讲成股票/站队。封面为 Tom's Hardware 文章配图（图注：规划中的 Terafab 园区黄昏效果图，图源 SpaceX），是效果图不是实拍。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261123a-terafab.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261123a-terafab.jpg",
+      "imageAlt": "黄昏时分的巨型园区效果图：一栋展翼状的超长建筑，中间是亮灯的庭院，四周是森林，远处有湖",
+      "tags": [
+        "芯片制造",
+        "晶圆厂",
+        "产能",
+        "建厂",
+        "存储/内存",
+        "观众问题"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 99,
+        "baseBreakdown": {
+          "主线": 23,
+          "钩子": 18,
+          "画面": 12,
+          "来源": 10,
+          "时效": 7,
+          "大陆": 6,
+          "新颖": 5,
+          "dbskill": 18
+        },
+        "multiplier": 1.0743,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-11-23-0840-shanghai"
+      },
+      "relatedLinks": [
+        "https://en.fnnews.com/news/202611090902383508",
+        "https://biz.chosun.com/en/en-it/2026/11/09/ZTY3NWR34VCTLLJR54TVLC34UM/",
+        "https://asia.nikkei.com/business/tech/semiconductors/musk-s-terafab-chipmaking-project-lines-up-japan-suppliers",
+        "https://x.com/GUGUweb3/status/2124547523901845825"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/perplexity-and-intelligence/",
+      "title": "AI 到底多聪明，能不能只看一个数？OpenAI 首席科学家第一次公开内部「猜下一个字的误差」：GPT-3.5 约 0.99、GPT-4 约 0.91，降到 0.8 以下就冒出了网络安全和数学能力——而且没人提前知道会在哪个数冒出来",
+      "category": "AI",
+      "source": "OpenAI 官方博客《Perplexity and Intelligence》，首席科学家 Jakub Pachocki 署名，2026-11-22",
+      "publishedAt": "2026-11-22",
+      "eventAt": "2026-11-22",
+      "collectedAt": "2026-11-23T00:36:31.000Z",
+      "updatedAt": "2026-11-23T00:36:31.000Z",
+      "description": "一手来源：OpenAI 博客（本轮读取）。Pachocki 认为现代 AI 的「智力底座」来自一个很简单的过程：在海量数据上训练一个「压缩器/预测器」，衡量它的指标一直是困惑度（log-perplexity，也就是交叉熵损失：模型平均猜下一个 token 有多准，越低越好）。他首次公开 OpenAI 内部数字（测试集取自 OpenAI 内部代码库）：GPT-3.5 约 0.99，能流畅聊天、成了最初的 ChatGPT；GPT-4 约 0.91，会有效用思维链推理；降到 0.8 以下后出现了网络安全、数学方面的「变革性能力」；升级到约 0.76 的模型后，开始一个接一个地解出数学开放问题。他强调这些能力并不是事先就知道会在某个阈值出现，是「涌现」的；并预计进入 0.68–0.7 区间会出现新的变革性能力，因此提议各家 AI 公司以困惑度等指标为基础，约定共同的「不越过的上限」，直到监控能力达到具体里程碑。文中也列了缺点：各家测试集不同难横比、思维链推理不降低困惑度、不知道下限在哪。可拍角度：①0 秒：「AI 的智商，只看一个数？」+ 0.99→0.91→0.76 的下降曲线（可自制）；②用「猜下一个字」游戏让观众秒懂困惑度；③类比工厂：晶圆厂也靠一两个核心指标（良率、缺陷密度）判断工艺进步，但「指标跨过某条线突然质变」在 AI 里更离谱——这是本号可以带出的身份角度。",
+      "caveat": "数字是 OpenAI 在自家内部代码库测试集上的 log-perplexity，不同公司、不同数据集不能直接比；「0.68–0.7 会出现新能力」是作者的外推判断。文章同时是安全倡议，不要讲成「AI 失控」恐慌。封面为 OpenAI 官方社交分享图（橙色渐变底 + 标题文字），文中的损失曲线图本轮未能抓取，需自制。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261123a-perplexity.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261123a-perplexity.jpg",
+      "imageAlt": "橙粉色渐变背景，中间白色文字「Perplexity and Intelligence」",
+      "tags": [
+        "AI训练",
+        "涌现",
+        "AI安全",
+        "大模型",
+        "困惑度"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 88,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 18,
+          "画面": 8,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 5,
+          "dbskill": 6
+        },
+        "multiplier": 1.0566,
+        "finalScore": 93.0,
+        "threshold": 65,
+        "run": "2026-11-23-0840-shanghai"
+      },
+      "relatedLinks": [
+        "https://x.com/guilleflorvs/status/2124580120614609374"
+      ]
+    },
     {
       "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000116/a2024conflictmineralsrepor.htm",
       "title": "全世界最值钱的芯片公司，自己不造一颗芯片？英伟达在向美国证监会提交的文件里白纸黑字写着「我们不制造产品所用的半导体」——晶圆制造、封装、测试全交给台积电等供应商。那英伟达到底干什么，真正「造芯片」的晶圆厂里又在干什么？",
