@@ -1,7 +1,191 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-23T00:36:31.000Z",
+  "updatedAt": "2026-11-24T00:42:25.000Z",
   "topics": [
+    {
+      "url": "https://news.mit.edu/2026/ai-driven-technique-could-help-engineers-design-analog-chips-faster-and-less-expensive-1123",
+      "title": "芯片公司为什么不敢把电路图直接丢给 GPT？MIT 的 SLIC：把只有几十亿参数、能在笔记本上跑的小模型，训成会「猜参数→跑仿真→再改」的模拟电路设计员，成绩接近 GPT-6-Astra，而且晶圆厂的工艺数据不用出公司",
+      "category": "半导体",
+      "source": "MIT News 2026-11-23（Adam Zewe）；论文《SLIC: Reinforcement Fine-Tuning Small LMs for Multi-Turn Analog Circuit Optimization》，将在 NeurIPS 2026 发表；合作方 IBM Research、Analog Devices",
+      "publishedAt": "2026-11-23",
+      "eventAt": "2026-11-23",
+      "collectedAt": "2026-11-24T00:42:25.000Z",
+      "updatedAt": "2026-11-24T00:42:25.000Z",
+      "description": "一手来源：MIT 新闻稿（本轮读取全文）。模拟芯片（手机里放大无线信号、汽车里处理温度传感器输出的那类芯片）一直靠工程师凭经验找起点、再一点点「拧旋钮」调参数；大模型已经能帮忙自动化，但用云端前沿模型意味着要把电路设计和晶圆厂专属数据交给外部服务商，多数公司不愿意。MIT 的 SLIC 做法：先让大模型示范几遍开源的设计过程，小模型照着学；再让它自己做题——给出初始参数、跑电路仿真、看结果、迭代改，直到满足指标，满足后还继续追求额外增益（多轮强化学习 + 可验证奖励）。结果：几十亿参数的小模型（比万亿参数的前沿模型小几千倍），在满足电路指标上接近最新 GPT 模型（GPT-6-Astra），换成没见过的电路结构、更先进的工艺节点和真实商用工艺也能保持表现；推理过程用自然语言写出来，工程师看得懂它为什么这么改。可拍角度：①0 秒：「为什么芯片公司宁可让工程师手调一个月，也不肯把电路图发给 ChatGPT？」；②本号身份：晶圆厂的工艺设计套件（PDK）和工艺数据为什么是命根子、为什么要签保密协议——只有在厂里待过的人讲得出这层顾虑；③机制：小模型学的是「设计员的工作流程」而不是背答案，所以换工艺也能用。",
+      "caveat": "「接近 GPT-6-Astra」「对新结构和先进节点保持表现」均为 MIT 新闻稿转述，论文全文本轮未读，具体指标数值未核实；SLIC 管的是电路参数优化（尺寸/偏置等），不是版图，也不涉及制造工艺本身。库内已有两条「AI 智能体做模拟芯片版图」的选题，本条新角度是「小模型 + 本地部署保护工艺数据」。封面为 MIT 新闻配图（插画，Jose-Luis Olivares/MIT/Getty，CC BY-NC-ND，仅限非商业使用、需署名）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261124a-slic.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261124a-slic.jpg",
+      "imageAlt": "黄粉色电路板背景上漂浮着几颗彩色反光的芯片插画",
+      "tags": [
+        "芯片设计",
+        "模拟芯片",
+        "小模型",
+        "强化学习",
+        "数据隐私",
+        "观众问题"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "主线": 23,
+          "钩子": 13,
+          "画面": 9,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 6,
+          "新颖": 3,
+          "dbskill": 4
+        },
+        "multiplier": 1.0924,
+        "finalScore": 90.7,
+        "threshold": 65,
+        "run": "2026-11-24-0840-shanghai"
+      },
+      "relatedLinks": []
+    },
+    {
+      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+      "title": "AI 找一个能「拿到电脑最高权限」的漏洞要花多少钱？OpenAI 的流水线一次跑出 948 个 Linux 内核提权漏洞并配好补丁，平均每个 1,279 美元——按以往黑客大赛的赏金算，价值是成本的 16–55 倍",
+      "category": "AI",
+      "source": "OpenAI 研究文章《A thousand fewer paths to root》（2026-11-04）；OpenAI 官方 X 2026-11-23 视频帖再次推送（研究员 @clintgibler、@ky1ebot 讲解）",
+      "publishedAt": "2026-11-04",
+      "eventAt": "2026-11-23",
+      "collectedAt": "2026-11-24T00:42:25.000Z",
+      "updatedAt": "2026-11-24T00:42:25.000Z",
+      "description": "一手来源：OpenAI 研究文章（本轮读取）。他们搭了一条「找漏洞→复现→写利用→出补丁→人工复核」的自动流水线，用一个即将发布的网络安全模型（X 帖称 GPT-6 Cyber）扫 Linux 内核：10 月中旬一轮里，识别 2,308 个候选问题、动态复现 1,724 个漏洞，做出 291 个信息泄露 PoC 和 948 个可用的本地提权（普通用户→root）利用，目标是一个常见 Linux 发行版的原版桌面系统，不是故意削弱的靶机。整轮 API 花费 1,213,430 美元，合每个提权利用 1,279 美元；OpenAI 自己按 Pwn2Own（2 万美元）和 TyphoonPWN（7 万美元）以往的赏金算出「假设价值」1,890 万–6,630 万美元，约为成本的 16–55 倍。在攻击面更小的 kernelCTF 环境里拿到 25 个信息泄露 PoC、21 个提权利用（对比：2026 年 kernelCTF 至今共接收 26 个已确认 0day 提权）。漏洞按 Linux 社区建议从严重的先报，补丁交维护者审核。11-23 OpenAI 发视频帖再推，同日又和思科开源了 Shirudo（让智能体写 eBPF 规则、在打补丁前先挡住利用）。可拍角度：①0 秒：「1,279 美元，买一个能接管你电脑的漏洞」；②为什么「找漏洞」变便宜了，真正卡脖子的反而是「验证和排序」；③工厂类比：这像把人工目检换成 AOI 自动光学检测——缺陷一下子多出来，复判和修复才是瓶颈（本号身份角度）。",
+      "caveat": "研究文章发布于 11-04（距今 19 天），本轮因 OpenAI 11-23 视频帖重新出现在窗口内；「假设价值」是 OpenAI 自己用历史赏金乘出来的，不是市场成交价。所用模型文中写「upcoming cyber model」，「GPT-6 Cyber」是 X 帖里的叫法。漏洞细节未公开，讲的时候避免教程化、避免渲染「AI 黑客」恐慌。封面为 OpenAI 官方分享图（蓝白渐变 + 标题文字），文内流程图本轮未抓，需要自制。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261124a-root948.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261124a-root948.jpg",
+      "imageAlt": "蓝白色渐变背景，中间白色文字「A thousand fewer paths to root」",
+      "tags": [
+        "AI安全",
+        "智能体",
+        "AI成本",
+        "Linux",
+        "漏洞",
+        "观众问题"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 8,
+          "来源": 15,
+          "时效": 6,
+          "大陆": 6,
+          "新颖": 5,
+          "dbskill": 8
+        },
+        "multiplier": 1.0566,
+        "finalScore": 89.8,
+        "threshold": 65,
+        "run": "2026-11-24-0840-shanghai"
+      },
+      "relatedLinks": [
+        "https://x.com/OpenAI/status/2125007927098699827",
+        "https://openai.com/index/introducing-shirudo"
+      ]
+    },
+    {
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+      "title": "几组 AI 智能体每 4 小时开一次「线上学术会议」互相交换点子，把激光核聚变模拟要用的量子线路成本砍到 1/11.8——DeepMind 怎么保证这些没法在现有电脑上测试的线路真的对？答案是每一步都用 Lean 做数学证明",
+      "category": "AI",
+      "source": "Google DeepMind 博客 2026-11-23（Sergey Shirobokov、Ben Jaderberg、Ryan Babbush），论文 arXiv 2611.09822；与 Google Quantum AI 合作；Lean 库已在 GitHub 开源",
+      "publishedAt": "2026-11-23",
+      "eventAt": "2026-11-23",
+      "collectedAt": "2026-11-24T00:42:25.000Z",
+      "updatedAt": "2026-11-24T00:42:25.000Z",
+      "description": "一手来源：DeepMind 博客（本轮读取）。问题：很多量子算法即使最好的版本，也需要比早期纠错量子计算机多得多的资源；而这些线路太大，现有经典电脑和小量子芯片都没法直接测。做法：用多组 Gemini 4 智能体，每组独立找改进，每个点子先用定理证明器 Lean 证明正确才进共享笔记本；每 4 小时各组在「虚拟会议」上交换、辩论、比较点子，成本随时间一路下降。结果（DeepMind 自述）：激光惯性约束核聚变的一个关键量计算，综合计算成本降 11.8 倍，所需纠错量子比特从 5,650 降到 4,338；一种常见光敏分子的模拟便宜 8 倍；药物代谢关键酶细胞色素 P450 的模拟改进 2.5 倍、量子比特从 481 降到 333；Grover 搜索某种实现提速 2.57 倍；常用子程序 arcsin 提速 290 倍。他们也说明：这些算法跑真实科学模拟仍需超过第一代纠错量子计算机的资源。Lean 库、题目说明和已验证解都开源。可拍角度：①0 秒：「一群 AI 开学术会议，开出了量子计算的新算法」；②为什么「没法测试」的东西只能靠数学证明来验收——类比芯片流片前的形式验证；③AI 做科研的分工：人选题、AI 搜索、证明器把关。",
+      "caveat": "全部倍数与比特数为 DeepMind 博客自述，论文全文本轮未读；「降成本」是对未来纠错量子计算机的资源估算，不是今天能跑。库内已有 Claude+Lean 数学、AI 做物理题等「AI 做科研」条目，可合成专题。封面为 DeepMind 官方 X 配图（量子球体插画 + 标题文字）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261124a-quantum.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261124a-quantum.jpg",
+      "imageAlt": "深蓝背景中一个发光的量子比特球体插画，上下两行白底文字：Finding faster quantum algorithms / With Gemini 4 agents and formal verification",
+      "tags": [
+        "智能体",
+        "量子计算",
+        "形式化验证",
+        "AI科研",
+        "Lean"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 76,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 16,
+          "画面": 10,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 3,
+          "dbskill": -3
+        },
+        "multiplier": 1.0566,
+        "finalScore": 80.3,
+        "threshold": 65,
+        "run": "2026-11-24-0840-shanghai"
+      },
+      "relatedLinks": [
+        "https://arxiv.org/abs/2611.09822",
+        "https://github.com/google-deepmind/formal-quantum-computation",
+        "https://x.com/GoogleDeepMind/status/2124911073266413634"
+      ]
+    },
+    {
+      "url": "https://x.com/Kling_ai/status/2124846759679607044",
+      "title": "一句提示词出一整套 10 张「同一个角色、同一种画风」的图，还能原生出 8K、在图里写 2,000 字：快手可灵 Kling Image 4.0 上线一周，第三方榜单文生图第 7、图像编辑第 6",
+      "category": "AI",
+      "source": "Kling AI 官方 X 账号（2026-11-17 起陆续发布，11-23 主推「10 图成套」）；Artificial Analysis 榜单帖（2026-11-19）；fal、Runware 等平台上线说明",
+      "publishedAt": "2026-11-23",
+      "eventAt": "2026-11-17",
+      "collectedAt": "2026-11-24T00:42:25.000Z",
+      "updatedAt": "2026-11-24T00:42:25.000Z",
+      "description": "一手来源：Kling AI 官方 X 帖与官方转发（本轮读取）。官方列出的四个卖点：更真实（光线、皮肤、质感）、原生 8K（最高 10880×6144）、成套一致（一句提示词最多生成 10 张主体和风格一致的图，可用来做分镜、商品图）、文字渲染（官方转发的平台说明称最多 2,000 字、7 种语言）；早期用户普遍提到「Tone/色调库」能锁住统一色调。第三方：Artificial Analysis 11-19 帖称其文生图第 7、图像编辑第 6，仅次于 OpenAI 和微软的模型，2K 价格不到其上方所有 OpenAI 模型的三分之一。官方 11-20 称 API 已开放，黑五期间 2K 低至 0.022 美元/张、8K 低至 0.033 美元/张（限时）。⭐附做法：日本创作者 @yachimat_manga 用它做漫画的 5 步流程视频（角色设定→3D 打草稿→生成整页→按格修改→加字），@PromptSin 10 种风格的提示词与流程见其帖与 thread。对本号的用处：「成套一致」正好解决科普视频分镜里同一个小马/同一台机台每张图长得不一样的问题，可以先拿它批量出分镜参考图。",
+      "caveat": "官方帖以宣传为主，未见技术报告；榜单排名来自第三方 Artificial Analysis（11-19 时点），会变化；价格为黑五限时价。「2,000 字/7 种语言」出自官方转发的平台帖（Runware/Sunra），非官方原帖原话。封面为官方视频封面图（「IMAGE SET 批量生成 最多 10 张」字样 + 女战士与龙的生成图）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261124a-klingimage4.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261124a-klingimage4.jpg",
+      "imageAlt": "粉色背景，左上大字 IMAGE SET / BATCH GENERATION · UP TO 10 IMAGES，中间是罗马女战士、黑色巨龙和金发女子三个生成角色，右下 Kling Image 4.0 标志",
+      "tags": [
+        "AI生图",
+        "可灵",
+        "Kling",
+        "模型资讯",
+        "分镜",
+        "一致性"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 74,
+        "baseBreakdown": {
+          "主线": 16,
+          "钩子": 10,
+          "画面": 14,
+          "来源": 10,
+          "时效": 10,
+          "大陆": 9,
+          "新颖": 5,
+          "dbskill": 0
+        },
+        "multiplier": 1.0566,
+        "finalScore": 78.2,
+        "threshold": 65,
+        "run": "2026-11-24-0840-shanghai"
+      },
+      "aiGen": true,
+      "aiGenKinds": [
+        "news",
+        "image"
+      ],
+      "relatedLinks": [
+        "https://x.com/Kling_ai/status/2123818893122662485",
+        "https://x.com/ArtificialAnlys/status/2123242530489966738",
+        "https://x.com/yachimat_manga/status/2122948119943860626",
+        "https://x.com/PromptSin/status/2123106522515615880"
+      ]
+    },
     {
       "url": "https://www.tomshardware.com/tech-industry/semiconductors/elon-musks-terafab-targets-1-million-wafers-a-month-after-2032-planned-700-000-monthly-memory-wafers-could-rival-samsungs-entire-estimated-dram-production-capacity",
       "title": "马斯克要建一座「每月 100 万片晶圆」的芯片厂？这相当于日本 Rapidus 新厂的 40 倍；可业内说，一座先进晶圆厂从规划到量产通常要 3 年以上——设备买得到，为什么产能还是「急不来」？",
