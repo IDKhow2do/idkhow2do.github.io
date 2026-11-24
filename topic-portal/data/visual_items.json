@@ -1,8 +1,574 @@
 {
   "exportStatus": "complete",
   "siteTotalVerified": 114,
-  "exportedCount": 769,
+  "exportedCount": 778,
   "items": [
+    {
+      "title": "咬一口刚出微波炉的热口袋，里面流出来的是「岩浆」：会边流边冷却结壳、在纸盘上烫出焦痕——Adam Chernick Codevember 第 23 天《Magma》，岩浆用 256×256 薄层流体模拟（流速 ∝ 坡度 × 厚度³ × 随温度骤降的流动性），在线可玩，MIT 开源",
+      "category": "frontend",
+      "styleFamily": "code_video",
+      "source": "https://x.com/ajc_builds/status/2124896729623679424",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261124a-magma.jpg",
+      "previewType": "image",
+      "description": "为什么值得看：README 把「岩浆为什么会结壳、又从后面破壳流出」写成了可执行的规则——流速按「坡度 × 厚度³ × 流动性」算，流动性随温度急剧下降；热量跟着流体走、从表面散掉，所以前沿先冷却停住结成壳，后面的热岩浆再破口涌出；画面按温度从白热到暗红着色，再叠上跟着流动漂移、开裂露光的绳状硬壳；纸盘按「岩浆在这里待过多热多久」的热图从棕烤到黑。咬口不是重建网格，而是着色器按扇贝形圆挖掉。⭐附做法：GitHub 目录 README 即完整技术说明，MIT 可改。对本号的用处：「黏度随温度暴跌 → 前沿冻结 → 后方突破」是讲回流焊锡、光刻胶涂布、熔融硅这类「热流体」的现成镜头；「热图烤出焦痕」的做法也能借来可视化晶圆上的温度分布。在线：https://adamwebsite.com/codevember/23-magma/ 代码：https://github.com/acher249/codevember-2026/tree/main/23-magma",
+      "tool": "Three.js（React/Next 框架内）+ 自定义着色器；CPU 端 256×256 薄层流体；Rapier 刚体（披萨卷）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "X @ajc_builds 2026-11-23 发布（本轮：11 赞、3 收藏、约 380 曝光），作者自回复给出在线页、代码目录和作品合集；仓库根目录 LICENSE 为 MIT。同作者库内已有 Echo（11-22）、海带林、剥皮球，本条主题与技术不同。",
+      "attribution": "Adam Chernick（@ajc_builds）",
+      "sourceAuthor": "ajc_builds",
+      "tags": [
+        "Three.js",
+        "流体模拟",
+        "热传导",
+        "codevember",
+        "案例+做法",
+        "开源"
+      ],
+      "publishedAt": "2026-11-23",
+      "collectionIds": [],
+      "collectedAt": "2026-11-24T00:42:25.000Z",
+      "updatedAt": "2026-11-24T00:42:25.000Z",
+      "verification": {
+        "checked_at": "2026-11-24T00:42:25.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为原帖视频截帧：浏览器里的 Magma 页面，大理石台面上一个纸盘，盘中一只被咬开的热口袋，背后是一台显示 0:00 的微波炉，左下角大字 Magma，右侧有设置面板，本轮下载并目视核验，非头像。",
+        "video_check": "未完整播放视频；在线页面与仓库 README、LICENSE 本轮可访问，未在浏览器中运行。"
+      },
+      "curation": {
+        "baseScore": 98,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 15,
+          "溯源": 20,
+          "复现": 15,
+          "风格": 10,
+          "新颖": 6,
+          "案例做法": 10,
+          "dbskill": 0
+        },
+        "multiplier": 1.3491,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-11-24-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2124896042147807232/vid/avc1/2706x2160/Dq-4wywDeP2wtPZ6.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/acher249/codevember-2026/tree/main/23-magma",
+      "licenseName": "MIT",
+      "licenseUrl": "https://github.com/acher249/codevember-2026/blob/main/LICENSE",
+      "demoUrl": "https://adamwebsite.com/codevember/23-magma/",
+      "tutorialUrl": "https://github.com/acher249/codevember-2026/tree/main/23-magma"
+    },
+    {
+      "title": "一颗摆锤穿过传送带上的「布镜子」，把整块布裹走、在最高点甩下，下一面镜子咔哒一声送到位——Yuri Artiukh（@akella）Codevember 第 18 天《Pendulum》：GPU 布料模拟（含自碰撞）做成 786 帧逐像素无缝循环，另附呼吸子、简正模、双/三重球摆周期轨道等 5 个摆的实验页，原理全写在 README",
+      "category": "motion",
+      "styleFamily": "code_video",
+      "source": "https://x.com/akella/status/2124941811911106582",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261124a-pendulum.jpg",
+      "previewType": "image",
+      "description": "为什么值得看：①布料是规则书点名喜欢的物理材质——玫瑰金布镜子被摆锤裹走、甩下、落出画面，每块布都从同一张静止布开始、遇到同一条摆弧，所以每块布「过同一种一生」，整个循环逐像素一致；②README 把工程细节写透：布在被撞前 0.1 秒才唤醒、落出画面 3.3 秒后退役，模拟从每帧 13.0 毫秒降到 7.5 毫秒；自碰撞用按哈希桶计数排序，保证每次结果逐位相同；③同目录还有 5 个摆实验：100 片黄铜桨的正弦-戈登呼吸子、五臂平衡吊饰的简正模、双/三重球摆的相对周期轨道（轨迹做成发光管）、窗中窗分形摆（每循环放大 3 倍、时钟放慢 √3）。⭐附做法：README 即教程。对本号的用处：「同一初始条件 → 同一结果」正好拿来讲晶圆厂为什么要把每片晶圆的工艺条件锁死（可重复性），布料裹球也是很好的「柔性薄膜」镜头。在线：https://akella.github.io/codevember-2026/18/ 源码：https://github.com/akella/codevember-2026/tree/main/18-pendulum",
+      "tool": "Three.js + WGSL 计算着色器（布料模拟 wrap.wgsl）+ TypeScript；作者致敬 @arc4g 的作品",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "X @akella 2026-11-23 发布（本轮：44 赞、12 收藏、约 1,712 曝光），帖内给出在线页；GitHub akella/codevember-2026/18-pendulum README 详细讲解每个实验页为何能无缝循环。仓库未声明许可证（GitHub API license 为空）。作者库内已有海带、焦散、抱枕纤维等，本条是布料 + 摆的新题材。",
+      "attribution": "Yuri Artiukh（@akella）",
+      "sourceAuthor": "akella",
+      "tags": [
+        "Three.js",
+        "WebGPU",
+        "布料模拟",
+        "摆",
+        "无缝循环",
+        "codevember",
+        "案例+做法"
+      ],
+      "publishedAt": "2026-11-23",
+      "collectionIds": [],
+      "collectedAt": "2026-11-24T00:42:25.000Z",
+      "updatedAt": "2026-11-24T00:42:25.000Z",
+      "verification": {
+        "checked_at": "2026-11-24T00:42:25.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为原帖视频截帧：白色影棚里一排装在黑色支架上的方框镜子沿传送带排开，左上一块粉橙色布镜正被摆绳牵动，前景一块布已落成褶皱，本轮下载并目视核验，非头像。",
+        "video_check": "未完整播放视频；在线页面与仓库 README 本轮可访问，未在浏览器中运行。"
+      },
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "实体": 22,
+          "科普": 14,
+          "溯源": 14,
+          "复现": 15,
+          "风格": 10,
+          "新颖": 5,
+          "案例做法": 10,
+          "dbskill": -5
+        },
+        "multiplier": 1.158,
+        "finalScore": 98.4,
+        "threshold": 65,
+        "run": "2026-11-24-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2124939276995420160/vid/avc1/1024x1024/h_YL79s3GOlOcqBR.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/akella/codevember-2026/tree/main/18-pendulum",
+      "demoUrl": "https://akella.github.io/codevember-2026/18/",
+      "tutorialUrl": "https://github.com/akella/codevember-2026/tree/main/18-pendulum"
+    },
+    {
+      "title": "一朵小乌云悬在一块草皮方块上空，按空格就劈下一道闪电，按 N 换一条新路径——grgrdvrt Codevember 第 21 天《Bolt》：浏览器里可拖动旋转、带雷声的 WebGL 闪电微缩景，作者此前的《草履虫 Membrane》被点赞收藏过",
+      "category": "frontend",
+      "styleFamily": "code_video",
+      "source": "https://x.com/grgrdvrt/status/2124829730054799854",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261124a-bolt.jpg",
+      "previewType": "image",
+      "description": "为什么值得看：闪电是最直观的「等离子体放电」——空气被击穿、电离成一条导电通道，这正好是讲刻蚀腔里等离子体的现成开场镜头（同样是电场把气体电离，只是腔里被控制成均匀的辉光，而不是一道劈下来的电弧）。作品本身是一个可旋转的微缩景：乌云、草皮方块、每次放电路径随机分叉，可以随手按出很多条不同的闪电截素材。只有成品、没有公开源码或做法，排在「案例+做法」后面。在线：https://grgrdvrt.com/works/codevember-2026/21_bolt/",
+      "tool": "WebGL / Three.js（帖内标签 #webgl #threejs）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "X @grgrdvrt 2026-11-23 发布（本轮：52 赞、20 收藏、约 1,493 曝光），帖内给出在线页；在线页操作说明：拖动旋转、滚轮缩放、空格或点击放电、N 新闪电、R 转向、P 暂停、S 声音、H 隐藏。本轮未找到源码仓库与许可证，仅能外链引用。",
+      "attribution": "grgrdvrt",
+      "sourceAuthor": "grgrdvrt",
+      "tags": [
+        "Three.js",
+        "WebGL",
+        "闪电",
+        "等离子体",
+        "codevember"
+      ],
+      "publishedAt": "2026-11-23",
+      "collectionIds": [],
+      "collectedAt": "2026-11-24T00:42:25.000Z",
+      "updatedAt": "2026-11-24T00:42:25.000Z",
+      "verification": {
+        "checked_at": "2026-11-24T00:42:25.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为原帖视频截帧：黑色背景里一块长着草的土方块，上空一团灰白云朵劈下一道带分叉的紫白色闪电，本轮下载并目视核验，非头像。",
+        "video_check": "未完整播放视频；在线页可访问（读取到操作说明），未在浏览器中运行。"
+      },
+      "curation": {
+        "baseScore": 69,
+        "baseBreakdown": {
+          "实体": 18,
+          "科普": 14,
+          "溯源": 10,
+          "复现": 5,
+          "风格": 10,
+          "新颖": 7,
+          "案例做法": 0,
+          "dbskill": 5
+        },
+        "multiplier": 1.3491,
+        "finalScore": 93.1,
+        "threshold": 65,
+        "run": "2026-11-24-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2124828907194994688/vid/avc1/1286x720/58uLBjl_rYvO96b7.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "demoUrl": "https://grgrdvrt.com/works/codevember-2026/21_bolt/"
+    },
+    {
+      "title": "一个只能「喊一声」才看得见的无尽后室迷宫：每次出声，几千条射线按声速飞出去，落在墙上留下会消失的光点——Jaume Sanchez（@thespite）Codevember 第 22 天《Echo》，可以真的对着麦克风喊，画面像旧摄像机录像带放在 CRT 上",
+      "category": "frontend",
+      "styleFamily": "code_video",
+      "source": "https://x.com/thespite/status/2124909988921377048",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261124a-spite-echo.jpg",
+      "previewType": "image",
+      "description": "为什么值得看：把「回声定位」做成了唯一的视觉——你看不见迷宫，只能出声：声音越大传得越远，射线按声速打出去，落点在墙、地、天花板上留下几秒就褪去的点，所以你只看得到「最近一次回声到过的地方」；越往深处越怪（没天花板的房间、半埋进墙里的形状、喊一声就靠近一步的「存在」、只能从回声缺口看出来的远处观察者）。三种玩法：用自己的声音、点击喊话（有「嗓子」体力条）、自动漫游。⭐附做法：GitHub 目录 README 写明机制与玩法。对本号的用处：「只靠反射回来的信号重建看不见的结构」就是超声/声呐成像，也是晶圆厂里光学量测、电子束检测「看不见就靠反射信号推」的同一逻辑，可当开场镜头。在线：https://spite.github.io/codevember-2026/22 源码：https://github.com/spite/codevember-2026/tree/main/22",
+      "tool": "WebGL / Three.js + Web Audio（麦克风输入）；作者标「[vibe-]codevember」，表示用 AI 辅助编写",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "X @thespite 2026-11-23 发布（本轮：41 赞、12 收藏、约 1,800 曝光），帖内给出在线页；GitHub spite/codevember-2026/22 README 写了玩法与机制；仓库未声明许可证（GitHub API license 为空）。作者库内已有失重水团一条，本条主题不同。",
+      "attribution": "Jaume Sanchez Elias（@thespite）",
+      "sourceAuthor": "thespite",
+      "tags": [
+        "Three.js",
+        "WebGL",
+        "回声定位",
+        "声学",
+        "codevember",
+        "案例+做法"
+      ],
+      "publishedAt": "2026-11-23",
+      "collectionIds": [],
+      "collectedAt": "2026-11-24T00:42:25.000Z",
+      "updatedAt": "2026-11-24T00:42:25.000Z",
+      "verification": {
+        "checked_at": "2026-11-24T00:42:25.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为在线页官方社交分享图：黑暗中由黄、绿、蓝色噪点拼出的墙面、方块和一个人形轮廓，像低照度录像画面，本轮下载并目视核验，非头像。",
+        "video_check": "未完整播放视频；在线页 og 信息与仓库 README 本轮读取，未在浏览器中运行（需麦克风权限）。"
+      },
+      "curation": {
+        "baseScore": 73,
+        "baseBreakdown": {
+          "实体": 12,
+          "科普": 12,
+          "溯源": 14,
+          "复现": 13,
+          "风格": 10,
+          "新颖": 7,
+          "案例做法": 10,
+          "dbskill": -5
+        },
+        "multiplier": 1.3491,
+        "finalScore": 98.5,
+        "threshold": 65,
+        "run": "2026-11-24-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2124908707771289600/vid/avc1/1440x1080/VaXhU4TlfTjkRsxR.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "sourceCodeUrl": "https://github.com/spite/codevember-2026/tree/main/22",
+      "demoUrl": "https://spite.github.io/codevember-2026/22",
+      "tutorialUrl": "https://github.com/spite/codevember-2026/tree/main/22"
+    },
+    {
+      "title": "当一个黑洞，把整座城市吸进去：three.js + WebGPU 浏览器游戏《Supermassive》，玩法像 hole.io，黑洞边缘的光线弯曲是逐像素「沿弯曲光线步进」算出来的——作者说它本来是个 GPU 破坏模拟的跑分程序",
+      "category": "frontend",
+      "styleFamily": "code_video",
+      "source": "https://x.com/JDSherbert_/status/2124974181129572444",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261124a-supermassive.jpg",
+      "previewType": "image",
+      "description": "为什么值得看：一个完成度不错的 three.js 浏览器游戏——你是一个叫 J0529-4351 的黑洞，在低多边形城市里到处吞东西、长质量、买升级；itch.io 页面说它最初是「程序化 GPU 破坏模拟」的跑分程序，后来改成休闲游戏。可学的技术点：黑洞周围的引力透镜是全屏后处理（作者回复里给了步骤），破坏与吸入是大量物体的 GPU 模拟。对本号的用处：「光被弯曲」的透镜镜头可以借去讲光刻里的光学畸变/像差；游戏本身符合用户在研究的 three.js 游戏方向。只有成品和零星说明，没有源码。试玩：https://jdsherbert.itch.io/supermassive",
+      "tool": "Vite + three.js + WebGPU；引力透镜为全屏后处理 Pass",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "X @JDSherbert_ 2026-11-23 发布（本轮：10 赞、约 448 曝光），帖内给出 itch.io 页；作者在回复中简述透镜着色器：全屏大四边形，每个像素从 UV 和逆投影得到视线，判断是否穿过透镜球，用深度纹理跳过前景，再沿弯曲的光线步进。未找到源码与许可证。",
+      "attribution": "JDSherbert（@JDSherbert_）",
+      "sourceAuthor": "JDSherbert_",
+      "tags": [
+        "Three.js",
+        "WebGPU",
+        "游戏",
+        "引力透镜",
+        "黑洞"
+      ],
+      "publishedAt": "2026-11-23",
+      "collectionIds": [],
+      "collectedAt": "2026-11-24T00:42:25.000Z",
+      "updatedAt": "2026-11-24T00:42:25.000Z",
+      "verification": {
+        "checked_at": "2026-11-24T00:42:25.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为原帖 GIF 截帧：俯视的低多边形城市街区，中央一个黑洞把周围地面和光线扭曲成一圈暗环，本轮下载并目视核验，非头像。",
+        "video_check": "未完整播放 GIF；itch.io 页面文字本轮读取，未试玩。"
+      },
+      "curation": {
+        "baseScore": 62,
+        "baseBreakdown": {
+          "实体": 16,
+          "科普": 15,
+          "溯源": 12,
+          "复现": 6,
+          "风格": 10,
+          "新颖": 8,
+          "案例做法": 0,
+          "dbskill": -5
+        },
+        "multiplier": 1.3491,
+        "finalScore": 83.6,
+        "threshold": 65,
+        "run": "2026-11-24-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/tweet_video/HX1stEHXsAAxUU-.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "demoUrl": "https://jdsherbert.itch.io/supermassive"
+    },
+    {
+      "title": "7 分钟 AI 动作短片只用了 58 次生成：一条提示词就要 23 秒里切 10 个镜头、最长一条写了 1.8 万字——Higgsfield 精选《ORIGINS EP.01: ZARA》全部提示词和素材公开，官方 thread 拆了 6 条做法（不许出错的写进 CRITICAL 块、角色设定用 15 秒视频而不是静图）",
+      "category": "video",
+      "styleFamily": "video_model",
+      "source": "https://x.com/higgsfield_ai/status/2124926392924012996",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261124a-zara.jpg",
+      "previewType": "image",
+      "description": "为什么值得看：这是一份能直接抄结构的「长片 AI 视频提示词工程」——①一次生成是一整段而不是一个镜头：一条提示词要求 23 秒内 10 个镜头，逐个写时长、硬切，58 次生成拼成 7 分钟；②提示词很长，最长一条超过 18,000 字符，分成风格、镜头、质感、皮肤、声音、剧本、素材几个块，结尾再复述一遍主规则；③绝对不能错的单独写进 CRITICAL 块（如「房间里正好六个打手」「洒水器从第一帧开到最后一帧」「不开枪」「画面不出字」）；④对白按剧本写：每句标说话人、镜号和表演提示，台词韩语，外加一条「剪辑点不能落在一个词中间」；⑤角色从视频起步：每个角色设定是 15 秒双栏视频（左全身蒙太奇、右一镜到底特写），后面的提示词按名字调用长相和声音；⑥13 个场景先用 Seedream 5.0 Pro 出定帧，再进 Seedance 2.5 拍。⭐附教程：官方 thread + 公开项目页 https://higgsfield.ai/@joeysnoisygroup/projects/origins-ep-01-zara 。对本号的用处：「CRITICAL 块」和「角色用视频做设定」可以直接用在小马角色和机台镜头的一致性上。",
+      "tool": "Higgsfield 平台；场景定帧 Seedream 5.0 Pro，镜头生成 Seedance 2.5（thread 第 6 条）",
+      "prompt": "",
+      "promptProvenance": "original_public",
+      "provenanceNote": "Higgsfield 官方 X 2026-11-23 发布（本轮：151 赞、77 收藏、约 13,720 曝光），作者 @joeysnoisygroup；官方同串 6 条讲做法，并给出项目页（称全部提示词与素材公开）。项目页为前端渲染，本轮只读到标题和简介，具体提示词未逐条核对。同串另有黑五折扣推广。",
+      "attribution": "@joeysnoisygroup（Higgsfield Selected）",
+      "sourceAuthor": "joeysnoisygroup",
+      "tags": [
+        "AI视频",
+        "Seedance",
+        "Seedream",
+        "提示词",
+        "工作流",
+        "案例+做法"
+      ],
+      "publishedAt": "2026-11-23",
+      "collectionIds": [],
+      "collectedAt": "2026-11-24T00:42:25.000Z",
+      "updatedAt": "2026-11-24T00:42:25.000Z",
+      "verification": {
+        "checked_at": "2026-11-24T00:42:25.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为原帖视频截帧：雨中暗色室内，一名黑衣短发女性角色侧身站立，右侧有一只伸出的手和强逆光，右上角有片名标志，本轮下载并目视核验，非头像。",
+        "video_check": "未完整播放 7 分钟成片；官方 thread 6 条本轮读取。"
+      },
+      "curation": {
+        "baseScore": 69,
+        "baseBreakdown": {
+          "实体": 8,
+          "科普": 8,
+          "溯源": 18,
+          "复现": 15,
+          "风格": 6,
+          "新颖": 9,
+          "案例做法": 10,
+          "dbskill": -5
+        },
+        "multiplier": 1.025,
+        "finalScore": 70.7,
+        "threshold": 65,
+        "run": "2026-11-24-0840-shanghai"
+      },
+      "is3d": false,
+      "videoUrl": "https://video.twimg.com/amplify_video/2124922584638566400/vid/avc1/3840x2160/A7aD776CkFOhUT2t.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "tutorialUrl": "https://higgsfield.ai/@joeysnoisygroup/projects/origins-ep-01-zara",
+      "relatedLinks": [
+        "https://x.com/higgsfield_ai/status/2124926406043791701",
+        "https://x.com/higgsfield_ai/status/2124926445759709386"
+      ],
+      "aiGen": true,
+      "aiGenKinds": [
+        "video",
+        "image",
+        "prompt"
+      ]
+    },
+    {
+      "title": "先让 AI 照历史图纸把万神殿「建」出来，再拿去生成古罗马节日视频，每个镜头里建筑都和图纸对得上：Runway 演示 ChatGPT 里的 GPT-6.2 Astra 用 Blender MCP 搭出可控的 .blend，Blender 定机位，Runway 按视频参考 + 风格参考重绘",
+      "category": "video",
+      "styleFamily": "video_model",
+      "source": "https://x.com/runwayml/status/2124894381249585505",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261124a-pantheon.jpg",
+      "previewType": "image",
+      "description": "为什么值得看：解决了 AI 视频最难的一件事——「同一栋建筑每个镜头都长得一样、而且尺寸对」：先让模型按历史图纸在 Blender 里把万神殿搭成真实几何，用 Blender 控制机位运动，最后才让 Runway 用视频参考锁住机位与走位、用风格参考和提示词把灰模重绘成人山人海的古罗马节日。⭐附做法：官方回复里给了两步关键做法（Blender MCP 出可控 .blend；视频参考 + 风格参考重绘）。对本号的用处：这条路线可以原样搬到晶圆厂——先用 Blender/Three.js 按真实尺寸搭刻蚀腔、FOUP、天车轨道的灰模，定好机位，再交给视频模型重绘成「像实拍」的洁净室镜头，结构不会被 AI 画歪。库内已有「Three.js 灰模 → 可灵重绘」同类做法，本条是官方从图纸复原建筑的版本。",
+      "tool": "ChatGPT 内的 GPT-6.2 Astra + Blender MCP（建模）→ Blender（机位）→ Runway（视频参考 + 风格参考 + 提示词重绘）",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "Runway 官方 X 2026-11-23 发布（本轮：123 赞、59 收藏、约 11,177 曝光）；官方在回复里补充两点做法：用 Blender MCP 建模所以有完整可控的 .blend；Runway 拿视频参考控制机位和走位，再用风格参考 + 提示词重绘。具体提示词未公开。",
+      "attribution": "Runway（@runwayml）",
+      "sourceAuthor": "runwayml",
+      "tags": [
+        "AI视频",
+        "Runway",
+        "Blender",
+        "MCP",
+        "灰模重绘",
+        "案例+做法"
+      ],
+      "publishedAt": "2026-11-23",
+      "collectionIds": [],
+      "collectedAt": "2026-11-24T00:42:25.000Z",
+      "updatedAt": "2026-11-24T00:42:25.000Z",
+      "verification": {
+        "checked_at": "2026-11-24T00:42:25.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为原帖视频截帧：万神殿门廊的科林斯石柱下挤满身穿古罗马服装的人群，画面中央白字「Rome wasn't」，本轮下载并目视核验，非头像。",
+        "video_check": "未完整播放视频；官方帖与两条官方回复本轮读取。"
+      },
+      "curation": {
+        "baseScore": 77,
+        "baseBreakdown": {
+          "实体": 12,
+          "科普": 14,
+          "溯源": 14,
+          "复现": 9,
+          "风格": 8,
+          "新颖": 5,
+          "案例做法": 10,
+          "dbskill": 5
+        },
+        "multiplier": 1.0315,
+        "finalScore": 79.4,
+        "threshold": 65,
+        "run": "2026-11-24-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2124894322583810048/vid/avc1/1920x1080/mZL3OCUKmR8u1Xuk.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "tutorialUrl": "https://x.com/runwayml/status/2124910569392087415",
+      "relatedLinks": [
+        "https://x.com/runwayml/status/2124910782374973923"
+      ],
+      "aiGen": true,
+      "aiGenKinds": [
+        "video"
+      ]
+    },
+    {
+      "title": "网页 FPS《SANDLINE》的 6 步完整工具栈：Fable 5.2 排期验收 + Opus 5.5 写 43 个模块，54 个模型全由 Hi3D 生成，再用无头 Blender 去掉 AI 贴图的「塑料假高光」、拿 GPT-Image-2.6 画 15 张目标概念图当标杆让 Agent 盲评打分——@gkxspace（余温）",
+      "category": "3d",
+      "styleFamily": "model_3d",
+      "source": "https://x.com/gkxspace/status/2124855202314600663",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261124a-sandline.jpg",
+      "previewType": "image",
+      "description": "为什么值得看：这是一份中文写全的「AI 做 3A 质感网页游戏」流程，可直接对照抄：①双模型分工：Fable 5.2 拆关卡节奏、排期、定验收标准，Opus 5.5 写 43 个底层模块、物理碰撞、着色器和 Blender 脚本；②54 个高精模型（步枪、电磁矛、管廊、蒸馏塔、15 米四足巨像等）由 Hi3D V3.0 生成，绑骨与动作走 Hi3D 官方技能 + 开源 Mesh2Motion；③去 AI 塑料感：接入开源 guizang-game-skill 与 threejs-skills 锁渲染底座，用无头 Blender 减面、烘焙法线与 ORM 贴图，并做二阶球谐「去光照」剥掉 AI 贴图自带的假高光，再用 meshoptimizer 压面；④画面自检闭环：把灰盒截图喂给 GPT-Image-2.6 重绘出 15 张同机位目标图当标杆，再用开源 dream-loop 让全新上下文的评审 Agent 对新旧截图 A/B 盲评，不到 8 分打回；⑤ElevenLabs 生成 127 个音频；⑥写一个 AI 机器人自己通关，逐帧录 1080p60 再自动剪掉甩镜废帧。⭐附做法：全部在原帖正文，开源仓库链接见相关链接。对本号的用处：第③④步（去 AI 假高光、用生成图当标杆盲评）可以直接用在数字 Fab 场景的质感打磨上。",
+      "tool": "Fable 5.2（编排）+ Opus 5.5（执行）+ Hi3D MCP / Hi3D V3.0（3D 资产与绑骨）+ guizang-game-skill + threejs-skills + 无头 Blender + meshoptimizer + GPT-Image-2.6 + dream-loop + ElevenLabs",
+      "prompt": "",
+      "promptProvenance": "missing",
+      "provenanceNote": "X @gkxspace 2026-11-23 长文帖（本轮：84 赞、77 收藏、约 17,727 曝光、41 回复），正文写全 6 步流程；帖尾提到 Hi3D 正在办 5000 美元奖金挑战赛，可能有推广合作，注意辨别。同作者 11 月初「Opus 编排 + Hi3D 出 PBR mesh」做游戏一条在待定区，本条为新作品、流程更完整。成本作者让读者猜，未给数字。",
+      "attribution": "余温（@gkxspace）",
+      "sourceAuthor": "gkxspace",
+      "tags": [
+        "Three.js",
+        "游戏",
+        "Hi3D",
+        "Claude",
+        "工作流",
+        "中文",
+        "案例+做法"
+      ],
+      "publishedAt": "2026-11-23",
+      "collectionIds": [],
+      "collectedAt": "2026-11-24T00:42:25.000Z",
+      "updatedAt": "2026-11-24T00:42:25.000Z",
+      "verification": {
+        "checked_at": "2026-11-24T00:42:25.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为原帖视频截帧：第一人称射击画面，前景一把科幻步枪，背景是黄昏下的金属管廊和球罐工厂，左上任务提示、右下弹药 HUD，本轮下载并目视核验，非头像。",
+        "video_check": "未完整播放视频；正文长文本轮读取，未试玩。"
+      },
+      "curation": {
+        "baseScore": 63,
+        "baseBreakdown": {
+          "实体": 14,
+          "科普": 6,
+          "溯源": 12,
+          "复现": 13,
+          "风格": 8,
+          "新颖": 5,
+          "案例做法": 10,
+          "dbskill": -5
+        },
+        "multiplier": 1.4,
+        "finalScore": 88.2,
+        "threshold": 65,
+        "run": "2026-11-24-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2124854077523976192/vid/avc1/1920x1080/R_cDUdvZtEBFlFeo.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "tutorialUrl": "https://x.com/gkxspace/status/2124855202314600663",
+      "relatedLinks": [
+        "https://github.com/op7418/guizang-game-skill",
+        "https://github.com/CloudAI-X/threejs-skills",
+        "https://github.com/achimala/dream-loop",
+        "https://x.com/hi3d_ai/status/2122338262903906789"
+      ],
+      "aiGen": true,
+      "aiGenKinds": [
+        "image"
+      ]
+    },
+    {
+      "title": "一条提示词让 Gemini 4 Neon 用纯代码做出 52 秒无缝循环短片《砂驴行》：沙画师的手先撒沙画出骑车的毛驴，沙子褪去变成羊毛毡木偶，再骑过沙漠、春夏秋冬五幕——@vincent_ddup 贴出完整中文提示词（改编自他人原版）",
+      "category": "video",
+      "styleFamily": "code_video",
+      "source": "https://x.com/vincent_ddup/status/2124678752273600683",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261124a-donkey.jpg",
+      "previewType": "image",
+      "description": "为什么值得看：这是一份结构很完整的「纯代码出片」中文提示词范本——先写硬约束（零外部素材、所有贴图 Canvas 运行时生成、配乐 Web Audio 实时合成、桌面/手机适配、可导出 1080p WebM），再写帧率分层（木偶动作按 12fps 定格步进、镜头和沙粒 60fps；专门写了防车轮频闪的辐条角度），再写主角材质，最后按秒写五幕分镜（0–10.8 秒沙画成影、10.8–19 秒褪沙成偶……）。⭐附提示词：完整提示词在原帖正文。对本号的用处：可以照这个结构写「从一粒沙到一片晶圆」的纯代码短片提示词——硬约束 + 帧率分层 + 按秒分镜，是让模型一次出可用片的关键。",
+      "tool": "Gemini 4 Neon；HTML + ES Modules + WebGL2（内置轻量 Three.js 兼容渲染）+ GLSL + Canvas 2D 程序化贴图 + Web Audio 程序化配乐（提示词约束）",
+      "prompt": "见原帖正文（完整中文提示词，开头「纯代码 52 秒无缝循环实时渲染短片《砂驴行 · 毛驴蹬自行车》完整提示词」）",
+      "promptProvenance": "adapted",
+      "provenanceNote": "X @vincent_ddup 2026-11-23 发布（本轮：8 赞、4 收藏、约 3,194 曝光）；作者自述「忘了哪位兄弟的原始提示词」，改编自「鹈鹕骑车」类提示词，原作者未能确认。",
+      "attribution": "V哥来了（@vincent_ddup）",
+      "sourceAuthor": "vincent_ddup",
+      "tags": [
+        "代码视频",
+        "Gemini",
+        "提示词",
+        "无缝循环",
+        "中文",
+        "案例+做法"
+      ],
+      "publishedAt": "2026-11-23",
+      "collectionIds": [],
+      "collectedAt": "2026-11-24T00:42:25.000Z",
+      "updatedAt": "2026-11-24T00:42:25.000Z",
+      "verification": {
+        "checked_at": "2026-11-24T00:42:25.000Z",
+        "visually_checked": true,
+        "preview_check": "封面为原帖视频 30 秒处截帧：夜色荷塘木栈道上，一只戴斗笠的毛毡毛驴骑着黄铜自行车，远山与孔明灯，下方是播放器进度条（31.3s/52.0s），本轮用 ffmpeg 截帧并目视核验，非头像。",
+        "video_check": "截帧核验，未完整播放；未运行生成代码。"
+      },
+      "curation": {
+        "baseScore": 64,
+        "baseBreakdown": {
+          "实体": 14,
+          "科普": 6,
+          "溯源": 8,
+          "复现": 13,
+          "风格": 10,
+          "新颖": 8,
+          "案例做法": 10,
+          "dbskill": -5
+        },
+        "multiplier": 1.025,
+        "finalScore": 65.6,
+        "threshold": 65,
+        "run": "2026-11-24-0840-shanghai"
+      },
+      "is3d": true,
+      "videoUrl": "https://video.twimg.com/amplify_video/2124676476888825856/vid/avc1/3722x1828/owiH8cDNSpoHTaXK.mp4",
+      "userFeedback": {
+        "liked": false,
+        "favorite": false,
+        "notInterested": false,
+        "updatedAt": null
+      },
+      "tutorialUrl": "https://x.com/vincent_ddup/status/2124678752273600683"
+    },
     {
       "title": "往「AI 泡沫」上扔一块显卡，它就炸了——Adam Chernick 的 Codevember 第 22 天《Echo》：一个会按真实薄膜干涉变色的肥皂泡字母「AI」，关在镜子房间里，爆开时一圈圈倒影依次「回声」；在线可玩，MIT 开源，技术说明写得很细",
       "category": "frontend",
@@ -40821,9 +41387,9 @@
     }
   ],
   "bookmarksNotInVisual": 15,
-  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条 | 2026-11-01-0840-shanghai 监控轮追加 5 条 | 2026-11-01-1240-shanghai 监控轮追加 6 条 | 2026-11-02-1640-shanghai 监控轮追加 7 条 | 2026-11-02-2040-shanghai 监控轮追加 6 条 | 2026-11-03-0840-shanghai 监控轮追加 6 条 | 2026-11-03-1240-shanghai 监控轮追加 2 条 | 2026-11-03-1640-shanghai 监控轮追加 3 条 | 2026-11-03-2040-shanghai 监控轮追加 5 条 | 2026-11-04-0840-shanghai 监控轮追加 5 条 | 2026-11-04-1240-shanghai 监控轮追加 4 条 | 2026-11-04-1640-shanghai 监控轮追加 2 条 | 2026-11-04-2040-shanghai 监控轮追加 4 条 | 2026-11-05-0840-shanghai 监控轮追加 5 条 | 2026-11-05-1240-shanghai 监控轮追加 4 条 | 2026-11-05-1640-shanghai 监控轮追加 2 条 | 2026-11-05-2040-shanghai 监控轮追加 3 条 | 2026-11-06-0840-shanghai 监控轮追加 4 条 | 2026-11-06-1640-shanghai 监控轮追加 1 条 | 2026-11-06-2040-shanghai 监控轮追加 1 条 | 2026-11-07-0840-shanghai 监控轮追加 1 条 | 2026-11-07-1240-shanghai 监控轮追加 1 条 | 2026-11-07-1640-shanghai 监控轮追加 1 条 | 2026-11-07-2040-shanghai 监控轮追加 3 条 | 2026-11-08-0840-shanghai 监控轮追加 3 条 | 2026-11-08-1240-shanghai 监控轮追加 1 条 | 2026-11-08-1640-shanghai 监控轮追加 5 条 | 2026-11-08-2040-shanghai 监控轮追加 3 条 | 2026-11-09-0840-shanghai 监控轮追加 8 条 | 2026-11-09-1640-shanghai 监控轮追加 4 条 | 2026-11-09-2040-shanghai 监控轮追加 2 条 | 2026-11-10-0840-shanghai 监控轮追加 4 条 | 2026-11-10-1240-shanghai 监控轮追加 2 条 | 2026-11-10-1640-shanghai 监控轮追加 2 条 | 2026-11-10-2040-shanghai 监控轮追加 5 条 | 2026-11-11-0840-shanghai 监控轮追加 5 条 | 2026-11-11-1240-shanghai 监控轮追加 2 条 | 2026-11-11-1640-shanghai 监控轮追加 2 条 | 2026-11-11-2040-shanghai 监控轮追加 3 条 | 2026-11-12-0840-shanghai 监控轮追加 5 条 | 2026-11-12-1240-shanghai 监控轮追加 1 条 | 2026-11-12-1640-shanghai 监控轮追加 2 条 | 2026-11-13-0840-shanghai 监控轮追加 3 条 | 2026-11-13-1240-shanghai 监控轮追加 1 条 | 2026-11-13-1640-shanghai 监控轮追加 2 条 | 2026-11-14-0840-shanghai 监控轮追加 2 条 | 2026-11-14-1240-shanghai 监控轮追加 3 条 | 2026-11-14-1640-shanghai 监控轮追加 5 条 | 2026-11-14-2040-shanghai 监控轮追加 5 条 | 2026-11-15-0840-shanghai 监控轮追加 2 条 | 2026-11-15-1240-shanghai 监控轮追加 2 条 | 2026-11-15-1640-shanghai 监控轮追加 3 条 | 2026-11-15-2040-shanghai 监控轮追加 2 条 | 2026-11-16-0840-shanghai 监控轮追加 8 条 | 2026-11-16-1240-shanghai 监控轮追加 4 条 | 2026-11-16-1640-shanghai 监控轮追加 2 条 | 2026-11-16-2040-shanghai 监控轮追加 2 条 | 2026-11-17-0840-shanghai 监控轮追加 4 条 | 2026-11-17-1240-shanghai 监控轮追加 4 条 | 2026-11-17-1640-shanghai 监控轮追加 3 条 | 2026-11-17-2040-shanghai 监控轮追加 3 条 | 2026-11-18-0840-shanghai 监控轮追加 3 条 | 2026-11-18-1240-shanghai 监控轮追加 3 条 | 2026-11-18-1640-shanghai 监控轮追加 4 条 | 2026-11-18-2040-shanghai 监控轮追加 3 条 | 2026-11-19-0840-shanghai 监控轮追加 6 条 | 2026-11-19-1240-shanghai 监控轮追加 4 条 | 2026-11-19-1640-shanghai 监控轮追加 4 条 | 2026-11-19-2040-shanghai 监控轮追加 3 条 | 2026-11-20-0840-shanghai 监控轮追加 5 条 | 2026-11-20-1240-shanghai 监控轮追加 2 条 | 2026-11-20-1640-shanghai 监控轮追加 1 条 | 2026-11-20-2040-shanghai 监控轮追加 1 条\n[2026-11-20T17:55:00.000Z] Task3 提示词教程入库 11 条（图像 draw + 视频 video_model）：OpenAI GPT Image / Nano Banana / FLUX / Seedream / WolfRiccardo / Veo3.1 / Seedance2.5 / Kling / Runway Gen-4 / 万相3 / mixailab10；Midjourney 与 Sora 仅报告未入库（MJ 封面被 CF 挡；Sora API 2026-09-24 停服）。run=2026-11-20-0955-la | 2026-11-21-0840-shanghai 监控轮追加 2 条 | 2026-11-22-0840-shanghai 监控轮追加 3 条 | 2026-11-23-0840-shanghai 监控轮追加 3 条",
-  "updatedAt": "2026-11-23T00:36:31.000Z",
-  "totalItems": 769,
+  "note": "Codex portable export 2026-10-13 全量快照 113 条 + 未入库用户收藏 15 条（标注）。许可均待核。 | 2026-10-14 X API 补全标题/封面 | 2026-10-14-2040-shanghai 监控轮追加 9 条（带 curation 打分） | 2026-10-15-0840-shanghai 监控轮追加 7 条 | 2026-10-15-1640-shanghai 监控轮追加 4 条 | 2026-10-15-2040-shanghai 监控轮追加 4 条 | 2026-10-16-0840-shanghai 监控轮追加 9 条 | 2026-10-16-1240-shanghai 监控轮追加 1 条 | 2026-10-16 用户指定收纳 @lexnlin 2 条 | 2026-10-16 用户指定收纳 @lemomo_ai 2 条 | 2026-10-16 用户指定收纳 Lemo-Opuscar 新增 28 条、收藏 24 条 | 2026-10-16-1640-shanghai 监控轮追加 4 条 | 2026-10-16 前置用户指定 Scenario Blender 插件 1 条与审美参考 9 条，并为全库写入 is3d（3D建模 Tab） | 2026-10-16 用户指定收纳 AirsupHQ/machine-skill 置顶收藏 + @chetanankola Cozy Creek（均 is3d，封面托管） | 2026-10-16 用户指定收纳 MotionGit .motion 开放格式置顶收藏（封面托管） | 2026-10-16 用户指定收纳 NVIDIA USD BRep（SMLib）、UniForge3D、Gemini 4 Argon 公寓重建 3 条置顶收藏（封面托管） | 2026-10-16 用户指定收纳 OpenDesign Motion 与 Brendan Jowett 3D 美术/游戏资源清单 2 条置顶收藏（封面托管） | 2026-10-17-0840-shanghai 监控轮追加 4 条 | 2026-10-17-1240-shanghai 监控轮追加 3 条 | 2026-10-17 用户指定收纳 4 条置顶收藏（封面托管；@mnilax 不附猜测的 Unity-MCP 仓库链接） | 2026-10-17 用户指定收纳 3 条置顶收藏（封面托管） | 2026-10-17-1640-shanghai 监控轮追加 5 条 | 2026-10-17-2040-shanghai 监控轮追加 4 条 | 2026-10-18-0840-shanghai 监控轮追加 5 条 | 2026-10-18-1240-shanghai 监控轮追加 3 条 | 2026-10-18-1640-shanghai 监控轮追加 3 条 | 2026-10-18-2040-shanghai 监控轮追加 3 条 | 2026-10-19-0840-shanghai 监控轮追加 3 条 | 2026-10-19-1240-shanghai 监控轮追加 4 条 | 2026-10-19-1640-shanghai 监控轮追加 2 条 | 2026-10-19-2040-shanghai 监控轮追加 3 条 | 2026-10-20-0840-shanghai 监控轮追加 6 条 | 2026-10-20 用户指定收纳 @CrazyKaomei Claude 视效 Demo 合集 1 条（封面托管），并将 @leo_xiaolei 同仓库条目标为 is3d | 2026-10-20-1240-shanghai 监控轮追加 4 条 | 2026-10-20-1640-shanghai 监控轮追加 5 条 | 2026-10-20-2040-shanghai 监控轮追加 4 条 | 2026-10-21-0840-shanghai 监控轮追加 3 条 | 2026-10-21-1240-shanghai 监控轮追加 3 条 | 2026-10-21-1640-shanghai 监控轮追加 5 条 | 2026-10-21-2040-shanghai 监控轮追加 4 条 | 2026-10-22-0840-shanghai 监控轮追加 6 条 | 2026-10-22-1240-shanghai 监控轮追加 4 条 | 2026-10-22-1640-shanghai 监控轮追加 3 条 | 2026-10-22-2040-shanghai 监控轮追加 1 条 | 2026-10-23-0840-shanghai 监控轮追加 2 条 | 2026-10-23-1240-shanghai 监控轮追加 2 条 | 2026-10-23-1640-shanghai 监控轮追加 1 条 | 2026-10-23-2040-shanghai 监控轮追加 4 条 | user ingest 2026-10-24 songsong Game Art Style added 1 visual | user ingest 2026-10-24 ddjcxx Internet Archive +1 | 2026-10-24-0840-shanghai 监控轮追加 3 条 | 2026-10-24 视觉「代码」拆成 styleFamily code_video（代码视频）与 uiux（UI/UX）；user ingest Thinking Orbs +1 | user ingest 2026-10-24 techartist Wind-Up Parade +1 | user ingest 2026-10-24 MinLiBuilds Kimi K3.1 trailer +1 | 2026-10-24-1240-shanghai 监控轮追加 5 条 | 2026-10-24-1640-shanghai 监控轮追加 3 条 | 2026-10-24-2040-shanghai 监控轮追加 3 条 | 2026-10-25-0840-shanghai 监控轮追加 6 条 | 2026-10-25-1240-shanghai 监控轮追加 1 条 | 2026-10-25-1640-shanghai 监控轮追加 2 条 | 2026-10-25-2040-shanghai 监控轮追加 4 条 | 2026-10-25 user ingest threejsassets free 937 (+1 favorite) | 2026-10-25 user ingest pondline webgpu (+1 favorite) | 2026-10-26-0840-shanghai 监控轮追加 8 条 | 2026-10-26-1240-shanghai 监控轮追加 4 条 | 2026-10-26-1640-shanghai 监控轮追加 2 条 | 2026-10-26-2040-shanghai 监控轮追加 2 条 | 2026-10-27-0840-shanghai 监控轮追加 2 条 | 2026-10-27-1240-shanghai 监控轮追加 5 条 | 2026-10-27-1640-shanghai 监控轮追加 4 条 | 2026-10-27-2040-shanghai 监控轮追加 3 条 | 2026-10-28 用户指定收纳 4 条置顶收藏（Echo-3 / Iron Curtain Call / A Weird Village / UE5 Boss，封面托管） | 2026-10-28-0840-shanghai 监控轮追加 7 条 | 2026-10-28-1240-shanghai 监控轮追加 3 条 | 2026-10-28-1640-shanghai 监控轮追加 2 条 | 2026-10-28-2040-shanghai 监控轮追加 3 条 | 2026-10-29-0840-shanghai 监控轮追加 2 条 | 2026-10-29-1240-shanghai 监控轮追加 2 条 | 2026-10-29 用户指定收纳 @DilumSanjaya Backcountry 101 置顶收藏（封面托管） | 2026-10-29-1640-shanghai 监控轮追加 1 条 | 2026-10-29-2040-shanghai 监控轮追加 3 条 | 2026-10-30-0840-shanghai 监控轮追加 5 条 | 2026-10-30-1240-shanghai 监控轮追加 2 条 | 2026-10-30 用户指定收纳：@konstantinsaifo Airsup robot-cell（浏览器真实物理机器人单元）。 | 2026-10-30-1640-shanghai 监控轮追加 4 条 | 2026-10-30-2040-shanghai 监控轮追加 5 条 | 2026-10-31-0840-shanghai 监控轮追加 6 条 | 2026-10-31-1240-shanghai 监控轮追加 1 条 | 2026-10-31-1640-shanghai 监控轮追加 6 条 | 2026-10-31-2040-shanghai 监控轮追加 6 条 | 2026-11-01-0840-shanghai 监控轮追加 5 条 | 2026-11-01-1240-shanghai 监控轮追加 6 条 | 2026-11-02-1640-shanghai 监控轮追加 7 条 | 2026-11-02-2040-shanghai 监控轮追加 6 条 | 2026-11-03-0840-shanghai 监控轮追加 6 条 | 2026-11-03-1240-shanghai 监控轮追加 2 条 | 2026-11-03-1640-shanghai 监控轮追加 3 条 | 2026-11-03-2040-shanghai 监控轮追加 5 条 | 2026-11-04-0840-shanghai 监控轮追加 5 条 | 2026-11-04-1240-shanghai 监控轮追加 4 条 | 2026-11-04-1640-shanghai 监控轮追加 2 条 | 2026-11-04-2040-shanghai 监控轮追加 4 条 | 2026-11-05-0840-shanghai 监控轮追加 5 条 | 2026-11-05-1240-shanghai 监控轮追加 4 条 | 2026-11-05-1640-shanghai 监控轮追加 2 条 | 2026-11-05-2040-shanghai 监控轮追加 3 条 | 2026-11-06-0840-shanghai 监控轮追加 4 条 | 2026-11-06-1640-shanghai 监控轮追加 1 条 | 2026-11-06-2040-shanghai 监控轮追加 1 条 | 2026-11-07-0840-shanghai 监控轮追加 1 条 | 2026-11-07-1240-shanghai 监控轮追加 1 条 | 2026-11-07-1640-shanghai 监控轮追加 1 条 | 2026-11-07-2040-shanghai 监控轮追加 3 条 | 2026-11-08-0840-shanghai 监控轮追加 3 条 | 2026-11-08-1240-shanghai 监控轮追加 1 条 | 2026-11-08-1640-shanghai 监控轮追加 5 条 | 2026-11-08-2040-shanghai 监控轮追加 3 条 | 2026-11-09-0840-shanghai 监控轮追加 8 条 | 2026-11-09-1640-shanghai 监控轮追加 4 条 | 2026-11-09-2040-shanghai 监控轮追加 2 条 | 2026-11-10-0840-shanghai 监控轮追加 4 条 | 2026-11-10-1240-shanghai 监控轮追加 2 条 | 2026-11-10-1640-shanghai 监控轮追加 2 条 | 2026-11-10-2040-shanghai 监控轮追加 5 条 | 2026-11-11-0840-shanghai 监控轮追加 5 条 | 2026-11-11-1240-shanghai 监控轮追加 2 条 | 2026-11-11-1640-shanghai 监控轮追加 2 条 | 2026-11-11-2040-shanghai 监控轮追加 3 条 | 2026-11-12-0840-shanghai 监控轮追加 5 条 | 2026-11-12-1240-shanghai 监控轮追加 1 条 | 2026-11-12-1640-shanghai 监控轮追加 2 条 | 2026-11-13-0840-shanghai 监控轮追加 3 条 | 2026-11-13-1240-shanghai 监控轮追加 1 条 | 2026-11-13-1640-shanghai 监控轮追加 2 条 | 2026-11-14-0840-shanghai 监控轮追加 2 条 | 2026-11-14-1240-shanghai 监控轮追加 3 条 | 2026-11-14-1640-shanghai 监控轮追加 5 条 | 2026-11-14-2040-shanghai 监控轮追加 5 条 | 2026-11-15-0840-shanghai 监控轮追加 2 条 | 2026-11-15-1240-shanghai 监控轮追加 2 条 | 2026-11-15-1640-shanghai 监控轮追加 3 条 | 2026-11-15-2040-shanghai 监控轮追加 2 条 | 2026-11-16-0840-shanghai 监控轮追加 8 条 | 2026-11-16-1240-shanghai 监控轮追加 4 条 | 2026-11-16-1640-shanghai 监控轮追加 2 条 | 2026-11-16-2040-shanghai 监控轮追加 2 条 | 2026-11-17-0840-shanghai 监控轮追加 4 条 | 2026-11-17-1240-shanghai 监控轮追加 4 条 | 2026-11-17-1640-shanghai 监控轮追加 3 条 | 2026-11-17-2040-shanghai 监控轮追加 3 条 | 2026-11-18-0840-shanghai 监控轮追加 3 条 | 2026-11-18-1240-shanghai 监控轮追加 3 条 | 2026-11-18-1640-shanghai 监控轮追加 4 条 | 2026-11-18-2040-shanghai 监控轮追加 3 条 | 2026-11-19-0840-shanghai 监控轮追加 6 条 | 2026-11-19-1240-shanghai 监控轮追加 4 条 | 2026-11-19-1640-shanghai 监控轮追加 4 条 | 2026-11-19-2040-shanghai 监控轮追加 3 条 | 2026-11-20-0840-shanghai 监控轮追加 5 条 | 2026-11-20-1240-shanghai 监控轮追加 2 条 | 2026-11-20-1640-shanghai 监控轮追加 1 条 | 2026-11-20-2040-shanghai 监控轮追加 1 条\n[2026-11-20T17:55:00.000Z] Task3 提示词教程入库 11 条（图像 draw + 视频 video_model）：OpenAI GPT Image / Nano Banana / FLUX / Seedream / WolfRiccardo / Veo3.1 / Seedance2.5 / Kling / Runway Gen-4 / 万相3 / mixailab10；Midjourney 与 Sora 仅报告未入库（MJ 封面被 CF 挡；Sora API 2026-09-24 停服）。run=2026-11-20-0955-la | 2026-11-21-0840-shanghai 监控轮追加 2 条 | 2026-11-22-0840-shanghai 监控轮追加 3 条 | 2026-11-23-0840-shanghai 监控轮追加 3 条 | 2026-11-24-0840-shanghai 监控轮追加 9 条",
+  "updatedAt": "2026-11-24T00:42:25.000Z",
+  "totalItems": 778,
   "is3dRule": "is3d 为布尔字段，每条视觉素材都写明 true 或 false，门户「3D建模」只读 is3d===true，不从 视觉素材 移除。true 的判定：styleFamily 为 model_3d，一律 true；其余仅当 title/tags/description/tool 的主题明确是 3D 建模、Blender、Tripo、three.js 场景、GLB/glTF、mesh、SDF、体素、程序化 3D、Unity 或游戏资产。顺带提及不算：粒子光标、网页截图层飞越、单独的材质球清漆演示、评论 Three.js 的帖子、只夸 three.js 的学科模拟、Canvas 假厚度、移轴「看起来像模型」、风格标签里的「材质与 3D」、SVG 讲解、2D 等距信息图、文生图微缩、2D 傅里叶作画、水彩纸高度着色、抽丝卡片，以及工具清单里顺带出现 Blender 的纸面科普片。",
   "aiGenRule": "aiGen 为可选布尔字段，aiGenKinds 为数组，取值 image（AI 生图/改图）、video（AI 生视频）、prompt（提示词/教程/官方指南/风格库）、news（资讯，仅 news_topics 用）。门户「AI 生图/视频」读 aiGen===true；未写 aiGen 字段时兜底：视觉素材 styleFamily 为 draw→image、video_model→video；选题标题含 Sora/Veo/Kling/可灵/Seedance/Seedream/即梦/Midjourney/Nano Banana/FLUX/Runway/海螺/万相/文生图/文生视频/图生视频 等模型名→news。写 aiGen:false 可显式排除。判定：作品或流程里实际用了生图/生视频模型（Midjourney、GPT Image、Nano Banana、FLUX、Seedream/即梦、Qwen Image、Veo、Seedance、可灵、Runway、万相、MiniMax H 系、Higgsfield 等）即算；标题写「没用生图/视频模型、纯代码渲染」的不算。不从视觉素材或 3D建模 移除。"
 }
