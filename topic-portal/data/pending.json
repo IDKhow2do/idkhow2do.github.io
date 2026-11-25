@@ -2,6 +2,189 @@
   "schemaVersion": 1,
   "items": [
     {
+      "kind": "news",
+      "baseScore": 59,
+      "multiplier": 1.0566,
+      "score": 62.3,
+      "reason": "本轮达待定区间",
+      "run": "2026-11-25-0840-shanghai",
+      "record": {
+        "url": "https://x.com/midjourney/status/2125328040624521639",
+        "title": "Midjourney 动漫模型 Niji V8 上线：主打精准跟随提示词、角色一致性和专门的编辑模型",
+        "category": "AI",
+        "source": "Midjourney 官方 X 2026-11-24（本轮约 1,535 赞、605 收藏、6.8 万曝光）",
+        "publishedAt": "2026-11-24",
+        "eventAt": "2026-11-24",
+        "collectedAt": "2026-11-25T00:46:35.000Z",
+        "updatedAt": "2026-11-25T00:46:35.000Z",
+        "description": "一手来源：Midjourney 官方帖。Niji V8 为最新动漫模型，官方称有精准提示词跟随、角色一致、业内最佳连贯性、专门的编辑模型等。官方演示视频为动漫角色与真实场景（如狮身人面像）结合。对本号：可作为 AI 生图能力练习的模型资讯；与半导体主线无关。",
+        "caveat": "仅有官方一句话发布，无技术细节和可核验评测；Midjourney 在大陆不能直接使用。封面为官方演示视频截帧。",
+        "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261125a-niji.jpg",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261125a-niji.jpg",
+        "imageAlt": "沙漠中的狮身人面像与一位绿发动漫少女脸贴脸",
+        "tags": [
+          "AI生图",
+          "动漫模型",
+          "模型发布"
+        ],
+        "tagSource": "provided",
+        "curation": {
+          "baseScore": 59,
+          "baseBreakdown": {
+            "主线": 15,
+            "钩子": 8,
+            "画面": 13,
+            "来源": 15,
+            "时效": 10,
+            "大陆": 3,
+            "新颖": 5,
+            "dbskill": -10
+          },
+          "multiplier": 1.0566,
+          "finalScore": 62.3,
+          "threshold": 65,
+          "run": "2026-11-25-0840-shanghai"
+        },
+        "aiGen": true,
+        "aiGenKinds": [
+          "news",
+          "image"
+        ],
+        "relatedLinks": []
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 57,
+      "multiplier": 1.3,
+      "score": 57.0,
+      "reason": "本轮达待定区间（单维度乘数保护生效）",
+      "run": "2026-11-25-0840-shanghai",
+      "record": {
+        "title": "把全球实时闪电变成环境音乐的 3D 地球：Google DeepMind 演示 Gemini 4 Hydrogen 一句话生成的可交互网页",
+        "category": "frontend",
+        "styleFamily": "code_video",
+        "source": "https://x.com/GoogleDeepMind/status/2125371062880022536",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261125a-globe.jpg",
+        "previewType": "image",
+        "description": "官方演示：Gemini 4 Hydrogen 做了一个线框 3D 地球，实时闪电落点会触发音符。画面本身较素（白底线框地球+小标记）。对本号：可作为「实时数据可视化」的参考，但实体感弱，与库内闪电 Bolt 题材重叠。分享页：https://goo.gle/4tts4OD",
+        "tool": "Gemini 4 Hydrogen（Gemini 应用内生成网页）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "Google DeepMind 官方 X 2026-11-24（本轮：462 赞、101 收藏、约 2.7 万曝光），短链跳转到 gemini.google.com 分享页；视频里出现输入提示词的过程但未给出完整文字。",
+        "attribution": "Google DeepMind",
+        "sourceAuthor": "GoogleDeepMind",
+        "tags": [
+          "Gemini",
+          "实时数据",
+          "闪电",
+          "可视化"
+        ],
+        "publishedAt": "2026-11-24",
+        "collectionIds": [],
+        "collectedAt": "2026-11-25T00:46:35.000Z",
+        "updatedAt": "2026-11-25T00:46:35.000Z",
+        "verification": {
+          "checked_at": "2026-11-25T00:46:35.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为官方视频截帧：白底上的线框地球，澳大利亚附近有一个蓝色闪电标记，本轮下载并目视核验，非头像。",
+          "video_check": "抽取视频 3 帧查看；分享页未在浏览器中运行。"
+        },
+        "curation": {
+          "baseScore": 57,
+          "baseBreakdown": {
+            "实体": 8,
+            "科普": 15,
+            "溯源": 15,
+            "复现": 6,
+            "风格": 8,
+            "新颖": 5,
+            "案例做法": 0,
+            "dbskill": 0
+          },
+          "multiplier": 1.3,
+          "finalScore": 57.0,
+          "threshold": 65,
+          "run": "2026-11-25-0840-shanghai",
+          "multiplierGuard": "基础分<60且仅单一维度乘数>1，按规则不让乘数抬过阈值（按基础分判定）"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2125370319179247616/vid/avc1/1920x1080/5dXXZ_kd-5KhebDe.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "demoUrl": "https://goo.gle/4tts4OD"
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 66,
+      "multiplier": 1.0315,
+      "score": 68.1,
+      "reason": "分数达上墙线但方法沿用库内已收 4 条的 @MrTacticalX「Claude 包工头 + Blender 无头渲染 + 视觉自审」流程，且主体为万代 RX-78-2 高达（版权设计），先放待定",
+      "run": "2026-11-25-0840-shanghai",
+      "record": {
+        "title": "不会 Blender、连界面都没打开过，用 GPT-6.2 Astra 纯代码做出 52 秒元祖高达破盒组装动画——@ChrisHKAI 长文复盘：照 @MrTacticalX 的「包工头 Prompt」做，中途 Opus 5.5 以版权为由罢工，转 Astra 才做完",
+        "category": "video",
+        "styleFamily": "model_3d",
+        "source": "https://x.com/ChrisHKAI/status/2125166464051171378",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261125a-gundam.jpg",
+        "previewType": "image",
+        "description": "长文复盘：主模型当「包工头」只写计划、派活、验收；全程 blender -b 后台跑；强制先出定妆图、抽帧自审至少三轮，最后拼 12 格缩略图总览。作者记录了模型因版权拒绝照抄高达的过程。⭐附做法：长文即教程。",
+        "tool": "Claude Fable 5.2 / Opus 5.5（中途停止）→ GPT-6.2 Astra；Blender 无头模式（blender -b）+ Python 脚本 + ffmpeg",
+        "prompt": "",
+        "promptProvenance": "adapted",
+        "provenanceNote": "X @ChrisHKAI 2026-11-24 长文（本轮：103 赞、83 收藏、约 2.2 万曝光），成品视频为 11-19 帖；方法来自 @MrTacticalX《How to make Claude build 3D videos in Blender》。",
+        "attribution": "Chris（@ChrisHKAI）",
+        "sourceAuthor": "ChrisHKAI",
+        "tags": [
+          "Blender",
+          "智能体",
+          "3D动画",
+          "案例+做法"
+        ],
+        "publishedAt": "2026-11-24",
+        "collectionIds": [],
+        "collectedAt": "2026-11-25T00:46:35.000Z",
+        "updatedAt": "2026-11-25T00:46:35.000Z",
+        "verification": {
+          "checked_at": "2026-11-25T00:46:35.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为成品视频截帧：一个 RG RX-78-2 GUNDAM Ver.2.0 风格的蓝色包装盒立在米色背景前，本轮下载并目视核验，非头像。",
+          "video_check": "未完整播放视频。"
+        },
+        "curation": {
+          "baseScore": 66,
+          "baseBreakdown": {
+            "实体": 16,
+            "科普": 8,
+            "溯源": 12,
+            "复现": 13,
+            "风格": 9,
+            "新颖": 3,
+            "案例做法": 10,
+            "dbskill": -5
+          },
+          "multiplier": 1.0315,
+          "finalScore": 68.1,
+          "threshold": 65,
+          "run": "2026-11-25-0840-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2123342057741910016/vid/avc1/1080x1350/pw96CilH3Wix_dKy.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "tutorialUrl": "https://x.com/ChrisHKAI/status/2125166464051171378"
+      }
+    },
+    {
       "kind": "visual",
       "baseScore": 55,
       "multiplier": 1.0,
@@ -9788,6 +9971,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-24T00:42:25.000Z",
+  "updatedAt": "2026-11-25T00:46:35.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
