@@ -1,7 +1,95 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-25T00:46:35.000Z",
+  "updatedAt": "2026-11-26T00:41:53.000Z",
   "topics": [
+    {
+      "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+      "title": "测试通过了 98%，为什么放到真实流量上，只有约四分之一的输入对得上？Anthropic 把自己的 Messages API 从 Python 整个改写成 Rust：让线上老服务当「裁判」，再让一队 Claude 智能体按差异记录自动修 bug，CPU 省约 70%、首字延迟降约 20%",
+      "category": "AI",
+      "source": "Anthropic 官方研究博客《Migrating our Messages API to Rust》（2026-11-25）；@AnthropicAI 官方 X 同日发布（本轮约 8,200 赞、3,855 收藏、188 万曝光）",
+      "publishedAt": "2026-11-25",
+      "eventAt": "2026-11-25",
+      "collectedAt": "2026-11-26T00:41:53.000Z",
+      "updatedAt": "2026-11-26T00:41:53.000Z",
+      "description": "一手来源：Anthropic 官方博客（本轮读取到「验证循环」一节，后续章节未读完）。背景：API 流量从 2024 年初到 2026 年秋涨了约 1,800 倍，Python 实现每个 token 都要多花 CPU。先试过只把「解析模型输出」改成 Rust，只省 8%–10%，因为每个 token 要在 Python 和 Rust 之间来回三次，不划算，于是整体重写。难点不是写，而是「怎么证明改对了」：①现有约 700 个集成测试和 Python 实现绑得太紧，移植时审出 100 多处被削弱的断言；②Rust 版 4 月测试通过率约 98%，真实流量上输入完全一致的只有约四分之一；③Claude 回复不确定，同一输入两次结果可能不同。做法：把线上老 API 当裁判，模型只跑一次、把输出同样喂给 Rust 版，逐步骤（接收/解析设置/拼 prompt）对比；因为不能读用户内容，只记录差异的「形状」（哪一步、第几块、第几个字节、长度差），同类 bug 会留下相同「指纹」，按指纹聚类；每 10–30 分钟跑脚本，遇到新类型才唤醒一个协调智能体，再分派工人智能体各认领一类去修，人类工程师在 Slack 里跟进。结果：不停服、不冻结功能开发，CPU/请求降约 70%、首字延迟中位数降约 20%。对本号的用处：这是「怎么验证 AI 干的活」的现成故事——测试集像抽检、线上对比像全检，和晶圆厂「抽检 vs 在线量测、指纹化归类缺陷」是同一套思路，工业背景的人能讲得比纯程序员更直观。",
+      "caveat": "所有数字（98%、约四分之一、70%、20%、1,800 倍）来自 Anthropic 自述，未经第三方复现；本轮未读完博客后半部分（agent 修复细节、上线过程）。与晶圆厂抽检/量测的类比是选题角度，不是原文内容。封面为官方图（几何圆点图案，非作品截图），第 0 秒画面需自制（两条流水线对比同一输出）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261126a-rust.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261126a-rust.jpg",
+      "imageAlt": "浅绿色底上排列着带格纹的彩色圆点图案（Anthropic 官方文章配图）",
+      "tags": [
+        "智能体",
+        "AI编程",
+        "验证",
+        "Claude",
+        "观众问题"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 85,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 8,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 4,
+          "dbskill": 6
+        },
+        "multiplier": 1.0566,
+        "finalScore": 89.8,
+        "threshold": 65,
+        "run": "2026-11-26-0840-shanghai"
+      },
+      "relatedLinks": [
+        "https://x.com/AnthropicAI/status/2125627317263466739"
+      ]
+    },
+    {
+      "url": "https://investor.ambarella.com/news-releases/news-release-details/ambarella-inc-announces-third-quarter-fiscal-year-2027-financial",
+      "title": "AI 数据中心在抢内存，为什么先被砍订单的是摄像头、智能家居这些「没人想到的」设备？边缘 AI 芯片商安霸（Ambarella）财报：季度收入还在涨 6.2%，下季度却只指引 7000–7500 万美元，CEO 直说内存涨价缺货「让很多客户下调预期」",
+      "category": "半导体",
+      "source": "Ambarella 官方投资者关系新闻稿《Third Quarter Fiscal Year 2027 Financial Results》（2026-11-24，GlobeNewswire）；财报电话会逐字稿（Motley Fool 转录）",
+      "publishedAt": "2026-11-24",
+      "eventAt": "2026-11-24",
+      "collectedAt": "2026-11-26T00:41:53.000Z",
+      "updatedAt": "2026-11-26T00:41:53.000Z",
+      "description": "一手来源：Ambarella 官方新闻稿（本轮读取全文）+ 电话会逐字稿节选。事实：①第三财季（截至 2026-10-31）收入 1.152 亿美元，同比 +6.2%、环比 +7%，处在指引区间低端，边缘 AI 收入创纪录；②第四财季收入指引 7000–7500 万美元，远低于正常季节性下滑；③CEO 王奉民原话：「内存价格的空前上涨和内存供应的稀缺已经加剧，正在让许多客户下调预期」，同时强调不影响边缘 AI 的长期增长判断。机制（电话会）：内存在消费类产品物料成本里占比很大，涨价后整机厂提价空间有限，只能「低毛利甚至零毛利出货」或「放慢出货」，于是取消或推迟订单；消费类物联网受影响最大（约占总收入一半），汽车类因 Tier 1 找不到足够内存也被拖累；大部分是推迟、少部分是取消；客户会把稀缺内存优先分给最重要、通常也最贵的新 AI 芯片产品。Ambarella 此前称「产业产能向数据中心倾斜」是起因。可拍角度：「内存只是一颗小料，为什么它能让整台摄像头卖不出去」——从一块板子的物料表（BOM）讲起，把 AI 服务器抢产能和你家买不起便宜设备连成一条线。",
+      "caveat": "不是股价或投资话题：不引用股价、评级和涨跌幅，也不构成任何投资建议。财报是公司自述，「产业产能向数据中心倾斜」的因果是管理层判断，未经独立核实；消费类约占收入一半来自电话会口述。大陆市场的具体影响（国产摄像头、家电厂商）本轮未核实。封面为 X 账号 @TheTranscript_ 发布的新闻稿截图（本轮裁剪上半部分），文字版权归 Ambarella，外链引用；官方页没有可用的配图。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261126a-amba.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261126a-amba.jpg",
+      "imageAlt": "Ambarella 第三财季新闻稿的网页截图，白底黑字列出收入、毛利率和第四财季指引",
+      "tags": [
+        "存储",
+        "内存涨价",
+        "边缘AI",
+        "供应链",
+        "消费电子",
+        "观众问题"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 83,
+        "baseBreakdown": {
+          "主线": 22,
+          "钩子": 17,
+          "画面": 5,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 8,
+          "新颖": 4,
+          "dbskill": 2
+        },
+        "multiplier": 1.0924,
+        "finalScore": 90.7,
+        "threshold": 65,
+        "run": "2026-11-26-0840-shanghai"
+      },
+      "relatedLinks": [
+        "https://x.com/TheTranscript_/status/2125373355792445526",
+        "https://www.fool.com/earnings/call-transcripts/2026/11/25/ambarella-amba-q3-2027-earnings-call-transcript/"
+      ]
+    },
     {
       "url": "https://www.cas.cn/syky/202611/t20261123_5124801.shtml",
       "title": "芯片里被金属盖住的结构，不切开怎么量到 0.1 纳米？中科院上海高研院用国内首套 CD-SAXS（关键尺寸小角 X 射线散射）设备，给「埋层光栅」做了一次无损 CT：电镜只看得到表面、透射电镜要切片、光学量测穿不透金属，X 射线却能从散射花纹反推截面形状",
