@@ -1,7 +1,53 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-26T00:41:53.000Z",
+  "updatedAt": "2026-11-27T00:42:28.000Z",
   "topics": [
+    {
+      "url": "https://x.com/ASMLcompany/status/2125986726514413578",
+      "title": "芯片上只有几纳米的缺陷，为什么光学检测「看不见」、电子束看得见却太慢？ASML 纪念收购 HMI 十年：把电子束检测并进光刻流程，最新一代 eScan 1100 用 25 束电子同时扫，官方称吞吐量是单束的 10 倍",
+      "category": "半导体",
+      "source": "ASML 官方 X 帖（2026-11-26，HMI 加入十周年，附官方视频；本轮约 1,014 赞、133 收藏、2.8 万曝光）；ASML 官网 HMI 历史页与「Measuring accuracy」技术页；ASML 2025 年度 20-F 报告中 HMI 一节",
+      "publishedAt": "2026-11-26",
+      "eventAt": "2026-11-26",
+      "collectedAt": "2026-11-27T00:42:28.000Z",
+      "updatedAt": "2026-11-27T00:42:28.000Z",
+      "description": "一手来源：ASML 官方 X 帖 + 官网两页 + 20-F 年报（均为 ASML 自述）。事实：①ASML 2016 年收购 HMI（原汉微科 Hermes Microvision，1998 年成立，2004 年总部迁到新竹科学园区），2003 年推出第一台电子束检测机 eScan300；官网写明制程走过 90 纳米之后，光学检测的局限「变得非常明显」。②原理（官网技术页）：加热金属丝放出电子，用电场磁场聚成束，在真空里扫过晶圆，测量打出来的二次电子来成像；分辨率约 1 纳米，但比光学（YieldStar 衍射量测）慢得多，所以通常放在图形「刻蚀之后」用，并且只盯缺陷更可能出现的热点区域。③提速办法是多束：2020 年首发的 eScan 1000 是 3×3 共 9 束，吞吐约提升 9 倍；20-F 称 eScan 1100 有 25 束、吞吐是单束系统的 10 倍，能在可接受时间内扫出整片晶圆的缺陷「指纹」图，比最后的电性探针测试提前最多一个半月拿到良率线索。可拍角度：「芯片做坏了，厂里怎么发现？」——从一根头发丝粗细对比几纳米缺陷开场，讲光为什么分不清（波长比缺陷大太多）、电子为什么能，再讲「看得清但太慢」这个取舍，最后落到 25 束一起扫。这正是刻蚀后检测环节，晶圆厂里的人讲最有说服力。",
+      "caveat": "所有性能数字（1 纳米分辨率、9 倍、25 束、10 倍、提前一个半月）都是 ASML 官方自述，未经第三方核实；本轮未完整观看官方视频，仅看封面帧。eScan 1100 的 25 束与 10 倍来自 20-F 年报（经搜索摘要读取），官网技术页仍写的是 eScan 1000。帖子是周年纪念内容，不是新产品发布。不涉及出口管制话题，拍摄时也建议不展开。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261127a-asml.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261127a-asml.jpg",
+      "imageAlt": "ASML 官方视频截帧：银色金属设备内部，下方圆盘上排列着金色的晶圆状部件",
+      "tags": [
+        "芯片制造",
+        "缺陷检测",
+        "良率",
+        "电子束",
+        "量测",
+        "观众问题"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 99,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 15,
+          "画面": 13,
+          "来源": 15,
+          "时效": 10,
+          "大陆": 5,
+          "新颖": 4,
+          "dbskill": 12
+        },
+        "multiplier": 1.0743,
+        "finalScore": 100.0,
+        "threshold": 65,
+        "run": "2026-11-27-0840-shanghai"
+      },
+      "relatedLinks": [
+        "https://www.asml.com/en/company/about-asml/hmi",
+        "https://www.asml.com/en/technology/lithography-principles/measuring-accuracy",
+        "https://www.sec.gov/Archives/edgar/data/937966/000162828026011378/asml-20251231.htm"
+      ]
+    },
     {
       "url": "https://www.anthropic.com/research/migrating-api-to-rust",
       "title": "测试通过了 98%，为什么放到真实流量上，只有约四分之一的输入对得上？Anthropic 把自己的 Messages API 从 Python 整个改写成 Rust：让线上老服务当「裁判」，再让一队 Claude 智能体按差异记录自动修 bug，CPU 省约 70%、首字延迟降约 20%",
