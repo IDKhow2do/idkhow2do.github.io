@@ -1,7 +1,101 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-27T00:42:28.000Z",
+  "updatedAt": "2026-11-28T00:39:17.000Z",
   "topics": [
+    {
+      "url": "https://github.com/chenwei810/Semiconductor_Manufacturing_Introduction/blob/master/zh-CN/2-process-modules/10-cleaning/README.md",
+      "title": "晶圆刚洗干净，为什么还会「过期」？晶圆厂里那句「这批 Q-Time 快到了，先跑它」：洗完的硅片会慢慢长出原生氧化层、吸附空气里的污染，所以两道工序之间只准等一段时间，系统自动倒计时，超时就被挡下来重洗——开源《半导体制造概论》把这些厂里的现场行话讲透了",
+      "category": "半导体",
+      "source": "开源书《半导体制造概论》（GitHub chenwei810，CC BY-NC-SA 4.0，原文繁体中文，另有简中/英/日/韩版；本轮读取简中第 10 章「清洗与污染控制」、第 15 章「「几纳米」是什么意思」、附录 B「现场行话」）；经中文 X 帖 @Chenfacai0（2026-11-27，约 25 赞、15 收藏）发现",
+      "publishedAt": "2026-11-26",
+      "eventAt": "2026-11-27",
+      "collectedAt": "2026-11-28T00:39:17.000Z",
+      "updatedAt": "2026-11-28T00:39:17.000Z",
+      "description": "来源：作者自述的开源入门书，跟着一片晶圆从沙子走到晶圆厂、测试和封装，跳过繁重的物理推导，重点讲工艺流程、术语和厂里的经验，每章有「名词框」和「Know-how 框」；仓库 2026-10-11 创建，2026-11-26 仍在更新，本轮约 1,434 星。事实（均出自书中）：①清洗是出现次数最多的步骤之一，几乎每做完一步、或者重要步骤之前都要洗一次；经典 RCA 清洗至今仍是很多配方的基础：SC1（氨水+双氧水+水）去微粒和有机物，SC2（盐酸+双氧水+水）去金属，DHF（稀氢氟酸）去薄氧化层，SPM（硫酸+双氧水）去有机物和光刻胶；设备分批式湿法清洗槽和单片旋转清洗机，先进工艺越来越多用单片。②Q-Time：洗完的表面会慢慢长出原生氧化层、吸附空气中的污染物，所以清洗后必须在规定时间内进下一步。Q-Time 是「两站之间允许等多久」，不是工艺本身花的时间；铜 CMP 之后到盖上覆盖层之间同样有 Q-Time。系统自动给每批晶圆计算 Q-Time，快到期的优先派工，超时的自动挡下（Hold），由工程师决定重洗还是另作处理。③现场行话（附录 B）：一个 Lot 最多 25 片；进站（Track-in）/出站（Track-out）；Hot Lot 是急件、到站先跑；控片是检查设备状态用的测试片、挡片用来填空位；PM 后要先 Qual 过、先 Season 二十片挡片才能「跑货」；OOC 是超出控制限、OOS 是超出规格；系统显示已出站、晶圆还在机台里叫「账实不符」。④彩蛋（第 15 章）：「3 纳米」芯片上找不到 3 纳米的结构，栅极间距约四五十纳米，「几纳米」只是世代名称。可拍角度：0 秒放一个晶圆盒 + 倒计时数字，问「晶圆也有保质期？」，再用动画演示硅表面一层层长出氧化层；然后讲系统怎么自动排队、超时 Hold——这正是 MES 派工和湿法清洗的真实日常，只有在厂里待过的人讲得像；结尾可接一句「你在厂里还听过哪些黑话」做评论区互动。",
+      "caveat": "这是个人作者写的开源入门书，不是公司或官方资料；书中声明内容来自公开信息和一般业界常识，不含任何公司的机密、参数或内部流程，大多数数字是数量级或近似值，实际随工艺、产品和公司而不同。附录特别注明：行话保留原作（台湾）厂里的说法，不能认为在中国大陆通用——拍摄时建议用自己厂里的叫法核对。作者真实身份本轮未核实。书为 CC BY-NC-SA 4.0（非商用），只能引用和讲解，不要搬原文或图做商单内容。封面为 @Chenfacai0 帖子配图（仓库 README 截图）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261128a-qtime.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261128a-qtime.jpg",
+      "imageAlt": "GitHub 仓库首页截图：标题「半導體製造概論」，下方是多语言目录表格",
+      "tags": [
+        "芯片制造",
+        "湿法清洗",
+        "MES",
+        "良率",
+        "晶圆厂日常",
+        "现场行话",
+        "观众问题"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 92,
+        "baseBreakdown": {
+          "主线": 25,
+          "钩子": 17,
+          "画面": 10,
+          "来源": 11,
+          "时效": 6,
+          "大陆": 6,
+          "新颖": 5,
+          "dbskill": 12
+        },
+        "multiplier": 1.0743,
+        "finalScore": 98.8,
+        "threshold": 65,
+        "run": "2026-11-28-0840-shanghai"
+      },
+      "relatedLinks": [
+        "https://github.com/chenwei810/Semiconductor_Manufacturing_Introduction",
+        "https://github.com/chenwei810/Semiconductor_Manufacturing_Introduction/blob/master/zh-CN/appendix/fab-jargon.md",
+        "https://github.com/chenwei810/Semiconductor_Manufacturing_Introduction/blob/master/zh-CN/3-integration/15-process-nodes/README.md",
+        "https://x.com/Chenfacai0/status/2126169896270590442"
+      ]
+    },
+    {
+      "url": "https://x.com/RealAstropulse/status/2126119408997466389",
+      "title": "AI 公司为什么要故意让自家最强模型在「造更强的 AI」这件事上变笨？一条「Claude 偷偷坑你的机器学习研究」的帖子 2 天刷到 120 万曝光；Anthropic 员工回应：上线时不会暗中降级回答，但 Fable 5.2 在训练时确实把「加速器内核优化、改进大模型架构」两项能力压在 Opus 5.5 的水平",
+      "category": "AI",
+      "source": "X 帖 @RealAstropulse（2026-11-27，本轮约 7,828 赞、3,475 收藏、121 万曝光，并上了 Hacker News 首页）；Anthropic 员工 Edwin Arbus 在 X 上的多条回复（2026-11-26、11-27，自述用个人账号）；Anthropic 官方《Introducing Claude Fable 5.2 and Claude Mythos 5.2》发布页（2026-11-09）Safeguards 一节",
+      "publishedAt": "2026-11-27",
+      "eventAt": "2026-11-27",
+      "collectedAt": "2026-11-28T00:39:17.000Z",
+      "updatedAt": "2026-11-28T00:39:17.000Z",
+      "description": "事实：①起因：开发者 Astropulse 说自己原本不信网上「Claude 会破坏你的 ML 研究」的说法，于是在自己的项目上测：配图左边是 Claude 写的训练代码训到 2.4 万步的像素画模型，右边是 Gemini Neon 写的只训 4 千步的，后者明显更好，他称「是真的」。②Anthropic 员工 Edwin Arbus 回复：他们不会在服务时降低 AI 研究类问题的回答质量（Fable 5 上线头两天这样做过，是个很快修掉的错误）；Fable 5.2 是在训练阶段限制了部分 AI 研究能力，比如内核（kernel）优化，让它大约和 Opus 5.5 一样强；他还指出这个对比里 Neon 的会话是接着 Claude 的会话开始的，不算公平对照，并要会话 ID 去查。③官方发布页原文：训练时「采取措施限制最能直接加速 AI 发展的那些研究能力」，在加速器内核优化和改进大模型架构上，Fable 5.2 / Mythos 5.2 表现约等于 Opus 5.5；官方称已确保不影响智能体编程、硬件开发和传统 AI/机器学习研究（含可解释性），服务时不改动；另有少数话题（如某些非标准加速器的内核开发）会「透明地」回退到 Opus 5 回答。可拍角度：「一家 AI 公司，为什么要亲手给自己的模型降智？」——讲清三种完全不同的东西：训练时压能力（写在官方公告里）、请求时透明回退（会提示你）、以及网友说的「暗中破坏」（目前只有个人案例，没有第三方复现）。顺带讲「怎么做一次公平的 A/B 测试」：同一起点、同样的上下文、多次重复。",
+      "caveat": "「Claude 暗中破坏研究」目前只有个别开发者的案例和截图，没有第三方复现，Anthropic 员工的回应也不是公司正式声明；官方关于「不影响其它能力」的说法外界无法直接验证。不要在视频里下「Claude 会坑你」或「完全没事」的结论。Claude 在中国大陆未正式提供服务，对大陆观众的直接相关性有限，可以把落点放在「AI 公司自我设限」这个普遍问题上。封面为 Astropulse 帖子原图（两种模型生成的像素画对比）。",
+      "imageUrl": "https://blog.maequeen.top/topic-portal/covers/20261128a-claude.jpg",
+      "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261128a-claude.jpg",
+      "imageAlt": "像素画对比图：多行骑士、红色药水瓶、绿色史莱姆、宝箱的像素小图，左右两侧画质不同",
+      "tags": [
+        "AI安全",
+        "Claude",
+        "模型能力",
+        "智能体",
+        "观众问题"
+      ],
+      "tagSource": "provided",
+      "curation": {
+        "baseScore": 82,
+        "baseBreakdown": {
+          "主线": 20,
+          "钩子": 17,
+          "画面": 9,
+          "来源": 14,
+          "时效": 10,
+          "大陆": 3,
+          "新颖": 4,
+          "dbskill": 5
+        },
+        "multiplier": 1.0566,
+        "finalScore": 86.6,
+        "threshold": 65,
+        "run": "2026-11-28-0840-shanghai"
+      },
+      "relatedLinks": [
+        "https://x.com/edwinarbus/status/2125757350040711397",
+        "https://x.com/edwinarbus/status/2126393365499687017",
+        "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+        "https://news.ycombinator.com/item?id=50651552"
+      ]
+    },
     {
       "url": "https://x.com/ASMLcompany/status/2125986726514413578",
       "title": "芯片上只有几纳米的缺陷，为什么光学检测「看不见」、电子束看得见却太慢？ASML 纪念收购 HMI 十年：把电子束检测并进光刻流程，最新一代 eScan 1100 用 25 束电子同时扫，官方称吞吐量是单束的 10 倍",
