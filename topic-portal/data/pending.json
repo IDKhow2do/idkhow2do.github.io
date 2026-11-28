@@ -2,6 +2,150 @@
   "schemaVersion": 1,
   "items": [
     {
+      "kind": "visual",
+      "baseScore": 60,
+      "multiplier": 1.1979,
+      "score": 71.9,
+      "reason": "分数达上墙线但源码入口和许可证本轮未核实，先待定",
+      "run": "2026-11-28-0840-shanghai",
+      "record": {
+        "title": "浏览器里的多人丧尸射击：只有一束手电光照亮废弃走廊，背后随时会有东西扑上来——Blendi 把 three.js 原型做成完整游戏《Quarantine》，作者称已开源，three.js 官方转发",
+        "category": "video",
+        "styleFamily": "code_video",
+        "source": "https://x.com/BlendiByl/status/2125755133699240019",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261128a-quar.jpg",
+        "previewType": "image",
+        "description": "作者原话：把之前的原型做成了带多人联机的完整浏览器丧尸游戏，并按承诺开源；设计目标是让你必须不停回头看身后；视频是单人打到第 5 波的实录，作者单人纪录第 10 波。画面：第一人称、手电筒是唯一光源，墙面涂鸦和颗粒噪点营造恐怖感。对用户的用处：用户在学 three.js 射击游戏，这是一个可玩的完成度参考；等确认源码后可以拆「手电光锥 + 黑暗环境」的光照做法。",
+        "tool": "three.js（作者早前原型帖自述「this is threejs」）；发布在 Patch 平台；具体技术栈未公开说明",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "作者 X 帖（2026-11-26 00:54 UTC，约 392 赞、303 收藏、3.6 万曝光）+ 作者自回复「可以在这里玩或拿源码」（指向 patch.gg）+ three.js 官方转发（2026-11-27，约 321 赞）。Patch 页面需 JS 渲染，本轮未能确认源码入口和许可证。原帖早于本轮窗口约 1 天，因官方转发在窗口内才发现。",
+        "attribution": "Blendi（X @BlendiByl）",
+        "sourceAuthor": "BlendiByl",
+        "tags": [
+          "Three.js",
+          "游戏",
+          "射击游戏",
+          "多人联机",
+          "光照"
+        ],
+        "publishedAt": "2026-11-26",
+        "collectionIds": [],
+        "collectedAt": "2026-11-28T00:39:17.000Z",
+        "updatedAt": "2026-11-28T00:39:17.000Z",
+        "verification": {
+          "checked_at": "2026-11-28T00:39:17.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为原帖视频第 20 秒截帧：黑暗走廊里手电光照亮墙面，右下有手持枪械，本轮目视核验，非头像。",
+          "video_check": "看了第 8、20、40 秒截帧；未进入游戏试玩。"
+        },
+        "curation": {
+          "baseScore": 60,
+          "baseBreakdown": {
+            "实体": 18,
+            "科普": 5,
+            "溯源": 10,
+            "复现": 6,
+            "风格": 10,
+            "新颖": 8,
+            "案例做法": 3,
+            "dbskill": 0
+          },
+          "multiplier": 1.1979,
+          "finalScore": 71.9,
+          "threshold": 65,
+          "run": "2026-11-28-0840-shanghai"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2125754427923652608/vid/avc1/2560x1440/ob7IikxIUiTS5HqL.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "demoUrl": "https://patch.gg/play/blendi/quarantine",
+        "relatedLinks": [
+          "https://x.com/BlendiByl/status/2125755347893969319",
+          "https://x.com/threejs/status/2126331160959824246",
+          "https://x.com/BlendiByl/status/2123000842848793034"
+        ],
+        "aiGen": false
+      }
+    },
+    {
+      "kind": "visual",
+      "baseScore": 59,
+      "multiplier": 1.3,
+      "score": 59.0,
+      "reason": "本轮达待定区间（单维度乘数保护生效）",
+      "run": "2026-11-28-0840-shanghai",
+      "record": {
+        "title": "黑五当天全球的真实订单变成一道道发光弧线，绕着一颗地球飞——这次 Shopify 把这颗「BFCM 地球」放进了一座滑板公园，你可以和朋友一起在旁边滑板；Tobi Lütke：用 WebGPU + HDR，弧线才这么亮",
+        "category": "frontend",
+        "styleFamily": "code_video",
+        "source": "https://x.com/tobi/status/2126118398203727896",
+        "previewUrl": "https://blog.maequeen.top/topic-portal/covers/20261128a-bfcm.jpg",
+        "previewType": "image",
+        "description": "作者原话：黑五（按格林尼治时间）开始，BFCM 地球上线；今年数据更多，还加了新游戏——把地球放进滑板公园，可以和朋友一起玩；用 WebGPU 和 HDR，所以弧线特别亮。画面：海边滑板公园中央一颗巨大的地球，实时订单金额数字浮在空中。对本号的用处：「用真实数据流驱动 3D 场景」的参考，可以想象成「全球晶圆厂的产能/出货」可视化；但没有公开做法，只能看效果。",
+        "tool": "WebGPU + HDR（官方帖自述）；多人在线；具体引擎未说明（three.js 官方转发了该视频）",
+        "prompt": "",
+        "promptProvenance": "missing",
+        "provenanceNote": "Shopify CEO Tobi Lütke X 帖（2026-11-27 00:58 UTC，约 1,675 赞、574 收藏、21 万曝光）+ 自回复「是多人的」；three.js 官方转发（约 1,655 赞）。页面 og 图为 Shopify 官方分享图。未见源码、技术文章或许可证。",
+        "attribution": "Shopify（Tobi Lütke 发布）",
+        "sourceAuthor": "tobi",
+        "tags": [
+          "WebGPU",
+          "数据可视化",
+          "地球",
+          "多人联机",
+          "Shopify"
+        ],
+        "publishedAt": "2026-11-27",
+        "collectionIds": [],
+        "collectedAt": "2026-11-28T00:39:17.000Z",
+        "updatedAt": "2026-11-28T00:39:17.000Z",
+        "verification": {
+          "checked_at": "2026-11-28T00:39:17.000Z",
+          "visually_checked": true,
+          "preview_check": "封面为原帖视频封面帧：海边滑板公园、蓝白地球和「$2,363,685」字样的实时数字，本轮目视核验，非头像。",
+          "video_check": "未完整播放视频；未打开 bfcm.shop 试玩。"
+        },
+        "curation": {
+          "baseScore": 59,
+          "baseBreakdown": {
+            "实体": 15,
+            "科普": 12,
+            "溯源": 12,
+            "复现": 3,
+            "风格": 9,
+            "新颖": 8,
+            "案例做法": 0,
+            "dbskill": 0
+          },
+          "multiplier": 1.3,
+          "finalScore": 59.0,
+          "threshold": 65,
+          "run": "2026-11-28-0840-shanghai",
+          "multiplierGuard": "基础分<60且仅单一维度乘数>1，按规则不让乘数抬过阈值（按基础分判定）"
+        },
+        "is3d": true,
+        "videoUrl": "https://video.twimg.com/amplify_video/2126118341538697216/vid/avc1/1440x1080/CtSALNNPj0TLSyLk.mp4",
+        "userFeedback": {
+          "liked": false,
+          "favorite": false,
+          "notInterested": false,
+          "updatedAt": null
+        },
+        "demoUrl": "https://bfcm.shop/",
+        "relatedLinks": [
+          "https://x.com/tobi/status/2126118695516692974",
+          "https://x.com/threejs/status/2126341282570391875"
+        ],
+        "aiGen": false
+      }
+    },
+    {
       "kind": "news",
       "baseScore": 59,
       "multiplier": 1.0566,
@@ -9971,6 +10115,6 @@
       }
     }
   ],
-  "updatedAt": "2026-11-27T00:42:28.000Z",
+  "updatedAt": "2026-11-28T00:39:17.000Z",
   "note": "55–(阈值-1) 分待定条目，不上墙；每天清掉7天未被点的条目。uniqueKey: news=record.url, visual=record.source。"
 }
